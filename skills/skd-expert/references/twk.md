@@ -1,6 +1,6 @@
 # TWK — Tes Wawasan Kebangsaan
 
-Sumber kebenaran: `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI /MR_BADRUN_TWK_ENGINE.md` (v1.6, 2026-10-27). File ini ringkasan + status; selalu baca engine penuh sebelum generate/audit.
+Sumber kebenaran: `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI/MR_BADRUN_TWK_ENGINE.md` (v1.6, 2026-10-27). File ini ringkasan + status; selalu baca engine penuh sebelum generate/audit.
 Engine lama gaya Viracun (ENGINE_GENERATE_SOAL_TWK.md) **dihapus 2026-10-25**; label tipe E1–E8 dipindah ke Lampiran MR BADRUN v1.4. MR BADRUN = satu-satunya engine TWK.
 
 ## Filosofi
@@ -36,7 +36,7 @@ Semua lima opsi **benar** secara faktual & moral. Kesulitan = jarak presisi anta
 | `Paket 15 TWK-2026SL - Salin.pdf` | 23 soal rujukan yang di-reverse-engineer | sumber pola + contoh kegagalan |
 | `Bank Soal TWK DAJIKS 100 - Draf Reviu Ahli.pdf` | 105 hlm, draf v1.3 yang direviu tim ahli | arsip |
 | `cat-twk-app/`, `CAT_TWK.html` | aplikasi CAT | |
-- Sumber: `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI /CLAUDE-HANDOFF.md`
+- Sumber: `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI/CLAUDE-HANDOFF.md`
 - Rakit ulang bank (v1.5): ubah isi hanya lewat `tmp/v15/patch_*.json` → `python3 tmp/v15/apply.py` (tulis `bank_v15_draft.json`, meta + qa dihitung) → `node tmp/validate_bank_100.mjs tmp/v15/bank_v15_draft.json` 0 error → salin ke `bank_soal_100.json` → apply.py lagi harus byte-identik → `python3 tmp/v15/pecah_paket.py` peta sama, lalu `--tulis` → `python3 tmp/v15/buat_pdf.py`. Jalur jq `tmp/question_batches/` (v1.3) **dihapus 2026-10-25**.
 - Rujukan resmi terverifikasi (UUD 1945, UU ASN 20/2023, PermenPANRB 17/2024, UU PDP 27/2022, UU KIP 14/2008, UU 3/2002, PerKPK 1/2026, PerBPIP 2 & 4/2022, Perpres 8/2026, EYD V, TBBI) — daftar URL di handoff.
 - **Perpres 8/2026** (RAN PE 2026–2029, ditetapkan 9 Feb 2026, LN 2026/15): Lampiran A Tema 2 ketahanan komunitas dan keluarga → soal 089; Tema 6 deradikalisasi, rehabilitasi dan reintegrasi sosial → soal 093.

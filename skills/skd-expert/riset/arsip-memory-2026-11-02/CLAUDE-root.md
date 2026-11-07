@@ -12,7 +12,7 @@ Baca juga [memory.md](memory.md) untuk keputusan dan pelajaran dari sesi sebelum
 | Path | Isi |
 |---|---|
 | `CLAUDE.md`, `memory.md` | pedoman kerja + catatan keputusan (root hanya berisi dua file ini + `BIG DATA/`) |
-| `BIG DATA/CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI /` | MR BADRUN TWK ENGINE v1.5, bank TWK 100, panduan murid, aplikasi CAT TWK (repo git sendiri) |
+| `BIG DATA/CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI/` | MR BADRUN TWK ENGINE v1.5, bank TWK 100, panduan murid, aplikasi CAT TWK (repo git sendiri) |
 | `BIG DATA/CORE ENGINE GENERATE SOAL TKP D AJIKS AKADEMI/` | ENGINE TKP v1.2, paket TKP 80, korpus 24 soal, aplikasi CAT TKP (repo git sendiri) |
 | `BIG DATA/CORE ENGINE GENERATE SOAL TIU D AJIKS AKADEMI/` | ENGINE TIU D'AJIKS v0.3 (gaya 3K: Kalimat Kunci · Kesalahan Bernama · Kunci Terbukti) — draf, belum diuji paket; `k12-spatial-engine/` = generator soal gambar SVG (modul TIU `npm run gen:tiu`, 2026-10-28) |
 | `BIG DATA/GENERATE SOAL TERBARU SKD 2026/` | TIU: CAT deret tabel, kecukupan data, suku ke-n, pasangan operasi (repo git → GitHub Pages; punya CLAUDE.md + memory.md sendiri) |

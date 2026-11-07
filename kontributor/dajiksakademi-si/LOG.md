@@ -7,3 +7,4 @@
 - Status: selesai. Berikut: undang kontributor (username GitHub dari Gusti).
 - Ubah: `README.md`, `kontributor/README.md`, `CLAUDE.md` — alur kerja jadi push langsung ke `main` — putusan Gusti.
 - Undang: AcademyBRIJ (izin tulis).
+- Perbaiki: folder `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI ` (spasi di akhir) diganti tanpa spasi — clone gagal di Windows (nama folder berakhiran spasi tidak sah). Rujukan path di CLAUDE.md, skill skd-expert, `build-to.cjs` ikut diperbarui.

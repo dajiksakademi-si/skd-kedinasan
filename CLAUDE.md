@@ -27,7 +27,7 @@ Nama folder project dan beberapa subfolder **berakhiran spasi** — selalu kutip
 ## Kontributor (WAJIB, putusan Gusti 2026-11-07)
 - Baca dulu `pedoman/ETIKA-KERJA.md`, file ini, `memory.md`, dan `kontributor/<username>/memory.md` sendiri.
 - Setiap perubahan → catat di `kontributor/<username-github>/LOG.md`. Putusan/aturan/pelajaran baru → `kontributor/<username-github>/memory.md`. Perubahan besar → satu baris di `CHANGELOG.md`. Catatan ditulis di repo, bukan hanya di memori lokal Claude.
-- Push/usulan perubahan tanpa pembaruan `LOG.md` gagal diperiksa otomatis dan tidak digabung.
+- Kontributor push langsung ke `main`: `git pull` sebelum mulai, commit + push setiap selesai satu perubahan. Push tanpa pembaruan `LOG.md` gagal diperiksa otomatis (tanda merah) dan wajib disusul push yang mengisi LOG.
 
 ## Aturan kerja
 1. **Bahan baru** (engine, modul, ebook, screenshot, PDF, catatan instruksi untuk dipelajari) → simpan di `BIG DATA/`. Bahan pihak luar → `BIG DATA/REFERENSI LUAR/<sumber> <tanggal>/`. Jangan menaruh file kerja di root.

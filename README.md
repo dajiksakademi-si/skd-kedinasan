@@ -21,7 +21,11 @@ mkdir -p kontributor/<username> && touch kontributor/<username>/{memory.md,LOG.m
 ```
 Path `~/.claude/skills/skd-expert/...` yang disebut di dokumen = `skills/skd-expert/...` di repo ini.
 
-Alur: buat cabang → kerjakan → isi `LOG.md` (+ `memory.md` bila ada putusan baru) → pull request → Gusti meninjau dan menggabungkan.
+Alur kerja (push langsung ke `main`, putusan Gusti 2026-11-07):
+1. Setiap mulai kerja: `git pull`.
+2. Kerjakan di perangkat sendiri.
+3. Setiap selesai satu perubahan: isi `kontributor/<username>/LOG.md` (+ `memory.md` bila ada putusan baru) → `git add -A && git commit -m "<apa yang diubah>" && git push`.
+4. Push ditolak karena ada perubahan orang lain → `git pull`, satukan, lalu push lagi.
 
 ## Tidak ada di repo ini
 - Bahan pihak luar (`REFERENSI LUAR`, paket Al Faiz, ebook) — dianalisis, tidak disalin.

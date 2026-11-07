@@ -23,7 +23,7 @@ Claude milik kontributor juga wajib menulis ke dua file ini, bukan hanya ke memo
 ```
 
 ## Pemeriksaan otomatis
-Setiap push atau usulan perubahan (pull request) diperiksa: bila `kontributor/<username>/LOG.md` tidak ikut berubah, pemeriksaan **gagal (tanda merah)** dan perubahan tidak digabung oleh Gusti.
+Setiap push ke `main` (atau usulan perubahan) diperiksa: bila `kontributor/<username>/LOG.md` tidak ikut berubah, pemeriksaan **gagal (tanda merah)** dan tercatat atas nama pengirimnya. Perbaiki dengan push susulan yang mengisi LOG.
 
 Perubahan besar (engine naik versi, paket baru, aturan baru) juga dicatat satu baris di [`CHANGELOG.md`](../CHANGELOG.md).
 

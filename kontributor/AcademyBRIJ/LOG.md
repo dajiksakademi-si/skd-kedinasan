@@ -7,3 +7,9 @@
 - Status: selesai. Berikut: kerjakan tugas pertama sesuai arahan Badrun.
 
 - Catat: penugasan dari Gusti — Badrun menyempurnakan core engine + skill skd-expert dan membuat/generate soal SKD 2026/2027 (tercatat di memory.md). Status: belum mulai; menunggu arahan Badrun untuk tugas pertama.
+
+## 2026-11-07 (persiapan perangkat)
+- Cek: 8 skill proyek di `.claude/skills/` terbaca semua (skd-expert, skd-belajar, dajiks-handbook, impeccable, ui-ux-pro-max, emil-design-eng, taste-skill, markitdown).
+- Cek: plugin ponytail + superpowers sudah tercantum di `.claude/settings.json`, tetapi belum terpasang di perangkat ini; perintah `/plugin` tidak tersedia di lingkungan Claude yang dipakai.
+- Belum: `cek.py --selftest`, `markitdown`, `npm install` — Python dan Node.js belum terpasang di perangkat ini (hanya pintasan Microsoft Store). Berikut: pasang Python dan Node.js, lalu ulangi tiga langkah itu.
+- Status: sebagian selesai.

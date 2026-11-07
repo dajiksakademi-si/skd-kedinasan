@@ -13,3 +13,8 @@
 - Cek: plugin ponytail + superpowers sudah tercantum di `.claude/settings.json`, tetapi belum terpasang di perangkat ini; perintah `/plugin` tidak tersedia di lingkungan Claude yang dipakai.
 - Belum: `cek.py --selftest`, `markitdown`, `npm install` — Python dan Node.js belum terpasang di perangkat ini (hanya pintasan Microsoft Store). Berikut: pasang Python dan Node.js, lalu ulangi tiga langkah itu.
 - Status: sebagian selesai.
+- Pasang (winget): Python 3.12.10; Node.js LTS (v26.13.0, npm 11.20.0) ternyata sudah ada, hanya belum terbaca di PATH sesi.
+- Selesai: `npm install` (folder `node_modules` ada). Catatan: npm menahan skrip pasang puppeteer (unduh Chrome) sampai disetujui lewat `npm install-scripts approve puppeteer`; belum dijalankan karena mengubah file di luar folder ini. Dibutuhkan hanya untuk cetak PDF.
+- Selesai: `markitdown` 0.1.9 terpasang (pip).
+- Gagal: `cek.py --selftest` di Windows — `cek.py` baris 83 membuat folder bernama berakhiran spasi ("folder spasi "), tidak sah di Windows, sehingga FileNotFoundError. Bukan salah perangkat; perlu perbaikan `cek.py` oleh Gusti atau atas izinnya. File tidak diubah.
+- Status: persiapan selesai kecuali selftest cek.py dan unduhan Chrome puppeteer.

@@ -1,6 +1,6 @@
 # Aturan tetap (dengan alasan)
 
-Path relatif ke root bahan `PROJECT SKD KEDINASAN /BIG DATA/`. Folder TWK berakhiran spasi: `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI /`.
+Path relatif ke root bahan `PROJECT SKD KEDINASAN /BIG DATA/`. Nama folder TWK dulu berakhiran spasi; spasi itu sudah dihapus (`CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI/`).
 
 ## A. Perilaku (dari CLAUDE.md global Gusti)
 - A-1 Jujur langsung, tanpa hedging; bilang "tidak paham"/"tidak bisa" bila memang begitu.
@@ -14,14 +14,14 @@ Path relatif ke root bahan `PROJECT SKD KEDINASAN /BIG DATA/`. Folder TWK berakh
 
 ## B. Semua subtes
 - B-1 **Satu kunci, dan hanya satu.** Uji setiap opsi, bukan hanya kunci. Opsi yang benar secara harfiah (walau "bukan maksudnya") = soal cacat. Sumber: `GENERATE SOAL TERBARU SKD 2026/CLAUDE.md`
-- B-2 **Gerbang 3 (uji satu kalimat) adalah gerbang terpenting.** Alasan menjatuhkan distraktor terkuat harus berupa aturan yang bisa dipakai peserta. "Belum menjamin", "kurang lengkap", "tidak disebutkan" bukan alasan — *diam bukan kegagalan semantik*. Gagal → tulis ulang dari nol. Alasan: 6 dari 23 soal paket rujukan (Paket 15 TWK-2026SL) gagal di sini; peserta pintar justru terjebak (daya beda negatif). Sumber: `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI /MR_BADRUN_TWK_ENGINE.md`
+- B-2 **Gerbang 3 (uji satu kalimat) adalah gerbang terpenting.** Alasan menjatuhkan distraktor terkuat harus berupa aturan yang bisa dipakai peserta. "Belum menjamin", "kurang lengkap", "tidak disebutkan" bukan alasan — *diam bukan kegagalan semantik*. Gagal → tulis ulang dari nol. Alasan: 6 dari 23 soal paket rujukan (Paket 15 TWK-2026SL) gagal di sini; peserta pintar justru terjebak (daya beda negatif). Sumber: `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI/MR_BADRUN_TWK_ENGINE.md`
 - B-3 Kunci tidak boleh ketebak dari bentuk (terpanjang, paling lengkap, satu-satunya "A dan B"/"sekaligus"/"lalu"/"kemudian"/"setelah itu"/"dan" + me-). TKP: panjang diukur sebagai sebaran per paket (engine TKP v1.3 Pilar 4 no. 2). Bila kunci butuh dua komponen → minimal dua opsi berpola dua-komponen (satu asli, satu semu).
   - Alasan (putusan Gusti 2026-10-27, riset `HANDBOOK TKP D AJIKS AKADEMI/reports/Riset fondasi TKP 2026.md`): ebook Pejuang Kedinasan TKP — opsi bernilai 5 = opsi terpanjang di **35/35 soal** (hitungan skrip), 14 soal opsi 5 = opsi 4 + satu anak kalimat → bank luar melatih tebak bentuk. Pembanding: 20 contoh detikEdu, terpanjang = kunci hanya 3/20 → rumus bentuk tidak berlaku lintas bank. Riset tes penilaian situasi (Cullen dkk. 2006, abstrak): aturan "hindari ekstrem" menaikkan skor > 1 SD di satu tes, arahnya berbalik di tes lain (angka penurunan BELUM DIVERIFIKASI, jangan dikutip). Karena itu bahan ajar D'Ajiks mengajar kaidah isi, bukan rumus bentuk.
 - B-4 Kunci A–E seimbang, tidak berpola (TWK 4–7 per 30 soal, TKP 4–8 per 30; maks 25% satu huruf).
 - B-5 Pengecoh dari kesalahan nalar/hitung nyata, bukan acak atau absurd.
 - B-6 Tidak menyebut nama orang/partai/lembaga nyata dalam skenario pelanggaran; tanpa SARA, politik praktis, kasus yang masih bersengketa.
 - B-7 Variasi bahasa: bunyi stem/opsi tidak boleh sama antarsoal; tampilan soal bervariasi (tabel, cerita, nota, sketsa). Sumber: `GENERATE SOAL TERBARU SKD 2026/memory.md`
-- B-8 Hasil Claude = draf. Audit mandiri Claude bukan pengganti reviu ahli, uji coba peserta, dan proofread manusia. Sumber: `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI /CLAUDE-HANDOFF.md`
+- B-8 Hasil Claude = draf. Audit mandiri Claude bukan pengganti reviu ahli, uji coba peserta, dan proofread manusia. Sumber: `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI/CLAUDE-HANDOFF.md`
 - B-9 Jangan mengubah butir yang sudah lulus audit tanpa bukti cacat.
 - B-10 Bahan pihak luar (Pejuang Kedinasan, Al Faiz, bimbel lain) **dianalisis, tidak disalin** ke bank/paket D'Ajiks; tidak meniru nama/merek mereka. Soal kita ditulis ulang dari nol dengan konteks sendiri. Simpan di `REFERENSI LUAR/`.
 - B-12 **Tata bahasa stem dicek script, bukan mata.** Sisipan aposisi setelah "Anda" yang didahului keterangan waktu/aspek ("Setiap bulan Anda, pendamping …,", "Pagi ini Anda, staf …,", "belum pernah Anda, petugas …, cek") dilarang; tulis "Sebagai <jabatan>, … Anda <kerja>". Temuan Gusti di PDF paket 1 TKP (2026-10-26). Validator TKP menolaknya; subtes lain cek manual sampai validatornya ditambah.

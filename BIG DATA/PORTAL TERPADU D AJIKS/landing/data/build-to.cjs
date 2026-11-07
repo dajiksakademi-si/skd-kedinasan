@@ -2,7 +2,7 @@
 const fs = require('fs'), path = require('path');
 const B = '/Users/gustiputuyudawirashana/Downloads/PROJECT SKD KEDINASAN /BIG DATA/';
 const L = B + 'PORTAL TERPADU D AJIKS/landing/';
-const twkRaw = require(B + 'CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI /bank_soal_100.json').soal.slice(0, 30);
+const twkRaw = require(B + 'CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI/bank_soal_100.json').soal.slice(0, 30);
 const twk = twkRaw.map(s => ({ s: 'TWK', t: s.soal, o: s.opsi }));
 const TIUD = B + 'CORE ENGINE GENERATE SOAL TIU D AJIKS AKADEMI/paket/paket-1/';
 const img = p => p.replace(/^img\//, 'assets/tiu-p1/');

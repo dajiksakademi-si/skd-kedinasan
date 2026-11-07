@@ -1,7 +1,7 @@
 # Riset — Al Faiz TWK 3–12 vs MR BADRUN TWK ENGINE v1.3 · 2026-10-25
 
 Sumber asli (berkas dipindah ke Trash 2026-10-27, hasil analisis tercatat di sini): Al Faiz "TRY OUT SKD CASN 2026 – PART 39" (casn.privatalfaiz.id), 10 screenshot, dari `REFERENSI LUAR/AL FAIZ TWK 2026-10-25/soal-03.png` sampai `REFERENSI LUAR/AL FAIZ TWK 2026-10-25/soal-12.png`. Soal + pembahasan; peserta tidak menjawab TWK (grid 1–30 merah "Tidak Dijawab").
-Pembanding: `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI /MR_BADRUN_TWK_ENGINE.md` v1.3 (dibaca penuh: Pilar 1–6, prosedur, Gerbang 1–4, larangan).
+Pembanding: `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI/MR_BADRUN_TWK_ENGINE.md` v1.3 (dibaca penuh: Pilar 1–6, prosedur, Gerbang 1–4, larangan).
 
 Metode: panjang opsi, tumpang-tindih kata stem (tanpa kata fungsi), dan awalan opsi dihitung dengan python. Fakta sejarah/hukum dicek dari pengetahuan umum; yang belum dicek ke teks pasal ditandai.
 

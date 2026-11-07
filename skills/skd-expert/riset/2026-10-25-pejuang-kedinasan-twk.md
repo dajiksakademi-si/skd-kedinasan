@@ -3,7 +3,7 @@
 Sumber:
 - `REFERENSI LUAR/TWK-01 - Kunci  Pembahasan.pdf` (19 hlm): paket 30 soal HOTS, label engine E1–E13, kode Penentu P1–P7, pembahasan per soal.
 - `REFERENSI LUAR/EBOOK PEJUANG KEDINASAN /Ebook TWK Pejuang Kedinasan.pdf` (92 hlm): 9 bab materi + "Trik Menghadapi Soal HOTS" + 71 soal latihan dengan pembahasan singkat.
-- Pembanding: `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI /MR_BADRUN_TWK_ENGINE.md` v1.3; juga riset Al Faiz `riset/2026-10-25-al-faiz-twk.md` (§7 Viracun).
+- Pembanding: `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI/MR_BADRUN_TWK_ENGINE.md` v1.3; juga riset Al Faiz `riset/2026-10-25-al-faiz-twk.md` (§7 Viracun).
 
 Metode:
 - Teks diekstrak `pdftotext -layout`. Soal diurai script: TWK-01 22 soal nilai (no 1–22; 23–30 Bahasa Indonesia tidak diukur); ebook 71 soal.

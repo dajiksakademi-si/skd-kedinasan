@@ -5,10 +5,10 @@ Root bahan: `/Users/gustiputuyudawirashana/Downloads/PROJECT SKD KEDINASAN /BIG 
 ## Engine & pedoman
 | Path | Status sesi 0 |
 |---|---|
-| `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI /MR_BADRUN_TWK_ENGINE.md` | inti (pilar 1–6, prosedur, gerbang, larangan) |
+| `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI/MR_BADRUN_TWK_ENGINE.md` | inti (pilar 1–6, prosedur, gerbang, larangan) |
 | ENGINE_GENERATE_SOAL_TWK.md (gaya Viracun) | **dihapus 2026-10-25** — label E1–E8 kini Lampiran MR BADRUN v1.4 |
-| `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI /CLAUDE-HANDOFF.md` | inti (status, temuan audit, rujukan resmi) |
-| ~~`CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI /PANDUAN_MURID_TWK.md`~~ | dipindah ke Trash 2026-10-28, digantikan Handbook TWK |
+| `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI/CLAUDE-HANDOFF.md` | inti (status, temuan audit, rujukan resmi) |
+| ~~`CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI/PANDUAN_MURID_TWK.md`~~ | dipindah ke Trash 2026-10-28, digantikan Handbook TWK |
 | `HANDBOOK TWK D AJIKS AKADEMI/src/` + `reports/Riset fondasi TWK 2026.md` | penuh — landasan mengajar + fakta TWK (2026-10-28) |
 | `CORE ENGINE GENERATE SOAL TKP D AJIKS AKADEMI/ENGINE_GENERATE_SOAL_TKP.md` | inti (filosofi, pilar 1–6) — prosedur & gerbang belum |
 | `CORE ENGINE GENERATE SOAL TKP D AJIKS AKADEMI/PROJECT_MEMORY.md` | inti (standar HOTS, terminologi, paket 80) — blok feedback 27–29 Agustus belum rinci |
@@ -20,9 +20,9 @@ Root bahan: `/Users/gustiputuyudawirashana/Downloads/PROJECT SKD KEDINASAN /BIG 
 ## Bank / paket
 | Path | Status |
 |---|---|
-| `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI /bank_soal_100.json` | penuh (101 butir v1.5, direvisi 2026-10-25) |
-| `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI /bank_soal.json`, `bank_soal_gabungan_35.json` | belum |
-| `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI /FILE SOAL TWK.txt` | belum |
+| `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI/bank_soal_100.json` | penuh (101 butir v1.5, direvisi 2026-10-25) |
+| `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI/bank_soal.json`, `bank_soal_gabungan_35.json` | belum |
+| `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI/FILE SOAL TWK.txt` | belum |
 | `CORE ENGINE GENERATE SOAL TKP D AJIKS AKADEMI/Bank_Soal_TKP_HOTS_80.html` | belum (status dari PROJECT_MEMORY) |
 | `CORE ENGINE GENERATE SOAL TKP D AJIKS AKADEMI/SOAL TKP.txt` + `doc (1).txt` + `doc-v2.txt` | belum |
 | `GENERATE SOAL TERBARU SKD 2026/js/bank-soal.js` | belum |
@@ -40,13 +40,13 @@ Root bahan: `/Users/gustiputuyudawirashana/Downloads/PROJECT SKD KEDINASAN /BIG 
 | `REFERENSI LUAR/EBOOK PEJUANG KEDINASAN /Ebook TIU Numerik Pejuang Kedinasan.pdf` | 64 | struktur + tata letak dibaca 2026-10-29 → `riset/2026-10-29-pejuang-kedinasan-tiu.md`; soal belum dianalisis |
 | `REFERENSI LUAR/EBOOK PEJUANG KEDINASAN /Ebook TKP Pejuang Kedinasan.pdf` | 52 | belum |
 | `GENERATE SOAL TERBARU SKD 2026/Modul Soal SKD BKN & Psikotes POLRI Kedinasan 2026.pdf` | 10 | penuh (sesi 1): TIU numerik + silogisme pihak ketiga, mutu rendah → `riset/sesi-01.md` |
-| `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI /Paket 15 TWK-2026SL - Salin.pdf` | 4 | belum (dirangkum di engine) |
-| `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI /Bank Soal TWK DAJIKS 100 - Draf Reviu Ahli.pdf` | 105 | belum (arsip v1.3) |
-| `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI /Bank Soal TWK DAJIKS 101 v1.5 - 3 Paket.pdf` | 195 | dibuat 2026-10-25 dari paket_twk_{1,2,3}.json |
-| `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI /Paket Uji TWK HOTS - MR BADRUN ENGINE.pdf` | 5 | belum |
+| `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI/Paket 15 TWK-2026SL - Salin.pdf` | 4 | belum (dirangkum di engine) |
+| `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI/Bank Soal TWK DAJIKS 100 - Draf Reviu Ahli.pdf` | 105 | belum (arsip v1.3) |
+| `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI/Bank Soal TWK DAJIKS 101 v1.5 - 3 Paket.pdf` | 195 | dibuat 2026-10-25 dari paket_twk_{1,2,3}.json |
+| `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI/Paket Uji TWK HOTS - MR BADRUN ENGINE.pdf` | 5 | belum |
 
 ## Aplikasi
-- `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI /cat-twk-app/`, `CORE ENGINE GENERATE SOAL TKP D AJIKS AKADEMI/cat-tkp-app/` (Vite + Tailwind, ada `.vercel` dan `.env.local` — **jangan baca/sebar isi .env.local**).
+- `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI/cat-twk-app/`, `CORE ENGINE GENERATE SOAL TKP D AJIKS AKADEMI/cat-tkp-app/` (Vite + Tailwind, ada `.vercel` dan `.env.local` — **jangan baca/sebar isi .env.local**).
 - `GENERATE SOAL TERBARU SKD 2026/` = CAT deret tabel (GitHub Pages).
 
 ## Peta kekuatan vs celah (sesi 0)

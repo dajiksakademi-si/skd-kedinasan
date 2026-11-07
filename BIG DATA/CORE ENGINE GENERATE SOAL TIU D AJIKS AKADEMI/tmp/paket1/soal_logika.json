@@ -1,0 +1,449 @@
+[
+ {
+  "no": 46,
+  "keluarga": "KCK",
+  "soal": "Di sebuah toko alat tulis, setiap map dijual dengan harga yang sama dan setiap spidol juga dijual dengan harga yang sama. Berapa harga 5 map dan 5 spidol?",
+  "pernyataan": [
+   "Harga 2 map dan 2 spidol adalah Rp18.000.",
+   "Harga satu map Rp3.000 lebih mahal daripada harga satu spidol."
+  ],
+  "kalimat_kunci": "5 map dan 5 spidol",
+  "opsi": {
+   "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+   "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+   "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+   "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+   "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+  },
+  "kunci": "A",
+  "jebakan": {
+   "B": "harga selisih dikira cukup",
+   "C": "mengira harga satuan map dan spidol harus diketahui",
+   "D": "(2) dikira cukup sendiri",
+   "E": "tidak melihat bahwa 5 map + 5 spidol = 2,5 × (2 map + 2 spidol)"
+  },
+  "bukti": {
+   "c1": true,
+   "c2": false,
+   "c12": true,
+   "tidakCukup1": null,
+   "tidakCukup2": [
+    [
+     "{\"m\":3500,\"s\":500}",
+     20000
+    ],
+    [
+     "{\"m\":4000,\"s\":1000}",
+     25000
+    ]
+   ]
+  }
+ },
+ {
+  "no": 47,
+  "keluarga": "KCK",
+  "soal": "Sebuah truk BPBD dengan batas muatan 5.000 kg akan mengangkut karung beras bantuan dalam satu kali jalan. Apakah seluruh karung dapat diangkut tanpa melebihi batas muatan truk?",
+  "pernyataan": [
+   "Jumlah karung beras yang akan diangkut adalah 110 karung.",
+   "Karung terberat beratnya 48 kg dan karung teringan beratnya 40 kg."
+  ],
+  "kalimat_kunci": "karung terberat … karung teringan",
+  "opsi": {
+   "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+   "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+   "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+   "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+   "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+  },
+  "kunci": "E",
+  "jebakan": {
+   "A": "jumlah karung dikira cukup",
+   "B": "berat karung dikira cukup",
+   "C": "semua karung dianggap seberat karung terberat (atau teringan)",
+   "D": "masing-masing pernyataan dikira cukup"
+  },
+  "bukti": {
+   "c1": false,
+   "c2": false,
+   "c12": false,
+   "tidakCukup1": [
+    [
+     "{\"n\":110,\"mn\":38,\"mx\":44,\"tot\":4834}",
+     true
+    ],
+    [
+     "{\"n\":110,\"mn\":45,\"mx\":50,\"tot\":5495}",
+     false
+    ]
+   ],
+   "tidakCukup2": [
+    [
+     "{\"n\":120,\"mn\":40,\"mx\":48,\"tot\":5000}",
+     true
+    ],
+    [
+     "{\"n\":120,\"mn\":40,\"mx\":48,\"tot\":5752}",
+     false
+    ]
+   ]
+  }
+ },
+ {
+  "no": 48,
+  "keluarga": "KCK",
+  "soal": "Sebuah konveksi menerima satu pesanan seragam dan menugaskan 6 penjahit untuk mengerjakannya. Semua penjahit di konveksi itu bekerja dengan kecepatan yang sama. Apakah pesanan tersebut selesai dalam waktu paling lama 4 hari?",
+  "pernyataan": [
+   "10 penjahit konveksi itu dapat menyelesaikan pesanan yang sama dalam 3 hari.",
+   "Setiap penjahit menyelesaikan 12 seragam per hari."
+  ],
+  "kalimat_kunci": "menugaskan 6 penjahit",
+  "opsi": {
+   "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+   "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+   "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+   "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+   "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+  },
+  "kunci": "A",
+  "jebakan": {
+   "B": "kecepatan per penjahit dikira cukup tanpa banyak seragam",
+   "C": "mengira kecepatan per penjahit juga perlu",
+   "D": "(2) dikira cukup sendiri",
+   "E": "menghitung searah: lebih sedikit penjahit dikira lebih cepat, lalu ragu"
+  },
+  "bukti": {
+   "c1": true,
+   "c2": false,
+   "c12": true,
+   "tidakCukup1": null,
+   "tidakCukup2": [
+    [
+     "{\"kerja\":24,\"laju\":12,\"seragam\":288}",
+     true
+    ],
+    [
+     "{\"kerja\":60,\"laju\":12,\"seragam\":720}",
+     false
+    ]
+   ]
+  }
+ },
+ {
+  "no": 49,
+  "keluarga": "KCK",
+  "soal": "Seleksi tahap akhir diikuti 84 peserta yang terdiri atas peserta putra dan peserta putri. Berapa banyak peserta putri?",
+  "pernyataan": [
+   "Perbandingan banyak peserta putra dan putri adalah 4 : 3.",
+   "Banyak peserta putra 12 orang lebih banyak daripada peserta putri."
+  ],
+  "kalimat_kunci": "84 peserta",
+  "opsi": {
+   "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+   "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+   "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+   "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+   "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+  },
+  "kunci": "D",
+  "jebakan": {
+   "A": "berhenti di (1) tanpa memeriksa (2)",
+   "B": "berhenti di (2) tanpa memeriksa (1)",
+   "C": "mengira keduanya harus digabung",
+   "E": "lupa total 84 tertulis di soal"
+  },
+  "bukti": {
+   "c1": true,
+   "c2": true,
+   "c12": true,
+   "tidakCukup1": null,
+   "tidakCukup2": null
+  }
+ },
+ {
+  "no": 50,
+  "keluarga": "KCK",
+  "soal": "Berapa harga satu kilogram cabai pada awal bulan?",
+  "pernyataan": [
+   "Pada pertengahan bulan, harga cabai naik 15% dari harga awal bulan.",
+   "Pada akhir bulan, harga cabai Rp55.000 per kilogram, yaitu 25% lebih tinggi daripada harga awal bulan."
+  ],
+  "kalimat_kunci": "25% lebih tinggi daripada harga awal bulan",
+  "opsi": {
+   "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+   "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+   "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+   "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+   "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+  },
+  "kunci": "B",
+  "jebakan": {
+   "A": "persen kenaikan dikira cukup tanpa harga",
+   "C": "mengira harga pertengahan bulan perlu",
+   "D": "(1) dikira cukup",
+   "E": "mengira persen dari harga awal yang belum diketahui tidak bisa dihitung balik"
+  },
+  "bukti": {
+   "c1": false,
+   "c2": true,
+   "c12": true,
+   "tidakCukup1": [
+    [
+     "{\"awal\":20000,\"naik1\":15,\"naik2\":30,\"akhir\":26000}",
+     20000
+    ],
+    [
+     "{\"awal\":20500,\"naik1\":15,\"naik2\":30,\"akhir\":26650}",
+     20500
+    ]
+   ],
+   "tidakCukup2": null
+  }
+ },
+ {
+  "no": 51,
+  "keluarga": "KCK",
+  "soal": "<i>n</i> adalah bilangan bulat positif. Apakah <i>n</i> habis dibagi 12?",
+  "pernyataan": [
+   "<i>n</i> habis dibagi 4.",
+   "<i>n</i> habis dibagi 6."
+  ],
+  "kalimat_kunci": "habis dibagi 12",
+  "opsi": {
+   "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+   "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+   "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+   "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+   "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+  },
+  "kunci": "C",
+  "jebakan": {
+   "A": "(1) dikira cukup karena 12 kelipatan 4",
+   "B": "(2) dikira cukup karena 12 kelipatan 6",
+   "D": "masing-masing dikira cukup",
+   "E": "mengira syaratnya habis dibagi 4 × 6 = 24, atau nilai n harus diketahui"
+  },
+  "bukti": {
+   "c1": false,
+   "c2": false,
+   "c12": true,
+   "tidakCukup1": [
+    [
+     "{\"n\":1196}",
+     false
+    ],
+    [
+     "{\"n\":1200}",
+     true
+    ]
+   ],
+   "tidakCukup2": [
+    [
+     "{\"n\":1194}",
+     false
+    ],
+    [
+     "{\"n\":1200}",
+     true
+    ]
+   ]
+  }
+ },
+ {
+  "no": 52,
+  "keluarga": "KCK",
+  "soal": "Kelas XI-B memiliki dua kegiatan ekstrakurikuler, yaitu paduan suara dan basket. Setiap siswa boleh mengikuti salah satu kegiatan, keduanya, atau tidak mengikuti keduanya. Berapa banyak siswa yang mengikuti paduan suara sekaligus basket?",
+  "pernyataan": [
+   "Sebanyak 18 siswa mengikuti paduan suara dan 15 siswa mengikuti basket.",
+   "Kelas XI-B terdiri atas 30 siswa."
+  ],
+  "kalimat_kunci": "atau tidak mengikuti keduanya",
+  "opsi": {
+   "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+   "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+   "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+   "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+   "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+  },
+  "kunci": "E",
+  "jebakan": {
+   "A": "(1) dikira cukup",
+   "B": "(2) dikira cukup",
+   "C": "menganggap setiap siswa ikut minimal satu kegiatan (18 + 15 − 30 = 3)",
+   "D": "masing-masing dikira cukup"
+  },
+  "bukti": {
+   "c1": false,
+   "c2": false,
+   "c12": false,
+   "tidakCukup1": [
+    [
+     "{\"kelas\":36,\"ps\":18,\"bs\":15,\"dua\":8}",
+     8
+    ],
+    [
+     "{\"kelas\":36,\"ps\":18,\"bs\":15,\"dua\":9}",
+     9
+    ]
+   ],
+   "tidakCukup2": [
+    [
+     "{\"kelas\":30,\"ps\":18,\"bs\":12,\"dua\":1}",
+     1
+    ],
+    [
+     "{\"kelas\":30,\"ps\":20,\"bs\":12,\"dua\":2}",
+     2
+    ]
+   ]
+  }
+ },
+ {
+  "no": 53,
+  "keluarga": "ANA",
+  "soal": "Lima regu siaga bencana, yaitu Anggrek, Bakung, Cempaka, Dahlia, dan Kenanga, mempresentasikan rencana kerja pada hari Senin sampai Jumat. Setiap hari hanya satu regu yang tampil, dan setiap regu membawakan satu topik yang berbeda: banjir, gempa, kebakaran, longsor, atau puting beliung. Ketentuannya sebagai berikut.",
+  "perintah": "Pernyataan berikut yang pasti benar adalah …",
+  "syarat": [
+   "Cempaka tampil tepat sehari setelah Anggrek.",
+   "Regu yang membawakan topik gempa tampil pada hari Rabu.",
+   "Kenanga membawakan topik longsor dan tampil lebih awal daripada Bakung.",
+   "Topik banjir dibawakan tepat sehari sebelum topik kebakaran.",
+   "Anggrek tidak membawakan topik gempa maupun banjir."
+  ],
+  "opsi": {
+   "A": "Bakung tampil pada hari Kamis.",
+   "B": "Dahlia membawakan topik banjir.",
+   "C": "Kenanga tampil pada hari Senin.",
+   "D": "Cempaka membawakan topik gempa.",
+   "E": "Anggrek membawakan topik kebakaran."
+  },
+  "jebakan": {
+   "A": "susunan yang mungkin dianggap pasti",
+   "B": "susunan yang mungkin dianggap pasti",
+   "C": "susunan yang mungkin dianggap pasti",
+   "D": null,
+   "E": "susunan yang mungkin dianggap pasti"
+  },
+  "kunci": "D",
+  "bukti": {
+   "susunanSah": 3
+  }
+ },
+ {
+  "no": 54,
+  "keluarga": "ANA",
+  "soal": "Enam petugas piket, yaitu Fajar, Gita, Hasan, Indah, Joko, dan Lina, duduk mengelilingi sebuah meja bundar dengan enam kursi berjarak sama. Semua petugas duduk menghadap ke tengah meja. Ketentuannya sebagai berikut.",
+  "perintah": "Petugas yang duduk tepat di hadapan Hasan adalah …",
+  "syarat": [
+   "Gita duduk tepat di sebelah kanan Fajar.",
+   "Indah duduk tepat di hadapan Gita.",
+   "Joko duduk tepat di sebelah kiri Indah."
+  ],
+  "opsi": {
+   "A": "Fajar",
+   "B": "Lina",
+   "C": "Gita",
+   "D": "Indah",
+   "E": "Joko"
+  },
+  "jebakan": {
+   "A": "hadapan dihitung dua kursi, bukan tiga",
+   "B": null,
+   "C": "petugas di sebelah dikira berhadapan",
+   "D": "hadapan dihitung dua kursi, bukan tiga",
+   "E": "kiri dan kanan tertukar hanya di ketentuan Joko"
+  },
+  "kunci": "B",
+  "bukti": {
+   "susunanSah": 2
+  }
+ },
+ {
+  "no": 55,
+  "keluarga": "ANA",
+  "soal": "Enam kapal, yaitu Kapal P, Q, R, S, T, dan U, tiba di sebuah pelabuhan pada hari yang sama secara bergantian, dan tidak ada dua kapal yang tiba bersamaan. Ketentuannya sebagai berikut.",
+  "perintah": "Pernyataan berikut yang pasti benar adalah …",
+  "syarat": [
+   "Kapal P tiba sebelum Kapal Q dan sebelum Kapal R.",
+   "Kapal S tiba setelah Kapal R, tetapi sebelum Kapal T.",
+   "Kapal U tiba setelah Kapal Q.",
+   "Kapal T bukan kapal yang tiba paling akhir."
+  ],
+  "opsi": {
+   "A": "Kapal Q tiba kedua.",
+   "B": "Kapal R tiba sebelum Kapal Q.",
+   "C": "Kapal T tiba kelima.",
+   "D": "Kapal U tiba paling akhir.",
+   "E": "Kapal S tiba ketiga."
+  },
+  "jebakan": {
+   "A": "urutan sebagian dianggap urutan penuh",
+   "B": "susunan yang mungkin dianggap pasti",
+   "C": "urutan sebagian dianggap urutan penuh",
+   "D": null,
+   "E": "urutan sebagian dianggap urutan penuh"
+  },
+  "kunci": "D",
+  "bukti": {
+   "susunanSah": 4
+  }
+ },
+ {
+  "no": 56,
+  "keluarga": "OPT",
+  "soal": "Panitia pelatihan memesan paling sedikit 130 nasi kotak dari sebuah katering. Katering hanya menjual nasi kotak dalam paket berikut.",
+  "tabel": [
+   [
+    "Paket",
+    "Isi (kotak)",
+    "Harga per paket"
+   ],
+   [
+    "Paket Melati",
+    20,
+    "Rp380.000"
+   ],
+   [
+    "Paket Mawar",
+    35,
+    "Rp595.000"
+   ],
+   [
+    "Paket Teratai",
+    50,
+    "Rp800.000"
+   ]
+  ],
+  "perintah": "Biaya paling sedikit yang harus dikeluarkan panitia adalah …",
+  "opsi": {
+   "A": "Rp1.980.000",
+   "B": "Rp2.080.000",
+   "C": "Rp2.195.000",
+   "D": "Rp2.320.000",
+   "E": "Rp2.400.000"
+  },
+  "jebakan": {
+   "A": "kombinasi kurang dari 130 kotak (120 kotak)",
+   "B": "harga per kotak termurah dikali 130, padahal kotak tidak dijual satuan",
+   "C": null,
+   "D": "memaksakan jumlah tepat 130 kotak",
+   "E": "hanya membeli paket dengan harga per kotak termurah (Teratai)"
+  },
+  "kunci": "C",
+  "bukti": {
+   "terbaik": {
+    "a": 0,
+    "b": 1,
+    "c": 2,
+    "isi": 135,
+    "biaya": 2195000
+   },
+   "tepat": {
+    "a": 4,
+    "b": 0,
+    "c": 1,
+    "isi": 130,
+    "biaya": 2320000
+   }
+  }
+ }
+]

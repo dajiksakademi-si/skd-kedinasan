@@ -1,0 +1,128 @@
+[
+ {
+  "no": 31,
+  "keluarga": "ARG",
+  "soal": "Dinas perhubungan memasang lampu penerangan baru di Jalan Lingkar Timur. Jumlah kecelakaan pada malam hari di jalan itu turun dari 24 kejadian pada tahun sebelum pemasangan menjadi 9 kejadian pada tahun sesudahnya. Kepala dinas menyimpulkan bahwa lampu penerangan baru itulah yang menurunkan kecelakaan pada malam hari.",
+  "perintah": "Pernyataan berikut yang paling memperkuat kesimpulan tersebut adalah …",
+  "opsi": {
+   "A": "Jumlah kendaraan yang melintas di jalan itu pada malam hari sama besar pada kedua tahun tersebut.",
+   "B": "Lampu penerangan baru itu membutuhkan anggaran lebih besar daripada lampu yang lama.",
+   "C": "Kecelakaan pada malam hari di jalan itu memang berkurang setelah lampu baru dipasang.",
+   "D": "Jalan Lingkar Timur merupakan jalur yang paling sering dilalui truk pengangkut barang.",
+   "E": "Pada periode yang sama, kecelakaan pada siang hari di jalan itu juga turun dengan jumlah yang hampir sama."
+  },
+  "kunci": "A",
+  "jebakan": {
+   "B": "relevan dengan topik, tetapi tidak menyentuh hubungan sebab",
+   "C": "hanya mengulang isi kesimpulan",
+   "D": "relevan dengan topik, tetapi tidak menyentuh hubungan sebab",
+   "E": "justru memperlemah: ada penyebab lain yang menurunkan kecelakaan siang dan malam"
+  },
+  "kalimat_kunci": "lampu penerangan baru itulah yang menurunkan"
+ },
+ {
+  "no": 32,
+  "keluarga": "SIL",
+  "soal": "Anggap semua premis berikut benar.<br>P1: Semua penyelam tim SAR adalah peserta yang telah lulus uji renang 400 meter.<br>P2: Tidak ada peserta yang lulus uji renang 400 meter yang berusia di bawah 18 tahun.",
+  "perintah": "Kesimpulan yang pasti benar adalah …",
+  "opsi": {
+   "A": "Semua peserta yang lulus uji renang 400 meter adalah penyelam tim SAR.",
+   "B": "Sebagian penyelam tim SAR berusia di bawah 18 tahun.",
+   "C": "Semua orang yang berusia 18 tahun ke atas adalah penyelam tim SAR.",
+   "D": "Tidak ada penyelam tim SAR yang berusia di bawah 18 tahun.",
+   "E": "Tidak ada peserta berusia di bawah 18 tahun yang mengikuti uji renang 400 meter."
+  },
+  "kunci": "D",
+  "jebakan": {
+   "A": "P1 dibalik arahnya",
+   "B": "bertentangan dengan gabungan P1 dan P2",
+   "E": "'tidak lulus' dibaca 'tidak mengikuti', melampaui premis",
+   "C": "P1 dan P2 dibalik sekaligus"
+  },
+  "kalimat_kunci": "lulus uji renang 400 meter"
+ },
+ {
+  "no": 33,
+  "keluarga": "ARG",
+  "soal": "Sebuah sekolah membuka kelas daring pada malam hari untuk siswa kelas XII. Satu semester kemudian, rata-rata nilai ujian matematika siswa kelas XII naik dari 68 menjadi 79. Kepala sekolah menyimpulkan bahwa kelas daring malam itulah yang menaikkan nilai siswa.",
+  "perintah": "Pernyataan berikut yang paling memperlemah kesimpulan tersebut adalah …",
+  "opsi": {
+   "A": "Sebagian besar siswa kelas XII mengikuti kelas daring malam itu secara rutin.",
+   "B": "Nilai ujian matematika siswa kelas XII naik setelah kelas daring malam dibuka.",
+   "C": "Kelas daring malam juga dibuka untuk mata pelajaran bahasa Inggris.",
+   "D": "Beberapa orang tua mengeluhkan jadwal kelas daring malam yang berakhir terlalu larut bagi anak mereka.",
+   "E": "Pada semester yang sama, soal ujian matematika diganti dengan soal yang lebih mudah."
+  },
+  "kunci": "E",
+  "jebakan": {
+   "A": "justru memperkuat kesimpulan",
+   "B": "hanya mengulang data di soal",
+   "C": "tidak menyentuh hubungan sebab",
+   "D": "menyerang hal di luar kesimpulan (jadwal), bukan pengaruhnya pada nilai"
+  },
+  "kalimat_kunci": "kelas daring malam itulah yang menaikkan"
+ },
+ {
+  "no": 34,
+  "keluarga": "SIL",
+  "soal": "Anggap semua premis berikut benar.<br>P1: Jika gudang logistik dibuka, relawan dapat mengambil terpal.<br>P2: Jika relawan dapat mengambil terpal, tenda darurat berdiri sebelum malam.<br>P3: Tenda darurat tidak berdiri sebelum malam.",
+  "perintah": "Kesimpulan yang pasti benar adalah …",
+  "opsi": {
+   "A": "Gudang logistik dibuka, tetapi persediaan terpal sudah habis.",
+   "B": "Gudang logistik tidak dibuka.",
+   "C": "Relawan dapat mengambil terpal.",
+   "D": "Relawan mungkin mengambil terpal dari posko lain.",
+   "E": "Tenda darurat berdiri setelah malam tiba."
+  },
+  "kunci": "B",
+  "jebakan": {
+   "A": "menambah keterangan yang tidak ada di premis",
+   "C": "berlawanan dengan P2 dan P3",
+   "D": "kata 'mungkin' tidak bisa dipastikan dari premis",
+   "E": "'tidak berdiri sebelum malam' dibaca 'berdiri setelah malam'"
+  },
+  "kalimat_kunci": "tidak berdiri sebelum malam"
+ },
+ {
+  "no": 35,
+  "keluarga": "ANL",
+  "soal": "HIGROMETER : KELEMBAPAN = … : …",
+  "perintah": "Pasangan kata yang tepat untuk melengkapi analogi tersebut adalah …",
+  "opsi": {
+   "A": "BAROMETER : CUACA",
+   "B": "TERMOMETER : DEMAM",
+   "C": "SUHU : TERMOMETER",
+   "D": "MIKROSKOP : SEL DARAH",
+   "E": "AMPEREMETER : KUAT ARUS"
+  },
+  "kunci": "E",
+  "jebakan": {
+   "A": "konsep mirip tapi beda: barometer mengukur tekanan udara, bukan cuaca",
+   "B": "demam adalah keadaan tubuh, bukan besaran yang diukur",
+   "C": "arah hubungannya terbalik",
+   "D": "mikroskop alat untuk melihat, bukan mengukur besaran"
+  },
+  "kalimat_kunci": "alat ukur : besaran yang diukur"
+ },
+ {
+  "no": 36,
+  "keluarga": "ANL",
+  "soal": "Kaktus memiliki daun yang berubah bentuk menjadi duri untuk mengurangi penguapan air.",
+  "perintah": "Hubungan antara ciri tubuh dan tujuannya yang sama dengan pernyataan tersebut ditunjukkan oleh …",
+  "opsi": {
+   "A": "Unta memiliki ginjal yang menghasilkan urin sangat pekat untuk menghemat cairan tubuhnya.",
+   "B": "Landak memiliki duri tajam di sepanjang punggungnya untuk melindungi diri dari serangan pemangsa.",
+   "C": "Bunga bangkai mengeluarkan bau busuk yang menyengat untuk menarik serangga penyerbuk.",
+   "D": "Kura-kura memiliki tempurung yang keras untuk melindungi tubuhnya dari serangan.",
+   "E": "Burung pelikan memiliki kantong kulit di bawah paruhnya untuk menyendok ikan dari air."
+  },
+  "kunci": "A",
+  "jebakan": {
+   "B": "kata 'duri' sama, tetapi tujuannya perlindungan",
+   "C": "tujuannya penyerbukan",
+   "D": "tujuannya perlindungan",
+   "E": "tujuannya mendapat makanan"
+  },
+  "kalimat_kunci": "mengurangi penguapan air (tujuan: menghemat air, bukan organ yang sama)"
+ }
+]

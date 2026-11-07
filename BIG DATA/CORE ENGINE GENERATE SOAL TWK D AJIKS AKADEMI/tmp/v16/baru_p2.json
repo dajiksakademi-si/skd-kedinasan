@@ -1,0 +1,703 @@
+{
+ "meta": {
+  "judul": "TWK D'AJIKS v1.6 — soal baru Paket 2 (TO)",
+  "status": "draf, sebelum cek buta",
+  "tanggal": "2026-10-29"
+ },
+ "soal": [
+  {
+   "id": "DAJ-TWK-119",
+   "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+   "no_urut_sumber": 119,
+   "no_urut_gabungan": 119,
+   "tema": "Pancasila & ideologi",
+   "subtema": "Sila kelima: beban perbaikan sebanding pemakaian",
+   "tipe_kode": "E2",
+   "tipe_nama": "Jangan Pilih yang Terlalu Ekstrem",
+   "kategori_jawaban": "WUJUD",
+   "level_kognitif": "C4",
+   "konstruk_dua_kutub": "pemakaian jalan oleh warga ↔ kerusakan terbesar oleh kendaraan berat",
+   "bentuk_tegangan": "T6",
+   "jangkar_faktual": true,
+   "landasan": [
+    {
+     "kode": "UUD1945",
+     "rujukan": "Pembukaan alinea keempat, sila Keadilan sosial bagi seluruh rakyat Indonesia"
+    }
+   ],
+   "status_kunci": "kuat",
+   "soal": "Jalan desa sepanjang dua kilometer rusak dan akan diperbaiki dengan dana swadaya. Kepala desa mengusulkan iuran yang sama besar untuk setiap kepala keluarga. Jalan itu memang dipakai warga setiap hari, tetapi kerusakan terparah ditimbulkan truk bermuatan berat milik dua pengusaha penggilingan padi. Pembagian iuran yang paling mencerminkan sila kelima Pancasila adalah...",
+   "opsi": {
+    "A": "Menarik iuran yang sama besar dari setiap kepala keluarga di desa itu.",
+    "B": "Meminta kedua pengusaha penggilingan menanggung biaya karena truk mereka paling merusak.",
+    "C": "Membagi biaya rata per kepala keluarga, ditambah kerja bakti warga tiap akhir pekan.",
+    "D": "Meminta tiap pengguna ikut membayar, dengan porsi terbesar bagi angkutan barang.",
+    "E": "Menetapkan besaran iuran lewat suara terbanyak dalam rapat warga desa."
+   },
+   "kunci": "D",
+   "pembahasan": "Yang ditanya: pembagian iuran perbaikan jalan yang paling sesuai dengan sila kelima, Keadilan sosial bagi seluruh rakyat Indonesia. Ada dua fakta di cerita: jalan itu dipakai warga setiap hari, tetapi kerusakan terparah ditimbulkan truk bermuatan berat milik dua pengusaha.\nCara cepat: adil tidak selalu berarti sama rata. Beban dibagi menurut seberapa besar tiap pihak memakai dan merusak jalan. Cari pilihan yang menjawab kedua fakta itu.\nKenapa pilihan lain gugur: A menarik iuran sama besar dari setiap keluarga, mengulang usul kepala desa di soal. Sama rata di sini justru membuat warga ikut menanggung kerusakan yang paling banyak ditimbulkan truk. B membebankan biaya kepada dua pengusaha saja. Fakta kerusakan memang menunjuk mereka, tetapi soal juga menyebut jalan itu dipakai warga setiap hari, jadi cuma menjawab separuh. C tampak menambah sesuatu, yaitu kerja bakti, tetapi beban uangnya tetap sama rata. E membahas cara memutuskan lewat suara terbanyak, bukan isi pembagian yang adil. Jawabannya bukan yang diminta.\nJawaban: D, karena setiap pengguna ikut membayar, sedangkan bagian terbesar ditanggung angkutan barang yang paling merusak jalan.\nAnalogi: tagihan listrik rumah kos dibagi menurut pemakaian. Penghuni yang memakai pendingin ruangan sepanjang hari membayar lebih banyak, tetapi penghuni lain tetap ikut membayar lampu kamarnya.\nJebakan: B terasa paling tegas karena langsung menunjuk pihak yang merusak. Baca lagi kalimat \"dipakai warga setiap hari\"; warga juga pemakai jalan itu.",
+   "analisis_opsi": {
+    "A": "[D5+D4] Mengulang usul kepala desa; sama rata belum tentu adil.",
+    "B": "[D2] Hanya sisi kerusakan; penentu: jalan juga dipakai warga setiap hari.",
+    "C": "[D2] Keseimbangan semu: dua komponen, tetapi beban uang tetap sama rata.",
+    "D": "KUNCI — Semua pemakai menanggung (dipakai warga) dan porsi terbesar pada perusak terberat (truk).",
+    "E": "[D1] Cara memutuskan, bukan pembagian yang adil."
+   },
+   "penentu": "kerusakan terparah ditimbulkan truk bermuatan berat milik dua pengusaha penggilingan padi"
+  },
+  {
+   "id": "DAJ-TWK-120",
+   "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+   "no_urut_sumber": 120,
+   "no_urut_gabungan": 120,
+   "tema": "Pancasila & ideologi",
+   "subtema": "Sila keempat: wakil yang menyalurkan aspirasi",
+   "tipe_kode": "E2",
+   "tipe_nama": "Jangan Pilih yang Terlalu Ekstrem",
+   "kategori_jawaban": "WUJUD",
+   "level_kognitif": "C3",
+   "konstruk_dua_kutub": "menyalurkan usulan warga ke rapat ↔ menjelaskan putusan rapat kepada warga",
+   "bentuk_tegangan": "T6",
+   "jangkar_faktual": true,
+   "landasan": [
+    {
+     "kode": "UUD1945",
+     "rujukan": "Pembukaan alinea keempat, sila Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan"
+    }
+   ],
+   "status_kunci": "kuat",
+   "soal": "Warga sebuah dusun mengeluh kepada wakil dusun mereka di Badan Permusyawaratan Desa. Selama setahun, usulan warga tidak pernah dibahas karena wakil itu datang ke rapat tanpa membawa usulan apa pun. Warga juga tidak tahu alasan di balik keputusan yang diambil dalam rapat. Tindakan wakil dusun yang paling mencerminkan sila keempat Pancasila adalah...",
+   "opsi": {
+    "A": "Menjaring aspirasi sebelum bersidang dan menerangkan dasar putusan sesudahnya.",
+    "B": "Mengumumkan hasil rapat di balai dusun setiap kali keputusan selesai diambil.",
+    "C": "Mengikuti suara terbanyak anggota lain agar keputusan dapat diambil lebih cepat.",
+    "D": "Hadir di setiap rapat tepat waktu dan menandatangani daftar hadir anggota.",
+    "E": "Membawa usulan warga ke rapat dan memperjuangkannya sampai disetujui anggota lain."
+   },
+   "kunci": "A",
+   "pembahasan": "Yang ditanya: tindakan wakil dusun di Badan Permusyawaratan Desa yang paling sesuai dengan sila keempat. Ada dua keluhan warga: usulan mereka tidak pernah dibahas karena wakilnya datang ke rapat tanpa membawa usulan, dan mereka tidak tahu alasan di balik keputusan rapat.\nCara cepat: wakil dalam sila keempat bekerja dua arah. Sebelum rapat ia menampung suara orang yang diwakilinya, sesudah rapat ia menjelaskan hasilnya kepada mereka. Cari pilihan yang menjawab kedua keluhan.\nKenapa pilihan lain gugur: B mengumumkan hasil rapat, tetapi usulan warga tetap tidak dibawa dan alasannya tidak dijelaskan, jadi cuma menjawab separuh. C mengikuti suara terbanyak supaya cepat; itu cara mengambil keputusan, bukan cara mewakili warga. D hadir tepat waktu dan mengisi daftar hadir. Soal justru menyebut ia sudah datang ke rapat, hanya tanpa membawa usulan, jadi ini cuma formalitas. E membawa usulan warga ke rapat, tetapi alasan keputusan tetap tidak sampai ke warga, dan memaksakan usulan sampai disetujui tidak sejalan dengan musyawarah.\nJawaban: A, karena aspirasi dijaring sebelum bersidang dan dasar putusan diterangkan sesudahnya.\nAnalogi: ketua kelas yang ikut rapat OSIS menanyakan dulu keinginan teman sekelasnya, lalu sepulang rapat menjelaskan kenapa usulan kelas diterima atau ditolak.\nJebakan: E tampak paling membela warga. Periksa keluhan kedua: warga tidak tahu alasan keputusan, dan E tidak menjawabnya.",
+   "analisis_opsi": {
+    "A": "KUNCI — Dua penentu: usulan tidak dibawa (menghimpun sebelum sidang) dan alasan tidak diketahui (menerangkan sesudahnya).",
+    "B": "[D2+D5] Hanya sisi kedua; mengumumkan hasil tanpa alasan dan tanpa membawa usulan.",
+    "C": "[D4] Pemungutan suara bukan peran wakil yang menyalurkan aspirasi.",
+    "D": "[D6] Kehadiran formal; penentu menyebut ia sudah hadir tanpa membawa usulan.",
+    "E": "[D2] Keseimbangan semu: dua langkah, keduanya sisi pertama; alasan putusan tetap tidak sampai ke warga."
+   },
+   "penentu": "usulan warga tidak pernah dibahas karena wakil itu datang ke rapat tanpa membawa usulan apa pun"
+  },
+  {
+   "id": "DAJ-TWK-121",
+   "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+   "no_urut_sumber": 121,
+   "no_urut_gabungan": 121,
+   "tema": "Nasionalisme & bela negara",
+   "subtema": "Pencegahan narkoba sebagai bela negara",
+   "tipe_kode": "E1",
+   "tipe_nama": "Cari Akarnya, Bukan Buahnya",
+   "kategori_jawaban": "RELASI",
+   "level_kognitif": "C4",
+   "konstruk_dua_kutub": "program bela negara karang taruna ↔ ancaman narkoba yang nyata di desa",
+   "bentuk_tegangan": "T2",
+   "jangkar_faktual": true,
+   "landasan": [
+    {
+     "kode": "UU23_2019",
+     "rujukan": "Pasal 4 ayat (3): ancaman dapat berwujud peredaran dan penyalahgunaan narkoba; Pasal 5 ayat (1) huruf a: Bela Negara"
+    }
+   ],
+   "status_kunci": "kuat",
+   "soal": "Karang taruna sebuah desa menyusun program bela negara untuk tahun depan. Sebagian pengurus ingin mengadakan upacara dan latihan baris-berbaris, sedangkan pengurus lain ingin membuat penyuluhan narkoba tetapi ragu kegiatan itu termasuk bela negara. Tahun ini belasan pemuda desa tersebut ditangkap karena narkoba. Hubungan pencegahan narkoba dan bela negara paling tepat dipahami sebagai...",
+   "opsi": {
+    "A": "Bela negara menanamkan disiplin yang menjauhkan pemuda dari penyalahgunaan narkoba.",
+    "B": "Pemuda yang bebas narkoba lebih siap mendaftar sebagai anggota komponen cadangan.",
+    "C": "Menangkal narkoba merupakan bela negara karena narkoba tergolong wujud ancaman.",
+    "D": "Penyuluhan narkoba menurunkan angka kejahatan sehingga desa menjadi lebih aman.",
+    "E": "Upacara dan penyuluhan narkoba sama-sama dapat dimasukkan ke program karang taruna."
+   },
+   "kunci": "C",
+   "pembahasan": "Yang ditanya: hubungan pencegahan narkoba dan bela negara. Pengurus ragu penyuluhan narkoba termasuk bela negara, padahal tahun ini belasan pemuda desa itu ditangkap karena narkoba.\nCara cepat: UU 23/2019 Pasal 4 ayat (3) menyebut peredaran dan penyalahgunaan narkoba sebagai salah satu wujud ancaman, dan Pasal 5 menempatkan bela negara sebagai salah satu usaha menghadapinya. Menangkal narkoba berarti ikut membela negara dari ancaman itu.\nKenapa pilihan lain gugur: A membalik arahnya. A menjadikan bela negara sebagai sebab pemuda menjauhi narkoba, padahal yang diragukan pengurus adalah apakah penyuluhan narkoba itu sendiri termasuk bela negara. Konsepnya mirip, tapi beda. B berbicara tentang kesiapan mendaftar komponen cadangan, hal yang tidak disebut soal. D menyebut angka kejahatan turun; itu akibatnya, bukan intinya. E cuma mengulang kata di soal: kedua kegiatan boleh masuk program, tetapi hubungannya tidak dijelaskan.\nJawaban: C, karena narkoba tergolong wujud ancaman, sehingga menangkalnya merupakan bela negara.\nAnalogi: satpam kompleks tidak hanya menjaga gerbang dari maling. Kalau ada kebocoran gas yang membahayakan warga, menanganinya juga bagian dari tugas menjaga keamanan kompleks.\nJebakan: A terdengar bijak dan benar isinya. Tanyakan arah hubungannya: soal mempertanyakan apakah penyuluhan narkoba termasuk bela negara, bukan apa manfaat bela negara bagi pemuda.",
+   "analisis_opsi": {
+    "A": "[D4] Arah hubungan terbalik: bela negara sebagai sebab, bukan pencegahan sebagai bentuk bela negara.",
+    "B": "[D9+D3] Komponen cadangan tidak disebut soal; manfaat turunan.",
+    "C": "KUNCI — UU 23/2019 Ps 4(3): narkoba wujud ancaman; menangkalnya = bela negara.",
+    "D": "[D3] Akibat; tidak menghubungkan dengan bela negara.",
+    "E": "[D5+D1] Mengulang kegiatan di soal; tidak menjelaskan hubungan."
+   },
+   "penentu": "Tahun ini belasan pemuda desa tersebut ditangkap karena narkoba"
+  },
+  {
+   "id": "DAJ-TWK-122",
+   "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+   "no_urut_sumber": 122,
+   "no_urut_gabungan": 122,
+   "tema": "Nasionalisme & bela negara",
+   "subtema": "Cinta tanah air: menjaga hutan hulu",
+   "tipe_kode": "E1",
+   "tipe_nama": "Cari Akarnya, Bukan Buahnya",
+   "kategori_jawaban": "ALASAN",
+   "level_kognitif": "C5",
+   "konstruk_dua_kutub": "lapangan kerja bagi pemuda ↔ keselamatan wilayah di hilir",
+   "bentuk_tegangan": "T2",
+   "jangkar_faktual": false,
+   "landasan": [
+    {
+     "kode": "UUD1945",
+     "rujukan": "Pasal 33 ayat (3) (sebagai pengecoh)"
+    }
+   ],
+   "status_kunci": "kuat",
+   "soal": "Seorang pengusaha dari luar desa ingin membuka kebun di hutan pada lereng hulu sungai dan menawarkan pekerjaan bagi pemuda desa. Banyak pemuda setuju karena lapangan kerja di desa itu sempit, tetapi kepala desa menolak rencana tersebut. Dua tahun lalu, desa di hilir terendam banjir bandang setelah lereng di sebelahnya gundul. Alasan paling tepat bagi penolakan kepala desa adalah...",
+   "opsi": {
+    "A": "Bumi dan kekayaan alam dikuasai negara untuk sebesar-besar kemakmuran rakyat.",
+    "B": "Tutupan pohon itu menahan air yang bisa membanjiri permukiman di bawahnya.",
+    "C": "Pemuda desa dapat bekerja melalui usaha lain yang tidak menebang pepohonan.",
+    "D": "Warga hilir berhak menuntut ganti rugi bila banjir bandang kembali terjadi.",
+    "E": "Pengusaha dari luar desa belum tentu mengutamakan kesejahteraan pemuda setempat."
+   },
+   "kunci": "B",
+   "pembahasan": "Yang ditanya: alasan paling tepat bagi kepala desa untuk menolak pembukaan kebun di hutan hulu. Dua hal sama-sama sah di cerita: pemuda butuh pekerjaan, dan desa di bawah perlu selamat. Kalimat penentunya: dua tahun lalu desa di hilir terendam banjir bandang setelah lereng di sebelahnya gundul.\nCara cepat: cari alasan yang langsung ditunjuk fakta di soal. Banjir bandang sesudah lereng gundul menunjukkan pepohonan di hulu itulah yang menahan air bagi permukiman di bawahnya.\nKenapa pilihan lain gugur: A mengutip Pasal 33 ayat (3) UUD 1945. Isinya benar, tetapi pasal itu tidak menjelaskan bahaya yang ditunjuk soal. Konsepnya mirip, tapi beda. C menawarkan jalan keluar bagi pemuda; berguna, tetapi itu bukan alasan menolak. D menyebut hak menuntut ganti rugi bila banjir terulang; itu urusan sesudah banjir, bukan alasan mencegahnya. E menduga pengusaha tidak peduli pada pemuda, padahal soal tidak menyebut itu.\nJawaban: B, karena tutupan pohon itu menahan air yang bisa membanjiri permukiman di bawahnya.\nAnalogi: atap rumah yang bocor di satu sisi tidak kamu bongkar untuk dijadikan jemuran, walaupun jemuran itu berguna. Atap itulah yang menahan hujan masuk ke kamar.\nJebakan: A memakai bunyi pasal sehingga terasa paling resmi. Bunyi pasal yang benar belum tentu menjawab alasan yang diminta soal.",
+   "analisis_opsi": {
+    "A": "[D4] Pasal benar, tetapi tidak menjelaskan bahaya yang ditunjuk soal.",
+    "B": "KUNCI — Penentu banjir bandang setelah lereng gundul: hutan menahan air bagi wilayah hilir.",
+    "C": "[D1] Jalan keluar, bukan alasan menolak.",
+    "D": "[D3] Akibat sesudah banjir.",
+    "E": "[D9] Menambah fakta tentang niat pengusaha."
+   },
+   "penentu": "Dua tahun lalu, desa di hilir terendam banjir bandang setelah lereng di sebelahnya gundul"
+  },
+  {
+   "id": "DAJ-TWK-123",
+   "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+   "no_urut_sumber": 123,
+   "no_urut_gabungan": 123,
+   "tema": "Integritas aparatur",
+   "subtema": "Warga melaporkan dugaan konflik kepentingan pejabat",
+   "tipe_kode": "E5",
+   "tipe_nama": "Pilih yang Benar Walau Berisiko",
+   "kategori_jawaban": "WUJUD",
+   "level_kognitif": "C4",
+   "konstruk_dua_kutub": "hak pemohon atas penilaian yang netral ↔ keputusan yang belum diterbitkan",
+   "bentuk_tegangan": "T6",
+   "jangkar_faktual": true,
+   "landasan": [
+    {
+     "kode": "UU30_2014",
+     "rujukan": "Pasal 42 ayat (2), Pasal 43 ayat (1) huruf a, Pasal 44 ayat (1)–(2): warga melaporkan dugaan konflik kepentingan kepada Atasan Pejabat dengan identitas dan bukti"
+    }
+   ],
+   "status_kunci": "kuat",
+   "soal": "Bu Ratna mengajukan izin usaha toko bahan bangunan ke dinas kabupaten. Ia kemudian mengetahui bahwa pejabat yang menilai permohonannya juga memiliki toko bahan bangunan di kecamatan yang sama. Keputusan atas permohonan itu belum diterbitkan. Langkah yang paling tepat bagi Bu Ratna menurut ketentuan administrasi pemerintahan adalah...",
+   "opsi": {
+    "A": "Menggugat ke pengadilan tata usaha negara agar penilaian itu segera dihentikan.",
+    "B": "Meminta pejabat tersebut mundur sendiri dari tugas menilai permohonan miliknya.",
+    "C": "Mengadukan dugaan itu kepada anggota DPRD agar dinas tersebut diawasi.",
+    "D": "Menarik permohonan dan mengajukannya lagi setelah pejabat itu dipindahkan.",
+    "E": "Melaporkan dugaan itu beserta buktinya kepada atasan dari pejabat penilai."
+   },
+   "kunci": "E",
+   "pembahasan": "Yang ditanya: langkah Bu Ratna menurut ketentuan administrasi pemerintahan. Pejabat yang menilai permohonannya juga memiliki toko bahan bangunan di kecamatan yang sama, jadi ada dugaan konflik kepentingan. Kalimat penentunya: keputusan atas permohonan itu belum diterbitkan.\nCara cepat: UU 30/2014 Pasal 44 memberi warga hak melaporkan dugaan konflik kepentingan pejabat. Laporan itu disampaikan kepada atasan pejabat tersebut, dengan identitas jelas dan bukti. Pasal 42 ayat (2) menyebut keputusannya kemudian ditetapkan atasan atau pejabat lain.\nKenapa pilihan lain gugur: A menggugat ke pengadilan tata usaha negara, padahal keputusannya belum terbit, jadi belum ada yang bisa digugat. Langkahnya belum waktunya. B meminta pejabat itu mundur sendiri. Siapa yang menggantikan bukan ditentukan pejabat yang berkepentingan; undang-undang menunjuk atasan atau pejabat lain. C mengadu ke DPRD; pengawasan DPRD sah, tetapi undang-undang menunjuk atasan pejabat sebagai penerima laporan. Itu tugas pihak lain. D menarik permohonan dan menunggu pejabat itu dipindahkan, padahal soal tidak menyebut rencana pemindahan, dan hak Bu Ratna ditinggalkan.\nJawaban: E, karena dugaan itu dilaporkan beserta buktinya kepada atasan pejabat penilai.\nAnalogi: kalau wasit pertandinganmu ternyata pelatih tim lawan, kamu melapor kepada pengawas pertandingan, bukan meminta wasit itu memilih penggantinya sendiri.\nJebakan: B terasa paling sopan dan langsung. Ingat, menurut undang-undang yang memutus siapa penggantinya adalah atasan, bukan pejabat yang berkepentingan.",
+   "analisis_opsi": {
+    "A": "[D8] Belum ada keputusan yang dapat digugat.",
+    "B": "[D5] Ps 42(2): keputusan diambil atasan atau pejabat lain, bukan diatur pejabat itu sendiri.",
+    "C": "[D7] Pengawasan DPRD sah, tetapi Ps 44 menunjuk Atasan Pejabat.",
+    "D": "[D9+D10] Menghindar; pemindahan pejabat tidak disebut.",
+    "E": "KUNCI — Ps 44(1)–(2): laporan kepada Atasan Pejabat dengan bukti."
+   },
+   "penentu": "Keputusan atas permohonan itu belum diterbitkan"
+  },
+  {
+   "id": "DAJ-TWK-124",
+   "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+   "no_urut_sumber": 124,
+   "no_urut_gabungan": 124,
+   "tema": "Integritas aparatur",
+   "subtema": "Akuntabel: berita acara harus sesuai keadaan",
+   "tipe_kode": "E5",
+   "tipe_nama": "Pilih yang Benar Walau Berisiko",
+   "kategori_jawaban": "SIKAP",
+   "level_kognitif": "C5",
+   "konstruk_dua_kutub": "tekanan penyerapan anggaran akhir tahun ↔ berita acara yang sesuai fakta",
+   "bentuk_tegangan": "T4",
+   "jangkar_faktual": true,
+   "landasan": [
+    {
+     "kode": "UU20_2023_ASN",
+     "rujukan": "Pasal 4 ayat (2): akuntabel, antara lain jujur, cermat, dan berintegritas"
+    }
+   ],
+   "status_kunci": "kuat",
+   "soal": "Anda petugas penerima barang di sebuah dinas. Pada akhir Desember, atasan meminta Anda menandatangani berita acara serah terima komputer agar anggaran tahun ini terserap. Penyedia menyatakan komputer itu baru akan dikirim pekan depan. Sikap Anda yang paling tepat adalah...",
+   "opsi": {
+    "A": "Menunda tanda tangan sampai kiriman tiba, lalu menjelaskan risikonya kepada pimpinan.",
+    "B": "Meminta atasan menuangkan permintaan itu dalam surat perintah tertulis lebih dahulu.",
+    "C": "Mengingatkan penyedia agar komputer dikirim sebelum tahun anggaran berakhir.",
+    "D": "Menghubungi bagian keuangan, lalu meminta pembayaran ditahan sampai komputer diperiksa.",
+    "E": "Menolak menandatangani agar Anda tidak ikut terseret bila diperiksa auditor."
+   },
+   "kunci": "A",
+   "pembahasan": "Yang ditanya: sikap Anda ketika atasan meminta berita acara serah terima komputer ditandatangani agar anggaran terserap. Kalimat penentunya: penyedia menyatakan komputer itu baru akan dikirim pekan depan.\nCara cepat: berita acara serah terima adalah bukti bahwa barang sudah diterima. Bila barangnya belum ada, menandatanganinya berarti membuat bukti yang tidak sesuai keadaan. UU 20/2023 menjabarkan nilai akuntabel, antara lain jujur dan cermat. Cari pilihan yang menjawab permintaan atasan itu dengan alasan yang benar.\nKenapa pilihan lain gugur: B meminta perintah tertulis dulu. Perintah tertulis tidak membuat berita acara itu sesuai keadaan, jadi cuma formalitas. C mendesak penyedia mengirim sebelum tahun anggaran berakhir. Itu hanya mengejar target serapan, sedangkan permintaan tanda tangan tidak dijawab, jadi cuma menjawab separuh. D meminta bagian keuangan menahan pembayaran; itu tugas pihak lain, dan permintaan atasan kepada Anda tetap tidak dijawab. E menolak menandatangani, tetapi alasannya supaya Anda tidak ikut terseret auditor. Itu demi diri sendiri.\nJawaban: A, karena tanda tangan ditunda sampai barang benar-benar datang dan risikonya dijelaskan kepada atasan.\nAnalogi: kamu tidak menandatangani tanda terima paket untuk tetangga kalau kurirnya belum datang membawa paketnya.\nJebakan: E tindakannya sama dengan A. Bedanya ada pada alasan: A menjaga kebenaran berita acara, E menjaga diri sendiri.",
+   "analisis_opsi": {
+    "A": "KUNCI — Berita acara harus sesuai fakta (barang belum ada); menjawab permintaan atasan dengan alasan.",
+    "B": "[D6] Formalitas; perintah tertulis tidak membuat berita acara sesuai fakta.",
+    "C": "[D2] Hanya sisi target serapan; permintaan tanda tangan tidak dijawab.",
+    "D": "[D7] Tugas bagian keuangan; permintaan atasan kepada Anda tidak dijawab.",
+    "E": "[D10] Tindakan benar, alasan demi diri sendiri."
+   },
+   "penentu": "komputer itu baru akan dikirim pekan depan"
+  },
+  {
+   "id": "DAJ-TWK-125",
+   "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+   "no_urut_sumber": 125,
+   "no_urut_gabungan": 125,
+   "tema": "Integritas aparatur",
+   "subtema": "Kesediaan ditempatkan di seluruh wilayah",
+   "tipe_kode": "E5",
+   "tipe_nama": "Pilih yang Benar Walau Berisiko",
+   "kategori_jawaban": "SIKAP",
+   "level_kognitif": "C4",
+   "konstruk_dua_kutub": "permintaan orang tua ↔ pernyataan bersedia ditempatkan",
+   "bentuk_tegangan": "T4",
+   "jangkar_faktual": true,
+   "landasan": [
+    {
+     "kode": "UU20_2023_ASN",
+     "rujukan": "Pasal 24 ayat (1): bersedia ditempatkan di seluruh wilayah NKRI"
+    }
+   ],
+   "status_kunci": "kuat",
+   "soal": "Anda lulusan sekolah kedinasan yang mendapat surat penempatan di sebuah kabupaten kepulauan yang jauh dari kota. Orang tua meminta Anda menolak penempatan itu dan mencari pekerjaan di kota asal. Saat mendaftar, Anda sudah menandatangani pernyataan bersedia ditempatkan di seluruh wilayah Indonesia. Sikap Anda yang paling tepat adalah...",
+   "opsi": {
+    "A": "Berangkat bertugas, lalu mengajukan pindah ke kota asal sejak bulan pertama.",
+    "B": "Menunda keberangkatan sampai orang tua benar-benar merelakan Anda pergi bertugas.",
+    "C": "Berangkat diam-diam agar tidak terjadi perdebatan panjang dengan orang tua.",
+    "D": "Menerima tugas itu, lalu menerangkan kepada keluarga janji yang telah Anda buat.",
+    "E": "Meminta pejabat kepegawaian memindahkan Anda ke kabupaten yang lebih dekat dengan kota."
+   },
+   "kunci": "D",
+   "pembahasan": "Yang ditanya: sikap Anda terhadap penempatan di kabupaten kepulauan yang jauh, ketika orang tua meminta Anda menolaknya. Kalimat penentunya: saat mendaftar Anda sudah menandatangani pernyataan bersedia ditempatkan di seluruh wilayah Indonesia.\nCara cepat: UU 20/2023 Pasal 24 ayat (1) mewajibkan ASN bersedia ditempatkan di seluruh wilayah Negara Kesatuan Republik Indonesia. Ada dua hal yang harus dijawab: janji yang sudah Anda tanda tangani, dan permintaan orang tua.\nKenapa pilihan lain gugur: A berangkat, tetapi sejak bulan pertama sudah mengajukan pindah. Kesediaan ditempatkan hanya dijalankan di permukaan, dan tujuannya kenyamanan sendiri. Itu demi diri sendiri. B menunda keberangkatan sampai orang tua rela; perasaan keluarga dijawab, tetapi tugasnya tertunda, jadi cuma menjawab separuh. C berangkat diam-diam; tugasnya dijalankan, tetapi orang tua tidak diberi penjelasan, jadi juga cuma menjawab separuh. E meminta dipindahkan ke kabupaten yang lebih dekat kota; permintaan itu sah, tetapi demi kepentingan pribadi dan berlawanan dengan pernyataan yang sudah Anda tanda tangani.\nJawaban: D, karena tugasnya diterima dan keluarga diberi penjelasan tentang janji yang telah Anda buat.\nAnalogi: kamu sudah berjanji ikut regu piket akhir pekan. Saat ibumu mengajak liburan, kamu tetap piket dan menjelaskan kepada ibumu bahwa kamu sudah berjanji.\nJebakan: A tampak seperti jalan tengah karena Anda tetap berangkat. Perhatikan bagian \"sejak bulan pertama\"; kesediaan yang baru dijalani sebulan sudah ditinggalkan.",
+   "analisis_opsi": {
+    "A": "[D10] Berangkat, tetapi segera mencari jalan keluar demi diri sendiri.",
+    "B": "[D2] Hanya sisi keluarga; penempatan tertunda.",
+    "C": "[D2] Hanya sisi tugas; permintaan orang tua tidak dijawab.",
+    "D": "KUNCI — Pernyataan bersedia ditempatkan (penentu) dijalankan dan orang tua diberi penjelasan.",
+    "E": "[D10] Permintaan sah, demi kepentingan pribadi."
+   },
+   "penentu": "Anda sudah menandatangani pernyataan bersedia ditempatkan di seluruh wilayah Indonesia"
+  },
+  {
+   "id": "DAJ-TWK-126",
+   "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+   "no_urut_sumber": 126,
+   "no_urut_gabungan": 126,
+   "tema": "Hukum & ketatanegaraan",
+   "subtema": "Hak angket DPR",
+   "tipe_kode": "E6",
+   "tipe_nama": "Lembaga Mana yang Berwenang",
+   "kategori_jawaban": "DEFINISI",
+   "level_kognitif": "C5",
+   "konstruk_dua_kutub": "keterangan pemerintah sudah diterima ↔ DPR ingin memeriksa pelaksanaan undang-undang",
+   "bentuk_tegangan": "T6",
+   "jangkar_faktual": true,
+   "landasan": [
+    {
+     "kode": "UUD1945",
+     "rujukan": "Pasal 20A ayat (2): hak interpelasi, hak angket, hak menyatakan pendapat"
+    },
+    {
+     "kode": "UU17_2014",
+     "rujukan": "Pasal 79 ayat (2)–(4)"
+    }
+   ],
+   "status_kunci": "kuat",
+   "soal": "Sejumlah anggota DPR dari beberapa fraksi menerima laporan bahwa pelaksanaan suatu undang-undang di bidang pangan diduga bertentangan dengan peraturan perundang-undangan dan berdampak luas bagi petani. Menteri terkait sudah memberi keterangan dalam rapat kerja, tetapi DPR ingin memeriksa sendiri pelaksanaan undang-undang itu di lapangan. Hak DPR yang paling tepat digunakan adalah...",
+   "opsi": {
+    "A": "Hak interpelasi, untuk meminta keterangan Pemerintah tentang kebijakan penting dan strategis.",
+    "B": "Hak angket, untuk menyelidiki pelaksanaan kebijakan yang mungkin menyalahi aturan.",
+    "C": "Hak menyatakan pendapat, untuk menyampaikan sikap DPR atas kebijakan Pemerintah.",
+    "D": "Fungsi legislasi, untuk mengubah undang-undang yang pelaksanaannya menimbulkan masalah.",
+    "E": "Fungsi pengawasan, untuk mengawasi jalannya pelaksanaan undang-undang oleh Pemerintah."
+   },
+   "kunci": "B",
+   "pembahasan": "Yang ditanya: hak DPR yang paling tepat dipakai. Ada dua fakta di cerita: pelaksanaan suatu undang-undang diduga bertentangan dengan peraturan, dan menteri sudah memberi keterangan, tetapi DPR ingin memeriksa sendiri pelaksanaannya di lapangan.\nCara cepat: UUD 1945 Pasal 20A ayat (2) memberi DPR tiga hak: interpelasi, angket, dan menyatakan pendapat. Menurut UU 17/2014 Pasal 79, interpelasi berarti meminta keterangan, sedangkan angket berarti menyelidiki pelaksanaan undang-undang atau kebijakan yang diduga bertentangan dengan peraturan. Keterangan sudah diterima; yang dibutuhkan sekarang penyelidikan.\nKenapa pilihan lain gugur: A, hak interpelasi, dipakai untuk meminta keterangan, padahal keterangan itu sudah diberikan menteri. Konsepnya mirip, tapi beda. C, hak menyatakan pendapat, bisa menjadi tindak lanjut sesudah penyelidikan. Langkahnya belum waktunya. D, fungsi legislasi, mengubah undang-undang, bukan memeriksa pelaksanaannya; lagi pula soal meminta hak, bukan fungsi. E, fungsi pengawasan, benar sebagai payung umum, tetapi soal meminta hak yang dipakai, jadi jawabannya bukan yang diminta.\nJawaban: B, karena hak angket dipakai untuk menyelidiki pelaksanaan kebijakan yang mungkin menyalahi aturan.\nAnalogi: guru yang sudah mendengar penjelasan ketua kelas tentang uang kas yang selisih, lalu memutuskan memeriksa sendiri buku kasnya. Bertanya sudah selesai; sekarang waktunya memeriksa.\nJebakan: E memakai kata \"pengawasan\" yang terasa paling cocok. Baca lagi kalimat perintahnya: yang ditanya hak DPR, dan hak yang dipakai untuk menyelidiki adalah angket.",
+   "analisis_opsi": {
+    "A": "[D4] Penentu peniada: keterangan sudah diberikan.",
+    "B": "KUNCI — Ps 79(3): penyelidikan pelaksanaan UU/kebijakan yang diduga bertentangan dengan peraturan.",
+    "C": "[D8] Dapat menjadi tindak lanjut sesudah angket.",
+    "D": "[D1] Bukan hak; mengubah UU tidak memeriksa pelaksanaannya.",
+    "E": "[D1+D5] Fungsi umum, bukan hak yang diminta soal."
+   },
+   "penentu": "Menteri terkait sudah memberi keterangan dalam rapat kerja, tetapi DPR ingin memeriksa sendiri pelaksanaan undang-undang itu di lapangan"
+  },
+  {
+   "id": "DAJ-TWK-127",
+   "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+   "no_urut_sumber": 127,
+   "no_urut_gabungan": 127,
+   "tema": "Hukum & ketatanegaraan",
+   "subtema": "Pengisian jabatan hakim agung",
+   "tipe_kode": "E6",
+   "tipe_nama": "Lembaga Mana yang Berwenang",
+   "kategori_jawaban": "WUJUD",
+   "level_kognitif": "C3",
+   "konstruk_dua_kutub": "seleksi calon oleh Komisi Yudisial ↔ persetujuan DPR",
+   "bentuk_tegangan": "T3",
+   "jangkar_faktual": true,
+   "landasan": [
+    {
+     "kode": "UUD1945",
+     "rujukan": "Pasal 24A ayat (3); Pasal 24B ayat (1); Pasal 24C ayat (3)"
+    }
+   ],
+   "status_kunci": "kuat",
+   "soal": "Mahkamah Agung kekurangan hakim agung karena beberapa hakim memasuki masa pensiun. Komisi Yudisial sudah menyeleksi para calon dan mengusulkan nama-nama mereka kepada DPR. Menurut UUD 1945, tahap berikutnya dalam pengisian jabatan hakim agung adalah...",
+   "opsi": {
+    "A": "Presiden menetapkan calon yang diusulkan itu sebagai hakim agung yang baru.",
+    "B": "Komisi Yudisial mengusulkan calon yang telah lolos seleksi kepada DPR.",
+    "C": "Komisi Yudisial menjaga kehormatan dan perilaku para hakim agung yang baru.",
+    "D": "DPR mengajukan tiga orang calon hakim konstitusi kepada Presiden untuk ditetapkan.",
+    "E": "DPR memberikan persetujuan atas para kandidat usulan Komisi Yudisial."
+   },
+   "kunci": "E",
+   "pembahasan": "Yang ditanya: tahap berikutnya dalam pengisian jabatan hakim agung sesudah Komisi Yudisial menyeleksi dan mengusulkan calon kepada DPR.\nCara cepat: UUD 1945 Pasal 24A ayat (3) menyebut urutannya. Calon diusulkan Komisi Yudisial kepada DPR untuk mendapatkan persetujuan, lalu ditetapkan Presiden. Kalau usulan sudah sampai di DPR, tahap berikutnya persetujuan DPR.\nKenapa pilihan lain gugur: A, Presiden menetapkan, memang tahap yang sah, tetapi baru sesudah DPR memberi persetujuan. Langkahnya belum waktunya. B, Komisi Yudisial mengusulkan calon, adalah tahap yang sudah terjadi menurut soal; pilihan ini cuma mengulang kata di soal. C menyebut tugas Komisi Yudisial menjaga kehormatan dan perilaku hakim menurut Pasal 24B ayat (1); benar, tetapi bukan bagian dari pengisian jabatan. D menyebut DPR mengajukan tiga calon hakim konstitusi menurut Pasal 24C ayat (3); benar, tetapi itu pengisian hakim Mahkamah Konstitusi. Konsepnya mirip, tapi beda.\nJawaban: E, karena sesudah diusulkan Komisi Yudisial, calon hakim agung harus mendapat persetujuan DPR.\nAnalogi: lamaran kerja yang sudah lolos seleksi panitia diserahkan kepada direktur untuk disetujui; surat pengangkatannya baru dibuat sesudah direktur setuju.\nJebakan: A sering dipilih karena Presiden terasa sebagai tahap akhir yang menentukan. Baca kata \"tahap berikutnya\"; yang diminta langkah sesudah usulan, bukan langkah terakhir.",
+   "analisis_opsi": {
+    "A": "[D8] Tahap sesudah persetujuan DPR.",
+    "B": "[D8+D5] Tahap yang sudah dilakukan, mengulang soal.",
+    "C": "[D4] Kewenangan KY Ps 24B(1), bukan pengisian jabatan.",
+    "D": "[D4] Pengisian hakim konstitusi Ps 24C(3), lembaga lain.",
+    "E": "KUNCI — Ps 24A(3): usul KY → persetujuan DPR → ditetapkan Presiden."
+   },
+   "penentu": "Komisi Yudisial sudah menyeleksi para calon dan mengusulkan nama-nama mereka kepada DPR"
+  },
+  {
+   "id": "DAJ-TWK-128",
+   "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+   "no_urut_sumber": 128,
+   "no_urut_gabungan": 128,
+   "tema": "Hukum & ketatanegaraan",
+   "subtema": "Urusan absolut: moneter bukan kewenangan daerah",
+   "tipe_kode": "E1",
+   "tipe_nama": "Cari Akarnya, Bukan Buahnya",
+   "kategori_jawaban": "ALASAN",
+   "level_kognitif": "C4",
+   "konstruk_dua_kutub": "otonomi daerah ↔ urusan yang menjadi kewenangan Pusat",
+   "bentuk_tegangan": "T3",
+   "jangkar_faktual": true,
+   "landasan": [
+    {
+     "kode": "UUD1945",
+     "rujukan": "Pasal 18 ayat (2); Pasal 18A ayat (1)"
+    },
+    {
+     "kode": "UU23_2014",
+     "rujukan": "Pasal 10 ayat (1): urusan absolut meliputi politik luar negeri, pertahanan, keamanan, yustisi, moneter dan fiskal nasional, agama"
+    }
+   ],
+   "status_kunci": "kuat",
+   "soal": "Seorang bupati berencana menerbitkan kupon belanja khusus kabupaten yang berlaku di pasar sebagai pengganti rupiah, agar uang warga tetap beredar di daerah itu. Ia berpendapat daerah berhak mengatur urusannya sendiri. DPRD diminta menimbang rencana tersebut. Alasan paling tepat bagi DPRD untuk menolak rencana itu adalah...",
+   "opsi": {
+    "A": "Pemerintahan daerah mengatur dan mengurus sendiri urusannya menurut asas otonomi.",
+    "B": "Hubungan wewenang pusat dan daerah diatur dengan memperhatikan kekhususan tiap daerah.",
+    "C": "Urusan moneter tergolong urusan absolut yang menjadi kewenangan Pemerintah Pusat.",
+    "D": "Kebijakan daerah yang mengikat warga perlu ditetapkan melalui peraturan daerah.",
+    "E": "Ekonomi lokal lebih tepat diperkuat melalui koperasi dan pasar milik desa."
+   },
+   "kunci": "C",
+   "pembahasan": "Yang ditanya: alasan paling tepat bagi DPRD untuk menolak rencana bupati menerbitkan kupon belanja yang berlaku sebagai pengganti rupiah. Bupati berpegang pada hak daerah mengatur urusannya sendiri.\nCara cepat: otonomi daerah ada batasnya. UU 23/2014 Pasal 10 ayat (1) menyebut urusan pemerintahan absolut, yaitu politik luar negeri, pertahanan, keamanan, yustisi, moneter dan fiskal nasional, serta agama. Alat pembayaran pengganti rupiah termasuk urusan moneter, jadi bukan wewenang kabupaten.\nKenapa pilihan lain gugur: A benar menurut Pasal 18 ayat (2) UUD 1945, tetapi itu justru alasan bupati, bukan alasan menolak. Pilihan ini cuma mengulang kata di soal. B mengutip Pasal 18A ayat (1) tentang kekhususan daerah; benar, tetapi tidak menunjuk batas yang dilanggar rencana itu. Konsepnya mirip, tapi beda. D benar bahwa kebijakan daerah yang mengikat ditetapkan lewat peraturan daerah, tetapi peraturan daerah pun tidak bisa mengatur urusan moneter. Itu cuma formalitas. E menawarkan cara lain memperkuat ekonomi lokal; berguna, tetapi itu jalan keluar, bukan alasan menolak.\nJawaban: C, karena urusan moneter tergolong urusan absolut yang menjadi kewenangan Pemerintah Pusat.\nAnalogi: ketua RT boleh mengatur jadwal ronda di lingkungannya, tetapi tidak boleh mencetak kartu identitas pengganti KTP untuk warganya.\nJebakan: A terasa kuat karena berbunyi pasal UUD. Tanyakan arahnya: pasal itu mendukung bupati, padahal yang diminta alasan untuk menolak.",
+   "analisis_opsi": {
+    "A": "[D5] Mengulang alasan bupati; benar, tetapi tidak menjadi alasan menolak.",
+    "B": "[D4] Ps 18A(1) benar, tetapi tidak menutup urusan moneter.",
+    "C": "KUNCI — UU 23/2014 Ps 10(1): moneter urusan absolut Pusat.",
+    "D": "[D6] Prosedur; perda tidak membuat urusan moneter menjadi kewenangan daerah.",
+    "E": "[D1] Jalan keluar, bukan alasan menolak."
+   },
+   "penentu": "berlaku di pasar sebagai pengganti rupiah"
+  },
+  {
+   "id": "DAJ-TWK-129",
+   "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+   "no_urut_sumber": 129,
+   "no_urut_gabungan": 129,
+   "tema": "Radikalisme & ketahanan sosial",
+   "subtema": "Peran komunitas menghadapi ajaran yang menolak negara",
+   "tipe_kode": "E2",
+   "tipe_nama": "Jangan Pilih yang Terlalu Ekstrem",
+   "kategori_jawaban": "SIKAP",
+   "level_kognitif": "C5",
+   "konstruk_dua_kutub": "pelatih yang menyebarkan ajaran ↔ anggota remaja yang sudah terpengaruh",
+   "bentuk_tegangan": "T6",
+   "jangkar_faktual": false,
+   "landasan": [
+    {
+     "kode": "PERPRES8_2026",
+     "rujukan": "RAN PE 2026–2029, pencegahan ekstremisme berbasis kekerasan melalui ketahanan komunitas"
+    }
+   ],
+   "status_kunci": "kuat",
+   "soal": "Anda ketua komunitas panjat tebing remaja di sebuah kota, dan pelatih baru di komunitas itu mengajarkan bahwa negara ini tidak sah dan aturannya tidak perlu ditaati. Beberapa anggota remaja mulai menolak ikut upacara dan menyebut aparat sebagai musuh. Sejauh ini belum ada ajakan atau rencana kekerasan. Sikap Anda yang paling tepat adalah...",
+   "opsi": {
+    "A": "Memberhentikan pelatih itu dan mengajak anggota muda berdiskusi dengan pengurus.",
+    "B": "Mengganti pelatih tersebut dan meminta anggota muda kembali mengikuti upacara.",
+    "C": "Melaporkan ajaran pelatih itu kepada polisi agar diperiksa lebih dahulu.",
+    "D": "Mengabari orang tua anggota remaja dan meminta mereka mengawasi anaknya di rumah.",
+    "E": "Memasang foto Presiden dan lambang Garuda di sekretariat komunitas itu."
+   },
+   "kunci": "A",
+   "pembahasan": "Yang ditanya: sikap Anda sebagai ketua komunitas. Ada dua masalah di cerita: pelatih baru mengajarkan bahwa negara ini tidak sah, dan beberapa anggota remaja sudah mulai menolak upacara serta menyebut aparat sebagai musuh. Kalimat penentunya: sejauh ini belum ada ajakan atau rencana kekerasan.\nCara cepat: tangani kedua masalah sekaligus. Sumber ajarannya dihentikan, dan remaja yang sudah terpengaruh diajak bicara supaya pemahamannya diluruskan. Karena belum ada unsur kekerasan, langkah pertama ada di tangan komunitas sendiri.\nKenapa pilihan lain gugur: B mengganti pelatih dan menyuruh anggota kembali ikut upacara. Tampak dua langkah, tetapi remaja hanya disuruh hadir, sedangkan cara pandang mereka tidak disentuh; ini cuma formalitas. C melaporkan ajaran itu kepada polisi. Soal menyebut belum ada ajakan atau rencana kekerasan, dan remaja yang terpengaruh tidak didampingi; soal tidak menyebut hal yang membuat polisi perlu turun lebih dulu. D mengabari orang tua dan meminta mereka mengawasi anaknya. Itu juga dua langkah, tetapi keduanya di sisi keluarga, dan pelatih tetap mengajar, jadi cuma menjawab separuh. E memasang foto Presiden dan lambang Garuda; itu cuma formalitas yang tidak menyentuh ajaran maupun anggota.\nJawaban: A, karena pelatih yang menyebarkan ajaran dihentikan dan anggota muda diajak berdiskusi dengan pengurus.\nAnalogi: kalau ada keran bocor yang membuat lantai basah, kamu menutup kerannya lalu mengepel lantai. Menutup keran saja membuat lantai tetap licin; mengepel saja membuat air terus mengalir.\nJebakan: B terlihat lengkap karena pelatihnya diganti dan anggota kembali upacara. Hadir di upacara belum tentu berarti pandangan mereka berubah.",
+   "analisis_opsi": {
+    "A": "KUNCI — Dua penentu: sumber ajaran dihentikan dan remaja yang terpengaruh didampingi.",
+    "B": "[D2+D6] Keseimbangan semu: dua langkah, tetapi remaja hanya disuruh upacara; pandangan yang keliru tidak disentuh.",
+    "C": "[D9] Penentu peniada: belum ada ajakan atau rencana kekerasan; remaja tidak didampingi.",
+    "D": "[D2] Keseimbangan semu: dua langkah, keduanya sisi keluarga; pelatih tetap mengajar.",
+    "E": "[D6] Simbol, tidak menyentuh ajaran maupun anggota."
+   },
+   "penentu": "Sejauh ini belum ada ajakan atau rencana kekerasan"
+  },
+  {
+   "id": "DAJ-TWK-130",
+   "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+   "no_urut_sumber": 130,
+   "no_urut_gabungan": 130,
+   "tema": "Bahasa Indonesia",
+   "subtema": "Gagasan utama paragraf: mangrove pesisir",
+   "tipe_kode": "E8",
+   "tipe_nama": "Soal Bahasa Indonesia",
+   "kategori_jawaban": "DEFINISI",
+   "level_kognitif": "C4",
+   "konstruk_dua_kutub": "",
+   "bentuk_tegangan": "",
+   "jangkar_faktual": false,
+   "landasan": [
+    {
+     "kode": "TBBI_ED4",
+     "rujukan": "Gagasan utama, simpulan, dan kalimat utama ditentukan dari isi seluruh kalimat dalam teks"
+    }
+   ],
+   "status_kunci": "kuat",
+   "soal": "(1) Tiga tahun lalu, kelompok nelayan di pesisir desa itu mulai menanam bibit mangrove di sepanjang pantai yang terkikis. (2) Kini akar-akar mangrove menahan ombak sehingga abrasi tidak lagi menggerus halaman rumah warga. (3) Di sela akar itu, kepiting dan udang berkembang biak dengan cepat. (4) Hasil tangkapan kepiting nelayan pun naik hampir dua kali lipat. (5) Beberapa warga kini menjual kepiting itu ke rumah makan di kota kabupaten.\nGagasan utama paragraf tersebut adalah...",
+   "opsi": {
+    "A": "Kelompok nelayan menanam bibit mangrove di sepanjang pantai yang terkikis.",
+    "B": "Akar mangrove menahan ombak dan melindungi rumah warga dari abrasi.",
+    "C": "Kepiting dari pesisir desa itu kini dijual ke rumah makan di kota.",
+    "D": "Mangrove yang ditanam nelayan melindungi pantai dan menambah tangkapan.",
+    "E": "Pemerintah perlu memperluas penanaman mangrove ke desa pesisir lainnya."
+   },
+   "kunci": "D",
+   "pembahasan": "Yang ditanya: gagasan utama paragraf, yaitu pokok yang dibicarakan seluruh kalimat.\nCara cepat: kelompokkan isi kalimatnya. Kalimat (1) menceritakan penanaman mangrove. Kalimat (2) menunjukkan manfaat perlindungan pantai. Kalimat (3) sampai (5) menunjukkan manfaat bagi tangkapan nelayan. Gagasan utamanya harus mencakup kedua manfaat itu.\nKenapa pilihan lain gugur: A hanya mengulang kalimat pertama karena letaknya di awal, padahal kalimat itu belum menyebut manfaat apa pun. B hanya memuat perlindungan dari abrasi, jadi cuma menjawab separuh. C hanya satu rincian dari kalimat (5). E menyarankan perluasan penanaman ke desa lain; paragraf tidak menyebut itu.\nJawaban: D, karena mangrove yang ditanam nelayan melindungi pantai dan menambah tangkapan.\nAnalogi: kalau temanmu bercerita tentang sepeda barunya yang membuatnya tidak telat sekolah dan bisa mengantar adik, inti ceritanya adalah dua manfaat sepeda itu, bukan sekadar hari ia membelinya.\nJebakan: B paling menggoda karena kalimat (2) terasa penting. Hitung kalimatnya: tiga kalimat terakhir membicarakan hasil tangkapan, bukan abrasi.",
+   "analisis_opsi": {
+    "A": "[D5] Kalimat pertama, karena letaknya.",
+    "B": "[D2] Separuh teks: manfaat perlindungan saja.",
+    "C": "[D3] Kalimat penjelas.",
+    "D": "KUNCI — (2) perlindungan + (3)–(5) hasil laut.",
+    "E": "[D9] Solusi yang tidak tertulis."
+   },
+   "penentu": "",
+   "rumpun": "paragraf"
+  },
+  {
+   "id": "DAJ-TWK-131",
+   "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+   "no_urut_sumber": 131,
+   "no_urut_gabungan": 131,
+   "tema": "Bahasa Indonesia",
+   "subtema": "Simpulan paragraf: rak keripik di bandara",
+   "tipe_kode": "E8",
+   "tipe_nama": "Soal Bahasa Indonesia",
+   "kategori_jawaban": "DEFINISI",
+   "level_kognitif": "C5",
+   "konstruk_dua_kutub": "",
+   "bentuk_tegangan": "",
+   "jangkar_faktual": false,
+   "landasan": [
+    {
+     "kode": "TBBI_ED4",
+     "rujukan": "Gagasan utama, simpulan, dan kalimat utama ditentukan dari isi seluruh kalimat dalam teks"
+    }
+   ],
+   "status_kunci": "kuat",
+   "soal": "(1) Sejak awal tahun, toko oleh-oleh di bandara kabupaten membuka rak khusus bagi keripik buatan kelompok usaha desa. (2) Dalam tiga bulan, kelompok yang produknya dipajang di rak itu menjual dua kali lebih banyak daripada sebelumnya. (3) Toko hanya menerima keripik yang kemasannya mencantumkan tanggal kedaluwarsa dan izin edar. (4) Dari sepuluh kelompok usaha di desa itu, tiga kelompok belum memiliki izin edar sehingga produknya belum dapat dipajang.\nSimpulan paragraf tersebut adalah...",
+   "opsi": {
+    "A": "Rak khusus di bandara membuat penjualan keripik desa naik dua kali lebih banyak.",
+    "B": "Tiga kelompok usaha desa belum memiliki izin edar untuk produk keripiknya.",
+    "C": "Pemerintah desa perlu membantu tiga kelompok itu mengurus izin edar produknya.",
+    "D": "Keripik desa laku di bandara, tetapi pembelinya kebanyakan pelancong dari luar daerah.",
+    "E": "Penjualan naik lewat rak bandara, tetapi izin edar membatasi kelompok yang ikut."
+   },
+   "kunci": "E",
+   "pembahasan": "Yang ditanya: simpulan paragraf, yaitu pernyataan yang menggabungkan seluruh isi teks tanpa menambah hal baru.\nCara cepat: lihat dua bagian teks. Kalimat (1) dan (2) menunjukkan penjualan naik lewat rak di bandara. Kalimat (3) dan (4) menunjukkan toko hanya menerima keripik berizin edar, dan tiga kelompok belum memilikinya. Simpulan harus memuat keduanya.\nKenapa pilihan lain gugur: A hanya memakai kalimat (1) dan (2), lalu menganggap semua keripik desa ikut naik, padahal tiga kelompok belum bisa memajang produknya. Ini cuma menjawab separuh. B hanya satu rincian dari kalimat (4). C menyarankan bantuan pemerintah desa; teks tidak menyebut itu. D menyebut pembelinya kebanyakan pelancong dari luar daerah, keterangan yang tidak ada di teks.\nJawaban: E, karena penjualan naik lewat rak bandara, tetapi izin edar membatasi kelompok yang bisa ikut.\nAnalogi: pengumuman lomba yang hadiahnya besar, tetapi hanya untuk peserta yang sudah mendaftar. Kesimpulan yang jujur menyebut hadiahnya sekaligus syarat ikutnya.\nJebakan: A terdengar seperti kabar baik yang merangkum. Kata \"hanya\" di kalimat (3) memberi tahu kamu bahwa kabar baik itu belum berlaku untuk semua kelompok.",
+   "analisis_opsi": {
+    "A": "[D2] Separuh teks; meluaskan kenaikan ke semua kelompok.",
+    "B": "[D3] Kalimat penjelas.",
+    "C": "[D9] Solusi yang tidak tertulis.",
+    "D": "[D9] Menambah fakta tentang pembeli.",
+    "E": "KUNCI — (1)–(2) penjualan naik + (3)–(4) syarat kemasan."
+   },
+   "penentu": "",
+   "rumpun": "paragraf"
+  },
+  {
+   "id": "DAJ-TWK-132",
+   "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+   "no_urut_sumber": 132,
+   "no_urut_gabungan": 132,
+   "tema": "Bahasa Indonesia",
+   "subtema": "Kalimat utama paragraf: posyandu remaja",
+   "tipe_kode": "E8",
+   "tipe_nama": "Soal Bahasa Indonesia",
+   "kategori_jawaban": "DEFINISI",
+   "level_kognitif": "C4",
+   "konstruk_dua_kutub": "",
+   "bentuk_tegangan": "",
+   "jangkar_faktual": false,
+   "landasan": [
+    {
+     "kode": "TBBI_ED4",
+     "rujukan": "Gagasan utama, simpulan, dan kalimat utama ditentukan dari isi seluruh kalimat dalam teks"
+    }
+   ],
+   "status_kunci": "kuat",
+   "soal": "(1) Setiap Sabtu sore, aula balai desa itu ramai oleh suara remaja. (2) Posyandu remaja yang dibuka awal tahun ini ternyata diminati remaja desa. (3) Mereka datang untuk menimbang berat badan dan memeriksa tekanan darah. (4) Sebagian lagi memanfaatkan sesi konsultasi gizi bersama bidan desa. (5) Bulan lalu, jumlah pengunjungnya mencapai delapan puluh orang.\nKalimat utama paragraf tersebut adalah...",
+   "opsi": {
+    "A": "Kalimat (1), karena suasana ramai itu menjadi pembuka bagi isi paragraf.",
+    "B": "Kalimat (2), karena kegiatan dan jumlah pengunjung sesudahnya merinci isinya.",
+    "C": "Kalimat (3), karena menimbang berat dan memeriksa tekanan darah adalah layanan utamanya.",
+    "D": "Kalimat (4), karena konsultasi gizi bersama bidan menunjukkan mutu layanannya.",
+    "E": "Kalimat (5), karena jumlah delapan puluh pengunjung merangkum keberhasilan posyandu itu."
+   },
+   "kunci": "B",
+   "pembahasan": "Yang ditanya: kalimat utama paragraf, yaitu kalimat yang isinya dirinci oleh kalimat-kalimat lain.\nCara cepat: uji setiap kalimat dengan pertanyaan \"kalimat lain menjelaskan kalimat ini atau tidak?\". Kalimat (3) dan (4) menjelaskan apa yang dilakukan remaja di posyandu, dan kalimat (5) menunjukkan berapa banyak yang datang. Ketiganya merinci isi kalimat (2), bahwa posyandu remaja ternyata diminati.\nKenapa pilihan lain gugur: A memilih kalimat (1) karena letaknya paling awal. Kalimat itu hanya membuka suasana, dan kalimat lain tidak merinci keramaian aula. C menyebut pemeriksaan kesehatan sebagai layanan utama, padahal paragraf tidak menyebut layanan mana yang utama. D menyebut mutu layanan, sesuatu yang tidak dibahas paragraf. E menganggap kalimat (5) merangkum keberhasilan, padahal kalimat itu hanya satu data jumlah pengunjung. Itu rincian, bukan pokoknya.\nJawaban: B, karena kegiatan dan jumlah pengunjung sesudahnya merinci isi kalimat (2).\nAnalogi: dalam laporan wali kelas, kalimat \"kelas kami juara lomba kebersihan\" adalah pokoknya; jadwal piket dan foto kelas yang rapi di bawahnya hanya bukti.\nJebakan: kalimat utama tidak selalu di awal atau di akhir. Di soal ini kalimat pertama hanya pembuka suasana.",
+   "analisis_opsi": {
+    "A": "[D5] Letak awal; suasana, bukan pokok.",
+    "B": "KUNCI — (3)–(5) merinci \"diminati\" pada (2).",
+    "C": "[D9] \"Layanan utama\" tidak tertulis.",
+    "D": "[D9] Mutu layanan tidak tertulis.",
+    "E": "[D3] Data penutup, bukan pokok."
+   },
+   "penentu": "",
+   "rumpun": "paragraf"
+  },
+  {
+   "id": "DAJ-TWK-133",
+   "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+   "no_urut_sumber": 133,
+   "no_urut_gabungan": 133,
+   "tema": "Bahasa Indonesia",
+   "subtema": "Kata baku KBBI",
+   "tipe_kode": "E8",
+   "tipe_nama": "Soal Bahasa Indonesia",
+   "kategori_jawaban": "DEFINISI",
+   "level_kognitif": "C4",
+   "konstruk_dua_kutub": "",
+   "bentuk_tegangan": "",
+   "jangkar_faktual": true,
+   "landasan": [
+    {
+     "kode": "KBBI_DARING",
+     "rujukan": "hadirin, merespons, nomine, staf, kuesioner baku; praktek, karir, respon, staff tidak baku (dibaca 2026-10-27)"
+    }
+   ],
+   "status_kunci": "kuat",
+   "soal": "Kalimat yang semua katanya baku menurut KBBI adalah...",
+   "opsi": {
+    "A": "Petugas mempraktekkan cara mengisi formulir di depan warga.",
+    "B": "Ia memulai karir sebagai staf administrasi di kantor kecamatan.",
+    "C": "Hadirin merespons pengumuman nomine dengan tepuk tangan.",
+    "D": "Kepala seksi memberi respon cepat terhadap keluhan warga.",
+    "E": "Para staff kelurahan membagikan kuesioner kepada pengunjung."
+   },
+   "kunci": "C",
+   "pembahasan": "Yang ditanya: kalimat yang semua katanya baku menurut KBBI. Empat kalimat lain masing-masing memuat satu kata tidak baku.\nCara cepat: periksa kata serapan yang sering salah tulis. Bentuk bakunya: mempraktikkan, karier, respons, staf.\nKenapa pilihan lain gugur: A memakai mempraktekkan; bentuk bakunya mempraktikkan. B memakai karir; bentuk bakunya karier, sedangkan staf di kalimat itu sudah baku. D memakai respon; bentuk bakunya respons. E memakai staff; bentuk bakunya staf, sedangkan kuesioner di kalimat itu sudah baku.\nJawaban: C, karena hadirin, merespons, dan nomine semuanya kata baku.\nAnalogi: seperti memeriksa daftar belanja; satu barang salah tulis saja sudah membuat daftar itu tidak rapi, walaupun barang lainnya benar.\nJebakan: nomine dan hadirin terdengar asing atau resmi sekali, sehingga C sering dicurigai. Justru kata yang sering dipakai sehari-hari, seperti karir dan respon, yang salah.",
+   "analisis_opsi": {
+    "A": "[D4] praktek tidak baku (mempraktikkan).",
+    "B": "[D4] karir tidak baku (karier); staf baku.",
+    "C": "KUNCI — hadirin, merespons, nomine baku.",
+    "D": "[D4] respon tidak baku (respons).",
+    "E": "[D4] staff tidak baku (staf); kuesioner baku."
+   },
+   "penentu": "",
+   "rumpun": "kaidah"
+  },
+  {
+   "id": "DAJ-TWK-134",
+   "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+   "no_urut_sumber": 134,
+   "no_urut_gabungan": 134,
+   "tema": "Bahasa Indonesia",
+   "subtema": "Huruf kapital: nama hari, unsur geografi, bentuk ulang, kekerabatan",
+   "tipe_kode": "E8",
+   "tipe_nama": "Soal Bahasa Indonesia",
+   "kategori_jawaban": "DEFINISI",
+   "level_kognitif": "C5",
+   "konstruk_dua_kutub": "",
+   "bentuk_tegangan": "",
+   "jangkar_faktual": true,
+   "landasan": [
+    {
+     "kode": "EYD_V",
+     "rujukan": "Huruf Kapital kaidah 13, 17, 20, 23 catatan c; dibaca 2026-10-29"
+    }
+   ],
+   "status_kunci": "kuat",
+   "soal": "Kalimat yang penulisan huruf kapitalnya tepat adalah...",
+   "opsi": {
+    "A": "Setiap bulan Agustus, warga tepi danau menggelar lomba perahu.",
+    "B": "Kerja bakti di kampung kami diadakan setiap hari minggu pagi.",
+    "C": "Anak-anak berenang di Sungai setelah membantu orang tua di sawah.",
+    "D": "Mahasiswa hukum itu mempelajari Kitab Undang-undang Hukum Pidana.",
+    "E": "Kita wajib menghormati Bapak dan Ibu kita setiap hari."
+   },
+   "kunci": "A",
+   "pembahasan": "Yang ditanya: kalimat yang penulisan huruf kapitalnya tepat. Empat kalimat lain masing-masing melanggar satu kaidah EYD V.\nCara cepat: cek empat titik rawan, yaitu nama hari dan bulan, unsur geografi tanpa nama diri, bentuk ulang dalam nama dokumen, serta kata kekerabatan yang diikuti kata milik.\nKenapa pilihan lain gugur: B menulis minggu dengan huruf kecil, padahal nama hari ditulis kapital: hari Minggu. C menulis Sungai dengan huruf kapital, padahal kata itu tidak diikuti nama diri, jadi ditulis sungai. D menulis Undang-undang, padahal dalam nama dokumen setiap unsur bentuk ulang ditulis kapital: Kitab Undang-Undang Hukum Pidana. E menulis Bapak dan Ibu dengan huruf kapital, padahal kata kekerabatan yang diikuti kata milik seperti kita ditulis huruf kecil.\nJawaban: A, karena nama bulan Agustus ditulis kapital, sedangkan bulan dan danau tanpa nama diri ditulis huruf kecil.\nAnalogi: huruf kapital seperti papan nama. Toko bernama dipasangi papan nama, sedangkan sekadar \"toko\" di pinggir jalan tidak perlu papan khusus.\nJebakan: E sering dianggap benar karena kita terbiasa menulis Bapak dan Ibu dengan kapital di surat. Kapital hanya dipakai bila kata itu menjadi sapaan atau acuan, bukan bila diikuti kata milik.",
+   "analisis_opsi": {
+    "A": "KUNCI — kaidah 13 (bulan Agustus) dan 17 (danau tanpa nama diri).",
+    "B": "[D4] [kaidah 13] Nama hari kapital: Minggu.",
+    "C": "[D4] [kaidah 17] Unsur geografi tanpa nama diri huruf kecil: sungai.",
+    "D": "[D4] [kaidah 20] Bentuk ulang utuh dalam nama dokumen: Undang-Undang.",
+    "E": "[D4] [kaidah 23c] Kekerabatan + kata kepemilikan huruf kecil: bapak dan ibu kita."
+   },
+   "penentu": "",
+   "rumpun": "kaidah"
+  },
+  {
+   "id": "DAJ-TWK-135",
+   "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+   "no_urut_sumber": 135,
+   "no_urut_gabungan": 135,
+   "tema": "Bahasa Indonesia",
+   "subtema": "Tanda baca: koma sebelum bahwa",
+   "tipe_kode": "E8",
+   "tipe_nama": "Soal Bahasa Indonesia",
+   "kategori_jawaban": "DEFINISI",
+   "level_kognitif": "C4",
+   "konstruk_dua_kutub": "",
+   "bentuk_tegangan": "",
+   "jangkar_faktual": true,
+   "landasan": [
+    {
+     "kode": "EYD_V",
+     "rujukan": "Tanda Koma kaidah 2, 3, 4, 5; Tanda Titik Dua kaidah 1; dibaca 2026-10-29"
+    }
+   ],
+   "status_kunci": "kuat",
+   "soal": "Kalimat yang penulisan tanda bacanya tidak tepat adalah...",
+   "opsi": {
+    "A": "Hujan turun sejak subuh. Jadi, kerja bakti ditunda sampai pekan depan.",
+    "B": "Panitia menyiapkan tiga hal: tenda, kursi, dan pengeras suara.",
+    "C": "Jika cuaca cerah, pembagian bibit dilakukan di lapangan desa.",
+    "D": "Kepala desa menjelaskan, bahwa bibit jagung dibagikan pekan depan.",
+    "E": "Relawan mengumpulkan buku, pensil, dan tas untuk sekolah darurat."
+   },
+   "kunci": "D",
+   "pembahasan": "Yang ditanya: kalimat yang penulisan tanda bacanya tidak tepat. Empat kalimat lain benar menurut EYD V walaupun sebagian tampak janggal.\nCara cepat: cek letak koma pada kalimat majemuk. Bila induk kalimat ada di depan dan anak kalimat yang diawali bahwa ada di belakang, koma tidak dipakai.\nKenapa pilihan lain gugur: A benar, karena koma dipakai sesudah ungkapan penghubung antarkalimat seperti Jadi. B benar, karena titik dua dipakai sesudah pernyataan lengkap tiga hal yang diikuti perinciannya. C benar, karena anak kalimat yang diawali jika mendahului induk kalimat sehingga diikuti koma. E benar, karena koma memisahkan unsur perincian, termasuk sebelum dan.\nJawaban: D, karena koma sebelum bahwa tidak dipakai saat induk kalimat mendahului anak kalimat.\nAnalogi: koma seperti tanda berhenti sebentar di persimpangan. Dari induk kalimat lurus ke bahwa tidak ada persimpangan, jadi tidak perlu berhenti.\nJebakan: B dan A sering dicurigai karena titik dua dan koma sesudah Jadi tampak berlebihan. Keduanya justru dicontohkan dalam EYD V.",
+   "analisis_opsi": {
+    "A": "[D4] [koma kaidah 5] Koma sesudah ungkapan penghubung antarkalimat.",
+    "B": "[D4] [titik dua kaidah 1] Pernyataan lengkap diikuti perincian.",
+    "C": "[D4] [koma kaidah 3] Anak kalimat mendahului induk.",
+    "D": "KUNCI — koma kaidah 4: induk kalimat mendahului anak kalimat, tanpa koma sebelum \"bahwa\".",
+    "E": "[D4] [koma kaidah 2] Koma dalam perincian."
+   },
+   "penentu": "",
+   "rumpun": "kaidah"
+  }
+ ]
+}

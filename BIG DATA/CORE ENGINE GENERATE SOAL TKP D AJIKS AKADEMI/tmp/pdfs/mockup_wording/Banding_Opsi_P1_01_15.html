@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><title>Paket 2 TKP — Pembahasan</title><style>
+  @page { size: A4; margin: 18mm 16mm 20mm 16mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #1a1a1a;
+    margin: 0;
+  }
+  .cover {
+    page-break-after: always;
+    padding-top: 60mm;
+    text-align: center;
+  }
+  .cover .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 10pt;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #6b6b6b;
+    margin-bottom: 10mm;
+  }
+  .cover h1 {
+    font-size: 26pt;
+    margin: 0 0 6mm 0;
+    color: #111;
+  }
+  .cover .sub {
+    font-size: 12pt;
+    color: #444;
+    margin-bottom: 14mm;
+  }
+  .cover .meta-box {
+    display: inline-block;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6mm 10mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9.5pt;
+    color: #333;
+  }
+  .cover .meta-box div { margin: 1.5mm 0; }
+  .cover .meta-box b { color: #111; }
+  .cover .note {
+    margin-top: 16mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    color: #888;
+    max-width: 120mm;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2.section-title {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 13pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111;
+    border-bottom: 2px solid #111;
+    padding-bottom: 2mm;
+    margin: 0 0 6mm 0;
+  }
+
+  table.summary {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.8pt;
+    margin-bottom: 4mm;
+  }
+  table.summary th, table.summary td {
+    border: 1px solid #ccc;
+    padding: 2mm 2.2mm;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.summary th {
+    background: #f2f2f2;
+    font-weight: 700;
+  }
+  table.summary td.center { text-align: center; }
+
+  .soal {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 9mm;
+    padding-bottom: 7mm;
+    border-bottom: 1px solid #ddd;
+  }
+  .soal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 3mm;
+    break-inside: avoid;
+  }
+  .soal-num {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 11.5pt;
+    color: #111;
+  }
+  .badge {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    padding: 1mm 3mm;
+    border-radius: 10px;
+    color: #fff;
+    white-space: nowrap;
+  }
+  .dim-Profesionalisme { background: #2f5fa8; }
+  .dim-PelayananPublik { background: #1f8a56; }
+  .dim-JejaringKerja { background: #6b3fa0; }
+  .dim-SosialBudaya { background: #c9701d; }
+  .dim-TIK { background: #0f8b8d; }
+  .dim-AntiRadikalisme { background: #b3282d; }
+
+  .stem { margin-bottom: 3mm; text-align: justify; }
+
+  .options { margin: 0 0 4mm 0; padding: 0; list-style: none; }
+  .options li {
+    display: flex;
+    gap: 2.5mm;
+    margin-bottom: 1.6mm;
+    align-items: flex-start;
+  }
+  .opt-letter {
+    flex: 0 0 auto;
+    font-weight: 700;
+    width: 5mm;
+  }
+  .opt-letter.kunci { color: #1f8a56; }
+  .opt-text { flex: 1 1 auto; }
+  .opt-text.kunci { font-weight: 700; }
+
+  .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.6pt;
+    background: #f7f7f7;
+    border-left: 3px solid #111;
+    padding: 2.5mm 3.5mm;
+    margin-bottom: 2.5mm;
+  }
+  .meta div { margin: 0.8mm 0; }
+  .meta .label { font-weight: 700; display: inline-block; width: 22mm; color: #444; }
+
+  .pembahasan {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    background: #fbfbf5;
+    border: 1px solid #e6e2c8;
+    padding: 3mm 4mm;
+  }
+  .pembahasan .ph-title {
+    font-weight: 700;
+    font-size: 8.6pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6b6320;
+    margin-bottom: 1.5mm;
+  }
+  .pembahasan ol { margin: 0; padding-left: 4mm; }
+  .pembahasan li { margin-bottom: 1.3mm; text-align: justify; }
+
+  .footer-note {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    color: #999;
+    text-align: center;
+    margin-top: 10mm;
+  }
+
+  code.sumbu {
+    background: #eee;
+    padding: 0.2mm 1.2mm;
+    border-radius: 3px;
+    font-family: "Courier New", monospace;
+    font-size: 8.2pt;
+  }
+  .pembahasan-siswa { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 9pt; background: #f3f8fb; border: 1px solid #c9dde8; padding: 3mm 4mm; margin-top: 2mm; }
+  .pembahasan-siswa .ph-title { font-weight: 700; font-size: 8.6pt; text-transform: uppercase; color: #2d5a73; margin-bottom: 1.5mm; }
+  .pembahasan-siswa p, .pembahasan-siswa li { margin: 0.8mm 0; text-align: justify; }
+  .pindai{border:2px solid #1f5f8b;border-radius:5px;background:#f2f8fc;padding:3mm 5mm;margin:0 0 4mm;font-family:"Helvetica Neue",Arial,sans-serif;font-size:10pt}
+  .pindai .pt{font-weight:bold;color:#1f5f8b;letter-spacing:1px;text-transform:uppercase;font-size:9.5pt;margin-bottom:2mm}
+  .pindai .pt span{float:right;font-weight:normal;color:#555;text-transform:none;letter-spacing:0}
+  .pindai ol{margin:0;padding-left:5mm}.pindai li{margin:1.5mm 0}
+  .pindai .tanda{margin-top:2.5mm;padding:2mm 3mm;background:#fff6d6;border-left:4px solid #d9a400}
+  .pindai{border:2px solid #1f5f8b;border-radius:5px;background:#f2f8fc;padding:3mm 5mm;margin:0 0 4mm;font-family:"Helvetica Neue",Arial,sans-serif;font-size:10pt}
+  .pindai .pt{font-weight:bold;color:#1f5f8b;letter-spacing:1px;text-transform:uppercase;font-size:9.5pt;margin-bottom:2mm}
+  .pindai .pt span{float:right;font-weight:normal;color:#555;text-transform:none;letter-spacing:0}
+  .pindai ol{margin:0;padding-left:5mm}.pindai li{margin:1.5mm 0}
+  .pindai .tanda{margin-top:2.5mm;padding:2mm 3mm;background:#fff6d6;border-left:4px solid #d9a400}
+
+  .soal.bahas { page-break-inside: auto; break-inside: auto; }
+  .soal.bahas .soal-head { break-after: avoid; page-break-after: avoid; }
+  .soal.bahas .stem, .soal.bahas .options { break-inside: avoid; }
+  .soal.bahas .stem, .soal.bahas .options { font-size: 10pt; }
+  table.skor td, table.skor th { text-align: center; }
+  .cover { padding-top: 70mm; }
+.duo{display:flex;gap:5mm}.col{flex:1;border:1px solid #ccc;border-radius:4px;padding:3mm 4mm;font-size:9.6pt}.col h4{margin:0 0 2mm;font-family:Helvetica,Arial;font-size:9pt;letter-spacing:1px;text-transform:uppercase}.lama h4{color:#999}.baru{border:2px solid #2f7d4f}.baru h4{color:#2f7d4f}.col ol{padding-left:4.5mm;margin:2mm 0}.col li{margin:1mm 0}.k{font-weight:bold}.n{font-family:Helvetica,Arial;font-size:8pt;color:#666;margin-top:2mm}</style></head><body><h2 class="section-title">Paket 1 TKP — Revisi Opsi Soal 1–15</h2><p>Kiri: versi lama. Kanan: versi baru (opsi nilai 4 sama lengkap dengan kunci; kunci soal 5 dipadatkan). Cerita, kunci, dan skor tetap.</p><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 3</span><span class="badge">Profesionalisme</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Sebagai staf akademik, Anda harus mengirim rekap kehadiran taruna ke bagian pengasuhan siang ini, dan izin bermalam akhir pekan ditetapkan dari rekap itu. Mesin presensi kosong untuk satu kelas, padahal dosennya mengisi daftar hadir manual dan sebentar lagi selesai mengajar. Langkah paling tepat adalah&hellip;</p><ol type="A"><li class="k">Meminta daftar hadir manual dari dosen itu, lalu melengkapi data sebelum dikirim. <i>(skor 5)</i></li><li class="">Menunggu mesin presensi diperbaiki dulu, baru rekapnya dikirim ke bagian pengasuhan. <i>(skor 1)</i></li><li class="">Mengikuti saran rekan senior agar rekap dikirim sesuai data mesin saja. <i>(skor 2)</i></li><li class="">Mengirim rekap tepat waktu, dengan catatan data satu kelas menyusul nanti. <i>(skor 4)</i></li><li class="">Meminta seluruh dosen menandatangani daftar hadir manual, lalu menyusun rekap dari awal. <i>(skor 3)</i></li></ol><div class="n">44 kata · pilihan 11–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Sebagai staf akademik, Anda harus mengirim rekap kehadiran taruna ke bagian pengasuhan siang ini, dan izin bermalam akhir pekan ditetapkan dari rekap itu. Mesin presensi kosong untuk satu kelas, padahal dosennya mengisi daftar hadir manual dan sebentar lagi selesai mengajar. Langkah paling tepat adalah&hellip;</p><ol type="A"><li class="k">Meminta daftar hadir manual dari dosen itu, lalu melengkapi data sebelum dikirim. <i>(skor 5)</i></li><li class="">Menunggu mesin presensi diperbaiki dulu, baru rekapnya dikirim ke bagian pengasuhan. <i>(skor 1)</i></li><li class="">Mengikuti saran rekan senior agar rekap dikirim sesuai data mesin saja. <i>(skor 2)</i></li><li class="">Mengirim rekap tepat waktu, lalu menyusulkan daftar hadir kelas itu dari dosennya. <i>(skor 4)</i></li><li class="">Meminta seluruh dosen menandatangani daftar hadir manual, lalu menyusun rekap dari awal. <i>(skor 3)</i></li></ol><div class="n">44 kata · pilihan 11–12 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 4</span><span class="badge">Sosial Budaya</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Menjelang Natal, hampir semua petugas piket terminal yang Anda koordinasikan dibutuhkan, dan rekan-rekan mengusulkan dua petugas yang merayakan Natal diliburkan sepekan. Keduanya hanya butuh libur malam dan hari Natal, sedangkan beberapa bulan lagi giliran rekan lain merayakan Idulfitri. Apa respons Anda?</p><ol type="A"><li class="">Mengambil sendiri seluruh piket malam Natal agar tidak ada rekan yang dirugikan. <i>(skor 1)</i></li><li class="k">Menanyakan kebutuhan tiap petugas di hari besarnya sebagai dasar tukar piket. <i>(skor 5)</i></li><li class="">Memberi libur malam dan hari Natal kepada keduanya, sesuai permintaan mereka sendiri. <i>(skor 4)</i></li><li class="">Menyetujui usul mayoritas rekan untuk meliburkan keduanya sepekan demi meredakan suasana. <i>(skor 2)</i></li><li class="">Menetapkan tukar piket di hari besar tiap agama, dengan jatah libur sepekan. <i>(skor 3)</i></li></ol><div class="n">41 kata · pilihan 11–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Menjelang Natal, hampir semua petugas piket terminal yang Anda koordinasikan dibutuhkan, dan rekan-rekan mengusulkan dua petugas yang merayakan Natal diliburkan sepekan. Keduanya hanya butuh libur malam dan hari Natal, sedangkan beberapa bulan lagi giliran rekan lain merayakan Idulfitri. Apa respons Anda?</p><ol type="A"><li class="">Mengambil sendiri seluruh piket malam Natal agar tidak ada rekan yang dirugikan. <i>(skor 1)</i></li><li class="k">Menanyakan kebutuhan tiap petugas di hari besarnya sebagai dasar tukar piket. <i>(skor 5)</i></li><li class="">Meliburkan keduanya malam dan hari Natal, lalu meminta rekan lain mengisi piketnya. <i>(skor 4)</i></li><li class="">Menyetujui usul mayoritas rekan untuk meliburkan keduanya sepekan demi meredakan suasana. <i>(skor 2)</i></li><li class="">Menetapkan tukar piket di hari besar tiap agama, dengan jatah libur sepekan. <i>(skor 3)</i></li></ol><div class="n">41 kata · pilihan 11–12 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 5</span><span class="badge">Profesionalisme</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Rekan senior di loket pajak sebelah Anda menerima berkas keberatan tanpa tanda terima bernomor agar antrean cepat, padahal SOP mewajibkannya, dan ia melakukannya sejak Senin. Tadi pagi Anda menyinggungnya lewat candaan, tetapi tak digubris, dan tiga pemohonnya masih menunggu. Apa yang Anda lakukan?</p><ol type="A"><li class="">Menyinggungnya lagi lewat candaan ringan saat jeda, supaya rekan tidak tersinggung. <i>(skor 2)</i></li><li class="">Memakai juga cara cepat rekan itu agar antrean jam sibuk tetap lancar. <i>(skor 1)</i></li><li class="k">Mengajak rekan menerbitkan tanda terima tertinggal, lalu menyepakati cara mempercepat antrean. <i>(skor 5)</i></li><li class="">Menerbitkan sendiri tanda terima ketiga berkas tadi, lalu menyerahkannya ke pemohon. <i>(skor 4)</i></li><li class="">Menegur rekan secara empat mata, lalu menyepakati cara mempercepat antrean mulai besok. <i>(skor 3)</i></li></ol><div class="n">43 kata · pilihan 11–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Rekan senior di loket pajak sebelah Anda menerima berkas keberatan tanpa tanda terima bernomor agar antrean cepat, padahal SOP mewajibkannya, dan ia melakukannya sejak Senin. Tadi pagi Anda menyinggungnya lewat candaan, tetapi tak digubris, dan tiga pemohonnya masih menunggu. Apa yang Anda lakukan?</p><ol type="A"><li class="">Menyinggungnya lagi lewat candaan ringan saat jeda, supaya rekan tidak tersinggung. <i>(skor 2)</i></li><li class="">Memakai juga cara cepat rekan itu agar antrean jam sibuk tetap lancar. <i>(skor 1)</i></li><li class="k">Mengajak rekan menerbitkan tanda terima tertunda, lalu menyepakati cara mempercepat antrean. <i>(skor 5)</i></li><li class="">Menerbitkan tanda terima ketiga berkas tadi, lalu meminta rekan kembali mengikuti SOP. <i>(skor 4)</i></li><li class="">Menegur rekan secara empat mata, lalu menyepakati cara mempercepat antrean mulai besok. <i>(skor 3)</i></li></ol><div class="n">43 kata · pilihan 11–12 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 9</span><span class="badge">Anti Radikalisme</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Saat apel pagi yang Anda pimpin sebagai kepala regu penguji kendaraan, seorang penguji senior berkata sambil tertawa bahwa pemilik kendaraan dari satu suku yang suka membantah "dipersulit ramai-ramai saja, tidak usah pakai aturan". Beberapa penguji muda ikut tertawa. Sikap Anda adalah&hellip;</p><ol type="A"><li class="">Melaporkan ucapan rekan itu ke kepala balai agar beliau menegurnya secara resmi. <i>(skor 3)</i></li><li class="">Menganggapnya candaan senior agar apel tetap cair, lalu mengingatkannya secara pribadi nanti. <i>(skor 2)</i></li><li class="k">Menegur ucapan itu di depan apel, dengan penegasan aturan berlaku sama. <i>(skor 5)</i></li><li class="">Menyerahkan pada penguji muda untuk menilai sendiri sikap mana yang pantas ditiru. <i>(skor 1)</i></li><li class="">Menyelesaikan apel dulu, lalu menegur rekan itu empat mata atas sikap bencinya. <i>(skor 4)</i></li></ol><div class="n">41 kata · pilihan 11–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Saat apel pagi yang Anda pimpin sebagai kepala regu penguji kendaraan, seorang penguji senior berkata sambil tertawa bahwa pemilik kendaraan dari satu suku yang suka membantah "dipersulit ramai-ramai saja, tidak usah pakai aturan". Beberapa penguji muda ikut tertawa. Sikap Anda adalah&hellip;</p><ol type="A"><li class="">Melaporkan ucapan rekan itu ke kepala balai agar beliau menegurnya secara resmi. <i>(skor 3)</i></li><li class="">Menganggapnya candaan senior agar apel tetap cair, lalu mengingatkannya secara pribadi nanti. <i>(skor 2)</i></li><li class="k">Menegur ucapan itu di depan apel, dengan penegasan aturan berlaku sama. <i>(skor 5)</i></li><li class="">Menyerahkan pada penguji muda untuk menilai sendiri sikap mana yang pantas ditiru. <i>(skor 1)</i></li><li class="">Mengakhiri apel dengan tenang, lalu menegur rekan empat mata atas sikap bencinya. <i>(skor 4)</i></li></ol><div class="n">41 kata · pilihan 11–12 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 13</span><span class="badge">TIK</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Sebagai penyuluh dinas pertanian, Anda merekap proposal kelompok tani bertenggat tiga hari lagi, lalu antivirus memberi peringatan saat flashdisk satu kelompok dicolokkan. Dinas punya pengelola jaringan untuk perangkat bermasalah, dan bulan lalu komputer bidang sebelah tetap tertular walau dibersihkan sendiri. Apa respons Anda?</p><ol type="A"><li class="">Memperbarui antivirus komputer Anda ke versi terbaru, lalu lanjut merekap kelompok lain. <i>(skor 1)</i></li><li class="k">Membawa flashdisk itu ke petugas jaringan, lalu mengabari kelompoknya soal pemeriksaan. <i>(skor 5)</i></li><li class="">Menanyakan ke rekan satu bidang apakah peringatan semacam itu memang biasa muncul. <i>(skor 2)</i></li><li class="">Mengembalikan flashdisk itu ke kelompok tani agar mereka bersihkan sendiri dulu. <i>(skor 3)</i></li><li class="">Meminta kelompok itu mengirim ulang lewat surel, flashdisknya disimpan tanpa dicolokkan lagi. <i>(skor 4)</i></li></ol><div class="n">43 kata · pilihan 11–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Sebagai penyuluh dinas pertanian, Anda merekap proposal kelompok tani bertenggat tiga hari lagi, lalu antivirus memberi peringatan saat flashdisk satu kelompok dicolokkan. Dinas punya pengelola jaringan untuk perangkat bermasalah, dan bulan lalu komputer bidang sebelah tetap tertular walau dibersihkan sendiri. Apa respons Anda?</p><ol type="A"><li class="">Memperbarui antivirus komputer Anda ke versi terbaru, lalu lanjut merekap kelompok lain. <i>(skor 1)</i></li><li class="k">Membawa flashdisk itu ke petugas jaringan, lalu mengabari kelompoknya soal pemeriksaan. <i>(skor 5)</i></li><li class="">Menanyakan ke rekan satu bidang apakah peringatan semacam itu memang biasa muncul. <i>(skor 2)</i></li><li class="">Mengembalikan flashdisk itu ke kelompok tani agar mereka bersihkan sendiri dulu. <i>(skor 3)</i></li><li class="">Menyimpan flashdisk itu terpisah, lalu meminta kelompoknya mengirim ulang berkas lewat surel. <i>(skor 4)</i></li></ol><div class="n">43 kata · pilihan 11–12 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 15</span><span class="badge">Anti Radikalisme</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Pamflet yang menuding satu kelompok agama sebagai ancaman negara tertempel di ruang ganti perawat, dan fotonya beredar di grup ruangan. Anda kepala ruang yang mengelola papan pengumuman serta grup itu, dan dua perawat dari kelompok tersebut mengaku tidak nyaman. Sikap Anda adalah&hellip;</p><ol type="A"><li class="">Melaporkan pamflet itu ke kepala bidang keperawatan, lalu menunggu keputusan tertulisnya. <i>(skor 4)</i></li><li class="">Menahan diri berkomentar di grup, mengingat pamflet itu di luar urusan pelayanan. <i>(skor 1)</i></li><li class="">Mencari tahu dulu siapa penempelnya, baru meminta fotonya dihapus dari grup. <i>(skor 3)</i></li><li class="k">Mencopot pamflet, menghapus fotonya dari grup, lalu menemui kedua perawat itu. <i>(skor 5)</i></li><li class="">Menghapus foto pamflet dari grup, tapi pamfletnya dibiarkan agar suasana tak tegang. <i>(skor 2)</i></li></ol><div class="n">42 kata · pilihan 11–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Pamflet yang menuding satu kelompok agama sebagai ancaman negara tertempel di ruang ganti perawat, dan fotonya beredar di grup ruangan. Anda kepala ruang yang mengelola papan pengumuman serta grup itu, dan dua perawat dari kelompok tersebut mengaku tidak nyaman. Sikap Anda adalah&hellip;</p><ol type="A"><li class="">Mencopot pamflet, lalu meminta kepala bidang menghapus fotonya dan menemui kedua perawat. <i>(skor 4)</i></li><li class="">Menahan diri berkomentar di grup, mengingat pamflet itu di luar urusan pelayanan. <i>(skor 1)</i></li><li class="">Mencari tahu dulu siapa penempelnya, baru meminta fotonya dihapus dari grup. <i>(skor 3)</i></li><li class="k">Mencopot pamflet, menghapus fotonya dari grup, lalu menemui kedua perawat itu. <i>(skor 5)</i></li><li class="">Menghapus foto pamflet dari grup, tapi pamfletnya dibiarkan agar suasana tak tegang. <i>(skor 2)</i></li></ol><div class="n">42 kata · pilihan 11–12 kata</div></div></div></div></body></html>

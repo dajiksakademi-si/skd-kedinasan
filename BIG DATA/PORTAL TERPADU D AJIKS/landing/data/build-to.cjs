@@ -1,6 +1,6 @@
 // susun 110 soal contoh untuk prototipe ruang tryout dari bank D'Ajiks sendiri. TANPA kunci/poin/pembahasan.
 const fs = require('fs'), path = require('path');
-const B = '/Users/gustiputuyudawirashana/Downloads/PROJECT SKD KEDINASAN /BIG DATA/';
+const B = path.join(__dirname, '..', '..', '..') + '/';
 const L = B + 'PORTAL TERPADU D AJIKS/landing/';
 const twkRaw = require(B + 'CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI/bank_soal_100.json').soal.slice(0, 30);
 const twk = twkRaw.map(s => ({ s: 'TWK', t: s.soal, o: s.opsi }));

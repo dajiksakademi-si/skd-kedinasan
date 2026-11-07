@@ -1,0 +1,330 @@
+[
+ {
+  "no": 31,
+  "keluarga": "ARG",
+  "level": "HOTS",
+  "kunci": "A",
+  "kerangka": "klaim sebab-akibat kebijakan + 1 data sebelum-sesudah · cari pemerkuat yang menutup penjelasan lain",
+  "ide": "Dinas perhubungan: lampu jalan baru di satu ruas menurunkan kecelakaan malam. Kunci menutup penjelasan lain (jumlah kendaraan malam tidak berubah).",
+  "jebakan": [
+   "mengulang klaim",
+   "relevan topik tapi netral",
+   "akal sehat di luar argumen"
+  ]
+ },
+ {
+  "no": 32,
+  "keluarga": "SIL",
+  "level": "Standar",
+  "kunci": "D",
+  "kerangka": "kategorikal 2 premis, 1 premis negatif · kesimpulan pasti benar",
+  "ide": "Premis fakta (bukan izin) tentang anggota tim SAR dan sertifikat selam; satu premis 'tidak ada'.",
+  "jebakan": [
+   "konversi tidak sah",
+   "sebagian dibaca semua",
+   "akal sehat"
+  ]
+ },
+ {
+  "no": 33,
+  "keluarga": "ARG",
+  "level": "HOTS",
+  "kunci": "E",
+  "kerangka": "klaim program meningkatkan hasil + data kenaikan · cari pelemah berupa penyebab lain yang terjadi bersamaan",
+  "ide": "Klaim kelas daring malam menaikkan nilai rata-rata siswa; kunci: pada periode sama sekolah mengganti soal ujian yang lebih mudah.",
+  "jebakan": [
+   "mengulang klaim",
+   "pelemah yang menyerang hal di luar klaim",
+   "pernyataan netral"
+  ]
+ },
+ {
+  "no": 34,
+  "keluarga": "SIL",
+  "level": "HOTS+",
+  "kunci": "B",
+  "kerangka": "rantai kondisional 3 premis + fakta negasi akhir · modus tollens berantai",
+  "ide": "Jika gudang logistik dibuka maka ...; jika ... maka ...; faktanya ... tidak terjadi. Kesimpulan pasti benar.",
+  "jebakan": [
+   "membenarkan akibat",
+   "menyangkal sebab",
+   "kesimpulan 'mungkin'"
+  ]
+ },
+ {
+  "no": 35,
+  "keluarga": "ANL",
+  "level": "HOTS",
+  "kunci": "E",
+  "kerangka": "analogi kata A : B = ? (pasangan) · relasi alat ukur : besaran yang diukur",
+  "ide": "HIGROMETER : KELEMBAPAN. Kunci alat ukur : besaran (mis. AMPEREMETER : ARUS LISTRIK). Pengecoh: BAROMETER : CUACA (mirip tapi beda), TERMOMETER : DEMAM (gejala), arah terbalik.",
+  "jebakan": [
+   "konsep mirip tapi beda",
+   "arah terbalik",
+   "relasi lain"
+  ]
+ },
+ {
+  "no": 36,
+  "keluarga": "ANL",
+  "level": "HOTS",
+  "kunci": "A",
+  "kerangka": "analogi hubungan kalimat · makhluk + ciri tubuh + tujuan, kategori tujuan hemat air",
+  "ide": "Kaktus berdaun duri untuk menekan penguapan. Kunci pinus berdaun jarum berlapis lilin (kata tujuan beda). Pengecoh: landak berduri (kata sama, tujuan perlindungan), bunglon, kantong semar, pelikan; semua fakta benar.",
+  "jebakan": [
+   "kata sama dengan soal",
+   "tujuan lain (perlindungan)",
+   "tujuan lain (makan)"
+  ]
+ },
+ {
+  "no": 37,
+  "keluarga": "HIT",
+  "level": "Standar",
+  "kunci": "C",
+  "kerangka": "estimasi akar + perkalian desimal",
+  "ide": "Bentuk akar bilangan mendekati kuadrat sempurna ditambah perkalian desimal; opsi kelipatan 50.",
+  "jebakan": [
+   "salah bulatkan",
+   "berhenti satu langkah",
+   "salah urutan operasi"
+  ]
+ },
+ {
+  "no": 38,
+  "keluarga": "SUK",
+  "level": "HOTS",
+  "kunci": "B",
+  "kerangka": "tabel suku ke-n kuadrat, 5 titik, nomor loncat acak · suku jauh",
+  "ide": "Rumus kuadrat baru (bukan (2n-1)(n-1) dan bukan linear Paket 41). Titik ke-4 dan ke-5 membuktikan kuadrat.",
+  "jebakan": [
+   "salah nomor suku",
+   "selisih dianggap tetap",
+   "lupa konstanta"
+  ]
+ },
+ {
+  "no": 39,
+  "keluarga": "KOTAK",
+  "level": "HOTS",
+  "kunci": "E",
+  "kerangka": "kotak 2x5 X dan Y · sel kolom berikut atas = jumlah kolom sebelumnya, bawah = selisih kolom sebelumnya",
+  "pola": "Silang jumlah-selisih antar kolom",
+  "ide": "Dua baris saling bergantung (bukan dua deret terpisah). Angka dipilih supaya tebakan selisih naik di baris atas tidak menghasilkan X.",
+  "jebakan": [
+   "dua baris dianggap deret terpisah",
+   "selisih dianggap naik tetap",
+   "X dan Y tertukar"
+  ]
+ },
+ {
+  "no": 40,
+  "keluarga": "KOTAK",
+  "level": "HOTS+",
+  "kunci": "C",
+  "kerangka": "kotak 3x3 · tiap baris c = a pangkat b dikurangi b · baris dengan bilangan negatif",
+  "pola": "Pangkat dikurangi pangkatnya, basis negatif",
+  "ide": "Baris berisi bilangan negatif sebagai angka pokok; tanda hasil bergantung pada pangkat genap/ganjil.",
+  "jebakan": [
+   "salah tanda pangkat negatif",
+   "pola baris pertama saja (selisih)",
+   "lupa dikurangi"
+  ],
+  "catatan": "MIRIP keluarga 'angka pertama dipangkatkan angka kedua' (deret tabel level 5-6 no. 8); pembeda: dikurangi pangkat + basis negatif"
+ },
+ {
+  "no": 41,
+  "keluarga": "PAS",
+  "level": "Standar",
+  "kunci": "A",
+  "kerangka": "pasangan bagi bernilai sama · a : b dan c : d",
+  "ide": "Pembagian dengan hasil desimal; dua pengecoh sisi kiri bernilai sama dengan kunci.",
+  "jebakan": [
+   "cek satu sisi saja",
+   "salah geser koma"
+  ]
+ },
+ {
+  "no": 42,
+  "keluarga": "PAS",
+  "level": "Standar",
+  "kunci": "E",
+  "kerangka": "pasangan kali bernilai sama · a x b dan c x d dengan cermin semu",
+  "ide": "Kunci bukan pasangan cermin; ada pengecoh tampak cermin tapi tidak sama.",
+  "jebakan": [
+   "cermin semu",
+   "cek satu sisi saja"
+  ]
+ },
+ {
+  "no": 43,
+  "keluarga": "PAS",
+  "level": "HOTS",
+  "kunci": "C",
+  "kerangka": "pasangan operasi campuran berkurung · bentuk TIDAK sama",
+  "ide": "Perintah 'TIDAK bernilai sama'; empat pasangan sama, satu tidak.",
+  "jebakan": [
+   "salah urutan operasi",
+   "cek satu sisi saja"
+  ]
+ },
+ {
+  "no": 44,
+  "keluarga": "CRT",
+  "level": "Standar",
+  "kunci": "B",
+  "kerangka": "persen kapasitas · selisih persen <-> liter · cari kapasitas",
+  "ide": "Tangki truk pemadam terisi sebagian, ditambah sejumlah liter jadi persen lebih tinggi; tanya kapasitas penuh.",
+  "jebakan": [
+   "salah basis persen",
+   "berhenti satu langkah",
+   "membagi dengan persen akhir"
+  ]
+ },
+ {
+  "no": 45,
+  "keluarga": "CRT",
+  "level": "HOTS+",
+  "kunci": "D",
+  "kerangka": "kerja bersama 2 pengisi + 1 pengosong dibuka terlambat · waktu sampai penuh",
+  "ide": "Kolam pembenihan ikan; keran pembuang dibuka 1 jam setelah dua keran pengisi.",
+  "jebakan": [
+   "lupa jeda",
+   "pengosong dihitung menambah",
+   "berhenti di waktu sesudah jeda"
+  ]
+ },
+ {
+  "no": 46,
+  "keluarga": "KCK",
+  "level": "HOTS",
+  "kunci": "A",
+  "kerangka": "aljabar 2 harga · tanya jumlah gabungan · (1) kelipatan gabungan · (2) selisih harga",
+  "ide": "Tanya harga 5 map + 5 spidol; (1) 2 map + 2 spidol = harga tertentu sudah cukup. Siswa mengira harga satuan wajib diketahui.",
+  "jebakan": [
+   "mengira harga satuan perlu",
+   "berhenti di (1) tanpa cek (2)"
+  ]
+ },
+ {
+  "no": 47,
+  "keluarga": "KCK",
+  "level": "HOTS+",
+  "kunci": "E",
+  "kerangka": "nilai vs batas muatan · (1) banyak barang · (2) batas atas berat per barang + kapasitas",
+  "ide": "Truk BPBD mengangkut karung beras; (2) memberi berat karung terberat, bukan berat tiap karung, jadi total bisa di bawah atau di atas kapasitas.",
+  "jebakan": [
+   "semua karung dianggap seberat yang terberat",
+   "mengira data cukup karena ada angka"
+  ]
+ },
+ {
+  "no": 48,
+  "keluarga": "KCK",
+  "level": "HOTS",
+  "kunci": "A",
+  "kerangka": "ya/tidak waktu kerja berbalik nilai · (1) pekerja-hari dari tim lain · (2) laju per orang tanpa total",
+  "ide": "Konveksi seragam: apakah 6 penjahit selesai paling lama 4 hari? (1) 10 penjahit menyelesaikan pesanan yang sama dalam 3 hari.",
+  "jebakan": [
+   "perbandingan dianggap searah",
+   "mengira laju per orang perlu"
+  ]
+ },
+ {
+  "no": 49,
+  "keluarga": "KCK",
+  "level": "Standar",
+  "kunci": "D",
+  "kerangka": "rasio dengan total diketahui · (1) perbandingan · (2) selisih",
+  "ide": "Total peserta seleksi diketahui; (1) perbandingan putra-putri; (2) selisih putra-putri. Keduanya masing-masing cukup.",
+  "jebakan": [
+   "berhenti di (1)",
+   "mengira keduanya harus digabung"
+  ]
+ },
+ {
+  "no": 50,
+  "keluarga": "KCK",
+  "level": "HOTS",
+  "kunci": "B",
+  "kerangka": "persen dari basis yang ditanya · (1) persen tanpa nilai · (2) nilai akhir + persen terhadap basis",
+  "ide": "Tanya harga cabai awal bulan; (2) harga akhir bulan dan persen kenaikannya terhadap awal bulan cukup dihitung balik.",
+  "jebakan": [
+   "mengira persen dari basis yang belum diketahui tidak bisa dihitung balik",
+   "mengira (1) perlu"
+  ]
+ },
+ {
+  "no": 51,
+  "keluarga": "KCK",
+  "level": "HOTS",
+  "kunci": "C",
+  "kerangka": "sifat bilangan ya/tidak habis dibagi · (1) dan (2) faktor berbeda, KPK",
+  "ide": "Apakah n habis dibagi 12? (1) habis dibagi 4; (2) habis dibagi 6. Gabungan: KPK 12, pasti ya.",
+  "jebakan": [
+   "mengira hasil kali 24 yang menjadi syarat",
+   "mengira nilai n harus diketahui"
+  ]
+ },
+ {
+  "no": 52,
+  "keluarga": "KCK",
+  "level": "HOTS+",
+  "kunci": "E",
+  "kerangka": "himpunan dua kegiatan · (1) banyak tiap kegiatan · (2) total anggota kelas · tanpa info 'semua ikut minimal satu'",
+  "ide": "Siswa yang ikut paduan suara dan basket sekaligus; tidak tertulis setiap siswa ikut minimal satu.",
+  "jebakan": [
+   "menganggap semua ikut minimal satu",
+   "mengira data cukup"
+  ]
+ },
+ {
+  "no": 53,
+  "keluarga": "ANA",
+  "level": "HOTS",
+  "kunci": "D",
+  "kerangka": "urutan 5 hari + atribut 5 topik · pernyataan pasti benar",
+  "ide": "Lima regu presentasi Senin-Jumat dengan lima topik; tiap syarat menggugurkan minimal satu opsi.",
+  "jebakan": [
+   "mungkin benar dianggap pasti",
+   "syarat terlewat"
+  ]
+ },
+ {
+  "no": 54,
+  "keluarga": "ANA",
+  "level": "Standar",
+  "kunci": "B",
+  "kerangka": "duduk melingkar 6 orang · siapa di hadapan X",
+  "ide": "Enam petugas piket di meja bundar; syarat bersebelahan dan berhadapan.",
+  "jebakan": [
+   "arah kiri-kanan tertukar",
+   "hadapan dihitung salah"
+  ]
+ },
+ {
+  "no": 55,
+  "keluarga": "ANA",
+  "level": "HOTS+",
+  "kunci": "D",
+  "kerangka": "urutan parsial 6 unsur · pernyataan pasti benar",
+  "ide": "Urutan kedatangan enam kapal di pelabuhan; hanya sebagian urutan pasti.",
+  "jebakan": [
+   "urutan parsial dianggap urutan penuh",
+   "mungkin benar dianggap pasti"
+  ]
+ },
+ {
+  "no": 56,
+  "keluarga": "OPT",
+  "level": "HOTS",
+  "kunci": "C",
+  "kerangka": "tabel 3 paket isi-harga · biaya termurah memenuhi jumlah minimum",
+  "ide": "Pesan paling sedikit 130 nasi kotak dari tiga paket (isi 20/35/50); kunci = optimum dari semua kombinasi (135 kotak), bukan tepat 130.",
+  "jebakan": [
+   "memilih harga satuan termurah saja",
+   "jumlah tepat 150 dipaksakan",
+   "kombinasi tidak dicek semua"
+  ]
+ }
+]

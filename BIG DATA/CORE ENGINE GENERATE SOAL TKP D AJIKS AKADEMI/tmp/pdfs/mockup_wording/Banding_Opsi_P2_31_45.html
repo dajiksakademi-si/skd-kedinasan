@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><title>Paket 2 TKP — Pembahasan</title><style>
+  @page { size: A4; margin: 18mm 16mm 20mm 16mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #1a1a1a;
+    margin: 0;
+  }
+  .cover {
+    page-break-after: always;
+    padding-top: 60mm;
+    text-align: center;
+  }
+  .cover .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 10pt;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #6b6b6b;
+    margin-bottom: 10mm;
+  }
+  .cover h1 {
+    font-size: 26pt;
+    margin: 0 0 6mm 0;
+    color: #111;
+  }
+  .cover .sub {
+    font-size: 12pt;
+    color: #444;
+    margin-bottom: 14mm;
+  }
+  .cover .meta-box {
+    display: inline-block;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6mm 10mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9.5pt;
+    color: #333;
+  }
+  .cover .meta-box div { margin: 1.5mm 0; }
+  .cover .meta-box b { color: #111; }
+  .cover .note {
+    margin-top: 16mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    color: #888;
+    max-width: 120mm;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2.section-title {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 13pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111;
+    border-bottom: 2px solid #111;
+    padding-bottom: 2mm;
+    margin: 0 0 6mm 0;
+  }
+
+  table.summary {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.8pt;
+    margin-bottom: 4mm;
+  }
+  table.summary th, table.summary td {
+    border: 1px solid #ccc;
+    padding: 2mm 2.2mm;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.summary th {
+    background: #f2f2f2;
+    font-weight: 700;
+  }
+  table.summary td.center { text-align: center; }
+
+  .soal {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 9mm;
+    padding-bottom: 7mm;
+    border-bottom: 1px solid #ddd;
+  }
+  .soal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 3mm;
+    break-inside: avoid;
+  }
+  .soal-num {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 11.5pt;
+    color: #111;
+  }
+  .badge {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    padding: 1mm 3mm;
+    border-radius: 10px;
+    color: #fff;
+    white-space: nowrap;
+  }
+  .dim-Profesionalisme { background: #2f5fa8; }
+  .dim-PelayananPublik { background: #1f8a56; }
+  .dim-JejaringKerja { background: #6b3fa0; }
+  .dim-SosialBudaya { background: #c9701d; }
+  .dim-TIK { background: #0f8b8d; }
+  .dim-AntiRadikalisme { background: #b3282d; }
+
+  .stem { margin-bottom: 3mm; text-align: justify; }
+
+  .options { margin: 0 0 4mm 0; padding: 0; list-style: none; }
+  .options li {
+    display: flex;
+    gap: 2.5mm;
+    margin-bottom: 1.6mm;
+    align-items: flex-start;
+  }
+  .opt-letter {
+    flex: 0 0 auto;
+    font-weight: 700;
+    width: 5mm;
+  }
+  .opt-letter.kunci { color: #1f8a56; }
+  .opt-text { flex: 1 1 auto; }
+  .opt-text.kunci { font-weight: 700; }
+
+  .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.6pt;
+    background: #f7f7f7;
+    border-left: 3px solid #111;
+    padding: 2.5mm 3.5mm;
+    margin-bottom: 2.5mm;
+  }
+  .meta div { margin: 0.8mm 0; }
+  .meta .label { font-weight: 700; display: inline-block; width: 22mm; color: #444; }
+
+  .pembahasan {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    background: #fbfbf5;
+    border: 1px solid #e6e2c8;
+    padding: 3mm 4mm;
+  }
+  .pembahasan .ph-title {
+    font-weight: 700;
+    font-size: 8.6pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6b6320;
+    margin-bottom: 1.5mm;
+  }
+  .pembahasan ol { margin: 0; padding-left: 4mm; }
+  .pembahasan li { margin-bottom: 1.3mm; text-align: justify; }
+
+  .footer-note {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    color: #999;
+    text-align: center;
+    margin-top: 10mm;
+  }
+
+  code.sumbu {
+    background: #eee;
+    padding: 0.2mm 1.2mm;
+    border-radius: 3px;
+    font-family: "Courier New", monospace;
+    font-size: 8.2pt;
+  }
+  .pembahasan-siswa { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 9pt; background: #f3f8fb; border: 1px solid #c9dde8; padding: 3mm 4mm; margin-top: 2mm; }
+  .pembahasan-siswa .ph-title { font-weight: 700; font-size: 8.6pt; text-transform: uppercase; color: #2d5a73; margin-bottom: 1.5mm; }
+  .pembahasan-siswa p, .pembahasan-siswa li { margin: 0.8mm 0; text-align: justify; }
+  .pindai{border:2px solid #1f5f8b;border-radius:5px;background:#f2f8fc;padding:3mm 5mm;margin:0 0 4mm;font-family:"Helvetica Neue",Arial,sans-serif;font-size:10pt}
+  .pindai .pt{font-weight:bold;color:#1f5f8b;letter-spacing:1px;text-transform:uppercase;font-size:9.5pt;margin-bottom:2mm}
+  .pindai .pt span{float:right;font-weight:normal;color:#555;text-transform:none;letter-spacing:0}
+  .pindai ol{margin:0;padding-left:5mm}.pindai li{margin:1.5mm 0}
+  .pindai .tanda{margin-top:2.5mm;padding:2mm 3mm;background:#fff6d6;border-left:4px solid #d9a400}
+
+  .soal.bahas { page-break-inside: auto; break-inside: auto; }
+  .soal.bahas .soal-head { break-after: avoid; page-break-after: avoid; }
+  .soal.bahas .stem, .soal.bahas .options { break-inside: avoid; }
+  .soal.bahas .stem, .soal.bahas .options { font-size: 10pt; }
+  table.skor td, table.skor th { text-align: center; }
+  .cover { padding-top: 70mm; }
+.duo{display:flex;gap:5mm}.col{flex:1;border:1px solid #ccc;border-radius:4px;padding:3mm 4mm;font-size:9.6pt}.col h4{margin:0 0 2mm;font-family:Helvetica,Arial;font-size:9pt;letter-spacing:1px;text-transform:uppercase}.lama h4{color:#999}.baru{border:2px solid #2f7d4f}.baru h4{color:#2f7d4f}.col ol{padding-left:4.5mm;margin:2mm 0}.col li{margin:1mm 0}.k{font-weight:bold}.n{font-family:Helvetica,Arial;font-size:8pt;color:#666;margin-top:2mm}</style></head><body><h2 class="section-title">Paket 2 TKP — Revisi Opsi Nilai 4, Soal 31–45</h2><p>Kiri: versi lama. Kanan: versi baru (opsi nilai 4 dibuat sama lengkap dengan kunci). Cerita, kunci, dan skor tetap. Soal yang berubah: 31, 32, 33, 35, 36, 41, 42, 43, 44.</p><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 31</span><span class="badge">Anti Radikalisme</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Undangan “kajian rutin” beredar di grup warga. Pertemuannya digelar tiap Kamis malam di aula dinas tanpa izin, dipimpin rekan Anda, lengkap dengan daftar peserta, iuran, dan sumpah setia kepada pimpinan kelompok yang menyebut pemerintah tidak sah. Perkara begini biasanya diteruskan kepala dinas ke kesbangpol. Apa respons Anda?</p><ol type="A"><li class="">Mengirim laporan ke surel pengaduan umum pemda, tanpa memastikan sampai ke penanganannya. <i>(skor 4)</i></li><li class="k">Menyerahkan undangan, daftar peserta, dan catatan aula ke kepala dinas hari ini. <i>(skor 5)</i></li><li class="">Melarang kegiatan itu memakai aula mulai Kamis ini, toh memang tidak berizin. <i>(skor 3)</i></li><li class="">Mengikuti diam-diam pertemuan Kamis depan untuk mengumpulkan bukti lengkap sebelum melapor. <i>(skor 1)</i></li><li class="">Menegur rekan penyelenggara secara pribadi, dengan permintaan agar undangan itu dihapus. <i>(skor 2)</i></li></ol><div class="n">47 kata · pilihan 11–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Undangan “kajian rutin” beredar di grup warga. Pertemuannya digelar tiap Kamis malam di aula dinas tanpa izin, dipimpin rekan Anda, lengkap dengan daftar peserta, iuran, dan sumpah setia kepada pimpinan kelompok yang menyebut pemerintah tidak sah. Perkara begini biasanya diteruskan kepala dinas ke kesbangpol. Apa respons Anda?</p><ol type="A"><li class="">Mengirim undangan dan daftar peserta ke surel pengaduan umum pemda hari ini. <i>(skor 4)</i></li><li class="k">Menyerahkan undangan, daftar peserta, dan catatan aula ke kepala dinas hari ini. <i>(skor 5)</i></li><li class="">Melarang kegiatan itu memakai aula mulai Kamis ini, toh memang tidak berizin. <i>(skor 3)</i></li><li class="">Mengikuti diam-diam pertemuan Kamis depan untuk mengumpulkan bukti lengkap sebelum melapor. <i>(skor 1)</i></li><li class="">Menegur rekan penyelenggara secara pribadi, dengan permintaan agar undangan itu dihapus. <i>(skor 2)</i></li></ol><div class="n">47 kata · pilihan 11–12 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 32</span><span class="badge">Jejaring Kerja</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Dua mitra, pokdarwis desa dan asosiasi pemandu kota, sama-sama mengajukan diri memandu rute promosi wisata yang sama. Keduanya bersertifikat dan sudah saling melayangkan surat keberatan, padahal acara tinggal sepuluh hari. Sebagai koordinator, pembagian rute adalah wewenang Anda. Tindakan paling tepat adalah&hellip;</p><ol type="A"><li class="">Membagi sendiri rute per wilayah, dengan hasilnya dikirim ke kedua kelompok mitra. <i>(skor 4)</i></li><li class="">Melaporkan perselisihan itu ke kepala bidang agar beliau yang memilih pemandunya. <i>(skor 3)</i></li><li class="k">Mengundang kedua ketua kelompok berunding pekan ini soal pembagian rute. <i>(skor 5)</i></li><li class="">Menyerahkan rute itu ke pokdarwis desa saja demi pemberdayaan warga lokal. <i>(skor 1)</i></li><li class="">Memilih kelompok yang lebih dulu mendaftar, sesuai urutan data pendaftaran. <i>(skor 2)</i></li></ol><div class="n">41 kata · pilihan 10–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Dua mitra, pokdarwis desa dan asosiasi pemandu kota, sama-sama mengajukan diri memandu rute promosi wisata yang sama. Keduanya bersertifikat dan sudah saling melayangkan surat keberatan, padahal acara tinggal sepuluh hari. Sebagai koordinator, pembagian rute adalah wewenang Anda. Tindakan paling tepat adalah&hellip;</p><ol type="A"><li class="">Membagi rute per wilayah untuk kedua kelompok, lalu mengirim keputusannya pekan ini. <i>(skor 4)</i></li><li class="">Melaporkan perselisihan itu ke kepala bidang agar beliau yang memilih pemandunya. <i>(skor 3)</i></li><li class="k">Mengundang kedua ketua kelompok berunding pekan ini soal pembagian rute. <i>(skor 5)</i></li><li class="">Menyerahkan rute itu ke pokdarwis desa saja demi pemberdayaan warga lokal. <i>(skor 1)</i></li><li class="">Memilih kelompok yang lebih dulu mendaftar, sesuai urutan data pendaftaran. <i>(skor 2)</i></li></ol><div class="n">41 kata · pilihan 10–12 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 33</span><span class="badge">Sosial Budaya</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Senat taruna menetapkan iuran bulanan yang cukup besar untuk kegiatan angkatan, sehingga sembilan taruna penerima beasiswa yang tak sanggup membayar tidak diikutkan kegiatan. Belum ada aturan tertulis soal biaya kegiatan, dan Anda pembina yang berwenang mengesahkan program serta anggaran senat. Apa tindakan paling tepat?</p><ol type="A"><li class="">Membebaskan sembilan taruna penerima beasiswa itu dari iuran selama semester ini. <i>(skor 4)</i></li><li class="">Mengadakan pelatihan wirausaha, lalu membuka lapak agar mereka sanggup membayar iuran. <i>(skor 1)</i></li><li class="">Mengembalikan soal iuran ke rapat angkatan agar taruna memutuskannya sendiri secara terbuka. <i>(skor 3)</i></li><li class="">Meneruskan urusan iuran ke ketua program studi, dengan keputusan sepenuhnya di tangan beliau. <i>(skor 2)</i></li><li class="k">Memberlakukan aturan tertulis bebas iuran wajib, lalu meminta senat menyusun ulang anggaran. <i>(skor 5)</i></li></ol><div class="n">44 kata · pilihan 11–13 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Senat taruna menetapkan iuran bulanan yang cukup besar untuk kegiatan angkatan, sehingga sembilan taruna penerima beasiswa yang tak sanggup membayar tidak diikutkan kegiatan. Belum ada aturan tertulis soal biaya kegiatan, dan Anda pembina yang berwenang mengesahkan program serta anggaran senat. Apa tindakan paling tepat?</p><ol type="A"><li class="">Membebaskan sembilan taruna itu dari iuran, lalu meminta senat mengikutkan mereka semester ini. <i>(skor 4)</i></li><li class="">Mengadakan pelatihan wirausaha, lalu membuka lapak agar mereka sanggup membayar iuran. <i>(skor 1)</i></li><li class="">Mengembalikan soal iuran ke rapat angkatan agar taruna memutuskannya sendiri secara terbuka. <i>(skor 3)</i></li><li class="">Meneruskan urusan iuran ke ketua program studi, dengan keputusan sepenuhnya di tangan beliau. <i>(skor 2)</i></li><li class="k">Memberlakukan aturan tertulis bebas iuran wajib, lalu meminta senat menyusun ulang anggaran. <i>(skor 5)</i></li></ol><div class="n">44 kata · pilihan 11–13 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 34</span><span class="badge">Pelayanan Publik</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Tiga hari ini puluhan pencari kerja ditolak di loket karena sejak awal bulan pendaftaran kartu kuning wajib daring lebih dulu, padahal perubahan itu hanya diumumkan di laman dinas. Anda penanggung jawab layanan informasi, termasuk papan gerbang dan media sosial dinas. Sikap Anda adalah&hellip;</p><ol type="A"><li class="">Memperbarui pengumuman di laman dinas, lalu menyematkannya di halaman depan. <i>(skor 3)</i></li><li class="k">Menyebarkan alur baru lewat papan gerbang, media sosial, dan kelurahan. <i>(skor 5)</i></li><li class="">Menyurati perusahaan mitra, lalu meminta mereka mengabarkan alur baru ke calon pelamar. <i>(skor 4)</i></li><li class="">Menunggu pemohon terbiasa sendiri dengan alur pendaftaran daring yang baru. <i>(skor 1)</i></li><li class="">Meminta pemohon yang ditolak mencari sendiri cara daftar daring sebelum datang lagi. <i>(skor 2)</i></li></ol><div class="n">43 kata · pilihan 10–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Tiga hari ini puluhan pencari kerja ditolak di loket karena sejak awal bulan pendaftaran kartu kuning wajib daring lebih dulu, padahal perubahan itu hanya diumumkan di laman dinas. Anda penanggung jawab layanan informasi, termasuk papan gerbang dan media sosial dinas. Sikap Anda adalah&hellip;</p><ol type="A"><li class="">Memperbarui pengumuman di laman dinas, lalu menyematkannya di halaman depan. <i>(skor 3)</i></li><li class="k">Menyebarkan alur baru lewat papan gerbang, media sosial, dan kelurahan. <i>(skor 5)</i></li><li class="">Menyurati perusahaan mitra, lalu meminta mereka mengabarkan alur baru ke calon pelamar. <i>(skor 4)</i></li><li class="">Menunggu pemohon terbiasa sendiri dengan alur pendaftaran daring yang baru. <i>(skor 1)</i></li><li class="">Meminta pemohon yang ditolak mencari sendiri cara daftar daring sebelum datang lagi. <i>(skor 2)</i></li></ol><div class="n">43 kata · pilihan 10–12 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 35</span><span class="badge">Pelayanan Publik</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Seorang wali murid mengadu ke meja layanan dinas Anda: nama anaknya hilang dari usulan bantuan pendidikan setelah pindah sekolah. Sekolah lama menghapus datanya, sekolah baru menolak karena datanya belum pindah, dan keduanya saling menunjuk, padahal batas usulan tinggal lima hari. Apa yang Anda lakukan?</p><ol type="A"><li class="">Mengirim edaran tata cara pemindahan data siswa pindahan ke seluruh sekolah. <i>(skor 3)</i></li><li class="">Meminta orang tua mengurus sendiri pemindahan data anaknya ke kedua sekolah. <i>(skor 2)</i></li><li class="">Menelepon kedua operator agar data segera dipindah, tanpa mengecek usulan sekolah baru. <i>(skor 4)</i></li><li class="">Mencatat nomor telepon orang tua, lalu menyarankannya menunggu usulan tahun depan. <i>(skor 1)</i></li><li class="k">Mengumpulkan kedua operator sekolah di dinas, data dipindah sebelum batas. <i>(skor 5)</i></li></ol><div class="n">44 kata · pilihan 10–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Seorang wali murid mengadu ke meja layanan dinas Anda: nama anaknya hilang dari usulan bantuan pendidikan setelah pindah sekolah. Sekolah lama menghapus datanya, sekolah baru menolak karena datanya belum pindah, dan keduanya saling menunjuk, padahal batas usulan tinggal lima hari. Apa yang Anda lakukan?</p><ol type="A"><li class="">Mengirim edaran tata cara pemindahan data siswa pindahan ke seluruh sekolah. <i>(skor 3)</i></li><li class="">Meminta orang tua mengurus sendiri pemindahan data anaknya ke kedua sekolah. <i>(skor 2)</i></li><li class="">Menelepon kedua operator sekolah, lalu meminta data anak itu segera dipindah. <i>(skor 4)</i></li><li class="">Mencatat nomor telepon orang tua, lalu menyarankannya menunggu usulan tahun depan. <i>(skor 1)</i></li><li class="k">Mengumpulkan kedua operator sekolah di dinas, data dipindah sebelum batas. <i>(skor 5)</i></li></ol><div class="n">44 kata · pilihan 10–11 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 36</span><span class="badge">Profesionalisme</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Anda merekap data warga miskin kelurahan untuk usulan bantuan, tenggat Jumat. Ternyata belasan nama di daftar lama sudah pindah atau meninggal; tahun lalu daftar itu dikirim tanpa dicek dan bantuan salah sasaran. Penghapusan nama hanya bisa diputuskan lurah lewat musyawarah. Apa tindakan paling tepat?</p><ol type="A"><li class="">Mengajukan penghapusan nama-nama itu berdasarkan kabar lisan ketua RT, tanpa mengecek arsip. <i>(skor 3)</i></li><li class="">Mengirim daftar lama seperti tahun lalu, dengan catatan agar dinas sosial memeriksa sendiri. <i>(skor 2)</i></li><li class="">Memberi catatan khusus pada nama-nama itu di rekap, tanpa membenahi daftar dasarnya. <i>(skor 4)</i></li><li class="k">Mengusulkan nama-nama itu dibahas di musyawarah sebelum Jumat, berikut bukti arsipnya. <i>(skor 5)</i></li><li class="">Mencoret ketua RT penyusun daftar lama dari tim pendataan tahun depan. <i>(skor 1)</i></li></ol><div class="n">44 kata · pilihan 11–13 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Anda merekap data warga miskin kelurahan untuk usulan bantuan, tenggat Jumat. Ternyata belasan nama di daftar lama sudah pindah atau meninggal; tahun lalu daftar itu dikirim tanpa dicek dan bantuan salah sasaran. Penghapusan nama hanya bisa diputuskan lurah lewat musyawarah. Apa tindakan paling tepat?</p><ol type="A"><li class="">Mengajukan penghapusan nama-nama itu berdasarkan kabar lisan ketua RT, tanpa mengecek arsip. <i>(skor 3)</i></li><li class="">Mengirim daftar lama seperti tahun lalu, dengan catatan agar dinas sosial memeriksa sendiri. <i>(skor 2)</i></li><li class="">Memberi catatan khusus berikut bukti arsip pada nama-nama itu di rekap Jumat. <i>(skor 4)</i></li><li class="k">Mengusulkan nama-nama itu dibahas di musyawarah sebelum Jumat, berikut bukti arsipnya. <i>(skor 5)</i></li><li class="">Mencoret ketua RT penyusun daftar lama dari tim pendataan tahun depan. <i>(skor 1)</i></li></ol><div class="n">44 kata · pilihan 11–13 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 37</span><span class="badge">Jejaring Kerja</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Sebagai pengawas lapangan dinas PU, Anda mendapat keluhan: sejak pengecoran jalan poros dimulai, satu-satunya akses ke pustu ditutup dua pekan. Warga terpaksa lewat jalan kebun yang licin, dan dua pengendara sudah jatuh. Kepala desa setuju lahan kas desa dipakai. Apa respons Anda?</p><ol type="A"><li class="">Meminta warga bersabar, toh penutupan akses itu cuma dua pekan sesuai jadwal. <i>(skor 1)</i></li><li class="">Mengimbau warga tetap lewat jalan kebun dengan lebih hati-hati selama penutupan. <i>(skor 2)</i></li><li class="k">Meminta kontraktor membuka jalur ambulans di tanah desa itu, lalu memasang rambu. <i>(skor 5)</i></li><li class="">Menjadwalkan jalur sementara di lahan kas desa setelah pengecoran tahap pertama selesai. <i>(skor 4)</i></li><li class="">Meminta kontraktor merintis jalan setapak bagi pejalan kaki, lalu mengumumkannya ke warga. <i>(skor 3)</i></li></ol><div class="n">42 kata · pilihan 11–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Sebagai pengawas lapangan dinas PU, Anda mendapat keluhan: sejak pengecoran jalan poros dimulai, satu-satunya akses ke pustu ditutup dua pekan. Warga terpaksa lewat jalan kebun yang licin, dan dua pengendara sudah jatuh. Kepala desa setuju lahan kas desa dipakai. Apa respons Anda?</p><ol type="A"><li class="">Meminta warga bersabar, toh penutupan akses itu cuma dua pekan sesuai jadwal. <i>(skor 1)</i></li><li class="">Mengimbau warga tetap lewat jalan kebun dengan lebih hati-hati selama penutupan. <i>(skor 2)</i></li><li class="k">Meminta kontraktor membuka jalur ambulans di tanah desa itu, lalu memasang rambu. <i>(skor 5)</i></li><li class="">Menjadwalkan jalur sementara di lahan kas desa setelah pengecoran tahap pertama selesai. <i>(skor 4)</i></li><li class="">Meminta kontraktor merintis jalan setapak bagi pejalan kaki, lalu mengumumkannya ke warga. <i>(skor 3)</i></li></ol><div class="n">42 kata · pilihan 11–12 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 38</span><span class="badge">Anti Radikalisme</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Petugas kebersihan menyebut seorang pengunjung ruang baca, yang sudah empat kali datang memotret peta lama, sebagai “orang kelompok terlarang yang sedang mengumpulkan bahan”. Kabar itu tidak disertai bukti apa pun. Setiap pengunjung tercatat keperluan dan izin penelitiannya di buku layanan. Apa tindakan paling tepat?</p><ol type="A"><li class="">Meminta rekan petugas mengawasi gerak-gerik pengunjung itu setiap kali ia datang. <i>(skor 2)</i></li><li class="">Membatasi pemotretan peta oleh pengunjung itu sesuai kabar tadi, tanpa mengecek buku layanan. <i>(skor 3)</i></li><li class="">Menggagas sosialisasi wawasan kebangsaan bagi petugas arsip agar lebih waspada. <i>(skor 1)</i></li><li class="">Memeriksa izin para pengunjung sepekan terakhir, lalu meminta mereka menjelaskan keperluannya. <i>(skor 4)</i></li><li class="k">Mencocokkan izin dan keperluan yang dicatat pengunjung itu dengan peta yang dipotretnya. <i>(skor 5)</i></li></ol><div class="n">44 kata · pilihan 10–13 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Petugas kebersihan menyebut seorang pengunjung ruang baca, yang sudah empat kali datang memotret peta lama, sebagai “orang kelompok terlarang yang sedang mengumpulkan bahan”. Kabar itu tidak disertai bukti apa pun. Setiap pengunjung tercatat keperluan dan izin penelitiannya di buku layanan. Apa tindakan paling tepat?</p><ol type="A"><li class="">Meminta rekan petugas mengawasi gerak-gerik pengunjung itu setiap kali ia datang. <i>(skor 2)</i></li><li class="">Membatasi pemotretan peta oleh pengunjung itu sesuai kabar tadi, tanpa mengecek buku layanan. <i>(skor 3)</i></li><li class="">Menggagas sosialisasi wawasan kebangsaan bagi petugas arsip agar lebih waspada. <i>(skor 1)</i></li><li class="">Memeriksa izin para pengunjung sepekan terakhir, lalu meminta mereka menjelaskan keperluannya. <i>(skor 4)</i></li><li class="k">Mencocokkan izin dan keperluan yang dicatat pengunjung itu dengan peta yang dipotretnya. <i>(skor 5)</i></li></ol><div class="n">44 kata · pilihan 10–13 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 39</span><span class="badge">Sosial Budaya</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Anda diminta membuka pendaftaran bantuan alat pengasapan ikan di kampung pesisir. Tahun lalu pengumuman hanya disampaikan seusai salat Jumat, dan dari 60 penerima hanya 3 perempuan, padahal kebanyakan pengasap ikan di sana perempuan yang tiap pagi berkumpul di pasar ikan. Tindakan paling tepat adalah&hellip;</p><ol type="A"><li class="k">Mengumumkan di pasar ikan dan PKK, lalu membuka meja di pengasapan. <i>(skor 5)</i></li><li class="">Meminta pengasap perempuan mendaftar lewat suami atau ketua kelompok nelayan. <i>(skor 2)</i></li><li class="">Menitipkan pengumuman ke istri kepala desa untuk diteruskan ke ibu-ibu pengasap di kampung. <i>(skor 3)</i></li><li class="">Menetapkan kuota sama rata laki-laki dan perempuan, lalu mengumumkannya seusai salat Jumat. <i>(skor 1)</i></li><li class="">Mengumumkan pendaftaran langsung ke pengasap perempuan di dua dari tiga dusun. <i>(skor 4)</i></li></ol><div class="n">44 kata · pilihan 10–13 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Anda diminta membuka pendaftaran bantuan alat pengasapan ikan di kampung pesisir. Tahun lalu pengumuman hanya disampaikan seusai salat Jumat, dan dari 60 penerima hanya 3 perempuan, padahal kebanyakan pengasap ikan di sana perempuan yang tiap pagi berkumpul di pasar ikan. Tindakan paling tepat adalah&hellip;</p><ol type="A"><li class="k">Mengumumkan di pasar ikan dan PKK, lalu membuka meja di pengasapan. <i>(skor 5)</i></li><li class="">Meminta pengasap perempuan mendaftar lewat suami atau ketua kelompok nelayan. <i>(skor 2)</i></li><li class="">Menitipkan pengumuman ke istri kepala desa untuk diteruskan ke ibu-ibu pengasap di kampung. <i>(skor 3)</i></li><li class="">Menetapkan kuota sama rata laki-laki dan perempuan, lalu mengumumkannya seusai salat Jumat. <i>(skor 1)</i></li><li class="">Mengumumkan pendaftaran langsung ke pengasap perempuan di dua dari tiga dusun. <i>(skor 4)</i></li></ol><div class="n">44 kata · pilihan 10–13 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 40</span><span class="badge">Pelayanan Publik</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Lemari pendingin vaksin di gudang farmasi yang Anda pegang rusak, padahal ada 400 dosis di dalamnya, 150 di antaranya untuk vaksinasi sekolah besok pagi. Teknisi baru datang tiga hari lagi, sementara lemari vaksin puskesmas terdekat berfungsi dan masih memiliki ruang. Apa yang Anda lakukan?</p><ol type="A"><li class="k">Mengangkut 400 dosis itu ke puskesmas terdekat, dipantau dengan alat pencatat suhu. <i>(skor 5)</i></li><li class="">Memindahkan 150 dosis untuk besok ke kotak pendingin, sisanya tetap di lemari. <i>(skor 3)</i></li><li class="">Menyimpan vaksin di kotak pendingin, esnya diganti petugas sekolah sampai lemari diperbaiki. <i>(skor 4)</i></li><li class="">Menunggu teknisi datang, dengan pintu lemari pendingin dijaga tetap tertutup rapat. <i>(skor 1)</i></li><li class="">Menunda vaksinasi anak di delapan sekolah sampai lemari selesai diperbaiki. <i>(skor 2)</i></li></ol><div class="n">44 kata · pilihan 10–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Lemari pendingin vaksin di gudang farmasi yang Anda pegang rusak, padahal ada 400 dosis di dalamnya, 150 di antaranya untuk vaksinasi sekolah besok pagi. Teknisi baru datang tiga hari lagi, sementara lemari vaksin puskesmas terdekat berfungsi dan masih memiliki ruang. Apa yang Anda lakukan?</p><ol type="A"><li class="k">Mengangkut 400 dosis itu ke puskesmas terdekat, dipantau dengan alat pencatat suhu. <i>(skor 5)</i></li><li class="">Memindahkan 150 dosis untuk besok ke kotak pendingin, sisanya tetap di lemari. <i>(skor 3)</i></li><li class="">Menyimpan vaksin di kotak pendingin, esnya diganti petugas sekolah sampai lemari diperbaiki. <i>(skor 4)</i></li><li class="">Menunggu teknisi datang, dengan pintu lemari pendingin dijaga tetap tertutup rapat. <i>(skor 1)</i></li><li class="">Menunda vaksinasi anak di delapan sekolah sampai lemari selesai diperbaiki. <i>(skor 2)</i></li></ol><div class="n">44 kata · pilihan 10–12 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 41</span><span class="badge">TIK</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Rekan setim Anda salah menempelkan tautan folder kertas kerja audit yang rahasia ke grup bersama pihak yang diperiksa, padahal folder itu bisa dibuka siapa pun pemegang tautannya. Pemiliknya ketua tim, yang sedang daring, sedangkan Anda tanpa hak mengubah akses. Tindakan paling tepat adalah&hellip;</p><ol type="A"><li class="">Menuntut rekan yang salah tempel itu dikeluarkan dari grup kerja tim. <i>(skor 1)</i></li><li class="k">Meminta ketua tim segera menutup akses tautan, lalu mengusulkan pakai akun resmi. <i>(skor 5)</i></li><li class="">Meminta pihak yang diperiksa di grup itu agar tidak membuka tautan tersebut. <i>(skor 2)</i></li><li class="">Mengusulkan ke ketua tim agar pesan tautan yang salah tempel itu dihapus. <i>(skor 4)</i></li><li class="">Mencatat kejadian itu, lalu mengusulkan aturan berbagi berkas di rapat akhir bulan. <i>(skor 3)</i></li></ol><div class="n">43 kata · pilihan 11–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Rekan setim Anda salah menempelkan tautan folder kertas kerja audit yang rahasia ke grup bersama pihak yang diperiksa, padahal folder itu bisa dibuka siapa pun pemegang tautannya. Pemiliknya ketua tim, yang sedang daring, sedangkan Anda tanpa hak mengubah akses. Tindakan paling tepat adalah&hellip;</p><ol type="A"><li class="">Menuntut rekan yang salah tempel itu dikeluarkan dari grup kerja tim. <i>(skor 1)</i></li><li class="k">Meminta ketua tim segera menutup akses tautan, lalu mengusulkan pakai akun resmi. <i>(skor 5)</i></li><li class="">Meminta pihak yang diperiksa di grup itu agar tidak membuka tautan tersebut. <i>(skor 2)</i></li><li class="">Meminta ketua tim menghapus pesan tautan, lalu memperingatkan grup agar tidak membukanya. <i>(skor 4)</i></li><li class="">Mencatat kejadian itu, lalu mengusulkan aturan berbagi berkas di rapat akhir bulan. <i>(skor 3)</i></li></ol><div class="n">43 kata · pilihan 11–12 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 42</span><span class="badge">Sosial Budaya</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Selama proyek padat karya berjalan, mandor merekrut pekerja lewat kenalannya, sehingga hampir semua pekerja berasal dari kampungnya sendiri. Padahal pedoman mewajibkan pekerja direkrut dari warga sekitar lokasi. Anda pengawas yang berwenang mengatur perekrutan, dan kontrak pekerja diperbarui tiap dua pekan. Langkah paling tepat adalah&hellip;</p><ol type="A"><li class="">Meminta mandor menambah beberapa pekerja dari kampung lain untuk sisa masa proyek. <i>(skor 3)</i></li><li class="">Menerapkan pendaftaran terbuka sesuai pedoman, tetapi baru untuk kontrak bulan depan. <i>(skor 4)</i></li><li class="">Mempertahankan cara mandor, toh target fisik proyek tetap tercapai sesuai jadwal. <i>(skor 1)</i></li><li class="k">Mengalihkan perekrutan dari kenalan mandor ke pendaftaran terbuka di desa. <i>(skor 5)</i></li><li class="">Menasihati mandor agar lebih adil memilih pekerja dari berbagai kampung sekitar. <i>(skor 2)</i></li></ol><div class="n">44 kata · pilihan 10–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Selama proyek padat karya berjalan, mandor merekrut pekerja lewat kenalannya, sehingga hampir semua pekerja berasal dari kampungnya sendiri. Padahal pedoman mewajibkan pekerja direkrut dari warga sekitar lokasi. Anda pengawas yang berwenang mengatur perekrutan, dan kontrak pekerja diperbarui tiap dua pekan. Langkah paling tepat adalah&hellip;</p><ol type="A"><li class="">Meminta mandor menambah beberapa pekerja dari kampung lain untuk sisa masa proyek. <i>(skor 3)</i></li><li class="">Mewajibkan mandor merekrut warga sekitar lokasi pada pembaruan kontrak berikutnya. <i>(skor 4)</i></li><li class="">Mempertahankan cara mandor, toh target fisik proyek tetap tercapai sesuai jadwal. <i>(skor 1)</i></li><li class="k">Mengalihkan perekrutan dari kenalan mandor ke pendaftaran terbuka di desa. <i>(skor 5)</i></li><li class="">Menasihati mandor agar lebih adil memilih pekerja dari berbagai kampung sekitar. <i>(skor 2)</i></li></ol><div class="n">44 kata · pilihan 10–12 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 43</span><span class="badge">TIK</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Tiga bidang memakai satu lembar kerja daring untuk rekap pajak bahan rapat pimpinan Jumat, dan rumus serta kolomnya sudah tiga kali saling tertimpa pekan ini. Anda pengelola berkas yang bisa mengatur hak sunting, tetapi pembagian lembar perlu disetujui ketiganya. Langkah pertama yang Anda ambil adalah&hellip;</p><ol type="A"><li class="k">Menyepakati bersama perwakilan tiga bidang pembagian lembar beserta hak sunting masing-masing. <i>(skor 5)</i></li><li class="">Membuat kesepakatan pembagian kolom lewat grup pesan, tanpa mengatur hak sunting. <i>(skor 4)</i></li><li class="">Melaporkan ke kepala badan bahwa bidang-bidang saling menimpa rumus dan kolom. <i>(skor 3)</i></li><li class="">Memperbaiki rumus yang rusak setiap kali tertimpa sampai rapat Jumat. <i>(skor 1)</i></li><li class="">Mengunci berkas sehingga hanya Anda yang mengisi data kiriman tiap bidang. <i>(skor 2)</i></li></ol><div class="n">45 kata · pilihan 10–11 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Tiga bidang memakai satu lembar kerja daring untuk rekap pajak bahan rapat pimpinan Jumat, dan rumus serta kolomnya sudah tiga kali saling tertimpa pekan ini. Anda pengelola berkas yang bisa mengatur hak sunting, tetapi pembagian lembar perlu disetujui ketiganya. Langkah pertama yang Anda ambil adalah&hellip;</p><ol type="A"><li class="k">Menyepakati bersama perwakilan tiga bidang pembagian lembar beserta hak sunting masing-masing. <i>(skor 5)</i></li><li class="">Membagi kolom bersama ketiga bidang lewat grup, lalu meminta saling menjaga. <i>(skor 4)</i></li><li class="">Melaporkan ke kepala badan bahwa bidang-bidang saling menimpa rumus dan kolom. <i>(skor 3)</i></li><li class="">Memperbaiki rumus yang rusak setiap kali tertimpa sampai rapat Jumat. <i>(skor 1)</i></li><li class="">Mengunci berkas sehingga hanya Anda yang mengisi data kiriman tiap bidang. <i>(skor 2)</i></li></ol><div class="n">45 kata · pilihan 10–11 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 44</span><span class="badge">Anti Radikalisme</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Antrean bantuan di posko pascakebakaran mulai ricuh setelah pesan berantai di grup warga menyebut bantuan hanya untuk korban suku tertentu. Padahal daftar penerima disusun dari pendataan RT tanpa membedakan suku maupun agama. Anda memegang pengeras suara dan akun resmi posko. Apa tindakan paling tepat?</p><ol type="A"><li class="k">Mengumumkan lewat pengeras suara maupun akun resmi: bantuan untuk seluruh korban terdata. <i>(skor 5)</i></li><li class="">Menjelaskan ke kerumunan di depan bahwa bantuan bukan hanya untuk suku tertentu. <i>(skor 3)</i></li><li class="">Menyampaikan lewat pengeras suara bahwa bantuan untuk seluruh korban, tanpa menanggapi pesan grup. <i>(skor 4)</i></li><li class="">Melacak pengirim pertama pesan berantai itu, lalu mencatat namanya untuk dilaporkan ke polisi. <i>(skor 2)</i></li><li class="">Membagikan uang pribadi ke warga yang merasa dirugikan agar antrean kembali tenang. <i>(skor 1)</i></li></ol><div class="n">44 kata · pilihan 12–13 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Antrean bantuan di posko pascakebakaran mulai ricuh setelah pesan berantai di grup warga menyebut bantuan hanya untuk korban suku tertentu. Padahal daftar penerima disusun dari pendataan RT tanpa membedakan suku maupun agama. Anda memegang pengeras suara dan akun resmi posko. Apa tindakan paling tepat?</p><ol type="A"><li class="k">Mengumumkan lewat pengeras suara maupun akun resmi: bantuan untuk seluruh korban terdata. <i>(skor 5)</i></li><li class="">Menjelaskan ke kerumunan di depan bahwa bantuan bukan hanya untuk suku tertentu. <i>(skor 3)</i></li><li class="">Menyampaikan lewat pengeras suara bahwa bantuan untuk seluruh korban yang terdata RT. <i>(skor 4)</i></li><li class="">Melacak pengirim pertama pesan berantai itu, lalu mencatat namanya untuk dilaporkan ke polisi. <i>(skor 2)</i></li><li class="">Membagikan uang pribadi ke warga yang merasa dirugikan agar antrean kembali tenang. <i>(skor 1)</i></li></ol><div class="n">44 kata · pilihan 12–13 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 45</span><span class="badge">Profesionalisme</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Dua rekan Anda saling menyalahkan karena beberapa surat pengantar nikah tercetak dengan nama orang tua yang keliru; suratnya sudah diperbaiki pagi ini. Satu mengetik, satu memeriksa, tetapi belum jelas siapa yang mencocokkan data dengan dokumen asli. Anda koordinator layanan surat. Langkah paling tepat adalah&hellip;</p><ol type="A"><li class="">Meminta kedua rekan menyepakati sendiri pembagian pemeriksaan surat, tanpa Anda ikut menetapkan. <i>(skor 3)</i></li><li class="">Mendiamkan pertengkaran itu, toh kerukunan kerja lebih penting daripada mencari siapa salah. <i>(skor 1)</i></li><li class="">Mengambil alih pengetikan dan pemeriksaan surat nikah dari kedua rekan mulai hari ini. <i>(skor 2)</i></li><li class="k">Menetapkan bersama kedua rekan petugas pencocok data dengan berkas asli sebelum dicetak. <i>(skor 5)</i></li><li class="">Memeriksa surat lain yang diketik pekan ini, lalu meminta rekan pengetik lebih teliti. <i>(skor 4)</i></li></ol><div class="n">44 kata · pilihan 12–13 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Dua rekan Anda saling menyalahkan karena beberapa surat pengantar nikah tercetak dengan nama orang tua yang keliru; suratnya sudah diperbaiki pagi ini. Satu mengetik, satu memeriksa, tetapi belum jelas siapa yang mencocokkan data dengan dokumen asli. Anda koordinator layanan surat. Langkah paling tepat adalah&hellip;</p><ol type="A"><li class="">Meminta kedua rekan menyepakati sendiri pembagian pemeriksaan surat, tanpa Anda ikut menetapkan. <i>(skor 3)</i></li><li class="">Mendiamkan pertengkaran itu, toh kerukunan kerja lebih penting daripada mencari siapa salah. <i>(skor 1)</i></li><li class="">Mengambil alih pengetikan dan pemeriksaan surat nikah dari kedua rekan mulai hari ini. <i>(skor 2)</i></li><li class="k">Menetapkan bersama kedua rekan petugas pencocok data dengan berkas asli sebelum dicetak. <i>(skor 5)</i></li><li class="">Memeriksa surat lain yang diketik pekan ini, lalu meminta rekan pengetik lebih teliti. <i>(skor 4)</i></li></ol><div class="n">44 kata · pilihan 12–13 kata</div></div></div></div></body></html>

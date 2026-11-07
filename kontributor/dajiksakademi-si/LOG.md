@@ -8,3 +8,6 @@
 - Ubah: `README.md`, `kontributor/README.md`, `CLAUDE.md` — alur kerja jadi push langsung ke `main` — putusan Gusti.
 - Undang: AcademyBRIJ (izin tulis).
 - Perbaiki: folder `CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI ` (spasi di akhir) diganti tanpa spasi — clone gagal di Windows (nama folder berakhiran spasi tidak sah). Rujukan path di CLAUDE.md, skill skd-expert, `build-to.cjs` ikut diperbarui.
+- Perbaiki: script bisa jalan di perangkat mana pun — `build-to.cjs`, `cek.py` (repo + skill asli), 3× `build.py` handbook, `buat_pdf.js`, `ratakan_sampul.js` tidak lagi memakai alamat Mac; `package.json` akar (puppeteer membawa Chrome sendiri, `npm install`). Diuji: PDF + sampul + data portal OK, cek.py selftest OK.
+- Perbaiki: `.gitignore` — `tmp/` ternyata bahan kerja (paket TKP 1–2, validator TWK, Paket 1 TIU) → ikut repo; `buat_pdf.js` + `gaya_halaman_tiu.html` dari prototipe ikut; `.claude-flow/` (sesi alat lama) keluar.
+- Tambah aturan CLAUDE.md: nama file/folder sah di Windows; script tanpa alamat komputer tertentu.

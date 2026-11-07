@@ -1,0 +1,46 @@
+Inventaris bilangan kubik
+Relasi vertikal berbobot
+Selisih lalu perkalian
+Perkalian lalu pengurangan
+Operasi berantai tetap
+Dua deret dengan perubahan selisih
+Perkalian dengan penambahan faktor pertama
+Kuadrat selisih vertikal
+Jumlah baris dan kolom konstan
+Kuadrat ditambah bilangan pasangan
+Selisih bilangan ganjil berurutan
+Operasi selang-seling
+Dua deret berselang
+Penambahan bilangan segitiga
+Faktor pengali menurun
+Pembagian dan pengurangan berselang
+Rekurensi dua suku dengan konstanta
+Pembalikan digit lalu penambahan
+Perkalian digit
+Gabungan hasil jumlah dan selisih
+Selisih dua kuadrat
+Kuadrat kepala baris ditambah kepala kolom
+Tabel perkalian dengan konstanta
+Jumlah, perkalian, lalu pengurangan
+Perkalian dikurangi kedua faktor
+Penggandaan dengan konstanta menurun
+Selisih genap meningkat
+Progresi dua dimensi
+Faktor pertama dikali kuadrat faktor kedua
+Jumlah kuadrat dikurangi pasangan ketiga
+Kalikan kedua angka acuan, lalu kurangi 1
+Angka pertama ditambah hasil kali angka kedua dan ketiga
+Dikali 2, lalu dikurangi 3
+Hasil kali setiap baris sama, yaitu 180
+Angka atas dibagi angka tengah, lalu dikurangi 1
+Baris atas naik 2, 3, 4, 5; baris bawah tiga kali baris atas
+Angka pertama dibagi angka kedua, lalu ditambah angka kedua
+Angka pertama dipangkatkan angka kedua
+Setiap angka = angka di kirinya + angka di atasnya
+Sisa pembagian angka pertama oleh angka kedua
+Tiga kali angka atas, dikurangi angka tengah
+Hasil kali ditambah kedua angkanya
+Setiap suku ditambah jumlah angka penyusunnya
+Angka bawah adalah FPB dua angka di atasnya
+Dua angka pertama dikali, lalu dibagi angka ketiga
+Kuadrat angka kiri ditambah angka tengah (Paket 41 no. 40)

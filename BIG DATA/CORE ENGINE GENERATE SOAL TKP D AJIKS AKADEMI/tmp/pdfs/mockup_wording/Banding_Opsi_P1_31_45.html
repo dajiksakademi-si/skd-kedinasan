@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><title>Paket 2 TKP — Pembahasan</title><style>
+  @page { size: A4; margin: 18mm 16mm 20mm 16mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #1a1a1a;
+    margin: 0;
+  }
+  .cover {
+    page-break-after: always;
+    padding-top: 60mm;
+    text-align: center;
+  }
+  .cover .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 10pt;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #6b6b6b;
+    margin-bottom: 10mm;
+  }
+  .cover h1 {
+    font-size: 26pt;
+    margin: 0 0 6mm 0;
+    color: #111;
+  }
+  .cover .sub {
+    font-size: 12pt;
+    color: #444;
+    margin-bottom: 14mm;
+  }
+  .cover .meta-box {
+    display: inline-block;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6mm 10mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9.5pt;
+    color: #333;
+  }
+  .cover .meta-box div { margin: 1.5mm 0; }
+  .cover .meta-box b { color: #111; }
+  .cover .note {
+    margin-top: 16mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    color: #888;
+    max-width: 120mm;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2.section-title {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 13pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111;
+    border-bottom: 2px solid #111;
+    padding-bottom: 2mm;
+    margin: 0 0 6mm 0;
+  }
+
+  table.summary {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.8pt;
+    margin-bottom: 4mm;
+  }
+  table.summary th, table.summary td {
+    border: 1px solid #ccc;
+    padding: 2mm 2.2mm;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.summary th {
+    background: #f2f2f2;
+    font-weight: 700;
+  }
+  table.summary td.center { text-align: center; }
+
+  .soal {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 9mm;
+    padding-bottom: 7mm;
+    border-bottom: 1px solid #ddd;
+  }
+  .soal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 3mm;
+    break-inside: avoid;
+  }
+  .soal-num {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 11.5pt;
+    color: #111;
+  }
+  .badge {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    padding: 1mm 3mm;
+    border-radius: 10px;
+    color: #fff;
+    white-space: nowrap;
+  }
+  .dim-Profesionalisme { background: #2f5fa8; }
+  .dim-PelayananPublik { background: #1f8a56; }
+  .dim-JejaringKerja { background: #6b3fa0; }
+  .dim-SosialBudaya { background: #c9701d; }
+  .dim-TIK { background: #0f8b8d; }
+  .dim-AntiRadikalisme { background: #b3282d; }
+
+  .stem { margin-bottom: 3mm; text-align: justify; }
+
+  .options { margin: 0 0 4mm 0; padding: 0; list-style: none; }
+  .options li {
+    display: flex;
+    gap: 2.5mm;
+    margin-bottom: 1.6mm;
+    align-items: flex-start;
+  }
+  .opt-letter {
+    flex: 0 0 auto;
+    font-weight: 700;
+    width: 5mm;
+  }
+  .opt-letter.kunci { color: #1f8a56; }
+  .opt-text { flex: 1 1 auto; }
+  .opt-text.kunci { font-weight: 700; }
+
+  .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.6pt;
+    background: #f7f7f7;
+    border-left: 3px solid #111;
+    padding: 2.5mm 3.5mm;
+    margin-bottom: 2.5mm;
+  }
+  .meta div { margin: 0.8mm 0; }
+  .meta .label { font-weight: 700; display: inline-block; width: 22mm; color: #444; }
+
+  .pembahasan {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    background: #fbfbf5;
+    border: 1px solid #e6e2c8;
+    padding: 3mm 4mm;
+  }
+  .pembahasan .ph-title {
+    font-weight: 700;
+    font-size: 8.6pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6b6320;
+    margin-bottom: 1.5mm;
+  }
+  .pembahasan ol { margin: 0; padding-left: 4mm; }
+  .pembahasan li { margin-bottom: 1.3mm; text-align: justify; }
+
+  .footer-note {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    color: #999;
+    text-align: center;
+    margin-top: 10mm;
+  }
+
+  code.sumbu {
+    background: #eee;
+    padding: 0.2mm 1.2mm;
+    border-radius: 3px;
+    font-family: "Courier New", monospace;
+    font-size: 8.2pt;
+  }
+  .pembahasan-siswa { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 9pt; background: #f3f8fb; border: 1px solid #c9dde8; padding: 3mm 4mm; margin-top: 2mm; }
+  .pembahasan-siswa .ph-title { font-weight: 700; font-size: 8.6pt; text-transform: uppercase; color: #2d5a73; margin-bottom: 1.5mm; }
+  .pembahasan-siswa p, .pembahasan-siswa li { margin: 0.8mm 0; text-align: justify; }
+  .pindai{border:2px solid #1f5f8b;border-radius:5px;background:#f2f8fc;padding:3mm 5mm;margin:0 0 4mm;font-family:"Helvetica Neue",Arial,sans-serif;font-size:10pt}
+  .pindai .pt{font-weight:bold;color:#1f5f8b;letter-spacing:1px;text-transform:uppercase;font-size:9.5pt;margin-bottom:2mm}
+  .pindai .pt span{float:right;font-weight:normal;color:#555;text-transform:none;letter-spacing:0}
+  .pindai ol{margin:0;padding-left:5mm}.pindai li{margin:1.5mm 0}
+  .pindai .tanda{margin-top:2.5mm;padding:2mm 3mm;background:#fff6d6;border-left:4px solid #d9a400}
+  .pindai{border:2px solid #1f5f8b;border-radius:5px;background:#f2f8fc;padding:3mm 5mm;margin:0 0 4mm;font-family:"Helvetica Neue",Arial,sans-serif;font-size:10pt}
+  .pindai .pt{font-weight:bold;color:#1f5f8b;letter-spacing:1px;text-transform:uppercase;font-size:9.5pt;margin-bottom:2mm}
+  .pindai .pt span{float:right;font-weight:normal;color:#555;text-transform:none;letter-spacing:0}
+  .pindai ol{margin:0;padding-left:5mm}.pindai li{margin:1.5mm 0}
+  .pindai .tanda{margin-top:2.5mm;padding:2mm 3mm;background:#fff6d6;border-left:4px solid #d9a400}
+
+  .soal.bahas { page-break-inside: auto; break-inside: auto; }
+  .soal.bahas .soal-head { break-after: avoid; page-break-after: avoid; }
+  .soal.bahas .stem, .soal.bahas .options { break-inside: avoid; }
+  .soal.bahas .stem, .soal.bahas .options { font-size: 10pt; }
+  table.skor td, table.skor th { text-align: center; }
+  .cover { padding-top: 70mm; }
+.duo{display:flex;gap:5mm}.col{flex:1;border:1px solid #ccc;border-radius:4px;padding:3mm 4mm;font-size:9.6pt}.col h4{margin:0 0 2mm;font-family:Helvetica,Arial;font-size:9pt;letter-spacing:1px;text-transform:uppercase}.lama h4{color:#999}.baru{border:2px solid #2f7d4f}.baru h4{color:#2f7d4f}.col ol{padding-left:4.5mm;margin:2mm 0}.col li{margin:1mm 0}.k{font-weight:bold}.n{font-family:Helvetica,Arial;font-size:8pt;color:#666;margin-top:2mm}</style></head><body><h2 class="section-title">Paket 1 TKP — Revisi Opsi Soal 31–45</h2><p>Kiri: versi lama. Kanan: versi baru (opsi nilai 4 sama lengkap dengan kunci; kunci soal 31, 36, dan 44 diperbarui). Cerita, kunci, dan skor tetap.</p><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 31</span><span class="badge">Sosial Budaya</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Anda mengatur rapat penjelasan tender Rabu ini, satu-satunya kesempatan tanya jawab. Seorang calon penyedia minta jadwal digeser karena hari itu Galungan, padahal peserta lain sudah memesan tiket dari luar kota. Sistem tender bisa menyiarkan rapat dan menerima pertanyaan tertulis. Respons paling tepat adalah&hellip;</p><ol type="A"><li class="">Menggeser rapat ke Kamis demi penyedia itu, lalu mengumumkan jadwal barunya. <i>(skor 3)</i></li><li class="">Meminta penyedia itu membuktikan hari rayanya dulu, khawatir hanya cara mengulur jadwal. <i>(skor 2)</i></li><li class="">Mengirimkan rekaman rapat kepada penyedia itu agar ia menerima penjelasan yang sama. <i>(skor 4)</i></li><li class="">Mempertahankan jadwal Rabu apa adanya, mengingat tiap penyedia harus diperlakukan sama. <i>(skor 1)</i></li><li class="k">Menayangkan rapat Rabu secara daring, lalu menampung pertanyaan susulan penyedia sampai Jumat. <i>(skor 5)</i></li></ol><div class="n">43 kata · pilihan 11–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Anda mengatur rapat penjelasan tender Rabu ini, satu-satunya kesempatan tanya jawab. Seorang calon penyedia minta jadwal digeser karena hari itu Galungan, padahal peserta lain sudah memesan tiket dari luar kota. Sistem tender bisa menyiarkan rapat dan menerima pertanyaan tertulis. Respons paling tepat adalah&hellip;</p><ol type="A"><li class="">Menggeser rapat ke Kamis demi penyedia itu, lalu mengumumkan jadwal barunya. <i>(skor 3)</i></li><li class="">Meminta penyedia itu membuktikan hari rayanya dulu, khawatir hanya cara mengulur jadwal. <i>(skor 2)</i></li><li class="">Mengirimkan rekaman rapat kepada penyedia itu agar ia menerima penjelasan yang sama. <i>(skor 4)</i></li><li class="">Mempertahankan jadwal Rabu apa adanya, mengingat tiap penyedia harus diperlakukan sama. <i>(skor 1)</i></li><li class="k">Menayangkan rapat Rabu secara daring, lalu menampung pertanyaan penyedia sampai Jumat. <i>(skor 5)</i></li></ol><div class="n">43 kata · pilihan 11–12 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 32</span><span class="badge">Pelayanan Publik</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Berkas kenaikan pangkat guru dari pulau tinggal kurang legalisir fotokopi SK terakhir. SK aslinya di pulau, sedangkan batasnya Jumat dan kapal baru datang Sabtu. Arsip SK ada di bagian kepegawaian Anda, dan kepala subbagian yang berwenang melegalisir sedang di kantor. Apa yang Anda lakukan?</p><ol type="A"><li class="k">Menyalin SK guru itu dari arsip, lalu memintakan legalisirnya kepada atasan. <i>(skor 5)</i></li><li class="">Menyarankan guru itu pulang dulu, lalu menitipkan legalisirnya kepada kerabat di kota. <i>(skor 1)</i></li><li class="">Mengembalikan berkas karena aturan mewajibkan fotokopi SK sudah dilegalisir saat diserahkan. <i>(skor 2)</i></li><li class="">Menerima berkas itu sebagai susulan, mengingat SK aslinya baru bisa dibawa Sabtu. <i>(skor 3)</i></li><li class="">Melegalisir sendiri fotokopi bawaan guru itu setelah mencocokkannya dengan arsip kantor. <i>(skor 4)</i></li></ol><div class="n">44 kata · pilihan 11–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Berkas kenaikan pangkat guru dari pulau tinggal kurang legalisir fotokopi SK terakhir. SK aslinya di pulau, sedangkan batasnya Jumat dan kapal baru datang Sabtu. Arsip SK ada di bagian kepegawaian Anda, dan kepala subbagian yang berwenang melegalisir sedang di kantor. Apa yang Anda lakukan?</p><ol type="A"><li class="k">Menyalin SK guru itu dari arsip, lalu memintakan legalisirnya kepada atasan. <i>(skor 5)</i></li><li class="">Menyarankan guru itu pulang dulu, lalu menitipkan legalisirnya kepada kerabat di kota. <i>(skor 1)</i></li><li class="">Mengembalikan berkas karena aturan mewajibkan fotokopi SK sudah dilegalisir saat diserahkan. <i>(skor 2)</i></li><li class="">Menerima berkas itu sebagai susulan, mengingat SK aslinya baru bisa dibawa Sabtu. <i>(skor 3)</i></li><li class="">Mencocokkan fotokopi bawaan guru itu dengan arsip, lalu menandatangani legalisirnya. <i>(skor 4)</i></li></ol><div class="n">44 kata · pilihan 10–12 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 35</span><span class="badge">Jejaring Kerja</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Peringatan ketinggian air dari BPBD tempat Anda bertugas dikirim ke grup lima kepala desa di hilir. Banjir pekan lalu, dua desa terlambat mengungsi karena kepala desanya telat membaca pesan, entah kenapa. Anda sendiri hanya piket dua malam sepekan. Tindakan paling tepat adalah&hellip;</p><ol type="A"><li class="">Menelepon kedua kepala desa itu setiap kali peringatan yang dikirim belum dibaca. <i>(skor 4)</i></li><li class="k">Menyepakati dengan kelima desa satu petugas penerima peringatan yang wajib segera membalas. <i>(skor 5)</i></li><li class="">Melanjutkan pengiriman lewat grup yang sama karena kelima desa harus diperlakukan setara. <i>(skor 1)</i></li><li class="">Mengusulkan camat menerbitkan instruksi agar kedua kepala desa itu rajin membuka grup. <i>(skor 3)</i></li><li class="">Menegur kedua kepala desa itu di grup karena lalai membaca peringatan banjir. <i>(skor 2)</i></li></ol><div class="n">42 kata · pilihan 12–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Peringatan ketinggian air dari BPBD tempat Anda bertugas dikirim ke grup lima kepala desa di hilir. Banjir pekan lalu, dua desa terlambat mengungsi karena kepala desanya telat membaca pesan, entah kenapa. Anda sendiri hanya piket dua malam sepekan. Tindakan paling tepat adalah&hellip;</p><ol type="A"><li class="">Menelepon kedua kepala desa itu setiap kali peringatan dikirim, hingga mereka membalas. <i>(skor 4)</i></li><li class="k">Menyepakati dengan kelima desa satu petugas penerima peringatan yang wajib segera membalas. <i>(skor 5)</i></li><li class="">Melanjutkan pengiriman lewat grup yang sama karena kelima desa harus diperlakukan setara. <i>(skor 1)</i></li><li class="">Mengusulkan camat menerbitkan instruksi agar kedua kepala desa itu rajin membuka grup. <i>(skor 3)</i></li><li class="">Menegur kedua kepala desa itu di grup karena lalai membaca peringatan banjir. <i>(skor 2)</i></li></ol><div class="n">42 kata · pilihan 12–12 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 36</span><span class="badge">Profesionalisme</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Sebagai penyuluh baru, Anda menemukan hasil ukur GPS luas tanam tiga desa jauh di bawah angka rekan senior di laporan tim. Laporan itu dikirim Jumat sebagai dasar pembagian pupuk bersubsidi. Rekan senior itu ada di kantor hari ini. Respons paling tepat adalah&hellip;</p><ol type="A"><li class="">Mengirim laporan tepat waktu tanpa mempersoalkan angka rekan, demi menghormati senior. <i>(skor 1)</i></li><li class="">Mencatat selisih angka ketiga desa untuk dibahas pada rapat evaluasi bulan depan. <i>(skor 4)</i></li><li class="k">Membahas selisih hasil ukur dengan rekan senior, mengingat laporannya dikirim Jumat. <i>(skor 5)</i></li><li class="">Melaporkan angka rekan senior itu ke kepala bidang, lalu meminta laporan ditahan. <i>(skor 2)</i></li><li class="">Mengirim pesan kepada rekan senior bahwa angka ketiga desa itu tampak keliru. <i>(skor 3)</i></li></ol><div class="n">42 kata · pilihan 11–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Sebagai penyuluh baru, Anda menemukan hasil ukur GPS luas tanam tiga desa jauh di bawah angka rekan senior di laporan tim. Laporan itu dikirim Jumat sebagai dasar pembagian pupuk bersubsidi. Rekan senior itu ada di kantor hari ini. Respons paling tepat adalah&hellip;</p><ol type="A"><li class="">Mengirim laporan tepat waktu tanpa mempersoalkan angka rekan, demi menghormati senior. <i>(skor 1)</i></li><li class="">Membahas selisih ketiga desa dengan rekan senior setelah laporan tim terkirim hari Jumat. <i>(skor 4)</i></li><li class="k">Membahas selisih hasil ukur dengan rekan senior, karena laporan akan dikirim hari Jumat. <i>(skor 5)</i></li><li class="">Melaporkan angka rekan senior itu ke kepala bidang, lalu meminta laporan ditahan. <i>(skor 2)</i></li><li class="">Mengirim pesan kepada rekan senior bahwa angka ketiga desa itu tampak keliru. <i>(skor 3)</i></li></ol><div class="n">42 kata · pilihan 11–13 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 39</span><span class="badge">Sosial Budaya</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Anda staf desa yang mengatur peminjaman balai menurut urutan permohonan. Majelis taklim dan kelompok arisan biasa memesan sebulan sebelumnya, sehingga persekutuan doa keluarga Kristen dan sanggar tari warga pendatang belum sekali pun kebagian tahun ini. Pengurus keduanya mengeluh kepada Anda. Apa tindakan paling tepat?</p><ol type="A"><li class="">Menawarkan kedua kelompok itu memakai balai pada malam yang belum pernah dipesan. <i>(skor 4)</i></li><li class="">Mempertahankan urutan permohonan karena sebagian besar warga sudah puas dengan cara itu. <i>(skor 2)</i></li><li class="">Meminta majelis taklim merelakan satu jadwalnya bulan ini demi kedua kelompok itu. <i>(skor 3)</i></li><li class="k">Menyusun bersama para pengurus jadwal bulanan yang memberi giliran tiap kelompok. <i>(skor 5)</i></li><li class="">Menampung keluhan itu sampai pengurusnya mengajukan keberatan tertulis kepada kepala desa. <i>(skor 1)</i></li></ol><div class="n">44 kata · pilihan 11–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Anda staf desa yang mengatur peminjaman balai menurut urutan permohonan. Majelis taklim dan kelompok arisan biasa memesan sebulan sebelumnya, sehingga persekutuan doa keluarga Kristen dan sanggar tari warga pendatang belum sekali pun kebagian tahun ini. Pengurus keduanya mengeluh kepada Anda. Apa tindakan paling tepat?</p><ol type="A"><li class="">Menawarkan kedua kelompok itu jadwal malam hari, saat balai jarang dipesan. <i>(skor 4)</i></li><li class="">Mempertahankan urutan permohonan karena sebagian besar warga sudah puas dengan cara itu. <i>(skor 2)</i></li><li class="">Meminta majelis taklim merelakan satu jadwalnya bulan ini demi kedua kelompok itu. <i>(skor 3)</i></li><li class="k">Menyusun bersama para pengurus jadwal bulanan yang memberi giliran tiap kelompok. <i>(skor 5)</i></li><li class="">Menampung keluhan itu sampai pengurusnya mengajukan keberatan tertulis kepada kepala desa. <i>(skor 1)</i></li></ol><div class="n">44 kata · pilihan 11–12 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 42</span><span class="badge">Anti Radikalisme</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Pekan lalu rekan senior di tim lapangan BPBD menyodori Anda formulir setia kepada kelompok yang ingin mengganti Pancasila. Anda menolak dan menasihatinya. Kemarin, saat pelatihan relawan, Anda melihat sendiri ia membagikan formulir itu kepada dua relawan muda. Respons paling tepat adalah&hellip;</p><ol type="A"><li class="">Menasihati rekan itu sekali lagi, lalu meminta kedua relawan mengembalikan formulirnya. <i>(skor 3)</i></li><li class="">Menghormati kebebasan berkeyakinan rekan itu dan membiarkan relawan memutuskan sendiri. <i>(skor 1)</i></li><li class="k">Melaporkan kedua kejadian ke kepala pelaksana BPBD, karena nasihat Anda tak mempan. <i>(skor 5)</i></li><li class="">Mengumpulkan dulu bukti dari setiap ajakan berikutnya agar laporannya nanti lebih kuat. <i>(skor 4)</i></li><li class="">Menjaga hubungan dengan rekan senior itu dengan tidak lagi membahas ajakannya. <i>(skor 2)</i></li></ol><div class="n">41 kata · pilihan 10–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Pekan lalu rekan senior di tim lapangan BPBD menyodori Anda formulir setia kepada kelompok yang ingin mengganti Pancasila. Anda menolak dan menasihatinya. Kemarin, saat pelatihan relawan, Anda melihat sendiri ia membagikan formulir itu kepada dua relawan muda. Respons paling tepat adalah&hellip;</p><ol type="A"><li class="">Menasihati rekan itu sekali lagi, lalu meminta kedua relawan mengembalikan formulirnya. <i>(skor 3)</i></li><li class="">Menghormati kebebasan berkeyakinan rekan itu dan membiarkan relawan memutuskan sendiri. <i>(skor 1)</i></li><li class="k">Melaporkan kedua kejadian ke kepala pelaksana BPBD, karena nasihat Anda tak mempan. <i>(skor 5)</i></li><li class="">Mencatat kedua kejadian dan saksinya, lalu menunggu satu ajakan lagi untuk dilaporkan. <i>(skor 4)</i></li><li class="">Menjaga hubungan dengan rekan senior itu dengan tidak lagi membahas ajakannya. <i>(skor 2)</i></li></ol><div class="n">41 kata · pilihan 10–12 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 43</span><span class="badge">Sosial Budaya</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Edaran baru mewajibkan pakaian adat setiap Kamis tanpa merinci adat daerah mana. Anda staf kepegawaian yang ditugasi menyusun petunjuk pelaksanaannya, dan enam pegawai asal luar daerah bertanya apakah boleh memakai adat asalnya. Pelanggaran edaran masuk penilaian disiplin. Apa yang Anda lakukan?</p><ol type="A"><li class="">Mempersilakan pegawai memakai adat asalnya demi menghargai budaya, risikonya ditanggung sendiri. <i>(skor 4)</i></li><li class="k">Mencantumkan dalam petunjuk pelaksanaan bahwa pakaian adat daerah asal juga diterima. <i>(skor 5)</i></li><li class="">Memintakan izin tertulis sekretaris daerah khusus bagi keenam pegawai yang bertanya. <i>(skor 3)</i></li><li class="">Meneruskan pertanyaan itu ke bagian hukum karena menafsirkan edaran adalah tugas mereka. <i>(skor 1)</i></li><li class="">Mewajibkan adat daerah setempat bagi seluruh pegawai, mengikuti suara terbanyak rapat staf. <i>(skor 2)</i></li></ol><div class="n">41 kata · pilihan 11–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Edaran baru mewajibkan pakaian adat setiap Kamis tanpa merinci adat daerah mana. Anda staf kepegawaian yang ditugasi menyusun petunjuk pelaksanaannya, dan enam pegawai asal luar daerah bertanya apakah boleh memakai adat asalnya. Pelanggaran edaran masuk penilaian disiplin. Apa yang Anda lakukan?</p><ol type="A"><li class="">Mengumumkan di grup pegawai bahwa pakaian adat daerah asal boleh dipakai. <i>(skor 4)</i></li><li class="k">Mencantumkan dalam petunjuk pelaksanaan bahwa pakaian adat daerah asal juga diterima. <i>(skor 5)</i></li><li class="">Memintakan izin tertulis sekretaris daerah khusus bagi keenam pegawai yang bertanya. <i>(skor 3)</i></li><li class="">Meneruskan pertanyaan itu ke bagian hukum karena menafsirkan edaran adalah tugas mereka. <i>(skor 1)</i></li><li class="">Mewajibkan adat daerah setempat bagi seluruh pegawai, mengikuti suara terbanyak rapat staf. <i>(skor 2)</i></li></ol><div class="n">41 kata · pilihan 11–12 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 44</span><span class="badge">Pelayanan Publik</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Sebagai petugas pengaduan RSUD, Anda membaca unggahan keluarga pasien yang dimintai Rp50.000 di kasir rawat jalan agar klaimnya cepat diproses. Unggahan itu tanpa tanggal dan nama petugas, sementara kasir dijaga empat orang bergantian. Setiap pembayaran tercetak di kuitansi bernomor. Respons paling tepat adalah&hellip;</p><ol type="A"><li class="">Meneruskan unggahan itu ke direktur agar keempat petugas kasir segera diperiksa. <i>(skor 4)</i></li><li class="">Meminta pengunggah menghapus unggahannya lebih dulu agar nama baik rumah sakit terjaga. <i>(skor 2)</i></li><li class="">Memasang pengumuman larangan pungutan di meja kasir rawat jalan mulai hari ini. <i>(skor 3)</i></li><li class="">Mengganti uang Rp50.000 itu kepada pengunggah dari dompet pribadi Anda. <i>(skor 1)</i></li><li class="k">Menghubungi pengunggah untuk meminta waktu kejadian dan nomor kuitansinya sebagai dasar pemeriksaan. <i>(skor 5)</i></li></ol><div class="n">43 kata · pilihan 10–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Sebagai petugas pengaduan RSUD, Anda membaca unggahan keluarga pasien yang dimintai Rp50.000 di kasir rawat jalan agar klaimnya cepat diproses. Unggahan itu tanpa tanggal dan nama petugas, sementara kasir dijaga empat orang bergantian. Setiap pembayaran tercetak di kuitansi bernomor. Respons paling tepat adalah&hellip;</p><ol type="A"><li class="">Meneruskan unggahan itu ke direktur agar keempat petugas kasir segera diperiksa. <i>(skor 4)</i></li><li class="">Meminta pengunggah menghapus unggahannya lebih dulu agar nama baik rumah sakit terjaga. <i>(skor 2)</i></li><li class="">Memasang pengumuman larangan pungutan di meja kasir rawat jalan mulai hari ini. <i>(skor 3)</i></li><li class="">Mengganti uang Rp50.000 itu kepada pengunggah dari dompet pribadi Anda. <i>(skor 1)</i></li><li class="k">Menghubungi pengunggah, meminta waktu kejadian dan nomor kuitansinya untuk pemeriksaan. <i>(skor 5)</i></li></ol><div class="n">43 kata · pilihan 10–12 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 45</span><span class="badge">Anti Radikalisme</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Dua rekan meneruskan poster yang menyebut pajak daerah haram karena pemerintah tidak sah ke grup pegawai kantor pajak yang Anda kelola. Dalam sejam, puluhan anggota sudah membacanya. Salah satu pengirim lalu bertanya di bawahnya apakah isinya benar. Langkah paling tepat adalah&hellip;</p><ol type="A"><li class="">Menghapus poster itu tiap kali muncul tanpa menegur pengirimnya, demi menjaga suasana. <i>(skor 4)</i></li><li class="">Membiarkan anggota grup menilai sendiri isi poster sambil menunggu ada yang keberatan. <i>(skor 1)</i></li><li class="">Meneruskan poster itu ke kepala kantor dan meminta beliau memutuskan langkahnya. <i>(skor 2)</i></li><li class="k">Menghapus poster itu dari grup, lalu mengingatkan kedua pengirimnya secara pribadi. <i>(skor 5)</i></li><li class="">Menarik poster itu dengan pengumuman bahwa kedua pengirimnya akan dilaporkan ke atasan. <i>(skor 3)</i></li></ol><div class="n">41 kata · pilihan 11–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Dua rekan meneruskan poster yang menyebut pajak daerah haram karena pemerintah tidak sah ke grup pegawai kantor pajak yang Anda kelola. Dalam sejam, puluhan anggota sudah membacanya. Salah satu pengirim lalu bertanya di bawahnya apakah isinya benar. Langkah paling tepat adalah&hellip;</p><ol type="A"><li class="">Menghapus poster itu dari grup, lalu menyematkan aturan larangan konten serupa. <i>(skor 4)</i></li><li class="">Membiarkan anggota grup menilai sendiri isi poster sambil menunggu ada yang keberatan. <i>(skor 1)</i></li><li class="">Meneruskan poster itu ke kepala kantor dan meminta beliau memutuskan langkahnya. <i>(skor 2)</i></li><li class="k">Menghapus poster itu dari grup, lalu mengingatkan kedua pengirimnya secara pribadi. <i>(skor 5)</i></li><li class="">Menarik poster itu dengan pengumuman bahwa kedua pengirimnya akan dilaporkan ke atasan. <i>(skor 3)</i></li></ol><div class="n">41 kata · pilihan 11–12 kata</div></div></div></div></body></html>

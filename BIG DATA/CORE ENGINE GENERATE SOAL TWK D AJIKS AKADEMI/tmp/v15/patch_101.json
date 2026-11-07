@@ -1,0 +1,40 @@
+{
+  "DAJ-TWK-101": {
+    "id": "DAJ-TWK-101",
+    "no_urut_sumber": 101,
+    "no_urut_gabungan": 101,
+    "tema": "Bahasa Indonesia",
+    "subtema": "Kaidah penulisan bilangan berupa angka pada awal kalimat",
+    "tipe_kode": "E8",
+    "tipe_nama": "Soal Bahasa Indonesia",
+    "kategori_jawaban": "DEFINISI",
+    "level_kognitif": "C4",
+    "konstruk_dua_kutub": "angka tidak dibiarkan membuka kalimat ↔ bilangan lebih dari satu kata tetap ditulis dengan angka",
+    "bentuk_tegangan": "T2",
+    "jangkar_faktual": true,
+    "landasan": [
+      {
+        "kode": "EYD_V",
+        "rujukan": "EYD Edisi V, Penulisan Kata, G. Angka dan Bilangan: butir 2 (bilangan dalam teks yang dapat dinyatakan dengan satu kata ditulis dengan huruf, kecuali jika digunakan secara berurutan seperti dalam perincian), butir 4 (bilangan berupa angka pada awal kalimat yang terdiri atas lebih dari satu kata didahului kata seperti sebanyak, sejumlah, dan sebesar atau diubah susunan kalimatnya), butir 5 (angka yang menunjukkan bilangan besar dapat ditulis sebagian dengan huruf supaya lebih mudah dibaca); dicek di ejaan.kemendikdasmen.go.id 2026-10-25"
+      }
+    ],
+    "status_kunci": "kuat",
+    "soal": "Dua penyunting memeriksa kalimat pengumuman seleksi ini: 215 peserta diundang panitia untuk mengikuti tes tertulis. Penyunting pertama keberatan karena kalimat itu dibuka dengan angka, sementara penyunting kedua ingin 215 tetap ditulis dengan angka karena terlalu panjang bila dieja. Kaidah EYD V yang paling tepat menyelesaikan perbedaan pendapat kedua penyunting adalah...",
+    "opsi": {
+      "A": "Angka yang menunjukkan bilangan besar dapat ditulis sebagian dengan huruf agar mudah dibaca.",
+      "B": "Kalimat itu menjadi baku bila ditulis: Panitia mengundang 215 peserta tes.",
+      "C": "Bilangan dalam teks yang dapat dinyatakan dengan satu kata ditulis dengan huruf.",
+      "D": "Angka di awal kalimat didahului kata seperti sebanyak, atau susunan kalimatnya diubah.",
+      "E": "Bilangan yang digunakan berurutan seperti dalam perincian ditulis dengan angka, bukan huruf."
+    },
+    "kunci": "D",
+    "pembahasan": "Yang ditanya: kaidah yang menyelesaikan beda pendapat dua penyunting. Kalimat pengumumannya dibuka angka 215. Penyunting pertama keberatan karena angka membuka kalimat. Penyunting kedua ingin 215 tetap berupa angka karena kalau dieja jadi panjang. Dua-duanya punya dasar di EYD V.\nCara cepat: hitung dulu berapa kata kalau 215 dieja. Dua ratus lima belas, empat kata. Bilangan yang lebih dari satu kata ditulis dengan angka, jadi penyunting kedua benar. Angka itu tetap tidak boleh berdiri telanjang di depan kalimat, jadi penyunting pertama juga benar. EYD V memberi dua jalan: tambahkan kata seperti “sebanyak” di depannya (“Sebanyak 215 peserta diundang panitia …”), atau ubah susunan kalimatnya (“Panitia mengundang 215 peserta …”).\nKenapa opsi lain gugur: A kaidah bilangan besar itu benar, tetapi dipakai untuk bilangan seperti 500 ribu atau 7 triliun, bukan 215. B kalimat perbaikannya sudah tepat, tetapi itu contoh hasil, bukan kaidah yang diminta soal. C mengulang “ditulis dengan” dari soal; kaidah ini hanya menjelaskan kenapa 215 tidak dieja, jadi cuma membela penyunting kedua dan tidak menyentuh posisi angka di awal kalimat. E kaidah perincian berurutan itu benar, tetapi kalimat ini tidak memuat deretan bilangan.\nKunci: D, karena kaidah ini memegang dua sisi: 215 tetap ditulis dengan angka, dan angka itu tidak lagi membuka kalimat secara langsung.\nAnalogi: di antrean loket, orang yang membawa koper besar tidak boleh langsung berdiri paling depan. Petugas memberi dua jalan: kopernya ditaruh di troli dulu, atau orangnya mengantre di belakang. Kopernya tetap utuh; yang diatur hanya cara ia tampil di depan.\nJebakan: banyak buku latihan masih memakai rumusan PUEBI 2016, yaitu “bilangan di awal kalimat ditulis dengan huruf” dan batas “satu atau dua kata”. EYD V memakai batas satu kata dan menambahkan jalan “sebanyak/sejumlah/sebesar”. Kalau kamu memilih berdasarkan hafalan lama, kamu bisa tergoda mengeja 215.",
+    "analisis_opsi": {
+      "A": "[D4] Kaidah bilangan besar (butir 5) sah, tetapi untuk bilangan seperti 500 ribu atau 7 triliun; 215 tidak termasuk.",
+      "B": "[D1] Kalimat perbaikan yang tepat, tetapi berupa contoh hasil, bukan kaidah.",
+      "C": "[D5+D2] Mengulang “ditulis dengan”; kaidah butir 2 hanya membenarkan penyunting kedua dan tidak mengatur posisi di awal kalimat.",
+      "D": "KUNCI — Butir 4: angka lebih dari satu kata di awal kalimat diberi kata sebanyak/sejumlah/sebesar di depannya atau kalimatnya disusun ulang.",
+      "E": "[D4] Kaidah bilangan berurutan dalam perincian; kalimat ini tidak memuat perincian."
+    }
+  }
+}

@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><title>Paket 1 — Soal 31–45 TKP — Lembar Soal</title><style>
+  @page { size: A4; margin: 18mm 16mm 20mm 16mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #1a1a1a;
+    margin: 0;
+  }
+  .cover {
+    page-break-after: always;
+    padding-top: 60mm;
+    text-align: center;
+  }
+  .cover .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 10pt;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #6b6b6b;
+    margin-bottom: 10mm;
+  }
+  .cover h1 {
+    font-size: 26pt;
+    margin: 0 0 6mm 0;
+    color: #111;
+  }
+  .cover .sub {
+    font-size: 12pt;
+    color: #444;
+    margin-bottom: 14mm;
+  }
+  .cover .meta-box {
+    display: inline-block;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6mm 10mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9.5pt;
+    color: #333;
+  }
+  .cover .meta-box div { margin: 1.5mm 0; }
+  .cover .meta-box b { color: #111; }
+  .cover .note {
+    margin-top: 16mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    color: #888;
+    max-width: 120mm;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2.section-title {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 13pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111;
+    border-bottom: 2px solid #111;
+    padding-bottom: 2mm;
+    margin: 0 0 6mm 0;
+  }
+
+  table.summary {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.8pt;
+    margin-bottom: 4mm;
+  }
+  table.summary th, table.summary td {
+    border: 1px solid #ccc;
+    padding: 2mm 2.2mm;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.summary th {
+    background: #f2f2f2;
+    font-weight: 700;
+  }
+  table.summary td.center { text-align: center; }
+
+  .soal {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 9mm;
+    padding-bottom: 7mm;
+    border-bottom: 1px solid #ddd;
+  }
+  .soal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 3mm;
+    break-inside: avoid;
+  }
+  .soal-num {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 11.5pt;
+    color: #111;
+  }
+  .badge {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    padding: 1mm 3mm;
+    border-radius: 10px;
+    color: #fff;
+    white-space: nowrap;
+  }
+  .dim-Profesionalisme { background: #2f5fa8; }
+  .dim-PelayananPublik { background: #1f8a56; }
+  .dim-JejaringKerja { background: #6b3fa0; }
+  .dim-SosialBudaya { background: #c9701d; }
+  .dim-TIK { background: #0f8b8d; }
+  .dim-AntiRadikalisme { background: #b3282d; }
+
+  .stem { margin-bottom: 3mm; text-align: justify; }
+
+  .options { margin: 0 0 4mm 0; padding: 0; list-style: none; }
+  .options li {
+    display: flex;
+    gap: 2.5mm;
+    margin-bottom: 1.6mm;
+    align-items: flex-start;
+  }
+  .opt-letter {
+    flex: 0 0 auto;
+    font-weight: 700;
+    width: 5mm;
+  }
+  .opt-letter.kunci { color: #1f8a56; }
+  .opt-text { flex: 1 1 auto; }
+  .opt-text.kunci { font-weight: 700; }
+
+  .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.6pt;
+    background: #f7f7f7;
+    border-left: 3px solid #111;
+    padding: 2.5mm 3.5mm;
+    margin-bottom: 2.5mm;
+  }
+  .meta div { margin: 0.8mm 0; }
+  .meta .label { font-weight: 700; display: inline-block; width: 22mm; color: #444; }
+
+  .pembahasan {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    background: #fbfbf5;
+    border: 1px solid #e6e2c8;
+    padding: 3mm 4mm;
+  }
+  .pembahasan .ph-title {
+    font-weight: 700;
+    font-size: 8.6pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6b6320;
+    margin-bottom: 1.5mm;
+  }
+  .pembahasan ol { margin: 0; padding-left: 4mm; }
+  .pembahasan li { margin-bottom: 1.3mm; text-align: justify; }
+
+  .footer-note {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    color: #999;
+    text-align: center;
+    margin-top: 10mm;
+  }
+
+  code.sumbu {
+    background: #eee;
+    padding: 0.2mm 1.2mm;
+    border-radius: 3px;
+    font-family: "Courier New", monospace;
+    font-size: 8.2pt;
+  }
+  .pembahasan-siswa { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 9pt; background: #f3f8fb; border: 1px solid #c9dde8; padding: 3mm 4mm; margin-top: 2mm; }
+  .pembahasan-siswa .ph-title { font-weight: 700; font-size: 8.6pt; text-transform: uppercase; color: #2d5a73; margin-bottom: 1.5mm; }
+  .pembahasan-siswa p, .pembahasan-siswa li { margin: 0.8mm 0; text-align: justify; }
+  .pindai{border:2px solid #1f5f8b;border-radius:5px;background:#f2f8fc;padding:3mm 5mm;margin:0 0 4mm;font-family:"Helvetica Neue",Arial,sans-serif;font-size:10pt}
+  .pindai .pt{font-weight:bold;color:#1f5f8b;letter-spacing:1px;text-transform:uppercase;font-size:9.5pt;margin-bottom:2mm}
+  .pindai .pt span{float:right;font-weight:normal;color:#555;text-transform:none;letter-spacing:0}
+  .pindai ol{margin:0;padding-left:5mm}.pindai li{margin:1.5mm 0}
+  .pindai .tanda{margin-top:2.5mm;padding:2mm 3mm;background:#fff6d6;border-left:4px solid #d9a400}
+
+  .soal.bahas { page-break-inside: auto; break-inside: auto; }
+  .soal.bahas .soal-head { break-after: avoid; page-break-after: avoid; }
+  .soal.bahas .stem, .soal.bahas .options { break-inside: avoid; }
+  .soal.bahas .stem, .soal.bahas .options { font-size: 10pt; }
+  table.skor td, table.skor th { text-align: center; }
+  .cover { padding-top: 70mm; }
+</style></head><body>
+<div class="cover"><div class="kicker">D'Ajiks Akademi · SKD Kedinasan</div>
+<h1>Paket 1 — Soal 31–45 TKP</h1><div class="sub">Lembar Soal</div>
+<div class="meta-box"><div><b>Subtes</b> Tes Karakteristik Pribadi</div><div><b>Jumlah</b> 15 soal</div></div>
+<div class="note">Pilih satu jawaban yang paling tepat. Setiap pilihan bernilai 1 sampai 5; tidak ada pilihan bernilai 0.</div></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 31</span>
+    <span class="badge dim-SosialBudaya">Sosial Budaya</span>
+  </div><div class="stem">
+    Anda mengatur rapat penjelasan tender Rabu ini, satu-satunya kesempatan tanya jawab. Seorang calon penyedia minta jadwal digeser karena hari itu Galungan, padahal peserta lain sudah memesan tiket dari luar kota. Sistem tender bisa menyiarkan rapat dan menerima pertanyaan tertulis. Respons paling tepat adalah&hellip; (Sosial Budaya)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menggeser rapat ke Kamis demi penyedia itu, lalu mengumumkan jadwal barunya.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Meminta penyedia itu membuktikan hari rayanya dulu, khawatir hanya cara mengulur jadwal.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Mengirimkan rekaman rapat kepada penyedia itu agar ia menerima penjelasan yang sama.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Mempertahankan jadwal Rabu apa adanya, mengingat tiap penyedia harus diperlakukan sama.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menayangkan rapat Rabu secara daring, lalu menampung pertanyaan susulan penyedia sampai Jumat.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 32</span>
+    <span class="badge dim-PelayananPublik">Pelayanan Publik</span>
+  </div><div class="stem">
+    Berkas kenaikan pangkat guru dari pulau tinggal kurang legalisir fotokopi SK terakhir. SK aslinya di pulau, sedangkan batasnya Jumat dan kapal baru datang Sabtu. Arsip SK ada di bagian kepegawaian Anda, dan kepala subbagian yang berwenang melegalisir sedang di kantor. Apa yang Anda lakukan? (Pelayanan Publik)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menyalin SK guru itu dari arsip, lalu memintakan legalisirnya kepada atasan.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Menyarankan guru itu pulang dulu, lalu menitipkan legalisirnya kepada kerabat di kota.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Mengembalikan berkas karena aturan mewajibkan fotokopi SK sudah dilegalisir saat diserahkan.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menerima berkas itu sebagai susulan, mengingat SK aslinya baru bisa dibawa Sabtu.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Melegalisir sendiri fotokopi bawaan guru itu setelah mencocokkannya dengan arsip kantor.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 33</span>
+    <span class="badge dim-SosialBudaya">Sosial Budaya</span>
+  </div><div class="stem">
+    Anda instruktur kelas otomotif di balai latihan kerja dan penyusun tata tertibnya. Evaluasi tanpa nama menunjukkan tiga peserta luar daerah tertinggal karena rekan kelompok memberi arahan dalam bahasa daerah. Kelompok sering praktik di bengkel tanpa didampingi instruktur. Apa respons Anda? (Sosial Budaya)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Mengajak peserta menyepakati aturan bahasa kelompok pada evaluasi akhir bulan depan.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Membebaskan kelompok memakai bahasa apa pun selama target praktik tercapai.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Mengumumkan besok bahwa arahan praktik wajib berbahasa Indonesia demi peserta luar daerah.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Mengajak peserta menyepakati bahasa Indonesia saat bekerja, lalu memasukkannya ke tata tertib.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menyarankan ketiga peserta belajar istilah bahasa daerah, lalu membaur dengan kelompoknya.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 34</span>
+    <span class="badge dim-TIK">TIK</span>
+  </div><div class="stem">
+    Petugas yang mengaku dari puskesmas datang dengan surat tugas, meminta daftar lansia beserta NIK dan nomor telepon. Anda operator data desa, dan kantor menyimpan nomor resmi puskesmas. Bulan lalu desa tetangga tertipu surat tugas palsu dengan cara serupa. Apa yang Anda lakukan? (TIK)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Mengarahkan petugas itu meminta data ke ketua RT, mengingat mereka mengenal warganya.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Memastikan permintaan itu lewat nomor resmi puskesmas, lalu melapor ke kepala desa.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Bertanya kepada rekan sekantor apakah permintaan serupa pernah datang, lalu mengikuti sarannya.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menyimpan berkas permintaan itu sampai ada arahan tertulis dari pihak kecamatan.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menelepon nomor di surat tugas itu, lalu menyerahkan daftar bila petugasnya dibenarkan.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 35</span>
+    <span class="badge dim-JejaringKerja">Jejaring Kerja</span>
+  </div><div class="stem">
+    Peringatan ketinggian air dari BPBD tempat Anda bertugas dikirim ke grup lima kepala desa di hilir. Banjir pekan lalu, dua desa terlambat mengungsi karena kepala desanya telat membaca pesan, entah kenapa. Anda sendiri hanya piket dua malam sepekan. Tindakan paling tepat adalah&hellip; (Jejaring Kerja)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menelepon kedua kepala desa itu setiap kali peringatan yang dikirim belum dibaca.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Menyepakati dengan kelima desa satu petugas penerima peringatan yang wajib segera membalas.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Melanjutkan pengiriman lewat grup yang sama karena kelima desa harus diperlakukan setara.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Mengusulkan camat menerbitkan instruksi agar kedua kepala desa itu rajin membuka grup.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menegur kedua kepala desa itu di grup karena lalai membaca peringatan banjir.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 36</span>
+    <span class="badge dim-Profesionalisme">Profesionalisme</span>
+  </div><div class="stem">
+    Sebagai penyuluh baru, Anda menemukan hasil ukur GPS luas tanam tiga desa jauh di bawah angka rekan senior di laporan tim. Laporan itu dikirim Jumat sebagai dasar pembagian pupuk bersubsidi. Rekan senior itu ada di kantor hari ini. Respons paling tepat adalah&hellip; (Profesionalisme)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Mengirim laporan tepat waktu tanpa mempersoalkan angka rekan, demi menghormati senior.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Mencatat selisih angka ketiga desa untuk dibahas pada rapat evaluasi bulan depan.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Membahas selisih hasil ukur dengan rekan senior, mengingat laporannya dikirim Jumat.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Melaporkan angka rekan senior itu ke kepala bidang, lalu meminta laporan ditahan.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Mengirim pesan kepada rekan senior bahwa angka ketiga desa itu tampak keliru.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 37</span>
+    <span class="badge dim-TIK">TIK</span>
+  </div><div class="stem">
+    Sebagai admin aplikasi surat keterangan daring kecamatan, Anda berwenang mengubah tampilan aplikasi. Sepekan uji coba, puluhan pengajuan warga ditolak karena foto kartu keluarga melebihi 2 MB, padahal bulan depan loket kertas ditutup. Kebanyakan warga mengirim dari rumah. Sikap Anda adalah&hellip; (TIK)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Memasang petunjuk batas ukuran dan cara mengecilkan foto di halaman unggah aplikasi.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Membalas pengajuan yang ditolak dengan aturan batas foto, lalu meminta unggah ulang.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Membantu warga yang datang ke kantor kecamatan mengecilkan foto sebelum diunggah.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Mendukung usul staf agar loket kertas tetap dibuka sampai warga terbiasa daring.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Mengarahkan warga yang fotonya ditolak ke jasa pengetikan di luar kantor.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 38</span>
+    <span class="badge dim-AntiRadikalisme">Anti Radikalisme</span>
+  </div><div class="stem">
+    Tiga apel Senin terakhir, seorang rekan di bagian Anda tetap duduk saat Indonesia Raya dinyanyikan. Beberapa pegawai mulai berbisik bahwa ia menolak negara, padahal belum ada yang mengajaknya bicara. Ia sendiri tak pernah menyampaikan pandangan apa pun. Langkah pertama Anda adalah&hellip; (Anti Radikalisme)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menyampaikan sikap rekan itu kepada kepala bagian agar dibina sesuai aturan disiplin.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Menemui rekan itu empat mata untuk menanyakan alasannya tetap duduk saat apel.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Membela rekan itu di depan pegawai lain dan siap ikut menanggung sikapnya.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menanyakan kepada rekan-rekan lain apakah mereka juga melihat gelagat serupa darinya.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Mengingatkan rekan di depan barisan bahwa pegawai wajib berdiri saat lagu kebangsaan.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 39</span>
+    <span class="badge dim-SosialBudaya">Sosial Budaya</span>
+  </div><div class="stem">
+    Anda staf desa yang mengatur peminjaman balai menurut urutan permohonan. Majelis taklim dan kelompok arisan biasa memesan sebulan sebelumnya, sehingga persekutuan doa keluarga Kristen dan sanggar tari warga pendatang belum sekali pun kebagian tahun ini. Pengurus keduanya mengeluh kepada Anda. Apa tindakan paling tepat? (Sosial Budaya)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menawarkan kedua kelompok itu memakai balai pada malam yang belum pernah dipesan.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Mempertahankan urutan permohonan karena sebagian besar warga sudah puas dengan cara itu.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Meminta majelis taklim merelakan satu jadwalnya bulan ini demi kedua kelompok itu.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menyusun bersama para pengurus jadwal bulanan yang memberi giliran tiap kelompok.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menampung keluhan itu sampai pengurusnya mengajukan keberatan tertulis kepada kepala desa.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 40</span>
+    <span class="badge dim-JejaringKerja">Jejaring Kerja</span>
+  </div><div class="stem">
+    Unit TI Anda akan memasang pembaruan keamanan server yang mematikan aplikasi layanan enam jam. Vendor menawarkan Sabtu pagi atau sore, yang menurut catatan paling sepi, asal jamnya dikunci Rabu. Bidang perizinan, satu dari tiga pemakainya, biasa menjadwalkan pemohon sepekan sebelumnya. Langkah paling tepat adalah&hellip; (Jejaring Kerja)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Mengedarkan dua pilihan jam kepada ketiga bidang untuk dijawab sebelum Rabu.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Mengambil Sabtu pagi tawaran vendor demi menjaga hubungan kerja yang sudah baik.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Memilih Sabtu sore karena menurut catatan, saat itulah aplikasi paling sepi.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Mengabari ketiga bidang begitu jam dikunci Rabu agar mereka menyesuaikan layanannya.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Membagi pemeliharaan menjadi dua jam setiap Sabtu selama tiga pekan berturut-turut.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 41</span>
+    <span class="badge dim-SosialBudaya">Sosial Budaya</span>
+  </div><div class="stem">
+    Anda staf humas pengatur siaran langsung radio soal tarif retribusi. Separuh acara berisi tanya jawab telepon yang hanya boleh dijawab kepala bidang pendapatan. Jadwal rencana kerja humas jatuh pada Jumat Agung, hari ibadah beliau, padahal radio sanggup pekan depan. Sikap Anda adalah&hellip; (Sosial Budaya)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menyepakati hari siaran pekan depan dengan narasumber, lalu mengabarkannya ke radio.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Merekam wawancara narasumber sehari sebelumnya, demi siaran tetap tayang Jumat itu.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Membiarkan pihak radio memutuskan jadwalnya sendiri karena slot siaran milik mereka.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Berpegang pada jadwal rencana kerja humas dan meminta narasumber menyesuaikan diri.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Meminta staf senior bidang pendapatan menggantikan beliau, karena bahan siarannya sudah tertulis.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 42</span>
+    <span class="badge dim-AntiRadikalisme">Anti Radikalisme</span>
+  </div><div class="stem">
+    Pekan lalu rekan senior di tim lapangan BPBD menyodori Anda formulir setia kepada kelompok yang ingin mengganti Pancasila. Anda menolak dan menasihatinya. Kemarin, saat pelatihan relawan, Anda melihat sendiri ia membagikan formulir itu kepada dua relawan muda. Respons paling tepat adalah&hellip; (Anti Radikalisme)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menasihati rekan itu sekali lagi, lalu meminta kedua relawan mengembalikan formulirnya.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Menghormati kebebasan berkeyakinan rekan itu dan membiarkan relawan memutuskan sendiri.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Melaporkan kedua kejadian ke kepala pelaksana BPBD, karena nasihat Anda tak mempan.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Mengumpulkan dulu bukti dari setiap ajakan berikutnya agar laporannya nanti lebih kuat.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menjaga hubungan dengan rekan senior itu dengan tidak lagi membahas ajakannya.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 43</span>
+    <span class="badge dim-SosialBudaya">Sosial Budaya</span>
+  </div><div class="stem">
+    Edaran baru mewajibkan pakaian adat setiap Kamis tanpa merinci adat daerah mana. Anda staf kepegawaian yang ditugasi menyusun petunjuk pelaksanaannya, dan enam pegawai asal luar daerah bertanya apakah boleh memakai adat asalnya. Pelanggaran edaran masuk penilaian disiplin. Apa yang Anda lakukan? (Sosial Budaya)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Mempersilakan pegawai memakai adat asalnya demi menghargai budaya, risikonya ditanggung sendiri.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Mencantumkan dalam petunjuk pelaksanaan bahwa pakaian adat daerah asal juga diterima.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Memintakan izin tertulis sekretaris daerah khusus bagi keenam pegawai yang bertanya.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Meneruskan pertanyaan itu ke bagian hukum karena menafsirkan edaran adalah tugas mereka.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Mewajibkan adat daerah setempat bagi seluruh pegawai, mengikuti suara terbanyak rapat staf.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 44</span>
+    <span class="badge dim-PelayananPublik">Pelayanan Publik</span>
+  </div><div class="stem">
+    Sebagai petugas pengaduan RSUD, Anda membaca unggahan keluarga pasien yang dimintai Rp50.000 di kasir rawat jalan agar klaimnya cepat diproses. Unggahan itu tanpa tanggal dan nama petugas, sementara kasir dijaga empat orang bergantian. Setiap pembayaran tercetak di kuitansi bernomor. Respons paling tepat adalah&hellip; (Pelayanan Publik)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Meneruskan unggahan itu ke direktur agar keempat petugas kasir segera diperiksa.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Meminta pengunggah menghapus unggahannya lebih dulu agar nama baik rumah sakit terjaga.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Memasang pengumuman larangan pungutan di meja kasir rawat jalan mulai hari ini.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Mengganti uang Rp50.000 itu kepada pengunggah dari dompet pribadi Anda.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menghubungi pengunggah untuk meminta waktu kejadian dan nomor kuitansinya sebagai dasar pemeriksaan.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 45</span>
+    <span class="badge dim-AntiRadikalisme">Anti Radikalisme</span>
+  </div><div class="stem">
+    Dua rekan meneruskan poster yang menyebut pajak daerah haram karena pemerintah tidak sah ke grup pegawai kantor pajak yang Anda kelola. Dalam sejam, puluhan anggota sudah membacanya. Salah satu pengirim lalu bertanya di bawahnya apakah isinya benar. Langkah paling tepat adalah&hellip; (Anti Radikalisme)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menghapus poster itu tiap kali muncul tanpa menegur pengirimnya, demi menjaga suasana.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Membiarkan anggota grup menilai sendiri isi poster sambil menunggu ada yang keberatan.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Meneruskan poster itu ke kepala kantor dan meminta beliau memutuskan langkahnya.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menghapus poster itu dari grup, lalu mengingatkan kedua pengirimnya secara pribadi.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menarik poster itu dengan pengumuman bahwa kedua pengirimnya akan dilaporkan ke atasan.</span></li>
+  </ul></div>
+
+</body></html>

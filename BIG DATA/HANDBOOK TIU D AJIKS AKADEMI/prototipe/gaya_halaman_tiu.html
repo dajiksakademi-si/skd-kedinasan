@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Gaya Halaman TIU</title>
+<!-- Contoh gaya halaman Handbook TIU (Tahap 3). Halaman 1 ditulis tangan; blok C1 di halaman 2 diisi scripts/contoh_bab6_c1.mjs. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+/* palet: navy + emas seri SKD, biru pucat dari sampul kubus TIU (#e9f0fb → #d9e5f5) */
+:root{
+  --navy:#0c2350; --navy-2:#14336f; --royal:#1f4fa6;
+  --ice:#edf2fb; --line:#d8e1ef; --paper:#fbfcfe;
+  --gold:#f2b705; --gold-soft:#fff6d9; --gold-ink:#7a5a00;
+  --ink:#13203b; --body:#2b3856; --muted:#5b6782; --no-ink:#8c2f2f; --no-soft:#fbefec;
+}
+@page{ size:A4; margin:17mm 17mm 16mm; background:#fbfcfe;
+  @top-left{ content:"TES INTELEGENSIA UMUM"; font-family:"Plus Jakarta Sans",sans-serif; font-size:7pt; font-weight:800; letter-spacing:.16em; color:#0c2350; }
+  @top-right{ content:"D'Ajiks Akademi"; font-family:"Cinzel",serif; font-size:8.6pt; font-weight:700; letter-spacing:.06em; color:#7a5a00; }
+  @bottom-left{ content:"Handbook TIU · Versi Siswa · Edisi 2026"; font-family:"Plus Jakarta Sans",sans-serif; font-size:7pt; color:#8f99ae }
+  @bottom-right{ content:counter(page); font-family:"Plus Jakarta Sans",sans-serif; font-size:8.4pt; font-weight:800; color:#0c2350 }
+}
+*{box-sizing:border-box}
+html{-webkit-print-color-adjust:exact; print-color-adjust:exact; background:var(--paper)}
+body{margin:0; background:var(--paper); color:var(--body); font-family:"Plus Jakarta Sans",system-ui,sans-serif; font-size:9.8pt; line-height:1.6; font-variant-numeric:tabular-nums lining-nums}
+h2,h3,h4{margin:0; color:var(--ink); line-height:1.2; letter-spacing:-.015em; text-wrap:balance; break-after:avoid}
+h3{display:flex; align-items:center; gap:3mm; font-size:13.6pt; font-weight:800; margin:5.4mm 0 2.8mm}
+h3::before{content:""; flex:none; width:1.7mm; height:5.6mm; border-radius:99px; background:var(--gold)}
+p{margin:0 0 2.8mm; text-wrap:pretty}
+b{font-weight:700; color:var(--ink)}
+p, .tahap dd, .g .x, .duo span, .note p{text-align:justify}
+i.v{font-style:italic; font-family:inherit}
+mark{background:linear-gradient(180deg,transparent 55%,rgba(242,183,5,.45) 55%); color:inherit; padding:0 .4mm}
+::selection{background:var(--gold); color:var(--navy)}
+.hal2{break-before:page}
+.hal2 > h3:first-child{margin-top:0}
+/* pecahan sebaris: pembilang naik, penyebut turun, garis miring pecahan */
+.fr{white-space:nowrap; font-size:.86em}
+.fr sup,.fr sub{font-size:.8em; line-height:0}
+.fr sup{vertical-align:.42em}
+.fr sub{vertical-align:-.08em}
+.ico{width:3.3mm; height:3.3mm; flex:none}
+
+/* ── pembuka bab: pita biru pucat + kisi kubus ── */
+.band{display:grid; grid-template-columns:auto 1fr auto; gap:0 5.6mm; align-items:start; border-radius:5mm; padding:6mm 6.6mm 5.4mm; margin:0 0 5mm;
+  background:linear-gradient(180deg,#e9f0fb 0%,#dbe6f5 100%); box-shadow:inset 0 0 0 .3mm rgba(12,35,80,.07); break-inside:avoid}
+.band .no{font-size:42pt; font-weight:800; line-height:.86; letter-spacing:-.04em; color:var(--navy)}
+.band .no::after{content:""; display:block; width:8.4mm; height:.9mm; margin-top:2.4mm; background:var(--gold-ink)}
+.band h2{font-size:21pt; font-weight:800; line-height:1.08; letter-spacing:-.025em; color:var(--navy); margin:.4mm 0 2.2mm}
+.band p{font-size:9.3pt; line-height:1.52; color:#2a3857; margin:0; text-align:left}
+.band .waktu{display:flex; align-items:center; gap:1.6mm; margin-top:2.6mm; font-size:8.2pt; font-weight:700; color:var(--navy-2)}
+.kisi{display:grid; grid-template-columns:repeat(3,3.6mm); gap:1mm; margin-top:.6mm}
+.kisi i{width:3.6mm; height:3.6mm; border-radius:.8mm; background:var(--navy); opacity:.88}
+.kisi i:nth-child(2n){opacity:.5}
+.kisi i.emas{background:var(--gold); opacity:1}
+.lead{font-size:10.4pt; line-height:1.6; color:var(--ink)}
+
+/* ── konsep inti: uraian kiri, tabel hitung kanan ── */
+.konsep{display:grid; grid-template-columns:1fr 61mm; gap:5mm; margin:0 0 3.4mm; break-inside:avoid}
+.def p{margin:0 0 1.8mm; font-size:9.5pt; line-height:1.56}
+.def p:last-child{margin:0}
+table.hit{width:100%; border-collapse:collapse; table-layout:fixed; background:var(--ice); border-radius:3.2mm; overflow:hidden; font-size:8.7pt; line-height:1.35; color:var(--ink); align-self:start}
+.hit th{font-size:6.4pt; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); text-align:left; padding:2.4mm 2.4mm 1.4mm}
+.hit td{padding:1.5mm 2.4mm; border-top:1px solid rgba(12,35,80,.08)}
+.hit th:first-child{width:16mm} .hit th:last-child{width:15mm}
+.hit th:last-child,.hit td:last-child{text-align:right}
+.hit td{white-space:nowrap}
+.hit td:last-child{font-weight:700; color:var(--navy)}
+.hit tr.uji td{color:var(--royal); font-weight:700; padding-bottom:2.2mm}
+
+/* ── kotak ── */
+.note{border-radius:3.6mm; padding:3.8mm 4.8mm 3.8mm; margin:3.6mm 0 0; break-inside:avoid}
+.note h4{display:inline-block; font-size:6.9pt; font-weight:800; letter-spacing:.12em; text-transform:uppercase; line-height:1.3; padding:.9mm 2.8mm; border-radius:99px; margin:0 0 2mm}
+.note p{font-size:9.3pt; line-height:1.58; margin:0}
+.note.catatan{background:var(--gold-soft)}
+.note.catatan h4{background:var(--gold); color:var(--navy)}
+
+/* ── contoh soal ── */
+.soal{background:#fff; border:1px solid var(--line); border-radius:4.2mm; padding:4.2mm 5.2mm 4.4mm; margin:0 0 3mm; box-shadow:0 .8mm 2.6mm rgba(12,35,80,.06); break-inside:avoid}
+.soal .meta{display:flex; justify-content:space-between; align-items:center; font-size:7pt; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--royal); margin-bottom:2.2mm}
+.soal .meta .waktu{display:flex; align-items:center; gap:1.4mm; letter-spacing:.06em; color:var(--navy-2)}
+.soal .stem{font-size:11.2pt; font-weight:500; color:var(--ink); margin:0 0 3.2mm}
+.opsi5{display:grid; grid-template-columns:repeat(5,1fr); gap:2mm}
+.opsi5 div{display:flex; align-items:center; gap:2.4mm; border:1px solid #e6ebf3; border-radius:2.6mm; padding:1.8mm 2.4mm}
+.opsi5 b{font-size:10.8pt; font-weight:700}
+.h{flex:none; width:6mm; height:6mm; border-radius:1.7mm; background:var(--navy); color:#fff; font-size:8.2pt; font-weight:800; display:flex; align-items:center; justify-content:center}
+.kotak{border-radius:3.4mm; padding:3.2mm 4.4mm; margin:0 0 2.6mm; break-inside:avoid}
+.lbl, .duo b{display:block; font-size:6.9pt; font-weight:800; letter-spacing:.12em; text-transform:uppercase; color:var(--royal); margin-bottom:1.4mm}
+.kotak p{font-size:9.3pt; line-height:1.56; margin:0}
+.inti{background:var(--ice)}
+.langkah{background:#fff; border:1px solid var(--line)}
+.tahap{margin:0; display:grid; gap:1.6mm}
+.tahap div{display:grid; grid-template-columns:25mm 1fr; gap:3mm}
+.tahap dt{font-size:8.4pt; font-weight:800; color:var(--navy); line-height:1.5}
+.tahap dt small{display:block; font-size:7.2pt; font-weight:700; color:var(--gold-ink)}
+.tahap dd{margin:0; font-size:9pt; line-height:1.54}
+.tahap div + div{padding-top:1.6mm; border-top:1px solid #edf0f6}
+.gugur{border:1px solid var(--line); border-radius:3.4mm; background:#fff; padding:2.8mm 4.4mm .6mm; margin:0 0 2.6mm; break-inside:avoid}
+.g{display:grid; grid-template-columns:6mm 23mm 1fr; gap:0 2.8mm; align-items:start; padding:1.9mm 0; border-top:1px solid #edf0f6}
+.lbl + .g{border-top:0; padding-top:.4mm}
+.g .v{font-size:9.8pt; font-weight:700; color:var(--ink); line-height:6mm; display:flex; flex-direction:column; align-items:flex-start}
+.g .x{font-size:8.8pt; line-height:1.5; color:var(--body); padding-top:.6mm}
+.g .x b{color:var(--no-ink)}
+.g .uji{font-size:6.6pt; font-weight:700; letter-spacing:.02em; line-height:1.3; color:var(--no-ink); background:var(--no-soft); border-radius:99px; padding:.6mm 2.2mm; margin-top:.2mm; white-space:nowrap}
+.jwb{display:flex; gap:4mm; align-items:center; background:var(--navy); border-radius:3.4mm; padding:3.2mm 4.6mm; margin:0 0 2.6mm; break-inside:avoid}
+.jwb > span{flex:none; width:9mm; height:9mm; border-radius:2.4mm; background:var(--gold); color:var(--navy); font-size:12.6pt; font-weight:800; display:flex; align-items:center; justify-content:center}
+.jwb p{margin:0; font-size:9.3pt; line-height:1.52; color:#e6ecf8; text-align:left}
+.jwb p b{color:var(--gold)}
+.duo{display:grid; grid-template-columns:1fr 1fr; gap:2.8mm; break-inside:avoid}
+.duo > div{background:var(--ice); border-radius:3.4mm; padding:3.2mm 4.2mm}
+.duo span{display:block; font-size:8.9pt; line-height:1.54}
+.duo .il{background:var(--gold-soft)}
+.duo .il b{color:var(--gold-ink)}
+</style>
+</head>
+<body>
+<span aria-hidden="true" style="position:absolute;opacity:0;font-family:Cinzel;font-weight:700">D'Ajiks Akademi</span>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="jam" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.4" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 4.6V8l2.4 1.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol></svg>
+
+<!-- ═════════ HALAMAN 1 · PEMBUKA BAB 6 ═════════ -->
+<section class="hal hal1">
+  <header class="band">
+    <div class="no">6</div>
+    <div>
+      <h2>Operasi Hitung dan Estimasi</h2>
+      <p>Bab ini membahas ukuran hasil hitung, pembulatan, angka satuan, sisa pembagian oleh sembilan, pecahan dan desimal yang ramah, serta perbandingan dua besaran. Semuanya dipakai untuk menggugurkan pilihan jawaban sebelum hitungan selesai.</p>
+      <p class="waktu"><svg class="ico"><use href="#jam"/></svg>Target waktu ±45 detik per soal; rata-rata TIU ±86 detik.</p>
+    </div>
+    <div class="kisi" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="emas"></i></div>
+  </header>
+
+  <p class="lead">Pada soal hitung, jawaban yang benar sudah tertulis di antara lima pilihan. Tugasmu sering kali bukan menghitung sampai angka terakhir, melainkan membuktikan bahwa empat pilihan lain mustahil. Ambil contoh 37 × 64. Sebelum menghitung, kamu sudah dapat memastikan tiga hal: hasilnya terletak di antara 30 × 60 = 1.800 dan 40 × 70 = 2.800; angka satuannya 8, karena 7 × 4 = 28; dan sisanya 1 bila dibagi 9. Hasil sebenarnya, 2.368, memenuhi ketiganya. Pilihan yang melanggar satu saja di antaranya gugur tanpa perlu dihitung.</p>
+
+  <h3>Angka Satuan dan Sisa Pembagian oleh Sembilan</h3>
+  <div class="konsep">
+    <div class="def">
+      <p><b>Angka satuan</b> adalah angka paling kanan pada bilangan bulat. Angka satuan hasil kali dua bilangan hanya bergantung pada angka satuan kedua faktornya.</p>
+      <p>Misalkan <i>a</i> = 10<i>p</i> + <i>x</i> dan <i>b</i> = 10<i>q</i> + <i>y</i>, dengan <i>x</i> dan <i>y</i> angka satuannya. Akibatnya <i>a</i> × <i>b</i> = 100<i>pq</i> + 10(<i>py</i> + <i>qx</i>) + <i>xy</i>. Dua suku pertama kelipatan 10, sehingga angka satuan <i>a</i> × <i>b</i> sama dengan angka satuan <i>x</i> × <i>y</i>.</p>
+    </div>
+    <table class="hit">
+      <thead><tr><th>Bilangan</th><th>Hitungan</th><th>Satuan</th></tr></thead>
+      <tbody>
+        <tr><td>47</td><td></td><td>7</td></tr>
+        <tr><td>38</td><td></td><td>8</td></tr>
+        <tr><td>47 × 38</td><td>7 × 8 = 56</td><td>6</td></tr>
+        <tr class="uji"><td>1.786</td><td>uji kembali</td><td>6</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="konsep">
+    <div class="def">
+      <p><b>Sisa pembagian oleh 9</b> sebuah bilangan sama dengan sisa pembagian oleh 9 dari jumlah angka-angkanya. Sisa ini mengikuti operasi hitung: sisa hasil kali sama dengan sisa dari hasil kali sisa-sisanya.</p>
+      <p>Perhatikan bahwa 10 = 9 + 1, 100 = 99 + 1, dan 1.000 = 999 + 1. Setiap nilai tempat bersisa 1 bila dibagi 9. Akibatnya 5.732 = 5 × 1.000 + 7 × 100 + 3 × 10 + 2 bersisa sama dengan 5 + 7 + 3 + 2 = 17, yaitu 8. Alasan yang sama membuat koma desimal boleh diabaikan, asalkan hasil hitungnya bilangan bulat.</p>
+    </div>
+    <table class="hit">
+      <thead><tr><th>Bilangan</th><th>Jumlah angka</th><th>Sisa</th></tr></thead>
+      <tbody>
+        <tr><td>47</td><td>4 + 7 = 11</td><td>2</td></tr>
+        <tr><td>38</td><td>3 + 8 = 11</td><td>2</td></tr>
+        <tr><td>47 × 38</td><td>2 × 2</td><td>4</td></tr>
+        <tr class="uji"><td>1.786</td><td>1 + 7 + 8 + 6 = 22</td><td>4</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Urutan pemeriksaannya tetap. Bandingkan dulu ukuran pilihan dengan taksiran, lalu gugurkan pilihan yang angka satuannya berbeda, kemudian yang sisa pembagiannya oleh 9 berbeda. Bila masih tersisa lebih dari satu pilihan, barulah hitung tepat.</p>
+
+  <div class="note catatan">
+    <h4>Catatan</h4>
+    <p>Uji sisa pembagian oleh 9 tidak dapat membedakan angka yang tertukar tempat, misalnya 2.368 dan 2.638, maupun nol yang bergeser, misalnya 2.368 dan 23.680. Ketiga bilangan itu sama-sama bersisa 1 karena selisihnya kelipatan 9. Nol yang bergeser gugur oleh uji ukuran. Angka yang tertukar tempat belum tentu gugur oleh uji apa pun; bila dua pilihan yang tersisa hanya berbeda susunan angkanya, hitunglah tepat.</p>
+  </div>
+</section>
+
+<!-- ═════════ HALAMAN 2 · CONTOH SOAL 1 (diisi script) ═════════ -->
+<!--C1:mulai-->
+<section class="hal hal2">
+  <h3>Contoh Soal dan Pembahasan</h3>
+  <div class="soal">
+    <div class="meta"><span>Contoh 1</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 45 detik</span></div>
+    <p class="stem"><mark>Hasil dari</mark> 3,975 × 1.400 adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>5.460</b></div><div><span class="h">B</span><b>5.495</b></div><div><span class="h">C</span><b>5.565</b></div><div><span class="h">D</span><b>5.572</b></div><div><span class="h">E</span><b>5.600</b></div></div>
+  </div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal menanyakan nilai tepat 3,975 × 1.400. Kalimat penentunya “Hasil dari”: tidak tertulis “paling mendekati”, jadi jawaban harus sama persis, padahal pilihan yang bersebelahan hanya berselisih 7 sampai 70.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat<small>paling lama 30 detik</small></dt><dd>3,975 = 4 − 0,025. Hitung 4 × 1.400 = 5.600, lalu 0,025 × 1.400 = 35. Hasilnya 5.600 − 35 = 5.565.</dd></div>
+    <div><dt>Cara lain</dt><dd>1.400 = 1.000 + 400. Hitung 3,975 × 1.000 = 3.975 dan 3,975 × 400 = 1.590, lalu jumlahkan: 3.975 + 1.590 = 5.565.</dd></div>
+    <div><dt>Cek balik</dt><dd>Sisa pembagian oleh 9, koma diabaikan: 3.975 bersisa 6 (3 + 9 + 7 + 5 = 24) dan 1.400 bersisa 5, jadi hasilnya bersisa 30, yaitu 3. 5.565 juga bersisa 3 (5 + 5 + 6 + 5 = 21). Cocok.</dd></div>
+  </dl></div>
+  <div class="gugur"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><span class="v">5.460<span class="uji">Dikurangi 140</span></span><div class="x"><b>Persen dihitung dari bilangan yang salah.</b> 3,975 dibaca “4 dikurangi 2,5%”, sehingga yang dikurangkan 2,5% × 5.600 = 140. Padahal 0,025 adalah selisih dari 4; yang dikurangkan cukup 0,025 × 1.400 = 35.</div></div><div class="g"><span class="h">B</span><span class="v">5.495<span class="uji">Dikurangi 105</span></span><div class="x"><b>Pecahan campuran diubah dengan keliru.</b> 3 <span class="fr"><sup>39</sup>⁄<sub>40</sub></span> ditulis (3 × 39 + 40) : 40 = <span class="fr"><sup>157</sup>⁄<sub>40</sub></span>, lalu 157 × 35 = 5.495. Bilangan bulat dikalikan penyebut: (3 × 40 + 39) : 40 = <span class="fr"><sup>159</sup>⁄<sub>40</sub></span>.</div></div><div class="g"><span class="h">D</span><span class="v">5.572<span class="uji">Dikurangi 28</span></span><div class="x"><b>Desimal dibulatkan sebelum dihitung.</b> 3,975 dibulatkan menjadi 3,98 agar bisa dihitung 4 − 0,02: 5.600 − 28 = 5.572. Selisih 0,005 ikut terbuang.</div></div><div class="g"><span class="h">E</span><span class="v">5.600<span class="uji">Tidak dikurangi</span></span><div class="x"><b>Berhenti satu langkah sebelum selesai.</b> 5.600 belum dikurangi 0,025 × 1.400 = 35.</div></div></div>
+  <div class="jwb"><span>C</span><p><b>Jawaban: C.</b> Hasilnya 35 di bawah 5.600, yaitu 5.565, dan sisa pembagiannya oleh 9 cocok.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti membeli barang seharga Rp3.975 dengan uang Rp4.000: kamu menerima kembalian Rp25. Membeli 1.400 barang berarti membayar 1.400 × Rp4.000, lalu menerima kembalian 1.400 × Rp25. Harga totalnya Rp5.565.000.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Melihat 3,975 hampir 4, lalu memilih pilihan terdekat di bawah 5.600. Pilihan itu 5.572, hasil dari 3,98, bukan 3,975. Selisih 0,005 memang kecil, tetapi soal meminta hasil tepat.</span></div></div>
+</section>
+<!--C1:selesai-->
+</body>
+</html>

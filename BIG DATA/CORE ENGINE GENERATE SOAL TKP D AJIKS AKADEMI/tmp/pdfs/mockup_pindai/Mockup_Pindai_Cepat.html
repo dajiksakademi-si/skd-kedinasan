@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><title>Paket 2 TKP — Pembahasan</title><style>
+  @page { size: A4; margin: 18mm 16mm 20mm 16mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #1a1a1a;
+    margin: 0;
+  }
+  .cover {
+    page-break-after: always;
+    padding-top: 60mm;
+    text-align: center;
+  }
+  .cover .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 10pt;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #6b6b6b;
+    margin-bottom: 10mm;
+  }
+  .cover h1 {
+    font-size: 26pt;
+    margin: 0 0 6mm 0;
+    color: #111;
+  }
+  .cover .sub {
+    font-size: 12pt;
+    color: #444;
+    margin-bottom: 14mm;
+  }
+  .cover .meta-box {
+    display: inline-block;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6mm 10mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9.5pt;
+    color: #333;
+  }
+  .cover .meta-box div { margin: 1.5mm 0; }
+  .cover .meta-box b { color: #111; }
+  .cover .note {
+    margin-top: 16mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    color: #888;
+    max-width: 120mm;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2.section-title {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 13pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111;
+    border-bottom: 2px solid #111;
+    padding-bottom: 2mm;
+    margin: 0 0 6mm 0;
+  }
+
+  table.summary {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.8pt;
+    margin-bottom: 4mm;
+  }
+  table.summary th, table.summary td {
+    border: 1px solid #ccc;
+    padding: 2mm 2.2mm;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.summary th {
+    background: #f2f2f2;
+    font-weight: 700;
+  }
+  table.summary td.center { text-align: center; }
+
+  .soal {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 9mm;
+    padding-bottom: 7mm;
+    border-bottom: 1px solid #ddd;
+  }
+  .soal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 3mm;
+    break-inside: avoid;
+  }
+  .soal-num {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 11.5pt;
+    color: #111;
+  }
+  .badge {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    padding: 1mm 3mm;
+    border-radius: 10px;
+    color: #fff;
+    white-space: nowrap;
+  }
+  .dim-Profesionalisme { background: #2f5fa8; }
+  .dim-PelayananPublik { background: #1f8a56; }
+  .dim-JejaringKerja { background: #6b3fa0; }
+  .dim-SosialBudaya { background: #c9701d; }
+  .dim-TIK { background: #0f8b8d; }
+  .dim-AntiRadikalisme { background: #b3282d; }
+
+  .stem { margin-bottom: 3mm; text-align: justify; }
+
+  .options { margin: 0 0 4mm 0; padding: 0; list-style: none; }
+  .options li {
+    display: flex;
+    gap: 2.5mm;
+    margin-bottom: 1.6mm;
+    align-items: flex-start;
+  }
+  .opt-letter {
+    flex: 0 0 auto;
+    font-weight: 700;
+    width: 5mm;
+  }
+  .opt-letter.kunci { color: #1f8a56; }
+  .opt-text { flex: 1 1 auto; }
+  .opt-text.kunci { font-weight: 700; }
+
+  .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.6pt;
+    background: #f7f7f7;
+    border-left: 3px solid #111;
+    padding: 2.5mm 3.5mm;
+    margin-bottom: 2.5mm;
+  }
+  .meta div { margin: 0.8mm 0; }
+  .meta .label { font-weight: 700; display: inline-block; width: 22mm; color: #444; }
+
+  .pembahasan {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    background: #fbfbf5;
+    border: 1px solid #e6e2c8;
+    padding: 3mm 4mm;
+  }
+  .pembahasan .ph-title {
+    font-weight: 700;
+    font-size: 8.6pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6b6320;
+    margin-bottom: 1.5mm;
+  }
+  .pembahasan ol { margin: 0; padding-left: 4mm; }
+  .pembahasan li { margin-bottom: 1.3mm; text-align: justify; }
+
+  .footer-note {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    color: #999;
+    text-align: center;
+    margin-top: 10mm;
+  }
+
+  code.sumbu {
+    background: #eee;
+    padding: 0.2mm 1.2mm;
+    border-radius: 3px;
+    font-family: "Courier New", monospace;
+    font-size: 8.2pt;
+  }
+  .pembahasan-siswa { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 9pt; background: #f3f8fb; border: 1px solid #c9dde8; padding: 3mm 4mm; margin-top: 2mm; }
+  .pembahasan-siswa .ph-title { font-weight: 700; font-size: 8.6pt; text-transform: uppercase; color: #2d5a73; margin-bottom: 1.5mm; }
+  .pembahasan-siswa p, .pembahasan-siswa li { margin: 0.8mm 0; text-align: justify; }
+
+  .soal.bahas { page-break-inside: auto; break-inside: auto; }
+  .soal.bahas .soal-head { break-after: avoid; page-break-after: avoid; }
+  .soal.bahas .stem, .soal.bahas .options { break-inside: avoid; }
+  .soal.bahas .stem, .soal.bahas .options { font-size: 10pt; }
+  table.skor td, table.skor th { text-align: center; }
+  .cover { padding-top: 70mm; }
+
+  .pindai{border:2px solid #1f5f8b;border-radius:5px;background:#f2f8fc;padding:3mm 5mm;margin:4mm 0;font-family:"Helvetica Neue",Arial,sans-serif;font-size:10pt}
+  .pindai .pt{font-weight:bold;color:#1f5f8b;letter-spacing:1px;text-transform:uppercase;font-size:9.5pt;margin-bottom:2mm}
+  .pindai .pt span{float:right;font-weight:normal;color:#555;text-transform:none;letter-spacing:0}
+  .pindai ol{margin:0;padding-left:5mm}.pindai li{margin:1.5mm 0}
+  .pindai .tanda{margin-top:2.5mm;padding:2mm 3mm;background:#fff6d6;border-left:4px solid #d9a400}
+  .intro{font-size:11pt}.intro .langkah{border:1px solid #ccc;border-radius:4px;padding:3mm 5mm;margin:3mm 0}
+  .intro .langkah b{color:#1f5f8b}
+  .mock{font-family:"Helvetica Neue",Arial,sans-serif;font-size:8.5pt;color:#b00;text-align:center;margin-bottom:4mm}
+</style></head><body><div class="intro"><h2 class="section-title">Teknik Pindai Cepat D'Ajiks</h2>
+<p class="mock">MOCKUP — contoh tampilan, belum masuk paket</p>
+<p>Waktu TKP terbatas, dan kamu tidak perlu menimbang kelima pilihan sama lama. Pakai tiga langkah ini, kira-kira 30 detik per soal. Sisa waktunya bisa kamu pakai untuk TIU.</p>
+<div class="langkah"><b>1. Aspek.</b> Kenali aspek soalnya, lalu ingat apa yang dicari aspek itu.</div>
+<div class="langkah"><b>2. Kalimat penentu.</b> Cari satu kalimat di soal yang mengubah segalanya: cara yang sudah gagal, batas waktu, siapa yang berwenang, siapa yang terdampak.</div>
+<div class="langkah"><b>3. Coret.</b> Buang dulu yang menghindar, melempar tugas, mengulang cara gagal, atau terburu-buru. Dari dua pilihan yang tersisa, pilih yang menjawab kalimat penentu.</div>
+<p>Di setiap pembahasan ada kotak biru berisi langkah ini, lalu satu <b>tanda cepat</b> yang bisa kamu pakai lagi di soal lain.</p></div>
+<div style="page-break-after:always"></div><div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 3</span>
+    <span class="badge dim-Profesionalisme">Profesionalisme</span>
+  </div><div class="stem">
+    Aplikasi pesan dipakai relawan desa untuk melaporkan rumah rusak akibat banjir kepada badan penanggulangan bencana daerah. Anda koordinator yang mengirim rekap harian kepada kepala pelaksana setiap pukul 16.00, sedangkan tiga regu piket menulis rekap dengan cara masing-masing. Rekap kemarin dikembalikan karena 14 rumah dihitung dua kali oleh dua regu. Anda sudah dua kali mengingatkan semua regu lewat grup pesan agar lebih teliti. Apa yang Anda lakukan? (Profesionalisme)
+  </div><ul class="options">
+    <li><span class="opt-letter kunci">A.</span><span class="opt-text kunci">Menyusun satu format isian rekap untuk ketiga regu, lalu memberlakukannya mulai rekap hari ini.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Mengeluarkan relawan yang laporannya sering tidak lengkap dari grup pelaporan di aplikasi pesan agar data lebih rapi.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Mengirim rekap hari ini tepat waktu dengan catatan bahwa sebagian angka mungkin masih tercatat ganda.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Memakai cara pencatatan baru untuk regu Anda dan kembali mengingatkan regu lain di grup pesan.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Membersihkan sendiri angka ganda di rekap hari ini, lalu mengirimkannya kepada kepala pelaksana tepat pukul 16.00.</span></li>
+  </ul><div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+<li><b>Aspek:</b> Profesionalisme. Yang dicari: cara kerja yang dibenahi, bukan sekadar kerja lebih keras.</li>
+<li><b>Kalimat penentu:</b> "Anda sudah dua kali mengingatkan semua regu lewat grup pesan." Artinya cara mengingatkan sudah gagal.</li>
+<li><b>Coret:</b> B (yang dibuang orangnya, padahal yang salah caranya), C (mengirim angka yang kamu tahu salah), D (mengulang cara yang sudah gagal). Tinggal A dan E. E hanya membereskan hari ini, A membereskan sebabnya. <b>Pilih A.</b></li>
+</ol><div class="tanda"><b>Tanda cepat:</b> soal menyebut cara yang "sudah dicoba"? Pilihan yang mengulang cara itu hampir pasti bukan kunci.</div></div><div class="pembahasan-siswa">
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> rekap banjir kemarin dikembalikan karena 14 rumah dihitung dua kali. Coba cari sebabnya di soal: tiga regu menulis rekap dengan cara masing-masing, dan kamu sudah dua kali mengingatkan mereka lewat grup tanpa hasil.</p>
+    <ul>
+      <li><b>A (skor 5)</b>: kamu buat satu format isian untuk ketiga regu dan langsung berlaku hari ini. Sebabnya yang dibereskan, jadi angka ganda tidak muncul lagi.</li>
+      <li><b>E (skor 4)</b>: rajin sekali, rekap hari ini jadi bersih. Tapi besok kamu harus membersihkannya lagi, karena ketiga regu masih menulis dengan cara masing-masing.</li>
+      <li><b>D (skor 3)</b>: regumu sendiri sudah berubah, dan itu bagus. Hanya saja regu lain cuma diingatkan lagi, padahal sudah dua kali diingatkan dan tidak mempan.</li>
+      <li><b>C (skor 2)</b>: tepat waktu itu penting, tapi kamu mengirim angka yang kamu sendiri tahu bisa salah.</li>
+      <li><b>B (skor 1)</b>: mengeluarkan relawan malah mengurangi orang yang melapor, padahal masalahnya ada di cara menulis.</li>
+    </ul>
+    <p><b>Kunci A</b>, karena A membereskan penyebab angka ganda untuk semua regu.</p>
+    <p><b>Analogi:</b> kalau tiga orang mencatat belanja dapur dengan cara berbeda, kamu tidak akan terus mengoreksi catatan mereka setiap hari. Kamu siapkan satu buku catatan dengan kolom yang sama.</p>
+    <p><b>Jebakan:</b> E menggoda karena terlihat bertanggung jawab. Coba bayangkan besok pagi: kamu membersihkan angka yang sama lagi.</p>
+    <p><b>Tips:</b> kalau soal menyebut cara lama sudah dicoba dan gagal, jangan pilih jawaban yang mengulangnya.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 20</span>
+    <span class="badge dim-Profesionalisme">Profesionalisme</span>
+  </div><div class="stem">
+    Sore ini Anda harus mengirim rekap realisasi anggaran 12 unit kerja kepada pimpinan badan keuangan daerah. Format rekap sudah seragam sejak awal tahun. Saat memeriksa, Anda melihat angka satu unit melonjak tiga kali lipat dari bulan lalu, dan angka itu belum ditandatangani bendahara unitnya. Bendahara unit itu masih bisa dihubungi hari ini. Langkah pertama yang Anda ambil adalah&hellip; (Profesionalisme)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menelepon pimpinan, lalu meminta beliau memutuskan apakah rekap dikirim dengan angka janggal itu.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Menunda pengiriman seluruh rekap sore ini, lalu menunggu kedua belas unit memastikan ulang angkanya.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Mengirim rekap apa adanya karena kebenaran angka itu sepenuhnya tanggung jawab unit pengirimnya.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Mencantumkan angka unit itu sesuai format seragam, dengan tanda belum disahkan bendahara.</span></li>
+    <li><span class="opt-letter kunci">E.</span><span class="opt-text kunci">Mengirim rekap sebelas unit sore ini serta menahan angka satu unit itu sampai disahkan bendaharanya.</span></li>
+  </ul><div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+<li><b>Aspek:</b> Profesionalisme. Yang dicari: tetap tepat waktu, tetapi data yang belum sah tidak ikut lolos.</li>
+<li><b>Kalimat penentu:</b> "belum ditandatangani bendahara" dan "masih bisa dihubungi hari ini". Masalahnya hanya di satu unit.</li>
+<li><b>Coret:</b> C (lepas tangan), B (sebelas unit yang sudah beres ikut tertahan), A (keputusan kecil dilempar ke pimpinan). Tinggal D dan E. D tetap meloloskan angka yang belum sah, E memisahkannya. <b>Pilih E.</b></li>
+</ol><div class="tanda"><b>Tanda cepat:</b> masalahnya hanya di satu bagian? Cari pilihan yang memisahkan bagian itu, bukan yang menahan semua atau meloloskan semua.</div></div><div class="pembahasan-siswa">
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> sore ini rekap 12 unit harus sampai ke pimpinan. Saat memeriksa, matamu tertumbuk pada satu angka yang naik tiga kali lipat dan belum ditandatangani bendaharanya. Kabar baiknya, bendaharanya masih bisa dihubungi hari ini.</p>
+    <ul>
+      <li><b>E (skor 5)</b>: sebelas unit yang sudah beres kamu kirim sore ini. Satu unit yang janggal kamu tahan dulu sampai bendaharanya mengesahkan. Pimpinan tetap menerima rekap tepat waktu, dan isinya bisa dipercaya.</li>
+      <li><b>D (skor 4)</b>: memberi tanda "belum disahkan" itu jujur, dan aku hargai. Hanya saja angka janggal itu tetap terbaca oleh pimpinan, dan penyebab lonjakannya belum dicari.</li>
+      <li><b>A (skor 3)</b>: memeriksa rekap ini memang tugasmu. Pimpinan tidak perlu diganggu untuk hal yang bisa kamu bereskan dengan satu telepon ke bendahara.</li>
+      <li><b>C (skor 2)</b>: begitu kamu mengirim angka yang sudah kamu tahu janggal, kamu ikut bertanggung jawab atas angka itu.</li>
+      <li><b>B (skor 1)</b>: gara-gara satu unit, sebelas unit yang sudah rapi ikut tertahan. Sayang.</li>
+    </ul>
+    <p><b>Kunci E</b>, karena E menepati tenggat untuk bagian yang sudah sah dan menahan bagian yang belum.</p>
+    <p><b>Analogi:</b> kalau satu dari dua belas kue pesanan ternyata gosong, kamu kirim sebelas kue tepat waktu dan bilang satu menyusul. Kue yang gosong tidak ikut dikirim dengan tulisan "maaf, agak gosong".</p>
+    <p><b>Jebakan:</b> D menggoda karena terasa terbuka dan rapi sesuai format. Coba bayangkan pimpinan membaca angka itu di rapat.</p>
+    <p><b>Tips:</b> kalau hanya sebagian data yang bermasalah, pisahkan bagian itu. Jangan menahan semuanya, jangan juga meloloskan semuanya.</p>
+  </div>
+</div>
+</body></html>

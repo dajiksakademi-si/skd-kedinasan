@@ -1,0 +1,178 @@
+[
+  {
+    "no": 46,
+    "ditanya": "Apakah harga 5 map dan 5 spidol bisa ditentukan dengan pasti.",
+    "kalimat_kunci": "5 map dan 5 spidol",
+    "cara_kilat": "Yang ditanya jumlah keduanya, bukan harga masing-masing. 5 map dan 5 spidol adalah 2,5 kali 2 map dan 2 spidol. Pernyataan (1) memberi Rp18.000, jadi jawabannya 2,5 × 18.000 = Rp45.000.",
+    "langkah": "Pernyataan (1): 2 map dan 2 spidol Rp18.000, berarti 1 map dan 1 spidol Rp9.000, dan 5 map dan 5 spidol Rp45.000. Cukup, walaupun harga satu map belum diketahui. Pernyataan (2): map lebih mahal Rp3.000. Harga sepasang bisa Rp5.000 + Rp2.000 atau Rp10.000 + Rp7.000, jadi totalnya berubah-ubah. Tidak cukup. Pernyataan (1) saja cukup, pernyataan (2) saja tidak.",
+    "opsi_gugur": {
+      "B": "Pernyataan (2) hanya memberi selisih harga. Selisih Rp3.000 bisa dimiliki pasangan harga murah maupun mahal, jadi totalnya tidak tertentu.",
+      "C": "Menggabungkan (1) dan (2) memang memberi harga masing-masing barang, yaitu Rp6.000 dan Rp3.000. Soal tidak memintanya. Jumlah sepasang dari (1) sudah cukup.",
+      "D": "Pernyataan (2) dianggap cukup sendiri, padahal selisih saja tidak menentukan jumlah.",
+      "E": "Kesannya data kurang karena harga satuan tidak diketahui. Soal menanyakan jumlah, dan jumlah itu bisa dihitung dari kelipatan pernyataan (1)."
+    },
+    "alasan_kunci": "A, karena 5 map dan 5 spidol tepat 2,5 kali isi pernyataan (1), sedangkan pernyataan (2) tidak menentukan total.",
+    "analogi": "Dua porsi bakso dan dua es teh Rp40.000. Kamu tahu lima porsi bakso dan lima es teh Rp100.000 tanpa perlu tahu harga baksonya sendiri.",
+    "waspada": "Refleks banyak orang: harus tahu harga map dan harga spidol dulu. Baca lagi yang ditanya. Kalau yang ditanya kelipatan dari data, satu pernyataan sudah cukup."
+  },
+  {
+    "no": 47,
+    "ditanya": "Apakah total berat karung pasti tidak melebihi 5.000 kg.",
+    "kalimat_kunci": "Karung terberat beratnya 48 kg dan karung teringan beratnya 40 kg",
+    "cara_kilat": "Gabungkan (1) dan (2). Kalau sisa karung seringan mungkin, total sekitar 4.400 kg. Kalau seberat mungkin, total sekitar 5.270 kg. Rentangnya melewati 5.000 kg, jadi jawabannya bisa ya, bisa tidak.",
+    "langkah": "Pernyataan (1) saja: 110 karung, tetapi beratnya tidak diketahui. Tidak cukup. Pernyataan (2) saja: tahu berat terberat dan teringan, tetapi tidak tahu banyaknya karung. Tidak cukup. Gabungan: ada satu karung 48 kg dan satu karung 40 kg, sedangkan 108 karung sisanya beratnya di antara 40 dan 48 kg. Kalau sisanya 40 kg semua, total 4.408 kg, aman. Kalau sisanya 48 kg semua, total 5.272 kg, melebihi batas. Dua keadaan yang sama-sama mungkin memberi jawaban berbeda. Bersama-sama pun tidak cukup.",
+    "opsi_gugur": {
+      "A": "Tahu jumlah karung belum berarti tahu beratnya. 110 karung kapas dan 110 karung semen tentu berbeda bebannya.",
+      "B": "Berat terberat dan teringan tanpa jumlah karung tidak bisa dijadikan total.",
+      "C": "Gabungan baru memberi rentang 4.408 sampai 5.272 kg. Pilihan ini muncul kalau semua karung dianggap seberat 40 kg atau seberat 48 kg, padahal soal tidak mengatakannya.",
+      "D": "Tidak satu pun pernyataan cukup sendirian, jadi pilihan ini gugur sejak awal."
+    },
+    "alasan_kunci": "E, karena dengan kedua pernyataan pun total berat bisa di bawah atau di atas 5.000 kg.",
+    "analogi": "Kamu tahu ada 20 tamu, dan setiap tamu makan paling sedikit 1 piring dan paling banyak 3 piring. Kamu belum bisa memastikan 40 piring cukup.",
+    "waspada": "Pernyataan (2) terasa lengkap karena memuat dua angka berat. Terberat dan teringan hanyalah batas. Karung di antaranya bisa berapa saja."
+  },
+  {
+    "no": 48,
+    "ditanya": "Apakah pesanan pasti selesai paling lama 4 hari jika dikerjakan 6 penjahit.",
+    "kalimat_kunci": "menugaskan 6 penjahit",
+    "cara_kilat": "Pernyataan (1): 10 penjahit × 3 hari = 30 hari kerja. Dibagi 6 penjahit = 5 hari. Lebih dari 4 hari, jadi jawabannya pasti tidak. Jawaban tidak yang pasti tetap berarti cukup.",
+    "langkah": "Pekerjaannya sama, penjahitnya lebih sedikit, waktunya lebih lama. 10 penjahit butuh 3 hari, berarti pekerjaannya setara 30 hari kerja satu penjahit. 6 penjahit butuh 30 ÷ 6 = 5 hari. Pertanyaan terjawab pasti, jadi (1) cukup. Pernyataan (2): 12 seragam per hari per penjahit, tetapi banyak seragam yang dipesan tidak disebut. Kalau pesanannya 200 seragam, 6 penjahit selesai dalam 3 hari. Kalau 600 seragam, lebih dari 8 hari. Tidak cukup.",
+    "opsi_gugur": {
+      "B": "Kecepatan 12 seragam per hari baru berguna kalau banyak seragam diketahui. Soal tidak menyebutnya.",
+      "C": "Pernyataan (1) sudah memberi jawaban pasti tanpa bantuan (2). Kecepatan per penjahit tidak perlu, karena pekerjaan sudah terukur dalam hari kerja penjahit.",
+      "D": "Pernyataan (2) dianggap cukup sendiri, padahal banyak seragam tidak diketahui.",
+      "E": "Kalau kamu sempat mengira 6 penjahit lebih cepat daripada 10 penjahit, hasilnya terasa janggal dan kamu jadi ragu. Penjahit lebih sedikit berarti waktu lebih lama, dan hasil 5 hari itu pasti."
+    },
+    "alasan_kunci": "A, karena pernyataan (1) memastikan pesanan selesai dalam 5 hari, sehingga jawaban tidak sudah pasti, sedangkan pernyataan (2) tidak memuat banyak seragam.",
+    "analogi": "Pagar yang dicat 4 orang selesai dalam 6 jam. Kalau yang datang hanya 3 orang, kamu tahu pasti pengecatan butuh 8 jam.",
+    "waspada": "Jawaban tidak sering dikira berarti pernyataannya tidak cukup. Dalam soal seperti ini, yang dinilai adalah kepastian jawabannya, ya atau tidak."
+  },
+  {
+    "no": 49,
+    "ditanya": "Apakah banyak peserta putri bisa ditentukan.",
+    "kalimat_kunci": "diikuti 84 peserta",
+    "cara_kilat": "Total 84 sudah tertulis di soal. Pernyataan (1): 3/7 × 84 = 36 putri. Pernyataan (2): (84 − 12) ÷ 2 = 36 putri. Masing-masing cukup sendiri.",
+    "langkah": "Data di kalimat soal boleh dipakai bersama setiap pernyataan. Pernyataan (1): perbandingan 4 : 3 berarti 7 bagian = 84 orang, satu bagian 12 orang, putri 3 bagian = 36 orang. Pernyataan (2): putra = putri + 12, sehingga putri + putri + 12 = 84, dan putri = 36. Keduanya sampai ke 36 tanpa saling membantu.",
+    "opsi_gugur": {
+      "A": "Setelah (1) terbukti cukup, pemeriksaan berhenti. Pernyataan (2) belum diuji, padahal ia juga cukup sendiri.",
+      "B": "Kebalikannya: (2) diuji dan cukup, tetapi (1) tidak dicek.",
+      "C": "Tidak perlu digabung. Total 84 di soal sudah membuat setiap pernyataan lengkap.",
+      "E": "Kesan data kurang muncul kalau angka 84 di soal terlupa. Tanpa total memang tidak cukup, tetapi totalnya ada."
+    },
+    "alasan_kunci": "D, karena dengan total 84 dari soal, pernyataan (1) saja dan pernyataan (2) saja masing-masing menghasilkan 36 putri.",
+    "analogi": "Uang 84 ribu dibagi kakak dan adik. Bagian adik bisa diketahui dari petunjuk perbandingannya 4 : 3, bisa juga dari petunjuk kakak dapat 12 ribu lebih banyak.",
+    "waspada": "Banyak yang menilai pernyataan seolah kalimat soal tidak ada, lalu mengira semuanya kurang. Angka di kalimat soal ikut dipakai."
+  },
+  {
+    "no": 50,
+    "ditanya": "Apakah harga satu kilogram cabai pada awal bulan bisa dihitung.",
+    "kalimat_kunci": "Rp55.000 per kilogram, yaitu 25% lebih tinggi daripada harga awal bulan",
+    "cara_kilat": "Pernyataan (2): Rp55.000 adalah 125% harga awal, jadi harga awal = 55.000 ÷ 1,25 = Rp44.000. Pernyataan (1) hanya memuat persen tanpa rupiah.",
+    "langkah": "Pernyataan (1): harga naik 15% di pertengahan bulan, tetapi tidak ada satu pun harga dalam rupiah. Harga awal bisa berapa saja. Tidak cukup. Pernyataan (2): harga akhir bulan Rp55.000, dan itu 25% di atas harga awal. Artinya Rp55.000 = 125% harga awal. Satu persen = 55.000 ÷ 125 = 440, dan harga awal = 100 × 440 = Rp44.000. Cukup.",
+    "opsi_gugur": {
+      "A": "Persen kenaikan tanpa satu harga rupiah tidak bisa dijadikan angka. Harga awal Rp30.000 maupun Rp60.000 sama-sama bisa naik 15%.",
+      "C": "Harga pertengahan bulan tidak dibutuhkan. Pernyataan (2) sudah langsung mengaitkan harga akhir dengan harga awal.",
+      "D": "Pernyataan (1) dianggap cukup, padahal tidak memuat harga rupiah sama sekali.",
+      "E": "Kesannya harga awal belum diketahui, sehingga persen dari harga awal tidak bisa dipakai. Justru dengan hitung balik, 55.000 ÷ 1,25 langsung memberi harga awal."
+    },
+    "alasan_kunci": "B, karena Rp55.000 adalah 125% harga awal, sehingga harga awal pasti Rp44.000, sedangkan pernyataan (1) tidak memuat rupiah.",
+    "analogi": "Gajimu sekarang Rp5.000.000, dan itu sudah naik 25% dari gaji pertama. Gaji pertamamu pasti Rp4.000.000.",
+    "waspada": "Kekeliruan hitung yang sering muncul: mengurangi 25% dari Rp55.000 dan mendapat Rp41.250. Persen 25 itu dihitung dari harga awal, jadi harga awal dicari dengan membagi 1,25."
+  },
+  {
+    "no": 51,
+    "ditanya": "Apakah n pasti habis dibagi 12.",
+    "kalimat_kunci": "habis dibagi 12",
+    "cara_kilat": "Pernyataan (1): n = 8 tidak habis dibagi 12, n = 12 habis. Tidak cukup. Pernyataan (2): n = 18 tidak, n = 12 ya. Tidak cukup. Gabungan: habis dibagi 4 dan 6 berarti habis dibagi KPK(4, 6) = 12. Jawabannya pasti ya.",
+    "langkah": "Untuk pertanyaan apakah, cari dua contoh yang memberi jawaban berbeda. Kalau ketemu, pernyataan itu tidak cukup. Bilangan 8 dan 12 sama-sama habis dibagi 4, tetapi hanya 12 yang habis dibagi 12. Bilangan 18 dan 12 sama-sama habis dibagi 6, tetapi hanya 12 yang habis dibagi 12. Kalau kedua pernyataan berlaku bersamaan, n habis dibagi KPK dari 4 dan 6. Faktorkan: 4 = 2², 6 = 2 × 3, KPK = 2² × 3 = 12.",
+    "opsi_gugur": {
+      "A": "12 memang kelipatan 4, tetapi tidak semua kelipatan 4 adalah kelipatan 12. Contohnya 8.",
+      "B": "Sama halnya dengan 6: angka 18 habis dibagi 6, tetapi tidak habis dibagi 12.",
+      "D": "Masing-masing pernyataan sudah gugur dengan satu contoh, 8 untuk (1) dan 18 untuk (2).",
+      "E": "Kalau syaratnya dikira habis dibagi 4 × 6 = 24, gabungan terlihat kurang. Yang berlaku adalah KPK, yaitu 12. Nilai n juga tidak perlu diketahui, karena jawaban ya sudah pasti."
+    },
+    "alasan_kunci": "C, karena bilangan yang habis dibagi 4 dan habis dibagi 6 pasti habis dibagi KPK-nya, yaitu 12.",
+    "analogi": "Bus A lewat setiap 4 menit, bus B setiap 6 menit. Keduanya lewat bersamaan setiap 12 menit, bukan setiap 24 menit.",
+    "waspada": "Hasil kali 4 × 6 = 24 menggoda karena terasa seperti gabungan. Untuk dua syarat habis dibagi yang berlaku bersamaan, pakai KPK."
+  },
+  {
+    "no": 52,
+    "ditanya": "Apakah banyak siswa yang mengikuti kedua kegiatan bisa ditentukan.",
+    "kalimat_kunci": "atau tidak mengikuti keduanya",
+    "cara_kilat": "Gabungan memberi 18 + 15 = 33 keikutsertaan di kelas 30 siswa. Kalau setiap siswa ikut kegiatan, irisannya 3. Soal mengizinkan siswa tidak ikut apa pun, jadi irisannya bisa 3, 4, 5, dan seterusnya. Tidak cukup.",
+    "langkah": "Pernyataan (1) saja: tanpa banyak siswa di kelas, irisan tidak bisa dicari. Pernyataan (2) saja: hanya total kelas. Gabungan: siswa yang ikut minimal satu kegiatan = 33 − irisan. Angka itu tidak boleh lebih dari 30, sehingga irisan paling sedikit 3. Contoh pertama: irisan 3, dan semua 30 siswa ikut kegiatan. Contoh kedua: irisan 5, ada 28 siswa yang ikut kegiatan dan 2 siswa tidak ikut apa-apa. Keduanya sesuai soal, tetapi jawabannya berbeda.",
+    "opsi_gugur": {
+      "A": "Tanpa banyak siswa di kelas, angka 18 dan 15 tidak bisa dipakai menghitung irisan.",
+      "B": "Total 30 siswa saja tidak berkata apa pun tentang paduan suara atau basket.",
+      "C": "Hasil 18 + 15 − 30 = 3 hanya benar kalau setiap siswa ikut minimal satu kegiatan. Soal justru menyebut siswa boleh tidak mengikuti keduanya.",
+      "D": "Tidak satu pun pernyataan cukup sendirian, jadi pilihan ini gugur sejak awal."
+    },
+    "alasan_kunci": "E, karena siswa yang tidak ikut kegiatan apa pun membuat irisannya bisa 3, 5, atau angka lain.",
+    "analogi": "Di arisan 30 orang, 18 orang membawa kue dan 15 orang membawa minuman. Kalau ada yang datang dengan tangan kosong, kamu belum bisa memastikan berapa orang yang membawa keduanya.",
+    "waspada": "Rumus 18 + 15 − 30 sangat akrab, jadi tangan langsung menulis 3. Sebelum memakai rumus itu, cek kalimat soal: adakah siswa yang tidak ikut apa pun?"
+  },
+  {
+    "no": 53,
+    "ditanya": "Pernyataan yang benar di semua susunan jadwal yang mungkin.",
+    "kalimat_kunci": "pasti benar",
+    "cara_kilat": "Anggrek tidak membawakan gempa, jadi Anggrek tidak tampil Rabu. Uji tiga tempat yang tersisa untuk pasangan Anggrek lalu Cempaka. Hanya Anggrek Selasa dan Cempaka Rabu yang lolos. Cempaka tampil Rabu, jadi pasti membawakan gempa.",
+    "langkah": "Gempa ada di hari Rabu. Pasangan banjir lalu kebakaran harus berurutan dan tidak boleh memakai Rabu, jadi pasangan itu jatuh di Senin–Selasa atau Kamis–Jumat. Pasangan Anggrek lalu Cempaka tinggal tiga kemungkinan. Pertama, Anggrek Senin dan Cempaka Selasa. Anggrek tidak boleh banjir, jadi banjir–kebakaran pindah ke Kamis–Jumat. Topik Senin dan Selasa tinggal longsor dan puting beliung, padahal longsor milik Kenanga. Gagal. Kedua, Anggrek Kamis dan Cempaka Jumat. Dengan alasan yang sama, banjir–kebakaran di Senin–Selasa, dan longsor lagi-lagi jatuh ke Anggrek atau Cempaka. Gagal. Ketiga, Anggrek Selasa dan Cempaka Rabu. Lolos, dan dari sini muncul tiga susunan yang sah. Di ketiganya Cempaka tampil Rabu dan membawakan gempa.",
+    "opsi_gugur": {
+      "A": "Bakung tampil Kamis hanya di salah satu susunan. Di dua susunan lain Bakung tampil Jumat.",
+      "B": "Dahlia membawakan banjir di dua susunan, tetapi di susunan lain Dahlia membawakan kebakaran. Benar di sebagian susunan belum berarti pasti.",
+      "C": "Kenanga tampil Senin di dua susunan, tetapi bisa juga tampil Kamis.",
+      "E": "Anggrek membawakan kebakaran hanya di satu susunan. Di dua susunan lain topiknya puting beliung."
+    },
+    "alasan_kunci": "D, karena Anggrek hanya bisa tampil Selasa, sehingga Cempaka selalu tampil Rabu, hari topik gempa.",
+    "analogi": "Seperti menyusun jadwal piket kelas. Kadang ada beberapa jadwal yang sah, dan yang pasti hanyalah hal yang sama di semua jadwal itu.",
+    "waspada": "Begitu menemukan satu susunan yang cocok, banyak orang langsung memilih opsi yang benar di susunan itu. Soal pasti benar menuntut kamu memeriksa semua susunan, atau menemukan hal yang tidak bisa berubah."
+  },
+  {
+    "no": 54,
+    "ditanya": "Siapa yang duduk tepat di hadapan Hasan.",
+    "kalimat_kunci": "Semua petugas duduk menghadap ke tengah meja.",
+    "cara_kilat": "Tempatkan Fajar, Gita, Indah, dan Joko. Dua kursi yang tersisa ternyata saling berhadapan, dan hanya Hasan dan Lina yang belum duduk. Hasan pasti berhadapan dengan Lina, di kursi mana pun ia duduk.",
+    "langkah": "Gambar enam kursi, beri nomor 1 sampai 6 searah jarum jam dilihat dari atas, lalu dudukkan Fajar di kursi 1. Bagi orang yang menghadap ke tengah, sebelah kanannya berada di arah berlawanan jarum jam. Gita di kanan Fajar, jadi Gita di kursi 6. Hadapan kursi 6 adalah kursi 3, jadi Indah di kursi 3. Kiri Indah searah jarum jam, jadi Joko di kursi 4. Kursi kosong tinggal 2 dan 5, dan keduanya berhadapan. Hasan dan Lina mengisi dua kursi itu dengan urutan apa pun.",
+    "opsi_gugur": {
+      "A": "Fajar berada dua kursi dari Hasan bila Hasan duduk di kursi 5. Pada meja enam kursi, orang di hadapanmu berjarak tiga kursi.",
+      "C": "Gita duduk bersebelahan dengan salah satu kursi kosong, bukan di hadapannya.",
+      "D": "Indah juga hanya berjarak dua kursi dari kursi 5. Hadapan selalu berjarak tiga kursi.",
+      "E": "Joko muncul kalau kiri Indah dibaca sebagai kanan. Joko lalu pindah ke kursi 2, dan susunan kursi kosongnya ikut berubah. Kiri dan kanan di meja bundar dilihat dari orang yang duduk menghadap ke tengah."
+    },
+    "alasan_kunci": "B, karena setelah empat petugas ditempatkan, dua kursi sisa saling berhadapan dan hanya bisa diisi Hasan dan Lina.",
+    "analogi": "Seperti duduk di meja makan bundar keluarga. Kananmu adalah tangan kananmu sendiri saat menghadap ke meja, bukan kanan orang yang melihat dari pintu.",
+    "waspada": "Kiri dan kanan paling sering terbalik di soal meja bundar. Bayangkan dirimu duduk di kursi tokoh itu, menghadap ke tengah, lalu angkat tangan kananmu."
+  },
+  {
+    "no": 55,
+    "ditanya": "Pernyataan yang benar di semua urutan kedatangan yang mungkin.",
+    "kalimat_kunci": "Kapal T bukan kapal yang tiba paling akhir.",
+    "cara_kilat": "Kapal yang tiba paling akhir tidak boleh punya kapal lain yang wajib tiba sesudahnya. P, Q, R, dan S masing-masing punya kapal yang wajib tiba sesudahnya. Calonnya tinggal T dan U. T dilarang tiba paling akhir, jadi U pasti paling akhir.",
+    "langkah": "Susun dua rantai: P, R, S, T dan P, Q, U. Kapal P berada di pangkal kedua rantai, jadi P tiba pertama. Urutan yang mungkin ada empat: P Q R S T U, P R Q S T U, P R S Q T U, dan P R S T Q U. Di keempatnya U berada di urutan keenam.",
+    "opsi_gugur": {
+      "A": "Q tiba kedua hanya pada urutan P Q R S T U. Di urutan lain Q bisa ketiga, keempat, atau kelima.",
+      "B": "R tiba sebelum Q pada tiga urutan, tetapi pada P Q R S T U justru Q yang lebih dulu.",
+      "C": "T tiba kelima pada tiga urutan, tetapi pada P R S T Q U kapal T tiba keempat.",
+      "E": "S tiba ketiga pada dua urutan, sedangkan pada dua urutan lain S tiba keempat."
+    },
+    "alasan_kunci": "D, karena setiap kapal selain T dan U punya kapal yang wajib tiba sesudahnya, dan T dilarang tiba paling akhir.",
+    "analogi": "Antrean di loket: orang terakhir adalah orang yang tidak punya siapa pun di belakangnya. Kalau hampir semua orang sudah pasti punya orang di belakangnya, calon orang terakhir tinggal sedikit.",
+    "waspada": "Ketentuan 1 sampai 3 hanya memberi urutan sebagian. Jangan langsung menulis satu urutan lalu memilih opsi yang cocok dengannya. Ketentuan 4 yang pendek itulah penentunya."
+  },
+  {
+    "no": 56,
+    "ditanya": "Biaya termurah untuk mendapatkan paling sedikit 130 nasi kotak.",
+    "kalimat_kunci": "paling sedikit 130 nasi kotak",
+    "cara_kilat": "Harga per kotak: Melati Rp19.000, Mawar Rp17.000, Teratai Rp16.000. Utamakan Teratai, lalu cari tambahan yang paling hemat. 2 Teratai (100 kotak) dan 1 Mawar (35 kotak) memberi 135 kotak dengan biaya Rp1.600.000 + Rp595.000 = Rp2.195.000.",
+    "langkah": "Bandingkan kombinasi yang memenuhi 130 kotak. Tiga Teratai: 150 kotak, Rp2.400.000. Dua Teratai dan satu Mawar: 135 kotak, Rp2.195.000. Dua Teratai dan dua Melati: 140 kotak, Rp2.360.000. Satu Teratai dan empat Melati: tepat 130 kotak, Rp2.320.000. Tiga Melati dan dua Mawar: tepat 130 kotak, Rp2.330.000. Kombinasi lain lebih mahal lagi. Termurah adalah dua Teratai dan satu Mawar. Kelebihan 5 kotak justru lebih hemat daripada memaksakan tepat 130.",
+    "opsi_gugur": {
+      "A": "Rp1.980.000 berasal dari 2 Teratai dan 1 Melati, yaitu 120 kotak. Murah, tetapi kurang 10 kotak dari kebutuhan.",
+      "B": "Rp2.080.000 adalah 130 × Rp16.000. Hitungan ini menganggap nasi kotak bisa dibeli satuan dengan harga Teratai, padahal katering hanya menjual paket.",
+      "D": "Rp2.320.000 berasal dari 1 Teratai dan 4 Melati, tepat 130 kotak. Pilihan ini terpaku pada angka tepat 130, padahal soal membolehkan lebih.",
+      "E": "Rp2.400.000 berasal dari 3 Teratai. Paketnya memang termurah per kotak, tetapi 20 kotak sisanya ikut dibayar."
+    },
+    "alasan_kunci": "C, karena 2 paket Teratai dan 1 paket Mawar memberi 135 kotak dengan biaya Rp2.195.000, termurah di antara semua kombinasi yang cukup.",
+    "analogi": "Seperti membeli air minum untuk acara. Kadang membeli sedikit lebih banyak dari kebutuhan dalam kemasan besar justru lebih murah daripada memaksakan jumlah pas dengan kemasan kecil.",
+    "waspada": "Ada dua godaan di soal ini: memaksakan tepat 130 kotak, dan memborong paket termurah per kotak. Bandingkan beberapa kombinasi yang memenuhi syarat, karena yang termurah sering berada di antara keduanya."
+  }
+]

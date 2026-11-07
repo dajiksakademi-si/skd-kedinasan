@@ -1,0 +1,698 @@
+{
+  "meta": {
+    "judul": "Pindai Cepat D'Ajiks — Paket 2 TKP",
+    "versi": "0.1-draf",
+    "tanggal": "2026-10-26",
+    "langkah": [
+      "Aspek: kenali aspeknya, ingat apa yang dicari",
+      "Kalimat penentu: cari satu kalimat di soal yang mengubah segalanya",
+      "Coret: buang yang menghindar, melempar tugas, mengulang cara gagal, atau terburu-buru; dari dua yang tersisa, pilih yang menjawab kalimat penentu"
+    ],
+    "target_waktu_detik": 30,
+    "yang_dicari": {
+      "Profesionalisme": "cara kerja dibenahi, tepat waktu tetapi data tetap sah, sesuai wewenang",
+      "Pelayanan Publik": "warga terlayani adil, yang paling terdampak ikut terjangkau",
+      "Jejaring Kerja": "pihak yang tepat dilibatkan dan diajak duduk bersama, bukan jalan sendiri atau menyalahkan",
+      "Sosial Budaya": "kesempatan setara tanpa membedakan suku, agama, atau jenis kelamin",
+      "TIK": "teknologi dipakai untuk mempercepat kerja dan layanan, dengan aman: hasilnya dicek, data dilindungi, lewat jalur resmi",
+      "Anti Radikalisme": "ajakan nyata dihentikan lalu diserahkan ke yang berwenang; kabar tanpa bukti dicek dulu"
+    }
+  },
+  "soal": {
+    "1": {
+      "aspek": "Anti Radikalisme: ajakan yang nyata dihentikan, lalu diserahkan ke yang berwenang.",
+      "penentu": "Dua perawat sudah ikut mengisi formulirnya",
+      "arti": "Ajakannya sudah punya pengikut, bukan sekadar pendapat.",
+      "coret": {
+        "A": "ajakan nyata dibiarkan",
+        "C": "mempermalukan di grup, ajakan tetap jalan",
+        "D": "baru diserahkan setelah acara usai"
+      },
+      "sisa": {
+        "E": "selebaran berhenti dan relawan keluar, tapi lembar isian dua perawat tidak sampai ke bagian umum",
+        "B": "dihentikan sekarang dan semua bukti sampai ke yang mengawasi"
+      },
+      "tanda": "Ajakan yang sudah punya pengikut: hentikan, lalu serahkan ke yang berwenang. Mengusir orangnya saja belum cukup."
+    },
+    "2": {
+      "aspek": "Sosial Budaya: aturan yang adil untuk semua keyakinan.",
+      "penentu": "tanpa menetapkan caranya",
+      "arti": "Cara doa boleh diubah, asal doanya tetap ada.",
+      "coret": {
+        "A": "pemaksaan dibiarkan",
+        "E": "aturan dibacakan, tapi cara doanya tetap memaksa",
+        "C": "pagi ini dua peserta tetap dipaksa"
+      },
+      "sisa": {
+        "B": "yang diajak sepakat cuma dua peserta, lewat ketua kelas",
+        "D": "seluruh kelas menyepakati cara baru pagi ini juga"
+      },
+      "tanda": "Aturan diam soal caranya? Itu ruang untuk cara yang adil, disepakati bersama semua yang terdampak."
+    },
+    "3": {
+      "aspek": "Profesionalisme: cara kerjanya yang dibenahi, bukan sekadar kerja lebih keras.",
+      "penentu": "sudah dua kali diingatkan lewat grup",
+      "arti": "Cara mengingatkan sudah gagal.",
+      "coret": {
+        "B": "yang dibuang orangnya, padahal yang salah caranya",
+        "C": "mengirim angka yang kamu tahu salah",
+        "D": "mengulang cara yang sudah gagal"
+      },
+      "sisa": {
+        "E": "beres hari ini, besok angka ganda muncul lagi",
+        "A": "sebabnya dibereskan: tiga cara jadi satu format"
+      },
+      "tanda": "Soal menyebut cara yang sudah dicoba dan gagal? Pilihan yang mengulang cara itu hampir pasti bukan kunci."
+    },
+    "4": {
+      "aspek": "Pelayanan Publik: adil bagi semua yang terlambat, hak pendaftar lain tetap dijaga.",
+      "penentu": "beberapa pendaftar belum melengkapi berkas sampai batas lusa",
+      "arti": "Kursi mereka belum boleh diambil sebelum lusa, padahal yang terlambat sudah lima orang.",
+      "coret": {
+        "A": "menolak tanpa jalan keluar",
+        "E": "janji karena kasihan",
+        "B": "jalan keluarnya cuma untuk dia seorang"
+      },
+      "sisa": {
+        "C": "kursi pendaftar lama diambil sebelum batasnya lewat",
+        "D": "daftar tunggu untuk semua yang terlambat, diisi setelah batas lusa"
+      },
+      "tanda": "Hak orang lain belum habis waktunya? Jangan diambil duluan, siapkan antrean yang adil untuk semua."
+    },
+    "5": {
+      "aspek": "Sosial Budaya: warga dilayani setara sesuai identitas resminya.",
+      "penentu": "KTP mereka tertulis “Kepercayaan terhadap Tuhan Yang Maha Esa”",
+      "arti": "Data mereka sah, yang salah aplikasinya.",
+      "coret": {
+        "A": "meragukan KTP yang sah",
+        "E": "kolom agama dikosongkan, data jadi tidak sesuai",
+        "D": "berkorban sendiri, sistemnya tetap salah"
+      },
+      "sisa": {
+        "C": "kasusnya berhenti di petugas mitra",
+        "B": "dilayani hari ini dan kasusnya sampai ke pengelola aplikasi"
+      },
+      "tanda": "Masalah sistem? Laporkan sampai ke yang bisa memperbaikinya, jangan berhenti di perantara."
+    },
+    "6": {
+      "aspek": "TIK: teknologi boleh dipakai, asal hasilnya dicek.",
+      "penentu": "tidak ada di dokumen sumber",
+      "arti": "Alatnya mengarang angka, jadi yang kurang adalah pengecekan.",
+      "coret": {
+        "A": "diam karena sudah diralat",
+        "D": "alat dibuang dan tenggat dikorbankan",
+        "B": "melarang seluruh instansi, padahal kamu hanya memimpin tim humas"
+      },
+      "sisa": {
+        "C": "pengecekan bergantung pada satu staf magang",
+        "E": "pengecekan jadi aturan seluruh tim"
+      },
+      "tanda": "Alat membuat kesalahan? Biasanya jawabannya aturan cek yang berlaku untuk semua, bukan membuang alatnya."
+    },
+    "7": {
+      "aspek": "Jejaring Kerja: bereskan langsung bersama mitra, tanpa menyalahkan.",
+      "penentu": "rapat tim berikutnya baru digelar sehari setelah festival",
+      "arti": "Kalau menunggu rapat, semuanya sudah terlambat.",
+      "coret": {
+        "E": "menyalahkan mitra di grup",
+        "B": "situs diperbarui, grup pemandu tetap salah",
+        "D": "dibahas setelah festival lewat"
+      },
+      "sisa": {
+        "A": "jadwal di grup beres, tapi penghubung dilewati dan tetap memegang jadwal lama",
+        "C": "jadwal yang keliru diganti hari ini bersama penghubungnya"
+      },
+      "tanda": "Ada tenggat yang dekat? Langkah yang baru jalan sesudah tenggat lewat pasti kalah."
+    },
+    "8": {
+      "aspek": "Pelayanan Publik: jangkau warga yang paling terdampak.",
+      "penentu": "Mobil laboratorium menganggur setiap Selasa",
+      "arti": "Ada sarana yang bisa menjemput sampel ke desa.",
+      "coret": {
+        "A": "dibagi rata, yang paling terdampak tidak didahulukan",
+        "E": "warga desa tetap harus datang sendiri",
+        "B": "beban mengumpulkan dilempar ke kepala desa"
+      },
+      "sisa": {
+        "D": "yang dijangkau cuma satu desa",
+        "C": "keempat desa sekitar pabrik dijangkau tiap Selasa"
+      },
+      "tanda": "Ada sarana yang menganggur di soal? Sering itulah jalan keluarnya. Lalu cek: semua yang terdampak sudah terjangkau?"
+    },
+    "9": {
+      "aspek": "Anti Radikalisme: pujian pada kekerasan diluruskan saat itu juga.",
+      "penentu": "di depan pedagang yang tampak kaget",
+      "arti": "Yang mendengar candaan itu orang banyak.",
+      "coret": {
+        "A": "membela candaan rekan",
+        "D": "dilaporkan untuk sanksi, di tempat tidak diluruskan",
+        "E": "pesan ke ponsel, pedagang tidak mendengar koreksinya"
+      },
+      "sisa": {
+        "C": "ditegur empat mata, pedagang tetap tidak mendengar",
+        "B": "ditegur dengan tenang di depan pedagang yang tadi mendengar"
+      },
+      "tanda": "Yang salah terjadi di depan orang banyak? Koreksinya juga harus terdengar oleh mereka yang tadi mendengar."
+    },
+    "10": {
+      "aspek": "TIK: keaslian dicek lewat jalur resmi.",
+      "penentu": "berbeda satu huruf dari domain resmi bank",
+      "arti": "Surel itu hampir pasti palsu.",
+      "coret": {
+        "E": "dilempar ke penyedia",
+        "D": "meminta berkas tambahan dari pengirim yang mencurigakan",
+        "C": "kop surat gampang dipalsukan"
+      },
+      "sisa": {
+        "A": "ditolak dan rekan diingatkan, tapi bank dan unit TI tidak tahu ada penipuan",
+        "B": "dicek ke nomor resmi bank, lalu unit TI diberi tahu"
+      },
+      "tanda": "Curiga penipuan? Cek lewat kontak resmi yang kamu pegang sendiri, bukan lewat isi pesan itu."
+    },
+    "11": {
+      "aspek": "Jejaring Kerja: kamu koordinatornya, jadi kamu yang mengatur bersama semua pihak.",
+      "penentu": "hanya tahan empat jam",
+      "arti": "Makanan siap saji harus didahulukan.",
+      "coret": {
+        "C": "urutan datang, makanan bisa basi",
+        "B": "melapor, gudang tetap macet",
+        "E": "giliran dikirim tanpa penghubung tiap pihak"
+      },
+      "sisa": {
+        "D": "makanan didahulukan, tapi sisa giliran diserahkan ke satu mitra, padahal koordinatornya kamu",
+        "A": "kamu atur gilirannya, lalu pastikan ke tiap penghubung"
+      },
+      "tanda": "Kalau kamu sendiri yang berwenang, jangan lempar ke atasan atau ke pihak lain."
+    },
+    "12": {
+      "aspek": "Profesionalisme: beres hari ini dan tidak terulang besok.",
+      "penentu": "Ini tabrakan ketiga pekan ini",
+      "arti": "Masalahnya berulang, jadi perlu cara kerja baru.",
+      "coret": {
+        "C": "sibuk di samping masalah",
+        "D": "didahulukan karena jabatan, bukan karena waktunya",
+        "E": "dilempar ke kepala sekolah, padahal pengaturannya diserahkan ke kamu"
+      },
+      "sisa": {
+        "B": "hari ini rapi, besok tabrakan lagi",
+        "A": "hari ini beres dan mulai besok permintaan tertulis bertenggat"
+      },
+      "tanda": "Masalahnya berulang? Beres hari ini saja kalah dari jawaban yang juga membereskan sebabnya."
+    },
+    "13": {
+      "aspek": "Profesionalisme: pertemukan pihak yang berselisih, jangan memutuskan di luar wewenang.",
+      "penentu": "saling melempar tanggung jawab",
+      "arti": "Keduanya harus dipertemukan.",
+      "coret": {
+        "B": "satu pihak dikucilkan",
+        "A": "ikut saran mandor, perencana dilewati",
+        "E": "disetujui tanpa hitungan perencana"
+      },
+      "sisa": {
+        "C": "lewat surat, saling lempar berlanjut dan pekerjaan tetap berhenti",
+        "D": "kedua pihak dipertemukan di lokasi besok"
+      },
+      "tanda": "Dua pihak saling lempar? Pertemukan mereka, jangan cuma berkirim surat."
+    },
+    "14": {
+      "aspek": "TIK: data diperbaiki lewat sumber resmi, bersama pihak yang berwenang.",
+      "penentu": "sudah dua kali mengirim surel aduan",
+      "arti": "Jalur surel sudah gagal, padahal kantornya sekota.",
+      "coret": {
+        "A": "kuota ditambah, titik yang salah tetap salah",
+        "E": "surel ketiga, cara yang sudah gagal",
+        "C": "dihitung manual di luar sistem"
+      },
+      "sisa": {
+        "B": "pengembang didatangi, tapi titiknya dikoreksi pakai peta umum, bukan data resmi",
+        "D": "pengembang dan pemegang data batas resmi diajak mencocokkan titik"
+      },
+      "tanda": "Soal menyebut cara yang sudah dicoba dan gagal? Pilihan yang mengulang cara itu hampir pasti bukan kunci."
+    },
+    "15": {
+      "aspek": "Pelayanan Publik: antrean adil untuk semua penyedia.",
+      "penentu": "Belum ada yang mengingatkannya",
+      "arti": "Ini kesalahan pertama yang belum pernah ditegur.",
+      "coret": {
+        "D": "dibiarkan",
+        "C": "ikut melanggar",
+        "A": "langsung lapor untuk sanksi, padahal belum pernah diingatkan"
+      },
+      "sisa": {
+        "E": "akal-akalan jam piket, rekan tetap mendahulukan langganan",
+        "B": "rekan diajak bicara langsung hari ini"
+      },
+      "tanda": "Kesalahan pertama yang belum pernah ditegur? Ajak bicara langsung dulu sebelum melapor."
+    },
+    "16": {
+      "aspek": "Anti Radikalisme: ajakan nyata diputus penyebarannya dengan wewenang yang kamu punya.",
+      "penentu": "mengajak anggota grup bersiap melawan kelompok itu",
+      "arti": "Ini sudah ajakan, bukan sekadar kabar, dan grupnya kamu yang pegang.",
+      "coret": {
+        "B": "beban meralat dilempar ke pengirim",
+        "C": "membantah di grup malah membuat ramai",
+        "D": "baru dibahas besok pagi, malam ini ajakan tetap jalan"
+      },
+      "sisa": {
+        "A": "video hilang, tapi penjagaan bergantung pada satu staf baru tiap malam",
+        "E": "grup dikunci dulu, sebaran berhenti malam ini juga"
+      },
+      "tanda": "Ajakan menyebar di grup yang kamu kelola? Putus jalurnya dulu dengan wewenangmu, baru bersihkan isinya."
+    },
+    "17": {
+      "aspek": "Profesionalisme: sebab masalah dicek dulu, keputusan diambil dari data.",
+      "penentu": "sejak semalam penyedia internet sedang memperbarui jaringan gedung",
+      "arti": "Ada dua kemungkinan sebab, dan belum ada yang dicek.",
+      "coret": {
+        "A": "surat dinas dialihkan ke surel pribadi",
+        "D": "arsip semua bidang dihapus atas dugaan",
+        "B": "arsip tetap dihapus atas dugaan, walau sebagian"
+      },
+      "sisa": {
+        "E": "langsung yakin sebabnya jaringan dan meminta pekerjaan penyedia ditunda",
+        "C": "sebabnya dicek dari layar pemantauan dulu, baru bertindak"
+      },
+      "tanda": "Ada dua dugaan sebab? Cek datanya dulu sebelum menghapus atau menghentikan apa pun."
+    },
+    "18": {
+      "aspek": "Sosial Budaya: kesempatan setara, dibela dengan aturan yang berlaku.",
+      "penentu": "pendaftaran tutup lusa sore",
+      "arti": "Rapat lusa pagi terlalu mepet, yang berwenang harus tahu hari ini.",
+      "coret": {
+        "A": "keputusan yang membedakan dibiarkan",
+        "D": "hubungan baik didahulukan daripada hak peserta",
+        "E": "jadi peserta tamu, haknya tetap separuh"
+      },
+      "sisa": {
+        "B": "bukti juknis dibawa hari ini, tapi ke panitia, bukan ke yang berwenang menetapkan",
+        "C": "yang berwenang menerima bukti juknis hari ini"
+      },
+      "tanda": "Hak satu kelompok dicoret dan waktunya sempit? Bawa buktinya ke yang berwenang hari ini juga."
+    },
+    "19": {
+      "aspek": "TIK: kerja selesai tepat waktu, data warga tetap di jalur resmi.",
+      "penentu": "tiga staf bidang siap membantu",
+      "arti": "Tenaga untuk merapikan sudah ada, jadi data tidak perlu keluar kantor.",
+      "coret": {
+        "C": "semua data warga diunggah ke alat luar",
+        "E": "beban merapikan dipindah ke nelayan",
+        "B": "izin diminta, tapi datanya tetap keluar kantor"
+      },
+      "sisa": {
+        "D": "NIK dibuang, tapi nomor ponsel nelayan tetap keluar ke alat daring",
+        "A": "dikerjakan bersama tiga staf di lembar kerja kantor"
+      },
+      "tanda": "Data pribadi warga dan ada cara kantor yang cukup cepat? Jangan unggah ke alat luar."
+    },
+    "20": {
+      "aspek": "Profesionalisme: tepat waktu, tetapi data yang dikirim tetap sah.",
+      "penentu": "belum ditandatangani bendahara unitnya",
+      "arti": "Angka itu belum sah, jadi belum layak sampai ke pimpinan.",
+      "coret": {
+        "B": "semua rekap ditunda karena satu angka",
+        "C": "angka janggal dikirim tanpa dicek",
+        "A": "keputusan kecil dilempar ke pimpinan"
+      },
+      "sisa": {
+        "D": "angka yang belum sah tetap sampai ke pimpinan, cuma diberi tanda",
+        "E": "sebelas unit terkirim tepat waktu, satu angka ditahan sampai sah"
+      },
+      "tanda": "Satu bagian data belum sah? Kirim yang sudah sah tepat waktu, tahan yang belum."
+    },
+    "21": {
+      "aspek": "Sosial Budaya: penugasan setara, tanpa melihat suku atau asal daerah.",
+      "penentu": "jadwal bulan ini belum terbit",
+      "arti": "Kamu penyusunnya dan jadwalnya belum keluar, jadi perbaikannya bisa bulan ini.",
+      "coret": {
+        "B": "hari dibagi rata, kabupaten tujuan tetap dibedakan",
+        "E": "pola yang membedakan dipertahankan",
+        "D": "hanya yang mengeluh yang dipindah"
+      },
+      "sisa": {
+        "C": "rotasi baru jalan bulan depan, sebulan lagi pola lama dibiarkan",
+        "A": "rotasi berlaku bulan ini untuk semua auditor"
+      },
+      "tanda": "Kamu pemegang wewenangnya dan masih sempat? Benahi sekarang untuk semua, jangan ditunda."
+    },
+    "22": {
+      "aspek": "Pelayanan Publik: semua warga yang menunggu mendapat informasi yang jujur.",
+      "penentu": "pasien lain mulai gelisah",
+      "arti": "Yang butuh penjelasan bukan cuma satu orang.",
+      "coret": {
+        "B": "keributan dibiarkan",
+        "E": "sibuk soal rekaman, keluhannya tidak dijawab",
+        "A": "janji tanpa mengecek jadwal"
+      },
+      "sisa": {
+        "C": "penjelasannya benar, tapi hanya sampai ke satu orang",
+        "D": "seisi ruang tunggu mendapat penjelasan yang sama"
+      },
+      "tanda": "Yang terdampak banyak orang? Penjelasan untuk semua, bukan cuma untuk yang paling keras suaranya."
+    },
+    "23": {
+      "aspek": "Jejaring Kerja: mitra tetap dilibatkan, kerja sama tidak putus karena kendala.",
+      "penentu": "pesan teks darinya masih masuk",
+      "arti": "Jalur yang masih hidup adalah pesan teks.",
+      "coret": {
+        "B": "peserta dibiarkan menunggu tanpa kepastian",
+        "A": "sesi mitra dibatalkan, padahal masih ada jalan",
+        "E": "menelepon lagi, cara yang sudah dua kali gagal"
+      },
+      "sisa": {
+        "D": "sesi jalan, tapi pembicara mitra tidak tampil",
+        "C": "pembicara tetap tampil lewat jalur yang masih jalan"
+      },
+      "tanda": "Satu jalur macet tapi jalur lain hidup? Pakai yang hidup supaya mitra tetap ikut."
+    },
+    "24": {
+      "aspek": "Anti Radikalisme: kabar tanpa bukti diserahkan untuk dicek, bukan dijadikan vonis.",
+      "penentu": "Ia tak membawa bukti",
+      "arti": "Ini kabar dari pihak yang sedang bersengketa, belum boleh mengubah layanan.",
+      "coret": {
+        "B": "keputusan dilempar, tuduhan didiamkan",
+        "D": "yang dituduh dipaksa membuktikan diri",
+        "A": "izin ditahan seolah tuduhannya benar"
+      },
+      "sisa": {
+        "C": "izin jalan, tapi tuduhan dikembalikan ke pelapor",
+        "E": "izin jalan, tuduhan sampai ke yang berwenang memeriksa"
+      },
+      "tanda": "Tuduhan tanpa bukti? Layanan jalan seperti biasa, tuduhannya diserahkan ke yang berwenang memeriksa."
+    },
+    "25": {
+      "aspek": "Pelayanan Publik: syarat jelas dan sama untuk semua warga.",
+      "penentu": "Petugasnya bergiliran setiap pekan",
+      "arti": "Petugas berganti tiap pekan, jadi aturan lisan cepat hilang.",
+      "coret": {
+        "E": "tiap petugas dibiarkan memakai syarat sendiri",
+        "B": "syarat dilonggarkan hanya untuk yang protes",
+        "D": "warga tetap bolak-balik sampai akhir bulan"
+      },
+      "sisa": {
+        "A": "syarat diumumkan lisan, petugas pekan depan bisa tidak tahu",
+        "C": "syarat tertulis di loket, sama siapa pun petugasnya"
+      },
+      "tanda": "Petugas berganti-ganti? Aturan harus tertulis dan terlihat, bukan cuma diumumkan."
+    },
+    "26": {
+      "aspek": "Jejaring Kerja: kendala mitra dibantu dengan sarana bersama, bukan ditegur.",
+      "penentu": "mobil kantor arsip menjemput keliling setiap Kamis",
+      "arti": "Sarana untuk menolong ketiganya sudah ada sebelum batas Jumat.",
+      "coret": {
+        "E": "hanya mencatat dan menunggu",
+        "B": "ditegur, padahal kendalanya kurir",
+        "C": "naik ke sekretaris daerah untuk urusan jemputan"
+      },
+      "sisa": {
+        "A": "satu OPD tertolong, dua lainnya tetap terlambat",
+        "D": "ketiga OPD masuk rute Kamis, sempat sebelum Jumat"
+      },
+      "tanda": "Mitra terhambat sarana dan sarana kantor bisa menjangkau? Ajak semuanya, bukan satu saja."
+    },
+    "27": {
+      "aspek": "Profesionalisme: aturan dibenahi lewat yang berwenang, dengan bukti.",
+      "penentu": "bulan ini Anda mencatat 30 orang",
+      "arti": "Kamu punya data, bukan sekadar cerita.",
+      "coret": {
+        "A": "lansia terus disuruh pulang",
+        "D": "SOP dilanggar tanpa izin yang berwenang",
+        "B": "usulan hanya bersandar pada cerita"
+      },
+      "sisa": {
+        "E": "catatan ada, tapi disimpan karena menebak koordinator menolak",
+        "C": "usulan sampai ke yang berwenang, lengkap dengan data 30 pemohon"
+      },
+      "tanda": "Aturan merugikan warga dan wewenangnya di orang lain? Usulkan ke dia dengan data, jangan menebak jawabannya."
+    },
+    "28": {
+      "aspek": "Profesionalisme: tugas selesai tepat waktu, data tetap sah dan bebas kepentingan.",
+      "penentu": "masih dalam masa berlaku",
+      "arti": "Alat pengganti yang sah sudah ada di gudang sendiri.",
+      "coret": {
+        "D": "pengukuran dilempar ke pembudidaya",
+        "C": "naik ke kepala dinas, padahal cadangan ada",
+        "B": "jadwal digeser, penentuan bantuan ikut mundur"
+      },
+      "sisa": {
+        "A": "pengukuran jalan, tapi pakai alat milik calon penerima bantuan",
+        "E": "diukur hari ini dengan alat dinas sendiri, lalu dicatat"
+      },
+      "tanda": "Alat rusak tapi cadangan sah tersedia? Pakai cadangan, catat, dan jangan pinjam dari pihak yang berkepentingan."
+    },
+    "29": {
+      "aspek": "Jejaring Kerja: kerja sama dengan mitra dijaga lewat aturan main yang jelas.",
+      "penentu": "Perjanjian memberi dinas wewenang mengatur pemakaian aplikasi",
+      "arti": "Kamu boleh membuat aturan untuk semua mitra.",
+      "coret": {
+        "A": "keluhan dilempar ke perusahaan",
+        "C": "beban mencari syarat dipindah ke pelamar",
+        "E": "menegur tanpa mencocokkan isi aplikasi"
+      },
+      "sisa": {
+        "D": "empat lowongan beres, tapi mitra lain bisa mengulang",
+        "B": "semua mitra wajib memperbarui syarat sebelum berlaku"
+      },
+      "tanda": "Kesalahan berulang dan kamu berwenang mengatur? Buat aturan untuk semua, bukan tambal satu per satu."
+    },
+    "30": {
+      "aspek": "Pelayanan Publik: yang paling berhak tetap terlayani, aturan sama untuk semua.",
+      "penentu": "sasaran utama bank sampah adalah rumah tangga",
+      "arti": "Kuota harus tersisa untuk rumah tangga yang datang siang.",
+      "coret": {
+        "A": "warga dilempar ke bank sampah swasta",
+        "D": "capaian didahulukan daripada sasaran",
+        "C": "beban mendaftar dipindah ke warga"
+      },
+      "sisa": {
+        "B": "satu pengepul dibatasi, pengepul lain tetap bisa menghabiskan kuota",
+        "E": "semua pengepul dibatasi sama, kuota warga terjaga"
+      },
+      "tanda": "Layanan direbut pihak kuat? Atur jatah untuk semua pihak kuat, sisakan untuk sasaran utama."
+    },
+    "31": {
+      "aspek": "Anti Radikalisme: penggalangan yang sudah terorganisasi diserahkan, lengkap dengan buktinya, ke jalur yang menanganinya.",
+      "penentu": "sumpah setia kepada pimpinan kelompok yang menyebut pemerintah tidak sah",
+      "arti": "Ini bukan kabar lagi: ada daftar peserta, iuran, dan sumpah setia. Jalur penanganannya pun sudah disebut di soal.",
+      "coret": {
+        "D": "menyusup sendiri ke pertemuan, laporan malah tertunda sepekan",
+        "E": "teguran pribadi dan hapus undangan, kelompoknya tetap berjalan",
+        "C": "hanya urusan izin aula, kelompoknya bisa pindah tempat"
+      },
+      "sisa": {
+        "A": "bukti dikirim hari ini, tapi lewat surel umum dan tidak dipastikan sampai",
+        "B": "bukti diserahkan hari ini ke kepala dinas, yang biasa meneruskannya ke kesbangpol"
+      },
+      "tanda": "Penggalangan sudah terorganisasi dan jalurnya disebut di soal? Serahkan bukti yang kamu pegang ke jalur itu hari ini, jangan menyelidik sendiri."
+    },
+    "32": {
+      "aspek": "Jejaring Kerja: mitra yang berselisih diajak duduk bersama, keputusan tetap di tangan yang berwenang.",
+      "penentu": "pembagian rute adalah wewenang Anda",
+      "arti": "Kamu yang memutuskan, jadi tidak perlu dilempar ke atas. Tinggal cara memutuskannya.",
+      "coret": {
+        "D": "satu kelompok bersertifikat disingkirkan begitu saja",
+        "E": "urutan daftar yang memutus, kelompok lain tersingkir",
+        "B": "urusan dalam wewenangmu dilempar ke kepala bidang"
+      },
+      "sisa": {
+        "A": "rute dibagi lalu keputusannya dikirim, dua kelompok yang bersitegang tidak diajak bicara",
+        "C": "kedua ketua diajak berunding pekan ini, masih sempat sebelum acara"
+      },
+      "tanda": "Wewenang di tanganmu dan dua mitra berselisih? Putuskan bersama mereka di satu meja, jangan dilempar ke atas atau diputus sepihak."
+    },
+    "33": {
+      "aspek": "Sosial Budaya: semua taruna mendapat kesempatan yang sama, tanpa terhalang kemampuan membayar.",
+      "penentu": "Belum ada aturan tertulis soal biaya kegiatan",
+      "arti": "Sumber masalahnya aturan yang belum ada, dan kamu yang berwenang membuatnya.",
+      "coret": {
+        "B": "taruna disuruh mencari uang, padahal iurannya yang menyisihkan",
+        "D": "wewenangmu dilempar ke ketua program studi",
+        "C": "dikembalikan ke rapat yang tadinya menyisihkan mereka"
+      },
+      "sisa": {
+        "A": "sembilan taruna tertolong semester ini, aturannya belum berubah",
+        "E": "aturan tertulis dibuat, taruna berikutnya juga terlindungi"
+      },
+      "tanda": "Ada yang tersisih karena aturan belum ada, dan kamu berwenang membuatnya? Buat aturannya, jangan hanya menolong yang sekarang."
+    },
+    "34": {
+      "aspek": "Pelayanan Publik: kabar perubahan layanan sampai ke semua warga yang terdampak, lewat saluran yang dekat dengan mereka.",
+      "penentu": "hanya diumumkan di laman dinas",
+      "arti": "Sebab penolakan sudah jelas: kabarnya hanya ada di satu tempat yang jarang dibuka warga.",
+      "coret": {
+        "D": "menunggu warga terbiasa, penolakan terus berjalan",
+        "E": "beban mencari tahu dilempar ke warga yang sudah ditolak",
+        "A": "laman yang sama dirapikan, padahal laman itulah sebabnya"
+      },
+      "sisa": {
+        "C": "lewat perusahaan mitra, pencari kerja di luar mitra tidak terjangkau",
+        "B": "lewat papan gerbang dan media sosial yang kamu pegang, ditambah kelurahan"
+      },
+      "tanda": "Warga ditolak karena kabarnya hanya di satu saluran? Sebarkan lewat saluran yang dekat dengan warga, jangan merapikan saluran yang sama."
+    },
+    "35": {
+      "aspek": "Pelayanan Publik: aduan warga diselesaikan tuntas sebelum batas, tanpa warga dioper ke sana kemari.",
+      "penentu": "keduanya saling menunjuk",
+      "arti": "Dua pihak saling menunggu, jadi perlu ada yang mempertemukan mereka, dan waktunya tinggal lima hari.",
+      "coret": {
+        "D": "anak itu dibiarkan kehilangan bantuan tahun ini",
+        "B": "orang tua dioper lagi ke dua sekolah yang saling menunjuk",
+        "A": "edaran menolong siswa berikutnya, anak ini belum tertolong"
+      },
+      "sisa": {
+        "C": "dua operator ditelepon, tapi tidak dipastikan nama anak itu masuk usulan",
+        "E": "dua operator dikumpulkan, data dipindah di depanmu sebelum batas"
+      },
+      "tanda": "Dua pihak saling menunjuk dan batas sudah dekat? Pertemukan mereka dan pastikan hasilnya, jangan hanya menelepon lalu menunggu."
+    },
+    "36": {
+      "aspek": "Profesionalisme: data dibenahi sebelum dikirim, lewat jalur yang sah dan dengan bukti.",
+      "penentu": "Penghapusan nama hanya bisa diputuskan lurah lewat musyawarah",
+      "arti": "Nama yang salah tidak boleh kamu hapus sendiri. Jalurnya musyawarah, dan tenggatnya masih Jumat.",
+      "coret": {
+        "E": "menghukum orang, daftarnya tetap salah",
+        "B": "mengulang cara tahun lalu yang membuat bantuan salah sasaran",
+        "A": "dasar penghapusan hanya kabar lisan, arsip tidak dicek"
+      },
+      "sisa": {
+        "C": "nama ditandai berikut bukti, tapi daftar dasarnya tetap salah",
+        "D": "dibawa ke musyawarah sebelum Jumat, lengkap dengan bukti arsip"
+      },
+      "tanda": "Data salah dan yang berhak memutuskan bukan kamu? Bawa ke jalur yang sah dengan bukti, sebelum tenggat."
+    },
+    "37": {
+      "aspek": "Jejaring Kerja: pihak yang tepat digerakkan sekarang, memakai dukungan yang sudah ada.",
+      "penentu": "Kepala desa setuju lahan kas desa dipakai",
+      "arti": "Izin lahan sudah ada, jadi jalur sementara bisa dibuka sekarang juga.",
+      "coret": {
+        "A": "warga diminta bersabar, padahal dua orang sudah jatuh",
+        "B": "warga tetap lewat jalan licin yang sudah memakan korban",
+        "E": "jalan setapak hanya untuk pejalan kaki, pengendara tetap lewat kebun"
+      },
+      "sisa": {
+        "D": "jalur di lahan kas desa, tapi baru setelah pengecoran tahap pertama",
+        "C": "jalur dibuka sekarang di tanah desa itu, lengkap dengan rambu"
+      },
+      "tanda": "Izin dan lahan sudah tersedia sementara warga terus celaka? Kerjakan sekarang, jangan menunggu tahap pekerjaan berikutnya."
+    },
+    "38": {
+      "aspek": "Anti Radikalisme: kabar tanpa bukti dicek dulu dengan data yang ada, tanpa merugikan orang lain.",
+      "penentu": "Kabar itu tidak disertai bukti apa pun",
+      "arti": "Baru kabar, dan bahan untuk mengeceknya ada di buku layanan.",
+      "coret": {
+        "C": "sosialisasi umum, kabar soal pengunjung ini tidak dicek",
+        "A": "orang diawasi diam-diam hanya karena kabar",
+        "B": "dibatasi dulu atas kabar, buku layanan tidak dibuka"
+      },
+      "sisa": {
+        "D": "sudah mengecek, tapi semua pengunjung sepekan ikut diminta menjelaskan diri",
+        "E": "izin dan keperluan pengunjung itu dicocokkan dengan peta yang dipotretnya"
+      },
+      "tanda": "Kabar tanpa bukti dan datanya ada di dekatmu? Cocokkan dulu data orang itu saja, jangan mengawasi atau membatasi lebih dulu."
+    },
+    "39": {
+      "aspek": "Sosial Budaya: perempuan dan laki-laki mendapat kesempatan yang sama, kabarnya sampai ke tempat mereka berada.",
+      "penentu": "kebanyakan pengasap ikan di sana perempuan yang tiap pagi berkumpul di pasar ikan",
+      "arti": "Soal sudah memberi tahu di mana para pengasap perempuan bisa dijangkau.",
+      "coret": {
+        "D": "kuota rata, tapi pengumumannya tetap di tempat yang tidak mereka datangi",
+        "B": "mendaftar harus lewat suami atau ketua kelompok",
+        "C": "kabar bergantung pada satu orang perantara"
+      },
+      "sisa": {
+        "E": "langsung ke pengasap perempuan, tapi satu dusun terlewat",
+        "A": "diumumkan di pasar ikan dan PKK, meja dibuka di tempat pengasapan"
+      },
+      "tanda": "Soal menyebut di mana kelompok yang tersisih berkumpul? Bawa pengumuman dan pendaftaran ke sana, jangan lewat perantara."
+    },
+    "40": {
+      "aspek": "Pelayanan Publik: layanan untuk warga tetap jalan, semua yang terdampak terselamatkan.",
+      "penentu": "lemari vaksin puskesmas terdekat berfungsi dan masih memiliki ruang",
+      "arti": "Tempat penyimpanan pengganti yang layak sudah tersedia di dekatmu.",
+      "coret": {
+        "D": "menunggu tiga hari, vaksin di lemari rusak tidak tertolong",
+        "E": "vaksinasi anak ditunda, padahal vaksinnya bisa diselamatkan",
+        "B": "hanya 150 dosis diselamatkan, sisanya tertinggal di lemari rusak"
+      },
+      "sisa": {
+        "C": "semua dosis di kotak pendingin tiga hari, esnya bergantung pada petugas sekolah",
+        "A": "semua 400 dosis dibawa ke lemari puskesmas, suhunya dipantau"
+      },
+      "tanda": "Alat rusak dan pengganti yang layak ada di dekat? Pindahkan semuanya ke sana, jangan hanya sebagian atau ke tempat darurat yang rapuh."
+    },
+    "41": {
+      "aspek": "TIK: data rahasia dilindungi segera lewat pemilik akses yang sah, lalu cara berbaginya dibenahi.",
+      "penentu": "Pemiliknya ketua tim, yang sedang daring",
+      "arti": "Kamu tidak bisa menutup aksesnya sendiri, tapi orang yang bisa sedang daring sekarang.",
+      "coret": {
+        "A": "menghukum rekan, folder tetap terbuka",
+        "C": "berharap pihak yang diperiksa tidak membuka tautan",
+        "E": "baru dibahas akhir bulan, folder terbuka selama itu"
+      },
+      "sisa": {
+        "D": "pesan dihapus dan grup diperingatkan, tapi tautan yang tersalin masih bisa membuka folder",
+        "B": "ketua tim diminta menutup akses sekarang, lalu cara berbagi dibenahi"
+      },
+      "tanda": "Data rahasia bocor dan pemilik aksesnya sedang daring? Minta ia menutup akses sekarang; menghapus pesan saja tidak menutup tautannya."
+    },
+    "42": {
+      "aspek": "Sosial Budaya: kesempatan kerja setara bagi warga semua kampung sekitar, lewat cara rekrut yang terbuka.",
+      "penentu": "kontrak pekerja diperbarui tiap dua pekan",
+      "arti": "Kamu berwenang mengubah cara rekrut, dan kesempatan berikutnya datang dua pekan lagi, bukan bulan depan.",
+      "coret": {
+        "C": "cara yang menyisihkan warga lain dipertahankan",
+        "E": "hanya nasihat, jalur kenalan tetap jalan",
+        "A": "beberapa orang ditambahkan, jalur kenalan tetap jalan"
+      },
+      "sisa": {
+        "B": "pedoman ditegakkan, tapi yang memilih pekerja tetap mandor",
+        "D": "pendaftaran terbuka di desa, mulai giliran kontrak berikutnya"
+      },
+      "tanda": "Caranya yang menyisihkan, dan kamu berwenang mengubahnya? Ganti caranya pada kesempatan terdekat, jangan hanya menambal atau menunda."
+    },
+    "43": {
+      "aspek": "TIK: berkas bersama dipakai lancar dan aman, tiap bidang punya bagian dan hak sunting yang jelas.",
+      "penentu": "pembagian lembar perlu disetujui ketiganya",
+      "arti": "Kamu bisa mengatur hak sunting, tapi pembagiannya harus disepakati tiga bidang.",
+      "coret": {
+        "D": "menambal tiap kali rusak, sebabnya tidak dibenahi",
+        "E": "berkas dikunci, semua isian kamu kerjakan sendiri",
+        "C": "dilaporkan ke atas, padahal pengaturannya di tanganmu"
+      },
+      "sisa": {
+        "B": "sepakat lewat grup, tapi hanya dijaga dengan saling meminta, hak sunting tidak diatur",
+        "A": "pembagian lembar dan hak sunting disepakati bersama tiga bidang"
+      },
+      "tanda": "Berkas bersama rusak berulang? Sepakati pembagiannya dan atur hak suntingnya; kesepakatan tanpa pengaturan akses belum menutup celah."
+    },
+    "44": {
+      "aspek": "Anti Radikalisme: kabar yang mengadu suku diluruskan dengan fakta, lewat saluran resmi, sampai ke semua yang menerimanya.",
+      "penentu": "daftar penerima disusun dari pendataan RT tanpa membedakan suku maupun agama",
+      "arti": "Faktanya ada di tanganmu, dan kamu memegang dua saluran: untuk yang di depan dan yang di grup.",
+      "coret": {
+        "E": "uang pribadi, kabar keliru tetap beredar",
+        "D": "sibuk melacak pengirim, kericuhan di depan belum diredakan",
+        "B": "hanya ke kerumunan di depan, dan sekadar membantah isi pesan"
+      },
+      "sisa": {
+        "C": "kerumunan di depan tenang, warga di grup belum mendapat kabar benar",
+        "A": "pengeras suara dan akun resmi dipakai, semua mendengar fakta yang sama"
+      },
+      "tanda": "Kabar keliru beredar di dua tempat? Luruskan dengan fakta lewat semua saluran resmi yang kamu pegang, jangan hanya di depan mata."
+    },
+    "45": {
+      "aspek": "Profesionalisme: celah cara kerja ditutup, bukan mencari siapa yang salah.",
+      "penentu": "belum jelas siapa yang mencocokkan data dengan dokumen asli",
+      "arti": "Sumber kesalahannya tugas yang belum ada pemiliknya, dan kamu koordinatornya.",
+      "coret": {
+        "B": "didiamkan, celahnya tetap terbuka",
+        "C": "semua diambil alih sendiri, kedua rekan tersingkir",
+        "A": "dua orang yang bertengkar disuruh sepakat sendiri"
+      },
+      "sisa": {
+        "E": "memeriksa surat lain, tapi menyalahkan pengetik sebelum celahnya jelas",
+        "D": "petugas pencocok ditetapkan bersama, sebelum surat dicetak"
+      },
+      "tanda": "Kesalahan terjadi karena tugas belum jelas pemiliknya? Tetapkan pemilik tugasnya bersama tim, jangan menunjuk siapa yang salah."
+    }
+  }
+}

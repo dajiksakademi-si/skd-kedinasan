@@ -1,0 +1,1243 @@
+{
+  "meta": {
+    "judul": "TWK D'AJIKS v1.6 — Paket 3 (TO)",
+    "sumber": "tmp/v15/paket_twk_3.json (soal tetap; perbaikan dari tmp/v16/perbaikan_tetap.json) + tmp/v16/baru_p3.json",
+    "jumlah_soal": 30,
+    "tanggal": "2026-10-29",
+    "status": "DISETUJUI Gusti 2026-10-29 (draf sebelum uji peserta)"
+  },
+  "soal": [
+    {
+      "id": "DAJ-TWK-014",
+      "sumber": "MR BADRUN TWK ENGINE v1.5 (revisi 2026-10-25 dari v1.3)",
+      "no_urut_sumber": 14,
+      "no_urut_gabungan": 14,
+      "tema": "Pancasila & ideologi",
+      "subtema": "Indikator keadilan sosial dalam program daerah",
+      "tipe_kode": "E7",
+      "tipe_nama": "Pilih yang Cocok dari Daftar",
+      "kategori_jawaban": "WUJUD",
+      "level_kognitif": "C4",
+      "konstruk_dua_kutub": "perluasan kesempatan hidup layak ↔ keberlanjutan kemajuan ekonomi",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "PERBPIP4_2022",
+          "rujukan": "Lampiran, indikator Sila V angka 3 dan angka 5"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Bappeda sebuah kabupaten menyusun program prioritas dengan lima sasaran: (1) pendidikan, (2) kesehatan, (3) kesempatan usaha, (4) perlindungan lingkungan, dan (5) publikasi capaian. Dokumen perencanaan meminta program memperluas kesempatan hidup layak warga dan menjaga kemajuan ekonomi tetap berkelanjutan. Kombinasi sasaran yang paling tepat memenuhi kedua ketentuan itu berdasarkan indikator sila kelima adalah...",
+      "opsi": {
+        "A": "Sasaran ketiga dan keempat, karena keduanya memadukan peluang usaha dengan kelestarian alam.",
+        "B": "Sasaran pertama dan kedua, karena keduanya memenuhi layanan dasar keluarga yang membutuhkan.",
+        "C": "Sasaran kedua dan kelima, karena keduanya menaikkan kepercayaan warga pada capaian program.",
+        "D": "Sasaran keempat dan kelima, karena keduanya menjaga lingkungan dan melaporkannya secara terbuka.",
+        "E": "Sasaran pertama dan ketiga, karena keduanya memperluas kesempatan hidup layak bagi warga."
+      },
+      "kunci": "A",
+      "pembahasan": "Yang ditanya: kombinasi sasaran yang memenuhi dua ketentuan sekaligus, dengan ukuran indikator sila kelima. Ketentuannya: kesempatan hidup layak diperluas, dan kemajuan ekonomi tetap berkelanjutan.\nCara cepat: beri label tiap sasaran. Sasaran 1, 2, 3 di sisi kesempatan hidup layak; sasaran 4 di sisi keberlanjutan; sasaran 5 hanya pelaporan. Pasangan yang benar wajib memuat sasaran 4 dan satu sasaran yang menyangkut kemajuan ekonomi.\nKenapa opsi lain gugur: B pendidikan dan kesehatan sama-sama di sisi pertama. C kepercayaan warga adalah efek publikasi, bukan isi ketentuan. D lingkungan benar, tetapi pasangannya hanya pelaporan, jadi sisi kesempatan kosong. E paling menggoda karena cuma menyalin frasa dari soal “kesempatan hidup layak”, padahal keduanya di sisi yang sama.\nKunci: A, karena kesempatan usaha menjawab sisi ekonomi dan hidup layak, sedangkan perlindungan lingkungan membuat kemajuan itu berkelanjutan.\nAnalogi: petani yang ingin panen besar tahun ini tetapi tetap menjaga kesuburan tanah untuk musim berikutnya.\nJebakan: E cuma menyalin kalimat dari soal hampir utuh. Kalimat yang mirip soal justru sering hanya menutup satu sisi.",
+      "analisis_opsi": {
+        "A": "KUNCI — Kesempatan usaha menjawab sisi hidup layak, perlindungan lingkungan menjawab sisi berkelanjutan.",
+        "B": "[D2] Pendidikan dan kesehatan sama-sama di sisi hidup layak; keberlanjutan kosong.",
+        "C": "[D3] Kepercayaan warga adalah efek publikasi, bukan isi kedua ketentuan.",
+        "D": "[D2+D6] Lingkungan menjawab keberlanjutan, publikasi hanya pelaporan; kesempatan hidup layak kosong.",
+        "E": "[D5+D2] Mengulang frasa stem; kedua sasaran di sisi kesempatan, keberlanjutan kosong."
+      },
+      "bentuk_tegangan": "T3"
+    },
+    {
+      "id": "DAJ-TWK-017",
+      "sumber": "MR BADRUN TWK ENGINE v1.6 (perbaikan soal tetap TO 2026-10-29)",
+      "no_urut_sumber": 17,
+      "no_urut_gabungan": 17,
+      "tema": "Pancasila & ideologi",
+      "subtema": "Wujud gotong royong dalam kerja dan tanggung jawab lanjutan",
+      "tipe_kode": "E1",
+      "tipe_nama": "Cari Akarnya, Bukan Buahnya",
+      "kategori_jawaban": "WUJUD",
+      "level_kognitif": "C3",
+      "konstruk_dua_kutub": "kerja bersama menyelesaikan renovasi ↔ tanggung jawab bersama merawat hasilnya",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "PERBPIP2_2022",
+          "rujukan": "Lampiran Bab VI tentang asas gotong royong sebagai kerja dan penanggungan akibat secara bersama"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Ketua RT mengajak warga merenovasi pos ronda yang rusak menjelang musim hujan. Sebagian warga ingin kerja bakti cukup sehari agar cepat selesai, sementara warga lain mengingatkan bahwa pos lama rusak karena tidak ada yang merawatnya setelah dibangun. Wujud gotong royong yang paling tepat menurut asas kerja dan tanggung jawab bersama adalah...",
+      "opsi": {
+        "A": "Mengumpulkan warga pada akhir pekan untuk merenovasi pos ronda dalam sehari.",
+        "B": "Menjadwalkan giliran perawatan pos ronda setelah renovasinya rampung.",
+        "C": "Merasakan kedekatan antarwarga setelah renovasi pos ronda selesai dikerjakan.",
+        "D": "Menyumbangkan dana material untuk mendukung renovasi pos ronda RT.",
+        "E": "Mengadakan syukuran kecil begitu renovasi pos ronda dinyatakan selesai."
+      },
+      "kunci": "B",
+      "pembahasan": "Yang ditanya: wujud gotong royong dengan ukuran asas kerja dan tanggung jawab bersama. Dua kelompok warga sama-sama benar: satu ingin kerja cepat, satu mengingatkan bahwa perawatan sesudahnya juga tanggung jawab bersama.\nCara cepat: asas gotong royong punya dua sisi, yaitu bekerja bersama dan menanggung hasilnya bersama. Cari opsi yang tidak berhenti saat pekerjaan selesai.\nKenapa opsi lain gugur: A memakai tuntutan pihak pertama dan berhenti “dalam sehari”, jadi perawatan tidak tercakup. C rasa akrab adalah efek, bukan tindakan menanggung hasil. D sumbangan dana itu dukungan, bukan kerja dan tanggung jawab bersama. E syukuran hanya seremoni.\nKunci: B, karena renovasi dikerjakan bersama dan perawatannya dibagi bergiliran sesudahnya.\nAnalogi: piket kelas tidak selesai saat kelas dicat bersama; besok-besok tetap ada jadwal menyapu supaya kelas tidak kotor lagi.\nJebakan: A paling cepat dipilih karena terlihat paling “gotong royong”. Soal sudah memberi petunjuk: pos lama rusak karena tidak dirawat.",
+      "analisis_opsi": {
+        "A": "[D5+D2] Memakai tuntutan pihak pertama; “dalam sehari” eksplisit berhenti pada pengerjaan.",
+        "B": "KUNCI — Renovasi dikerjakan bersama, lalu perawatan ditanggung bergiliran.",
+        "C": "[D3] Kedekatan warga adalah efek sosial, bukan tanggung jawab atas hasil kerja.",
+        "D": "[D4] Donasi material adalah bentuk dukungan lain, bukan kerja dan tanggungan bersama.",
+        "E": "[D6] Syukuran adalah seremoni sesudah pekerjaan."
+      },
+      "bentuk_tegangan": "T2",
+      "perbaikan": "Kunci dipendekkan (terpanjang +3 → tidak lagi terpanjang).",
+      "paket": 3,
+      "status_perbaikan": "draf, menunggu persetujuan Gusti"
+    },
+    {
+      "id": "DAJ-TWK-029",
+      "sumber": "MR BADRUN TWK ENGINE v1.6 (perbaikan soal tetap TO 2026-10-29)",
+      "no_urut_sumber": 29,
+      "no_urut_gabungan": 29,
+      "tema": "Pancasila & ideologi",
+      "subtema": "Legitimasi aturan yang tertib dan berkeadilan",
+      "tipe_kode": "E1",
+      "tipe_nama": "Cari Akarnya, Bukan Buahnya",
+      "kategori_jawaban": "ALASAN",
+      "level_kognitif": "C4",
+      "konstruk_dua_kutub": "keabsahan prosedur pembentukan aturan ↔ keadilan akibat aturan bagi warga",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "UUD1945",
+          "rujukan": "Pembukaan UUD 1945 alinea keempat mengenai kemanusiaan yang adil dan beradab serta keadilan sosial."
+        },
+        {
+          "kode": "PERBPIP2_2022",
+          "rujukan": "Materi dasar Pembinaan Ideologi Pancasila mengenai aktualisasi nilai Pancasila."
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Peraturan layanan kartu identitas di sebuah kota disusun melalui prosedur resmi dan sudah diundangkan. Peraturan itu mewajibkan pemohon datang sendiri ke loket di lantai tiga gedung yang tidak memiliki lift, sehingga warga pengguna kursi roda tidak dapat mengurus kartunya. Berdasarkan sila kedua dan kelima, peninjauan ulang peraturan itu penting dilakukan karena...",
+      "opsi": {
+        "A": "Prosedur resmi membuat lembaga mudah mempertanggungjawabkan aturan kepada publik.",
+        "B": "Masukan penyandang disabilitas perlu dihimpun sebelum aturan baru disusun kembali.",
+        "C": "Warga akan lebih percaya kepada lembaga bila keluhannya ditanggapi cepat.",
+        "D": "Cara membuat yang sah belum cukup bila hasilnya menutup akses sebagian penduduk.",
+        "E": "Aturan yang sah dan tertulis jelas memberi kepastian bagi petugas dan warga."
+      },
+      "kunci": "D",
+      "pembahasan": "Yang ditanya: alasan peraturan layanan kartu identitas perlu ditinjau ulang, dengan ukuran sila kedua dan kelima. Soal memberi dua fakta. Pertama, peraturan disusun lewat prosedur resmi dan sudah diundangkan. Kedua, pemohon wajib datang sendiri ke lantai tiga tanpa lift, sehingga warga pengguna kursi roda tidak dapat mengurus kartunya.\nCara cepat: soal minta alasan, bukan langkah. Alasan yang tepat menjelaskan kenapa aturan yang prosedurnya sudah benar tetap perlu diubah.\nKenapa pilihan lain gugur: A menjelaskan manfaat prosedur resmi; cuma mengulang kata di soal dan malah membela aturan lama. B menghimpun masukan penyandang disabilitas adalah langkah perbaikan; jawabannya bukan yang diminta. C kepercayaan warga itu akibatnya, bukan intinya. E menyebut dua hal, sah dan tertulis jelas, tetapi keduanya sisi cara membuat aturan; nasib warga kursi roda tidak disentuh, jadi cuma menjawab separuh.\nKunci: D, karena cara membuat yang sah belum cukup ketika hasilnya menutup akses sebagian penduduk; sila kedua dan kelima menuntut perlakuan adil bagi setiap orang.\nAnalogi: lomba lari yang aturannya disahkan panitia lewat rapat resmi, tetapi lintasannya bertangga sehingga peserta kursi roda tidak bisa ikut. Rapatnya sah, lombanya tetap tidak adil.\nJebakan: E tampak lengkap karena memuat dua hal. Periksa isinya: dua-duanya soal cara membuat aturan, tidak ada yang soal akibatnya.",
+      "analisis_opsi": {
+        "A": "[D5+D6] Mengulang “prosedur resmi”; hanya menjelaskan manfaat prosedur, bukan alasan meninjau ulang.",
+        "B": "[D1] Menghimpun masukan adalah langkah perbaikan, bukan alasan kenapa perbaikan perlu.",
+        "C": "[D3] Kepercayaan warga adalah efek, bukan dasar normatif peninjauan.",
+        "D": "KUNCI — Prosedur sudah sah (fakta 1), tetapi hasilnya menutup akses warga kursi roda (fakta 2); keduanya dijawab.",
+        "E": "[D2] Tampak dua komponen, tetapi “sah” dan “tertulis jelas” sama-sama sisi prosedur; keadilan akibat kosong."
+      },
+      "bentuk_tegangan": "T6",
+      "penentu": "sehingga warga pengguna kursi roda tidak dapat mengurus kartunya",
+      "perbaikan": "Kalimat normatif \"tidak hanya sah prosedurnya, tetapi juga adil akibatnya\" dihapus; diganti dua fakta kasus (prosedur resmi + lantai tiga tanpa lift); kunci tidak lagi parafrase kalimat soal.",
+      "paket": 3,
+      "status_perbaikan": "draf, menunggu persetujuan Gusti"
+    },
+    {
+      "id": "DAJ-TWK-024",
+      "sumber": "MR BADRUN TWK ENGINE v1.5 (revisi 2026-10-25 dari v1.3)",
+      "no_urut_sumber": 24,
+      "no_urut_gabungan": 24,
+      "tema": "Pancasila & ideologi",
+      "subtema": "Indikator Persatuan Indonesia dalam kegiatan pemuda",
+      "tipe_kode": "E7",
+      "tipe_nama": "Pilih yang Cocok dari Daftar",
+      "kategori_jawaban": "WUJUD",
+      "level_kognitif": "C4",
+      "konstruk_dua_kutub": "kebanggaan pada budaya daerah ↔ kepentingan bangsa di atas golongan",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "PERBPIP4_2022",
+          "rujukan": "Lampiran, indikator Sila III angka 3 sampai 5"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Panitia peringatan Sumpah Pemuda tingkat kabupaten harus memilih dua dari lima kegiatan: (1) dokumentasi seni daerah, (2) pertukaran budaya antarsekolah, (3) aksi bantuan bencana lintas organisasi, (4) promosi organisasi masing-masing, dan (5) pemetaan kebutuhan pemuda nasional. Panduan kegiatan meminta pilihan yang menumbuhkan kebanggaan pada budaya daerah dan mendahulukan kepentingan bangsa di atas golongan. Pasangan kegiatan yang paling tepat memenuhi panduan itu berdasarkan indikator sila ketiga adalah...",
+      "opsi": {
+        "A": "Kegiatan pertama dan keempat, karena keduanya memperkuat identitas kelompok asal secara mendalam.",
+        "B": "Kegiatan ketiga dan kelima, karena keduanya mengutamakan pelayanan kebutuhan nasional secara langsung.",
+        "C": "Kegiatan kedua dan ketiga, karena keduanya merawat keberagaman melalui kerja kebangsaan.",
+        "D": "Kegiatan pertama dan kedua, karena keduanya memperluas apresiasi budaya daerah antarpeserta.",
+        "E": "Kegiatan keempat dan kelima, karena keduanya menghubungkan kelompok dengan agenda nasional bersama."
+      },
+      "kunci": "C",
+      "pembahasan": "Yang ditanya: pasangan kegiatan yang memenuhi dua isi panduan, dengan ukuran indikator sila ketiga: bangga pada budaya daerah, dan mendahulukan kepentingan bangsa di atas golongan.\nCara cepat: beri label. Kegiatan 1 dan 2 di sisi budaya, kegiatan 3 dan 5 di sisi kepentingan bangsa, kegiatan 4 justru kepentingan golongan. Pasangan yang benar mengambil satu dari tiap sisi dan tidak memuat kegiatan 4.\nKenapa opsi lain gugur: A dua-duanya identitas kelompok, dan kegiatan 4 kepentingan golongan. B dua-duanya di sisi nasional, budaya daerah kosong. D cuma menyalin kata dari soal “budaya daerah”, tetapi dua-duanya di sisi budaya. E kegiatan 4 adalah promosi golongan, jadi gabungannya dengan agenda nasional semu.\nKunci: C, karena pertukaran budaya merawat keragaman dan aksi bantuan bencana lintas organisasi mendahulukan kepentingan bersama.\nAnalogi: tim sepak bola daerah boleh bangga dengan seragamnya, tetapi saat bencana mereka turun bersama tim lain membantu korban.\nJebakan: E memakai kata “agenda nasional” yang terdengar benar. Cek kegiatan 4: itu kepentingan golongan, jadi pasangan itu gugur.",
+      "analisis_opsi": {
+        "A": "[D2] Kedua kegiatan dibatasi pada identitas kelompok asal.",
+        "B": "[D2] Pelayanan nasional ada, ekspresi budaya daerah tidak ada.",
+        "C": "KUNCI — Pertukaran budaya merawat keragaman, bantuan bencana lintas organisasi mendahulukan kepentingan bersama.",
+        "D": "[D5+D2] Mengulang “budaya daerah”; hanya apresiasi budaya, kepentingan bangsa tidak tersentuh.",
+        "E": "[D4] Promosi organisasi sendiri adalah kepentingan golongan; gabungannya dengan agenda nasional semu."
+      },
+      "bentuk_tegangan": "T3"
+    },
+    {
+      "id": "DAJ-TWK-136",
+      "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+      "no_urut_sumber": 136,
+      "no_urut_gabungan": 136,
+      "tema": "Pancasila & ideologi",
+      "subtema": "Sila pertama: membantu hari raya agama lain tanpa ikut beribadah",
+      "tipe_kode": "E2",
+      "tipe_nama": "Jangan Pilih yang Terlalu Ekstrem",
+      "kategori_jawaban": "WUJUD",
+      "level_kognitif": "C3",
+      "konstruk_dua_kutub": "kepedulian kepada tetangga beragama lain ↔ keyakinan sendiri yang tetap dijaga",
+      "bentuk_tegangan": "T2",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "UUD1945",
+          "rujukan": "Pasal 29 ayat (2): negara menjamin kemerdekaan tiap-tiap penduduk untuk memeluk agamanya dan beribadat menurut agamanya; Pembukaan alinea keempat, sila Ketuhanan Yang Maha Esa"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Panitia perayaan hari raya sebuah rumah ibadah meminta karang taruna kampung membantu kelancaran acara. Para pemuda yang menganut agama lain terbelah: sebagian ingin membantu, sebagian ragu karena tidak ingin ikut beribadah. Panitia hanya meminta bantuan mengatur parkir dan arus kendaraan di jalan kampung. Wujud sila pertama Pancasila yang paling tepat ditunjukkan karang taruna adalah...",
+      "opsi": {
+        "A": "Mengajak tokoh lintas agama berdialog tentang kerukunan sebelum perayaan dimulai.",
+        "B": "Menertibkan kedatangan para tamu, sementara peribadatan tetap menjadi urusan pemeluknya.",
+        "C": "Mengirim ucapan selamat hari raya kepada panitia melalui grup percakapan warga kampung.",
+        "D": "Meminta polisi sektor berjaga di sekitar rumah ibadah selama perayaan berlangsung.",
+        "E": "Membagi tugas: pemuda yang bersedia ikut membantu, sementara yang ragu tidak dilibatkan."
+      },
+      "kunci": "B",
+      "pembahasan": "Yang ditanya: wujud sila pertama yang paling tepat ditunjukkan karang taruna. Sebagian pemuda ingin membantu, sebagian ragu karena tidak ingin ikut beribadah. Kalimat penentunya: panitia hanya meminta bantuan mengatur parkir dan arus kendaraan di jalan kampung.\nCara cepat: Pasal 29 ayat (2) UUD 1945 menjamin setiap penduduk memeluk agamanya dan beribadat menurut agamanya. Membantu tetangga merayakan hari rayanya tidak berarti ikut beribadah. Cari pilihan yang memberi bantuan yang diminta sambil membiarkan ibadah tetap menjadi urusan pemeluknya.\nKenapa pilihan lain gugur: A mengajak tokoh lintas agama berdialog. Niatnya baik, tetapi panitia tidak meminta itu, dan bantuan parkir tetap tidak diberikan. Jawabannya bukan yang diminta. C mengirim ucapan selamat; hormatnya ada, tetapi permintaan bantuan tidak dijawab, jadi cuma menjawab separuh. D meminta polisi berjaga, padahal soal tidak menyebut ancaman apa pun. E membagi tugas dan tidak melibatkan pemuda yang ragu. Terlihat menghormati semua pihak, tetapi keraguan mereka lahir dari salah paham, karena tugasnya hanya urusan parkir.\nJawaban: B, karena pemuda membantu ketertiban kedatangan tamu, sedangkan peribadatan tetap urusan para pemeluknya.\nAnalogi: tetanggamu menggelar hajatan dan meminta tolong menjaga parkir. Kamu membantu di depan rumahnya tanpa harus ikut seluruh acara di dalam.\nJebakan: E paling menggoda karena tampak menghormati perasaan setiap pemuda. Baca lagi kata \"hanya\" di kalimat terakhir cerita: tidak ada yang diminta ikut beribadah.",
+      "analisis_opsi": {
+        "A": "[D9+D1] Dialog kerukunan baik, tetapi permintaan bantuan panitia tidak dijawab.",
+        "B": "KUNCI — Penentu: yang diminta hanya parkir dan arus kendaraan; bantuan diberikan, ibadah tetap urusan pemeluknya.",
+        "C": "[D2] Hormat secara lisan, permintaan bantuan tidak dijawab.",
+        "D": "[D9] Soal tidak menyebut ancaman keamanan.",
+        "E": "[D5+D2] Keseimbangan semu: mengulang \"membantu/ragu\"; pemuda yang ragu tetap salah paham padahal tugasnya bukan ibadah."
+      },
+      "penentu": "Panitia hanya meminta bantuan mengatur parkir dan arus kendaraan di jalan kampung"
+    },
+    {
+      "id": "DAJ-TWK-138",
+      "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+      "no_urut_sumber": 138,
+      "no_urut_gabungan": 138,
+      "tema": "Pancasila & ideologi",
+      "subtema": "Sila kedua: martabat korban kecelakaan di ruang digital",
+      "tipe_kode": "E2",
+      "tipe_nama": "Jangan Pilih yang Terlalu Ekstrem",
+      "kategori_jawaban": "SIKAP",
+      "level_kognitif": "C4",
+      "konstruk_dua_kutub": "keinginan agar keluarga cepat tahu ↔ martabat korban yang wajahnya terekam",
+      "bentuk_tegangan": "T6",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "UUD1945",
+          "rujukan": "Pembukaan alinea keempat, sila Kemanusiaan yang adil dan beradab"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Anda berada di lokasi ketika seorang pengendara sepeda motor terjatuh di jalan desa dan terluka; warga sudah menyelimutinya dan menelepon ambulans. Beberapa warga merekam korban dan ingin mengirim rekaman itu ke grup kampung agar keluarganya cepat tahu. Dalam rekaman itu wajah korban yang terluka terlihat jelas, sedangkan keluarganya belum dikabari. Sikap Anda yang paling mencerminkan sila kedua Pancasila adalah...",
+      "opsi": {
+        "A": "Mengirim rekaman dengan wajah korban disamarkan agar kabar kecelakaan cepat tersebar.",
+        "B": "Menemani korban dan menenangkannya sampai ambulans tiba di lokasi kejadian.",
+        "C": "Mencatat nama warga yang merekam untuk dilaporkan kepada polisi sesudah kejadian.",
+        "D": "Menertibkan kendaraan di sekitar lokasi dan memberi jalan untuk ambulans yang datang.",
+        "E": "Mencegah gambar itu beredar dan membantu perangkat desa menghubungi kerabatnya."
+      },
+      "kunci": "E",
+      "pembahasan": "Yang ditanya: sikap yang paling sesuai dengan sila kedua, kemanusiaan yang adil dan beradab. Korban sudah diselimuti dan ambulans sudah dipanggil. Yang belum beres ada dua: rekaman yang memperlihatkan wajah korban terluka hendak dikirim ke grup, dan keluarganya belum dikabari.\nCara cepat: sikap beradab menjaga martabat orang yang sedang tidak berdaya. Cari pilihan yang menjawab kedua masalah yang tersisa, bukan yang sudah ditangani warga lain.\nKenapa pilihan lain gugur: A mengirim rekaman dengan wajah disamarkan. Kelihatannya jalan tengah, tetapi gambar korban yang terluka tetap tersebar dan keluarga belum tentu tahu. B menemani dan menenangkan korban. Itu baik, tetapi korban sudah diurus dan ambulans sudah dipanggil, sedangkan rekaman dan keluarga tidak tersentuh, jadi cuma menjawab separuh. C mencatat nama perekam untuk dilaporkan, padahal rekaman belum dikirim; soal tidak menyebut ada pelanggaran. D menertibkan kendaraan dan memberi jalan untuk ambulans. Tindakannya berguna, tetapi tidak menyentuh kedua masalah di soal.\nJawaban: E, karena gambar korban dicegah beredar dan keluarganya dikabari lewat perangkat desa.\nAnalogi: kalau temanmu pingsan di upacara, kamu tidak memotret wajahnya untuk dikirim ke grup kelas. Kamu menjaga dia tidak jadi tontonan, lalu memberi tahu wali kelas agar orang tuanya dihubungi.\nJebakan: B terasa paling manusiawi. Baca lagi kalimat pertama: korban sudah diselimuti dan ambulans sudah dipanggil, jadi yang belum tertangani adalah rekaman dan keluarganya.",
+      "analisis_opsi": {
+        "A": "[D5+D2] Keseimbangan semu: wajah disamarkan, tetapi kondisi korban yang terluka tetap tersebar.",
+        "B": "[D2] Korban sudah diselimuti dan ambulans dipanggil; rekaman dan keluarga yang belum dikabari tidak tersentuh.",
+        "C": "[D9] Rekaman belum dikirim; soal tidak menyebut pelanggaran.",
+        "D": "[D1] Dua langkah lalu lintas; ambulans sudah dipanggil, kedua penentu tidak dijawab.",
+        "E": "KUNCI — Dua penentu: wajah korban terlihat (tidak disebar) dan keluarga belum dikabari (dihubungi lewat petugas)."
+      },
+      "penentu": "wajah korban yang terluka terlihat jelas"
+    },
+    {
+      "id": "DAJ-TWK-137",
+      "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+      "no_urut_sumber": 137,
+      "no_urut_gabungan": 137,
+      "tema": "Pancasila & ideologi",
+      "subtema": "Sila keempat: keputusan yang ditimbang ulang dengan temuan baru",
+      "tipe_kode": "E1",
+      "tipe_nama": "Cari Akarnya, Bukan Buahnya",
+      "kategori_jawaban": "WUJUD",
+      "level_kognitif": "C4",
+      "konstruk_dua_kutub": "pilihan terbanyak peserta rapat ↔ temuan mutu air yang menggugurkan pilihan itu",
+      "bentuk_tegangan": "T6",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "UUD1945",
+          "rujukan": "Pembukaan alinea keempat, sila Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Rapat warga sebuah desa memilih titik pengeboran sumur air bersih. Sebagian besar peserta memilih titik di dekat balai desa karena mudah dijangkau. Sepekan kemudian, hasil uji tim kabupaten menunjukkan air di titik dekat balai payau, sedangkan air di titik ujung dusun tawar. Tindakan pengurus desa yang paling mencerminkan sila keempat Pancasila adalah...",
+      "opsi": {
+        "A": "Melaksanakan hasil musyawarah karena pilihan sebagian besar peserta sudah ditetapkan.",
+        "B": "Menyerahkan penentuan titik pengeboran kepada kepala desa sebagai pemimpin rapat warga.",
+        "C": "Mencari tambahan dana agar kedua titik dapat dibor dalam waktu yang bersamaan.",
+        "D": "Membuka musyawarah lanjutan agar lokasi ditimbang ulang berdasarkan mutu airnya.",
+        "E": "Mengumumkan hasil uji di papan pengumuman desa agar diketahui oleh seluruh warga."
+      },
+      "kunci": "D",
+      "pembahasan": "Yang ditanya: tindakan pengurus desa yang paling sesuai dengan sila keempat, kerakyatan yang dipimpin oleh hikmat kebijaksanaan. Rapat sudah memilih titik dekat balai karena mudah dijangkau, lalu hasil uji menunjukkan air di titik itu payau, sedangkan di ujung dusun tawar.\nCara cepat: hikmat kebijaksanaan berarti keputusan bersama bersandar pada pertimbangan yang masuk akal, bukan hanya pada banyaknya suara. Fakta baru yang menggugurkan dasar pilihan perlu dibawa kembali ke forum yang sama.\nKenapa pilihan lain gugur: A tetap melaksanakan hasil musyawarah karena sudah ditetapkan. Kedengarannya taat, tetapi itu cuma formalitas, karena sumur air payau tidak memenuhi tujuan rapat. B menyerahkan pilihan kepada kepala desa. Keputusan satu orang bukan permusyawaratan; konsepnya mirip, tapi beda. C mencari dana agar dua titik dibor sekaligus, padahal soal tidak menyebut dana, dan titik dekat balai tetap payau. E mengumumkan hasil uji. Warga jadi tahu, tetapi keputusannya tidak ditinjau, jadi cuma menjawab separuh.\nJawaban: D, karena pilihan bersama ditimbang ulang lewat musyawarah dengan memakai fakta mutu air.\nAnalogi: kelas sudah sepakat piknik ke pantai, lalu ada kabar jalan ke sana ditutup. Kelas yang bijak berkumpul lagi untuk memilih ulang, bukan memaksakan berangkat.\nJebakan: A memakai kata \"musyawarah\" dan terdengar paling setia pada sila keempat. Ingat, musyawarah dipimpin oleh hikmat kebijaksanaan, bukan oleh hasil yang sudah tidak masuk akal.",
+      "analisis_opsi": {
+        "A": "[D5+D6] Mengulang kata soal; berhenti pada prosedur yang sudah lewat, temuan baru diabaikan.",
+        "B": "[D4] Keputusan oleh satu orang bukan permusyawaratan.",
+        "C": "[D9] Soal tidak menyebut dana; titik dekat balai tetap payau.",
+        "D": "KUNCI — Hikmat kebijaksanaan: pilihan bersama ditimbang ulang memakai fakta mutu air.",
+        "E": "[D2] Informasi sampai ke warga, tetapi keputusan tidak ditinjau."
+      },
+      "penentu": "air di titik dekat balai payau, sedangkan air di titik ujung dusun tawar"
+    },
+    {
+      "id": "DAJ-TWK-034",
+      "sumber": "MR BADRUN TWK ENGINE v1.6 (perbaikan soal tetap TO 2026-10-29)",
+      "no_urut_sumber": 34,
+      "no_urut_gabungan": 34,
+      "tema": "Nasionalisme & bela negara",
+      "subtema": "Kepemimpinan yang menumbuhkan kemandirian anggota",
+      "tipe_kode": "E3",
+      "tipe_nama": "Nilai Lama, Terapkan Sekarang",
+      "kategori_jawaban": "WUJUD",
+      "level_kognitif": "C3",
+      "konstruk_dua_kutub": "ruang mandiri bagi yang dibimbing ↔ dorongan pendamping saat dibutuhkan",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "KEMDIKBUD_SISTEM_AMONG",
+          "rujukan": "Sumber resmi Kemendikbud mengenai Sistem Among dan prinsip Tut Wuri Handayani."
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Ki Hadjar Dewantara merumuskan semboyan tut wuri handayani: pendidik berada di belakang untuk memberi dorongan ketika anak mulai berjalan sendiri. Kini seorang kakak pembina pramuka mendampingi regu yang baru pertama kali menyiapkan perkemahan. Tindakan pembina yang paling tepat menerapkan semboyan itu adalah...",
+      "opsi": {
+        "A": "Menjelaskan urutan kerja secara rinci sebelum regu mulai menyiapkan perkemahan.",
+        "B": "Mendorong regu dari belakang dengan memeriksa setiap langkah sebelum dijalankan.",
+        "C": "Menyerahkan persiapan kepada regu dan membantu ketika mereka menemui kebuntuan.",
+        "D": "Membiarkan regu bekerja sendiri tanpa memberi masukan sampai perkemahan selesai.",
+        "E": "Membagikan buku panduan berkemah dan menilai hasil kerja regu di akhir."
+      },
+      "kunci": "C",
+      "pembahasan": "Yang ditanya: tindakan yang menerapkan tut wuri handayani pada pembina pramuka. Sisi dulu: pendidik di belakang, memberi dorongan ketika anak mulai berjalan sendiri. Jadi ada dua unsur: anak diberi ruang mandiri, dan pendidik tetap hadir memberi dorongan.\nCara cepat: cari pembina yang menyerahkan pekerjaan ke regu, tetapi tidak menghilang.\nKenapa opsi lain gugur: A menjelaskan rinci di depan adalah semboyan lain, ing ngarsa sung tuladha. B paling menggoda karena memakai kata “mendorong” dan “dari belakang”, padahal memeriksa setiap langkah membuat regu tidak pernah mandiri. D “tanpa memberi masukan” berarti dorongannya hilang. E buku panduan dan nilai akhir itu prosedur; regu tidak didampingi saat bekerja.\nKunci: C, karena regu memegang tugasnya sendiri, dan pembina membantu tepat ketika regu menemui jalan buntu.\nAnalogi: orang tua yang mengajari anak naik sepeda. Tangannya tidak terus memegang setang, tetapi tetap berjalan di belakang dan menahan saat sepeda oleng.\nJebakan: B meminjam kata harfiah dari semboyan. “Di belakang” bukan soal posisi badan, tetapi soal membiarkan anak memimpin langkahnya.",
+      "analisis_opsi": {
+        "A": "[D4] Memberi contoh dan arahan di depan adalah ing ngarsa sung tuladha, bukan tut wuri handayani.",
+        "B": "[D5+D2] Mengulang “dorongan” dan “belakang”; memeriksa setiap langkah menghapus ruang mandiri.",
+        "C": "KUNCI — Regu diberi tanggung jawab penuh, pembina turun tangan saat regu buntu.",
+        "D": "[D2] Frasa “tanpa memberi masukan” menghapus sisi dorongan pendamping.",
+        "E": "[D6] Panduan dan penilaian akhir adalah prosedur, bukan dorongan saat regu bekerja."
+      },
+      "bentuk_tegangan": "T5",
+      "perbaikan": "Kunci dipendekkan (terpanjang +5 → tidak lagi terpanjang). Catatan: arti semboyan tertulis di soal, jadi kunci bertumpu pada teks soal, bukan fakta Sistem Among (L2 no. 15).",
+      "paket": 3,
+      "status_perbaikan": "draf, menunggu persetujuan Gusti"
+    },
+    {
+      "id": "DAJ-TWK-055",
+      "sumber": "MR BADRUN TWK ENGINE v1.6 (perbaikan soal tetap TO 2026-10-29)",
+      "no_urut_sumber": 55,
+      "no_urut_gabungan": 55,
+      "tema": "Nasionalisme & bela negara",
+      "subtema": "Simbol negara sebagai identitas dan perilaku",
+      "tipe_kode": "E1",
+      "tipe_nama": "Cari Akarnya, Bukan Buahnya",
+      "kategori_jawaban": "ALASAN",
+      "level_kognitif": "C3",
+      "konstruk_dua_kutub": "tata cara simbol negara yang sudah tertib ↔ persatuan dalam pergaulan sehari-hari",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "UU24_2009",
+          "rujukan": "Pasal 3: pengaturan bendera, bahasa, lambang negara, dan lagu kebangsaan bertujuan a. memperkuat persatuan dan kesatuan bangsa; b. menjaga kehormatan yang menunjukkan kedaulatan; c. menciptakan ketertiban, kepastian, dan standardisasi penggunaan"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Sebuah sekolah memasang bendera Merah Putih dan lambang Garuda Pancasila sesuai ketentuan UU Nomor 24 Tahun 2009. Saat upacara, siswa berbaris tertib, tetapi dalam pergaulan dan kerja kelompok mereka memisahkan diri menurut daerah asal. Menurut tujuan pengaturan simbol negara dalam undang-undang itu, penghayatan simbol negara di sekolah tersebut penting dilakukan karena...",
+      "opsi": {
+        "A": "Pemakaian simbol negara perlu tertib, berkepastian, dan seragam di lingkungan sekolah.",
+        "B": "Tanda kenegaraan itu diatur untuk memperkuat persatuan dan kesatuan bangsa.",
+        "C": "Simbol negara perlu dijaga kehormatannya karena menunjukkan kedaulatan bangsa.",
+        "D": "Penghormatan bendera menumbuhkan kebanggaan siswa dan suasana sekolah yang berwibawa.",
+        "E": "Upacara bendera rutin melatih kedisiplinan siswa dalam mengikuti aturan sekolah."
+      },
+      "kunci": "B",
+      "pembahasan": "Yang ditanya: alasan penghayatan simbol negara penting bagi sekolah ini, diukur dengan tujuan pengaturan simbol negara dalam UU 24/2009. Pasal 3 undang-undang itu menyebut tiga tujuan: memperkuat persatuan dan kesatuan bangsa; menjaga kehormatan yang menunjukkan kedaulatan; serta menciptakan ketertiban, kepastian, dan standardisasi penggunaan. Kalimat penentunya: dalam pergaulan dan kerja kelompok, siswa memisahkan diri menurut daerah asal.\nCara cepat: ketiga tujuan itu benar. Pilih tujuan yang menjawab masalah yang tertulis, bukan bagian yang sudah beres.\nKenapa pilihan lain gugur: A tujuan ketertiban dan keseragaman memang ada di Pasal 3, tetapi bendera sudah dipasang sesuai ketentuan dan upacara sudah tertib; A cuma mengulang kata di soal. C kehormatan dan kedaulatan juga tujuan resmi, tetapi masalah sekolah ini ada di hubungan antarsiswa; konsep mirip, tapi beda. D rasa bangga dan suasana berwibawa itu akibatnya, bukan intinya. E upacara rutin melatih disiplin aturan; cuma formalitas yang sudah berjalan dan tidak menyentuh pergaulan.\nKunci: B, karena siswa yang berkelompok menurut daerah adalah soal persatuan, dan tujuan pertama pengaturan simbol negara memang memperkuat persatuan dan kesatuan bangsa.\nAnalogi: seragam sekolah bukan hanya supaya barisan rapi. Seragam dibuat sama agar murid dari keluarga mana pun merasa satu sekolah.\nJebakan: A dekat dengan bunyi soal karena soal menyebut pemasangan yang sesuai ketentuan. Bagian yang sudah beres tidak perlu dijadikan alasan.",
+      "analisis_opsi": {
+        "A": "[D5+D2] Tujuan Ps 3 huruf c (ketertiban, kepastian, standardisasi); pemasangan dan upacara sudah tertib.",
+        "B": "KUNCI — Ps 3 huruf a: memperkuat persatuan dan kesatuan bangsa; menjawab siswa yang memisahkan diri menurut daerah.",
+        "C": "[D4] Tujuan Ps 3 huruf b (kehormatan, kedaulatan) benar, tetapi masalah sekolah ini persatuan antarsiswa.",
+        "D": "[D3] Kebanggaan dan suasana berwibawa adalah efek penghormatan.",
+        "E": "[D6] Upacara rutin melatih disiplin aturan, belum menyentuh sikap antarsiswa."
+      },
+      "bentuk_tegangan": "T6",
+      "penentu": "dalam pergaulan dan kerja kelompok mereka memisahkan diri menurut daerah asal",
+      "perbaikan": "Kalimat normatif kepala sekolah dihapus; kunci dan dua pengecoh diambil dari tiga tujuan UU 24/2009 Ps 3, hanya huruf a yang cocok dengan fakta; kunci dipendekkan.",
+      "paket": 3,
+      "status_perbaikan": "draf, menunggu persetujuan Gusti"
+    },
+    {
+      "id": "DAJ-TWK-141",
+      "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+      "no_urut_sumber": 141,
+      "no_urut_gabungan": 141,
+      "tema": "Nasionalisme & bela negara",
+      "subtema": "Kebangsaan di atas ikatan sedaerah",
+      "tipe_kode": "E2",
+      "tipe_nama": "Jangan Pilih yang Terlalu Ekstrem",
+      "kategori_jawaban": "SIKAP",
+      "level_kognitif": "C4",
+      "konstruk_dua_kutub": "kepedulian kepada anggota sedaerah ↔ korban lain di lingkungan yang sama",
+      "bentuk_tegangan": "T6",
+      "jangkar_faktual": false,
+      "landasan": [
+        {
+          "kode": "UU24_2009",
+          "rujukan": "Penjelasan Pasal 2: asas kebhinnekatunggalikaan, kesatuan dalam keberagaman penduduk, suku, dan golongan"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Paguyuban perantau dari sebuah provinsi di kota besar biasa menolong anggotanya yang tertimpa musibah. Pekan ini banjir melanda RW tempat sebagian besar anggota paguyuban itu tinggal. Korban di RW itu juga warga dari daerah lain yang tidak memiliki paguyuban. Sikap pengurus paguyuban yang paling mencerminkan semangat kebangsaan adalah...",
+      "opsi": {
+        "A": "Mendahulukan anggota paguyuban, lalu membantu warga lain bila bantuan masih tersisa.",
+        "B": "Membantu anggota yang terdampak, sementara warga lain diarahkan ke posko kelurahan.",
+        "C": "Membuka posko bersama pengurus RW bagi para penyintas di permukiman itu.",
+        "D": "Mengajak warga dari daerah lain membentuk paguyuban sendiri untuk saling menolong.",
+        "E": "Membagikan paket untuk seluruh warga RW dengan nama paguyuban di setiap paket."
+      },
+      "kunci": "C",
+      "pembahasan": "Yang ditanya: sikap pengurus paguyuban yang paling mencerminkan semangat kebangsaan. Paguyuban itu biasa menolong anggota sedaerah, tetapi korban banjir di RW mereka juga warga dari daerah lain yang tidak punya paguyuban.\nCara cepat: semangat kebangsaan menempatkan sesama warga Indonesia di atas ikatan daerah. Di lingkungan yang sama, korban dibantu karena ia korban, bukan karena asalnya.\nKenapa pilihan lain gugur: A mendahulukan anggota dan memberi warga lain sisa bantuan, jadi cuma menjawab separuh. B tampak adil karena menyebut dua pihak, tetapi korban tanpa paguyuban justru dilempar ke posko kelurahan. D menyuruh warga lain membentuk paguyuban sendiri; mereka tetap dibiarkan menolong diri, dan kata-katanya cuma mengulang soal. E membagi bantuan ke seluruh warga, tetapi setiap paket diberi nama paguyuban. Bantuannya dipakai untuk menonjolkan kelompok, jadi itu demi diri sendiri.\nJawaban: C, karena posko dibuka bersama pengurus RW untuk semua penyintas di permukiman itu, tanpa memilah asal daerah.\nAnalogi: saat listrik satu gang padam, warga yang punya genset tidak hanya menyalakan lampu untuk saudara sekampungnya, tetapi untuk seluruh gang.\nJebakan: E terlihat paling dermawan karena semua warga dapat paket. Perhatikan tujuan di ujung kalimatnya: nama kelompok yang ditonjolkan.",
+      "analisis_opsi": {
+        "A": "[D2] Anggota sedaerah tetap didahulukan; korban lain hanya mendapat sisa.",
+        "B": "[D2] Keseimbangan semu: dua pihak disebut, tetapi korban tanpa paguyuban dilempar ke pihak lain.",
+        "C": "KUNCI — Penentu: korban lain tidak punya paguyuban; posko melayani setiap penyintas tanpa melihat asal daerah.",
+        "D": "[D5+D2] Mengulang kata soal; korban dibiarkan menolong diri lewat kelompoknya sendiri.",
+        "E": "[D10] Keseimbangan semu: semua dibantu, tetapi bantuan dipakai menonjolkan nama kelompok."
+      },
+      "penentu": "Korban di RW itu juga warga dari daerah lain yang tidak memiliki paguyuban"
+    },
+    {
+      "id": "DAJ-TWK-140",
+      "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+      "no_urut_sumber": 140,
+      "no_urut_gabungan": 140,
+      "tema": "Nasionalisme & bela negara",
+      "subtema": "Bahasa negara: nama permukiman milik badan hukum Indonesia",
+      "tipe_kode": "E1",
+      "tipe_nama": "Cari Akarnya, Bukan Buahnya",
+      "kategori_jawaban": "ALASAN",
+      "level_kognitif": "C5",
+      "konstruk_dua_kutub": "nama asing yang terkesan modern ↔ kewajiban bahasa Indonesia pada nama permukiman",
+      "bentuk_tegangan": "T3",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "UU24_2009",
+          "rujukan": "Pasal 36 ayat (3) dan (4); Pasal 33 ayat (1), Pasal 37 ayat (1), Pasal 38 ayat (1) sebagai pembanding"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Sebuah perusahaan pengembang milik badan hukum Indonesia menamai kompleks permukiman barunya dengan nama berbahasa Inggris agar terkesan modern. Pemerintah kota meminta nama itu diganti. Nama tersebut tidak berkaitan dengan sejarah, budaya, adat istiadat, atau keagamaan setempat. Permintaan pemerintah kota itu paling tepat didasarkan pada ketentuan bahwa...",
+      "opsi": {
+        "A": "Bahasa Indonesia wajib dipakai pada rambu umum, penunjuk jalan, dan fasilitas umum.",
+        "B": "Informasi tentang produk barang atau jasa yang beredar wajib memakai bahasa Indonesia.",
+        "C": "Nama yang terkesan modern membantu perusahaan pengembang menarik minat calon pembeli.",
+        "D": "Penamaan kawasan hunian milik usaha dalam negeri wajib memakai bahasa Indonesia.",
+        "E": "Bahasa Indonesia wajib dipakai dalam komunikasi resmi di lingkungan kerja swasta."
+      },
+      "kunci": "D",
+      "pembahasan": "Yang ditanya: ketentuan yang paling tepat menjadi dasar permintaan pemerintah kota agar nama kompleks permukiman itu diganti. Kalimat penentunya: nama itu tidak berkaitan dengan sejarah, budaya, adat istiadat, atau keagamaan setempat.\nCara cepat: UU 24/2009 Pasal 36 ayat (3) mewajibkan bahasa Indonesia untuk nama bangunan, jalan, apartemen atau permukiman, perkantoran, dan kompleks perdagangan yang dimiliki warga negara Indonesia atau badan hukum Indonesia. Ayat (4) memberi kelonggaran hanya bila nama itu punya nilai sejarah, budaya, adat istiadat, atau keagamaan. Soal sudah menutup kelonggaran itu.\nKenapa pilihan lain gugur: A memang bunyi Pasal 38, tetapi pasal itu mengatur rambu, penunjuk jalan, dan fasilitas umum, bukan nama permukiman. Konsepnya mirip, tapi beda. B berasal dari Pasal 37 tentang informasi produk barang atau jasa; yang dipersoalkan di sini nama kompleks, bukan brosur atau label. C cuma mengulang kata di soal, \"terkesan modern\", dan isinya justru alasan pengembang, bukan dasar permintaan pemerintah kota. E berasal dari Pasal 33 tentang komunikasi resmi di lingkungan kerja, yang tidak ada hubungannya dengan penamaan.\nJawaban: D, karena nama kawasan hunian milik usaha dalam negeri wajib berbahasa Indonesia, dan kelonggarannya tidak berlaku di kasus ini.\nAnalogi: sekolah mewajibkan seragam, kecuali pada hari pentas budaya. Kalau hari itu bukan hari pentas, alasan memakai baju bebas tidak bisa dipakai.\nJebakan: A, B, dan E sama-sama berbunyi \"bahasa Indonesia wajib\". Semuanya benar sebagai pasal. Tanyakan: pasal mana yang mengatur nama?",
+      "analisis_opsi": {
+        "A": "[D4] Ps 38(1): rambu dan fasilitas umum, bukan nama permukiman.",
+        "B": "[D4] Ps 37(1): informasi produk, bukan nama kompleks.",
+        "C": "[D5+D1] Mengulang \"terkesan modern\"; alasan pengembang, bukan dasar permintaan.",
+        "D": "KUNCI — Ps 36(3): nama permukiman milik badan hukum Indonesia wajib berbahasa Indonesia; pengecualian Ps 36(4) ditiadakan soal.",
+        "E": "[D4] Ps 33(1): komunikasi resmi di lingkungan kerja, bukan penamaan."
+      },
+      "penentu": "Nama tersebut tidak berkaitan dengan sejarah, budaya, adat istiadat, atau keagamaan setempat"
+    },
+    {
+      "id": "DAJ-TWK-139",
+      "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+      "no_urut_sumber": 139,
+      "no_urut_gabungan": 139,
+      "tema": "Nasionalisme & bela negara",
+      "subtema": "Tujuan negara: ikut melaksanakan ketertiban dunia",
+      "tipe_kode": "E1",
+      "tipe_nama": "Cari Akarnya, Bukan Buahnya",
+      "kategori_jawaban": "ALASAN",
+      "level_kognitif": "C3",
+      "konstruk_dua_kutub": "tugas melindungi bangsa sendiri ↔ tugas ikut menjaga ketertiban di luar negeri",
+      "bentuk_tegangan": "T3",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "UUD1945",
+          "rujukan": "Pembukaan alinea pertama dan keempat: tujuan negara, termasuk ikut melaksanakan ketertiban dunia"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Seorang perwira TNI ditugaskan bersama pasukan PBB menjaga gencatan senjata di sebuah negara yang dilanda perang saudara. Keluarganya bertanya mengapa ia harus bertugas di negeri orang, padahal tidak ada ancaman terhadap wilayah Indonesia. Menurut Pembukaan UUD 1945, penugasan itu dapat dibenarkan karena...",
+      "opsi": {
+        "A": "Salah satu tujuan bernegara kita ialah ikut melaksanakan ketertiban dunia.",
+        "B": "Pemerintah wajib melindungi segenap bangsa Indonesia dan seluruh tumpah darah Indonesia.",
+        "C": "Penjajahan di atas dunia harus dihapuskan karena tidak sesuai dengan perikemanusiaan.",
+        "D": "Pemerintah dibentuk untuk memajukan kesejahteraan umum bagi rakyat Indonesia.",
+        "E": "Kemerdekaan dinyatakan agar rakyat Indonesia berkehidupan kebangsaan yang bebas."
+      },
+      "kunci": "A",
+      "pembahasan": "Yang ditanya: dasar dalam Pembukaan UUD 1945 yang membenarkan tugas perwira TNI menjaga gencatan senjata di negara lain. Kalimat penentunya: tidak ada ancaman terhadap wilayah Indonesia.\nCara cepat: alinea keempat Pembukaan menyebut tujuan negara: melindungi segenap bangsa dan seluruh tumpah darah Indonesia, memajukan kesejahteraan umum, mencerdaskan kehidupan bangsa, dan ikut melaksanakan ketertiban dunia. Cocokkan tugas di soal dengan satu tujuan.\nKenapa pilihan lain gugur: B memang tujuan negara, tetapi soal sudah menyebut tidak ada ancaman terhadap wilayah Indonesia, jadi tugas itu bukan untuk melindungi tanah air. Konsepnya mirip, tapi beda. C berasal dari alinea pertama tentang penghapusan penjajahan, padahal yang terjadi perang saudara, bukan penjajahan. D, memajukan kesejahteraan umum, tidak berkaitan dengan tugas di negeri orang. E berasal dari alinea ketiga, yaitu alasan bangsa ini menyatakan kemerdekaan, bukan tujuan tugas di luar negeri.\nJawaban: A, karena ikut melaksanakan ketertiban dunia adalah salah satu tujuan negara di alinea keempat.\nAnalogi: satpam kompleks yang ikut membantu menertibkan keributan di kompleks sebelah tidak sedang menjaga rumahnya sendiri, tetapi ikut menjaga ketertiban lingkungan yang lebih luas.\nJebakan: B paling menggoda karena tugas tentara biasanya dikaitkan dengan melindungi bangsa. Kalimat \"tidak ada ancaman terhadap wilayah Indonesia\" sengaja ditulis untuk menutup pilihan itu.",
+      "analisis_opsi": {
+        "A": "KUNCI — Pembukaan alinea keempat: ikut melaksanakan ketertiban dunia.",
+        "B": "[D5+D4] Mengulang \"Indonesia\"; penentu peniada: tidak ada ancaman terhadap wilayah Indonesia.",
+        "C": "[D4] Alinea pertama; perang saudara bukan penjajahan.",
+        "D": "[D4] Tujuan negara lain yang tidak berkaitan dengan tugas di luar negeri.",
+        "E": "[D4] Alinea ketiga: alasan menyatakan kemerdekaan, bukan tujuan tugas di luar negeri."
+      },
+      "penentu": "tidak ada ancaman terhadap wilayah Indonesia"
+    },
+    {
+      "id": "DAJ-TWK-045",
+      "sumber": "MR BADRUN TWK ENGINE v1.5 (revisi 2026-10-25 dari v1.3)",
+      "no_urut_sumber": 45,
+      "no_urut_gabungan": 45,
+      "tema": "Nasionalisme & bela negara",
+      "subtema": "Adaptasi pengetahuan luar bagi kebutuhan lokal",
+      "tipe_kode": "E2",
+      "tipe_nama": "Jangan Pilih yang Terlalu Ekstrem",
+      "kategori_jawaban": "WUJUD",
+      "level_kognitif": "C4",
+      "konstruk_dua_kutub": "keterbukaan pada pengetahuan luar ↔ kesesuaian dengan kebutuhan setempat",
+      "jangkar_faktual": false,
+      "landasan": [
+        {
+          "kode": "UUD1945",
+          "rujukan": "Pembukaan UUD 1945 alinea keempat mengenai pencerdasan kehidupan bangsa dan partisipasi dalam ketertiban dunia."
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Sekelompok mahasiswa mempelajari sistem bus listrik di luar negeri dan ingin mengusulkannya kepada pemerintah kotanya. Dosen pembimbing meminta usulan mengikuti model negara asal yang sudah terbukti berhasil, sementara dinas perhubungan meminta usulan menyesuaikan kondisi jalan dan pola perjalanan warga. Langkah menyusun usulan yang paling tepat mencerminkan sikap terbuka yang berpijak pada kepentingan nasional adalah...",
+      "opsi": {
+        "A": "Mengikuti model negara asal secara utuh karena keberhasilannya sudah terbukti.",
+        "B": "Menyusun rancangan lokal sendiri tanpa memakai pengalaman kota-kota di negara lain.",
+        "C": "Mengadaptasi prinsip teknologi asal melalui uji coba satu rute bersama pengguna lokal.",
+        "D": "Membandingkan standar beberapa negara untuk memilih bus listrik dengan performa paling tinggi.",
+        "E": "Menghimpun dukungan publik melalui media sosial sebelum usulan diajukan."
+      },
+      "kunci": "C",
+      "pembahasan": "Yang ditanya: langkah menyusun usulan yang mencerminkan sikap terbuka tetapi berpijak pada kepentingan nasional. Dua tuntutan sah: dosen ingin mengambil model yang sudah terbukti, dinas ingin usulan cocok dengan kondisi kota.\nCara cepat: terbuka berarti mau belajar dari luar; berpijak berarti menyaring dan menyesuaikan. Cari opsi yang mengambil ilmu dari luar lalu mengujinya di tempat sendiri.\nKenapa opsi lain gugur: A cuma menyalin frasa dari soal “model negara asal”, tetapi “secara utuh” berarti tidak ada penyesuaian. B menutup diri dari pengalaman luar. D paling menggoda karena terlihat ilmiah, tetapi bus berperforma tertinggi belum tentu cocok dengan jalan kota. E dukungan media sosial tidak mengubah isi usulan.\nKunci: C, karena prinsip teknologinya diambil, lalu diuji di satu rute bersama warga yang akan memakainya.\nAnalogi: resep masakan dari luar negeri. Tekniknya dipelajari, tetapi bumbunya disesuaikan dengan bahan yang ada di pasar dekat rumah.\nJebakan: D memakai kata yang terdengar canggih. Ukuran “terbaik” di atas kertas berbeda dengan “cocok” untuk kota sendiri.",
+      "analisis_opsi": {
+        "A": "[D5+D2] Mengulang “model negara asal” dan “terbukti”; kata “secara utuh” menutup penyesuaian.",
+        "B": "[D2] Frasa “tanpa memakai pengalaman” menutup sisi keterbukaan.",
+        "C": "KUNCI — Pengetahuan luar diambil prinsipnya, lalu diuji pada kondisi kota sendiri.",
+        "D": "[D4] Performa tertinggi adalah ukuran teknis, bukan kesesuaian dengan kebutuhan kota.",
+        "E": "[D6] Dukungan publik adalah citra usulan, bukan cara menyusun isinya."
+      },
+      "bentuk_tegangan": "T2"
+    },
+    {
+      "id": "DAJ-TWK-072",
+      "sumber": "MR BADRUN TWK ENGINE v1.5 (revisi 2026-10-25 dari v1.3)",
+      "no_urut_sumber": 72,
+      "no_urut_gabungan": 72,
+      "tema": "Integritas aparatur",
+      "subtema": "Kerahasiaan data kesehatan dalam penjelasan kerja",
+      "tipe_kode": "E4",
+      "tipe_nama": "Beda Tipis Antar-Nilai",
+      "kategori_jawaban": "DEFINISI",
+      "level_kognitif": "C5",
+      "konstruk_dua_kutub": "kebutuhan tim akan alasan keringanan ↔ kerahasiaan data kesehatan pegawai",
+      "jangkar_faktual": false,
+      "landasan": [
+        {
+          "kode": "UU20_2023_ASN",
+          "rujukan": "Undang-Undang Nomor 20 Tahun 2023 tentang Aparatur Sipil Negara, nilai dasar dan kode perilaku ASN"
+        },
+        {
+          "kode": "UU27_2022_PDP",
+          "rujukan": "Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi, data kesehatan sebagai Data Pribadi yang bersifat spesifik"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Seorang pegawai mendapat keringanan beban kerja selama menjalani pengobatan jangka panjang. Rekan satu tim meminta alasan keringanan itu dijelaskan agar pembagian tugas terasa adil, sementara pegawai tersebut meminta penyakitnya tidak diketahui orang lain. Prinsip yang paling tepat menjadi pegangan pengelola kepegawaian dalam menanggapi kedua permintaan itu adalah...",
+      "opsi": {
+        "A": "Transparansi, karena alasan keringanan dijelaskan kepada rekan agar pembagian tugas terasa adil.",
+        "B": "Akuntabilitas, karena keputusan keringanan dapat diperiksa pihak berwenang bila dipersoalkan.",
+        "C": "Kerahasiaan, karena penyakit dan keringanan pegawai itu tidak dibicarakan sama sekali di tim.",
+        "D": "Profesionalisme, karena beban kerja dibagi ulang sesuai kompetensi dan standar organisasi.",
+        "E": "Pelindungan data pribadi, karena tim cukup tahu dasar kedinasan tanpa rincian medis."
+      },
+      "kunci": "E",
+      "pembahasan": "Yang ditanya: prinsip yang menjadi pegangan pengelola kepegawaian. Rekan satu tim ingin tahu alasan keringanan beban kerja supaya pembagian tugas terasa adil. Pegawai yang sakit ingin penyakitnya tidak diketahui orang lain. Keduanya sah.\nCara cepat: data kesehatan termasuk data pribadi yang bersifat spesifik menurut UU Pelindungan Data Pribadi. Tim cukup tahu ada dasar kedinasan untuk keringanan itu; mereka tidak perlu tahu penyakitnya.\nKenapa opsi lain gugur: A mengulang “pembagian tugas terasa adil” dan hanya menjawab sisi tim. B akuntabilitas soal keputusan yang bisa diperiksa, bukan soal informasi apa yang boleh dibagi. C kerahasiaan yang membuat keringanan “tidak dibicarakan sama sekali” mengabaikan kebutuhan tim. D membagi ulang beban sesuai standar organisasi itu langkah prosedur, bukan jawaban atas dua permintaan.\nKunci: E, karena pelindungan data pribadi membatasi informasi pada yang perlu: tim tahu dasar kedinasannya, rincian medis tetap tertutup.\nAnalogi: kamu izin tidak ikut olahraga. Wali kelas cukup mengumumkan bahwa kamu punya surat dokter, tanpa membacakan isi surat dokternya.\nJebakan: C dan E sama-sama melindungi pegawai. C menutup terlalu rapat sampai tim tidak tahu apa-apa; E membuka secukupnya.",
+      "analisis_opsi": {
+        "A": "[D5+D2] Mengulang “pembagian tugas terasa adil”; hanya sisi permintaan tim.",
+        "B": "[D4] Akuntabilitas soal keputusan yang bisa diperiksa, bukan batas informasi yang dibagi.",
+        "C": "[D2] Frasa “tidak dibicarakan sama sekali” mengabaikan kebutuhan tim.",
+        "D": "[D6] Membagi ulang beban sesuai standar adalah prosedur, bukan jawaban atas dua permintaan.",
+        "E": "KUNCI — Data kesehatan dibatasi pada yang perlu: tim tahu dasar kedinasan, rincian medis tertutup."
+      },
+      "bentuk_tegangan": "T2"
+    },
+    {
+      "id": "DAJ-TWK-065",
+      "sumber": "MR BADRUN TWK ENGINE v1.5 (revisi 2026-10-25 dari v1.3)",
+      "no_urut_sumber": 65,
+      "no_urut_gabungan": 65,
+      "tema": "Integritas aparatur",
+      "subtema": "Hubungan konsultan terdahulu dalam panel seleksi",
+      "tipe_kode": "E5",
+      "tipe_nama": "Pilih yang Benar Walau Berisiko",
+      "kategori_jawaban": "SIKAP",
+      "level_kognitif": "C5",
+      "konstruk_dua_kutub": "jumlah penguji tetap lengkap ↔ konflik dinyatakan dan penanganannya diputus pejabat berwenang",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "PERMENPANRB17_2024",
+          "rujukan": "Peraturan Menteri PANRB Nomor 17 Tahun 2024 tentang Pengelolaan Konflik Kepentingan"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Anda anggota panel seleksi jabatan pimpinan tinggi dan dua tahun lalu pernah dibayar sebagai konsultan oleh salah satu peserta. Ketua panel meminta jumlah penguji tidak berkurang karena wawancara dimulai besok, sementara pedoman konflik kepentingan menuntut hubungan semacam itu dinyatakan dan penanganannya diputuskan pejabat yang berwenang. Sikap yang paling tepat Anda ambil adalah...",
+      "opsi": {
+        "A": "Mengundurkan diri dari panel tanpa menunggu penetapan pejabat agar keraguan tidak muncul.",
+        "B": "Menandatangani pakta integritas panel ulang sebelum sesi wawancara dimulai besok pagi.",
+        "C": "Menghindari komunikasi pribadi dan pertemuan dengan peserta itu hingga seleksi selesai.",
+        "D": "Menjaga jumlah penguji tetap lengkap dengan mencari penguji cadangan untuk ketua panel.",
+        "E": "Melaporkan riwayat konsultasi hari ini dan siap menguji kandidat lain sesuai penetapan."
+      },
+      "kunci": "E",
+      "pembahasan": "Yang ditanya: sikap anggota panel yang dulu dibayar sebagai konsultan oleh salah satu peserta. Ketua panel ingin jumlah penguji tetap lengkap karena wawancara mulai besok. Pedoman konflik kepentingan meminta hubungan itu dinyatakan, dan penanganannya diputuskan pejabat yang berwenang.\nCara cepat: dalam konflik kepentingan, tugasmu menyatakan; yang memutuskan bentuk penanganannya adalah pejabat berwenang. Sambil menunggu, kamu tetap siap bekerja untuk kandidat lain.\nKenapa opsi lain gugur: A mundur tanpa menunggu penetapan mengurangi penguji dan melangkahi pejabat yang berwenang memutus. B menandatangani ulang pakta integritas itu seremoni; hubungannya tetap tidak dinyatakan. C menghindari komunikasi dan pertemuan pribadi berbeda dengan mengelola konflik. D mengulang “jumlah penguji”, tetapi mencari penguji cadangan adalah urusan ketua atau panitia.\nKunci: E, karena melaporkan riwayat konsultasi hari ini memberi pejabat waktu memutuskan, dan kesiapan menguji kandidat lain menjaga panel tetap lengkap.\nAnalogi: juri lomba yang ternyata sepupu salah satu peserta memberi tahu panitia sebelum lomba. Panitia yang memutuskan juri itu menilai siapa, bukan juri itu sendiri yang pulang.\nJebakan: A tampak paling berintegritas. Menyelesaikan konflik sendiri tanpa menunggu penetapan justru mengambil keputusan yang menurut pedoman bukan milikmu.",
+      "analisis_opsi": {
+        "A": "[D2] Mundur sendiri mengurangi penguji dan melangkahi pejabat yang berwenang memutus.",
+        "B": "[D6] Pakta integritas ulang hanya seremoni; hubungannya tetap tidak dinyatakan.",
+        "C": "[D4] Menghindari kontak berbeda dari mengelola konflik kepentingan.",
+        "D": "[D5+D7] Mengulang “jumlah penguji”; mencari penguji cadangan urusan ketua atau panitia.",
+        "E": "KUNCI — Laporan hari ini memberi pejabat waktu memutus; kesiapan menguji kandidat lain menjaga panel lengkap."
+      },
+      "bentuk_tegangan": "T4"
+    },
+    {
+      "id": "DAJ-TWK-067",
+      "sumber": "MR BADRUN TWK ENGINE v1.6 (perbaikan soal tetap TO 2026-10-29)",
+      "no_urut_sumber": 67,
+      "no_urut_gabungan": 67,
+      "tema": "Integritas aparatur",
+      "subtema": "Wujud konsistensi komitmen ketika pengawasan berkurang",
+      "tipe_kode": "E1",
+      "tipe_nama": "Cari Akarnya, Bukan Buahnya",
+      "kategori_jawaban": "WUJUD",
+      "level_kognitif": "C3",
+      "konstruk_dua_kutub": "tugas mendesak dari pejabat pengganti ↔ komitmen tertulis menuntaskan aduan",
+      "jangkar_faktual": false,
+      "landasan": [
+        {
+          "kode": "UU20_2023_ASN",
+          "rujukan": "Undang-Undang Nomor 20 Tahun 2023 tentang Aparatur Sipil Negara, nilai dasar dan kode perilaku ASN"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Anda berjanji kepada camat menuntaskan tindak lanjut aduan jalan rusak dari tiga desa dalam sebulan, tetapi camat dipindahtugaskan pada minggu kedua. Pejabat pengganti meminta Anda ikut mengurus lomba desa yang waktunya mendesak, sementara rencana kerja yang sudah disahkan tetap mencantumkan target penyelesaian aduan itu. Tindakan yang paling tepat mencerminkan integritas Anda adalah...",
+      "opsi": {
+        "A": "Melaporkan status aduan kepada pejabat pengganti melalui laporan mingguan yang rapi.",
+        "B": "Mengutamakan lomba desa yang mendesak dan menunda aduan sampai lomba selesai.",
+        "C": "Memperoleh apresiasi warga tiga desa setelah jalan yang rusak akhirnya diperbaiki.",
+        "D": "Membagi jadwal agar aduan tetap tertangani di samping membantu persiapan lomba.",
+        "E": "Membantu persiapan lomba di samping menitipkan aduan kepada rekan tanpa memantaunya."
+      },
+      "kunci": "D",
+      "pembahasan": "Yang ditanya: tindakan yang mencerminkan integritas setelah camat pindah tugas. Tugas lomba dari pejabat pengganti sah dan mendesak. Rencana kerja yang sudah disahkan juga tetap mencantumkan target penyelesaian aduan jalan rusak.\nCara cepat: integritas diuji ketika orang yang mendengar janjimu sudah tidak ada. Cari tindakan yang tetap menjalankan janji itu tanpa menolak tugas baru.\nKenapa opsi lain gugur: A laporan mingguan yang rapi tidak sama dengan mengerjakan aduannya. B mengulang “lomba desa yang mendesak”, dan frasa “menunda aduan” menggeser janji ke belakang. C apresiasi warga adalah hasil, bukan tindakan. E juga membantu lomba “di samping” mengurus aduan, tetapi aduannya dititipkan tanpa dipantau, jadi janjinya lepas.\nKunci: D, karena mengatur jadwal membuat penanganan aduan tetap berlanjut sambil membantu persiapan lomba.\nAnalogi: kamu berjanji pada wali kelas lama untuk merapikan pojok baca. Wali kelas pindah sekolah, wali kelas baru memberi tugas lain. Kamu tetap merapikan pojok baca di sela tugas baru, bukan menunggu ditagih.\nJebakan: E tampak sama seimbangnya dengan D. Bedanya ada di frasa “tanpa memantaunya”: menitipkan lalu melepas bukan menepati janji.",
+      "analisis_opsi": {
+        "A": "[D6] Laporan rapi tidak sama dengan mengerjakan aduannya.",
+        "B": "[D5+D2] Mengulang “lomba desa yang mendesak”; frasa “menunda aduan” membuang komitmen.",
+        "C": "[D3] Apresiasi warga adalah hasil, bukan tindakan.",
+        "D": "KUNCI — Aduan tetap berjalan tanpa diawasi camat lama, dan tugas lomba tetap dibantu.",
+        "E": "[D2] Keseimbangan semu: \"di samping\" juga, tetapi \"tanpa memantaunya\" melepas komitmen aduan."
+      },
+      "bentuk_tegangan": "T4",
+      "perbaikan": "Kunci bukan lagi satu-satunya ber-\"di samping\" (E keseimbangan semu); kunci dipendekkan.",
+      "paket": 3,
+      "status_perbaikan": "draf, menunggu persetujuan Gusti"
+    },
+    {
+      "id": "DAJ-TWK-069",
+      "sumber": "MR BADRUN TWK ENGINE v1.5 (revisi 2026-10-25 dari v1.3)",
+      "no_urut_sumber": 69,
+      "no_urut_gabungan": 69,
+      "tema": "Integritas aparatur",
+      "subtema": "Netralitas keputusan dari ikatan penyedia",
+      "tipe_kode": "E4",
+      "tipe_nama": "Beda Tipis Antar-Nilai",
+      "kategori_jawaban": "DEFINISI",
+      "level_kognitif": "C5",
+      "konstruk_dua_kutub": "spesifikasi dari kebutuhan terukur ↔ bebas dari pengaruh penyedia pemberi sponsor",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "PERMENPANRB17_2024",
+          "rujukan": "Peraturan Menteri PANRB Nomor 17 Tahun 2024 tentang Pengelolaan Konflik Kepentingan"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Seorang pejabat pengadaan alat laboratorium menerima rekomendasi spesifikasi teknis yang lengkap dari calon penyedia yang tahun lalu mensponsori seminar kantornya. Pedoman pengadaan instansi mewajibkan spesifikasi disusun dari kebutuhan pengguna yang terukur, sementara kode etik pengadaan melarang spesifikasi mengarah pada produk penyedia tertentu. Nilai yang paling tepat menjadi pegangan pejabat itu adalah...",
+      "opsi": {
+        "A": "Objektivitas, karena masukan itu diuji memakai tolok ukur nyata, bukan budi sponsor.",
+        "B": "Netralitas, karena pejabat tidak memihak kekuatan politik mana pun dalam proses pengadaan.",
+        "C": "Kepatuhan, karena spesifikasi disusun dari kebutuhan pengguna sesuai pedoman pengadaan instansi.",
+        "D": "Transparansi, karena asal rekomendasi dicatat jelas dalam dokumen persiapan pengadaan.",
+        "E": "Akuntabilitas, karena dasar penetapan spesifikasi dapat dijelaskan kepada pemeriksa kemudian hari."
+      },
+      "kunci": "A",
+      "pembahasan": "Yang ditanya: nilai yang menjadi pegangan pejabat pengadaan. Ia menerima rekomendasi spesifikasi yang lengkap dari calon penyedia yang pernah mensponsori seminar kantornya. Dua ketentuan berlaku bersamaan: spesifikasi disusun dari kebutuhan pengguna yang terukur, dan spesifikasi tidak boleh mengarah ke produk penyedia tertentu.\nCara cepat: masukan dari penyedia boleh dibaca, asalkan diuji dengan tolok ukur kebutuhan dan tidak diterima karena rasa sungkan pada sponsor. Dua hal itu inti objektivitas: berbasis bukti dan bebas dari pengaruh.\nKenapa opsi lain gugur: B alasan yang ditulis B soal tidak memihak kekuatan politik, padahal di kasus ini tidak ada pihak politik; yang ada pengaruh sponsor. C mengulang “kebutuhan pengguna” dan “pedoman pengadaan”, tetapi kepatuhan hanya menjawab ketentuan pertama. D mencatat asal rekomendasi hanya kerapian dokumen. E bisa dijelaskan kepada pemeriksa adalah manfaat di kemudian hari.\nKunci: A, karena objektivitas berarti masukan diuji dengan tolok ukur nyata, bukan diterima karena budi baik sponsor.\nAnalogi: kamu juri lomba poster, dan salah satu peserta dulu sering meminjamimu buku. Kamu menilai posternya dengan rubrik yang sama, bukan dengan rasa sungkan.\nJebakan: B memakai kata yang akrab di soal ASN. Baca alasan di belakang komanya: alasan B tentang politik, sedangkan kasus ini tentang budi baik penyedia.",
+      "analisis_opsi": {
+        "A": "KUNCI — Tolok ukur nyata menutup ketentuan kebutuhan; “bukan budi sponsor” menutup larangan mengarah ke penyedia.",
+        "B": "[D4] Alasan B tentang kekuatan politik, padahal kasus ini tentang pengaruh penyedia.",
+        "C": "[D5+D2] Mengulang “kebutuhan pengguna” dan “pedoman pengadaan”; hanya ketentuan pertama.",
+        "D": "[D6] Mencatat asal rekomendasi hanya kerapian dokumen.",
+        "E": "[D3] Dapat dijelaskan kepada pemeriksa adalah manfaat di kemudian hari."
+      },
+      "bentuk_tegangan": "T3"
+    },
+    {
+      "id": "DAJ-TWK-143",
+      "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+      "no_urut_sumber": 143,
+      "no_urut_gabungan": 143,
+      "tema": "Integritas aparatur",
+      "subtema": "Harmonis: menghentikan olok-olok logat rekan kerja",
+      "tipe_kode": "E2",
+      "tipe_nama": "Jangan Pilih yang Terlalu Ekstrem",
+      "kategori_jawaban": "SIKAP",
+      "level_kognitif": "C4",
+      "konstruk_dua_kutub": "candaan yang dianggap biasa ↔ rekan yang mulai menarik diri",
+      "bentuk_tegangan": "T4",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "UU20_2023_ASN",
+          "rujukan": "Pasal 4 ayat (2) huruf d: harmonis, meliputi menghargai setiap orang tanpa membedakan latar belakang dan membangun lingkungan kerja yang kondusif"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Seorang rekan pindahan dari daerah lain sering diejek logatnya di grup percakapan kantor, dan sebagian pegawai menganggapnya candaan biasa. Belakangan rekan itu mulai enggan berbicara dalam rapat. Anda anggota tim yang sama dengan rekan tersebut. Sikap Anda yang paling mencerminkan nilai harmonis ASN adalah...",
+      "opsi": {
+        "A": "Mengingatkan grup agar berhenti mengolok cara bicaranya dan merangkulnya kembali.",
+        "B": "Menghibur rekan itu secara pribadi dan menyarankannya mengabaikan ejekan tersebut.",
+        "C": "Mengirim imbauan sopan santun ke grup dan mengajak seluruh anggota tetap kompak.",
+        "D": "Meminta atasan memindahkan rekan itu ke tim yang suasananya lebih ramah.",
+        "E": "Mengusulkan pelatihan berbicara di depan umum agar rekan itu lebih percaya diri."
+      },
+      "kunci": "A",
+      "pembahasan": "Yang ditanya: sikap yang paling sesuai dengan nilai harmonis ASN. Ada dua fakta di soal: logat rekan itu diejek di grup kantor dan dianggap candaan biasa, lalu rekan itu mulai enggan berbicara dalam rapat.\nCara cepat: UU 20/2023 Pasal 4 ayat (2) menjabarkan harmonis sebagai saling peduli dan menghargai perbedaan, antara lain menghargai setiap orang tanpa membedakan latar belakang dan membangun lingkungan kerja yang kondusif. Sikap yang tepat harus menghentikan ejekan dan mengembalikan rekan itu ke dalam tim.\nKenapa pilihan lain gugur: B menghibur rekan secara pribadi dan menyuruhnya mengabaikan ejekan. Kelihatannya peduli, tetapi ejekan di grup tetap berjalan, jadi cuma menjawab separuh. C mengirim imbauan sopan santun dan ajakan kompak; itu cuma formalitas, karena olok-olok yang sebenarnya tidak disebut. D meminta atasan memindahkan rekan itu. Masalahnya dipindah, bukan diselesaikan, dan memindahkan pegawai itu tugas pihak lain. E mengusulkan pelatihan berbicara, seolah-olah masalahnya ada pada kemampuan rekan itu. Soal tidak menyebut itu.\nJawaban: A, karena olok-olok terhadap latar belakang dihentikan dan rekan yang menarik diri dirangkul kembali.\nAnalogi: kalau ada teman kelas yang terus ditertawakan karena logatnya, menghiburnya di kantin tidak cukup. Yang perlu dihentikan adalah tawa di kelas itu, lalu ajak dia ikut diskusi lagi.\nJebakan: B dan C sama-sama berisi dua langkah dan terdengar baik. Periksa apakah langkahnya menyentuh olok-olok yang terjadi di grup.",
+      "analisis_opsi": {
+        "A": "KUNCI — Dua penentu: olok-olok dihentikan (latar belakang dihargai) dan rekan yang menarik diri dirangkul (lingkungan kondusif).",
+        "B": "[D2] Keseimbangan semu: dua langkah, keduanya pada korban; olok-olok di grup berlanjut.",
+        "C": "[D6] Keseimbangan semu: imbauan umum tanpa menyentuh olok-olok yang terjadi.",
+        "D": "[D7] Masalah dipindahkan, bukan diselesaikan; lingkungan tim tetap sama.",
+        "E": "[D9+D3] Menganggap masalahnya pada kemampuan rekan; soal tidak menyebut itu."
+      },
+      "penentu": "rekan itu mulai enggan berbicara dalam rapat"
+    },
+    {
+      "id": "DAJ-TWK-142",
+      "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+      "no_urut_sumber": 142,
+      "no_urut_gabungan": 142,
+      "tema": "Integritas aparatur",
+      "subtema": "Loyal: menjaga rahasia jabatan dari keluarga",
+      "tipe_kode": "E5",
+      "tipe_nama": "Pilih yang Benar Walau Berisiko",
+      "kategori_jawaban": "SIKAP",
+      "level_kognitif": "C5",
+      "konstruk_dua_kutub": "permintaan keluarga ↔ kewajiban menjaga rahasia jabatan",
+      "bentuk_tegangan": "T4",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "UU20_2023_ASN",
+          "rujukan": "Pasal 4 ayat (2) huruf e angka 3: loyal, meliputi menjaga rahasia jabatan dan negara"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Anda anggota tim pemerintah kabupaten yang merencanakan lokasi pasar induk baru. Kakak Anda, yang tahu tugas itu, meminta petunjuk lokasi karena ingin membeli tanah di sekitarnya selagi harganya murah. Rencana itu masih dibahas dan belum diumumkan kepada publik. Sikap Anda yang paling sesuai dengan kode etik ASN adalah...",
+      "opsi": {
+        "A": "Mengundurkan diri dari tim dan menjelaskan alasannya kepada kakak Anda.",
+        "B": "Meminta ketua tim memutuskan apakah petunjuk itu boleh diberikan kepada kakak.",
+        "C": "Menjauhi kakak Anda sampai rencana lokasi itu resmi diumumkan pemerintah.",
+        "D": "Menjelaskan bahwa rencana dapat berubah sehingga membeli tanah sekarang berisiko.",
+        "E": "Menolak memberi petunjuk apa pun dan menyarankan kakak menanti pengumuman resmi."
+      },
+      "kunci": "E",
+      "pembahasan": "Yang ditanya: sikap yang paling sesuai dengan kode etik ASN. Kakakmu meminta petunjuk lokasi pasar induk baru untuk membeli tanah murah, padahal rencana itu masih dibahas dan belum diumumkan.\nCara cepat: UU 20/2023 Pasal 4 ayat (2) menjabarkan nilai loyal, antara lain menjaga rahasia jabatan dan negara. Sikap yang tepat menolak membuka rahasia itu, tanpa meninggalkan tugas, dan mengarahkan kakak ke jalur yang sama dengan warga lain.\nKenapa pilihan lain gugur: A mundur dari tim dan menjelaskan alasannya. Dua langkah ini terdengar bersih, tetapi tugas negara ditinggalkan hanya karena satu permintaan keluarga; itu cuma formalitas. B meminta ketua tim memutuskan boleh tidaknya petunjuk diberikan. Rahasia jabatan bukan hal yang perlu ditawar, dan permintaan kakak belum kamu jawab. C menjauhi kakak sampai pengumuman. Kamu memang menghindar, tetapi itu demi kenyamanan diri sendiri. D menakut-nakuti kakak soal untung rugi membeli tanah. Rahasianya tidak bocor, tetapi alasannya urusan keuntungan, bukan kewajiban menjaga rahasia jabatan.\nJawaban: E, karena kamu menolak memberi petunjuk apa pun dan mengarahkan kakak pada pengumuman resmi seperti warga lain.\nAnalogi: guru yang membuat soal ujian tidak memberi bocoran kepada adiknya yang ikut ujian, sekalipun adiknya meminta baik-baik. Ia cukup bilang tunggu saja hari ujian.\nJebakan: D terasa cerdik karena menghalangi kakak tanpa membuka rahasia. Bedanya, E menolak karena kewajiban, sedangkan D menolak karena hitungan untung rugi.",
+      "analisis_opsi": {
+        "A": "[D6+D2] Keseimbangan semu: dua langkah, tetapi tugas ditinggalkan dan permintaan tidak ditolak tegas.",
+        "B": "[D7+D6] Rahasia jabatan bukan hal yang perlu ditawar ke ketua tim; permintaan belum dijawab.",
+        "C": "[D5+D10] Mengulang kata soal; menghindar demi kenyamanan sendiri.",
+        "D": "[D2+D10] Menakut-nakuti soal untung rugi, bukan menjaga rahasia jabatan.",
+        "E": "KUNCI — Penentu: rencana belum diumumkan; rahasia jabatan dijaga dan kakak diarahkan ke pengumuman resmi."
+      },
+      "penentu": "Rencana itu masih dibahas dan belum diumumkan kepada publik"
+    },
+    {
+      "id": "DAJ-TWK-144",
+      "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+      "no_urut_sumber": 144,
+      "no_urut_gabungan": 144,
+      "tema": "Hukum & ketatanegaraan",
+      "subtema": "Upaya administratif: keberatan lebih dahulu",
+      "tipe_kode": "E5",
+      "tipe_nama": "Pilih yang Benar Walau Berisiko",
+      "kategori_jawaban": "WUJUD",
+      "level_kognitif": "C5",
+      "konstruk_dua_kutub": "hak menggugat keputusan ↔ urutan upaya administratif",
+      "bentuk_tegangan": "T3",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "UU30_2014",
+          "rujukan": "Pasal 75 ayat (1)–(2), Pasal 76, Pasal 77 ayat (1)–(2): keberatan tertulis kepada pejabat yang menetapkan keputusan paling lama 21 hari kerja, lalu banding kepada atasan, lalu gugatan ke pengadilan"
+        },
+        {
+          "kode": "UUD1945",
+          "rujukan": "Pasal 24A ayat (1) (sebagai pengecoh)"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Pak Darto menerima surat keputusan kepala dinas pasar yang mencabut hak pakai kiosnya dengan alasan menunggak retribusi. Ia yakin tidak menunggak dan menyimpan semua bukti pembayarannya. Keputusan itu diumumkan lima hari kerja yang lalu. Menurut ketentuan administrasi pemerintahan, langkah yang paling tepat ia tempuh lebih dahulu adalah...",
+      "opsi": {
+        "A": "Menggugat keputusan itu ke pengadilan setelah banding kepada atasan pejabat ditolak.",
+        "B": "Mengajukan keberatan tertulis kepada pejabat yang menerbitkan surat pencabutan itu.",
+        "C": "Membawa perkara itu kepada atasan kepala dinas sesudah keberatannya diselesaikan.",
+        "D": "Memohon Mahkamah Agung menguji peraturan daerah tentang retribusi pasar.",
+        "E": "Menyampaikan aspirasi kepada DPRD agar kebijakan dinas pasar itu diawasi."
+      },
+      "kunci": "B",
+      "pembahasan": "Yang ditanya: langkah hukum yang ditempuh Pak Darto lebih dahulu. Ia menerima surat keputusan pencabutan hak pakai kios, merasa tidak menunggak, dan keputusan itu diumumkan lima hari kerja yang lalu.\nCara cepat: UU 30/2014 mengatur urutannya. Pertama keberatan tertulis kepada pejabat yang menetapkan keputusan, paling lama 21 hari kerja sejak keputusan diumumkan (Pasal 77). Kalau tidak puas, banding kepada atasan pejabat (Pasal 76 ayat (2) dan Pasal 78). Kalau masih tidak puas, barulah gugatan ke pengadilan (Pasal 76 ayat (3)). Lima hari kerja masih jauh di dalam batas waktu.\nKenapa pilihan lain gugur: A menggugat ke pengadilan. Itu sah, tetapi baru sesudah banding ditolak, jadi langkahnya belum waktunya. C membawa perkara ke atasan kepala dinas; ini banding, yang baru dilakukan sesudah keberatan diselesaikan. Langkahnya juga belum waktunya. D meminta Mahkamah Agung menguji peraturan daerah, padahal Pak Darto tidak mempersoalkan isi peraturan, ia menyangkal tunggakannya. Konsepnya mirip, tapi beda. E menyampaikan aspirasi ke DPRD. Pengawasan DPRD sah, tetapi itu tugas pihak lain dan tidak membatalkan keputusan atas kiosnya.\nJawaban: B, karena keberatan tertulis kepada pejabat yang menerbitkan keputusan adalah langkah pertama yang diatur undang-undang.\nAnalogi: kalau nilai ujianmu keliru dicatat, kamu menemui guru yang menilai dulu. Baru kalau guru itu menolak, kamu ke wali kelas, lalu ke kepala sekolah.\nJebakan: A terasa paling tegas karena langsung ke pengadilan. Kata \"lebih dahulu\" di soal meminta tahap pertama, bukan tahap terkuat.",
+      "analisis_opsi": {
+        "A": "[D8] Gugatan sah, tetapi baru sesudah banding (Ps 76(3)).",
+        "B": "KUNCI — Ps 77(1)–(2): keberatan tertulis kepada pejabat penetap, masih dalam 21 hari kerja.",
+        "C": "[D8] Banding sah, tetapi sesudah keberatan (Ps 76(2), 78).",
+        "D": "[D4] Pak Darto menyangkal fakta tunggakan, bukan isi peraturan.",
+        "E": "[D7+D5] Pengawasan DPRD sah, tetapi bukan upaya atas keputusan perorangan."
+      },
+      "penentu": "Keputusan itu diumumkan lima hari kerja yang lalu"
+    },
+    {
+      "id": "DAJ-TWK-086",
+      "sumber": "MR BADRUN TWK ENGINE v1.5 (revisi 2026-10-25 dari v1.3)",
+      "no_urut_sumber": 86,
+      "no_urut_gabungan": 86,
+      "tema": "Hukum & ketatanegaraan",
+      "subtema": "Pembukaan tetap dan perubahan pasal UUD 1945",
+      "tipe_kode": "E1",
+      "tipe_nama": "Cari Akarnya, Bukan Buahnya",
+      "kategori_jawaban": "RELASI",
+      "level_kognitif": "C4",
+      "konstruk_dua_kutub": "pasal-pasal yang dapat disesuaikan zaman ↔ Pembukaan sebagai pegangan dasar dan tujuan negara",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "UUD1945",
+          "rujukan": "Pembukaan alinea keempat dan Pasal 37 ayat (1) (usul perubahan pasal-pasal)"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Pada 1999–2002 MPR mengubah pasal-pasal UUD 1945 dalam empat tahap, sementara Pembukaannya, yang memuat Pancasila dan tujuan negara, tetap utuh. Kini sekelompok mahasiswa hukum menyusun naskah usulan perubahan pasal tentang lembaga negara untuk lomba debat konstitusi. Hubungan Pembukaan dan pasal-pasal dalam usulan mereka paling tepat dipahami sebagai...",
+      "opsi": {
+        "A": "Pasal boleh disesuaikan zaman, sedangkan Pembukaan menjadi pegangan arah isinya.",
+        "B": "Pembukaan memuat Pancasila dan tujuan negara, sedangkan pasal-pasal mengatur penyelenggaraan negara.",
+        "C": "Usulan perubahan pasal lebih mudah diterima bila sejalan dengan Pembukaan.",
+        "D": "Pasal-pasal tentang lembaga negara dapat diubah melalui usul tertulis sesuai Pasal 37.",
+        "E": "Setiap naskah usulan mencantumkan kutipan Pembukaan pada bagian pendahuluan sebagai rujukan."
+      },
+      "kunci": "A",
+      "pembahasan": "Yang ditanya: hubungan Pembukaan dan pasal-pasal UUD 1945. Dulu, pada 1999–2002, MPR mengubah pasal-pasal dalam empat tahap, tetapi Pembukaan tidak disentuh. Pasal 37 ayat (1) pun hanya berbicara tentang usul perubahan pasal-pasal. Kini mahasiswa menyusun usulan perubahan pasal.\nCara cepat: tanyakan, “Mengapa yang satu boleh berubah dan yang lain tidak?” Pasal mengatur cara bernegara, jadi bisa disesuaikan. Pembukaan memuat dasar dan tujuan negara, jadi menjadi arah perubahan itu.\nKenapa opsi lain gugur: B mengulang “memuat Pancasila dan tujuan negara” dari soal; membagi isi keduanya belum menjelaskan bagaimana yang satu mengarahkan yang lain. C usulan lebih mudah diterima adalah efek, bukan hubungannya. D hanya menjelaskan bahwa pasal bisa diubah; Pembukaan tidak muncul sama sekali, padahal kalimat pertanyaan meminta hubungan keduanya. E mencantumkan kutipan di pendahuluan hanya formalitas; isi pasal bisa saja tidak sejalan.\nKunci: A, karena pasal dapat menyesuaikan zaman, sementara Pembukaan menjadi pegangan agar perubahan itu tidak kehilangan arah.\nAnalogi: rumah boleh direnovasi, kamar ditambah, dapur dipindah, tetapi fondasinya tidak dibongkar. Fondasi menentukan sampai mana renovasi boleh dilakukan.\nJebakan: B terdengar akademis dan benar. Soal meminta hubungan, bukan daftar isi masing-masing.",
+      "analisis_opsi": {
+        "A": "KUNCI — Pasal dapat berubah; Pembukaan yang tetap menjadi arah bagi perubahan itu.",
+        "B": "[D5+D4] Mengulang isi Pembukaan dari stem; pembagian isi berbeda dari hubungan pengarah.",
+        "C": "[D3] Penerimaan usulan adalah efek, bukan hubungan keduanya.",
+        "D": "[D2] Hanya sisi pasal yang dapat diubah; Pembukaan tidak disebut.",
+        "E": "[D6] Mengutip Pembukaan di pendahuluan berhenti pada formalitas."
+      },
+      "bentuk_tegangan": "T5"
+    },
+    {
+      "id": "DAJ-TWK-081",
+      "sumber": "MR BADRUN TWK ENGINE v1.6 (perbaikan soal tetap TO 2026-10-29)",
+      "no_urut_sumber": 81,
+      "no_urut_gabungan": 81,
+      "tema": "Hukum & ketatanegaraan",
+      "subtema": "Grasi dan pertimbangan Mahkamah Agung",
+      "tipe_kode": "E6",
+      "tipe_nama": "Lembaga Mana yang Berwenang",
+      "kategori_jawaban": "RELASI",
+      "level_kognitif": "C4",
+      "konstruk_dua_kutub": "hak Presiden memberi pengampunan ↔ pertimbangan lembaga negara lain sesudah perubahan",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "UUD1945",
+          "rujukan": "Pasal 14 ayat (1) dan ayat (2)"
+        },
+        {
+          "kode": "UU5_2010",
+          "rujukan": "UU 22/2002 jo. UU 5/2010 tentang Grasi: Pasal 1 angka 1 (grasi = perubahan, peringanan, pengurangan, atau penghapusan pelaksanaan pidana kepada terpidana); Pasal 2 ayat (1)–(2)"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Sebelum Perubahan Pertama tahun 1999, Pasal 14 UUD 1945 hanya menyebut bahwa Presiden memberi grasi, amnesti, abolisi, dan rehabilitasi. Sesudah perubahan itu, hak tersebut tetap milik Presiden, tetapi pemberiannya disertai pertimbangan lembaga negara lain. Kini seorang terpidana penjara lima tahun yang putusannya telah berkekuatan hukum tetap memohon kepada Presiden agar masa hukumannya dikurangi. Hubungan kewenangan dalam permohonan itu paling tepat dipahami sebagai...",
+      "opsi": {
+        "A": "Presiden memberi amnesti dengan memperhatikan pertimbangan Dewan Perwakilan Rakyat.",
+        "B": "Presiden memberi grasi sebagaimana rumusan Pasal 14 sebelum perubahan tahun 1999.",
+        "C": "Presiden memberi grasi dengan memperhatikan pertimbangan Mahkamah Agung.",
+        "D": "Presiden memberi abolisi dengan memperhatikan pertimbangan Dewan Perwakilan Rakyat.",
+        "E": "Hukuman terpidana berkurang setelah Presiden menyetujui permohonan pengampunannya."
+      },
+      "kunci": "C",
+      "pembahasan": "Yang ditanya: hubungan kewenangan dalam permohonan terpidana kepada Presiden. Sebelum Perubahan Pertama, Pasal 14 hanya menyebut hak Presiden. Sesudahnya, hak itu disertai pertimbangan lembaga lain. Kalimat penentunya: terpidana penjara lima tahun yang putusannya sudah berkekuatan hukum tetap memohon agar masa hukumannya dikurangi.\nCara cepat: kenali dulu jenis haknya, baru lembaganya. Pengurangan pelaksanaan pidana atas permohonan terpidana disebut grasi (UU 22/2002 jo. UU 5/2010). Pasal 14 ayat (1): grasi dan rehabilitasi dengan pertimbangan Mahkamah Agung; ayat (2): amnesti dan abolisi dengan pertimbangan DPR.\nKenapa pilihan lain gugur: A pasangan amnesti dan DPR benar menurut ayat (2), tetapi soal tentang satu terpidana yang meminta hukumannya dikurangi; konsep mirip, tapi beda. B memakai rumusan sebelum perubahan, padahal soal bertanya tentang keadaan kini; cuma menjawab separuh. D pasangan abolisi dan DPR juga benar, tetapi abolisi meniadakan penuntutan, sedangkan perkara ini sudah selesai diputus. E hukuman yang berkurang itu akibatnya, bukan hubungan kewenangannya.\nKunci: C, karena permohonan ini termasuk grasi, dan Pasal 14 ayat (1) menyertakan pertimbangan Mahkamah Agung.\nAnalogi: keringanan hukuman siswa tetap diputus kepala sekolah, tetapi ia lebih dulu meminta pendapat guru BK yang memahami perkaranya.\nJebakan: empat pilihan dimulai dengan \"Presiden memberi\". Jangan memilih dari kata depannya; pasangkan jenis hak dengan lembaga pemberi pertimbangannya.",
+      "analisis_opsi": {
+        "A": "[D4] Pasangan amnesti–DPR benar (Ps 14 ayat 2), tetapi kasusnya permohonan perorangan agar pidana dikurangi.",
+        "B": "[D5+D2] Rumusan lama hanya menutup hak Presiden; pertimbangan lembaga belum ada.",
+        "C": "KUNCI — Ps 14 ayat (1): grasi dengan pertimbangan MA; grasi = pengurangan pelaksanaan pidana atas permohonan terpidana berkekuatan hukum tetap (UU 22/2002 jo. UU 5/2010).",
+        "D": "[D4] Pasangan abolisi–DPR benar, tetapi abolisi meniadakan penuntutan, sedangkan putusan sudah berkekuatan hukum tetap.",
+        "E": "[D3] Akibat yang diharapkan, bukan hubungan kewenangan."
+      },
+      "bentuk_tegangan": "T5",
+      "penentu": "seorang terpidana penjara lima tahun yang putusannya telah berkekuatan hukum tetap memohon kepada Presiden agar masa hukumannya dikurangi",
+      "perbaikan": "Kata \"amnesti\" di soal yang membocorkan kunci dihapus; topik amnesti (peristiwa politik 2025, uji MK 262/PUU-XXIII/2025) dihindari, kunci diganti grasi–MA dengan kasus permohonan perorangan; amnesti/abolisi jadi pengecoh.",
+      "paket": 3,
+      "status_perbaikan": "draf, menunggu persetujuan Gusti"
+    },
+    {
+      "id": "DAJ-TWK-145",
+      "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+      "no_urut_sumber": 145,
+      "no_urut_gabungan": 145,
+      "tema": "Radikalisme & ketahanan sosial",
+      "subtema": "ASN dan ajakan mengganti dasar negara",
+      "tipe_kode": "E5",
+      "tipe_nama": "Pilih yang Benar Walau Berisiko",
+      "kategori_jawaban": "SIKAP",
+      "level_kognitif": "C4",
+      "konstruk_dua_kutub": "tulisan yang menolak Pancasila ↔ teguran rekan yang tidak diindahkan",
+      "bentuk_tegangan": "T6",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "UU20_2023_ASN",
+          "rujukan": "Pasal 24 ayat (1) huruf a: Pegawai ASN wajib setia dan taat pada Pancasila; Pasal 4 ayat (2) huruf e angka 1"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Seorang rekan sesama ASN rutin membagikan tulisan di grup percakapan kantor yang mengajak mengganti Pancasila sebagai dasar negara. Tulisan itu tidak memuat ajakan kekerasan. Ia sudah dua kali diingatkan rekan lain di grup, tetapi tetap mengunggahnya. Sikap Anda yang paling tepat sesuai kewajiban ASN adalah...",
+      "opsi": {
+        "A": "Menegurnya lagi di grup dan meminta rekan lain ikut menolak tulisannya.",
+        "B": "Meminta pengelola grup menghapus tulisan itu dan menutup kolom tanggapan.",
+        "C": "Membagikan bahan bacaan tentang Pancasila ke grup sebagai tulisan tandingan.",
+        "D": "Menyampaikan bukti unggahan itu kepada atasan yang membina pegawai.",
+        "E": "Keluar dari grup kantor agar tidak dianggap menyetujui tulisan tersebut."
+      },
+      "kunci": "D",
+      "pembahasan": "Yang ditanya: sikap yang paling tepat sesuai kewajiban ASN. Rekanmu, sesama ASN, terus membagikan tulisan yang mengajak mengganti Pancasila sebagai dasar negara. Tulisan itu tidak memuat ajakan kekerasan, dan rekan itu sudah dua kali diingatkan tetapi tetap mengunggah.\nCara cepat: UU 20/2023 Pasal 24 ayat (1) huruf a mewajibkan pegawai ASN setia dan taat pada Pancasila. Bila teguran antarrekan sudah gagal, persoalannya diserahkan kepada atasan yang berwenang membina pegawai, lengkap dengan buktinya.\nKenapa pilihan lain gugur: A menegur lagi dan mengajak rekan lain ikut menolak. Soal sudah menyebut teguran dua kali tidak berhasil, jadi cuma mengulang cara yang gagal. B meminta pengelola grup menghapus tulisan dan menutup kolom tanggapan. Tulisannya hilang, tetapi rekan itu tidak tersentuh dan bisa mengunggah lagi; ini cuma formalitas. C membagikan bacaan Pancasila sebagai tandingan. Baik untuk wacana, tetapi pelanggaran kewajiban rekan itu tidak ditangani. E keluar dari grup supaya tidak dianggap setuju; itu demi diri sendiri.\nJawaban: D, karena pelanggaran kewajiban setia pada Pancasila yang tidak berhenti setelah ditegur ditangani lewat atasan yang membina pegawai.\nAnalogi: kalau teman satu regu terus melanggar aturan latihan walau sudah diingatkan, kamu melapor ke pelatih, bukan terus menegurnya atau pindah regu.\nJebakan: B terasa tuntas karena tulisannya langsung hilang. Tanyakan: apakah orang yang mengunggah ikut tertangani?",
+      "analisis_opsi": {
+        "A": "[D2] Keseimbangan semu: teguran sudah dua kali gagal (penentu).",
+        "B": "[D6] Keseimbangan semu: tulisan hilang, pelaku tidak tersentuh dan dapat mengunggah lagi.",
+        "C": "[D6] Tandingan wacana; pelanggaran kewajiban ASN tidak ditangani.",
+        "D": "KUNCI — Kewajiban setia pada Pancasila (Ps 24(1)a) dilanggar dan teguran gagal; ditangani lewat atasan yang membina, bukan polisi (tanpa kekerasan).",
+        "E": "[D10] Demi nama sendiri."
+      },
+      "penentu": "Ia sudah dua kali diingatkan rekan lain di grup, tetapi tetap mengunggahnya"
+    },
+    {
+      "id": "DAJ-TWK-093",
+      "sumber": "MR BADRUN TWK ENGINE v1.6 (perbaikan soal tetap TO 2026-10-29)",
+      "no_urut_sumber": 93,
+      "no_urut_gabungan": 93,
+      "tema": "Radikalisme & ketahanan sosial",
+      "subtema": "Reintegrasi sosial dan pertanggungjawaban",
+      "tipe_kode": "E2",
+      "tipe_nama": "Jangan Pilih yang Terlalu Ekstrem",
+      "kategori_jawaban": "WUJUD",
+      "level_kognitif": "C5",
+      "konstruk_dua_kutub": "kesempatan membangun hidup baru ↔ pemantauan risiko secara proporsional",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "PERPRES8_2026",
+          "rujukan": "Peraturan Presiden Nomor 8 Tahun 2026 tentang Rencana Aksi Nasional Pencegahan dan Penanggulangan Ekstremisme Berbasis Kekerasan yang Mengarah pada Terorisme Tahun 2026–2029, Lampiran huruf A, Tema 6 (deradikalisasi): pemutusan kekerasan untuk rehabilitasi dan reintegrasi sosial, sasaran termasuk narapidana dan mantan narapidana terorisme; diverifikasi pada naskah BPK 2026-10-25"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Seorang mantan anggota jaringan ekstrem telah selesai menjalani hukuman dan kembali ke kampungnya untuk bekerja di bengkel milik pamannya. Sebagian warga meminta ia diawasi agar tidak kembali ke jaringan lama, sementara keluarganya meminta ia diberi kesempatan hidup normal tanpa dicurigai terus. Dukungan masyarakat yang paling tepat ditunjukkan melalui...",
+      "opsi": {
+        "A": "Memberinya pekerjaan dan kegiatan seperti warga lain tanpa pendampingan lanjutan.",
+        "B": "Melibatkannya dalam kegiatan warga dengan pendampingan berkala dari petugas pembinaan.",
+        "C": "Memberinya kesempatan hidup normal sambil menyerahkan pengawasan kepada keluarganya.",
+        "D": "Menggelar acara penyambutan bersama tokoh agama sebagai tanda ia diterima kembali warga.",
+        "E": "Melaporkan perkembangan sikapnya ke kepolisian secara rutin atas inisiatif warga."
+      },
+      "kunci": "B",
+      "pembahasan": "Yang ditanya: wujud dukungan masyarakat bagi mantan anggota jaringan ekstrem yang sudah selesai dihukum. Dua pihak punya alasan sah. Warga ingin risiko kembalinya ia ke jaringan lama tetap dipantau. Keluarga ingin ia diberi kesempatan hidup normal.\nCara cepat: cari pembagian peran. Warga memberi tempat dalam kehidupan sehari-hari, pemantauan risiko dilakukan pihak yang memang bertugas.\nKenapa opsi lain gugur: A frasa “tanpa pendampingan lanjutan” membuang sisi pemantauan sama sekali. C mengulang “kesempatan hidup normal” dari soal; tampak menutup dua sisi, tetapi keluarga tidak punya cara menilai risiko, sehingga pengawasannya semu. D acara penyambutan itu hangat, tetapi berhenti pada seremoni. E melapor ke polisi itu boleh, tetapi menilai perkembangan sikap adalah tugas petugas pembinaan; warga yang melapor secara rutin juga membuat ia terus dicurigai.\nKunci: B, karena ia diajak ke kegiatan warga sehingga punya ruang hidup baru, dan pendampingan berkala dari petugas yang berwenang menjaga pemantauan tetap proporsional.\nAnalogi: pasien yang baru pulang dari rumah sakit kembali bekerja dan bergaul seperti biasa, tetapi tetap kontrol rutin ke dokter. Tetangga tidak perlu mengukur tensinya setiap hari.\nJebakan: C terdengar paling manusiawi. Pengawasan yang diserahkan kepada keluarga terdengar dekat, padahal keluarga tidak punya alat untuk menilai risiko.",
+      "analisis_opsi": {
+        "A": "[D2] Frasa “tanpa pendampingan lanjutan” membuang sisi pemantauan.",
+        "B": "KUNCI — Diterima dalam kegiatan warga, dipantau berkala oleh pihak yang berwenang.",
+        "C": "[D5+D2] Mengulang “kesempatan hidup normal”; keseimbangan semu karena pengawasan diserahkan pada pihak tanpa mekanisme.",
+        "D": "[D6] Acara penyambutan berhenti pada seremoni.",
+        "E": "[D7] Sah, tetapi menilai risiko adalah tugas petugas pembinaan, bukan warga."
+      },
+      "bentuk_tegangan": "T2",
+      "perbaikan": "Kunci dipendekkan (terpanjang +5 → tidak lagi terpanjang). Cek KUHAP baru: soal tidak memakai istilah rehabilitasi, jadi tidak bergantung pada UU 20/2025.",
+      "paket": 3,
+      "status_perbaikan": "draf, menunggu persetujuan Gusti"
+    },
+    {
+      "id": "DAJ-TWK-149",
+      "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+      "no_urut_sumber": 149,
+      "no_urut_gabungan": 149,
+      "tema": "Bahasa Indonesia",
+      "subtema": "Kata baku KBBI dalam paragraf bernomor",
+      "tipe_kode": "E8",
+      "tipe_nama": "Soal Bahasa Indonesia",
+      "kategori_jawaban": "DEFINISI",
+      "level_kognitif": "C4",
+      "konstruk_dua_kutub": "",
+      "bentuk_tegangan": "",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "KBBI_DARING",
+          "rujukan": "andal, lembap, berembus, standardisasi, risiko baku; resiko tidak baku (dibaca 2026-10-29)"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "(1) Panitia lomba desa menunjuk juri yang andal di bidang pertanian. (2) Tanah di lahan percobaan masih lembap karena hujan semalam. (3) Petani diminta mencatat resiko gagal panen pada setiap petak. (4) Angin yang berembus kencang sempat merobohkan tenda panitia. (5) Dinas pertanian menyiapkan standardisasi mutu benih untuk lomba tahun depan.\nKata yang tidak baku menurut KBBI terdapat pada kalimat...",
+      "opsi": {
+        "A": "Kalimat (1)",
+        "B": "Kalimat (2)",
+        "C": "Kalimat (3)",
+        "D": "Kalimat (4)",
+        "E": "Kalimat (5)"
+      },
+      "kunci": "C",
+      "pembahasan": "Yang ditanya: kalimat yang memuat kata tidak baku menurut KBBI.\nCara cepat: periksa satu kata yang paling mencurigakan di setiap kalimat, lalu ingat bentuk bakunya. Banyak kata di sini terasa aneh justru karena kamu terbiasa mendengar bentuk tidak bakunya.\nKenapa pilihan lain gugur: A memakai \"andal\", yang baku; bentuk \"handal\" yang tidak baku. B memakai \"lembap\", yang baku; \"lembab\" tidak baku. D memakai \"berembus\" dari kata dasar \"embus\"; \"hembus\" tidak baku. E memakai \"standardisasi\", yang baku; \"standarisasi\" tidak baku. Keempatnya benar walau terasa janggal.\nJawaban: C, karena \"resiko\" tidak baku; bentuk bakunya \"risiko\".\nAnalogi: seperti nama teman yang selama ini kamu eja keliru. Karena sudah terbiasa, ejaan yang benar justru terasa salah saat pertama dilihat.\nJebakan: andal, lembap, dan berembus terasa paling salah karena jarang ditulis dengan benar di media sosial. Jangan memilih kata yang terasa aneh; pilih yang memang menyimpang dari KBBI.",
+      "analisis_opsi": {
+        "A": "[D4] andal baku (handal tidak baku).",
+        "B": "[D4] lembap baku (lembab tidak baku).",
+        "C": "KUNCI — resiko tidak baku; baku: risiko.",
+        "D": "[D4] berembus baku (hembus tidak baku).",
+        "E": "[D4] standardisasi baku (standarisasi tidak baku)."
+      },
+      "penentu": "",
+      "rumpun": "kaidah"
+    },
+    {
+      "id": "DAJ-TWK-150",
+      "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+      "no_urut_sumber": 150,
+      "no_urut_gabungan": 150,
+      "tema": "Bahasa Indonesia",
+      "subtema": "Huruf kapital: kata tugas dalam judul",
+      "tipe_kode": "E8",
+      "tipe_nama": "Soal Bahasa Indonesia",
+      "kategori_jawaban": "DEFINISI",
+      "level_kognitif": "C4",
+      "konstruk_dua_kutub": "",
+      "bentuk_tegangan": "",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "EYD_V",
+          "rujukan": "Huruf Kapital kaidah 9, 12, 15, 21; dibaca 2026-10-29"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Kalimat yang penulisan huruf kapitalnya tidak tepat adalah...",
+      "opsi": {
+        "A": "Pemerintah mendorong pengindonesiaan istilah asing pada papan layanan publik.",
+        "B": "Setiap tahun warga kampung itu memperingati proklamasi kemerdekaan dengan lomba.",
+        "C": "Siswa membaca artikel berjudul \"Merawat Sungai untuk Anak Cucu\".",
+        "D": "Warga itu berkata, \"Terima kasih atas obatnya, Dokter.\"",
+        "E": "Majalah sekolah memuat tulisan berjudul \"Gotong Royong Di Kampung Nelayan\"."
+      },
+      "kunci": "E",
+      "pembahasan": "Yang ditanya: kalimat yang penulisan huruf kapitalnya tidak tepat. Empat kalimat sudah benar, satu salah.\nCara cepat: cari kata yang huruf awalnya bisa diperdebatkan, lalu cocokkan dengan kaidah EYD V. Di judul, setiap kata ditulis kapital, kecuali kata tugas seperti di, ke, dari, dan, yang, atau untuk yang tidak berada di awal judul.\nKenapa pilihan lain gugur: A menulis \"pengindonesiaan\" dengan huruf kecil. Benar, karena nama bahasa yang menjadi bentuk dasar kata turunan tidak ditulis kapital. B menulis \"proklamasi kemerdekaan\" dengan huruf kecil. Benar juga, karena di kalimat itu peristiwanya tidak dipakai sebagai nama; bandingkan dengan nama resmi \"Proklamasi Kemerdekaan Indonesia\". C menulis \"untuk\" dengan huruf kecil di tengah judul, sesuai kaidah kata tugas. D menulis \"Dokter\" dengan kapital karena dipakai sebagai sapaan.\nJawaban: E, karena \"Di\" pada judul itu kata tugas yang tidak berada di awal, sehingga harus ditulis \"di\".\nAnalogi: dalam daftar nama tamu, setiap nama ditulis dengan huruf besar, tetapi kata \"dan\" di antara dua nama tetap kecil.\nJebakan: B paling sering dicurigai karena proklamasi terasa peristiwa penting. Ingat, yang ditulis kapital adalah nama peristiwanya, bukan setiap penyebutan peristiwa.",
+      "analisis_opsi": {
+        "A": "[D4] [kaidah 12] Nama bahasa sebagai bentuk dasar kata turunan huruf kecil: pengindonesiaan.",
+        "B": "[D4] [kaidah 15] Peristiwa sejarah yang tidak dipakai sebagai nama huruf kecil.",
+        "C": "[D4] [kaidah 21] Kata tugas \"untuk\" di tengah judul huruf kecil.",
+        "D": "[D4] [kaidah 9] Nama profesi sebagai sapaan berkapital: Dokter.",
+        "E": "KUNCI — kaidah 21: kata tugas \"di\" yang tidak di awal judul ditulis huruf kecil."
+      },
+      "penentu": "",
+      "rumpun": "kaidah"
+    },
+    {
+      "id": "DAJ-TWK-147",
+      "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+      "no_urut_sumber": 147,
+      "no_urut_gabungan": 147,
+      "tema": "Bahasa Indonesia",
+      "subtema": "Simpulan paragraf: bus sekolah gratis",
+      "tipe_kode": "E8",
+      "tipe_nama": "Soal Bahasa Indonesia",
+      "kategori_jawaban": "DEFINISI",
+      "level_kognitif": "C5",
+      "konstruk_dua_kutub": "",
+      "bentuk_tegangan": "",
+      "jangkar_faktual": false,
+      "landasan": [
+        {
+          "kode": "TBBI_ED4",
+          "rujukan": "Gagasan utama, simpulan, dan kalimat utama ditentukan dari isi seluruh kalimat dalam teks"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "(1) Sejak Juli, pemerintah kabupaten menjalankan bus sekolah gratis di dua dari lima kecamatan. (2) Di dua kecamatan itu, siswa yang terlambat turun dari rata-rata tiga puluh menjadi lima orang per hari. (3) Orang tua juga tidak lagi mengeluarkan uang ojek setiap pagi. (4) Di tiga kecamatan lain, bus sekolah baru akan beroperasi tahun depan.\nSimpulan paragraf tersebut adalah...",
+      "opsi": {
+        "A": "Keterlambatan siswa di kabupaten itu sudah teratasi berkat bus sekolah gratis.",
+        "B": "Bus gratis menekan keterlambatan dan ongkos, tetapi baru di dua kecamatan.",
+        "C": "Siswa yang terlambat turun menjadi lima orang per hari di dua kecamatan.",
+        "D": "Bus sekolah perlu ditambah dan diperluas, tetapi anggaran kabupaten belum mencukupi.",
+        "E": "Keterlambatan berkurang berkat bus, tetapi orang tua di kecamatan lain tetap membayar ojek."
+      },
+      "kunci": "B",
+      "pembahasan": "Yang ditanya: simpulan paragraf, yaitu pernyataan yang menggabungkan seluruh isi teks tanpa menambah hal baru.\nCara cepat: lihat dua bagian teks. Kalimat (2) dan (3) menunjukkan manfaat bus gratis: keterlambatan turun dan orang tua tidak lagi membayar ojek. Kalimat (1) dan (4) menunjukkan bus itu baru berjalan di dua dari lima kecamatan. Simpulan harus memuat manfaat sekaligus batas jangkauannya.\nKenapa pilihan lain gugur: A menyebut keterlambatan di kabupaten itu sudah teratasi, padahal tiga kecamatan belum dilayani. Ini cuma menjawab separuh dan melebarkan isi teks. C hanya satu rincian dari kalimat (2). D menyebut anggaran belum mencukupi; teks tidak menyebut itu. E menyebut orang tua di kecamatan lain tetap membayar ojek. Kedengarannya logis, tetapi teks tidak pernah menyebut ojek di kecamatan lain.\nJawaban: B, karena bus gratis menekan keterlambatan dan ongkos, tetapi baru berjalan di dua kecamatan.\nAnalogi: kantin sekolah memberi makan siang gratis yang membuat siswa lebih fokus, tetapi baru untuk kelas tujuh. Kesimpulan yang jujur menyebut manfaatnya sekaligus siapa yang sudah menikmatinya.\nJebakan: E terlihat setia pada teks karena bentuknya mirip kunci. Kata \"baru\" di kalimat (4) memberi tahu batasnya, tetapi tidak memberi tahu apa yang dibayar orang tua di kecamatan lain.",
+      "analisis_opsi": {
+        "A": "[D2] Meluaskan lingkup ke seluruh kabupaten: kalimat (4) menyebut tiga kecamatan belum terlayani.",
+        "B": "KUNCI — (2)–(3) manfaat + (1)(4) baru dua kecamatan.",
+        "C": "[D3] Kalimat penjelas.",
+        "D": "[D9] Anggaran tidak tertulis.",
+        "E": "[D9] Rangkuman yang menambah fakta: ongkos ojek di kecamatan lain tidak tertulis."
+      },
+      "penentu": "",
+      "rumpun": "paragraf"
+    },
+    {
+      "id": "DAJ-TWK-148",
+      "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+      "no_urut_sumber": 148,
+      "no_urut_gabungan": 148,
+      "tema": "Bahasa Indonesia",
+      "subtema": "Kalimat utama paragraf: peringatan dini banjir",
+      "tipe_kode": "E8",
+      "tipe_nama": "Soal Bahasa Indonesia",
+      "kategori_jawaban": "DEFINISI",
+      "level_kognitif": "C4",
+      "konstruk_dua_kutub": "",
+      "bentuk_tegangan": "",
+      "jangkar_faktual": false,
+      "landasan": [
+        {
+          "kode": "TBBI_ED4",
+          "rujukan": "Gagasan utama, simpulan, dan kalimat utama ditentukan dari isi seluruh kalimat dalam teks"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "(1) Pesan singkat peringatan dini kini membantu warga bantaran sungai di kota itu menghadapi banjir. (2) Petugas mengirim pesan ketika tinggi air di pintu air hulu melewati batas siaga. (3) Warga lalu punya waktu sekitar tiga jam untuk memindahkan barang dan mengungsikan lansia. (4) Saat banjir bulan lalu, tidak ada warga yang terjebak di rumah. (5) Karena itu, warga kini menyimpan nomor petugas di telepon genggam mereka.\nKalimat utama paragraf tersebut adalah...",
+      "opsi": {
+        "A": "Kalimat (1), karena cara kerja dan hasil sesudahnya menjelaskan isinya.",
+        "B": "Kalimat (2), karena pengiriman pesan dan batas siaga menjadi awal seluruh peristiwa.",
+        "C": "Kalimat (3), karena waktu tiga jam itulah manfaat terbesar bagi warga.",
+        "D": "Kalimat (4), karena tidak adanya warga terjebak membuktikan keberhasilan pesan itu.",
+        "E": "Kalimat (5), karena kata penghubung di awalnya menandai rangkuman paragraf."
+      },
+      "kunci": "A",
+      "pembahasan": "Yang ditanya: kalimat utama, yaitu kalimat yang isinya dirinci oleh kalimat-kalimat lain.\nCara cepat: uji setiap kalimat dengan pertanyaan \"kalimat lain menjelaskan kalimat ini atau tidak?\". Kalimat (1) menyebut pesan singkat peringatan dini membantu warga menghadapi banjir. Kalimat (2) menjelaskan cara kerjanya, kalimat (3) dan (4) menunjukkan hasilnya, dan kalimat (5) akibat kecil sesudahnya.\nKenapa pilihan lain gugur: B memilih kalimat (2) karena peristiwanya dimulai dari situ. Kalimat itu hanya cara kerja, jadi itu rincian, bukan pokok. C menyebut waktu tiga jam sebagai manfaat terbesar; teks tidak pernah menilai mana manfaat terbesar. Soal tidak menyebut itu. D memilih kalimat (4) sebagai bukti keberhasilan. Bukti adalah penjelas, bukan pokok. E memilih kalimat (5) karena diawali \"Karena itu\". Kata penghubung itu menandai akibat, dan isinya hanya kebiasaan warga menyimpan nomor petugas, terlalu sempit untuk menjadi pokok.\nJawaban: A, karena cara kerja dan hasil di kalimat sesudahnya semua menjelaskan isi kalimat (1).\nAnalogi: judul berita \"Jalan baru memperpendek waktu ke pasar\" lalu diikuti cara jalannya dibangun dan berapa menit yang dihemat. Judul itulah pokoknya.\nJebakan: E memancing karena kata penghubung di awal kalimat (5) sering dianggap tanda kesimpulan. Baca isinya dulu sebelum percaya pada kata penghubung.",
+      "analisis_opsi": {
+        "A": "KUNCI — (2) cara kerja, (3)–(4) hasil, merinci (1).",
+        "B": "[D3] Kalimat penjelas: cara kerja.",
+        "C": "[D9] \"Manfaat terbesar\" tidak tertulis.",
+        "D": "[D3] Bukti, bukan pokok.",
+        "E": "[D5] Penghubung \"Karena itu\" memancing; isinya akibat sempit."
+      },
+      "penentu": "",
+      "rumpun": "paragraf"
+    },
+    {
+      "id": "DAJ-TWK-151",
+      "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+      "no_urut_sumber": 151,
+      "no_urut_gabungan": 151,
+      "tema": "Bahasa Indonesia",
+      "subtema": "Tanda baca: koma sesudah petikan bertanda tanya",
+      "tipe_kode": "E8",
+      "tipe_nama": "Soal Bahasa Indonesia",
+      "kategori_jawaban": "DEFINISI",
+      "level_kognitif": "C5",
+      "konstruk_dua_kutub": "",
+      "bentuk_tegangan": "",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "EYD_V",
+          "rujukan": "Tanda Koma kaidah 6, 7, 8; Tanda Hubung kaidah 5; dibaca 2026-10-29"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Kalimat yang penulisan tanda bacanya tidak tepat adalah...",
+      "opsi": {
+        "A": "Wah, antrean di loket pajak pagi ini pendek sekali.",
+        "B": "Kata petugas, \"Formulir diisi dengan huruf kapital.\"",
+        "C": "Lomba baca puisi se-Sulawesi Selatan digelar di balai kota.",
+        "D": "\"Kapan beras dibagikan?\", tanya seorang warga.",
+        "E": "Banyak warga kampung itu pindah ke kota pada tahun 1990-an."
+      },
+      "kunci": "D",
+      "pembahasan": "Yang ditanya: kalimat yang penulisan tanda bacanya tidak tepat. Empat kalimat benar, satu salah.\nCara cepat: perhatikan tanda baca yang jarang kamu pakai, yaitu koma di sekitar petikan langsung dan tanda hubung. Petikan langsung yang diakhiri tanda tanya atau tanda seru tidak diikuti koma.\nKenapa pilihan lain gugur: A memakai koma sesudah kata seru \"Wah\"; itu benar. B memakai koma untuk memisahkan petikan langsung dari \"Kata petugas\"; itu juga benar. C menulis \"se-Sulawesi Selatan\" dengan tanda hubung karena se- bertemu huruf kapital; benar. E menulis \"1990-an\" dengan tanda hubung di antara angka dan -an; benar.\nJawaban: D, karena petikan \"Kapan beras dibagikan?\" sudah ditutup tanda tanya, sehingga koma sesudahnya harus dihapus.\nAnalogi: tanda tanya sudah menjadi pintu yang menutup kalimat tanya. Menambah koma sesudahnya sama dengan memasang dua pintu di satu lubang.\nJebakan: C dan E terlihat aneh karena tanda hubungnya. Justru keduanya benar; kesalahan ada pada koma yang terasa biasa di D.",
+      "analisis_opsi": {
+        "A": "[D4] [koma kaidah 6] Koma sesudah kata seru.",
+        "B": "[D4] [koma kaidah 7] Koma memisahkan petikan langsung.",
+        "C": "[D4] [hubung kaidah 5] se- dengan huruf kapital.",
+        "D": "KUNCI — koma kaidah 8: petikan yang diakhiri tanda tanya tidak diikuti koma.",
+        "E": "[D4] [hubung kaidah 5] Angka dengan -an."
+      },
+      "penentu": "",
+      "rumpun": "kaidah"
+    },
+    {
+      "id": "DAJ-TWK-146",
+      "sumber": "MR BADRUN TWK ENGINE v1.6 (soal baru TO 2026-10-29)",
+      "no_urut_sumber": 146,
+      "no_urut_gabungan": 146,
+      "tema": "Bahasa Indonesia",
+      "subtema": "Gagasan utama paragraf: panel surya puskesmas pembantu",
+      "tipe_kode": "E8",
+      "tipe_nama": "Soal Bahasa Indonesia",
+      "kategori_jawaban": "DEFINISI",
+      "level_kognitif": "C4",
+      "konstruk_dua_kutub": "",
+      "bentuk_tegangan": "",
+      "jangkar_faktual": false,
+      "landasan": [
+        {
+          "kode": "TBBI_ED4",
+          "rujukan": "Gagasan utama, simpulan, dan kalimat utama ditentukan dari isi seluruh kalimat dalam teks"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "(1) Sejak tahun lalu, atap puskesmas pembantu di pulau kecil itu dipasangi panel surya. (2) Dulu pelayanan berhenti saat matahari terbenam karena genset hanya menyala dua jam. (3) Kini bidan dapat menolong persalinan pada malam hari dengan lampu yang terang. (4) Lemari pendingin juga menyala terus sehingga vaksin dapat disimpan di pulau itu. (5) Warga tidak perlu lagi menyeberang ke pulau besar untuk imunisasi anak.\nGagasan utama paragraf tersebut adalah...",
+      "opsi": {
+        "A": "Atap puskesmas pembantu di pulau kecil itu dipasangi panel surya sejak tahun lalu.",
+        "B": "Bidan dapat menolong persalinan malam hari berkat lampu yang terang.",
+        "C": "Vaksin dapat disimpan dan imunisasi anak kini dilayani di pulau itu sendiri.",
+        "D": "Panel surya menghemat biaya bahan bakar genset di puskesmas pembantu itu.",
+        "E": "Listrik surya membuat pelayanan buka hingga malam dan mencakup imunisasi."
+      },
+      "kunci": "E",
+      "pembahasan": "Yang ditanya: gagasan utama paragraf, yaitu pokok yang mencakup isi seluruh kalimat.\nCara cepat: kelompokkan kalimatnya. Kalimat (1) hanya latar: atap puskesmas pembantu dipasangi panel surya. Kalimat (2) dan (3) menunjukkan pelayanan kini bisa berjalan sampai malam. Kalimat (4) dan (5) menunjukkan vaksin bisa disimpan dan imunisasi bisa dilayani di pulau itu. Gagasan utama harus memuat dua hasil itu.\nKenapa pilihan lain gugur: A mengulang kalimat pertama karena letaknya di awal, padahal kalimat itu hanya menyebut pemasangan, belum hasilnya. B hanya satu rincian, yaitu persalinan malam hari. C memuat vaksin dan imunisasi saja, jadi cuma menjawab separuh. D menyebut panel surya menghemat biaya bahan bakar; paragraf tidak menyebut itu.\nJawaban: E, karena listrik surya membuat pelayanan buka hingga malam dan mencakup imunisasi.\nAnalogi: kalau temanmu bercerita rumahnya baru dipasangi sumur bor, lalu sejak itu ibunya bisa mencuci tiap hari dan kebun tidak kering lagi, inti ceritanya adalah dua manfaat sumur itu, bukan hari pemasangannya.\nJebakan: D terdengar seperti rangkuman yang masuk akal. Periksa setiap kata di pilihan: kalau ada hal yang tidak tertulis di paragraf, pilihan itu gugur.",
+      "analisis_opsi": {
+        "A": "[D5] Kalimat pertama, karena letaknya.",
+        "B": "[D3] Kalimat penjelas.",
+        "C": "[D2] Separuh teks: vaksin dan imunisasi saja.",
+        "D": "[D9] Rangkuman yang menambah fakta: biaya bahan bakar tidak tertulis.",
+        "E": "KUNCI — (2)–(3) layanan sampai malam + (4)–(5) imunisasi di pulau; (1) hanya latar."
+      },
+      "penentu": "",
+      "rumpun": "paragraf"
+    }
+  ]
+}

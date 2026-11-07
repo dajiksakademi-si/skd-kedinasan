@@ -7,7 +7,9 @@ import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-ROOT = Path("/Users/gustiputuyudawirashana/Downloads/PROJECT SKD KEDINASAN /BIG DATA")  # spasi di akhir nama project memang bagian nama
+ROOT = HERE.parents[1] / "BIG DATA"  # salinan di repo: <repo>/skills/skd-expert
+if not ROOT.exists():  # skill asli di ~/.claude/skills (Mac Gusti); spasi di akhir nama project memang bagian nama
+    ROOT = Path("/Users/gustiputuyudawirashana/Downloads/PROJECT SKD KEDINASAN /BIG DATA")
 BATAS = {"SKILL.md": 150}  # selain itu 500 baris
 
 

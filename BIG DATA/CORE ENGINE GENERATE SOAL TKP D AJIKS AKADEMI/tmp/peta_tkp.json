@@ -1,0 +1,1372 @@
+[
+ {
+  "id": "B80#1",
+  "dimensi": "Profesionalisme",
+  "level": "Tinggi",
+  "latar": "petugas front office rawat jalan RSUD pada shift pagi",
+  "konstruk": "pelayanan personal untuk satu pasien vs kecepatan melayani antrean pasien lain",
+  "kunci": "C",
+  "kunci_teks": "Membantu lansia mengisi data yang sulit, lalu mengarahkannya ke petugas pendamping agar antrean pasien lain tetap berjalan.",
+  "mekanisme": "jadwal/giliran/urutan"
+ },
+ {
+  "id": "B80#2",
+  "dimensi": "Profesionalisme",
+  "level": "Sangat Tinggi",
+  "latar": "staf keuangan dinas yang menyusun laporan pertanggungjawaban (SPJ) akhir tahun untuk dikirim ke BPK",
+  "konstruk": "ketepatan waktu SPJ ke BPK vs akurasi data yang perlu ditelusuri",
+  "kunci": "D",
+  "kunci_teks": "Melaporkan selisih tersebut kepada atasan untuk mendapat status resmi, lalu mengirim SPJ tepat waktu disertai status tersebut.",
+  "mekanisme": "lapor/serahkan ke pihak berwenang"
+ },
+ {
+  "id": "B80#3",
+  "dimensi": "Pelayanan Publik",
+  "level": "Tinggi",
+  "latar": "petugas loket Samsat",
+  "konstruk": "kelancaran antrean loket manual vs kerugian pemohon akibat sistem online error",
+  "kunci": "A",
+  "kunci_teks": "Mencatat data pemohon yang saldonya terpotong ke daftar pengaduan resmi untuk ditindaklanjuti unit keuangan, sambil melayani antrean loket manual.",
+  "mekanisme": "jadwal/giliran/urutan"
+ },
+ {
+  "id": "B80#4",
+  "dimensi": "Pelayanan Publik",
+  "level": "Tinggi",
+  "latar": "petugas Puskesmas kecamatan",
+  "konstruk": "keterbatasan pasokan vaksin (bukan wewenang Puskesmas) vs kepercayaan warga yang berulang kali datang tanpa hasil",
+  "kunci": "B",
+  "kunci_teks": "Berkoordinasi dengan Dinas untuk memastikan stok sebelum jadwal berlaku, serta menghubungi warga yang sudah dua kali kena batal.",
+  "mekanisme": "verifikasi/cek"
+ },
+ {
+  "id": "B80#5",
+  "dimensi": "Jejaring Kerja",
+  "level": "Tinggi",
+  "latar": "ketua panitia peringatan Hari Jadi Kabupaten yang melibatkan lima OPD sebagai mitra anggaran bersama (sharing cost)",
+  "konstruk": "kepastian anggaran seluruh OPD mitra vs tenggat DP vendor yang mendesak",
+  "kunci": "E",
+  "kunci_teks": "Berkoordinasi dengan bendahara membayar DP dari anggaran terkumpul, disertai surat penagihan bertenggat ke OPD lain.",
+  "mekanisme": "pertemukan/koordinasi pihak"
+ },
+ {
+  "id": "B80#6",
+  "dimensi": "Jejaring Kerja",
+  "level": "Sangat Tinggi",
+  "latar": "koordinator program CSR perusahaan untuk distribusi bantuan bencana banjir",
+  "konstruk": "kecepatan penyaluran bantuan darurat vs pemerataan/koordinasi data penerima antar-LSM",
+  "kunci": "A",
+  "kunci_teks": "Menyusun daftar penerima berikut konfirmasi ke tiap LSM, lalu mengalihkan sisa bantuan ke desa yang belum menerima.",
+  "mekanisme": "lain: menyusun"
+ },
+ {
+  "id": "B80#7",
+  "dimensi": "Sosial Budaya",
+  "level": "Tinggi",
+  "latar": "pengelola asrama mahasiswa yang dihuni mahasiswa dari berbagai daerah",
+  "konstruk": "ketertiban jam malam asrama secara umum vs penghormatan terhadap praktik budaya kelompok tertentu",
+  "kunci": "C",
+  "kunci_teks": "Memfasilitasi kumpul adat tersebut di ruang bersama asrama dengan izin dan batas waktu yang disepakati bersama pengelola.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "B80#8",
+  "dimensi": "Sosial Budaya",
+  "level": "Tinggi",
+  "latar": "panitia MPLS (Masa Pengenalan Lingkungan Sekolah) SMA",
+  "konstruk": "tradisi/keakraban MPLS yang ingin dipertahankan panitia vs keadilan bagi siswa dari latar ekonomi berbeda",
+  "kunci": "D",
+  "kunci_teks": "Mengganti syarat atribut dan camilan bermerek spesifik dengan kategori umum yang mudah didapat, lalu menginformasikannya sebelum hari pelaksanaan.",
+  "mekanisme": "ubah cara/sumber kerja"
+ },
+ {
+  "id": "B80#9",
+  "dimensi": "TIK",
+  "level": "Sangat Tinggi",
+  "latar": "admin Sistem Informasi Kepegawaian (SIMPEG) dinas yang sedang migrasi data pegawai ke sistem baru menjelang tenggat integrasi dengan BKN",
+  "konstruk": "tenggat integrasi data ke BKN vs integritas/akurasi data pegawai yang harus bersih dulu",
+  "kunci": "B",
+  "kunci_teks": "Mengunggah data pegawai yang sudah valid sesuai tenggat, sambil menyisihkan data bermasalah untuk divalidasi bersama kepegawaian sebelum disusulkan.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "B80#10",
+  "dimensi": "TIK",
+  "level": "Tinggi",
+  "latar": "petugas layanan pengaduan daring pemda yang menggunakan chatbot otomatis untuk menyaring laporan warga",
+  "konstruk": "efisiensi otomatisasi klasifikasi chatbot vs keselamatan warga pada laporan urgent yang salah klasifikasi",
+  "kunci": "E",
+  "kunci_teks": "Menindaklanjuti segera laporan darurat yang terlanjur salah klasifikasi, sambil melaporkan pola kata kunci gagal dikenali ke pengembang.",
+  "mekanisme": "lain: menindaklanjuti"
+ },
+ {
+  "id": "B80#11",
+  "dimensi": "Anti Radikalisme",
+  "level": "Sangat Tinggi",
+  "latar": "wali kelas SMA",
+  "konstruk": "menindak cepat perilaku intoleran demi iklim kelas vs kehati-hatian personal karena faktor perkembangan remaja",
+  "kunci": "C",
+  "kunci_teks": "Menegaskan norma menghormati ke seluruh kelas tanpa menyebut nama siswa, lalu mengajaknya bicara personal dan berkoordinasi dengan BK.",
+  "mekanisme": "pertemukan/koordinasi pihak"
+ },
+ {
+  "id": "B80#12",
+  "dimensi": "Anti Radikalisme",
+  "level": "Tinggi",
+  "latar": "pengelola media sosial resmi instansi",
+  "konstruk": "kecepatan merespons isu viral vs kehati-hatian proses klarifikasi resmi sebelum bertindak",
+  "kunci": "D",
+  "kunci_teks": "Mengarsipkan unggahan tersebut sebagai bukti sebelum menyembunyikannya sementara, sambil berkoordinasi dengan pimpinan menyusun klarifikasi resmi.",
+  "mekanisme": "pertemukan/koordinasi pihak"
+ },
+ {
+  "id": "B80#13",
+  "dimensi": "Profesionalisme",
+  "level": "Tinggi",
+  "latar": "anggota pokja pemilihan pada unit layanan pengadaan",
+  "konstruk": "kepatuhan syarat administrasi dokumen pemilihan vs efisiensi anggaran dari penawaran harga terendah",
+  "kunci": "E",
+  "kunci_teks": "Menggugurkan penawaran itu sesuai kriteria administrasi, lalu mengusulkan perbaikan daftar dokumen wajib untuk paket berikutnya.",
+  "mekanisme": "usulkan ke pemutus"
+ },
+ {
+  "id": "B80#14",
+  "dimensi": "Profesionalisme",
+  "level": "Sangat Tinggi",
+  "latar": "analis kepegawaian yang menyiapkan bahan rapat pimpinan besok pagi",
+  "konstruk": "kecepatan penyediaan bahan rapat pimpinan vs keandalan angka yang belum dimutakhirkan tiga unit",
+  "kunci": "A",
+  "kunci_teks": "Mengirimkan bahan malam ini dengan menandai angka yang masih sementara berikut tiga unit yang belum memutakhirkan datanya.",
+  "mekanisme": "lain: mengirimkan"
+ },
+ {
+  "id": "B80#15",
+  "dimensi": "Profesionalisme",
+  "level": "Tinggi",
+  "latar": "analis laboratorium kesehatan daerah",
+  "konstruk": "kecepatan layanan uji tiga puluh sampel puskesmas vs keabsahan hasil dari alat yang kalibrasinya kedaluwarsa",
+  "kunci": "B",
+  "kunci_teks": "Mengajukan kalibrasi ulang ke penyedia jasa hari ini, lalu menguji sampel memakai alat cadangan yang sertifikatnya berlaku.",
+  "mekanisme": "sarana pengganti"
+ },
+ {
+  "id": "B80#16",
+  "dimensi": "Profesionalisme",
+  "level": "Tinggi",
+  "latar": "staf perencanaan yang dibimbing dua pejabat sekaligus: kepala bidang dan kepala subbagian program",
+  "konstruk": "memenuhi dua penugasan yang sama-sama sah vs keterbatasan waktu satu pelaksana sampai tenggat besok siang",
+  "kunci": "C",
+  "kunci_teks": "Menyampaikan kepada kedua pemberi tugas bahwa tenggatnya bertabrakan, lalu meminta penetapan urutan pengerjaannya.",
+  "mekanisme": "jadwal/giliran/urutan"
+ },
+ {
+  "id": "B80#17",
+  "dimensi": "Profesionalisme",
+  "level": "Sangat Tinggi",
+  "latar": "penyuluh pertanian dengan jadwal kunjungan ke empat kelompok tani hari ini",
+  "konstruk": "komitmen jadwal kunjungan empat kelompok tani vs permintaan data mendadak untuk rapat provinsi",
+  "kunci": "D",
+  "kunci_teks": "Mengirim data luas tanam yang sudah tersedia siang ini, lalu melengkapinya dari catatan kunjungan hari ini.",
+  "mekanisme": "lain: mengirim"
+ },
+ {
+  "id": "B80#18",
+  "dimensi": "Profesionalisme",
+  "level": "Tinggi",
+  "latar": "pegawai baru di bagian pelayanan perizinan",
+  "konstruk": "kepatuhan pada prosedur tertulis vs praktik kerja satu tahap yang sudah efisien dan diterima bersama",
+  "kunci": "A",
+  "kunci_teks": "Menjalankan alur satu tahap yang berlaku sekarang, lalu mengusulkan pemutakhiran prosedur tertulis kepada kepala bagian.",
+  "mekanisme": "aturan/format tertulis"
+ },
+ {
+  "id": "B80#19",
+  "dimensi": "Profesionalisme",
+  "level": "Sangat Tinggi",
+  "latar": "notulis rapat pimpinan",
+  "konstruk": "kecepatan pengedaran risalah hari ini vs kepastian rumusan poin keputusan yang tercatat berbeda",
+  "kunci": "B",
+  "kunci_teks": "Mengonfirmasi rumusan poin keputusan itu kepada pimpinan rapat, lalu mengedarkan risalah lengkapnya hari ini.",
+  "mekanisme": "verifikasi/cek"
+ },
+ {
+  "id": "B80#20",
+  "dimensi": "Profesionalisme",
+  "level": "Tinggi",
+  "latar": "pengelola gudang logistik dinas",
+  "konstruk": "kesiapan angka persediaan menjelang audit internal vs penelusuran sebab selisih yang butuh waktu",
+  "kunci": "C",
+  "kunci_teks": "Melaporkan selisih itu kepada atasan hari ini, lalu menelusuri dokumen keluar-masuk barang bersama petugas pencatat.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "B80#21",
+  "dimensi": "Profesionalisme",
+  "level": "Tinggi",
+  "latar": "pengawas lapangan proyek rehabilitasi gedung sekolah",
+  "konstruk": "kelancaran penarikan termin yang ditunggu penyedia vs kesesuaian angka progres dengan kondisi fisik lapangan",
+  "kunci": "D",
+  "kunci_teks": "Mencatat capaian nyata tiap item pekerjaan lewat pemeriksaan bersama penyedia, lalu memakainya sebagai dasar termin.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "B80#22",
+  "dimensi": "Profesionalisme",
+  "level": "Sangat Tinggi",
+  "latar": "arsiparis dinas",
+  "konstruk": "kecepatan melayani kebutuhan rapat pimpinan vs pengamanan berkas asli sesuai aturan layanan arsip",
+  "kunci": "A",
+  "kunci_teks": "Menyiapkan salinan lengkap berkas itu untuk dibawa ke rapat, dan menyediakan berkas aslinya di ruang baca.",
+  "mekanisme": "sarana pengganti"
+ },
+ {
+  "id": "B80#23",
+  "dimensi": "Profesionalisme",
+  "level": "Tinggi",
+  "latar": "panitia pelatihan teknis bersertifikat di instansi",
+  "konstruk": "kuota pelatihan terisi penuh agar anggaran tidak hangus vs syarat peserta yang ditetapkan penyelenggara",
+  "kunci": "B",
+  "kunci_teks": "Menawarkan kursi kosong itu kepada unit lain yang pegawainya memenuhi syarat, lalu melaporkan sisanya kepada penyelenggara.",
+  "mekanisme": "lain: menawarkan"
+ },
+ {
+  "id": "B80#24",
+  "dimensi": "Profesionalisme",
+  "level": "Sangat Tinggi",
+  "latar": "staf umum yang ditugasi menyusun kajian teknis jalan lingkungan karena tenaga teknis kantor sedang cuti panjang",
+  "konstruk": "menuntaskan penugasan tepat waktu vs mutu kajian teknis yang menuntut kompetensi bidang tertentu",
+  "kunci": "C",
+  "kunci_teks": "Melaporkan keterbatasan kompetensi itu kepada atasan hari ini, dan mengusulkan pendampingan teknis sebelum tenggatnya jatuh.",
+  "mekanisme": "lapor/serahkan ke pihak berwenang"
+ },
+ {
+  "id": "B80#25",
+  "dimensi": "Profesionalisme",
+  "level": "Tinggi",
+  "latar": "petugas ukur bidang tanah",
+  "konstruk": "melayani keberatan pemohon yang berpotensi benar vs jadwal pengukuran delapan bidang yang sudah terikat",
+  "kunci": "D",
+  "kunci_teks": "Mencatat keberatan pemohon dalam berita acara, lalu menyisipkan pengukuran ulang bidangnya pada jadwal pekan ini.",
+  "mekanisme": "jadwal/giliran/urutan"
+ },
+ {
+  "id": "B80#26",
+  "dimensi": "Profesionalisme",
+  "level": "Sangat Tinggi",
+  "latar": "pelaksana yang lolos seleksi diklat kepemimpinan selama tiga minggu penuh",
+  "konstruk": "kesempatan pengembangan kompetensi lewat diklat vs kontinuitas penyusunan anggaran unit yang dipegang sendiri",
+  "kunci": "E",
+  "kunci_teks": "Mengusulkan pembagian tugas anggaran kepada atasan sebelum berangkat, disertai catatan tahapan dan tenggat tiap bagiannya.",
+  "mekanisme": "usulkan ke pemutus"
+ },
+ {
+  "id": "B80#27",
+  "dimensi": "Pelayanan Publik",
+  "level": "Tinggi",
+  "latar": "petugas perekaman di dinas kependudukan",
+  "konstruk": "keterbatasan blangko yang di luar kendali dinas vs kebutuhan identitas warga yang datang dari kecamatan terjauh",
+  "kunci": "E",
+  "kunci_teks": "Merekam data warga hari ini dan menerbitkan surat keterangan pengganti yang sah sebagai bukti identitas sementara.",
+  "mekanisme": "sarana pengganti"
+ },
+ {
+  "id": "B80#28",
+  "dimensi": "Pelayanan Publik",
+  "level": "Tinggi",
+  "latar": "petugas loket pelayanan perizinan terpadu",
+  "konstruk": "kelengkapan berkas sebagai syarat izin vs beban pemohon luar kota yang harus datang berulang",
+  "kunci": "A",
+  "kunci_teks": "Memproses berkas yang sudah lengkap lebih dulu dan menunjukkan cara mengunggah surat domisili lewat kanal daring.",
+  "mekanisme": "lain: memproses"
+ },
+ {
+  "id": "B80#29",
+  "dimensi": "Pelayanan Publik",
+  "level": "Sangat Tinggi",
+  "latar": "perawat penanggung jawab instalasi gawat darurat rumah sakit daerah",
+  "konstruk": "keterbatasan tempat tidur ruang rawat vs keselamatan pasien rujukan yang butuh pemantauan menginap",
+  "kunci": "B",
+  "kunci_teks": "Menempatkan pasien di ruang observasi dengan pemantauan berkala, sambil menghubungi petugas pengelola tempat tidur.",
+  "mekanisme": "pertemukan/koordinasi pihak"
+ },
+ {
+  "id": "B80#30",
+  "dimensi": "Pelayanan Publik",
+  "level": "Tinggi",
+  "latar": "panitia penerimaan murid baru jalur afirmasi",
+  "konstruk": "kepastian aturan batas waktu seleksi vs keadilan bagi pendaftar yang berkasnya belum lengkap",
+  "kunci": "C",
+  "kunci_teks": "Menetapkan hasil sesuai batas waktu, lalu menyampaikan jalur sanggah resmi secara tertulis kepada pendaftar itu.",
+  "mekanisme": "umumkan/informasikan"
+ },
+ {
+  "id": "B80#31",
+  "dimensi": "Pelayanan Publik",
+  "level": "Sangat Tinggi",
+  "latar": "pendamping penyaluran bantuan sosial di desa",
+  "konstruk": "kelancaran penyaluran bantuan bagi antrean penerima vs ketepatan sasaran empat data penerima yang bermasalah",
+  "kunci": "D",
+  "kunci_teks": "Menahan empat paket itu dengan berita acara, lalu melanjutkan penyaluran bagi penerima lain yang mengantre.",
+  "mekanisme": "tahan/batasi sementara"
+ },
+ {
+  "id": "B80#32",
+  "dimensi": "Pelayanan Publik",
+  "level": "Tinggi",
+  "latar": "pengawas kebersihan kecamatan",
+  "konstruk": "penanganan cepat tumpukan sampah yang meluber vs keterbatasan armada pengangkut yang rusak",
+  "kunci": "E",
+  "kunci_teks": "Meminjam kendaraan bak kelurahan untuk mengosongkan dua titik itu, lalu mengusulkan truk pengganti ke dinas.",
+  "mekanisme": "sarana pengganti"
+ },
+ {
+  "id": "B80#33",
+  "dimensi": "Pelayanan Publik",
+  "level": "Tinggi",
+  "latar": "petugas layanan pajak daerah",
+  "konstruk": "penegakan tagihan pajak berikut denda vs hak wajib pajak yang mengaku tidak menerima pemberitahuan",
+  "kunci": "A",
+  "kunci_teks": "Memeriksa riwayat pengiriman surat pemberitahuan pada sistem, lalu menjelaskan hasilnya berikut jalur keberatan yang tersedia.",
+  "mekanisme": "verifikasi/cek"
+ },
+ {
+  "id": "B80#34",
+  "dimensi": "Pelayanan Publik",
+  "level": "Sangat Tinggi",
+  "latar": "petugas pengaduan perusahaan air minum daerah",
+  "konstruk": "keterbatasan satu tim perbaikan vs kebutuhan air warga terdampak yang laporannya menumpuk",
+  "kunci": "B",
+  "kunci_teks": "Mengumumkan perkiraan waktu perbaikan lewat kanal resmi, dan mengirim tangki air keliling ke wilayah terdampak.",
+  "mekanisme": "umumkan/informasikan"
+ },
+ {
+  "id": "B80#35",
+  "dimensi": "Pelayanan Publik",
+  "level": "Tinggi",
+  "latar": "petugas pelayanan kelurahan",
+  "konstruk": "kelengkapan pengantar dan tanda tangan berwenang vs kebutuhan mendesak warga untuk keperluan rumah sakit",
+  "kunci": "E",
+  "kunci_teks": "Meminta pengantar tertulis dari ketua rukun tetangga hari ini, lalu menyiapkan suratnya untuk ditandatangani sore.",
+  "mekanisme": "lain: meminta"
+ },
+ {
+  "id": "B80#36",
+  "dimensi": "Pelayanan Publik",
+  "level": "Sangat Tinggi",
+  "latar": "penguji kendaraan bermotor pada unit pengujian daerah",
+  "konstruk": "keselamatan penumpang anak sekolah vs kelangsungan layanan antar-jemput yang dibutuhkan besok pagi",
+  "kunci": "C",
+  "kunci_teks": "Menyatakan kendaraan itu tidak lulus, menjadwalkan uji ulang terdekat, dan menjelaskan larangan operasionalnya kepada pemilik.",
+  "mekanisme": "jadwal/giliran/urutan"
+ },
+ {
+  "id": "B80#37",
+  "dimensi": "Pelayanan Publik",
+  "level": "Tinggi",
+  "latar": "petugas layanan informasi dan dokumentasi instansi",
+  "konstruk": "keterbukaan informasi publik atas daftar penerima bantuan vs perlindungan data pribadi warga",
+  "kunci": "D",
+  "kunci_teks": "Menyediakan salinan daftar penerima tanpa nomor induk kependudukan dan alamat, disertai penjelasan dasar penyamarannya.",
+  "mekanisme": "sarana pengganti"
+ },
+ {
+  "id": "B80#38",
+  "dimensi": "Pelayanan Publik",
+  "level": "Sangat Tinggi",
+  "latar": "pengelola pengaduan dinas pekerjaan umum",
+  "konstruk": "keselamatan pengendara di jalan permukiman vs anggaran pemeliharaan tahun berjalan yang sudah habis",
+  "kunci": "A",
+  "kunci_teks": "Memasang rambu penanda dan penutup sementara pada lubang itu, lalu mengusulkan perbaikannya pada anggaran perubahan.",
+  "mekanisme": "usulkan ke pemutus"
+ },
+ {
+  "id": "B80#39",
+  "dimensi": "Pelayanan Publik",
+  "level": "Tinggi",
+  "latar": "petugas pendaftaran rumah sakit daerah",
+  "konstruk": "kepatuhan syarat rujukan penjaminan vs kebutuhan layanan pasien yang datang dari luar kecamatan",
+  "kunci": "B",
+  "kunci_teks": "Menjelaskan syarat rujukan yang habis berlaku dan membantu pasien memperbarui rujukannya lewat kanal daring puskesmas.",
+  "mekanisme": "umumkan/informasikan"
+ },
+ {
+  "id": "B80#40",
+  "dimensi": "Pelayanan Publik",
+  "level": "Sangat Tinggi",
+  "latar": "admin layanan antrean daring dinas kependudukan",
+  "konstruk": "keterbukaan sistem antrean daring bagi siapa saja vs keadilan akses warga yang kuotanya diborong satu pihak",
+  "kunci": "E",
+  "kunci_teks": "Melaporkan pola pendaftaran itu berikut buktinya ke pengelola sistem, lalu mengusulkan batas kuota per nomor telepon.",
+  "mekanisme": "lapor/serahkan ke pihak berwenang"
+ },
+ {
+  "id": "B80#41",
+  "dimensi": "Jejaring Kerja",
+  "level": "Tinggi",
+  "latar": "sekretaris forum koordinasi program penurunan angka putus sekolah lintas dinas",
+  "konstruk": "kelengkapan data laporan bersama vs hubungan kerja dengan dinas mitra yang perwakilannya absen berulang",
+  "kunci": "C",
+  "kunci_teks": "Menemui pengelola data dinas mitra itu di luar forum, lalu menyepakati mekanisme pengiriman data sebelum rapat.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "B80#42",
+  "dimensi": "Jejaring Kerja",
+  "level": "Tinggi",
+  "latar": "sekretariat satuan tugas penurunan stunting kabupaten",
+  "konstruk": "ketepatan waktu penetapan sasaran pada rapat lusa vs kesepakatan angka antara dua dinas yang datanya berbeda",
+  "kunci": "A",
+  "kunci_teks": "Mempertemukan pengelola data kedua dinas sebelum rapat, lalu menetapkan cara penyatuan angka sasarannya bersama.",
+  "mekanisme": "pertemukan/koordinasi pihak"
+ },
+ {
+  "id": "B80#43",
+  "dimensi": "Jejaring Kerja",
+  "level": "Sangat Tinggi",
+  "latar": "guru pembimbing praktik kerja industri",
+  "konstruk": "kelangsungan kemitraan dengan satu-satunya perusahaan penerima vs perlindungan jam kerja siswa sesuai perjanjian",
+  "kunci": "D",
+  "kunci_teks": "Menemui penanggung jawab perusahaan membahas jam kerja sesuai perjanjian, lalu menuangkan kesepakatannya secara tertulis.",
+  "mekanisme": "tegur/bicara langsung"
+ },
+ {
+  "id": "B80#44",
+  "dimensi": "Jejaring Kerja",
+  "level": "Tinggi",
+  "latar": "fasilitator pembangunan jembatan penghubung dua desa",
+  "konstruk": "tenggat pengajuan usulan ke kabupaten vs kesepakatan dua desa yang sama-sama sudah berjanji kepada warganya",
+  "kunci": "B",
+  "kunci_teks": "Mempertemukan kedua kepala desa dengan hasil kajian teknis titik lokasi, lalu menyusun usulan bersama.",
+  "mekanisme": "pertemukan/koordinasi pihak"
+ },
+ {
+  "id": "B80#45",
+  "dimensi": "Jejaring Kerja",
+  "level": "Sangat Tinggi",
+  "latar": "ketua tim gabungan pengawasan takaran timbangan pasar",
+  "konstruk": "kelancaran operasi gabungan bersama instansi mitra vs kepatuhan prosedur pencatatan yang melindungi pedagang",
+  "kunci": "E",
+  "kunci_teks": "Menghentikan sementara penyitaan itu, lalu meminta pencatatan berita acara bersama sebelum operasi dilanjutkan.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "B80#46",
+  "dimensi": "Jejaring Kerja",
+  "level": "Tinggi",
+  "latar": "penanggung jawab program kesehatan ibu di puskesmas",
+  "konstruk": "ketepatan waktu rekap kecamatan vs beban kerja bidan desa yang memegang dua wilayah sekaligus",
+  "kunci": "C",
+  "kunci_teks": "Menemui bidan itu membahas beban dua desa, lalu menyepakati jadwal setor laporan bertahap tiap pekan.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "B80#47",
+  "dimensi": "Jejaring Kerja",
+  "level": "Sangat Tinggi",
+  "latar": "pengelola program bank sampah bersama komunitas relawan lingkungan",
+  "konstruk": "kelangsungan kemitraan dengan komunitas relawan vs syarat pertanggungjawaban hibah yang tidak bisa ditawar",
+  "kunci": "D",
+  "kunci_teks": "Mendampingi komunitas mengisi format itu bagian per bagian, lalu mengusulkan penyederhanaannya kepada pemberi hibah.",
+  "mekanisme": "aturan/format tertulis"
+ },
+ {
+  "id": "B80#48",
+  "dimensi": "Jejaring Kerja",
+  "level": "Tinggi",
+  "latar": "koordinator kerja sama kajian potensi daerah dengan sebuah universitas",
+  "konstruk": "tenggat laporan tahap pertama vs ketergantungan pada anggota tim universitas yang sulit dihubungi",
+  "kunci": "A",
+  "kunci_teks": "Menghubungi ketua tim universitas membahas ulang pembagian bab, lalu menetapkan tenggat setiap bagiannya.",
+  "mekanisme": "pertemukan/koordinasi pihak"
+ },
+ {
+  "id": "B80#49",
+  "dimensi": "Jejaring Kerja",
+  "level": "Sangat Tinggi",
+  "latar": "pengelola pelatihan kerja kabupaten yang bermitra dengan balai latihan kerja provinsi",
+  "konstruk": "menjaga kemitraan dengan balai provinsi vs mutu pelatihan yang dibatasi kapasitas alat dan instruktur",
+  "kunci": "E",
+  "kunci_teks": "Menyampaikan kapasitas alat dan instruktur kepada balai, lalu menyepakati penjadwalan gelombang kedua pelatihan.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "B80#50",
+  "dimensi": "Jejaring Kerja",
+  "level": "Tinggi",
+  "latar": "staf dinas pariwisata yang mendampingi kelompok sadar wisata desa",
+  "konstruk": "kemandirian kelompok sadar wisata mengelola pungutan vs akuntabilitas yang jadi syarat dukungan dana desa",
+  "kunci": "B",
+  "kunci_teks": "Melatih kelompok membuat pembukuan tiket sederhana, lalu menyertakannya sebagai lampiran usulan dana desa.",
+  "mekanisme": "ubah cara/sumber kerja"
+ },
+ {
+  "id": "B80#51",
+  "dimensi": "Jejaring Kerja",
+  "level": "Sangat Tinggi",
+  "latar": "koordinator kerja sama pengelolaan tempat pembuangan akhir tiga kecamatan",
+  "konstruk": "kelangsungan kerja sama tiga kecamatan vs ketertiban jadwal pembuangan yang dilanggar satu mitra",
+  "kunci": "D",
+  "kunci_teks": "Mempertemukan tiga pengelola kebersihan kecamatan meninjau jadwal, lalu menyepakati urutan antrean bagi pelanggarnya.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "B80#52",
+  "dimensi": "Jejaring Kerja",
+  "level": "Tinggi",
+  "latar": "pemegang program usaha kesehatan sekolah di puskesmas",
+  "konstruk": "tenggat laporan cakupan skrining kepada dinas vs kelancaran pekan ujian di dua sekolah mitra",
+  "kunci": "E",
+  "kunci_teks": "Menyepakati jadwal skrining di luar jam ujian bersama kedua sekolah, lalu melaporkan penyesuaiannya ke dinas.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "B80#53",
+  "dimensi": "Sosial Budaya",
+  "level": "Tinggi",
+  "latar": "pengelola gedung serbaguna kelurahan",
+  "konstruk": "giliran kegiatan warga asli atas gedung kelurahan vs ruang berkesenian bagi perkumpulan warga pendatang",
+  "kunci": "A",
+  "kunci_teks": "Menyusun jadwal pemakaian bergilir bersama kedua kelompok warga, lalu menempelkannya di papan pengumuman gedung.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "B80#54",
+  "dimensi": "Sosial Budaya",
+  "level": "Sangat Tinggi",
+  "latar": "perawat penanggung jawab poliklinik sore",
+  "konstruk": "penghormatan pada keyakinan pasien vs keterbatasan petugas pemeriksa yang bertugas sore ini",
+  "kunci": "B",
+  "kunci_teks": "Menawarkan pendampingan selama pemeriksaan sore ini, lalu mengusulkan pengaturan jadwal petugas sesuai kebutuhan itu.",
+  "mekanisme": "jadwal/giliran/urutan"
+ },
+ {
+  "id": "B80#55",
+  "dimensi": "Sosial Budaya",
+  "level": "Tinggi",
+  "latar": "pembina ekstrakurikuler kepramukaan di sekolah",
+  "konstruk": "keutuhan materi latihan pramuka di lapangan vs keikutsertaan setara siswa pengguna kursi roda",
+  "kunci": "C",
+  "kunci_teks": "Menyesuaikan sebagian materi latihan agar bisa diikuti dari jalur keras, lalu membahasnya dengan seluruh anggota.",
+  "mekanisme": "ubah cara/sumber kerja"
+ },
+ {
+  "id": "B80#56",
+  "dimensi": "Sosial Budaya",
+  "level": "Sangat Tinggi",
+  "latar": "pemimpin rapat rutin bidang",
+  "konstruk": "kebiasaan berbahasa daerah yang mengakrabkan mayoritas peserta vs keikutsertaan dua pegawai baru dari luar daerah",
+  "kunci": "D",
+  "kunci_teks": "Memakai bahasa Indonesia untuk pembahasan dan keputusan rapat, lalu menuangkan hasilnya dalam notula tertulis.",
+  "mekanisme": "ubah cara/sumber kerja"
+ },
+ {
+  "id": "B80#57",
+  "dimensi": "Sosial Budaya",
+  "level": "Tinggi",
+  "latar": "staf dinas kebudayaan yang menyusun acara peresmian gedung baru",
+  "konstruk": "kebutuhan panitia menampilkan kekhasan budaya pada peresmian vs kesakralan tarian menurut tetua adat",
+  "kunci": "E",
+  "kunci_teks": "Menawarkan tarian penyambutan lain hasil kesepakatan tetua adat, lalu mencantumkan penjelasannya pada susunan acara.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "B80#58",
+  "dimensi": "Sosial Budaya",
+  "level": "Tinggi",
+  "latar": "ketua rukun warga",
+  "konstruk": "keberlakuan aturan kerja bakti bagi seluruh warga vs keadilan bagi keluarga lansia yang tidak sanggup memenuhinya",
+  "kunci": "A",
+  "kunci_teks": "Mengusulkan pengecualian bagi keluarga lansia dalam musyawarah warga, lalu mencatatnya pada aturan lingkungan.",
+  "mekanisme": "usulkan ke pemutus"
+ },
+ {
+  "id": "B80#59",
+  "dimensi": "Sosial Budaya",
+  "level": "Sangat Tinggi",
+  "latar": "panitia rapat kerja instansi yang mengurus konsumsi",
+  "konstruk": "pesanan konsumsi yang sudah terkunci di penyedia vs kebutuhan makan peserta yang berbeda keyakinan dan kondisi kesehatan",
+  "kunci": "B",
+  "kunci_teks": "Menghubungi penyedia menambah menu alternatif berlabel jelas, lalu mendata kebutuhan peserta untuk acara berikutnya.",
+  "mekanisme": "pertemukan/koordinasi pihak"
+ },
+ {
+  "id": "B80#60",
+  "dimensi": "Sosial Budaya",
+  "level": "Tinggi",
+  "latar": "penyelenggara pelatihan keterampilan warga desa",
+  "konstruk": "jadwal malam yang disepakati mayoritas peserta vs kesempatan belajar peserta perempuan yang terhalang norma keluarga",
+  "kunci": "C",
+  "kunci_teks": "Memindahkan jadwal pelatihan ke sore hari setelah menjaring kesediaan seluruh peserta lewat pendataan singkat.",
+  "mekanisme": "jadwal/giliran/urutan"
+ },
+ {
+  "id": "B80#61",
+  "dimensi": "Sosial Budaya",
+  "level": "Sangat Tinggi",
+  "latar": "pengelola galeri budaya daerah",
+  "konstruk": "kelangsungan pameran koleksi budaya vs hak komunitas adat menentukan penampilan ritual mereka",
+  "kunci": "D",
+  "kunci_teks": "Menutup sementara bagian foto ritual itu, lalu menemui komunitas adat membahas syarat penampilannya.",
+  "mekanisme": "tegur/bicara langsung"
+ },
+ {
+  "id": "B80#62",
+  "dimensi": "Sosial Budaya",
+  "level": "Tinggi",
+  "latar": "pengelola lapangan desa",
+  "konstruk": "ketertiban pemakaian lapangan desa vs kesetaraan giliran dua kelompok pemuda antarkampung",
+  "kunci": "E",
+  "kunci_teks": "Mempertemukan kedua kelompok menyusun jadwal giliran, lalu mencatatnya pada buku pemakaian lapangan desa.",
+  "mekanisme": "jadwal/giliran/urutan"
+ },
+ {
+  "id": "B80#63",
+  "dimensi": "TIK",
+  "level": "Tinggi",
+  "latar": "pengelola aplikasi presensi wajah instansi",
+  "konstruk": "keakuratan rekap presensi yang dikirim tiap Jumat vs kegagalan sistem yang merugikan pegawai senior",
+  "kunci": "A",
+  "kunci_teks": "Mencatat kegagalan perekaman itu sebagai koreksi kehadiran manual, lalu melaporkan kendalanya kepada pengembang aplikasi.",
+  "mekanisme": "lain: mencatat"
+ },
+ {
+  "id": "B80#64",
+  "dimensi": "TIK",
+  "level": "Tinggi",
+  "latar": "administrator peladen dinas",
+  "konstruk": "kontinuitas unggah laporan tahunan seluruh bidang vs kapasitas penyimpanan yang tidak bisa ditambah tahun ini",
+  "kunci": "B",
+  "kunci_teks": "Memindahkan arsip lama ke media penyimpanan luring setelah dikonfirmasi pemiliknya, lalu mengatur kuota tiap bidang.",
+  "mekanisme": "ubah cara/sumber kerja"
+ },
+ {
+  "id": "B80#65",
+  "dimensi": "TIK",
+  "level": "Sangat Tinggi",
+  "latar": "operator sistem informasi keuangan unit",
+  "konstruk": "kelancaran kerja empat staf yang memakai satu akun vs ketertelusuran perubahan data keuangan",
+  "kunci": "C",
+  "kunci_teks": "Mengganti kata sandi akun itu dan membatasi pemakaiannya pada satu penanggung jawab, lalu mengajukan akun terpisah.",
+  "mekanisme": "usulkan ke pemutus"
+ },
+ {
+  "id": "B80#66",
+  "dimensi": "TIK",
+  "level": "Tinggi",
+  "latar": "petugas pendaftaran puskesmas yang memegang sistem antrean digital",
+  "konstruk": "ketertiban urutan layanan pasien vs kelumpuhan sistem antrean digital saat listrik padam",
+  "kunci": "D",
+  "kunci_teks": "Membuat nomor antrean manual bernomor urut jelas, lalu menyalinnya ke sistem digital setelah listrik menyala.",
+  "mekanisme": "jadwal/giliran/urutan"
+ },
+ {
+  "id": "B80#67",
+  "dimensi": "TIK",
+  "level": "Sangat Tinggi",
+  "latar": "pengelola basis data layanan kependudukan",
+  "konstruk": "manfaat analisis mitra bagi peningkatan layanan vs perlindungan data pribadi warga yang belum diatur perjanjian",
+  "kunci": "E",
+  "kunci_teks": "Menyediakan data agregat tanpa identitas warga, lalu mengusulkan pengaturan pertukaran data dalam adendum perjanjian.",
+  "mekanisme": "usulkan ke pemutus"
+ },
+ {
+  "id": "B80#68",
+  "dimensi": "TIK",
+  "level": "Tinggi",
+  "latar": "pengelola arsip digital dinas",
+  "konstruk": "keterbatasan waktu dan tenaga konversi arsip vs ketersediaan surat lama yang masih sering dirujuk",
+  "kunci": "A",
+  "kunci_teks": "Mengonversi surat berformat lama itu bertahap sesuai kebutuhan rujukan bidang, lalu mencatat daftar konversinya.",
+  "mekanisme": "ubah cara/sumber kerja"
+ },
+ {
+  "id": "B80#69",
+  "dimensi": "TIK",
+  "level": "Sangat Tinggi",
+  "latar": "pengelola akun media sosial resmi instansi",
+  "konstruk": "kecepatan melindungi warga dari akun tiruan vs penyelesaian resmi lewat penyedia platform yang butuh waktu",
+  "kunci": "B",
+  "kunci_teks": "Mengumumkan daftar kanal resmi instansi kepada warga, lalu melaporkan akun tiruan itu kepada penyedia platform.",
+  "mekanisme": "umumkan/informasikan"
+ },
+ {
+  "id": "B80#70",
+  "dimensi": "TIK",
+  "level": "Tinggi",
+  "latar": "penanggung jawab peluncuran aplikasi pengaduan warga",
+  "konstruk": "kelangsungan hak warga menyampaikan pengaduan hari ini vs gangguan aplikasi yang perbaikannya di tangan pengembang",
+  "kunci": "C",
+  "kunci_teks": "Mengumumkan kanal pengaduan cadangan resmi hari ini, lalu melaporkan gangguan formulirnya kepada pengembang.",
+  "mekanisme": "umumkan/informasikan"
+ },
+ {
+  "id": "B80#71",
+  "dimensi": "Anti Radikalisme",
+  "level": "Tinggi",
+  "latar": "pegawai di sebuah dinas",
+  "konstruk": "menjaga hubungan baik dengan rekan sekantor vs sikap tegas terhadap materi yang menolak dasar negara",
+  "kunci": "A",
+  "kunci_teks": "Menolak ajakan itu dengan alasan yang jelas, lalu menyampaikan isi materi tersebut lewat kanal pembinaan pegawai.",
+  "mekanisme": "umumkan/informasikan"
+ },
+ {
+  "id": "B80#72",
+  "dimensi": "Anti Radikalisme",
+  "level": "Tinggi",
+  "latar": "anggota grup pesan bidang di kantor",
+  "konstruk": "menjaga suasana grup kerja tetap nyaman vs menghentikan pesan yang mengajak memboikot kelompok tertentu",
+  "kunci": "B",
+  "kunci_teks": "Menyampaikan di grup bahwa isi pesan itu tidak berdasar dan memecah warga, lalu meminta penerusannya dihentikan.",
+  "mekanisme": "umumkan/informasikan"
+ },
+ {
+  "id": "B80#73",
+  "dimensi": "Anti Radikalisme",
+  "level": "Sangat Tinggi",
+  "latar": "pembina asrama mahasiswa",
+  "konstruk": "penegakan tata tertib asrama vs pendekatan personal terhadap penghuni yang sedang terpapar kelompok diskusi luar",
+  "kunci": "C",
+  "kunci_teks": "Mengajak penghuni itu berbicara memahami alasannya, lalu menjadwalkan pembinaan kebangsaan bersama pengelola asrama.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "B80#74",
+  "dimensi": "Anti Radikalisme",
+  "level": "Tinggi",
+  "latar": "atasan langsung seorang pegawai",
+  "konstruk": "ruang pribadi pegawai bermedia sosial vs kewajiban aparatur menjaga sikap tidak merendahkan pemeluk agama lain",
+  "kunci": "D",
+  "kunci_teks": "Memanggil pegawai itu membahas dampak unggahannya, lalu meminta klarifikasi dan penghapusan sesuai aturan kepegawaian.",
+  "mekanisme": "lain: memanggil"
+ },
+ {
+  "id": "B80#75",
+  "dimensi": "Anti Radikalisme",
+  "level": "Sangat Tinggi",
+  "latar": "pengurus kegiatan keagamaan di kantor",
+  "konstruk": "menjaga kesantunan hubungan dengan penceramah tamu vs mencegah materi kajian kantor yang merendahkan kelompok lain",
+  "kunci": "E",
+  "kunci_teks": "Menyampaikan keberatan atas materi itu kepada penceramah, lalu menetapkan rambu materi kajian bersama pengurus.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "B80#76",
+  "dimensi": "Anti Radikalisme",
+  "level": "Tinggi",
+  "latar": "ketua rukun tetangga",
+  "konstruk": "kewaspadaan lingkungan atas kegiatan tertutup vs kehati-hatian agar kecurigaan tanpa bukti tidak menuduh warga",
+  "kunci": "A",
+  "kunci_teks": "Menemui warga penyelenggara pertemuan itu untuk berkenalan dan menanyakan kegiatannya, lalu mencatat hasilnya.",
+  "mekanisme": "tegur/bicara langsung"
+ },
+ {
+  "id": "B80#77",
+  "dimensi": "Anti Radikalisme",
+  "level": "Tinggi",
+  "latar": "pengelola perpustakaan sekolah",
+  "konstruk": "keterbukaan koleksi perpustakaan bagi siswa vs pencegahan bacaan yang membenarkan kekerasan atas nama agama",
+  "kunci": "B",
+  "kunci_teks": "Menarik buku itu dari peredaran, lalu melaporkan temuannya kepada kepala sekolah untuk penelaahan koleksi sumbangan.",
+  "mekanisme": "lapor/serahkan ke pihak berwenang"
+ },
+ {
+  "id": "B80#78",
+  "dimensi": "Anti Radikalisme",
+  "level": "Sangat Tinggi",
+  "latar": "pendamping desa",
+  "konstruk": "kelancaran pelaksanaan program pelatihan vs meluruskan kecurigaan pemuda yang bersumber dari video daring",
+  "kunci": "C",
+  "kunci_teks": "Mengajak pemuda itu memeriksa sumber videonya bersama, lalu mempertemukan mereka dengan alumni pelatihan sebelumnya.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "B80#79",
+  "dimensi": "Anti Radikalisme",
+  "level": "Tinggi",
+  "latar": "ketua tim kerja di sebuah kantor",
+  "konstruk": "kepatuhan pada kewajiban upacara kantor vs pendekatan personal terhadap anggota tim yang pemahamannya berubah",
+  "kunci": "D",
+  "kunci_teks": "Mengajak anggota tim itu berbicara empat mata, lalu melibatkan pembina kepegawaian untuk pendampingan lanjutan.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "B80#80",
+  "dimensi": "Anti Radikalisme",
+  "level": "Sangat Tinggi",
+  "latar": "pengelola kehumasan instansi",
+  "konstruk": "kecepatan meredam tuduhan viral vs kepastian fakta sebelum instansi menyatakan sikap resmi",
+  "kunci": "E",
+  "kunci_teks": "Menelusuri konteks foto itu bersama unit terkait, lalu menerbitkan klarifikasi resmi berikut buktinya hari ini.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "B12#1",
+  "dimensi": "Profesionalisme",
+  "level": "Tinggi",
+  "latar": "auditor internal di sebuah BUMN",
+  "konstruk": "prioritas audit rutin terjadwal vs kecepatan penanganan dugaan kejanggalan yang rawan bukti hilang",
+  "kunci": "C",
+  "kunci_teks": "Mengonfirmasi prioritas kedua tugas kepada pimpinan, sambil segera mengamankan bukti awal kejanggalan tanpa menghentikan audit rutin yang berjalan.",
+  "mekanisme": "verifikasi/cek"
+ },
+ {
+  "id": "B12#2",
+  "dimensi": "Profesionalisme",
+  "level": "Sangat Tinggi",
+  "latar": "guru yang mengoreksi ratusan lembar jawaban ujian akhir semester",
+  "konstruk": "tenggat input nilai untuk rapor vs keadilan penilaian esai yang bervariasi",
+  "kunci": "A",
+  "kunci_teks": "Menyusun rubrik penilaian esai lebih rinci agar koreksi lebih cepat, diterapkan bersama rekan guru dengan kriteria yang sama.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "B12#3",
+  "dimensi": "Pelayanan Publik",
+  "level": "Tinggi",
+  "latar": "kepala UPT terminal bus kota",
+  "konstruk": "kepatuhan jadwal keberangkatan vs skema pendapatan sopir yang bergantung penumpang penuh",
+  "kunci": "E",
+  "kunci_teks": "Menerapkan jadwal keberangkatan tetap dengan insentif bagi sopir tepat waktu, sambil mengusulkan evaluasi menyeluruh skema pendapatan sopir.",
+  "mekanisme": "jadwal/giliran/urutan"
+ },
+ {
+  "id": "B12#4",
+  "dimensi": "Pelayanan Publik",
+  "level": "Sangat Tinggi",
+  "latar": "petugas Disdukcapil",
+  "konstruk": "efisiensi antre digital bagi mayoritas vs akses layanan bagi kelompok rentan",
+  "kunci": "B",
+  "kunci_teks": "Membuka loket prioritas permanen bagi lansia dan disabilitas dengan kuota menyesuaikan pemohon harian, terpisah dari sistem digital.",
+  "mekanisme": "ubah cara/sumber kerja"
+ },
+ {
+  "id": "B12#5",
+  "dimensi": "Jejaring Kerja",
+  "level": "Sangat Tinggi",
+  "latar": "ketua tim riset gabungan tiga universitas untuk proyek penelitian bersama",
+  "konstruk": "proses etik tiap kampus yang perlu waktu vs linimasa analisis tim inti yang sudah disepakati",
+  "kunci": "D",
+  "kunci_teks": "Mengajak mitra menyepakati linimasa yang mengakomodasi variasi proses etik tiap kampus, disertai checkpoint pengiriman data yang dipantau bersama.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "B12#6",
+  "dimensi": "Jejaring Kerja",
+  "level": "Tinggi",
+  "latar": "koordinator program gizi Puskesmas yang bekerja sama dengan kader posyandu di sepuluh dusun",
+  "konstruk": "kerelawanan dan keterbatasan waktu kader vs konsistensi data gizi lintas dusun",
+  "kunci": "A",
+  "kunci_teks": "Menyusun format pencatatan sederhana yang seragam untuk seluruh kader, lalu memverifikasi hasil pengisian pada bulan pertama penerapan.",
+  "mekanisme": "aturan/format tertulis"
+ },
+ {
+  "id": "B12#7",
+  "dimensi": "Sosial Budaya",
+  "level": "Sangat Tinggi",
+  "latar": "supervisor pabrik dengan pekerja lintas agama",
+  "konstruk": "target produksi shift vs pemerataan waktu ibadah lintas kelompok agama",
+  "kunci": "C",
+  "kunci_teks": "Menyusun kebijakan waktu ibadah tetap yang mengakomodasi seluruh kelompok agama secara proporsional, dikoordinasikan dengan bagian produksi.",
+  "mekanisme": "lain: menyusun"
+ },
+ {
+  "id": "B12#8",
+  "dimensi": "Sosial Budaya",
+  "level": "Tinggi",
+  "latar": "ketua RW di perumahan dengan warga dari berbagai daerah dan latar belakang budaya",
+  "konstruk": "kekhasan acara yang meriah vs keterwakilan budaya warga pendatang",
+  "kunci": "E",
+  "kunci_teks": "Mengajak perwakilan warga dari berbagai latar belakang menyusun format perayaan yang memadukan unsur budaya dalam satu rangkaian acara.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "B12#9",
+  "dimensi": "TIK",
+  "level": "Sangat Tinggi",
+  "latar": "kepala tata usaha kecamatan yang baru menerapkan sistem presensi berbasis pengenalan wajah untuk pegawai",
+  "konstruk": "efisiensi rekap kehadiran vs perlindungan data biometrik pegawai oleh pihak ketiga",
+  "kunci": "B",
+  "kunci_teks": "Menghentikan sementara penggunaan sistem presensi wajah sampai tata kelola datanya jelas dan terverifikasi secara independen.",
+  "mekanisme": "tahan/batasi sementara"
+ },
+ {
+  "id": "B12#10",
+  "dimensi": "TIK",
+  "level": "Sangat Tinggi",
+  "latar": "operator sistem informasi desa yang baru meluncurkan aplikasi pengajuan surat keterangan secara online",
+  "konstruk": "kecepatan layanan digital vs jangkauan warga dengan keterbatasan akses teknologi",
+  "kunci": "D",
+  "kunci_teks": "Mengusulkan kepada kepala desa jalur pengajuan manual disertai layanan keliling petugas ke dusun tanpa sinyal secara berkala.",
+  "mekanisme": "usulkan ke pemutus"
+ },
+ {
+  "id": "B12#11",
+  "dimensi": "Anti Radikalisme",
+  "level": "Tinggi",
+  "latar": "staf HR di sebuah perusahaan",
+  "konstruk": "respons cepat atas dampak ke iklim kerja seluruh divisi vs kehati-hatian sebelum klarifikasi resmi",
+  "kunci": "C",
+  "kunci_teks": "Melaporkan temuan ini kepada atasan HR/komite etik untuk verifikasi dan tindak lanjut terhadap seluruh pihak yang terlibat.",
+  "mekanisme": "lapor/serahkan ke pihak berwenang"
+ },
+ {
+  "id": "B12#12",
+  "dimensi": "Anti Radikalisme",
+  "level": "Sangat Tinggi",
+  "latar": "pembina karang taruna desa",
+  "konstruk": "manfaat pelatihan gratis yang dinanti vs materi bermuatan narasi merendahkan kelompok lain",
+  "kunci": "A",
+  "kunci_teks": "Meminta lembaga tersebut merevisi materi bermasalah sebelum pelatihan dilaksanakan, sambil berkonsultasi dengan pengurus karang taruna soal kelanjutan kerja sama.",
+  "mekanisme": "lain: meminta"
+ },
+ {
+  "id": "paket1#1",
+  "dimensi": "TIK",
+  "level": "Tinggi",
+  "latar": "sekolah menengah",
+  "konstruk": "kelancaran sinkronisasi data yang terjadwal vs keamanan akun admin dari permintaan kode lewat telepon",
+  "kunci": "E",
+  "kunci_teks": "Menolak memberi kode, lalu melaporkan penelepon dan dua akun guru itu lewat nomor resmi dinas.",
+  "mekanisme": "tahan/batasi sementara"
+ },
+ {
+  "id": "paket1#2",
+  "dimensi": "Pelayanan Publik",
+  "level": "Sangat Tinggi",
+  "latar": "kantor arsip daerah",
+  "konstruk": "urgensi kebutuhan satu pemohon vs keadilan urutan layanan bagi semua pemohon",
+  "kunci": "C",
+  "kunci_teks": "Meminta bukti tenggat dari setiap pemohon yang mendesak, lalu mengurutkan pencarian menurut tanggal tenggat yang terdekat.",
+  "mekanisme": "verifikasi/cek"
+ },
+ {
+  "id": "paket1#3",
+  "dimensi": "Profesionalisme",
+  "level": "Sangat Tinggi",
+  "latar": "kampus kedinasan",
+  "konstruk": "ketepatan waktu pengiriman rekap vs kelengkapan data kehadiran yang menjadi dasar keputusan",
+  "kunci": "A",
+  "kunci_teks": "Meminta daftar hadir manual dari dosen kelas itu, lalu melengkapi data sebelum dikirim.",
+  "mekanisme": "lain: meminta"
+ },
+ {
+  "id": "paket1#4",
+  "dimensi": "Sosial Budaya",
+  "level": "Tinggi",
+  "latar": "dinas perhubungan",
+  "konstruk": "kecukupan petugas di musim ramai vs kebutuhan hari besar keagamaan yang berbeda-beda",
+  "kunci": "B",
+  "kunci_teks": "Menanyakan kebutuhan setiap petugas pada hari besarnya masing-masing, untuk dasar menyusun pertukaran jadwal piket di terminal.",
+  "mekanisme": "tegur/bicara langsung"
+ },
+ {
+  "id": "paket1#5",
+  "dimensi": "Profesionalisme",
+  "level": "Tinggi",
+  "latar": "kantor pajak daerah",
+  "konstruk": "kelancaran antrean dan hubungan dengan rekan senior vs kepatuhan SOP tanda terima berkas",
+  "kunci": "C",
+  "kunci_teks": "Mengajak rekan menerbitkan tanda terima tertinggal, lalu menyepakati cara mempercepat antrean.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "paket1#6",
+  "dimensi": "Pelayanan Publik",
+  "level": "Tinggi",
+  "latar": "dinas pertanian",
+  "konstruk": "kecepatan bantuan sebelum musim tanam vs ketepatan sasaran penerima bantuan",
+  "kunci": "E",
+  "kunci_teks": "Menjadwalkan kunjungan ke lahan dan rumah keenam petani itu dalam pekan ini.",
+  "mekanisme": "jadwal/giliran/urutan"
+ },
+ {
+  "id": "paket1#7",
+  "dimensi": "Pelayanan Publik",
+  "level": "Sangat Tinggi",
+  "latar": "perpustakaan daerah",
+  "konstruk": "kebutuhan pelajar belajar lama di musim ujian vs akses yang setara bagi pengunjung lain",
+  "kunci": "B",
+  "kunci_teks": "Memberlakukan giliran tiga jam per meja saat ruang penuh, lalu mencatatnya di meja layanan.",
+  "mekanisme": "jadwal/giliran/urutan"
+ },
+ {
+  "id": "paket1#8",
+  "dimensi": "Profesionalisme",
+  "level": "Tinggi",
+  "latar": "kantor kecamatan",
+  "konstruk": "tenggat laporan yang pendek vs ketepatan laporan dengan format yang belum dikuasai",
+  "kunci": "A",
+  "kunci_teks": "Meminta bimbingan staf sebelumnya lewat telepon, lalu menuliskan langkahnya menjadi panduan seksi.",
+  "mekanisme": "aturan/format tertulis"
+ },
+ {
+  "id": "paket1#9",
+  "dimensi": "Anti Radikalisme",
+  "level": "Tinggi",
+  "latar": "dinas perhubungan",
+  "konstruk": "menjaga wibawa dan hubungan dengan penguji senior vs menghentikan ajakan memusuhi satu suku di depan penguji muda",
+  "kunci": "C",
+  "kunci_teks": "Menegur ucapan itu di depan peserta apel, menegaskan bahwa kendaraan siapa pun diuji sesuai aturan.",
+  "mekanisme": "tegur/bicara langsung"
+ },
+ {
+  "id": "paket1#10",
+  "dimensi": "Profesionalisme",
+  "level": "Sangat Tinggi",
+  "latar": "puskesmas",
+  "konstruk": "kecepatan melayani 40 resep yang mengantre vs ketepatan dosis pada label obat",
+  "kunci": "C",
+  "kunci_teks": "Membetulkan label sirup tersebut, lalu mencocokkan setiap label dengan resep sebelum obat diserahkan kepada pasien.",
+  "mekanisme": "verifikasi/cek"
+ },
+ {
+  "id": "paket1#11",
+  "dimensi": "Jejaring Kerja",
+  "level": "Tinggi",
+  "latar": "dinas sosial",
+  "konstruk": "jadwal kerja tiap bidang yang punya tugasnya sendiri vs beban keluarga yang dikunjungi berulang",
+  "kunci": "E",
+  "kunci_teks": "Mencocokkan daftar keluarga kedua bidang bersama tim itu sebelum menyusun jadwal kunjungan gabungan.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "paket1#12",
+  "dimensi": "Pelayanan Publik",
+  "level": "Tinggi",
+  "latar": "dinas kependudukan",
+  "konstruk": "hubungan baik dengan rekan satu kantor vs keadilan urutan layanan bagi warga yang antre",
+  "kunci": "D",
+  "kunci_teks": "Memasukkan kelima berkas itu ke antrean umum, lalu mencocokkan setiap berkas yang diproses hari ini dengan nomor antrean.",
+  "mekanisme": "verifikasi/cek"
+ },
+ {
+  "id": "paket1#13",
+  "dimensi": "TIK",
+  "level": "Tinggi",
+  "latar": "dinas pertanian",
+  "konstruk": "kelancaran rekap proposal sebelum tenggat vs keamanan jaringan komputer dinas",
+  "kunci": "B",
+  "kunci_teks": "Menyerahkan flashdisk itu kepada pengelola jaringan dinas, lalu memberi tahu kelompok tani bahwa berkasnya diperiksa.",
+  "mekanisme": "lapor/serahkan ke pihak berwenang"
+ },
+ {
+  "id": "paket1#14",
+  "dimensi": "Profesionalisme",
+  "level": "Sangat Tinggi",
+  "latar": "balai latihan kerja",
+  "konstruk": "hubungan antarinstruktur yang setara vs keselamatan peserta dari kebiasaan rekan yang terus berulang",
+  "kunci": "A",
+  "kunci_teks": "Melaporkan kebiasaan itu beserta kejadian luka bakar kepada kepala seksi pelatihan, lalu menyerahkan catatan tanggal kejadiannya.",
+  "mekanisme": "lapor/serahkan ke pihak berwenang"
+ },
+ {
+  "id": "paket1#15",
+  "dimensi": "Anti Radikalisme",
+  "level": "Sangat Tinggi",
+  "latar": "rumah sakit daerah",
+  "konstruk": "ketenangan suasana kerja di ruangan vs menghentikan sebaran tudingan terhadap satu kelompok agama",
+  "kunci": "D",
+  "kunci_teks": "Mencopot pamflet itu, meminta fotonya dihapus dari grup, lalu menemui langsung dua perawat yang terdampak.",
+  "mekanisme": "tegur/bicara langsung"
+ },
+ {
+  "id": "paket1#16",
+  "dimensi": "Pelayanan Publik",
+  "level": "Sangat Tinggi",
+  "latar": "puskesmas",
+  "konstruk": "pembagian tugas pemberian informasi di pendaftaran vs kepastian waktu ambil hasil bagi pasien yang datang dari jauh",
+  "kunci": "E",
+  "kunci_teks": "Menyepakati dengan petugas pendaftaran agar setiap pasien diberi tanggal ambil hasil, lalu mengabari pasien bila hasil mundur.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "paket1#17",
+  "dimensi": "Anti Radikalisme",
+  "level": "Tinggi",
+  "latar": "dinas perhubungan",
+  "konstruk": "menanggapi cepat dugaan penyebaran paham anti-pemerintah vs keadilan bagi pegawai yang kabarnya belum terbukti",
+  "kunci": "D",
+  "kunci_teks": "Menyampaikan cerita sopir itu beserta asal kabarnya kepada unit pengawasan internal dinas untuk dicek kebenarannya.",
+  "mekanisme": "lapor/serahkan ke pihak berwenang"
+ },
+ {
+  "id": "paket1#18",
+  "dimensi": "Anti Radikalisme",
+  "level": "Tinggi",
+  "latar": "kantor desa",
+  "konstruk": "menjaga suasana rapat dan hubungan dengan kepala dusun vs mencegah ajakan menyingkirkan warga berbeda keyakinan dari bantuan",
+  "kunci": "A",
+  "kunci_teks": "Menyela candaan itu dengan mengingatkan peserta bahwa penerima bantuan dinilai dari kriteria kelayakan, bukan dari keyakinan yang dianut.",
+  "mekanisme": "tegur/bicara langsung"
+ },
+ {
+  "id": "paket1#19",
+  "dimensi": "TIK",
+  "level": "Sangat Tinggi",
+  "latar": "kantor pajak daerah",
+  "konstruk": "memenuhi permintaan atasan malam ini vs menjaga kerahasiaan data pribadi wajib pajak",
+  "kunci": "E",
+  "kunci_teks": "Mengunggah rekap ke penyimpanan daring instansi dengan akses khusus kepala bidang.",
+  "mekanisme": "lain: mengunggah"
+ },
+ {
+  "id": "paket1#20",
+  "dimensi": "Sosial Budaya",
+  "level": "Tinggi",
+  "latar": "puskesmas",
+  "konstruk": "antrean yang sama bagi semua pasien vs menghormati keyakinan pasien yang hanya mau diperiksa dokter perempuan",
+  "kunci": "E",
+  "kunci_teks": "Menanyakan pilihan dokter laki-laki atau perempuan saat setiap pasien mendaftar, lalu menempatkannya di antrean dokter yang dipilihnya.",
+  "mekanisme": "tegur/bicara langsung"
+ },
+ {
+  "id": "paket1#21",
+  "dimensi": "Jejaring Kerja",
+  "level": "Sangat Tinggi",
+  "latar": "dinas kependudukan",
+  "konstruk": "menjaga kerja sama baru dengan rumah sakit vs kelengkapan berkas agar akta bayi tidak tertunda",
+  "kunci": "C",
+  "kunci_teks": "Menemui petugas rekam medis rumah sakit untuk menyepakati daftar periksa berkas, lalu melengkapi empat belas berkas tertunda.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "paket1#22",
+  "dimensi": "Pelayanan Publik",
+  "level": "Sangat Tinggi",
+  "latar": "perpustakaan daerah",
+  "konstruk": "melayani warga yang merasa dirugikan vs akuntabilitas penghapusan denda",
+  "kunci": "D",
+  "kunci_teks": "Mencocokkan tanggal pengakuan warga dengan lembar pengosongan kotak pengembalian harian, lalu menghapus dendanya bila catatan itu mendukung.",
+  "mekanisme": "verifikasi/cek"
+ },
+ {
+  "id": "paket1#23",
+  "dimensi": "Profesionalisme",
+  "level": "Sangat Tinggi",
+  "latar": "humas instansi",
+  "konstruk": "menjaga citra instansi dengan tidak membesarkan kekeliruan vs ketepatan informasi publik bagi seluruh penerima",
+  "kunci": "C",
+  "kunci_teks": "Mengirim ralat angka 1.230 ke seluruh penerima siaran kemarin, lalu menjawab wartawan dengan angka itu.",
+  "mekanisme": "lain: mengirim"
+ },
+ {
+  "id": "paket1#24",
+  "dimensi": "Profesionalisme",
+  "level": "Tinggi",
+  "latar": "unit pengadaan barang/jasa",
+  "konstruk": "menjaga jadwal pengumuman paket vs kejelasan isi dokumen pengadaan",
+  "kunci": "E",
+  "kunci_teks": "Meminta bidang perencanaan menjelaskan maksud spesifikasi yang ambigu itu hari ini juga.",
+  "mekanisme": "umumkan/informasikan"
+ },
+ {
+  "id": "paket1#25",
+  "dimensi": "Jejaring Kerja",
+  "level": "Tinggi",
+  "latar": "dinas sosial",
+  "konstruk": "menghargai relawan yang bekerja sukarela vs ketepatan rekap untuk usulan bantuan",
+  "kunci": "D",
+  "kunci_teks": "Menyepakati bersama keenam relawan satu format laporan singkat dan tenggat kirimnya pada pertemuan rutin hari Jumat.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "paket1#26",
+  "dimensi": "Jejaring Kerja",
+  "level": "Sangat Tinggi",
+  "latar": "perpustakaan daerah",
+  "konstruk": "menjaga hubungan dengan komunitas sukarela vs kepastian acara bagi anak dan orang tua",
+  "kunci": "B",
+  "kunci_teks": "Menyepakati dengan ketua komunitas agar setiap pendongeng membalas konfirmasi kehadirannya kepada Anda paling lambat Kamis.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "paket1#27",
+  "dimensi": "TIK",
+  "level": "Sangat Tinggi",
+  "latar": "unit TI instansi",
+  "konstruk": "kelancaran kerja tiga staf tanpa sinyal vs keamanan akun setelah pembobolan",
+  "kunci": "A",
+  "kunci_teks": "Membagikan alat verifikasi fisik simpanan unit TI kepada ketiga staf sebagai pengganti kode ponsel.",
+  "mekanisme": "sarana pengganti"
+ },
+ {
+  "id": "paket1#28",
+  "dimensi": "Jejaring Kerja",
+  "level": "Tinggi",
+  "latar": "sekolah menengah",
+  "konstruk": "kebutuhan sekolah atas nilai praktik tepat waktu vs menjaga mitra praktik yang menampung siswa tanpa bayaran",
+  "kunci": "C",
+  "kunci_teks": "Merumuskan dengan perwakilan bengkel satu format penilaian tetap beserta jadwal kirimnya untuk setiap periode.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "paket1#29",
+  "dimensi": "Profesionalisme",
+  "level": "Tinggi",
+  "latar": "kantor kecamatan",
+  "konstruk": "menyelesaikan tugas tambahan atasan tepat waktu vs menjaga layanan surat pindah warga tetap berjalan",
+  "kunci": "D",
+  "kunci_teks": "Menyampaikan kepada sekretaris camat beban loket harian lalu menyepakati jam layanan dan jam pendataan sejak awal.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "paket1#30",
+  "dimensi": "Pelayanan Publik",
+  "level": "Tinggi",
+  "latar": "dinas kependudukan",
+  "konstruk": "kebutuhan mendesak satu warga akan bukti identitas vs keadilan bagi warga lain atas blanko yang terbatas",
+  "kunci": "B",
+  "kunci_teks": "Memproses surat keterangan pengganti KTP-el untuk pedagang itu sampai ditandatangani sebelum loket tutup sore ini.",
+  "mekanisme": "sarana pengganti"
+ },
+ {
+  "id": "paket1#31",
+  "dimensi": "Sosial Budaya",
+  "level": "Sangat Tinggi",
+  "latar": "unit pengadaan barang/jasa",
+  "konstruk": "jadwal tender yang sudah diumumkan vs kesempatan setara bagi calon penyedia yang merayakan hari raya agamanya",
+  "kunci": "E",
+  "kunci_teks": "Menyiarkan dan merekam rapat Rabu, lalu membuka tanya jawab tertulis bagi kesebelas calon penyedia sampai Jumat.",
+  "mekanisme": "sarana pengganti"
+ },
+ {
+  "id": "paket1#32",
+  "dimensi": "Pelayanan Publik",
+  "level": "Tinggi",
+  "latar": "bagian kepegawaian",
+  "konstruk": "kelengkapan persyaratan usul kenaikan pangkat vs pegawai dari pulau yang tidak bisa bolak-balik sebelum batas",
+  "kunci": "A",
+  "kunci_teks": "Mengambil salinan SK guru itu dari arsip kantor lalu memintakan legalisirnya kepada kepala subbagian hari ini.",
+  "mekanisme": "sarana pengganti"
+ },
+ {
+  "id": "paket1#33",
+  "dimensi": "Sosial Budaya",
+  "level": "Sangat Tinggi",
+  "latar": "balai latihan kerja",
+  "konstruk": "keakraban peserta lokal lewat bahasa daerah vs peserta dari luar daerah yang tersisih dari kerja kelompok",
+  "kunci": "D",
+  "kunci_teks": "Mengajak seluruh peserta menyepakati bahasa Indonesia untuk instruksi kerja lalu mencantumkannya dalam tata tertib.",
+  "mekanisme": "sepakat"
+ },
+ {
+  "id": "paket1#34",
+  "dimensi": "TIK",
+  "level": "Tinggi",
+  "latar": "kantor desa",
+  "konstruk": "mendukung program kesehatan lewat data warga vs memastikan peminta data pribadi benar-benar sah",
+  "kunci": "B",
+  "kunci_teks": "Menelepon puskesmas lewat nomor yang tercatat di kantor untuk memastikan permintaannya, lalu melapor kepala desa.",
+  "mekanisme": "verifikasi/cek"
+ },
+ {
+  "id": "paket1#35",
+  "dimensi": "Jejaring Kerja",
+  "level": "Sangat Tinggi",
+  "latar": "badan penanggulangan bencana daerah",
+  "konstruk": "kecepatan peringatan dini sampai ke warga vs cara tiap desa menggerakkan warganya sendiri",
+  "kunci": "B",
+  "kunci_teks": "Meminta tiap desa menunjuk satu petugas penerima peringatan yang wajib membalas begitu pesan dari kantor diterima.",
+  "mekanisme": "lain: meminta"
+ },
+ {
+  "id": "paket1#36",
+  "dimensi": "Profesionalisme",
+  "level": "Tinggi",
+  "latar": "dinas pertanian",
+  "konstruk": "menjaga hubungan dengan rekan senior vs ketepatan data laporan tim yang menjadi dasar keputusan",
+  "kunci": "C",
+  "kunci_teks": "Menunjukkan hasil ukur lapangan tiga desa itu kepada rekan senior sebelum laporan dikirim.",
+  "mekanisme": "lain: menunjukkan"
+ },
+ {
+  "id": "paket1#37",
+  "dimensi": "TIK",
+  "level": "Tinggi",
+  "latar": "kantor kecamatan",
+  "konstruk": "pemakaian penuh layanan surat daring vs warga yang belum terbiasa mengunggah berkas tetap terlayani",
+  "kunci": "A",
+  "kunci_teks": "Memasang petunjuk batas ukuran berkas beserta cara memperkecil foto pada halaman unggah aplikasi yang dibuka setiap pemohon.",
+  "mekanisme": "aturan/format tertulis"
+ },
+ {
+  "id": "paket1#38",
+  "dimensi": "Anti Radikalisme",
+  "level": "Tinggi",
+  "latar": "bagian kepegawaian",
+  "konstruk": "ketegasan terhadap tanda penolakan pada negara vs hak rekan untuk tidak dicap sebelum alasannya diketahui",
+  "kunci": "B",
+  "kunci_teks": "Menemui rekan itu empat mata, lalu menanyakan alasan sikapnya saat apel Senin.",
+  "mekanisme": "tegur/bicara langsung"
+ },
+ {
+  "id": "paket1#39",
+  "dimensi": "Sosial Budaya",
+  "level": "Tinggi",
+  "latar": "kantor desa",
+  "konstruk": "aturan peminjaman menurut urutan permohonan vs akses setara kelompok agama dan budaya yang kecil ke balai desa",
+  "kunci": "D",
+  "kunci_teks": "Menyusun jadwal bulanan yang menyisihkan beberapa hari untuk kelompok yang jarang meminjam, lalu mengumumkannya di papan desa.",
+  "mekanisme": "jadwal/giliran/urutan"
+ },
+ {
+  "id": "paket1#40",
+  "dimensi": "Jejaring Kerja",
+  "level": "Tinggi",
+  "latar": "unit TI instansi",
+  "konstruk": "pemasangan pembaruan keamanan server secepatnya vs kelangsungan layanan bidang lain yang memakai aplikasi",
+  "kunci": "A",
+  "kunci_teks": "Mengedarkan dua pilihan jam pemeliharaan kepada ketiga bidang untuk dijawab sebelum Rabu, saat jam dikunci.",
+  "mekanisme": "lain: mengedarkan"
+ },
+ {
+  "id": "paket1#41",
+  "dimensi": "Sosial Budaya",
+  "level": "Sangat Tinggi",
+  "latar": "humas instansi",
+  "konstruk": "ketepatan waktu publikasi tarif vs hak narasumber utama menjalankan ibadah pada hari rayanya",
+  "kunci": "A",
+  "kunci_teks": "Menggeser siaran ke hari yang disanggupi narasumber, lalu mengabarkan jadwal barunya ke radio.",
+  "mekanisme": "jadwal/giliran/urutan"
+ },
+ {
+  "id": "paket1#42",
+  "dimensi": "Anti Radikalisme",
+  "level": "Tinggi",
+  "latar": "badan penanggulangan bencana daerah",
+  "konstruk": "keutuhan hubungan kerja tim lapangan vs ajakan nyata mengganti dasar negara yang terus disebarkan",
+  "kunci": "C",
+  "kunci_teks": "Melaporkan ajakan yang Anda tolak itu dan pembagian formulirnya kepada kepala pelaksana BPBD.",
+  "mekanisme": "lapor/serahkan ke pihak berwenang"
+ },
+ {
+  "id": "paket1#43",
+  "dimensi": "Sosial Budaya",
+  "level": "Tinggi",
+  "latar": "bagian kepegawaian",
+  "konstruk": "keseragaman pelaksanaan edaran pakaian adat vs penghargaan pada budaya asal pegawai dari luar daerah",
+  "kunci": "B",
+  "kunci_teks": "Menuliskan dalam petunjuk pelaksanaan bahwa pakaian adat daerah asal pegawai juga diterima setiap Kamis.",
+  "mekanisme": "aturan/format tertulis"
+ },
+ {
+  "id": "paket1#44",
+  "dimensi": "Pelayanan Publik",
+  "level": "Tinggi",
+  "latar": "rumah sakit daerah",
+  "konstruk": "tanggapan cepat atas aduan pungutan di kasir vs perlindungan petugas dari hukuman sebelum kejadiannya jelas",
+  "kunci": "E",
+  "kunci_teks": "Menghubungi pengunggah untuk meminta waktu kejadian dan nomor kuitansinya sebagai dasar pemeriksaan.",
+  "mekanisme": "verifikasi/cek"
+ },
+ {
+  "id": "paket1#45",
+  "dimensi": "Anti Radikalisme",
+  "level": "Sangat Tinggi",
+  "latar": "kantor pajak daerah",
+  "konstruk": "penghentian cepat sebaran poster yang menolak sahnya pemerintah vs hubungan kerja dengan rekan yang meneruskannya",
+  "kunci": "D",
+  "kunci_teks": "Menghapus poster itu dari grup, lalu mengingatkan kedua pengirimnya secara pribadi.",
+  "mekanisme": "tegur/bicara langsung"
+ }
+]

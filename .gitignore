@@ -1,7 +1,9 @@
 .DS_Store
 node_modules/
-tmp/
-prototipe/
+**/prototipe/*
+!BIG DATA/HANDBOOK TKP D AJIKS AKADEMI/prototipe/buat_pdf.js
+!BIG DATA/HANDBOOK TIU D AJIKS AKADEMI/prototipe/gaya_halaman_tiu.html
+.claude-flow/
 *.mov
 *.pdf
 

@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><title>Paket 1 Soal 1–15 TKP — Pembahasan</title><style>
+  @page { size: A4; margin: 18mm 16mm 20mm 16mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #1a1a1a;
+    margin: 0;
+  }
+  .cover {
+    page-break-after: always;
+    padding-top: 60mm;
+    text-align: center;
+  }
+  .cover .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 10pt;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #6b6b6b;
+    margin-bottom: 10mm;
+  }
+  .cover h1 {
+    font-size: 26pt;
+    margin: 0 0 6mm 0;
+    color: #111;
+  }
+  .cover .sub {
+    font-size: 12pt;
+    color: #444;
+    margin-bottom: 14mm;
+  }
+  .cover .meta-box {
+    display: inline-block;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6mm 10mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9.5pt;
+    color: #333;
+  }
+  .cover .meta-box div { margin: 1.5mm 0; }
+  .cover .meta-box b { color: #111; }
+  .cover .note {
+    margin-top: 16mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    color: #888;
+    max-width: 120mm;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2.section-title {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 13pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111;
+    border-bottom: 2px solid #111;
+    padding-bottom: 2mm;
+    margin: 0 0 6mm 0;
+  }
+
+  table.summary {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.8pt;
+    margin-bottom: 4mm;
+  }
+  table.summary th, table.summary td {
+    border: 1px solid #ccc;
+    padding: 2mm 2.2mm;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.summary th {
+    background: #f2f2f2;
+    font-weight: 700;
+  }
+  table.summary td.center { text-align: center; }
+
+  .soal {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 9mm;
+    padding-bottom: 7mm;
+    border-bottom: 1px solid #ddd;
+  }
+  .soal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 3mm;
+    break-inside: avoid;
+  }
+  .soal-num {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 11.5pt;
+    color: #111;
+  }
+  .badge {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    padding: 1mm 3mm;
+    border-radius: 10px;
+    color: #fff;
+    white-space: nowrap;
+  }
+  .dim-Profesionalisme { background: #2f5fa8; }
+  .dim-PelayananPublik { background: #1f8a56; }
+  .dim-JejaringKerja { background: #6b3fa0; }
+  .dim-SosialBudaya { background: #c9701d; }
+  .dim-TIK { background: #0f8b8d; }
+  .dim-AntiRadikalisme { background: #b3282d; }
+
+  .stem { margin-bottom: 3mm; text-align: justify; }
+
+  .options { margin: 0 0 4mm 0; padding: 0; list-style: none; }
+  .options li {
+    display: flex;
+    gap: 2.5mm;
+    margin-bottom: 1.6mm;
+    align-items: flex-start;
+  }
+  .opt-letter {
+    flex: 0 0 auto;
+    font-weight: 700;
+    width: 5mm;
+  }
+  .opt-letter.kunci { color: #1f8a56; }
+  .opt-text { flex: 1 1 auto; }
+  .opt-text.kunci { font-weight: 700; }
+
+  .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.6pt;
+    background: #f7f7f7;
+    border-left: 3px solid #111;
+    padding: 2.5mm 3.5mm;
+    margin-bottom: 2.5mm;
+  }
+  .meta div { margin: 0.8mm 0; }
+  .meta .label { font-weight: 700; display: inline-block; width: 22mm; color: #444; }
+
+  .pembahasan {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    background: #fbfbf5;
+    border: 1px solid #e6e2c8;
+    padding: 3mm 4mm;
+  }
+  .pembahasan .ph-title {
+    font-weight: 700;
+    font-size: 8.6pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6b6320;
+    margin-bottom: 1.5mm;
+  }
+  .pembahasan ol { margin: 0; padding-left: 4mm; }
+  .pembahasan li { margin-bottom: 1.3mm; text-align: justify; }
+
+  .footer-note {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    color: #999;
+    text-align: center;
+    margin-top: 10mm;
+  }
+
+  code.sumbu {
+    background: #eee;
+    padding: 0.2mm 1.2mm;
+    border-radius: 3px;
+    font-family: "Courier New", monospace;
+    font-size: 8.2pt;
+  }
+  .pembahasan-siswa { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 9pt; background: #f3f8fb; border: 1px solid #c9dde8; padding: 3mm 4mm; margin-top: 2mm; }
+  .pembahasan-siswa .ph-title { font-weight: 700; font-size: 8.6pt; text-transform: uppercase; color: #2d5a73; margin-bottom: 1.5mm; }
+  .pembahasan-siswa p, .pembahasan-siswa li { margin: 0.8mm 0; text-align: justify; }
+  .pindai{border:2px solid #1f5f8b;border-radius:5px;background:#f2f8fc;padding:3mm 5mm;margin:0 0 4mm;font-family:"Helvetica Neue",Arial,sans-serif;font-size:10pt}
+  .pindai .pt{font-weight:bold;color:#1f5f8b;letter-spacing:1px;text-transform:uppercase;font-size:9.5pt;margin-bottom:2mm}
+  .pindai .pt span{float:right;font-weight:normal;color:#555;text-transform:none;letter-spacing:0}
+  .pindai ol{margin:0;padding-left:5mm}.pindai li{margin:1.5mm 0}
+  .pindai .tanda{margin-top:2.5mm;padding:2mm 3mm;background:#fff6d6;border-left:4px solid #d9a400}
+
+  .soal.bahas { page-break-inside: auto; break-inside: auto; }
+  .soal.bahas .soal-head { break-after: avoid; page-break-after: avoid; }
+  .soal.bahas .stem, .soal.bahas .options { break-inside: avoid; }
+  .soal.bahas .stem, .soal.bahas .options { font-size: 10pt; }
+  table.skor td, table.skor th { text-align: center; }
+  .cover { padding-top: 70mm; }
+</style></head><body>
+<div class="cover"><div class="kicker">D'Ajiks Akademi · SKD Kedinasan</div>
+<h1>Paket 1 Soal 1–15 TKP</h1><div class="sub">Pembahasan</div>
+<div class="meta-box"><div><b>Subtes</b> Tes Karakteristik Pribadi</div><div><b>Jumlah</b> 15 soal</div></div>
+<div class="note">Kerjakan lembar soal dulu, baru buka pembahasan ini.</div></div>
+<h2 class="section-title">Tabel Skor</h2><table class="summary skor"><tr><th>No</th><th>Kunci (5)</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th></tr><tr><td>1</td><td>E</td><td>4</td><td>1</td><td>2</td><td>3</td><td>5</td></tr><tr><td>2</td><td>C</td><td>3</td><td>2</td><td>5</td><td>1</td><td>4</td></tr><tr><td>3</td><td>A</td><td>5</td><td>1</td><td>2</td><td>4</td><td>3</td></tr><tr><td>4</td><td>B</td><td>1</td><td>5</td><td>4</td><td>2</td><td>3</td></tr><tr><td>5</td><td>C</td><td>2</td><td>1</td><td>5</td><td>4</td><td>3</td></tr><tr><td>6</td><td>E</td><td>1</td><td>4</td><td>2</td><td>3</td><td>5</td></tr><tr><td>7</td><td>B</td><td>4</td><td>5</td><td>2</td><td>3</td><td>1</td></tr><tr><td>8</td><td>A</td><td>5</td><td>2</td><td>3</td><td>4</td><td>1</td></tr><tr><td>9</td><td>C</td><td>3</td><td>2</td><td>5</td><td>1</td><td>4</td></tr><tr><td>10</td><td>C</td><td>1</td><td>2</td><td>5</td><td>4</td><td>3</td></tr><tr><td>11</td><td>E</td><td>2</td><td>1</td><td>3</td><td>4</td><td>5</td></tr><tr><td>12</td><td>D</td><td>2</td><td>4</td><td>1</td><td>5</td><td>3</td></tr><tr><td>13</td><td>B</td><td>1</td><td>5</td><td>2</td><td>3</td><td>4</td></tr><tr><td>14</td><td>A</td><td>5</td><td>3</td><td>1</td><td>2</td><td>4</td></tr><tr><td>15</td><td>D</td><td>4</td><td>1</td><td>3</td><td>5</td><td>2</td></tr></table><div style="page-break-after: always"></div><h2 class="section-title">Pembahasan per Soal</h2><div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 1</span>
+    <span class="badge dim-TIK">TIK</span>
+  </div><div class="stem">
+    Sebagai operator data SMA, Anda melihat wali kelas mengetik ulang nilai rapor satu per satu sampai larut, dan tetap ada yang salah ketik. Aplikasi rapor punya fitur unggah dari templat, tetapi wali kelas khawatir nilai sekelas bisa salah masuk. Langkah pertama yang Anda ambil adalah&hellip; (TIK)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Mencoba fitur unggah khusus kelas yang sering salah ketik, lalu mengecek hasilnya.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Meminta siswa pengurus kelas membantu mengetik nilai agar wali kelas cepat selesai.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Mengikuti kebiasaan lama karena wali kelas lebih nyaman mengetik nilai sendiri.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menunda fitur unggah sampai semester depan, rapor kali ini tetap diketik manual.</span></li>
+    <li><span class="opt-letter kunci">E.</span><span class="opt-text kunci">Menguji fitur unggah di satu kelas, lalu memperluasnya setelah hasilnya dicocokkan.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> TIK: fitur yang sudah ada dipakai supaya kerja cepat, hasilnya dicek dulu.</li>
+      <li><b>Kalimat penentu:</b> "khawatir nilai sekelas bisa salah masuk". Yang ditakutkan salah masuk, bukan fiturnya. Jawabannya uji kecil yang dicocokkan.</li>
+      <li><b>Coret:</b> B (nilai dititipkan ke siswa), C (tidak ada yang berubah), D (fitur baru dipakai semester depan). Tinggal A dan E. A: dicek, tapi hanya untuk kelas yang sering salah. E: dicoba di satu kelas, dicocokkan, lalu dipakai semua. <b>Pilih E.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Ada fitur yang belum berani dipakai? Coba kecil dulu dan cocokkan hasilnya, jangan ditunda.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> bayangkan para wali kelas di sekolahmu mengetik ulang nilai rapor satu per satu sampai larut, dan tetap saja ada yang salah ketik. Padahal aplikasi rapor punya fitur unggah dari templat. Kenapa tidak langsung dipakai? Karena wali kelas khawatir nilai satu kelas bisa salah masuk.</p>
+    <ul>
+      <li><b>E (skor 5)</b>: uji di satu kelas dulu, cocokkan dengan nilai aslinya, baru dipakai kelas lain. Wali kelas tidak perlu begadang lagi, dan rasa khawatir mereka dijawab dengan bukti, bukan janji.</li>
+      <li><b>A (skor 4)</b>: mulai dari kelas yang paling sering salah memang masuk akal. Hanya saja wali kelas yang lain masih mengetik sampai larut, padahal fitur yang sama bisa menolong mereka.</li>
+      <li><b>D (skor 3)</b>: hati-hati itu baik, cuma harganya mahal: satu semester lagi semua nilai diketik manual, dan salah ketiknya bisa terulang.</li>
+      <li><b>C (skor 2)</b>: rekan jadi nyaman, kerja tetap lambat. Salah ketiknya pun ikut bertahan.</li>
+      <li><b>B (skor 1)</b>: kasihan siswanya. Nilai rapor itu urusan wali kelas, bukan pekerjaan yang pantas dititipkan ke murid.</li>
+    </ul>
+    <p><b>Kunci E</b>, karena E memakai teknologi yang sudah tersedia untuk mempercepat kerja, dengan hasil yang dicek dulu sebelum dipakai lebih luas.</p>
+    <p><b>Analogi:</b> kalau di rumah baru ada mesin cuci, kamu tidak langsung memasukkan semua baju putih dan berwarna. Kamu coba satu cucian dulu, lihat hasilnya, baru dipakai untuk semuanya.</p>
+    <p><b>Jebakan:</b> pilihan D paling sering dipilih orang yang takut salah. Padahal di cerita, cara lama pun sudah menghasilkan salah ketik. Menunda tidak membuatnya lebih aman.</p>
+    <p><b>Tips:</b> teknologi yang sudah ada di kantor biasanya dipakai, bukan dihindari. Yang membuatnya aman adalah uji kecil dan pengecekan hasil.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 2</span>
+    <span class="badge dim-PelayananPublik">Pelayanan Publik</span>
+  </div><div class="stem">
+    Seorang warga minta salinan arsip tanah lama untuk sidang lusa, padahal pencarian biasanya tiga hari kerja sesuai antrean yang Anda atur. Ia hanya menyebut jadwal sidangnya secara lisan, dan dua pemohon lain juga bertenggat minggu ini. Sikap Anda adalah&hellip; (Pelayanan Publik)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Meminta surat panggilan sidangnya, lalu mendahulukan arsip warga itu hari ini.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Memproses permohonannya sesuai urutan antrean, dengan waktu standar tiga hari kerja.</span></li>
+    <li><span class="opt-letter kunci">C.</span><span class="opt-text kunci">Meminta bukti tenggat tiap pemohon mendesak, lalu mendahulukan yang paling dekat.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menampung permohonannya untuk dibahas di rapat evaluasi layanan bulan depan.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Mendahulukan siapa pun yang mengaku punya tenggat dekat, mulai dari warga ini.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Pelayanan Publik: yang paling terdesak didahulukan, dengan ukuran yang sama untuk semua.</li>
+      <li><b>Kalimat penentu:</b> "Ia hanya menyebut jadwal sidangnya secara lisan". Belum ada bukti, dan dua pemohon lain juga dikejar tenggat.</li>
+      <li><b>Coret:</b> D (dibahas bulan depan, sidang keburu lewat), B (tenggat lusa tidak ditimbang), A (bukti diminta, tapi dua pemohon lain dilangkahi). Tinggal E dan C. E: siapa pun yang mengaku didahulukan, tanpa bukti. C: semua yang terdesak diminta bukti, lalu diurutkan. <b>Pilih C.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Banyak yang minta didahulukan? Minta buktinya, lalu urutkan dari tenggat terdekat.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> kamu yang mengatur antrean pencarian arsip. Lalu datang warga yang butuh salinan arsip tanah untuk sidang lusa, padahal pencarian biasanya makan tiga hari kerja. Ia cuma bilang secara lisan, dan ternyata dua pemohon lain juga dikejar tenggat minggu ini.</p>
+    <ul>
+      <li><b>C (skor 5)</b>: semua yang terdesak diminta bukti tenggatnya, lalu yang paling dekat didahulukan. Kalau sidang lusa itu terbukti, warga tadi tetap bisa paling dulu, dan dua pemohon lain tidak merasa dilangkahi.</li>
+      <li><b>E (skor 4)</b>: niatnya adil untuk semua yang terdesak. Masalahnya, cukup dengan mengaku. Besok semua orang bisa bilang sedang terdesak.</li>
+      <li><b>A (skor 3)</b>: surat panggilan sidang perlu diminta, setuju. Lalu bagaimana dengan dua pemohon lain yang juga dikejar waktu?</li>
+      <li><b>B (skor 2)</b>: urutan dijaga, sidang lusa dilupakan. Arsipnya bisa baru ketemu setelah sidang lewat.</li>
+      <li><b>D (skor 1)</b>: rapat bulan depan sudah terlambat jauh. Sidangnya lusa.</li>
+    </ul>
+    <p><b>Kunci C</b>, karena C mendahulukan yang paling mendesak dengan satu ukuran yang sama untuk semua pemohon, yaitu bukti.</p>
+    <p><b>Analogi:</b> di IGD, pasien didahulukan menurut hasil pemeriksaan, bukan menurut siapa yang paling keras bilang sakit. Aturan itu berlaku untuk setiap pasien yang datang.</p>
+    <p><b>Jebakan:</b> kata "antrean" dan "tiga hari kerja" di pilihan B diambil persis dari soal, jadi terasa benar. Hitung saja: tiga hari kerja dari sekarang sudah lewat dari lusa.</p>
+    <p><b>Tips:</b> begitu ada lebih dari satu orang yang sama-sama terdesak, pakai satu ukuran untuk semuanya.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 3</span>
+    <span class="badge dim-Profesionalisme">Profesionalisme</span>
+  </div><div class="stem">
+    Sebagai staf akademik, Anda harus mengirim rekap kehadiran taruna ke bagian pengasuhan siang ini, dan izin bermalam akhir pekan ditetapkan dari rekap itu. Mesin presensi kosong untuk satu kelas, padahal dosennya mengisi daftar hadir manual dan sebentar lagi selesai mengajar. Langkah paling tepat adalah&hellip; (Profesionalisme)
+  </div><ul class="options">
+    <li><span class="opt-letter kunci">A.</span><span class="opt-text kunci">Meminta daftar hadir manual dari dosen itu, lalu melengkapi data sebelum dikirim.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Menunggu mesin presensi diperbaiki dulu, baru rekapnya dikirim ke bagian pengasuhan.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Mengikuti saran rekan senior agar rekap dikirim sesuai data mesin saja.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Mengirim rekap tepat waktu, dengan catatan data satu kelas menyusul nanti.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Meminta seluruh dosen menandatangani daftar hadir manual, lalu menyusun rekap dari awal.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Profesionalisme: tepat waktu, tapi datanya tetap lengkap dan sah.</li>
+      <li><b>Kalimat penentu:</b> "izin bermalam akhir pekan ditetapkan dari rekap itu". Rekap langsung dipakai memutuskan, jadi harus lengkap sebelum dikirim.</li>
+      <li><b>Coret:</b> B (menunggu mesin yang entah kapan beres), C (dikirim dengan data kosong), E (tanda tangan semua dosen, tak selesai siang ini). Tinggal D dan A. D: tepat waktu, tapi susulannya datang setelah izin diputuskan. A: daftar manual diambil, rekap lengkap sebelum dikirim. <b>Pilih A.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Data langsung dipakai untuk keputusan? Lengkapi sebelum dikirim, jangan disusulkan.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> rekap kehadiran taruna harus kamu kirim siang ini, dan izin bermalam akhir pekan diputuskan dari rekap itu. Masalahnya, mesin presensi kosong untuk satu kelas. Untungnya dosen kelas itu mengisi daftar hadir manual, dan sebentar lagi ia selesai mengajar.</p>
+    <ul>
+      <li><b>A (skor 5)</b>: cukup tunggu sebentar, minta daftar hadir manualnya, lalu lengkapi rekap sebelum dikirim. Lubangnya ditutup tepat di kelas yang kosong, dan rekap tetap terkirim siang ini.</li>
+      <li><b>D (skor 4)</b>: jujur, tepat waktu, dan terlambat di saat yang sama: izin taruna kelas itu sudah diputuskan sebelum data susulan datang.</li>
+      <li><b>E (skor 3)</b>: rapi sekali, tapi kebesaran. Mengumpulkan tanda tangan semua dosen lalu menyusun dari awal tidak akan selesai siang ini.</li>
+      <li><b>C (skor 2)</b>: saran senior terasa aman, padahal satu kelas taruna akan tercatat tidak hadir. Dosennya sendiri mencatat mereka hadir.</li>
+      <li><b>B (skor 1)</b>: menunggu mesin diperbaiki, entah kapan. Rekapnya bisa tidak terkirim sama sekali hari ini.</li>
+    </ul>
+    <p><b>Kunci A</b>, karena A mengisi data yang kosong dari sumber yang sah, sebelum rekap itu dipakai untuk memutuskan izin.</p>
+    <p><b>Analogi:</b> ada satu halaman kosong di rapor yang mau dibagikan. Kamu minta halaman itu ke guru yang memegangnya, bukan membagikan dulu lalu menyusulkan, dan bukan mencetak ulang semua rapor.</p>
+    <p><b>Jebakan:</b> D gugur bukan karena tidak jujur. Ia gugur karena waktunya: izin bermalam keburu diputuskan sebelum data susulan masuk.</p>
+    <p><b>Tips:</b> perhatikan kapan sebuah data dipakai. Data yang langsung dipakai untuk memutuskan sesuatu harus lengkap sebelum dikirim.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 4</span>
+    <span class="badge dim-SosialBudaya">Sosial Budaya</span>
+  </div><div class="stem">
+    Menjelang Natal, hampir semua petugas piket terminal yang Anda koordinasikan dibutuhkan, dan rekan-rekan mengusulkan dua petugas yang merayakan Natal diliburkan sepekan. Keduanya hanya butuh libur malam dan hari Natal, sedangkan beberapa bulan lagi giliran rekan lain merayakan Idulfitri. Apa respons Anda? (Sosial Budaya)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Mengambil sendiri seluruh piket malam Natal agar tidak ada rekan yang dirugikan.</span></li>
+    <li><span class="opt-letter kunci">B.</span><span class="opt-text kunci">Menanyakan kebutuhan tiap petugas di hari besarnya sebagai dasar tukar piket.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Memberi libur malam dan hari Natal kepada keduanya, sesuai permintaan mereka sendiri.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menyetujui usul rekan-rekan meliburkan keduanya sepekan, toh sebagian besar sudah setuju.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menetapkan tukar piket di hari besar tiap agama, dengan jatah libur sepekan.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Sosial Budaya: kebutuhan tiap orang ditanyakan, bukan ditebak, dan berlaku untuk semua agama.</li>
+      <li><b>Kalimat penentu:</b> "giliran rekan lain merayakan Idulfitri". Urusannya bukan cuma Natal tahun ini; hari besar lain menyusul.</li>
+      <li><b>Coret:</b> A (semua piket ditanggung sendiri), D (suara terbanyak yang menang), E (lama libur ditebak sepekan). Tinggal C dan B. C: pas untuk Natal, berhenti di dua orang. B: kebutuhan tiap petugas ditanyakan untuk tukar piket. <b>Pilih B.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Hari besar lain sudah disebut di soal? Cari cara yang bisa dipakai lagi, bukan izin untuk dua orang saja.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> menjelang Natal, terminal ramai dan hampir semua petugas piketmu dibutuhkan. Rekan-rekan mengusulkan dua petugas yang merayakan Natal libur sepekan, padahal keduanya sendiri cuma butuh malam dan hari Natal. Lalu ingat, beberapa bulan lagi giliran rekan lain merayakan Idulfitri.</p>
+    <ul>
+      <li><b>B (skor 5)</b>: tanyakan dulu ke setiap petugas apa yang mereka butuhkan di hari besarnya, lalu susun tukar piket dari jawaban itu. Terminal tetap terjaga, dan saat Idulfitri tiba, caranya sudah siap.</li>
+      <li><b>C (skor 4)</b>: persis seperti yang diminta, cuma berhenti di dua orang ini. Begitu Idulfitri datang, kamu mulai dari nol lagi.</li>
+      <li><b>E (skor 3)</b>: niatnya adil untuk semua agama, dan itu patut dihargai. Sayangnya lamanya libur ditebak sendiri. Dua petugas itu tidak minta sepekan.</li>
+      <li><b>D (skor 2)</b>: suara terbanyak terdengar demokratis. Masalahnya, yang paling tahu kebutuhan dua petugas itu adalah mereka sendiri, dan mereka sudah bilang.</li>
+      <li><b>A (skor 1)</b>: mulia, kamu mau menanggung semua piket malam Natal. Jadwal piketnya sendiri tetap tidak tersusun, dan kamu bisa tumbang kelelahan.</li>
+    </ul>
+    <p><b>Kunci B</b>, karena B bertanya dulu ke orang yang bersangkutan, lalu menyusun cara tukar piket yang bisa dipakai di setiap hari besar.</p>
+    <p><b>Analogi:</b> sebelum memesan makanan untuk acara kantor, kamu menanyakan pantangan tiap orang, bukan menebak sendiri. Daftarnya kamu simpan untuk acara berikutnya.</p>
+    <p><b>Jebakan:</b> kata "tiap agama" membuat E terdengar paling adil. Bandingkan dengan permintaan dua petugas itu: mereka cuma minta malam dan hari Natal, bukan sepekan.</p>
+    <p><b>Tips:</b> dalam urusan keberagaman, tanyakan dulu ke orang yang bersangkutan sebelum mengatur sesuatu untuk mereka.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 5</span>
+    <span class="badge dim-Profesionalisme">Profesionalisme</span>
+  </div><div class="stem">
+    Rekan senior di loket pajak sebelah Anda menerima berkas keberatan tanpa tanda terima bernomor agar antrean cepat, padahal SOP mewajibkannya, dan ia melakukannya sejak Senin. Tadi pagi Anda menyinggungnya lewat candaan, tetapi tak digubris, dan tiga pemohonnya masih menunggu. Apa yang Anda lakukan? (Profesionalisme)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menyinggungnya lagi lewat candaan ringan saat jeda, supaya rekan tidak tersinggung.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Memakai juga cara cepat rekan itu, toh antrean jam sibuk harus lancar.</span></li>
+    <li><span class="opt-letter kunci">C.</span><span class="opt-text kunci">Mengajak rekan menerbitkan tanda terima tertinggal, lalu menyepakati cara mempercepat antrean.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menerbitkan sendiri tanda terima ketiga berkas tadi, lalu menyerahkannya ke pemohon.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menegur rekan secara empat mata, lalu menyepakati cara mempercepat antrean mulai besok.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Profesionalisme: aturan ditegakkan dan cara kerjanya dibenahi, tanpa mempermalukan rekan.</li>
+      <li><b>Kalimat penentu:</b> "ia melakukannya sejak Senin". Ini sudah kebiasaan, bukan khilaf sekali.</li>
+      <li><b>Coret:</b> B (ikut melanggar demi antrean), A (candaan yang sudah tak digubris), E (baru berlaku besok, tiga pemohon telantar). Tinggal D dan C. D: pemohon beres, kebiasaan rekan tetap jalan. C: tanda terima diterbitkan, alasan melanggar dibereskan bersama. <b>Pilih C.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Rekan melanggar berulang? Bereskan korbannya hari ini, lalu hilangkan alasannya.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> rekan senior di loket sebelahmu menerima berkas keberatan tanpa tanda terima bernomor supaya antrean cepat, padahal SOP mewajibkannya. Ini sudah berjalan sejak Senin. Tadi pagi kamu menyinggungnya lewat candaan, tapi tak digubris, dan tiga pemohonnya masih menunggu.</p>
+    <ul>
+      <li><b>C (skor 5)</b>: ajak ia menerbitkan tanda terima yang tertinggal, lalu berdua cari cara supaya antrean tetap cepat tanpa melewati SOP. Tiga pemohon pulang membawa tanda terima, senior tidak dipermalukan, dan alasannya melanggar ikut hilang.</li>
+      <li><b>D (skor 4)</b>: kamu turun tangan sendiri, dan tiga pemohon itu terlayani. Besok? Rekanmu masih memakai cara yang sama, karena tidak ada yang berubah padanya.</li>
+      <li><b>E (skor 3)</b>: berani menegur langsung dan mencari jalan keluar. Sayang baru berlaku besok, sementara tiga orang yang sedang menunggu pulang tanpa tanda terima.</li>
+      <li><b>A (skor 2)</b>: candaan sudah dicoba dan tidak digubris. Mengulangnya cuma menjaga suasana, pelanggarannya jalan terus.</li>
+      <li><b>B (skor 1)</b>: antrean lancar enak dilihat, tapi kalau kamu ikut melanggar, pemohon yang dirugikan malah bertambah.</li>
+    </ul>
+    <p><b>Kunci C</b>, karena C membereskan pemohon yang sedang menunggu dan alasan rekan melewati SOP, tanpa mempermalukan senior.</p>
+    <p><b>Analogi:</b> temanmu sering parkir sembarangan karena parkiran penuh. Kamu bantu memindahkan motornya sekarang, lalu kalian cari tempat parkir lain bersama.</p>
+    <p><b>Jebakan:</b> E dan C sama-sama "menyepakati" cara mempercepat antrean, jadi mudah tertukar. Pembedanya ada di tiga pemohon yang masih menunggu: E membiarkan mereka pulang tanpa tanda terima.</p>
+    <p><b>Tips:</b> kebiasaan yang berulang biasanya punya alasan. Jawaban terbaik menolong korban hari ini dan menghilangkan alasan itu.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 6</span>
+    <span class="badge dim-PelayananPublik">Pelayanan Publik</span>
+  </div><div class="stem">
+    Sebagai petugas verifikasi di dinas pertanian, Anda belum mengecek enam dari puluhan nama penerima bantuan benih ke lapangan, sehingga benihnya tertahan sesuai aturan. Masa tanam mulai sepuluh hari lagi, sedangkan pengecekan lapangan biasanya selesai dalam tiga hari. Langkah paling tepat adalah&hellip; (Pelayanan Publik)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menyarankan keenam petani memakai benih sisa musim lalu milik kelompoknya.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Menelepon keenam petani itu untuk memastikan datanya, agar benih cepat tersalur.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Mencoret keenam nama, lalu meminta kelompok mengajukan ulang musim tanam depan.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Meminta ketua kelompok tani menjamin keenam nama itu lewat surat pernyataan.</span></li>
+    <li><span class="opt-letter kunci">E.</span><span class="opt-text kunci">Mendatangi sendiri lahan keenam petani itu pekan ini untuk verifikasi.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Pelayanan Publik: bantuan sampai ke yang berhak, tepat waktu, lewat aturan.</li>
+      <li><b>Kalimat penentu:</b> "pengecekan lapangan biasanya selesai dalam tiga hari". Sepuluh hari masih cukup. Tidak perlu jalan pintas.</li>
+      <li><b>Coret:</b> A (petani disuruh pakai benih sisa), C (dicoret, musim tanam hilang), D (yang menjamin malah ketua kelompok). Tinggal B dan E. B: cepat, tapi lahannya tidak dilihat. E: lahan didatangi sendiri, waktunya masih cukup. <b>Pilih E.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Hitung waktunya dulu. Kalau cara yang benar masih sempat, jalan pintas tidak perlu.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> kamu petugas verifikasi. Enam nama penerima bantuan benih belum kamu cek ke lapangan, jadi benih mereka tertahan sesuai aturan. Masa tanam mulai sepuluh hari lagi. Kelihatannya genting, tapi coba lihat angka yang satunya: pengecekan lapangan biasanya selesai dalam tiga hari.</p>
+    <ul>
+      <li><b>E (skor 5)</b>: datangi lahan keenam petani itu pekan ini. Waktunya masih cukup sebelum masa tanam, dan benih keluar kepada orang yang berhak.</li>
+      <li><b>B (skor 4)</b>: telepon terasa jauh lebih cepat, aku mengerti. Hanya saja lewat telepon kamu tidak bisa melihat lahannya, padahal waktu untuk datang langsung masih ada.</li>
+      <li><b>D (skor 3)</b>: surat pernyataan kelihatan resmi. Yang menjamin justru ketua kelompok, bukan kamu yang bertugas memverifikasi.</li>
+      <li><b>C (skor 2)</b>: aturannya terjaga, musim tanam petaninya hilang. Kasihan, padahal waktunya masih cukup untuk mengecek.</li>
+      <li><b>A (skor 1)</b>: kedengarannya membantu, tapi bantuan yang menjadi hak mereka malah tidak sampai.</li>
+    </ul>
+    <p><b>Kunci E</b>, karena E menjalankan verifikasi sendiri, dengan waktu yang masih cukup sebelum masa tanam.</p>
+    <p><b>Analogi:</b> kalau dokter bisa memeriksamu hari ini, ia tidak akan memberi resep hanya dari cerita lewat telepon. Pemeriksaan langsung masih sempat dilakukan.</p>
+    <p><b>Jebakan:</b> kalimat "agar benih cepat tersalur" di B membuatnya terdengar peduli. Sepuluh hari dibanding tiga hari: buru-buru di sini sebenarnya tidak perlu.</p>
+    <p><b>Tips:</b> angka waktu di soal TKP jarang sekadar hiasan. Bandingkan tenggat dengan lama pekerjaannya sebelum memilih cara cepat.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 7</span>
+    <span class="badge dim-PelayananPublik">Pelayanan Publik</span>
+  </div><div class="stem">
+    Selama musim ujian, pelajar menandai meja ruang baca dengan tas lalu pergi berjam-jam, sehingga lansia dan peneliti sering tak kebagian tempat. Anda koordinator ruang baca yang berwenang mengatur tata tertib, dan penertiban saat ada keluhan tak bertahan begitu petugas pergi. Langkah pertama yang Anda ambil adalah&hellip; (Pelayanan Publik)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menyediakan beberapa meja khusus lansia dan peneliti selama musim ujian ini.</span></li>
+    <li><span class="opt-letter kunci">B.</span><span class="opt-text kunci">Memberlakukan giliran paling lama tiga jam per meja saat ruang baca penuh.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Mengizinkan pelajar menandai kursi selama musim ujian, yang lain diminta datang pagi.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menertibkan meja bertanda tas setiap kali ada pengunjung yang mengeluh lagi.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menyerahkan urusan kursi pada kesepakatan pengunjung, toh ruang baca milik bersama.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Pelayanan Publik: semua pengunjung kebagian adil, aturannya jalan tanpa harus dijaga.</li>
+      <li><b>Kalimat penentu:</b> "tak bertahan begitu petugas pergi". Menertibkan saja sudah terbukti gagal; yang kurang aturan pemakaian meja.</li>
+      <li><b>Coret:</b> E (diserahkan ke pengunjung), C (pelajar dimenangkan, yang lain disuruh datang pagi), D (cara lama yang tak bertahan). Tinggal A dan B. A: lansia dan peneliti kebagian, meja lain tetap ditandai. B: giliran per meja untuk semua saat ruang penuh. <b>Pilih B.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Penertiban terus kambuh? Ganti dengan aturan yang jalan sendiri.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> musim ujian, dan ruang baca yang kamu koordinasikan penuh tas. Pelajar menandai meja lalu pergi berjam-jam, sementara lansia dan peneliti tidak kebagian tempat. Selama ini meja ditertibkan saat ada yang mengeluh, tapi begitu petugas pergi, tas-tas itu kembali.</p>
+    <ul>
+      <li><b>B (skor 5)</b>: pasang giliran paling lama tiga jam per meja selama ruang penuh. Pelajar tetap bisa belajar, pengunjung lain kebagian, dan aturan itu jalan tanpa harus menunggu ada yang mengeluh.</li>
+      <li><b>A (skor 4)</b>: lansia dan peneliti dipikirkan, itu manis. Lalu pengunjung lain? Meja lainnya tetap dikuasai tas yang ditinggal pemiliknya.</li>
+      <li><b>D (skor 3)</b>: cepat menanggapi keluhan, padahal cara ini sudah terbukti tak bertahan: petugas pergi, tas kembali.</li>
+      <li><b>C (skor 2)</b>: mengalah pada kelompok paling ramai terasa damai, sampai kamu sadar lansia dan peneliti yang harus mengalah setiap hari.</li>
+      <li><b>E (skor 1)</b>: ruang baca memang milik bersama. Justru karena itu ada koordinator, dan koordinatornya kamu.</li>
+    </ul>
+    <p><b>Kunci B</b>, karena B membuat aturan pemakaian meja yang adil untuk semua pengunjung dan tetap jalan meski petugas tidak berjaga.</p>
+    <p><b>Analogi:</b> di warung yang ramai, cara paling adil adalah nomor antrean, bukan menegur orang yang menyerobot setiap kali ada pembeli yang protes.</p>
+    <p><b>Jebakan:</b> A paling mudah memikat orang yang berhati baik. Hanya saja sebab masalahnya, meja yang ditinggal berjam-jam, sama sekali tidak tersentuh.</p>
+    <p><b>Tips:</b> jawaban yang kuat menyentuh sebab masalah, bukan hanya menolong korbannya hari itu.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 8</span>
+    <span class="badge dim-Profesionalisme">Profesionalisme</span>
+  </div><div class="stem">
+    Anda staf keuangan kecamatan yang baru ditugasi menyusun laporan dana kelurahan dengan format baru dari kabupaten, tenggatnya tiga hari lagi. Staf yang dulu menyusunnya sudah dimutasi, tetapi masih bisa ditelepon, dan laporan ini wajib dibuat setiap triwulan. Tindakan paling tepat adalah&hellip; (Profesionalisme)
+  </div><ul class="options">
+    <li><span class="opt-letter kunci">A.</span><span class="opt-text kunci">Meminta staf lama membimbing lewat telepon, lalu mencatatnya jadi panduan seksi.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Meminta atasan mengalihkan laporan itu ke staf lain sampai Anda ikut pelatihan.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Mempelajari sendiri format dari kabupaten, lalu langsung mengirim laporannya sebelum tenggat.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Meminta staf yang dimutasi mengerjakan bagian format baru, sisanya Anda selesaikan.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Mengerjakan seluruh laporan seorang diri tanpa mau dibantu rekan seksi.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Profesionalisme: tugas beres tepat waktu, dan kemampuannya menetap di unit kerja.</li>
+      <li><b>Kalimat penentu:</b> "wajib dibuat setiap triwulan". Laporan ini datang lagi, jadi caranya harus kamu kuasai.</li>
+      <li><b>Coret:</b> E (menolak bantuan), B (tugas dilempar ke staf lain), C (dikirim tanpa dicek siapa pun). Tinggal D dan A. D: bagian sulit tetap dikerjakan staf lama. A: dibimbing, lalu langkahnya dicatat jadi panduan. <b>Pilih A.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Tugas yang berulang? Pilih yang membuatmu bisa mengerjakannya sendiri lain kali.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> kamu baru ditugasi menyusun laporan dana kelurahan dengan format baru, tenggatnya tiga hari lagi. Staf yang dulu menyusunnya sudah dimutasi, tapi masih bisa ditelepon. Satu hal yang gampang terlewat: laporan ini wajib dibuat setiap triwulan.</p>
+    <ul>
+      <li><b>A (skor 5)</b>: minta dibimbing lewat telepon, lalu catat langkah-langkahnya jadi panduan seksi. Laporan kali ini selesai, dan triwulan depan kamu, atau siapa pun di seksi, tidak perlu menelepon lagi.</li>
+      <li><b>D (skor 4)</b>: laporannya pasti beres. Hanya saja bagian tersulit dikerjakan orang lain, dan triwulan depan kamu harus memintanya lagi, padahal ia sudah pindah tempat kerja.</li>
+      <li><b>C (skor 3)</b>: mau belajar sendiri itu sikap yang bagus. Yang berisiko adalah laporan keuangan langsung dikirim tanpa diperiksa: kalau ada yang keliru, tidak ada yang sempat menangkapnya.</li>
+      <li><b>B (skor 2)</b>: wajar merasa belum siap. Tugasnya sudah di tanganmu, dan ada orang yang bisa membimbing.</li>
+      <li><b>E (skor 1)</b>: kenapa menolak bantuan? Mengerjakan sendirian tidak membuat laporannya lebih benar.</li>
+    </ul>
+    <p><b>Kunci A</b>, karena A menyelesaikan laporan sekarang dengan bimbingan orang yang paham, dan menyimpan caranya untuk triwulan berikutnya.</p>
+    <p><b>Analogi:</b> saat diajari masak rendang oleh nenek, kamu mencatat resepnya. Kamu tidak menyuruh nenek memasak setiap Lebaran.</p>
+    <p><b>Jebakan:</b> untuk tiga hari ini, D paling cepat dan paling aman. Soalnya menyebut "setiap triwulan", dan di triwulan depan D tidak menolongmu.</p>
+    <p><b>Tips:</b> pekerjaan yang berulang menuntut jawaban yang tetap berguna di putaran berikutnya.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 9</span>
+    <span class="badge dim-AntiRadikalisme">Anti Radikalisme</span>
+  </div><div class="stem">
+    Saat apel pagi yang Anda pimpin sebagai kepala regu penguji kendaraan, seorang penguji senior berkata sambil tertawa bahwa pemilik kendaraan dari satu suku yang suka membantah "dipersulit ramai-ramai saja, tidak usah pakai aturan". Beberapa penguji muda ikut tertawa. Sikap Anda adalah&hellip; (Anti Radikalisme)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Melaporkan ucapan rekan itu ke kepala balai, biar beliau yang menegur resmi.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Menganggapnya candaan senior agar apel tetap cair, toh nanti bisa diingatkan pribadi.</span></li>
+    <li><span class="opt-letter kunci">C.</span><span class="opt-text kunci">Menegur ucapan itu di depan apel, dengan penegasan aturan berlaku sama.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menyerahkan pada penguji muda untuk menilai sendiri sikap mana yang pantas ditiru.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menyelesaikan apel dulu, lalu menegur rekan itu empat mata atas sikap bencinya.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Anti Radikalisme: ucapan yang mengajak memusuhi satu kelompok diluruskan di tempat.</li>
+      <li><b>Kalimat penentu:</b> "Beberapa penguji muda ikut tertawa". Ucapan itu sudah didengar dan disambut, jadi pelurusannya harus di depan mereka juga.</li>
+      <li><b>Coret:</b> D (penguji muda dibiarkan menilai sendiri), B (dianggap candaan), A (dilempar ke kepala balai, padahal kamu pemimpin apel). Tinggal E dan C. E: ditegur setelah apel bubar, sambil menuduh benci. C: diluruskan saat itu, di depan yang mendengar. <b>Pilih C.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Ucapan didengar banyak orang? Luruskan di depan orang yang sama, jangan menunggu bubar.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> kamu sedang memimpin apel, lalu seorang penguji senior bilang sambil tertawa bahwa pemilik kendaraan dari satu suku yang suka membantah sebaiknya "dipersulit ramai-ramai saja, tidak usah pakai aturan". Beberapa penguji muda ikut tertawa. Ini sudah bukan sekadar candaan, karena isinya mengajak berlaku tidak adil kepada satu suku.</p>
+    <ul>
+      <li><b>C (skor 5)</b>: tegur ucapan itu di depan apel, dan tegaskan bahwa aturan berlaku sama untuk kendaraan siapa pun. Penguji muda yang tadi tertawa langsung mendengar mana yang benar, dan seniornya tidak diserang secara pribadi.</li>
+      <li><b>E (skor 4)</b>: berani menegur langsung, tapi apel keburu bubar, jadi penguji muda yang tertawa tidak ikut mendengar. Lagi pula, kok sudah yakin ia benci? Itu baru tebakan.</li>
+      <li><b>A (skor 3)</b>: menegur senior memang tidak enak. Masalahnya, kamu sendiri yang memimpin apel. Kenapa harus menunggu kepala balai?</li>
+      <li><b>B (skor 2)</b>: suasana tetap cair, dan penguji muda pulang dengan kesan bahwa ucapan seperti itu boleh.</li>
+      <li><b>D (skor 1)</b>: kasihan penguji muda itu, dibiarkan menebak sendiri sikap mana yang benar, padahal pemimpinnya ada di depan mereka.</li>
+    </ul>
+    <p><b>Kunci C</b>, karena C meluruskan ucapan itu di tempat ia diucapkan, di depan orang yang mendengarnya.</p>
+    <p><b>Analogi:</b> kalau ada teman yang menulis hal keliru di grup kelas, pelurusannya juga ditulis di grup itu, bukan lewat pesan pribadi esok harinya.</p>
+    <p><b>Jebakan:</b> teguran empat mata di E terasa paling sopan. Yang perlu mendengar bukan cuma si senior, tapi juga penguji muda yang ikut tertawa.</p>
+    <p><b>Tips:</b> menegur di depan orang banyak tidak harus mempermalukan. Tegaskan aturannya, jangan serang orangnya.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 10</span>
+    <span class="badge dim-Profesionalisme">Profesionalisme</span>
+  </div><div class="stem">
+    Sebagai penanggung jawab farmasi puskesmas, Anda didatangi seorang ibu karena label sirup anaknya tertulis 3 &times; 2 sendok, padahal resepnya 3 &times; 1. Label itu ditulis rekan yang yakin sudah teliti, dan ia masih menulis label untuk puluhan resep antrean. Langkah paling tepat adalah&hellip; (Profesionalisme)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Mengusulkan tambahan tenaga farmasi ke kepala puskesmas agar label tidak menumpuk.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Membetulkan label sirup itu, lalu menunggu antrean sepi baru bicara dengan rekan.</span></li>
+    <li><span class="opt-letter kunci">C.</span><span class="opt-text kunci">Membetulkan label itu, lalu mencocokkan tiap label dengan resep sebelum diserahkan.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menulis ulang label sirup itu, lalu meminta rekan lebih cermat menulis berikutnya.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menyimpulkan rekan kelelahan, lalu mengambil alih sendiri seluruh label resep antrean.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Profesionalisme: kesalahan dibetulkan, dan cara kerjanya diberi langkah cek.</li>
+      <li><b>Kalimat penentu:</b> "yang yakin sudah teliti". Nasihat lebih cermat tidak akan mempan. Yang dibutuhkan langkah cek.</li>
+      <li><b>Coret:</b> A (minta tambah tenaga, label salah dibiarkan), B (ditunda sampai antrean sepi), E (menebak rekan lelah, lalu mengambil alih semua). Tinggal D dan C. D: rekan cuma diminta lebih cermat. C: tiap label dicocokkan dengan resep. <b>Pilih C.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Orangnya merasa sudah teliti? Pasang langkah cek, nasihat saja tidak cukup.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> seorang ibu kembali karena label sirup anaknya tertulis 3 &times; 2 sendok, padahal resepnya 3 &times; 1. Yang menulis rekanmu, dan ia yakin sudah teliti. Sekarang pun ia masih menulis label untuk puluhan resep yang mengantre, dengan cara yang sama.</p>
+    <ul>
+      <li><b>C (skor 5)</b>: betulkan dulu label sirup itu, lalu cocokkan setiap label dengan resepnya sebelum obat diserahkan. Antrean tetap jalan, dan kalau ada salah tulis lagi, ketahuan sebelum sampai ke tangan pasien.</li>
+      <li><b>D (skor 4)</b>: label ibu beres, rekan diingatkan. Ia sudah merasa teliti, ingat? Disuruh lebih cermat tidak mengubah apa-apa kalau tidak ada yang mengecek.</li>
+      <li><b>E (skor 3)</b>: niatnya menolong rekan yang mungkin lelah. Itu baru tebakan, dan kalau semua label kamu tulis sendiri, antrean jadi lambat.</li>
+      <li><b>B (skor 2)</b>: menjaga perasaan rekan itu baik hati. Sampai antrean sepi, puluhan label sudah ditulis dengan cara yang sama.</li>
+      <li><b>A (skor 1)</b>: tambahan tenaga mungkin perlu, nanti. Label yang salah masih di tangan ibu itu sekarang.</li>
+    </ul>
+    <p><b>Kunci C</b>, karena C membetulkan kesalahan yang sudah terjadi dan memasang pengecekan untuk setiap obat yang keluar.</p>
+    <p><b>Analogi:</b> kasir yang pernah salah memberi kembalian tidak cukup berjanji lebih teliti. Ia menghitung ulang uangnya di depan pembeli sebelum menyerahkannya.</p>
+    <p><b>Jebakan:</b> D mirip cara kita biasa mengingatkan teman, jadi terasa wajar. Kata kuncinya ada di soal: rekan itu "yakin sudah teliti".</p>
+    <p><b>Tips:</b> dalam urusan obat, pengecekan sebelum diserahkan lebih penting daripada mencari siapa yang salah.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 11</span>
+    <span class="badge dim-JejaringKerja">Jejaring Kerja</span>
+  </div><div class="stem">
+    Belasan keluarga lansia telantar mengeluh mengulang cerita sama karena dikunjungi dua kali sepekan: oleh Anda dari bidang rehabilitasi sosial, dan oleh tim bidang perlindungan sosial. Data tim itu diperbarui pusat bulan lalu, sedangkan data Anda dari pendataan tahun lalu. Respons paling tepat adalah&hellip; (Jejaring Kerja)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Melapor ke atasan bahwa bidang sebelah tidak mau berbagi jadwal kunjungan.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Meminta keluarga itu bersabar, jadwal kunjungan bidang Anda tetap jalan seperti biasa.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Menyerahkan daftar kunjungan Anda ke bidang itu sebagai acuan jadwal bersama.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menyepakati kunjungan gabungan dengan bidang itu, khusus untuk keluarga yang sudah mengeluh.</span></li>
+    <li><span class="opt-letter kunci">E.</span><span class="opt-text kunci">Mencocokkan daftar keluarga kedua bidang lebih dulu, baru menyusun jadwal kunjungan gabungan.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Jejaring Kerja: data dibagi dua arah dengan bidang yang tepat, lalu kerja disatukan.</li>
+      <li><b>Kalimat penentu:</b> "Data tim itu diperbarui pusat bulan lalu". Dua data beda umur. Bisa jadi masih ada keluarga yang dikunjungi dua kali tapi belum ketahuan.</li>
+      <li><b>Coret:</b> B (keluarga disuruh bersabar), A (menuduh tanpa bertanya), C (acuannya data yang lebih lama). Tinggal D dan E. D: kunjungan digabung, cuma untuk yang mengeluh. E: daftar dicocokkan dulu, baru jadwal gabungan. <b>Pilih E.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Ada dua data beda umur? Samakan dulu, baru susun rencana bersama.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> bayangkan kamu lansia yang dalam sepekan dikunjungi dua petugas berbeda dan harus menceritakan hal yang sama dua kali. Itulah keluhan belasan keluarga di soal ini. Lalu ada satu fakta penting: data bidang sebelah baru diperbarui pusat bulan lalu, sedangkan datamu dari pendataan tahun lalu.</p>
+    <ul>
+      <li><b>E (skor 5)</b>: cocokkan dulu daftar keluarga kedua bidang, baru susun jadwal kunjungan gabungan. Dari situ ketahuan semua keluarga yang tumpang tindih, termasuk yang belum sempat mengeluh.</li>
+      <li><b>D (skor 4)</b>: kunjungan gabungan itu ide yang tepat, cuma terbatas pada yang sudah mengeluh. Datamu dan data bidang sebelah beda versi, jadi bisa saja masih ada keluarga lain yang dikunjungi dua kali.</li>
+      <li><b>C (skor 3)</b>: berbagi daftar itu bagus, hanya daftarmu justru yang lebih lama. Kalau dijadikan acuan, keluarga di data baru bisa terlewat.</li>
+      <li><b>A (skor 2)</b>: kesal kalau kerja jadi dobel, wajar. Tapi kok sudah yakin mereka tidak mau berbagi? Itu baru dugaan, dan langsung dibawa ke atasan pula.</li>
+      <li><b>B (skor 1)</b>: kasihan keluarga itu. Mereka sudah lelah, lalu malah diminta bersabar tanpa ada yang berubah.</li>
+    </ul>
+    <p><b>Kunci E</b>, karena E menyamakan data dua bidang dulu, lalu menyusun satu jadwal yang menolong semua keluarga.</p>
+    <p><b>Analogi:</b> dua kurir dari satu toko mengantar ke perumahan yang sama. Sebelum rutenya digabung, alamat di catatan masing-masing dicocokkan dulu, karena salah satu catatan sudah lama.</p>
+    <p><b>Jebakan:</b> D langsung menolong yang mengeluh, dan itu yang membuatnya menarik. Lihat umur kedua data: keluarga yang belum mengeluh bisa saja ikut dikunjungi dua kali.</p>
+    <p><b>Tips:</b> kerja sama antarbidang dimulai dari data yang sama, bukan dari jadwal.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 12</span>
+    <span class="badge dim-PelayananPublik">Pelayanan Publik</span>
+  </div><div class="stem">
+    Sebagai koordinator loket perekaman KTP-el yang berwenang mengatur antrean, Anda menerima lima berkas titipan tetangga rekan sekantor saat kuota hampir habis; katanya mereka sudah ambil nomor, tetapi kartunya tak dibawa. Bulan lalu warga memprotes titipan serupa di loket lain. Apa tindakan paling tepat? (Pelayanan Publik)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Memproses kelima titipan lebih dulu, lalu meminta rekan tidak mengulanginya lagi.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Mengembalikan kelima berkas ke rekan itu dengan menunjuk aturan antrean yang tertempel.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Menunggu arahan tertulis kepala dinas soal kelima titipan itu sebelum memprosesnya.</span></li>
+    <li><span class="opt-letter kunci">D.</span><span class="opt-text kunci">Memasukkan kelima berkas ke antrean umum, dicocokkan dengan nomor seperti lainnya.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Melarang titipan di seluruh loket, lalu memproses kelima berkas atas pengakuan rekan.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Pelayanan Publik: semua warga diperlakukan sama, termasuk titipan kenalan.</li>
+      <li><b>Kalimat penentu:</b> "Bulan lalu warga memprotes titipan serupa di loket lain". Titipan sudah pernah membuat warga merasa dicurangi.</li>
+      <li><b>Coret:</b> C (menunggu arahan, padahal kamu yang berwenang), A (titipan didahulukan), E (diproses hanya atas pengakuan rekan). Tinggal B dan D. B: berkas dikembalikan, lima warga tidak dicek. D: masuk antrean umum, dicek nomornya. <b>Pilih D.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Ada titipan berkas? Jangan didahulukan, jangan juga dibuang. Masukkan ke antrean yang sama.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> rekan sekantor menyerahkan lima berkas tetangganya ke loketmu saat kuota hampir habis. Katanya mereka sudah ambil nomor, tapi tak satu pun kartunya dibawa. Ingat juga, bulan lalu warga memprotes titipan serupa di loket lain.</p>
+    <ul>
+      <li><b>D (skor 5)</b>: berkas itu tidak ditolak, tapi masuk antrean umum dan dicocokkan dengan nomor seperti berkas warga lain. Kalau mereka sudah antre, nomornya akan ketemu. Kalau belum, mereka antre seperti orang lain.</li>
+      <li><b>B (skor 4)</b>: tegas dan sesuai aturan. Lima warga di balik berkas itu ikut tertolak tanpa dicek, padahal bisa jadi mereka sudah antre.</li>
+      <li><b>E (skor 3)</b>: melarang titipan di semua loket itu langkah besar. Anehnya, lima berkas ini tetap diproses hanya karena kata rekanmu, padahal kartunya tidak ada.</li>
+      <li><b>A (skor 2)</b>: menolak rekan sendiri itu tidak enak, aku paham. Warga yang sudah antre bisa terlangkahi, dan protes bulan lalu bisa terulang.</li>
+      <li><b>C (skor 1)</b>: menunggu arahan kepala dinas, padahal kamu sendiri yang berwenang mengatur antrean? Sementara itu kuota hari ini terus berkurang.</li>
+    </ul>
+    <p><b>Kunci D</b>, karena D memperlakukan berkas titipan sama dengan berkas warga lain, diperiksa lewat nomor antreannya.</p>
+    <p><b>Analogi:</b> temanmu titip lima nama di antrean tiket konser. Petugas yang baik tidak mengusir temanmu. Ia meminta semua nama masuk barisan dan mencocokkan tiketnya dengan nomor antrean.</p>
+    <p><b>Jebakan:</b> B tegas dan ada aturan tertempelnya, jadi terasa benar. Pikirkan lima warga di balik berkas itu, yang mungkin tidak tahu apa-apa soal titipan.</p>
+    <p><b>Tips:</b> adil artinya satu cara periksa untuk semua orang, termasuk kenalan rekan sendiri.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 13</span>
+    <span class="badge dim-TIK">TIK</span>
+  </div><div class="stem">
+    Sebagai penyuluh dinas pertanian, Anda merekap proposal kelompok tani bertenggat tiga hari lagi, lalu antivirus memberi peringatan saat flashdisk satu kelompok dicolokkan. Dinas punya pengelola jaringan untuk perangkat bermasalah, dan bulan lalu komputer bidang sebelah tetap tertular walau dibersihkan sendiri. Apa respons Anda? (TIK)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Memperbarui antivirus komputer Anda ke versi terbaru, lalu lanjut merekap kelompok lain.</span></li>
+    <li><span class="opt-letter kunci">B.</span><span class="opt-text kunci">Membawa flashdisk itu ke petugas jaringan, lalu mengabari kelompoknya soal pemeriksaan.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Menanyakan ke rekan satu bidang apakah peringatan semacam itu memang biasa muncul.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Mengembalikan flashdisk itu ke kelompok tani agar mereka bersihkan sendiri dulu.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Meminta kelompok itu mengirim ulang lewat surel, flashdisknya disimpan tanpa dicolokkan lagi.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> TIK: perangkat bermasalah diserahkan ke petugas resmi, pekerjaan tetap jalan.</li>
+      <li><b>Kalimat penentu:</b> "tetap tertular walau dibersihkan sendiri". Membersihkan sendiri sudah terbukti gagal di kantor ini.</li>
+      <li><b>Coret:</b> A (sibuk memperbarui antivirus), C (cuma bertanya ke rekan), D (petani disuruh membersihkan sendiri). Tinggal E dan B. E: flashdisk disimpan, komputer yang sudah tercolok tidak diperiksa. B: dibawa ke petugas jaringan, kelompoknya dikabari. <b>Pilih B.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Perangkat kena virus? Serahkan ke petugas jaringan, jangan diakali sendiri.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> kamu sedang merekap proposal kelompok tani yang tenggatnya tiga hari lagi, lalu antivirus memberi peringatan saat flashdisk salah satu kelompok dicolokkan. Dinas punya pengelola jaringan untuk perangkat bermasalah. Ada juga pelajaran dari bulan lalu: komputer bidang sebelah tetap tertular walau sudah dibersihkan sendiri.</p>
+    <ul>
+      <li><b>B (skor 5)</b>: bawa flashdisk itu ke petugas jaringan, lalu kabari kelompoknya bahwa berkas mereka sedang diperiksa. Yang memeriksa orang yang bertugas, dan proposal mereka tidak hilang dari daftar.</li>
+      <li><b>E (skor 4)</b>: proposal tetap masuk lewat surel dan flashdisk tidak dicolok lagi, cukup hati-hati. Masalahnya, flashdisk itu sudah sempat masuk ke komputermu. Siapa yang memeriksa komputernya?</li>
+      <li><b>D (skor 3)</b>: mereka yang membawa, mereka yang membersihkan. Kedengarannya adil, sampai kamu ingat bulan lalu: dibersihkan sendiri pun tetap tertular. Petaninya juga harus bolak-balik.</li>
+      <li><b>C (skor 2)</b>: bertanya ke rekan itu wajar, hanya jawaban "biasa kok" tidak membuat flashdisk itu aman.</li>
+      <li><b>A (skor 1)</b>: memperbarui antivirus memang perlu, tapi flashdisk bermasalah itu tetap tergeletak tanpa ada yang menangani.</li>
+    </ul>
+    <p><b>Kunci B</b>, karena B menyerahkan perangkat bermasalah ke petugas yang memang mengurusnya, tanpa membuat proposal petani terbengkalai.</p>
+    <p><b>Analogi:</b> kalau tabung gas di rumah berbau bocor, kamu memanggil petugas gas. Tetanggamu pernah mencoba memperbaikinya sendiri, dan tetap bocor.</p>
+    <p><b>Jebakan:</b> banyak yang memilih E karena flashdisk-nya tidak disentuh lagi. Padahal antivirus baru berbunyi setelah flashdisk dicolokkan, jadi komputernya juga perlu diperiksa.</p>
+    <p><b>Tips:</b> kerusakan yang pernah gagal dibereskan sendiri di kantormu adalah tanda kuat untuk memanggil petugasnya.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 14</span>
+    <span class="badge dim-Profesionalisme">Profesionalisme</span>
+  </div><div class="stem">
+    Rekan instruktur las di BLK Anda kerap meninggalkan peserta memakai mesin las tanpa pendamping. Dua kali Anda tegur langsung, ia tetap mengulang, dan kemarin seorang peserta luka bakar ringan. Tugas instruktur diatur kepala seksi; angkatan ini masih berjalan dua bulan. Apa tindakan paling tepat? (Profesionalisme)
+  </div><ul class="options">
+    <li><span class="opt-letter kunci">A.</span><span class="opt-text kunci">Melaporkan kebiasaan itu ke kepala seksi, lengkap dengan catatan tanggal tiap kejadian.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Mencatat tiap kali rekan pergi, untuk dilaporkan bila ada peserta terluka lagi.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Menjaga hubungan baik dengan rekan, urusan kelas praktik diserahkan pada kesadarannya.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menegur rekan itu sekali lagi, lebih keras, di depan para peserta las.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menggantikan rekan mengawasi kelas las setiap kali ia meninggalkan peserta di bengkel.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Profesionalisme: tegur langsung dulu; kalau gagal dan ada korban, bawa ke yang mengatur tugas.</li>
+      <li><b>Kalimat penentu:</b> "Dua kali Anda tegur langsung, ia tetap mengulang". Teguran langsung sudah gagal, dan kemarin ada yang terluka. Sudah waktunya ke kepala seksi.</li>
+      <li><b>Coret:</b> C (diserahkan ke kesadarannya), D (teguran ketiga di depan peserta), B (menunggu ada yang terluka lagi). Tinggal E dan A. E: kamu yang berjaga, dua bulan penuh. A: dilaporkan ke kepala seksi dengan catatan tanggal. <b>Pilih A.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Sudah ditegur langsung, gagal, dan ada korban? Bawa ke yang mengatur tugas. Bandingkan dengan soal 5.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> rekan instruktur las di BLK-mu kerap meninggalkan peserta memakai mesin las tanpa pendamping. Dua kali kamu sudah menegurnya langsung, tapi ia tetap mengulang, dan kemarin seorang peserta luka bakar. Tugas instruktur diatur kepala seksi, dan angkatan ini masih berjalan dua bulan.</p>
+    <ul>
+      <li><b>A (skor 5)</b>: laporkan kebiasaan itu ke kepala seksi, lengkap dengan catatan tanggal tiap kejadian. Orang yang mengatur tugas instruktur jadi tahu, buktinya jelas, dan rekanmu tidak dipermalukan di depan peserta.</li>
+      <li><b>E (skor 4)</b>: rela menjaga kelasnya sendiri, itu sungguh baik hati. Hitung saja: dua bulan lagi. Selama itu kamu harus selalu siaga, sementara kebiasaannya tidak berubah.</li>
+      <li><b>B (skor 3)</b>: mencatat kejadian itu cermat. Tapi menunggu ada peserta terluka lagi? Luka bakar kemarin sudah cukup jadi alasan.</li>
+      <li><b>D (skor 2)</b>: kesal karena teguranmu tidak digubris, aku paham. Teguran ketiga yang lebih keras di depan peserta cuma mempermalukannya, padahal dua teguran sebelumnya pun tidak mempan.</li>
+      <li><b>C (skor 1)</b>: hubungan baik memang penting, tapi keselamatan peserta tidak bisa diserahkan pada kesadaran yang sudah dua kali diuji.</li>
+    </ul>
+    <p><b>Kunci A</b>, karena A membawa masalah ke orang yang berwenang mengatur tugas instruktur, setelah teguran langsung gagal dan sudah ada korban.</p>
+    <p><b>Analogi:</b> teman kosmu berkali-kali lupa mematikan kompor. Sudah dua kali kamu ingatkan, dan kemarin panci sampai gosong. Sekarang kamu bilang ke pemilik kos, bukan terus menjaga kompor itu sendirian.</p>
+    <p><b>Jebakan:</b> E membuatmu jadi pahlawan kelas, dan justru itu godaannya. Angkatan ini masih dua bulan; selama itu kebiasaan rekanmu tetap jalan.</p>
+    <p><b>Tips:</b> lapor atasan bukan langkah pertama, tapi juga bukan pengkhianatan. Ia tepat setelah cara langsung gagal dan ada yang terluka.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 15</span>
+    <span class="badge dim-AntiRadikalisme">Anti Radikalisme</span>
+  </div><div class="stem">
+    Pamflet yang menuding satu kelompok agama sebagai ancaman negara tertempel di ruang ganti perawat, dan fotonya beredar di grup ruangan. Anda kepala ruang yang mengelola papan pengumuman serta grup itu, dan dua perawat dari kelompok tersebut mengaku tidak nyaman. Sikap Anda adalah&hellip; (Anti Radikalisme)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Melaporkan pamflet itu ke kepala bidang keperawatan, lalu menunggu keputusan tertulisnya.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Menahan diri berkomentar di grup, toh pamflet itu bukan urusan pelayanan pasien.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Mencari tahu dulu siapa penempelnya, baru meminta fotonya dihapus dari grup.</span></li>
+    <li><span class="opt-letter kunci">D.</span><span class="opt-text kunci">Mencopot pamflet, menghapus fotonya dari grup, lalu menemui kedua perawat itu.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menghapus foto pamflet dari grup, tapi pamfletnya dibiarkan agar suasana tak tegang.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Anti Radikalisme: konten yang menyudutkan satu kelompok dihentikan sebarannya, yang terdampak dirangkul.</li>
+      <li><b>Kalimat penentu:</b> "mengelola papan pengumuman serta grup itu". Kamu sendiri yang memegang tempat konten itu menyebar.</li>
+      <li><b>Coret:</b> B (diam, katanya bukan urusan pasien), E (foto dihapus, pamflet dibiarkan), C (mencari pelaku dulu, foto terus beredar). Tinggal A dan D. A: lapor, lalu menunggu surat. D: dicopot, dihapus, dua perawat ditemui. <b>Pilih D.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Kamu yang pegang papan dan grupnya? Hentikan sebarannya sekarang; laporan boleh menyusul.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> di ruang ganti perawat tertempel pamflet yang menuding satu kelompok agama sebagai ancaman negara, dan fotonya sudah beredar di grup ruangan. Kamu kepala ruang yang mengelola papan pengumuman dan grup itu. Dua perawat dari kelompok tersebut mengaku tidak nyaman.</p>
+    <ul>
+      <li><b>D (skor 5)</b>: copot pamfletnya, hapus fotonya dari grup, lalu temui dua perawat itu. Penyebarannya berhenti di tangan orang yang mengelola papan dan grup, dan rekan yang terluka hatinya tidak dibiarkan sendirian.</li>
+      <li><b>A (skor 4)</b>: melapor ke atasan tidak salah. Hanya saja papan dan grup itu kamu sendiri yang mengelola, dan selama menunggu surat, fotonya terus diteruskan.</li>
+      <li><b>C (skor 3)</b>: ingin tahu siapa pelakunya, wajar sekali. Selama kamu mencari, foto itu terus beredar.</li>
+      <li><b>E (skor 2)</b>: foto hilang dari grup, pamflet masih menempel di ruang ganti. Dua perawat itu masih bisa melihatnya.</li>
+      <li><b>B (skor 1)</b>: bukan urusan pasien, betul. Kasihan dua rekanmu yang merasa tidak nyaman di tempat kerjanya sendiri.</li>
+    </ul>
+    <p><b>Kunci D</b>, karena D menghentikan pamflet dan sebarannya saat itu juga, lalu memperhatikan rekan yang terdampak.</p>
+    <p><b>Analogi:</b> ada coretan menghina di dinding kelas yang kamu jaga. Kamu hapus dulu, lalu menanyakan kabar teman yang dihina. Kamu tidak menunggu surat dari kepala sekolah untuk menghapusnya.</p>
+    <p><b>Jebakan:</b> melapor ke atasan di A terdengar patuh dan aman. Yang terlupa: kamu sendiri pemegang papan dan grup itu, jadi kamu bisa menghentikannya sekarang.</p>
+    <p><b>Tips:</b> menghentikan sebaran dan menemui yang terluka bisa dilakukan dalam beberapa menit. Laporan ke atasan boleh menyusul.</p>
+  </div>
+</div>
+
+</body></html>

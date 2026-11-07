@@ -1,0 +1,537 @@
+{
+  "DAJ-TWK-026": {
+    "bentuk_tegangan": "T3",
+    "konstruk_dua_kutub": "ketepatan sasaran bantuan ↔ perlakuan bermartabat terhadap siswa",
+    "soal": "Sebuah sekolah akan memakai aplikasi untuk menentukan siswa penerima bantuan belajar. Panduan program meminta dua hal berlaku bersama: bantuan harus tepat sasaran, dan siswa tidak boleh dipermalukan atau dirugikan oleh cara seleksinya. Tindakan pengurus yang paling tepat menunjukkan kedudukan Pancasila sebagai tolok ukur kebijakan dalam kasus itu adalah...",
+    "opsi": {
+      "A": "Mengutamakan ketepatan sasaran dengan menambah jumlah data yang dinilai aplikasi.",
+      "B": "Memeriksa ulang hasil penilaian sistem dan merahasiakan nama siswa terpilih.",
+      "C": "Menjelaskan cara kerja aplikasi kepada orang tua dan meminta persetujuan tertulis.",
+      "D": "Mengukur kenaikan nilai belajar siswa penerima pada akhir semester berikutnya.",
+      "E": "Membuka layanan pengaduan bagi keluarga yang merasa dirugikan oleh hasil seleksi."
+    },
+    "kunci": "B",
+    "analisis_opsi": {
+      "A": "[D5+D2] Mengulang “tepat sasaran”; kata “mengutamakan” membatasi tindakan pada ketepatan, martabat siswa tidak diurus.",
+      "B": "KUNCI — Pemeriksaan ulang menjaga ketepatan, kerahasiaan nama menjaga martabat siswa.",
+      "C": "[D6] Dua langkah administratif; persetujuan tertulis tidak memeriksa hasil dan tidak mencegah siswa dipermalukan.",
+      "D": "[D3] Kenaikan nilai adalah efek bantuan, bukan cara seleksi yang dinilai.",
+      "E": "[D2] Pengaduan baru bekerja sesudah kerugian terjadi, sedangkan ketentuan meminta siswa tidak dirugikan sejak seleksi."
+    },
+    "pembahasan": "Yang ditanya: tindakan yang menunjukkan Pancasila dipakai sebagai tolok ukur kebijakan. Panduan memberi dua syarat: bantuan tepat sasaran, dan siswa tidak dipermalukan atau dirugikan oleh cara seleksi.\nCara cepat: Pancasila menilai hasil kebijakan (adil, sila kelima) dan cara kebijakan memperlakukan orang (bermartabat, sila kedua). Cari opsi yang mengurus keduanya.\nKenapa opsi lain gugur: A cuma menyalin kata dari soal “tepat sasaran”, dan kata “mengutamakan” menunjukkan hanya ketepatan yang diurus. C dua langkah, tetapi keduanya administrasi; tanda tangan orang tua tidak memeriksa apakah hasil aplikasi benar. D kenaikan nilai adalah akibat bantuan, bukan cara memilih penerima. E paling menggoda karena menyebut “dirugikan”, tetapi pengaduan menunggu kerugian terjadi dulu.\nKunci: B, karena memeriksa ulang hasil mesin menjaga ketepatan, dan merahasiakan nama penerima menjaga siswa dari rasa malu.\nAnalogi: wali kelas yang membagikan rapor. Nilainya harus dicek benar, dan rapor diberikan satu per satu, tidak dibacakan di depan kelas.\nJebakan: E terdengar peduli karena ada saluran pengaduan. Cek waktunya: ketentuan meminta pencegahan, pengaduan adalah pemulihan."
+  },
+  "DAJ-TWK-027": {
+    "bentuk_tegangan": "T5",
+    "konstruk_dua_kutub": "tujuan negara dalam Pembukaan UUD 1945 ↔ ukuran memilih program masa kini",
+    "soal": "Alinea keempat Pembukaan UUD 1945 merumuskan tujuan negara, antara lain memajukan kesejahteraan umum dan mencerdaskan kehidupan bangsa. Kini karang taruna sebuah kelurahan harus memilih beberapa usulan program karena dananya terbatas. Penerapan rumusan tujuan negara yang paling tepat dalam keputusan karang taruna itu adalah...",
+    "opsi": {
+      "A": "Mengadakan diskusi warga untuk mengenalkan isi alinea keempat Pembukaan UUD 1945.",
+      "B": "Memilih usulan yang paling cepat selesai agar hasilnya segera terlihat.",
+      "C": "Mencantumkan kutipan tujuan negara pada proposal dan laporan setiap program.",
+      "D": "Memilih usulan yang paling banyak didukung suara anggota karang taruna.",
+      "E": "Menilai tiap rencana dari sumbangannya bagi taraf hidup dan pendidikan warga."
+    },
+    "kunci": "E",
+    "analisis_opsi": {
+      "A": "[D1] Mengenalkan isi naskah adalah sosialisasi, bukan penerapan dalam keputusan.",
+      "B": "[D2] Ukuran yang dipakai hanya kecepatan; isi tujuan negara tidak dipakai menilai.",
+      "C": "[D5+D6] Mengulang “tujuan negara”; kutipan di dokumen adalah formalitas, bukan ukuran memilih.",
+      "D": "[D4] Dukungan terbanyak adalah ukuran musyawarah, bukan ukuran tujuan negara.",
+      "E": "KUNCI — Dua tujuan dalam alinea keempat dipakai sebagai ukuran memilih program."
+    },
+    "pembahasan": "Yang ditanya: penerapan rumusan tujuan negara ketika karang taruna harus memilih program dengan dana terbatas. Sisi dulu: alinea keempat menyebut tujuan seperti kesejahteraan umum dan kecerdasan bangsa. Sisi kini: keputusan memilih program.\nCara cepat: “menerapkan” dalam keputusan berarti tujuan itu dipakai sebagai ukuran untuk menimbang. Cari opsi yang menjadikan isi tujuan negara alat menilai.\nKenapa opsi lain gugur: A mengenalkan isi naskah itu sosialisasi, keputusannya belum tersentuh. B ukurannya hanya cepat selesai. C paling menggoda karena cuma menyalin kata dari soal “tujuan negara”, padahal kutipan di proposal hanya hiasan dokumen. D suara terbanyak sah untuk mengambil keputusan, tetapi itu ukuran cara memutus, bukan ukuran isi tujuan negara.\nKunci: E, karena taraf hidup dan pendidikan warga adalah bentuk nyata kesejahteraan umum dan kecerdasan bangsa, lalu dipakai untuk menilai tiap rencana.\nAnalogi: keluarga dengan uang terbatas memakai tujuan “anak sehat dan sekolah lancar” untuk memilih belanja, bukan menempel tulisan itu di kulkas.\nJebakan: C dan E sama-sama dua komponen. Bedakan: C menulis tujuan, E memakai tujuan."
+  },
+  "DAJ-TWK-028": {
+    "bentuk_tegangan": "T1",
+    "konstruk_dua_kutub": "suara warga sekolah dalam keputusan ↔ manfaat dibagi menurut kebutuhan",
+    "soal": "OSIS menimbang enam kegiatan: (1) pameran budaya daerah, (2) forum dengar pendapat lintas kelas, (3) penanaman pohon, (4) penggalangan dana bencana, (5) pembagian fasilitas belajar menurut kebutuhan, dan (6) lomba kebersihan kelas. Pengamalan Pancasila di sekolah bukan sekadar membuat kegiatan yang bermanfaat, melainkan membuka suara warga sekolah dalam keputusan dan membagi manfaat secara adil. Pasangan kegiatan yang paling tepat mencerminkan pengamalan sila keempat dan kelima itu adalah...",
+    "opsi": {
+      "A": "Kegiatan 1 dan 2, karena keduanya memberi tempat bagi keragaman warga sekolah.",
+      "B": "Kegiatan 3 dan 4, karena keduanya langsung memberi manfaat bagi orang banyak.",
+      "C": "Kegiatan 2 dan 5, karena siswa ikut bersuara dan yang kekurangan didahulukan.",
+      "D": "Kegiatan 1 dan 6, karena keduanya menumbuhkan kebanggaan dan disiplin warga sekolah.",
+      "E": "Kegiatan 4 dan 5, karena keduanya menyalurkan bantuan kepada pihak yang membutuhkan."
+    },
+    "kunci": "C",
+    "analisis_opsi": {
+      "A": "[D2] Kegiatan 2 menjawab sisi suara, tetapi pameran budaya bukan pembagian manfaat; sisi keadilan kosong.",
+      "B": "[D5] Mengulang “bermanfaat”, padahal stem menyebut manfaat saja belum cukup; tidak ada sisi suara.",
+      "C": "KUNCI — Forum dengar pendapat menjawab sila keempat, pembagian menurut kebutuhan menjawab sila kelima.",
+      "D": "[D6] Kebanggaan dan disiplin tidak menyentuh keputusan bersama maupun pembagian manfaat.",
+      "E": "[D2] Kedua kegiatan di sisi pembagian manfaat; sisi suara dalam keputusan kosong."
+    },
+    "pembahasan": "Yang ditanya: pasangan kegiatan yang mencerminkan sila keempat dan kelima. Dua sisinya: suara warga sekolah masuk ke keputusan, dan manfaat dibagi adil.\nCara cepat: beri label tiap kegiatan. Kegiatan 2 = sisi suara. Kegiatan 5 = sisi pembagian adil. Kegiatan 3 dan 4 bermanfaat, tetapi soal bilang manfaat saja belum cukup. Kegiatan 1 dan 6 tidak masuk dua sisi itu.\nKenapa opsi lain gugur: A sudah memuat kegiatan 2, tetapi pasangannya pameran budaya, jadi sisi keadilan kosong. B cuma menyalin kata dari soal “manfaat”, padahal soal justru menolak ukuran “sekadar bermanfaat”. D kebanggaan dan disiplin baik, tetapi tidak menyentuh dua sisi. E paling menggoda karena memuat kegiatan 5, tetapi pasangannya bantuan bencana, jadi keduanya di sisi pembagian.\nKunci: C, karena forum lintas kelas membuat siswa ikut memutus, dan fasilitas yang didahulukan bagi yang kekurangan membuat pembagian adil.\nAnalogi: memasak untuk satu rumah. Menu ditanyakan ke semua penghuni, lalu porsi lebih besar diberikan ke yang sedang sakit.\nJebakan: A dan E sama-sama memuat satu kegiatan yang benar. Cek pasangannya, jangan berhenti di satu nomor."
+  },
+  "DAJ-TWK-029": {
+    "bentuk_tegangan": "T1",
+    "konstruk_dua_kutub": "keabsahan prosedur pembentukan aturan ↔ keadilan akibat aturan bagi warga",
+    "soal": "Sebuah peraturan layanan disusun melalui prosedur resmi, tetapi persyaratannya ternyata menyulitkan warga penyandang disabilitas. Pancasila menuntut aturan tidak hanya sah prosedurnya, tetapi juga adil akibatnya bagi setiap warga. Berdasarkan sila kedua dan kelima, peninjauan ulang peraturan itu penting dilakukan karena...",
+    "opsi": {
+      "A": "Prosedur resmi membuat lembaga mudah mempertanggungjawabkan aturan kepada publik.",
+      "B": "Masukan penyandang disabilitas perlu dihimpun sebelum aturan baru disusun kembali.",
+      "C": "Warga akan lebih percaya kepada lembaga bila keluhannya ditanggapi cepat.",
+      "D": "Suatu ketentuan layak ditaati bila cara membuatnya benar dan hasilnya setara.",
+      "E": "Aturan yang sah dan tertulis jelas memberi kepastian bagi petugas dan warga."
+    },
+    "kunci": "D",
+    "analisis_opsi": {
+      "A": "[D5+D6] Mengulang “prosedur resmi”; hanya menjelaskan manfaat prosedur, bukan alasan meninjau ulang.",
+      "B": "[D1] Menghimpun masukan adalah langkah perbaikan, bukan alasan kenapa perbaikan perlu.",
+      "C": "[D3] Kepercayaan warga adalah efek, bukan dasar normatif peninjauan.",
+      "D": "KUNCI — Kewibawaan aturan bersandar pada dua hal: cara membuat yang benar dan hasil yang setara.",
+      "E": "[D2] Tampak dua komponen, tetapi “sah” dan “tertulis jelas” sama-sama sisi prosedur; keadilan akibat kosong."
+    },
+    "pembahasan": "Yang ditanya: alasan paling mendasar kenapa peraturan perlu ditinjau ulang, dengan ukuran sila kedua dan kelima. Dua sisinya: prosedurnya sah, dan akibatnya adil bagi setiap warga.\nCara cepat: kata “karena” meminta dasar, bukan langkah dan bukan akibat. Dasar yang kuat menjelaskan kenapa aturan yang sah prosedurnya tetap bisa kurang layak.\nKenapa opsi lain gugur: A cuma menyalin kata dari soal “prosedur resmi” dan hanya membela sisi prosedur, padahal sisi itu sudah terpenuhi. B menghimpun masukan itu langkah perbaikan, jadi yang dijawab langkah, bukan alasan. C kepercayaan warga adalah efek. E paling menggoda karena berbunyi dua komponen, tetapi sah dan tertulis jelas dua-duanya urusan prosedur.\nKunci: D, karena aturan layak ditaati bila caranya benar dan hasilnya setara; peraturan ini baru memenuhi yang pertama.\nAnalogi: wasit yang memimpin sesuai buku aturan, tetapi lapangannya miring ke satu sisi. Pertandingan sah, tetapi belum adil sampai lapangan diratakan.\nJebakan: E memakai pola “A dan B”. Pola dua komponen tidak otomatis benar; cek apakah kedua komponen benar-benar mewakili dua sisi yang berbeda."
+  },
+  "DAJ-TWK-030": {
+    "bentuk_tegangan": "T2",
+    "konstruk_dua_kutub": "isi Pembukaan dikenal anggota ↔ isi Pembukaan menjadi arah program",
+    "soal": "Panitia kelas menyusun program layanan teman sebaya setelah membaca Pembukaan UUD 1945. Sebagian anggota ingin naskah itu dibacakan pada setiap pertemuan agar diingat, sementara anggota lain ingin isinya benar-benar memengaruhi bentuk program. Langkah yang paling tepat mencerminkan kedudukan Pembukaan sebagai pedoman bagi panitia adalah...",
+    "opsi": {
+      "A": "Menurunkan sasaran kegiatan dari alinea keempat dan membahasnya dalam rapat kelas.",
+      "B": "Membacakan Pembukaan UUD 1945 pada awal setiap pertemuan rutin panitia kelas.",
+      "C": "Menumbuhkan rasa bangga anggota setelah mendengar naskah Pembukaan dibacakan.",
+      "D": "Mencatat poin penting Pembukaan dan menempelkannya di papan pengumuman kelas.",
+      "E": "Mengundang guru PPKn untuk menjelaskan isi Pembukaan kepada para siswa."
+    },
+    "kunci": "A",
+    "analisis_opsi": {
+      "A": "KUNCI — Isi alinea keempat menjadi tujuan program, dan pembahasan di rapat membuat isinya dikenal.",
+      "B": "[D5+D2] Mengulang “dibacakan” dan “pertemuan”; hanya sisi diingat, program tidak tersentuh.",
+      "C": "[D3] Rasa bangga adalah efek mendengar naskah, bukan langkah panitia.",
+      "D": "[D6] Dua langkah, tetapi keduanya pajangan; isi naskah tidak masuk ke program.",
+      "E": "[D7] Sah, tetapi menjelaskan isi Pembukaan adalah peran guru; peran panitia adalah menyusun program."
+    },
+    "pembahasan": "Yang ditanya: langkah yang menunjukkan Pembukaan dipakai sebagai pedoman panitia. Dua tuntutan anggota sama-sama sah: isinya diingat, dan isinya memengaruhi program.\nCara cepat: pedoman berarti isi naskah menentukan arah kerja. Cari opsi yang memindahkan isi Pembukaan ke dalam program, dan tetap membuat anggota mengenal isinya.\nKenapa opsi lain gugur: B cuma menyalin kata dari soal “dibacakan” dan “pertemuan”; anggota jadi hafal, tetapi program tetap sama. C rasa bangga adalah akibat, bukan langkah. D mencatat dan menempel tampak dua langkah, tetapi hasilnya hanya pajangan. E mengundang guru itu baik, tetapi menjelaskan isi Pembukaan adalah peran guru, sedangkan tugas panitia menyusun program.\nKunci: A, karena sasaran kegiatan diturunkan dari alinea keempat, lalu dibahas di rapat sehingga isinya dikenal sekaligus dipakai.\nAnalogi: resep masakan. Membacanya keras-keras tidak membuat sup jadi; resep berguna ketika takarannya dipakai saat memasak.\nJebakan: B persis mengikuti tuntutan kelompok pertama. Opsi yang hanya mengabulkan satu pihak biasanya cuma menjawab separuh."
+  },
+  "DAJ-TWK-031": {
+    "bentuk_tegangan": "T5",
+    "konstruk_dua_kutub": "peralihan dengan cara saksama ↔ peralihan dalam tempo sesingkat-singkatnya",
+    "soal": "Naskah Proklamasi menyatakan bahwa pemindahan kekuasaan diselenggarakan dengan cara saksama dan dalam tempo yang sesingkat-singkatnya. Kini sebuah kantor kelurahan harus memindahkan layanan administrasi ke gedung baru, sementara warga tetap membutuhkan surat keterangan setiap hari. Penerapan semangat kalimat Proklamasi itu yang paling tepat bagi petugas kelurahan adalah...",
+    "opsi": {
+      "A": "Merinci daftar serah terima berkas dan menuntaskan perpindahan dalam dua hari.",
+      "B": "Memeriksa ulang tiap berkas berkali-kali hingga tidak ada risiko kekeliruan.",
+      "C": "Menilai kepuasan warga setelah layanan di gedung baru berjalan satu bulan.",
+      "D": "Menyusun jadwal pemindahan secara saksama untuk dibahas pada rapat bulan depan.",
+      "E": "Mengumumkan rencana pemindahan kepada warga melalui spanduk di depan kantor."
+    },
+    "kunci": "A",
+    "analisis_opsi": {
+      "A": "KUNCI — Daftar rinci menjawab “saksama”, batas dua hari menjawab “sesingkat-singkatnya”.",
+      "B": "[D2] Frasa “berkali-kali hingga tidak ada risiko” menunda tanpa batas; sisi cepat hilang.",
+      "C": "[D3] Kepuasan warga adalah efek sesudah pindah, bukan cara memindahkan.",
+      "D": "[D5+D2] Mengulang “saksama”; pembahasan baru bulan depan menghapus sisi cepat.",
+      "E": "[D6] Pengumuman itu baik, tetapi tidak menyentuh cara peralihan dilakukan."
+    },
+    "pembahasan": "Yang ditanya: penerapan kalimat kedua Proklamasi pada pemindahan layanan kelurahan. Dua sisinya: saksama (teliti, tertata) dan tempo sesingkat-singkatnya (cepat, karena warga tetap butuh surat).\nCara cepat: cari opsi yang teliti dan punya batas waktu pendek. Satu sisi saja belum menerapkan kalimat itu.\nKenapa opsi lain gugur: B teliti sekali, tetapi “hingga tidak ada risiko” bisa tidak pernah selesai. C kepuasan warga adalah akibat sesudah pindah. D paling menggoda karena cuma menyalin kata dari soal “saksama”, padahal rencananya baru dibahas bulan depan, jadi sisi cepat hilang. E pengumuman bermanfaat, tetapi tidak mengatur cara memindahkan.\nKunci: A, karena daftar serah terima yang rinci menjaga kecermatan, dan target dua hari menjaga kecepatan.\nAnalogi: pindah kos sebelum ujian. Barang didaftar supaya tidak ada yang tertinggal, tetapi pindahannya selesai akhir pekan supaya belajar tidak terganggu.\nJebakan: D mengambil kata “saksama” dari naskah Proklamasi. Kata yang sama belum tentu semangat yang sama; cek apakah sisi “sesingkat-singkatnya” ikut terpenuhi."
+  },
+  "DAJ-TWK-032": {
+    "bentuk_tegangan": "T3",
+    "konstruk_dua_kutub": "manfaat kerja sama riset lintas negara ↔ pelindungan data pribadi warga",
+    "soal": "Sebuah lembaga riset luar negeri menawarkan kerja sama pemetaan risiko banjir dan meminta data rumah tangga dari pemerintah kabupaten. Kabupaten itu membutuhkan peta risiko yang akurat, sementara UU Nomor 27 Tahun 2022 mengatur ketat pengiriman data pribadi warga ke luar wilayah hukum Indonesia. Kebijakan kabupaten yang paling tepat memenuhi kedua kebutuhan itu sesuai prinsip pelindungan data pribadi adalah...",
+    "opsi": {
+      "A": "Menyebarkan peta risiko banjir hasil kerja sama kepada warga wilayah rawan.",
+      "B": "Menjamin pelindungan data pribadi dengan menyimpan data hanya di server daerah.",
+      "C": "Mencantumkan logo kedua lembaga pada peta untuk menunjukkan kemitraan yang setara.",
+      "D": "Menyerahkan data genangan tanpa identitas keluarga melalui perjanjian kerja sama tertulis.",
+      "E": "Memasang sandi berlapis pada server daerah yang menyimpan data rumah tangga."
+    },
+    "kunci": "D",
+    "analisis_opsi": {
+      "A": "[D3] Penyebaran peta adalah pemanfaatan hasil, bukan kebijakan atas data yang diminta.",
+      "B": "[D5+D2] Mengulang “pelindungan data pribadi”; kata “hanya di server daerah” membuat data tidak sampai ke mitra.",
+      "C": "[D6] Logo kemitraan adalah citra, tidak menyentuh data maupun ketepatan peta.",
+      "D": "KUNCI — Mitra tetap mendapat data untuk peta, identitas keluarga tidak ikut dikirim.",
+      "E": "[D4] Keamanan penyimpanan di dalam daerah bukan persoalan pengiriman data ke mitra luar negeri."
+    },
+    "landasan": [
+      {
+        "kode": "UU27_2022_PDP",
+        "rujukan": "Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi, ketentuan transfer data pribadi ke luar wilayah hukum Negara Kesatuan Republik Indonesia."
+      },
+      {
+        "kode": "UUD1945",
+        "rujukan": "Pembukaan UUD 1945 alinea keempat mengenai tujuan melindungi segenap bangsa Indonesia."
+      }
+    ],
+    "pembahasan": "Yang ditanya: kebijakan yang memenuhi dua kebutuhan sekaligus, diukur dengan prinsip pelindungan data pribadi. Kebutuhan pertama: peta banjir yang akurat lewat kerja sama. Kebutuhan kedua: data pribadi warga tidak dikirim keluar negeri secara sembarangan.\nCara cepat: data pribadi adalah data yang bisa menunjuk orang tertentu. Kalau identitasnya dilepas, datanya masih berguna untuk peta, tetapi tidak lagi membuka siapa warganya.\nKenapa opsi lain gugur: A menyebarkan peta adalah tahap memakai hasil, bukan keputusan soal data. B paling menggoda karena cuma menyalin kata dari soal “pelindungan data pribadi”, padahal “hanya di server daerah” berarti kerja sama berhenti. C logo hanya citra kemitraan. E sandi berlapis menjaga gudang data di daerah, sedangkan persoalannya pengiriman ke mitra luar negeri.\nKunci: D, karena data genangan tetap diberikan untuk memetakan risiko, identitas keluarga dilepas, dan semuanya diikat perjanjian tertulis.\nAnalogi: puskesmas yang membagi angka kasus demam per kampung ke peneliti, tanpa menyerahkan nama dan alamat pasien.\nJebakan: B dan E sama-sama terdengar “aman”. Tanyakan: apakah peta tetap bisa dibuat? Kalau tidak, satu kebutuhan dikorbankan."
+  },
+  "DAJ-TWK-033": {
+    "bentuk_tegangan": "T1",
+    "konstruk_dua_kutub": "kesiapan menghadapi ancaman ↔ pengabdian lewat keahlian profesi",
+    "soal": "Undang-Undang Nomor 3 Tahun 2002 Pasal 9 ayat (2) menyebut pengabdian sesuai profesi sebagai salah satu bentuk keikutsertaan warga dalam bela negara. Bagi seorang ahli keamanan digital yang menemukan celah pada sistem layanan kependudukan, bela negara bukan sekadar kesiapan fisik menghadapi ancaman, melainkan pemakaian keahliannya untuk melindungi kepentingan umum. Tindakan yang paling tepat sesuai perannya sebagai ahli adalah...",
+    "opsi": {
+      "A": "Mengikuti pelatihan dasar bela negara untuk menumbuhkan kesiapan menghadapi keadaan darurat.",
+      "B": "Menulis artikel tentang bahaya celah digital agar kesadaran warga meningkat.",
+      "C": "Mempelajari teknik serangan terbaru untuk memperdalam kemampuan teknis pribadi.",
+      "D": "Mengusulkan agar pemerintah menambah anggaran keamanan siber pada tahun depan.",
+      "E": "Melaporkan temuan beserta usulan perbaikan kepada instansi pengelola lewat jalur resmi."
+    },
+    "kunci": "E",
+    "analisis_opsi": {
+      "A": "[D5+D2] Mengulang “bela negara” dan “kesiapan”; hanya sisi kesiapan fisik yang stem sebut belum cukup.",
+      "B": "[D4] Edukasi publik berbeda dari menutup celah pada sistem yang ditemukan.",
+      "C": "[D2] Kata “pribadi” membatasi manfaat keahlian untuk diri sendiri; kepentingan umum kosong.",
+      "D": "[D7] Usulan anggaran sah, tetapi menetapkan anggaran adalah urusan pemerintah, bukan kontribusi khas ahli.",
+      "E": "KUNCI — Keahlian dipakai menghadapi ancaman nyata pada layanan publik lewat saluran yang benar."
+    },
+    "pembahasan": "Yang ditanya: tindakan bela negara yang sesuai peran seorang ahli keamanan digital. Dua sisinya: menghadapi ancaman, dan melakukannya lewat keahlian profesi untuk kepentingan umum. Jangkarnya Pasal 9 ayat (2) UU 3/2002: pengabdian sesuai profesi termasuk bela negara.\nCara cepat: lensanya “sesuai perannya sebagai ahli”. Cari tindakan yang hanya bisa disumbangkan oleh orang dengan keahlian itu, dan langsung melindungi layanan yang terancam.\nKenapa opsi lain gugur: A paling menggoda karena berbunyi “bela negara” dan “kesiapan”, padahal soal bilang kesiapan fisik saja belum cukup. B artikel edukasi baik, tetapi celah di sistem tetap terbuka. C kata “pribadi” menunjukkan keahlian hanya untuk diri sendiri. D mengusulkan anggaran boleh, tetapi memutus anggaran adalah tugas pemerintah.\nKunci: E, karena temuan dan cara perbaikannya diserahkan ke pengelola sistem lewat jalur resmi, sehingga ancaman ditutup dengan keahlian.\nAnalogi: tukang listrik yang melihat kabel terkelupas di balai desa. Bela negaranya bukan ikut baris-berbaris, tetapi memberi tahu pengurus balai dan menunjukkan cara memperbaikinya.\nJebakan: kata “bela negara” di opsi A membuat opsi itu terasa paling cocok. Ingat pasal yang dikutip soal: profesi juga jalur bela negara."
+  },
+  "DAJ-TWK-034": {
+    "bentuk_tegangan": "T5",
+    "konstruk_dua_kutub": "ruang mandiri bagi yang dibimbing ↔ dorongan pendamping saat dibutuhkan",
+    "soal": "Ki Hadjar Dewantara merumuskan semboyan tut wuri handayani: pendidik berada di belakang untuk memberi dorongan ketika anak mulai berjalan sendiri. Kini seorang kakak pembina pramuka mendampingi regu yang baru pertama kali menyiapkan perkemahan. Tindakan pembina yang paling tepat menerapkan semboyan itu adalah...",
+    "opsi": {
+      "A": "Menjelaskan urutan kerja secara rinci sebelum regu mulai menyiapkan perkemahan.",
+      "B": "Mendorong regu dari belakang dengan memeriksa setiap langkah sebelum dijalankan.",
+      "C": "Menyerahkan tugas persiapan kepada regu dan membantu ketika mereka menemui kebuntuan.",
+      "D": "Membiarkan regu bekerja sendiri tanpa memberi masukan sampai perkemahan selesai.",
+      "E": "Membagikan buku panduan berkemah dan menilai hasil kerja regu di akhir."
+    },
+    "kunci": "C",
+    "analisis_opsi": {
+      "A": "[D4] Memberi contoh dan arahan di depan adalah ing ngarsa sung tuladha, bukan tut wuri handayani.",
+      "B": "[D5+D2] Mengulang “dorongan” dan “belakang”; memeriksa setiap langkah menghapus ruang mandiri.",
+      "C": "KUNCI — Regu diberi tanggung jawab penuh, pembina turun tangan saat regu buntu.",
+      "D": "[D2] Frasa “tanpa memberi masukan” menghapus sisi dorongan pendamping.",
+      "E": "[D6] Panduan dan penilaian akhir adalah prosedur, bukan dorongan saat regu bekerja."
+    },
+    "pembahasan": "Yang ditanya: tindakan yang menerapkan tut wuri handayani pada pembina pramuka. Sisi dulu: pendidik di belakang, memberi dorongan ketika anak mulai berjalan sendiri. Jadi ada dua unsur: anak diberi ruang mandiri, dan pendidik tetap hadir memberi dorongan.\nCara cepat: cari pembina yang menyerahkan pekerjaan ke regu, tetapi tidak menghilang.\nKenapa opsi lain gugur: A menjelaskan rinci di depan adalah semboyan lain, ing ngarsa sung tuladha. B paling menggoda karena memakai kata “mendorong” dan “dari belakang”, padahal memeriksa setiap langkah membuat regu tidak pernah mandiri. D “tanpa memberi masukan” berarti dorongannya hilang. E buku panduan dan nilai akhir itu prosedur; regu tidak didampingi saat bekerja.\nKunci: C, karena regu memegang tugasnya sendiri, dan pembina membantu tepat ketika regu menemui jalan buntu.\nAnalogi: orang tua yang mengajari anak naik sepeda. Tangannya tidak terus memegang setang, tetapi tetap berjalan di belakang dan menahan saat sepeda oleng.\nJebakan: B meminjam kata harfiah dari semboyan. “Di belakang” bukan soal posisi badan, tetapi soal membiarkan anak memimpin langkahnya."
+  },
+  "DAJ-TWK-035": {
+    "bentuk_tegangan": "T2",
+    "konstruk_dua_kutub": "kebanggaan nasional ↔ penghormatan setara kepada bangsa lain",
+    "soal": "Seorang atlet Indonesia memenangi kejuaraan Asia, lalu pelatihnya meminta ia menonjolkan kebanggaan nasional di depan media. Panitia meminta para juara menghormati lawan dan berbagi metode latihan dalam forum atlet. Atlet itu mengibarkan Merah Putih saat seremoni, kemudian menyalami lawan dan membagikan catatan latihannya di forum. Nilai yang paling tepat mencerminkan perilaku atlet tersebut adalah...",
+    "opsi": {
+      "A": "Patriotisme yang menonjolkan kebanggaan nasional di hadapan media dan dunia internasional.",
+      "B": "Nasionalisme dewasa yang memadukan cinta negeri dengan penghargaan pada bangsa lain.",
+      "C": "Sportivitas yang menjunjung etika bertanding dan rasa hormat kepada lawan.",
+      "D": "Citra Indonesia yang membaik karena atlet tampil santun di kejuaraan.",
+      "E": "Solidaritas internasional yang mendorong pertukaran pengetahuan antarpelaku olahraga dunia."
+    },
+    "kunci": "B",
+    "analisis_opsi": {
+      "A": "[D5+D2] Mengulang “kebanggaan nasional” dan “media”; hanya memenuhi permintaan pelatih.",
+      "B": "KUNCI — Cinta negeri dan penghargaan setara pada bangsa lain hadir bersama dalam satu nilai kebangsaan.",
+      "C": "[D4] Sportivitas adalah etika olahraga; tidak menyangkut sisi kebanggaan pada negeri.",
+      "D": "[D3] Citra yang membaik adalah efek perilaku, bukan nilai yang dipegang atlet.",
+      "E": "[D2] Hanya sisi hubungan dengan atlet negara lain; sisi kebanggaan nasional kosong."
+    },
+    "pembahasan": "Yang ditanya: nama nilai yang paling tepat untuk perilaku atlet. Dua tuntutan sah: pelatih meminta kebanggaan nasional ditonjolkan, panitia meminta lawan dihormati dan ilmu dibagi. Atlet memenuhi keduanya.\nCara cepat: cocokkan nilai dengan dua perilaku sekaligus, yaitu mengibarkan Merah Putih dan menghormati lalu berbagi dengan lawan.\nKenapa opsi lain gugur: A cuma menyalin kata dari soal “kebanggaan nasional” dan hanya menjelaskan separuh perilaku. C paling menggoda karena menyalami lawan memang sportif, tetapi sportivitas tidak menjelaskan pengibaran bendera. D citra adalah akibat, bukan nilai. E hanya menjelaskan berbagi metode latihan.\nKunci: B, karena nasionalisme dewasa memegang cinta pada negeri tanpa merendahkan bangsa lain.\nAnalogi: siswa yang bangga sekolahnya juara lomba, tetapi tetap mau berbagi soal latihan dengan sekolah tetangga.\nJebakan: C terasa paling dekat dengan olahraga. Cek: nilai yang dicari harus menjelaskan kedua perilaku, bukan hanya yang terjadi di lapangan."
+  },
+  "DAJ-TWK-036": {
+    "bentuk_tegangan": "T3",
+    "konstruk_dua_kutub": "bahasa Indonesia dalam pelayanan publik ↔ penghormatan bahasa daerah warga",
+    "soal": "UU Nomor 24 Tahun 2009 mewajibkan bahasa Indonesia dalam pelayanan administrasi publik di instansi pemerintahan. Pasal 32 ayat (2) UUD 1945 menyatakan negara menghormati dan memelihara bahasa daerah. Di sebuah puskesmas, banyak pasien lanjut usia hanya lancar memakai bahasa daerah. Kebijakan puskesmas yang paling tepat memenuhi kedua ketentuan itu adalah...",
+    "opsi": {
+      "A": "Mewajibkan bahasa Indonesia baku pada setiap tahap pelayanan kepada pasien.",
+      "B": "Meminta keluarga pasien menerjemahkan penjelasan petugas di ruang pemeriksaan.",
+      "C": "Menerjemahkan papan petunjuk ke bahasa daerah dan memasangnya di ruang tunggu.",
+      "D": "Menggunakan formulir berbahasa Indonesia dan menyediakan petugas pendamping berbahasa daerah.",
+      "E": "Mengukur kepuasan pasien lanjut usia terhadap komunikasi petugas setiap bulan."
+    },
+    "kunci": "D",
+    "analisis_opsi": {
+      "A": "[D5+D2] Mengulang “mewajibkan”; “setiap tahap” menutup ruang bagi bahasa daerah.",
+      "B": "[D7] Sah, tetapi menjelaskan layanan adalah tugas puskesmas, bukan keluarga pasien.",
+      "C": "[D6] Papan petunjuk adalah penanda, bukan pelayanan pasien; dua langkah yang sama-sama di permukaan.",
+      "D": "KUNCI — Dokumen resmi tetap berbahasa Indonesia, komunikasi lisan menghormati bahasa pasien.",
+      "E": "[D3] Kepuasan pasien adalah efek, bukan kebijakan pelayanan."
+    },
+    "pembahasan": "Yang ditanya: kebijakan yang memenuhi dua ketentuan sekaligus. Ketentuan pertama: bahasa Indonesia wajib dalam pelayanan administrasi publik (UU 24/2009). Ketentuan kedua: negara menghormati dan memelihara bahasa daerah (Pasal 32 ayat 2 UUD 1945).\nCara cepat: pisahkan bagian administrasi (formulir, dokumen) dari bagian komunikasi dengan pasien. Kebijakan yang tepat menaruh tiap bahasa di tempatnya.\nKenapa opsi lain gugur: A cuma menyalin kata dari soal “mewajibkan” dan menutup bahasa daerah di semua tahap, padahal pasien tidak paham. B keluarga boleh membantu, tetapi menjelaskan layanan adalah tugas puskesmas. C papan petunjuk hanya penanda arah, pelayanannya tidak berubah. E kepuasan adalah akibat.\nKunci: D, karena formulir resmi tetap berbahasa Indonesia, dan pasien lanjut usia dilayani pendamping yang memakai bahasa daerahnya.\nAnalogi: resep dokter ditulis dengan istilah baku, tetapi apoteker menjelaskan cara minum obat dengan bahasa yang dipahami pasien.\nJebakan: A terdengar paling patuh undang-undang. Patuh pada satu ketentuan sambil mengabaikan ketentuan lain belum memenuhi soal."
+  },
+  "DAJ-TWK-037": {
+    "bentuk_tegangan": "T5",
+    "konstruk_dua_kutub": "persoalan banyak kelompok dibawa ke forum bersama ↔ diolah menjadi usulan yang diperjuangkan",
+    "soal": "Kongres Perempuan Indonesia pertama di Yogyakarta pada Desember 1928 mempertemukan berbagai organisasi perempuan untuk membahas persoalan bersama, seperti pendidikan dan perkawinan. Kini sebuah forum perempuan desa menampung keluhan anggota tentang sulitnya akses layanan kesehatan ibu hamil. Penerapan semangat kongres itu yang paling tepat bagi forum tersebut adalah...",
+    "opsi": {
+      "A": "Mengadakan peringatan Hari Ibu setiap Desember dengan lomba bagi anggota forum.",
+      "B": "Menyebarkan kisah tokoh kongres agar generasi muda mengenal sejarah perempuan.",
+      "C": "Mengolah cerita para ibu menjadi usulan tertulis bagi musyawarah perencanaan desa.",
+      "D": "Mempererat hubungan antarorganisasi perempuan melalui pertemuan rutin yang akrab.",
+      "E": "Membahas persoalan bersama anggota dalam pertemuan bulanan forum perempuan desa."
+    },
+    "kunci": "C",
+    "analisis_opsi": {
+      "A": "[D6] Peringatan dan lomba bersifat seremonial; keluhan anggota tidak diolah.",
+      "B": "[D1] Mengenalkan sejarah, bukan menerapkan semangat kongres pada persoalan forum.",
+      "C": "KUNCI — Persoalan yang dihimpun diubah menjadi usulan untuk forum yang memutus program desa.",
+      "D": "[D2] Frasa “yang akrab” membatasi tujuan pertemuan pada keakraban; persoalan tidak diperjuangkan.",
+      "E": "[D5+D2] Mengulang “membahas persoalan bersama”; pembahasan berhenti di dalam forum."
+    },
+    "pembahasan": "Yang ditanya: penerapan semangat Kongres Perempuan 1928 pada forum perempuan desa masa kini. Sisi dulu: banyak organisasi membawa persoalan bersama ke satu forum untuk dibahas. Sisi kini: keluhan soal akses layanan kesehatan ibu hamil.\nCara cepat: semangat kongres bukan sekadar berkumpul. Persoalan yang dihimpun dibawa ke tempat yang bisa mengubah keadaan. Cari opsi yang memindahkan keluhan ke forum pengambil keputusan.\nKenapa opsi lain gugur: A peringatan Hari Ibu terkait kongres, tetapi seremonial. B mengenalkan tokoh adalah belajar sejarah, bukan menerapkan. D pertemuan dibatasi pada keakraban. E paling menggoda karena cuma menyalin frasa dari soal “membahas persoalan bersama”, tetapi hasilnya hanya berputar di forum sendiri.\nKunci: C, karena cerita para ibu dihimpun lalu diubah menjadi usulan tertulis untuk musyawarah perencanaan desa.\nAnalogi: keluhan siswa soal kantin tidak cukup dibicarakan di grup kelas; ketua kelas menuliskannya dan membawanya ke rapat OSIS dengan pihak sekolah.\nJebakan: E memakai kalimat yang terdengar persis seperti kongres. Tanyakan: setelah dibahas, keluhannya dibawa ke mana?"
+  },
+  "DAJ-TWK-038": {
+    "bentuk_tegangan": "T2",
+    "konstruk_dua_kutub": "komunikasi bersama dalam bahasa Indonesia ↔ ruang bagi ciri bahasa daerah peserta",
+    "soal": "Panitia kemah budaya pelajar dari berbagai provinsi berbeda pendapat tentang sesi cerita rakyat. Sebagian panitia ingin semua peserta bercerita dalam bahasa Indonesia agar dipahami bersama, sementara sebagian lain ingin peserta memakai bahasa daerah agar ciri asalnya terasa. Keputusan yang paling tepat sesuai fungsi pemersatu yang diatur UU Nomor 24 Tahun 2009 adalah...",
+    "opsi": {
+      "A": "Menilai keakraban antarpeserta setelah sesi cerita rakyat selesai dilaksanakan.",
+      "B": "Mewajibkan peserta bercerita dalam bahasa Indonesia baku agar dipahami bersama.",
+      "C": "Menetapkan kisah dituturkan dalam bahasa Indonesia disertai ungkapan daerah beserta artinya.",
+      "D": "Membagi sesi menjadi dua, satu berbahasa Indonesia dan satu berbahasa daerah.",
+      "E": "Memasang spanduk bertema persatuan bahasa di area kemah selama kegiatan."
+    },
+    "kunci": "C",
+    "analisis_opsi": {
+      "A": "[D3] Keakraban adalah efek kegiatan, bukan keputusan tentang bahasa.",
+      "B": "[D5+D2] Mengulang “dipahami bersama”; kata “baku” menutup ruang bagi ciri daerah.",
+      "C": "KUNCI — Bahasa Indonesia menjaga keterpahaman, ungkapan daerah beserta artinya menjaga ciri asal.",
+      "D": "[D2] Tampak adil, tetapi sesi berbahasa daerah tanpa terjemahan tidak dipahami peserta lain.",
+      "E": "[D6] Spanduk adalah simbol, tidak mengatur cara bercerita."
+    },
+    "pembahasan": "Yang ditanya: keputusan sesi cerita rakyat yang sesuai fungsi bahasa Indonesia sebagai pemersatu. Dua tuntutan sah: cerita dipahami semua peserta, dan ciri bahasa asal peserta tetap terasa.\nCara cepat: pemersatu bukan penghapus. Bahasa Indonesia menjadi jembatan, bahasa daerah tetap boleh tampil asal bisa dipahami.\nKenapa opsi lain gugur: A keakraban adalah akibat. B cuma menyalin frasa dari soal “dipahami bersama”, tetapi “baku” membuat ciri daerah hilang. D paling menggoda karena kedua bahasa dapat jatah, padahal sesi bahasa daerah tanpa arti membuat peserta lain tidak paham. E spanduk hanya simbol.\nKunci: C, karena kisah dituturkan dalam bahasa Indonesia, dan ungkapan daerah tetap muncul bersama artinya.\nAnalogi: menyanyikan lagu daerah di acara nasional dengan terjemahan di layar. Lagunya tetap asli, penontonnya tetap paham.\nJebakan: D terlihat adil karena membagi dua. Bagi rata belum tentu menyatukan; cek apakah semua peserta tetap bisa saling memahami."
+  },
+  "DAJ-TWK-039": {
+    "bentuk_tegangan": "T2",
+    "konstruk_dua_kutub": "kecepatan menjangkau korban terdekat ↔ keadilan menurut kebutuhan antarwilayah",
+    "soal": "Dua kecamatan dilanda banjir pada minggu yang sama, sedangkan organisasi pemuda kabupaten hanya memiliki 400 paket bantuan. Pengurus cabang dari kecamatan terdekat meminta warganya didahulukan karena mudah dijangkau, sementara relawan melaporkan kecamatan yang jauh memiliki pengungsi lebih banyak. Kebijakan penyaluran yang paling tepat berdasarkan semangat persatuan dan keadilan sosial adalah...",
+    "opsi": {
+      "A": "Membagi jatah menurut tingkat kebutuhan dan menyalurkannya lewat jaringan setempat.",
+      "B": "Mendahulukan warga kecamatan terdekat karena paket dapat segera dijangkau.",
+      "C": "Memusatkan paket ke kecamatan yang jauh karena pengungsinya lebih banyak.",
+      "D": "Membagi paket sama rata dan mengirimnya bersamaan ke kedua kecamatan.",
+      "E": "Menunda penyaluran sampai data korban dari kedua kecamatan lengkap."
+    },
+    "kunci": "A",
+    "analisis_opsi": {
+      "A": "KUNCI — Jatah ditentukan kebutuhan, penyaluran lewat jaringan di tiap wilayah menjaga kecepatan.",
+      "B": "[D5+D2] Mengulang alasan pengurus cabang; kecamatan yang jauh terabaikan.",
+      "C": "[D2] Kata “memusatkan” membuat korban di kecamatan terdekat tidak mendapat paket.",
+      "D": "[D4] Sama rata berbeda dari adil; kebutuhan yang tidak sama diberi jumlah sama.",
+      "E": "[D6] Berhenti di pendataan; sisi kecepatan hilang."
+    },
+    "pembahasan": "Yang ditanya: kebijakan menyalurkan bantuan terbatas ke dua kecamatan, dengan ukuran persatuan dan keadilan sosial. Dua tuntutan sah: korban terdekat cepat terjangkau, dan pembagian adil sesuai kebutuhan.\nCara cepat: adil bukan sama rata, dan cepat bukan berarti hanya yang dekat. Cari opsi yang membagi menurut kebutuhan tetapi tetap bisa segera sampai.\nKenapa opsi lain gugur: B mengulang alasan pengurus cabang, kecamatan yang jauh terabaikan. C paling menggoda karena memakai data pengungsi, tetapi “memusatkan” membuat korban di kecamatan terdekat tidak dapat apa-apa. D sama rata adalah konsep yang mirip dengan adil, tetapi berbeda. E menunggu data lengkap membuat bantuan terlambat.\nKunci: A, karena jatah dihitung dari tingkat kebutuhan tiap kecamatan, dan jaringan setempat mempercepat paket sampai ke tangan korban.\nAnalogi: ibu membagi lauk untuk anak yang sakit dan anak yang sehat. Porsinya beda sesuai kebutuhan, tetapi keduanya tetap makan pada jam yang sama.\nJebakan: C dan A sama-sama memakai ukuran kebutuhan. Bedanya, A tetap membagi ke dua wilayah, C menghapus satu wilayah."
+  },
+  "DAJ-TWK-040": {
+    "bentuk_tegangan": "T2",
+    "konstruk_dua_kutub": "kerja bakti sukarela ↔ tanggung jawab atas bagian kerja",
+    "soal": "Warga sebuah RW akan membersihkan saluran air sebelum musim hujan. Ketua RW ingin setiap rumah tercatat menanggung satu bagian pekerjaan, sementara sebagian warga ingin kerja bakti tetap sukarela tanpa daftar wajib. Pengaturan yang paling tepat mencerminkan nilai gotong royong adalah...",
+    "opsi": {
+      "A": "Menjaga kerja bakti tetap sukarela dengan tidak membuat daftar pembagian tugas.",
+      "B": "Menetapkan jatah kerja tiap rumah dan memberi teguran bagi yang tidak hadir.",
+      "C": "Memberi penghargaan kepada warga yang paling sering hadir dalam kerja bakti.",
+      "D": "Menyewa petugas kebersihan dengan iuran warga agar saluran cepat bersih.",
+      "E": "Mengajak warga memilih ruas yang dikerjakan, kemudian mencatat penyelesaian tiap ruas."
+    },
+    "kunci": "E",
+    "analisis_opsi": {
+      "A": "[D5+D2] Mengulang “sukarela” dan “daftar”; tanpa pembagian, tanggung jawab tiap bagian kosong.",
+      "B": "[D2] Dua komponen, tetapi keduanya sisi kewajiban; unsur sukarela hilang.",
+      "C": "[D6] Penghargaan adalah dorongan citra, bukan pengaturan kerja bersama.",
+      "D": "[D4] Membayar jasa adalah gotong royong dana, bukan kerja bersama oleh warga.",
+      "E": "KUNCI — Warga memilih sendiri bagiannya, pencatatan membuat tiap bagian dipertanggungjawabkan."
+    },
+    "pembahasan": "Yang ditanya: pengaturan kerja bakti yang mencerminkan gotong royong. Dua tuntutan sah: ketua RW ingin tiap bagian ada penanggung jawabnya, sebagian warga ingin tetap sukarela.\nCara cepat: gotong royong itu sukarela, tetapi bukan asal datang. Cari opsi yang membiarkan warga memilih, lalu memastikan bagiannya selesai.\nKenapa opsi lain gugur: A cuma menyalin kata dari soal “sukarela” dan “daftar”; tanpa pembagian, ruas yang sulit bisa tidak dikerjakan siapa pun. B dua langkah, tetapi keduanya kewajiban dan teguran. C penghargaan bagus untuk semangat, tetapi tidak mengatur kerja. D paling halus: iuran juga bentuk kebersamaan, tetapi pekerjaan diserahkan ke orang bayaran.\nKunci: E, karena warga memilih ruas secara sukarela, lalu penyelesaian tiap ruas dicatat sehingga ada yang bertanggung jawab.\nAnalogi: piket kelas. Siswa boleh memilih hari piketnya sendiri, tetapi namanya tertulis di jadwal dan kelas dicek setelahnya.\nJebakan: A paling sesuai dengan keinginan warga. Opsi yang hanya mengabulkan satu pihak biasanya cuma menjawab separuh."
+  },
+  "DAJ-TWK-041": {
+    "bentuk_tegangan": "T1",
+    "konstruk_dua_kutub": "rasa memiliki wilayah ↔ kontribusi terkoordinasi bagi fasilitas publik",
+    "soal": "Warga pesisir menemukan lampu suar penanda alur kapal padam, lalu melapor ke petugas pelabuhan dan ikut mengangkut peralatan perbaikan sesuai arahan. Kepedulian mereka bukan sekadar rasa memiliki terhadap kampung, melainkan ikut menjaga fasilitas yang dipakai banyak orang lewat saluran yang benar. Nilai yang paling tepat mencerminkan tindakan warga itu adalah...",
+    "opsi": {
+      "A": "Rasa memiliki kampung yang menumbuhkan kebanggaan terhadap wilayah pesisir tempat tinggal.",
+      "B": "Solidaritas komunitas yang mendorong warga saling membantu ketika tetangga mengalami kesulitan.",
+      "C": "Rasa aman nelayan yang meningkat setelah lampu penanda alur kembali menyala.",
+      "D": "Ketaatan prosedur yang tampak dari laporan resmi kepada petugas pelabuhan setempat.",
+      "E": "Tanggung jawab kewargaan yang menyalurkan rasa peduli lewat kerja sama resmi."
+    },
+    "kunci": "E",
+    "analisis_opsi": {
+      "A": "[D5+D2] Mengulang “rasa memiliki terhadap kampung” dan “pesisir”; sisi yang stem sebut belum cukup.",
+      "B": "[D4] Solidaritas antartetangga berbeda dari menjaga fasilitas publik.",
+      "C": "[D3] Rasa aman nelayan adalah efek perbaikan, bukan nilai yang dipegang warga.",
+      "D": "[D6] Berhenti di prosedur pelaporan, padahal warga juga ikut bekerja.",
+      "E": "KUNCI — Kepedulian warga diwujudkan sebagai kontribusi yang terkoordinasi dengan pihak berwenang."
+    },
+    "pembahasan": "Yang ditanya: nama nilai yang paling tepat untuk tindakan warga pesisir. Soal sudah memberi petunjuk: bukan sekadar rasa memiliki kampung, tetapi menjaga fasilitas umum lewat saluran yang benar.\nCara cepat: tindakan warga ada dua: melapor ke petugas dan ikut bekerja sesuai arahan. Nilai yang benar harus menjelaskan kepedulian yang disalurkan bersama pihak berwenang.\nKenapa opsi lain gugur: A cuma menyalin frasa dari soal “rasa memiliki kampung”, padahal soal bilang itu belum cukup. B solidaritas antartetangga adalah nilai yang mirip, tetapi berbeda; lampu suar dipakai kapal dari mana saja, bukan menolong tetangga. C rasa aman adalah akibat. D hanya menjelaskan laporannya, tidak menjelaskan warga ikut bekerja.\nKunci: E, karena tanggung jawab kewargaan menjelaskan kepedulian yang disalurkan menjadi kerja sama dengan petugas.\nAnalogi: siswa yang melihat proyektor kelas rusak. Ia lapor ke petugas sarana, lalu membantu mengangkat alat saat diperbaiki, tidak membongkar sendiri.\nJebakan: soal ini tergolong mudah; opsi yang salah cukup jelas gugurnya. Kesalahan paling sering adalah memilih A karena kalimatnya sama dengan soal."
+  },
+  "DAJ-TWK-042": {
+    "bentuk_tegangan": "T3",
+    "konstruk_dua_kutub": "kemasan kreatif yang menarik pelajar ↔ ketentuan bentuk resmi simbol negara",
+    "soal": "Komunitas kreator membuat animasi pendidikan bagi pelajar SD yang menampilkan simbol negara. Tim kreatif ingin alur dan tokohnya lucu agar menarik, sementara UU Nomor 24 Tahun 2009 mengatur bentuk, warna, dan perbandingan ukuran bendera serta lambang negara. Kebijakan produksi yang paling tepat memenuhi kedua tuntutan itu adalah...",
+    "opsi": {
+      "A": "Menyalin tampilan protokoler upacara agar gambar simbol tidak ditafsirkan berbeda.",
+      "B": "Merancang tokoh jenaka dengan Merah Putih dan Garuda yang digambar sesuai kaidah.",
+      "C": "Mengutamakan alur yang lucu agar animasi menarik bagi pelajar sekolah dasar.",
+      "D": "Menampilkan bendera dan lambang resmi hanya pada adegan pembuka dan penutup film.",
+      "E": "Mengukur minat pelajar terhadap simbol negara setelah animasi selesai ditayangkan."
+    },
+    "kunci": "B",
+    "analisis_opsi": {
+      "A": "[D2] Menyalin tampilan upacara menghapus sisi kreatif; animasi tidak lagi menarik bagi anak.",
+      "B": "KUNCI — Kreativitas ada pada tokoh dan cerita, ketepatan ada pada gambar simbol negara.",
+      "C": "[D5+D2] Mengulang “lucu” dan “menarik”; kata “mengutamakan” menggeser ketentuan simbol.",
+      "D": "[D6] Tampak dua komponen, tetapi simbol hanya jadi tempelan pembuka-penutup.",
+      "E": "[D3] Minat pelajar adalah efek tayangan, bukan kebijakan produksi."
+    },
+    "pembahasan": "Yang ditanya: kebijakan produksi yang memenuhi dua tuntutan. Tuntutan pertama: animasi lucu dan menarik bagi anak SD. Tuntutan kedua: bendera dan lambang negara mengikuti ketentuan bentuk, warna, dan ukuran dalam UU 24/2009.\nCara cepat: pisahkan bagian yang boleh kreatif (tokoh, alur) dari bagian yang wajib sesuai aturan (gambar simbol). Kebijakan yang tepat memberi tempat pada keduanya.\nKenapa opsi lain gugur: A aman secara aturan, tetapi animasi berubah jadi tayangan upacara. C cuma menyalin kata dari soal “lucu” dan “menarik”, dan “mengutamakan” menggeser ketentuan. D paling menggoda karena tampak dua komponen, tetapi simbol hanya ditempel di awal dan akhir. E minat pelajar adalah akibat.\nKunci: B, karena tokohnya boleh jenaka, sedangkan Merah Putih dan Garuda digambar persis sesuai kaidah.\nAnalogi: buku cerita bergambar tentang upacara. Tokoh kelincinya boleh lucu, tetapi bendera yang dikibarkan tetap merah di atas, putih di bawah.\nJebakan: D memakai pola “A dan B” seperti kunci. Pola dua komponen tidak cukup; cek apakah simbol benar-benar hadir dengan benar di dalam cerita."
+  },
+  "DAJ-TWK-043": {
+    "bentuk_tegangan": "T2",
+    "konstruk_dua_kutub": "ketepatan istilah keilmuan ↔ keterpahaman warga lintas daerah",
+    "soal": "Dinas kesehatan sebuah provinsi menyusun brosur demam berdarah untuk warga dari berbagai daerah. Dokter penyusun ingin istilah medis dipertahankan agar maknanya tepat, sementara kader posyandu meminta bahasa yang mudah dipahami warga yang tidak terbiasa dengan istilah itu. Langkah penyusunan yang paling tepat sesuai fungsi bahasa Indonesia sebagai sarana komunikasi antardaerah adalah...",
+    "opsi": {
+      "A": "Mencantumkan nama penyakit yang baku disertai penjelasan dengan kalimat sehari-hari.",
+      "B": "Mempertahankan istilah medis asli agar ketepatan makna keilmuan terjaga.",
+      "C": "Mengganti istilah teknis dengan ungkapan populer tanpa memeriksa perubahan maknanya.",
+      "D": "Meminta kader posyandu menerangkan isi brosur kepada warga saat penyuluhan.",
+      "E": "Mencetak brosur lebih banyak dan membagikannya ke rumah warga tiap daerah."
+    },
+    "kunci": "A",
+    "analisis_opsi": {
+      "A": "KUNCI — Istilah baku menjaga ketepatan, penjelasan sehari-hari menjaga keterpahaman.",
+      "B": "[D5+D2] Mengulang “istilah medis” dan “tepat”; warga tetap tidak paham.",
+      "C": "[D2] Frasa “tanpa memeriksa perubahan maknanya” mengorbankan ketepatan.",
+      "D": "[D7] Sah, tetapi penjelasan dibebankan pada kader; tugas dinas di sini menyusun brosur yang jelas.",
+      "E": "[D4] Jangkauan sebaran berbeda dari keterpahaman isi."
+    },
+    "pembahasan": "Yang ditanya: langkah menyusun brosur yang sesuai fungsi bahasa Indonesia sebagai sarana komunikasi antardaerah. Dua tuntutan sah: istilah medis tetap tepat, dan warga dari berbagai daerah paham isinya.\nCara cepat: istilah yang tepat tidak perlu dibuang; cukup dijelaskan. Cari opsi yang menyimpan istilah baku dan menambah penjelasan.\nKenapa opsi lain gugur: B cuma menyalin kata dari soal “istilah medis” dan “tepat”, tetapi warga tetap bingung. C mudah dipahami, tetapi maknanya bisa bergeser. D paling menggoda karena kader memang dekat dengan warga, tetapi soal menanyakan langkah penyusunan brosur oleh dinas. E brosur yang lebih banyak belum tentu lebih dipahami.\nKunci: A, karena nama penyakit tetap baku dan penjelasannya ditulis dengan kalimat sehari-hari.\nAnalogi: guru kimia menulis “H₂O” di papan, lalu menambahkan “ini air yang kamu minum”. Istilahnya tetap, muridnya paham.\nJebakan: D terasa paling ramah warga. Cek siapa pelakunya: soal bertanya tentang brosur yang disusun dinas, bukan tentang penyuluhan kader."
+  },
+  "DAJ-TWK-044": {
+    "bentuk_tegangan": "T1",
+    "konstruk_dua_kutub": "keahlian profesi petani ↔ daya tahan masyarakat menghadapi gangguan",
+    "soal": "Kelompok tani sebuah kabupaten mengubah pola tanam agar pasokan beras daerah tetap tersedia saat kemarau panjang. Pengabdian sesuai profesi tidak hanya menaikkan hasil kerja kelompok, tetapi juga menopang daya tahan masyarakat menghadapi gangguan. Makna bela negara yang paling tepat terlihat dalam tindakan kelompok tani itu adalah...",
+    "opsi": {
+      "A": "Peningkatan hasil kerja kelompok melalui pemilihan cara budidaya yang lebih adaptif.",
+      "B": "Kerja sama antarpetani untuk menghadapi perubahan musim secara bersama-sama.",
+      "C": "Ketahanan pendapatan keluarga petani dengan menekan risiko gagal panen tahunan.",
+      "D": "Keahlian bertani yang diarahkan agar kebutuhan pangan warga tetap terpenuhi.",
+      "E": "Ketersediaan beras daerah yang tetap stabil ketika kemarau panjang melanda kabupaten."
+    },
+    "kunci": "D",
+    "analisis_opsi": {
+      "A": "[D5+D2] Mengulang “hasil kerja kelompok”; hanya sisi profesi yang stem sebut belum cukup.",
+      "B": "[D4] Kerja sama antarpetani adalah gotong royong, bukan makna bela negara lewat profesi.",
+      "C": "[D2] Kata “keluarga petani” membatasi manfaat pada petani sendiri; masyarakat luas kosong.",
+      "D": "KUNCI — Keahlian profesi dipakai untuk menjaga kebutuhan pokok masyarakat.",
+      "E": "[D3+D5] Ketersediaan beras adalah hasil tindakan, dan mengulang kata stem."
+    },
+    "pembahasan": "Yang ditanya: makna bela negara dalam tindakan kelompok tani. Dua sisinya: hasil kerja profesi, dan daya tahan masyarakat menghadapi gangguan. Jangkarnya Pasal 9 ayat (2) UU 3/2002: pengabdian sesuai profesi termasuk bela negara.\nCara cepat: cari rumusan yang menyebut keahlian petani dan arah manfaatnya ke masyarakat, bukan ke kelompok sendiri.\nKenapa opsi lain gugur: A cuma menyalin frasa dari soal “hasil kerja kelompok”, padahal soal bilang itu belum cukup. B kerja sama antarpetani adalah gotong royong, nilai yang mirip, tetapi berbeda. C “keluarga petani” membatasi manfaat pada diri sendiri. E paling menggoda karena cuma menyalin kata dari soal “beras” dan “kemarau”, tetapi itu hasil, bukan makna.\nKunci: D, karena keahlian bertani diarahkan untuk menjaga kebutuhan pangan warga, dan itulah bela negara lewat profesi.\nAnalogi: perawat yang bertugas saat wabah. Keahliannya sama dengan hari biasa, tetapi diarahkan untuk menjaga kota tetap tertangani.\nJebakan: E terdengar seperti jawaban karena menyebut beras tetap tersedia. Soal meminta makna, bukan hasil."
+  },
+  "DAJ-TWK-045": {
+    "bentuk_tegangan": "T2",
+    "konstruk_dua_kutub": "keterbukaan pada pengetahuan luar ↔ kesesuaian dengan kebutuhan setempat",
+    "soal": "Sekelompok mahasiswa mempelajari sistem bus listrik di luar negeri dan ingin mengusulkannya kepada pemerintah kotanya. Dosen pembimbing meminta usulan mengikuti model negara asal yang sudah terbukti berhasil, sementara dinas perhubungan meminta usulan menyesuaikan kondisi jalan dan pola perjalanan warga. Langkah menyusun usulan yang paling tepat mencerminkan sikap terbuka yang berpijak pada kepentingan nasional adalah...",
+    "opsi": {
+      "A": "Mengikuti model negara asal secara utuh karena keberhasilannya sudah terbukti.",
+      "B": "Menyusun rancangan lokal sendiri tanpa memakai pengalaman kota-kota di negara lain.",
+      "C": "Mengadaptasi prinsip teknologi asal melalui uji coba satu rute bersama pengguna lokal.",
+      "D": "Membandingkan standar beberapa negara untuk memilih bus listrik dengan performa paling tinggi.",
+      "E": "Menghimpun dukungan publik melalui media sosial sebelum usulan diajukan."
+    },
+    "kunci": "C",
+    "analisis_opsi": {
+      "A": "[D5+D2] Mengulang “model negara asal” dan “terbukti”; kata “secara utuh” menutup penyesuaian.",
+      "B": "[D2] Frasa “tanpa memakai pengalaman” menutup sisi keterbukaan.",
+      "C": "KUNCI — Pengetahuan luar diambil prinsipnya, lalu diuji pada kondisi kota sendiri.",
+      "D": "[D4] Performa tertinggi adalah ukuran teknis, bukan kesesuaian dengan kebutuhan kota.",
+      "E": "[D6] Dukungan publik adalah citra usulan, bukan cara menyusun isinya."
+    },
+    "pembahasan": "Yang ditanya: langkah menyusun usulan yang mencerminkan sikap terbuka tetapi berpijak pada kepentingan nasional. Dua tuntutan sah: dosen ingin mengambil model yang sudah terbukti, dinas ingin usulan cocok dengan kondisi kota.\nCara cepat: terbuka berarti mau belajar dari luar; berpijak berarti menyaring dan menyesuaikan. Cari opsi yang mengambil ilmu dari luar lalu mengujinya di tempat sendiri.\nKenapa opsi lain gugur: A cuma menyalin frasa dari soal “model negara asal”, tetapi “secara utuh” berarti tidak ada penyesuaian. B menutup diri dari pengalaman luar. D paling menggoda karena terlihat ilmiah, tetapi bus berperforma tertinggi belum tentu cocok dengan jalan kota. E dukungan media sosial tidak mengubah isi usulan.\nKunci: C, karena prinsip teknologinya diambil, lalu diuji di satu rute bersama warga yang akan memakainya.\nAnalogi: resep masakan dari luar negeri. Tekniknya dipelajari, tetapi bumbunya disesuaikan dengan bahan yang ada di pasar dekat rumah.\nJebakan: D memakai kata yang terdengar canggih. Ukuran “terbaik” di atas kertas berbeda dengan “cocok” untuk kota sendiri."
+  },
+  "DAJ-TWK-046": {
+    "bentuk_tegangan": "T5",
+    "konstruk_dua_kutub": "kemandirian anak menilai kabar ↔ tuntunan lingkungan keluarga dan sekolah",
+    "soal": "Ki Hadjar Dewantara memandang pendidikan dalam Sistem Among sebagai upaya menuntun kodrat anak agar tumbuh mandiri tanpa kehilangan arah. Kini orang tua dan guru di sebuah SMP cemas karena siswa sering meneruskan kabar bohong dari grup percakapan. Penerapan Sistem Among yang paling tepat untuk persoalan itu adalah...",
+    "opsi": {
+      "A": "Membiarkan siswa menilai kabar secara bebas agar keberanian berpikirnya tumbuh.",
+      "B": "Membatasi gawai siswa di rumah agar kabar palsu tidak lagi diterima.",
+      "C": "Melatih siswa memeriksa sendiri kabar dalam forum bersama guru dan keluarga.",
+      "D": "Menyerahkan pendidikan literasi digital kepada sekolah karena memiliki guru terlatih.",
+      "E": "Mengadakan seminar tentang kabar bohong bagi orang tua sekali setahun."
+    },
+    "kunci": "C",
+    "analisis_opsi": {
+      "A": "[D2] Kata “secara bebas” menghapus tuntunan; anak dibiarkan tanpa arah.",
+      "B": "[D4] Pembatasan berbeda dari tuntunan; kemandirian anak tidak dilatih.",
+      "C": "KUNCI — Anak berlatih menilai sendiri, keluarga dan sekolah hadir sebagai penuntun.",
+      "D": "[D7] Sah, tetapi Sistem Among menuntut keluarga ikut menuntun, bukan menyerahkan ke sekolah.",
+      "E": "[D5+D6] Mengulang “kabar bohong” dan “orang tua”; seminar sekali setahun bersifat seremonial."
+    },
+    "pembahasan": "Yang ditanya: penerapan Sistem Among pada masalah siswa yang meneruskan kabar bohong. Sisi dulu: pendidikan menuntun kodrat anak agar mandiri tanpa kehilangan arah. Jadi ada dua unsur: anak belajar mandiri, dan orang dewasa menuntun.\nCara cepat: cari opsi yang membuat siswa sendiri yang memeriksa kabar, tetapi ada guru dan keluarga yang mendampingi.\nKenapa opsi lain gugur: A “secara bebas” tanpa tuntunan, anak bisa tersesat. B paling menggoda karena kabar bohong berhenti masuk, tetapi membatasi gawai adalah larangan, bukan tuntunan; siswa tidak belajar menilai. D sekolah memang punya guru terlatih, tetapi menyerahkan semuanya ke sekolah membuat keluarga lepas tangan. E cuma menyalin kata dari soal “kabar bohong” dan “orang tua”, tetapi seminar setahun sekali hanya acara.\nKunci: C, karena siswa berlatih memeriksa kabar sendiri, dalam forum yang menghadirkan guru dan keluarga sebagai penuntun.\nAnalogi: belajar berenang. Anak tidak dilarang masuk kolam, tidak juga dilepas di laut; ia berenang sendiri dengan pelatih di tepi kolam.\nJebakan: B terlihat paling cepat menyelesaikan masalah. Ingat kata kunci Sistem Among: menuntun, bukan mengekang."
+  },
+  "DAJ-TWK-047": {
+    "bentuk_tegangan": "T4",
+    "konstruk_dua_kutub": "kesetiaan pada organisasi ↔ koreksi praktik yang menyimpang dari misi",
+    "soal": "Seorang anggota organisasi kepemudaan menemukan program bantuan organisasinya tidak menjangkau penyandang disabilitas, padahal anggaran dasar menetapkan pelayanan bagi semua lapisan masyarakat. Ketua mengingatkan agar kritik tidak merusak kekompakan dan nama baik organisasi, tetapi ia tetap mengajukan usulan perbaikan berdasarkan data dalam rapat pengurus. Nilai yang paling tepat mencerminkan tindakannya adalah...",
+    "opsi": {
+      "A": "Loyalitas kritis yang setia pada misi lembaga dengan membenahi cara kerjanya.",
+      "B": "Kepatuhan organisasi yang menjalankan keputusan pengurus melalui prosedur internal.",
+      "C": "Keberanian moral yang menyuarakan kekurangan walau berisiko mendapat penolakan.",
+      "D": "Mutu program yang meningkat karena usulan perbaikan didukung data lapangan.",
+      "E": "Kekompakan pengurus yang terjaga karena kritik disampaikan tanpa merusak nama baik."
+    },
+    "kunci": "A",
+    "analisis_opsi": {
+      "A": "KUNCI — Kesetiaan diarahkan pada misi, dan kesetiaan itu diwujudkan dengan memperbaiki pelaksanaan.",
+      "B": "[D6] Kepatuhan prosedural; tidak menjelaskan koreksi terhadap program yang menyimpang.",
+      "C": "[D4] Keberanian moral adalah nilai tetangga; tidak menjelaskan sisi kesetiaan pada organisasi.",
+      "D": "[D3] Mutu program yang naik adalah efek usulan, bukan nilai pelakunya.",
+      "E": "[D5+D2] Mengulang “kekompakan”, “kritik”, dan “nama baik”; hanya sisi permintaan ketua."
+    },
+    "pembahasan": "Yang ditanya: nama nilai untuk anggota yang mengoreksi programnya sendiri. Tekanannya datang dari ketua: jaga kekompakan dan nama baik. Ketentuannya dari anggaran dasar: layani semua lapisan masyarakat. Anggota itu tetap mengusulkan perbaikan, tetapi di rapat pengurus, bukan di luar.\nCara cepat: perhatikan dua hal dari tindakannya. Ia tidak keluar dan tidak membuka aib ke luar (setia), tetapi ia juga tidak diam saat program menyimpang (kritis).\nKenapa opsi lain gugur: B kepatuhan prosedural tidak menjelaskan kenapa ia mengoreksi. C paling menggoda karena ia memang berani, tetapi keberanian tidak menjelaskan kesetiaannya pada organisasi. D mutu yang naik adalah akibat. E memakai kata dari permintaan ketua dan hanya menjelaskan sisi itu.\nKunci: A, karena loyalitas kritis berarti setia pada misi lembaga, dan bukti kesetiaannya adalah memperbaiki cara kerja yang menyimpang.\nAnalogi: teman dekat yang menegur kamu karena menyontek. Ia tetap temanmu, dan justru karena peduli ia menegur, empat mata, bukan di depan kelas.\nJebakan: C dan A sama-sama memuji tindakan berani. Cari nilai yang menjelaskan dua sisi: berani menegur dan tetap setia."
+  },
+  "DAJ-TWK-048": {
+    "bentuk_tegangan": "T3",
+    "konstruk_dua_kutub": "kecepatan peringatan keamanan ↔ perlindungan kehormatan orang yang dilaporkan",
+    "soal": "Komunitas di wilayah perbatasan membuat aplikasi untuk melaporkan kejadian mencurigakan kepada petugas keamanan setempat. Tujuannya mempercepat peringatan bagi warga, sementara Pasal 28G ayat (1) UUD 1945 menjamin hak setiap orang atas perlindungan diri pribadi, kehormatan, dan martabat. Aturan pengoperasian aplikasi yang paling tepat memenuhi kedua tuntutan itu adalah...",
+    "opsi": {
+      "A": "Menyebarkan setiap laporan ke grup warga agar peringatan tersampaikan lebih cepat.",
+      "B": "Menahan laporan sampai bukti dari tiga warga terkumpul sebelum diteruskan.",
+      "C": "Menyembunyikan identitas pelapor agar warga tidak takut menyampaikan informasi.",
+      "D": "Meneruskan laporan seketika ke pos jaga dan merahasiakan identitas orang terlapor.",
+      "E": "Membatasi pengguna aplikasi pada tokoh masyarakat dan mencatat setiap laporan masuk."
+    },
+    "kunci": "D",
+    "analisis_opsi": {
+      "A": "[D5+D2] Mengulang “peringatan” dan “cepat”; laporan yang belum dicek menyebar dan bisa mencemarkan nama orang.",
+      "B": "[D2] Menunggu tiga bukti menghapus sisi kecepatan.",
+      "C": "[D4] Melindungi pelapor berbeda dari melindungi kehormatan orang yang dilaporkan.",
+      "D": "KUNCI — Laporan cepat sampai ke petugas, identitas terlapor tidak terbuka ke publik.",
+      "E": "[D6] Pembatasan pengguna dan pencatatan adalah pengaturan administratif; peringatan justru melambat."
+    },
+    "pembahasan": "Yang ditanya: aturan pengoperasian aplikasi yang memenuhi dua tuntutan. Tuntutan pertama: peringatan cepat. Tuntutan kedua: Pasal 28G ayat (1) UUD 1945, setiap orang berhak atas perlindungan diri pribadi, kehormatan, dan martabat, termasuk orang yang dilaporkan dan belum tentu bersalah.\nCara cepat: tanyakan dua hal pada tiap opsi. Apakah laporan cepat sampai ke pihak yang bisa bertindak? Apakah nama orang yang dilaporkan aman dari penghakiman publik?\nKenapa opsi lain gugur: A cuma menyalin kata dari soal “peringatan” dan cepat sekali, tetapi laporan mentah menyebar ke grup warga. B aman bagi terlapor, tetapi lambat. C paling menggoda karena menyebut identitas, padahal yang dilindungi pelapor, bukan terlapor. E dua langkah administratif yang membuat laporan makin sedikit.\nKunci: D, karena laporan langsung masuk ke pos jaga, dan identitas orang yang dilaporkan dirahasiakan sampai petugas memeriksa.\nAnalogi: siswa yang melihat temannya diduga mencuri. Ia lapor ke guru BK saat itu juga, bukan menulis nama temannya di grup kelas.\nJebakan: C dan D sama-sama merahasiakan identitas. Baca baik-baik: identitas siapa?"
+  },
+  "DAJ-TWK-049": {
+    "bentuk_tegangan": "T5",
+    "konstruk_dua_kutub": "sasaran bersama lintas kelompok ↔ ruang bagi kebutuhan khas tiap kelompok",
+    "soal": "Kongres Perempuan Indonesia pertama tahun 1928 mempertemukan organisasi perempuan yang berbeda latar daerah dan agama dalam satu forum. Kini jejaring koperasi perempuan dari lima kabupaten ingin menyusun program bersama, padahal kebutuhan anggota tiap kabupaten berbeda. Penerapan semangat kongres itu yang paling tepat bagi jejaring tersebut adalah...",
+    "opsi": {
+      "A": "Menyeragamkan kegiatan koperasi di lima kabupaten agar program tampak kompak.",
+      "B": "Menyepakati satu sasaran pokok dan memberi keleluasaan cara kerja pada tiap wilayah.",
+      "C": "Mengadakan upacara pembukaan bersama di kabupaten yang berbeda setiap tahun.",
+      "D": "Memilih agenda kabupaten dengan anggota terbanyak agar arah jejaring segera jelas.",
+      "E": "Membiarkan tiap koperasi berjalan sendiri dan hanya bertukar laporan di akhir tahun."
+    },
+    "kunci": "B",
+    "analisis_opsi": {
+      "A": "[D5+D2] Mengulang “koperasi”, “lima kabupaten”, “program”; “menyeragamkan” menghapus kebutuhan khas.",
+      "B": "KUNCI — Sasaran pokok menyatukan, keleluasaan cara kerja menghargai perbedaan kebutuhan.",
+      "C": "[D6] Upacara bergilir adalah seremoni, bukan cara menyusun program.",
+      "D": "[D4] Mengikuti kelompok terbesar berbeda dari bersatu dalam perbedaan.",
+      "E": "[D2] Dua langkah, tetapi tanpa sasaran bersama; sisi persatuan kosong."
+    },
+    "pembahasan": "Yang ditanya: penerapan semangat Kongres Perempuan 1928 pada jejaring koperasi masa kini. Sisi dulu: organisasi yang berbeda daerah dan agama bersatu dalam satu forum tanpa harus menjadi sama. Sisi kini: lima kabupaten ingin program bersama, tetapi kebutuhannya berbeda.\nCara cepat: bersatu tanpa seragam. Cari opsi yang punya sasaran bersama dan tetap memberi ruang bagi perbedaan.\nKenapa opsi lain gugur: A cuma menyalin kata dari soal dan “menyeragamkan” menghapus kebutuhan tiap kabupaten. C upacara bergilir hanya acara. D paling menggoda karena arah cepat jelas, tetapi mengikuti yang terbesar berarti yang kecil tidak terwakili. E tampak menghargai perbedaan, tetapi tanpa sasaran bersama, jejaring tidak lagi bersatu.\nKunci: B, karena satu sasaran pokok menyatukan jejaring, dan cara kerja tiap wilayah boleh berbeda sesuai kebutuhannya.\nAnalogi: lomba estafet. Satu garis finis untuk semua pelari, tetapi tiap pelari berlari dengan gaya dan kekuatannya sendiri.\nJebakan: E dan A adalah dua ekstrem. Jawaban yang benar biasanya berdiri di antara “semua sama” dan “jalan sendiri-sendiri”."
+  },
+  "DAJ-TWK-050": {
+    "bentuk_tegangan": "T1",
+    "konstruk_dua_kutub": "perawatan warisan budaya kelompok ↔ saling memahami antarwarga bangsa",
+    "soal": "Komunitas adat mendokumentasikan cerita lisan dalam bahasa ibu mereka dan menyediakan terjemahan bahasa Indonesia bagi pembaca dari daerah lain. Penghargaan terhadap keberagaman tidak hanya merawat warisan kelompok sendiri, tetapi juga membuka jalan saling memahami antarwarga bangsa. Nilai yang paling tepat mencerminkan kegiatan komunitas itu adalah...",
+    "opsi": {
+      "A": "Pelestarian warisan kelompok yang menjaga cerita lisan tetap hidup bagi keturunannya.",
+      "B": "Penghargaan resmi bagi komunitas adat atas jasa melestarikan cerita leluhur.",
+      "C": "Pengembangan bahasa daerah yang memperkaya kosakata dan menambah bahan terjemahan.",
+      "D": "Diplomasi budaya yang memperkenalkan identitas komunitas kepada pembaca luar negeri.",
+      "E": "Kebinekaan yang menjaga kekhasan setempat dan menjembatani pengertian lintas suku."
+    },
+    "kunci": "E",
+    "analisis_opsi": {
+      "A": "[D5+D2] Mengulang “warisan kelompok” dan “cerita lisan”; hanya sisi merawat warisan.",
+      "B": "[D6] Penghargaan resmi adalah pengakuan citra, bukan nilai yang dijalankan komunitas.",
+      "C": "[D2] Dua komponen, tetapi keduanya urusan kebahasaan; sisi saling memahami antarwarga kosong.",
+      "D": "[D4] Diplomasi budaya ditujukan ke bangsa lain, sedangkan pembacanya warga dari daerah lain.",
+      "E": "KUNCI — Kekhasan budaya dijaga, terjemahan menjadi jembatan pengertian antarsuku."
+    },
+    "pembahasan": "Yang ditanya: nama nilai untuk kegiatan mendokumentasikan dan menerjemahkan cerita lisan. Dua sisinya: warisan kelompok dirawat, dan warga dari daerah lain bisa ikut memahami.\nCara cepat: dokumentasi dalam bahasa ibu = merawat; terjemahan bahasa Indonesia = menjembatani. Nilai yang benar harus menjelaskan keduanya.\nKenapa opsi lain gugur: A cuma menyalin frasa dari soal “warisan kelompok” dan hanya menjelaskan sisi merawat. B penghargaan resmi adalah pengakuan dari luar, bukan nilai yang dijalankan. C dua komponen, tetapi keduanya urusan bahasa. D paling menggoda karena tampak memperkenalkan budaya, padahal diplomasi budaya ditujukan ke luar negeri, sedangkan pembacanya warga Indonesia dari daerah lain.\nKunci: E, karena kebinekaan menjaga kekhasan tiap kelompok dan menjadikannya jembatan pengertian antarsuku.\nAnalogi: keluarga besar yang menyimpan resep nenek dalam bahasa daerah, lalu menuliskan terjemahannya agar menantu dari suku lain bisa ikut memasak.\nJebakan: D memakai kata “budaya” dan “memperkenalkan” yang terasa pas. Cek sasarannya: pembaca dalam negeri atau luar negeri?"
+  }
+}

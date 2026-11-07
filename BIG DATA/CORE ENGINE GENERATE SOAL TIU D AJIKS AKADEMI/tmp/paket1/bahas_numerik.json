@@ -1,0 +1,146 @@
+[
+  {
+    "no": 37,
+    "ditanya": "Taksiran hasil 4.987 × 0,198 + √3.610 yang paling dekat.",
+    "kalimat_kunci": "paling mendekati",
+    "cara_kilat": "4.987 × 0,198 kira-kira 5.000 × 0,198 = 990, dikurangi sedikit, jadi sekitar 987. √3.610 sedikit di atas 60, karena 60² = 3.600. Jumlahnya sekitar 1.047. Opsi terdekat 1.045.",
+    "langkah": "Bagian perkalian: 5.000 × 0,198 = 990. Angka 4.987 kurang 13 dari 5.000, jadi hasilnya berkurang 13 × 0,198 ≈ 2,6. Perkaliannya sekitar 987,4. Bagian akar: kelompokkan angka dua-dua dari belakang, 36|10. Akar 36 adalah 6, jadi √3.610 berada di angka 60-an. Tepatnya 60² = 3.600, sehingga √3.610 ≈ 60,1. Jumlah: 987,4 + 60,1 = 1.047,5. Opsi C (1.045) hanya berjarak 2,5.",
+    "opsi_gugur": {
+      "A": "Kalau 0,198 dipotong jadi 0,19 dan akarnya lupa ditambahkan, hasilnya sekitar 947,5. Dua kekeliruan beruntun membawamu ke 950.",
+      "B": "Akar 3.610 dikira akar 361, yaitu 19. Pengelompokan angkanya meleset: 3.610 dikelompokkan 36|10, bukan dibaca 361. Hasilnya jadi 987,4 + 19 ≈ 1.006.",
+      "D": "Akar 3.610 ditaksir 100 karena angkanya ribuan. Padahal 100² = 10.000, jauh di atas 3.610. Taksiran akar yang terlalu besar membuat hasil sekitar 1.087.",
+      "E": "Akar 3.610 tertukar dengan akar 36.100, yaitu 190. Hasilnya 987,4 + 190 ≈ 1.177."
+    },
+    "alasan_kunci": "C, karena 987,4 + 60,1 = 1.047,5, dan 1.045 adalah opsi yang paling dekat.",
+    "analogi": "Seperti menaksir belanja Rp49.870 ditambah Rp6.010. Kamu bulatkan jadi 50 ribu dan 6 ribu, lalu ingat totalnya sedikit di bawah 56 ribu.",
+    "waspada": "Bagian akar paling sering meleset karena jumlah digitnya. Sebelum menarik akar, kelompokkan angka dua-dua dari belakang, lalu cek dengan mengkuadratkan taksiranmu."
+  },
+  {
+    "no": 38,
+    "ditanya": "Nilai suku ke-30 dari tabel yang nomor sukunya melompat-lompat.",
+    "kalimat_kunci": "Suku ke- 2, 3, 7, 10, 16",
+    "cara_kilat": "Nomor sukunya tidak berurutan, jadi selisih nilai harus dibagi jarak nomor. Dari suku 2 ke 3: (16 − 6) ÷ 1 = 10. Dari suku 3 ke 7: (116 − 16) ÷ 4 = 25. Kenaikan rata-ratanya berubah, tanda pola kuadrat Un = an² + bn + c. Pada pola kuadrat, kenaikan rata-rata dari suku m ke suku n sama dengan a(m + n) + b.",
+    "langkah": "Dua kenaikan rata-rata tadi memberi 5a + b = 10 dan 10a + b = 25. Kurangkan keduanya: 5a = 15, jadi a = 3 dan b = −5. Masukkan ke suku ke-2: 12 − 10 + c = 6, jadi c = 4. Rumusnya Un = 3n² − 5n + 4. Cek di dua titik sisa: U10 = 300 − 50 + 4 = 254 dan U16 = 768 − 80 + 4 = 692. Cocok. Suku ke-30: 3 × 900 − 150 + 4 = 2.554.",
+    "opsi_gugur": {
+      "A": "Kenaikan dari suku 10 ke 16 adalah 73 per suku, lalu dipakai terus sampai suku ke-30. Tabel sudah menunjukkan kenaikannya terus membesar, jadi tidak boleh dianggap tetap.",
+      "C": "Ini baru 3n² saja. Bagian −5n + 4 tertinggal, sehingga hasilnya kelebihan 146.",
+      "D": "Ini nilai suku ke-31. Rumusnya benar, tetapi nomor sukunya kelebihan satu.",
+      "E": "Tanda −5n terbaca +5n, sehingga 150 yang seharusnya dikurangkan malah ditambahkan."
+    },
+    "alasan_kunci": "B, karena rumus 3n² − 5n + 4 cocok di kelima titik tabel dan memberi suku ke-30 = 2.554.",
+    "analogi": "Seperti tagihan listrik yang dicatat bulan ke-2, ke-3, lalu meloncat ke bulan ke-7. Selisih tagihannya baru bermakna setelah dibagi banyak bulan yang terlewat.",
+    "waspada": "Nomor suku yang melompat adalah inti soal ini. Kalau selisih nilai dihitung langsung tanpa dibagi jarak nomornya, polanya tidak akan pernah terlihat."
+  },
+  {
+    "no": 39,
+    "ditanya": "Pasangan X dan Y di kolom kelima.",
+    "kalimat_kunci": "tabel dua baris yang setiap kolomnya lahir dari kolom sebelumnya",
+    "cara_kilat": "Lihat kolom pertama (7 dan 3) dan kolom kedua (10 dan 4). Ternyata 7 + 3 = 10 dan 7 − 3 = 4. Aturannya: atas baru = atas + bawah, bawah baru = atas − bawah. Dari kolom keempat (20 dan 8): X = 28 dan Y = 12.",
+    "langkah": "Uji aturan di semua kolom. Kolom 2 ke kolom 3: 10 + 4 = 14 dan 10 − 4 = 6. Kolom 3 ke kolom 4: 14 + 6 = 20 dan 14 − 6 = 8. Cocok terus. Kolom 4 ke kolom 5: X = 20 + 8 = 28 dan Y = 20 − 8 = 12. Kedua angka kolom kelima dihitung dari kolom keempat yang sama.",
+    "opsi_gugur": {
+      "A": "X = 20 berasal dari kolom ketiga (14 + 6). Hitungannya berangkat dari kolom yang salah, sehingga X sama dengan angka yang sudah ada di kolom keempat.",
+      "B": "X sudah benar, tetapi Y dihitung 28 − 8, memakai X yang baru. Kedua angka kolom kelima harus dihitung dari kolom keempat: 20 − 8.",
+      "C": "Ini isi kolom keenam: 28 + 12 dan 28 − 12. Kamu melangkah satu kolom terlalu jauh.",
+      "D": "Isinya sama dengan kolom keempat. Kolom keempat dihitung ulang dari kolom ketiga, belum dilanjutkan ke kolom kelima."
+    },
+    "alasan_kunci": "E, karena dari kolom keempat (20 dan 8) diperoleh 20 + 8 = 28 dan 20 − 8 = 12.",
+    "analogi": "Seperti buku kas dua kolom yang diperbarui setiap minggu. Catatan minggu depan selalu dihitung dari catatan minggu ini secara utuh. Kalau separuhnya diambil dari angka yang sudah diperbarui, kasnya kacau.",
+    "waspada": "Baris atas 7, 10, 14, 20 menggoda dibaca sebagai deret sendiri dengan selisih 3, 4, 6. Coba lihat: selisih itu justru angka-angka di baris bawah. Kalau dua baris tampak saling memberi angka, periksa hubungan antarbaris lebih dulu."
+  },
+  {
+    "no": 40,
+    "ditanya": "Nilai X di baris ketiga.",
+    "kalimat_kunci": "bilangan negatif di kolom pertama",
+    "cara_kilat": "Baris pertama: 3² = 9, lalu 9 − 2 = 7. Aturannya: angka pertama dipangkatkan angka kedua, lalu dikurangi angka kedua. Baris ketiga: (−4)² − 2 = 16 − 2 = 14.",
+    "langkah": "Cek aturan di baris kedua dulu, karena baris ini memuat bilangan negatif: (−3)³ = −27, lalu −27 − 3 = −30. Cocok. Baru hitung baris ketiga. (−4)² = 16, karena bilangan negatif yang dipangkatkan genap hasilnya positif. Setelah itu 16 − 2 = 14.",
+    "opsi_gugur": {
+      "A": "Tanda negatif tidak ikut dipangkatkan, sehingga (−4)² dibaca −16. Padahal −4 × −4 hasilnya positif 16.",
+      "B": "Pangkat diperlakukan seperti perkalian: −4 × 2 = −8, lalu −8 − 2 = −10. Aturan ini sudah gagal di baris pertama, karena 3 × 2 − 2 = 4, bukan 7.",
+      "D": "Langkah pangkatnya sudah benar, tetapi pengurangan dengan angka kedua terlupa.",
+      "E": "Angka kedua ditambahkan, bukan dikurangkan. Coba di baris pertama: 9 + 2 = 11, bukan 7."
+    },
+    "alasan_kunci": "C, karena (−4)² − 2 = 16 − 2 = 14, dengan aturan yang sama yang menghasilkan 7 dan −30.",
+    "analogi": "Dua tanda minus yang dikalikan saling meniadakan, seperti berbalik arah dua kali yang membuatmu menghadap ke depan lagi.",
+    "waspada": "Bilangan negatif di kolom pertama sengaja dipasang. Ingat: negatif dipangkat ganjil tetap negatif (−27), dipangkat genap menjadi positif (16)."
+  },
+  {
+    "no": 41,
+    "ditanya": "Pasangan pembagian yang kedua ruasnya bernilai sama.",
+    "kalimat_kunci": "bernilai sama",
+    "cara_kilat": "Hilangkan koma dengan menggeser koma pada bilangan yang dibagi dan pembaginya sama banyak. 7,2 ÷ 0,6 = 72 ÷ 6 = 12, dan 84 ÷ 7 = 12. Sama.",
+    "langkah": "Ruas kiri A sampai D semuanya bernilai 12, sedangkan ruas kiri E bernilai 9. Penentunya ada di ruas kanan. A: 84 ÷ 7 = 12. B: 66 ÷ 6 = 11. C: 1,3 ÷ 0,1 = 13 ÷ 1 = 13. D: 1,2 ÷ 0,01 = 120 ÷ 1 = 120. E: 6,3 ÷ 0,7 = 9, sedangkan 0,9 ÷ 0,01 = 90. Hanya pasangan A yang kedua ruasnya 12.",
+    "opsi_gugur": {
+      "B": "Ruas kiri 4,8 ÷ 0,4 memang 12, tetapi ruas kanan 66 ÷ 6 = 11. Kalau berhenti di ruas kiri, kamu akan tertipu.",
+      "C": "Ruas kiri 12, ruas kanan 1,3 ÷ 0,1 = 13. Selisih satu ini mudah lolos kalau ruas kanan tidak dihitung.",
+      "D": "1,2 ÷ 0,01 sama dengan 120, bukan 12. Pembaginya punya dua angka di belakang koma, jadi koma digeser dua langkah.",
+      "E": "Ruas kiri 9, ruas kanan 90. Pola angkanya mirip, tetapi pembagi 0,01 membuat ruas kanan sepuluh kali lebih besar."
+    },
+    "alasan_kunci": "A, karena 7,2 ÷ 0,6 dan 84 ÷ 7 sama-sama bernilai 12.",
+    "analogi": "Uang Rp7.200 untuk membeli barang seharga Rp600 sama saja dengan 72 lembar seratusan untuk barang seharga 6 lembar seratusan. Keduanya dapat 12 barang.",
+    "waspada": "Empat ruas kiri bernilai 12, jadi ruas kiri tampak meyakinkan di mana-mana. Biasakan menghitung kedua ruas sebelum memilih."
+  },
+  {
+    "no": 42,
+    "ditanya": "Pasangan perkalian yang hasilnya sama.",
+    "kalimat_kunci": "bernilai sama",
+    "cara_kilat": "Bandingkan faktornya sebelum mengalikan. 45 = 9 × 5 dan 64 = 16 × 4, sedangkan 36 = 9 × 4 dan 80 = 16 × 5. Isi faktornya persis sama, hanya bertukar tempat. Hasil keduanya 2.880.",
+    "langkah": "Cek opsi lain dengan hitungan. B: 48 × 60 = 2.880, tetapi 32 × 85 = 2.720. C: 72 × 40 = 2.880, tetapi 54 × 52 = 2.808. A: 28 × 330 = 9.240, sedangkan 38 × 230 = 8.740. D: 26 × 450 = 11.700, sedangkan 45 × 270 = 12.150. E: 45 × 64 = 2.880 dan 36 × 80 = 2.880.",
+    "opsi_gugur": {
+      "A": "Pasangan 28 dan 38, 330 dan 230 tampak seperti tukar angka. Ternyata hasilnya 9.240 dan 8.740. Mirip bentuk belum tentu sama nilai.",
+      "B": "Ruas kiri 2.880 sama dengan kunci, tetapi 32 × 85 = 2.720. Hanya satu ruas yang diperiksa.",
+      "C": "Ruas kiri lagi-lagi 2.880, ruas kanan 54 × 52 = 2.808. Selisihnya kecil, jadi harus dihitung, tidak cukup dikira-kira.",
+      "D": "Kalau angkanya 27, pasangan ini memang sama (27 × 450 = 12.150). Karena tertulis 26, hasilnya 11.700."
+    },
+    "alasan_kunci": "E, karena 45 × 64 dan 36 × 80 tersusun dari faktor yang sama, yaitu 9, 16, 4, dan 5, sehingga keduanya bernilai 2.880.",
+    "analogi": "Sekotak kue berisi 4 baris × 9 kue sama banyaknya dengan 9 baris × 4 kue. Susunannya berubah, jumlah kuenya tidak.",
+    "waspada": "Tiga ruas kiri sama-sama 2.880, dan dua opsi tampak seperti cermin angka. Pecah angka menjadi faktor, lalu cocokkan isinya."
+  },
+  {
+    "no": 43,
+    "ditanya": "Pasangan yang kedua ruasnya TIDAK sama.",
+    "kalimat_kunci": "TIDAK bernilai sama",
+    "cara_kilat": "Hitung setiap ruas, lalu cari yang beda. C: (84 ÷ 7) + (5 × 3) = 12 + 15 = 27, sedangkan (125 ÷ 5) + 4 = 25 + 4 = 29. Beda.",
+    "langkah": "A: 9 × 7 = 63 dan 72 − 9 = 63. B: 9 + 30 = 39 dan 13 × 3 = 39. D: 90 − 12 = 78 dan 26 × 3 = 78. E: 12 × 7 = 84 dan 98 − 14 = 84. Empat pasangan bernilai sama. Pasangan C berbeda, 27 dan 29.",
+    "opsi_gugur": {
+      "A": "Kedua ruas bernilai 63. Pasangan ini sama, jadi bukan yang dicari.",
+      "B": "Ruas kiri 9 + 30 = 39, ruas kanan 13 × 3 = 39. Sama.",
+      "D": "90 − 12 = 78 dan 26 × 3 = 78. Sama juga.",
+      "E": "12 × 7 = 84 dan 98 − 14 = 84. Kalau kamu memilih ini, cek lagi apakah isi kurung (3 + 4) sudah dihitung lebih dulu."
+    },
+    "alasan_kunci": "C, karena ruas kirinya 27 sedangkan ruas kanannya 29.",
+    "analogi": "Seperti mencari kaus kaki yang tidak punya pasangan di keranjang cucian. Cocokkan dulu yang berpasangan, sisanya ketahuan sendiri.",
+    "waspada": "Kata TIDAK membalik arah pencarian. Banyak yang menghitung dengan benar, lalu memilih pasangan pertama yang sama karena kebiasaan. Garis bawahi kata TIDAK sebelum mulai."
+  },
+  {
+    "no": 44,
+    "ditanya": "Kapasitas penuh tangki.",
+    "kalimat_kunci": "terisi 10% … ditambah 3.000 liter … terisi 60%",
+    "cara_kilat": "Tambahan 3.000 liter mengisi selisih persennya: 60% − 10% = 50%. Kalau 50% = 3.000 liter, 100% = 6.000 liter.",
+    "langkah": "Pisahkan mana yang persen dan mana yang liter. Isi tangki berubah dari 10% ke 60%, naik 50% dari kapasitas. Kenaikan itu terjadi karena tambahan 3.000 liter. Jadi 50% kapasitas = 3.000 liter, dan kapasitas penuh = 2 × 3.000 = 6.000 liter. Cek balik: 10% dari 6.000 = 600 liter, ditambah 3.000 menjadi 3.600 liter, dan 3.600 memang 60% dari 6.000.",
+    "opsi_gugur": {
+      "A": "3.000 dibagi 60%, seolah 3.000 liter adalah isi akhir. Padahal 3.000 liter hanya tambahannya.",
+      "C": "Kapasitas 6.000 sudah ketemu, lalu isi awal 600 liter ikut ditambahkan. Kapasitas tangki tidak berubah karena isinya.",
+      "D": "Isi awal (600), isi akhir (3.600), dan tambahan (3.000) dijumlahkan semua. Angka-angka itu menggambarkan air yang sama pada waktu berbeda, jadi tidak boleh dijumlah.",
+      "E": "3.000 dibagi 10%. Tambahan air disamakan dengan isi awal, padahal ia setara dengan selisih 50%."
+    },
+    "alasan_kunci": "B, karena 3.000 liter setara dengan 50% kapasitas, sehingga kapasitas penuhnya 6.000 liter.",
+    "analogi": "Baterai ponselmu naik dari 10% ke 60% setelah diisi 2.000 mAh. Berarti 50% baterai = 2.000 mAh, dan baterai penuh 4.000 mAh.",
+    "waspada": "Angka 3.000 liter harus dipasangkan dengan selisih persen, bukan dengan persen awal atau persen akhir. Begitu salah pasang, semua opsi lain terasa masuk akal."
+  },
+  {
+    "no": 45,
+    "ditanya": "Berapa lama kolam penuh, dihitung sejak keran P dan Q dibuka.",
+    "kalimat_kunci": "Satu jam kemudian keran R juga dibuka",
+    "cara_kilat": "Pakai bagian kolam per jam: P = 1/4, Q = 1/12, R = −1/6. Jam pertama (P dan Q) mengisi 1/3 kolam. Sesudah itu ketiganya mengisi 1/6 kolam per jam. Sisa 2/3 kolam butuh 4 jam. Total 1 + 4 = 5 jam.",
+    "langkah": "Samakan penyebut menjadi 12. Setiap jam P mengisi 3/12 kolam, Q mengisi 1/12, dan R membuang 2/12. Satu jam pertama hanya P dan Q yang terbuka: 4/12 = 1/3 kolam. Sisa kolam 2/3. Mulai jam kedua ketiganya terbuka: 3/12 + 1/12 − 2/12 = 2/12 = 1/6 kolam per jam. Waktu untuk sisanya: 2/3 ÷ 1/6 = 4 jam. Pertanyaan dihitung sejak P dan Q dibuka, jadi satu jam pertama ikut dijumlahkan: 5 jam.",
+    "opsi_gugur": {
+      "A": "R dihitung ikut mengisi, sehingga lajunya menjadi 1/2 kolam per jam. R adalah keran pembuang, jadi lajunya dikurangkan.",
+      "B": "R tidak dihitung sama sekali. P dan Q berdua memang memenuhi kolam dalam 3 jam, tetapi soal menyebut R ikut terbuka.",
+      "C": "Angka 4 jam ini baru waktu sesudah R dibuka. Satu jam pertama belum ditambahkan.",
+      "E": "Ketiga keran dianggap dibuka bersamaan sejak awal, sehingga 1/6 kolam per jam selama 6 jam. Jeda satu jam di soal terlewat."
+    },
+    "alasan_kunci": "D, karena satu jam pertama mengisi 1/3 kolam, lalu sisa 2/3 kolam terisi dalam 4 jam, sehingga totalnya 5 jam.",
+    "analogi": "Kamu mengisi ember dengan dua keran, lalu adikmu membuka sumbat di dasarnya. Air tetap naik walau lebih pelan, dan waktu sebelum sumbat dibuka tetap ikut dihitung.",
+    "waspada": "Soal ini punya dua titik waktu: saat P dan Q dibuka, dan saat R dibuka. Pertanyaannya dihitung dari titik pertama. Opsi C menunggu orang yang lupa menambahkan jam pertama."
+  }
+]

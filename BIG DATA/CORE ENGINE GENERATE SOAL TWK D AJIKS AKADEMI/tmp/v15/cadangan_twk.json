@@ -1,0 +1,460 @@
+{
+  "meta": {
+    "judul": "TWK D'AJIKS v1.5 — Cadangan",
+    "sumber": "tmp/v15/bank_v15_draft.json",
+    "seed": 2027,
+    "jumlah_soal": 11,
+    "status": "draf, menunggu reviu manusia"
+  },
+  "soal": [
+    {
+      "id": "DAJ-TWK-009",
+      "sumber": "MR BADRUN TWK ENGINE v1.5 (revisi 2026-10-25 dari v1.3)",
+      "no_urut_sumber": 9,
+      "no_urut_gabungan": 9,
+      "tema": "Pancasila & ideologi",
+      "subtema": "Pancasila sebagai norma dasar fundamental yang mengarahkan produk hukum",
+      "tipe_kode": "E1",
+      "tipe_nama": "Cari Akarnya, Bukan Buahnya",
+      "kategori_jawaban": "WUJUD",
+      "level_kognitif": "C3",
+      "konstruk_dua_kutub": "rumusan dalam Pembukaan UUD ↔ ukuran isi peraturan sesudahnya",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "UUD1945",
+          "rujukan": "Pembukaan UUD NRI Tahun 1945, alinea keempat"
+        },
+        {
+          "kode": "PERBPIP2_2022",
+          "rujukan": "Lampiran Bab I bagian Kerangka Pikir Yuridis tentang rumusan Pancasila sebagai norma dasar fundamental"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Panitia khusus DPRD sebuah kota menyusun rancangan peraturan daerah tentang penataan ruang publik. Kedudukan Pancasila sebagai norma dasar dalam Pembukaan UUD NRI Tahun 1945 bukan sekadar rumusan yang dikutip, melainkan ukuran bagi isi setiap peraturan yang dibentuk kemudian. Langkah panitia yang paling tepat sesuai kedudukan tersebut adalah...",
+      "opsi": {
+        "A": "Mengutip rumusan Pancasila dalam Pembukaan UUD pada bagian pengantar naskah.",
+        "B": "Menguji keselarasan pasal-pasal raperda terhadap dasar tertinggi sebelum disahkan.",
+        "C": "Menyosialisasikan peraturan baru kepada warga setelah disahkan oleh dewan.",
+        "D": "Membandingkan rancangan dengan peraturan daerah lain yang mengatur topik serupa.",
+        "E": "Menyelenggarakan seremoni peluncuran peraturan dalam acara resmi pemerintah daerah."
+      },
+      "kunci": "B",
+      "pembahasan": "Yang ditanya: langkah nyata yang sesuai kedudukan Pancasila sebagai norma dasar. Soal sudah memberi petunjuk: Pancasila bukan hanya dikutip, tetapi menjadi ukuran isi peraturan.\nCara cepat: “ukuran” berarti sesuatu dipakai untuk menguji. Cari tindakan yang menguji isi raperda terhadap dasar tertinggi.\nKenapa opsi lain gugur: A cuma menyalin kata dari soal “rumusan” dan “Pembukaan UUD”, tetapi berhenti pada kutipan, persis hal yang disebut “bukan sekadar” di soal. C sosialisasi baru terjadi setelah disahkan. D membandingkan dengan perda lain itu harmonisasi setingkat, bukan uji terhadap norma dasar. E seremoni hanya formalitas.\nKunci: B, karena B menjadikan dasar tertinggi sebagai ukuran untuk menguji isi pasal sebelum berlaku.\nAnalogi: semua bangunan di kompleks harus mengikuti denah induk. Memasang foto denah di pintu masuk tidak cukup; setiap rumah dicek apakah sesuai denah.\nJebakan: A terasa “paling Pancasila” karena menyebut Pembukaan UUD. Soal sudah menolak cara itu lewat frasa “bukan sekadar rumusan yang dikutip”.",
+      "analisis_opsi": {
+        "A": "[D5+D2] Mengulang kata stem; eksplisit berhenti pada kutipan di pengantar.",
+        "B": "KUNCI — Isi pasal diuji terhadap dasar tertinggi sebelum berlaku.",
+        "C": "[D3] Sosialisasi terjadi sesudah disahkan, bukan pengujian isi rancangan.",
+        "D": "[D4] Membandingkan dengan perda lain adalah harmonisasi setingkat, bukan uji terhadap norma dasar.",
+        "E": "[D6] Seremoni peluncuran berhenti pada formalitas."
+      },
+      "bentuk_tegangan": "T1"
+    },
+    {
+      "id": "DAJ-TWK-010",
+      "sumber": "MR BADRUN TWK ENGINE v1.5 (revisi 2026-10-25 dari v1.3)",
+      "no_urut_sumber": 10,
+      "no_urut_gabungan": 10,
+      "tema": "Pancasila & ideologi",
+      "subtema": "Transfer proses Sidang Kedua BPUPK",
+      "tipe_kode": "E3",
+      "tipe_nama": "Nilai Lama, Terapkan Sekarang",
+      "kategori_jawaban": "WUJUD",
+      "level_kognitif": "C4",
+      "konstruk_dua_kutub": "pengujian usulan yang berbeda ↔ penyusunan satu naskah bersama",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "BPIP_ARSIP_II",
+          "rujukan": "Naskah Sumber Arsip Dasar Negara II, Masa Reses dan Sidang Kedua BPUPK 10 sampai 17 Juli 1945"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Pada masa reses dan Sidang Kedua BPUPK, 10 sampai 17 Juli 1945, usulan yang berbeda dibahas lanjut hingga menjadi rancangan undang-undang dasar. Kini OSIS sebuah sekolah menerima usulan aturan kelas dari tiap angkatan yang isinya saling berlainan. Penerapan yang paling mencerminkan proses BPUPK tersebut bagi OSIS adalah...",
+      "opsi": {
+        "A": "Merekam setiap usulan secara rinci agar riwayat perdebatan tersimpan untuk arsip.",
+        "B": "Memberi waktu tiap angkatan mempertajam usulannya sebelum dibahas dalam rapat pleno.",
+        "C": "Menguji tiap gagasan yang bertentangan lalu merangkainya dalam satu naskah tertulis.",
+        "D": "Memilih usulan angkatan yang paling banyak pendukungnya lalu menetapkannya sebagai aturan.",
+        "E": "Menghormati usulan setiap angkatan dengan tetap memberlakukan aturan kelas masing-masing."
+      },
+      "kunci": "C",
+      "pembahasan": "Yang ditanya: penerapan proses Sidang Kedua BPUPK di OSIS. Proses itu punya dua sisi: usulan yang berbeda dibahas dan diuji, lalu hasilnya disusun menjadi satu rancangan tertulis.\nCara cepat: cari opsi yang berakhir pada satu naskah bersama, dan naskah itu lahir dari pengujian usulan yang berbeda.\nKenapa opsi lain gugur: A arsip perdebatan berguna, tetapi tidak menghasilkan naskah. B usulan dipertajam, tetapi berhenti sebelum dibahas bersama. D suara terbanyak memilih satu usulan dan membuang yang lain, bukan merangkai. E cuma menyalin kata dari soal “usulan” dan “aturan kelas”, tetapi hasil akhirnya tetap aturan terpisah per kelas.\nKunci: C, karena C menguji usulan yang bertentangan lalu merangkainya menjadi satu naskah, sama dengan pola rancangan UUD.\nAnalogi: kelompok tugas yang anggotanya membawa draf berbeda. Draf-draf itu dibandingkan dan diperbaiki sampai jadi satu laporan, bukan dipilih salah satu lewat suara.\nJebakan: D dan C sama-sama berakhir pada satu aturan. Bedanya, D membuang usulan kalah, sedangkan C merangkai.",
+      "analisis_opsi": {
+        "A": "[D6] Dokumentasi menyimpan perdebatan, tetapi tidak menghasilkan naskah bersama.",
+        "B": "[D2] Usulan dipertajam, tetapi eksplisit berhenti sebelum pembahasan bersama.",
+        "C": "KUNCI — Usulan berbeda diuji, lalu dirangkai menjadi satu naskah, seperti rancangan UUD.",
+        "D": "[D4] Suara terbanyak memilih satu usulan, bukan merangkai usulan berbeda.",
+        "E": "[D5+D2] Mengulang kata stem; aturan tetap terpisah per kelas, tidak ada naskah bersama."
+      },
+      "bentuk_tegangan": "T5"
+    },
+    {
+      "id": "DAJ-TWK-015",
+      "sumber": "MR BADRUN TWK ENGINE v1.5 (revisi 2026-10-25 dari v1.3)",
+      "no_urut_sumber": 15,
+      "no_urut_gabungan": 15,
+      "tema": "Pancasila & ideologi",
+      "subtema": "Pidato 1 Juni 1945 sebagai orientasi kebijakan",
+      "tipe_kode": "E3",
+      "tipe_nama": "Nilai Lama, Terapkan Sekarang",
+      "kategori_jawaban": "WUJUD",
+      "level_kognitif": "C5",
+      "konstruk_dua_kutub": "prinsip yang diusulkan sebagai dasar menata negara ↔ ukuran rencana pembangunan masa kini",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "BPIP_ARSIP_I",
+          "rujukan": "Naskah Sumber Arsip Dasar Negara I tentang pidato Sukarno pada 1 Juni 1945"
+        },
+        {
+          "kode": "PERBPIP2_2022",
+          "rujukan": "Lampiran Bab I bagian alasan historis kelahiran dan perumusan Pancasila"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Dalam pidato 1 Juni 1945 di depan BPUPK, Sukarno mengusulkan lima prinsip sebagai dasar bagi negara yang akan dibentuk. Kini tim penyusun rencana pembangunan sebuah desa ingin menjadikan peristiwa itu teladan dalam pekerjaannya, bukan hanya bahan peringatan. Penerapan yang paling mencerminkan makna pidato tersebut bagi tim adalah...",
+      "opsi": {
+        "A": "Menumbuhkan kebanggaan warga desa terhadap sejarah lahirnya Pancasila setiap bulan Juni.",
+        "B": "Menilai setiap usulan program desa memakai ukuran kelima sila sebelum ditetapkan.",
+        "C": "Mengarsipkan salinan pidato 1 Juni 1945 di perpustakaan desa untuk dipelajari warga.",
+        "D": "Memakai prinsip kebangsaan dari pidato itu sebagai tema utama rencana desa.",
+        "E": "Mengkaji perbedaan rumusan sila antara pidato 1 Juni dan Pembukaan UUD."
+      },
+      "kunci": "B",
+      "pembahasan": "Yang ditanya: penerapan makna pidato 1 Juni 1945 dalam pekerjaan tim desa. Makna pidato itu adalah lima prinsip diusulkan sebagai dasar untuk menata negara. Soal juga menolak cara yang hanya berupa peringatan.\nCara cepat: “dasar untuk menata” berarti prinsip dipakai sebagai ukuran ketika memutuskan. Cari opsi yang menjadikan sila sebagai alat menilai rencana.\nKenapa opsi lain gugur: A kebanggaan warga adalah efek peringatan, sedangkan soal meminta teladan dalam pekerjaan. C cuma menyalin kata dari soal “pidato 1 Juni 1945”, tetapi arsip hanya menyimpan. D paling halus: memakai prinsip dari pidato, tetapi hanya satu prinsip dan hanya sebagai tema. E kajian sejarah rumusan itu belajar, bukan menerapkan.\nKunci: B, karena B menjadikan kelima sila sebagai ukuran untuk menilai usulan sebelum ditetapkan, sama dengan fungsi dasar negara.\nAnalogi: fondasi rumah tidak dipajang di ruang tamu. Fondasi menentukan di mana dinding boleh berdiri.\nJebakan: D terdengar paling dekat dengan pidato karena menyebut “prinsip kebangsaan”. Cek dua hal: jumlah prinsipnya cuma satu, dan fungsinya hanya tema.",
+      "analisis_opsi": {
+        "A": "[D3] Kebanggaan warga adalah efek peringatan, bukan penerapan prinsip dalam pekerjaan tim.",
+        "B": "KUNCI — Prinsip dasar dipakai sebagai ukuran untuk menata rencana, seperti fungsinya dalam pidato.",
+        "C": "[D5] Mengulang “pidato 1 Juni 1945”; arsip menyimpan, tidak menerapkan.",
+        "D": "[D2] Hanya satu prinsip, dan dipakai sebagai tema, bukan ukuran keputusan.",
+        "E": "[D1] Kajian sejarah rumusan, bukan penerapan dalam penyusunan rencana."
+      },
+      "bentuk_tegangan": "T5"
+    },
+    {
+      "id": "DAJ-TWK-038",
+      "sumber": "MR BADRUN TWK ENGINE v1.5 (revisi 2026-10-25 dari v1.3)",
+      "no_urut_sumber": 38,
+      "no_urut_gabungan": 38,
+      "tema": "Nasionalisme & bela negara",
+      "subtema": "Wujud fungsi pemersatu bahasa Indonesia dengan ruang identitas asal",
+      "tipe_kode": "E1",
+      "tipe_nama": "Cari Akarnya, Bukan Buahnya",
+      "kategori_jawaban": "WUJUD",
+      "level_kognitif": "C3",
+      "konstruk_dua_kutub": "komunikasi bersama dalam bahasa Indonesia ↔ ruang bagi ciri bahasa daerah peserta",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "UU24_2009",
+          "rujukan": "Undang-Undang Nomor 24 Tahun 2009 mengenai fungsi Bahasa Indonesia sebagai jati diri, kebanggaan nasional, dan sarana pemersatu."
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Panitia kemah budaya pelajar dari berbagai provinsi berbeda pendapat tentang sesi cerita rakyat. Sebagian panitia ingin semua peserta bercerita dalam bahasa Indonesia agar dipahami bersama, sementara sebagian lain ingin peserta memakai bahasa daerah agar ciri asalnya terasa. Keputusan yang paling tepat sesuai fungsi pemersatu yang diatur UU Nomor 24 Tahun 2009 adalah...",
+      "opsi": {
+        "A": "Menilai keakraban antarpeserta setelah sesi cerita rakyat selesai dilaksanakan.",
+        "B": "Mewajibkan peserta bercerita dalam bahasa Indonesia baku agar dipahami bersama.",
+        "C": "Menetapkan kisah dituturkan dalam bahasa Indonesia disertai ungkapan daerah beserta artinya.",
+        "D": "Membagi sesi menjadi dua, satu berbahasa Indonesia dan satu berbahasa daerah.",
+        "E": "Memasang spanduk bertema persatuan bahasa di area kemah selama kegiatan."
+      },
+      "kunci": "C",
+      "pembahasan": "Yang ditanya: keputusan sesi cerita rakyat yang sesuai fungsi bahasa Indonesia sebagai pemersatu. Dua tuntutan sah: cerita dipahami semua peserta, dan ciri bahasa asal peserta tetap terasa.\nCara cepat: pemersatu bukan penghapus. Bahasa Indonesia menjadi jembatan, bahasa daerah tetap boleh tampil asal bisa dipahami.\nKenapa opsi lain gugur: A keakraban adalah akibat. B cuma menyalin frasa dari soal “dipahami bersama”, tetapi “baku” membuat ciri daerah hilang. D paling menggoda karena kedua bahasa dapat jatah, padahal sesi bahasa daerah tanpa arti membuat peserta lain tidak paham. E spanduk hanya simbol.\nKunci: C, karena kisah dituturkan dalam bahasa Indonesia, dan ungkapan daerah tetap muncul bersama artinya.\nAnalogi: menyanyikan lagu daerah di acara nasional dengan terjemahan di layar. Lagunya tetap asli, penontonnya tetap paham.\nJebakan: D terlihat adil karena membagi dua. Bagi rata belum tentu menyatukan; cek apakah semua peserta tetap bisa saling memahami.",
+      "analisis_opsi": {
+        "A": "[D3] Keakraban adalah efek kegiatan, bukan keputusan tentang bahasa.",
+        "B": "[D5+D2] Mengulang “dipahami bersama”; kata “baku” menutup ruang bagi ciri daerah.",
+        "C": "KUNCI — Bahasa Indonesia menjaga keterpahaman, ungkapan daerah beserta artinya menjaga ciri asal.",
+        "D": "[D2] Tampak adil, tetapi sesi berbahasa daerah tanpa terjemahan tidak dipahami peserta lain.",
+        "E": "[D6] Spanduk adalah simbol, tidak mengatur cara bercerita."
+      },
+      "bentuk_tegangan": "T2"
+    },
+    {
+      "id": "DAJ-TWK-039",
+      "sumber": "MR BADRUN TWK ENGINE v1.5 (revisi 2026-10-25 dari v1.3)",
+      "no_urut_sumber": 39,
+      "no_urut_gabungan": 39,
+      "tema": "Nasionalisme & bela negara",
+      "subtema": "Solidaritas antardaerah dalam penyaluran bantuan terbatas",
+      "tipe_kode": "E2",
+      "tipe_nama": "Jangan Pilih yang Terlalu Ekstrem",
+      "kategori_jawaban": "WUJUD",
+      "level_kognitif": "C5",
+      "konstruk_dua_kutub": "kecepatan menjangkau korban terdekat ↔ keadilan menurut kebutuhan antarwilayah",
+      "jangkar_faktual": false,
+      "landasan": [
+        {
+          "kode": "UUD1945",
+          "rujukan": "Pembukaan UUD 1945 alinea keempat mengenai persatuan dan keadilan sosial."
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Dua kecamatan dilanda banjir pada minggu yang sama, sedangkan organisasi pemuda kabupaten hanya memiliki 400 paket bantuan. Pengurus cabang dari kecamatan terdekat meminta warganya didahulukan karena mudah dijangkau, sementara relawan melaporkan kecamatan yang jauh memiliki pengungsi lebih banyak. Kebijakan penyaluran yang paling tepat berdasarkan semangat persatuan dan keadilan sosial adalah...",
+      "opsi": {
+        "A": "Membagi jatah menurut tingkat kebutuhan dan menyalurkannya lewat jaringan setempat.",
+        "B": "Mendahulukan warga kecamatan terdekat karena paket dapat segera dijangkau.",
+        "C": "Memusatkan paket ke kecamatan yang jauh karena pengungsinya lebih banyak.",
+        "D": "Membagi paket sama rata dan mengirimnya bersamaan ke kedua kecamatan.",
+        "E": "Menunda penyaluran sampai data korban dari kedua kecamatan lengkap."
+      },
+      "kunci": "A",
+      "pembahasan": "Yang ditanya: kebijakan menyalurkan bantuan terbatas ke dua kecamatan, dengan ukuran persatuan dan keadilan sosial. Dua tuntutan sah: korban terdekat cepat terjangkau, dan pembagian adil sesuai kebutuhan.\nCara cepat: adil bukan sama rata, dan cepat bukan berarti hanya yang dekat. Cari opsi yang membagi menurut kebutuhan tetapi tetap bisa segera sampai.\nKenapa opsi lain gugur: B mengulang alasan pengurus cabang, kecamatan yang jauh terabaikan. C paling menggoda karena memakai data pengungsi, tetapi “memusatkan” membuat korban di kecamatan terdekat tidak dapat apa-apa. D sama rata adalah konsep yang mirip dengan adil, tetapi berbeda. E menunggu data lengkap membuat bantuan terlambat.\nKunci: A, karena jatah dihitung dari tingkat kebutuhan tiap kecamatan, dan jaringan setempat mempercepat paket sampai ke tangan korban.\nAnalogi: ibu membagi lauk untuk anak yang sakit dan anak yang sehat. Porsinya beda sesuai kebutuhan, tetapi keduanya tetap makan pada jam yang sama.\nJebakan: C dan A sama-sama memakai ukuran kebutuhan. Bedanya, A tetap membagi ke dua wilayah, C menghapus satu wilayah.",
+      "analisis_opsi": {
+        "A": "KUNCI — Jatah ditentukan kebutuhan, penyaluran lewat jaringan di tiap wilayah menjaga kecepatan.",
+        "B": "[D5+D2] Mengulang alasan pengurus cabang; kecamatan yang jauh terabaikan.",
+        "C": "[D2] Kata “memusatkan” membuat korban di kecamatan terdekat tidak mendapat paket.",
+        "D": "[D4] Sama rata berbeda dari adil; kebutuhan yang tidak sama diberi jumlah sama.",
+        "E": "[D6] Berhenti di pendataan; sisi kecepatan hilang."
+      },
+      "bentuk_tegangan": "T2"
+    },
+    {
+      "id": "DAJ-TWK-047",
+      "sumber": "MR BADRUN TWK ENGINE v1.5 (revisi 2026-10-25 dari v1.3)",
+      "no_urut_sumber": 47,
+      "no_urut_gabungan": 47,
+      "tema": "Nasionalisme & bela negara",
+      "subtema": "Loyalitas kritis terhadap misi pelayanan",
+      "tipe_kode": "E4",
+      "tipe_nama": "Beda Tipis Antar-Nilai",
+      "kategori_jawaban": "DEFINISI",
+      "level_kognitif": "C4",
+      "konstruk_dua_kutub": "kesetiaan pada organisasi ↔ koreksi praktik yang menyimpang dari misi",
+      "jangkar_faktual": false,
+      "landasan": [
+        {
+          "kode": "PERBPIP2_2022",
+          "rujukan": "Materi dasar Pembinaan Ideologi Pancasila mengenai tanggung jawab dan orientasi pada kepentingan bersama."
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Seorang anggota organisasi kepemudaan menemukan program bantuan organisasinya tidak menjangkau penyandang disabilitas, padahal anggaran dasar menetapkan pelayanan bagi semua lapisan masyarakat. Ketua mengingatkan agar kritik tidak merusak kekompakan dan nama baik organisasi, tetapi ia tetap mengajukan usulan perbaikan berdasarkan data dalam rapat pengurus. Nilai yang paling tepat mencerminkan tindakannya adalah...",
+      "opsi": {
+        "A": "Loyalitas kritis yang setia pada misi lembaga dengan membenahi cara kerjanya.",
+        "B": "Kepatuhan organisasi yang menjalankan keputusan pengurus melalui prosedur internal.",
+        "C": "Keberanian moral yang menyuarakan kekurangan walau berisiko mendapat penolakan.",
+        "D": "Mutu program yang meningkat karena usulan perbaikan didukung data lapangan.",
+        "E": "Kekompakan pengurus yang terjaga karena kritik disampaikan tanpa merusak nama baik."
+      },
+      "kunci": "A",
+      "pembahasan": "Yang ditanya: nama nilai untuk anggota yang mengoreksi programnya sendiri. Tekanannya datang dari ketua: jaga kekompakan dan nama baik. Ketentuannya dari anggaran dasar: layani semua lapisan masyarakat. Anggota itu tetap mengusulkan perbaikan, tetapi di rapat pengurus, bukan di luar.\nCara cepat: perhatikan dua hal dari tindakannya. Ia tidak keluar dan tidak membuka aib ke luar (setia), tetapi ia juga tidak diam saat program menyimpang (kritis).\nKenapa opsi lain gugur: B kepatuhan prosedural tidak menjelaskan kenapa ia mengoreksi. C paling menggoda karena ia memang berani, tetapi keberanian tidak menjelaskan kesetiaannya pada organisasi. D mutu yang naik adalah akibat. E memakai kata dari permintaan ketua dan hanya menjelaskan sisi itu.\nKunci: A, karena loyalitas kritis berarti setia pada misi lembaga, dan bukti kesetiaannya adalah memperbaiki cara kerja yang menyimpang.\nAnalogi: teman dekat yang menegur kamu karena menyontek. Ia tetap temanmu, dan justru karena peduli ia menegur, empat mata, bukan di depan kelas.\nJebakan: C dan A sama-sama memuji tindakan berani. Cari nilai yang menjelaskan dua sisi: berani menegur dan tetap setia.",
+      "analisis_opsi": {
+        "A": "KUNCI — Kesetiaan diarahkan pada misi, dan kesetiaan itu diwujudkan dengan memperbaiki pelaksanaan.",
+        "B": "[D6] Kepatuhan prosedural; tidak menjelaskan koreksi terhadap program yang menyimpang.",
+        "C": "[D4] Keberanian moral adalah nilai tetangga; tidak menjelaskan sisi kesetiaan pada organisasi.",
+        "D": "[D3] Mutu program yang naik adalah efek usulan, bukan nilai pelakunya.",
+        "E": "[D5+D2] Mengulang “kekompakan”, “kritik”, dan “nama baik”; hanya sisi permintaan ketua."
+      },
+      "bentuk_tegangan": "T4"
+    },
+    {
+      "id": "DAJ-TWK-053",
+      "sumber": "MR BADRUN TWK ENGINE v1.5 (revisi 2026-10-25 dari v1.3)",
+      "no_urut_sumber": 53,
+      "no_urut_gabungan": 53,
+      "tema": "Nasionalisme & bela negara",
+      "subtema": "Patriotisme perbatasan tanpa chauvinisme",
+      "tipe_kode": "E4",
+      "tipe_nama": "Beda Tipis Antar-Nilai",
+      "kategori_jawaban": "DEFINISI",
+      "level_kognitif": "C5",
+      "konstruk_dua_kutub": "kesetiaan pada negara sendiri ↔ hubungan beradab dengan warga di seberang batas",
+      "jangkar_faktual": false,
+      "landasan": [
+        {
+          "kode": "UU3_2002",
+          "rujukan": "Undang-Undang Nomor 3 Tahun 2002 tentang Pertahanan Negara, prinsip keikutsertaan warga dalam bela negara"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Warga sebuah desa di perbatasan darat masih bersaudara dengan warga desa di seberang garis batas. Tokoh adat ingin menghidupkan lagi kunjungan kekerabatan lintas batas, sementara aparat desa meminta setiap kunjungan melewati pos pemeriksaan resmi dan tidak mengaburkan identitas warga sebagai bangsa Indonesia. Makna patriotisme yang paling tepat terlihat pada...",
+      "opsi": {
+        "A": "Kewaspadaan terhadap pengaruh asing dengan membatasi hubungan warga pada urusan resmi.",
+        "B": "Solidaritas kesukuan yang menjaga ikatan adat warga di kedua sisi perbatasan.",
+        "C": "Kekerabatan lintas batas yang dihidupkan lagi melalui kunjungan adat secara rutin.",
+        "D": "Kesetiaan pada negara yang dijalankan lewat hubungan setara dan beradab dengan tetangga.",
+        "E": "Kebanggaan nasional yang ditampilkan lewat bendera dan lagu kebangsaan di kegiatan desa."
+      },
+      "kunci": "D",
+      "pembahasan": "Yang ditanya: makna patriotisme dalam kasus desa perbatasan. Dua tuntutan sah: tokoh adat ingin menjaga kekerabatan dengan warga di seberang garis batas, dan aparat desa meminta kunjungan lewat pos resmi tanpa mengaburkan identitas sebagai bangsa Indonesia.\nCara cepat: patriotisme adalah kesetiaan pada negara sendiri. Kasus ini menambah satu syarat: kesetiaan itu dijalankan tanpa memusuhi tetangga.\nKenapa opsi lain gugur: A setia pada negara, tetapi frasa “membatasi hubungan warga pada urusan resmi” memutus kekerabatan yang sah. B solidaritas kesukuan adalah ikatan suku, nilai yang berbeda dari kesetiaan pada negara. C mengulang “kekerabatan” dan “lintas batas”, tetapi hanya menjelaskan sisi adat. E bendera dan lagu kebangsaan menunjukkan kebanggaan, tetapi berhenti di simbol dan tidak menjawab hubungan dengan tetangga.\nKunci: D, karena kesetiaan pada negara yang dijalankan lewat hubungan setara dan beradab menutup sisi identitas dan sisi kekerabatan.\nAnalogi: kamu bisa membela sekolahmu di pertandingan tanpa membenci teman dari sekolah lain. Setia pada timmu, sopan pada lawan.\nJebakan: A terdengar paling waspada dan nasionalis. Patriotisme tidak sama dengan menutup diri; cek apakah opsi itu memutus hubungan yang sah.",
+      "analisis_opsi": {
+        "A": "[D2] Frasa “membatasi hubungan warga pada urusan resmi” memutus kekerabatan yang sah.",
+        "B": "[D4] Solidaritas kesukuan adalah ikatan suku, nilai yang berbeda dari kesetiaan pada negara.",
+        "C": "[D5+D2] Mengulang “kekerabatan” dan “lintas batas”; hanya menjelaskan sisi adat.",
+        "D": "KUNCI — Kesetiaan pada negara menutup sisi identitas, hubungan setara dan beradab menutup sisi kekerabatan.",
+        "E": "[D6] Berhenti pada simbol; tidak menjawab hubungan dengan warga seberang."
+      },
+      "bentuk_tegangan": "T2"
+    },
+    {
+      "id": "DAJ-TWK-058",
+      "sumber": "MR BADRUN TWK ENGINE v1.5 (revisi 2026-10-25 dari v1.3)",
+      "no_urut_sumber": 58,
+      "no_urut_gabungan": 58,
+      "tema": "Integritas aparatur",
+      "subtema": "Akuntabilitas koreksi laporan yang terlacak",
+      "tipe_kode": "E4",
+      "tipe_nama": "Beda Tipis Antar-Nilai",
+      "kategori_jawaban": "DEFINISI",
+      "level_kognitif": "C4",
+      "konstruk_dua_kutub": "angka keliru wajib dibetulkan ↔ perubahan dokumen sah wajib tercatat",
+      "jangkar_faktual": false,
+      "landasan": [
+        {
+          "kode": "UU20_2023_ASN",
+          "rujukan": "Undang-Undang Nomor 20 Tahun 2023 tentang Aparatur Sipil Negara, nilai dasar dan kode perilaku ASN"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Seorang analis menemukan salah hitung pada laporan yang sudah disahkan pimpinan dan dijadwalkan terbit dua hari lagi. Standar mutu data instansi mewajibkan angka keliru diperbaiki sebelum terbit, sementara aturan tata naskah melarang dokumen yang sudah disahkan diubah tanpa catatan perubahan. Nilai yang paling tepat ditunjukkan analis bila ia memenuhi kedua ketentuan itu adalah...",
+      "opsi": {
+        "A": "Kejujuran, karena analis mengakui kekeliruan sebelum laporan sampai ke tangan publik.",
+        "B": "Akuntabilitas, karena kekeliruan diakui dan dibetulkan melalui revisi yang dapat dilacak.",
+        "C": "Ketelitian, karena angka keliru ditemukan dan diperbaiki sebelum laporan terbit.",
+        "D": "Ketertiban administrasi, karena perubahan dokumen dicatat sesuai aturan tata naskah instansi.",
+        "E": "Kepercayaan publik, karena laporan yang terbit kelak memuat angka yang dapat diandalkan."
+      },
+      "kunci": "B",
+      "pembahasan": "Yang ditanya: nilai yang tampak bila analis memenuhi dua ketentuan bersamaan. Ketentuan pertama: angka keliru wajib diperbaiki sebelum laporan terbit. Ketentuan kedua: dokumen yang sudah disahkan tidak boleh diubah tanpa catatan perubahan.\nCara cepat: perbaikan saja belum cukup; perbaikan itu harus meninggalkan jejak yang bisa dilacak orang lain.\nKenapa opsi lain gugur: A kejujuran menjelaskan pengakuan, tetapi tidak menjelaskan jejak revisi. C mengulang “angka keliru”, “diperbaiki”, dan “sebelum terbit”; ketelitian hanya menjawab ketentuan pertama. D ketertiban administrasi hanya menjawab catatan perubahan, seakan urusannya sekadar format. E kepercayaan publik adalah hasil di kemudian hari.\nKunci: B, karena akuntabilitas memuat dua hal: kekeliruan diakui dan dibetulkan, lalu perbaikannya bisa dilacak siapa pun yang memeriksa.\nAnalogi: kamu salah menulis jawaban di lembar ujian. Kamu mencoretnya satu garis dan menulis jawaban baru di sampingnya, bukan menghapusnya sampai bersih. Guru tahu ada perbaikan dan masih bisa melihat jawaban lamanya.\nJebakan: C dan D masing-masing benar untuk satu ketentuan. Nilai yang ditanya harus menjelaskan keduanya.",
+      "analisis_opsi": {
+        "A": "[D4] Kejujuran menjelaskan pengakuan, bukan pembetulan yang meninggalkan jejak.",
+        "B": "KUNCI — Diakui dan dibetulkan menjawab standar mutu; revisi yang dapat dilacak menjawab tata naskah.",
+        "C": "[D5+D2] Mengulang “angka keliru”, “diperbaiki”, “sebelum terbit”; ketelitian hanya menjawab ketentuan pertama.",
+        "D": "[D6] Hanya menjawab catatan perubahan, seolah urusannya sekadar format.",
+        "E": "[D3] Kepercayaan publik adalah hasil di kemudian hari."
+      },
+      "bentuk_tegangan": "T3"
+    },
+    {
+      "id": "DAJ-TWK-060",
+      "sumber": "MR BADRUN TWK ENGINE v1.5 (revisi 2026-10-25 dari v1.3)",
+      "no_urut_sumber": 60,
+      "no_urut_gabungan": 60,
+      "tema": "Integritas aparatur",
+      "subtema": "Pelaporan paket gratifikasi yang tidak dapat ditolak",
+      "tipe_kode": "E5",
+      "tipe_nama": "Pilih yang Benar Walau Berisiko",
+      "kategori_jawaban": "SIKAP",
+      "level_kognitif": "C4",
+      "konstruk_dua_kutub": "parsel tidak dapat ditolak atau dikembalikan ↔ kewajiban melapor dalam 30 hari kerja",
+      "jangkar_faktual": true,
+      "landasan": [
+        {
+          "kode": "UU20_2001_TIPIKOR",
+          "rujukan": "Pasal 12B dan Pasal 12C Undang-Undang Pemberantasan Tindak Pidana Korupsi mengenai gratifikasi dan pelaporan"
+        },
+        {
+          "kode": "PERKPK1_2026",
+          "rujukan": "Peraturan KPK Nomor 1 Tahun 2026 mengenai pelaporan gratifikasi"
+        },
+        {
+          "kode": "KPK_GRATIFIKASI",
+          "rujukan": "Pedoman resmi KPK mengenai penolakan dan pelaporan gratifikasi"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Anda pegawai bagian pengadaan dan menemukan parsel tanpa nama pengirim di meja kerja, sehari setelah kontrak pengadaan ditandatangani. Karena pengirimnya tidak diketahui, parsel itu tidak bisa ditolak atau dikembalikan, sementara Pasal 12C UU Tipikor meminta penerima melapor ke KPK paling lambat 30 hari kerja sejak pemberian diterima. Sikap yang paling tepat Anda tunjukkan adalah...",
+      "opsi": {
+        "A": "Membiarkan bingkisan tetap tersegel, memotret buktinya, dan melaporkannya ke unit pengendalian gratifikasi.",
+        "B": "Menyimpan parsel di lemari sambil mencari pengirimnya sebelum memutuskan perlu melapor.",
+        "C": "Menyerahkan parsel kepada atasan agar penanganannya diputuskan oleh pimpinan unit kerja.",
+        "D": "Memastikan pemberian dari pengirim tanpa nama itu tidak memengaruhi penilaian kontrak berikutnya.",
+        "E": "Mengumumkan di grup kantor bahwa parsel itu tidak akan dibuka oleh siapa pun."
+      },
+      "kunci": "A",
+      "pembahasan": "Yang ditanya: sikap saat parsel tanpa nama datang sehari setelah kontrak pengadaan ditandatangani. Situasinya mendesak karena pengirim tidak diketahui, jadi parsel tidak bisa ditolak. Ketentuannya jelas: Pasal 12C UU Tipikor meminta penerima melapor ke KPK paling lambat 30 hari kerja.\nCara cepat: untuk pemberian yang tidak bisa ditolak, urutannya: jangan dipakai, amankan bukti, laporkan. Laporan lewat unit pengendalian gratifikasi (UPG) instansi diteruskan ke KPK.\nKenapa opsi lain gugur: B menyimpan parsel sambil mencari pengirim, tetapi keputusan melapor digantung. C menyerahkan ke atasan memindahkan keputusan, padahal kewajiban melapor ada pada penerima. D mengulang “pemberian” dan “pengirim tanpa nama”, tetapi hanya menjaga agar penilaian berikutnya tidak terpengaruh, tanpa menangani parselnya. E pengumuman di grup kantor hanya menjaga citra.\nKunci: A, karena bingkisan tetap tersegel, buktinya terekam, dan laporan masuk ke jalur resmi.\nAnalogi: kamu menemukan dompet di kelas tanpa kartu identitas. Kamu tidak membukanya untuk jajan; kamu memotretnya, lalu menyerahkannya ke ruang guru yang memang mengurus barang temuan.\nJebakan: C terlihat tertib karena melibatkan atasan. Undang-undang membebankan laporan kepada penerima, bukan kepada atasannya.",
+      "analisis_opsi": {
+        "A": "KUNCI — Tidak dipakai, bukti diamankan, laporan masuk jalur resmi yang diteruskan ke KPK.",
+        "B": "[D2] Frasa “sebelum memutuskan perlu melapor” menggantung kewajiban lapor.",
+        "C": "[D7] Kewajiban melapor ada pada penerima, bukan dipindahkan ke atasan.",
+        "D": "[D5+D3] Mengulang “pemberian” dan “pengirim tanpa nama”; hanya menjaga efek pada penilaian berikutnya.",
+        "E": "[D6] Pengumuman di grup kantor hanya menjaga citra."
+      },
+      "bentuk_tegangan": "T4"
+    },
+    {
+      "id": "DAJ-TWK-094",
+      "sumber": "MR BADRUN TWK ENGINE v1.5 (revisi 2026-10-25 dari v1.3)",
+      "no_urut_sumber": 94,
+      "no_urut_gabungan": 94,
+      "tema": "Radikalisme & ketahanan sosial",
+      "subtema": "Fanatisme dan komitmen kritis",
+      "tipe_kode": "E4",
+      "tipe_nama": "Beda Tipis Antar-Nilai",
+      "kategori_jawaban": "DEFINISI",
+      "level_kognitif": "C4",
+      "konstruk_dua_kutub": "kuatnya dukungan pada kelompok ↔ kesediaan menerima koreksi dan menghormati yang berbeda",
+      "jangkar_faktual": false,
+      "landasan": [
+        {
+          "kode": "PERBPIP2_2022",
+          "rujukan": "Materi dasar kemanusiaan, persatuan, dan kehidupan demokratis"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Seorang anggota komunitas penggemar sebuah grup musik membela setiap keputusan pengurusnya, mengabaikan bukti bahwa laporan kas mereka keliru, dan mengolok anggota yang bertanya. Loyalitas pada kelompok tidak hanya diukur dari kuatnya dukungan, tetapi juga dari kesediaan menerima koreksi dan menghormati perbedaan. Makna perilaku tersebut paling tepat terlihat pada...",
+      "opsi": {
+        "A": "Kesetiaan yang menutup diri dari bukti dan meremehkan orang berpandangan lain.",
+        "B": "Kebanggaan pada kelompok yang membuat anggota giat membela nama baiknya.",
+        "C": "Penolakan terhadap hak kelompok lain yang didasarkan pada perbedaan identitas.",
+        "D": "Dorongan mengubah tatanan bersama dengan cara memaksa pihak yang tidak setuju.",
+        "E": "Loyalitas kuat yang ditunjukkan dengan membela setiap keputusan pengurus kelompok."
+      },
+      "kunci": "A",
+      "pembahasan": "Yang ditanya: makna perilaku anggota komunitas itu. Ada tiga perilaku: membela setiap keputusan pengurus, mengabaikan bukti laporan kas keliru, dan mengolok anggota yang bertanya. Soal memberi ukurannya: loyalitas dinilai dari dukungan dan dari kesediaan menerima koreksi.\nCara cepat: dukungan kuat saja belum masalah. Dukungan yang menolak bukti dan merendahkan penanya, itu ciri fanatisme.\nKenapa opsi lain gugur: B kebanggaan pada kelompok wajar dan belum menolak koreksi. C intoleransi berkaitan dengan perbedaan identitas, padahal di sini yang diolok adalah sesama anggota yang bertanya. D radikalisme menuntut pemaksaan perubahan tatanan, dan itu tidak ada di kasus. E mengulang “membela setiap keputusan pengurus” dari soal; hanya sisi dukungan yang terlihat, sisi menutup diri dari bukti hilang.\nKunci: A, karena kesetiaan itu disertai penolakan bukti dan sikap meremehkan orang yang berbeda, dua hal yang membuat dukungan berubah jadi fanatisme.\nAnalogi: pendukung tim bola yang tetap menyanyi saat timnya kalah itu setia. Pendukung yang menuduh wasit curang walau rekaman jelas, lalu memaki penonton lain, itu fanatik.\nJebakan: E memakai kata yang persis sama dengan soal. Kesamaan kata justru tanda opsi itu hanya mengulang fakta, belum memaknainya.",
+      "analisis_opsi": {
+        "A": "KUNCI — Fanatisme: setia (dukungan kuat) tetapi menutup diri dari bukti dan merendahkan yang berbeda.",
+        "B": "[D4] Kebanggaan kelompok adalah sikap wajar, belum menolak koreksi.",
+        "C": "[D4] Intoleransi berbasis identitas; kasus tidak menyangkut perbedaan identitas.",
+        "D": "[D4] Radikalisme menuntut pemaksaan perubahan tatanan; kasus tidak memuatnya.",
+        "E": "[D5+D2] Mengulang “membela setiap keputusan pengurus”; hanya sisi dukungan."
+      },
+      "bentuk_tegangan": "T1"
+    },
+    {
+      "id": "DAJ-TWK-095",
+      "sumber": "MR BADRUN TWK ENGINE v1.5 (revisi 2026-10-25 dari v1.3)",
+      "no_urut_sumber": 95,
+      "no_urut_gabungan": 95,
+      "tema": "Radikalisme & ketahanan sosial",
+      "subtema": "Disinformasi sebagai politik pecah belah gaya baru",
+      "tipe_kode": "E4",
+      "tipe_nama": "Beda Tipis Antar-Nilai",
+      "kategori_jawaban": "DEFINISI",
+      "level_kognitif": "C4",
+      "konstruk_dua_kutub": "kepalsuan informasi yang disengaja ↔ tujuan memecah hubungan antarkelompok",
+      "jangkar_faktual": false,
+      "landasan": [
+        {
+          "kode": "UUD1945",
+          "rujukan": "Pasal 28E ayat (3) dan Pasal 28J"
+        },
+        {
+          "kode": "PERBPIP4_2022",
+          "rujukan": "Indikator nilai persatuan dan musyawarah"
+        }
+      ],
+      "status_kunci": "kuat",
+      "soal": "Pada masa kolonial, politik pecah belah dipakai untuk mengadu domba kelompok-kelompok di Nusantara agar sulit bersatu. Kini sebuah akun anonim mengunggah data bantuan pangan yang dipalsukan, seolah bantuan hanya diberikan kepada satu suku, lalu mengajak warga suku lain menolak program itu. Makna ancaman yang paling tepat terlihat pada...",
+      "opsi": {
+        "A": "Kabar keliru yang tersebar karena pengunggahnya tidak memeriksa kebenaran data.",
+        "B": "Ketegangan antarwarga yang muncul setelah unggahan itu dibagikan berulang kali.",
+        "C": "Pengaduan atas dugaan bantuan pangan yang hanya diberikan kepada satu suku.",
+        "D": "Kebohongan yang sengaja dirancang untuk menyulut permusuhan antarkelompok warga.",
+        "E": "Ujaran yang membenci suku tertentu tanpa menyertakan data apa pun."
+      },
+      "kunci": "D",
+      "pembahasan": "Yang ditanya: makna ancaman dari unggahan akun anonim. Dulu politik pecah belah kolonial mengadu kelompok agar sulit bersatu. Kini caranya lewat data palsu yang dikaitkan dengan satu suku, lalu ajakan menolak program. Dua sisi: kepalsuan yang disengaja dan tujuan memecah kelompok.\nCara cepat: tanyakan dua hal. Apakah datanya sengaja dipalsukan? Ya. Apakah tujuannya mengadu kelompok? Ya. Dua jawaban itu menunjuk disinformasi provokatif.\nKenapa opsi lain gugur: A misinformasi adalah kabar keliru tanpa niat, padahal data di sini sengaja dipalsukan. B ketegangan antarwarga adalah akibat unggahan, bukan makna ancamannya. C mengulang “bantuan pangan” dan “satu suku” dari soal; pengaduan justru saluran sah bila warga benar-benar curiga. E frasa “tanpa menyertakan data” membuang sisi kepalsuan; ujaran kebencian tanpa data berbeda dari kasus ini.\nKunci: D, karena kebohongan itu disengaja dan dirancang untuk menyulut permusuhan antarkelompok, persis cara lama pecah belah dalam bentuk baru.\nAnalogi: murid yang sengaja menulis surat palsu atas nama teman sekelas untuk membuat dua geng bertengkar berbeda dari murid yang salah dengar lalu menyebarkan gosip.\nJebakan: A dan D sama-sama tentang kabar yang salah. Bedanya ada di niat: kata “dipalsukan” di soal menutup kemungkinan salah tidak sengaja.",
+      "analisis_opsi": {
+        "A": "[D4] Misinformasi: keliru tanpa niat; data di kasus sengaja dipalsukan.",
+        "B": "[D3] Ketegangan adalah akibat unggahan, bukan makna ancamannya.",
+        "C": "[D5] Mengulang “bantuan pangan … satu suku”; pengaduan adalah saluran yang sah.",
+        "D": "KUNCI — Disinformasi provokatif: palsu dengan sengaja dan diarahkan memecah kelompok.",
+        "E": "[D2] Frasa “tanpa menyertakan data” membuang sisi kepalsuan informasi."
+      },
+      "bentuk_tegangan": "T5"
+    }
+  ]
+}

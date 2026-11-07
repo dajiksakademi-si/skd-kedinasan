@@ -16,6 +16,7 @@ Baca juga [memory.md](memory.md) untuk keputusan dan pelajaran dari sesi sebelum
 | `pedoman/ETIKA-KERJA.md` | etika kerja global Gusti, berlaku untuk semua kontributor |
 | `kontributor/<username-github>/` | `memory.md` + `LOG.md` tiap kontributor (WAJIB, lihat `kontributor/README.md`) |
 | `skills/` | salinan skill `skd-expert` + `dajiks-handbook` untuk kontributor |
+| `package.json` | alat cetak PDF/sampul handbook (`puppeteer`, membawa Chrome sendiri); `npm install` sekali di root |
 | `BIG DATA/CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI/` | MR BADRUN TWK ENGINE v1.5, bank TWK 100, panduan murid, aplikasi CAT TWK (repo git sendiri) |
 | `BIG DATA/CORE ENGINE GENERATE SOAL TKP D AJIKS AKADEMI/` | ENGINE TKP v1.2, paket TKP 80, korpus 24 soal, aplikasi CAT TKP (repo git sendiri) |
 | `BIG DATA/CORE ENGINE GENERATE SOAL TIU D AJIKS AKADEMI/` | ENGINE TIU D'AJIKS v0.3 (gaya 3K: Kalimat Kunci · Kesalahan Bernama · Kunci Terbukti) — draf, belum diuji paket; `k12-spatial-engine/` = generator soal gambar SVG (modul TIU `npm run gen:tiu`, 2026-10-28) |
@@ -23,6 +24,8 @@ Baca juga [memory.md](memory.md) untuk keputusan dan pelajaran dari sesi sebelum
 | `BIG DATA/REFERENSI LUAR/` | bahan pihak luar yang masih disimpan: ebook Pejuang Kedinasan (4), TIU002, screenshot Al Faiz TIU, KEPMENPANRB 406/2026. Bahan TWK/TKP luar yang sudah dianalisis dipindah ke Trash 2026-10-27; hasilnya di `~/.claude/skills/skd-expert/riset/` |
 
 Nama folder project dan beberapa subfolder **berakhiran spasi** — selalu kutip path.
+
+**Nama file/folder baru** (putusan Gusti 2026-11-07): tidak boleh berakhiran spasi atau titik, dan tidak memakai `< > : " | ? * \` — nama seperti itu tidak sah di Windows dan membuat clone gagal. **Script** tidak boleh memakai alamat lengkap komputer tertentu (`/Users/...`, `C:\...`); hitung path dari letak script (`__dirname`, `Path(__file__)`).
 
 ## Kontributor (WAJIB, putusan Gusti 2026-11-07)
 - Baca dulu `pedoman/ETIKA-KERJA.md`, file ini, `memory.md`, dan `kontributor/<username>/memory.md` sendiri.

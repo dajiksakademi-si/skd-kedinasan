@@ -1,0 +1,982 @@
+[
+ {
+  "no": 31,
+  "keluarga": "ARG",
+  "soal": "Dinas perhubungan memasang lampu penerangan baru di Jalan Lingkar Timur. Jumlah kecelakaan pada malam hari di jalan itu turun dari 24 kejadian pada tahun sebelum pemasangan menjadi 9 kejadian pada tahun sesudahnya. Kepala dinas menyimpulkan bahwa lampu penerangan baru itulah yang menurunkan kecelakaan pada malam hari.",
+  "perintah": "Pernyataan berikut yang paling memperkuat kesimpulan tersebut adalah …",
+  "opsi": {
+   "A": "Jumlah kendaraan yang melintas di jalan itu pada malam hari sama besar pada kedua tahun tersebut.",
+   "B": "Lampu penerangan baru itu membutuhkan anggaran lebih besar daripada lampu yang lama.",
+   "C": "Kecelakaan pada malam hari di jalan itu memang berkurang setelah lampu baru dipasang.",
+   "D": "Jalan Lingkar Timur merupakan jalur yang paling sering dilalui truk pengangkut barang.",
+   "E": "Pada periode yang sama, kecelakaan pada siang hari di jalan itu juga turun dengan jumlah yang hampir sama."
+  },
+  "kunci": "A",
+  "jebakan": {
+   "B": "relevan dengan topik, tetapi tidak menyentuh hubungan sebab",
+   "C": "hanya mengulang isi kesimpulan",
+   "D": "relevan dengan topik, tetapi tidak menyentuh hubungan sebab",
+   "E": "justru memperlemah: ada penyebab lain yang menurunkan kecelakaan siang dan malam"
+  },
+  "kalimat_kunci": "lampu penerangan baru itulah yang menurunkan",
+  "level": "HOTS",
+  "kerangka": "klaim sebab-akibat kebijakan + 1 data sebelum-sesudah · cari pemerkuat yang menutup penjelasan lain"
+ },
+ {
+  "no": 32,
+  "keluarga": "SIL",
+  "soal": "Anggap semua premis berikut benar.<br>P1: Semua penyelam tim SAR adalah peserta yang telah lulus uji renang 400 meter.<br>P2: Tidak ada peserta yang lulus uji renang 400 meter yang berusia di bawah 18 tahun.",
+  "perintah": "Kesimpulan yang pasti benar adalah …",
+  "opsi": {
+   "A": "Semua peserta yang lulus uji renang 400 meter adalah penyelam tim SAR.",
+   "B": "Sebagian penyelam tim SAR berusia di bawah 18 tahun.",
+   "C": "Semua orang yang berusia 18 tahun ke atas adalah penyelam tim SAR.",
+   "D": "Tidak ada penyelam tim SAR yang berusia di bawah 18 tahun.",
+   "E": "Tidak ada peserta berusia di bawah 18 tahun yang mengikuti uji renang 400 meter."
+  },
+  "kunci": "D",
+  "jebakan": {
+   "A": "P1 dibalik arahnya",
+   "B": "bertentangan dengan gabungan P1 dan P2",
+   "E": "'tidak lulus' dibaca 'tidak mengikuti', melampaui premis",
+   "C": "P1 dan P2 dibalik sekaligus"
+  },
+  "kalimat_kunci": "lulus uji renang 400 meter",
+  "level": "Standar",
+  "kerangka": "kategorikal 2 premis, 1 premis negatif · kesimpulan pasti benar"
+ },
+ {
+  "no": 33,
+  "keluarga": "ARG",
+  "soal": "Sebuah sekolah membuka kelas daring pada malam hari untuk siswa kelas XII. Satu semester kemudian, rata-rata nilai ujian matematika siswa kelas XII naik dari 68 menjadi 79. Kepala sekolah menyimpulkan bahwa kelas daring malam itulah yang menaikkan nilai siswa.",
+  "perintah": "Pernyataan berikut yang paling memperlemah kesimpulan tersebut adalah …",
+  "opsi": {
+   "A": "Sebagian besar siswa kelas XII mengikuti kelas daring malam itu secara rutin.",
+   "B": "Nilai ujian matematika siswa kelas XII naik setelah kelas daring malam dibuka.",
+   "C": "Kelas daring malam juga dibuka untuk mata pelajaran bahasa Inggris.",
+   "D": "Beberapa orang tua mengeluhkan jadwal kelas daring malam yang berakhir terlalu larut bagi anak mereka.",
+   "E": "Pada semester yang sama, soal ujian matematika diganti dengan soal yang lebih mudah."
+  },
+  "kunci": "E",
+  "jebakan": {
+   "A": "justru memperkuat kesimpulan",
+   "B": "hanya mengulang data di soal",
+   "C": "tidak menyentuh hubungan sebab",
+   "D": "menyerang hal di luar kesimpulan (jadwal), bukan pengaruhnya pada nilai"
+  },
+  "kalimat_kunci": "kelas daring malam itulah yang menaikkan",
+  "level": "HOTS",
+  "kerangka": "klaim program meningkatkan hasil + data kenaikan · cari pelemah berupa penyebab lain yang terjadi bersamaan"
+ },
+ {
+  "no": 34,
+  "keluarga": "SIL",
+  "soal": "Anggap semua premis berikut benar.<br>P1: Jika gudang logistik dibuka, relawan dapat mengambil terpal.<br>P2: Jika relawan dapat mengambil terpal, tenda darurat berdiri sebelum malam.<br>P3: Tenda darurat tidak berdiri sebelum malam.",
+  "perintah": "Kesimpulan yang pasti benar adalah …",
+  "opsi": {
+   "A": "Gudang logistik dibuka, tetapi persediaan terpal sudah habis.",
+   "B": "Gudang logistik tidak dibuka.",
+   "C": "Relawan dapat mengambil terpal.",
+   "D": "Relawan mungkin mengambil terpal dari posko lain.",
+   "E": "Tenda darurat berdiri setelah malam tiba."
+  },
+  "kunci": "B",
+  "jebakan": {
+   "A": "menambah keterangan yang tidak ada di premis",
+   "C": "berlawanan dengan P2 dan P3",
+   "D": "kata 'mungkin' tidak bisa dipastikan dari premis",
+   "E": "'tidak berdiri sebelum malam' dibaca 'berdiri setelah malam'"
+  },
+  "kalimat_kunci": "tidak berdiri sebelum malam",
+  "level": "HOTS+",
+  "kerangka": "rantai kondisional 3 premis + fakta negasi akhir · modus tollens berantai"
+ },
+ {
+  "no": 35,
+  "keluarga": "ANL",
+  "soal": "HIGROMETER : KELEMBAPAN = … : …",
+  "perintah": "Pasangan kata yang tepat untuk melengkapi analogi tersebut adalah …",
+  "opsi": {
+   "A": "BAROMETER : CUACA",
+   "B": "TERMOMETER : DEMAM",
+   "C": "SUHU : TERMOMETER",
+   "D": "MIKROSKOP : SEL DARAH",
+   "E": "AMPEREMETER : KUAT ARUS"
+  },
+  "kunci": "E",
+  "jebakan": {
+   "A": "konsep mirip tapi beda: barometer mengukur tekanan udara, bukan cuaca",
+   "B": "demam adalah keadaan tubuh, bukan besaran yang diukur",
+   "C": "arah hubungannya terbalik",
+   "D": "mikroskop alat untuk melihat, bukan mengukur besaran"
+  },
+  "kalimat_kunci": "alat ukur : besaran yang diukur",
+  "level": "HOTS",
+  "kerangka": "analogi kata A : B = ? (pasangan) · relasi alat ukur : besaran yang diukur"
+ },
+ {
+  "no": 36,
+  "keluarga": "ANL",
+  "soal": "Kaktus memiliki daun yang berubah bentuk menjadi duri untuk mengurangi penguapan air.",
+  "perintah": "Hubungan antara ciri tubuh dan tujuannya yang sama dengan pernyataan tersebut ditunjukkan oleh …",
+  "opsi": {
+   "A": "Unta memiliki ginjal yang menghasilkan urin sangat pekat untuk menghemat cairan tubuhnya.",
+   "B": "Landak memiliki duri tajam di sepanjang punggungnya untuk melindungi diri dari serangan pemangsa.",
+   "C": "Bunga bangkai mengeluarkan bau busuk yang menyengat untuk menarik serangga penyerbuk.",
+   "D": "Kura-kura memiliki tempurung yang keras untuk melindungi tubuhnya dari serangan.",
+   "E": "Burung pelikan memiliki kantong kulit di bawah paruhnya untuk menyendok ikan dari air."
+  },
+  "kunci": "A",
+  "jebakan": {
+   "B": "kata 'duri' sama, tetapi tujuannya perlindungan",
+   "C": "tujuannya penyerbukan",
+   "D": "tujuannya perlindungan",
+   "E": "tujuannya mendapat makanan"
+  },
+  "kalimat_kunci": "mengurangi penguapan air (tujuan: menghemat air, bukan organ yang sama)",
+  "level": "HOTS",
+  "kerangka": "analogi hubungan kalimat · makhluk + ciri tubuh + tujuan, kategori tujuan hemat air"
+ },
+ {
+  "no": 37,
+  "keluarga": "HIT",
+  "soal": "Nilai yang paling mendekati hasil 4.987 × 0,198 + √3.610 adalah …",
+  "opsi": {
+   "A": "950",
+   "B": "1.005",
+   "C": "1.045",
+   "D": "1.085",
+   "E": "1.175"
+  },
+  "jebakan": {
+   "A": "0,198 dipotong jadi 0,19 dan akar lupa dijumlahkan",
+   "B": "√3.610 dikira √361 = 19 (salah kelompok angka)",
+   "C": null,
+   "D": "√3.610 ditaksir 100",
+   "E": "√3.610 dikira √36.100 = 190"
+  },
+  "kunci": "C",
+  "bukti": {
+   "tepat": 1047.5092755431992
+  },
+  "level": "Standar",
+  "kerangka": "estimasi akar + perkalian desimal"
+ },
+ {
+  "no": 38,
+  "keluarga": "SUK",
+  "soal": "Perhatikan tabel berikut. Nilai suku ke-30 adalah …",
+  "tabel": [
+   [
+    "Suku ke-",
+    "Nilai"
+   ],
+   [
+    2,
+    6
+   ],
+   [
+    3,
+    16
+   ],
+   [
+    7,
+    116
+   ],
+   [
+    10,
+    254
+   ],
+   [
+    16,
+    692
+   ]
+  ],
+  "opsi": {
+   "A": "1.714",
+   "B": "2.554",
+   "C": "2.700",
+   "D": "2.732",
+   "E": "2.854"
+  },
+  "jebakan": {
+   "A": "kenaikan dari dua titik terakhir dianggap tetap",
+   "B": null,
+   "C": "lupa −5n + 4 (hanya 3n²)",
+   "D": "menghitung suku ke-31 (salah nomor suku)",
+   "E": "tanda −5n terbalik jadi +5n"
+  },
+  "kunci": "B",
+  "bukti": {
+   "rumus": "3n² − 5n + 4",
+   "linear": 1714
+  },
+  "level": "HOTS",
+  "kerangka": "tabel suku ke-n kuadrat, 5 titik, nomor loncat acak · suku jauh"
+ },
+ {
+  "no": 39,
+  "keluarga": "KOTAK",
+  "soal": "Perhatikan pola bilangan pada tabel berikut. Pasangan nilai X dan Y yang tepat adalah …",
+  "tabel": [
+   [
+    7,
+    10,
+    14,
+    20,
+    "X"
+   ],
+   [
+    3,
+    4,
+    6,
+    8,
+    "Y"
+   ]
+  ],
+  "opsi": {
+   "A": "20 dan 12",
+   "B": "28 dan 20",
+   "C": "40 dan 16",
+   "D": "20 dan 8",
+   "E": "28 dan 12"
+  },
+  "jebakan": {
+   "A": "baris atas memakai kolom ketiga sebagai acuan",
+   "B": "selisih diambil dari kolom yang sama, bukan kolom sebelumnya",
+   "C": "kelebihan satu langkah (menghitung kolom keenam)",
+   "D": "menghitung ulang kolom keempat (salah kolom acuan)",
+   "E": null
+  },
+  "kunci": "E",
+  "bukti": {
+   "atas": [
+    7,
+    10,
+    14,
+    20,
+    28
+   ],
+   "bawah": [
+    3,
+    4,
+    6,
+    8,
+    12
+   ]
+  },
+  "level": "HOTS",
+  "kerangka": "kotak 2x5 X dan Y · sel kolom berikut atas = jumlah kolom sebelumnya, bawah = selisih kolom sebelumnya"
+ },
+ {
+  "no": 40,
+  "keluarga": "KOTAK",
+  "soal": "Perhatikan pola bilangan pada tabel berikut. Nilai X yang tepat adalah …",
+  "tabel": [
+   [
+    3,
+    2,
+    7
+   ],
+   [
+    -3,
+    3,
+    -30
+   ],
+   [
+    -4,
+    2,
+    "X"
+   ]
+  ],
+  "opsi": {
+   "A": "−18",
+   "B": "−10",
+   "C": "14",
+   "D": "16",
+   "E": "18"
+  },
+  "jebakan": {
+   "A": "(−4)² dihitung −16 (salah tanda pangkat genap)",
+   "B": "pangkat dianggap perkalian",
+   "C": null,
+   "D": "lupa dikurangi pangkatnya",
+   "E": "pangkatnya ditambahkan, bukan dikurangkan"
+  },
+  "kunci": "C",
+  "bukti": {
+   "aturan": "c = a^b − b",
+   "alternatif": [
+    14
+   ]
+  },
+  "level": "HOTS+",
+  "kerangka": "kotak 3x3 · tiap baris c = a pangkat b dikurangi b · baris dengan bilangan negatif"
+ },
+ {
+  "no": 41,
+  "keluarga": "PAS",
+  "soal": "Pasangan pembagian berikut yang bernilai sama adalah …",
+  "opsi": {
+   "A": "7,2 ÷ 0,6 dan 84 ÷ 7",
+   "B": "4,8 ÷ 0,4 dan 66 ÷ 6",
+   "C": "9,6 ÷ 0,8 dan 1,3 ÷ 0,1",
+   "D": "8,4 ÷ 0,7 dan 1,2 ÷ 0,01",
+   "E": "6,3 ÷ 0,7 dan 0,9 ÷ 0,01"
+  },
+  "jebakan": {
+   "A": null,
+   "B": "hanya sisi kiri yang dicek (kiri 12)",
+   "C": "hanya sisi kiri yang dicek (kiri 12)",
+   "D": "salah geser koma di sisi kanan (120, bukan 12)",
+   "E": "salah geser koma di sisi kanan (90, bukan 9)"
+  },
+  "kunci": "A",
+  "bukti": [
+   [
+    "7,2 ÷ 0,6 dan 84 ÷ 7",
+    12,
+    12
+   ],
+   [
+    "4,8 ÷ 0,4 dan 66 ÷ 6",
+    11.999999999999998,
+    11
+   ],
+   [
+    "9,6 ÷ 0,8 dan 1,3 ÷ 0,1",
+    11.999999999999998,
+    13
+   ],
+   [
+    "8,4 ÷ 0,7 dan 1,2 ÷ 0,01",
+    12.000000000000002,
+    120
+   ],
+   [
+    "6,3 ÷ 0,7 dan 0,9 ÷ 0,01",
+    9,
+    90
+   ]
+  ],
+  "level": "Standar",
+  "kerangka": "pasangan bagi bernilai sama · a : b dan c : d"
+ },
+ {
+  "no": 42,
+  "keluarga": "PAS",
+  "soal": "Pasangan perkalian berikut yang bernilai sama adalah …",
+  "opsi": {
+   "A": "28 × 330 dan 38 × 230",
+   "B": "48 × 60 dan 32 × 85",
+   "C": "72 × 40 dan 54 × 52",
+   "D": "26 × 450 dan 45 × 270",
+   "E": "45 × 64 dan 36 × 80"
+  },
+  "jebakan": {
+   "A": "tampak cermin, padahal angkanya bukan tukar tempat (9.240 dan 8.740)",
+   "B": "hanya sisi kiri yang dicek (kiri 2.880)",
+   "C": "hanya sisi kiri yang dicek (kiri 2.880)",
+   "D": "tampak cermin, padahal 26 bukan 27 (11.700 dan 12.150)",
+   "E": null
+  },
+  "kunci": "E",
+  "bukti": [
+   [
+    "28 × 330 dan 38 × 230",
+    9240,
+    8740
+   ],
+   [
+    "48 × 60 dan 32 × 85",
+    2880,
+    2720
+   ],
+   [
+    "72 × 40 dan 54 × 52",
+    2880,
+    2808
+   ],
+   [
+    "26 × 450 dan 45 × 270",
+    11700,
+    12150
+   ],
+   [
+    "45 × 64 dan 36 × 80",
+    2880,
+    2880
+   ]
+  ],
+  "level": "Standar",
+  "kerangka": "pasangan kali bernilai sama · a x b dan c x d dengan cermin semu"
+ },
+ {
+  "no": 43,
+  "keluarga": "PAS",
+  "soal": "Pasangan berikut yang <b>TIDAK</b> bernilai sama adalah …",
+  "opsi": {
+   "A": "(36 ÷ 4) × 7 dan (9 × 8) − 9",
+   "B": "(72 ÷ 8) + (6 × 5) dan (13 × 3)",
+   "C": "(84 ÷ 7) + (5 × 3) dan (125 ÷ 5) + 4",
+   "D": "(15 × 6) − (48 ÷ 4) dan (26 × 3)",
+   "E": "(144 ÷ 12) × (3 + 4) dan (7 × 14) − 14"
+  },
+  "jebakan": {
+   "A": "salah hitung salah satu sisi",
+   "B": "salah hitung salah satu sisi",
+   "C": null,
+   "D": "salah hitung salah satu sisi",
+   "E": "salah hitung salah satu sisi"
+  },
+  "kunci": "C",
+  "bukti": [
+   [
+    "(36 ÷ 4) × 7 dan (9 × 8) − 9",
+    63,
+    63
+   ],
+   [
+    "(72 ÷ 8) + (6 × 5) dan (13 × 3)",
+    39,
+    39
+   ],
+   [
+    "(84 ÷ 7) + (5 × 3) dan (125 ÷ 5) + 4",
+    27,
+    29
+   ],
+   [
+    "(15 × 6) − (48 ÷ 4) dan (26 × 3)",
+    78,
+    78
+   ],
+   [
+    "(144 ÷ 12) × (3 + 4) dan (7 × 14) − 14",
+    84,
+    84
+   ]
+  ],
+  "level": "HOTS",
+  "kerangka": "pasangan operasi campuran berkurung · bentuk TIDAK sama"
+ },
+ {
+  "no": 44,
+  "keluarga": "CRT",
+  "soal": "Tangki air sebuah truk pemadam kebakaran terisi 10% dari kapasitasnya. Setelah ditambah 3.000 liter air, tangki terisi 60% dari kapasitasnya. Kapasitas penuh tangki tersebut adalah …",
+  "opsi": {
+   "A": "5.000 liter",
+   "B": "6.000 liter",
+   "C": "6.600 liter",
+   "D": "7.200 liter",
+   "E": "30.000 liter"
+  },
+  "jebakan": {
+   "A": "tambahan dibagi persen akhir",
+   "B": null,
+   "C": "isi awal ditambahkan lagi ke kapasitas",
+   "D": "isi awal, isi akhir, dan tambahan dijumlahkan",
+   "E": "tambahan dibagi persen awal"
+  },
+  "kunci": "B",
+  "bukti": {
+   "cap": 6000
+  },
+  "level": "Standar",
+  "kerangka": "persen kapasitas · selisih persen <-> liter · cari kapasitas"
+ },
+ {
+  "no": 45,
+  "keluarga": "CRT",
+  "soal": "Sebuah kolam benih ikan dapat diisi penuh oleh keran P dalam 4 jam dan oleh keran Q dalam 12 jam. Keran pembuang R dapat mengosongkan kolam yang penuh dalam 6 jam. Mula-mula kolam kosong, lalu keran P dan Q dibuka bersamaan. Satu jam kemudian keran R juga dibuka, dan ketiganya tetap terbuka. Kolam penuh setelah … sejak keran P dan Q dibuka.",
+  "opsi": {
+   "A": "2 jam 20 menit",
+   "B": "3 jam",
+   "C": "4 jam",
+   "D": "5 jam",
+   "E": "6 jam"
+  },
+  "jebakan": {
+   "A": "keran pembuang dihitung ikut mengisi",
+   "B": "keran pembuang tidak dihitung",
+   "C": "berhenti di waktu sesudah keran pembuang dibuka (lupa 1 jam pertama)",
+   "D": null,
+   "E": "lupa jeda: ketiga keran dianggap dibuka bersamaan"
+  },
+  "kunci": "D",
+  "bukti": {
+   "t": 5.000000000000001
+  },
+  "level": "HOTS+",
+  "kerangka": "kerja bersama 2 pengisi + 1 pengosong dibuka terlambat · waktu sampai penuh"
+ },
+ {
+  "no": 46,
+  "keluarga": "KCK",
+  "soal": "Di sebuah toko alat tulis, setiap map dijual dengan harga yang sama dan setiap spidol juga dijual dengan harga yang sama. Berapa harga 5 map dan 5 spidol?",
+  "pernyataan": [
+   "Harga 2 map dan 2 spidol adalah Rp18.000.",
+   "Harga satu map Rp3.000 lebih mahal daripada harga satu spidol."
+  ],
+  "kalimat_kunci": "5 map dan 5 spidol",
+  "opsi": {
+   "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+   "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+   "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+   "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+   "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+  },
+  "kunci": "A",
+  "jebakan": {
+   "B": "harga selisih dikira cukup",
+   "C": "mengira harga satuan map dan spidol harus diketahui",
+   "D": "(2) dikira cukup sendiri",
+   "E": "tidak melihat bahwa 5 map + 5 spidol = 2,5 × (2 map + 2 spidol)"
+  },
+  "bukti": {
+   "c1": true,
+   "c2": false,
+   "c12": true,
+   "tidakCukup1": null,
+   "tidakCukup2": [
+    [
+     "{\"m\":3500,\"s\":500}",
+     20000
+    ],
+    [
+     "{\"m\":4000,\"s\":1000}",
+     25000
+    ]
+   ]
+  },
+  "level": "HOTS",
+  "kerangka": "aljabar 2 harga · tanya jumlah gabungan · (1) kelipatan gabungan · (2) selisih harga"
+ },
+ {
+  "no": 47,
+  "keluarga": "KCK",
+  "soal": "Sebuah truk BPBD dengan batas muatan 5.000 kg akan mengangkut karung beras bantuan dalam satu kali jalan. Apakah seluruh karung dapat diangkut tanpa melebihi batas muatan truk?",
+  "pernyataan": [
+   "Jumlah karung beras yang akan diangkut adalah 110 karung.",
+   "Karung terberat beratnya 48 kg dan karung teringan beratnya 40 kg."
+  ],
+  "kalimat_kunci": "karung terberat … karung teringan",
+  "opsi": {
+   "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+   "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+   "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+   "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+   "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+  },
+  "kunci": "E",
+  "jebakan": {
+   "A": "jumlah karung dikira cukup",
+   "B": "berat karung dikira cukup",
+   "C": "semua karung dianggap seberat karung terberat (atau teringan)",
+   "D": "masing-masing pernyataan dikira cukup"
+  },
+  "bukti": {
+   "c1": false,
+   "c2": false,
+   "c12": false,
+   "tidakCukup1": [
+    [
+     "{\"n\":110,\"mn\":38,\"mx\":44,\"tot\":4834}",
+     true
+    ],
+    [
+     "{\"n\":110,\"mn\":45,\"mx\":50,\"tot\":5495}",
+     false
+    ]
+   ],
+   "tidakCukup2": [
+    [
+     "{\"n\":120,\"mn\":40,\"mx\":48,\"tot\":5000}",
+     true
+    ],
+    [
+     "{\"n\":120,\"mn\":40,\"mx\":48,\"tot\":5752}",
+     false
+    ]
+   ]
+  },
+  "level": "HOTS+",
+  "kerangka": "nilai vs batas muatan · (1) banyak barang · (2) batas atas berat per barang + kapasitas"
+ },
+ {
+  "no": 48,
+  "keluarga": "KCK",
+  "soal": "Sebuah konveksi menerima satu pesanan seragam dan menugaskan 6 penjahit untuk mengerjakannya. Semua penjahit di konveksi itu bekerja dengan kecepatan yang sama. Apakah pesanan tersebut selesai dalam waktu paling lama 4 hari?",
+  "pernyataan": [
+   "10 penjahit konveksi itu dapat menyelesaikan pesanan yang sama dalam 3 hari.",
+   "Setiap penjahit menyelesaikan 12 seragam per hari."
+  ],
+  "kalimat_kunci": "menugaskan 6 penjahit",
+  "opsi": {
+   "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+   "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+   "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+   "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+   "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+  },
+  "kunci": "A",
+  "jebakan": {
+   "B": "kecepatan per penjahit dikira cukup tanpa banyak seragam",
+   "C": "mengira kecepatan per penjahit juga perlu",
+   "D": "(2) dikira cukup sendiri",
+   "E": "menghitung searah: lebih sedikit penjahit dikira lebih cepat, lalu ragu"
+  },
+  "bukti": {
+   "c1": true,
+   "c2": false,
+   "c12": true,
+   "tidakCukup1": null,
+   "tidakCukup2": [
+    [
+     "{\"kerja\":24,\"laju\":12,\"seragam\":288}",
+     true
+    ],
+    [
+     "{\"kerja\":60,\"laju\":12,\"seragam\":720}",
+     false
+    ]
+   ]
+  },
+  "level": "HOTS",
+  "kerangka": "ya/tidak waktu kerja berbalik nilai · (1) pekerja-hari dari tim lain · (2) laju per orang tanpa total"
+ },
+ {
+  "no": 49,
+  "keluarga": "KCK",
+  "soal": "Seleksi tahap akhir diikuti 84 peserta yang terdiri atas peserta putra dan peserta putri. Berapa banyak peserta putri?",
+  "pernyataan": [
+   "Perbandingan banyak peserta putra dan putri adalah 4 : 3.",
+   "Banyak peserta putra 12 orang lebih banyak daripada peserta putri."
+  ],
+  "kalimat_kunci": "84 peserta",
+  "opsi": {
+   "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+   "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+   "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+   "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+   "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+  },
+  "kunci": "D",
+  "jebakan": {
+   "A": "berhenti di (1) tanpa memeriksa (2)",
+   "B": "berhenti di (2) tanpa memeriksa (1)",
+   "C": "mengira keduanya harus digabung",
+   "E": "lupa total 84 tertulis di soal"
+  },
+  "bukti": {
+   "c1": true,
+   "c2": true,
+   "c12": true,
+   "tidakCukup1": null,
+   "tidakCukup2": null
+  },
+  "level": "Standar",
+  "kerangka": "rasio dengan total diketahui · (1) perbandingan · (2) selisih"
+ },
+ {
+  "no": 50,
+  "keluarga": "KCK",
+  "soal": "Berapa harga satu kilogram cabai pada awal bulan?",
+  "pernyataan": [
+   "Pada pertengahan bulan, harga cabai naik 15% dari harga awal bulan.",
+   "Pada akhir bulan, harga cabai Rp55.000 per kilogram, yaitu 25% lebih tinggi daripada harga awal bulan."
+  ],
+  "kalimat_kunci": "25% lebih tinggi daripada harga awal bulan",
+  "opsi": {
+   "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+   "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+   "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+   "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+   "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+  },
+  "kunci": "B",
+  "jebakan": {
+   "A": "persen kenaikan dikira cukup tanpa harga",
+   "C": "mengira harga pertengahan bulan perlu",
+   "D": "(1) dikira cukup",
+   "E": "mengira persen dari harga awal yang belum diketahui tidak bisa dihitung balik"
+  },
+  "bukti": {
+   "c1": false,
+   "c2": true,
+   "c12": true,
+   "tidakCukup1": [
+    [
+     "{\"awal\":20000,\"naik1\":15,\"naik2\":30,\"akhir\":26000}",
+     20000
+    ],
+    [
+     "{\"awal\":20500,\"naik1\":15,\"naik2\":30,\"akhir\":26650}",
+     20500
+    ]
+   ],
+   "tidakCukup2": null
+  },
+  "level": "HOTS",
+  "kerangka": "persen dari basis yang ditanya · (1) persen tanpa nilai · (2) nilai akhir + persen terhadap basis"
+ },
+ {
+  "no": 51,
+  "keluarga": "KCK",
+  "soal": "<i>n</i> adalah bilangan bulat positif. Apakah <i>n</i> habis dibagi 12?",
+  "pernyataan": [
+   "<i>n</i> habis dibagi 4.",
+   "<i>n</i> habis dibagi 6."
+  ],
+  "kalimat_kunci": "habis dibagi 12",
+  "opsi": {
+   "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+   "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+   "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+   "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+   "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+  },
+  "kunci": "C",
+  "jebakan": {
+   "A": "(1) dikira cukup karena 12 kelipatan 4",
+   "B": "(2) dikira cukup karena 12 kelipatan 6",
+   "D": "masing-masing dikira cukup",
+   "E": "mengira syaratnya habis dibagi 4 × 6 = 24, atau nilai n harus diketahui"
+  },
+  "bukti": {
+   "c1": false,
+   "c2": false,
+   "c12": true,
+   "tidakCukup1": [
+    [
+     "{\"n\":1196}",
+     false
+    ],
+    [
+     "{\"n\":1200}",
+     true
+    ]
+   ],
+   "tidakCukup2": [
+    [
+     "{\"n\":1194}",
+     false
+    ],
+    [
+     "{\"n\":1200}",
+     true
+    ]
+   ]
+  },
+  "level": "HOTS",
+  "kerangka": "sifat bilangan ya/tidak habis dibagi · (1) dan (2) faktor berbeda, KPK"
+ },
+ {
+  "no": 52,
+  "keluarga": "KCK",
+  "soal": "Kelas XI-B memiliki dua kegiatan ekstrakurikuler, yaitu paduan suara dan basket. Setiap siswa boleh mengikuti salah satu kegiatan, keduanya, atau tidak mengikuti keduanya. Berapa banyak siswa yang mengikuti paduan suara sekaligus basket?",
+  "pernyataan": [
+   "Sebanyak 18 siswa mengikuti paduan suara dan 15 siswa mengikuti basket.",
+   "Kelas XI-B terdiri atas 30 siswa."
+  ],
+  "kalimat_kunci": "atau tidak mengikuti keduanya",
+  "opsi": {
+   "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+   "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+   "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+   "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+   "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+  },
+  "kunci": "E",
+  "jebakan": {
+   "A": "(1) dikira cukup",
+   "B": "(2) dikira cukup",
+   "C": "menganggap setiap siswa ikut minimal satu kegiatan (18 + 15 − 30 = 3)",
+   "D": "masing-masing dikira cukup"
+  },
+  "bukti": {
+   "c1": false,
+   "c2": false,
+   "c12": false,
+   "tidakCukup1": [
+    [
+     "{\"kelas\":36,\"ps\":18,\"bs\":15,\"dua\":8}",
+     8
+    ],
+    [
+     "{\"kelas\":36,\"ps\":18,\"bs\":15,\"dua\":9}",
+     9
+    ]
+   ],
+   "tidakCukup2": [
+    [
+     "{\"kelas\":30,\"ps\":18,\"bs\":12,\"dua\":1}",
+     1
+    ],
+    [
+     "{\"kelas\":30,\"ps\":20,\"bs\":12,\"dua\":2}",
+     2
+    ]
+   ]
+  },
+  "level": "HOTS+",
+  "kerangka": "himpunan dua kegiatan · (1) banyak tiap kegiatan · (2) total anggota kelas · tanpa info 'semua ikut minimal satu'"
+ },
+ {
+  "no": 53,
+  "keluarga": "ANA",
+  "soal": "Lima regu siaga bencana, yaitu Anggrek, Bakung, Cempaka, Dahlia, dan Kenanga, mempresentasikan rencana kerja pada hari Senin sampai Jumat. Setiap hari hanya satu regu yang tampil, dan setiap regu membawakan satu topik yang berbeda: banjir, gempa, kebakaran, longsor, atau puting beliung. Ketentuannya sebagai berikut.",
+  "perintah": "Pernyataan berikut yang pasti benar adalah …",
+  "syarat": [
+   "Cempaka tampil tepat sehari setelah Anggrek.",
+   "Regu yang membawakan topik gempa tampil pada hari Rabu.",
+   "Kenanga membawakan topik longsor dan tampil lebih awal daripada Bakung.",
+   "Topik banjir dibawakan tepat sehari sebelum topik kebakaran.",
+   "Anggrek tidak membawakan topik gempa maupun banjir."
+  ],
+  "opsi": {
+   "A": "Bakung tampil pada hari Kamis.",
+   "B": "Dahlia membawakan topik banjir.",
+   "C": "Kenanga tampil pada hari Senin.",
+   "D": "Cempaka membawakan topik gempa.",
+   "E": "Anggrek membawakan topik kebakaran."
+  },
+  "jebakan": {
+   "A": "susunan yang mungkin dianggap pasti",
+   "B": "susunan yang mungkin dianggap pasti",
+   "C": "susunan yang mungkin dianggap pasti",
+   "D": null,
+   "E": "susunan yang mungkin dianggap pasti"
+  },
+  "kunci": "D",
+  "bukti": {
+   "susunanSah": 3
+  },
+  "level": "HOTS",
+  "kerangka": "urutan 5 hari + atribut 5 topik · pernyataan pasti benar"
+ },
+ {
+  "no": 54,
+  "keluarga": "ANA",
+  "soal": "Enam petugas piket, yaitu Fajar, Gita, Hasan, Indah, Joko, dan Lina, duduk mengelilingi sebuah meja bundar dengan enam kursi berjarak sama. Semua petugas duduk menghadap ke tengah meja. Ketentuannya sebagai berikut.",
+  "perintah": "Petugas yang duduk tepat di hadapan Hasan adalah …",
+  "syarat": [
+   "Gita duduk tepat di sebelah kanan Fajar.",
+   "Indah duduk tepat di hadapan Gita.",
+   "Joko duduk tepat di sebelah kiri Indah."
+  ],
+  "opsi": {
+   "A": "Fajar",
+   "B": "Lina",
+   "C": "Gita",
+   "D": "Indah",
+   "E": "Joko"
+  },
+  "jebakan": {
+   "A": "hadapan dihitung dua kursi, bukan tiga",
+   "B": null,
+   "C": "petugas di sebelah dikira berhadapan",
+   "D": "hadapan dihitung dua kursi, bukan tiga",
+   "E": "kiri dan kanan tertukar hanya di ketentuan Joko"
+  },
+  "kunci": "B",
+  "bukti": {
+   "susunanSah": 2
+  },
+  "level": "Standar",
+  "kerangka": "duduk melingkar 6 orang · siapa di hadapan X"
+ },
+ {
+  "no": 55,
+  "keluarga": "ANA",
+  "soal": "Enam kapal, yaitu Kapal P, Q, R, S, T, dan U, tiba di sebuah pelabuhan pada hari yang sama secara bergantian, dan tidak ada dua kapal yang tiba bersamaan. Ketentuannya sebagai berikut.",
+  "perintah": "Pernyataan berikut yang pasti benar adalah …",
+  "syarat": [
+   "Kapal P tiba sebelum Kapal Q dan sebelum Kapal R.",
+   "Kapal S tiba setelah Kapal R, tetapi sebelum Kapal T.",
+   "Kapal U tiba setelah Kapal Q.",
+   "Kapal T bukan kapal yang tiba paling akhir."
+  ],
+  "opsi": {
+   "A": "Kapal Q tiba kedua.",
+   "B": "Kapal R tiba sebelum Kapal Q.",
+   "C": "Kapal T tiba kelima.",
+   "D": "Kapal U tiba paling akhir.",
+   "E": "Kapal S tiba ketiga."
+  },
+  "jebakan": {
+   "A": "urutan sebagian dianggap urutan penuh",
+   "B": "susunan yang mungkin dianggap pasti",
+   "C": "urutan sebagian dianggap urutan penuh",
+   "D": null,
+   "E": "urutan sebagian dianggap urutan penuh"
+  },
+  "kunci": "D",
+  "bukti": {
+   "susunanSah": 4
+  },
+  "level": "HOTS+",
+  "kerangka": "urutan parsial 6 unsur · pernyataan pasti benar"
+ },
+ {
+  "no": 56,
+  "keluarga": "OPT",
+  "soal": "Panitia pelatihan memesan paling sedikit 130 nasi kotak dari sebuah katering. Katering hanya menjual nasi kotak dalam paket berikut.",
+  "tabel": [
+   [
+    "Paket",
+    "Isi (kotak)",
+    "Harga per paket"
+   ],
+   [
+    "Paket Melati",
+    20,
+    "Rp380.000"
+   ],
+   [
+    "Paket Mawar",
+    35,
+    "Rp595.000"
+   ],
+   [
+    "Paket Teratai",
+    50,
+    "Rp800.000"
+   ]
+  ],
+  "perintah": "Biaya paling sedikit yang harus dikeluarkan panitia adalah …",
+  "opsi": {
+   "A": "Rp1.980.000",
+   "B": "Rp2.080.000",
+   "C": "Rp2.195.000",
+   "D": "Rp2.320.000",
+   "E": "Rp2.400.000"
+  },
+  "jebakan": {
+   "A": "kombinasi kurang dari 130 kotak (120 kotak)",
+   "B": "harga per kotak termurah dikali 130, padahal kotak tidak dijual satuan",
+   "C": null,
+   "D": "memaksakan jumlah tepat 130 kotak",
+   "E": "hanya membeli paket dengan harga per kotak termurah (Teratai)"
+  },
+  "kunci": "C",
+  "bukti": {
+   "terbaik": {
+    "a": 0,
+    "b": 1,
+    "c": 2,
+    "isi": 135,
+    "biaya": 2195000
+   },
+   "tepat": {
+    "a": 4,
+    "b": 0,
+    "c": 1,
+    "isi": 130,
+    "biaya": 2320000
+   }
+  },
+  "level": "HOTS",
+  "kerangka": "tabel 3 paket isi-harga · biaya termurah memenuhi jumlah minimum"
+ }
+]

@@ -1,0 +1,725 @@
+8/28/26, 11:21 PM                                            Bank Soal TKP HOTS — Batch 2 (12 Soal)
+
+
+
+
+                                D R A F U J I C O B A · B AT C H 2 · B U K A N B A N K F I N A L
+
+
+
+
+                                   Bank Soal TKP HOTS
+                    12 Soal Baru — Klaster Poin 3–4–5 (Sumbu Presisi), Panjang & Nada Terkontrol
+
+
+
+
+              Engine: ENGINE_GENERATE_SOAL_TKP.md v1.1 (Pilar 4 no.2 & no.10 diperketat)
+              Mekanisme: Pilar 3 — Taksonomi Distraktor 5 Poin + Sumbu Presisi (S1–S5)
+              Cakupan dimensi: 6 dimensi resmi (Permenpan RB No. 1/2023), 2 soal/dimensi, konten baru (bukan
+              revisi batch 1)
+              Kontrol tambahan: kunci wajib STRICTLY lebih pendek dari minimal satu distraktor (bukan seri); nada
+              opsi dicampur, verba poin-1 divariasikan
+              Tanggal cetak: 28 Agustus 2026
+              Tujuan: Verifikasi tim ahli sebelum masuk bank soal produksi
+
+
+
+
+                           Dokumen ini memuat kunci jawaban dan pembahasan lengkap (mode belajar) untuk
+                           keperluan review internal — bukan format ujian. Setiap soal menyertakan tag sumbu
+                             presisi (S1–S5) yang menjelaskan alasan gagal tiap distraktor kuat (poin 3 & 4),
+                                                sesuai Gerbang 3 pada dokumen engine.
+
+
+
+
+file:///Users/gustiputuyudawirashana/Downloads/ENGINE%20GENERATE%20SOAL%20TKP/Bank_Soal_TKP_HOTS_12_Batch2.html     1/14
+8/28/26, 11:21 PM                                                 Bank Soal TKP HOTS — Batch 2 (12 Soal)
+
+
+
+
+     RINGKASAN PAKET
+
+
+       No      Dimensi            Konstruk (L2)                                        Kunci     Sumbu          Sumbu           Level
+                                                                                                 Poin 4         Poin 3
+
+       1       Profesionalisme    pelayanan personal satu pasien vs kecepatan            C           S2              S4          Rendah-
+                                  antrean pasien lain                                                                            Sedang
+
+       2       Profesionalisme    ketepatan tenggat SPJ ke BPK vs akurasi                 D          S1              S2           Sangat
+                                  data yang perlu ditelusuri                                                                      Tinggi
+
+       3       Pelayanan          kelancaran antrean loket manual vs kerugian             A          S1              S3           Tinggi
+               Publik             pemohon akibat sistem online error
+
+       4       Pelayanan          keterbatasan pasokan vaksin vs kepercayaan              B          S4              S3           Tinggi
+               Publik             warga yang berulang kali datang sia-sia
+
+       5       Jejaring Kerja     kepastian anggaran seluruh OPD mitra vs                 E          S3              S4           Tinggi
+                                  tenggat DP vendor yang mendesak
+
+       6       Jejaring Kerja     kecepatan penyaluran bantuan darurat vs                 A          S1              S3           Sangat
+                                  koordinasi data penerima antar-LSM                                                              Tinggi
+
+       7       Sosial Budaya      ketertiban jam malam asrama vs                         C           S4              S2          Rendah-
+                                  penghormatan praktik budaya kelompok                                                           Sedang
+                                  tertentu
+
+       8       Sosial Budaya      tradisi MPLS vs keadilan bagi siswa dari latar          D          S1              S2           Tinggi
+                                  ekonomi berbeda
+
+       9       TIK                tenggat integrasi data ke BKN vs integritas             B          S1              S3           Sangat
+                                  data pegawai yang harus bersih dulu                                                             Tinggi
+
+       10      TIK                efisiensi klasifikasi chatbot vs keselamatan            E          S4              S2           Tinggi
+                                  warga pada laporan urgent salah klasifikasi
+
+       11      Anti               menindak cepat perilaku intoleran vs kehati-           C           S3              S1           Sangat
+               Radikalisme        hatian personal karena faktor remaja                                                            Tinggi
+
+       12      Anti               kecepatan merespons isu viral vs kehati-                D          S5              S3           Tinggi
+               Radikalisme        hatian klarifikasi resmi sebelum bertindak
+
+
+     S1 Urutan/Timing · S2 Skop/Cakupan · S3 Kewenangan/Peran · S4 Keberlanjutan/Institusionalisasi · S5 Verifikasi/Kepastian
+
+
+
+
+file:///Users/gustiputuyudawirashana/Downloads/ENGINE%20GENERATE%20SOAL%20TKP/Bank_Soal_TKP_HOTS_12_Batch2.html                            2/14
+8/28/26, 11:21 PM                                             Bank Soal TKP HOTS — Batch 2 (12 Soal)
+
+
+
+
+     SOAL 1–12
+
+
+     Soal No 1                                                                                                    Profesionalisme
+
+
+     Anda petugas front office rawat jalan RSUD pada shift pagi. Seorang pasien lansia kesulitan mengisi
+     formulir pendaftaran karena tidak familiar dengan sistem antre digital, sementara 40 pasien lain sudah
+     menunggu nomor antrean di belakangnya. Sikap Anda adalah… (Profesionalisme)
+
+     A. Menyelesaikan seluruh proses pendaftaran lansia tersebut sendirian sampai tuntas, sebelum
+           sempat melayani satu pun pasien lain di belakangnya.
+     B. Mengarahkan lansia tersebut ke loket khusus sesuai prosedur pendaftaran yang berlaku, tanpa
+           membantu langsung pengisian formulirnya.
+     C. Membantu lansia mengisi data yang sulit, lalu mengarahkannya ke petugas
+           pendamping agar antrean pasien lain tetap berjalan.
+     D. Menunggu lansia tersebut menyelesaikan sendiri pengisian formulirnya sambil tetap memanggil
+           nomor antrean berikutnya.
+     E. Meminta pasien lain yang mengantre di belakang untuk membantu mengisikan formulir lansia
+           tersebut secara sukarela.
+
+
+         Kunci          C
+         Konstruk       pelayanan personal untuk satu pasien vs kecepatan melayani antrean pasien lain
+         Poin           A=4 S2 · B=2+J4 · C=5 (kunci) · D=1 · E=3 S4
+         Level          Rendah-Sedang
+
+
+
+         PEMBAHASAN
+
+         1. Dilema: lansia butuh bantuan ekstra mengisi formulir, tapi 40 pasien lain di belakangnya juga berhak dilayani cepat.
+         2. C menutup kutub personal lewat bantuan langsung pada bagian yang sulit, dan kutub kecepatan lewat
+            pendelegasian sisa proses ke petugas pendamping — antrean tidak berhenti menunggu satu kasus selesai total.
+         3. A dan E sama-sama proaktif membantu. A menyelesaikan seluruh proses sendirian sampai tuntas — responsnya
+            melampaui proporsional, menahan seluruh antrean demi satu pasien (S2 gagal). E meminta pasien lain yang
+            kebetulan mengantre untuk membantu — solutif saat ini, tapi bergantung ada yang bersedia, tidak jadi mekanisme
+            baku untuk lansia berikutnya (S4 gagal).
+         4. Kunci vs A: A menangani semua sendiri sampai tuntas hingga antrean tertahan; C hanya membantu bagian sulit lalu
+            mendelegasikan sisanya, antrean tetap berjalan.
+            Kunci vs E: E bergantung kebetulan ada pasien lain yang mau bantu; C mendelegasikan ke petugas pendamping
+            yang memang tersedia sebagai sumber daya tetap.
+
+
+
+
+file:///Users/gustiputuyudawirashana/Downloads/ENGINE%20GENERATE%20SOAL%20TKP/Bank_Soal_TKP_HOTS_12_Batch2.html                     3/14
+8/28/26, 11:21 PM                                             Bank Soal TKP HOTS — Batch 2 (12 Soal)
+
+
+
+
+     Soal No 2                                                                                                    Profesionalisme
+
+
+     Anda staf keuangan dinas yang menyusun laporan pertanggungjawaban (SPJ) akhir tahun untuk
+     dikirim ke BPK. Dua hari sebelum tenggat pengiriman, Anda menemukan selisih Rp 3,2 juta pada
+     rekonsiliasi kas yang belum jelas sumbernya. Langkah paling tepat adalah… (Profesionalisme)
+
+     A. Mengirim SPJ tepat waktu sesuai tenggat BPK, karena keterlambatan pelaporan berisiko dikenai
+           sanksi administratif.
+     B. Menelusuri seluruh transaksi kas sepanjang satu tahun anggaran secara mendetail, untuk
+           memastikan akurasi total sebelum SPJ dikirim.
+     C. Menunda pengecekan selisih tersebut sampai ada waktu luang setelah SPJ terkirim ke BPK.
+     D. Menelusuri sumber selisih lewat dokumen pendukung secara prioritas, lalu
+           mengirim SPJ tepat waktu disertai catatan resmi status penelusuran.
+     E. Menelusuri sumber selisih secara menyeluruh hingga benar-benar tuntas terlebih dahulu, baru
+           mengirim SPJ setelah semuanya benar-benar jelas dan pasti.
+
+
+         Kunci          D
+         Konstruk       ketepatan waktu SPJ ke BPK vs akurasi data yang perlu ditelusuri
+         Poin           A=2+J1("tenggat") · B=3 S2 · C=1 · D=5 (kunci) · E=4 S1
+         Level          Sangat Tinggi
+
+
+
+         PEMBAHASAN
+
+         1. Dilema: tenggat SPJ ke BPK tidak bisa mundur, tapi selisih Rp3,2 juta yang belum jelas sumbernya berisiko
+            mengesahkan data yang tidak akurat.
+         2. D menutup kutub akurasi lewat penelusuran dokumen pendukung yang prioritas pada item bermasalah, dan kutub
+            tenggat lewat pengiriman tepat waktu disertai catatan resmi status penelusuran — transparan, bukan
+            menyembunyikan atau menunda.
+         3. E dan B sama-sama teliti. E menelusuri sampai benar-benar tuntas dulu baru mengirim — akurasi terjamin, tapi
+            pengirimannya jadi reaktif dan berisiko molor dari tenggat (S1 gagal). B menelusuri seluruh transaksi kas setahun
+            penuh untuk selisih sebesar itu — cakupannya jauh lebih luas dari yang proporsional, memakan waktu berlebih
+            dibanding kebutuhan sebenarnya (S2 gagal).
+         4. Kunci vs E: E menunda pengiriman sampai semua tuntas, berisiko molor tenggat; D tetap mengirim tepat waktu
+            sambil transparan soal status penelusuran.
+            Kunci vs B: B mengaudit seluruh setahun untuk satu selisih kecil, tidak proporsional; D menelusuri lewat dokumen
+            pendukung yang relevan saja.
+
+
+
+
+file:///Users/gustiputuyudawirashana/Downloads/ENGINE%20GENERATE%20SOAL%20TKP/Bank_Soal_TKP_HOTS_12_Batch2.html                     4/14
+8/28/26, 11:21 PM                                              Bank Soal TKP HOTS — Batch 2 (12 Soal)
+
+
+
+
+     Soal No 3                                                                                                    Pelayanan Publik
+
+
+     Anda petugas loket Samsat. Sistem pembayaran pajak kendaraan online (e-Samsat) mengalami
+     gangguan sejak pagi — sejumlah pemohon saldo rekeningnya sudah terpotong tapi bukti pembayaran
+     tidak muncul di sistem, sementara antrean loket manual terus bertambah panjang. Apa yang Anda
+     lakukan? (Pelayanan Publik)
+
+     A. Mencatat data pemohon yang saldonya terpotong ke jalur prioritas untuk
+           ditindaklanjuti tim IT, sambil tetap melayani antrean loket manual.
+     B. Menghubungi pihak bank secara langsung atas nama tiap pemohon untuk meminta pengembalian
+           saldo yang terpotong tersebut.
+     C. Mengabaikan keluhan saldo terpotong untuk sementara dan fokus penuh menyelesaikan antrean
+           loket manual yang menumpuk.
+     D. Mengarahkan seluruh pemohon yang saldonya terpotong untuk mengurus keluhan lewat call center
+           Samsat sesuai prosedur berlaku.
+     E. Melanjutkan pelayanan loket manual seperti biasa, dan baru menangani keluhan saldo terpotong
+           setelah antrean loket benar-benar mereda pada sore hari.
+
+
+         Kunci           A
+         Konstruk        kelancaran antrean loket manual vs kerugian pemohon akibat sistem online error
+         Poin            A=5 (kunci) · B=3 S3 · C=1 · D=2+J4 · E=4 S1
+         Level           Tinggi
+
+
+
+         PEMBAHASAN
+
+         1. Dilema: antrean loket manual terus bertambah dan perlu tetap dilayani, tapi pemohon yang saldonya terpotong
+            akibat error sistem online butuh penanganan cepat karena menyangkut kerugian finansial langsung.
+         2. A menutup kutub kerugian finansial lewat pencatatan ke jalur prioritas untuk tim IT (ditindaklanjuti pihak yang
+            berwenang) dan kutub antrean lewat pelayanan loket manual yang tetap berjalan seperti biasa, dua jalur berjalan
+            paralel.
+         3. E dan B sama-sama merespons. E melanjutkan loket manual dulu dan baru menangani keluhan saldo setelah
+            antrean mereda — antrean diprioritaskan, tapi penanganan kerugian pemohon jadi reaktif dan tertunda sampai sore
+            (S1 gagal). B menghubungi pihak bank langsung atas nama pemohon — proaktif menuntaskan masalah, tapi ini
+            bukan kewenangan petugas loket Samsat untuk berurusan langsung dengan bank (S3 gagal).
+         4. Kunci vs E: E menunda penanganan kerugian sampai antrean mereda; A mencatatnya ke jalur prioritas sejak awal
+            tanpa menghentikan loket manual.
+            Kunci vs B: B mengambil alih komunikasi dengan bank yang bukan wewenangnya; A merutekannya ke tim IT
+            internal yang tepat.
+
+
+
+
+file:///Users/gustiputuyudawirashana/Downloads/ENGINE%20GENERATE%20SOAL%20TKP/Bank_Soal_TKP_HOTS_12_Batch2.html                      5/14
+8/28/26, 11:21 PM                                             Bank Soal TKP HOTS — Batch 2 (12 Soal)
+
+
+
+
+     Soal No 4                                                                                                    Pelayanan Publik
+
+
+     Anda petugas Puskesmas kecamatan. Jadwal imunisasi anak beberapa kali berubah mendadak karena
+     pasokan vaksin dari Dinas Kesehatan kabupaten tidak menentu. Beberapa warga sudah dua kali datang
+     membawa anak tapi imunisasi batal dilaksanakan. Apa tindakan paling tepat? (Pelayanan Publik)
+
+     A. Menjamin kepada seluruh warga bahwa jadwal imunisasi anak berikutnya pasti tidak akan berubah
+           atau batal lagi.
+     B. Membangun sistem konfirmasi stok vaksin lewat kader, serta menghubungi warga
+           yang sudah dua kali kena batal.
+     C. Menempelkan pengumuman jadwal imunisasi terbaru di papan informasi Puskesmas sesuai
+           prosedur standar yang berlaku.
+     D. Mengikuti jadwal pemberitahuan dari Dinas apa adanya dan menyampaikannya ke warga hanya
+           saat mereka datang.
+     E. Meminta maaf secara langsung kepada warga yang kena batal jadwal, sambil menjanjikan jadwal
+           imunisasi berikutnya akan lebih pasti.
+
+
+         Kunci           B
+         Konstruk        keterbatasan pasokan vaksin (bukan wewenang Puskesmas) vs kepercayaan warga yang berulang kali
+         datang tanpa hasil
+         Poin            A=3 S3 · B=5 (kunci) · C=2+J4 · D=1 · E=4 S4
+         Level           Tinggi
+
+
+
+         PEMBAHASAN
+
+         1. Dilema: pasokan vaksin sepenuhnya bergantung Dinas Kesehatan kabupaten, di luar kendali Puskesmas, tapi warga
+            yang berulang kali datang sia-sia mulai kehilangan kepercayaan.
+         2. B menutup kutub kepercayaan lewat konfirmasi stok sebelum warga berangkat dan kontak langsung ke warga yang
+            sudah dua kali kena batal, serta kutub keterbatasan wewenang dengan tidak menjanjikan hal di luar kendali
+            Puskesmas.
+         3. E dan A sama-sama berupaya menjaga kepercayaan warga. E meminta maaf dan berjanji jadwal berikutnya lebih
+            pasti — menenangkan untuk kejadian ini saja, tapi tidak ada sistem konfirmasi yang tersisa untuk jadwal-jadwal
+            berikutnya (S4 gagal). A menjamin jadwal berikutnya pasti tidak berubah — janji ini di luar kendali Puskesmas karena
+            pasokan vaksin ada di tangan Dinas, berisiko dilanggar sendiri oleh kondisi yang tak bisa dikendalikan (S3 gagal).
+         4. Kunci vs E: E menenangkan untuk kejadian ini saja tanpa mekanisme baku; B membangun sistem konfirmasi yang
+            berlaku untuk jadwal-jadwal berikutnya.
+            Kunci vs A: A menjanjikan sesuatu di luar wewenang Puskesmas; B hanya memastikan informasi stok tersampaikan
+            lebih awal, bukan menjamin pasokannya.
+
+
+
+
+file:///Users/gustiputuyudawirashana/Downloads/ENGINE%20GENERATE%20SOAL%20TKP/Bank_Soal_TKP_HOTS_12_Batch2.html                      6/14
+8/28/26, 11:21 PM                                             Bank Soal TKP HOTS — Batch 2 (12 Soal)
+
+
+
+
+     Soal No 5                                                                                                    Jejaring Kerja
+
+
+     Anda ketua panitia peringatan Hari Jadi Kabupaten yang melibatkan lima OPD sebagai mitra anggaran
+     bersama (sharing cost). Sepuluh hari sebelum acara, salah satu OPD mitra belum mengirimkan bagian
+     anggarannya, sementara vendor panggung dan sound system meminta uang muka (DP) minggu ini agar
+     jadwal terjamin. Apa yang Anda lakukan? (Jejaring Kerja)
+
+     A. Mengirimkan email pengingat kepada seluruh OPD mitra sesuai jadwal rapat koordinasi yang telah
+           disepakati sebelumnya.
+     B. Meminjam dana talangan pribadi untuk membayar DP vendor terlebih dahulu, agar jadwal acara
+           tetap terjamin.
+     C. Menahan pembayaran kepada vendor sampai seluruh OPD mitra mengirimkan bagian anggaran
+           masing-masing.
+     D. Menghubungi langsung pimpinan OPD yang belum mengirim anggaran untuk meminta percepatan
+           pembayaran secara resmi hari itu juga.
+     E. Membayarkan DP vendor memakai anggaran OPD yang sudah masuk, disertai surat
+           penagihan resmi bertenggat jelas.
+
+
+         Kunci          E
+         Konstruk       kepastian anggaran seluruh OPD mitra vs tenggat DP vendor yang mendesak
+         Poin           A=2+J4 · B=3 S4 · C=1 · D=4 S3 · E=5 (kunci)
+         Level          Tinggi
+
+
+
+         PEMBAHASAN
+
+         1. Dilema: DP vendor harus dibayar minggu ini agar jadwal acara terjamin, tapi anggaran dari seluruh OPD mitra belum
+            lengkap terkumpul.
+         2. E menutup kutub tenggat lewat pembayaran DP memakai anggaran yang sudah masuk (tidak menunggu semua)
+            dan kutub kepastian anggaran lewat surat resmi penagihan bertenggat jelas — proses penagihan berjalan formal,
+            bukan menunggu pasif.
+         3. D dan B sama-sama proaktif menyelesaikan kebuntuan dana. D menghubungi langsung pimpinan OPD yang belum
+            kirim — tegas, tapi ketua panitia mendekati pimpinan OPD lain secara langsung bukan jalur koordinasi lintas instansi
+            yang semestinya (S3 gagal). B meminjam dana talangan pribadi — DP terbayar cepat, tapi ini solusi personal yang
+            berisiko dan tidak bisa jadi mekanisme baku untuk acara-acara berikutnya (S4 gagal).
+         4. Kunci vs D: D mendekati pimpinan OPD lain di luar jalur yang semestinya; E menagih lewat surat resmi sesuai jalur
+            koordinasi panitia-OPD.
+            Kunci vs B: B menyelesaikan lewat dana pribadi yang tidak bisa diulang; E memakai anggaran yang sudah sah
+            masuk dari OPD lain.
+
+
+
+
+file:///Users/gustiputuyudawirashana/Downloads/ENGINE%20GENERATE%20SOAL%20TKP/Bank_Soal_TKP_HOTS_12_Batch2.html                    7/14
+8/28/26, 11:21 PM                                            Bank Soal TKP HOTS — Batch 2 (12 Soal)
+
+
+
+
+     Soal No 6                                                                                                    Jejaring Kerja
+
+
+     Anda koordinator program CSR perusahaan untuk distribusi bantuan bencana banjir, bekerja sama
+     dengan tiga LSM lokal. Anda menemukan data penerima dari ketiga LSM tumpang tindih — dua desa
+     menerima bantuan dua kali, sementara satu desa terdampak belum menerima sama sekali. Langkah
+     pertama yang Anda ambil adalah… (Jejaring Kerja)
+
+     A. Menyusun daftar penerima dari ketiga LSM, lalu mengalihkan sisa bantuan ke desa
+           yang belum menerima.
+     B. Mencatat temuan tumpang tindih data tersebut untuk dibahas nanti setelah seluruh proses
+           distribusi bantuan selesai.
+     C. Menghentikan sementara seluruh distribusi bantuan dari ketiga LSM sampai data penerima benar-
+           benar sinkron dan terverifikasi.
+     D. Menyalurkan bantuan sesuai rencana awal masing-masing LSM tanpa perubahan, karena kerja
+           sama sudah disepakati sejak awal.
+     E. Meminta masing-masing LSM menyelesaikan sendiri masalah tumpang tindih data penerima di
+           wilayah kerja mereka.
+
+
+         Kunci          A
+         Konstruk       kecepatan penyaluran bantuan darurat vs pemerataan/koordinasi data penerima antar-LSM
+         Poin           A=5 (kunci) · B=1 · C=4 S1 · D=2+J1("kerja sama") · E=3 S3
+         Level          Sangat Tinggi
+
+
+
+         PEMBAHASAN
+
+         1. Dilema: bantuan bencana perlu tersalur cepat karena menyangkut keselamatan, tapi tumpang tindih data penerima
+            antar-LSM membuat penyaluran tidak merata.
+         2. A menutup kutub pemerataan lewat daftar penerima gabungan yang cepat disusun (cross-check ringkas, bukan
+            audit panjang) dan kutub kecepatan lewat pengalihan sisa bantuan langsung ke desa yang belum menerima tanpa
+            menghentikan distribusi yang sudah berjalan.
+         3. C dan E sama-sama merespons masalah data. C menghentikan seluruh distribusi dulu sampai data benar-benar
+            sinkron — akurat, tapi desa yang belum menerima sama sekali jadi ikut tertahan menunggu proses verifikasi total
+            (S1 gagal). E meminta tiap LSM menyelesaikan sendiri tumpang tindih di wilayah masing-masing — melepas peran
+            koordinasi lintas-LSM yang semestinya jadi tanggung jawab koordinator CSR sendiri (S3 gagal).
+         4. Kunci vs C: C menghentikan semua distribusi sampai data tuntas sinkron, desa yang belum dapat ikut menunggu; A
+            langsung mengalihkan sisa bantuan tanpa menghentikan yang sudah berjalan.
+            Kunci vs E: E melempar masalah koordinasi ke tiap LSM sendiri-sendiri; A mengambil peran menyusun daftar
+            gabungan karena itu levelnya sebagai koordinator lintas-LSM.
+
+
+
+
+file:///Users/gustiputuyudawirashana/Downloads/ENGINE%20GENERATE%20SOAL%20TKP/Bank_Soal_TKP_HOTS_12_Batch2.html                    8/14
+8/28/26, 11:21 PM                                            Bank Soal TKP HOTS — Batch 2 (12 Soal)
+
+
+
+
+     Soal No 7                                                                                                    Sosial Budaya
+
+
+     Anda pengelola asrama mahasiswa yang dihuni mahasiswa dari berbagai daerah. Aturan jam malam
+     asrama mewajibkan seluruh penghuni sudah berada di kamar pukul 22.00, tapi sekelompok mahasiswa
+     dari salah satu daerah rutin mengadakan kumpul adat mingguan yang biasanya berlangsung sampai
+     larut malam. Sikap Anda adalah… (Sosial Budaya)
+
+     A. Melonggarkan aturan jam malam bagi seluruh penghuni asrama setiap akhir pekan agar tidak
+           sampai dianggap membeda-bedakan kelompok tertentu.
+     B. Mengizinkan kumpul adat minggu ini saja melebihi jam malam, karena acaranya sudah terlanjur
+           dipersiapkan.
+     C. Memfasilitasi kumpul adat tersebut di ruang bersama asrama dengan izin dan batas
+           waktu yang disepakati bersama pengelola.
+     D. Menegakkan jam malam apa adanya bagi seluruh penghuni tanpa pengecualian, termasuk saat ada
+           acara adat mingguan.
+     E. Mengizinkan kumpul adat tetap berlangsung asal tidak mengganggu penghuni lain di sekitar kamar
+           mereka.
+
+
+         Kunci          C
+         Konstruk       ketertiban jam malam asrama secara umum vs penghormatan terhadap praktik budaya kelompok tertentu
+         Poin           A=3 S2 · B=4 S4 · C=5 (kunci) · D=1 · E=2+J2
+         Level          Rendah-Sedang
+
+
+
+         PEMBAHASAN
+
+         1. Dilema: jam malam berlaku demi ketertiban dan keamanan seluruh penghuni, tapi kumpul adat mingguan salah satu
+            kelompok mahasiswa jadi rutin berbenturan dengan aturan itu.
+         2. C menutup kutub budaya lewat fasilitasi ruang bersama untuk kumpul adat dan kutub ketertiban lewat izin serta
+            batas waktu yang disepakati bersama pengelola — jadi mekanisme resmi berulang, bukan pengecualian liar atau
+            larangan total.
+         3. B dan A sama-sama berupaya mengakomodasi. B mengizinkan untuk minggu ini saja karena acara sudah terlanjur
+            dipersiapkan — solutif sekali ini, tapi tidak ada aturan baku untuk kumpul adat minggu-minggu berikutnya (S4
+            gagal). A melonggarkan jam malam bagi seluruh penghuni setiap akhir pekan — cakupannya jauh lebih luas dari
+            yang dibutuhkan, padahal isunya spesifik pada satu kelompok dan satu jenis kegiatan (S2 gagal).
+         4. Kunci vs B: B cuma mengizinkan sekali, tidak jadi aturan tetap; C membuat kesepakatan izin dan batas waktu yang
+            berlaku untuk kumpul adat berikutnya juga.
+            Kunci vs A: A melonggarkan aturan untuk semua penghuni padahal yang butuh cuma satu kelompok; C
+            memfasilitasi khusus kelompok dan kegiatan yang bersangkutan tanpa mengubah aturan umum bagi yang lain.
+
+
+
+
+file:///Users/gustiputuyudawirashana/Downloads/ENGINE%20GENERATE%20SOAL%20TKP/Bank_Soal_TKP_HOTS_12_Batch2.html                   9/14
+8/28/26, 11:21 PM                                             Bank Soal TKP HOTS — Batch 2 (12 Soal)
+
+
+
+
+     Soal No 8                                                                                                      Sosial Budaya
+
+
+     Anda panitia MPLS (Masa Pengenalan Lingkungan Sekolah) SMA. Salah satu tugas MPLS mewajibkan
+     siswa baru membawa atribut dan camilan tertentu dengan merek spesifik yang harganya lumayan
+     mahal. Anda mendapati beberapa siswa dari keluarga kurang mampu terlihat cemas dan berusaha
+     meminjam uang ke teman untuk memenuhi tugas itu. Tindakan paling tepat adalah… (Sosial Budaya)
+
+     A. Menganggap tugas membawa atribut tersebut sebagai bagian dari tradisi MPLS yang sudah
+           berjalan bertahun-tahun.
+     B. Memberikan dispensasi khusus kepada siswa yang terlihat kesulitan untuk tidak membawa atribut
+           bermerek tersebut.
+     C. Membebaskan siswa yang terlihat kesulitan dari tugas membawa atribut tersebut saat hari
+           pelaksanaan MPLS berlangsung.
+     D. Mengganti syarat atribut dan camilan bermerek spesifik dengan kategori umum yang
+           mudah didapat, lalu menginformasikannya sebelum hari pelaksanaan.
+     E. Mengingatkan seluruh siswa baru agar tetap membawa atribut dan camilan sesuai daftar tugas
+           MPLS yang telah resmi ditetapkan panitia.
+
+
+         Kunci          D
+         Konstruk       tradisi/keakraban MPLS yang ingin dipertahankan panitia vs keadilan bagi siswa dari latar ekonomi berbeda
+         Poin           A=1 · B=3 S2 · C=4 S1 · D=5 (kunci) · E=2+J4
+         Level          Tinggi
+
+
+
+         PEMBAHASAN
+
+         1. Dilema: tugas atribut dan camilan bermerek sudah jadi tradisi MPLS turun-temurun, tapi bagi siswa dari keluarga
+            kurang mampu, syarat itu jadi beban yang memaksa mereka berutang.
+         2. D menutup kutub tradisi lewat kategori umum yang tetap mempertahankan esensi kegiatan bersama, dan kutub
+            keadilan lewat perubahan syarat yang berlaku merata untuk seluruh siswa baru serta diinformasikan sebelum hari-H,
+            sebelum ada yang terlanjur berutang.
+         3. C dan B sama-sama peduli pada siswa yang kesulitan. C membebaskan siswa yang terlihat kesulitan saat hari
+            pelaksanaan — meringankan, tapi baru terjadi di hari-H, setelah sebagian sudah terlanjur meminjam uang duluan (S1
+            gagal). B memberi dispensasi khusus ke siswa yang terlihat kesulitan — menyasar individu yang kentara saja,
+            sementara siswa lain yang malu mengaku tetap terbebani karena aturan dasarnya tidak berubah (S2 gagal).
+         4. Kunci vs C: C baru meringankan di hari pelaksanaan, sebagian sudah terlanjur berutang; D mengubah syaratnya
+            sejak sebelum hari-H sehingga tidak ada yang sempat terbebani.
+            Kunci vs B: B cuma membebaskan siswa yang kentara kesulitan; D mengubah aturan dasarnya untuk seluruh
+            angkatan, termasuk yang tidak berani mengaku kesulitan.
+
+
+
+
+file:///Users/gustiputuyudawirashana/Downloads/ENGINE%20GENERATE%20SOAL%20TKP/Bank_Soal_TKP_HOTS_12_Batch2.html                     10/14
+8/28/26, 11:21 PM                                               Bank Soal TKP HOTS — Batch 2 (12 Soal)
+
+
+
+
+     Soal No 9                                                                                                           TIK
+
+
+     Anda admin Sistem Informasi Kepegawaian (SIMPEG) dinas yang sedang migrasi data pegawai ke
+     sistem baru menjelang tenggat integrasi dengan BKN. Saat verifikasi, Anda menemukan sekitar 15 data
+     pegawai memiliki NIP ganda atau tidak sinkron dengan database pusat. Langkah paling tepat adalah…
+     (TIK)
+
+     A. Mengunggah seluruh data pegawai apa adanya sesuai tenggat integrasi BKN yang telah ditentukan.
+     B. Mengunggah data pegawai yang sudah valid sesuai tenggat, sambil menyisihkan data
+           bermasalah berstatus "dalam verifikasi" untuk disusulkan.
+     C. Menghapus sendiri data NIP ganda yang ditemukan sebelum data diunggah ke sistem BKN.
+     D. Menyimpan catatan temuan data bermasalah tersebut untuk ditindaklanjuti nanti setelah proses
+           migrasi selesai seluruhnya.
+     E. Menelusuri dan membenahi seluruh 15 data bermasalah tersebut sampai benar-benar tuntas, baru
+           mengunggah seluruh data ke BKN sekaligus.
+
+
+         Kunci           B
+         Konstruk        tenggat integrasi data ke BKN vs integritas/akurasi data pegawai yang harus bersih dulu
+         Poin            A=2+J1("tenggat integrasi... BKN") · B=5 (kunci) · C=3 S3 · D=1 · E=4 S1
+         Level           Sangat Tinggi
+
+
+
+         PEMBAHASAN
+
+         1. Dilema: integrasi ke BKN punya tenggat yang tidak bisa mundur, tapi 15 data pegawai dengan NIP ganda/tidak
+            sinkron berisiko merusak integritas database nasional kalau dipaksa unggah.
+         2. B menutup kutub tenggat lewat pengunggahan data yang sudah valid tepat waktu, dan kutub integritas lewat
+            penyisihan data bermasalah berstatus jelas untuk disusulkan setelah ditelusuri — bukan dipaksa masuk atau
+            dihapus sembarangan.
+         3. E dan C sama-sama berhati-hati pada integritas data. E menuntaskan seluruh 15 data dulu sebelum mengunggah
+            apapun — akurat, tapi seluruh proses integrasi jadi tertunda, termasuk data yang sebenarnya sudah valid dan siap
+            (S1 gagal). C menghapus sendiri data NIP ganda yang ditemukan — bukan wewenang admin SIMPEG menghapus
+            data pegawai secara sepihak, seharusnya ditelusuri lewat verifikasi berjenjang ke BKN (S3 gagal).
+         4. Kunci vs E: E menahan semua data sampai 15 data bermasalah tuntas; B tetap mengunggah data yang sudah valid
+            tanpa menunggu semuanya selesai.
+            Kunci vs C: C menghapus data sendiri tanpa kewenangan; B menyisihkannya dengan status jelas untuk ditelusuri
+            lewat jalur yang tepat.
+
+
+
+
+file:///Users/gustiputuyudawirashana/Downloads/ENGINE%20GENERATE%20SOAL%20TKP/Bank_Soal_TKP_HOTS_12_Batch2.html                11/14
+8/28/26, 11:21 PM                                               Bank Soal TKP HOTS — Batch 2 (12 Soal)
+
+
+
+
+     Soal No 10                                                                                                                     TIK
+
+
+     Anda petugas layanan pengaduan daring pemda yang menggunakan chatbot otomatis untuk menyaring
+     laporan warga. Anda menemukan chatbot beberapa kali salah mengklasifikasikan laporan darurat
+     (misalnya kebocoran gas dan kabel listrik terbuka) sebagai kategori non-urgent karena kata kunci
+     laporan tidak dikenali sistem, sehingga respons ke laporan tersebut jadi lambat. Apa tindakan paling
+     tepat? (TIK)
+
+     A. Menonaktifkan sementara seluruh sistem chatbot dan mengklasifikasikan seluruh laporan warga
+           secara manual.
+     B. Melanjutkan penggunaan chatbot seperti biasa dan berasumsi kesalahan klasifikasi itu hanya
+           kejadian kebetulan yang jarang terjadi.
+     C. Mengikuti kategori yang diberikan chatbot sesuai sistem yang telah diterapkan pemda tanpa
+           perubahan tambahan.
+     D. Memeriksa ulang secara manual setiap laporan yang masuk terlebih dahulu, sebelum memercayai
+           sepenuhnya kategori yang diberikan sistem chatbot.
+     E. Menambahkan verifikasi manual singkat untuk laporan non-urgent sebelum
+           diarsipkan, sambil melaporkan kata kunci gagal dikenali ke pengembang.
+
+
+         Kunci          E
+         Konstruk       efisiensi otomatisasi klasifikasi chatbot vs keselamatan warga pada laporan urgent yang salah klasifikasi
+         Poin           A=3 S2 · B=1 · C=2+J4 · D=4 S4 · E=5 (kunci)
+         Level          Tinggi
+
+
+
+         PEMBAHASAN
+
+         1. Dilema: chatbot mengurangi beban tim manual dengan menyaring laporan otomatis, tapi kesalahan klasifikasi pada
+            laporan darurat berisiko langsung ke keselamatan warga.
+         2. E menutup kutub keselamatan lewat verifikasi manual singkat khusus untuk laporan berkategori non-urgent sebelum
+            diarsipkan, dan kutub efisiensi lewat pelaporan pola kata kunci bermasalah ke tim pengembang agar chatbot makin
+            akurat ke depannya — bukan cuma solusi tambal sulam saat ini.
+         3. D dan A sama-sama menyikapi kesalahan sistem. D memeriksa ulang manual tiap laporan sebelum memercayai
+            chatbot — aman untuk laporan saat ini, tapi kesalahan sistemik chatbot tidak pernah dilaporkan untuk diperbaiki,
+            jadi beban manual ini harus diulang terus-menerus (S4 gagal). A menonaktifkan seluruh chatbot dan kembali manual
+            total — cakupan responsnya jauh lebih luas dari masalah yang sebenarnya spesifik pada pola kata kunci tertentu,
+            membebani tim manual untuk semua laporan (S2 gagal).
+         4. Kunci vs D: D memeriksa manual berulang tanpa memperbaiki akar masalah chatbot; E melaporkan pola kata kunci
+            bermasalah supaya sistem membaik permanen.
+            Kunci vs A: A mematikan seluruh sistem otomatis padahal masalahnya spesifik; E hanya menambah lapisan cek
+            pada kategori yang rawan salah.
+
+
+
+
+file:///Users/gustiputuyudawirashana/Downloads/ENGINE%20GENERATE%20SOAL%20TKP/Bank_Soal_TKP_HOTS_12_Batch2.html                           12/14
+8/28/26, 11:21 PM                                             Bank Soal TKP HOTS — Batch 2 (12 Soal)
+
+
+
+
+     Soal No 11                                                                                                   Anti Radikalisme
+
+
+     Anda guru BK sekaligus wali kelas SMA. Anda mengamati salah satu siswa mulai sering mengucilkan
+     teman sekelas yang berbeda agama dan beberapa kali melontarkan komentar merendahkan di kelas,
+     setelah diketahui siswa tersebut aktif mengikuti sebuah komunitas daring di luar sekolah dalam
+     beberapa bulan terakhir. Bagaimana sikap Anda? (Anti Radikalisme)
+
+     A. Melaporkan siswa tersebut kepada kepala sekolah untuk diberikan sanksi sesuai tata tertib yang
+           berlaku.
+     B. Mengajak siswa tersebut berbicara personal terlebih dahulu tanpa menegur langsung perilakunya
+           di depan kelas.
+     C. Menegur perilaku mengucilkan secara jelas di kelas, lalu mengajak siswa bicara
+           personal soal pengaruh komunitas daring tersebut.
+     D. Membiarkan sikap siswa tersebut karena dianggap bagian dari fase pencarian jati diri remaja yang
+           wajar.
+     E. Menegur perilaku siswa tersebut secara tegas di kelas dan memantau sikapnya sendiri tanpa
+           melibatkan pihak lain di sekolah.
+
+
+         Kunci          C
+         Konstruk       menindak cepat perilaku intoleran demi iklim kelas vs kehati-hatian personal karena faktor perkembangan
+         remaja
+         Poin           A=2+J3 · B=3 S1 · C=5 (kunci) · D=1 · E=4 S3
+         Level          Sangat Tinggi
+
+
+
+         PEMBAHASAN
+
+         1. Dilema: perilaku mengucilkan dan komentar merendahkan sudah berdampak ke iklim kelas dan perlu direspons, tapi
+            siswa ini remaja yang sedang terpapar pengaruh komunitas daring tertentu dan butuh pendekatan personal, bukan
+            sekadar sanksi.
+         2. C menutup kutub iklim kelas lewat teguran jelas atas perilakunya di kelas, dan kutub personal lewat ajakan bicara
+            terpisah untuk memahami akar pengaruh komunitas daring tersebut — dua langkah berjalan berurutan segera,
+            bukan salah satu diabaikan.
+         3. E dan B sama-sama merespons langsung. E menegur tegas dan memantau sendiri tanpa melibatkan pihak lain di
+            sekolah — cepat, tapi pengaruh komunitas eksternal yang mulai membentuk sikap siswa ini sebenarnya butuh
+            koordinasi dengan BK lain, kepala sekolah, atau orang tua, bukan ditangani sendirian (S3 gagal). B mengajak bicara
+            personal dulu tanpa menegur perilakunya di kelas — pendekatannya tepat secara personal, tapi perilaku
+            mengucilkan di kelas terus berlangsung dan berdampak ke teman-temannya selama proses personal ini berjalan (S1
+            gagal).
+         4. Kunci vs E: E menangani sendirian tanpa melibatkan pihak sekolah lain yang relevan; C tetap menegur langsung
+            namun membuka ruang keterlibatan pihak lain lewat pendekatan personal berkelanjutan.
+            Kunci vs B: B menunda koreksi perilaku di kelas demi pendekatan personal dulu; C menegur perilakunya segera di
+            kelas sambil tetap membuka ruang personal, tidak menunggu salah satu selesai dulu.
+
+
+
+
+file:///Users/gustiputuyudawirashana/Downloads/ENGINE%20GENERATE%20SOAL%20TKP/Bank_Soal_TKP_HOTS_12_Batch2.html                      13/14
+8/28/26, 11:21 PM                                                     Bank Soal TKP HOTS — Batch 2 (12 Soal)
+
+
+
+
+     Soal No 12                                                                                                                     Anti Radikalisme
+
+
+     Anda pengelola media sosial resmi instansi. Sebuah unggahan lama (dibuat pegawai lain, dua tahun
+     lalu) berisi meme yang bisa ditafsirkan menyinggung kelompok etnis tertentu mulai viral dan ramai
+     dikomentari negatif oleh warganet sejak pagi ini. Respons paling tepat adalah… (Anti Radikalisme)
+
+     A. Mengabaikan komentar negatif warganet tersebut karena unggahannya sudah lama dan dianggap
+           tidak relevan lagi.
+     B. Mengunggah permintaan maaf resmi atas nama instansi secara langsung begitu isu tersebut mulai
+           viral pagi ini.
+     C. Menonaktifkan sementara kolom komentar pada unggahan tersebut sesuai prosedur standar
+           penanganan komentar negatif.
+     D. Menyembunyikan sementara unggahan tersebut dari publik, sambil segera
+           berkoordinasi dengan pimpinan menyusun pernyataan klarifikasi resmi.
+     E. Menghapus permanen unggahan tersebut dari akun media sosial instansi begitu menyadari isu
+           mulai viral.
+
+
+         Kunci          D
+         Konstruk       kecepatan merespons isu viral vs kehati-hatian proses klarifikasi resmi sebelum bertindak
+         Poin           A=1 · B=4 S5 · C=2+J4 · D=5 (kunci) · E=3 S3
+         Level          Tinggi
+
+
+
+         PEMBAHASAN
+
+         1. Dilema: isu yang viral perlu direspons cepat sebelum reputasi instansi makin terdampak, tapi tindakan asal hapus
+            atau minta maaf sepihak tanpa arahan pimpinan berisiko keliru atau terkesan menutupi.
+         2. D menutup kutub kecepatan lewat menyembunyikan sementara unggahan (bukan menghapus permanen, langkah
+            cepat dan reversibel) dan kutub kehati-hatian lewat koordinasi segera dengan pimpinan untuk pernyataan klarifikasi
+            resmi yang akan dipublikasikan.
+         3. B dan E sama-sama bertindak cepat. B langsung mengunggah permintaan maaf resmi atas nama instansi begitu isu
+            viral — cepat, tapi tanpa verifikasi konteks atau arahan pimpinan dulu, berisiko pernyataan itu keliru atau tidak
+            sejalan dengan sikap resmi instansi (S5 gagal). E menghapus permanen unggahan begitu menyadari isu viral —
+            cepat menghentikan penyebaran, tapi keputusan menghapus konten publik sepihak bukan wewenang pengelola
+            akun sendirian dan berisiko terkesan menutup-nutupi (S3 gagal).
+         4. Kunci vs B: B mempublikasikan pernyataan resmi tanpa verifikasi/arahan pimpinan dulu; D menyusun pernyataan
+            itu bersama pimpinan sebelum dipublikasikan.
+            Kunci vs E: E menghapus permanen secara sepihak; D hanya menyembunyikan sementara, keputusan akhir
+            menunggu koordinasi dengan pimpinan.
+
+
+
+
+        Disusun mengikuti ENGINE_GENERATE_SOAL_TKP.md v1.1 (Pilar 3: Taksonomi Distraktor 5 Poin + Sumbu Presisi; Pilar 4 no.2 & no.10:
+                          panjang strictly-shorter, nada terkontrol) · Draf untuk verifikasi tim ahli · Batch 2 · 28 Agustus 2026
+
+
+
+
+file:///Users/gustiputuyudawirashana/Downloads/ENGINE%20GENERATE%20SOAL%20TKP/Bank_Soal_TKP_HOTS_12_Batch2.html                                        14/14
+

@@ -13,7 +13,6 @@ from pathlib import Path
 SRC = Path(__file__).resolve().parent
 OUT = SRC.parent
 BUAT_PDF = OUT.parent / 'HANDBOOK TKP D AJIKS AKADEMI/prototipe/buat_pdf.js'
-NODE_PATH = str(Path.home() / '.npm/_npx/7d92d9a2d2ccc630/node_modules')
 VERSI = {'Siswa': 'Versi Siswa', 'Pengajar': 'Versi Pengajar'}
 RATA = 'rata-rata TIU ±86 detik'  # 50,5 menit : 35 soal (Putusan 5)
 # templat AI + ragam lisan (feedback-wording-handbook, root CLAUDE.md), dicek di semua berkas
@@ -139,8 +138,7 @@ def main():
         if '--no-pdf' not in sys.argv and not salah:   # sampul dicetak sebagai satu gambar utuh
             out.write_text(html)
             gambar = f'aset/sampul_datar_{nama}.jpg'
-            subprocess.run(['node', str(OUT / 'scripts/ratakan_sampul.js'), str(out), str(OUT / gambar)], check=True,
-                           env={'NODE_PATH': NODE_PATH, 'PATH': '/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin'})
+            subprocess.run(['node', str(OUT / 'scripts/ratakan_sampul.js'), str(out), str(OUT / gambar)], check=True)
             html = re.sub(r'<section class="cover f">.*?</section>',
                           f'<section class="cover datar"><img src="{gambar}" alt="Sampul Handbook Tes Intelegensia Umum, {label}, Edisi 2026"></section>',
                           html, count=1, flags=re.S)
@@ -151,8 +149,7 @@ def main():
             out.write_text(terisi)
             if '--no-pdf' in sys.argv or salah:
                 break
-            subprocess.run(['node', str(BUAT_PDF), str(out), str(out.with_suffix('.pdf'))], check=True,
-                           env={'NODE_PATH': NODE_PATH, 'PATH': '/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin'})
+            subprocess.run(['node', str(BUAT_PDF), str(out), str(out.with_suffix('.pdf'))], check=True)
             baru = {k: v for k, v in hal_bab(out.with_suffix('.pdf'), judul).items()}
             if baru == hal:
                 break

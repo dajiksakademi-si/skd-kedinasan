@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><title>Paket 2 TKP — Pembahasan</title><style>
+  @page { size: A4; margin: 18mm 16mm 20mm 16mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #1a1a1a;
+    margin: 0;
+  }
+  .cover {
+    page-break-after: always;
+    padding-top: 60mm;
+    text-align: center;
+  }
+  .cover .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 10pt;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #6b6b6b;
+    margin-bottom: 10mm;
+  }
+  .cover h1 {
+    font-size: 26pt;
+    margin: 0 0 6mm 0;
+    color: #111;
+  }
+  .cover .sub {
+    font-size: 12pt;
+    color: #444;
+    margin-bottom: 14mm;
+  }
+  .cover .meta-box {
+    display: inline-block;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6mm 10mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9.5pt;
+    color: #333;
+  }
+  .cover .meta-box div { margin: 1.5mm 0; }
+  .cover .meta-box b { color: #111; }
+  .cover .note {
+    margin-top: 16mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    color: #888;
+    max-width: 120mm;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2.section-title {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 13pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111;
+    border-bottom: 2px solid #111;
+    padding-bottom: 2mm;
+    margin: 0 0 6mm 0;
+  }
+
+  table.summary {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.8pt;
+    margin-bottom: 4mm;
+  }
+  table.summary th, table.summary td {
+    border: 1px solid #ccc;
+    padding: 2mm 2.2mm;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.summary th {
+    background: #f2f2f2;
+    font-weight: 700;
+  }
+  table.summary td.center { text-align: center; }
+
+  .soal {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 9mm;
+    padding-bottom: 7mm;
+    border-bottom: 1px solid #ddd;
+  }
+  .soal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 3mm;
+    break-inside: avoid;
+  }
+  .soal-num {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 11.5pt;
+    color: #111;
+  }
+  .badge {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    padding: 1mm 3mm;
+    border-radius: 10px;
+    color: #fff;
+    white-space: nowrap;
+  }
+  .dim-Profesionalisme { background: #2f5fa8; }
+  .dim-PelayananPublik { background: #1f8a56; }
+  .dim-JejaringKerja { background: #6b3fa0; }
+  .dim-SosialBudaya { background: #c9701d; }
+  .dim-TIK { background: #0f8b8d; }
+  .dim-AntiRadikalisme { background: #b3282d; }
+
+  .stem { margin-bottom: 3mm; text-align: justify; }
+
+  .options { margin: 0 0 4mm 0; padding: 0; list-style: none; }
+  .options li {
+    display: flex;
+    gap: 2.5mm;
+    margin-bottom: 1.6mm;
+    align-items: flex-start;
+  }
+  .opt-letter {
+    flex: 0 0 auto;
+    font-weight: 700;
+    width: 5mm;
+  }
+  .opt-letter.kunci { color: #1f8a56; }
+  .opt-text { flex: 1 1 auto; }
+  .opt-text.kunci { font-weight: 700; }
+
+  .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.6pt;
+    background: #f7f7f7;
+    border-left: 3px solid #111;
+    padding: 2.5mm 3.5mm;
+    margin-bottom: 2.5mm;
+  }
+  .meta div { margin: 0.8mm 0; }
+  .meta .label { font-weight: 700; display: inline-block; width: 22mm; color: #444; }
+
+  .pembahasan {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    background: #fbfbf5;
+    border: 1px solid #e6e2c8;
+    padding: 3mm 4mm;
+  }
+  .pembahasan .ph-title {
+    font-weight: 700;
+    font-size: 8.6pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6b6320;
+    margin-bottom: 1.5mm;
+  }
+  .pembahasan ol { margin: 0; padding-left: 4mm; }
+  .pembahasan li { margin-bottom: 1.3mm; text-align: justify; }
+
+  .footer-note {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    color: #999;
+    text-align: center;
+    margin-top: 10mm;
+  }
+
+  code.sumbu {
+    background: #eee;
+    padding: 0.2mm 1.2mm;
+    border-radius: 3px;
+    font-family: "Courier New", monospace;
+    font-size: 8.2pt;
+  }
+  .pembahasan-siswa { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 9pt; background: #f3f8fb; border: 1px solid #c9dde8; padding: 3mm 4mm; margin-top: 2mm; }
+  .pembahasan-siswa .ph-title { font-weight: 700; font-size: 8.6pt; text-transform: uppercase; color: #2d5a73; margin-bottom: 1.5mm; }
+  .pembahasan-siswa p, .pembahasan-siswa li { margin: 0.8mm 0; text-align: justify; }
+
+  .soal.bahas { page-break-inside: auto; break-inside: auto; }
+  .soal.bahas .soal-head { break-after: avoid; page-break-after: avoid; }
+  .soal.bahas .stem, .soal.bahas .options { break-inside: avoid; }
+  .soal.bahas .stem, .soal.bahas .options { font-size: 10pt; }
+  table.skor td, table.skor th { text-align: center; }
+  .cover { padding-top: 70mm; }
+.duo{display:flex;gap:5mm}.col{flex:1;border:1px solid #ccc;border-radius:4px;padding:3mm 4mm;font-size:9.6pt}.col h4{margin:0 0 2mm;font-family:Helvetica,Arial;font-size:9pt;letter-spacing:1px;text-transform:uppercase}.lama h4{color:#999}.baru{border:2px solid #2f7d4f}.baru h4{color:#2f7d4f}.col ol{padding-left:4.5mm;margin:2mm 0}.col li{margin:1mm 0}.k{font-weight:bold}.n{font-family:Helvetica,Arial;font-size:8pt;color:#666;margin-top:2mm}.mock{font-family:Helvetica,Arial;font-size:8.5pt;color:#b00;text-align:center}</style></head><body><h2 class="section-title">Mockup Wording TKP — Sebelum dan Sesudah</h2><p class="mock">MOCKUP — tema, kunci, dan skor tetap; paket asli belum diubah</p><p>Batas gaya: cerita 25–40 kata, paling banyak 3 kalimat, angka hanya bila menentukan, pilihan 8–12 kata, sebutan sehari-hari.</p><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 1</span><span class="badge">Anti Radikalisme</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Panitia donor darah yang Anda ketuai di halaman rumah sakit daerah dibantu relawan dari sebuah komunitas luar. Siang ini Anda melihat salah satu relawan membagikan selebaran dan formulir pendaftaran kelompok yang menyerukan anggotanya tidak mengakui pemerintah dan menolak membayar pajak. Dua perawat muda sudah mengisi formulir itu. Menurut tata tertib rumah sakit, kegiatan pihak luar di lingkungan rumah sakit diawasi bagian umum. Beberapa pegawai mulai membicarakannya di grup pesan pegawai. Langkah paling tepat adalah&hellip;</p><ol type="A"><li class="">Membiarkan pembagian selebaran karena menghargai kebebasan berpendapat relawan yang sudah membantu acara dengan sukarela. <i>(skor 1)</i></li><li class="k">Menghentikan pembagian selebaran itu, lalu menyerahkan selebaran dan lembar isian kepada bagian umum. <i>(skor 5)</i></li><li class="">Memotret relawan itu, lalu membagikan fotonya ke grup pesan pegawai agar rekan-rekan ikut waspada. <i>(skor 2)</i></li><li class="">Menyimpan selebaran itu sebagai bukti, lalu menyerahkannya ke bagian umum setelah seluruh acara donor darah selesai. <i>(skor 3)</i></li><li class="">Mengeluarkan relawan itu dari area kegiatan sesuai tata tertib rumah sakit tentang kegiatan pihak luar. <i>(skor 4)</i></li></ol><div class="n">Cerita 74 kata · pilihan 13–16 kata · kunci 13 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Saat Anda memimpin kegiatan donor darah di RSUD, seorang relawan dari komunitas luar membagikan selebaran ajakan menolak bayar pajak dan tidak mengakui pemerintah. Dua perawat sudah ikut mengisi formulirnya. Kegiatan pihak luar di rumah sakit diawasi bagian umum. Sikap Anda adalah ....</p><ol type="A"><li class="">Membiarkannya, toh setiap orang bebas berpendapat dan relawan itu sudah membantu. <i>(skor 1)</i></li><li class="k">Menghentikan pembagian selebaran, lalu menyerahkan selebaran dan formulirnya ke bagian umum. <i>(skor 5)</i></li><li class="">Memotret relawan itu, lalu menyebarkan fotonya ke grup pegawai agar waspada. <i>(skor 2)</i></li><li class="">Menyimpan selebaran sebagai bukti untuk diserahkan ke bagian umum usai acara. <i>(skor 3)</i></li><li class="">Meminta relawan itu meninggalkan area kegiatan sesuai tata tertib rumah sakit. <i>(skor 4)</i></li></ol><div class="n">Cerita 42 kata · pilihan 11–11 kata · kunci 11 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 3</span><span class="badge">Profesionalisme</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Aplikasi pesan dipakai relawan desa untuk melaporkan rumah rusak akibat banjir kepada badan penanggulangan bencana daerah. Anda koordinator yang mengirim rekap harian kepada kepala pelaksana setiap pukul 16.00, sedangkan tiga regu piket menulis rekap dengan cara masing-masing. Rekap kemarin dikembalikan karena 14 rumah dihitung dua kali oleh dua regu. Anda sudah dua kali mengingatkan semua regu lewat grup pesan agar lebih teliti. Apa yang Anda lakukan?</p><ol type="A"><li class="k">Menyusun satu format isian rekap untuk ketiga regu, lalu memberlakukannya mulai rekap hari ini. <i>(skor 5)</i></li><li class="">Mengeluarkan relawan yang laporannya sering tidak lengkap dari grup pelaporan di aplikasi pesan agar data lebih rapi. <i>(skor 1)</i></li><li class="">Mengirim rekap hari ini tepat waktu dengan catatan bahwa sebagian angka mungkin masih tercatat ganda. <i>(skor 2)</i></li><li class="">Memakai cara pencatatan baru untuk regu Anda dan kembali mengingatkan regu lain di grup pesan. <i>(skor 3)</i></li><li class="">Membersihkan sendiri angka ganda di rekap hari ini, lalu mengirimkannya kepada kepala pelaksana tepat pukul 16.00. <i>(skor 4)</i></li></ol><div class="n">Cerita 66 kata · pilihan 14–17 kata · kunci 14 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Anda koordinator rekap harian rumah rusak akibat banjir untuk BPBD. Tiga regu piket mencatat dengan cara masing-masing, sehingga rekap kemarin dikembalikan karena ada rumah yang terhitung dua kali, padahal semua regu sudah dua kali diingatkan lewat grup. Apa yang Anda lakukan?</p><ol type="A"><li class="k">Menyiapkan satu format isian untuk ketiga regu, berlaku mulai hari ini. <i>(skor 5)</i></li><li class="">Mengeluarkan relawan yang laporannya sering tidak lengkap dari grup pelaporan. <i>(skor 1)</i></li><li class="">Mengirim rekap tepat waktu dengan catatan sebagian angka mungkin masih ganda. <i>(skor 2)</i></li><li class="">Mengganti cara catat regu Anda sendiri, lalu mengingatkan regu lain sekali lagi. <i>(skor 3)</i></li><li class="">Membersihkan sendiri angka ganda di rekap hari ini sebelum dikirim. <i>(skor 4)</i></li></ol><div class="n">Cerita 41 kata · pilihan 10–12 kata · kunci 11 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 4</span><span class="badge">Pelayanan Publik</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Seorang pelaku usaha keripik datang ke dinas koperasi dan UMKM untuk mendaftar fasilitasi sertifikasi halal gratis berkuota 40 orang, padahal pendaftaran sudah ditutup kemarin. Pengumuman program hanya dipasang di media sosial dinas, dan hari ini sudah lima pelaku usaha desa datang terlambat dengan alasan serupa. Enam pendaftar belum melengkapi berkas, sedangkan batas kelengkapan berkas jatuh lusa. Anda petugas pendaftaran, dan koordinator program duduk satu ruangan dengan Anda. Respons paling tepat adalah&hellip;</p><ol type="A"><li class="">Menjelaskan bahwa pendaftaran sudah tutup, lalu menyarankan pelaku usaha itu menunggu program tahun depan. <i>(skor 1)</i></li><li class="">Menyepakati dengan koordinator agar pelaku usaha keripik ini menggantikan pendaftar yang nanti mengundurkan diri. <i>(skor 3)</i></li><li class="">Mengisi kursi enam pendaftar yang berkasnya belum lengkap dengan pendatang terlambat hari ini. <i>(skor 4)</i></li><li class="k">Menyepakati daftar tunggu menurut urutan datang dengan koordinator, lalu mengisi kursi kosong setelah batas lusa. <i>(skor 5)</i></li><li class="">Menerima berkas pelaku usaha keripik itu karena kasihan dengan janji kursi bila ada pendaftar yang mundur. <i>(skor 2)</i></li></ol><div class="n">Cerita 71 kata · pilihan 13–16 kata · kunci 15 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Seorang pelaku usaha keripik datang mendaftar sertifikasi halal gratis di dinas koperasi, padahal pendaftaran sudah tutup kemarin. Hari ini ia orang kelima yang terlambat karena pengumumannya hanya di media sosial, sementara beberapa pendaftar belum melengkapi berkas sampai batas lusa. Respons Anda sebagai petugas pendaftaran adalah ....</p><ol type="A"><li class="">Menjelaskan pendaftaran sudah tutup dan menyarankannya ikut program tahun depan. <i>(skor 1)</i></li><li class="">Menyepakati dengan koordinator agar ia mengganti pendaftar yang nanti mundur. <i>(skor 3)</i></li><li class="">Memberikan kursi pendaftar yang berkasnya belum lengkap kepada pendatang hari ini. <i>(skor 4)</i></li><li class="k">Menyepakati daftar tunggu urut kedatangan dengan koordinator, diisi setelah batas lusa. <i>(skor 5)</i></li><li class="">Menerima berkasnya karena kasihan, sambil menjanjikan kursi bila ada yang mundur. <i>(skor 2)</i></li></ol><div class="n">Cerita 46 kata · pilihan 10–11 kata · kunci 11 kata</div></div></div></div></body></html>

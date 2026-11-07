@@ -1,0 +1,98 @@
+[
+  {
+    "no": 31,
+    "ditanya": "Pernyataan mana yang membuat kita makin yakin bahwa kecelakaan malam turun karena lampu baru, bukan karena hal lain.",
+    "kalimat_kunci": "lampu penerangan baru itulah yang menurunkan kecelakaan pada malam hari",
+    "cara_kilat": "Kesimpulan sebab-akibat menjadi kuat kalau penyebab lain disingkirkan. Cari opsi yang membuat lampu tinggal sendirian sebagai tersangka.",
+    "langkah": "Soal hanya membandingkan dua tahun: 24 kecelakaan sebelum lampu dipasang, 9 sesudahnya. Angka itu bisa turun karena banyak hal. Misalnya kendaraan yang lewat malam hari jauh berkurang. Jalan yang sepi wajar jarang kecelakaan, ada lampu baru atau tidak. Opsi A menutup kemungkinan itu: jumlah kendaraan malam sama besar di kedua tahun. Bedanya tinggal lampu, dan kesimpulan kepala dinas makin kokoh.",
+    "opsi_gugur": {
+      "B": "Mahal atau murahnya lampu tidak menjelaskan kenapa kecelakaan turun. Topiknya nyambung, tetapi hubungan sebabnya tidak tersentuh.",
+      "C": "Coba baca lagi soalnya. Penurunan dari 24 ke 9 sudah tertulis. Opsi C cuma mengulang fakta itu dengan kata lain, jadi tidak menambah alasan apa pun.",
+      "D": "Banyaknya truk adalah ciri jalan itu, sebelum maupun sesudah lampu dipasang. Keterangan ini tidak membedakan kedua tahun.",
+      "E": "Opsi ini malah berbalik arah. Kalau kecelakaan siang ikut turun hampir sama, padahal siang hari tidak butuh lampu, berarti ada penyebab lain yang bekerja. Kesimpulan kepala dinas justru melemah."
+    },
+    "alasan_kunci": "A, karena dengan jumlah kendaraan malam yang sama, penurunan kecelakaan tidak bisa lagi dijelaskan oleh jalan yang lebih sepi.",
+    "analogi": "Kamu ganti merek pupuk, lalu panen tomat naik. Supaya yakin pupuknya yang berjasa, kamu perlu tahu cuaca dan banyak tanamannya sama dengan musim lalu.",
+    "waspada": "Wajar kalau kamu tergoda opsi C, karena bunyinya paling sejalan dengan kesimpulan. Pernyataan yang sekadar setuju belum tentu memperkuat. Yang memperkuat adalah pernyataan yang menyingkirkan penyebab lain."
+  },
+  {
+    "no": 32,
+    "ditanya": "Kesimpulan apa yang pasti benar kalau kedua premis dianggap benar.",
+    "kalimat_kunci": "lulus uji renang 400 meter",
+    "cara_kilat": "Frasa yang muncul di kedua premis adalah penghubungnya. Susun rantai: penyelam SAR, lalu lulus uji renang, lalu tidak berusia di bawah 18 tahun. Ujung ke ujung: tidak ada penyelam SAR yang berusia di bawah 18 tahun.",
+    "langkah": "Bayangkan tiga lingkaran. Lingkaran penyelam SAR berada utuh di dalam lingkaran peserta yang lulus uji renang (P1). Lingkaran peserta yang lulus itu sama sekali tidak bersentuhan dengan lingkaran orang di bawah 18 tahun (P2). Penyelam SAR terkurung di dalam lingkaran peserta lulus, sehingga mereka juga tidak mungkin menyentuh lingkaran di bawah 18 tahun. Itulah bunyi opsi D.",
+    "opsi_gugur": {
+      "A": "P1 bilang semua penyelam pasti lulus, bukan semua yang lulus pasti penyelam. Bisa saja ada peserta lulus yang tidak pernah jadi penyelam. Arah kalimatnya dibalik.",
+      "B": "Opsi ini bertabrakan dengan rantai tadi. Semua penyelam lulus uji, dan tidak ada yang lulus berusia di bawah 18 tahun. Penyelam di bawah 18 tahun tidak mungkin ada.",
+      "C": "Premis tidak pernah bilang semua orang dewasa lulus uji, apalagi menjadi penyelam. Di sini dua premis dibalik bersamaan.",
+      "E": "P2 hanya bilang peserta di bawah 18 tahun tidak ada yang lulus. Bisa saja mereka ikut uji, lalu gagal. Ikut uji dan lulus uji itu dua hal yang berbeda."
+    },
+    "alasan_kunci": "D, karena penyelam SAR seluruhnya termasuk kelompok yang lulus uji renang, dan kelompok itu tidak berisi orang berusia di bawah 18 tahun.",
+    "analogi": "Semua pemain inti tim sekolahmu sudah lolos tes kesehatan, dan tidak ada yang lolos tes itu sedang cedera. Tanpa memeriksa satu per satu, kamu tahu tidak ada pemain inti yang sedang cedera.",
+    "waspada": "Opsi E paling licin. Kata lulus diam-diam berubah menjadi mengikuti. Baca kata kerjanya pelan-pelan, karena satu kata bisa memindahkan kesimpulan keluar dari premis."
+  },
+  {
+    "no": 33,
+    "ditanya": "Pernyataan mana yang membuat kita ragu bahwa kelas daring malam yang menaikkan nilai.",
+    "kalimat_kunci": "kelas daring malam itulah yang menaikkan nilai siswa",
+    "cara_kilat": "Melemahkan klaim sebab-akibat berarti menunjukkan penyebab lain yang bisa menghasilkan kenaikan yang sama. Cari opsi yang menawarkan tersangka lain.",
+    "langkah": "Nilai naik dari 68 ke 79 dalam satu semester, dan kepala sekolah menunjuk kelas daring malam. Sekarang tanyakan: adakah hal lain di semester itu yang bisa menaikkan nilai tanpa kelas daring? Opsi E menjawabnya. Soal ujiannya diganti dengan soal yang lebih mudah. Dengan soal yang lebih mudah, nilai bisa naik walaupun tidak ada kelas tambahan apa pun. Kenaikan itu tidak lagi bisa diklaim sebagai hasil kelas daring.",
+    "opsi_gugur": {
+      "A": "Kalau sebagian besar siswa rutin ikut, kelas daring makin masuk akal sebagai penyebab. Opsi ini membela kepala sekolah, padahal kamu diminta melemahkan.",
+      "B": "Kenaikan nilai sesudah kelas dibuka sudah ada di soal. Opsi B hanya menceritakan ulang data itu.",
+      "C": "Kelas daring bahasa Inggris tidak berkaitan dengan nilai matematika. Informasinya ada, tetapi tidak menyentuh hubungan kelas daring dengan kenaikan nilai.",
+      "D": "Keluhan orang tua soal jam pulang memang masalah nyata. Yang dipersoalkan adalah jadwalnya, sementara klaim tentang pengaruh kelas pada nilai tetap utuh."
+    },
+    "alasan_kunci": "E, karena soal ujian yang lebih mudah bisa menaikkan nilai tanpa bantuan kelas daring.",
+    "analogi": "Timbanganmu menunjukkan berat turun 3 kg sejak kamu rutin lari pagi. Ternyata timbangannya baru diganti, dan yang baru selalu menunjukkan angka lebih ringan. Larinya belum tentu berjasa.",
+    "waspada": "Opsi D terdengar negatif, jadi mudah dikira melemahkan. Melemahkan bukan berarti menjelekkan programnya. Yang harus digoyang adalah hubungan sebabnya: kelas daring menaikkan nilai."
+  },
+  {
+    "no": 34,
+    "ditanya": "Apa yang pasti terjadi dari tiga premis yang saling menyambung.",
+    "kalimat_kunci": "Tenda darurat tidak berdiri sebelum malam.",
+    "cara_kilat": "P1 dan P2 membentuk satu rantai: gudang dibuka, terpal bisa diambil, tenda berdiri sebelum malam. P3 bilang ujung rantai itu tidak terjadi. Kalau ujungnya gagal, pangkalnya pun tidak terjadi: gudang tidak dibuka.",
+    "langkah": "Gabungkan P1 dan P2: jika gudang dibuka, tenda berdiri sebelum malam. Sekarang coba andaikan gudang dibuka. Relawan bisa mengambil terpal, lalu tenda berdiri sebelum malam. Hasil itu bertentangan dengan P3, jadi andaian tadi keliru. Gudang pasti tidak dibuka. Polanya bisa kamu pakai lagi: kalau A menjamin B, sedangkan B tidak terjadi, A pun tidak terjadi.",
+    "opsi_gugur": {
+      "A": "Persediaan terpal yang habis tidak pernah disebut di premis. Opsi ini mengarang cerita tambahan supaya semua premis tampak cocok.",
+      "C": "Kalau relawan dapat mengambil terpal, P2 memaksa tenda berdiri sebelum malam. Itu bertentangan dengan P3.",
+      "D": "Posko lain tidak ada di premis, dan kata mungkin tidak memberi kepastian. Soal meminta yang pasti benar.",
+      "E": "Tidak berdiri sebelum malam belum tentu berarti berdiri setelah malam. Bisa saja tenda itu tidak berdiri sama sekali."
+    },
+    "alasan_kunci": "B, karena gudang yang dibuka pasti berujung pada tenda yang berdiri sebelum malam, padahal tenda tidak berdiri.",
+    "analogi": "Setiap kali ibumu pulang, motornya pasti terparkir di garasi. Sore ini garasi kosong. Kamu langsung tahu ibumu belum pulang.",
+    "waspada": "Opsi E terasa seperti lawan kata yang wajar. Dalam logika, tidak sebelum malam tidak sama dengan setelah malam. Jangan menambah kejadian yang tidak dinyatakan premis."
+  },
+  {
+    "no": 35,
+    "ditanya": "Pasangan mana yang hubungannya sama dengan higrometer dan kelembapan.",
+    "kalimat_kunci": "HIGROMETER : KELEMBAPAN (alat ukur di depan, besaran yang diukur di belakang)",
+    "cara_kilat": "Buat kalimat penghubung: higrometer adalah alat untuk mengukur kelembapan. Masukkan setiap opsi ke kalimat itu. Yang lolos tanpa dipaksa: amperemeter adalah alat untuk mengukur kuat arus.",
+    "langkah": "Uji satu per satu dengan kalimat yang sama. Barometer mengukur tekanan udara, sedangkan cuaca hanya diperkirakan dari tekanan itu. Termometer mengukur suhu, sedangkan demam adalah keadaan tubuh. Suhu : termometer memasang besaran di depan, urutannya terbalik. Mikroskop dipakai untuk melihat benda kecil, bukan mengukur besaran. Amperemeter mengukur kuat arus listrik, persis seperti higrometer mengukur kelembapan.",
+    "opsi_gugur": {
+      "A": "Barometer memang berhubungan dengan cuaca, tetapi yang diukurnya tekanan udara. Cuaca diramal dari hasil ukur itu. Konsepnya mirip, tapi beda.",
+      "B": "Termometer mengukur suhu. Demam adalah keadaan orang yang suhunya tinggi, bukan besaran yang angkanya dibaca dari alat.",
+      "C": "Isinya benar, tetapi urutannya terbalik: besaran dulu, alat kemudian. Soal memasang alat di depan.",
+      "D": "Mikroskop membantu mata melihat sel, tidak memberi angka ukuran. Hubungannya alat bantu lihat, bukan alat ukur."
+    },
+    "alasan_kunci": "E, karena amperemeter adalah alat untuk mengukur kuat arus, sama dengan higrometer yang mengukur kelembapan.",
+    "analogi": "Seperti meteran jahit dan panjang kain. Meteran tidak mengukur baju, melainkan panjangnya.",
+    "waspada": "Opsi A dan B terasa dekat karena cuaca dan demam akrab dengan alatnya. Periksa apakah kata kedua benar-benar besaran yang angkanya dibaca dari alat itu."
+  },
+  {
+    "no": 36,
+    "ditanya": "Pernyataan mana yang hubungan ciri tubuh dan tujuannya sama dengan kaktus.",
+    "kalimat_kunci": "untuk mengurangi penguapan air",
+    "cara_kilat": "Rumuskan polanya: makhluk hidup memiliki ciri tubuh untuk menghemat air. Cari opsi dengan tujuan yang sama, bukan kata yang sama.",
+    "langkah": "Kaktus hidup di tempat kering. Daunnya berubah menjadi duri supaya air tidak banyak menguap. Intinya: ciri tubuh untuk menghemat air. Unta juga hidup di gurun, dan ginjalnya menghasilkan urin sangat pekat supaya cairan tubuh tidak banyak terbuang. Bagian tubuhnya berbeda, tujuannya sama. Opsi lain punya tujuan lain: melindungi diri, menarik penyerbuk, dan mencari makan.",
+    "opsi_gugur": {
+      "B": "Kata duri memang sama dengan kaktus, tetapi duri landak dipakai untuk melawan pemangsa. Yang dicari tujuannya, bukan kemiripan kata.",
+      "C": "Bau busuk bunga bangkai mengundang serangga penyerbuk. Tujuannya berkembang biak, bukan menghemat air.",
+      "D": "Tempurung kura-kura adalah pelindung tubuh. Tujuannya keamanan.",
+      "E": "Kantong paruh pelikan adalah alat menangkap ikan. Tujuannya mendapatkan makanan."
+    },
+    "alasan_kunci": "A, karena ginjal unta dan duri kaktus sama-sama bekerja menghemat air tubuh.",
+    "analogi": "Dua rumah di daerah kering. Rumah pertama memasang tandon tertutup, rumah kedua memakai keran hemat air. Alatnya beda, maksudnya sama: air jangan cepat habis.",
+    "waspada": "Mata cepat tertarik ke opsi B karena ada kata duri. Di soal analogi kalimat, kata yang sama sering hanya pengalih. Pegang tujuan di kalimat soal, lalu cocokkan tujuannya."
+  }
+]

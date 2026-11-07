@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><title>Paket 1 Soal 1–15 TKP — Lembar Soal</title><style>
+  @page { size: A4; margin: 18mm 16mm 20mm 16mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #1a1a1a;
+    margin: 0;
+  }
+  .cover {
+    page-break-after: always;
+    padding-top: 60mm;
+    text-align: center;
+  }
+  .cover .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 10pt;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #6b6b6b;
+    margin-bottom: 10mm;
+  }
+  .cover h1 {
+    font-size: 26pt;
+    margin: 0 0 6mm 0;
+    color: #111;
+  }
+  .cover .sub {
+    font-size: 12pt;
+    color: #444;
+    margin-bottom: 14mm;
+  }
+  .cover .meta-box {
+    display: inline-block;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6mm 10mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9.5pt;
+    color: #333;
+  }
+  .cover .meta-box div { margin: 1.5mm 0; }
+  .cover .meta-box b { color: #111; }
+  .cover .note {
+    margin-top: 16mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    color: #888;
+    max-width: 120mm;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2.section-title {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 13pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111;
+    border-bottom: 2px solid #111;
+    padding-bottom: 2mm;
+    margin: 0 0 6mm 0;
+  }
+
+  table.summary {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.8pt;
+    margin-bottom: 4mm;
+  }
+  table.summary th, table.summary td {
+    border: 1px solid #ccc;
+    padding: 2mm 2.2mm;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.summary th {
+    background: #f2f2f2;
+    font-weight: 700;
+  }
+  table.summary td.center { text-align: center; }
+
+  .soal {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 9mm;
+    padding-bottom: 7mm;
+    border-bottom: 1px solid #ddd;
+  }
+  .soal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 3mm;
+    break-inside: avoid;
+  }
+  .soal-num {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 11.5pt;
+    color: #111;
+  }
+  .badge {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    padding: 1mm 3mm;
+    border-radius: 10px;
+    color: #fff;
+    white-space: nowrap;
+  }
+  .dim-Profesionalisme { background: #2f5fa8; }
+  .dim-PelayananPublik { background: #1f8a56; }
+  .dim-JejaringKerja { background: #6b3fa0; }
+  .dim-SosialBudaya { background: #c9701d; }
+  .dim-TIK { background: #0f8b8d; }
+  .dim-AntiRadikalisme { background: #b3282d; }
+
+  .stem { margin-bottom: 3mm; text-align: justify; }
+
+  .options { margin: 0 0 4mm 0; padding: 0; list-style: none; }
+  .options li {
+    display: flex;
+    gap: 2.5mm;
+    margin-bottom: 1.6mm;
+    align-items: flex-start;
+  }
+  .opt-letter {
+    flex: 0 0 auto;
+    font-weight: 700;
+    width: 5mm;
+  }
+  .opt-letter.kunci { color: #1f8a56; }
+  .opt-text { flex: 1 1 auto; }
+  .opt-text.kunci { font-weight: 700; }
+
+  .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.6pt;
+    background: #f7f7f7;
+    border-left: 3px solid #111;
+    padding: 2.5mm 3.5mm;
+    margin-bottom: 2.5mm;
+  }
+  .meta div { margin: 0.8mm 0; }
+  .meta .label { font-weight: 700; display: inline-block; width: 22mm; color: #444; }
+
+  .pembahasan {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    background: #fbfbf5;
+    border: 1px solid #e6e2c8;
+    padding: 3mm 4mm;
+  }
+  .pembahasan .ph-title {
+    font-weight: 700;
+    font-size: 8.6pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6b6320;
+    margin-bottom: 1.5mm;
+  }
+  .pembahasan ol { margin: 0; padding-left: 4mm; }
+  .pembahasan li { margin-bottom: 1.3mm; text-align: justify; }
+
+  .footer-note {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    color: #999;
+    text-align: center;
+    margin-top: 10mm;
+  }
+
+  code.sumbu {
+    background: #eee;
+    padding: 0.2mm 1.2mm;
+    border-radius: 3px;
+    font-family: "Courier New", monospace;
+    font-size: 8.2pt;
+  }
+  .pembahasan-siswa { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 9pt; background: #f3f8fb; border: 1px solid #c9dde8; padding: 3mm 4mm; margin-top: 2mm; }
+  .pembahasan-siswa .ph-title { font-weight: 700; font-size: 8.6pt; text-transform: uppercase; color: #2d5a73; margin-bottom: 1.5mm; }
+  .pembahasan-siswa p, .pembahasan-siswa li { margin: 0.8mm 0; text-align: justify; }
+  .pindai{border:2px solid #1f5f8b;border-radius:5px;background:#f2f8fc;padding:3mm 5mm;margin:0 0 4mm;font-family:"Helvetica Neue",Arial,sans-serif;font-size:10pt}
+  .pindai .pt{font-weight:bold;color:#1f5f8b;letter-spacing:1px;text-transform:uppercase;font-size:9.5pt;margin-bottom:2mm}
+  .pindai .pt span{float:right;font-weight:normal;color:#555;text-transform:none;letter-spacing:0}
+  .pindai ol{margin:0;padding-left:5mm}.pindai li{margin:1.5mm 0}
+  .pindai .tanda{margin-top:2.5mm;padding:2mm 3mm;background:#fff6d6;border-left:4px solid #d9a400}
+
+  .soal.bahas { page-break-inside: auto; break-inside: auto; }
+  .soal.bahas .soal-head { break-after: avoid; page-break-after: avoid; }
+  .soal.bahas .stem, .soal.bahas .options { break-inside: avoid; }
+  .soal.bahas .stem, .soal.bahas .options { font-size: 10pt; }
+  table.skor td, table.skor th { text-align: center; }
+  .cover { padding-top: 70mm; }
+</style></head><body>
+<div class="cover"><div class="kicker">D'Ajiks Akademi · SKD Kedinasan</div>
+<h1>Paket 1 Soal 1–15 TKP</h1><div class="sub">Lembar Soal</div>
+<div class="meta-box"><div><b>Subtes</b> Tes Karakteristik Pribadi</div><div><b>Jumlah</b> 15 soal</div></div>
+<div class="note">Pilih satu jawaban yang paling tepat. Setiap pilihan bernilai 1 sampai 5; tidak ada pilihan bernilai 0.</div></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 1</span>
+    <span class="badge dim-TIK">TIK</span>
+  </div><div class="stem">
+    Sebagai operator data SMA, Anda melihat wali kelas mengetik ulang nilai rapor satu per satu sampai larut, dan tetap ada yang salah ketik. Aplikasi rapor punya fitur unggah dari templat, tetapi wali kelas khawatir nilai sekelas bisa salah masuk. Langkah pertama yang Anda ambil adalah&hellip; (TIK)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Mencoba fitur unggah khusus kelas yang sering salah ketik, lalu mengecek hasilnya.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Meminta siswa pengurus kelas membantu mengetik nilai agar wali kelas cepat selesai.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Mengikuti kebiasaan lama karena wali kelas lebih nyaman mengetik nilai sendiri.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menunda fitur unggah sampai semester depan, rapor kali ini tetap diketik manual.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menguji fitur unggah di satu kelas, lalu memperluasnya setelah hasilnya dicocokkan.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 2</span>
+    <span class="badge dim-PelayananPublik">Pelayanan Publik</span>
+  </div><div class="stem">
+    Seorang warga minta salinan arsip tanah lama untuk sidang lusa, padahal pencarian biasanya tiga hari kerja sesuai antrean yang Anda atur. Ia hanya menyebut jadwal sidangnya secara lisan, dan dua pemohon lain juga bertenggat minggu ini. Sikap Anda adalah&hellip; (Pelayanan Publik)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Meminta surat panggilan sidangnya, lalu mendahulukan arsip warga itu hari ini.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Memproses permohonannya sesuai urutan antrean, dengan waktu standar tiga hari kerja.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Meminta bukti tenggat tiap pemohon mendesak, lalu mendahulukan yang paling dekat.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menampung permohonannya untuk dibahas di rapat evaluasi layanan bulan depan.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Mendahulukan siapa pun yang mengaku punya tenggat dekat, mulai dari warga ini.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 3</span>
+    <span class="badge dim-Profesionalisme">Profesionalisme</span>
+  </div><div class="stem">
+    Sebagai staf akademik, Anda harus mengirim rekap kehadiran taruna ke bagian pengasuhan siang ini, dan izin bermalam akhir pekan ditetapkan dari rekap itu. Mesin presensi kosong untuk satu kelas, padahal dosennya mengisi daftar hadir manual dan sebentar lagi selesai mengajar. Langkah paling tepat adalah&hellip; (Profesionalisme)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Meminta daftar hadir manual dari dosen itu, lalu melengkapi data sebelum dikirim.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Menunggu mesin presensi diperbaiki dulu, baru rekapnya dikirim ke bagian pengasuhan.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Mengikuti saran rekan senior agar rekap dikirim sesuai data mesin saja.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Mengirim rekap tepat waktu, dengan catatan data satu kelas menyusul nanti.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Meminta seluruh dosen menandatangani daftar hadir manual, lalu menyusun rekap dari awal.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 4</span>
+    <span class="badge dim-SosialBudaya">Sosial Budaya</span>
+  </div><div class="stem">
+    Menjelang Natal, hampir semua petugas piket terminal yang Anda koordinasikan dibutuhkan, dan rekan-rekan mengusulkan dua petugas yang merayakan Natal diliburkan sepekan. Keduanya hanya butuh libur malam dan hari Natal, sedangkan beberapa bulan lagi giliran rekan lain merayakan Idulfitri. Apa respons Anda? (Sosial Budaya)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Mengambil sendiri seluruh piket malam Natal agar tidak ada rekan yang dirugikan.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Menanyakan kebutuhan tiap petugas di hari besarnya sebagai dasar tukar piket.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Memberi libur malam dan hari Natal kepada keduanya, sesuai permintaan mereka sendiri.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menyetujui usul rekan-rekan meliburkan keduanya sepekan, toh sebagian besar sudah setuju.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menetapkan tukar piket di hari besar tiap agama, dengan jatah libur sepekan.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 5</span>
+    <span class="badge dim-Profesionalisme">Profesionalisme</span>
+  </div><div class="stem">
+    Rekan senior di loket pajak sebelah Anda menerima berkas keberatan tanpa tanda terima bernomor agar antrean cepat, padahal SOP mewajibkannya, dan ia melakukannya sejak Senin. Tadi pagi Anda menyinggungnya lewat candaan, tetapi tak digubris, dan tiga pemohonnya masih menunggu. Apa yang Anda lakukan? (Profesionalisme)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menyinggungnya lagi lewat candaan ringan saat jeda, supaya rekan tidak tersinggung.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Memakai juga cara cepat rekan itu, toh antrean jam sibuk harus lancar.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Mengajak rekan menerbitkan tanda terima tertinggal, lalu menyepakati cara mempercepat antrean.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menerbitkan sendiri tanda terima ketiga berkas tadi, lalu menyerahkannya ke pemohon.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menegur rekan secara empat mata, lalu menyepakati cara mempercepat antrean mulai besok.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 6</span>
+    <span class="badge dim-PelayananPublik">Pelayanan Publik</span>
+  </div><div class="stem">
+    Sebagai petugas verifikasi di dinas pertanian, Anda belum mengecek enam dari puluhan nama penerima bantuan benih ke lapangan, sehingga benihnya tertahan sesuai aturan. Masa tanam mulai sepuluh hari lagi, sedangkan pengecekan lapangan biasanya selesai dalam tiga hari. Langkah paling tepat adalah&hellip; (Pelayanan Publik)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menyarankan keenam petani memakai benih sisa musim lalu milik kelompoknya.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Menelepon keenam petani itu untuk memastikan datanya, agar benih cepat tersalur.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Mencoret keenam nama, lalu meminta kelompok mengajukan ulang musim tanam depan.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Meminta ketua kelompok tani menjamin keenam nama itu lewat surat pernyataan.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Mendatangi sendiri lahan keenam petani itu pekan ini untuk verifikasi.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 7</span>
+    <span class="badge dim-PelayananPublik">Pelayanan Publik</span>
+  </div><div class="stem">
+    Selama musim ujian, pelajar menandai meja ruang baca dengan tas lalu pergi berjam-jam, sehingga lansia dan peneliti sering tak kebagian tempat. Anda koordinator ruang baca yang berwenang mengatur tata tertib, dan penertiban saat ada keluhan tak bertahan begitu petugas pergi. Langkah pertama yang Anda ambil adalah&hellip; (Pelayanan Publik)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menyediakan beberapa meja khusus lansia dan peneliti selama musim ujian ini.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Memberlakukan giliran paling lama tiga jam per meja saat ruang baca penuh.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Mengizinkan pelajar menandai kursi selama musim ujian, yang lain diminta datang pagi.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menertibkan meja bertanda tas setiap kali ada pengunjung yang mengeluh lagi.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menyerahkan urusan kursi pada kesepakatan pengunjung, toh ruang baca milik bersama.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 8</span>
+    <span class="badge dim-Profesionalisme">Profesionalisme</span>
+  </div><div class="stem">
+    Anda staf keuangan kecamatan yang baru ditugasi menyusun laporan dana kelurahan dengan format baru dari kabupaten, tenggatnya tiga hari lagi. Staf yang dulu menyusunnya sudah dimutasi, tetapi masih bisa ditelepon, dan laporan ini wajib dibuat setiap triwulan. Tindakan paling tepat adalah&hellip; (Profesionalisme)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Meminta staf lama membimbing lewat telepon, lalu mencatatnya jadi panduan seksi.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Meminta atasan mengalihkan laporan itu ke staf lain sampai Anda ikut pelatihan.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Mempelajari sendiri format dari kabupaten, lalu langsung mengirim laporannya sebelum tenggat.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Meminta staf yang dimutasi mengerjakan bagian format baru, sisanya Anda selesaikan.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Mengerjakan seluruh laporan seorang diri tanpa mau dibantu rekan seksi.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 9</span>
+    <span class="badge dim-AntiRadikalisme">Anti Radikalisme</span>
+  </div><div class="stem">
+    Saat apel pagi yang Anda pimpin sebagai kepala regu penguji kendaraan, seorang penguji senior berkata sambil tertawa bahwa pemilik kendaraan dari satu suku yang suka membantah "dipersulit ramai-ramai saja, tidak usah pakai aturan". Beberapa penguji muda ikut tertawa. Sikap Anda adalah&hellip; (Anti Radikalisme)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Melaporkan ucapan rekan itu ke kepala balai, biar beliau yang menegur resmi.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Menganggapnya candaan senior agar apel tetap cair, toh nanti bisa diingatkan pribadi.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Menegur ucapan itu di depan apel, dengan penegasan aturan berlaku sama.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menyerahkan pada penguji muda untuk menilai sendiri sikap mana yang pantas ditiru.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menyelesaikan apel dulu, lalu menegur rekan itu empat mata atas sikap bencinya.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 10</span>
+    <span class="badge dim-Profesionalisme">Profesionalisme</span>
+  </div><div class="stem">
+    Sebagai penanggung jawab farmasi puskesmas, Anda didatangi seorang ibu karena label sirup anaknya tertulis 3 &times; 2 sendok, padahal resepnya 3 &times; 1. Label itu ditulis rekan yang yakin sudah teliti, dan ia masih menulis label untuk puluhan resep antrean. Langkah paling tepat adalah&hellip; (Profesionalisme)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Mengusulkan tambahan tenaga farmasi ke kepala puskesmas agar label tidak menumpuk.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Membetulkan label sirup itu, lalu menunggu antrean sepi baru bicara dengan rekan.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Membetulkan label itu, lalu mencocokkan tiap label dengan resep sebelum diserahkan.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menulis ulang label sirup itu, lalu meminta rekan lebih cermat menulis berikutnya.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menyimpulkan rekan kelelahan, lalu mengambil alih sendiri seluruh label resep antrean.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 11</span>
+    <span class="badge dim-JejaringKerja">Jejaring Kerja</span>
+  </div><div class="stem">
+    Belasan keluarga lansia telantar mengeluh mengulang cerita sama karena dikunjungi dua kali sepekan: oleh Anda dari bidang rehabilitasi sosial, dan oleh tim bidang perlindungan sosial. Data tim itu diperbarui pusat bulan lalu, sedangkan data Anda dari pendataan tahun lalu. Respons paling tepat adalah&hellip; (Jejaring Kerja)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Melapor ke atasan bahwa bidang sebelah tidak mau berbagi jadwal kunjungan.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Meminta keluarga itu bersabar, jadwal kunjungan bidang Anda tetap jalan seperti biasa.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Menyerahkan daftar kunjungan Anda ke bidang itu sebagai acuan jadwal bersama.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menyepakati kunjungan gabungan dengan bidang itu, khusus untuk keluarga yang sudah mengeluh.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Mencocokkan daftar keluarga kedua bidang lebih dulu, baru menyusun jadwal kunjungan gabungan.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 12</span>
+    <span class="badge dim-PelayananPublik">Pelayanan Publik</span>
+  </div><div class="stem">
+    Sebagai koordinator loket perekaman KTP-el yang berwenang mengatur antrean, Anda menerima lima berkas titipan tetangga rekan sekantor saat kuota hampir habis; katanya mereka sudah ambil nomor, tetapi kartunya tak dibawa. Bulan lalu warga memprotes titipan serupa di loket lain. Apa tindakan paling tepat? (Pelayanan Publik)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Memproses kelima titipan lebih dulu, lalu meminta rekan tidak mengulanginya lagi.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Mengembalikan kelima berkas ke rekan itu dengan menunjuk aturan antrean yang tertempel.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Menunggu arahan tertulis kepala dinas soal kelima titipan itu sebelum memprosesnya.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Memasukkan kelima berkas ke antrean umum, dicocokkan dengan nomor seperti lainnya.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Melarang titipan di seluruh loket, lalu memproses kelima berkas atas pengakuan rekan.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 13</span>
+    <span class="badge dim-TIK">TIK</span>
+  </div><div class="stem">
+    Sebagai penyuluh dinas pertanian, Anda merekap proposal kelompok tani bertenggat tiga hari lagi, lalu antivirus memberi peringatan saat flashdisk satu kelompok dicolokkan. Dinas punya pengelola jaringan untuk perangkat bermasalah, dan bulan lalu komputer bidang sebelah tetap tertular walau dibersihkan sendiri. Apa respons Anda? (TIK)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Memperbarui antivirus komputer Anda ke versi terbaru, lalu lanjut merekap kelompok lain.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Membawa flashdisk itu ke petugas jaringan, lalu mengabari kelompoknya soal pemeriksaan.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Menanyakan ke rekan satu bidang apakah peringatan semacam itu memang biasa muncul.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Mengembalikan flashdisk itu ke kelompok tani agar mereka bersihkan sendiri dulu.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Meminta kelompok itu mengirim ulang lewat surel, flashdisknya disimpan tanpa dicolokkan lagi.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 14</span>
+    <span class="badge dim-Profesionalisme">Profesionalisme</span>
+  </div><div class="stem">
+    Rekan instruktur las di BLK Anda kerap meninggalkan peserta memakai mesin las tanpa pendamping. Dua kali Anda tegur langsung, ia tetap mengulang, dan kemarin seorang peserta luka bakar ringan. Tugas instruktur diatur kepala seksi; angkatan ini masih berjalan dua bulan. Apa tindakan paling tepat? (Profesionalisme)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Melaporkan kebiasaan itu ke kepala seksi, lengkap dengan catatan tanggal tiap kejadian.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Mencatat tiap kali rekan pergi, untuk dilaporkan bila ada peserta terluka lagi.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Menjaga hubungan baik dengan rekan, urusan kelas praktik diserahkan pada kesadarannya.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menegur rekan itu sekali lagi, lebih keras, di depan para peserta las.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menggantikan rekan mengawasi kelas las setiap kali ia meninggalkan peserta di bengkel.</span></li>
+  </ul></div>
+<div class="soal"><div class="soal-head">
+    <span class="soal-num">Soal No 15</span>
+    <span class="badge dim-AntiRadikalisme">Anti Radikalisme</span>
+  </div><div class="stem">
+    Pamflet yang menuding satu kelompok agama sebagai ancaman negara tertempel di ruang ganti perawat, dan fotonya beredar di grup ruangan. Anda kepala ruang yang mengelola papan pengumuman serta grup itu, dan dua perawat dari kelompok tersebut mengaku tidak nyaman. Sikap Anda adalah&hellip; (Anti Radikalisme)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Melaporkan pamflet itu ke kepala bidang keperawatan, lalu menunggu keputusan tertulisnya.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Menahan diri berkomentar di grup, toh pamflet itu bukan urusan pelayanan pasien.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Mencari tahu dulu siapa penempelnya, baru meminta fotonya dihapus dari grup.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Mencopot pamflet, menghapus fotonya dari grup, lalu menemui kedua perawat itu.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menghapus foto pamflet dari grup, tapi pamfletnya dibiarkan agar suasana tak tegang.</span></li>
+  </ul></div>
+
+</body></html>

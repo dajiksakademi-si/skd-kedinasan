@@ -1,0 +1,1905 @@
+{
+  "versi": "blueprint TKP v1 (engine v1.3)",
+  "slots": [
+    {
+      "no": 1,
+      "dimensi": "Anti Radikalisme",
+      "level": "Tinggi",
+      "kunci": "B",
+      "poin": {
+        "B": 5,
+        "A": 1,
+        "C": 2,
+        "D": 3,
+        "E": 4
+      },
+      "sumbu": {
+        "poin3": "S1",
+        "poin4": "S4"
+      },
+      "jebakan": {
+        "kode": "J4",
+        "poin": 4,
+        "huruf": "E"
+      },
+      "kata": {
+        "D": 16,
+        "E": 15,
+        "C": 14,
+        "A": 14,
+        "B": 13
+      },
+      "duaLangkah": [
+        "B",
+        "C",
+        "D"
+      ],
+      "poin1": "e nilai sah jadi dalih",
+      "penutup": "Langkah paling tepat adalah...",
+      "latar": "rumah sakit daerah",
+      "jangkar": false,
+      "mekanisme": "lapor/serahkan ke pihak berwenang",
+      "sepakatPengecoh": null,
+      "pembuka": "Panitia",
+      "pasangan": null,
+      "tanggaAR": "ajakan/tindakan nyata",
+      "tanggaTIK": false
+    },
+    {
+      "no": 2,
+      "dimensi": "Sosial Budaya",
+      "level": "Tinggi",
+      "kunci": "D",
+      "poin": {
+        "D": 5,
+        "A": 1,
+        "E": 2,
+        "C": 3,
+        "B": 4
+      },
+      "sumbu": {
+        "poin3": "S1",
+        "poin4": "S3"
+      },
+      "jebakan": {
+        "kode": "J4",
+        "poin": 2,
+        "huruf": "E"
+      },
+      "kata": {
+        "C": 17,
+        "D": 16,
+        "B": 15,
+        "E": 15,
+        "A": 14
+      },
+      "duaLangkah": [],
+      "poin1": "pasif",
+      "penutup": "Apa respons Anda?",
+      "latar": "balai latihan kerja",
+      "jangkar": true,
+      "mekanisme": "sepakat",
+      "sepakatPengecoh": 4,
+      "pembuka": "Pukul",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 3,
+      "dimensi": "Profesionalisme",
+      "level": "Sangat Tinggi",
+      "kunci": "A",
+      "poin": {
+        "A": 5,
+        "B": 1,
+        "C": 2,
+        "D": 3,
+        "E": 4
+      },
+      "sumbu": {
+        "poin3": "S2",
+        "poin4": "S4"
+      },
+      "jebakan": {
+        "kode": "J6",
+        "poin": 3,
+        "huruf": "D"
+      },
+      "kata": {
+        "B": 17,
+        "E": 16,
+        "C": 15,
+        "D": 15,
+        "A": 14
+      },
+      "duaLangkah": [
+        "A",
+        "E"
+      ],
+      "poin1": "f mengucilkan",
+      "penutup": "Apa yang Anda lakukan?",
+      "latar": "badan penanggulangan bencana daerah",
+      "jangkar": true,
+      "mekanisme": "aturan/format tertulis",
+      "sepakatPengecoh": null,
+      "pembuka": "Aplikasi",
+      "pasangan": 20,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 4,
+      "dimensi": "Pelayanan Publik",
+      "level": "Sangat Tinggi",
+      "kunci": "D",
+      "poin": {
+        "D": 5,
+        "A": 1,
+        "E": 2,
+        "B": 3,
+        "C": 4
+      },
+      "sumbu": {
+        "poin3": "S2",
+        "poin4": "S1"
+      },
+      "jebakan": {
+        "kode": "J5",
+        "poin": 4,
+        "huruf": "C"
+      },
+      "kata": {
+        "E": 16,
+        "D": 15,
+        "A": 14,
+        "B": 14,
+        "C": 13
+      },
+      "duaLangkah": [
+        "A",
+        "D"
+      ],
+      "poin1": "pasif",
+      "penutup": "Respons paling tepat adalah...",
+      "latar": "dinas koperasi dan UMKM",
+      "jangkar": true,
+      "mekanisme": "sepakat",
+      "sepakatPengecoh": 3,
+      "pembuka": "Seorang",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 5,
+      "dimensi": "Sosial Budaya",
+      "level": "Tinggi",
+      "kunci": "B",
+      "poin": {
+        "B": 5,
+        "D": 1,
+        "A": 2,
+        "E": 3,
+        "C": 4
+      },
+      "sumbu": {
+        "poin3": "S4",
+        "poin4": "S5"
+      },
+      "jebakan": {
+        "kode": "J5",
+        "poin": 2,
+        "huruf": "A"
+      },
+      "kata": {
+        "E": 18,
+        "A": 17,
+        "C": 16,
+        "D": 16,
+        "B": 15
+      },
+      "duaLangkah": [],
+      "poin1": "d berkorban buta",
+      "penutup": "Apa tindakan paling tepat?",
+      "latar": "mal pelayanan publik",
+      "jangkar": false,
+      "mekanisme": "ubah cara/sumber kerja",
+      "sepakatPengecoh": null,
+      "pembuka": "Beberapa",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 6,
+      "dimensi": "TIK",
+      "level": "Sangat Tinggi",
+      "kunci": "E",
+      "poin": {
+        "E": 5,
+        "A": 1,
+        "D": 2,
+        "B": 3,
+        "C": 4
+      },
+      "sumbu": {
+        "poin3": "S3",
+        "poin4": "S4"
+      },
+      "jebakan": {
+        "kode": "J2",
+        "poin": 4,
+        "huruf": "C"
+      },
+      "kata": {
+        "E": 19,
+        "B": 18,
+        "C": 17,
+        "D": 17,
+        "A": 16
+      },
+      "duaLangkah": [],
+      "poin1": "pasif",
+      "penutup": "Sikap Anda adalah...",
+      "latar": "humas instansi",
+      "jangkar": true,
+      "mekanisme": "aturan/format tertulis",
+      "sepakatPengecoh": null,
+      "pembuka": "Anda",
+      "pasangan": 19,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 7,
+      "dimensi": "Jejaring Kerja",
+      "level": "Tinggi",
+      "kunci": "C",
+      "poin": {
+        "C": 5,
+        "B": 1,
+        "E": 2,
+        "D": 3,
+        "A": 4
+      },
+      "sumbu": {
+        "poin3": "S1",
+        "poin4": "S5"
+      },
+      "jebakan": {
+        "kode": "J4",
+        "poin": 4,
+        "huruf": "A"
+      },
+      "kata": {
+        "B": 19,
+        "A": 18,
+        "E": 17,
+        "C": 17,
+        "D": 16
+      },
+      "duaLangkah": [],
+      "poin1": "b sibuk di samping masalah",
+      "penutup": "Apa respons Anda?",
+      "latar": "dinas pariwisata",
+      "jangkar": false,
+      "mekanisme": "tegur/bicara langsung",
+      "sepakatPengecoh": null,
+      "pembuka": "Tim",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 8,
+      "dimensi": "Pelayanan Publik",
+      "level": "Sangat Tinggi",
+      "kunci": "C",
+      "poin": {
+        "C": 5,
+        "A": 1,
+        "E": 2,
+        "B": 3,
+        "D": 4
+      },
+      "sumbu": {
+        "poin3": "S3",
+        "poin4": "S2"
+      },
+      "jebakan": {
+        "kode": "J1",
+        "poin": 2,
+        "huruf": "E"
+      },
+      "kata": {
+        "B": 19,
+        "E": 18,
+        "A": 17,
+        "D": 17,
+        "C": 16
+      },
+      "duaLangkah": [
+        "C",
+        "D"
+      ],
+      "poin1": "c bagi rata",
+      "penutup": "Respons paling tepat adalah...",
+      "latar": "dinas lingkungan hidup",
+      "jangkar": true,
+      "mekanisme": "ubah cara/sumber kerja",
+      "sepakatPengecoh": null,
+      "pembuka": "Laporan",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 9,
+      "dimensi": "Anti Radikalisme",
+      "level": "Tinggi",
+      "kunci": "B",
+      "poin": {
+        "B": 5,
+        "A": 1,
+        "D": 2,
+        "E": 3,
+        "C": 4
+      },
+      "sumbu": {
+        "poin3": "S5",
+        "poin4": "S2"
+      },
+      "jebakan": {
+        "kode": "J3",
+        "poin": 2,
+        "huruf": "D"
+      },
+      "kata": {
+        "E": 18,
+        "A": 17,
+        "D": 16,
+        "B": 16,
+        "C": 15
+      },
+      "duaLangkah": [],
+      "poin1": "a lempar beban",
+      "penutup": "Langkah paling tepat adalah...",
+      "latar": "dinas perdagangan",
+      "jangkar": true,
+      "mekanisme": "tegur/bicara langsung",
+      "sepakatPengecoh": null,
+      "pembuka": "Saat",
+      "pasangan": null,
+      "tanggaAR": "ucapan/candaan",
+      "tanggaTIK": false
+    },
+    {
+      "no": 10,
+      "dimensi": "TIK",
+      "level": "Sangat Tinggi",
+      "kunci": "B",
+      "poin": {
+        "B": 5,
+        "E": 1,
+        "D": 2,
+        "C": 3,
+        "A": 4
+      },
+      "sumbu": {
+        "poin3": "S5",
+        "poin4": "S3"
+      },
+      "jebakan": {
+        "kode": "J4",
+        "poin": 2,
+        "huruf": "D"
+      },
+      "kata": {
+        "B": 19,
+        "A": 18,
+        "D": 17,
+        "C": 17,
+        "E": 16
+      },
+      "duaLangkah": [
+        "B",
+        "D",
+        "E"
+      ],
+      "poin1": "pasif",
+      "penutup": "Sikap Anda adalah...",
+      "latar": "badan keuangan daerah",
+      "jangkar": true,
+      "mekanisme": "verifikasi/cek",
+      "sepakatPengecoh": null,
+      "pembuka": "Dua",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": true
+    },
+    {
+      "no": 11,
+      "dimensi": "Jejaring Kerja",
+      "level": "Sangat Tinggi",
+      "kunci": "A",
+      "poin": {
+        "A": 5,
+        "C": 1,
+        "B": 2,
+        "E": 3,
+        "D": 4
+      },
+      "sumbu": {
+        "poin3": "S5",
+        "poin4": "S3"
+      },
+      "jebakan": {
+        "kode": "J3",
+        "poin": 2,
+        "huruf": "B"
+      },
+      "kata": {
+        "C": 19,
+        "A": 18,
+        "D": 17,
+        "B": 17,
+        "E": 16
+      },
+      "duaLangkah": [
+        "A",
+        "D"
+      ],
+      "poin1": "pasif",
+      "penutup": "Tindakan paling tepat adalah...",
+      "latar": "dinas sosial",
+      "jangkar": false,
+      "mekanisme": "jadwal/giliran/urutan",
+      "sepakatPengecoh": null,
+      "pembuka": "Sebuah",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 12,
+      "dimensi": "Profesionalisme",
+      "level": "Sangat Tinggi",
+      "kunci": "A",
+      "poin": {
+        "A": 5,
+        "C": 1,
+        "D": 2,
+        "E": 3,
+        "B": 4
+      },
+      "sumbu": {
+        "poin3": "S2",
+        "poin4": "S4"
+      },
+      "jebakan": {
+        "kode": "J3",
+        "poin": 3,
+        "huruf": "E"
+      },
+      "kata": {
+        "D": 18,
+        "A": 17,
+        "E": 16,
+        "B": 16,
+        "C": 15
+      },
+      "duaLangkah": [
+        "B"
+      ],
+      "poin1": "b sibuk di samping masalah",
+      "penutup": "Apa yang Anda lakukan?",
+      "latar": "sekolah menengah",
+      "jangkar": false,
+      "mekanisme": "jadwal/giliran/urutan",
+      "sepakatPengecoh": null,
+      "pembuka": "Pagi",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 13,
+      "dimensi": "Profesionalisme",
+      "level": "Tinggi",
+      "kunci": "D",
+      "poin": {
+        "D": 5,
+        "B": 1,
+        "A": 2,
+        "E": 3,
+        "C": 4
+      },
+      "sumbu": {
+        "poin3": "S5",
+        "poin4": "S2"
+      },
+      "jebakan": {
+        "kode": "J4",
+        "poin": 4,
+        "huruf": "C"
+      },
+      "kata": {
+        "C": 15,
+        "D": 14,
+        "E": 13,
+        "A": 13,
+        "B": 12
+      },
+      "duaLangkah": [
+        "C"
+      ],
+      "poin1": "f mengucilkan",
+      "penutup": "Langkah pertama yang Anda ambil adalah...",
+      "latar": "dinas pekerjaan umum",
+      "jangkar": false,
+      "mekanisme": "pertemukan/koordinasi pihak",
+      "sepakatPengecoh": null,
+      "pembuka": "Seorang",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 14,
+      "dimensi": "TIK",
+      "level": "Tinggi",
+      "kunci": "D",
+      "poin": {
+        "D": 5,
+        "A": 1,
+        "E": 2,
+        "C": 3,
+        "B": 4
+      },
+      "sumbu": {
+        "poin3": "S3",
+        "poin4": "S5"
+      },
+      "jebakan": {
+        "kode": "J6",
+        "poin": 2,
+        "huruf": "E"
+      },
+      "kata": {
+        "A": 15,
+        "B": 14,
+        "E": 13,
+        "D": 13,
+        "C": 12
+      },
+      "duaLangkah": [
+        "C",
+        "D"
+      ],
+      "poin1": "c bagi rata",
+      "penutup": "Respons paling tepat adalah...",
+      "latar": "dinas pendidikan",
+      "jangkar": false,
+      "mekanisme": "pertemukan/koordinasi pihak",
+      "sepakatPengecoh": null,
+      "pembuka": "Saat",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 15,
+      "dimensi": "Pelayanan Publik",
+      "level": "Tinggi",
+      "kunci": "B",
+      "poin": {
+        "B": 5,
+        "D": 1,
+        "C": 2,
+        "A": 3,
+        "E": 4
+      },
+      "sumbu": {
+        "poin3": "S3",
+        "poin4": "S4"
+      },
+      "jebakan": {
+        "kode": "J2",
+        "poin": 4,
+        "huruf": "E"
+      },
+      "kata": {
+        "A": 15,
+        "C": 14,
+        "D": 13,
+        "E": 13,
+        "B": 12
+      },
+      "duaLangkah": [
+        "C",
+        "D"
+      ],
+      "poin1": "pasif",
+      "penutup": "Langkah paling tepat adalah...",
+      "latar": "unit pengadaan barang/jasa",
+      "jangkar": false,
+      "mekanisme": "tegur/bicara langsung",
+      "sepakatPengecoh": null,
+      "pembuka": "Pekan",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 16,
+      "dimensi": "Anti Radikalisme",
+      "level": "Sangat Tinggi",
+      "kunci": "E",
+      "poin": {
+        "E": 5,
+        "B": 1,
+        "C": 2,
+        "D": 3,
+        "A": 4
+      },
+      "sumbu": {
+        "poin3": "S1",
+        "poin4": "S4"
+      },
+      "jebakan": {
+        "kode": "J2",
+        "poin": 4,
+        "huruf": "A"
+      },
+      "kata": {
+        "B": 16,
+        "C": 15,
+        "A": 14,
+        "D": 14,
+        "E": 13
+      },
+      "duaLangkah": [
+        "C",
+        "E"
+      ],
+      "poin1": "a lempar beban",
+      "penutup": "Sikap Anda adalah...",
+      "latar": "inspektorat daerah",
+      "jangkar": false,
+      "mekanisme": "tahan/batasi sementara",
+      "sepakatPengecoh": null,
+      "pembuka": "Atasan",
+      "pasangan": null,
+      "tanggaAR": "konten menyebar",
+      "tanggaTIK": false
+    },
+    {
+      "no": 17,
+      "dimensi": "Profesionalisme",
+      "level": "Tinggi",
+      "kunci": "C",
+      "poin": {
+        "C": 5,
+        "A": 1,
+        "D": 2,
+        "B": 3,
+        "E": 4
+      },
+      "sumbu": {
+        "poin3": "S2",
+        "poin4": "S3"
+      },
+      "jebakan": {
+        "kode": "J5",
+        "poin": 3,
+        "huruf": "B"
+      },
+      "kata": {
+        "D": 19,
+        "C": 18,
+        "B": 17,
+        "A": 17,
+        "E": 16
+      },
+      "duaLangkah": [],
+      "poin1": "d berkorban buta",
+      "penutup": "Apa tindakan paling tepat?",
+      "latar": "unit TI instansi",
+      "jangkar": false,
+      "mekanisme": "verifikasi/cek",
+      "sepakatPengecoh": null,
+      "pembuka": "Hampir",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 18,
+      "dimensi": "Sosial Budaya",
+      "level": "Sangat Tinggi",
+      "kunci": "C",
+      "poin": {
+        "C": 5,
+        "A": 1,
+        "D": 2,
+        "E": 3,
+        "B": 4
+      },
+      "sumbu": {
+        "poin3": "S2",
+        "poin4": "S1"
+      },
+      "jebakan": {
+        "kode": "J4",
+        "poin": 3,
+        "huruf": "E"
+      },
+      "kata": {
+        "C": 14,
+        "D": 13,
+        "E": 12,
+        "B": 12,
+        "A": 11
+      },
+      "duaLangkah": [
+        "A",
+        "C",
+        "E"
+      ],
+      "poin1": "pasif",
+      "penutup": "Langkah pertama yang Anda ambil adalah...",
+      "latar": "dinas pariwisata",
+      "jangkar": true,
+      "mekanisme": "lapor/serahkan ke pihak berwenang",
+      "sepakatPengecoh": null,
+      "pembuka": "Rapat",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 19,
+      "dimensi": "TIK",
+      "level": "Tinggi",
+      "kunci": "A",
+      "poin": {
+        "A": 5,
+        "C": 1,
+        "E": 2,
+        "B": 3,
+        "D": 4
+      },
+      "sumbu": {
+        "poin3": "S3",
+        "poin4": "S2"
+      },
+      "jebakan": {
+        "kode": "J2",
+        "poin": 2,
+        "huruf": "E"
+      },
+      "kata": {
+        "E": 16,
+        "B": 15,
+        "A": 14,
+        "C": 14,
+        "D": 13
+      },
+      "duaLangkah": [
+        "A",
+        "E"
+      ],
+      "poin1": "e nilai sah jadi dalih",
+      "penutup": "Langkah paling tepat adalah...",
+      "latar": "dinas perikanan",
+      "jangkar": true,
+      "mekanisme": "jadwal/giliran/urutan",
+      "sepakatPengecoh": null,
+      "pembuka": "Warga",
+      "pasangan": 6,
+      "tanggaAR": null,
+      "tanggaTIK": true
+    },
+    {
+      "no": 20,
+      "dimensi": "Profesionalisme",
+      "level": "Tinggi",
+      "kunci": "E",
+      "poin": {
+        "E": 5,
+        "B": 1,
+        "C": 2,
+        "A": 3,
+        "D": 4
+      },
+      "sumbu": {
+        "poin3": "S3",
+        "poin4": "S4"
+      },
+      "jebakan": {
+        "kode": "J1",
+        "poin": 4,
+        "huruf": "D"
+      },
+      "kata": {
+        "E": 15,
+        "B": 14,
+        "A": 13,
+        "C": 13,
+        "D": 12
+      },
+      "duaLangkah": [
+        "A",
+        "B",
+        "E"
+      ],
+      "poin1": "pasif",
+      "penutup": "Langkah pertama yang Anda ambil adalah...",
+      "latar": "badan keuangan daerah",
+      "jangkar": true,
+      "mekanisme": "tahan/batasi sementara",
+      "sepakatPengecoh": null,
+      "pembuka": "Sore",
+      "pasangan": 3,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 21,
+      "dimensi": "Sosial Budaya",
+      "level": "Sangat Tinggi",
+      "kunci": "A",
+      "poin": {
+        "A": 5,
+        "B": 1,
+        "E": 2,
+        "D": 3,
+        "C": 4
+      },
+      "sumbu": {
+        "poin3": "S2",
+        "poin4": "S1"
+      },
+      "jebakan": {
+        "kode": "J4",
+        "poin": 4,
+        "huruf": "C"
+      },
+      "kata": {
+        "E": 17,
+        "C": 16,
+        "D": 15,
+        "A": 15,
+        "B": 14
+      },
+      "duaLangkah": [],
+      "poin1": "c bagi rata",
+      "penutup": "Apa respons Anda?",
+      "latar": "inspektorat daerah",
+      "jangkar": false,
+      "mekanisme": "jadwal/giliran/urutan",
+      "sepakatPengecoh": null,
+      "pembuka": "Rekan",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 22,
+      "dimensi": "Pelayanan Publik",
+      "level": "Sangat Tinggi",
+      "kunci": "D",
+      "poin": {
+        "D": 5,
+        "B": 1,
+        "E": 2,
+        "A": 3,
+        "C": 4
+      },
+      "sumbu": {
+        "poin3": "S5",
+        "poin4": "S2"
+      },
+      "jebakan": {
+        "kode": "J1",
+        "poin": 2,
+        "huruf": "E"
+      },
+      "kata": {
+        "B": 17,
+        "A": 16,
+        "C": 15,
+        "E": 15,
+        "D": 14
+      },
+      "duaLangkah": [
+        "A",
+        "B"
+      ],
+      "poin1": "pasif",
+      "penutup": "Respons paling tepat adalah...",
+      "latar": "dinas kesehatan",
+      "jangkar": true,
+      "mekanisme": "tegur/bicara langsung",
+      "sepakatPengecoh": null,
+      "pembuka": "Antrean",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 23,
+      "dimensi": "Jejaring Kerja",
+      "level": "Sangat Tinggi",
+      "kunci": "C",
+      "poin": {
+        "C": 5,
+        "B": 1,
+        "A": 2,
+        "E": 3,
+        "D": 4
+      },
+      "sumbu": {
+        "poin3": "S5",
+        "poin4": "S4"
+      },
+      "jebakan": {
+        "kode": "J6",
+        "poin": 3,
+        "huruf": "E"
+      },
+      "kata": {
+        "D": 19,
+        "A": 18,
+        "B": 17,
+        "C": 17,
+        "E": 16
+      },
+      "duaLangkah": [
+        "B",
+        "E"
+      ],
+      "poin1": "pasif",
+      "penutup": "Tindakan paling tepat adalah...",
+      "latar": "kampus kedinasan",
+      "jangkar": false,
+      "mekanisme": "sarana pengganti",
+      "sepakatPengecoh": null,
+      "pembuka": "Pagi",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 24,
+      "dimensi": "Anti Radikalisme",
+      "level": "Sangat Tinggi",
+      "kunci": "E",
+      "poin": {
+        "E": 5,
+        "B": 1,
+        "D": 2,
+        "A": 3,
+        "C": 4
+      },
+      "sumbu": {
+        "poin3": "S1",
+        "poin4": "S4"
+      },
+      "jebakan": {
+        "kode": "J5",
+        "poin": 3,
+        "huruf": "A"
+      },
+      "kata": {
+        "C": 15,
+        "E": 14,
+        "B": 13,
+        "A": 13,
+        "D": 12
+      },
+      "duaLangkah": [
+        "B"
+      ],
+      "poin1": "pasif",
+      "penutup": "Apa yang Anda lakukan?",
+      "latar": "dinas lingkungan hidup",
+      "jangkar": false,
+      "mekanisme": "verifikasi/cek",
+      "sepakatPengecoh": null,
+      "pembuka": "Pemohon",
+      "pasangan": 31,
+      "tanggaAR": "kabar dari pihak lain",
+      "tanggaTIK": false
+    },
+    {
+      "no": 25,
+      "dimensi": "Pelayanan Publik",
+      "level": "Tinggi",
+      "kunci": "C",
+      "poin": {
+        "C": 5,
+        "E": 1,
+        "B": 2,
+        "D": 3,
+        "A": 4
+      },
+      "sumbu": {
+        "poin3": "S1",
+        "poin4": "S4"
+      },
+      "jebakan": {
+        "kode": "J1",
+        "poin": 4,
+        "huruf": "A"
+      },
+      "kata": {
+        "B": 15,
+        "E": 14,
+        "C": 13,
+        "D": 13,
+        "A": 12
+      },
+      "duaLangkah": [
+        "A",
+        "C"
+      ],
+      "poin1": "pasif",
+      "penutup": "Sikap Anda adalah...",
+      "latar": "dinas pendidikan",
+      "jangkar": false,
+      "mekanisme": "aturan/format tertulis",
+      "sepakatPengecoh": null,
+      "pembuka": "Petugas",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 26,
+      "dimensi": "Jejaring Kerja",
+      "level": "Tinggi",
+      "kunci": "D",
+      "poin": {
+        "D": 5,
+        "E": 1,
+        "B": 2,
+        "C": 3,
+        "A": 4
+      },
+      "sumbu": {
+        "poin3": "S4",
+        "poin4": "S2"
+      },
+      "jebakan": {
+        "kode": "J3",
+        "poin": 3,
+        "huruf": "C"
+      },
+      "kata": {
+        "B": 14,
+        "D": 13,
+        "E": 12,
+        "A": 12,
+        "C": 11
+      },
+      "duaLangkah": [
+        "C",
+        "D",
+        "E"
+      ],
+      "poin1": "pasif",
+      "penutup": "Tindakan paling tepat adalah...",
+      "latar": "kantor arsip daerah",
+      "jangkar": true,
+      "mekanisme": "ubah cara/sumber kerja",
+      "sepakatPengecoh": null,
+      "pembuka": "Sore",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 27,
+      "dimensi": "Profesionalisme",
+      "level": "Sangat Tinggi",
+      "kunci": "C",
+      "poin": {
+        "C": 5,
+        "A": 1,
+        "D": 2,
+        "B": 3,
+        "E": 4
+      },
+      "sumbu": {
+        "poin3": "S5",
+        "poin4": "S1"
+      },
+      "jebakan": {
+        "kode": "J5",
+        "poin": 4,
+        "huruf": "E"
+      },
+      "kata": {
+        "E": 17,
+        "D": 16,
+        "A": 15,
+        "C": 15,
+        "B": 14
+      },
+      "duaLangkah": [
+        "E"
+      ],
+      "poin1": "pasif",
+      "penutup": "Respons paling tepat adalah...",
+      "latar": "mal pelayanan publik",
+      "jangkar": false,
+      "mekanisme": "usulkan ke pemutus",
+      "sepakatPengecoh": null,
+      "pembuka": "Anda",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 28,
+      "dimensi": "Profesionalisme",
+      "level": "Tinggi",
+      "kunci": "E",
+      "poin": {
+        "E": 5,
+        "D": 1,
+        "C": 2,
+        "B": 3,
+        "A": 4
+      },
+      "sumbu": {
+        "poin3": "S1",
+        "poin4": "S3"
+      },
+      "jebakan": {
+        "kode": "J3",
+        "poin": 2,
+        "huruf": "C"
+      },
+      "kata": {
+        "B": 16,
+        "E": 15,
+        "A": 14,
+        "C": 14,
+        "D": 13
+      },
+      "duaLangkah": [
+        "B",
+        "C"
+      ],
+      "poin1": "a lempar beban",
+      "penutup": "Sikap Anda adalah...",
+      "latar": "dinas perikanan",
+      "jangkar": false,
+      "mekanisme": "sarana pengganti",
+      "sepakatPengecoh": null,
+      "pembuka": "Tim",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 29,
+      "dimensi": "Jejaring Kerja",
+      "level": "Sangat Tinggi",
+      "kunci": "B",
+      "poin": {
+        "B": 5,
+        "A": 1,
+        "C": 2,
+        "E": 3,
+        "D": 4
+      },
+      "sumbu": {
+        "poin3": "S5",
+        "poin4": "S4"
+      },
+      "jebakan": {
+        "kode": "J2",
+        "poin": 2,
+        "huruf": "C"
+      },
+      "kata": {
+        "E": 14,
+        "D": 13,
+        "B": 12,
+        "C": 12,
+        "A": 11
+      },
+      "duaLangkah": [],
+      "poin1": "a lempar beban",
+      "penutup": "Apa yang Anda lakukan?",
+      "latar": "dinas tenaga kerja",
+      "jangkar": false,
+      "mekanisme": "umumkan/informasikan",
+      "sepakatPengecoh": null,
+      "pembuka": "Aplikasi",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 30,
+      "dimensi": "Pelayanan Publik",
+      "level": "Tinggi",
+      "kunci": "E",
+      "poin": {
+        "E": 5,
+        "A": 1,
+        "D": 2,
+        "C": 3,
+        "B": 4
+      },
+      "sumbu": {
+        "poin3": "S5",
+        "poin4": "S2"
+      },
+      "jebakan": {
+        "kode": "J2",
+        "poin": 3,
+        "huruf": "C"
+      },
+      "kata": {
+        "A": 16,
+        "C": 15,
+        "B": 14,
+        "D": 14,
+        "E": 13
+      },
+      "duaLangkah": [
+        "C",
+        "E"
+      ],
+      "poin1": "a lempar beban",
+      "penutup": "Langkah pertama yang Anda ambil adalah...",
+      "latar": "dinas lingkungan hidup",
+      "jangkar": false,
+      "mekanisme": "tahan/batasi sementara",
+      "sepakatPengecoh": null,
+      "pembuka": "Dua",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 31,
+      "dimensi": "Anti Radikalisme",
+      "level": "Tinggi",
+      "kunci": "B",
+      "poin": {
+        "B": 5,
+        "D": 1,
+        "E": 2,
+        "C": 3,
+        "A": 4
+      },
+      "sumbu": {
+        "poin3": "S3",
+        "poin4": "S5"
+      },
+      "jebakan": {
+        "kode": "J4",
+        "poin": 3,
+        "huruf": "C"
+      },
+      "kata": {
+        "E": 17,
+        "D": 16,
+        "C": 15,
+        "A": 15,
+        "B": 14
+      },
+      "duaLangkah": [],
+      "poin1": "d berkorban buta",
+      "penutup": "Apa respons Anda?",
+      "latar": "dinas kesehatan",
+      "jangkar": false,
+      "mekanisme": "lapor/serahkan ke pihak berwenang",
+      "sepakatPengecoh": null,
+      "pembuka": "Pesan",
+      "pasangan": 24,
+      "tanggaAR": "pola nyata/terorganisasi",
+      "tanggaTIK": false
+    },
+    {
+      "no": 32,
+      "dimensi": "Jejaring Kerja",
+      "level": "Tinggi",
+      "kunci": "C",
+      "poin": {
+        "C": 5,
+        "D": 1,
+        "E": 2,
+        "B": 3,
+        "A": 4
+      },
+      "sumbu": {
+        "poin3": "S3",
+        "poin4": "S4"
+      },
+      "jebakan": {
+        "kode": "J3",
+        "poin": 3,
+        "huruf": "B"
+      },
+      "kata": {
+        "E": 14,
+        "A": 13,
+        "D": 12,
+        "C": 12,
+        "B": 11
+      },
+      "duaLangkah": [],
+      "poin1": "e nilai sah jadi dalih",
+      "penutup": "Tindakan paling tepat adalah...",
+      "latar": "dinas pariwisata",
+      "jangkar": false,
+      "mekanisme": "pertemukan/koordinasi pihak",
+      "sepakatPengecoh": null,
+      "pembuka": "Data",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 33,
+      "dimensi": "Sosial Budaya",
+      "level": "Tinggi",
+      "kunci": "E",
+      "poin": {
+        "E": 5,
+        "B": 1,
+        "D": 2,
+        "C": 3,
+        "A": 4
+      },
+      "sumbu": {
+        "poin3": "S3",
+        "poin4": "S2"
+      },
+      "jebakan": {
+        "kode": "J3",
+        "poin": 2,
+        "huruf": "D"
+      },
+      "kata": {
+        "B": 16,
+        "C": 15,
+        "D": 14,
+        "E": 14,
+        "A": 13
+      },
+      "duaLangkah": [
+        "B",
+        "E"
+      ],
+      "poin1": "b sibuk di samping masalah",
+      "penutup": "Apa tindakan paling tepat?",
+      "latar": "kampus kedinasan",
+      "jangkar": true,
+      "mekanisme": "aturan/format tertulis",
+      "sepakatPengecoh": null,
+      "pembuka": "Sejak",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 34,
+      "dimensi": "Pelayanan Publik",
+      "level": "Sangat Tinggi",
+      "kunci": "B",
+      "poin": {
+        "B": 5,
+        "D": 1,
+        "E": 2,
+        "A": 3,
+        "C": 4
+      },
+      "sumbu": {
+        "poin3": "S2",
+        "poin4": "S3"
+      },
+      "jebakan": {
+        "kode": "J6",
+        "poin": 3,
+        "huruf": "A"
+      },
+      "kata": {
+        "A": 16,
+        "C": 15,
+        "E": 14,
+        "D": 14,
+        "B": 13
+      },
+      "duaLangkah": [
+        "A",
+        "C"
+      ],
+      "poin1": "pasif",
+      "penutup": "Sikap Anda adalah...",
+      "latar": "dinas tenaga kerja",
+      "jangkar": false,
+      "mekanisme": "umumkan/informasikan",
+      "sepakatPengecoh": null,
+      "pembuka": "Laporan",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 35,
+      "dimensi": "Pelayanan Publik",
+      "level": "Tinggi",
+      "kunci": "E",
+      "poin": {
+        "E": 5,
+        "D": 1,
+        "B": 2,
+        "A": 3,
+        "C": 4
+      },
+      "sumbu": {
+        "poin3": "S2",
+        "poin4": "S5"
+      },
+      "jebakan": {
+        "kode": "J4",
+        "poin": 3,
+        "huruf": "A"
+      },
+      "kata": {
+        "C": 19,
+        "A": 18,
+        "B": 17,
+        "D": 17,
+        "E": 16
+      },
+      "duaLangkah": [
+        "D"
+      ],
+      "poin1": "pasif",
+      "penutup": "Apa yang Anda lakukan?",
+      "latar": "dinas pendidikan",
+      "jangkar": false,
+      "mekanisme": "pertemukan/koordinasi pihak",
+      "sepakatPengecoh": null,
+      "pembuka": "Ketika",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 36,
+      "dimensi": "Profesionalisme",
+      "level": "Tinggi",
+      "kunci": "D",
+      "poin": {
+        "D": 5,
+        "E": 1,
+        "B": 2,
+        "A": 3,
+        "C": 4
+      },
+      "sumbu": {
+        "poin3": "S5",
+        "poin4": "S4"
+      },
+      "jebakan": {
+        "kode": "J6",
+        "poin": 2,
+        "huruf": "B"
+      },
+      "kata": {
+        "A": 17,
+        "B": 16,
+        "C": 15,
+        "E": 15,
+        "D": 14
+      },
+      "duaLangkah": [
+        "B"
+      ],
+      "poin1": "f mengucilkan",
+      "penutup": "Apa tindakan paling tepat?",
+      "latar": "kantor kelurahan",
+      "jangkar": false,
+      "mekanisme": "usulkan ke pemutus",
+      "sepakatPengecoh": null,
+      "pembuka": "Kepala",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 37,
+      "dimensi": "Jejaring Kerja",
+      "level": "Tinggi",
+      "kunci": "C",
+      "poin": {
+        "C": 5,
+        "A": 1,
+        "B": 2,
+        "E": 3,
+        "D": 4
+      },
+      "sumbu": {
+        "poin3": "S5",
+        "poin4": "S1"
+      },
+      "jebakan": {
+        "kode": "J6",
+        "poin": 2,
+        "huruf": "B"
+      },
+      "kata": {
+        "B": 14,
+        "A": 13,
+        "D": 12,
+        "E": 12,
+        "C": 11
+      },
+      "duaLangkah": [
+        "C",
+        "E"
+      ],
+      "poin1": "pasif",
+      "penutup": "Apa respons Anda?",
+      "latar": "dinas pekerjaan umum",
+      "jangkar": true,
+      "mekanisme": "sarana pengganti",
+      "sepakatPengecoh": null,
+      "pembuka": "Warga",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 38,
+      "dimensi": "Anti Radikalisme",
+      "level": "Tinggi",
+      "kunci": "E",
+      "poin": {
+        "E": 5,
+        "C": 1,
+        "A": 2,
+        "B": 3,
+        "D": 4
+      },
+      "sumbu": {
+        "poin3": "S5",
+        "poin4": "S2"
+      },
+      "jebakan": {
+        "kode": "J1",
+        "poin": 3,
+        "huruf": "B"
+      },
+      "kata": {
+        "C": 19,
+        "B": 18,
+        "A": 17,
+        "E": 17,
+        "D": 16
+      },
+      "duaLangkah": [
+        "D"
+      ],
+      "poin1": "b sibuk di samping masalah",
+      "penutup": "Apa tindakan paling tepat?",
+      "latar": "kantor arsip daerah",
+      "jangkar": true,
+      "mekanisme": "verifikasi/cek",
+      "sepakatPengecoh": null,
+      "pembuka": "Sejak",
+      "pasangan": null,
+      "tanggaAR": "kabar dari pihak lain",
+      "tanggaTIK": false
+    },
+    {
+      "no": 39,
+      "dimensi": "Sosial Budaya",
+      "level": "Sangat Tinggi",
+      "kunci": "A",
+      "poin": {
+        "A": 5,
+        "D": 1,
+        "B": 2,
+        "C": 3,
+        "E": 4
+      },
+      "sumbu": {
+        "poin3": "S4",
+        "poin4": "S2"
+      },
+      "jebakan": {
+        "kode": "J2",
+        "poin": 2,
+        "huruf": "B"
+      },
+      "kata": {
+        "C": 17,
+        "E": 16,
+        "D": 15,
+        "A": 15,
+        "B": 14
+      },
+      "duaLangkah": [
+        "A",
+        "D"
+      ],
+      "poin1": "c bagi rata",
+      "penutup": "Tindakan paling tepat adalah...",
+      "latar": "dinas perikanan",
+      "jangkar": false,
+      "mekanisme": "umumkan/informasikan",
+      "sepakatPengecoh": null,
+      "pembuka": "Kepala",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 40,
+      "dimensi": "Pelayanan Publik",
+      "level": "Tinggi",
+      "kunci": "A",
+      "poin": {
+        "A": 5,
+        "D": 1,
+        "E": 2,
+        "B": 3,
+        "C": 4
+      },
+      "sumbu": {
+        "poin3": "S2",
+        "poin4": "S4"
+      },
+      "jebakan": {
+        "kode": "J2",
+        "poin": 4,
+        "huruf": "C"
+      },
+      "kata": {
+        "D": 15,
+        "E": 14,
+        "B": 13,
+        "A": 13,
+        "C": 12
+      },
+      "duaLangkah": [],
+      "poin1": "pasif",
+      "penutup": "Apa yang Anda lakukan?",
+      "latar": "dinas kesehatan",
+      "jangkar": true,
+      "mekanisme": "sarana pengganti",
+      "sepakatPengecoh": null,
+      "pembuka": "Menjelang",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 41,
+      "dimensi": "TIK",
+      "level": "Tinggi",
+      "kunci": "B",
+      "poin": {
+        "B": 5,
+        "A": 1,
+        "C": 2,
+        "E": 3,
+        "D": 4
+      },
+      "sumbu": {
+        "poin3": "S1",
+        "poin4": "S2"
+      },
+      "jebakan": {
+        "kode": "J1",
+        "poin": 4,
+        "huruf": "D"
+      },
+      "kata": {
+        "D": 15,
+        "E": 14,
+        "B": 13,
+        "C": 13,
+        "A": 12
+      },
+      "duaLangkah": [
+        "B",
+        "E"
+      ],
+      "poin1": "f mengucilkan",
+      "penutup": "Tindakan paling tepat adalah...",
+      "latar": "inspektorat daerah",
+      "jangkar": false,
+      "mekanisme": "usulkan ke pemutus",
+      "sepakatPengecoh": null,
+      "pembuka": "Setelah",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": true
+    },
+    {
+      "no": 42,
+      "dimensi": "Sosial Budaya",
+      "level": "Tinggi",
+      "kunci": "D",
+      "poin": {
+        "D": 5,
+        "C": 1,
+        "E": 2,
+        "A": 3,
+        "B": 4
+      },
+      "sumbu": {
+        "poin3": "S2",
+        "poin4": "S1"
+      },
+      "jebakan": {
+        "kode": "J1",
+        "poin": 4,
+        "huruf": "B"
+      },
+      "kata": {
+        "B": 16,
+        "C": 15,
+        "E": 14,
+        "A": 14,
+        "D": 13
+      },
+      "duaLangkah": [],
+      "poin1": "pasif",
+      "penutup": "Langkah paling tepat adalah...",
+      "latar": "dinas pekerjaan umum",
+      "jangkar": true,
+      "mekanisme": "ubah cara/sumber kerja",
+      "sepakatPengecoh": null,
+      "pembuka": "Selama",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 43,
+      "dimensi": "TIK",
+      "level": "Tinggi",
+      "kunci": "A",
+      "poin": {
+        "A": 5,
+        "D": 1,
+        "E": 2,
+        "C": 3,
+        "B": 4
+      },
+      "sumbu": {
+        "poin3": "S2",
+        "poin4": "S5"
+      },
+      "jebakan": {
+        "kode": "J3",
+        "poin": 3,
+        "huruf": "C"
+      },
+      "kata": {
+        "A": 14,
+        "C": 13,
+        "D": 12,
+        "B": 12,
+        "E": 11
+      },
+      "duaLangkah": [],
+      "poin1": "pasif",
+      "penutup": "Langkah pertama yang Anda ambil adalah...",
+      "latar": "badan keuangan daerah",
+      "jangkar": true,
+      "mekanisme": "sepakat",
+      "sepakatPengecoh": 4,
+      "pembuka": "Tiga",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    },
+    {
+      "no": 44,
+      "dimensi": "Anti Radikalisme",
+      "level": "Tinggi",
+      "kunci": "A",
+      "poin": {
+        "A": 5,
+        "E": 1,
+        "D": 2,
+        "B": 3,
+        "C": 4
+      },
+      "sumbu": {
+        "poin3": "S4",
+        "poin4": "S5"
+      },
+      "jebakan": {
+        "kode": "J1",
+        "poin": 3,
+        "huruf": "B"
+      },
+      "kata": {
+        "C": 17,
+        "D": 16,
+        "B": 15,
+        "E": 15,
+        "A": 14
+      },
+      "duaLangkah": [
+        "B",
+        "D"
+      ],
+      "poin1": "d berkorban buta",
+      "penutup": "Apa tindakan paling tepat?",
+      "latar": "pemadam kebakaran",
+      "jangkar": true,
+      "mekanisme": "umumkan/informasikan",
+      "sepakatPengecoh": null,
+      "pembuka": "Antrean",
+      "pasangan": null,
+      "tanggaAR": "konten menyebar",
+      "tanggaTIK": false
+    },
+    {
+      "no": 45,
+      "dimensi": "Profesionalisme",
+      "level": "Sangat Tinggi",
+      "kunci": "D",
+      "poin": {
+        "D": 5,
+        "B": 1,
+        "C": 2,
+        "A": 3,
+        "E": 4
+      },
+      "sumbu": {
+        "poin3": "S3",
+        "poin4": "S4"
+      },
+      "jebakan": {
+        "kode": "J5",
+        "poin": 4,
+        "huruf": "E"
+      },
+      "kata": {
+        "C": 15,
+        "A": 14,
+        "B": 13,
+        "E": 13,
+        "D": 12
+      },
+      "duaLangkah": [
+        "E"
+      ],
+      "poin1": "e nilai sah jadi dalih",
+      "penutup": "Langkah paling tepat adalah...",
+      "latar": "kantor kelurahan",
+      "jangkar": true,
+      "mekanisme": "sepakat",
+      "sepakatPengecoh": 3,
+      "pembuka": "Hari",
+      "pasangan": null,
+      "tanggaAR": null,
+      "tanggaTIK": false
+    }
+  ],
+  "paket": 2,
+  "biji": 2000,
+  "catatan": [
+    "2026-10-26 mekanisme slot9<->11 (AR jadwal -> tegur), slot31<->33 (AR aturan -> lapor) (Gusti); blueprint BEKU",
+    "2026-10-26 (Gusti) AR cocokkan tangga-mekanisme: tangga 9<->24 (ucapan->tegur, kabar->verifikasi), mekanisme 1<->45 (AR ajakan nyata -> lapor; 45 sepakat + pengecoh sepakat p3), 38<->34 (AR kabar -> verifikasi), 44 tangga pola -> konten menyebar; kode J6 tidak di poin 4 (pelajaran paket 1): kode 6<->3, 13<->14, 41<->37",
+    "2026-10-26 (Gusti) J3 tidak di poin 4 (engine: J3 skor 2-3): kode 7<->33, 27<->28, 42<->43"
+  ]
+}

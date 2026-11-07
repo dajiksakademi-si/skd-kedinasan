@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><title>Paket 2 TKP — Pembahasan</title><style>
+  @page { size: A4; margin: 18mm 16mm 20mm 16mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #1a1a1a;
+    margin: 0;
+  }
+  .cover {
+    page-break-after: always;
+    padding-top: 60mm;
+    text-align: center;
+  }
+  .cover .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 10pt;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #6b6b6b;
+    margin-bottom: 10mm;
+  }
+  .cover h1 {
+    font-size: 26pt;
+    margin: 0 0 6mm 0;
+    color: #111;
+  }
+  .cover .sub {
+    font-size: 12pt;
+    color: #444;
+    margin-bottom: 14mm;
+  }
+  .cover .meta-box {
+    display: inline-block;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6mm 10mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9.5pt;
+    color: #333;
+  }
+  .cover .meta-box div { margin: 1.5mm 0; }
+  .cover .meta-box b { color: #111; }
+  .cover .note {
+    margin-top: 16mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    color: #888;
+    max-width: 120mm;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2.section-title {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 13pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111;
+    border-bottom: 2px solid #111;
+    padding-bottom: 2mm;
+    margin: 0 0 6mm 0;
+  }
+
+  table.summary {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.8pt;
+    margin-bottom: 4mm;
+  }
+  table.summary th, table.summary td {
+    border: 1px solid #ccc;
+    padding: 2mm 2.2mm;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.summary th {
+    background: #f2f2f2;
+    font-weight: 700;
+  }
+  table.summary td.center { text-align: center; }
+
+  .soal {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 9mm;
+    padding-bottom: 7mm;
+    border-bottom: 1px solid #ddd;
+  }
+  .soal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 3mm;
+    break-inside: avoid;
+  }
+  .soal-num {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 11.5pt;
+    color: #111;
+  }
+  .badge {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    padding: 1mm 3mm;
+    border-radius: 10px;
+    color: #fff;
+    white-space: nowrap;
+  }
+  .dim-Profesionalisme { background: #2f5fa8; }
+  .dim-PelayananPublik { background: #1f8a56; }
+  .dim-JejaringKerja { background: #6b3fa0; }
+  .dim-SosialBudaya { background: #c9701d; }
+  .dim-TIK { background: #0f8b8d; }
+  .dim-AntiRadikalisme { background: #b3282d; }
+
+  .stem { margin-bottom: 3mm; text-align: justify; }
+
+  .options { margin: 0 0 4mm 0; padding: 0; list-style: none; }
+  .options li {
+    display: flex;
+    gap: 2.5mm;
+    margin-bottom: 1.6mm;
+    align-items: flex-start;
+  }
+  .opt-letter {
+    flex: 0 0 auto;
+    font-weight: 700;
+    width: 5mm;
+  }
+  .opt-letter.kunci { color: #1f8a56; }
+  .opt-text { flex: 1 1 auto; }
+  .opt-text.kunci { font-weight: 700; }
+
+  .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.6pt;
+    background: #f7f7f7;
+    border-left: 3px solid #111;
+    padding: 2.5mm 3.5mm;
+    margin-bottom: 2.5mm;
+  }
+  .meta div { margin: 0.8mm 0; }
+  .meta .label { font-weight: 700; display: inline-block; width: 22mm; color: #444; }
+
+  .pembahasan {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    background: #fbfbf5;
+    border: 1px solid #e6e2c8;
+    padding: 3mm 4mm;
+  }
+  .pembahasan .ph-title {
+    font-weight: 700;
+    font-size: 8.6pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6b6320;
+    margin-bottom: 1.5mm;
+  }
+  .pembahasan ol { margin: 0; padding-left: 4mm; }
+  .pembahasan li { margin-bottom: 1.3mm; text-align: justify; }
+
+  .footer-note {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    color: #999;
+    text-align: center;
+    margin-top: 10mm;
+  }
+
+  code.sumbu {
+    background: #eee;
+    padding: 0.2mm 1.2mm;
+    border-radius: 3px;
+    font-family: "Courier New", monospace;
+    font-size: 8.2pt;
+  }
+  .pembahasan-siswa { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 9pt; background: #f3f8fb; border: 1px solid #c9dde8; padding: 3mm 4mm; margin-top: 2mm; }
+  .pembahasan-siswa .ph-title { font-weight: 700; font-size: 8.6pt; text-transform: uppercase; color: #2d5a73; margin-bottom: 1.5mm; }
+  .pembahasan-siswa p, .pembahasan-siswa li { margin: 0.8mm 0; text-align: justify; }
+  .pindai{border:2px solid #1f5f8b;border-radius:5px;background:#f2f8fc;padding:3mm 5mm;margin:0 0 4mm;font-family:"Helvetica Neue",Arial,sans-serif;font-size:10pt}
+  .pindai .pt{font-weight:bold;color:#1f5f8b;letter-spacing:1px;text-transform:uppercase;font-size:9.5pt;margin-bottom:2mm}
+  .pindai .pt span{float:right;font-weight:normal;color:#555;text-transform:none;letter-spacing:0}
+  .pindai ol{margin:0;padding-left:5mm}.pindai li{margin:1.5mm 0}
+  .pindai .tanda{margin-top:2.5mm;padding:2mm 3mm;background:#fff6d6;border-left:4px solid #d9a400}
+  .pindai{border:2px solid #1f5f8b;border-radius:5px;background:#f2f8fc;padding:3mm 5mm;margin:0 0 4mm;font-family:"Helvetica Neue",Arial,sans-serif;font-size:10pt}
+  .pindai .pt{font-weight:bold;color:#1f5f8b;letter-spacing:1px;text-transform:uppercase;font-size:9.5pt;margin-bottom:2mm}
+  .pindai .pt span{float:right;font-weight:normal;color:#555;text-transform:none;letter-spacing:0}
+  .pindai ol{margin:0;padding-left:5mm}.pindai li{margin:1.5mm 0}
+  .pindai .tanda{margin-top:2.5mm;padding:2mm 3mm;background:#fff6d6;border-left:4px solid #d9a400}
+
+  .soal.bahas { page-break-inside: auto; break-inside: auto; }
+  .soal.bahas .soal-head { break-after: avoid; page-break-after: avoid; }
+  .soal.bahas .stem, .soal.bahas .options { break-inside: avoid; }
+  .soal.bahas .stem, .soal.bahas .options { font-size: 10pt; }
+  table.skor td, table.skor th { text-align: center; }
+  .cover { padding-top: 70mm; }
+.duo{display:flex;gap:5mm}.col{flex:1;border:1px solid #ccc;border-radius:4px;padding:3mm 4mm;font-size:9.6pt}.col h4{margin:0 0 2mm;font-family:Helvetica,Arial;font-size:9pt;letter-spacing:1px;text-transform:uppercase}.lama h4{color:#999}.baru{border:2px solid #2f7d4f}.baru h4{color:#2f7d4f}.col ol{padding-left:4.5mm;margin:2mm 0}.col li{margin:1mm 0}.k{font-weight:bold}.n{font-family:Helvetica,Arial;font-size:8pt;color:#666;margin-top:2mm}</style></head><body><h2 class="section-title">Paket 1 TKP — Revisi Opsi Soal 16–30</h2><p>Kiri: versi lama. Kanan: versi baru (opsi nilai 4 sama lengkap dengan kunci; kunci soal 21 dipadatkan). Cerita, kunci, dan skor tetap.</p><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 18</span><span class="badge">Anti Radikalisme</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Anda memandu rapat penerima bantuan pangan desa yang daftarnya disahkan hari ini juga. Seorang kepala dusun bercanda agar keluarga pendatang berbeda keyakinan "dicoret saja, biar pulang kampung", dan peserta tertawa. Candaan serupa tadi sudah Anda alihkan. Tindakan paling tepat adalah&hellip;</p><ol type="A"><li class="k">Menyela candaan itu: penerima bantuan dinilai dari kelayakan, bukan dari keyakinannya. <i>(skor 5)</i></li><li class="">Melaporkan ucapan kepala dusun itu ke camat sebagai dugaan ujaran kebencian. <i>(skor 3)</i></li><li class="">Menegur kepala dusun lewat pesan pribadi nanti malam agar meralat ucapannya. <i>(skor 4)</i></li><li class="">Mengantar sendiri bantuan ke rumah keluarga pendatang agar mereka tak perlu hadir. <i>(skor 1)</i></li><li class="">Mengalihkan lagi pembicaraan ke kriteria teknis supaya suasana rapat tetap cair. <i>(skor 2)</i></li></ol><div class="n">40 kata · pilihan 11–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Anda memandu rapat penerima bantuan pangan desa yang daftarnya disahkan hari ini juga. Seorang kepala dusun bercanda agar keluarga pendatang berbeda keyakinan "dicoret saja, biar pulang kampung", dan peserta tertawa. Candaan serupa tadi sudah Anda alihkan. Tindakan paling tepat adalah&hellip;</p><ol type="A"><li class="k">Menyela candaan itu: penerima bantuan dinilai dari kelayakan, bukan dari keyakinannya. <i>(skor 5)</i></li><li class="">Melaporkan ucapan kepala dusun itu ke camat sebagai dugaan ujaran kebencian. <i>(skor 3)</i></li><li class="">Meminta kepala dusun meralat ucapannya setelah daftar disahkan di rapat itu. <i>(skor 4)</i></li><li class="">Mengantar sendiri bantuan ke rumah keluarga pendatang agar mereka tak perlu hadir. <i>(skor 1)</i></li><li class="">Mengalihkan lagi pembicaraan ke kriteria teknis supaya suasana rapat tetap cair. <i>(skor 2)</i></li></ol><div class="n">40 kata · pilihan 11–12 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 20</span><span class="badge">Sosial Budaya</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Sebagai koordinator pendaftaran puskesmas, Anda melihat beberapa pasien perempuan pulang sebelum diperiksa: setelah antre lama, mereka menolak dokter laki-laki karena keyakinan. Ada dokter perempuan di sif pagi, dan pengumumannya sudah ditempel di ruang tunggu sejak awal bulan. Apa yang Anda lakukan?</p><ol type="A"><li class="">Mengantar sendiri pasien yang menolak dokter laki-laki ke ruang dokter perempuan. <i>(skor 4)</i></li><li class="">Menjelaskan antrean berlaku sama bagi siapa pun, silakan datang lagi hari lain. <i>(skor 1)</i></li><li class="">Mengikuti usul rekan agar pasien yang keberatan dirujuk ke puskesmas lain. <i>(skor 2)</i></li><li class="">Menempel pengumuman dokter perempuan yang lebih besar di pintu masuk dan loket. <i>(skor 3)</i></li><li class="k">Menanyakan pilihan dokter laki-laki atau perempuan sejak pasien mendaftar di loket. <i>(skor 5)</i></li></ol><div class="n">41 kata · pilihan 11–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Sebagai koordinator pendaftaran puskesmas, Anda melihat beberapa pasien perempuan pulang sebelum diperiksa: setelah antre lama, mereka menolak dokter laki-laki karena keyakinan. Ada dokter perempuan di sif pagi, dan pengumumannya sudah ditempel di ruang tunggu sejak awal bulan. Apa yang Anda lakukan?</p><ol type="A"><li class="">Mengantar pasien yang menolak dokter laki-laki ke ruang dokter perempuan sif pagi. <i>(skor 4)</i></li><li class="">Menjelaskan antrean berlaku sama bagi siapa pun, silakan datang lagi hari lain. <i>(skor 1)</i></li><li class="">Mengikuti usul rekan agar pasien yang keberatan dirujuk ke puskesmas lain. <i>(skor 2)</i></li><li class="">Menempel pengumuman dokter perempuan yang lebih besar di pintu masuk dan loket. <i>(skor 3)</i></li><li class="k">Menanyakan pilihan dokter laki-laki atau perempuan sejak pasien mendaftar di loket. <i>(skor 5)</i></li></ol><div class="n">41 kata · pilihan 11–12 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 21</span><span class="badge">Jejaring Kerja</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Sejak dua bulan lalu, RSUD mengirim berkas kelahiran ke dinas Anda tiap Jumat agar akta terbit tanpa orang tua datang. Tiga Jumat terakhir, belasan berkas tiba tanpa surat keterangan lahir, dan kekurangan ini belum pernah Anda bicarakan dengan mereka. Sikap Anda adalah&hellip;</p><ol type="A"><li class="">Menyepakati rapat evaluasi bulan depan dengan rekam medis untuk membahas berkas kurang. <i>(skor 3)</i></li><li class="">Mencatat berkas kurang di register, lalu menunggu rumah sakit sadar sendiri. <i>(skor 1)</i></li><li class="k">Menemui petugas rekam medis untuk menyepakati daftar periksa, lalu melengkapi berkas tertunda. <i>(skor 5)</i></li><li class="">Mengembalikan tiap berkas yang kurang ke rekam medis di hari kirimannya tiba. <i>(skor 4)</i></li><li class="">Meminta orang tua melengkapi sendiri berkas bayinya agar rumah sakit tidak tersinggung. <i>(skor 2)</i></li></ol><div class="n">42 kata · pilihan 11–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Sejak dua bulan lalu, RSUD mengirim berkas kelahiran ke dinas Anda tiap Jumat agar akta terbit tanpa orang tua datang. Tiga Jumat terakhir, belasan berkas tiba tanpa surat keterangan lahir, dan kekurangan ini belum pernah Anda bicarakan dengan mereka. Sikap Anda adalah&hellip;</p><ol type="A"><li class="">Menyepakati rapat evaluasi bulan depan dengan rekam medis untuk membahas berkas kurang. <i>(skor 3)</i></li><li class="">Mencatat berkas kurang di register, lalu menunggu rumah sakit sadar sendiri. <i>(skor 1)</i></li><li class="k">Menemui petugas rekam medis, menyepakati daftar periksa, lalu melengkapi berkas tertunda. <i>(skor 5)</i></li><li class="">Mengembalikan berkas kurang ke rekam medis, lalu menerbitkan akta dari berkas yang lengkap. <i>(skor 4)</i></li><li class="">Meminta orang tua melengkapi sendiri berkas bayinya agar rumah sakit tidak tersinggung. <i>(skor 2)</i></li></ol><div class="n">42 kata · pilihan 11–13 kata</div></div></div></div><div class="soal" style="page-break-inside:avoid;margin-bottom:6mm"><div class="soal-head"><span class="soal-num">Soal No 25</span><span class="badge">Jejaring Kerja</span></div><div class="duo"><div class="col lama"><h4>Sebelum</h4><p>Setiap bulan Anda merekap laporan kunjungan enam relawan sukarela program lansia sebagai dasar usulan bantuan. Bentuk laporannya berbeda-beda, dan dua relawan sudah tiga bulan berturut-turut mengirim sepekan lewat tenggat. Jumat ini ada pertemuan rutin dengan keenam relawan. Apa tindakan paling tepat?</p><ol type="A"><li class="">Memaklumi keterlambatan dan beragamnya laporan sebagai bentuk penghargaan bagi relawan sukarela. <i>(skor 1)</i></li><li class="">Menelepon relawan yang terlambat satu per satu, lalu menuliskan laporan mereka sendiri. <i>(skor 4)</i></li><li class="">Mengirim surat edaran kewajiban lapor tepat waktu ke grup pesan relawan. <i>(skor 2)</i></li><li class="k">Menyepakati format singkat dan tenggat kirim bersama keenam relawan, Jumat ini. <i>(skor 5)</i></li><li class="">Menyepakati format dan tenggat baru lewat telepon dengan dua relawan yang terlambat. <i>(skor 3)</i></li></ol><div class="n">41 kata · pilihan 11–12 kata</div></div><div class="col baru"><h4>Sesudah</h4><p>Setiap bulan Anda merekap laporan kunjungan enam relawan sukarela program lansia sebagai dasar usulan bantuan. Bentuk laporannya berbeda-beda, dan dua relawan sudah tiga bulan berturut-turut mengirim sepekan lewat tenggat. Jumat ini ada pertemuan rutin dengan keenam relawan. Apa tindakan paling tepat?</p><ol type="A"><li class="">Memaklumi keterlambatan dan beragamnya laporan sebagai bentuk penghargaan bagi relawan sukarela. <i>(skor 1)</i></li><li class="">Menagih laporan yang terlambat lewat telepon, lalu menyalin semuanya ke satu format. <i>(skor 4)</i></li><li class="">Mengirim surat edaran kewajiban lapor tepat waktu ke grup pesan relawan. <i>(skor 2)</i></li><li class="k">Menyepakati format singkat dan tenggat kirim bersama keenam relawan, Jumat ini. <i>(skor 5)</i></li><li class="">Menyepakati format dan tenggat baru lewat telepon dengan dua relawan yang terlambat. <i>(skor 3)</i></li></ol><div class="n">41 kata · pilihan 11–12 kata</div></div></div></div></body></html>

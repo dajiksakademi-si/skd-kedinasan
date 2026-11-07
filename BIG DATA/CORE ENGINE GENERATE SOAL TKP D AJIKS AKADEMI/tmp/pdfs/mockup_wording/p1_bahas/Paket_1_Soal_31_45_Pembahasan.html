@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><title>Paket 1 — Soal 31–45 TKP — Pembahasan</title><style>
+  @page { size: A4; margin: 18mm 16mm 20mm 16mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #1a1a1a;
+    margin: 0;
+  }
+  .cover {
+    page-break-after: always;
+    padding-top: 60mm;
+    text-align: center;
+  }
+  .cover .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 10pt;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #6b6b6b;
+    margin-bottom: 10mm;
+  }
+  .cover h1 {
+    font-size: 26pt;
+    margin: 0 0 6mm 0;
+    color: #111;
+  }
+  .cover .sub {
+    font-size: 12pt;
+    color: #444;
+    margin-bottom: 14mm;
+  }
+  .cover .meta-box {
+    display: inline-block;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6mm 10mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9.5pt;
+    color: #333;
+  }
+  .cover .meta-box div { margin: 1.5mm 0; }
+  .cover .meta-box b { color: #111; }
+  .cover .note {
+    margin-top: 16mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    color: #888;
+    max-width: 120mm;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2.section-title {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 13pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111;
+    border-bottom: 2px solid #111;
+    padding-bottom: 2mm;
+    margin: 0 0 6mm 0;
+  }
+
+  table.summary {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.8pt;
+    margin-bottom: 4mm;
+  }
+  table.summary th, table.summary td {
+    border: 1px solid #ccc;
+    padding: 2mm 2.2mm;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.summary th {
+    background: #f2f2f2;
+    font-weight: 700;
+  }
+  table.summary td.center { text-align: center; }
+
+  .soal {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 9mm;
+    padding-bottom: 7mm;
+    border-bottom: 1px solid #ddd;
+  }
+  .soal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 3mm;
+    break-inside: avoid;
+  }
+  .soal-num {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 11.5pt;
+    color: #111;
+  }
+  .badge {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    padding: 1mm 3mm;
+    border-radius: 10px;
+    color: #fff;
+    white-space: nowrap;
+  }
+  .dim-Profesionalisme { background: #2f5fa8; }
+  .dim-PelayananPublik { background: #1f8a56; }
+  .dim-JejaringKerja { background: #6b3fa0; }
+  .dim-SosialBudaya { background: #c9701d; }
+  .dim-TIK { background: #0f8b8d; }
+  .dim-AntiRadikalisme { background: #b3282d; }
+
+  .stem { margin-bottom: 3mm; text-align: justify; }
+
+  .options { margin: 0 0 4mm 0; padding: 0; list-style: none; }
+  .options li {
+    display: flex;
+    gap: 2.5mm;
+    margin-bottom: 1.6mm;
+    align-items: flex-start;
+  }
+  .opt-letter {
+    flex: 0 0 auto;
+    font-weight: 700;
+    width: 5mm;
+  }
+  .opt-letter.kunci { color: #1f8a56; }
+  .opt-text { flex: 1 1 auto; }
+  .opt-text.kunci { font-weight: 700; }
+
+  .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.6pt;
+    background: #f7f7f7;
+    border-left: 3px solid #111;
+    padding: 2.5mm 3.5mm;
+    margin-bottom: 2.5mm;
+  }
+  .meta div { margin: 0.8mm 0; }
+  .meta .label { font-weight: 700; display: inline-block; width: 22mm; color: #444; }
+
+  .pembahasan {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    background: #fbfbf5;
+    border: 1px solid #e6e2c8;
+    padding: 3mm 4mm;
+  }
+  .pembahasan .ph-title {
+    font-weight: 700;
+    font-size: 8.6pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6b6320;
+    margin-bottom: 1.5mm;
+  }
+  .pembahasan ol { margin: 0; padding-left: 4mm; }
+  .pembahasan li { margin-bottom: 1.3mm; text-align: justify; }
+
+  .footer-note {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    color: #999;
+    text-align: center;
+    margin-top: 10mm;
+  }
+
+  code.sumbu {
+    background: #eee;
+    padding: 0.2mm 1.2mm;
+    border-radius: 3px;
+    font-family: "Courier New", monospace;
+    font-size: 8.2pt;
+  }
+  .pembahasan-siswa { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 9pt; background: #f3f8fb; border: 1px solid #c9dde8; padding: 3mm 4mm; margin-top: 2mm; }
+  .pembahasan-siswa .ph-title { font-weight: 700; font-size: 8.6pt; text-transform: uppercase; color: #2d5a73; margin-bottom: 1.5mm; }
+  .pembahasan-siswa p, .pembahasan-siswa li { margin: 0.8mm 0; text-align: justify; }
+  .pindai{border:2px solid #1f5f8b;border-radius:5px;background:#f2f8fc;padding:3mm 5mm;margin:0 0 4mm;font-family:"Helvetica Neue",Arial,sans-serif;font-size:10pt}
+  .pindai .pt{font-weight:bold;color:#1f5f8b;letter-spacing:1px;text-transform:uppercase;font-size:9.5pt;margin-bottom:2mm}
+  .pindai .pt span{float:right;font-weight:normal;color:#555;text-transform:none;letter-spacing:0}
+  .pindai ol{margin:0;padding-left:5mm}.pindai li{margin:1.5mm 0}
+  .pindai .tanda{margin-top:2.5mm;padding:2mm 3mm;background:#fff6d6;border-left:4px solid #d9a400}
+
+  .soal.bahas { page-break-inside: auto; break-inside: auto; }
+  .soal.bahas .soal-head { break-after: avoid; page-break-after: avoid; }
+  .soal.bahas .stem, .soal.bahas .options { break-inside: avoid; }
+  .soal.bahas .stem, .soal.bahas .options { font-size: 10pt; }
+  table.skor td, table.skor th { text-align: center; }
+  .cover { padding-top: 70mm; }
+</style></head><body>
+<div class="cover"><div class="kicker">D'Ajiks Akademi · SKD Kedinasan</div>
+<h1>Paket 1 — Soal 31–45 TKP</h1><div class="sub">Pembahasan</div>
+<div class="meta-box"><div><b>Subtes</b> Tes Karakteristik Pribadi</div><div><b>Jumlah</b> 15 soal</div></div>
+<div class="note">Kerjakan lembar soal dulu, baru buka pembahasan ini.</div></div>
+<h2 class="section-title">Tabel Skor</h2><table class="summary skor"><tr><th>No</th><th>Kunci (5)</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th></tr><tr><td>31</td><td>E</td><td>3</td><td>2</td><td>4</td><td>1</td><td>5</td></tr><tr><td>32</td><td>A</td><td>5</td><td>1</td><td>2</td><td>3</td><td>4</td></tr><tr><td>33</td><td>D</td><td>3</td><td>1</td><td>4</td><td>5</td><td>2</td></tr><tr><td>34</td><td>B</td><td>3</td><td>5</td><td>2</td><td>1</td><td>4</td></tr><tr><td>35</td><td>B</td><td>4</td><td>5</td><td>1</td><td>3</td><td>2</td></tr><tr><td>36</td><td>C</td><td>1</td><td>4</td><td>5</td><td>2</td><td>3</td></tr><tr><td>37</td><td>A</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td></tr><tr><td>38</td><td>B</td><td>4</td><td>5</td><td>1</td><td>2</td><td>3</td></tr><tr><td>39</td><td>D</td><td>4</td><td>2</td><td>3</td><td>5</td><td>1</td></tr><tr><td>40</td><td>A</td><td>5</td><td>2</td><td>4</td><td>3</td><td>1</td></tr><tr><td>41</td><td>A</td><td>5</td><td>4</td><td>1</td><td>2</td><td>3</td></tr><tr><td>42</td><td>C</td><td>3</td><td>1</td><td>5</td><td>4</td><td>2</td></tr><tr><td>43</td><td>B</td><td>4</td><td>5</td><td>3</td><td>1</td><td>2</td></tr><tr><td>44</td><td>E</td><td>4</td><td>2</td><td>3</td><td>1</td><td>5</td></tr><tr><td>45</td><td>D</td><td>4</td><td>1</td><td>2</td><td>5</td><td>3</td></tr></table><div style="page-break-after: always"></div><h2 class="section-title">Pembahasan per Soal</h2><div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 31</span>
+    <span class="badge dim-SosialBudaya">Sosial Budaya</span>
+  </div><div class="stem">
+    Anda mengatur rapat penjelasan tender Rabu ini, satu-satunya kesempatan tanya jawab. Seorang calon penyedia minta jadwal digeser karena hari itu Galungan, padahal peserta lain sudah memesan tiket dari luar kota. Sistem tender bisa menyiarkan rapat dan menerima pertanyaan tertulis. Respons paling tepat adalah&hellip; (Sosial Budaya)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menggeser rapat ke Kamis demi penyedia itu, lalu mengumumkan jadwal barunya.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Meminta penyedia itu membuktikan hari rayanya dulu, khawatir hanya cara mengulur jadwal.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Mengirimkan rekaman rapat kepada penyedia itu agar ia menerima penjelasan yang sama.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Mempertahankan jadwal Rabu apa adanya, mengingat tiap penyedia harus diperlakukan sama.</span></li>
+    <li><span class="opt-letter kunci">E.</span><span class="opt-text kunci">Menayangkan rapat Rabu secara daring, lalu menampung pertanyaan susulan penyedia sampai Jumat.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Sosial Budaya: kesempatan setara bagi yang beribadah tanpa merugikan peserta lain.</li>
+      <li><b>Kalimat penentu:</b> "kesempatan tanya jawab". Yang berhalangan harus tetap bisa bertanya, bukan hanya menonton.</li>
+      <li><b>Coret:</b> D (sama rata, kebutuhan orang yang beribadah diabaikan), B (hari raya dicurigai sebagai cara mengulur jadwal), A (geser ke Kamis, peserta bertiket dirugikan). Tinggal C dan E. C: rekaman tidak bisa ditanya. E: siaran Rabu dan pertanyaan susulan sampai Jumat. <b>Pilih E.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Ada sarana daring di cerita? Pakai untuk menyetarakan akses, jangan memindahkan jadwal semua orang.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> kamu mengatur rapat penjelasan tender hari Rabu, dan hanya di rapat itu peserta bisa tanya jawab. Seorang calon penyedia minta jadwal digeser karena hari itu Galungan. Peserta lain sudah memesan tiket dari luar kota. Untungnya, sistem tender bisa menyiarkan rapat dan menerima pertanyaan tertulis.</p>
+    <ul>
+      <li><b>E (skor 5)</b>: rapat tetap Rabu, jadi tiket peserta lain tidak sia-sia. Penyedia yang beribadah bisa menonton siarannya, dan pertanyaannya ditampung sampai Jumat bersama pertanyaan peserta lain. Tidak ada yang dirugikan.</li>
+      <li><b>C (skor 4)</b>: penjelasannya sampai ke dia, itu bagus. Sayangnya rekaman tidak bisa ditanya. Kalau ada yang belum jelas, ke mana ia bertanya?</li>
+      <li><b>A (skor 3)</b>: niatnya menghormati hari rayanya. Hanya saja peserta yang sudah memegang tiket untuk hari Rabu ikut menanggung akibatnya. Kebaikan untuk satu orang berubah jadi beban bagi yang lain.</li>
+      <li><b>B (skor 2)</b>: ia baru meminta, belum berbuat apa-apa, dan sudah dicurigai. Meminta bukti hari raya sama saja dengan meragukan keyakinan orang.</li>
+      <li><b>D (skor 1)</b>: kedengarannya adil karena semua diperlakukan sama. Sama rata tidak selalu setara: yang satu kehilangan kesempatan bertanya karena ibadahnya.</li>
+    </ul>
+    <p><b>Kunci E</b>, karena E menjaga jadwal untuk semua orang dan tetap membuka jalan bertanya bagi yang berhalangan.</p>
+    <p><b>Analogi:</b> seperti kuliah yang disiarkan dan punya kolom tanya daring: mahasiswa yang berhalangan tetap ikut belajar dan bertanya, tanpa jadwal kelas dipindah untuk semua.</p>
+    <p><b>Jebakan:</b> wajar kalau kamu langsung memilih menggeser jadwal, karena terasa paling menghormati. Di cerita ada peserta yang sudah membeli tiket, dan ada sistem yang bisa menyiarkan rapat. Dua fakta itu membuat menggeser jadwal jadi pilihan yang lebih mahal dari yang perlu.</p>
+    <p><b>Tips:</b> bayangkan dirimu di posisi setiap orang di cerita, termasuk peserta yang sudah membeli tiket, sebelum memutuskan siapa yang harus berkorban.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 32</span>
+    <span class="badge dim-PelayananPublik">Pelayanan Publik</span>
+  </div><div class="stem">
+    Berkas kenaikan pangkat guru dari pulau tinggal kurang legalisir fotokopi SK terakhir. SK aslinya di pulau, sedangkan batasnya Jumat dan kapal baru datang Sabtu. Arsip SK ada di bagian kepegawaian Anda, dan kepala subbagian yang berwenang melegalisir sedang di kantor. Apa yang Anda lakukan? (Pelayanan Publik)
+  </div><ul class="options">
+    <li><span class="opt-letter kunci">A.</span><span class="opt-text kunci">Menyalin SK guru itu dari arsip, lalu memintakan legalisirnya kepada atasan.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Menyarankan guru itu pulang dulu, lalu menitipkan legalisirnya kepada kerabat di kota.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Mengembalikan berkas karena aturan mewajibkan fotokopi SK sudah dilegalisir saat diserahkan.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menerima berkas itu sebagai susulan, mengingat SK aslinya baru bisa dibawa Sabtu.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Melegalisir sendiri fotokopi bawaan guru itu setelah mencocokkannya dengan arsip kantor.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Pelayanan Publik: syarat berkas terpenuhi sebelum batas tanpa warga bolak-balik.</li>
+      <li><b>Kalimat penentu:</b> "kepala subbagian yang berwenang melegalisir sedang di kantor". Legalisir yang sah bisa didapat hari ini juga.</li>
+      <li><b>Coret:</b> B (guru disuruh pulang, urusan dititipkan kerabat), C (berkas dikembalikan, periode usul lewat), D (SK asli baru Sabtu, batasnya Jumat). Tinggal E dan A. E: legalisir oleh orang yang tidak berwenang. A: salinan arsip dilegalisir atasan yang berwenang. <b>Pilih A.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Pejabat berwenang ada di tempat? Libatkan dia, jangan mengambil alih wewenangnya.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> berkas kenaikan pangkat seorang guru dari pulau sudah lengkap, tinggal legalisir fotokopi SK terakhir. SK aslinya ada di pulau, batasnya Jumat, dan kapal baru datang Sabtu. Arsip SK ada di bagianmu, dan kepala subbagian yang berwenang melegalisir sedang di kantor.</p>
+    <ul>
+      <li><b>A (skor 5)</b>: salinan SK-nya ada di arsipmu sendiri, dan orang yang berhak melegalisir ada di kantor yang sama. Berkas lengkap hari itu juga, guru itu tidak perlu menyeberang lagi.</li>
+      <li><b>E (skor 4)</b>: niatmu menolong, dan arsipnya pun sudah kamu cocokkan. Masalahnya, legalisir bukan wewenangmu, sementara yang berwenang justru ada di kantor.</li>
+      <li><b>D (skor 3)</b>: terdengar luwes. Sayang hitungannya tidak cocok: SK asli baru bisa dibawa Sabtu, sedangkan batasnya Jumat.</li>
+      <li><b>C (skor 2)</b>: aturannya kamu pegang, dan guru itu pulang dengan tangan kosong. Kekurangannya sebenarnya bisa ditutup dari kantormu sendiri.</li>
+      <li><b>B (skor 1)</b>: kasihan guru itu, disuruh pulang menyeberang, lalu urusannya dititipkan ke kerabat yang tidak memegang SK aslinya.</li>
+    </ul>
+    <p><b>Kunci A</b>, karena A menutup kekurangan berkas dengan arsip dan pejabat yang sudah ada di kantor, sebelum batas Jumat.</p>
+    <p><b>Analogi:</b> seperti fotokopi ijazah yang ketinggalan: kalau kampusmu menyimpan salinannya dan bagian akademik bisa mengesahkannya hari itu, kamu tidak perlu pulang kampung untuk mengambil yang asli.</p>
+    <p><b>Jebakan:</b> siapa yang berhak membubuhkan legalisir? Pertanyaan ini sering terlewat saat kamu ingin cepat menolong. Cerita menjawabnya sendiri: kepala subbagian, dan ia sedang di kantor.</p>
+    <p><b>Tips:</b> sebelum menyuruh warga kembali lagi, periksa apa yang sebenarnya sudah tersimpan di kantormu sendiri.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 33</span>
+    <span class="badge dim-SosialBudaya">Sosial Budaya</span>
+  </div><div class="stem">
+    Anda instruktur kelas otomotif di balai latihan kerja dan penyusun tata tertibnya. Evaluasi tanpa nama menunjukkan tiga peserta luar daerah tertinggal karena rekan kelompok memberi arahan dalam bahasa daerah. Kelompok sering praktik di bengkel tanpa didampingi instruktur. Apa respons Anda? (Sosial Budaya)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Mengajak peserta menyepakati aturan bahasa kelompok pada evaluasi akhir bulan depan.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Membebaskan kelompok memakai bahasa apa pun selama target praktik tercapai.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Mengumumkan besok bahwa arahan praktik wajib berbahasa Indonesia demi peserta luar daerah.</span></li>
+    <li><span class="opt-letter kunci">D.</span><span class="opt-text kunci">Mengajak peserta menyepakati bahasa Indonesia saat bekerja, lalu memasukkannya ke tata tertib.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menyarankan ketiga peserta belajar istilah bahasa daerah, lalu membaur dengan kelompoknya.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Sosial Budaya: peserta pendatang tidak tersisih oleh bahasa kelompok.</li>
+      <li><b>Kalimat penentu:</b> "Kelompok sering praktik di bengkel tanpa didampingi instruktur". Aturan harus dijaga peserta sendiri, bukan oleh pengawasan instruktur.</li>
+      <li><b>Coret:</b> B (dibebaskan, tiga peserta tetap tertinggal), E (beban menyesuaikan dipindah ke tiga peserta), A (baru disepakati bulan depan). Tinggal C dan D. C: diumumkan sepihak, mudah diabaikan di bengkel. D: disepakati peserta dan tertulis di tata tertib. <b>Pilih D.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Kelompok bekerja tanpa pengawasan? Pilih aturan yang disepakati bersama, jangan sekadar diumumkan.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> kamu instruktur kelas otomotif di balai latihan kerja, dan kamu juga yang menyusun tata tertibnya. Dari evaluasi tanpa nama, ketahuan tiga peserta dari luar daerah tertinggal karena teman kelompoknya memberi arahan dalam bahasa daerah. Kelompok juga sering praktik di bengkel tanpa kamu dampingi.</p>
+    <ul>
+      <li><b>D (skor 5)</b>: semua peserta ikut memutuskan, jadi aturannya terasa milik mereka sendiri. Begitu tertulis di tata tertib, aturan itu tetap berjalan walau kamu tidak ada di bengkel.</li>
+      <li><b>C (skor 4)</b>: isinya sudah benar. Bayangkan kelompok yang bekerja di bengkel tanpa instruktur: aturan yang hanya diumumkan dari depan kelas mudah terlupa. Menyebut peserta luar daerah sebagai alasannya juga bisa membuat mereka makin canggung.</li>
+      <li><b>A (skor 3)</b>: arahnya bagus, cuma terlambat. Sampai evaluasi akhir bulan depan, tiga peserta itu terus tertinggal.</li>
+      <li><b>E (skor 2)</b>: kenapa yang disuruh menyesuaikan justru tiga orang yang sudah tertinggal? Mereka datang untuk belajar otomotif, bukan bahasa daerah.</li>
+      <li><b>B (skor 1)</b>: target praktik kelompok tercapai, dan tiga orang tetap tertinggal. Membebaskan di sini sama dengan membiarkan.</li>
+    </ul>
+    <p><b>Kunci D</b>, karena D mengubah kebiasaan lewat kesepakatan bersama, lalu mengikatnya di tata tertib yang kamu susun.</p>
+    <p><b>Analogi:</b> seperti kelompok tugas yang sepakat memakai bahasa yang dipahami semua anggota karena ada teman dari kota lain. Tidak perlu guru yang mengawasi setiap obrolan.</p>
+    <p><b>Jebakan:</b> pilihan C dan D sama-sama memakai bahasa Indonesia, jadi godaannya memilih yang paling cepat. Pembedanya ada di kalimat terakhir cerita: kelompok sering bekerja tanpa kamu. Aturan yang hanya diumumkan butuh pengawas, aturan yang disepakati dijaga sendiri oleh pesertanya.</p>
+    <p><b>Tips:</b> kalau dua pilihan isinya sama, bandingkan cara aturannya lahir: diputuskan sendiri atau disepakati bersama.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 34</span>
+    <span class="badge dim-TIK">TIK</span>
+  </div><div class="stem">
+    Petugas yang mengaku dari puskesmas datang dengan surat tugas, meminta daftar lansia beserta NIK dan nomor telepon. Anda operator data desa, dan kantor menyimpan nomor resmi puskesmas. Bulan lalu desa tetangga tertipu surat tugas palsu dengan cara serupa. Apa yang Anda lakukan? (TIK)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Mengarahkan petugas itu meminta data ke ketua RT, mengingat mereka mengenal warganya.</span></li>
+    <li><span class="opt-letter kunci">B.</span><span class="opt-text kunci">Memastikan permintaan itu lewat nomor resmi puskesmas, lalu melapor ke kepala desa.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Bertanya kepada rekan sekantor apakah permintaan serupa pernah datang, lalu mengikuti sarannya.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menyimpan berkas permintaan itu sampai ada arahan tertulis dari pihak kecamatan.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menelepon nomor di surat tugas itu, lalu menyerahkan daftar bila petugasnya dibenarkan.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> TIK: data pribadi warga hanya keluar ke peminta yang terbukti sah.</li>
+      <li><b>Kalimat penentu:</b> "desa tetangga tertipu surat tugas palsu dengan cara serupa". Surat tugas dan isinya belum bisa dipercaya.</li>
+      <li><b>Coret:</b> D (permintaan menggantung, tidak ada yang dicek), C (mengikuti saran rekan, bukan memeriksa), A (risiko dipindah ke ketua RT). Tinggal E dan B. E: nomor dari surat yang bisa dipalsukan. B: dicek lewat nomor resmi simpanan kantor. <b>Pilih B.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Peminta membawa surat sendiri? Cek lewat kontak resmi milikmu, jangan lewat kontak di suratnya.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> seseorang yang mengaku petugas puskesmas datang membawa surat tugas. Ia minta daftar lansia lengkap dengan NIK dan nomor telepon. Kamu operator data desa, dan kantor menyimpan nomor resmi puskesmas. Bulan lalu desa tetangga tertipu surat tugas palsu dengan cara yang sama.</p>
+    <ul>
+      <li><b>B (skor 5)</b>: kamu menelepon puskesmas lewat nomor yang disimpan kantormu sendiri. Kalau benar, program jalan. Kalau palsu, data lansia aman. Kepala desa juga tahu apa yang terjadi.</li>
+      <li><b>E (skor 4)</b>: kamu sudah berhati-hati, sayang yang ditelepon nomor dari surat itu sendiri. Kalau suratnya palsu, nomornya bisa saja milik komplotan yang sama.</li>
+      <li><b>A (skor 3)</b>: data memang tidak keluar dari mejamu. Hanya saja orang yang sama tinggal datang ke ketua RT, yang tidak punya cara memeriksanya.</li>
+      <li><b>C (skor 2)</b>: rekanmu mungkin tahu sesuatu, mungkin juga tidak. Yang dibutuhkan di sini pemeriksaan, bukan ingatan.</li>
+      <li><b>D (skor 1)</b>: berkasnya aman di laci, tapi tidak ada yang selesai. Lansia menunggu, dan petugas itu pun belum jelas asli atau palsu.</li>
+    </ul>
+    <p><b>Kunci B</b>, karena B memeriksa lewat jalur yang tidak bisa dikendalikan oleh si peminta.</p>
+    <p><b>Analogi:</b> dapat telepon dari "bank" yang meminta kode OTP? Kamu tidak menelepon balik nomor yang ia berikan. Kamu menelepon nomor di balik kartu ATM-mu.</p>
+    <p><b>Jebakan:</b> langkah memastikan di pilihan E membuatnya mirip kunci. Bedanya hanya di nomor mana yang ditelepon. Kejadian di desa tetangga mengingatkan bahwa surat tugas bisa dipalsukan, berikut nomor yang tertulis di dalamnya.</p>
+    <p><b>Tips:</b> kejadian buruk di tempat lain yang disebut cerita biasanya menunjukkan cara kerja penipunya. Pakai itu untuk menguji setiap pilihan.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 35</span>
+    <span class="badge dim-JejaringKerja">Jejaring Kerja</span>
+  </div><div class="stem">
+    Peringatan ketinggian air dari BPBD tempat Anda bertugas dikirim ke grup lima kepala desa di hilir. Banjir pekan lalu, dua desa terlambat mengungsi karena kepala desanya telat membaca pesan, entah kenapa. Anda sendiri hanya piket dua malam sepekan. Tindakan paling tepat adalah&hellip; (Jejaring Kerja)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menelepon kedua kepala desa itu setiap kali peringatan yang dikirim belum dibaca.</span></li>
+    <li><span class="opt-letter kunci">B.</span><span class="opt-text kunci">Menyepakati dengan kelima desa satu petugas penerima peringatan yang wajib segera membalas.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Melanjutkan pengiriman lewat grup yang sama karena kelima desa harus diperlakukan setara.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Mengusulkan camat menerbitkan instruksi agar kedua kepala desa itu rajin membuka grup.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menegur kedua kepala desa itu di grup karena lalai membaca peringatan banjir.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Jejaring Kerja: peringatan pasti diterima desa tanpa bergantung pada satu orang.</li>
+      <li><b>Kalimat penentu:</b> "Anda sendiri hanya piket dua malam sepekan". Cara yang menuntut kehadiran Anda tidak akan bertahan.</li>
+      <li><b>Coret:</b> C (cara lama yang terbukti terlambat), E (dicap lalai sebelum sebabnya diketahui), D (instruksi camat, sebab telat tetap tak diketahui). Tinggal A dan B. A: bergantung pada Anda yang jarang piket. B: petugas penerima tiap desa wajib membalas. <b>Pilih B.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Kamu hanya hadir sebagian waktu? Bangun cara kerja bersama, jangan andalkan dirimu sendiri.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> kamu bertugas di BPBD, yang mengirim peringatan ketinggian air ke grup lima kepala desa di hilir. Banjir pekan lalu, dua desa terlambat mengungsi karena kepala desanya telat membaca pesan, dan belum ada yang tahu sebabnya. Kamu sendiri hanya piket dua malam dalam sepekan.</p>
+    <ul>
+      <li><b>B (skor 5)</b>: setiap desa memilih sendiri siapa yang menerima, dan orang itu wajib membalas. Begitu ada balasan, kamu tahu pesannya sampai, siapa pun yang sedang piket malam itu.</li>
+      <li><b>A (skor 4)</b>: kamu sungguh peduli, sampai mau menelepon satu per satu. Lalu bagaimana di malam-malam saat kamu tidak piket?</li>
+      <li><b>D (skor 3)</b>: instruksi camat bisa membuat kepala desa lebih waspada. Masalahnya, kamu belum tahu kenapa mereka telat, jadi instruksinya bisa meleset dari sebab yang sebenarnya.</li>
+      <li><b>E (skor 2)</b>: menegur di depan grup sebelum tahu sebabnya? Bisa jadi ada alasan yang belum kamu dengar.</li>
+      <li><b>C (skor 1)</b>: setara bukan berarti mengulang cara yang pekan lalu terbukti terlambat.</li>
+    </ul>
+    <p><b>Kunci B</b>, karena B memperbaiki jalur penerimaan peringatan bersama desa, sehingga tidak bergantung pada satu orang.</p>
+    <p><b>Analogi:</b> seperti paket kiriman yang meminta tanda terima: pengirim tidak perlu menelepon penerima setiap hari, karena tanda terima sudah memberi tahu barangnya sampai.</p>
+    <p><b>Jebakan:</b> menelepon satu per satu kelihatan penuh tanggung jawab. Kalimat pendek di akhir cerita yang menggugurkannya: kamu hanya ada dua malam sepekan, sedangkan hujan deras tidak menunggu jadwal piket.</p>
+    <p><b>Tips:</b> solusi yang baik tetap berjalan saat kamu libur, sakit, atau sedang tidak bertugas.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 36</span>
+    <span class="badge dim-Profesionalisme">Profesionalisme</span>
+  </div><div class="stem">
+    Sebagai penyuluh baru, Anda menemukan hasil ukur GPS luas tanam tiga desa jauh di bawah angka rekan senior di laporan tim. Laporan itu dikirim Jumat sebagai dasar pembagian pupuk bersubsidi. Rekan senior itu ada di kantor hari ini. Respons paling tepat adalah&hellip; (Profesionalisme)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Mengirim laporan tepat waktu tanpa mempersoalkan angka rekan, demi menghormati senior.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Mencatat selisih angka ketiga desa untuk dibahas pada rapat evaluasi bulan depan.</span></li>
+    <li><span class="opt-letter kunci">C.</span><span class="opt-text kunci">Membahas selisih hasil ukur dengan rekan senior, mengingat laporannya dikirim Jumat.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Melaporkan angka rekan senior itu ke kepala bidang, lalu meminta laporan ditahan.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Mengirim pesan kepada rekan senior bahwa angka ketiga desa itu tampak keliru.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Profesionalisme: data tim dibetulkan tanpa melangkahi rekan.</li>
+      <li><b>Kalimat penentu:</b> "dasar pembagian pupuk bersubsidi". Angka keliru langsung berakibat, jadi harus dibereskan sebelum Jumat.</li>
+      <li><b>Coret:</b> A (diam demi senior, angka keliru terkirim), D (lapor kepala bidang sebelum bicara dengan rekan), E (vonis lewat pesan padahal rekan di kantor). Tinggal B dan C. B: dibahas bulan depan, pupuk sudah terbagi. C: dibahas bersama rekan sebelum laporan dikirim. <b>Pilih C.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Data keliru menjelang tenggat? Bicara ke pemilik angka sekarang, jangan tunggu rapat.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> kamu penyuluh yang masih baru. Hasil ukur GPS-mu menunjukkan luas tanam tiga desa jauh di bawah angka yang dimasukkan rekan senior ke laporan tim. Laporan itu dikirim Jumat dan menjadi dasar pembagian pupuk bersubsidi. Rekan senior itu ada di kantor hari ini.</p>
+    <ul>
+      <li><b>C (skor 5)</b>: datangi rekanmu hari ini dan bahas selisihnya selagi laporan belum terkirim. Angka yang keliru bisa dibetulkan, dan seniormu tidak merasa dilangkahi.</li>
+      <li><b>B (skor 4)</b>: selisihnya tidak hilang, kamu mencatatnya. Hanya saja bulan depan pupuk sudah terbagi memakai angka yang keliru.</li>
+      <li><b>E (skor 3)</b>: kamu sudah berani bicara langsung ke orangnya. Sayang lewat pesan, dan kalimat "tampak keliru" bisa terbaca seperti tuduhan dari orang baru. Ia ada di kantor, kenapa tidak bicara berdua?</li>
+      <li><b>D (skor 2)</b>: kepala bidang bisa menahan laporan, sementara rekanmu belum tahu ada selisih. Ia bisa merasa dilaporkan sebelum diberi kesempatan.</li>
+      <li><b>A (skor 1)</b>: aku paham rasa sungkan sebagai orang baru. Diam di sini berarti pupuk dibagi memakai angka yang kamu tahu tidak cocok dengan lapangan.</li>
+    </ul>
+    <p><b>Kunci C</b>, karena C membawa data ke orang yang memasukkan angka itu, selagi masih ada waktu membetulkannya.</p>
+    <p><b>Analogi:</b> melihat teman salah menulis nomor rekening di formulir kelompok? Kamu bilang padanya sebelum formulir diserahkan, bukan lapor ke guru atau menunggu uangnya salah kirim.</p>
+    <p><b>Jebakan:</b> sebagai orang baru, menunggu rapat bulan depan terasa paling sopan. Kalimat "dikirim Jumat sebagai dasar pembagian pupuk bersubsidi" membuat kesopanan itu mahal, karena pembagian pupuk di tiga desa itu ikut keliru.</p>
+    <p><b>Tips:</b> rasa sungkan pada senior itu wajar. Yang membuat pembicaraan tetap nyaman adalah membawa data, bukan tuduhan.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 37</span>
+    <span class="badge dim-TIK">TIK</span>
+  </div><div class="stem">
+    Sebagai admin aplikasi surat keterangan daring kecamatan, Anda berwenang mengubah tampilan aplikasi. Sepekan uji coba, puluhan pengajuan warga ditolak karena foto kartu keluarga melebihi 2 MB, padahal bulan depan loket kertas ditutup. Kebanyakan warga mengirim dari rumah. Sikap Anda adalah&hellip; (TIK)
+  </div><ul class="options">
+    <li><span class="opt-letter kunci">A.</span><span class="opt-text kunci">Memasang petunjuk batas ukuran dan cara mengecilkan foto di halaman unggah aplikasi.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Membalas pengajuan yang ditolak dengan aturan batas foto, lalu meminta unggah ulang.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Membantu warga yang datang ke kantor kecamatan mengecilkan foto sebelum diunggah.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Mendukung usul staf agar loket kertas tetap dibuka sampai warga terbiasa daring.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Mengarahkan warga yang fotonya ditolak ke jasa pengetikan di luar kantor.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> TIK: layanan daring jalan penuh dan warga tetap bisa memakainya.</li>
+      <li><b>Kalimat penentu:</b> "Kebanyakan warga mengirim dari rumah". Bantuan harus sampai lewat aplikasinya, bukan lewat loket.</li>
+      <li><b>Coret:</b> E (warga dilempar ke jasa di luar), D (layanan daring ditunda), C (hanya menolong yang datang ke kantor). Tinggal B dan A. B: diberi tahu setelah gagal, tanpa caranya. A: petunjuk di halaman unggah sebelum gagal. <b>Pilih A.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Banyak pengguna gagal di langkah yang sama? Perbaiki di aplikasinya, jangan balas satu per satu.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> kamu admin aplikasi surat keterangan daring di kecamatan, dan kamu boleh mengubah tampilan aplikasinya. Selama sepekan uji coba, puluhan pengajuan ditolak karena foto kartu keluarga lebih dari 2 MB. Bulan depan loket kertas ditutup, dan kebanyakan warga mengirim dari rumah.</p>
+    <ul>
+      <li><b>A (skor 5)</b>: petunjuknya muncul tepat di tempat warga akan mengunggah. Sebelum gagal, mereka sudah tahu batasnya dan cara mengecilkan fotonya, di mana pun mereka mengirim.</li>
+      <li><b>B (skor 4)</b>: warga akhirnya tahu aturannya, sesudah ditolak, dan tetap belum tahu cara mengecilkan fotonya. Pengajuan berikutnya bisa gagal lagi.</li>
+      <li><b>C (skor 3)</b>: warga yang datang tertolong, dan itu baik. Yang mengirim dari rumah, dan mereka justru kebanyakan, tidak kebagian bantuanmu.</li>
+      <li><b>D (skor 2)</b>: loket kertas yang dibuka terus terasa aman. Hanya saja masalah foto 2 MB tetap ada, tinggal ditunda.</li>
+      <li><b>E (skor 1)</b>: warga yang sudah gagal sekali masih harus mencari jasa di luar. Perbaikannya sebenarnya ada di tanganmu sebagai admin.</li>
+    </ul>
+    <p><b>Kunci A</b>, karena A memperbaiki tempat masalahnya muncul, yaitu halaman unggah, sehingga semua pemohon terbantu sebelum gagal.</p>
+    <p><b>Analogi:</b> toko daring yang sering menerima keluhan ukuran baju salah tidak membalas satu per satu. Ia memasang tabel ukuran di halaman produknya.</p>
+    <p><b>Jebakan:</b> menjawab setiap pengajuan yang ditolak itu rajin. Lihat urutannya: warga gagal dulu, baru diberi tahu. Sebagai admin yang boleh mengubah tampilan, kamu bisa mencegah gagalnya, bukan hanya menjelaskannya.</p>
+    <p><b>Tips:</b> perhatikan di mana kebanyakan orang di cerita berada. Bantuanmu harus sampai ke tempat itu.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 38</span>
+    <span class="badge dim-AntiRadikalisme">Anti Radikalisme</span>
+  </div><div class="stem">
+    Tiga apel Senin terakhir, seorang rekan di bagian Anda tetap duduk saat Indonesia Raya dinyanyikan. Beberapa pegawai mulai berbisik bahwa ia menolak negara, padahal belum ada yang mengajaknya bicara. Ia sendiri tak pernah menyampaikan pandangan apa pun. Langkah pertama Anda adalah&hellip; (Anti Radikalisme)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menyampaikan sikap rekan itu kepada kepala bagian agar dibina sesuai aturan disiplin.</span></li>
+    <li><span class="opt-letter kunci">B.</span><span class="opt-text kunci">Menemui rekan itu empat mata untuk menanyakan alasannya tetap duduk saat apel.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Membela rekan itu di depan pegawai lain dan siap ikut menanggung sikapnya.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menanyakan kepada rekan-rekan lain apakah mereka juga melihat gelagat serupa darinya.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Mengingatkan rekan di depan barisan bahwa pegawai wajib berdiri saat lagu kebangsaan.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Anti Radikalisme: tegas pada tanda penolakan negara tanpa mengecap sebelum tahu alasannya.</li>
+      <li><b>Kalimat penentu:</b> "belum ada yang mengajaknya bicara". Langkah pertama: tanya orangnya langsung.</li>
+      <li><b>Coret:</b> C (membela tanpa tahu alasannya), D (bertanya ke orang lain, bisik-bisik melebar), E (ditegur di depan barisan). Tinggal A dan B. A: dilaporkan sebelum ditanya. B: ditanya empat mata. <b>Pilih B.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Ada tuduhan tapi orangnya belum ditanya? Tanyakan berdua dulu, jangan lapor atau umumkan.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> dalam tiga apel Senin terakhir, seorang rekan di bagianmu tetap duduk saat Indonesia Raya dinyanyikan. Beberapa pegawai mulai berbisik bahwa ia menolak negara, padahal belum ada yang mengajaknya bicara. Ia sendiri tidak pernah menyampaikan pandangan apa pun. Yang ditanya: langkah pertamamu.</p>
+    <ul>
+      <li><b>B (skor 5)</b>: tanyakan langsung, berdua saja. Kamu mendapat jawaban dari orangnya, bukan dari bisik-bisik, dan ia tidak dipermalukan di depan siapa pun.</li>
+      <li><b>A (skor 4)</b>: lapor ke kepala bagian itu jalur yang benar, hanya belum waktunya. Bayangkan ternyata ia punya alasan yang belum diketahui siapa pun, dan namanya sudah sampai ke meja atasan.</li>
+      <li><b>E (skor 3)</b>: aturannya benar, tempatnya keliru. Ditegur di depan barisan, ia lebih mungkin malu atau melawan daripada bercerita.</li>
+      <li><b>D (skor 2)</b>: niatnya mengumpulkan informasi, hasilnya bisik-bisik makin ramai.</li>
+      <li><b>C (skor 1)</b>: membela orang yang alasannya belum kamu tahu sama berisikonya dengan menuduhnya.</li>
+    </ul>
+    <p><b>Kunci B</b>, karena B mencari tahu dari sumbernya, dengan cara yang tidak mempermalukan.</p>
+    <p><b>Analogi:</b> teman sekelasmu tiba-tiba tidak mau ikut upacara? Sebelum ikut membicarakannya, kamu tanya dia baik-baik di jam istirahat.</p>
+    <p><b>Jebakan:</b> bisik-bisik di cerita bisa ikut memengaruhimu. Pisahkan yang dilihat sendiri, yaitu rekan itu duduk, dari yang hanya ditebak orang, yaitu ia menolak negara.</p>
+    <p><b>Tips:</b> kata "langkah pertama" meminta tindakan paling awal yang masuk akal, bukan tindakan paling keras.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 39</span>
+    <span class="badge dim-SosialBudaya">Sosial Budaya</span>
+  </div><div class="stem">
+    Anda staf desa yang mengatur peminjaman balai menurut urutan permohonan. Majelis taklim dan kelompok arisan biasa memesan sebulan sebelumnya, sehingga persekutuan doa keluarga Kristen dan sanggar tari warga pendatang belum sekali pun kebagian tahun ini. Pengurus keduanya mengeluh kepada Anda. Apa tindakan paling tepat? (Sosial Budaya)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menawarkan kedua kelompok itu memakai balai pada malam yang belum pernah dipesan.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Mempertahankan urutan permohonan karena sebagian besar warga sudah puas dengan cara itu.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Meminta majelis taklim merelakan satu jadwalnya bulan ini demi kedua kelompok itu.</span></li>
+    <li><span class="opt-letter kunci">D.</span><span class="opt-text kunci">Menyusun bersama para pengurus jadwal bulanan yang memberi giliran tiap kelompok.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menampung keluhan itu sampai pengurusnya mengajukan keberatan tertulis kepada kepala desa.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Sosial Budaya: kelompok kecil berbeda agama dan asal punya akses setara ke fasilitas bersama.</li>
+      <li><b>Kalimat penentu:</b> "belum sekali pun kebagian tahun ini". Aturannya sendiri yang membuat mereka tersisih.</li>
+      <li><b>Coret:</b> E (keluhan ditunda sampai ada surat), B (kepuasan mayoritas dijadikan dasar), C (pengecualian sebulan, beban di satu kelompok). Tinggal A dan D. A: hanya dapat malam sisa. D: giliran tiap kelompok disusun bersama pengurus. <b>Pilih D.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Kelompok yang sama terus tersisih? Ubah aturannya bersama, jangan beri sisa atau pengecualian.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> kamu staf desa yang mengatur peminjaman balai, siapa cepat dia dapat. Majelis taklim dan kelompok arisan biasa memesan sebulan sebelumnya, sehingga persekutuan doa keluarga Kristen dan sanggar tari warga pendatang belum sekali pun kebagian tahun ini. Pengurus keduanya mengeluh kepadamu.</p>
+    <ul>
+      <li><b>D (skor 5)</b>: aturannya dibenahi bersama, bukan ditambal. Setiap kelompok punya giliran, termasuk yang selama ini kalah cepat memesan.</li>
+      <li><b>A (skor 4)</b>: kedua kelompok akhirnya dapat tempat, dan itu kemajuan. Hanya saja mereka tetap menjadi penerima malam sisa yang tidak dipesan siapa pun.</li>
+      <li><b>C (skor 3)</b>: majelis taklim diminta mengalah, dan itu pun hanya bulan ini. Bulan depan, urutannya kembali seperti semula.</li>
+      <li><b>B (skor 2)</b>: warga yang puas adalah warga yang selama ini kebagian. Dua kelompok yang mengeluh juga bagian dari warga.</li>
+      <li><b>E (skor 1)</b>: kasihan pengurusnya, sudah mengeluh langsung kepadamu tapi masih disuruh menulis surat keberatan dulu.</li>
+    </ul>
+    <p><b>Kunci D</b>, karena D membuat balai benar-benar bisa dipakai bergiliran oleh semua warga.</p>
+    <p><b>Analogi:</b> seperti lapangan sekolah yang selalu dipakai tim basket karena mereka paling cepat mendaftar. Jalan keluarnya jadwal giliran, bukan menyuruh tim lain bermain di jam yang tidak diminati siapa pun.</p>
+    <p><b>Jebakan:</b> ada yang berbagi di pilihan C, jadi kesannya adil. Lihat siapa yang berkorban dan untuk berapa lama: satu kelompok, satu bulan, lalu masalahnya kembali.</p>
+    <p><b>Tips:</b> aturan yang terasa adil bagi kebanyakan orang perlu dicek dari sisi kelompok yang paling jarang kebagian.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 40</span>
+    <span class="badge dim-JejaringKerja">Jejaring Kerja</span>
+  </div><div class="stem">
+    Unit TI Anda akan memasang pembaruan keamanan server yang mematikan aplikasi layanan enam jam. Vendor menawarkan Sabtu pagi atau sore, yang menurut catatan paling sepi, asal jamnya dikunci Rabu. Bidang perizinan, satu dari tiga pemakainya, biasa menjadwalkan pemohon sepekan sebelumnya. Langkah paling tepat adalah&hellip; (Jejaring Kerja)
+  </div><ul class="options">
+    <li><span class="opt-letter kunci">A.</span><span class="opt-text kunci">Mengedarkan dua pilihan jam kepada ketiga bidang untuk dijawab sebelum Rabu.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Mengambil Sabtu pagi tawaran vendor demi menjaga hubungan kerja yang sudah baik.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Memilih Sabtu sore karena menurut catatan, saat itulah aplikasi paling sepi.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Mengabari ketiga bidang begitu jam dikunci Rabu agar mereka menyesuaikan layanannya.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Membagi pemeliharaan menjadi dua jam setiap Sabtu selama tiga pekan berturut-turut.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Jejaring Kerja: pemeliharaan sistem tanpa memutus layanan bidang lain.</li>
+      <li><b>Kalimat penentu:</b> "biasa menjadwalkan pemohon sepekan sebelumnya". Jam yang sepi di catatan bisa saja sudah terisi pemohon.</li>
+      <li><b>Coret:</b> E (dipecah tiga pekan, gangguan berulang), B (jam dipilih demi vendor), D (bidang baru diberi tahu setelah jam dikunci). Tinggal C dan A. C: jam dipilih tanpa bertanya. A: tiga bidang memilih sebelum Rabu. <b>Pilih A.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Keputusanmu mengganggu pihak lain? Tanya mereka sebelum mengunci, jangan sesudahnya.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> unit TI-mu akan memasang pembaruan keamanan server, dan aplikasi layanan mati enam jam. Vendor menawarkan Sabtu pagi atau sore, yang menurut catatan paling sepi, asal jamnya dikunci Rabu. Bidang perizinan, salah satu dari tiga pemakai aplikasi, biasa menjadwalkan pemohon sepekan sebelumnya.</p>
+    <ul>
+      <li><b>A (skor 5)</b>: kamu tidak menebak jadwal orang lain, kamu menanyakannya. Perizinan bisa menunjuk jam yang sudah terisi pemohon, dan jam tetap terkunci sebelum Rabu.</li>
+      <li><b>C (skor 4)</b>: catatan menunjukkan kebiasaan masa lalu. Yang tidak tercatat di sana: pemohon yang mungkin sudah dijadwalkan perizinan untuk Sabtu itu.</li>
+      <li><b>D (skor 3)</b>: ketiga bidang diberi tahu, sesudah semuanya diputuskan. Kalau jam itu bentrok dengan pemohon perizinan, sudah tidak bisa diubah.</li>
+      <li><b>B (skor 2)</b>: hubungan baik dengan vendor itu penting. Pilihan jamnya tetap harus ditimbang dari layanan, bukan dari rasa sungkan.</li>
+      <li><b>E (skor 1)</b>: aplikasi mati enam jam dalam sekali jalan kedengarannya berat. Dipecah tiga pekan, gangguannya malah datang tiga kali, dan pembaruan keamanannya tertunda.</li>
+    </ul>
+    <p><b>Kunci A</b>, karena A mengajak pemakai aplikasi ikut memilih jam, dan tetap selesai sebelum batas Rabu.</p>
+    <p><b>Analogi:</b> seperti pengelola gedung yang akan mematikan listrik: ia menawarkan dua pilihan jam ke para penyewa dulu, baru memutuskan.</p>
+    <p><b>Jebakan:</b> keputusan berdasarkan catatan kesannya paling objektif. Perhatikan data apa yang dipakai: catatan tentang ramai-sepinya aplikasi. Jadwal pemohon perizinan hanya diketahui bidang itu sendiri, dan cara mengetahuinya adalah bertanya.</p>
+    <p><b>Tips:</b> data lama membantu menebak, orang yang terdampak memberi kepastian.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 41</span>
+    <span class="badge dim-SosialBudaya">Sosial Budaya</span>
+  </div><div class="stem">
+    Anda staf humas pengatur siaran langsung radio soal tarif retribusi. Separuh acara berisi tanya jawab telepon yang hanya boleh dijawab kepala bidang pendapatan. Jadwal rencana kerja humas jatuh pada Jumat Agung, hari ibadah beliau, padahal radio sanggup pekan depan. Sikap Anda adalah&hellip; (Sosial Budaya)
+  </div><ul class="options">
+    <li><span class="opt-letter kunci">A.</span><span class="opt-text kunci">Menyepakati hari siaran pekan depan dengan narasumber, lalu mengabarkannya ke radio.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Merekam wawancara narasumber sehari sebelumnya, demi siaran tetap tayang Jumat itu.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Membiarkan pihak radio memutuskan jadwalnya sendiri karena slot siaran milik mereka.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Berpegang pada jadwal rencana kerja humas dan meminta narasumber menyesuaikan diri.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Meminta staf senior bidang pendapatan menggantikan beliau, karena bahan siarannya sudah tertulis.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Sosial Budaya: narasumber tidak dipaksa memilih antara tugas dan ibadah.</li>
+      <li><b>Kalimat penentu:</b> "Separuh acara berisi tanya jawab telepon". Rekaman tidak bisa menggantikan siaran langsung.</li>
+      <li><b>Coret:</b> C (keputusan dilepas ke radio), D (narasumber dipaksa menyesuaikan ibadah), E (pengganti tidak berwenang menjawab). Tinggal B dan A. B: rekaman tidak bisa menerima telepon. A: siaran langsung pekan depan bersama narasumber. <b>Pilih A.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Orang kunci berhalangan karena ibadah dan ada hari lain? Geser jadwal, jangan ganti orangnya.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> kamu staf humas yang mengatur siaran langsung di radio tentang tarif retribusi. Separuh acaranya tanya jawab lewat telepon, dan hanya kepala bidang pendapatan yang boleh menjawab. Jadwal di rencana kerja humas jatuh pada Jumat Agung, hari ibadah beliau, padahal radio sanggup menyiarkan pekan depan.</p>
+    <ul>
+      <li><b>A (skor 5)</b>: narasumber bisa beribadah dengan tenang, pendengar tetap bisa menelepon dan dijawab orang yang tepat, dan radio pun sudah sanggup. Tinggal sepakati harinya.</li>
+      <li><b>B (skor 4)</b>: akalnya bagus: narasumber hadir tanpa mengganggu ibadahnya. Sayangnya rekaman tidak bisa menerima telepon, sedangkan itu separuh acaranya.</li>
+      <li><b>E (skor 3)</b>: bahan tertulis bisa dibacakan siapa saja, pertanyaan pendengar tidak. Yang berhak menjawab soal tarif hanya kepala bidang.</li>
+      <li><b>D (skor 2)</b>: rencana kerja dibuat untuk membantu, bukan untuk memaksa orang meninggalkan ibadahnya, apalagi saat radio menawarkan hari lain.</li>
+      <li><b>C (skor 1)</b>: radio sudah menyanggupi pekan depan. Yang perlu memutuskan justru kamu, bukan mereka.</li>
+    </ul>
+    <p><b>Kunci A</b>, karena A memindahkan acara ke hari yang bisa dihadiri narasumber, karena jawaban beliau tidak tergantikan.</p>
+    <p><b>Analogi:</b> kalau dosen penguji utama berhalangan karena ibadah, sidangnya dijadwal ulang. Tidak diganti asisten, dan tidak diakali dengan video rekaman.</p>
+    <p><b>Jebakan:</b> rekaman sehari sebelumnya tampak cerdik karena semua kebagian: narasumber beribadah, siaran tetap tayang. Ingat separuh acaranya tanya jawab telepon, dan bagian itu yang tidak bisa direkam.</p>
+    <p><b>Tips:</b> di soal tentang hari raya, jawaban terbaik kadang menggeser jadwal, kadang tidak. Fakta kecil di cerita yang memutuskan, misalnya apakah orangnya bisa diganti.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 42</span>
+    <span class="badge dim-AntiRadikalisme">Anti Radikalisme</span>
+  </div><div class="stem">
+    Pekan lalu rekan senior di tim lapangan BPBD menyodori Anda formulir setia kepada kelompok yang ingin mengganti Pancasila. Anda menolak dan menasihatinya. Kemarin, saat pelatihan relawan, Anda melihat sendiri ia membagikan formulir itu kepada dua relawan muda. Respons paling tepat adalah&hellip; (Anti Radikalisme)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menasihati rekan itu sekali lagi, lalu meminta kedua relawan mengembalikan formulirnya.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Menghormati kebebasan berkeyakinan rekan itu dan membiarkan relawan memutuskan sendiri.</span></li>
+    <li><span class="opt-letter kunci">C.</span><span class="opt-text kunci">Melaporkan kedua kejadian ke kepala pelaksana BPBD, karena nasihat Anda tak mempan.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Mengumpulkan dulu bukti dari setiap ajakan berikutnya agar laporannya nanti lebih kuat.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menjaga hubungan dengan rekan senior itu dengan tidak lagi membahas ajakannya.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Anti Radikalisme: ajakan mengganti Pancasila dihentikan lewat jalur resmi.</li>
+      <li><b>Kalimat penentu:</b> "Anda melihat sendiri ia membagikan formulir itu kepada dua relawan muda". Bukti sudah ada, dan nasihat tidak menghentikannya.</li>
+      <li><b>Coret:</b> B (kebebasan berkeyakinan jadi dalih), E (diam demi hubungan), A (nasihat yang sudah gagal diulang). Tinggal D dan C. D: menunggu bukti tambahan. C: dua kejadian dilaporkan ke kepala pelaksana. <b>Pilih C.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Cara pribadi sudah gagal dan bukti di tangan? Laporkan sekarang, jangan tunggu bukti tambahan.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> pekan lalu rekan senior di tim lapangan BPBD menyodorimu formulir setia kepada kelompok yang ingin mengganti Pancasila. Kamu menolak dan menasihatinya. Kemarin, saat pelatihan relawan, kamu melihat sendiri ia membagikan formulir itu kepada dua relawan muda.</p>
+    <ul>
+      <li><b>C (skor 5)</b>: kamu sudah mencoba cara pribadi, dan ternyata ia jalan terus. Sekarang saatnya pimpinan tahu, dengan dua kejadian yang kamu alami dan lihat sendiri.</li>
+      <li><b>D (skor 4)</b>: kamu ingin laporanmu kuat, itu masuk akal. Hanya saja buktinya sudah kamu lihat kemarin, dan setiap pekan menunggu berarti ajakan itu terus berjalan.</li>
+      <li><b>A (skor 3)</b>: nasihat pertama tidak mempan, kenapa yang kedua akan berbeda? Formulir yang dikembalikan relawan juga tidak menghentikan orang yang membagikannya.</li>
+      <li><b>E (skor 2)</b>: kamu menjaga hubungan, ia tetap membagikan formulir. Diam di sini terasa damai, sementara yang didiamkan adalah ajakan mengganti Pancasila.</li>
+      <li><b>B (skor 1)</b>: kebebasan berkeyakinan dilindungi. Mengajak orang setia kepada kelompok yang ingin mengganti Pancasila sudah lain urusannya.</li>
+    </ul>
+    <p><b>Kunci C</b>, karena C menghentikan ajakan lewat pimpinan setelah jalur pribadi terbukti tidak berhasil.</p>
+    <p><b>Analogi:</b> temanmu sudah kamu ingatkan berhenti menyebarkan tautan pinjaman online ilegal, tapi kemarin ia membagikannya lagi ke adik kelas. Kali ini kamu lapor ke guru BK.</p>
+    <p><b>Jebakan:</b> mengumpulkan bukti dulu terdengar teliti. Kata "melihat sendiri" di cerita menunjukkan buktinya sudah ada, dan menunggu lebih lama hanya memberi waktu bagi ajakan itu menyebar.</p>
+    <p><b>Tips:</b> melapor bukan berarti mengkhianati rekan, apalagi setelah kamu memberinya kesempatan lewat nasihat.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 43</span>
+    <span class="badge dim-SosialBudaya">Sosial Budaya</span>
+  </div><div class="stem">
+    Edaran baru mewajibkan pakaian adat setiap Kamis tanpa merinci adat daerah mana. Anda staf kepegawaian yang ditugasi menyusun petunjuk pelaksanaannya, dan enam pegawai asal luar daerah bertanya apakah boleh memakai adat asalnya. Pelanggaran edaran masuk penilaian disiplin. Apa yang Anda lakukan? (Sosial Budaya)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Mempersilakan pegawai memakai adat asalnya demi menghargai budaya, risikonya ditanggung sendiri.</span></li>
+    <li><span class="opt-letter kunci">B.</span><span class="opt-text kunci">Mencantumkan dalam petunjuk pelaksanaan bahwa pakaian adat daerah asal juga diterima.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Memintakan izin tertulis sekretaris daerah khusus bagi keenam pegawai yang bertanya.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Meneruskan pertanyaan itu ke bagian hukum karena menafsirkan edaran adalah tugas mereka.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Mewajibkan adat daerah setempat bagi seluruh pegawai, mengikuti suara terbanyak rapat staf.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Sosial Budaya: aturan seragam yang tetap menghargai budaya asal pegawai.</li>
+      <li><b>Kalimat penentu:</b> "Pelanggaran edaran masuk penilaian disiplin". Pegawai butuh pegangan tertulis, bukan izin lisan.</li>
+      <li><b>Coret:</b> D (tugas dilempar ke bagian hukum), E (suara terbanyak menyeragamkan), C (izin hanya untuk enam penanya). Tinggal A dan B. A: risiko disiplin ditanggung pegawai. B: ditulis di petunjuk pelaksanaan untuk semua. <b>Pilih B.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Kamu yang menyusun aturannya? Jawab celahnya di aturan, jangan lewat izin perorangan.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> edaran baru mewajibkan pakaian adat setiap Kamis, tapi tidak menyebut adat daerah mana. Kamu staf kepegawaian yang ditugasi menyusun petunjuk pelaksanaannya. Enam pegawai dari luar daerah bertanya apakah boleh memakai pakaian adat asalnya. Pelanggaran edaran ini masuk penilaian disiplin.</p>
+    <ul>
+      <li><b>B (skor 5)</b>: kamu sendiri yang menyusun petunjuknya, jadi celah di edaran bisa kamu isi di situ. Begitu tertulis, setiap pegawai tahu pakaian adat asalnya diterima, tanpa takut dinilai melanggar.</li>
+      <li><b>A (skor 4)</b>: hatimu di tempat yang benar, budaya mereka dihargai. Lalu siapa yang menanggung kalau penilai disiplin berpendapat lain? Mereka sendiri.</li>
+      <li><b>C (skor 3)</b>: enam orang aman. Pegawai luar daerah yang tidak sempat bertanya bagaimana?</li>
+      <li><b>E (skor 2)</b>: suara terbanyak biasanya datang dari pegawai setempat. Yang sedikit justru kehilangan haknya.</li>
+      <li><b>D (skor 1)</b>: menafsirkan edaran bisa jadi urusan bagian hukum, tetapi menyusun petunjuknya tugasmu. Pertanyaan pegawai itu justru bahan untuk tugasmu sendiri.</li>
+    </ul>
+    <p><b>Kunci B</b>, karena B memakai tugas yang ada di tanganmu untuk memberi semua pegawai pegangan yang sama.</p>
+    <p><b>Analogi:</b> seperti aturan seragam sekolah yang menulis jelas jilbab boleh dipakai, sehingga siswi tidak perlu minta izin satu per satu ke guru piket.</p>
+    <p><b>Jebakan:</b> mempersilakan setiap orang memakai adat asalnya adalah jawaban yang murah hati. Kalimat "pelanggaran edaran masuk penilaian disiplin" membuat kemurahan itu berisiko bagi pegawainya sendiri, karena tidak ada aturan tertulis yang melindungi mereka.</p>
+    <p><b>Tips:</b> aturan tertulis untuk semua orang lebih adil daripada izin bagi yang kebetulan berani bertanya.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 44</span>
+    <span class="badge dim-PelayananPublik">Pelayanan Publik</span>
+  </div><div class="stem">
+    Sebagai petugas pengaduan RSUD, Anda membaca unggahan keluarga pasien yang dimintai Rp50.000 di kasir rawat jalan agar klaimnya cepat diproses. Unggahan itu tanpa tanggal dan nama petugas, sementara kasir dijaga empat orang bergantian. Setiap pembayaran tercetak di kuitansi bernomor. Respons paling tepat adalah&hellip; (Pelayanan Publik)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Meneruskan unggahan itu ke direktur agar keempat petugas kasir segera diperiksa.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Meminta pengunggah menghapus unggahannya lebih dulu agar nama baik rumah sakit terjaga.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Memasang pengumuman larangan pungutan di meja kasir rawat jalan mulai hari ini.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Mengganti uang Rp50.000 itu kepada pengunggah dari dompet pribadi Anda.</span></li>
+    <li><span class="opt-letter kunci">E.</span><span class="opt-text kunci">Menghubungi pengunggah untuk meminta waktu kejadian dan nomor kuitansinya sebagai dasar pemeriksaan.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Pelayanan Publik: aduan ditanggapi cepat tanpa menghukum yang tidak bersalah.</li>
+      <li><b>Kalimat penentu:</b> "Unggahan itu tanpa tanggal dan nama petugas". Kejadiannya harus dipersempit dulu sebelum ada yang diperiksa.</li>
+      <li><b>Coret:</b> D (uang pribadi, pungutan tidak tersentuh), B (citra didahulukan, aduan dibungkam), C (pengumuman, aduan yang ada menggantung). Tinggal A dan E. A: empat petugas diperiksa tanpa dipersempit. E: waktu dan nomor kuitansi diminta dulu. <b>Pilih E.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Aduan tanpa nama dan waktu? Lengkapi keterangan pengadu, jangan periksa semua petugas.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> kamu petugas pengaduan di RSUD. Ada unggahan dari keluarga pasien: ia dimintai Rp50.000 di kasir rawat jalan supaya klaimnya cepat diproses. Unggahan itu tidak menyebut tanggal maupun nama petugas, sementara kasir dijaga empat orang bergantian. Setiap pembayaran di kasir tercetak di kuitansi bernomor.</p>
+    <ul>
+      <li><b>E (skor 5)</b>: dari waktu kejadian dan nomor kuitansi, kamu bisa tahu siapa yang berjaga saat itu. Aduannya ditanggapi, dan petugas lain tidak ikut tercoreng.</li>
+      <li><b>A (skor 4)</b>: kamu bergerak cepat, dan direktur perlu tahu. Bayangkan petugas yang mungkin tidak tahu apa-apa ikut diperiksa hanya karena unggahannya tidak menyebut nama.</li>
+      <li><b>C (skor 3)</b>: pengumuman itu berguna untuk ke depan. Aduan yang sudah ada tetap menggantung.</li>
+      <li><b>B (skor 2)</b>: unggahannya hilang, masalahnya tidak. Pengunggah pun bisa merasa dibungkam.</li>
+      <li><b>D (skor 1)</b>: niatmu menolong, tapi uang pribadimu tidak menghentikan pungutan berikutnya.</li>
+    </ul>
+    <p><b>Kunci E</b>, karena E mencari keterangan yang bisa diperiksa sebelum ada yang disalahkan.</p>
+    <p><b>Analogi:</b> ponselmu hilang di kelas? Guru yang bijak tidak menggeledah seluruh siswa. Ia bertanya dulu kapan terakhir kamu memegangnya dan di mana.</p>
+    <p><b>Jebakan:</b> kata "keempat" di pilihan A yang perlu kamu perhatikan. Karena kejadiannya belum jelas, orang yang tidak terlibat ikut diperiksa. Kuitansi bernomor di cerita adalah petunjuk untuk mempersempitnya.</p>
+    <p><b>Tips:</b> sebelum ada yang dihukum, cari bukti yang bisa dicocokkan, seperti nomor kuitansi.</p>
+  </div>
+</div>
+<div class="soal bahas"><div class="soal-head">
+    <span class="soal-num">Soal No 45</span>
+    <span class="badge dim-AntiRadikalisme">Anti Radikalisme</span>
+  </div><div class="stem">
+    Dua rekan meneruskan poster yang menyebut pajak daerah haram karena pemerintah tidak sah ke grup pegawai kantor pajak yang Anda kelola. Dalam sejam, puluhan anggota sudah membacanya. Salah satu pengirim lalu bertanya di bawahnya apakah isinya benar. Langkah paling tepat adalah&hellip; (Anti Radikalisme)
+  </div><ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menghapus poster itu tiap kali muncul tanpa menegur pengirimnya, demi menjaga suasana.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Membiarkan anggota grup menilai sendiri isi poster sambil menunggu ada yang keberatan.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Meneruskan poster itu ke kepala kantor dan meminta beliau memutuskan langkahnya.</span></li>
+    <li><span class="opt-letter kunci">D.</span><span class="opt-text kunci">Menghapus poster itu dari grup, lalu mengingatkan kedua pengirimnya secara pribadi.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menarik poster itu dengan pengumuman bahwa kedua pengirimnya akan dilaporkan ke atasan.</span></li>
+  </ul><div class="pembahasan-siswa">
+    <div class="pindai"><div class="pt">Pindai Cepat D'Ajiks <span>± 30 detik</span></div><ol>
+      <li><b>Aspek:</b> Anti Radikalisme: sebaran ajakan menolak pemerintah dihentikan tanpa mempermalukan rekan.</li>
+      <li><b>Kalimat penentu:</b> "Salah satu pengirim lalu bertanya di bawahnya apakah isinya benar". Pengirim ragu, bukan penganjur, jadi cukup diingatkan.</li>
+      <li><b>Coret:</b> B (dibiarkan sampai ada yang keberatan), C (keputusan dilempar ke kepala kantor), E (pengirim diancam di depan grup). Tinggal A dan D. A: dihapus tanpa mengingatkan pengirim. D: dihapus, pengirim diingatkan secara pribadi. <b>Pilih D.</b></li>
+    </ol><div class="tanda"><b>Tanda cepat:</b> Konten berbahaya di grupmu? Hapus segera, lalu tegur pengirimnya berdua, jangan di depan grup.</div></div>
+    <div class="ph-title">Pembahasan</div>
+    <p><b>Yang ditanya:</b> dua rekan meneruskan poster ke grup pegawai kantor pajak yang kamu kelola. Isinya: membayar pajak daerah haram karena pemerintah tidak sah. Dalam sejam, puluhan anggota sudah membacanya. Salah satu pengirim lalu bertanya di bawahnya apakah isi poster itu benar.</p>
+    <ul>
+      <li><b>D (skor 5)</b>: posternya berhenti beredar, dan kedua rekanmu diajak bicara tanpa ditonton puluhan orang. Rekan yang bertanya pun akhirnya mendapat jawaban.</li>
+      <li><b>A (skor 4)</b>: grup jadi bersih, suasana tetap tenang. Hanya saja kedua pengirim tidak pernah tahu kenapa posternya hilang, dan besok bisa terulang.</li>
+      <li><b>E (skor 3)</b>: posternya ditarik, tapi kedua rekanmu dipermalukan di depan grup. Salah satunya bahkan bertanya apakah isinya benar, tanda ia sendiri ragu.</li>
+      <li><b>C (skor 2)</b>: kepala kantor perlu tahu kalau keadaannya membesar. Menghapus poster sudah ada di tanganmu sebagai admin, jangan menunggu.</li>
+      <li><b>B (skor 1)</b>: puluhan orang sudah membaca dalam sejam. Menunggu ada yang keberatan sama dengan membiarkannya terus menyebar.</li>
+    </ul>
+    <p><b>Kunci D</b>, karena D menghentikan sebarannya, lalu menyelesaikan urusannya dengan kedua pengirim secara pribadi.</p>
+    <p><b>Analogi:</b> temanmu meneruskan pesan berantai hoaks ke grup kelas. Kamu hapus pesannya, lalu mengobrol dengannya berdua, bukan mengumumkan namanya di grup.</p>
+    <p><b>Jebakan:</b> ancaman laporan di pilihan E kedengarannya tegas. Kalimat terakhir cerita mengubah gambarannya: salah satu pengirim bertanya apakah isinya benar. Ia sedang ragu, bukan sedang mengajak.</p>
+    <p><b>Tips:</b> bedakan orang yang menyebarkan karena yakin dari orang yang menyebarkan karena ragu. Caramu menegur ikut berbeda.</p>
+  </div>
+</div>
+
+</body></html>

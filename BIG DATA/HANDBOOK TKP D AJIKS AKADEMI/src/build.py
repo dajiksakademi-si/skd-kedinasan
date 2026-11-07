@@ -7,7 +7,6 @@ from pathlib import Path
 
 SRC = Path(__file__).resolve().parent
 OUT = SRC.parent
-NODE_PATH = '/Users/gustiputuyudawirashana/.npm/_npx/7d92d9a2d2ccc630/node_modules'
 VERSI = {'Siswa': 'Versi Siswa', 'Pengajar': 'Versi Pengajar'}
 LARANGAN = ['mari kita', 'dengan demikian', 'penting untuk dicatat', 'secara keseluruhan',
             'akan tetapi', 'satu-satunya', 'sekaligus', 'di era ', 'stem', 'distraktor',
@@ -121,7 +120,7 @@ def main():
         assert 'file:///' not in html and '{{' not in html
         if '--no-pdf' not in sys.argv:
             subprocess.run(['node', str(OUT / 'prototipe/buat_pdf.js'), str(out), str(out.with_suffix('.pdf'))],
-                           check=True, env={'NODE_PATH': NODE_PATH, 'PATH': '/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin'})
+                           check=True)
 
 
 if __name__ == '__main__':

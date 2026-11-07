@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "description": "Alat cetak PDF/sampul handbook (puppeteer membawa Chrome sendiri). Jalankan `npm install` sekali di akar repo.",
+  "dependencies": {
+    "puppeteer": "^25.3.0"
+  }
+}

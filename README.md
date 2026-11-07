@@ -16,6 +16,8 @@ cd skd-kedinasan
 mkdir -p ~/.claude/skills
 ln -s "$PWD/skills/skd-expert" ~/.claude/skills/skd-expert
 ln -s "$PWD/skills/dajiks-handbook" ~/.claude/skills/dajiks-handbook
+# alat cetak PDF/sampul handbook (perlu Node.js; Chrome ikut terunduh otomatis)
+npm install
 # buat folder catatan sendiri (nama = username GitHub)
 mkdir -p kontributor/<username> && touch kontributor/<username>/{memory.md,LOG.md}
 ```

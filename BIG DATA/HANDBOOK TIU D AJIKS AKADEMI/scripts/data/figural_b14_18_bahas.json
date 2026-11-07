@@ -1,0 +1,352 @@
+{
+  "HB-TIU-B14-C01": {
+    "nama": {
+      "A": "Mencerminkan pada garis yang salah",
+      "B": "Menyamakan putaran dengan pencerminan",
+      "C": "Mencerminkan pada garis yang salah",
+      "E": "Menyalin gambar (3) apa adanya"
+    },
+    "pembahasan": {
+      "ditanya": "Soal meminta gambar untuk “mengganti tanda tanya”, yaitu gambar (4). Bulu di gambar (3) harus mengalami gerak yang sama dengan gerak tanduk dari (1) ke (2).",
+      "cepat": "Bandingkan tanduk di (1) dan (2). Urutan kelilingnya terbalik, jadi geraknya cermin, bukan putaran. Garis cermin yang membawa (1) tepat ke (2) adalah garis miring /. Kenakan cermin garis miring / pada bulu di gambar (3).",
+      "lain": "Uji delapan gerak satu per satu pada tanduk: tetap, tiga putaran, dan empat cermin. Hanya cermin garis miring / yang mengubah (1) menjadi (2). Setelah geraknya pasti, cari pilihan yang memuat bulu dengan gerak itu.",
+      "cek": "Cermin dua kali pada garis yang sama mengembalikan gambar ke asalnya. Cerminkan bulu di pilihan D sekali lagi pada garis miring /: hasilnya kembali menjadi gambar (3).",
+      "gugur": {
+        "A": {
+          "uji": "cermin garis miring \\",
+          "teks": "Jenis geraknya sudah cermin, tetapi garisnya miring ke arah lain. Bulu di A berbeda arah dengan hasil cermin garis miring /."
+        },
+        "B": {
+          "uji": "diputar 90° searah jarum jam",
+          "teks": "Putaran 90° searah jarum jam dan cermin garis miring / sama-sama memindahkan penanda di atas ke kanan, jadi sekilas mirip. Bedanya, putaran tidak membalik urutan keliling, padahal tanduk dari (1) ke (2) terbalik."
+        },
+        "C": {
+          "uji": "cermin kiri-kanan",
+          "teks": "Cermin kiri-kanan juga membalik urutan keliling, tetapi garisnya tegak. Bulu hanya berbalik dari kiri ke kanan, tidak mengikuti garis miring /."
+        },
+        "E": {
+          "uji": "tidak berubah",
+          "teks": "Pilihan E sama persis dengan gambar (3). Tanduk dari (1) ke (2) berubah, jadi bulu juga harus berubah."
+        }
+      },
+      "kunci": "Pilihan D adalah bulu di gambar (3) yang dicermin pada garis miring /, gerak yang sama dengan tanduk dari (1) ke (2).",
+      "analogi": "Seperti meniru gerakan senam dari pelatih. Badanmu berbeda dengan badan pelatih, tetapi gerakannya sama. Tanduk dan bulu berbeda bentuk, dan yang ditiru hanya geraknya.",
+      "waspada": "Memilih B karena penanda di atas pindah ke kanan, sama seperti pada cermin garis miring /. Satu penanda belum cukup untuk membedakan putaran dari cermin; periksa juga apakah urutan kelilingnya terbalik."
+    }
+  },
+  "HB-TIU-B14-C02": {
+    "nama": {
+      "B": "Menukar aturan antarobjek",
+      "C": "Mencerminkan pada garis yang salah",
+      "D": "Lupa menukar tempat, atau menukar yang tetap",
+      "E": "Lupa membalik warna, atau membalik yang tetap"
+    },
+    "pembahasan": {
+      "ditanya": "Tanda tanya ada di posisi gambar (3). Soal meminta gambar untuk “mengganti tanda tanya”, yaitu gambar asal yang berubah menjadi gambar (4).",
+      "cepat": "Baca pasangan yang lengkap, (1):(2), satu objek demi satu objek. Tanduk dicermin kiri-kanan, cakar tidak berubah, lalu keduanya bertukar tempat. Karena yang dicari gambar asal, mulailah dari gambar (4): kembalikan tanduk dan cakar ke tempat semula, cerminkan tanduk kiri-kanan sekali lagi, dan biarkan cakar.",
+      "lain": "Coba setiap pilihan sebagai gambar (3) dan kenakan aturan maju: tanduk dicermin kiri-kanan, cakar tetap, lalu tukar tempat. Pilihan yang benar berubah tepat menjadi gambar (4).",
+      "cek": "Cermin kiri-kanan dua kali kembali ke asal, jadi membatalkan cermin sama dengan mencermin sekali lagi. Tukar tempat juga begitu: ditukar dua kali, objek kembali ke tempatnya. Warna tidak berubah di pasangan contoh, jadi kedua objek di jawaban tetap hitam.",
+      "gugur": {
+        "B": {
+          "uji": "aturannya tertukar",
+          "teks": "Tanduk dibiarkan, sedangkan cakar yang dicermin kiri-kanan. Aturannya dipasang pada objek yang salah."
+        },
+        "C": {
+          "uji": "cermin atas-bawah, warna dibalik",
+          "teks": "Tanduk dicermin atas-bawah, padahal aturannya cermin kiri-kanan. Cakarnya pun dibalik warnanya, padahal di pasangan contoh warna tidak berubah."
+        },
+        "D": {
+          "uji": "tempat belum dikembalikan",
+          "teks": "Tanduk dan cakar masih di tempat yang sama dengan gambar (4), jadi tukar tempatnya belum dibatalkan. Tanduknya juga dibalik warnanya."
+        },
+        "E": {
+          "uji": "warna cakar dibalik",
+          "teks": "Tanduk dan tempatnya sudah benar, tetapi cakar dibalik warnanya. Di pasangan contoh, cakar tidak berubah sama sekali."
+        }
+      },
+      "kunci": "Pilihan A adalah gambar (4) yang tukar tempatnya dibatalkan dan tanduknya dicermin kiri-kanan sekali lagi, sedangkan cakar dibiarkan.",
+      "analogi": "Seperti mengembalikan barang yang dipindah temanmu. Kamu tahu barang mana dipindah ke mana, lalu kamu balik langkahnya satu per satu sampai susunannya seperti semula.",
+      "waspada": "Pilihan E hanya keliru di warna cakar. Kalau kamu berhenti setelah tanduk cocok, E terasa benar. Periksa setiap objek sampai selesai: arah, warna, dan tempatnya."
+    }
+  },
+  "HB-TIU-B15-C01": {
+    "nama": {
+      "A": "Menyamakan putaran dengan pencerminan",
+      "B": "Mencerminkan pada garis yang salah",
+      "C": "Menyalin gambar yang sudah terlihat",
+      "D": "Menyamakan putaran dengan pencerminan"
+    },
+    "pembahasan": {
+      "ditanya": "Soal meminta gambar untuk “mengganti tanda tanya”, yaitu gambar (6). Bentuk di deret ini berganti-ganti, jadi pertama-tama cari gambar mana yang berpasangan.",
+      "cepat": "Gambar (1), (2), dan (3) berbeda bentuk: pakis, cakar, dan bulu. Jangan membandingkan gambar yang bersebelahan. Bandingkan (1) dengan (4) dan (2) dengan (5): keduanya dicermin atas-bawah. Gambar (6) adalah bulu di gambar (3) yang dicermin atas-bawah.",
+      "lain": "Baca deret sebagai dua kelompok berisi tiga gambar: (1)(2)(3) dan (4)(5)(6). Kelompok kedua adalah kelompok pertama yang dicermin atas-bawah, dengan urutan bentuk yang sama.",
+      "cek": "Pada cermin atas-bawah, bagian yang di atas pindah ke bawah, sedangkan sisi kiri-kanannya tetap. Ujung bulu yang di kanan atas pada gambar (3) ada di kanan bawah pada pilihan E.",
+      "gugur": {
+        "A": {
+          "uji": "diputar 180°",
+          "teks": "Putaran 180° juga membalik atas-bawah, tetapi ikut memindahkan kanan ke kiri. Ujung bulu di A ada di kiri bawah, bukan kanan bawah."
+        },
+        "B": {
+          "uji": "cermin kiri-kanan",
+          "teks": "Bulu hanya berbalik dari kanan ke kiri. Pasangan (1)→(4) memindahkan bagian atas ke bawah, bukan kanan ke kiri."
+        },
+        "C": {
+          "uji": "sama dengan (3)",
+          "teks": "Pilihan C sama persis dengan gambar (3). Pasangan (1)→(4) dan (2)→(5) sama-sama berubah, jadi (3)→(6) juga harus berubah."
+        },
+        "D": {
+          "uji": "diputar 90° berlawanan arah jarum jam",
+          "teks": "Bulu rebah mendatar karena diputar seperempat putaran. Pakis di (4) dan cakar di (5) tidak diputar seperempat putaran, jadi bulu juga tidak."
+        }
+      },
+      "kunci": "Pilihan E adalah bulu di gambar (3) yang dicermin atas-bawah, sama dengan perubahan (1)→(4) dan (2)→(5).",
+      "analogi": "Seperti jadwal piket yang berulang setiap tiga hari: hari keempat sama dengan hari pertama, dan hari keenam sama dengan hari ketiga.",
+      "waspada": "Pilihan A dan E sekilas mirip karena keduanya membalik atas-bawah. Lihat sisi kiri-kanannya: pada cermin atas-bawah, ujung yang di kanan tetap di kanan."
+    }
+  },
+  "HB-TIU-B15-C02": {
+    "nama": {
+      "A": "Salah hitung lebih atau kurang satu",
+      "B": "Memakai aturan satu kelompok untuk kelompok lain",
+      "C": "Menyamakan putaran dengan pencerminan",
+      "D": "Memakai aturan satu kelompok untuk kelompok lain"
+    },
+    "pembahasan": {
+      "ditanya": "Soal meminta gambar untuk “mengganti tanda tanya”, yaitu gambar (6). Ada dua hal yang berubah, bentuk besar dan banyak bintik, dan keduanya punya irama sendiri.",
+      "cepat": "Kerjakan bintik dulu karena paling cepat. Hitung 3, 4, 5, 6, 7: bertambah satu setiap langkah, jadi gambar (6) punya 8 bintik. Hanya C dan E yang punya 8 bintik. Lalu bentuk besar: (1), (2), (3) berbeda bentuk, jadi bandingkan (1) dengan (4) dan (2) dengan (5). Keduanya dicermin pada garis miring \\, jadi gambar (6) memuat tanduk di (3) yang dicermin pada garis miring \\.",
+      "lain": "Kerjakan bentuk besar dulu, lalu bintik. Pilihan yang tanduknya dicermin pada garis miring \\ adalah D dan E. Hitung bintiknya: D punya 5, E punya 8.",
+      "cek": "Aturan bentuk besar sudah teruji dua kali, pada (1)→(4) dan (2)→(5), sebelum dipakai ke (3)→(6). Letak bintik berpindah-pindah, jadi yang dicocokkan hanya jumlahnya.",
+      "gugur": {
+        "A": {
+          "uji": "7 bintik, diputar 180°",
+          "teks": "Bintiknya 7, sama dengan gambar (5), jadi tambahan di langkah terakhir terlupa. Tanduknya juga diputar 180°, bukan dicermin pada garis miring \\."
+        },
+        "B": {
+          "uji": "5 bintik, diputar 90°",
+          "teks": "Bintik ikut berselang tiga sehingga disalin dari gambar (3): 5 bintik. Padahal bintik bertambah satu setiap langkah. Tanduknya pun diputar 90° searah jarum jam."
+        },
+        "C": {
+          "uji": "8 bintik, diputar 180°",
+          "teks": "Bintiknya sudah benar, tetapi tanduk diputar 180°. Putaran tidak membalik urutan keliling, sedangkan cermin pada garis miring \\ membaliknya."
+        },
+        "D": {
+          "uji": "5 bintik",
+          "teks": "Tanduknya sudah benar, tetapi bintik disalin dari gambar (3). Irama selang tiga hanya berlaku untuk bentuk besar."
+        }
+      },
+      "kunci": "Pilihan E memuat tanduk dari gambar (3) yang dicermin pada garis miring \\ dan 8 bintik.",
+      "analogi": "Seperti jadwal piket yang berulang setiap tiga hari, sementara tanggal di kalender tetap maju satu setiap hari. Dua hal itu berjalan bersama, tetapi aturannya berbeda.",
+      "waspada": "Setelah menemukan pola selang tiga, banyak orang ikut memakainya untuk bintik. Bintik punya irama sendiri, yaitu maju satu setiap langkah."
+    }
+  },
+  "HB-TIU-B16-C01": {
+    "nama": {
+      "A": "Membalik arah putar atau salah garis cermin",
+      "C": "Menyamakan putaran dengan pencerminan",
+      "D": "Hanya memeriksa satu objek",
+      "E": "Menyamakan putaran dengan pencerminan"
+    },
+    "pembahasan": {
+      "ditanya": "Tanda tanya ada di posisi gambar (3). Soal meminta gambar untuk “mengganti tanda tanya”, yaitu gambar asal yang berubah menjadi gambar (4).",
+      "cepat": "Baca pasangan (1):(2), satu objek demi satu objek. Bulu dicermin atas-bawah, cakar juga dicermin atas-bawah, dan keduanya tetap di tempatnya. Cermin dua kali kembali ke asal, jadi gambar (3) didapat dengan mencerminkan bulu dan cakar di gambar (4) atas-bawah sekali lagi.",
+      "lain": "Coba setiap pilihan sebagai gambar (3) dan kenakan aturan maju. Pilihan yang benar berubah tepat menjadi gambar (4).",
+      "cek": "Letak objek tidak berpindah dari (1) ke (2), jadi di gambar (3) bulu tetap di kiri dan cakar di kanan. Semua pilihan memenuhi ini, jadi pembedanya ada pada arah dan warna setiap objek.",
+      "gugur": {
+        "A": {
+          "uji": "bulu cermin kiri-kanan",
+          "teks": "Bulu dicermin kiri-kanan, padahal aturannya cermin atas-bawah. Cakarnya juga dibalik warnanya, padahal di pasangan contoh warna tidak berubah."
+        },
+        "C": {
+          "uji": "bulu tetap, cakar diputar 180°",
+          "teks": "Bulu dibiarkan sama dengan gambar (4), dan cakar diputar 180°. Putaran 180° membalik atas-bawah dan kiri-kanan, jadi cakar ikut berbalik sisi."
+        },
+        "D": {
+          "uji": "bulu tidak berubah",
+          "teks": "Cakarnya sudah benar, tetapi bulu dibiarkan sama dengan gambar (4). Bulu juga harus dicermin atas-bawah."
+        },
+        "E": {
+          "uji": "cakar diputar 180°",
+          "teks": "Bulunya sudah benar, tetapi cakar diputar 180°. Cakar di E berbalik sisi kiri-kanan, sedangkan cermin atas-bawah tidak memindahkan sisi kiri-kanan."
+        }
+      },
+      "kunci": "Pilihan B memuat bulu dan cakar dari gambar (4) yang masing-masing dicermin atas-bawah di tempatnya.",
+      "analogi": "Seperti membalik dua kartu di meja: kartu kiri dibalik di tempatnya, kartu kanan juga. Untuk mengembalikan keduanya, balik lagi masing-masing kartu sekali.",
+      "waspada": "Memilih D atau E karena satu objek sudah cocok. Pilihan yang salah di soal ini hanya keliru di satu objek, jadi periksa bulu dan cakar sampai selesai."
+    }
+  },
+  "HB-TIU-B16-C02": {
+    "nama": {
+      "A": "Lupa mengubah jumlah bagian",
+      "B": "Salah hitung lebih atau kurang satu",
+      "C": "Hanya memeriksa satu objek",
+      "E": "Lupa menukar tempat, atau menukar yang tetap"
+    },
+    "pembahasan": {
+      "ditanya": "Tanda tanya ada di posisi gambar (2). Soal meminta gambar untuk “mengganti tanda tanya”, yaitu hasil perubahan gambar (1). Ada tiga objek, dan yang berubah meliputi arah, tempat, dan jumlah bagian.",
+      "cepat": "Baca pasangan yang lengkap, (3):(4), satu objek demi satu objek. Cincin tanduk 6 menjadi 5, jadi berkurang 1. Helai bulu 3 menjadi 5, jadi bertambah 2. Tanduk dan bulu bertukar tempat. Cakar di bawah dicermin atas-bawah. Terapkan ke gambar (1): cincin 5 menjadi 4, helai 3 menjadi 5, tukar tempat tanduk dan bulu, lalu cerminkan cakar atas-bawah.",
+      "lain": "Mulai dari yang paling mudah dilihat, yaitu tempat. Bulu harus di kiri atas dan tanduk di kanan atas, jadi B dan E gugur. Lalu hitung helai, yang harus 5: A dan C gugur. Tinggal D.",
+      "cek": "Hitung ulang di D: tanduk punya 4 cincin dan bulu punya 5 helai. Dibandingkan dengan gambar (1), cincinnya berkurang 1 dan helainya bertambah 2, sama dengan perubahan dari (3) ke (4).",
+      "gugur": {
+        "A": {
+          "uji": "cincin 5, helai 3",
+          "teks": "Tempat dan cakarnya sudah benar, tetapi banyak cincin dan helai tidak diubah. Jumlah keduanya masih sama dengan gambar (1)."
+        },
+        "B": {
+          "uji": "3 cincin, tempat tetap",
+          "teks": "Cincinnya dikurangi 2, padahal aturannya berkurang 1. Tanduk dan bulu juga belum bertukar tempat."
+        },
+        "C": {
+          "uji": "helai 3, cakar tetap",
+          "teks": "Tanduk dan tempatnya sudah benar, tetapi helai bulu tidak ditambah dan cakar tidak dicermin."
+        },
+        "E": {
+          "uji": "helai 3, tempat tetap",
+          "teks": "Helai bulu tidak ditambah, dan tanduk dan bulu belum bertukar tempat."
+        }
+      },
+      "kunci": "Pilihan D punya 4 cincin dan 5 helai, tanduk dan bulunya sudah bertukar tempat, dan cakarnya dicermin atas-bawah.",
+      "analogi": "Seperti tiga orang yang diberi tugas berbeda: satu membuang satu kelereng, satu menambah dua kelereng, satu hanya membalik badan. Tugas mereka tidak boleh tertukar.",
+      "waspada": "Rupa tanduk dan bulu ikut berubah ketika jumlah bagiannya berubah, jadi jangan mencocokkan rupa, cukup hitung. Pilihan yang salah sering benar di dua hal dan keliru di hal lain, jadi periksa ketiga objek sampai selesai."
+    }
+  },
+  "HB-TIU-B17-C01": {
+    "nama": {
+      "A": "Kedua objek hanya diputar",
+      "B": "Kedua objek hanya diputar",
+      "D": "Kedua objek hanya diputar",
+      "E": "Kedua objek hanya diputar"
+    },
+    "pembahasan": {
+      "ditanya": "Soal meminta gambar yang “berbeda dari yang lain”. Kelima gambar berisi tanduk dan bulu, dan setiap objek diputar sendiri-sendiri.",
+      "cepat": "Gambar utuhnya tidak akan cocok satu sama lain, jadi jangan mencocokkan gambar secara utuh. Periksa per objek. Bulu paling mudah, karena daunnya hanya ada di satu sisi batang. Dalam pikiran, putar setiap bulu sampai ujungnya di atas, lalu lihat di sisi mana daunnya. Di empat gambar daunnya di sisi yang sama; di C daunnya di sisi lain.",
+      "lain": "Pakai urutan keliling. Pilih satu ujung yang khas pada bulu, lalu baca bagian-bagiannya searah jarum jam. Bulu yang hanya diputar punya urutan yang sama; bulu yang dicermin urutannya terbalik.",
+      "cek": "Periksa tanduk dengan cara yang sama: kelima tanduk hanya diputar. Jadi pembedanya tepat satu objek di satu gambar, yaitu bulu di C.",
+      "gugur": {
+        "A": {
+          "uji": "tanduk dan bulu diputar",
+          "teks": "Tanduk dan bulu di A hanya diputar. Setelah ujung bulu diputar ke atas, daunnya di sisi yang sama dengan bulu di B, D, dan E."
+        },
+        "B": {
+          "uji": "tanduk dan bulu diputar",
+          "teks": "Tanduk dan bulu di B hanya diputar. Urutan keliling bulunya sama dengan bulu di A, jadi B masih sekelompok."
+        },
+        "D": {
+          "uji": "tanduk dan bulu diputar",
+          "teks": "Bulu di D condong ke arah lain, tetapi condongnya karena diputar. Urutan kelilingnya sama dengan bulu di A, jadi D masih sekelompok."
+        },
+        "E": {
+          "uji": "tanduk dan bulu diputar",
+          "teks": "Bulu di E rebah mendatar, tetapi rebah karena diputar, bukan dicermin. Urutan kelilingnya tetap, jadi E masih sekelompok."
+        }
+      },
+      "kunci": "Bulu di pilihan C adalah bayangan cermin, jadi diputar ke arah mana pun ia tidak bisa sama dengan bulu di empat gambar lain.",
+      "analogi": "Seperti memeriksa lima sarung tangan kanan yang diletakkan miring ke berbagai arah. Arahnya boleh berbeda-beda; yang dicari satu sarung tangan kiri.",
+      "waspada": "Karena semua gambar tampak berbeda, mata mudah memilih gambar yang paling aneh susunannya. Yang menentukan hanya satu objek, dan objek itu bukan yang terbesar."
+    }
+  },
+  "HB-TIU-B17-C02": {
+    "nama": {
+      "B": "Pakis dan tanduk sama banyak",
+      "C": "Pakis dan tanduk sama banyak",
+      "D": "Pakis dan tanduk sama banyak",
+      "E": "Pakis dan tanduk sama banyak"
+    },
+    "pembahasan": {
+      "ditanya": "Soal meminta gambar yang “berbeda dari yang lain”. Setiap gambar berisi sembilan butir dari tiga jenis: cakar bertiga jari, pakis yang bergulung, dan tanduk yang melengkung.",
+      "cepat": "Letak dan arah butir diacak di setiap gambar, jadi jangan mencari pola letak atau putaran. Hitung setiap jenis. Banyak satu jenis saja berubah-ubah di semua gambar, jadi aturannya bukan jumlah tetap. Bandingkan dua jenis: di empat gambar, pakis selalu sama banyak dengan tanduk. Di A ada 2 pakis dan 3 tanduk.",
+      "lain": "Hitung cakar saja. Setiap gambar berisi 9 butir. Kalau pakis sama banyak dengan tanduk, keduanya berjumlah genap, jadi cakarnya ganjil. Cakar di B, C, D, dan E berjumlah 5, 1, 1, dan 5, semuanya ganjil. Di A cakarnya 4.",
+      "cek": "Jumlahkan butir di A: 2 pakis, 3 tanduk, dan 4 cakar menjadi 9. Hitunganmu lengkap, dan A memang tidak mengikuti aturan.",
+      "gugur": {
+        "B": {
+          "uji": "2 pakis, 2 tanduk",
+          "teks": "Pakis dan tanduk sama-sama 2, jadi B mengikuti aturan."
+        },
+        "C": {
+          "uji": "4 pakis, 4 tanduk",
+          "teks": "Pakis dan tanduk sama-sama 4. Cakarnya tinggal 1, tetapi aturannya tetap terpenuhi."
+        },
+        "D": {
+          "uji": "4 pakis, 4 tanduk",
+          "teks": "Sama seperti C: 4 pakis, 4 tanduk, dan 1 cakar."
+        },
+        "E": {
+          "uji": "2 pakis, 2 tanduk",
+          "teks": "Pakis dan tanduk sama-sama 2, jadi E mengikuti aturan."
+        }
+      },
+      "kunci": "Hanya di pilihan A pakis dan tanduk tidak sama banyak: 2 pakis dan 3 tanduk.",
+      "analogi": "Seperti memeriksa sepatu di rak. Banyak sepatu di tiap rak boleh berbeda; yang dicek apakah sepatu kiri dan kanan selalu berpasangan.",
+      "waspada": "Kalau kamu hanya menghitung satu jenis, angkanya berubah-ubah dan soal ini terasa tanpa pola. Polanya ada pada hubungan dua jenis."
+    }
+  },
+  "HB-TIU-B18-C01": {
+    "nama": {
+      "A": "Menyalin gambar yang sudah terlihat",
+      "B": "Mengira gambar kembali ke posisi awal",
+      "D": "Membalik arah putar",
+      "E": "Bentuk terbalik sisi"
+    },
+    "pembahasan": {
+      "ditanya": "Soal meminta gambar untuk “mengganti tanda tanya”, yaitu sel kanan bawah matriks 3 × 3. Setiap baris memakai satu bentuk: tanduk, bulu, lalu cakar.",
+      "cepat": "Bandingkan sel dalam baris yang sama. Dari kolom 1 ke kolom 2: dicermin atas-bawah. Dari kolom 2 ke kolom 3: diputar 90° berlawanan arah jarum jam. Pastikan aturan itu cocok di baris tanduk dan baris bulu, lalu kenakan langkah kedua pada cakar di sel tengah baris 3.",
+      "lain": "Mulai dari cakar di kolom 1 baris 3 dan kerjakan kedua langkah berurutan: cermin atas-bawah, lalu putar 90° berlawanan arah jarum jam. Hasilnya harus sama dengan jalan pintas dari sel tengah.",
+      "cek": "Pakai satu penanda pada cakar di sel tengah baris 3. Putaran 90° berlawanan arah jarum jam memindahkan penanda yang di atas ke kiri, dan yang di kanan ke atas. Cocokkan penanda itu dengan setiap pilihan.",
+      "gugur": {
+        "A": {
+          "uji": "sama dengan sel tengah",
+          "teks": "Pilihan A sama dengan sel di sebelah kirinya, jadi langkah kedua tidak dikerjakan."
+        },
+        "B": {
+          "uji": "kembali seperti kolom 1",
+          "teks": "Bentuk dianggap kembali ke posisi awal seperti kolom 1. Di baris tanduk dan bulu, sel ketiga tidak sama dengan sel pertama."
+        },
+        "D": {
+          "uji": "diputar searah jarum jam",
+          "teks": "Langkah kedua dikerjakan, tetapi arah putarnya terbalik. Di baris tanduk dan bulu, kolom 2 ke kolom 3 diputar berlawanan arah jarum jam."
+        },
+        "E": {
+          "uji": "bayangan cermin jawaban",
+          "teks": "Pilihan E adalah bayangan cermin kiri-kanan dari jawaban yang benar. Urutan kelilingnya terbalik, jadi tidak cocok dengan hasil kedua langkah."
+        }
+      },
+      "kunci": "Pilihan C adalah cakar di sel tengah baris 3 yang diputar 90° berlawanan arah jarum jam, sesuai kedua langkah di dua baris lain.",
+      "analogi": "Seperti jarum jam yang terus maju. Di jam ketiga, jarumnya tidak kembali ke angka awal.",
+      "waspada": "Cermin atas-bawah dan cermin kiri-kanan mudah tertukar. Ikuti satu ujung bentuk: pada cermin atas-bawah, ujung itu pindah dari atas ke bawah dan tetap di sisi kiri atau kanan yang sama."
+    }
+  },
+  "HB-TIU-B18-C02": {
+    "nama": {
+      "A": "Salah hitung lebih atau kurang satu",
+      "C": "Salah hitung lebih atau kurang satu",
+      "D": "Salah hitung lebih atau kurang satu",
+      "E": "Salah hitung lebih atau kurang satu"
+    },
+    "pembahasan": {
+      "ditanya": "Soal meminta gambar untuk “mengganti tanda tanya”, yaitu sel kanan bawah. Bentuk dan letak objek kecil diacak, jadi yang dihitung hanya jumlahnya.",
+      "cepat": "Hitung dua hal di setiap sel: helai bulu di tengah dan objek kecil di pinggir. Baris 1: 3 dan 2, 4 dan 3, 5 dan 4. Keduanya bertambah satu setiap kolom. Baris 3 dimulai dari 3 dan 4, lalu 4 dan 5, jadi sel terakhir punya 5 helai dan 6 objek kecil.",
+      "lain": "Baca per kolom. Setiap turun satu baris, helai tetap dan objek kecil bertambah satu. Kolom 3: 5 dan 4, 5 dan 5, jadi sel terakhir 5 helai dan 6 objek kecil.",
+      "cek": "Arah baris dan arah kolom memberi angka yang sama, 5 helai dan 6 objek kecil. Di pilihan B, hitung semua objek kecil apa pun bentuknya, termasuk bulatan.",
+      "gugur": {
+        "A": {
+          "uji": "4 helai, 8 objek kecil",
+          "teks": "Helainya kurang satu dan objek kecilnya lebih dua. Keduanya meleset."
+        },
+        "C": {
+          "uji": "5 helai, 8 objek kecil",
+          "teks": "Helainya sudah 5, tetapi objek kecilnya 8, lebih dua dari yang seharusnya."
+        },
+        "D": {
+          "uji": "4 helai, 6 objek kecil",
+          "teks": "Objek kecilnya sudah 6, tetapi helainya 4, kurang satu."
+        },
+        "E": {
+          "uji": "4 helai, 7 objek kecil",
+          "teks": "Helainya kurang satu dan objek kecilnya lebih satu."
+        }
+      },
+      "kunci": "Pilihan B punya 5 helai dan 6 objek kecil, sesuai hitungan arah baris dan arah kolom.",
+      "analogi": "Seperti menghitung uang koin di dompet. Bentuk dan letak koinnya tidak penting; yang dicek jumlahnya.",
+      "waspada": "Objek kecil dibuat bermacam-macam bentuknya supaya kamu sibuk mencari pola bentuk. Hitung semuanya, apa pun bentuknya."
+    }
+  }
+}

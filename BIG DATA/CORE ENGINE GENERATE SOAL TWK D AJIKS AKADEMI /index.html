@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panduan Menghadapi Soal TWK — Presentasi Mentor</title>
+<style>
+:root{
+  --bg:#0b1220; --bg2:#0f172a; --card:#16213a; --card2:#1c2a4a; --line:#2b3a5e;
+  --text:#e8eefc; --muted:#9fb0d0;
+  --sky:#38bdf8; --amber:#fbbf24; --red:#fb7185; --green:#34d399; --blue:#7dabf8; --violet:#a78bfa;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{font-size:clamp(13px,0.55vw + 9px,17px)}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:radial-gradient(1200px 700px at 80% -10%,#1b2c55 0%,var(--bg) 55%) var(--bg);
+  color:var(--text); height:100vh; height:100dvh; overflow:hidden;
+}
+/* ===== top bar ===== */
+.topbar{position:fixed;top:0;left:0;right:0;z-index:40;padding:.55rem 1rem;display:flex;align-items:center;gap:.8rem}
+.progress{flex:1;height:4px;background:#22304f;border-radius:99px;overflow:hidden}
+.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--sky),var(--violet));border-radius:99px;transition:width .35s ease}
+.counter{font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.fsbtn{background:#22304f;border:1px solid var(--line);color:var(--muted);border-radius:.5rem;padding:.25rem .6rem;font-size:.75rem;cursor:pointer}
+.fsbtn:hover{color:var(--text);border-color:var(--sky)}
+/* ===== deck ===== */
+.deck{height:100%;position:relative}
+.slide{position:absolute;inset:0;display:none;flex-direction:column;padding:3.2rem 3.5rem 4.6rem;overflow-y:auto}
+.slide.active{display:flex;animation:in .35s ease}
+@keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.wrap{width:100%;max-width:1180px;margin:auto}
+/* ===== typography helpers ===== */
+.chip{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--sky);background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.35);padding:.3rem .8rem;border-radius:99px;margin-bottom:1rem}
+h1{font-size:clamp(2.2rem,4.5vw,3.6rem);line-height:1.1;font-weight:800}
+h2{font-size:clamp(1.5rem,2.6vw,2.2rem);font-weight:800;margin-bottom:.4rem}
+.sub{color:var(--muted);font-size:1.05rem;margin-top:.9rem;max-width:60ch;line-height:1.6}
+.section-note{color:var(--muted);font-size:.95rem;margin-bottom:1.2rem}
+.hl{background:rgba(251,191,36,.22);color:var(--amber);padding:.05em .3em;border-radius:.3em;font-weight:700}
+.hl-red{background:rgba(251,113,133,.16);color:var(--red);padding:.05em .3em;border-radius:.3em;font-weight:700}
+.hl-green{background:rgba(52,211,153,.15);color:var(--green);padding:.05em .3em;border-radius:.3em;font-weight:700}
+.hl-blue{background:rgba(125,171,248,.15);color:var(--blue);padding:.05em .3em;border-radius:.3em;font-weight:700}
+b{color:#fff}
+/* ===== cards / boxes ===== */
+.grid{display:grid;gap:1rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:1rem;padding:1.2rem 1.4rem}
+.quote{border-left:4px solid var(--amber);background:rgba(251,191,36,.07);border-radius:.7rem;padding:1.1rem 1.4rem;font-size:1.15rem;line-height:1.65}
+.warn{border-left:4px solid var(--red);background:rgba(251,113,133,.08);border-radius:.7rem;padding:1rem 1.3rem;line-height:1.6}
+.tip{border-left:4px solid var(--green);background:rgba(52,211,153,.07);border-radius:.7rem;padding:1rem 1.3rem;line-height:1.6}
+.example{border-left:4px solid var(--blue);background:rgba(125,171,248,.08);border-radius:.7rem;padding:1rem 1.3rem;line-height:1.6}
+.step{display:flex;gap:1rem;align-items:flex-start}
+.step .num{flex:none;width:2.4rem;height:2.4rem;border-radius:.7rem;display:grid;place-items:center;font-weight:800;font-size:1.15rem;background:linear-gradient(135deg,var(--sky),var(--violet));color:#081120}
+.step p{line-height:1.6;color:var(--text)}
+.step small{color:var(--muted)}
+/* ===== tables ===== */
+table{width:100%;border-collapse:collapse;font-size:.98rem}
+th{text-align:left;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:.55rem .9rem;border-bottom:1px solid var(--line)}
+td{padding:.62rem .9rem;border-bottom:1px solid rgba(43,58,94,.55);line-height:1.5;vertical-align:top}
+tr:last-child td{border-bottom:none}
+tbody tr:hover{background:rgba(56,189,248,.06)}
+.kw{font-weight:800;color:var(--sky);white-space:nowrap}
+.bad{color:var(--red);font-weight:700}
+.good{color:var(--green);font-weight:700}
+/* ===== tipe grid ===== */
+.tipe-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.9rem}
+.tipe-card{background:var(--card);border:1px solid var(--line);border-radius:1rem;padding:1rem 1.1rem;cursor:pointer;text-align:left;color:var(--text);transition:transform .15s ease,border-color .15s ease,background .15s ease;display:flex;flex-direction:column;gap:.45rem;min-height:8.2rem}
+.tipe-card:hover{transform:translateY(-3px);border-color:var(--sky);background:var(--card2)}
+.tipe-card .no{font-size:.72rem;font-weight:800;letter-spacing:.12em;color:var(--sky)}
+.tipe-card h3{font-size:1.02rem;line-height:1.3}
+.tipe-card p{font-size:.83rem;color:var(--muted);line-height:1.45}
+.tipe-card .more{margin-top:auto;font-size:.75rem;color:var(--amber);font-weight:700}
+/* ===== overlay detail tipe ===== */
+.overlay{position:fixed;inset:0;z-index:60;background:rgba(4,8,18,.72);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:2.5rem}
+.overlay.open{display:flex;animation:in .25s ease}
+.panel{background:var(--bg2);border:1px solid var(--line);border-radius:1.2rem;max-width:900px;width:100%;max-height:88vh;overflow-y:auto;padding:2rem 2.3rem;position:relative}
+.panel .no{font-size:.75rem;font-weight:800;letter-spacing:.14em;color:var(--sky)}
+.panel h3{font-size:1.6rem;margin:.3rem 0 1.1rem}
+.panel .blocks{display:grid;gap:.9rem}
+.blk{border-radius:.8rem;padding:1rem 1.2rem;line-height:1.65}
+.blk .lbl{font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:.35rem}
+.blk-maksud{background:rgba(56,189,248,.08);border:1px solid rgba(56,189,248,.3)}   .blk-maksud .lbl{color:var(--sky)}
+.blk-jebakan{background:rgba(251,113,133,.08);border:1px solid rgba(251,113,133,.32)} .blk-jebakan .lbl{color:var(--red)}
+.blk-trik{background:rgba(52,211,153,.08);border:1px solid rgba(52,211,153,.3)}    .blk-trik .lbl{color:var(--green)}
+.blk-contoh{background:rgba(125,171,248,.08);border:1px solid rgba(125,171,248,.3)} .blk-contoh .lbl{color:var(--blue)}
+.blk-awas{background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.32)}   .blk-awas .lbl{color:var(--amber)}
+.close{position:absolute;top:1rem;right:1rem;background:#22304f;border:1px solid var(--line);color:var(--muted);width:2.2rem;height:2.2rem;border-radius:.6rem;font-size:1.1rem;cursor:pointer}
+.close:hover{color:#fff;border-color:var(--red)}
+.panel-nav{display:flex;justify-content:space-between;margin-top:1.3rem}
+.panel-nav button{background:#22304f;border:1px solid var(--line);color:var(--muted);padding:.45rem 1rem;border-radius:.6rem;cursor:pointer;font-size:.85rem}
+.panel-nav button:hover{color:#fff;border-color:var(--sky)}
+/* ===== tabs (kamus) ===== */
+.tabs{display:flex;gap:.5rem;margin-bottom:1rem;flex-wrap:wrap}
+.tab{background:var(--card);border:1px solid var(--line);color:var(--muted);padding:.5rem 1rem;border-radius:.7rem;cursor:pointer;font-size:.9rem;font-weight:600}
+.tab:hover{color:var(--text)}
+.tab.on{background:linear-gradient(135deg,rgba(56,189,248,.25),rgba(167,139,250,.25));border-color:var(--sky);color:#fff}
+.pane{display:none}.pane.on{display:block;animation:in .25s ease}
+/* ===== bottom nav ===== */
+.nav{position:fixed;bottom:0;left:0;right:0;z-index:40;display:flex;align-items:center;justify-content:center;gap:1.1rem;padding:.7rem 1rem;background:linear-gradient(0deg,rgba(11,18,32,.92),rgba(11,18,32,0))}
+.nav button.arrow{background:var(--card);border:1px solid var(--line);color:var(--text);width:2.5rem;height:2.5rem;border-radius:.7rem;font-size:1.05rem;cursor:pointer}
+.nav button.arrow:hover{border-color:var(--sky)}
+.dots{display:flex;gap:.45rem;align-items:center}
+.dot{width:.55rem;height:.55rem;border-radius:99px;background:#2c3c63;border:none;cursor:pointer;padding:0;transition:all .25s ease;position:relative}
+.dot.on{width:1.7rem;background:linear-gradient(90deg,var(--sky),var(--violet))}
+.dot:hover::after{content:attr(data-t);position:absolute;bottom:1.3rem;left:50%;transform:translateX(-50%);background:#1c2a4a;border:1px solid var(--line);color:var(--text);font-size:.72rem;padding:.25rem .6rem;border-radius:.5rem;white-space:nowrap}
+.keyhint{font-size:.72rem;color:#5c6f96;white-space:nowrap}
+kbd{background:#22304f;border:1px solid var(--line);border-radius:.35rem;padding:.08rem .4rem;font-size:.72rem;font-family:inherit}
+/* ===== ringkasan flow ===== */
+.flow{display:flex;gap:.8rem;flex-wrap:wrap;align-items:stretch;margin-top:1.4rem}
+.flow .fstep{flex:1;min-width:11rem;background:var(--card);border:1px solid var(--line);border-radius:.9rem;padding:1rem 1.1rem;position:relative}
+.flow .fstep b{display:block;margin-bottom:.3rem;font-size:1rem}
+.flow .fstep span{font-size:.85rem;color:var(--muted);line-height:1.45}
+.flow .arrowsym{align-self:center;color:var(--sky);font-size:1.4rem;font-weight:800}
+@media (max-width:900px){.tipe-grid{grid-template-columns:repeat(2,1fr)}.slide{padding:3rem 1.5rem 5rem}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="progress"><i id="prog"></i></div>
+  <span class="counter" id="counter">1 / 7</span>
+  <button class="fsbtn" onclick="toggleFS()" title="Layar penuh (F)">⛶ Fullscreen</button>
+</div>
+
+<main class="deck" id="deck">
+
+<!-- ============ SLIDE 1 : COVER ============ -->
+<section class="slide active">
+  <div class="wrap" style="text-align:center;max-width:900px">
+    <span class="chip">Baseline untuk Murid</span>
+    <h1>PANDUAN MENGHADAPI<br><span style="background:linear-gradient(90deg,var(--sky),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent">SOAL TWK</span></h1>
+    <p class="sub" style="margin-inline:auto">Cara membaca <span class="hl">maksud soal</span> &amp; menghindari <span class="hl-red">jebakan kata</span>.</p>
+    <div class="quote" style="margin-top:2rem;text-align:left">
+      Panduan ini <b>bukan untuk menghafal</b>. Tujuannya satu: begitu kamu baca soal, kamu langsung tahu
+      <i>"soal ini maunya apa"</i> dan <i>"di mana jebakannya"</i>. Baca sekali, pahami polanya, lalu latihan.
+    </div>
+    <p style="margin-top:2rem;color:var(--muted);font-size:.85rem">Gunakan <kbd>←</kbd> <kbd>→</kbd> atau tombol di bawah untuk berpindah slide · <kbd>F</kbd> layar penuh</p>
+  </div>
+</section>
+
+<!-- ============ SLIDE 2 : BAGIAN 1 ============ -->
+<section class="slide">
+  <div class="wrap">
+    <span class="chip">Bagian 1</span>
+    <h2>Hukum Dasar Soal TWK <span style="color:var(--red)">(WAJIB tahu duluan)</span></h2>
+    <p class="section-note">Soal TWK model sekarang <b>tidak menguji hafalan</b>. Ciri khasnya:</p>
+    <div class="quote">
+      <b>Semua 5 pilihan jawaban terlihat BENAR.</b> Tidak ada yang jelas-jelas salah.<br>
+      Yang membedakan cuma: <span class="hl">mana yang PALING tepat.</span>
+    </div>
+    <p style="margin:1rem 0 1.4rem;line-height:1.6;color:var(--muted)">
+      Kalau kamu merasa <i>"kok jawabannya kayak benar semua?"</i> — itu <span class="hl-green">normal</span>, memang dirancang begitu.
+      Tugasmu bukan cari yang benar, tapi cari yang <b>paling pas</b> dengan yang ditanya.
+    </p>
+    <h3 style="margin-bottom:.8rem;font-size:1.1rem">3 Langkah Membaca Soal <span style="color:var(--muted);font-weight:400">(biasakan sampai otomatis)</span></h3>
+    <div class="grid" style="grid-template-columns:repeat(3,1fr)">
+      <div class="card step"><span class="num">1</span><p><b>Tutup dulu pilihan jawabannya.</b><br><small>Baca cuma pertanyaannya.</small></p></div>
+      <div class="card step"><span class="num">2</span><p><b>Jawab pakai kata-katamu sendiri.</b><br><small>"Oh, ini nanya nilai apa di balik cerita ini."</small></p></div>
+      <div class="card step"><span class="num">3</span><p><b>Baru buka pilihan.</b><br><small>Cari yang paling dekat dengan jawaban versimu.</small></p></div>
+    </div>
+    <div class="tip" style="margin-top:1.2rem">
+      <b>Kenapa?</b> Kalau kamu baca pilihan duluan, kamu akan gampang tergoda jebakan. Kalau kamu sudah
+      punya <span class="hl-green">jawaban sendiri di kepala</span>, jebakan kehilangan kekuatannya.
+    </div>
+  </div>
+</section>
+
+<!-- ============ SLIDE 3 : BAGIAN 2 ============ -->
+<section class="slide">
+  <div class="wrap">
+    <span class="chip">Bagian 2</span>
+    <h2>Arti Kata Perintah di Soal</h2>
+    <p class="section-note">Kata-kata ini menentukan apa yang harus kamu cari. <span class="hl-red">Salah paham di sini = salah jawab.</span></p>
+    <div class="card" style="padding:.4rem .4rem;margin-bottom:1.1rem">
+      <table>
+        <thead><tr><th style="width:30%">Kata di soal</th><th>Artinya buat kamu</th></tr></thead>
+        <tbody>
+          <tr><td class="kw">paling mendasar / paling esensial</td><td>Cari <span class="hl">inti / akarnya</span>, bukan akibat atau contohnya</td></tr>
+          <tr><td class="kw">paling mencerminkan</td><td>Cari yang <span class="hl">paling menggambarkan</span>, bukan yang sekadar "ada hubungannya"</td></tr>
+          <tr><td class="kw">paling tepat</td><td>Semua mungkin bisa, pilih yang <span class="hl">tak terbantahkan</span></td></tr>
+          <tr><td class="kw" style="color:var(--red)">kecuali</td><td><span class="hl-red">Dibalik!</span> Cari yang <b>TIDAK cocok</b>. 4 jawaban benar, 1 salah — pilih yang salah</td></tr>
+          <tr><td class="kw">dalam konteks ...</td><td>Jawaban harus <span class="hl">nyambung situasi itu</span>, jangan jawab secara umum</td></tr>
+          <tr><td class="kw">implementasi / penerapan</td><td>Cari <span class="hl">tindakan nyata</span>, bukan teori atau definisi</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="warn">
+      ⚠️ <b>Paling sering keliru: soal "kecuali".</b> Banyak murid lupa, lalu memilih jawaban yang benar
+      (padahal disuruh cari yang salah). Kalau lihat kata "kecuali", <span class="hl-red">lingkari kata itu</span> dulu.
+    </div>
+  </div>
+</section>
+
+<!-- ============ SLIDE 4 : BAGIAN 3 ============ -->
+<section class="slide">
+  <div class="wrap">
+    <span class="chip">Bagian 3</span>
+    <h2>8 Tipe Soal &amp; Jebakannya</h2>
+    <p class="section-note">Setiap soal TWK sebenarnya salah satu dari 8 tipe ini. <span class="hl">Kenali tipenya → tahu jebakannya.</span> <b style="color:var(--amber)">Klik kartu untuk membuka detail.</b></p>
+    <div class="tipe-grid" id="tipeGrid"></div>
+  </div>
+</section>
+
+<!-- ============ SLIDE 5 : BAGIAN 4 ============ -->
+<section class="slide">
+  <div class="wrap">
+    <span class="chip">Bagian 4 — Bagian Terpenting</span>
+    <h2>Kamus Jebakan Diksi</h2>
+    <div class="tabs">
+      <button class="tab on" onclick="tab(0)">A · Nilai yang Mirip</button>
+      <button class="tab" onclick="tab(1)">B · Ancaman Bangsa</button>
+      <button class="tab" onclick="tab(2)">C · Kata "Tinggi"</button>
+      <button class="tab" onclick="tab(3)">D · Kata Tidak Baku</button>
+    </div>
+
+    <div class="pane on">
+      <p class="section-note">Nilai yang mirip tapi beda <b>(untuk Tipe 4)</b>. Baca cerita, tanya: <span class="hl">"yang ditonjolkan yang mana?"</span></p>
+      <div class="card" style="padding:.4rem">
+        <table>
+          <thead><tr><th style="width:17%">Nilai</th><th style="width:38%">Intinya (kata kunci sederhana)</th><th>Kalau cerita menekankan...</th></tr></thead>
+          <tbody>
+            <tr><td class="kw">Integritas</td><td>prinsip dan tindakan <span class="hl">selaras</span>, tidak plin-plan</td><td>ia tetap jujur/benar walau digoda/ditekan</td></tr>
+            <tr><td class="kw">Objektivitas</td><td>keputusan berdasar <span class="hl">fakta</span>, bukan perasaan</td><td>ia menyingkirkan suka/benci, pakai bukti</td></tr>
+            <tr><td class="kw">Netralitas</td><td><span class="hl">tidak memihak</span>, menarik diri dari kepentingan</td><td>ia mundur karena ada konflik kepentingan</td></tr>
+            <tr><td class="kw">Profesionalisme</td><td>bekerja sesuai <span class="hl">aturan &amp; kompetensi</span></td><td>ia ikut prosedur/standar kerja</td></tr>
+            <tr><td class="kw">Kejujuran</td><td><span class="hl">tidak bohong</span>, apa adanya</td><td>ia mengakui/tidak menutupi sesuatu</td></tr>
+            <tr><td class="kw">Tanggung jawab</td><td><span class="hl">menuntaskan</span> kewajiban, tidak lari</td><td>ia tetap kerjakan tugas walau berat</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="pane">
+      <p class="section-note">Ancaman terhadap bangsa yang sering tertukar artinya.</p>
+      <div class="card" style="padding:.4rem;max-width:820px">
+        <table>
+          <thead><tr><th style="width:28%">Istilah</th><th>Arti sederhana</th></tr></thead>
+          <tbody>
+            <tr><td class="kw">Radikalisme</td><td>ingin <span class="hl-red">mengubah dasar negara</span> secara paksa/keras</td></tr>
+            <tr><td class="kw">Separatisme</td><td>ingin <span class="hl-red">memisahkan wilayah</span> dari NKRI</td></tr>
+            <tr><td class="kw">Intoleransi</td><td><span class="hl-red">tidak menghormati perbedaan</span> (agama, suku, simbol)</td></tr>
+            <tr><td class="kw">Fanatisme</td><td><span class="hl-red">fanatik buta</span> pada satu kelompok, menolak yang lain</td></tr>
+            <tr><td class="kw">Disintegrasi</td><td>bangsa <span class="hl-red">terpecah-belah</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="pane">
+      <p class="section-note">Kata "tinggi" di soal → arti sederhananya.</p>
+      <div class="card" style="padding:.4rem;max-width:860px">
+        <table>
+          <thead><tr><th style="width:32%">Kata sulit di soal</th><th>Maksudnya</th></tr></thead>
+          <tbody>
+            <tr><td class="kw">pragmatis</td><td>mementingkan hasil/untung praktis saja</td></tr>
+            <tr><td class="kw">kontekstual</td><td>menyesuaikan situasi/keadaan</td></tr>
+            <tr><td class="kw">substansi / hakikat</td><td><span class="hl">inti yang sebenarnya</span></td></tr>
+            <tr><td class="kw">implementasi</td><td><span class="hl">pelaksanaan nyata</span></td></tr>
+            <tr><td class="kw">proporsional</td><td>sesuai porsi, seimbang, adil takarannya</td></tr>
+            <tr><td class="kw">esensial</td><td>yang paling penting/mendasar</td></tr>
+            <tr><td class="kw">konsensus</td><td>kesepakatan bersama</td></tr>
+            <tr><td class="kw">afirmasi</td><td>keberpihakan untuk membantu yang lemah/tertinggal</td></tr>
+            <tr><td class="kw">independensi</td><td>kemandirian, tidak bisa ditekan pihak lain</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="pane">
+      <p class="section-note">Kata tidak baku yang sering jadi jebakan <b>(untuk Tipe 8)</b>.</p>
+      <div class="card" style="padding:.4rem;max-width:860px">
+        <table>
+          <thead><tr><th style="width:45%">❌ SALAH (tidak baku)</th><th>✅ BENAR (baku)</th></tr></thead>
+          <tbody>
+            <tr><td class="bad">merubah</td><td class="good">mengubah</td></tr>
+            <tr><td class="bad">mengkoordinir</td><td class="good">mengoordinasi</td></tr>
+            <tr><td class="bad">daripada (dipakai berlebihan)</td><td class="good">(sering harus dihapus)</td></tr>
+            <tr><td class="bad">"para hadirin sekalian"</td><td class="good">"hadirin" (sudah jamak)</td></tr>
+            <tr><td class="bad">semenjak</td><td class="good">sejak</td></tr>
+            <tr><td class="bad">dikarenakan</td><td class="good">karena</td></tr>
+            <tr><td class="bad">"maka" setelah "berdasarkan/untuk"</td><td class="good">(dihapus, mubazir)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SLIDE 6 : BAGIAN 5 ============ -->
+<section class="slide">
+  <div class="wrap">
+    <span class="chip">Bagian 5</span>
+    <h2>Strategi Waktu</h2>
+    <div class="grid" style="grid-template-columns:1fr 1fr;margin-top:1.2rem">
+      <div class="card" style="display:flex;gap:1rem;align-items:center">
+        <div style="font-size:2rem">🧘</div>
+        <p style="line-height:1.6">Soal cerita panjang <span class="hl-green">tidak selalu sulit</span> — <b>jangan panik</b> lihat teksnya banyak.</p>
+      </div>
+      <div class="card" style="display:flex;gap:1rem;align-items:center">
+        <div style="font-size:2rem">⏱️</div>
+        <p style="line-height:1.6">Kalau sudah <span class="hl">90 detik</span> belum yakin → <b>tandai (ragu-ragu), lanjut dulu</b>, balik lagi nanti.</p>
+      </div>
+      <div class="card" style="display:flex;gap:1rem;align-items:center">
+        <div style="font-size:2rem">🐢</div>
+        <p style="line-height:1.6">Tipe yang biasanya makan waktu: <b>Tipe 3</b> (nilai lama→sekarang) dan <b>Tipe 4</b> (beda tipis nilai). Untuk dua tipe ini, <span class="hl-green">WAJIB pakai trik "jawab pakai kata sendiri dulu"</span> (Bagian 1).</p>
+      </div>
+      <div class="card" style="display:flex;gap:1rem;align-items:center">
+        <div style="font-size:2rem">🎯</div>
+        <p style="line-height:1.6"><b>Jangan ubah jawaban di menit akhir</b> tanpa alasan kuat — <span class="hl">tebakan pertama yang berdasar biasanya benar</span>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SLIDE 7 : RINGKASAN ============ -->
+<section class="slide">
+  <div class="wrap" style="text-align:center">
+    <span class="chip">Ringkasan 1 Kalimat</span>
+    <h2 style="margin-bottom:1.5rem">Alur Menjawab Setiap Soal TWK</h2>
+    <div class="flow" style="text-align:left">
+      <div class="fstep"><b>1 · Baca pertanyaannya dulu</b><span>Tutup pilihan jawaban. Fokus ke apa yang ditanya.</span></div>
+      <div class="arrowsym">→</div>
+      <div class="fstep"><b>2 · Jawab pakai kata sendiri</b><span>Punya jawaban versimu sebelum lihat pilihan.</span></div>
+      <div class="arrowsym">→</div>
+      <div class="fstep"><b>3 · Cari yang paling pas</b><span>Bukan sekadar benar — yang <i>paling</i> tepat.</span></div>
+      <div class="arrowsym">→</div>
+      <div class="fstep" style="border-color:rgba(251,113,133,.5)"><b style="color:var(--red)">4 · Waspadai jebakan</b><span>Kata <span class="hl-red">"kecuali"</span>, nilai yang <span class="hl-red">mirip</span>, dan pilihan yang <span class="hl-red">terlalu ekstrem</span>.</span></div>
+    </div>
+    <div class="quote" style="margin-top:2rem;text-align:left">
+      <b>Baca pertanyaannya dulu (tutup pilihan) → jawab pakai kata sendiri → cari yang paling pas →
+      waspadai kata "kecuali", nilai yang mirip, dan pilihan yang terlalu ekstrem.</b>
+    </div>
+    <p style="margin-top:2rem;color:var(--muted)">Selamat berlatih! 💪</p>
+  </div>
+</section>
+
+</main>
+
+<!-- overlay detail tipe -->
+<div class="overlay" id="overlay" onclick="if(event.target===this)closeTipe()">
+  <div class="panel" id="panel"></div>
+</div>
+
+<footer class="nav">
+  <button class="arrow" onclick="go(-1)" title="Sebelumnya (←)">←</button>
+  <div class="dots" id="dots"></div>
+  <button class="arrow" onclick="go(1)" title="Berikutnya (→)">→</button>
+  <span class="keyhint"><kbd>←</kbd><kbd>→</kbd> pindah · <kbd>Esc</kbd> tutup detail</span>
+</footer>
+
+<script>
+/* ================= data 8 tipe ================= */
+const TIPE=[
+ {t:'"Cari Akarnya, Bukan Buahnya"',s:'Menanyakan inti / hakikat sebuah nilai.',
+  maksud:'Menanyakan <b>inti/hakikat</b> sebuah nilai (contoh: apa inti negara hukum, inti keadilan sosial).',
+  jebakan:'Pilihan yang benar tapi cuma <b>akibat atau tanda</b>-nya, bukan intinya.',
+  trik:'Tanya ke diri sendiri: <i>"Ini akarnya, atau cuma hasil dari akar itu?"</i> Pilih <b>akarnya</b>.',
+  extra:{c:'contoh',l:'Contoh',h:'Inti "negara hukum" = hukum berlaku sama untuk semua, <b>termasuk pejabat</b>.<br>Jebakan: "warga taat pajak" (itu cuma tanda, bukan inti).'}},
+ {t:'"Jangan Pilih yang Terlalu Ekstrem"',s:'Ada dua kubu bertentangan.',
+  maksud:'Ada dua kubu bertentangan (contoh: pusat vs daerah, bebas vs dilarang).',
+  jebakan:'Pilihan yang <b>terlalu ke satu sisi</b> (semua diseragamkan / semua dibebaskan), DAN pilihan yang kelihatan "seimbang" tapi <b>kosong</b> (tidak ada cara nyatanya).',
+  trik:'Pilih yang <b>menyeimbangkan DUA sisi + ada caranya</b> (ada pendampingan, pengawasan, aturan jelas).',
+  extra:{c:'awas',l:'Hati-hati',h:'Kadang ada <b>dua</b> pilihan yang sama-sama bilang "menggabungkan". Yang benar adalah yang <b>ada mekanisme/caranya</b>. Yang palsu cuma ngomong "seimbang" tapi diam-diam berat sebelah.'}},
+ {t:'"Nilai Lama, Terapkan Zaman Sekarang"',s:'Cerita pahlawan → penerapan masa kini.',
+  maksud:'Ada cerita pahlawan/sejarah, lalu tanya <i>"gimana menerapkan semangatnya SEKARANG?"</i>',
+  jebakan:'Pilihan yang <b>meniru mentah-mentah</b> tindakan zaman dulu (bikin lagi persis seperti dulu), atau yang cuma <b>seremonial</b> (upacara, hormat simbol).',
+  trik:'Ambil <b>nilai/semangatnya</b> (bukan bentuk fisiknya), lalu cari penerapan modern.',
+  extra:{c:'contoh',l:'Contoh',h:'Semangat Ki Hajar "memerdekakan" = <b>memerdekakan pikiran</b> (nalar kritis, mandiri), BUKAN "mendirikan sekolah persis Taman Siswa".'}},
+ {t:'"Beda Tipis Antar-Nilai"',s:'Paling sering bikin ragu.',
+  maksud:'Ada cerita perilaku, lalu tanya <i>"ini nilai apa?"</i> — pilihannya nilai yang mirip-mirip.',
+  jebakan:'Kata <b>"integritas"</b> sering jadi umpan karena terdengar paling keren, padahal jawaban sebenarnya lebih spesifik.',
+  trik:'Lihat <b>apa yang PALING ditonjolkan cerita</b>, cocokkan ke kamus di Bagian 4.',
+  extra:{c:'contoh',l:'Contoh',h:'Kalau cerita menekankan "<b>memisahkan suka/tidak suka dari fakta</b>" → itu <b>objektivitas</b>, bukan sekadar "integritas".'}},
+ {t:'"Pilih yang Benar Walau Berisiko"',s:'Ada tekanan atau iming-iming.',
+  maksud:'Ada tekanan (atasan menyuruh diam, ada iming-iming, ada konflik keluarga).',
+  jebakan:'Pilihan yang "aman" — lapor diam-diam, tunggu nanti, kompromi, pura-pura tidak tahu.',
+  trik:'Pilih yang menempuh <b>jalur resmi yang benar, walaupun berisiko</b> buat diri sendiri.',
+  extra:{c:'awas',l:'Awas',h:'"Lapor <b>anonim</b> ke luar / ke media" biasanya <b>SALAH</b> — itu melompati prosedur resmi.'}},
+ {t:'"Lembaga Mana yang Berwenang"',s:'Kasus butuh lembaga negara yang tepat.',
+  maksud:'Kasus butuh lembaga negara yang tepat (DPR, DPD, MK, MA, BPK, dll).',
+  jebakan:'Lembaga yang tugasnya <b>mirip sekilas</b> tapi beda kewenangan resmi.',
+  trik:'Ingat tugas inti tiap lembaga. Cocokkan kasus ke tugas resmi.',
+  extra:{c:'contoh',l:'Ringkas',h:'<b>DPD</b> = urusan daerah/otonomi · <b>MK</b> = uji UU vs UUD · <b>MA</b> = perkara hukum umum · <b>BPK</b> = audit keuangan negara · <b>DPR</b> = bikin UU + anggaran + awasi pemerintah.'}},
+ {t:'"Pilih yang Cocok dari Daftar"',s:'Daftar 5–6 perilaku, pilih sesuai kriteria.',
+  maksud:'Ada daftar 5–6 perilaku, disuruh pilih yang cocok kriteria tertentu (misal sila ke-3).',
+  jebakan:'Ada item yang <b>kelihatan patriotik tapi justru salah</b> (contoh: "pilih teman sesama daerah" — itu malah <b>memecah</b> persatuan, bukan menyatukan).',
+  trik:'Cek satu-satu, <b>buang yang diam-diam melanggar kriteria</b>.'},
+ {t:'"Soal Bahasa Indonesia"',s:'Kata baku &amp; perbaikan kalimat.',
+  maksud:'Melengkapi kata, memilih kalimat baku, atau memperbaiki kalimat.',
+  jebakan:'Kata yang <b>artinya hampir pas</b> tapi tidak umum dipakai bareng (salah pasangan kata), atau bentuk tidak baku yang sering dikira benar.',
+  trik:'Hafal daftar kata tidak baku yang sering muncul (lihat <b>Bagian 4 — Tab D</b>).'}
+];
+
+/* ================= render kartu tipe ================= */
+const grid=document.getElementById('tipeGrid');
+TIPE.forEach((d,i)=>{
+  const b=document.createElement('button');
+  b.className='tipe-card';
+  b.innerHTML=`<span class="no">TIPE ${i+1}</span><h3>${d.t}</h3><p>${d.s}</p><span class="more">Lihat jebakan &amp; trik →</span>`;
+  b.onclick=()=>openTipe(i);
+  grid.appendChild(b);
+});
+
+/* ================= overlay tipe ================= */
+let curTipe=-1;
+function openTipe(i){
+  curTipe=i; const d=TIPE[i];
+  let html=`<button class="close" onclick="closeTipe()">✕</button>
+    <span class="no">TIPE ${i+1} / 8</span><h3>${d.t}</h3><div class="blocks">
+    <div class="blk blk-maksud"><span class="lbl">🎯 Maksud Soal</span>${d.maksud}</div>
+    <div class="blk blk-jebakan"><span class="lbl">🪤 Jebakan</span>${d.jebakan}</div>
+    <div class="blk blk-trik"><span class="lbl">✅ Trik</span>${d.trik}</div>`;
+  if(d.extra) html+=`<div class="blk blk-${d.extra.c==='awas'?'awas':'contoh'}"><span class="lbl">${d.extra.c==='awas'?'⚠️':'💡'} ${d.extra.l}</span>${d.extra.h}</div>`;
+  html+=`</div><div class="panel-nav">
+    <button onclick="openTipe(${(i+7)%8})">← Tipe ${(i+7)%8+1}</button>
+    <button onclick="openTipe(${(i+1)%8})">Tipe ${(i+1)%8+1} →</button></div>`;
+  document.getElementById('panel').innerHTML=html;
+  document.getElementById('overlay').classList.add('open');
+}
+function closeTipe(){document.getElementById('overlay').classList.remove('open');curTipe=-1}
+
+/* ================= navigasi slide ================= */
+const slides=[...document.querySelectorAll('.slide')];
+const NAMES=['Cover','1 · Hukum Dasar','2 · Kata Perintah','3 · 8 Tipe Soal','4 · Kamus Diksi','5 · Strategi Waktu','Ringkasan'];
+let cur=0;
+const dots=document.getElementById('dots');
+slides.forEach((_,i)=>{
+  const d=document.createElement('button');
+  d.className='dot'+(i===0?' on':''); d.dataset.t=NAMES[i];
+  d.onclick=()=>show(i); dots.appendChild(d);
+});
+function show(i){
+  cur=Math.max(0,Math.min(slides.length-1,i));
+  slides.forEach((s,j)=>s.classList.toggle('active',j===cur));
+  [...dots.children].forEach((d,j)=>d.classList.toggle('on',j===cur));
+  document.getElementById('prog').style.width=((cur+1)/slides.length*100)+'%';
+  document.getElementById('counter').textContent=(cur+1)+' / '+slides.length;
+}
+function go(d){show(cur+d)}
+show(0);
+
+/* ================= keyboard ================= */
+document.addEventListener('keydown',e=>{
+  const overlayOpen=document.getElementById('overlay').classList.contains('open');
+  if(e.key==='Escape'){closeTipe();return}
+  if(overlayOpen){
+    if(e.key==='ArrowRight')openTipe((curTipe+1)%8);
+    if(e.key==='ArrowLeft')openTipe((curTipe+7)%8);
+    return;
+  }
+  if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown')go(1);
+  if(e.key==='ArrowLeft'||e.key==='PageUp')go(-1);
+  if(e.key==='Home')show(0);
+  if(e.key==='End')show(slides.length-1);
+  if(e.key==='f'||e.key==='F')toggleFS();
+});
+
+/* ================= tabs kamus ================= */
+function tab(i){
+  document.querySelectorAll('.tab').forEach((t,j)=>t.classList.toggle('on',j===i));
+  document.querySelectorAll('.pane').forEach((p,j)=>p.classList.toggle('on',j===i));
+}
+
+/* ================= fullscreen ================= */
+function toggleFS(){
+  if(!document.fullscreenElement)document.documentElement.requestFullscreen();
+  else document.exitFullscreen();
+}
+</script>
+</body>
+</html>

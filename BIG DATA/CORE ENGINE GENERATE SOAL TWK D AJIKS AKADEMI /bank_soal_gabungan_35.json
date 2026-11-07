@@ -1,0 +1,776 @@
+{
+  "meta": {
+    "judul": "Bank Soal TWK Gabungan — Paket 15 + MR BADRUN ENGINE",
+    "versi": "1.0",
+    "tanggal_disusun": "2026-08-21",
+    "jumlah_soal": 33,
+    "catatan_jumlah": "User meminta 35 soal; sumber yang tersedia hanya menghasilkan 33 (23 dari Paket 15 + 10 dari paket uji MR BADRUN ENGINE). Selisih 2 soal belum terisi — lihat catatan di bawah.",
+    "sumber": [
+      {
+        "nama": "Paket 15 TWK-2026SL - Salin.pdf",
+        "jumlah_soal": 23,
+        "catatan": "PDF sumber tidak menyertakan kunci jawaban resmi. Kunci dan pembahasan pada file ini adalah HASIL ANALISIS, bukan kunci resmi penerbit. 6 soal (no. 2, 3, 6, 10, 15, 21 pada penomoran asli) memiliki status_kunci='lemah': ada opsi tandingan yang argumennya sama kuat dengan kunci terpilih."
+      },
+      {
+        "nama": "Paket Uji TWK HOTS - MR BADRUN ENGINE.pdf",
+        "jumlah_soal": 10,
+        "catatan": "Soal generate baru menggunakan MR_BADRUN_TWK_ENGINE.md v1.0. Seluruh 10 soal level C5, lolos saringan mutu Gerbang 1-3 (uji cocok-kata, uji bentuk, uji satu-kalimat)."
+      }
+    ],
+    "skema_field": {
+      "id": "ID unik per soal, format {SUMBER}-{nomor asli 2 digit}",
+      "sumber": "nama file PDF asal",
+      "no_urut_sumber": "nomor soal pada PDF aslinya",
+      "no_urut_gabungan": "nomor urut 1..N pada file gabungan ini, dipakai untuk indexing CAT",
+      "tema": "topik/materi yang diuji",
+      "kategori_jawaban": "kategori ontologis jawaban yang dikunci oleh kata perintah stem: ALASAN | WUJUD | SIKAP | RELASI | DEFINISI",
+      "level_kognitif": "C4-C5 (Paket 15) atau C5 (MR BADRUN), semua di atas taksonomi Bloom analisis-evaluasi",
+      "konstruk_dua_kutub": "hanya ada di soal MR BADRUN — rumusan tegangan dua kutub yang mendasari stem (Pilar 1 engine)",
+      "jangkar_faktual": "true bila kunci bertumpu pada konten terverifikasi (pasal UUD/KUHAP, kewenangan lembaga, tokoh/peristiwa sejarah)",
+      "status_kunci": "kuat = kunci punya alasan gagal distraktor yang bisa dinamai satu kalimat (Gerbang 3 lolos). lemah = kunci hasil analisis, ada opsi tandingan yang sama kuat",
+      "catatan_ambiguitas": "hanya muncul bila status_kunci=lemah, menjelaskan opsi tandingan",
+      "catatan_desain": "catatan cacat konstruksi soal bila ada (mis. bocor bentuk opsi)",
+      "soal": "teks stem",
+      "opsi": "objek A-E",
+      "kunci": "huruf kunci jawaban",
+      "pembahasan": "penjelasan kunci + alasan gagal tiap distraktor, kode distraktor [D1-D6] merujuk taksonomi di MR_BADRUN_TWK_ENGINE.md Pilar 3 untuk soal MR BADRUN"
+    },
+    "distribusi_kunci": {
+      "E": 7,
+      "C": 5,
+      "D": 7,
+      "B": 9,
+      "A": 5
+    },
+    "distribusi_kategori_jawaban": {
+      "ALASAN": 8,
+      "WUJUD": 9,
+      "SIKAP": 6,
+      "RELASI": 3,
+      "DEFINISI": 7
+    },
+    "distribusi_level_kognitif": {
+      "C4-C5": 23,
+      "C5": 10
+    },
+    "jumlah_jangkar_faktual": 6,
+    "jumlah_soal_kunci_ambigu": 6,
+    "peringatan_pemakaian_cat": [
+      "Kunci soal Paket 15 BUKAN kunci resmi. Sebelum dipakai skoring live di sistem CAT, verifikasi ke kunci resmi penerbit bila tersedia.",
+      "6 soal berstatus_kunci='lemah' berpotensi menghasilkan daya beda (discrimination index) rendah atau negatif saat uji coba psikometrik — pantau performanya, pertimbangkan revisi atau bobot lebih rendah.",
+      "Soal P15-01 dan P15-20 memiliki konstruk stem yang identik (soal kembar, opsi diparafrase). Jangan tampilkan keduanya kepada peserta yang sama dalam satu sesi CAT."
+    ]
+  },
+  "soal": [
+    {
+      "id": "P15-01",
+      "sumber": "Paket 15 TWK-2026SL - Salin.pdf",
+      "no_urut_sumber": 1,
+      "tema": "Nasionalisme & keterbukaan informasi",
+      "kategori_jawaban": "ALASAN",
+      "level_kognitif": "C4-C5",
+      "jangkar_faktual": false,
+      "status_kunci": "kuat",
+      "soal": "Di tengah perkembangan teknologi dan keterbukaan informasi, masyarakat semakin mudah dipengaruhi kepentingan kelompok, opini yang memecah persatuan, serta pola pikir yang lebih mengutamakan identitas tertentu dibanding kepentingan bersama. Dalam kondisi tersebut, semangat nasionalisme tetap penting dipertahankan karena ...",
+      "opsi": {
+        "A": "Kehidupan bangsa memerlukan kesadaran menjaga arah kebersamaan.",
+        "B": "Perbedaan kepentingan perlu dikendalikan demi persatuan nasional.",
+        "C": "Perubahan zaman dapat memengaruhi ketahanan kehidupan bernegara.",
+        "D": "Identitas kebangsaan menjadi penyeimbang dalam arus globalisasi.",
+        "E": "Kepentingan nasional harus tetap menjadi dasar kehidupan masyarakat."
+      },
+      "kunci": "E",
+      "pembahasan": "Perintah 'karena' menuntut ALASAN, bukan bentuk tindakan. Ancaman di stem memuncak pada 'identitas tertentu dibanding kepentingan bersama'. E langsung menjawab: nasionalisme dipertahankan agar kepentingan nasional tidak digeser kepentingan golongan — definisi inti nasionalisme. Distraktor terkuat A nyaris tautologis (nasionalisme penting karena butuh kesadaran = melingkar). D menjawab globalisasi, padahal stem soal fragmentasi internal. C truisme kontekstual.",
+      "no_urut_gabungan": 1
+    },
+    {
+      "id": "P15-02",
+      "sumber": "Paket 15 TWK-2026SL - Salin.pdf",
+      "no_urut_sumber": 2,
+      "tema": "Upacara bendera & persatuan",
+      "kategori_jawaban": "WUJUD",
+      "level_kognitif": "C4-C5",
+      "jangkar_faktual": false,
+      "status_kunci": "lemah",
+      "soal": "Pemahaman mendalam terhadap perjuangan bangsa dalam merebut dan mempertahankan kemerdekaan tidak cukup diwujudkan melalui hafalan sejarah, tetapi juga melalui sikap menghargai nilai pengorbanan dan persatuan dalam kehidupan berbangsa. Dalam pelaksanaan upacara bendera di era saat ini, pemahaman tersebut paling tepat tercermin dalam bentuk ...",
+      "opsi": {
+        "A": "Menjaga ketertiban upacara sebagai bentuk penghormatan terhadap simbol negara.",
+        "B": "Mengikuti seluruh rangkaian upacara dengan sikap kesungguhan menghargai perjuangan bangsa.",
+        "C": "Menempatkan upacara bendera sebagai sarana menumbuhkan kesadaran menjaga persatuan nasional.",
+        "D": "Memaknai pelaksanaan upacara sebagai pengingat atas tanggung jawab perjuangan kemerdekaan.",
+        "E": "Menunjukkan sikap disiplin selama upacara berlangsung demi menjaga kekhidmatan kegiatan."
+      },
+      "kunci": "C",
+      "pembahasan": "Stem membelah dua level: hafalan sejarah (kognitif) vs sikap menghargai pengorbanan & persatuan DALAM KEHIDUPAN BERBANGSA. C satu-satunya yang menjadikan upacara sarana menumbuhkan kesadaran persatuan nasional — nilai hidup di luar acara. A dan E berhenti di level ritual (ketertiban, kekhidmatan). B jebakan cocok-kata: mengulang 'menghargai perjuangan bangsa' persis dari stem. D runner-up kuat — tapi 'pengingat' masih di wilayah mengingat, tetangga hafalan. CATATAN: kunci ambigu, C vs D sama-sama bisa dipertahankan.",
+      "catatan_ambiguitas": "Kunci hasil analisis, bukan kunci resmi penerbit. Terdapat opsi tandingan yang sama kuat argumennya — lihat pembahasan.",
+      "no_urut_gabungan": 2
+    },
+    {
+      "id": "P15-03",
+      "sumber": "Paket 15 TWK-2026SL - Salin.pdf",
+      "no_urut_sumber": 3,
+      "tema": "Kebebasan digital & kesadaran berbangsa",
+      "kategori_jawaban": "SIKAP",
+      "level_kognitif": "C4-C5",
+      "jangkar_faktual": false,
+      "status_kunci": "lemah",
+      "soal": "Di tengah perkembangan teknologi digital, masyarakat semakin mudah menyampaikan pandangan dan membentuk opini di ruang publik. Kondisi tersebut menuntut setiap warga negara memiliki kesadaran berbangsa dan bernegara agar kebebasan yang dimiliki tidak merugikan kehidupan bersama. Sikap yang paling mencerminkan kesadaran tersebut adalah ...",
+      "opsi": {
+        "A": "Tetap menghargai perbedaan pandangan meskipun berada dalam perdebatan di media sosial.",
+        "B": "Mengendalikan penggunaan media komunikasi agar tidak menimbulkan keresahan di masyarakat.",
+        "C": "Menyampaikan informasi dengan mempertimbangkan dampaknya terhadap persatuan bangsa.",
+        "D": "Menggunakan hak berpendapat tanpa mengabaikan tanggung jawab terhadap keutuhan bangsa.",
+        "E": "Menjaga ruang digital tetap mendukung terciptanya hubungan sosial yang harmonis antarmasyarakat."
+      },
+      "kunci": "D",
+      "pembahasan": "Stem menyebut 'kesadaran berbangsa DAN bernegara' — konstruk dua kutub. D memuat keduanya: hak berpendapat (bernegara) + tanggung jawab terhadap keutuhan bangsa (berbangsa). Isomorfik dengan struktur stem: kebebasan tidak merugikan kehidupan bersama. CATATAN: kunci ambigu. C runner-up sangat kuat dan bisa dipertahankan (mekanisme konkret: mempertimbangkan dampak), tapi hanya menutup kutub 'berbangsa' dan objeknya 'informasi', bukan 'pendapat' seperti stem. B represif (mengendalikan media). A terlalu sempit. E pernyataan tujuan.",
+      "catatan_ambiguitas": "Kunci hasil analisis, bukan kunci resmi penerbit. Terdapat opsi tandingan yang sama kuat argumennya — lihat pembahasan.",
+      "no_urut_gabungan": 3
+    },
+    {
+      "id": "P15-04",
+      "sumber": "Paket 15 TWK-2026SL - Salin.pdf",
+      "no_urut_sumber": 4,
+      "tema": "Hubungan sila 1 dan sila 2 Pancasila",
+      "kategori_jawaban": "RELASI",
+      "level_kognitif": "C4-C5",
+      "jangkar_faktual": false,
+      "status_kunci": "kuat",
+      "soal": "Dalam kehidupan masyarakat yang majemuk, pengamalan sila pertama dan sila kedua Pancasila tidak hanya berkaitan dengan keyakinan pribadi, tetapi juga memengaruhi cara seseorang memperlakukan orang lain. Hubungan kedua sila tersebut paling tepat dipahami dalam bentuk ...",
+      "opsi": {
+        "A": "Keyakinan beragama tercermin melalui sikap menghargai sesama.",
+        "B": "Pengamalan agama diwujudkan lewat tindakan yang beradab.",
+        "C": "Kehidupan bermoral mendorong terciptanya hubungan sosial yang baik.",
+        "D": "Sikap menghormati orang lain lahir dari kesadaran nilai ketuhanan.",
+        "E": "Nilai ketuhanan membentuk perilaku yang menjunjung kemanusiaan."
+      },
+      "kunci": "E",
+      "pembahasan": "Perintah 'hubungan kedua sila dipahami dalam bentuk' menuntut jawaban memuat KEDUA kutub secara presisi. E satu-satunya yang menamai keduanya dengan nilai silanya: ketuhanan (sila 1) membentuk perilaku kemanusiaan (sila 2). D jebakan cocok-kata: stem bilang 'memperlakukan orang lain', D bilang 'menghormati orang lain' — satu instansi dari kemanusiaan, bukan kemanusiaannya. A dan B mereduksi sila 1 jadi 'agama' (sila 1 = Ketuhanan, bukan agama tertentu). C generik, tidak menyebut sila mana pun.",
+      "no_urut_gabungan": 4
+    },
+    {
+      "id": "P15-05",
+      "sumber": "Paket 15 TWK-2026SL - Salin.pdf",
+      "no_urut_sumber": 5,
+      "tema": "Hubungan sila 4 dan sila 5 Pancasila",
+      "kategori_jawaban": "RELASI",
+      "level_kognitif": "C4-C5",
+      "jangkar_faktual": false,
+      "status_kunci": "kuat",
+      "soal": "Dalam penyelenggaraan jaminan sosial, negara tidak hanya dituntut mampu menghadirkan kesejahteraan bagi masyarakat, tetapi juga memastikan setiap kebijakan disusun melalui proses yang mencerminkan kepentingan rakyat. Hubungan sila keempat dan sila kelima Pancasila tersebut paling tepat tercermin dalam...",
+      "opsi": {
+        "A": "Penetapan bantuan sosial yang mempertimbangkan kebutuhan rakyat.",
+        "B": "Kebijakan kesejahteraan yang disusun melalui pertimbangan bersama.",
+        "C": "Pelayanan sosial yang mengutamakan kepentingan masyarakat luas.",
+        "D": "Program jaminan sosial yang dijalankan secara adil dan bijaksana.",
+        "E": "Keputusan negara yang diarahkan bagi pemerataan kesejahteraan."
+      },
+      "kunci": "B",
+      "pembahasan": "Sila 4 = proses (musyawarah/pertimbangan), sila 5 = hasil (keadilan/kesejahteraan). Kunci harus memuat dua-duanya. B = kebijakan kesejahteraan (sila 5) yang disusun lewat pertimbangan bersama (sila 4). Distraktor terkuat D jebakan ganda: pinjam kata 'jaminan sosial' dari stem + umpan kata 'adil dan bijaksana', tapi bicara pelaksanaan, bukan proses penyusunan. A, C, E hanya sila 5.",
+      "no_urut_gabungan": 5
+    },
+    {
+      "id": "P15-06",
+      "sumber": "Paket 15 TWK-2026SL - Salin.pdf",
+      "no_urut_sumber": 6,
+      "tema": "Musyawarah & sikap adil",
+      "kategori_jawaban": "ALASAN",
+      "level_kognitif": "C4-C5",
+      "jangkar_faktual": false,
+      "status_kunci": "lemah",
+      "soal": "Dalam pelaksanaan musyawarah, setiap peserta memiliki hak menyampaikan pandangan dan kepentingannya masing-masing. Oleh karena itu, sikap adil menjadi hal penting agar tujuan musyawarah tetap mencerminkan kepentingan bersama. Sikap adil dalam musyawarah penting karena...",
+      "opsi": {
+        "A": "Mencegah musyawarah dikuasai kepentingan kelompok tertentu.",
+        "B": "Memberi kesempatan setara dalam menyampaikan pendapat bersama.",
+        "C": "Menjaga keputusan tetap mempertimbangkan kepentingan semua pihak.",
+        "D": "Menjaga hasil musyawarah diterima secara terbuka oleh peserta.",
+        "E": "Memastikan perbedaan pandangan tidak menimbulkan perlakuan berat sebelah."
+      },
+      "kunci": "A",
+      "pembahasan": "Perangkap utama: stem sudah menyebut tujuannya sendiri ('agar mencerminkan kepentingan bersama'). Opsi C mengulang kalimat itu persis — nol kerja kognitif, ciri distraktor. A menuntut satu langkah inferensi: adil mencegah musyawarah dikuasai satu kelompok, barulah hasilnya mencerminkan kepentingan bersama — menamai mode kegagalan yang dicegah. CATATAN: kunci ambigu, C adalah distraktor terkuat yang sulit dijatuhkan. B mengulang premis stem. D efek sekunder. E nyaris tautologi.",
+      "catatan_ambiguitas": "Kunci hasil analisis, bukan kunci resmi penerbit. Terdapat opsi tandingan yang sama kuat argumennya — lihat pembahasan.",
+      "no_urut_gabungan": 6
+    },
+    {
+      "id": "P15-07",
+      "sumber": "Paket 15 TWK-2026SL - Salin.pdf",
+      "no_urut_sumber": 7,
+      "tema": "Kedudukan Pancasila sebagai kepribadian bangsa",
+      "kategori_jawaban": "DEFINISI",
+      "level_kognitif": "C4-C5",
+      "jangkar_faktual": false,
+      "status_kunci": "kuat",
+      "soal": "Di tengah perkembangan globalisasi, masyarakat semakin mudah menerima berbagai pengaruh budaya dan pola kehidupan dari luar. Dalam kondisi tersebut, Pancasila sebagai kepribadian bangsa tetap penting dipertahankan karena...",
+      "opsi": {
+        "A": "Menjadi ciri perilaku bangsa dalam kehidupan bermasyarakat.",
+        "B": "Menjaga nilai kehidupan nasional tetap sesuai karakter bangsa.",
+        "C": "Membentuk sikap masyarakat menghadapi pengaruh budaya luar.",
+        "D": "Mencerminkan identitas bangsa dalam kehidupan modern.",
+        "E": "Mengarahkan perilaku warga tetap berlandaskan nilai indonesia."
+      },
+      "kunci": "A",
+      "pembahasan": "Soal near-synonym kedudukan Pancasila. 'Kepribadian bangsa' = pencerminan sikap mental dan tingkah laku yang membedakan bangsa Indonesia dari bangsa lain. A ('menjadi ciri perilaku bangsa') = definisi presisinya. D = kedudukan jati diri/identitas. E = kedudukan pandangan hidup/pedoman. C = kedudukan penyaring budaya, sekaligus jebakan cocok-kata dengan 'budaya luar' di stem. B melingkar (menjaga nilai sesuai karakter). Keempatnya benar sebagai kedudukan Pancasila, salah sebagai jawaban 'kepribadian'.",
+      "no_urut_gabungan": 7
+    },
+    {
+      "id": "P15-08",
+      "sumber": "Paket 15 TWK-2026SL - Salin.pdf",
+      "no_urut_sumber": 8,
+      "tema": "Ideologi terbuka — dimensi fleksibilitas",
+      "kategori_jawaban": "WUJUD",
+      "level_kognitif": "C4-C5",
+      "jangkar_faktual": false,
+      "status_kunci": "kuat",
+      "soal": "Perubahan sosial dan perkembangan teknologi terus memengaruhi pola kehidupan masyarakat dari waktu ke waktu. Dalam kondisi tersebut, nilai Pancasila tetap dapat diterapkan pada berbagai keadaan karena memiliki dimensi dinamis. Implementasi dimensi tersebut paling tepat ditunjukkan dalam bentuk...",
+      "opsi": {
+        "A": "Penerapan nilai bangsa yang menyesuaikan perkembangan masyarakat.",
+        "B": "Pengembangan kehidupan nasional tanpa meninggalkan dasar Pancasila.",
+        "C": "Penyesuaian kebijakan negara terhadap perubahan kebutuhan zaman.",
+        "D": "Pemanfaatan kemajuan modern dengan tetap berpedoman pada Pancasila.",
+        "E": "Kemampuan nilai Pancasila menjawab tantangan kehidupan yang berubah."
+      },
+      "kunci": "B",
+      "pembahasan": "Dimensi fleksibilitas/dinamis ideologi terbuka = mampu berkembang mengikuti zaman TANPA KEHILANGAN JATI DIRI. Dua bagian, wajib keduanya. B = 'Pengembangan kehidupan nasional tanpa meninggalkan dasar Pancasila'. A hanya separuh (menyesuaikan, tanpa penjaga jati diri) — justru risiko kehilangan identitas. E salah kategori: jawab 'kemampuan', padahal ditanya 'bentuk'. D bentuknya benar tapi ruangnya sempit (cuma teknologi) + pinjam kata 'teknologi'. C tingkat kebijakan, bukan ideologi.",
+      "no_urut_gabungan": 8
+    },
+    {
+      "id": "P15-09",
+      "sumber": "Paket 15 TWK-2026SL - Salin.pdf",
+      "no_urut_sumber": 9,
+      "tema": "Hubungan Pancasila dan UUD 1945",
+      "kategori_jawaban": "DEFINISI",
+      "level_kognitif": "C4-C5",
+      "jangkar_faktual": false,
+      "status_kunci": "kuat",
+      "soal": "Dalam sistem ketatanegaraan Indonesia, Pancasila menjadi dasar nilai kehidupan bangsa, sedangkan UUD 1945 memiliki kedudukan sebagai aturan dasar yang mengikat penyelenggaraan negara. Hubungan keduanya paling tepat dipahami dalam bentuk...",
+      "opsi": {
+        "A": "UUD 1945 mengikat pelaksanaan kehidupan ketatanegaraan.",
+        "B": "Konstitusi negara menjalankan nilai yang bersumber dari Pancasila.",
+        "C": "Pancasila menjadi dasar pembentukan aturan yang mengikat negara.",
+        "D": "Pancasila memberi arah nilai bagi aturan dasar negara.",
+        "E": "UUD 1945 memastikan penyelenggaraan negara sesuai ideologi bangsa."
+      },
+      "kunci": "B",
+      "pembahasan": "Ditanya 'hubungan keduanya' — opsi wajib memuat dua entitas dan arah transmisinya. B menamai keduanya: Konstitusi menjalankan nilai yang bersumber dari Pancasila — Pancasila sumber nilai, UUD instrumen pengikatnya. A cacat kategori: hanya bicara UUD, tidak ada hubungan. C dan D hanya bicara peran Pancasila, 'aturan' generik. E membalik penekanan jadi UUD sebagai penjamin + pinjam kata 'penyelenggaraan negara'.",
+      "no_urut_gabungan": 9
+    },
+    {
+      "id": "P15-10",
+      "sumber": "Paket 15 TWK-2026SL - Salin.pdf",
+      "no_urut_sumber": 10,
+      "tema": "Integritas & kepercayaan publik terhadap penegakan hukum",
+      "kategori_jawaban": "SIKAP",
+      "level_kognitif": "C4-C5",
+      "jangkar_faktual": false,
+      "status_kunci": "lemah",
+      "soal": "Seorang tahanan kasus korupsi tertangkap media berada di sebuah coffeshop bersama pegawai lapas saat jam istirahat. Setelah informasi tersebut tersebar di media sosial, muncul anggapan bahwa penegakan hukum terhadap kasus korupsi dilakukan secara lemah dan tidak adil. Dalam kondisi tersebut, sikap yang paling mencerminkan kesadaran menjaga kepercayaan publik terhadap penegakan hukum adalah...",
+      "opsi": {
+        "A": "Menjelaskan kronologi kejadian secara terbuka kepada masyarakat.",
+        "B": "Memastikan aturan pengawasan tahanan tetap dijalankan secara ketat.",
+        "C": "Mengutamakan tindakan yang menjaga wibawa lembaga pemasyarakatan.",
+        "D": "Mengevaluasi tindakan petugas yang berpotensi menimbulkan keraguan publik.",
+        "E": "Menempatkan integritas penegak hukum di atas kepentingan pribadi petugas."
+      },
+      "kunci": "D",
+      "pembahasan": "Yang ditanya: sikap yang mencerminkan kesadaran menjaga KEPERCAYAAN PUBLIK. D menyambung langsung ke sana — mengevaluasi tindakan petugas yang berpotensi menimbulkan keraguan publik: menyerang penyebabnya, bukan persepsinya. CATATAN: kunci ambigu. A runner-up kuat (transparansi kronologi) tapi komunikatif-reaktif; menjelaskan tidak memperbaiki perbuatan. E benar sebagai prinsip tapi bukan respons atas krisis kepercayaan. B prosedural internal. C distraktor orientasi salah — mendahulukan wibawa lembaga justru merusak kepercayaan publik.",
+      "catatan_ambiguitas": "Kunci hasil analisis, bukan kunci resmi penerbit. Terdapat opsi tandingan yang sama kuat argumennya — lihat pembahasan.",
+      "no_urut_gabungan": 10
+    },
+    {
+      "id": "P15-11",
+      "sumber": "Paket 15 TWK-2026SL - Salin.pdf",
+      "no_urut_sumber": 11,
+      "tema": "Gratifikasi & integritas jabatan",
+      "kategori_jawaban": "ALASAN",
+      "level_kognitif": "C4-C5",
+      "jangkar_faktual": false,
+      "status_kunci": "kuat",
+      "soal": "Seorang narapidana kasus korupsi memperoleh remisi karena memenuhi syarat pembinaan selama menjalani masa hukuman. Setelah dinyatakan bebas, ia memberikan hadiah kepada kepala lapas sebagai bentuk rasa terima kasih atas remisi yang diterimanya. Dalam situasi tersebut, tindakan menolak pemberian tersebut penting dilakukan karena...",
+      "opsi": {
+        "A": "Kewenangan jabatan tidak boleh dikaitkan dengan imbalan pribadi.",
+        "B": "Pelayanan negara harus dijalankan tanpa hubungan balas jasa.",
+        "C": "Hadiah dari pihak berkepentingan dapat memengaruhi kepercayaan publik.",
+        "D": "Integritas aparatur dijaga dengan menghindari konflik kepentingan.",
+        "E": "Keputusan dalam jabatan harus tetap bebas dari kepentingan pribadi."
+      },
+      "kunci": "A",
+      "pembahasan": "Ini gratifikasi, bukan konflik kepentingan (remisi sudah sah, hadiah datang setelahnya). Akar larangannya: kewenangan jabatan tidak boleh dikaitkan dengan imbalan pribadi — berlaku bahkan ketika keputusannya benar, karena hadiah mengubah hak yang sah jadi transaksi. A. Distraktor terkuat B sekaligus jebakan permukaan: 'balas jasa' = terjemahan langsung 'rasa terima kasih' di stem — mengulang kasus, bukan menaikkannya jadi prinsip. E soal kebebasan pengambilan keputusan, padahal keputusan sudah terjadi. C efek (kepercayaan publik). D salah label konsep (ini gratifikasi, bukan konflik kepentingan).",
+      "no_urut_gabungan": 11
+    },
+    {
+      "id": "P15-12",
+      "sumber": "Paket 15 TWK-2026SL - Salin.pdf",
+      "no_urut_sumber": 12,
+      "tema": "Nasionalisme dalam komunikasi pejabat negara",
+      "kategori_jawaban": "DEFINISI",
+      "level_kognitif": "C4-C5",
+      "jangkar_faktual": false,
+      "status_kunci": "kuat",
+      "soal": "Di era keterbukaan informasi, pernyataan pejabat negara tidak hanya dipandang sebagai pendapat pribadi, tetapi juga dapat memengaruhi kepercayaan masyarakat terhadap kehidupan berbangsa. Oleh karena itu, komunikasi pejabat perlu mencerminkan semangat nasionalisme dalam setiap penyampaiannya. Makna semangat nasionalisme dalam komunikasi tersebut paling tepat terlihat pada...",
+      "opsi": {
+        "A": "Kesadaran menjaga persatuan melalui penyampaian pendapat publik.",
+        "B": "Kemampuan menempatkan kepentingan bangsa dalam setiap pernyataan.",
+        "C": "Sikap komunikasi yang tidak memperkeruh keadaan sosial masyarakat.",
+        "D": "Penggunaan kewenangan berbicara dengan tanggung jawab kebangsaan.",
+        "E": "Upaya membangun ketenangan masyarakat melalui komunikasi negara."
+      },
+      "kunci": "B",
+      "pembahasan": "Stem membangun kontras: pendapat PRIBADI vs pengaruh pada KEPERCAYAAN MASYARAKAT. Nasionalisme = mendahulukan kepentingan bangsa. B ('menempatkan kepentingan bangsa dalam setiap pernyataan') menutup kontras itu tepat di titiknya. D membingkainya sebagai penggunaan kewenangan — padahal isunya orientasi isi ucapan, bukan wewenang bicara. A menyempit ke persatuan. C dan E level akibat (jangan keruh / bangun tenang), bukan makna nasionalisme.",
+      "no_urut_gabungan": 12
+    },
+    {
+      "id": "P15-13",
+      "sumber": "Paket 15 TWK-2026SL - Salin.pdf",
+      "no_urut_sumber": 13,
+      "tema": "Bela negara & Kontingen Garuda",
+      "kategori_jawaban": "WUJUD",
+      "level_kognitif": "C4-C5",
+      "jangkar_faktual": false,
+      "status_kunci": "kuat",
+      "soal": "Seorang prajurit yang tergabung dalam Kontingen Garuda membawa identitas dan nilai bangsa Indonesia dalam setiap pelaksanaan tugas di luar negeri. Oleh karena itu, tanggung jawab kebangsaan dalam penugasan tersebut paling tepat tercermin melalui...",
+      "opsi": {
+        "A": "Pelaksanaan tugas yang mencerminkan nilai kemanusiaan indonesia.",
+        "B": "Sikap yang menjaga kehormatan bangsa selama menjalankan tugas.",
+        "C": "Kemampuan menempatkan kepentingan negara di atas kepentingan pribadi.",
+        "D": "Perilaku yang menunjukkan profesionalisme sebagai wakil bangsa.",
+        "E": "Kesadaran membawa nama indonesia dalam setiap tindakan internasional."
+      },
+      "kunci": "B",
+      "pembahasan": "'Tanggung jawab kebangsaan' prajurit di luar negeri: perilakunya memantul ke nama bangsa. B ('menjaga kehormatan bangsa selama menjalankan tugas') = konsekuensi langsung dari membawa identitas bangsa. E jebakan cocok-kata paling telanjang — 'membawa nama indonesia' cuma mengulang premis stem, melingkar. D menawarkan profesionalisme = nilai mutu kerja, bukan tanggung jawab kebangsaan. C berlaku untuk aparat mana pun, tidak spesifik penugasan internasional. A mengarah ke sila 2, kategori nilai yang salah.",
+      "no_urut_gabungan": 13
+    },
+    {
+      "id": "P15-14",
+      "sumber": "Paket 15 TWK-2026SL - Salin.pdf",
+      "no_urut_sumber": 14,
+      "tema": "Peran keluarga mencegah radikalisme",
+      "kategori_jawaban": "ALASAN",
+      "level_kognitif": "C4-C5",
+      "jangkar_faktual": false,
+      "status_kunci": "kuat",
+      "soal": "Keluarga memiliki peran penting dalam membentuk pola pikir dan sikap seseorang terhadap kehidupan bermasyarakat dan bernegara. Oleh karena itu, pencegahan radikalisme perlu dimulai dari lingkungan keluarga. Peran tersebut penting karena...",
+      "opsi": {
+        "A": "Sikap menghargai perbedaan lebih mudah ditanamkan dalam keluarga.",
+        "B": "Lingkungan keluarga memengaruhi ketahanan seseorang terhadap paham ekstrem.",
+        "C": "Pengawasan keluarga membantu mencegah penyebaran pengaruh radikal.",
+        "D": "Nilai kebangsaan berkembang melalui kebiasaan hidup dalam keluarga.",
+        "E": "Keluarga membentuk dasar cara pandang anggota dalam kehidupan sosial."
+      },
+      "kunci": "B",
+      "pembahasan": "Ditanya alasan peran keluarga dalam PENCEGAHAN RADIKALISME. Hanya B yang menyambungkan keluarga ke variabel radikalismenya: ketahanan seseorang terhadap paham ekstrem. Opsi lain benar soal keluarga, tapi tidak menyentuh radikalisme. E melingkar — mengulang premis stem ('membentuk pola pikir dan sikap'). D bicara pembentukan nilai umum. C menyempit jadi pengawasan, dan keluarga memang tidak mencegah 'penyebaran'. A pakai pembanding lemah 'lebih mudah'.",
+      "no_urut_gabungan": 14
+    },
+    {
+      "id": "P15-15",
+      "sumber": "Paket 15 TWK-2026SL - Salin.pdf",
+      "no_urut_sumber": 15,
+      "tema": "Nasionalisme dalam organisasi",
+      "kategori_jawaban": "SIKAP",
+      "level_kognitif": "C4-C5",
+      "jangkar_faktual": false,
+      "status_kunci": "lemah",
+      "soal": "Dalam penyusunan program kerja, beberapa anggota lebih mendorong kegiatan yang menguntungkan kelompoknya sendiri meskipun manfaatnya bagi masyarakat belum jelas. Dalam kondisi tersebut, sikap yang paling mencerminkan nasionalisme adalah...",
+      "opsi": {
+        "A": "Mengarahkan pembahasan pada program yang bermanfaat luas.",
+        "B": "Mempertimbangkan usulan berdasarkan kepentingan bersama.",
+        "C": "Menjaga keputusan tetap berpihak pada kebutuhan masyarakat.",
+        "D": "Menempatkan tujuan organisasi di atas kepentingan kelompok.",
+        "E": "Memastikan kebijakan tidak hanya menguntungkan pihak tertentu."
+      },
+      "kunci": "B",
+      "pembahasan": "Nasionalisme = kepentingan bersama/bangsa di atas golongan. B menamai kriterianya: menimbang usulan berdasarkan kepentingan bersama. CATATAN: kunci ambigu. D distraktor struktural cerdas — memakai tata bahasa nasionalisme ('X di atas Y') tapi menyubstitusi 'tujuan organisasi' untuk 'kepentingan bangsa'; skalanya salah. E negasi mentah dari stem ('menguntungkan pihak tertentu'). C dan A runner-up sah, keduanya meminjam kata 'masyarakat/manfaat' dari stem dan berhenti di hasil, bukan kriteria.",
+      "catatan_ambiguitas": "Kunci hasil analisis, bukan kunci resmi penerbit. Terdapat opsi tandingan yang sama kuat argumennya — lihat pembahasan.",
+      "no_urut_gabungan": 15
+    },
+    {
+      "id": "P15-16",
+      "sumber": "Paket 15 TWK-2026SL - Salin.pdf",
+      "no_urut_sumber": 16,
+      "tema": "Rehabilitasi hukum (KUHAP)",
+      "kategori_jawaban": "DEFINISI",
+      "level_kognitif": "C4-C5",
+      "jangkar_faktual": true,
+      "status_kunci": "kuat",
+      "soal": "Seseorang menjalani proses hukum atas dugaan tindak pelanggaran hingga menimbulkan kerugian terhadap nama baik dan kehidupannya. Namun, setelah putusan pengadilan berkekuatan hukum tetap, ia dinyatakan tidak terbukti bersalah. Dalam kondisi tersebut, rehabilitasi hukum paling tepat dimaknai sebagai...",
+      "opsi": {
+        "A": "Pemulihan hak materiel maupun immateriel seseorang akibat proses hukum yang dijalaninya.",
+        "B": "Bentuk perlindungan negara terhadap keadilan warga negara.",
+        "C": "Upaya mengembalikan kedudukan seseorang di hadapan hukum.",
+        "D": "Jaminan negara terhadap hak warga dalam proses peradilan.",
+        "E": "Langkah memulihkan keadaan seseorang setelah putusan pengadilan."
+      },
+      "kunci": "C",
+      "pembahasan": "KUHAP Pasal 1 angka 23: rehabilitasi = pemulihan hak dalam kemampuan, kedudukan, harkat dan martabat. Ganti kerugian (Pasal 95) instrumen berbeda. C ('mengembalikan kedudukan seseorang di hadapan hukum') = definisi yang benar. Distraktor terkuat A paling kuat dan paling khas: menambahkan 'materiel' membuatnya terdengar paling lengkap, padahal justru mencampur rehabilitasi dengan ganti rugi — salah secara hukum. B dan D generik (perlindungan/jaminan). E kabur ('keadaan') + rehabilitasi juga bisa diberikan di tahap penyidikan/penuntutan, bukan hanya setelah putusan.",
+      "no_urut_gabungan": 16
+    },
+    {
+      "id": "P15-17",
+      "sumber": "Paket 15 TWK-2026SL - Salin.pdf",
+      "no_urut_sumber": 17,
+      "tema": "Check and balance ketatanegaraan",
+      "kategori_jawaban": "DEFINISI",
+      "level_kognitif": "C4-C5",
+      "jangkar_faktual": true,
+      "status_kunci": "kuat",
+      "soal": "Dalam sistem ketatanegaraan Indonesia, Presiden memiliki kewenangan memberikan amnesti, tetapi pelaksanaannya harus memperhatikan pertimbangan DPR. Ketentuan tersebut menunjukkan bahwa pelaksanaan kekuasaan negara tidak dilakukan tanpa keterlibatan lembaga lain. Berdasarkan kondisi tersebut, makna check and balance paling tepat tercermin dalam...",
+      "opsi": {
+        "A": "Adanya pengawasan antarlembaga dalam penggunaan kewenangan negara.",
+        "B": "Pembagian kekuasaan untuk mencegah dominasi satu lembaga negara.",
+        "C": "Keterlibatan lembaga lain dalam menjaga keputusan tetap terkendali.",
+        "D": "Hubungan kelembagaan melalui kontrol dan keseimbangan pelaksanaan kekuasaan.",
+        "E": "Pelaksanaan kewenangan negara yang tetap memperhatikan prinsip kontrol."
+      },
+      "kunci": "D",
+      "pembahasan": "Check and balance = dua komponen: kontrol DAN keseimbangan. D satu-satunya yang memuat keduanya. B = pemisahan kekuasaan, prasyaratnya, bukan konsepnya. A hanya 'check' tanpa 'balance'. C meminjam kata 'keterlibatan lembaga lain' dari stem. E hanya kontrol. CACAT DESAIN: D juga satu-satunya opsi berpola 'A dan B' — bisa ditebak dari bentuk tanpa memahami isi. Lihat MR_BADRUN_TWK_ENGINE.md Pilar 4 aturan #3.",
+      "catatan_desain": "D satu-satunya opsi berpola 'A dan B' -> bocor bentuk, lihat MR_BADRUN_TWK_ENGINE Pilar 4",
+      "no_urut_gabungan": 17
+    },
+    {
+      "id": "P15-18",
+      "sumber": "Paket 15 TWK-2026SL - Salin.pdf",
+      "no_urut_sumber": 18,
+      "tema": "Sumpah Pemuda & persatuan mendukung kemajuan negara",
+      "kategori_jawaban": "ALASAN",
+      "level_kognitif": "C4-C5",
+      "jangkar_faktual": false,
+      "status_kunci": "kuat",
+      "soal": "Perbedaan suku, budaya, dan latar belakang tidak menghalangi para pemuda pada masa Sumpah Pemuda untuk menyatukan tujuan demi masa depan bangsa Indonesia. Nilai tersebut tetap relevan di era saat ini dalam mendukung kemajuan negara karena...",
+      "opsi": {
+        "A": "Persatuan menjadi kekuatan menghadapi tantangan perkembangan zaman.",
+        "B": "Kemajuan bangsa saat ini memerlukan kerja sama dari masyarakat.",
+        "C": "Keberagaman dapat diarahkan menjadi kekuatan bagi pembangunan nasional.",
+        "D": "Kepentingan bangsa perlu ditempatkan di atas kepentingan kelompok.",
+        "E": "Semangat kebangsaan penting menjaga arah pembangunan negara bersama."
+      },
+      "kunci": "C",
+      "pembahasan": "Perintah menyebut tujuan spesifik: 'dalam mendukung KEMAJUAN NEGARA'. C memetakan dua-duanya: keberagaman (= perbedaan suku/budaya/latar belakang di stem) menjadi kekuatan bagi pembangunan nasional (= kemajuan negara). A runner-up tapi tujuannya meleset — 'menghadapi tantangan zaman' bukan sama dengan mendukung kemajuan, dan A membuang unsur keberagamannya. D memakai formula 'di atas kepentingan kelompok' yang benar tapi bukan nilai yang stem bangun. B dan E generik.",
+      "no_urut_gabungan": 18
+    },
+    {
+      "id": "P15-19",
+      "sumber": "Paket 15 TWK-2026SL - Salin.pdf",
+      "no_urut_sumber": 19,
+      "tema": "Sarekat Dagang Islam — kemandirian ekonomi",
+      "kategori_jawaban": "WUJUD",
+      "level_kognitif": "C4-C5",
+      "jangkar_faktual": true,
+      "status_kunci": "kuat",
+      "soal": "Pada awal perjuangan kemerdekaan, Sarekat Dagang Islam berperan membangun kesadaran persatuan dan memperkuat solidaritas ekonomi masyarakat pribumi dalam menghadapi ketimpangan ekonomi pada masa penjajahan. Semangat tersebut di era saat ini paling tepat ditunjukkan dalam bentuk...",
+      "opsi": {
+        "A": "Mendukung penguatan usaha masyarakat untuk kemajuan negara.",
+        "B": "Membangun kerja sama ekonomi yang berpihak pada kepentingan nasional.",
+        "C": "Mengembangkan kegiatan ekonomi yang memberi manfaat bagi masyarakat luas.",
+        "D": "Menempatkan kepentingan bangsa dalam menghadapi persaingan ekonomi.",
+        "E": "Meningkatkan kemandirian ekonomi yang sejalan dengan persatuan bangsa."
+      },
+      "kunci": "E",
+      "pembahasan": "Transfer historis. SDI di stem punya dua unsur: kesadaran persatuan + solidaritas ekonomi pribumi melawan ketimpangan. E memuat keduanya: kemandirian ekonomi (padanan modern dari melawan dominasi ekonomi) sejalan dengan persatuan bangsa. B runner-up tapi 'kerja sama ekonomi' hari ini berkonotasi kerja sama internasional — arahnya terbalik dari semangat SDI. A, C, D masing-masing hanya membawa satu unsur ekonomi tanpa unsur persatuan.",
+      "no_urut_gabungan": 19
+    },
+    {
+      "id": "P15-20",
+      "sumber": "Paket 15 TWK-2026SL - Salin.pdf",
+      "no_urut_sumber": 20,
+      "tema": "Nasionalisme & fragmentasi opini (kembar soal 1)",
+      "kategori_jawaban": "ALASAN",
+      "level_kognitif": "C4-C5",
+      "jangkar_faktual": false,
+      "status_kunci": "kuat",
+      "soal": "Di tengah perkembangan teknologi dan keterbukaan informasi, sebagian masyarakat mulai lebih mudah terpengaruh kepentingan kelompok, penyebaran opini yang memecah persatuan, hingga sikap yang mengabaikan kepentingan bersama. Dalam kondisi tersebut, semangat nasionalisme tetap penting dipertahankan karena...",
+      "opsi": {
+        "A": "Kehidupan bangsa memerlukan kesadaran menjaga tujuan bersama.",
+        "B": "Keberagaman masyarakat membutuhkan sikap saling menjaga persatuan.",
+        "C": "Kemajuan zaman perlu diimbangi tanggung jawab terhadap bangsa.",
+        "D": "Kepentingan nasional harus tetap menjadi arah kehidupan masyarakat.",
+        "E": "Perubahan sosial dapat memengaruhi ketahanan kehidupan bernegara."
+      },
+      "kunci": "D",
+      "pembahasan": "Kembar identik Soal 1, opsi diparafrasa. Logika sama: ancaman puncak = 'sikap yang mengabaikan kepentingan bersama', maka alasannya = kepentingan nasional harus tetap jadi arah kehidupan masyarakat. D. A memakai kata 'bersama' persis dari stem (jebakan cocok-kata) dan melingkar. B menyempit ke keberagaman. C dan E truisme kontekstual. CATATAN REDAKSIONAL: soal ini duplikat konstruk dengan soal 1, seharusnya diganti tema lain saat penyusunan paket.",
+      "no_urut_gabungan": 20
+    },
+    {
+      "id": "P15-21",
+      "sumber": "Paket 15 TWK-2026SL - Salin.pdf",
+      "no_urut_sumber": 21,
+      "tema": "Integritas dalam pemulihan korban bullying",
+      "kategori_jawaban": "SIKAP",
+      "level_kognitif": "C4-C5",
+      "jangkar_faktual": false,
+      "status_kunci": "lemah",
+      "soal": "Seorang pegawai dikenai sanksi setelah terbukti melakukan tindakan perundungan terhadap rekan kerjanya. Setelah kasus tersebut ditangani, lingkungan kerja berupaya memulihkan kondisi korban agar dapat kembali bekerja tanpa tekanan maupun perlakuan yang merugikan. Dalam kondisi tersebut, sikap yang paling mencerminkan integritas dalam menangani korban bullying adalah...",
+      "opsi": {
+        "A": "Berani melindungi korban meski berisiko menimbulkan penolakan.",
+        "B": "Memastikan korban tetap diperlakukan setara dalam lingkungan kerja.",
+        "C": "Menunjukkan kepedulian melalui pendampingan terhadap korban.",
+        "D": "Menjaga komitmen membantu pemulihan korban secara berkelanjutan.",
+        "E": "Mendorong korban kembali percaya diri menjalankan pekerjaannya."
+      },
+      "kunci": "D",
+      "pembahasan": "Fase kasus sudah lewat penindakan; yang dinilai fase pemulihan. Integritas = konsistensi antara komitmen dan tindakan sepanjang waktu. D ('menjaga komitmen membantu pemulihan korban secara berkelanjutan') menambah dimensi yang tidak ada di stem: tidak berhenti setelah kasus reda. CATATAN: kunci ambigu. B runner-up sangat kuat dan bisa dipertahankan — tapi 'perlakuan setara' lebih tepat dilabeli keadilan/non-diskriminasi ketimbang integritas, dan B hanya mengulang tujuan yang sudah stem sebutkan. C (kepedulian), E (dukungan psikologis), A (keberanian) = label nilai yang salah; A juga salah fase.",
+      "catatan_ambiguitas": "Kunci hasil analisis, bukan kunci resmi penerbit. Terdapat opsi tandingan yang sama kuat argumennya — lihat pembahasan.",
+      "no_urut_gabungan": 21
+    },
+    {
+      "id": "P15-22",
+      "sumber": "Paket 15 TWK-2026SL - Salin.pdf",
+      "no_urut_sumber": 22,
+      "tema": "Konflik kepentingan dalam pengawasan proyek",
+      "kategori_jawaban": "WUJUD",
+      "level_kognitif": "C4-C5",
+      "jangkar_faktual": false,
+      "status_kunci": "kuat",
+      "soal": "Seorang pegawai ditunjuk mengawasi proyek pembangunan yang dikerjakan perusahaan milik kerabat dekatnya. Selama proses pengawasan berlangsung, ia tetap terlibat dalam penilaian kualitas pekerjaan, laporan pelaksanaan, hingga rekomendasi pencairan anggaran proyek tersebut. Dalam kondisi tersebut, prinsip integritas untuk mencegah potensi penyalahgunaan kewenangan paling tepat ditunjukkan melalui...",
+      "opsi": {
+        "A": "Menjaga hasil pengawasan tetap didasarkan pada kondisi pekerjaan sebenarnya.",
+        "B": "Menjaga pertimbangan jabatan tetap bebas dari pengaruh hubungan pribadi.",
+        "C": "Memastikan seluruh keputusan pengawasan dapat diuji secara terbuka.",
+        "D": "Menjalankan kewenangan sesuai prosedur meskipun melibatkan pihak terdekat.",
+        "E": "Melepaskan keterlibatan jabatan ketika objektivitas berpotensi terganggu."
+      },
+      "kunci": "E",
+      "pembahasan": "Soal terbaik di paket ini. Konflik kepentingan sudah nyata (kerabat dekat + dia pegang penilaian, laporan, DAN rekomendasi pencairan anggaran). Perintah menyebut 'mencegah POTENSI' penyalahgunaan. Standar konflik kepentingan: mundur dari peran, bukan berjanji tetap objektif — pejabat tidak boleh menyertifikasi objektivitasnya sendiri. E. Distraktor terkuat D jebakan paling menggoda: patuh prosedur sambil tetap duduk di kursi yang konflik — kepatuhan formal yang tidak menghapus konfliknya. B persis kesalahan 'saya akan berusaha netral'. A dan C bagus tapi mengelola risiko, tidak menghilangkannya.",
+      "no_urut_gabungan": 22
+    },
+    {
+      "id": "P15-23",
+      "sumber": "Paket 15 TWK-2026SL - Salin.pdf",
+      "no_urut_sumber": 23,
+      "tema": "Integritas — keteladanan R.A. Kartini",
+      "kategori_jawaban": "WUJUD",
+      "level_kognitif": "C4-C5",
+      "jangkar_faktual": true,
+      "status_kunci": "kuat",
+      "soal": "Di tengah keterbatasan pada masanya, R.A. Kartini tetap memperjuangkan pentingnya pendidikan dan kesetaraan melalui pemikiran serta tindakannya. Sikap integritas yang dapat diteladani dan diterapkan pada era saat ini paling tepat tercermin dalam bentuk...",
+      "opsi": {
+        "A": "Memiliki keberanian menyampaikan gagasan demi kebaikan bersama.",
+        "B": "Menunjukkan kepedulian terhadap kemajuan pendidikan masyarakat.",
+        "C": "Memegang komitmen memperjuangkan kesempatan yang lebih adil.",
+        "D": "Menggunakan kemampuan diri untuk mendukung perubahan sosial.",
+        "E": "Tetap konsisten pada nilai kebenaran meski menghadapi hambatan."
+      },
+      "kunci": "E",
+      "pembahasan": "Ditanya sikap INTEGRITAS, bukan perjuangan Kartini. Integritas = konsisten pada nilai meski ada tekanan. E menamainya tepat, dan sejajar dengan struktur stem ('di tengah keterbatasan... tetap memperjuangkan' -> 'konsisten... meskipun menghadapi hambatan'). Distraktor terkuat C: komitmen memang unsur integritas, tapi C mengunci ke kausa spesifik Kartini (kesetaraan kesempatan) = peniruan literal, bukan transfer nilai. B lebih parah — mengulang bidang aslinya (pendidikan), anakronistik, dan labelnya kepedulian. A keberanian, D kontribusi sosial — label nilai yang salah.",
+      "no_urut_gabungan": 23
+    },
+    {
+      "id": "MRB-01",
+      "sumber": "Paket Uji TWK HOTS - MR BADRUN ENGINE.pdf",
+      "no_urut_sumber": 1,
+      "tema": "Dimensi realitas Pancasila",
+      "kategori_jawaban": "DEFINISI",
+      "level_kognitif": "C5",
+      "konstruk_dua_kutub": "gagasan yang dirumuskan <-> realitas yang mendahului rumusan",
+      "jangkar_faktual": false,
+      "status_kunci": "kuat",
+      "soal": "Dasar negara dirumuskan para pendiri bangsa melalui rangkaian sidang menjelang kemerdekaan pada 1945. Rumusan yang lahir dari sidang itu tidak diambil dari gagasan yang sepenuhnya baru, melainkan diangkat dari cara hidup yang telah lama tumbuh di tengah masyarakat. Dimensi realitas Pancasila sebagai ideologi terbuka paling tepat dipahami dalam bentuk...",
+      "opsi": {
+        "A": "Rumusan dasar negara berpijak pada pengalaman kolektif yang mendahuluinya.",
+        "B": "Kesepakatan para pendiri negara yang dituangkan ke dalam rumusan resmi.",
+        "C": "Cita-cita bangsa yang ditetapkan sebagai tujuan penyelenggaraan negara.",
+        "D": "Kemampuan nilai dasar menyesuaikan diri terhadap perubahan zaman.",
+        "E": "Kesediaan masyarakat menerima Pancasila sebagai dasar kehidupan bersama."
+      },
+      "kunci": "A",
+      "pembahasan": "Dimensi realitas berarti nilai Pancasila digali dari kenyataan hidup yang sudah ada, bukan diciptakan lalu dipaksakan. Hanya A yang menyatukan kedua kutub: ada rumusan resmi, dan rumusan itu berpijak pada apa yang lebih dahulu ada. Distraktor terkuat B [D5] meminjam kata 'para pendiri negara' dan 'rumusan' dari stem, tetapi berhenti pada peristiwa perumusannya dan tidak pernah menyebut kenyataan yang menjadi sumbernya. C [D4] adalah dimensi idealitas, D [D4] adalah dimensi fleksibilitas — dua tetangga dari tiga dimensi ideologi terbuka. E [D3] menyebut akibat, yakni penerimaan masyarakat, bukan sifat ideologinya.",
+      "no_urut_gabungan": 24
+    },
+    {
+      "id": "MRB-02",
+      "sumber": "Paket Uji TWK HOTS - MR BADRUN ENGINE.pdf",
+      "no_urut_sumber": 2,
+      "tema": "Kewenangan pengujian peraturan (Mahkamah Agung)",
+      "kategori_jawaban": "WUJUD",
+      "level_kognitif": "C5",
+      "konstruk_dua_kutub": "isi yang dipersoalkan <-> tingkatan peraturan",
+      "jangkar_faktual": true,
+      "status_kunci": "kuat",
+      "soal": "Sekelompok warga merasa dirugikan oleh sebuah peraturan pemerintah yang menurut mereka bertentangan dengan undang-undang yang menjadi induknya. Pengujian sebuah peraturan tidak hanya ditentukan oleh isi yang dipersoalkan, tetapi juga oleh tingkatan peraturan yang hendak diuji. Langkah hukum yang paling tepat ditempuh warga tersebut adalah...",
+      "opsi": {
+        "A": "Menyampaikan keberatan atas isi peraturan kepada lembaga penerbitnya.",
+        "B": "Mengajukan pengujian peraturan tersebut kepada Mahkamah Konstitusi.",
+        "C": "Mengajukan pengujian peraturan tersebut kepada Mahkamah Agung.",
+        "D": "Menempuh gugatan tata usaha negara atas kerugian yang timbul.",
+        "E": "Mengusulkan perubahan peraturan melalui perwakilan rakyat di legislatif."
+      },
+      "kunci": "C",
+      "pembahasan": "Peraturan pemerintah berada di bawah undang-undang, dan pengujian peraturan di bawah undang-undang terhadap undang-undang adalah kewenangan Mahkamah Agung sesuai UUD 1945 Pasal 24A ayat (1). Distraktor terkuat B [D4]: Mahkamah Konstitusi hanya menguji undang-undang terhadap UUD sesuai Pasal 24C ayat (1) — isunya sama-sama pertentangan norma, tetapi tingkatannya salah. D [D4] keliru karena PTUN mengadili keputusan pejabat, bukan peraturan. A [D5] meminjam kata 'isi peraturan' lalu menawarkan jalur non-yudisial. E [D6] jalur politik, bukan upaya hukum. Opsi B dan C sengaja dibuat kembar persis agar peserta tidak dapat menebak dari bentuk.",
+      "no_urut_gabungan": 25
+    },
+    {
+      "id": "MRB-03",
+      "sumber": "Paket Uji TWK HOTS - MR BADRUN ENGINE.pdf",
+      "no_urut_sumber": 3,
+      "tema": "Netralitas ASN di media sosial",
+      "kategori_jawaban": "SIKAP",
+      "level_kognitif": "C5",
+      "konstruk_dua_kutub": "kebebasan berpendapat tetap ada <-> terikat kewajiban netralitas",
+      "jangkar_faktual": false,
+      "status_kunci": "kuat",
+      "soal": "Seorang aparatur sipil aktif menyampaikan pandangan di akun media sosial pribadinya. Menjelang pemilihan kepala daerah, salah seorang kerabatnya maju sebagai calon. Kebebasan menyampaikan pendapat tidak hilang karena status kepegawaian, tetapi penggunaannya terikat pada kewajiban menjaga netralitas jabatan. Sikap yang paling mencerminkan netralitas dalam kondisi tersebut adalah...",
+      "opsi": {
+        "A": "Menjaga netralitas dengan menghentikan seluruh aktivitas di media sosial pribadi.",
+        "B": "Menggunakan hak berpendapat secara bebas karena berada di ruang pribadi.",
+        "C": "Menghindari pernyataan yang berpotensi menimbulkan penilaian negatif dari masyarakat.",
+        "D": "Memastikan pandangan pribadi hanya disampaikan di lingkungan keluarga terdekat.",
+        "E": "Tetap menyampaikan pandangan pribadi tanpa mengaitkan kedudukan jabatan padanya."
+      },
+      "kunci": "E",
+      "pembahasan": "Netralitas melarang peminjaman kedudukan jabatan untuk keberpihakan, bukan melarang berpendapat. E satu-satunya yang menjaga kedua kutub: haknya utuh, jabatannya tidak ikut dibawa. Distraktor terkuat A [D5] meminjam kata 'netralitas' dan 'media sosial pribadi' dari stem dan terdengar paling aman, tetapi justru membunuh kutub pertama dengan mematikan hak yang stem tegaskan tidak hilang. B [D2] hanya memuat kutub pertama dan mengabaikan ikatan jabatan. C [D6] mengurus citra, bukan netralitas. D [D6] sekadar memindahkan lokasi bicara tanpa menyentuh prinsipnya.",
+      "no_urut_gabungan": 26
+    },
+    {
+      "id": "MRB-04",
+      "sumber": "Paket Uji TWK HOTS - MR BADRUN ENGINE.pdf",
+      "no_urut_sumber": 4,
+      "tema": "Transfer historis — Kongres Perempuan Indonesia 1928",
+      "kategori_jawaban": "WUJUD",
+      "level_kognitif": "C5",
+      "konstruk_dua_kutub": "kelompok tetap beragam <-> agenda disatukan",
+      "jangkar_faktual": true,
+      "status_kunci": "kuat",
+      "soal": "Kongres Perempuan Indonesia pertama pada 1928 mempertemukan puluhan organisasi perempuan dari berbagai daerah yang sebelumnya bergerak sendiri-sendiri. Kekuatan pertemuan itu tidak terletak pada besarnya masing-masing organisasi, melainkan pada kesediaan menyatukan agenda yang semula terpisah. Semangat tersebut pada era saat ini paling tepat ditunjukkan dalam bentuk...",
+      "opsi": {
+        "A": "Memperbesar jumlah anggota organisasi agar pengaruhnya semakin diperhitungkan.",
+        "B": "Menyelaraskan langkah berbagai kelompok agar bergerak pada arah yang sama.",
+        "C": "Memperkuat kemandirian setiap kelompok dalam menjalankan programnya masing-masing.",
+        "D": "Menyeragamkan cara kerja berbagai kelompok agar tidak menimbulkan perbedaan.",
+        "E": "Meningkatkan keterlibatan masyarakat dalam berbagai kegiatan organisasi kemasyarakatan."
+      },
+      "kunci": "B",
+      "pembahasan": "Semangat kongres itu adalah banyak kelompok, satu arah. B menahan keduanya: pluralitasnya tetap melalui frasa 'berbagai kelompok', arahnya menyatu. Distraktor terkuat D [D4] menandai beda tipis yang menentukan — penyeragaman bukan persatuan; menghapus perbedaan justru membatalkan hal yang membuat kongres itu bermakna. A [D5] meminjam ukuran 'besarnya organisasi' dari stem, padahal ukuran itulah yang stem tolak. C [D2] hanya memuat kutub pertama. E [D3] menyebut indikator partisipasi, bukan wujud semangatnya.",
+      "no_urut_gabungan": 27
+    },
+    {
+      "id": "MRB-05",
+      "sumber": "Paket Uji TWK HOTS - MR BADRUN ENGINE.pdf",
+      "no_urut_sumber": 5,
+      "tema": "Hubungan sila 2 dan sila 5 Pancasila",
+      "kategori_jawaban": "RELASI",
+      "level_kognitif": "C5",
+      "konstruk_dua_kutub": "martabat individu (sila 2) <-> pemerataan struktural (sila 5)",
+      "jangkar_faktual": false,
+      "status_kunci": "kuat",
+      "soal": "Program bantuan pendidikan dirancang menjangkau anak dari keluarga kurang mampu di seluruh daerah. Kelayakan program itu tidak hanya diukur dari cara memperlakukan setiap penerima secara layak, tetapi juga dari sejauh mana manfaatnya menjangkau semua lapisan. Hubungan sila kedua dan sila kelima Pancasila tersebut paling tepat dipahami dalam bentuk...",
+      "opsi": {
+        "A": "Perlakuan yang layak bagi setiap penerima menjadi ukuran keberhasilan program.",
+        "B": "Pemerataan manfaat bagi seluruh lapisan menjadi tujuan akhir kebijakan negara.",
+        "C": "Kepedulian terhadap sesama mendorong lahirnya kehidupan sosial yang harmonis.",
+        "D": "Penghormatan atas martabat perorangan menemukan wujudnya dalam keadilan yang merata.",
+        "E": "Keadilan sosial menjadi cita-cita yang dituju seluruh penyelenggaraan negara."
+      },
+      "kunci": "D",
+      "pembahasan": "Sila kedua bekerja pada manusia sebagai perorangan, yakni harkat dan martabatnya; sila kelima bekerja pada struktur distribusi, yakni keadilan bagi seluruh rakyat. D satu-satunya yang menyebut keduanya sekaligus menyatakan arah hubungannya: martabat perorangan baru nyata bila keadilannya merata. Distraktor terkuat A [D5] meminjam kata 'memperlakukan secara layak' dan 'penerima' dari stem, tetapi hanya memuat sila kedua dan turun ke level evaluasi program. B [D2] hanya sila kelima. E [D1] gagal kategori karena menyebut satu entitas saja sehingga bukan sebuah hubungan. C [D4] menawarkan nilai kepedulian dan harmoni, bukan pasangan sila yang ditanyakan.",
+      "no_urut_gabungan": 28
+    },
+    {
+      "id": "MRB-06",
+      "sumber": "Paket Uji TWK HOTS - MR BADRUN ENGINE.pdf",
+      "no_urut_sumber": 6,
+      "tema": "Ketahanan ideologi & radikalisasi bertahap",
+      "kategori_jawaban": "ALASAN",
+      "level_kognitif": "C5",
+      "konstruk_dua_kutub": "isi pesan tunggal <-> pergeseran cara pandang bertahap",
+      "jangkar_faktual": false,
+      "status_kunci": "kuat",
+      "soal": "Sebuah komunitas daring menyediakan ruang diskusi yang semula membahas persoalan sehari-hari, lalu perlahan mengarahkan anggotanya pada penilaian bahwa tatanan yang berlaku tidak sah. Bahaya proses semacam itu tidak terletak pada isi pesan yang disampaikan sekali waktu, melainkan pada perubahan cara pandang yang terbentuk bertahap. Ketahanan ideologi warga penting dibangun sejak dini karena...",
+      "opsi": {
+        "A": "Pergeseran kerangka berpikir membuat ajakan berikutnya diterima sebagai hal wajar.",
+        "B": "Isi pesan di ruang diskusi daring sulit diawasi secara menyeluruh.",
+        "C": "Ajakan yang bertentangan dengan hukum perlu ditindak sejak awal kemunculannya.",
+        "D": "Penyebaran paham menyimpang dapat mengganggu ketertiban kehidupan bermasyarakat.",
+        "E": "Kegiatan komunitas daring perlu terdaftar agar dapat dipertanggungjawabkan secara terbuka."
+      },
+      "kunci": "A",
+      "pembahasan": "Stem memindahkan letak bahaya dari isi ke proses. Alasan ketahanan harus dibangun sejak dini hanya masuk akal bila menjelaskan mekanisme bertahapnya: begitu kerangka berpikir tergeser, pesan yang tadinya ditolak menjadi terasa wajar — dan pada titik itu penyaringan sudah terlambat. Distraktor terkuat B [D5] meminjam kata 'isi pesan' dan 'ruang diskusi daring' dari stem, tetapi menjawab persoalan pengawasan dan bertumpu pada kutub yang stem tolak. C [D2] memilih jalur penindakan pada isi. D [D3] menyebut akibat akhir, bukan alasan pencegahan dini. E [D6] menawarkan solusi administratif.",
+      "no_urut_gabungan": 29
+    },
+    {
+      "id": "MRB-07",
+      "sumber": "Paket Uji TWK HOTS - MR BADRUN ENGINE.pdf",
+      "no_urut_sumber": 7,
+      "tema": "Akuntabilitas laporan keuangan",
+      "kategori_jawaban": "WUJUD",
+      "level_kognitif": "C5",
+      "konstruk_dua_kutub": "membetulkan angka <-> mengakui kelolosan pemeriksaan sendiri",
+      "jangkar_faktual": false,
+      "status_kunci": "kuat",
+      "soal": "Seorang kepala unit menemukan kekeliruan perhitungan dalam laporan keuangan yang telah ia tanda tangani dan kirimkan ke instansi pusat. Pertanggungjawaban dalam kondisi itu tidak selesai dengan membetulkan angka yang keliru, tetapi juga menyangkut kesediaan mengakui bahwa kekeliruan tersebut lolos dari pemeriksaannya. Prinsip akuntabilitas paling tepat ditunjukkan melalui...",
+      "opsi": {
+        "A": "Memperbaiki angka yang keliru sebelum laporan tersebut dibahas lebih lanjut.",
+        "B": "Menunggu hasil pemeriksaan resmi sebelum melakukan perubahan pada laporan.",
+        "C": "Menugaskan staf penyusun laporan menjelaskan kekeliruan kepada instansi pusat.",
+        "D": "Memastikan kesalahan serupa tidak berulang pada penyusunan laporan berikutnya.",
+        "E": "Menyampaikan perbaikan disertai penjelasan mengenai penyebab kesalahan itu terjadi."
+      },
+      "kunci": "E",
+      "pembahasan": "Akuntabilitas menuntut koreksi ditambah kesediaan menjelaskan asal kesalahannya. E menutup kedua kutub dalam satu tindakan. Distraktor terkuat C [D4] tampak transparan karena instansi pusat tetap memperoleh penjelasan, tetapi memindahkan pertanggungjawaban kepada staf, padahal laporan itu ia sendiri yang menandatangani — inilah beda tipis antara transparansi dan akuntabilitas. A [D5] meminjam kata 'memperbaiki angka' dari stem dan hanya memuat kutub pertama. B [D6] kepatuhan prosedural yang menunda. D [D3] perbaikan sistem ke depan yang tidak menjawab hal yang sudah terjadi.",
+      "no_urut_gabungan": 30
+    },
+    {
+      "id": "MRB-08",
+      "sumber": "Paket Uji TWK HOTS - MR BADRUN ENGINE.pdf",
+      "no_urut_sumber": 8,
+      "tema": "Makna bela negara di bidang keilmuan",
+      "kategori_jawaban": "DEFINISI",
+      "level_kognitif": "C5",
+      "konstruk_dua_kutub": "tempat bekerja <-> muara manfaat hasil kerja",
+      "jangkar_faktual": false,
+      "status_kunci": "kuat",
+      "soal": "Seorang peneliti muda memperoleh tawaran bekerja di luar negeri dengan fasilitas riset yang jauh lebih lengkap daripada yang tersedia di dalam negeri. Bela negara di bidang keilmuan tidak diukur dari tempat seseorang bekerja, melainkan dari siapa yang akhirnya memetik manfaat hasil kerjanya. Makna bela negara dalam konteks tersebut paling tepat terlihat pada...",
+      "opsi": {
+        "A": "Keputusan untuk tetap bekerja di dalam negeri meskipun fasilitasnya sangat terbatas.",
+        "B": "Pemanfaatan kesempatan belajar di luar negeri untuk pengembangan diri.",
+        "C": "Kesediaan mengarahkan hasil keilmuan bagi kemajuan bangsa di mana pun berada.",
+        "D": "Kesetiaan pada negara yang ditunjukkan lewat ketaatan terhadap peraturan.",
+        "E": "Peningkatan reputasi bangsa melalui prestasi warganya di tingkat internasional."
+      },
+      "kunci": "C",
+      "pembahasan": "Stem secara tegas mencabut 'tempat' sebagai ukuran dan menggantinya dengan 'siapa yang memetik manfaat'. C satu-satunya yang memakai ukuran baru itu sekaligus menetralkan ukuran lama melalui frasa 'di mana pun berada'. Distraktor terkuat A [D5] meminjam kata 'dalam negeri' dan 'fasilitas' dari stem serta terdengar paling patriotik, tetapi memakai persis ukuran yang stem tolak. B [D2] hanya berbicara tentang tempat tanpa muara manfaat. D [D4] menyebut kesetiaan lewat ketaatan aturan — konsep bela negara yang benar, tetapi bukan yang dibangun stem. E [D3] menyebut reputasi, yakni akibat, bukan makna.",
+      "no_urut_gabungan": 31
+    },
+    {
+      "id": "MRB-09",
+      "sumber": "Paket Uji TWK HOTS - MR BADRUN ENGINE.pdf",
+      "no_urut_sumber": 9,
+      "tema": "Syarat keabsahan pemungutan suara & sila 4",
+      "kategori_jawaban": "ALASAN",
+      "level_kognitif": "C5",
+      "konstruk_dua_kutub": "pemungutan suara sah <-> syaratnya musyawarah sungguh-sungguh lebih dahulu",
+      "jangkar_faktual": false,
+      "status_kunci": "kuat",
+      "soal": "Dalam rapat penentuan prioritas anggaran desa, pembahasan berlangsung panjang tanpa mencapai titik temu, sehingga pemimpin rapat menempuh pemungutan suara. Pemungutan suara tidak bertentangan dengan sila keempat, tetapi keabsahannya bergantung pada apa yang mendahuluinya. Pemungutan suara tersebut dapat dibenarkan karena...",
+      "opsi": {
+        "A": "Pembahasan telah berlangsung panjang tanpa menghasilkan titik temu bersama.",
+        "B": "Setiap peserta rapat memiliki hak suara yang sama nilainya.",
+        "C": "Suara terbanyak merupakan cara pengambilan keputusan yang berlaku umum.",
+        "D": "Seluruh pandangan telah dipertimbangkan sebelum penghitungan suara ditempuh.",
+        "E": "Keputusan yang dihasilkan akan lebih cepat diterima oleh peserta."
+      },
+      "kunci": "D",
+      "pembahasan": "Sila keempat tidak melarang pemungutan suara; yang disyaratkannya adalah musyawarah dijalankan sungguh-sungguh terlebih dahulu. D menyebut syarat itu: seluruh pandangan sudah ditimbang, barulah suara dihitung. Distraktor terkuat A [D5] mengulang kalimat stem hampir kata per kata sehingga terasa paling nyambung, tetapi lamanya rapat bukan syarat keabsahan — rapat dapat berlangsung panjang tanpa satu pun pandangan benar-benar dipertimbangkan. B [D2] hanya menyebut kesetaraan formal. C [D4] menyebut prinsip mayoritas semata, benar sebagai praktik umum tetapi justru tanpa syarat musyawarah yang membedakan sila keempat dari pemungutan suara biasa. E [D3] menyebut efek.",
+      "no_urut_gabungan": 32
+    },
+    {
+      "id": "MRB-10",
+      "sumber": "Paket Uji TWK HOTS - MR BADRUN ENGINE.pdf",
+      "no_urut_sumber": 10,
+      "tema": "Penghargaan terhadap kebudayaan nasional",
+      "kategori_jawaban": "SIKAP",
+      "level_kognitif": "C5",
+      "konstruk_dua_kutub": "nilai ekonomi dan daya tarik <-> makna warisan",
+      "jangkar_faktual": false,
+      "status_kunci": "kuat",
+      "soal": "Sebuah daerah mengembangkan kesenian tradisionalnya menjadi daya tarik wisata yang mendatangkan pendapatan besar bagi warganya. Nilai kesenian itu tidak hanya terletak pada kemampuannya menarik pengunjung, tetapi juga pada makna yang diwariskan dari generasi sebelumnya. Sikap yang paling mencerminkan penghargaan terhadap kebudayaan nasional adalah...",
+      "opsi": {
+        "A": "Meningkatkan daya tarik pertunjukan agar pendapatan warga terus bertambah.",
+        "B": "Mengembangkan penyajiannya bagi pengunjung tanpa mengubah makna yang dikandungnya.",
+        "C": "Mempertahankan bentuk pertunjukan persis seperti diwariskan tanpa perubahan sedikit pun.",
+        "D": "Mendaftarkan kesenian tersebut sebagai kekayaan budaya yang dilindungi negara.",
+        "E": "Memastikan kesenian daerah dikenal luas hingga ke tingkat internasional."
+      },
+      "kunci": "B",
+      "pembahasan": "Kedua kutub harus hidup bersama: penyajian boleh berkembang mengikuti penonton, maknanya tidak boleh ikut bergeser. Hanya B yang menahan keduanya. Distraktor terkuat C [D2] terdengar paling melestarikan, tetapi hanya memegang kutub kedua dan membekukan kesenian — pelestarian yang menolak segala penyesuaian justru mematikan yang dilestarikan. A [D5] meminjam kata 'daya tarik' dan 'pendapatan' dari stem dan hanya memuat kutub pertama. D [D6] langkah administratif yang berguna tetapi bukan sikap penghargaan. E [D3] menyebut jangkauan, yakni akibat.",
+      "no_urut_gabungan": 33
+    }
+  ]
+}

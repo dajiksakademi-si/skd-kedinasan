@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Masuk · D'Ajiks Akademi</title>
+<link rel="icon" href="assets/dajiks-emblem.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap">
+<style>
+body{margin:0;background:#f7f8fb;font-family:'Inter Tight',system-ui,sans-serif;color:#172a35}
+a{color:#08254b}
+[hidden]{display:none !important}
+.hal{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:100vh}
+/* sisi kiri: foto kelas asli di bawah lapisan navy, pendar emas sudut kiri atas */
+.sisi{position:relative;overflow:hidden;margin:16px 0 16px 16px;border-radius:28px;background:#031739;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;padding:40px}
+.sisi>img.foto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.sisi::before{content:"";position:absolute;inset:0;background:radial-gradient(90% 60% at 0% 0%,rgba(212,175,79,.45),rgba(212,175,79,0) 60%),linear-gradient(180deg,rgba(3,23,57,.5) 0%,rgba(3,23,57,.3) 30%,rgba(3,23,57,.9) 64%,#031739 100%);z-index:1}
+.sisi>*:not(.foto){position:relative;z-index:2}
+.sisi h2{margin:0;max-width:12em;font-weight:600;font-size:44px;line-height:1.1;letter-spacing:-.035em}
+.sisi ul{list-style:none;margin:24px 0 0;padding:0;display:flex;flex-direction:column;gap:12px}
+.sisi li{display:flex;gap:14px;align-items:center;font-size:17px;color:#dfe5f3}
+.ik{flex:none;display:flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:14px;background:rgba(3,23,57,.6);border:1px solid rgba(232,199,102,.4)}
+.ik img{width:30px;height:30px}
+.kanan{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px 24px 32px}
+.kotak{width:100%;max-width:420px}
+.kotak h1{margin:28px 0 6px;font-weight:600;font-size:34px;letter-spacing:-.035em;color:#031739}
+.kotak .lead{margin:0 0 28px;font-size:16px;color:#526772}
+form{display:flex;flex-direction:column;gap:18px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field label{font-weight:600;font-size:15px;color:#031739}
+.input{box-sizing:border-box;width:100%;height:52px;padding:0 16px;border:1.5px solid #877d66;border-radius:10px;font:400 16px 'Inter Tight',sans-serif;color:#172a35;background:#fff}
+.input:focus,.sandi:focus-within{outline:none;border-color:#08254b;box-shadow:0 0 0 3px rgba(201,162,74,.45)}
+.sandi{display:flex;align-items:center;height:52px;border:1.5px solid #877d66;border-radius:10px;overflow:hidden;background:#fff}
+.sandi input{flex:1;min-width:0;height:100%;padding:0 0 0 16px;border:0;outline:none;font:400 16px 'Inter Tight',sans-serif;color:#172a35;background:none}
+.lihat{all:unset;cursor:pointer;display:flex;align-items:center;justify-content:center;width:48px;height:48px;color:#526772}
+.lihat:focus-visible{outline:2px solid #c9a24a;outline-offset:-4px;border-radius:8px}
+.salah .input,.salah .sandi{border-color:#b3261e}
+.galat{margin:0;font-size:14px;color:#b3261e}
+.baris{display:flex;justify-content:flex-end;margin-top:-6px}
+.baris a,.teks-btn{font-weight:600;font-size:14.5px}
+.teks-btn{all:unset;cursor:pointer;color:#08254b;text-decoration:underline}
+.btn{display:flex;align-items:center;justify-content:space-between;width:100%;height:54px;box-sizing:border-box;padding:0 7px 0 24px;border:0;border-radius:999px;background:#031739;color:#fff;font:600 17px 'Inter Tight',sans-serif;cursor:pointer;transition:transform 160ms cubic-bezier(.23,1,.32,1)}
+.btn:hover{background:#0f3360}.btn:active{transform:scale(.98)}
+.btn:focus-visible,.g:focus-visible{outline:2px solid #c9a24a;outline-offset:3px}
+.btn .go{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#e8c766;color:#031739}
+.btn[aria-busy=true]{opacity:.75;pointer-events:none}
+.btn[aria-busy=true] .go svg{animation:putar 700ms linear infinite}
+@keyframes putar{to{transform:rotate(360deg)}}
+.atau{display:flex;align-items:center;gap:14px;font-size:13px;color:#6b7f88}
+.atau::before,.atau::after{content:"";flex:1;height:1px;background:#e3e8f0}
+.g{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;height:52px;box-sizing:border-box;border:1.5px solid #dbe0ea;border-radius:999px;background:#fff;color:#031739;font:600 16px 'Inter Tight',sans-serif;cursor:pointer;transition:border-color 160ms ease}
+.g:hover{border-color:#8a9ab2}
+.ajak{margin:4px 0 0;text-align:center;font-size:15px;color:#526772}
+.ajak a{font-weight:600}
+.terkirim{padding:16px;border-radius:12px;background:#faf6ec;border:1px solid #ddd3c0;font-size:15px;line-height:1.5;color:#24333d}
+.kaki{display:flex;gap:20px;justify-content:center;margin-top:40px;font-size:14px}
+.kaki .teks-btn{font-weight:500;font-size:14px;color:#526772}
+.mock-note{margin:0 0 14px;padding:6px 14px;border-radius:999px;background:#e8c766;color:#031739;font-size:13px;font-weight:700;text-align:center}
+dialog{width:min(640px,calc(100% - 32px));max-height:80vh;box-sizing:border-box;padding:0;border:0;border-radius:22px;box-shadow:0 40px 80px -30px rgba(3,23,57,.6)}
+dialog::backdrop{background:rgba(3,23,57,.55)}
+dialog[open]{animation:muncul 200ms cubic-bezier(.23,1,.32,1)}
+@keyframes muncul{from{opacity:0;transform:scale(.96)}}
+.d-head{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;border-bottom:1px solid #e3e8f0}
+.d-head h2{margin:0;font-weight:600;font-size:20px;color:#031739}
+.d-isi{padding:20px 24px 28px;font-size:15.5px;line-height:1.65;color:#3d5260}
+.tutup{all:unset;cursor:pointer;display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;color:#526772}
+.tutup:hover{background:#eef1f6}.tutup:focus-visible{outline:2px solid #c9a24a}
+@media (max-width:900px){.hal{grid-template-columns:1fr}.sisi{display:none}.kanan{justify-content:flex-start;padding-top:40px}}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}dialog[open],.btn[aria-busy=true] .go svg{animation:none}}
+</style>
+</head>
+<body>
+<main class="hal">
+<aside class="sisi" aria-hidden="true">
+<img class="foto" src="assets/f-kelas2.jpg" alt="">
+<div>
+<h2>Lanjutkan latihanmu.</h2>
+<ul><li><span class="ik"><img src="assets/siluet/paket.svg" alt=""></span>Semua paket yang sudah kamu beli</li><li><span class="ik"><img src="assets/siluet/nilai.svg" alt=""></span>Riwayat nilai tiap tryout</li><li><span class="ik"><img src="assets/siluet/bahas.svg" alt=""></span>Pembahasan tiap soal</li></ul>
+</div>
+</aside>
+<div class="kanan">
+<div class="kotak">
+<a href="index.html"><img src="assets/dajiks-lockup.png" alt="D'Ajiks Akademi, kembali ke beranda" style="height:64px;width:auto;display:block"></a>
+
+<div id="v-masuk">
+<h1>Masuk</h1>
+<p class="lead">Satu akun untuk semua kelas D'Ajiks.</p>
+<form id="f-masuk" novalidate>
+<div class="field" id="fl-email"><label for="email">Email</label><input class="input" id="email" type="email" autocomplete="email" required></div>
+<div class="field" id="fl-pw"><label for="pw">Kata sandi</label>
+<div class="sandi"><input id="pw" type="password" autocomplete="current-password" required aria-describedby="galat"><button type="button" class="lihat" id="lihat" aria-label="Tampilkan kata sandi" aria-pressed="false"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+<p class="galat" id="galat" role="alert" hidden></p>
+</div>
+<div class="baris"><button type="button" class="teks-btn" id="ke-lupa">Lupa kata sandi?</button></div>
+<button class="btn" type="submit" id="b-masuk">Masuk<span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7l5 5-5 5M13 7l5 5-5 5"/></svg></span></button>
+<div class="atau">atau</div>
+<button type="button" class="g" onclick="location.href='paket-saya.html'"><svg viewBox="0 0 48 48" width="20" height="20" aria-hidden="true"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238A11.91 11.91 0 0124 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303a12.04 12.04 0 01-4.087 5.571l.003-.002 6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>Masuk dengan Google</button>
+<p class="ajak">Belum punya akun? <a href="daftar.html">Daftar</a></p>
+</form>
+</div>
+
+<div id="v-lupa" hidden>
+<h1>Atur ulang kata sandi</h1>
+<p class="lead">Masukkan email akunmu. Kami kirim tautan untuk membuat kata sandi baru.</p>
+<form id="f-lupa">
+<div class="field"><label for="email2">Email</label><input class="input" id="email2" type="email" autocomplete="email" required></div>
+<button class="btn" type="submit">Kirim tautan<span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7l5 5-5 5M13 7l5 5-5 5"/></svg></span></button>
+<p class="terkirim" id="terkirim" role="status" hidden>Jika email tersebut terdaftar, tautan atur ulang sudah dikirim. Periksa juga folder spam.</p>
+<p class="ajak"><button type="button" class="teks-btn" id="ke-masuk">Kembali ke Masuk</button></p>
+</form>
+</div>
+
+<nav class="kaki" aria-label="Ketentuan"><button type="button" class="teks-btn" data-d="d-syarat">Syarat dan Ketentuan</button><button type="button" class="teks-btn" data-d="d-privasi">Kebijakan Privasi</button></nav>
+</div>
+</div>
+</main>
+
+<dialog id="d-syarat" aria-labelledby="h-syarat"><div class="d-head"><h2 id="h-syarat">Syarat dan Ketentuan</h2><button type="button" class="tutup" aria-label="Tutup">✕</button></div>
+<div class="d-isi"><p class="mock-note">DATA CONTOH: teks resmi belum ada.</p><p>[Teks Syarat dan Ketentuan D'Ajiks Akademi menyusul dari Gusti.]</p></div></dialog>
+<dialog id="d-privasi" aria-labelledby="h-privasi"><div class="d-head"><h2 id="h-privasi">Kebijakan Privasi</h2><button type="button" class="tutup" aria-label="Tutup">✕</button></div>
+<div class="d-isi"><p class="mock-note">DATA CONTOH: teks resmi belum ada.</p><p>[Teks Kebijakan Privasi D'Ajiks Akademi menyusul dari Gusti. Wajib menjelaskan data apa yang dikumpulkan, untuk apa, dan cara siswa meminta datanya dihapus.]</p></div></dialog>
+
+<script>
+// prototipe: tanpa server. Kata sandi < 8 karakter dipakai untuk memperlihatkan pesan salah.
+var f = document.getElementById('f-masuk'), galat = document.getElementById('galat'), pw = document.getElementById('pw');
+function tunjuk(pesan, el) { galat.textContent = pesan; galat.hidden = false; document.getElementById(el).classList.add('salah'); }
+f.addEventListener('submit', function (e) {
+  e.preventDefault();
+  galat.hidden = true;
+  ['fl-email', 'fl-pw'].forEach(function (id) { document.getElementById(id).classList.remove('salah'); });
+  var em = document.getElementById('email');
+  if (!em.value || !em.checkValidity()) { tunjuk('Tulis email yang benar, misalnya nama@gmail.com.', 'fl-email'); em.focus(); return; }
+  if (pw.value.length < 8) { tunjuk('Email atau kata sandi salah. Coba lagi.', 'fl-pw'); pw.focus(); return; }
+  var b = document.getElementById('b-masuk');
+  b.setAttribute('aria-busy', 'true');
+  setTimeout(function () { location.href = 'paket-saya.html'; }, 700);
+});
+document.getElementById('lihat').addEventListener('click', function () {
+  var buka = pw.type === 'password';
+  pw.type = buka ? 'text' : 'password';
+  this.setAttribute('aria-pressed', buka);
+  this.setAttribute('aria-label', buka ? 'Sembunyikan kata sandi' : 'Tampilkan kata sandi');
+});
+function ganti(lupa) {
+  document.getElementById('v-masuk').hidden = lupa;
+  document.getElementById('v-lupa').hidden = !lupa;
+  document.getElementById(lupa ? 'email2' : 'email').focus();
+}
+document.getElementById('ke-lupa').addEventListener('click', function () { document.getElementById('email2').value = document.getElementById('email').value; ganti(true); });
+document.getElementById('ke-masuk').addEventListener('click', function () { ganti(false); });
+document.getElementById('f-lupa').addEventListener('submit', function (e) { e.preventDefault(); document.getElementById('terkirim').hidden = false; });
+document.querySelectorAll('[data-d]').forEach(function (b) { b.addEventListener('click', function () { document.getElementById(b.dataset.d).showModal(); }); });
+document.querySelectorAll('dialog').forEach(function (d) {
+  d.querySelector('.tutup').addEventListener('click', function () { d.close(); });
+  d.addEventListener('click', function (e) { if (e.target === d) d.close(); });
+});
+</script>
+</body>
+</html>

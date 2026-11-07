@@ -1,0 +1,345 @@
+<!-- ═════════ BAB 4 · SILOGISME DAN EKUIVALENSI PERNYATAAN ═════════
+     Rencana: reports/tahap2_B_verbal.md Bab 4 + sebaran latihan T2-1b (4 latihan; satu berkunci "tidak dapat disimpulkan", Putusan T2-7(5)).
+     Status setiap kesimpulan, tabel kebenaran, setara, dan ingkaran di narasi dihitung scripts/cek_bab03_05.mjs (assert + dicek muncul di sini).
+     <span class="lg"> = kalimat logika berbentuk "jika … maka …"; build.py tidak menghitung "maka" di dalamnya. -->
+<section class="bab" data-bab="4">
+  <header class="band">
+    <div class="no">4</div>
+    <div>
+      <h2>Silogisme</h2>
+      <p>Bab ini membahas pernyataan kategoris dan gambar himpunan, arti pasti benar, premis berantai, pernyataan bersyarat, kesetaraan dan ingkaran, kata izin, serta bentuk-bentuk soal silogisme.</p>
+      <p class="waktu"><svg class="ico"><use href="#jam"/></svg>{{TARGET}}</p>
+    </div>
+    <div class="kisi" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="emas"></i></div>
+  </header>
+
+  <p class="lead">Soal silogisme tidak menanyakan apa yang benar di dunia nyata. Soal itu menanyakan apa yang tidak mungkin salah selama semua premis dianggap benar. Perbedaan kecil ini memisahkan kesimpulan yang pasti dari kesimpulan yang hanya masuk akal. Kerjakan pertanyaan pembuka berikut sebelum membaca uraiannya.</p>
+
+<!--B04-P01:mulai-->
+<div data-soal="HB-TIU-B04-P01" data-target="75">
+  <div class="soal">
+    <div class="meta"><span id="soal-B04-P01">Pertanyaan Pembuka<a class="ke" href="#bahas-B04-P01">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 75 detik</span></div>
+    <p class="stem">Anggap semua premis berikut benar.</p>
+    <dl class="premis"><div><dt>P1</dt><dd>Tidak ada petugas loket yang bekerja paruh waktu.</dd></div><div><dt>P2</dt><dd>Sebagian pegawai baru adalah petugas loket.</dd></div><div><dt>P3</dt><dd>Semua pegawai bagian arsip berkantor di lantai dua.</dd></div></dl>
+    <p class="stem">Kesimpulan yang <mark>pasti benar</mark> adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Semua pegawai yang tidak bekerja paruh waktu adalah petugas loket.</span></li><li><span class="h">B</span><span>Ada pegawai baru yang tidak bekerja paruh waktu.</span></li><li><span class="h">C</span><span>Semua pegawai baru tidak bekerja paruh waktu.</span></li><li><span class="h">D</span><span>Hubungan antara pegawai baru dan pekerja paruh waktu tidak dapat dipastikan.</span></li><li><span class="h">E</span><span>Ada pegawai baru yang berkantor di lantai dua.</span></li></ol>
+  </div>
+  <div class="guru"><b>SIL pilih kesimpulan, 3 premis, 1 negatif bersambung + 1 pengalih.</b> Kunci B. Kode: A J-BALIK · B <b>kunci</b> · C J-SEBAGIAN · D J-TENTU · E J-KATA. Kerangka: SIL pilih kesimpulan · 'tidak ada M yang P' + 'sebagian S adalah M' → 'ada S yang bukan P' + premis pengalih 'semua R adalah T' · 5 istilah. TO terdekat: TO P1 no. 32 (semua + tidak ada → tidak ada); pola kunci beda. Bukti: dunia himpunan 5 istilah, daerah sah 18, 262143 dunia × 4 bacaan (kosong · sebagian). Contoh penyangkal: A {} {petugas loket, pegawai baru}; C {petugas loket, pegawai baru} {paruh waktu, pegawai baru}; E {petugas loket, pegawai baru}. Spek slot: ≤ 4 istilah. Narasi Bab 4 mendefinisikan premis pengalih sebagai premis tanpa istilah bersama, sehingga P3 butuh 2 istilah baru → 5 istilah. Script tidak memakai 2^32 dunia: daerah yang dilarang premis 'semua/tidak ada' dibuang dulu (18 daerah tersisa, 2^18 dunia), tetap pemeriksaan semua dunia. Revisi pasca cek buta: D (J-MUNGKIN 'semua petugas loket adalah pegawai baru') diganti opsi berbentuk 'hubungan tidak dapat dipastikan' (J-TENTU, pasti salah) agar bentuk kunci B04-L04 tidak tunggal.</div>
+</div>
+<!--B04-P01:selesai-->
+
+  <h3>Pernyataan Kategoris dan Gambar Himpunan</h3>
+  <p>Pernyataan kategoris menyatakan hubungan dua kelompok. Setiap bentuknya punya satu gambar himpunan: lingkaran untuk kelompok, titik untuk anggota yang pasti ada.</p>
+  <div class="himp">
+    <figure>
+      <svg viewBox="0 0 120 76" aria-hidden="true"><circle cx="60" cy="38" r="33" class="b"/><circle cx="52" cy="45" r="15" class="a"/><text x="76" y="27">B</text><text x="52" y="49">A</text></svg>
+      <figcaption>Semua A adalah B<span>A seluruhnya di dalam B</span></figcaption>
+    </figure>
+    <figure>
+      <svg viewBox="0 0 120 76" aria-hidden="true"><circle cx="33" cy="38" r="22" class="a"/><circle cx="87" cy="38" r="22" class="b"/><text x="33" y="42">A</text><text x="87" y="42">B</text></svg>
+      <figcaption>Tidak ada A yang B<span>A dan B terpisah</span></figcaption>
+    </figure>
+    <figure>
+      <svg viewBox="0 0 120 76" aria-hidden="true"><circle cx="46" cy="38" r="26" class="a"/><circle cx="74" cy="38" r="26" class="b"/><text x="36" y="27">A</text><text x="84" y="27">B</text><circle cx="60" cy="44" r="3.6" class="t"/></svg>
+      <figcaption>Sebagian A adalah B<span>ada anggota di irisan</span></figcaption>
+    </figure>
+    <figure>
+      <svg viewBox="0 0 120 76" aria-hidden="true"><circle cx="46" cy="38" r="26" class="a"/><circle cx="74" cy="38" r="26" class="b"/><text x="36" y="27">A</text><text x="84" y="27">B</text><circle cx="31" cy="44" r="3.6" class="t"/></svg>
+      <figcaption>Sebagian A bukan B<span>ada anggota A di luar B</span></figcaption>
+    </figure>
+  </div>
+  <p>Gambar pada dua bentuk terakhir hanya menjamin daerah yang bertitik. Daerah lain boleh berisi, boleh kosong. Kata <b>sebagian</b> dalam logika berarti paling sedikit satu, dan mungkin semua. Jadi "sebagian A adalah B" tetap benar walaupun ternyata semua A adalah B.</p>
+  <div class="note catatan">
+    <h4>Catatan</h4>
+    <p>Dari "semua A adalah B", apakah "sebagian B adalah A" pasti benar? Hanya bila kelompok A beranggota. Bila A boleh kosong, kesimpulan itu gugur. Sebagian pembuat soal menganggap setiap kelompok yang disebut pasti beranggota, dan sebagian lagi membaca "sebagian" sebagai "tidak semua". Kebiasaan soal resmi belum diverifikasi. Soal di buku ini disusun sehingga kuncinya sama dengan cara baca mana pun.</p>
+  </div>
+
+  <h3>Pasti Benar, Pasti Salah, dan Tidak Dapat Dipastikan</h3>
+  <p>Sebuah kesimpulan <b>pasti benar</b> bila benar di setiap gambar yang memenuhi semua premis. Kesimpulan itu <b>pasti salah</b> bila salah di setiap gambar tersebut, dan <b>tidak dapat dipastikan</b> bila benar di sebagian gambar dan salah di gambar lain. Cara mengujinya adalah contoh penyangkal dari Bab 2: coba gambar satu keadaan yang memenuhi premis, tetapi membuat kesimpulan salah. Bila keadaan itu dapat digambar, kesimpulan tidak pasti benar.</p>
+  <p>Misalkan premisnya satu: <i>Semua anggota paduan suara adalah siswa kelas XI.</i> Tiga calon kesimpulan diuji di tabel berikut.</p>
+  <table class="tb">
+    <thead><tr><th style="width:40%">Kesimpulan</th><th style="width:21%">Status</th><th>Alasan</th></tr></thead>
+    <tbody>
+      <tr><td>Semua siswa kelas XI adalah anggota paduan suara.</td><td>tidak dapat dipastikan</td><td>Gambar kelas XI lebih besar dari paduan suara memenuhi premis, dan kesimpulan salah di gambar itu.</td></tr>
+      <tr><td>Siswa yang bukan kelas XI bukan anggota paduan suara.</td><td>pasti benar</td><td>Paduan suara seluruhnya di dalam kelas XI. Siapa pun di luar kelas XI berada di luar paduan suara.</td></tr>
+      <tr><td>Ada anggota paduan suara yang bukan siswa kelas XI.</td><td>pasti salah</td><td>Kesimpulan ini adalah ingkaran premis; tidak ada gambar yang memenuhi premis dan membuatnya benar.</td></tr>
+    </tbody>
+  </table>
+  <p>Kesimpulan pertama membalik arah premis. Gambar pertama yang kamu buat mungkin kebetulan membuatnya benar, misalnya bila kedua lingkaran kamu gambar sama besar. Satu gambar hanyalah satu contoh, bukan bukti. Untuk setiap pilihan, buat gambar kedua yang khusus menyerang pilihan itu.</p>
+
+  <h3>Premis Berantai dan Premis Pengalih</h3>
+  <p>Dua premis tersambung lewat istilah yang muncul di keduanya. Dari <i>Semua A adalah B</i> dan <i>Semua B adalah C</i>, lingkaran A berada di dalam B, dan B berada di dalam C. Akibatnya <b>semua A adalah C</b> pasti benar, sedangkan "semua C adalah A" tidak dapat dipastikan.</p>
+  <p>Premis yang tidak memiliki istilah bersama dengan premis lain adalah <b>premis pengalih</b>. Premis itu tetap benar, tetapi tidak ikut menghasilkan kesimpulan. Pilihan yang memakai kata dari premis pengalih biasanya hanya meminjam kata, tanpa dukungan premis.</p>
+  <p>Premis juga boleh berlawanan dengan kenyataan, misalnya <i>Semua ikan dapat terbang.</i> Kerjakan soalnya dengan tetap menganggap premis itu benar. Pengetahuanmu tentang ikan tidak dipakai; yang dinilai hanyalah apa yang mengikuti dari premis.</p>
+
+  <h3>Pernyataan Jika–Maka</h3>
+  <p>Pernyataan <span class="lg">"jika <i>p</i> maka <i>q</i>"</span> hanya melarang satu keadaan: <i>p</i> terjadi, tetapi <i>q</i> tidak terjadi. Tiga keadaan lain diizinkan. Tabel berikut menunjukkan nilai pernyataan itu pada keempat keadaan.</p>
+  <table class="tb">
+    <thead><tr><th style="width:14%"><i>p</i></th><th style="width:14%"><i>q</i></th><th style="width:26%"><span class="lg">Jika <i>p</i> maka <i>q</i></span></th><th>Keterangan</th></tr></thead>
+    <tbody>
+      <tr><td>benar</td><td>benar</td><td>benar</td><td></td></tr>
+      <tr><td>benar</td><td>salah</td><td>salah</td><td><b>keadaan terlarang</b></td></tr>
+      <tr><td>salah</td><td>benar</td><td>benar</td><td><i>q</i> boleh terjadi karena sebab lain</td></tr>
+      <tr><td>salah</td><td>salah</td><td>benar</td><td></td></tr>
+    </tbody>
+  </table>
+  <p>Dari satu keadaan terlarang itu lahir dua cara menyimpulkan yang sah dan dua yang keliru. Perhatikan contoh <span class="lg">"jika hujan turun, maka lapangan basah"</span>.</p>
+  <table class="tb">
+    <thead><tr><th style="width:30%">Fakta yang diketahui</th><th style="width:30%">Kesimpulan</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td>Hujan turun.</td><td>Lapangan basah.</td><td>pasti benar</td></tr>
+      <tr><td>Lapangan tidak basah.</td><td>Hujan tidak turun.</td><td>pasti benar</td></tr>
+      <tr><td>Lapangan basah.</td><td>Hujan turun.</td><td>tidak dapat dipastikan</td></tr>
+      <tr><td>Hujan tidak turun.</td><td>Lapangan tidak basah.</td><td>tidak dapat dipastikan</td></tr>
+    </tbody>
+  </table>
+  <p>Contoh penyangkal untuk dua baris terakhir sama: hujan tidak turun, tetapi lapangan disiram petugas. Keadaan itu memenuhi premis, dan kedua kesimpulan salah di dalamnya.</p>
+
+  <h3>Kesetaraan dan Ingkaran</h3>
+  <p>Dua pernyataan <b>setara</b> bila nilainya selalu sama pada setiap keadaan. <b>Ingkaran</b> sebuah pernyataan adalah pernyataan yang nilainya selalu berlawanan dengannya. Tiga istilah berikut dipakai untuk pernyataan bersyarat.</p>
+  <ul class="daftar">
+    <li><b>Konvers</b>: kedua bagian ditukar, menjadi <span class="lg">"jika <i>q</i> maka <i>p</i>"</span>. Tidak setara dengan pernyataan asal.</li>
+    <li><b>Kontraposisi</b>: kedua bagian ditukar dan masing-masing diberi "tidak", menjadi <span class="lg">"jika tidak <i>q</i> maka tidak <i>p</i>"</span>. Setara dengan pernyataan asal, sebab melarang keadaan yang sama.</li>
+    <li>Bentuk <span class="lg">"jika tidak <i>p</i> maka tidak <i>q</i>"</span> memasang "tidak" di dua sisi tanpa menukar. Bentuk ini setara dengan konvers, sehingga sama-sama tidak setara dengan pernyataan asal.</li>
+  </ul>
+  <table class="tb">
+    <thead><tr><th style="width:24%">Pernyataan</th><th style="width:40%">Setara dengan</th><th>Ingkarannya</th></tr></thead>
+    <tbody>
+      <tr><td><b><span class="lg">Jika <i>p</i> maka <i>q</i></span></b></td><td><span class="lg">Jika tidak <i>q</i> maka tidak <i>p</i></span>; tidak <i>p</i> atau <i>q</i></td><td><i>p</i> dan tidak <i>q</i></td></tr>
+      <tr><td><b>Semua A adalah B</b></td><td>Semua yang bukan B bukan A</td><td>Ada A yang bukan B</td></tr>
+      <tr><td><b><i>p</i> dan <i>q</i></b></td><td></td><td>Tidak <i>p</i> atau tidak <i>q</i></td></tr>
+      <tr><td><b><i>p</i> atau <i>q</i></b></td><td></td><td>Tidak <i>p</i> dan tidak <i>q</i></td></tr>
+    </tbody>
+  </table>
+  <p>Seluruh tabel ini berasal dari satu gagasan, yaitu keadaan terlarang. Bentuk "tidak <i>p</i> atau <i>q</i>" hanya salah ketika <i>p</i> benar dan <i>q</i> salah, persis keadaan yang dilarang pernyataan bersyarat; karena itu keduanya setara. Ingkaran pernyataan bersyarat adalah keadaan terlarang itu sendiri. Ingkaran "semua A adalah B" adalah "ada A yang bukan B", bukan "semua A bukan B".</p>
+  <div class="note catatan">
+    <h4>Catatan</h4>
+    <p>Dalam logika, kata <b>atau</b> berarti salah satu atau keduanya. "<i>p</i> atau <i>q</i>" tetap benar bila <i>p</i> dan <i>q</i> sama-sama benar. Sebagian soal di luar memakai "atau" dalam arti salah satu saja; kebiasaan soal resmi belum diverifikasi. Soal di buku ini disusun sehingga kuncinya sama dengan kedua arti itu.</p>
+  </div>
+
+  <h3>Kata Izin dan Kata Kejadian</h3>
+  <p>Kata <i>boleh</i>, <i>berhak</i>, dan <i>wajib</i> menyatakan izin atau kewajiban, bukan kejadian. Dari <i>Semua pemegang kartu anggota boleh meminjam buku di perpustakaan</i> dan <i>Rina pemegang kartu anggota</i>, kesimpulan yang pasti benar adalah <i>Rina boleh meminjam buku di perpustakaan</i>. Kesimpulan <i>Rina meminjam buku di perpustakaan</i> tidak dapat dipastikan, sebab izin tidak berarti perbuatan itu dilakukan.</p>
+  <p>Hal yang sama berlaku untuk larangan. "Tidak boleh" tidak sama dengan "tidak pernah". Bacalah kata izin persis seperti tertulis, lalu bawa kata itu utuh ke kesimpulan.</p>
+
+  <h3>Bentuk Soal Silogisme</h3>
+  <table class="tb">
+    <thead><tr><th style="width:26%">Bentuk</th><th style="width:30%">Yang diminta</th><th>Cara kerja</th></tr></thead>
+    <tbody>
+      <tr><td><b>Pilih kesimpulan</b></td><td>satu pilihan yang pasti benar</td><td>uji setiap pilihan dengan contoh penyangkal</td></tr>
+      <tr><td><b>Menilai dua kesimpulan</b></td><td>status kesimpulan (1) dan (2)</td><td>tentukan status masing-masing; setiap pilihan menyebut keduanya, misalnya "(1) pasti benar, (2) tidak dapat dipastikan"</td></tr>
+      <tr><td><b>Rantai bersyarat</b></td><td>kesimpulan dari tiga atau empat premis, sering memuat "atau"</td><td>mulai dari fakta tunggal, lalu bergerak sepanjang rantai</td></tr>
+      <tr><td><b>Setara dan ingkaran</b></td><td>pernyataan yang nilainya selalu sama atau selalu berlawanan</td><td>tulis keadaan terlarangnya lebih dulu</td></tr>
+      <tr><td><b>Tidak dapat disimpulkan</b></td><td>pilihan bila tidak ada kesimpulan yang pasti</td><td>pilih hanya bila setiap pilihan lain punya contoh penyangkal</td></tr>
+    </tbody>
+  </table>
+  <div class="note catatan">
+    <h4>Catatan</h4>
+    <p>Pada soal menilai dua kesimpulan dari luar, kamu bisa menemui pilihan berbunyi "(1) atau (2) benar". Pilihan seperti itu ikut benar bila salah satu kesimpulan saja yang benar, sehingga dua pilihan bisa sama-sama dibela. Soal D'Ajiks tidak memakai bunyi itu. Bila menemuinya, tentukan dulu status (1) dan (2), lalu pilih pilihan yang menyebut status itu paling persis.</p>
+  </div>
+
+  <h3>Langkah Penyelesaian Soal Silogisme</h3>
+  <div class="rules satu">
+    <div><b>Tutup pilihan.</b> Ubah setiap premis menjadi gambar himpunan atau panah bersyarat.</div>
+    <div><b>Sambungkan premis</b> lewat istilah yang muncul di dua premis. Premis yang tidak tersambung adalah pengalih.</div>
+    <div><b>Tulis kesimpulanmu sendiri</b> sebelum membuka pilihan.</div>
+    <div><b>Serang setiap pilihan</b> dengan satu gambar yang memenuhi semua premis. Bila pilihan itu salah di gambar tersebut, coret.</div>
+    <div><b>Untuk pernyataan bersyarat</b>, tulis keadaan terlarangnya. Pernyataan setara melarang keadaan yang sama; ingkarannya adalah keadaan terlarang itu.</div>
+    <div><b>Periksa kata penentu</b> di pilihan, yaitu <i>semua</i>, <i>sebagian</i>, <i>tidak ada</i>, <i>boleh</i>, dan <i>mungkin</i>, sebelum menetapkan jawaban.</div>
+  </div>
+
+  <h3>Kekeliruan pada Soal Silogisme</h3>
+  <table class="tb">
+    <thead><tr><th style="width:5%">No.</th><th style="width:30%">Kekeliruan</th><th>Contoh</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><b>Arahnya dibalik</b></td><td>"semua A adalah B" dibaca "semua B adalah A"; lapangan basah dianggap bukti hujan turun</td></tr>
+      <tr><td>2</td><td><b>"Tidak" dipasang di dua sisi tanpa menukar</b></td><td>dari <span class="lg">"jika <i>p</i> maka <i>q</i>"</span> disimpulkan <span class="lg">"jika tidak <i>p</i> maka tidak <i>q</i>"</span></td></tr>
+      <tr><td>3</td><td><b>Sebagian dibaca semua</b></td><td>premis "sebagian" menghasilkan kesimpulan "semua"</td></tr>
+      <tr><td>4</td><td><b>Yang mungkin dikira pasti</b></td><td>kesimpulan yang benar di satu gambar, tetapi salah di gambar lain</td></tr>
+      <tr><td>5</td><td><b>Benar di dunia nyata, tidak dari premis</b></td><td>memilih pengetahuan umum yang tidak mengikuti premis</td></tr>
+      <tr><td>6</td><td><b>Boleh dikira pasti terjadi</b></td><td>"boleh meminjam" dibaca "meminjam"; "tidak boleh" dibaca "tidak pernah"</td></tr>
+      <tr><td>7</td><td><b>Terpancing kata dari premis pengalih</b></td><td>pilihan meminjam kata dari premis yang tidak tersambung</td></tr>
+      <tr><td>8</td><td><b>Ingkaran keliru</b></td><td>ingkaran "semua A adalah B" ditulis "semua A bukan B"</td></tr>
+      <tr><td>9</td><td><b>Pasti salah tertukar dengan tidak dapat dipastikan</b></td><td>pada soal menilai dua kesimpulan, status yang pasti salah dinilai belum pasti, atau sebaliknya</td></tr>
+    </tbody>
+  </table>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Padanan Nama Kekeliruan dan Kode</h4>
+    <p>1–2 J-BALIK (K3) · 3 J-SEBAGIAN (K4) · 4 J-MUNGKIN (K4) · 5 J-AKAL (K1) · 6 J-IZIN (K4) · 7 J-KATA (K7) · 8 J-INGKAR (K4) · 9 J-TENTU, perluasan SIL (K4). Engine v0.4.3 Pilar 3. Istilah ingkaran, konvers, kontraposisi dipakai dan didefinisikan saat pertama muncul (Putusan 9b); "invers", "modus ponens/tollens" sengaja tidak dipakai.</p>
+  </div>
+
+<!--B04-P01-bahas:mulai-->
+  <h3 id="bahas-B04-P01">Pembahasan Pertanyaan Pembuka</h3>
+<div class="bahas-pembuka">
+  <div class="soal">
+    <div class="meta"><span>Pertanyaan Pembuka</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 75 detik</span></div>
+    <p class="stem">Anggap semua premis berikut benar.</p>
+    <dl class="premis"><div><dt>P1</dt><dd>Tidak ada petugas loket yang bekerja paruh waktu.</dd></div><div><dt>P2</dt><dd>Sebagian pegawai baru adalah petugas loket.</dd></div><div><dt>P3</dt><dd>Semua pegawai bagian arsip berkantor di lantai dua.</dd></div></dl>
+    <p class="stem">Kesimpulan yang <mark>pasti benar</mark> adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Semua pegawai yang tidak bekerja paruh waktu adalah petugas loket.</span></li><li><span class="h">B</span><span>Ada pegawai baru yang tidak bekerja paruh waktu.</span></li><li><span class="h">C</span><span>Semua pegawai baru tidak bekerja paruh waktu.</span></li><li><span class="h">D</span><span>Hubungan antara pegawai baru dan pekerja paruh waktu tidak dapat dipastikan.</span></li><li><span class="h">E</span><span>Ada pegawai baru yang berkantor di lantai dua.</span></li></ol>
+  </div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta kesimpulan yang tidak mungkin salah selama ketiga premis benar. Kalimat penentunya “pasti benar”: kesimpulan yang hanya mungkin atau masuk akal belum cukup.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Cari istilah yang muncul di dua premis: “petugas loket” di P1 dan P2. P3 tidak berbagi istilah dengan premis lain, jadi P3 pengalih. P2 menjamin ada pegawai baru yang menjadi petugas loket. P1 berkata petugas loket tidak bekerja paruh waktu. Orang itu pasti pegawai baru yang tidak bekerja paruh waktu.</dd></div>
+    <div><dt>Mengapa benar</dt><dd>Gambar lingkaran petugas loket terpisah dari lingkaran pekerja paruh waktu. Titik milik P2 berada di irisan pegawai baru dan petugas loket. Titik itu otomatis berada di luar lingkaran paruh waktu, di gambar mana pun yang kamu buat.</dd></div>
+    <div><dt>Cek balik</dt><dd>Coba bantah B: buat semua pegawai baru bekerja paruh waktu. Gambar itu langsung melanggar P1 dan P2, jadi tidak ada gambar yang membuat B salah.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">Arah dibalik</span><b>Arahnya dibalik.</b> P1 hanya berkata petugas loket berada di luar kelompok paruh waktu. Gambar pegawai lain yang juga tidak paruh waktu tetapi bukan petugas loket: premis tetap benar, A salah.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">Sebagian jadi semua</span><b>Sebagian dibaca semua.</b> P2 hanya menjamin sebagian pegawai baru menjadi petugas loket. Pegawai baru yang lain boleh bekerja paruh waktu, dan C langsung salah.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">Ada yang pasti</span><b>Kesimpulan yang pasti dikira tidak ada.</b> Kalimat ini menyerah terlalu cepat. P1 dan P2 sudah memastikan satu hubungan: ada pegawai baru yang tidak bekerja paruh waktu. Karena ada hubungan yang pasti, pernyataan “tidak dapat dipastikan” justru pasti salah.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">Kata dari P3</span><b>Terpancing kata dari premis pengalih.</b> “Lantai dua” berasal dari P3, yang hanya membicarakan bagian arsip. Tidak ada premis yang menghubungkan pegawai baru dengan lantai dua.</div></div></div>
+  <div class="jwb"><span>B</span><p><b>Jawaban: B.</b> Pegawai baru yang menjadi petugas loket pasti ada, dan semua petugas loket tidak bekerja paruh waktu, sehingga B benar di setiap gambar yang memenuhi premis.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti aturan kartu ujian: tidak ada pemegang kartu yang belum membayar. Bila kamu tahu sebagian teman sekelasmu memegang kartu, kamu pasti tahu ada teman sekelas yang sudah membayar. Tentang teman yang tidak memegang kartu, kamu tidak tahu apa-apa.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Memilih C karena P1 terdengar seperti aturan yang berlaku untuk semua orang. Aturan itu hanya mengikat petugas loket; pegawai baru yang bukan petugas loket tidak tersentuh.</span></div></div>
+  <p class="balik"><a class="ke" href="#soal-B04-P01">Kembali ke soal</a></p>
+</div>
+<!--B04-P01-bahas:selesai-->
+
+  <h3>Contoh Soal dan Pembahasan</h3>
+  <p>Empat contoh berikut memperagakan premis yang berlawanan dengan kenyataan, menilai dua kesimpulan, rantai bersyarat, dan kesetaraan. Kerjakan setiap contoh sendiri dalam target waktunya sebelum membaca pembahasan.</p>
+<!--B04-C01:mulai-->
+<div data-soal="HB-TIU-B04-C01" data-target="60">
+  <div class="soal">
+    <div class="meta"><span>Contoh 1</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 60 detik</span></div>
+    <p class="stem"><mark>Anggap semua premis berikut benar</mark>.</p>
+    <dl class="premis"><div><dt>P1</dt><dd>Semua logam larut dalam air.</dd></div><div><dt>P2</dt><dd>Sebagian benda berwarna kuning adalah logam.</dd></div></dl>
+    <p class="stem">Kesimpulan yang pasti benar adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Semua benda yang berwarna kuning larut dalam air.</span></li><li><span class="h">B</span><span>Sebagian logam tidak larut dalam air.</span></li><li><span class="h">C</span><span>Benda yang bukan logam tidak larut dalam air.</span></li><li><span class="h">D</span><span>Semua benda yang larut dalam air berwarna kuning.</span></li><li><span class="h">E</span><span>Benda yang tidak larut dalam air bukan logam.</span></li></ol>
+  </div>
+  <div class="guru"><b>SIL pilih kesimpulan, semua + sebagian, premis berlawanan kenyataan.</b> Kunci E. Kode: A J-SEBAGIAN · B J-AKAL · C J-BALIK · D J-MUNGKIN · E <b>kunci</b>. Kerangka: SIL pilih kesimpulan · 'semua M adalah P' + 'sebagian S adalah M' · kunci kontraposisi P1 (universal), P2 pengalih untuk pengecoh · P1 berlawanan kenyataan · satu opsi pasti salah, dua pasangan cermin (A–D di pengecoh, C–E memuat kunci), dua pengecoh sebentuk 'Benda yang …' (sebagian→semua, 'tidak' di dua sisi). TO terdekat: TO P1 no. 32 (semua + tidak ada); Bab 2 C01 nanti wajib arah sambungan lain (registri kerangka). Bukti: dunia himpunan 3 istilah, daerah sah 6, 63 dunia × 4 bacaan (kosong · sebagian). Contoh penyangkal: A {kuning} {logam, larut, kuning}; B {logam, larut, kuning}; C {larut} {logam, larut, kuning}; D {larut} {logam, larut, kuning}. Revisi mesin 2026-11-01: versi awal (P2 'sebagian logam berwarna kuning', A 'semua logam berwarna kuning') ditolak soal_verbal.mjs karena A pasti salah bila 'sebagian' dibaca 'tidak semua'. Bab 2 C01 (semua + sebagian, tanpa rantai) wajib memakai susunan dan istilah lain (registri kerangka). Revisi pasca cek buta: kunci 'Ada benda kuning yang larut' (pola Semua/Ada) diganti kontraposisi P1 berbentuk universal; opsi berawalan 'Ada' (D) kini pilihan salah; pembahasan menyebut terang bahwa P1 salah di dunia nyata. Revisi cek buta 2: A dan C ditulis ulang berbentuk 'Benda yang …' agar kunci bukan opsi tunggal berbentuk kontraposisi; C kini 'tidak' di dua sisi (J-BALIK). Revisi cek buta 3: D diganti 'Benda yang larut dalam air berwarna kuning.' (cermin A, J-MUNGKIN) agar kunci tidak berada di tunggal pasangan cermin.</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta kesimpulan yang pasti benar bila kedua premis dianggap benar. Kalimat penentunya “Anggap semua premis berikut benar”. P1 salah di dunia nyata, sebab logam tidak larut dalam air, tetapi di soal ini P1 tetap kamu ikuti apa adanya.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>P1 berkata semua logam larut. Benda yang tidak larut tidak mungkin logam, sebab kalau ia logam, ia pasti larut. Jadi benda yang tidak larut dalam air bukan logam. P2 tidak diperlukan untuk kesimpulan ini.</dd></div>
+    <div><dt>Mengapa benar</dt><dd>Gambar lingkaran logam di dalam lingkaran benda yang larut. Benda yang tidak larut berada di luar lingkaran besar, jadi pasti juga di luar lingkaran logam. Ini kontraposisi P1: kedua bagian ditukar dan masing-masing diberi “tidak”.</dd></div>
+    <div><dt>Cek balik</dt><dd>Coba gambar benda yang tidak larut tetapi logam. Benda itu harus berada di dalam lingkaran logam dan di luar lingkaran benda yang larut, padahal lingkaran logam seluruhnya di dalam lingkaran itu. Gambar seperti itu tidak bisa dibuat.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">Sebagian jadi semua</span><b>Sebagian dibaca semua.</b> Kalimat ini berlaku untuk semua benda kuning, padahal P2 hanya berkata sebagian benda kuning adalah logam. Benda kuning yang lain, misalnya kertas kuning, berada di luar lingkaran logam dan boleh tidak larut.</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">Melawan P1</span><b>Benar di dunia nyata, tidak dari premis.</b> Di dunia nyata pilihan ini benar. Menurut P1, semua logam larut, jadi “sebagian logam tidak larut” justru pasti salah.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">Tidak di dua sisi</span><b>“Tidak” dipasang di dua sisi tanpa menukar.</b> Bentuknya mirip kunci, tetapi “tidak” dipasang pada kedua bagian P1 tanpa menukar urutannya. Gula bukan logam, dan menurut premis gula tetap boleh larut, jadi C tidak pasti.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">Hanya mungkin</span><b>Yang mungkin dikira pasti.</b> Ini kebalikan pilihan A, dan sama lemahnya. Premis tidak berkata apa pun tentang warna benda yang larut. Gambar gula putih yang larut: kedua premis tetap benar, D salah.</div></div></div>
+  <div class="jwb"><span>E</span><p><b>Jawaban: E.</b> Semua logam larut, sehingga benda yang tidak larut pasti bukan logam, di gambar mana pun yang memenuhi premis.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti permainan dengan aturan aneh: “anggap semua kucing bisa berenang”. Dalam permainan itu, kucingmu pasti bisa berenang, walaupun di rumah ia takut air. Kamu bermain dengan aturan, bukan dengan kenyataan.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Memilih C karena bentuknya mirip kunci: sama-sama diawali “Benda yang” dan memuat dua kata ingkar. Bedanya ada pada urutan. Kunci menukar kedua bagian P1, sedangkan C hanya menambahkan “tidak” di tempat yang sama.</span></div></div>
+</div>
+<!--B04-C01:selesai-->
+<!--B04-C02:mulai-->
+<div data-soal="HB-TIU-B04-C02" data-target="60">
+  <div class="soal">
+    <div class="meta"><span>Contoh 2</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 60 detik</span></div>
+    <p class="stem">Anggap semua premis berikut benar.</p>
+    <dl class="premis"><div><dt>P1</dt><dd>Semua pemain inti tim basket sekolah lulus tes kebugaran.</dd></div><div><dt>P2</dt><dd>Sebagian pemain inti tim basket sekolah adalah anggota OSIS.</dd></div><div><dt>(1)</dt><dd>Ada anggota OSIS yang lulus tes kebugaran.</dd></div><div><dt>(2)</dt><dd>Semua siswa yang lulus tes kebugaran adalah pemain inti tim basket sekolah.</dd></div></dl>
+    <p class="stem">Penilaian yang tepat untuk <mark>kesimpulan (1) dan (2)</mark> adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>(1) pasti benar, (2) pasti benar.</span></li><li><span class="h">B</span><span>(1) pasti benar, (2) pasti salah.</span></li><li><span class="h">C</span><span>(1) pasti benar, (2) tidak dapat dipastikan.</span></li><li><span class="h">D</span><span>(1) tidak dapat dipastikan, (2) pasti benar.</span></li><li><span class="h">E</span><span>(1) tidak dapat dipastikan, (2) tidak dapat dipastikan.</span></li></ol>
+  </div>
+  <div class="guru"><b>SIL menilai dua kesimpulan, (1) sah, (2) konvers.</b> Kunci C. Kode: A J-BALIK · B J-TENTU · C <b>kunci</b> · D J-MUNGKIN · E J-SEBAGIAN. Kerangka: SIL dua kesimpulan · 'semua M adalah P' + 'sebagian M adalah S' (istilah tengah subjek di kedua premis) · (1) 'ada S yang P', (2) konvers P1 · opsi gabungan 1,2,3,7,9 urutan baku. TO terdekat: bentuk TR no. 32 (opsi '(1) atau (2)' tidak dipakai, engine v0.4.3); TO P1 tanpa dua kesimpulan. Bukti: dunia himpunan 3 istilah, 63 dunia × 4 bacaan. (1) pasti benar, (2) tidak dapat dipastikan; penyangkal (2): {lulus tes} {pemain inti, lulus tes, anggota OSIS}. Opsi = 5 dari 9 gabungan, urutan baku v0.4.3. D dan E menyalahi (1); kode slot J-MUNGKIN dan J-SEBAGIAN dipasang pada dua cara keliru menilai (1): D menukar status kedua kesimpulan, E membaca 'sebagian' sebagai 'mungkin tidak ada'. Kode J-SEBAGIAN di E = perluasan (salah baca 'sebagian'), bukan 'sebagian dibaca semua'.</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta status masing-masing kesimpulan: pasti benar, pasti salah, atau tidak dapat dipastikan. Kalimat penentunya “kesimpulan (1) dan (2)”: pilihan yang benar harus tepat untuk keduanya, bukan hanya salah satu.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Nilai (1) dulu. P2 menjamin ada pemain inti yang menjadi anggota OSIS, dan P1 berkata semua pemain inti lulus tes. Jadi (1) pasti benar. Lalu (2): kalimat ini membalik P1. Coret semua pilihan yang tidak menulis “(1) pasti benar”, lalu tentukan status (2).</dd></div>
+    <div><dt>Mengapa benar</dt><dd>Kesimpulan (2) benar bila lingkaran pemain inti sama besar dengan lingkaran yang lulus tes, dan salah bila ada siswa lain yang lulus tes tanpa menjadi pemain inti. Kedua gambar memenuhi premis, jadi (2) tidak dapat dipastikan.</dd></div>
+    <div><dt>Cek balik</dt><dd>Untuk “pasti salah”, harus tidak ada satu gambar pun yang membuat (2) benar. Gambar lingkaran yang sama besar membuat (2) benar, jadi (2) bukan pasti salah.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">(2) dibalik</span><b>Arahnya dibalik.</b> P1 menaruh pemain inti di dalam kelompok yang lulus tes. Kesimpulan (2) membaca P1 dari arah sebaliknya, padahal siswa lain boleh lulus tes tanpa menjadi pemain inti.</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">(2) belum pasti</span><b>Pasti salah tertukar dengan tidak dapat dipastikan.</b> Kamu benar bahwa (2) tidak pasti benar, tetapi “tidak pasti benar” belum berarti “pasti salah”. Ada gambar yang membuat (2) benar.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">Status tertukar</span><b>Yang mungkin dikira pasti.</b> Status kedua kesimpulan bertukar tempat. Yang pasti adalah (1); yang hanya benar di sebagian gambar adalah (2).</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">(1) diragukan</span><b>Kata “sebagian” dibaca terlalu lemah.</b> Kata “sebagian” di P2 kamu baca sebagai “mungkin ada, mungkin tidak”. Dalam logika, “sebagian” berarti paling sedikit satu, jadi pemain inti yang menjadi anggota OSIS pasti ada.</div></div></div>
+  <div class="jwb"><span>C</span><p><b>Jawaban: C.</b> Kesimpulan (1) benar di setiap gambar yang memenuhi premis, sedangkan (2) benar di satu gambar dan salah di gambar lain, sehingga jawabannya C.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti kabar “semua anak yang ikut lomba sudah mendapat kaus panitia”. Kalau adikmu ikut lomba, ia pasti punya kaus itu. Tetapi melihat seseorang memakai kaus panitia belum membuktikan ia ikut lomba; bisa saja ia panitia.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Memilih B. Sesudah tahu (2) tidak mengikuti premis, kamu langsung menganggapnya salah. Kesimpulan yang belum terbukti benar belum tentu terbukti salah.</span></div></div>
+</div>
+<!--B04-C02:selesai-->
+<!--B04-C03:mulai-->
+<div data-soal="HB-TIU-B04-C03" data-target="90">
+  <div class="soal">
+    <div class="meta"><span>Contoh 3</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 90 detik</span></div>
+    <p class="stem">Anggap semua premis berikut benar.</p>
+    <dl class="premis"><div><dt>P1</dt><dd><span class="lg">Jika panitia memesan aula, maka acara diadakan pada hari Sabtu.</span></dd></div><div><dt>P2</dt><dd><span class="lg">Jika acara diadakan pada hari Sabtu, maka peserta dari luar kota datang dengan bus atau menginap di asrama.</span></dd></div><div><dt>P3</dt><dd><span class="lg">Jika peserta dari luar kota menginap di asrama, maka konsumsi disiapkan sejak Jumat malam.</span></dd></div><div><dt>P4</dt><dd><mark>Acara tidak diadakan pada hari Sabtu</mark>.</dd></div></dl>
+    <p class="stem">Kesimpulan yang pasti benar adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Panitia tidak memesan aula.</span></li><li><span class="h">B</span><span>Konsumsi tidak disiapkan sejak Jumat malam.</span></li><li><span class="h">C</span><span>Acara diadakan pada hari Minggu.</span></li><li><span class="h">D</span><span>Panitia tidak memesan aula dan peserta dari luar kota tidak menginap di asrama.</span></li><li><span class="h">E</span><span>Peserta dari luar kota memerlukan tempat menginap.</span></li></ol>
+  </div>
+  <div class="guru"><b>SIL rantai bersyarat + atau, fakta di tengah rantai, kerja mundur.</b> Kunci A. Kode: A <b>kunci</b> · B J-BALIK · C J-ASUMSI · D J-MUNGKIN · E J-AKAL. Kerangka: SIL rantai bersyarat 3 premis + 1 fakta · cabang 'atau' di P2 · fakta = ingkaran akibat premis pertama (tengah rantai) → kerja mundur satu langkah · P2–P3 tidak bergerak. TO terdekat: TO P1 no. 34 (rantai lurus 2 premis + ingkaran akibat akhir, mundur dua langkah); di sini fakta di tengah + cabang atau. Bukti: tabel kebenaran 7 pernyataan dasar (128 baris) × 2 bacaan 'atau'. P2 dan P3 tidak diperlukan untuk kunci (berperan sebagai pengalih bersyarat); dicatat sebagai sifat soal, bukan cacat: inti soal adalah tidak mengalir ke bagian rantai yang tidak bergerak.</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta satu kesimpulan yang tidak mungkin salah. Kalimat penentunya fakta P4, “Acara tidak diadakan pada hari Sabtu”: dari fakta inilah kamu mulai bekerja.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Mulai dari P4. Cari premis yang menyebut “hari Sabtu” di bagian akibat: P1. Akibat P1 tidak terjadi, jadi sebabnya juga tidak terjadi. Panitia tidak memesan aula.</dd></div>
+    <div><dt>Mengapa benar</dt><dd>P1 hanya melarang satu keadaan: aula dipesan, tetapi acara tidak hari Sabtu. P4 sudah memastikan acara tidak hari Sabtu. Bila aula dipesan, keadaan terlarang itu terjadi, jadi aula pasti tidak dipesan.</dd></div>
+    <div><dt>Cek balik</dt><dd>P2 dan P3 hanya bercerita tentang apa yang terjadi bila acara hari Sabtu. Acaranya tidak hari Sabtu, jadi kedua premis itu diam: tidak ada yang bisa disimpulkan tentang bus, asrama, atau konsumsi.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">B</span><div class="x"><span class="uji">“Tidak” di dua sisi</span><b>“Tidak” dipasang di dua sisi tanpa menukar.</b> Dari “tidak Sabtu” kamu menyimpulkan “tidak menginap”, lalu “konsumsi tidak disiapkan”. P2 dan P3 tidak bekerja ke arah itu; konsumsi tetap boleh disiapkan Jumat malam karena alasan lain.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">Tidak tertulis</span><b>Memakai keterangan yang tidak tertulis.</b> Premis tidak menyebut hari lain. Acara bisa diadakan hari Minggu, hari Jumat, atau bahkan batal.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">Separuh benar</span><b>Yang mungkin dikira pasti.</b> Bagian pertama memang pasti, tetapi bagian kedua hanya mungkin. Kalimat bersambung “dan” baru pasti benar bila kedua bagiannya pasti.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">Dunia nyata</span><b>Benar di dunia nyata, tidak dari premis.</b> Peserta dari luar kota memang biasanya butuh tempat menginap, tetapi tidak satu pun premis mengatakannya.</div></div></div>
+  <div class="jwb"><span>A</span><p><b>Jawaban: A.</b> Akibat P1 dibantah oleh fakta P4, sehingga sebab P1 juga gugur: panitia pasti tidak memesan aula.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti pesan ibu: “Kalau kamu ke pasar, kamu pasti lewat jembatan.” Tetangga bercerita kamu tidak lewat jembatan hari ini. Ibu langsung tahu kamu tidak ke pasar, walaupun belum tahu ke mana kamu pergi.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Membaca premis dari atas ke bawah lalu ikut mengalir ke P2 dan P3. Rantai itu hanya bergerak bila acara hari Sabtu, dan fakta P4 memotongnya di tengah.</span></div></div>
+</div>
+<!--B04-C03:selesai-->
+<!--B04-C04:mulai-->
+<div data-soal="HB-TIU-B04-C04" data-target="45">
+  <div class="soal">
+    <div class="meta"><span>Contoh 4</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 45 detik</span></div>
+    <p class="stem"><span class="lg">Pernyataan yang <mark>setara</mark> dengan “Jika air di dalam ketel mendidih, maka peluit ketel berbunyi” adalah …</span></p>
+    <ol class="opsiv"><li><span class="h">A</span><span><span class="lg">Jika peluit ketel berbunyi, maka air di dalam ketel mendidih.</span></span></li><li><span class="h">B</span><span>Air di dalam ketel mendidih, tetapi peluit ketel tidak berbunyi.</span></li><li><span class="h">C</span><span><span class="lg">Jika air di dalam ketel tidak mendidih, maka peluit ketel tidak berbunyi.</span></span></li><li><span class="h">D</span><span><span class="lg">Jika peluit ketel tidak berbunyi, maka air di dalam ketel tidak mendidih.</span></span></li><li><span class="h">E</span><span>Air di dalam ketel tidak mendidih dan peluit ketel tidak berbunyi.</span></li></ol>
+  </div>
+  <div class="guru"><b>EKV setara, kontraposisi.</b> Kunci D. Kode: A J-BALIK · B J-INGKAR · C J-BALIK · D <b>kunci</b> · E J-INGKAR. Kerangka: EKV setara · jika p maka q → kontraposisi · pengecoh konvers, tidak-tidak, ingkaran sejati (p dan tidak q), ingkaran keliru (tidak p dan tidak q). TO terdekat: tidak ada setara di TO P1; isi bukan hujan–lapangan (narasi). Bukti: tabel kebenaran 4 baris. C dan D sama-sama berbentuk 'jika tidak …, maka tidak …', jadi bentuk kunci tidak tunggal.</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta pernyataan yang nilainya selalu sama dengan pernyataan asal di setiap keadaan. Kalimat penentunya “setara”, bukan “ingkaran”.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Tulis keadaan terlarang pernyataan asal: air mendidih, tetapi peluit tidak berbunyi. Cari pilihan yang melarang keadaan yang sama. Pilihan D berkata: bila peluit tidak berbunyi, air tidak mendidih. Keadaan yang dilarangnya juga peluit diam padahal air mendidih.</dd></div>
+    <div><dt>Mengapa benar</dt><dd>Dua pernyataan bersyarat setara bila melarang keadaan yang sama. Kontraposisi menukar kedua bagian dan memberi “tidak” pada keduanya, sehingga keadaan terlarangnya tidak berubah.</dd></div>
+    <div><dt>Cek balik</dt><dd>Uji keadaan air tidak mendidih dan peluit berbunyi (misalnya peluit ditiup orang). Pernyataan asal tetap benar, D tetap benar. Pernyataan A dan C sama-sama salah di keadaan itu.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">Konvers</span><b>Arahnya dibalik.</b> Kedua bagian ditukar tanpa “tidak”. Pernyataan ini melarang peluit berbunyi tanpa air mendidih, keadaan yang diizinkan pernyataan asal.</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">Ingkaran</span><b>Ingkaran dikira setara.</b> Kalimat ini adalah keadaan terlarang itu sendiri, jadi nilainya selalu berlawanan dengan pernyataan asal. Ini ingkaran, bukan pernyataan setara.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">Tidak di dua sisi</span><b>“Tidak” dipasang di dua sisi tanpa menukar.</b> “Tidak” dipasang di kedua bagian tanpa menukar urutannya. Bentuk ini melarang keadaan yang sama dengan pilihan A.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">Bukan ingkaran</span><b>Ingkaran keliru.</b> Kalimat “dan” ini hanya menggambarkan satu keadaan yang diizinkan pernyataan asal. Ia tidak setara, dan juga bukan ingkarannya.</div></div></div>
+  <div class="jwb"><span>D</span><p><b>Jawaban: D.</b> Pilihan D menukar kedua bagian dan memberi “tidak” pada keduanya, sehingga keadaan yang dilarangnya sama dengan pernyataan asal.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti alarm asap: “Jika ada asap, alarm berbunyi.” Bila alarm diam, kamu tahu tidak ada asap. Tetapi alarm yang berbunyi belum tentu karena asap; mungkin seseorang menekan tombol ujinya.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Memilih C karena terlihat rapi: “tidak” dipasang di depan kedua bagian. Bentuknya mirip kunci, hanya urutannya tidak ditukar, dan justru di situ perbedaannya.</span></div></div>
+</div>
+<!--B04-C04:selesai-->
+
+  <h3>Latihan</h3>
+  <p>Empat latihan berikut memiliki target total {{WAKTU_LATIHAN}}. Kerjakan dengan pengatur waktu dan tanpa melihat pembahasan. Kunci dan pembahasannya ada di lampiran.</p>
+<!--B04-L01:mulai-->
+<div data-soal="HB-TIU-B04-L01" data-target="45">
+  <div class="soal">
+    <div class="meta"><span id="soal-B04-L01">Latihan 1<a class="ke" href="#bahas-B04-L01">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 45 detik</span></div>
+    <p class="stem">Anggap semua premis berikut benar.</p>
+    <dl class="premis"><div><dt>P1</dt><dd><span class="lg">Jika sebuah paket tidak diberi label alamat, maka paket itu tidak dikirim hari ini.</span></dd></div><div><dt>P2</dt><dd>Paket milik Dodi dikirim hari ini.</dd></div></dl>
+    <p class="stem">Kesimpulan yang <mark>pasti benar</mark> adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span><span class="lg">Jika sebuah paket diberi label alamat, maka paket itu dikirim hari ini.</span></span></li><li><span class="h">B</span><span>Paket tanpa label alamat dapat tersesat di perjalanan.</span></li><li><span class="h">C</span><span>Paket milik Dodi sudah diberi label alamat.</span></li><li><span class="h">D</span><span><span class="lg">Jika sebuah paket tidak dikirim hari ini, maka paket itu tidak diberi label alamat.</span></span></li><li><span class="h">E</span><span>Paket milik Dodi tiba di tujuan hari ini.</span></li></ol>
+  </div>
+  <div class="guru"><b>SIL bersyarat satu langkah, premis bertanda tidak + fakta.</b> Kunci C. Kode: A J-BALIK · B J-AKAL · C <b>kunci</b> · D J-BALIK · E J-MUNGKIN. Kerangka: SIL bersyarat satu langkah · 'jika tidak p maka tidak q' + q → p · pengecoh tidak-tidak, konvers, akal sehat, dugaan tentang individu yang sama. TO terdekat: TO P1 no. 34 (rantai dua premis + ingkaran akibat akhir); di sini satu langkah dengan 'tidak' di kedua bagian. Bukti: dunia himpunan 4 istilah + individu, daerah sah 12, 24576 dunia × 4 bacaan (kosong · sebagian). Contoh penyangkal: A {berlabel} {berlabel, dikirim hari ini · paket Dodi}; B {} {berlabel, dikirim hari ini · paket Dodi}; D {berlabel} {berlabel, dikirim hari ini · paket Dodi}; E {berlabel, dikirim hari ini · paket Dodi}. Latihan: pembahasan menyusul Tahap 6. Revisi pasca cek buta: E diganti pernyataan lain tentang paket Dodi (J-MUNGKIN) agar kunci bukan opsi tunggal yang menyebut Dodi; kunci tidak lagi terpendek.</div>
+</div>
+<!--B04-L01:selesai-->
+<!--B04-L02:mulai-->
+<div data-soal="HB-TIU-B04-L02" data-target="60">
+  <div class="soal">
+    <div class="meta"><span id="soal-B04-L02">Latihan 2<a class="ke" href="#bahas-B04-L02">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 60 detik</span></div>
+    <p class="stem">Anggap semua premis berikut benar.</p>
+    <dl class="premis"><div><dt>P1</dt><dd>Semua karyawan yang <mark>memegang izin masuk ruang server</mark> telah mengikuti pelatihan keamanan data.</dd></div><div><dt>P2</dt><dd>Rudi adalah karyawan yang memegang izin masuk ruang server.</dd></div></dl>
+    <p class="stem">Kesimpulan yang pasti benar adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Rudi masuk ruang server.</span></li><li><span class="h">B</span><span>Rudi telah mengikuti pelatihan keamanan data.</span></li><li><span class="h">C</span><span>Semua karyawan yang telah mengikuti pelatihan keamanan data memegang izin masuk ruang server.</span></li><li><span class="h">D</span><span>Karyawan yang belum mengikuti pelatihan keamanan data tidak pernah masuk ruang server.</span></li><li><span class="h">E</span><span>Sebagian karyawan yang telah mengikuti pelatihan keamanan data tidak memegang izin masuk ruang server.</span></li></ol>
+  </div>
+  <div class="guru"><b>SIL kata izin, izin di dalam nama kelompok.</b> Kunci B. Kode: A J-IZIN · B <b>kunci</b> · C J-BALIK · D J-IZIN · E J-MUNGKIN. Kerangka: SIL izin di dalam nama kelompok · 'semua pemegang izin X adalah P' + individu pemegang izin → individu P · dua opsi izin → kejadian (masuk; tidak pernah masuk), konvers, dugaan. TO terdekat: TO P1 tanpa kata izin; bukan kartu anggota perpustakaan (narasi). Bukti: dunia himpunan 3 istilah + individu, daerah sah 6, 192 dunia × 4 bacaan (kosong · sebagian). Contoh penyangkal: A {pemegang izin, terlatih · Rudi}; C {terlatih} {pemegang izin, terlatih · Rudi}; D {pemegang izin, terlatih · Rudi} {masuk ruang server}; E {pemegang izin, terlatih · Rudi}. Dirujuk Latihan A Bab 19 (J-IZIN, 'Boleh dikira pasti terjadi'): A dan D. Premis tetap berbentuk fakta (Pilar 4 SIL): izin hanya di dalam nama kelompok. Latihan: pembahasan menyusul Tahap 6.</div>
+</div>
+<!--B04-L02:selesai-->
+<!--B04-L03:mulai-->
+<div data-soal="HB-TIU-B04-L03" data-target="45">
+  <div class="soal">
+    <div class="meta"><span id="soal-B04-L03">Latihan 3<a class="ke" href="#bahas-B04-L03">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 45 detik</span></div>
+    <p class="stem"><mark>Ingkaran</mark> dari pernyataan “Semua penumpang kapal memakai pelampung” adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Semua penumpang kapal tidak memakai pelampung.</span></li><li><span class="h">B</span><span>Tidak semua orang yang memakai pelampung adalah penumpang kapal.</span></li><li><span class="h">C</span><span>Ada penumpang kapal yang memakai pelampung.</span></li><li><span class="h">D</span><span>Tidak semua penumpang kapal memakai pelampung.</span></li><li><span class="h">E</span><span>Semua orang yang tidak memakai pelampung bukan penumpang kapal.</span></li></ol>
+  </div>
+  <div class="guru"><b>EKV ingkaran, ingkaran 'semua'.</b> Kunci D. Kode: A J-INGKAR · B J-BALIK · C J-SEBAGIAN · D <b>kunci</b> · E J-INGKAR. Kerangka: EKV ingkaran 'semua A adalah B' → 'tidak semua A adalah B' · pengecoh 'semua tidak', konvers, 'ada A yang B', kontraposisi. TO terdekat: tidak ada ingkaran di TO P1. Bukti: semua dunia himpunan 2 istilah × 4 bacaan. Kontraposisi (E) dipasang agar siswa membedakan setara dan ingkaran. Latihan: pembahasan menyusul Tahap 6. Revisi pasca cek buta: kunci 'Ada … yang tidak' (opsi tunggal berawalan 'Ada') diganti 'Tidak semua …' (setara, dibuktikan mesin); C diganti 'Ada … yang memakai' sebagai pilihan salah. Revisi cek buta 2: B diganti 'Tidak semua orang yang memakai pelampung adalah penumpang kapal.' (arah dibalik) agar kunci bukan opsi tunggal berawalan 'Tidak semua'.</div>
+</div>
+<!--B04-L03:selesai-->
+<!--B04-L04:mulai-->
+<div data-soal="HB-TIU-B04-L04" data-target="60">
+  <div class="soal">
+    <div class="meta"><span id="soal-B04-L04">Latihan 4<a class="ke" href="#bahas-B04-L04">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 60 detik</span></div>
+    <p class="stem">Anggap semua premis berikut benar.</p>
+    <dl class="premis"><div><dt>P1</dt><dd>Semua pemenang lomba poster adalah anggota klub seni.</dd></div><div><dt>P2</dt><dd>Semua anggota tim dekorasi adalah anggota klub seni.</dd></div></dl>
+    <p class="stem">Kesimpulan yang <mark>pasti benar</mark> adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Tidak dapat dipastikan apakah semua pemenang lomba poster adalah anggota klub seni.</span></li><li><span class="h">B</span><span>Semua pemenang lomba poster adalah anggota tim dekorasi.</span></li><li><span class="h">C</span><span>Semua anggota tim dekorasi adalah pemenang lomba poster.</span></li><li><span class="h">D</span><span>Semua anggota klub seni pandai menggambar.</span></li><li><span class="h">E</span><span>Hubungan pemenang lomba poster dan anggota tim dekorasi tidak dapat dipastikan.</span></li></ol>
+  </div>
+  <div class="guru"><b>SIL tidak dapat disimpulkan, dua premis 'semua' dengan predikat sama.</b> Kunci E. Kode: A J-TENTU · B J-MUNGKIN · C J-MUNGKIN · D J-AKAL · E <b>kunci</b>. Kerangka: SIL kunci 'hubungan tidak dapat dipastikan' · 'semua A adalah M' + 'semua C adalah M' (istilah tengah hanya di predikat) · pengecoh: 'tidak dapat dipastikan apakah …' yang sebenarnya pasti, pasangan cermin A⊂C / C⊂A, akal sehat. TO terdekat: TO P1 tanpa kunci 'tidak dapat disimpulkan'. Bukti: dunia himpunan 4 istilah, daerah sah 10, 1023 dunia × 4 bacaan (kosong · sebagian). Contoh penyangkal: B {pemenang poster, klub seni}; C {klub seni, tim dekorasi}; D {klub seni}. Revisi pasca cek buta: bunyi kunci 'Tidak ada kesimpulan yang pasti benar' (berlebihan: premis sendiri pasti benar) diganti 'Hubungan antara … tidak dapat dipastikan'; bentuk serupa kini juga dipasang sebagai pilihan salah di B04-P01. Latihan: pembahasan menyusul Tahap 6. Revisi cek buta 2: A diganti pilihan sebentuk 'Hubungan … tidak dapat dipastikan' yang salah (tim dekorasi pasti di dalam klub seni, J-TENTU); redaksi kunci diseragamkan 'pemenang lomba poster', 'anggota tim dekorasi'. Revisi cek buta 3: A diganti 'Tidak dapat dipastikan apakah semua pemenang lomba poster adalah anggota klub seni.' (tegas salah karena P1; menutup dalih 'setengah benar'); B–C dijadikan pasangan cermin pengecoh (pemenang ⊂ tim dekorasi / tim dekorasi ⊂ pemenang). Kode C J-BALIK → J-MUNGKIN (kembali ke spek slot J-MUNGKIN ×2).</div>
+</div>
+<!--B04-L04:selesai-->
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Asal Rancangan Bab 4</h4>
+    <p>Putusan T2-1b: Bab 4 = 1 pembuka + 4 contoh + 4 latihan (dari 10 + 1 bersyarat slot laporan T2-B). Dipilih L7 bersyarat satu langkah, L4 kata izin, L9 ingkaran, L11 "tidak dapat disimpulkan" (Putusan T2-7(5)): empat subbagian yang belum punya latihan; kategoris dan dua kesimpulan sudah tertutup pembuka, Contoh 1, dan Contoh 2. Gugur: L1–L3 kategoris, L5–L6 dua kesimpulan, L8 rantai maju, L10 setara kedua.</p>
+    <p>Status setiap kesimpulan di narasi dihitung <code>scripts/cek_bab03_05.mjs</code> (dunia himpunan + tabel kebenaran; semua bacaan "kosong/tidak kosong"). Kebiasaan soal resmi membaca "sebagian", himpunan kosong, dan "atau" belum diverifikasi (Putusan T2-7(4)); jangan diajarkan sebagai aturan resmi.</p>
+  </div>
+
+  <div class="ringkas">
+    <h4>Ringkasan Bab 4</h4>
+    <ol>
+      <li>Setiap premis kategoris adalah <b>gambar himpunan</b>. "Sebagian" berarti paling sedikit satu, mungkin semua.</li>
+      <li>Kesimpulan <b>pasti benar</b> bila benar di setiap gambar yang memenuhi premis. Satu gambar yang membuatnya salah cukup untuk menggugurkannya.</li>
+      <li>Pernyataan bersyarat hanya melarang satu keadaan: <i>p</i> terjadi, <i>q</i> tidak. Dua cara sah: dari <i>p</i> ke <i>q</i>, dan dari tidak <i>q</i> ke tidak <i>p</i>.</li>
+      <li>Kontraposisi dan "tidak <i>p</i> atau <i>q</i>" setara dengan pernyataan asal. Konvers dan bentuk "tidak" di dua sisi tidak setara.</li>
+      <li>Ingkaran "semua A adalah B" adalah "ada A yang bukan B". Ingkaran pernyataan bersyarat adalah "<i>p</i> dan tidak <i>q</i>".</li>
+      <li>Kata izin dibawa utuh ke kesimpulan: "boleh" tidak sama dengan "terjadi".</li>
+    </ol>
+  </div>
+</section>

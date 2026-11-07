@@ -1,0 +1,479 @@
+[
+  {
+    "id": "HB-TIU-B03-P01",
+    "bab": 3,
+    "target_detik": 45,
+    "soal": {
+      "tanya": "PELUMAS : GESEKAN = … : …"
+    },
+    "opsi": {
+      "A": "OLI : MESIN",
+      "B": "PENGERAS SUARA : BUNYI",
+      "C": "SILAU : KACAMATA HITAM",
+      "D": "TIRAI : CAHAYA",
+      "E": "TERMOS : PANAS"
+    }
+  },
+  {
+    "id": "HB-TIU-B03-C01",
+    "bab": 3,
+    "target_detik": 45,
+    "soal": {
+      "tanya": "BERBISIK : BERTERIAK = … : …"
+    },
+    "opsi": {
+      "A": "BERJALAN : BERLARI",
+      "B": "MELOMPAT : MELONCAT",
+      "C": "MIKROFON : SUARA",
+      "D": "MELAHAP : MENCICIPI",
+      "E": "BERBICARA : BERCAKAP"
+    }
+  },
+  {
+    "id": "HB-TIU-B03-C02",
+    "bab": 3,
+    "target_detik": 60,
+    "soal": {
+      "tanya": "KOKI : DAPUR : MASAKAN = … : … : …"
+    },
+    "opsi": {
+      "A": "PERAWAT : RUMAH SAKIT : OBAT",
+      "B": "NELAYAN : IKAN : LAUT",
+      "C": "PETANI : SAWAH : PADI",
+      "D": "KOMPOR : WAJAN : MASAKAN",
+      "E": "PEMBACA : PERCETAKAN : BUKU"
+    }
+  },
+  {
+    "id": "HB-TIU-B03-C03",
+    "bab": 3,
+    "target_detik": 75,
+    "soal": {
+      "pengantar": "Perajin logam mencampur tembaga dan timah untuk membuat perunggu.",
+      "tanya": "Kalimat yang hubungannya sepadan dengan kalimat di atas adalah …"
+    },
+    "opsi": {
+      "A": "Petugas kebersihan mencampur sabun dan air untuk membersihkan lantai.",
+      "B": "Tukang kayu memakai gergaji dan pahat untuk membuat kursi.",
+      "C": "Pedagang ikan mencampur es batu dan garam kasar untuk menjaga ikan tetap segar.",
+      "D": "Penjual minuman memeras jeruk untuk menghasilkan sari buah.",
+      "E": "Penjual jamu meracik kunyit dan asam jawa untuk menghasilkan jamu kunyit asam."
+    }
+  },
+  {
+    "id": "HB-TIU-B03-L01",
+    "bab": 3,
+    "target_detik": 40,
+    "soal": {
+      "tanya": "KOMPONIS : LAGU = … : …"
+    },
+    "opsi": {
+      "A": "TUKANG CUKUR : GUNTING",
+      "B": "PENENUN : KAIN",
+      "C": "JEMBATAN : INSINYUR",
+      "D": "PENYANYI : PANGGUNG",
+      "E": "SOPIR : PENUMPANG"
+    }
+  },
+  {
+    "id": "HB-TIU-B03-L02",
+    "bab": 3,
+    "target_detik": 45,
+    "soal": {
+      "tanya": "BURUNG : PARUH = … : …"
+    },
+    "opsi": {
+      "A": "KUCING : BELANG",
+      "B": "BURUNG HANTU : MALAM",
+      "C": "LEBAH : MADU",
+      "D": "GAJAH : BELALAI",
+      "E": "KUDA : PELANA"
+    }
+  },
+  {
+    "id": "HB-TIU-B03-L03",
+    "bab": 3,
+    "target_detik": 60,
+    "soal": {
+      "pengantar": "Helm memiliki lapisan busa di bagian dalam untuk meredam benturan pada kepala.",
+      "tanya": "Kalimat yang hubungannya sepadan dengan kalimat di atas adalah …"
+    },
+    "opsi": {
+      "A": "Mobil memiliki kantong udara di setir untuk melindungi tubuh pengemudi saat tabrakan.",
+      "B": "Sofa memiliki lapisan busa tebal untuk membuat duduk terasa empuk.",
+      "C": "Botol minum memiliki tutup berulir yang rapat untuk mencegah isinya tumpah di dalam tas.",
+      "D": "Kursi kantor memiliki roda di bagian kaki untuk memudahkan perpindahan.",
+      "E": "Payung memiliki rangka lipat untuk memudahkan dibawa bepergian."
+    }
+  },
+  {
+    "id": "HB-TIU-B04-P01",
+    "bab": 4,
+    "target_detik": 75,
+    "soal": {
+      "pengantar": "Anggap semua premis berikut benar.",
+      "butir": [
+        [
+          "P1",
+          "Tidak ada petugas loket yang bekerja paruh waktu."
+        ],
+        [
+          "P2",
+          "Sebagian pegawai baru adalah petugas loket."
+        ],
+        [
+          "P3",
+          "Semua pegawai bagian arsip berkantor di lantai dua."
+        ]
+      ],
+      "tanya": "Kesimpulan yang pasti benar adalah …"
+    },
+    "opsi": {
+      "A": "Semua pegawai yang tidak bekerja paruh waktu adalah petugas loket.",
+      "B": "Ada pegawai baru yang tidak bekerja paruh waktu.",
+      "C": "Semua pegawai baru tidak bekerja paruh waktu.",
+      "D": "Hubungan antara pegawai baru dan pekerja paruh waktu tidak dapat dipastikan.",
+      "E": "Ada pegawai baru yang berkantor di lantai dua."
+    }
+  },
+  {
+    "id": "HB-TIU-B04-C01",
+    "bab": 4,
+    "target_detik": 60,
+    "soal": {
+      "pengantar": "Anggap semua premis berikut benar.",
+      "butir": [
+        [
+          "P1",
+          "Semua logam larut dalam air."
+        ],
+        [
+          "P2",
+          "Sebagian benda berwarna kuning adalah logam."
+        ]
+      ],
+      "tanya": "Kesimpulan yang pasti benar adalah …"
+    },
+    "opsi": {
+      "A": "Semua benda yang berwarna kuning larut dalam air.",
+      "B": "Sebagian logam tidak larut dalam air.",
+      "C": "Benda yang bukan logam tidak larut dalam air.",
+      "D": "Semua benda yang larut dalam air berwarna kuning.",
+      "E": "Benda yang tidak larut dalam air bukan logam."
+    }
+  },
+  {
+    "id": "HB-TIU-B04-C02",
+    "bab": 4,
+    "target_detik": 60,
+    "soal": {
+      "pengantar": "Anggap semua premis berikut benar.",
+      "butir": [
+        [
+          "P1",
+          "Semua pemain inti tim basket sekolah lulus tes kebugaran."
+        ],
+        [
+          "P2",
+          "Sebagian pemain inti tim basket sekolah adalah anggota OSIS."
+        ],
+        [
+          "(1)",
+          "Ada anggota OSIS yang lulus tes kebugaran."
+        ],
+        [
+          "(2)",
+          "Semua siswa yang lulus tes kebugaran adalah pemain inti tim basket sekolah."
+        ]
+      ],
+      "tanya": "Penilaian yang tepat untuk kesimpulan (1) dan (2) adalah …"
+    },
+    "opsi": {
+      "A": "(1) pasti benar, (2) pasti benar.",
+      "B": "(1) pasti benar, (2) pasti salah.",
+      "C": "(1) pasti benar, (2) tidak dapat dipastikan.",
+      "D": "(1) tidak dapat dipastikan, (2) pasti benar.",
+      "E": "(1) tidak dapat dipastikan, (2) tidak dapat dipastikan."
+    }
+  },
+  {
+    "id": "HB-TIU-B04-C03",
+    "bab": 4,
+    "target_detik": 90,
+    "soal": {
+      "pengantar": "Anggap semua premis berikut benar.",
+      "butir": [
+        [
+          "P1",
+          "Jika panitia memesan aula, maka acara diadakan pada hari Sabtu."
+        ],
+        [
+          "P2",
+          "Jika acara diadakan pada hari Sabtu, maka peserta dari luar kota datang dengan bus atau menginap di asrama."
+        ],
+        [
+          "P3",
+          "Jika peserta dari luar kota menginap di asrama, maka konsumsi disiapkan sejak Jumat malam."
+        ],
+        [
+          "P4",
+          "Acara tidak diadakan pada hari Sabtu."
+        ]
+      ],
+      "tanya": "Kesimpulan yang pasti benar adalah …"
+    },
+    "opsi": {
+      "A": "Panitia tidak memesan aula.",
+      "B": "Konsumsi tidak disiapkan sejak Jumat malam.",
+      "C": "Acara diadakan pada hari Minggu.",
+      "D": "Panitia tidak memesan aula dan peserta dari luar kota tidak menginap di asrama.",
+      "E": "Peserta dari luar kota memerlukan tempat menginap."
+    }
+  },
+  {
+    "id": "HB-TIU-B04-C04",
+    "bab": 4,
+    "target_detik": 45,
+    "soal": {
+      "tanya": "Pernyataan yang setara dengan “Jika air di dalam ketel mendidih, maka peluit ketel berbunyi” adalah …"
+    },
+    "opsi": {
+      "A": "Jika peluit ketel berbunyi, maka air di dalam ketel mendidih.",
+      "B": "Air di dalam ketel mendidih, tetapi peluit ketel tidak berbunyi.",
+      "C": "Jika air di dalam ketel tidak mendidih, maka peluit ketel tidak berbunyi.",
+      "D": "Jika peluit ketel tidak berbunyi, maka air di dalam ketel tidak mendidih.",
+      "E": "Air di dalam ketel tidak mendidih dan peluit ketel tidak berbunyi."
+    }
+  },
+  {
+    "id": "HB-TIU-B04-L01",
+    "bab": 4,
+    "target_detik": 45,
+    "soal": {
+      "pengantar": "Anggap semua premis berikut benar.",
+      "butir": [
+        [
+          "P1",
+          "Jika sebuah paket tidak diberi label alamat, maka paket itu tidak dikirim hari ini."
+        ],
+        [
+          "P2",
+          "Paket milik Dodi dikirim hari ini."
+        ]
+      ],
+      "tanya": "Kesimpulan yang pasti benar adalah …"
+    },
+    "opsi": {
+      "A": "Jika sebuah paket diberi label alamat, maka paket itu dikirim hari ini.",
+      "B": "Paket tanpa label alamat dapat tersesat di perjalanan.",
+      "C": "Paket milik Dodi sudah diberi label alamat.",
+      "D": "Jika sebuah paket tidak dikirim hari ini, maka paket itu tidak diberi label alamat.",
+      "E": "Paket milik Dodi tiba di tujuan hari ini."
+    }
+  },
+  {
+    "id": "HB-TIU-B04-L02",
+    "bab": 4,
+    "target_detik": 60,
+    "soal": {
+      "pengantar": "Anggap semua premis berikut benar.",
+      "butir": [
+        [
+          "P1",
+          "Semua karyawan yang memegang izin masuk ruang server telah mengikuti pelatihan keamanan data."
+        ],
+        [
+          "P2",
+          "Rudi adalah karyawan yang memegang izin masuk ruang server."
+        ]
+      ],
+      "tanya": "Kesimpulan yang pasti benar adalah …"
+    },
+    "opsi": {
+      "A": "Rudi masuk ruang server.",
+      "B": "Rudi telah mengikuti pelatihan keamanan data.",
+      "C": "Semua karyawan yang telah mengikuti pelatihan keamanan data memegang izin masuk ruang server.",
+      "D": "Karyawan yang belum mengikuti pelatihan keamanan data tidak pernah masuk ruang server.",
+      "E": "Sebagian karyawan yang telah mengikuti pelatihan keamanan data tidak memegang izin masuk ruang server."
+    }
+  },
+  {
+    "id": "HB-TIU-B04-L03",
+    "bab": 4,
+    "target_detik": 45,
+    "soal": {
+      "tanya": "Ingkaran dari pernyataan “Semua penumpang kapal memakai pelampung” adalah …"
+    },
+    "opsi": {
+      "A": "Semua penumpang kapal tidak memakai pelampung.",
+      "B": "Tidak semua orang yang memakai pelampung adalah penumpang kapal.",
+      "C": "Ada penumpang kapal yang memakai pelampung.",
+      "D": "Tidak semua penumpang kapal memakai pelampung.",
+      "E": "Semua orang yang tidak memakai pelampung bukan penumpang kapal."
+    }
+  },
+  {
+    "id": "HB-TIU-B04-L04",
+    "bab": 4,
+    "target_detik": 60,
+    "soal": {
+      "pengantar": "Anggap semua premis berikut benar.",
+      "butir": [
+        [
+          "P1",
+          "Semua pemenang lomba poster adalah anggota klub seni."
+        ],
+        [
+          "P2",
+          "Semua anggota tim dekorasi adalah anggota klub seni."
+        ]
+      ],
+      "tanya": "Kesimpulan yang pasti benar adalah …"
+    },
+    "opsi": {
+      "A": "Tidak dapat dipastikan apakah semua pemenang lomba poster adalah anggota klub seni.",
+      "B": "Semua pemenang lomba poster adalah anggota tim dekorasi.",
+      "C": "Semua anggota tim dekorasi adalah pemenang lomba poster.",
+      "D": "Semua anggota klub seni pandai menggambar.",
+      "E": "Hubungan pemenang lomba poster dan anggota tim dekorasi tidak dapat dipastikan."
+    }
+  },
+  {
+    "id": "HB-TIU-B05-P01",
+    "bab": 5,
+    "target_detik": 60,
+    "soal": {
+      "pengantar": "Seorang pengamat menyatakan: “Semakin sering seorang pedagang mengunggah promosi di media sosial, semakin besar omzet penjualannya.”",
+      "tanya": "Pernyataan manakah yang paling memperlemah pendapat pengamat tersebut?"
+    },
+    "opsi": {
+      "A": "Pedagang yang mengunggah promosi setiap hari memiliki omzet lebih besar daripada pedagang serupa yang hanya mengunggah promosi sepekan sekali.",
+      "B": "Media sosial kini menjadi tempat promosi yang paling banyak dipakai oleh pedagang kecil.",
+      "C": "Pedagang P mengunggah promosi dua kali lebih sering daripada pedagang Q yang menjual barang serupa, tetapi omzet bulanan keduanya sama.",
+      "D": "Pedagang yang makin rajin berpromosi di media sosial makin banyak meraih penjualan.",
+      "E": "Pedagang perlu memahami kebutuhan pembeli agar dagangannya laku."
+    }
+  },
+  {
+    "id": "HB-TIU-B05-C01",
+    "bab": 5,
+    "target_detik": 75,
+    "soal": {
+      "butir": [
+        [
+          "Argumen 1",
+          "Menambah jumlah loket pendaftaran adalah salah satu cara mempersingkat waktu tunggu pasien di puskesmas."
+        ],
+        [
+          "Argumen 2",
+          "Pendaftaran jarak jauh sehari sebelum berobat dapat mempersingkat waktu tunggu pasien di puskesmas."
+        ],
+        [
+          "Fakta",
+          "Di puskesmas yang menerima pendaftaran lewat ponsel pada hari sebelumnya, pasien rata-rata menunggu 20 menit lebih singkat daripada di puskesmas serupa yang hanya melayani pendaftaran di loket."
+        ]
+      ],
+      "tanya": "Pengaruh fakta tersebut terhadap kedua argumen adalah …"
+    },
+    "opsi": {
+      "A": "memperkuat argumen 1",
+      "B": "memperkuat argumen 2",
+      "C": "memperlemah argumen 1",
+      "D": "memperlemah argumen 2",
+      "E": "tidak relevan dengan kedua argumen"
+    }
+  },
+  {
+    "id": "HB-TIU-B05-C02",
+    "bab": 5,
+    "target_detik": 45,
+    "soal": {
+      "pengantar": "Kepala desa menyatakan: “Setiap kali hujan turun lebih dari dua jam, jalan di depan balai desa tergenang.”",
+      "tanya": "Pernyataan manakah yang paling memperlemah pernyataan kepala desa?"
+    },
+    "opsi": {
+      "A": "Kemarin hujan turun selama tiga jam, tetapi jalan di depan balai desa tetap kering.",
+      "B": "Bulan lalu hujan turun lebih dari dua jam sebanyak tiga kali, dan setiap kali itu jalan di depan balai desa tergenang.",
+      "C": "Jalan di depan balai desa pernah tergenang karena pipa air bocor, padahal hari itu tidak hujan.",
+      "D": "Hujan yang turun lebih dari dua jam selalu membuat jalan di depan balai desa tergenang.",
+      "E": "Genangan di jalan dapat mengganggu warga yang hendak ke balai desa."
+    }
+  },
+  {
+    "id": "HB-TIU-B05-C03",
+    "bab": 5,
+    "target_detik": 75,
+    "soal": {
+      "pengantar": "Kantor kecamatan membagi pegawai bagian pelayanan menjadi dua kelompok pada bulan yang sama. Kelompok pertama mengikuti pelatihan aplikasi arsip digital, kelompok kedua tidak. Sebulan kemudian, kelompok pertama menyelesaikan berkas warga lebih cepat daripada kelompok kedua. Camat menyimpulkan bahwa pelatihan itulah yang mempercepat penyelesaian berkas.",
+      "tanya": "Pernyataan manakah yang paling memperkuat kesimpulan camat?"
+    },
+    "opsi": {
+      "A": "Seorang pegawai yang mengikuti pelatihan kini dapat menyelesaikan seluruh berkasnya sebelum jam istirahat.",
+      "B": "Pegawai di kelompok pertama sejak awal adalah pegawai yang paling cepat bekerja di kantor itu.",
+      "C": "Aplikasi arsip digital yang sama juga dipakai di kantor kecamatan lain di kabupaten itu.",
+      "D": "Sebelum pelatihan, kecepatan kedua kelompok dalam menyelesaikan berkas warga sama.",
+      "E": "Pegawai yang mengikuti pelatihan menyelesaikan berkas warga lebih cepat daripada pegawai yang tidak mengikutinya."
+    }
+  },
+  {
+    "id": "HB-TIU-B05-L01",
+    "bab": 5,
+    "target_detik": 45,
+    "soal": {
+      "pengantar": "Seorang petani menyatakan: “Hanya penyemprotan pestisida yang dapat melindungi tanaman cabai dari serangan kutu daun.”",
+      "tanya": "Pernyataan manakah yang paling memperlemah pernyataan petani itu?"
+    },
+    "opsi": {
+      "A": "Kebun cabai yang memakai kepik pemangsa kutu daun, tanpa pestisida, tidak terserang kutu daun.",
+      "B": "Kebun cabai di sebelahnya yang tidak disemprot pestisida sama sekali diserang kutu daun hingga gagal panen.",
+      "C": "Pestisida untuk tanaman cabai dijual dalam berbagai merek dan ukuran kemasan.",
+      "D": "Tanpa pestisida, tidak ada cara lain untuk melindungi tanaman cabai dari kutu daun.",
+      "E": "Pestisida perlu dipakai sesuai takaran pada kemasan agar aman bagi petani."
+    }
+  },
+  {
+    "id": "HB-TIU-B05-L02",
+    "bab": 5,
+    "target_detik": 75,
+    "soal": {
+      "butir": [
+        [
+          "Argumen 1",
+          "Menyediakan tempat isi ulang air minum adalah salah satu cara mengurangi sampah botol plastik di sekolah."
+        ],
+        [
+          "Argumen 2",
+          "Kantin yang mewajibkan pembeli membawa wadah sendiri dapat mengurangi sampah bungkus makanan di sekolah."
+        ],
+        [
+          "Fakta",
+          "Sebuah sekolah lain berhasil mengurangi sampah plastik yang dibuang ke tempat pembuangan akhir dengan memilah sampahnya untuk didaur ulang."
+        ]
+      ],
+      "tanya": "Pengaruh fakta tersebut terhadap kedua argumen adalah …"
+    },
+    "opsi": {
+      "A": "memperkuat argumen 1",
+      "B": "memperkuat argumen 2",
+      "C": "memperlemah argumen 1",
+      "D": "memperlemah argumen 2",
+      "E": "tidak relevan dengan kedua argumen"
+    }
+  },
+  {
+    "id": "HB-TIU-B05-L03",
+    "bab": 5,
+    "target_detik": 75,
+    "soal": {
+      "pengantar": "Sejak papan nomor antrean digital dipasang di sebuah kantor pos, keluhan pengunjung tentang antrean berkurang. Kepala kantor menyimpulkan bahwa papan antrean itulah yang mengurangi keluhan.",
+      "tanya": "Pernyataan manakah yang paling memperkuat kesimpulan tersebut?"
+    },
+    "opsi": {
+      "A": "Seorang pengunjung menulis di kotak saran bahwa ia puas dengan papan antrean itu.",
+      "B": "Pada bulan yang sama dengan pemasangan papan, kantor pos itu menambah dua petugas loket dan memperpanjang jam layanan.",
+      "C": "Saat papan itu rusak dua minggu, keluhan naik lagi seperti semula, lalu turun setelah papan diperbaiki.",
+      "D": "Papan nomor antrean digital juga banyak dipasang di bank dan rumah sakit.",
+      "E": "Setelah papan antrean digital dipasang, keluhan pengunjung kantor pos itu memang berkurang."
+    }
+  }
+]

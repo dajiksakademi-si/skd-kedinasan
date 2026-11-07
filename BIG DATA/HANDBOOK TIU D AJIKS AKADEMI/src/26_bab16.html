@@ -1,0 +1,143 @@
+<!-- ═════════ BAB 16 · ANALOGI GAMBAR ═════════
+     Rencana: reports/tahap2_E_figural.md Bab 16 + sebaran T2-1b (3 latihan) + T2-2 + T2-6 + T4-22 (judul "Analogi Gambar",
+     bukan "Analogi" saja agar tidak rancu dengan Bab 3). Dua bacaan tambah/kali dan pembatal putaran dihitung di
+     scripts/cek_bab14_18.mjs (tafsir sama dengan tiu-fig-ubah.ts). -->
+<section class="bab fig" data-bab="16">
+  <header class="band">
+    <div class="no">16</div>
+    <div>
+      <h2>Analogi Gambar</h2>
+      <p>Bab ini membahas aturan perubahan setiap objek, letak tanda tanya dan pembatal perubahan, perubahan jumlah yang dapat dibaca sebagai tambah atau kali, tukar tempat dan ukuran, serta cara menguji bacaan lain.</p>
+      <p class="waktu"><svg class="ico"><use href="#jam"/></svg>{{TARGET}}</p>
+    </div>
+    <div class="kisi" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="emas"></i></div>
+  </header>
+
+  <p class="lead">Analogi gambar berbentuk (1) : (2) = (3) : (4). Aturan yang mengubah gambar (1) menjadi gambar (2) sama dengan aturan yang mengubah gambar (3) menjadi gambar (4). Bentuk objeknya boleh berbeda; yang sama adalah aturannya.</p>
+
+  <h3>Aturan Perubahan Setiap Objek</h3>
+  <p>Tulis kalimat perubahan Bab 14 untuk setiap objek pada pasangan yang lengkap. Yang dibawa ke pasangan kedua adalah <b>aturan menurut letak</b>, bukan bentuknya. Bila objek di kiri atas pada pasangan pertama diputar 90° searah jarum jam, objek di kiri atas pada pasangan kedua juga diputar 90° searah jarum jam, apa pun bentuknya.</p>
+  <p>Objek yang tidak berubah tetap ditulis, dengan keterangan "tetap". Objek yang terlewat dari kalimat perubahan adalah sumber kekeliruan yang paling sering: pilihan yang benar untuk dua objek dan salah untuk objek ketiga tampak meyakinkan.</p>
+
+  <h3>Letak Tanda Tanya dan Pembatal Perubahan</h3>
+  <table class="tb">
+    <thead><tr><th style="width:22%">Letak tanda tanya</th><th style="width:22%">Pasangan lengkap</th><th>Cara mendapatkan jawaban</th></tr></thead>
+    <tbody>
+      <tr><td>gambar (4)</td><td>(1) : (2)</td><td>kenakan aturan pada gambar (3)</td></tr>
+      <tr><td>gambar (3)</td><td>(1) : (2)</td><td>kenakan pembatal aturan pada gambar (4)</td></tr>
+      <tr><td>gambar (2)</td><td>(3) : (4)</td><td>kenakan aturan pada gambar (1)</td></tr>
+      <tr><td>gambar (1)</td><td>(3) : (4)</td><td>kenakan pembatal aturan pada gambar (2)</td></tr>
+    </tbody>
+  </table>
+  <p>Bila tanda tanya terletak di sisi kiri sebuah pasangan, gambar yang dicari adalah gambar asal, sehingga yang dipakai adalah pembatal aturan. Misalkan gambar (1) menjadi gambar (2) dengan diputar 90° searah jarum jam, dan tanda tanya terletak di gambar (3). Gambar (3) diperoleh dengan memutar (4) 90° berlawanan arah jarum jam. Pembatal cermin, putaran 180°, balik warna, dan tukar tempat adalah dirinya sendiri, sehingga hanya putaran 90° yang berganti arah. Aturan dua langkah dibatalkan dari langkah terakhir, seperti di Bab 14.</p>
+
+  <h3>Perubahan Jumlah: Ditambah atau Dikali</h3>
+  <p>Misalkan sebuah objek pada pasangan pertama berubah dari 2 lekuk menjadi 4 lekuk. Dua bacaan sama-sama cocok: <b>ditambah 2</b> atau <b>dikali 2</b>. Bila objek yang sama pada pasangan kedua berlekuk 3, bacaan pertama memberi 5 dan bacaan kedua memberi 6. Satu pasangan belum cukup untuk memilih bacaan.</p>
+  <p>Soal yang tersusun baik memilih angka sehingga semua bacaan yang cocok memberi jumlah yang sama, misalnya pasangan kedua yang juga bermula dari 2 lekuk. Soal di buku ini diperiksa dengan cara itu. Bila pada soal lain dua bacaan memberi dua jumlah yang sama-sama tersedia di pilihan, uji kedua bacaan pada objek dan pasangan lain sebelum memilih.</p>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Pemeriksaan Dua Bacaan di Generator</h4>
+    <p>FIG-ANA-UBAH (<code>tiu-fig-ubah.ts</code>, fungsi <code>tafsir</code>): setiap tafsir hitung yang cocok dengan pasangan lengkap (tambah d; kali atau bagi bilangan bulat) diterapkan ke objek pasangan kedua, dan assert menuntut satu jumlah saja. Contoh narasi 2 → 4 lalu 3 → {5, 6} dihitung ulang di <code>cek_bab14_18.mjs</code> dengan rumus yang sama.</p>
+  </div>
+
+  <h3>Tukar Tempat dan Ukuran</h3>
+  <p>Bila dua objek bertukar tempat, perubahan lain ikut objeknya. Objek yang diputar lalu dipindah tetap diputar di tempat barunya, dan objek kecil yang dipindah tetap kecil. Karena itu tulis lapis tempat terpisah dari lapis gerak, lalu periksa keduanya. Letak yang dipakai untuk mencocokkan pasangan pertama dengan pasangan kedua adalah letak objek di gambar asal, sebelum ditukar.</p>
+  <p>Perubahan ukuran diperlakukan sebagai lapis tersendiri. Bandingkan ukuran sebuah objek dengan ukuran objek yang sama di gambar asalnya, bukan dengan objek lain yang memang berbeda ukuran sejak awal.</p>
+
+  <h3>Menguji Bacaan Lain</h3>
+  <p>Satu pasangan dapat dibaca lebih dari satu cara. Objek yang semula menghadap kanan lalu menghadap kiri dapat dibaca "dicermin kiri-kanan" atau "diputar 180°" bila bentuknya simetris atas-bawah. Objek yang bertambah bagian dapat dibaca tambah atau kali. Sebelum memilih, tanyakan: adakah bacaan lain yang juga cocok dengan pasangan lengkap? Bila ada, kenakan setiap bacaan pada pasangan kedua. Bacaan yang menghasilkan gambar di luar pilihan, atau bertentangan dengan objek lain, gugur.</p>
+  <p>Cek balik dengan jawabanmu. Letakkan jawaban di tempat tanda tanya, lalu tulis kalimat perubahan pasangan kedua. Kalimat itu harus sama, objek demi objek, dengan kalimat pasangan pertama.</p>
+
+  <h3>Langkah Penyelesaian Soal Analogi Gambar</h3>
+  <div class="rules satu">
+    <div><b>Tandai pasangan yang lengkap</b> dan letak tanda tanya.</div>
+    <div><b>Tulis kalimat perubahan</b> untuk setiap objek: gerak, warna, tempat, jumlah, dan ukuran.</div>
+    <div><b>Cari bacaan lain</b> yang juga cocok; bila ada, bawa semuanya.</div>
+    <div><b>Tentukan arah:</b> tanda tanya di sisi kanan pasangan memakai aturan, di sisi kiri memakai pembatal.</div>
+    <div><b>Kenakan aturan pada setiap objek</b> menurut letaknya di gambar asal.</div>
+    <div><b>Cocokkan setiap objek dengan kelima pilihan.</b></div>
+    <div><b>Cek balik:</b> kalimat perubahan pasangan kedua sama dengan kalimat pasangan pertama.</div>
+  </div>
+
+  <h3>Kekeliruan pada Soal Analogi Gambar</h3>
+  <table class="tb pecah">
+    <thead><tr><th style="width:5%">No.</th><th style="width:31%">Kekeliruan</th><th>Contoh</th><th style="width:27%">Pertanyaan uji</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><b>Hanya memeriksa satu objek</b></td><td>objek kiri cocok, objek kanan tidak diperiksa</td><td>Semua objek sudah dicocokkan?</td></tr>
+      <tr><td>2</td><td><b>Memakai aturan satu objek untuk objek lain</b></td><td>aturan dipindah menurut bentuk, bukan menurut letak</td><td>Objek ini menempati letak yang mana?</td></tr>
+      <tr><td>3</td><td><b>Membaca perubahan dari arah sebaliknya</b></td><td>tanda tanya di sisi kiri, tetapi aturan dipakai maju</td><td>Yang dicari gambar asal atau gambar hasil?</td></tr>
+      <tr><td>4</td><td><b>Lupa membalik warna, atau membalik yang tetap</b></td><td>bentuk benar, warnanya tidak berubah</td><td>Warna setiap objek sudah dibandingkan?</td></tr>
+      <tr><td>5</td><td><b>Lupa menukar tempat, atau menukar yang tetap</b></td><td>dua objek tetap di tempatnya</td><td>Letak setiap objek sudah dibandingkan?</td></tr>
+      <tr><td>6</td><td><b>Salah hitung lebih atau kurang satu</b></td><td>banyak lekuk kurang satu dari aturan</td><td>Bertambah berapa?</td></tr>
+      <tr><td>7</td><td><b>Membalik arah putar atau salah garis cermin</b></td><td>90° searah dibaca berlawanan arah</td><td>Penanda di atas pindah ke mana?</td></tr>
+      <tr><td>8</td><td><b>Menyimpulkan aturan dari satu bacaan</b></td><td>"ditambah 2" dipilih tanpa menguji "dikali 2"</td><td>Adakah bacaan lain yang juga cocok?</td></tr>
+    </tbody>
+  </table>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Padanan Nama Kekeliruan dan Kode</h4>
+    <p>1 JF-SATU (K2) · 2 JF-OBJEK (K5) · 3 J-BALIK (K3) · 4 JF-WARNA (K2) · 5 JF-TUKAR (K2) · 6 JF-HITUNG (K6) · 7 JF-ARAH / JF-SUMBU (K3) · 8 J-TIGA (K2; aturan dari satu pasangan atau satu bacaan).</p>
+  </div>
+
+  <h3>Contoh Soal dan Pembahasan</h3>
+  <p>Dua contoh berikut memperagakan satu perubahan yang sama pada dua objek, lalu perubahan jumlah yang digabung dengan tukar tempat. Kerjakan setiap contoh sendiri dalam target waktunya sebelum membaca pembahasan. Pembahasannya memuat kalimat perubahan setiap objek, uji bacaan lain, dan bagian Pilihan yang Gugur.</p>
+<!--B16-C01:mulai-->
+<div data-soal="HB-TIU-B16-C01" data-target="45">
+  <div class="soal">
+    <div class="meta"><span>Contoh 1</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 45 detik</span></div>
+    <p class="stem">Perhatikan hubungan gambar berikut. Gambar manakah yang tepat untuk mengganti tanda tanya?</p>
+    <img class="gbr" src="aset/figural/img/B16-C01.svg" alt="Gambar soal">
+    <div class="opsi5 gbr5"><div><span class="h">A</span><img src="aset/figural/img/B16-C01-A.svg" alt="Pilihan A"></div><div><span class="h">B</span><img src="aset/figural/img/B16-C01-B.svg" alt="Pilihan B"></div><div><span class="h">C</span><img src="aset/figural/img/B16-C01-C.svg" alt="Pilihan C"></div><div><span class="h">D</span><img src="aset/figural/img/B16-C01-D.svg" alt="Pilihan D"></div><div><span class="h">E</span><img src="aset/figural/img/B16-C01-E.svg" alt="Pilihan E"></div></div>
+  </div>
+  <div class="guru"><b>FIG-ANA-OBJ 2 objek (T2-E C16-1), tingkat 2, kunci B.</b> Contoh pertama satu aturan (T2-2): satu perubahan yang sama untuk kedua objek. Kode: JF-SATU, JF-ARAH, JF-SUMBU. Keluarga SATWA. Beda dari Bab 2 Contoh 5 (dua objek dengan perubahan berbeda: putar + balik warna).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Tanda tanya ada di posisi gambar (3). Soal meminta gambar untuk “mengganti tanda tanya”, yaitu gambar asal yang berubah menjadi gambar (4).</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><img class="gbr" src="aset/figural/img/B16-C01-pembahasan.svg" alt="Gambar pembahasan"><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Baca pasangan (1):(2), satu objek demi satu objek. Bulu dicermin atas-bawah, cakar juga dicermin atas-bawah, dan keduanya tetap di tempatnya. Cermin dua kali kembali ke asal, jadi gambar (3) didapat dengan mencerminkan bulu dan cakar di gambar (4) atas-bawah sekali lagi.</dd></div>
+    <div><dt>Cara lain</dt><dd>Coba setiap pilihan sebagai gambar (3) dan kenakan aturan maju. Pilihan yang benar berubah tepat menjadi gambar (4).</dd></div>
+    <div><dt>Cek balik</dt><dd>Letak objek tidak berpindah dari (1) ke (2), jadi di gambar (3) bulu tetap di kiri dan cakar di kanan. Semua pilihan memenuhi ini, jadi pembedanya ada pada arah dan warna setiap objek.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">bulu cermin kiri-kanan</span><b>Membalik arah putar atau salah garis cermin.</b> Bulu dicermin kiri-kanan, padahal aturannya cermin atas-bawah. Cakarnya juga dibalik warnanya, padahal di pasangan contoh warna tidak berubah.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">bulu tetap, cakar diputar 180°</span><b>Menyamakan putaran dengan pencerminan.</b> Bulu dibiarkan sama dengan gambar (4), dan cakar diputar 180°. Putaran 180° membalik atas-bawah dan kiri-kanan, jadi cakar ikut berbalik sisi.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">bulu tidak berubah</span><b>Hanya memeriksa satu objek.</b> Cakarnya sudah benar, tetapi bulu dibiarkan sama dengan gambar (4). Bulu juga harus dicermin atas-bawah.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">cakar diputar 180°</span><b>Menyamakan putaran dengan pencerminan.</b> Bulunya sudah benar, tetapi cakar diputar 180°. Cakar di E berbalik sisi kiri-kanan, sedangkan cermin atas-bawah tidak memindahkan sisi kiri-kanan.</div></div></div>
+  <div class="jwb"><span>B</span><p><b>Jawaban: B.</b> Pilihan B memuat bulu dan cakar dari gambar (4) yang masing-masing dicermin atas-bawah di tempatnya.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti membalik dua kartu di meja: kartu kiri dibalik di tempatnya, kartu kanan juga. Untuk mengembalikan keduanya, balik lagi masing-masing kartu sekali.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Memilih D atau E karena satu objek sudah cocok. Pilihan yang salah di soal ini hanya keliru di satu objek, jadi periksa bulu dan cakar sampai selesai.</span></div></div>
+</div>
+<!--B16-C01:selesai-->
+<!--B16-C02:mulai-->
+<div data-soal="HB-TIU-B16-C02" data-target="70">
+  <div class="soal">
+    <div class="meta"><span>Contoh 2</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 70 detik</span></div>
+    <p class="stem">Perhatikan hubungan gambar berikut. Gambar manakah yang tepat untuk mengganti tanda tanya?</p>
+    <img class="gbr" src="aset/figural/img/B16-C02.svg" alt="Gambar soal">
+    <div class="opsi5 gbr5"><div><span class="h">A</span><img src="aset/figural/img/B16-C02-A.svg" alt="Pilihan A"></div><div><span class="h">B</span><img src="aset/figural/img/B16-C02-B.svg" alt="Pilihan B"></div><div><span class="h">C</span><img src="aset/figural/img/B16-C02-C.svg" alt="Pilihan C"></div><div><span class="h">D</span><img src="aset/figural/img/B16-C02-D.svg" alt="Pilihan D"></div><div><span class="h">E</span><img src="aset/figural/img/B16-C02-E.svg" alt="Pilihan E"></div></div>
+  </div>
+  <div class="guru"><b>FIG-ANA-UBAH (T2-E C16-2), tingkat 3, kunci D.</b> Jumlah ±k pada dua objek atas + tukar + objek bawah dicermin; pembahasan menguji bacaan tambah vs kali. Kode: JF-HITUNG, JF-TUKAR, JF-SATU, J-TIGA. Keluarga TO·H keris + ranting (hitung), LAUT (bawah); pasangan hitung beda dari TO (lekuk + bintang, kerang + tunas, sayap + teratai).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Tanda tanya ada di posisi gambar (2). Soal meminta gambar untuk “mengganti tanda tanya”, yaitu hasil perubahan gambar (1). Ada tiga objek, dan yang berubah meliputi arah, tempat, dan jumlah bagian.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><img class="gbr" src="aset/figural/img/B16-C02-pembahasan.svg" alt="Gambar pembahasan"><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Baca pasangan yang lengkap, (3):(4), satu objek demi satu objek. Cincin tanduk 6 menjadi 5, jadi berkurang 1. Helai bulu 3 menjadi 5, jadi bertambah 2. Tanduk dan bulu bertukar tempat. Cakar di bawah dicermin atas-bawah. Terapkan ke gambar (1): cincin 5 menjadi 4, helai 3 menjadi 5, tukar tempat tanduk dan bulu, lalu cerminkan cakar atas-bawah.</dd></div>
+    <div><dt>Cara lain</dt><dd>Mulai dari yang paling mudah dilihat, yaitu tempat. Bulu harus di kiri atas dan tanduk di kanan atas, jadi B dan E gugur. Lalu hitung helai, yang harus 5: A dan C gugur. Tinggal D.</dd></div>
+    <div><dt>Cek balik</dt><dd>Hitung ulang di D: tanduk punya 4 cincin dan bulu punya 5 helai. Dibandingkan dengan gambar (1), cincinnya berkurang 1 dan helainya bertambah 2, sama dengan perubahan dari (3) ke (4).</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">cincin 5, helai 3</span><b>Lupa mengubah jumlah bagian.</b> Tempat dan cakarnya sudah benar, tetapi banyak cincin dan helai tidak diubah. Jumlah keduanya masih sama dengan gambar (1).</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">3 cincin, tempat tetap</span><b>Salah hitung lebih atau kurang satu.</b> Cincinnya dikurangi 2, padahal aturannya berkurang 1. Tanduk dan bulu juga belum bertukar tempat.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">helai 3, cakar tetap</span><b>Hanya memeriksa satu objek.</b> Tanduk dan tempatnya sudah benar, tetapi helai bulu tidak ditambah dan cakar tidak dicermin.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">helai 3, tempat tetap</span><b>Lupa menukar tempat, atau menukar yang tetap.</b> Helai bulu tidak ditambah, dan tanduk dan bulu belum bertukar tempat.</div></div></div>
+  <div class="jwb"><span>D</span><p><b>Jawaban: D.</b> Pilihan D punya 4 cincin dan 5 helai, tanduk dan bulunya sudah bertukar tempat, dan cakarnya dicermin atas-bawah.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti tiga orang yang diberi tugas berbeda: satu membuang satu kelereng, satu menambah dua kelereng, satu hanya membalik badan. Tugas mereka tidak boleh tertukar.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Rupa tanduk dan bulu ikut berubah ketika jumlah bagiannya berubah, jadi jangan mencocokkan rupa, cukup hitung. Pilihan yang salah sering benar di dua hal dan keliru di hal lain, jadi periksa ketiga objek sampai selesai.</span></div></div>
+</div>
+<!--B16-C02:selesai-->
+
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Asal Rancangan Bab 16</h4>
+    <p>Putusan T2-1b: Bab 16 = 1 pembuka + 2 contoh + 3 latihan (dari 7 latihan T2-E). Dipilih: L16-1 (tingkat 2, satu objek), L16-3 (tingkat 3, tiga objek, warna + tukar), L16-6 (tingkat 3, ubah jumlah). Alasan: tanda tanya di (2), (4), dan (4) melengkapi (3) di pembuka; dua jenis generator; penutup dua soal sulit (T2-2). Gugur: L16-2 ("?" di (1), tingkat 2; satu aturan hanya di latihan pertama) · L16-4 (tiga objek, "?" di (3); sudah di pembuka) · L16-5 (ukuran; ukuran tinggal di narasi + gambar penjelas Bab 14, lihat butir antre) · L16-7 (ubah jumlah dengan PADI bawah; PADI cadangan tipis).</p>
+    <p>Sebaran huruf rencana: P E · C1 B · C2 D · L1 A · L2 C · L3 E. Letak "?" seluruh bab: (3), (4), (4), (2), (4), (4).</p>
+  </div>
+
+  <div class="ringkas">
+    <h4>Ringkasan Bab 16</h4>
+    <ol>
+      <li>Analogi (1) : (2) = (3) : (4) berarti aturan perubahan yang sama dipasang dua kali.</li>
+      <li>Aturan dibawa <b>menurut letak</b> objek di gambar asal, bukan menurut bentuknya.</li>
+      <li>Tanda tanya di sisi kanan pasangan memakai aturan; di sisi kiri memakai <b>pembatal</b>. Hanya putaran 90° yang berganti arah saat dibatalkan.</li>
+      <li>Perubahan jumlah dapat dibaca tambah atau kali; uji semua bacaan yang cocok.</li>
+      <li>Perubahan lain ikut objek yang bertukar tempat; ukuran adalah lapis tersendiri.</li>
+      <li>Cek balik: kalimat perubahan pasangan kedua sama, objek demi objek, dengan pasangan pertama.</li>
+    </ol>
+  </div>
+</section>

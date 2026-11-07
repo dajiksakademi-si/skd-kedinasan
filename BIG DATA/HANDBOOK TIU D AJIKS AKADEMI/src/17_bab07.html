@@ -1,0 +1,229 @@
+<!-- ═════════ BAB 7 · PASANGAN OPERASI BERNILAI SAMA ═════════
+     Rencana: reports/tahap2_C_numerik.md Bab 7 + sebaran latihan T2-1b (3 latihan). Semua angka narasi dihitung di
+     scripts/cek_bab06_10.mjs; pasangan penjelas di narasi didaftarkan sebagai kerangka terlarang untuk soal T5. -->
+<section class="bab num" data-bab="7">
+  <header class="band">
+    <div class="no">7</div>
+    <div>
+      <h2>Pasangan Operasi</h2>
+      <p>Bab ini membahas faktor prima sebagai sidik jari bilangan, pemindahan faktor, pembagian sebagai perkalian silang, pasangan cermin dan cermin semu, serta soal bertanda TIDAK.</p>
+      <p class="waktu"><svg class="ico"><use href="#jam"/></svg>{{TARGET}}</p>
+    </div>
+    <div class="kisi" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="emas"></i></div>
+  </header>
+
+  <p class="lead">Soal pasangan operasi memberi lima pasangan, misalnya <i>a</i> × <i>b</i> dan <i>c</i> × <i>d</i>, lalu meminta pasangan yang kedua ruasnya bernilai sama. Menghitung sepuluh hasil kali memakan waktu yang tidak kamu miliki. Bab ini menunjukkan cara membandingkan dua ruas tanpa menyelesaikan keduanya: lewat susunan faktor primanya. Kerjakan pertanyaan pembuka berikut sebelum membaca uraiannya.</p>
+
+<!--B07-P01:mulai-->
+<div data-soal="HB-TIU-B07-P01" data-target="45">
+  <div class="soal">
+    <div class="meta"><span id="soal-B07-P01">Pertanyaan Pembuka<a class="ke" href="#bahas-B07-P01">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 45 detik</span></div>
+    <p class="stem">Pasangan perkalian berikut yang <mark>kedua ruasnya bernilai sama</mark> adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>28 × 54 dan 32 × 48</span></li><li><span class="h">B</span><span>24 × 63 dan 12 × 125</span></li><li><span class="h">C</span><span>27 × 56 dan 36 × 42</span></li><li><span class="h">D</span><span>31 × 49 dan 33 × 46</span></li><li><span class="h">E</span><span>18 × 84 dan 36 × 44</span></li></ol>
+  </div>
+  <div class="guru"><b>PAS kali, dua angka × dua angka, tanpa cermin.</b> Kunci C. Kode: A J-SISI · B J-SISI · C <b>kunci</b> · D J-SISI · E J-SISI. Kerangka: PAS kali · kunci bersidik prima sama tanpa pola cermin · 4 pilihan ruas kiri = 1.512 (A, B, E, kunci) · satu pilihan dua ruas berselisih 1 · satu faktor dipindah keliru. TO terdekat: TO P1 no. 42 (cermin semu sebagai pilihan salah); di sini tanpa cermin. Bukan 24 × 35, 28 × 30, 21 × 40, 26 × 32 (narasi). Bukti: kedua ruas tiap pilihan dihitung tepat. Kode = rencana slot. Ruas kiri A, B, E semuanya 1.512, jadi hanya menghitung ruas kiri tidak memisahkan apa pun. Revisi cek buta 1: pilihan E 18 × 84 dan 54 × 280 (ruas kanan sepuluh kali, terpencil) diganti 18 × 84 dan 36 × 44 (faktor dipindah keliru: 84 : 2 ditulis 44).</div>
+</div>
+<!--B07-P01:selesai-->
+
+  <h3>Faktor Prima sebagai Sidik Jari Bilangan</h3>
+  <p>Setiap bilangan bulat yang lebih dari 1 dapat ditulis sebagai hasil kali bilangan prima dengan cara tunggal, bila urutan faktornya diabaikan. Sifat ini disebut faktorisasi prima tunggal; kamu memakainya setiap kali mencari FPB dan KPK. Hasil kali dua bilangan hanya menggabungkan faktor prima keduanya. Akibatnya <b>dua perkalian bernilai sama tepat ketika gabungan faktor primanya sama</b>. Gabungan itu adalah besaran tetap bab ini: ia tidak berubah walaupun faktor-faktornya dipindah dari satu bilangan ke bilangan lain.</p>
+  <table class="tb">
+    <thead><tr><th style="width:17%">Perkalian</th><th style="width:36%">Faktor prima tiap bilangan</th><th style="width:30%">Gabungan</th><th class="n">Nilai</th></tr></thead>
+    <tbody>
+      <tr><td><b>24 × 35</b></td><td>24 = 2<sup>3</sup> × 3; 35 = 5 × 7</td><td>2<sup>3</sup> × 3 × 5 × 7</td><td class="n">840</td></tr>
+      <tr><td><b>28 × 30</b></td><td>28 = 2<sup>2</sup> × 7; 30 = 2 × 3 × 5</td><td>2<sup>3</sup> × 3 × 5 × 7</td><td class="n">840</td></tr>
+      <tr><td><b>21 × 40</b></td><td>21 = 3 × 7; 40 = 2<sup>3</sup> × 5</td><td>2<sup>3</sup> × 3 × 5 × 7</td><td class="n">840</td></tr>
+      <tr><td><b>26 × 32</b></td><td>26 = 2 × 13; 32 = 2<sup>5</sup></td><td>2<sup>6</sup> × 13</td><td class="n">832</td></tr>
+    </tbody>
+  </table>
+  <p>Baris terakhir gugur tanpa hitungan: faktor 13 tidak muncul di tiga perkalian lainnya. Faktor prima besar seperti 11, 13, atau 17 paling cepat diperiksa, sebab faktor itu harus muncul di kedua ruas.</p>
+
+  <h3>Memindahkan Faktor Tanpa Mengubah Hasil</h3>
+  <p>Bila satu faktor dibagi <i>k</i> dan faktor lainnya dikali <i>k</i>, hasil kalinya tetap. Contohnya, <span class="m">18 × 45 = (18 : 2) × (45 × 2) = 9 × 90 = 810</span>. Cara ini mengubah perkalian yang sulit menjadi perkalian yang mudah, dan menjadi alat cepat untuk menguji pasangan: ubah satu ruas sampai bentuknya menyerupai ruas lainnya.</p>
+  <p>Uji perbandingan yang sering diajarkan, <i>a</i> × <i>b</i> = <i>c</i> × <i>d</i> tepat ketika <i>a</i> : <i>c</i> = <i>d</i> : <i>b</i>, adalah sifat yang sama. Pada 24 × 35 dan 28 × 30, perbandingan 24 : 28 dan 30 : 35 sama-sama 6 : 7, sehingga kedua ruas bernilai sama.</p>
+
+  <h3>Pembagian sebagai Perkalian Silang</h3>
+  <p>Pembagian dikembalikan ke perkalian: <i>a</i> : <i>b</i> = <i>c</i> : <i>d</i> tepat ketika <i>a</i> × <i>d</i> = <i>b</i> × <i>c</i>. Kedua ruas dikalikan <i>b</i> × <i>d</i>, dan pembagiannya hilang. Ambil 672 : 16 dan 588 : 14. Perkalian silangnya <span class="m">672 × 14 = 9.408</span> dan <span class="m">16 × 588 = 9.408</span>, jadi kedua hasil bagi sama, yaitu 42.</p>
+
+  <h3>Pasangan Cermin dan Cermin Semu</h3>
+  <p>Pasangan berbentuk <i>a</i> × 10<i>b</i> dan <i>b</i> × 10<i>a</i> selalu bernilai sama, sebab keduanya sama dengan 10 × <i>a</i> × <i>b</i>. Contohnya 17 × 230 dan 23 × 170, keduanya 3.910. Pasangan yang hanya tampak seperti itu disebut <b>cermin semu</b>: angkanya ditukar antarfaktor, sehingga gabungan faktor primanya berubah. Pasangan 17 × 230 dan 27 × 130 memuat angka yang sama, tetapi nilainya 3.910 dan 3.510.</p>
+  <h4 class="sub">Bentuk <i>ab</i> × <i>cd</i> dan <i>ba</i> × <i>dc</i></h4>
+  <p>Tulis <i>ab</i> untuk bilangan dua angka 10<i>a</i> + <i>b</i>. Penjabaran (10<i>a</i> + <i>b</i>)(10<i>c</i> + <i>d</i>) = 100<i>ac</i> + 10(<i>ad</i> + <i>bc</i>) + <i>bd</i> memperlihatkan bahwa suku tengahnya sama pada kedua ruas. Selisih kedua ruas sama dengan 99 kali selisih <i>a</i> × <i>c</i> dan <i>b</i> × <i>d</i>. Akibatnya kedua ruas bernilai sama tepat ketika <i>a</i> × <i>c</i> = <i>b</i> × <i>d</i>.</p>
+  <table class="tb">
+    <thead><tr><th style="width:30%">Pasangan</th><th style="width:18%"><i>a</i> × <i>c</i></th><th style="width:18%"><i>b</i> × <i>d</i></th><th>Nilai kedua ruas</th></tr></thead>
+    <tbody>
+      <tr><td><b>12 × 42 dan 21 × 24</b></td><td>1 × 4 = 4</td><td>2 × 2 = 4</td><td>504 dan 504</td></tr>
+      <tr><td><b>12 × 43 dan 21 × 34</b></td><td>1 × 4 = 4</td><td>2 × 3 = 6</td><td>516 dan 714, berselisih 99 × 2 = 198</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Desimal, Persen, Pecahan, dan Tanda Kurung</h3>
+  <p>Desimal dan persen diubah ke pecahan sebelum dibandingkan, seperti di Bab 6. Pasangan 25% × 36 dan 1,5 × 6 bernilai sama: 25% × 36 = 36 : 4 = 9 dan 1,5 × 6 = 9. Tanda kurung dikerjakan lebih dulu, dan isi kurung yang sama belum menjamin hasil yang sama. Pada pasangan (12 + 8) × 15 dan (5 + 15) × 14, kedua kurung bernilai 20, tetapi hasilnya 300 dan 280.</p>
+
+  <h3>Soal Bertanda TIDAK</h3>
+  <p>Sebagian soal meminta pasangan yang kedua ruasnya <b>TIDAK</b> bernilai sama: empat pasangan sama dan satu berbeda. Baca perintah sebelum membaca pilihan, lalu tandai kata TIDAK. Yang dibandingkan tetap dua ruas dalam satu pasangan, bukan satu pasangan dengan pasangan lain. Setelah satu pasangan berbeda ditemukan, pastikan keempat pasangan lainnya memang sama. Bila kamu menemukan dua pasangan berbeda, salah satu hitunganmu keliru.</p>
+
+  <h3>Kapan Menghitung Langsung Lebih Cepat</h3>
+  <p>Faktorisasi tidak selalu jalan tercepat. Pada pembagian yang hasilnya bulat, hitung hasil baginya langsung setelah mencoret faktor bersama: 672 : 16 = 336 : 8 = 42 dan 588 : 14 = 294 : 7 = 42. Pada perkalian bilangan kecil seperti 6 × 15 dan 9 × 10, hitung saja; keduanya 90. Faktorisasi paling berguna untuk perkalian dua angka × dua angka dan sebagai cek balik.</p>
+
+  <h3>Langkah Penyelesaian Soal Pasangan</h3>
+  <div class="rules satu">
+    <div><b>Baca perintah.</b> Yang dicari pasangan yang sama atau pasangan yang TIDAK sama?</div>
+    <div><b>Gugurkan dengan uji murah:</b> angka satuan, banyak nol di belakang, dan faktor prima besar yang hanya muncul di satu ruas.</div>
+    <div><b>Perkalian:</b> pecah tiap bilangan menjadi faktor kecil, lalu coret faktor yang sama di kedua ruas. Sisanya harus habis.</div>
+    <div><b>Pembagian:</b> hitung hasil bagi langsung; kalikan silang sebagai cek.</div>
+    <div><b>Pasangan bertukar angka:</b> bedakan cermin sejati <i>a</i> × 10<i>b</i> dan <i>b</i> × 10<i>a</i> dari angka yang ditukar antarfaktor.</div>
+    <div><b>Cek balik:</b> hitung kedua ruas pasangan pilihanmu, dan pastikan pasangan lain gagal di salah satu ruas.</div>
+  </div>
+
+  <h3>Kekeliruan pada Soal Pasangan</h3>
+  <p>Setiap pilihan salah pada soal pasangan D'Ajiks lahir dari salah satu kekeliruan berikut. Nama-nama ini dipakai di setiap pembahasan bab ini.</p>
+  <table class="tb">
+    <thead><tr><th style="width:5%">No.</th><th style="width:31%">Kekeliruan</th><th>Contoh</th><th style="width:28%">Pertanyaan uji</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><b>Hanya memeriksa satu ruas</b></td><td>ruas kiri bernilai sama dengan jawaban yang dicari, ruas kanan tidak dihitung</td><td>Kedua ruas sudah dihitung?</td></tr>
+      <tr><td>2</td><td><b>Isi kurung sama, pengalinya berbeda</b></td><td>(12 + 8) × 15 dan (5 + 15) × 14</td><td>Pengalinya juga sama?</td></tr>
+      <tr><td>3</td><td><b>Mengira pasangan bertukar angka pasti sama</b></td><td>17 × 230 dan 27 × 130</td><td>Bentuknya <i>a</i> × 10<i>b</i> dan <i>b</i> × 10<i>a</i>?</td></tr>
+      <tr><td>4</td><td><b>Salah mengubah desimal atau persen ke pecahan</b></td><td>25% dibaca <span class="fr"><sup>1</sup>⁄<sub>5</sub></span></td><td>Pecahan itu sama dengan bilangan semula?</td></tr>
+      <tr><td>5</td><td><b>Kelebihan satu nol atau salah letak koma</b></td><td>pembagian oleh 0,4 dikerjakan seperti pembagian oleh 4</td><td>Letak koma sudah diperhitungkan?</td></tr>
+      <tr><td>6</td><td><b>Mengerjakan kebalikan perintah</b></td><td>mencari pasangan yang sama, padahal yang diminta TIDAK sama</td><td>Kata TIDAK sudah ditandai?</td></tr>
+      <tr><td>7</td><td><b>Menjumlahkan sebelum mengalikan</b></td><td>12 + 8 × 15 dihitung seperti (12 + 8) × 15</td><td>Ada tanda kurung di soal?</td></tr>
+    </tbody>
+  </table>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Padanan Nama Kekeliruan dan Kode</h4>
+    <p>1 J-SISI (K2) · 2 J-SISI isi kurung (K2) · 3 J-CERMIN (K5) · 4 J-SEDERHANA (K6) · 5 J-NOL (K6) · 6 J-PERINTAH (K4) · 7 J-URUTAN (K6). Larangan engine v0.4.1: bentuk <i>a</i> × 10<sup>k</sup><i>b</i> dan <i>b</i> × 10<sup>k</sup><i>a</i> selalu sama, tidak boleh menjadi opsi salah (lintCermin). Bentuk <i>ab</i> × <i>cd</i> dan <i>ba</i> × <i>dc</i> dengan <i>a</i>·<i>c</i> = <i>b</i>·<i>d</i> hanya boleh menjadi kunci.</p>
+  </div>
+
+<!--B07-P01-bahas:mulai-->
+  <h3 id="bahas-B07-P01">Pembahasan Pertanyaan Pembuka</h3>
+<div class="bahas-pembuka">
+  <div class="soal">
+    <div class="meta"><span>Pertanyaan Pembuka</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 45 detik</span></div>
+    <p class="stem">Pasangan perkalian berikut yang <mark>kedua ruasnya bernilai sama</mark> adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>28 × 54 dan 32 × 48</span></li><li><span class="h">B</span><span>24 × 63 dan 12 × 125</span></li><li><span class="h">C</span><span>27 × 56 dan 36 × 42</span></li><li><span class="h">D</span><span>31 × 49 dan 33 × 46</span></li><li><span class="h">E</span><span>18 × 84 dan 36 × 44</span></li></ol>
+  </div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta satu pasangan yang ruas kiri dan ruas kanannya sama besar. Kalimat penentunya “kedua ruasnya bernilai sama”: kedua ruas wajib diperiksa, bukan hanya ruas kiri.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Pecah tiap bilangan menjadi faktor kecil. 27 = 3 × 3 × 3 dan 56 = 2 × 2 × 2 × 7. 36 = 2 × 2 × 3 × 3 dan 42 = 2 × 3 × 7. Kedua ruas sama-sama memuat tiga angka 2, tiga angka 3, dan satu angka 7, jadi nilainya sama.</dd></div>
+    <div><dt>Cara lain</dt><dd>Pakai uji perbandingan: 27 : 36 = 3 : 4 dan 42 : 56 = 3 : 4. Perbandingannya sama, jadi 27 × 56 = 36 × 42 = 1.512.</dd></div>
+    <div><dt>Cek balik</dt><dd>Pastikan pilihan lain gagal di salah satu ruas: 32 × 48 = 1.536, 12 × 125 = 1.500, 31 × 49 = 1.519 sedangkan 33 × 46 = 1.518, dan 36 × 44 = 1.584.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">32 × 48 = 1.536</span><b>Hanya memeriksa satu ruas.</b> Ruas kiri 28 × 54 = 1.512 memang sama dengan nilai kunci, tetapi ruas kanannya 1.536. Ruas kanan hanya memuat satu faktor 3, padahal ruas kiri memuat tiga.</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">12 × 125 = 1.500</span><b>Hanya memeriksa satu ruas.</b> Ruas kiri 24 × 63 = 1.512, tetapi ruas kanan memuat faktor 5 yang tidak ada di ruas kiri.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">1.519 dan 1.518</span><b>Dua ruas berdekatan dikira sama.</b> Kedua ruas hanya berselisih 1. Berdekatan belum berarti sama; angka satuan 9 dan 8 sudah menunjukkan bedanya.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">36 × 44 = 1.584</span><b>Faktor dipindah dengan keliru.</b> Ruas kiri 18 × 84 = 1.512. Ruas kanan tampak seperti hasil memindahkan faktor 2, tetapi 84 : 2 = 42, bukan 44. Faktor yang dipindah harus tepat: 36 × 42 = 1.512.</div></div></div>
+  <div class="jwb"><span>C</span><p><b>Jawaban: C.</b> Faktor prima 27 × 56 dan 36 × 42 sama persis, dan keduanya bernilai 1.512.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti dua kantong kelereng: isinya sama bila banyak kelereng setiap warnanya sama, berapa pun cara kelereng itu dibagi ke dalam kantong-kantong kecil.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Berhenti di pilihan A karena 28 × 54 ternyata 1.512, lalu ruas kanannya tidak dihitung. Empat pilihan di soal ini punya ruas kiri bernilai 1.512; yang membedakan hanya ruas kanan.</span></div></div>
+  <p class="balik"><a class="ke" href="#soal-B07-P01">Kembali ke soal</a></p>
+</div>
+<!--B07-P01-bahas:selesai-->
+
+  <h3>Contoh Soal dan Pembahasan</h3>
+  <p>Tiga contoh berikut memperagakan pasangan bertukar angka, pasangan pembagian, dan pasangan campuran pembagian dan perkalian. Kerjakan setiap contoh sendiri dalam target waktunya sebelum membaca pembahasan.</p>
+<!--B07-C01:mulai-->
+<div data-soal="HB-TIU-B07-C01" data-target="45">
+  <div class="soal">
+    <div class="meta"><span>Contoh 1</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 45 detik</span></div>
+    <p class="stem">Di antara pasangan berikut, pasangan yang kedua ruasnya <mark>sama besar</mark> adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>34 × 260 dan 26 × 340</span></li><li><span class="h">B</span><span>38 × 270 dan 28 × 370</span></li><li><span class="h">C</span><span>52 × 170 dan 65 × 140</span></li><li><span class="h">D</span><span>46 × 190 dan 16 × 490</span></li><li><span class="h">E</span><span>68 × 130 dan 17 × 530</span></li></ol>
+  </div>
+  <div class="guru"><b>PAS kali, kunci cermin sejati, dua cermin semu.</b> Kunci A. Kode: A <b>kunci</b> · B J-CERMIN · C J-SISI · D J-CERMIN · E J-SISI. Kerangka: PAS kali · kunci cermin sejati a × 10b dan b × 10a · dua cermin semu (satu angka ditukar antarfaktor) · ruas kiri C dan E = nilai kunci. TO terdekat: TO P1 no. 42: cermin semu sebagai pilihan salah dan kunci bukan cermin; di sini kunci justru cermin sejati. Bukan 17 × 230, 23 × 170, 27 × 130 (narasi); bukan 28 × 330 / 38 × 230 (TO). Bukti: kedua ruas tiap pilihan dihitung tepat; lintCermin. Kode = rencana slot. Tiga pilihan tampak bertukar angka (A, B, D), jadi kunci bukan pasangan bercermin tunggal; lintCermin lulus. Revisi cek buta 1: pilihan E 68 × 13 dan 17 × 520 (sepuluh kali, terpencil) diganti 68 × 130 dan 17 × 530 (ruas kiri = nilai kunci, ruas kanan berdekatan).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta pasangan yang kedua ruasnya sama besar. Kalimat penentunya “sama besar”. Tiga pilihan tampak seperti angka yang dipertukarkan; tugasmu membedakan pertukaran yang menjaga nilai dari yang tidak.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Cari bentuk <i>a</i> × 10<i>b</i> dan <i>b</i> × 10<i>a</i>. Pada pilihan A, 34 × 260 = 34 × 26 × 10 dan 26 × 340 = 26 × 34 × 10. Kedua ruas memuat 34, 26, dan 10, jadi pasti sama.</dd></div>
+    <div><dt>Cara lain</dt><dd>Hitung langsung: 34 × 26 = 884, dan 884 × 10 = 8.840. Kedua ruas sama-sama 8.840.</dd></div>
+    <div><dt>Cek balik</dt><dd>Uji pilihan bertukar angka lainnya. Pada B, 38 × 270 = 10.260 dan 28 × 370 = 10.360. Pada D, 46 × 190 = 8.740 dan 16 × 490 = 7.840. Angka yang ditukar antarfaktor mengubah susunan faktor primanya.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">B</span><div class="x"><span class="uji">10.260 dan 10.360</span><b>Mengira pasangan bertukar angka pasti sama.</b> Angka 3 dan 2 ditukar antara 38 dan 270. Bilangannya berubah menjadi 28 dan 370, bukan sekadar berpindah tempat, jadi nilainya berbeda.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">65 × 140 = 9.100</span><b>Hanya memeriksa satu ruas.</b> Ruas kiri 52 × 170 = 8.840 sama dengan nilai kunci, tetapi ruas kanannya 9.100. Ruas kanan tidak pernah dihitung.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">8.740 dan 7.840</span><b>Mengira pasangan bertukar angka pasti sama.</b> Angka 4 dan 1 ditukar antara 46 dan 190. Hasilnya dua bilangan baru, 16 dan 490, dan kedua ruas berselisih 8.740 − 7.840 = 900.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">17 × 530 = 9.010</span><b>Hanya memeriksa satu ruas.</b> Ruas kiri 68 × 130 = 8.840 sama dengan nilai kunci. Ruas kanan tampak memindahkan faktor 4 dari 68 ke 130, tetapi 130 × 4 = 520, bukan 530: 17 × 530 = 9.010.</div></div></div>
+  <div class="jwb"><span>A</span><p><b>Jawaban: A.</b> Pilihan A berbentuk <i>a</i> × 10<i>b</i> dan <i>b</i> × 10<i>a</i>, sehingga kedua ruasnya pasti sama, yaitu 8.840.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti 3 kotak berisi 20 buku dan 2 kotak berisi 30 buku: 3 × 20 = 2 × 30 = 60. Lain halnya bila satu angka dipindah ke kotak lain: 3 × 21 = 63, sedangkan 2 × 31 = 62.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Mengira setiap pasangan yang angkanya tampak dipertukarkan pasti sama, lalu ragu di antara A, B, dan D. Pertukaran yang aman hanya memindahkan bilangan utuh dan nolnya; menukar satu angka di dalam bilangan selalu perlu dihitung.</span></div></div>
+</div>
+<!--B07-C01:selesai-->
+<!--B07-C02:mulai-->
+<div data-soal="HB-TIU-B07-C02" data-target="45">
+  <div class="soal">
+    <div class="meta"><span>Contoh 2</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 45 detik</span></div>
+    <p class="stem">Pasangan pembagian yang <mark>hasil kedua ruasnya sama</mark> adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>936 : 26 dan 1.110 : 30</span></li><li><span class="h">B</span><span>1.008 : 56 dan 252 : 7</span></li><li><span class="h">C</span><span>684 : 19 dan 875 : 25</span></li><li><span class="h">D</span><span>1.080 : 30 dan 544 : 16</span></li><li><span class="h">E</span><span>1.188 : 33 dan 792 : 22</span></li></ol>
+  </div>
+  <div class="guru"><b>PAS bagi, bagi murni, pembagi berfaktor 11.</b> Kunci E. Kode: A J-SISI · B J-SEDERHANA · C J-SISI · D J-SISI · E <b>kunci</b>. Kerangka: PAS bagi · tiga–empat angka : dua angka berfaktor 11 · tiga ruas kiri = 36 · satu pasangan tampak hasil coret (1.008 : 56 → 252 : 7). TO terdekat: TO P1 no. 41 (pilihan koma 2×); di sini koma tidak dipakai, kelebihan nol 1×. Bukan 672 : 16 dan 588 : 14 (narasi). Bukti: kedua ruas tiap pilihan dihitung tepat; kali silang kunci. Kode = rencana slot (J-SISI ×2, J-SEDERHANA coret keliru, J-NOL). Revisi cek buta 1: pilihan D 7.560 : 21 dan 1.080 : 30 (360, terpencil) diganti 1.080 : 30 dan 544 : 16 (36 dan 34).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta pembagian yang hasil kedua ruasnya sama. Kalimat penentunya “hasil kedua ruasnya sama”: hitung hasil bagi di kiri dan di kanan, lalu bandingkan.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Coret faktor yang sama. Pembilang dan penyebut ruas kiri sama-sama dibagi 11: 1.188 : 33 = 108 : 3 = 36. Ruas kanan juga dibagi 11: 792 : 22 = 72 : 2 = 36. Kedua ruas 36.</dd></div>
+    <div><dt>Cara lain</dt><dd>Kali silang: 1.188 × 22 = 26.136 dan 33 × 792 = 26.136. Hasil kali silang sama, jadi kedua hasil bagi sama.</dd></div>
+    <div><dt>Cek balik</dt><dd>Hitung ruas kanan pilihan lain: 1.110 : 30 = 37, 875 : 25 = 35, 544 : 16 = 34, dan 1.008 : 56 = 18 walaupun 252 : 7 = 36. Semua gagal di salah satu ruas.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">1.110 : 30 = 37</span><b>Hanya memeriksa satu ruas.</b> Ruas kiri 936 : 26 = 36, tetapi ruas kanan 37. Ruas kanan dilewati.</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">1.008 : 56 = 18</span><b>Mencoret faktor dengan keliru.</b> 252 : 7 tampak seperti bentuk sederhana dari 1.008 : 56, padahal 1.008 dibagi 4 sedangkan 56 dibagi 8. Pembilang dan penyebut harus dibagi bilangan yang sama: 1.008 : 56 = 126 : 7 = 18.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">875 : 25 = 35</span><b>Hanya memeriksa satu ruas.</b> Ruas kiri 684 : 19 = 36, ruas kanan 35. Selisih 1 tidak terlihat bila hanya ruas kiri yang dihitung.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">544 : 16 = 34</span><b>Hanya memeriksa satu ruas.</b> Ruas kiri 1.080 : 30 = 36, tetapi ruas kanan 34. Selisihnya kecil, jadi ruas kanan harus benar-benar dihitung.</div></div></div>
+  <div class="jwb"><span>E</span><p><b>Jawaban: E.</b> 1.188 : 33 dan 792 : 22 sama-sama 36, dan kali silangnya sama.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti membagi 1.188 roti ke 33 kelas dan 792 roti ke 22 kelas: setiap kelas tetap kebagian 36 roti.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Tergoda pilihan B karena 252 dan 7 tampak lahir dari 1.008 dan 56 setelah dicoret. Mencoret hanya sah bila pembilang dan penyebut dibagi bilangan yang sama.</span></div></div>
+</div>
+<!--B07-C02:selesai-->
+<!--B07-C03:mulai-->
+<div data-soal="HB-TIU-B07-C03" data-target="60">
+  <div class="soal">
+    <div class="meta"><span>Contoh 3</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 60 detik</span></div>
+    <p class="stem">Pasangan yang <mark>bernilai sama pada kedua ruasnya</mark> adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>72 : 8 × 6 dan 9 × 12 : 2</span></li><li><span class="h">B</span><span>81 : 9 × 6 dan 7 × 16 : 2</span></li><li><span class="h">C</span><span>120 : 6 × 2 dan 5 × 8 : 4</span></li><li><span class="h">D</span><span>64 : 8 × 7 dan 3 × 36 : 2</span></li><li><span class="h">E</span><span>45 : 5 × 6 dan 8 × 13 : 2</span></li></ol>
+  </div>
+  <div class="guru"><b>PAS campuran, bagi dan kali tanpa kurung, kiri ke kanan.</b> Kunci A. Kode: A <b>kunci</b> · B J-SISI · C J-URUTAN · D J-SISI · E J-SISI. Kerangka: PAS campuran : dan × tanpa kurung · ruas kiri B, E = 54 dan ruas kanan D = 54 · satu pasangan tampak sama bila kali dikerjakan sebelum bagi. TO terdekat: TO P1 no. 43 (berkurung + TIDAK); di sini tanpa kurung, perintah sama. Bukti: kedua ruas dihitung kiri ke kanan; jalur urutan keliru diuji. Slot memasang J-SEDERHANA; diganti J-URUTAN (120 : 6 × 2 dibaca 120 : 12), kekeliruan yang paling wajar pada bentuk tanpa kurung. Revisi cek buta 1: pilihan D 630 : 7 × 6 (540, terpencil) diganti 64 : 8 × 7 dan 3 × 36 : 2 (56 dan 54).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Setiap ruas memuat bagi dan kali tanpa tanda kurung. Kalimat penentunya “bernilai sama pada kedua ruasnya”. Kali dan bagi setingkat, jadi keduanya dikerjakan dari kiri ke kanan.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Ruas kiri A: 72 : 8 × 6 = 9 × 6 = 54. Ruas kanan A: 9 × 12 : 2 = 108 : 2 = 54. Kedua ruas 54.</dd></div>
+    <div><dt>Cara lain</dt><dd>Ubah bagi menjadi kali pecahan: 72 × <span class="fr"><sup>1</sup>⁄<sub>8</sub></span> × 6 = 54 dan 9 × 12 × <span class="fr"><sup>1</sup>⁄<sub>2</sub></span> = 54.</dd></div>
+    <div><dt>Cek balik</dt><dd>Ruas kiri B dan E juga 54, tetapi ruas kanannya 7 × 16 : 2 = 56 dan 8 × 13 : 2 = 52. Pada C, 120 : 6 × 2 = 40 sedangkan 5 × 8 : 4 = 10. Pada D, ruas kanannya 54 tetapi ruas kirinya 64 : 8 × 7 = 56.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">B</span><div class="x"><span class="uji">7 × 16 : 2 = 56</span><b>Hanya memeriksa satu ruas.</b> Ruas kiri 81 : 9 × 6 = 54 memang sama dengan kunci, tetapi ruas kanannya 56.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">120 : (6 × 2) = 10</span><b>Mengalikan sebelum membagi.</b> 6 × 2 dikerjakan lebih dulu, sehingga ruas kiri terlihat 10, sama dengan ruas kanan. Dari kiri ke kanan, 120 : 6 × 2 = 20 × 2 = 40.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">64 : 8 × 7 = 56</span><b>Hanya memeriksa satu ruas.</b> Ruas kanan 3 × 36 : 2 = 54 memang sama dengan kunci, tetapi ruas kirinya 64 : 8 × 7 = 8 × 7 = 56.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">8 × 13 : 2 = 52</span><b>Hanya memeriksa satu ruas.</b> Ruas kiri 45 : 5 × 6 = 54, ruas kanan 52. Satu ruas saja belum cukup.</div></div></div>
+  <div class="jwb"><span>A</span><p><b>Jawaban: A.</b> Dari kiri ke kanan, 72 : 8 × 6 = 54 dan 9 × 12 : 2 = 54.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti resep yang ditulis berurutan: 72 butir telur dibagi ke 8 nampan, lalu isi satu nampan dikalikan 6. Urutan langkah menentukan hasil; menukar urutannya sama dengan memasak resep lain.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Membaca 120 : 6 × 2 sebagai 120 : 12 karena kali terasa lebih kuat daripada bagi. Pada soal ini kesalahan itu membuat pilihan C tampak benar. Kali dan bagi setingkat; kerjakan dari kiri.</span></div></div>
+</div>
+<!--B07-C03:selesai-->
+
+  <h3>Latihan</h3>
+  <p>Tiga latihan berikut tersusun dari yang paling ringan, dengan target total {{WAKTU_LATIHAN}}. Kerjakan dengan pengatur waktu dan tanpa melihat pembahasan. Kunci dan pembahasannya ada di lampiran.</p>
+<!--B07-L01:mulai-->
+<div data-soal="HB-TIU-B07-L01" data-target="45">
+  <div class="soal">
+    <div class="meta"><span id="soal-B07-L01">Latihan 1<a class="ke" href="#bahas-B07-L01">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 45 detik</span></div>
+    <p class="stem">Pasangan perkalian yang <mark>kedua ruasnya bernilai sama</mark> adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>36 × 30 dan 12 × 60</span></li><li><span class="h">B</span><span>27 × 40 dan 9 × 120</span></li><li><span class="h">C</span><span>30 × 36 dan 90 × 18</span></li><li><span class="h">D</span><span>45 × 24 dan 90 × 8</span></li><li><span class="h">E</span><span>54 × 20 dan 27 × 10</span></li></ol>
+  </div>
+  <div class="guru"><b>PAS kali, faktor dipindah (× 2, : 2).</b> Kunci B. Kode: A J-SISI · B <b>kunci</b> · C J-SISI · D J-SISI · E J-SISI. Kerangka: PAS kali · ruas kiri kelima pilihan bernilai 1.080 · semua ruas kanan = pindah faktor yang rapi · kunci ÷3 ×3 · pengecoh ÷3 ×2, ×3 ÷2, ×2 ÷3, ÷2 ÷2. TO terdekat: tidak ada di TO P1; bukan 18 × 45 dan 9 × 90 (narasi). Bukti: kedua ruas tiap pilihan dihitung tepat. Kode = rencana slot. Dirujuk Latihan A Bab 19 (J-SISI). Revisi cek buta 1: pilihan E 24 × 70 dan 12 × 1.400 (sepuluh kali, terpencil) diganti 24 × 70 dan 48 × 36 (faktor dipindah keliru); kunci dipindah C → B untuk sebaran. Revisi cek buta 2: pola pindah faktor kini tepat di tiga pilihan (kunci ÷3 ×3, C ×3 ÷2, D ×2 ÷3) dan meleset tipis di dua pilihan, sehingga kunci tidak terbaca dari pola; nilai kunci 1.080. Revisi cek buta 3: A dan E diganti pasangan berpola rapi tetapi salah nilai (A 36 : 3 dan 30 × 2 → 12 × 60 = 720; E kedua faktor dibagi 2 → 27 × 10 = 270); kelima ruas kanan kini berpola pindah faktor yang rapi, hanya kunci yang pengali dan pembaginya sama.</div>
+</div>
+<!--B07-L01:selesai-->
+<!--B07-L02:mulai-->
+<div data-soal="HB-TIU-B07-L02" data-target="75">
+  <div class="soal">
+    <div class="meta"><span id="soal-B07-L02">Latihan 2<a class="ke" href="#bahas-B07-L02">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 75 detik</span></div>
+    <p class="stem">Pasangan berikut yang kedua ruasnya <mark><b>TIDAK</b> bernilai sama</mark> adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>1,25 × 56 dan <span class="fr"><sup>5</sup>⁄<sub>8</sub></span> × 120</span></li><li><span class="h">B</span><span>0,25 × 64 dan 8 : 0,5</span></li><li><span class="h">C</span><span>12,5% × 72 dan 0,36 × 25</span></li><li><span class="h">D</span><span>2<span class="fr"><sup>1</sup>⁄<sub>4</sub></span> × 16 dan 0,72 × 50</span></li><li><span class="h">E</span><span>1,2 × 35 dan 14 × 3</span></li></ol>
+  </div>
+  <div class="guru"><b>PAS TIDAK, desimal, persen, pecahan, tanpa kurung.</b> Kunci A. Kode: A <b>kunci</b> · B J-NOL · C J-SEDERHANA · D J-SEDERHANA · E J-PERINTAH. Kerangka: PAS perintah TIDAK · empat pasangan sama yang tampak beda oleh satu sebab (bagi desimal, persen, campuran, faktor dipindah) · kunci tampak sama ({5/8} ≈ 1,25 : 2). TO terdekat: TO P1 no. 43 (berkurung + TIDAK); di sini tanpa kurung. Bukan 25% × 36 dan 1,5 × 6 (narasi). Bukti: kedua ruas tiap pilihan dihitung tepat; tepat satu pasangan tidak sama. Kode = rencana slot (J-PERINTAH, J-NOL, J-SEDERHANA ×2).</div>
+</div>
+<!--B07-L02:selesai-->
+<!--B07-L03:mulai-->
+<div data-soal="HB-TIU-B07-L03" data-target="60">
+  <div class="soal">
+    <div class="meta"><span id="soal-B07-L03">Latihan 3<a class="ke" href="#bahas-B07-L03">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 60 detik</span></div>
+    <p class="stem">Pasangan perkalian yang kedua ruasnya <mark>sama besar</mark> adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>24 × 84 dan 42 × 48</span></li><li><span class="h">B</span><span>14 × 63 dan 41 × 36</span></li><li><span class="h">C</span><span>28 × 72 dan 82 × 27</span></li><li><span class="h">D</span><span>23 × 74 dan 32 × 47</span></li><li><span class="h">E</span><span>32 × 63 dan 23 × 36</span></li></ol>
+  </div>
+  <div class="guru"><b>PAS bertukar angka, ab × cd dan ba × dc.</b> Kunci A. Kode: A <b>kunci</b> · B J-CERMIN · C J-SISI · D J-CERMIN · E J-SISI. Kerangka: PAS ab × cd dan ba × dc · kunci memenuhi a·c = b·d · dua ruas kiri = 2.016 tanpa a·c = b·d · dua cermin biasa. TO terdekat: tidak ada di TO P1; bukan 12 × 42, 21 × 24, 12 × 43, 21 × 34 (narasi). Bukti: kedua ruas dihitung tepat + uji a·c = b·d. Kode = rencana slot. Kelima pilihan berbentuk sama, jadi bentuk tidak membocorkan kunci.</div>
+</div>
+<!--B07-L03:selesai-->
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Asal Rancangan Bab 7</h4>
+    <p>Putusan T2-1b: Bab 7 = 1 pembuka + 3 contoh + 3 latihan (dari 8 slot latihan laporan T2-C). Dipilih L1 (Standar: faktor dipindah), L8 (HOTS: perintah TIDAK yang memuat desimal, pecahan, dan faktor dipindah), L2 (HOTS+: <i>ab</i> × <i>cd</i> dan <i>ba</i> × <i>dc</i>). Alasan: tingkat naik; bersama contoh, ketujuh subbagian punya soal; kekeliruan tersebar di K2, K4, K5, K6; kerangka L8 tanpa kurung menjauh dari TO 43, L2 tidak ada di TO. Gugur: L3 dan L5 (kembar bentuk Contoh 2 dan 3, dekat TO 41 dan 43), L4 (bagi desimal; kekeliruan koma tetap dipasang di Contoh 2), L6 (isinya tertampung di L8), L7 (kurung, dekat TO 43; kekeliruan isi kurung tetap diajarkan di narasi).</p>
+  </div>
+
+  <div class="ringkas">
+    <h4>Ringkasan Bab 7</h4>
+    <ol>
+      <li>Dua perkalian bernilai sama tepat ketika <b>gabungan faktor primanya sama</b>.</li>
+      <li>Faktor prima besar yang hanya muncul di satu ruas menggugurkan pasangan tanpa hitungan.</li>
+      <li>Membagi satu faktor dan mengalikan faktor lain dengan bilangan yang sama tidak mengubah hasil.</li>
+      <li><i>a</i> : <i>b</i> = <i>c</i> : <i>d</i> tepat ketika <i>a</i> × <i>d</i> = <i>b</i> × <i>c</i>. Pembagian yang hasilnya bulat dihitung langsung.</li>
+      <li><i>a</i> × 10<i>b</i> dan <i>b</i> × 10<i>a</i> selalu sama; angka yang ditukar antarfaktor belum tentu sama. <i>ab</i> × <i>cd</i> = <i>ba</i> × <i>dc</i> tepat ketika <i>a</i> × <i>c</i> = <i>b</i> × <i>d</i>.</li>
+      <li>Tandai kata TIDAK, dan selalu hitung <b>kedua ruas</b> pasangan pilihanmu.</li>
+    </ol>
+  </div>
+</section>

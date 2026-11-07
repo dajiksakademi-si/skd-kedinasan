@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAT TWK — Uji Kesulitan (5 Soal)</title>
+<style>
+  :root{
+    --bg:#0f172a; --panel:#1e293b; --panel2:#334155; --line:#475569;
+    --text:#f1f5f9; --muted:#94a3b8; --accent:#38bdf8; --accent2:#0ea5e9;
+    --ok:#22c55e; --bad:#ef4444; --warn:#f59e0b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.55;min-height:100vh}
+  .wrap{max-width:860px;margin:0 auto;padding:20px}
+  header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 18px;background:var(--panel);border-radius:14px;margin-bottom:16px;flex-wrap:wrap}
+  header h1{font-size:16px;font-weight:700;letter-spacing:.3px}
+  .timer{font-variant-numeric:tabular-nums;background:var(--panel2);padding:6px 12px;border-radius:20px;font-weight:600;font-size:14px}
+  .card{background:var(--panel);border-radius:16px;padding:22px 24px}
+  .qmeta{font-size:12px;color:var(--muted);margin-bottom:10px;text-transform:uppercase;letter-spacing:.6px}
+  .stem{font-size:16.5px;margin-bottom:20px}
+  .opt{display:flex;gap:12px;align-items:flex-start;padding:13px 15px;border:1.5px solid var(--line);border-radius:12px;margin-bottom:10px;cursor:pointer;transition:.15s;background:transparent}
+  .opt:hover{border-color:var(--accent);background:rgba(56,189,248,.06)}
+  .opt.sel{border-color:var(--accent);background:rgba(56,189,248,.14)}
+  .opt .lab{font-weight:700;color:var(--accent);min-width:20px}
+  .opt.correct{border-color:var(--ok);background:rgba(34,197,94,.14)}
+  .opt.wrong{border-color:var(--bad);background:rgba(239,68,68,.14)}
+  .nav{display:flex;justify-content:space-between;align-items:center;margin-top:20px;gap:10px;flex-wrap:wrap}
+  .grid{display:flex;gap:8px;flex-wrap:wrap}
+  .dot{width:40px;height:40px;border-radius:10px;border:1.5px solid var(--line);background:var(--panel2);color:var(--text);font-weight:600;cursor:pointer;font-size:14px}
+  .dot.active{border-color:var(--accent);background:var(--accent);color:#03212f}
+  .dot.answered{border-color:var(--accent2)}
+  .dot.flag{border-color:var(--warn)}
+  button.btn{background:var(--accent);color:#03212f;border:none;padding:11px 20px;border-radius:10px;font-weight:700;cursor:pointer;font-size:14px}
+  button.btn:hover{background:var(--accent2)}
+  button.ghost{background:transparent;color:var(--text);border:1.5px solid var(--line)}
+  button.ghost:hover{border-color:var(--accent)}
+  .flagbtn{background:transparent;border:1.5px solid var(--warn);color:var(--warn);padding:9px 14px;border-radius:10px;cursor:pointer;font-weight:600;font-size:13px}
+  .flagbtn.on{background:var(--warn);color:#3a2600}
+  .center{text-align:center}
+  .big{font-size:40px;font-weight:800;margin:8px 0}
+  .muted{color:var(--muted)}
+  .res-item{background:var(--panel);border-radius:14px;padding:18px 20px;margin-bottom:14px;border-left:4px solid var(--line)}
+  .res-item.r-ok{border-left-color:var(--ok)}
+  .res-item.r-bad{border-left-color:var(--bad)}
+  .tag{display:inline-block;font-size:11px;padding:3px 9px;border-radius:20px;background:var(--panel2);color:var(--muted);margin-right:6px;font-weight:600}
+  .tag.slow{background:rgba(245,158,11,.2);color:var(--warn)}
+  .pemb{font-size:14px;color:var(--muted);margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
+  .hidden{display:none}
+  .row{display:flex;gap:14px;flex-wrap:wrap;margin-top:16px}
+  .stat{flex:1;min-width:120px;background:var(--panel2);border-radius:12px;padding:14px;text-align:center}
+  .stat .n{font-size:24px;font-weight:800}
+  .stat .l{font-size:12px;color:var(--muted)}
+  input.name{background:var(--panel2);border:1.5px solid var(--line);color:var(--text);padding:11px 14px;border-radius:10px;font-size:15px;width:100%;max-width:320px;margin:14px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- START -->
+  <section id="start" class="card center">
+    <div class="qmeta">Computer Assisted Test — Uji Coba</div>
+    <h1 style="font-size:22px;margin-bottom:6px">Tes Wawasan Kebangsaan</h1>
+    <p class="muted">5 soal · level Medium–HOTS · waktu direkam per soal</p>
+    <input class="name" id="pname" placeholder="Nama peserta (opsional)">
+    <p class="muted" style="font-size:13px;max-width:520px;margin:0 auto 18px">
+      Kerjakan seperti ujian sesungguhnya. Sistem mencatat waktu di tiap soal —
+      berguna melihat di nomor mana kamu terjebak lama. Kunci & pembahasan muncul di akhir.
+    </p>
+    <button class="btn" onclick="startTest()">Mulai Tes</button>
+  </section>
+
+  <!-- TEST -->
+  <section id="test" class="hidden">
+    <header>
+      <h1 id="hdrName">Peserta</h1>
+      <div class="timer">⏱ <span id="clock">00:00</span></div>
+    </header>
+    <div class="card">
+      <div class="qmeta">Soal <span id="qnum">1</span> dari 5 &nbsp;·&nbsp; ⏱ soal ini: <span id="qclock">00:00</span></div>
+      <div class="stem" id="stem"></div>
+      <div id="opts"></div>
+      <div class="nav">
+        <button class="flagbtn" id="flagBtn" onclick="toggleFlag()">⚑ Ragu-ragu</button>
+        <div class="grid" id="grid"></div>
+      </div>
+      <div class="nav">
+        <button class="ghost btn" onclick="prev()">‹ Sebelumnya</button>
+        <button class="btn" id="nextBtn" onclick="next()">Berikutnya ›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULT -->
+  <section id="result" class="hidden">
+    <div class="card center">
+      <div class="qmeta">Hasil Uji Coba</div>
+      <div class="big" id="score">0/5</div>
+      <div class="muted" id="scoreSub"></div>
+      <div class="row">
+        <div class="stat"><div class="n" id="totalTime">0:00</div><div class="l">Total waktu</div></div>
+        <div class="stat"><div class="n" id="avgTime">0s</div><div class="l">Rata-rata / soal</div></div>
+        <div class="stat"><div class="n" id="slowQ">-</div><div class="l">Paling lama</div></div>
+      </div>
+      <p class="muted" style="font-size:13px;margin-top:14px">Soal ditandai <span class="tag slow">LAMBAT</span> = waktu di atas 90 detik (indikasi jebakan HOTS).</p>
+    </div>
+    <div id="review" style="margin-top:16px"></div>
+    <div class="center" style="margin:20px 0">
+      <button class="btn" onclick="location.reload()">Ulangi Tes</button>
+    </div>
+  </section>
+
+</div>
+
+<script>
+/* ====== BANK SOAL (hardcoded) — engine L1/L2/L3 diterapkan ====== */
+const BANK = [
+  {
+    no:1, engine:"Tipe 1 · Cari Akarnya, Bukan Buahnya", level:"Medium–HOTS",
+    stem:"Di sebuah negara, warga taat membayar pajak, aparat bekerja efisien, dan program pembangunan berjalan lancar. Namun ketika seorang pejabat tinggi melanggar aturan, ia tidak pernah diproses sebagaimana warga biasa. Kondisi yang paling menunjukkan bahwa prinsip dasar bernegara secara hukum BELUM tegak adalah ...",
+    options:[
+      "Tingkat kepatuhan pajak yang tinggi ternyata tidak menjamin terwujudnya keadilan.",
+      "Kekuasaan tidak tunduk pada aturan yang sama seperti yang mengikat warga biasa.",
+      "Efisiensi kerja aparat belum diiringi pemerataan pelayanan bagi masyarakat.",
+      "Pembangunan berjalan tanpa pengawasan yang memadai dari masyarakat.",
+      "Ketaatan warga terhadap aturan belum diimbangi kesadaran hukum para pejabat."
+    ],
+    key:1,
+    pemb:"Hakikat negara hukum = hukum mengikat semua, termasuk kekuasaan (equality before the law). Distraktor A/C/D benar tapi hanya gejala turunan (pajak, efisiensi, pengawasan). Perangkap terkuat E — memakai kata 'hukum/aturan' (surface-match) dan terdengar tepat, tapi membingkainya sebagai 'kesadaran', bukan tunduknya kekuasaan pada hukum yang sama. Kunci B tidak menyebut istilah 'negara hukum' sama sekali."
+  },
+  {
+    no:2, engine:"Tipe 2 · Jangan Pilih yang Terlalu Ekstrem", level:"Medium–HOTS",
+    stem:"Pemerintah pusat mendorong digitalisasi UMKM secara nasional, sementara banyak pelaku usaha di daerah masih mengandalkan cara tradisional yang menjadi identitas ekonomi lokal. Kebijakan yang paling tepat adalah ...",
+    options:[
+      "Mewajibkan seluruh UMKM beralih ke platform digital agar tidak tertinggal secara nasional.",
+      "Menggabungkan keduanya dengan tetap menjadikan target digitalisasi nasional sebagai ukuran utama keberhasilan.",
+      "Memadukan digitalisasi dengan penguatan usaha tradisional melalui pendampingan bertahap dan insentif yang terukur.",
+      "Menyerahkan sepenuhnya kepada tiap daerah untuk menentukan cara berusaha masing-masing.",
+      "Menunda digitalisasi hingga seluruh pelaku usaha daerah menyatakan kesiapannya."
+    ],
+    key:2,
+    pemb:"Dua opsi sama-sama berbunyi 'menggabungkan/memadukan' (B & C) — pembeda ada di ISI, bukan bentuk. B keseimbangan semu: mengaku memadukan tapi diam-diam berat ke satu kutub (target nasional jadi ukuran tunggal). C benar karena menyeimbangkan DENGAN mekanisme konkret (pendampingan + insentif). A ekstrem seragam, D ekstrem lepas, E netral-pasif."
+  },
+  {
+    no:3, engine:"Tipe 4 · Beda Tipis Antar-Nilai", level:"Medium–HOTS",
+    stem:"Seorang jurnalis memperoleh data yang bisa menjatuhkan seorang tokoh yang secara pribadi tidak ia sukai. Setelah verifikasi, sebagian data tidak dapat dibuktikan. Ia akhirnya hanya memberitakan bagian yang terbukti, meski dampak beritanya jadi jauh lebih kecil. Nilai yang paling tepat tercermin dari tindakan tersebut adalah ...",
+    options:[
+      "Keberanian, karena ia tetap memberitakan seorang tokoh yang berpengaruh.",
+      "Kejujuran, karena ia tidak menambah atau membesar-besarkan informasi.",
+      "Objektivitas, karena ia memisahkan sikap pribadi dari fakta yang dapat dibuktikan.",
+      "Integritas, karena ia tetap memegang prinsip meski terhadap orang yang tidak ia sukai.",
+      "Netralitas, karena ia tidak berpihak kepada tokoh mana pun."
+    ],
+    key:2,
+    pemb:"Fitur pembeda di narasi = keputusan berbasis FAKTA yang terbukti sambil menyingkirkan suka/tidak suka → itu objektivitas. Perangkap terkuat D 'integritas' (jawaban default yang sering disambar) — benar sebagian tapi terlalu umum; yang ditonjolkan narasi bukan keselarasan prinsip melainkan pemisahan perasaan dari fakta. B/E juga near-synonym yang menggoda."
+  },
+  {
+    no:4, engine:"Tipe 5 · Pilih yang Benar Walau Berisiko", level:"Medium–HOTS",
+    stem:"Seorang panitia pengadaan mengetahui rekannya diam-diam menerima 'ucapan terima kasih' berupa uang dari vendor setelah proses lelang selesai. Rekannya berdalih uang itu diberikan sukarela dan tidak memengaruhi keputusan yang sudah terjadi. Langkah yang paling mencerminkan integritas adalah ...",
+    options:[
+      "Menegur rekannya secara pribadi agar mengembalikan pemberian tersebut.",
+      "Membiarkannya karena keputusan lelang memang sudah selesai dan tidak terpengaruh.",
+      "Mencatat kejadian itu sebagai pengingat untuk mengawasi rekannya di kemudian hari.",
+      "Melaporkan kejadian melalui mekanisme pengawasan yang berlaku meski merenggangkan hubungan.",
+      "Melaporkan secara anonim ke pihak luar agar dirinya tidak terseret konflik pribadi."
+    ],
+    key:3,
+    pemb:"Gratifikasi tetap pelanggaran walau diberikan 'setelah' keputusan — langkah benar = jalur pengawasan resmi meski berisiko personal (D). A menyelesaikan diam-diam (setengah jalan), B rasionalisasi, C menunda. E benar niat tapi salah kanal (anonim ke luar melompati prosedur). Kata 'lelang/vendor/pemberian' sengaja diulang di distraktor sebagai surface-trap."
+  },
+  {
+    no:5, engine:"Tipe 8 · Soal Bahasa Indonesia", level:"Medium",
+    stem:"Kalimat berikut tidak efektif: \"Berdasarkan hasil daripada rapat kemarin itu memutuskan bahwa kegiatan akan diundur sampai waktu yang belum ditentukan.\" Perbaikan yang paling tepat adalah ...",
+    options:[
+      "Berdasarkan hasil rapat kemarin, diputuskan bahwa kegiatan diundur sampai waktu yang belum ditentukan.",
+      "Berdasarkan daripada hasil rapat kemarin, kegiatan itu diputuskan untuk diundur.",
+      "Hasil rapat kemarin itu memutuskan bahwa kegiatan akan diundur sampai waktu yang belum ditentukan.",
+      "Rapat kemarin memutuskan kegiatan diundur sampai dengan waktu yang belum bisa untuk ditentukan.",
+      "Berdasarkan hasil rapat kemarin, maka kegiatan diundur sampai waktu yang belum ditentukan."
+    ],
+    key:0,
+    pemb:"Kunci A: menghilangkan 'daripada' (salah kaidah), memperbaiki subjek (rapat tidak bisa 'memutuskan' → diksi pasif 'diputuskan'), dan tanpa 'maka' yang mubazir. B tetap 'daripada'; C subjek keliru + 'itu'; D bertele ('bisa untuk'); E redundan 'Berdasarkan...maka'."
+  }
+];
+
+/* ====== STATE ====== */
+let cur=0, answers=Array(5).fill(null), flags=Array(5).fill(false);
+let qTime=Array(5).fill(0);           // akumulasi detik per soal
+let startTs=0, qEnterTs=0, totalStart=0;
+let clockInt;
+
+function startTest(){
+  const nm=document.getElementById('pname').value.trim()||'Peserta';
+  document.getElementById('hdrName').textContent=nm;
+  document.getElementById('start').classList.add('hidden');
+  document.getElementById('test').classList.remove('hidden');
+  totalStart=Date.now(); qEnterTs=Date.now();
+  clockInt=setInterval(tick,1000);
+  buildGrid(); render();
+}
+function tick(){
+  const t=Math.floor((Date.now()-totalStart)/1000);
+  document.getElementById('clock').textContent=fmt(t);
+  const q=qTime[cur]+Math.floor((Date.now()-qEnterTs)/1000);
+  document.getElementById('qclock').textContent=fmt(q);
+}
+function fmt(s){const m=Math.floor(s/60),x=s%60;return String(m).padStart(2,'0')+':'+String(x).padStart(2,'0');}
+
+function commitTime(){ qTime[cur]+=Math.floor((Date.now()-qEnterTs)/1000); qEnterTs=Date.now(); }
+
+function buildGrid(){
+  const g=document.getElementById('grid'); g.innerHTML='';
+  BANK.forEach((_,i)=>{
+    const d=document.createElement('button'); d.className='dot'; d.textContent=i+1;
+    d.onclick=()=>{commitTime();cur=i;render();};
+    g.appendChild(d);
+  });
+}
+function render(){
+  const q=BANK[cur];
+  document.getElementById('qnum').textContent=cur+1;
+  document.getElementById('stem').textContent=q.stem;
+  const box=document.getElementById('opts'); box.innerHTML='';
+  const labels=['A','B','C','D','E'];
+  q.options.forEach((o,i)=>{
+    const el=document.createElement('div');
+    el.className='opt'+(answers[cur]===i?' sel':'');
+    el.innerHTML=`<span class="lab">${labels[i]}</span><span>${o}</span>`;
+    el.onclick=()=>{answers[cur]=i;render();};
+    box.appendChild(el);
+  });
+  // flag btn
+  const fb=document.getElementById('flagBtn');
+  fb.classList.toggle('on',flags[cur]);
+  // grid state
+  document.querySelectorAll('.dot').forEach((d,i)=>{
+    d.classList.toggle('active',i===cur);
+    d.classList.toggle('answered',answers[i]!==null);
+    d.classList.toggle('flag',flags[i]);
+  });
+  document.getElementById('nextBtn').textContent = cur===4 ? 'Selesai ✓' : 'Berikutnya ›';
+  tick();
+}
+function toggleFlag(){flags[cur]=!flags[cur];render();}
+function prev(){ if(cur>0){commitTime();cur--;render();} }
+function next(){
+  if(cur<4){commitTime();cur++;render();}
+  else finish();
+}
+function finish(){
+  commitTime(); clearInterval(clockInt);
+  document.getElementById('test').classList.add('hidden');
+  const R=document.getElementById('result'); R.classList.remove('hidden');
+  let correct=0, total=0, slowIdx=-1, slowMax=-1;
+  qTime.forEach((t,i)=>{total+=t; if(t>slowMax){slowMax=t;slowIdx=i;}});
+  const labels=['A','B','C','D','E'];
+  const rv=document.getElementById('review'); rv.innerHTML='';
+  BANK.forEach((q,i)=>{
+    const ok=answers[i]===q.key; if(ok)correct++;
+    const slow=qTime[i]>90;
+    const item=document.createElement('div');
+    item.className='res-item '+(ok?'r-ok':'r-bad');
+    const pick=answers[i]===null?'<i>kosong</i>':labels[answers[i]];
+    item.innerHTML=`
+      <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center">
+        <strong>Soal ${i+1} ${ok?'✓':'✗'}</strong>
+        <div>
+          <span class="tag">${q.engine}</span>
+          <span class="tag">⏱ ${fmt(qTime[i])}</span>
+          ${slow?'<span class="tag slow">LAMBAT</span>':''}
+        </div>
+      </div>
+      <div style="margin-top:8px;font-size:14px" class="muted">${q.stem}</div>
+      <div style="margin-top:8px;font-size:14px">Jawabanmu: <b style="color:${ok?'var(--ok)':'var(--bad)'}">${pick}</b>
+         &nbsp;·&nbsp; Kunci: <b style="color:var(--ok)">${labels[q.key]}</b></div>
+      <div class="pemb">${q.pemb}</div>`;
+    rv.appendChild(item);
+  });
+  document.getElementById('score').textContent=correct+'/5';
+  document.getElementById('scoreSub').textContent='Skor '+(correct*20)+' / 100';
+  document.getElementById('totalTime').textContent=fmt(total);
+  document.getElementById('avgTime').textContent=Math.round(total/5)+'s';
+  document.getElementById('slowQ').textContent='Soal '+(slowIdx+1)+' ('+fmt(slowMax)+')';
+  window.scrollTo(0,0);
+}
+</script>
+</body>
+</html>

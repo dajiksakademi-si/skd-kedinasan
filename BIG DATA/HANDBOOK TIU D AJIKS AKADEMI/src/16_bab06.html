@@ -1,0 +1,359 @@
+<!-- ═════════ BAB 6 · OPERASI HITUNG DAN ESTIMASI ═════════
+     Rencana: reports/tahap2_C_numerik.md Bab 6 + sebaran latihan T2-1b (3 latihan). Pita, paragraf pembuka, subbagian
+     "Angka Satuan dan Sisa Pembagian oleh Sembilan", dan Contoh 1 diambil apa adanya dari prototipe/gaya_halaman_tiu.html
+     (DISETUJUI T3-a s.d. T3-f). Semua angka narasi dihitung di scripts/cek_bab06_10.mjs. Kotak soal lain = tempat kosong sampai T5. -->
+<section class="bab num" data-bab="6">
+  <header class="band">
+    <div class="no">6</div>
+    <div>
+      <h2>Hitung Cepat</h2>
+      <p>Bab ini membahas ukuran hasil hitung, pembulatan, angka satuan, sisa pembagian oleh sembilan, pecahan dan desimal yang ramah, serta perbandingan dua besaran. Semuanya dipakai untuk menggugurkan pilihan jawaban sebelum hitungan selesai.</p>
+      <p class="waktu"><svg class="ico"><use href="#jam"/></svg>{{TARGET}}</p>
+    </div>
+    <div class="kisi" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="emas"></i></div>
+  </header>
+
+  <p class="lead">Pada soal hitung, jawaban yang benar sudah tertulis di antara lima pilihan. Tugasmu sering kali bukan menghitung sampai angka terakhir, melainkan membuktikan bahwa empat pilihan lain mustahil. Ambil contoh 37 × 64. Sebelum menghitung, kamu sudah dapat memastikan tiga hal: hasilnya terletak di antara 30 × 60 = 1.800 dan 40 × 70 = 2.800; angka satuannya 8, karena 7 × 4 = 28; dan sisanya 1 bila dibagi 9. Hasil sebenarnya, 2.368, memenuhi ketiganya. Pilihan yang melanggar satu saja di antaranya gugur tanpa perlu dihitung.</p>
+  <p>Bab ini dibuka dengan satu soal perkiraan. Kerjakan dalam target waktunya sebelum membaca uraian, lalu periksa kembali jawabanmu setelah subbagian tentang pembulatan.</p>
+
+<!--B06-P01:mulai-->
+<div data-soal="HB-TIU-B06-P01" data-target="30">
+  <div class="soal">
+    <div class="meta"><span id="soal-B06-P01">Pertanyaan Pembuka<a class="ke" href="#bahas-B06-P01">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 30 detik</span></div>
+    <p class="stem">Bilangan berikut yang <mark>paling dekat</mark> dengan hasil 647 × 87 : 21 adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>1.800</b></div><div><span class="h">B</span><b>2.100</b></div><div><span class="h">C</span><b>2.400</b></div><div><span class="h">D</span><b>2.700</b></div><div><span class="h">E</span><b>3.000</b></div></div>
+  </div>
+  <div class="guru"><b>HIT perkiraan, (a × b) : c, pilihan berjauhan.</b> Kunci D. Kode: A J-BULAT · B J-BULAT · C J-BULAT · D <b>kunci</b> · E J-BULAT. Kerangka: HIT perkiraan · tiga angka × dua angka : dua angka · pilihan berjarak tetap 300 · empat jalur pembulatan sepihak. TO terdekat: TO P1 no. 37 (desimal + akar); bukan 46 × 76 dan 588 : 21 (narasi). Bukti: nilai tepat 56.289 : 21 = 2.680,43 terdekat ke D; tiap jalur pembulatan menunjuk pilihannya Jarak kunci ke pilihan terdekat 300, median jarak 300. Slot memasang J-NOL dan J-SEDERHANA; tidak dipakai: pilihan salah nol pasti berjarak sepuluh kali (melanggar jarak 12–20% slot), dan (a × b) : c tidak punya jalur salah sederhanakan yang wajar. Keempat pilihan salah = empat jalur pembulatan yang berbeda (preseden TO no. 41: satu kode lewat jalur berbeda). Revisi cek buta 1: pilihan E 3.150 (terpencil) diganti 3.000 = 600 × 100 : 20 (87 dibulatkan ke ratusan).</div>
+</div>
+<!--B06-P01:selesai-->
+
+  <h3>Konsep Besaran Tetap</h3>
+  <p>Lima bab numerik dalam buku ini, Bab 6 sampai Bab 10, berpegang pada satu pertanyaan: <b>besaran apa yang tidak berubah?</b> Besaran yang tetap memberi pegangan. Begitu besaran itu ditemukan, soal yang tampak panjang menyusut menjadi satu uji atau satu persamaan.</p>
+  <table class="tb">
+    <thead><tr><th style="width:30%">Bab</th><th style="width:34%">Besaran yang tetap</th><th>Akibatnya</th></tr></thead>
+    <tbody>
+      <tr><td><b>6</b> Hitung Cepat</td><td>ukuran hasil, angka satuan, dan sisa pembagian oleh 9, apa pun cara menghitungnya</td><td>pilihan yang ciri tetapnya berbeda gugur sebelum hitungan selesai</td></tr>
+      <tr><td><b>7</b> Pasangan Operasi</td><td>gabungan faktor prima suatu hasil kali</td><td>dua perkalian bernilai sama bila faktor primanya sama</td></tr>
+      <tr><td><b>8</b> Deret Angka dan Suku ke-n</td><td>selisih pada tingkat tertentu</td><td>tingkat selisih yang tetap menunjukkan pangkat pola</td></tr>
+      <tr><td><b>9</b> Deret Angka Tabel</td><td>aturan yang sama di setiap baris atau kolom</td><td>tabel dibaca sebagai rumus dengan satu atau dua masukan</td></tr>
+      <tr><td><b>10</b> Soal Cerita</td><td>laju, hasil kali, selisih umur, dan dasar persen</td><td>cerita panjang menjadi persamaan hasil = laju × waktu</td></tr>
+    </tbody>
+  </table>
+  <p>Di bab ini, besaran tetap itu ada tiga: ukuran hasil, angka satuan, dan sisa pembagian oleh 9. Ketiganya dapat ditentukan dalam beberapa detik dari angka soal, tanpa menyelesaikan hitungan.</p>
+
+  <h3>Ukuran Bilangan dan Banyak Angka Hasil</h3>
+  <p>Bilangan bulat yang terdiri atas <i>m</i> angka paling kecil 10<sup><i>m</i> − 1</sup> dan selalu kurang dari 10<sup><i>m</i></sup>. Bilangan tiga angka, misalnya, paling kecil 100 dan selalu kurang dari 1.000. Akibatnya hasil kali bilangan <i>m</i> angka dan bilangan <i>k</i> angka paling kecil 10<sup><i>m</i> + <i>k</i> − 2</sup> dan kurang dari 10<sup><i>m</i> + <i>k</i></sup>. Banyak angka hasilnya <i>m</i> + <i>k</i> − 1 atau <i>m</i> + <i>k</i>, tidak mungkin lain.</p>
+  <table class="tb">
+    <thead><tr><th style="width:26%">Perkalian</th><th style="width:26%">Banyak angka faktor</th><th style="width:24%" class="n">Hasil</th><th class="n">Banyak angka hasil</th></tr></thead>
+    <tbody>
+      <tr><td>12 × 34</td><td>2 dan 2</td><td class="n">408</td><td class="n">3</td></tr>
+      <tr><td>37 × 64</td><td>2 dan 2</td><td class="n">2.368</td><td class="n">4</td></tr>
+      <tr><td>125 × 80</td><td>3 dan 2</td><td class="n">10.000</td><td class="n">5</td></tr>
+    </tbody>
+  </table>
+  <p>Pilihan yang kelebihan atau kekurangan satu nol langsung gugur oleh uji ini. Pada bilangan desimal, hitung dulu tanpa koma, lalu pasang koma sebanyak jumlah angka di belakang koma pada kedua faktor. Perkalian 0,12 × 3,4 memuat tiga angka di belakang koma, sehingga hasilnya 0,408.</p>
+
+  <h3>Kapan Memperkirakan, Kapan Menghitung Tepat</h3>
+  <p>Perkiraan cukup bila jarak antarpilihan jauh lebih besar daripada galat perkiraanmu. Jarak itu diukur terhadap besar nilainya: bagilah selisih dua pilihan yang bertetangga dengan nilai pilihan di sekitarnya.</p>
+  <table class="tb">
+    <thead><tr><th style="width:36%">Pilihan</th><th style="width:18%">Jarak bertetangga</th><th style="width:26%">Jarak terhadap nilai</th><th>Cara</th></tr></thead>
+    <tbody>
+      <tr><td>1.200 · 1.500 · 1.800 · 2.100 · 2.400</td><td>300</td><td>±17% di sekitar 1.800</td><td>perkirakan</td></tr>
+      <tr><td>5.460 · 5.495 · 5.565 · 5.572 · 5.600</td><td>7 sampai 70</td><td>paling besar ±1,3%</td><td>hitung tepat</td></tr>
+    </tbody>
+  </table>
+  <p>Buku ini memakai patokan kerja berikut. Bila jarak bertetangga lebih dari ±10% nilainya, perkirakan dengan dua angka terdepan. Bila kurang, sederhanakan bentuknya lalu hitung tepat. Patokan ini pegangan latihan, bukan aturan ujian. Baris kedua tabel adalah pilihan Contoh 1 bab ini.</p>
+
+  <h3>Pembulatan Berlawanan Arah</h3>
+  <div class="konsep">
+    <div class="def">
+      <p>Setiap pembulatan menggeser nilai sebuah faktor beberapa persen. Pada perkalian, geseran relatif kedua faktor kira-kira dijumlahkan. Bila satu faktor dibulatkan naik dan faktor lain turun, kedua geseran saling menghapus. Bila keduanya naik, geserannya menumpuk.</p>
+      <p>Ambil 46 × 76 = 3.496. Pembulatan berlawanan arah, 50 × 70 = 3.500, hanya meleset ±0,1%. Pembulatan searah, 50 × 80 = 4.000, meleset ±14%, cukup jauh untuk jatuh ke pilihan lain.</p>
+    </div>
+    <table class="hit">
+      <thead><tr><th>Bilangan</th><th>Dibulatkan</th><th>Geser</th></tr></thead>
+      <tbody>
+        <tr><td>46</td><td>naik ke 50</td><td>+8,7%</td></tr>
+        <tr><td>76</td><td>turun ke 70</td><td>−7,9%</td></tr>
+        <tr><td>76</td><td>naik ke 80</td><td>+5,3%</td></tr>
+        <tr class="uji"><td>50 × 70</td><td>berlawanan</td><td>+0,1%</td></tr>
+        <tr class="uji"><td>50 × 80</td><td>searah</td><td>+14%</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Pada pembagian berlaku kebalikannya: bulatkan pembilang dan penyebut <b>searah</b>. Pembilang yang naik membesarkan hasil, penyebut yang naik mengecilkannya, sehingga dua kenaikan saling menghapus. Ambil 588 : 21 = 28. Pembulatan searah 580 : 20 = 29 meleset ±3,6%, sedangkan pembulatan berlawanan 600 : 20 = 30 meleset ±7,1%. Untuk bentuk (<i>a</i> × <i>b</i>) : <i>c</i>, bulatkan <i>a</i> dan <i>b</i> berlawanan arah, lalu bulatkan <i>c</i> searah dengan geseran hasil kali <i>a</i> × <i>b</i>.</p>
+
+  <h3>Angka Satuan dan Sisa Pembagian oleh Sembilan</h3>
+  <div class="konsep">
+    <div class="def">
+      <p><b>Angka satuan</b> adalah angka paling kanan pada bilangan bulat. Angka satuan hasil kali dua bilangan hanya bergantung pada angka satuan kedua faktornya.</p>
+      <p>Misalkan <i>a</i> = 10<i>p</i> + <i>x</i> dan <i>b</i> = 10<i>q</i> + <i>y</i>, dengan <i>x</i> dan <i>y</i> angka satuannya. Akibatnya <i>a</i> × <i>b</i> = 100<i>pq</i> + 10(<i>py</i> + <i>qx</i>) + <i>xy</i>. Dua suku pertama kelipatan 10, sehingga angka satuan <i>a</i> × <i>b</i> sama dengan angka satuan <i>x</i> × <i>y</i>.</p>
+    </div>
+    <table class="hit">
+      <thead><tr><th>Bilangan</th><th>Hitungan</th><th>Satuan</th></tr></thead>
+      <tbody>
+        <tr><td>47</td><td></td><td>7</td></tr>
+        <tr><td>38</td><td></td><td>8</td></tr>
+        <tr><td>47 × 38</td><td>7 × 8 = 56</td><td>6</td></tr>
+        <tr class="uji"><td>1.786</td><td>uji kembali</td><td>6</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="konsep">
+    <div class="def">
+      <p><b>Sisa pembagian oleh 9</b> sebuah bilangan sama dengan sisa pembagian oleh 9 dari jumlah angka-angkanya. Sisa ini mengikuti operasi hitung: sisa hasil kali sama dengan sisa dari hasil kali sisa-sisanya.</p>
+      <p>Perhatikan bahwa 10 = 9 + 1, 100 = 99 + 1, dan 1.000 = 999 + 1. Setiap nilai tempat bersisa 1 bila dibagi 9. Akibatnya 5.732 = 5 × 1.000 + 7 × 100 + 3 × 10 + 2 bersisa sama dengan 5 + 7 + 3 + 2 = 17, yaitu 8. Alasan yang sama membuat koma desimal boleh diabaikan, asalkan hasil hitungnya bilangan bulat.</p>
+    </div>
+    <table class="hit">
+      <thead><tr><th>Bilangan</th><th>Jumlah angka</th><th>Sisa</th></tr></thead>
+      <tbody>
+        <tr><td>47</td><td>4 + 7 = 11</td><td>2</td></tr>
+        <tr><td>38</td><td>3 + 8 = 11</td><td>2</td></tr>
+        <tr><td>47 × 38</td><td>2 × 2</td><td>4</td></tr>
+        <tr class="uji"><td>1.786</td><td>1 + 7 + 8 + 6 = 22</td><td>4</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Urutan pemeriksaannya tetap. Bandingkan dulu ukuran pilihan dengan taksiran, lalu gugurkan pilihan yang angka satuannya berbeda, kemudian yang sisa pembagiannya oleh 9 berbeda. Bila masih tersisa lebih dari satu pilihan, barulah hitung tepat.</p>
+
+  <div class="note catatan">
+    <h4>Catatan</h4>
+    <p>Uji sisa pembagian oleh 9 tidak dapat membedakan angka yang tertukar tempat, misalnya 2.368 dan 2.638, maupun nol yang bergeser, misalnya 2.368 dan 23.680. Ketiga bilangan itu sama-sama bersisa 1 karena selisihnya kelipatan 9. Nol yang bergeser gugur oleh uji ukuran. Angka yang tertukar tempat belum tentu gugur oleh uji apa pun; bila dua pilihan yang tersisa hanya berbeda susunan angkanya, hitunglah tepat.</p>
+  </div>
+
+  <h3>Pecahan, Desimal, dan Persen yang Ramah</h3>
+  <p>Desimal dan persen tertentu adalah pecahan sederhana dalam bentuk lain. Mengubahnya ke pecahan lebih dulu membuat sebuah perkalian menjadi satu pembagian kecil dan satu perkalian kecil.</p>
+  <table class="tb">
+    <thead><tr><th>Desimal</th><th>Persen</th><th>Pecahan</th><th>Desimal</th><th>Persen</th><th>Pecahan</th></tr></thead>
+    <tbody>
+      <tr><td>0,125</td><td>12,5%</td><td><span class="fr"><sup>1</sup>⁄<sub>8</sub></span></td><td>0,5</td><td>50%</td><td><span class="fr"><sup>1</sup>⁄<sub>2</sub></span></td></tr>
+      <tr><td>0,2</td><td>20%</td><td><span class="fr"><sup>1</sup>⁄<sub>5</sub></span></td><td>0,625</td><td>62,5%</td><td><span class="fr"><sup>5</sup>⁄<sub>8</sub></span></td></tr>
+      <tr><td>0,25</td><td>25%</td><td><span class="fr"><sup>1</sup>⁄<sub>4</sub></span></td><td>0,75</td><td>75%</td><td><span class="fr"><sup>3</sup>⁄<sub>4</sub></span></td></tr>
+      <tr><td>0,375</td><td>37,5%</td><td><span class="fr"><sup>3</sup>⁄<sub>8</sub></span></td><td>0,875</td><td>87,5%</td><td><span class="fr"><sup>7</sup>⁄<sub>8</sub></span></td></tr>
+    </tbody>
+  </table>
+  <p>Contohnya, 0,375 × 1.600 sama dengan <span class="fr"><sup>3</sup>⁄<sub>8</sub></span> × 1.600. Bagi dulu, 1.600 : 8 = 200, lalu kalikan, 3 × 200 = 600. Urutan bagi dulu, baru kali, menjaga bilangan tetap kecil. Bilangan yang dekat dengan bilangan bulat diperlakukan seperti pada Contoh 1: tulis sebagai bilangan bulat dikurangi selisih kecil, misalnya 0,98 = 1 − 0,02.</p>
+  <p>Persen juga boleh ditukar. Nilai <i>a</i>% dari <i>b</i> sama dengan <i>b</i>% dari <i>a</i>, sebab keduanya sama dengan <i>a</i> × <i>b</i> : 100. Akibatnya 18% dari 50 sama dengan 50% dari 18, yaitu 9.</p>
+
+  <h3>Sifat Distributif dan Urutan Operasi</h3>
+  <p>Sifat distributif, <i>a</i> × (<i>b</i> + <i>c</i>) = <i>a</i> × <i>b</i> + <i>a</i> × <i>c</i>, mengubah satu perkalian sulit menjadi dua perkalian mudah. Pengali yang dekat dengan 10, 100, atau 1.000 paling diuntungkan: <span class="m">47 × 99 = 47 × 100 − 47 = 4.653</span> dan <span class="m">36 × 101 = 3.600 + 36 = 3.636</span>. Arah sebaliknya sama bergunanya: <span class="m">13 × 27 + 13 × 73 = 13 × 100 = 1.300</span>.</p>
+  <p>Urutan operasi menentukan hasil. Kerjakan isi kurung lebih dulu, lalu kali dan bagi dari kiri ke kanan, kemudian tambah dan kurang dari kiri ke kanan.</p>
+  <table class="tb">
+    <thead><tr><th style="width:26%">Bentuk</th><th style="width:34%">Urutan yang benar</th><th>Urutan yang keliru</th></tr></thead>
+    <tbody>
+      <tr><td><b>48 : 6 × 2</b></td><td>8 × 2 = 16</td><td>48 : 12 = 4</td></tr>
+      <tr><td><b>20 − 8 + 3</b></td><td>12 + 3 = 15</td><td>20 − 11 = 9</td></tr>
+      <tr><td><b>5 + 3 × 4</b></td><td>5 + 12 = 17</td><td>8 × 4 = 32</td></tr>
+      <tr><td><b>7 − (−5)</b></td><td>7 + 5 = 12</td><td>7 − 5 = 2</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Perbandingan Kuantitatif</h3>
+  <p>Soal perbandingan kuantitatif memberi dua besaran, P dan Q, lalu menanyakan hubungan keduanya. Kisi-kisi resmi TIU memuat bentuk ini. Buku ini memakai empat pilihan tetap yang saling meniadakan, sehingga jawabannya selalu tunggal.</p>
+  <div class="rules">
+    <div><b>P &gt; Q</b></div>
+    <div><b>P &lt; Q</b></div>
+    <div><b>P = Q</b></div>
+    <div><b>Hubungan P dan Q tidak dapat ditentukan</b></div>
+  </div>
+  <p>P dan Q dibandingkan tanpa menghitung penuh. Carilah bentuk yang membuat selisih keduanya terlihat.</p>
+  <table class="tb">
+    <thead><tr><th style="width:12%">P</th><th style="width:12%">Q</th><th>Cara membandingkan</th><th style="width:14%">Hubungan</th></tr></thead>
+    <tbody>
+      <tr><td><span class="fr"><sup>7</sup>⁄<sub>8</sub></span></td><td><span class="fr"><sup>8</sup>⁄<sub>9</sub></span></td><td><span class="fr"><sup>7</sup>⁄<sub>8</sub></span> = 1 − <span class="fr"><sup>1</sup>⁄<sub>8</sub></span> dan <span class="fr"><sup>8</sup>⁄<sub>9</sub></span> = 1 − <span class="fr"><sup>1</sup>⁄<sub>9</sub></span>; yang dikurangkan dari 1 lebih kecil pada Q</td><td><b>P &lt; Q</b></td></tr>
+      <tr><td>49 × 51</td><td>50 × 50</td><td>49 × 51 = (50 − 1)(50 + 1) = 2.500 − 1 = 2.499</td><td><b>P &lt; Q</b></td></tr>
+    </tbody>
+  </table>
+  <p>Bila P dan Q memuat peubah, hubungannya harus diperiksa untuk <b>setiap</b> nilai yang diizinkan. Misalkan <i>x</i> bilangan bulat dengan 1 ≤ <i>x</i> ≤ 3, P = <i>x</i><sup>2</sup>, dan Q = 3<i>x</i> − 2. Nilai <i>x</i> = 1 dan <i>x</i> = 2 memberi P = Q, sedangkan <i>x</i> = 3 memberi P = 9 dan Q = 7. Hubungannya berubah menurut nilai <i>x</i>; jawabannya "hubungan P dan Q tidak dapat ditentukan". Siapa pun yang hanya mencoba <i>x</i> = 1 akan menjawab P = Q. Cara memeriksa semua keadaan seperti ini dibahas tuntas di Bab 11.</p>
+  <div class="note catatan">
+    <h4>Catatan</h4>
+    <p>Format resmi pilihan soal perbandingan kuantitatif belum diverifikasi. Di ujian, soal semacam ini mungkin muncul dengan lima pilihan. Bila pilihan kelima berupa hubungan khusus, misalnya "P = 2Q", periksa pilihan itu seperti pilihan lain: taksir atau hitung P dan Q, lalu uji hubungannya.</p>
+  </div>
+
+  <h3>Langkah Penyelesaian Soal Hitung</h3>
+  <div class="rules satu">
+    <div><b>Baca kalimat penentu.</b> "Hasil dari" meminta nilai tepat; "paling mendekati" meminta perkiraan.</div>
+    <div><b>Lihat pilihan.</b> Ukur jarak antarpilihan terhadap besar nilainya.</div>
+    <div><b>Jarak jauh:</b> perkirakan dengan dua angka terdepan. Perkalian dibulatkan berlawanan arah, pembagian searah.</div>
+    <div><b>Jarak rapat:</b> ubah desimal atau persen ke pecahan ramah, pakai sifat distributif, lalu hitung tepat.</div>
+    <div><b>Gugurkan pilihan</b> dengan uji ukuran, angka satuan, dan sisa pembagian oleh 9.</div>
+    <div><b>Cek balik</b> dengan sisa pembagian oleh 9 atau dengan cara hitung kedua.</div>
+  </div>
+
+  <h3>Kekeliruan pada Soal Hitung</h3>
+  <p>Setiap pilihan salah pada soal hitung D'Ajiks lahir dari salah satu kekeliruan berikut. Nama-nama ini dipakai di setiap pembahasan bab ini.</p>
+  <table class="tb">
+    <thead><tr><th style="width:5%">No.</th><th style="width:30%">Kekeliruan</th><th>Contoh</th><th style="width:30%">Pertanyaan uji</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><b>Kelebihan satu nol atau salah letak koma</b></td><td>0,12 × 3,4 ditulis 4,08</td><td>Berapa angka di belakang koma?</td></tr>
+      <tr><td>2</td><td><b>Membulatkan semua bilangan ke arah yang sama</b></td><td>46 × 76 diperkirakan 50 × 80</td><td>Arah pembulatannya sudah berlawanan?</td></tr>
+      <tr><td>3</td><td><b>Menjumlahkan sebelum mengalikan atau membagi</b></td><td>5 + 3 × 4 dihitung 32</td><td>Kali dan bagi sudah dikerjakan lebih dulu?</td></tr>
+      <tr><td>4</td><td><b>Salah menyederhanakan pecahan</b></td><td>3 <span class="fr"><sup>39</sup>⁄<sub>40</sub></span> ditulis <span class="fr"><sup>157</sup>⁄<sub>40</sub></span></td><td>Pecahan itu sama dengan bilangan semula?</td></tr>
+      <tr><td>5</td><td><b>Berhenti satu langkah sebelum selesai</b></td><td>5.600 belum dikurangi 35</td><td>Semua langkah sudah dikerjakan?</td></tr>
+      <tr><td>6</td><td><b>Persen dihitung dari bilangan yang salah</b></td><td>2,5% dari 5.600, padahal yang dikurangkan 0,025 × 1.400</td><td>Persen ini persen dari bilangan apa?</td></tr>
+      <tr><td>7</td><td><b>Salah tanda</b></td><td>7 − (−5) dihitung 2</td><td>Tanda minus di depan kurung sudah diperhitungkan?</td></tr>
+      <tr><td>8</td><td><b>Memakai data yang tidak dibutuhkan</b></td><td>angka keterangan di soal ikut dikalikan</td><td>Angka ini masuk hitungan?</td></tr>
+      <tr><td>9</td><td><b>Menganggap yang mungkin benar sebagai pasti benar</b></td><td>P dan Q hanya diuji untuk <i>x</i> = 1</td><td>Setiap nilai <i>x</i> sudah diperiksa?</td></tr>
+      <tr><td>10</td><td><b>Hubungan yang pasti dikira tidak dapat ditentukan</b></td><td>menyerah karena P dan Q sulit dihitung penuh</td><td>Ada bentuk yang membuat selisihnya terlihat?</td></tr>
+    </tbody>
+  </table>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Padanan Nama Kekeliruan dan Kode</h4>
+    <p>1 J-NOL (K6) · 2 J-BULAT (K6) · 3 J-URUTAN (K6) · 4 J-SEDERHANA (K6) · 5 J-LANGKAH (K2) · 6 J-BASIS (K3) · 7 J-TANDA (K3) · 8 J-PENGALIH (K1) · 9 J-MUNGKIN (K4) · 10 J-TENTU (K4). Kalimat guru = kolom "Kalimat guru" engine v0.4.3 Pilar 3, dilengkapi contoh dari narasi bab ini. Pada soal perbandingan kuantitatif, J-BULAT juga berarti pembulatan sepihak yang membalik atau menyamakan hubungan P dan Q.</p>
+  </div>
+
+<!--B06-P01-bahas:mulai-->
+  <h3 id="bahas-B06-P01">Pembahasan Pertanyaan Pembuka</h3>
+<div class="bahas-pembuka">
+  <div class="soal">
+    <div class="meta"><span>Pertanyaan Pembuka</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 30 detik</span></div>
+    <p class="stem">Bilangan berikut yang <mark>paling dekat</mark> dengan hasil 647 × 87 : 21 adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>1.800</b></div><div><span class="h">B</span><b>2.100</b></div><div><span class="h">C</span><b>2.400</b></div><div><span class="h">D</span><b>2.700</b></div><div><span class="h">E</span><b>3.000</b></div></div>
+  </div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta perkiraan, bukan hasil tepat. Kalimat penentunya “paling dekat”: cukup cari pilihan yang jaraknya paling kecil dari hasil sebenarnya. Pilihan yang bersebelahan berjarak 300, jauh lebih besar daripada geseran pembulatan yang rapi.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat<small>paling lama 30 detik</small></dt><dd>Bulatkan 647 turun menjadi 600 dan 87 naik menjadi 90, supaya geserannya saling menghapus. Hasil kali 600 × 90 = 54.000 sedikit di bawah hasil kali sebenarnya, jadi pembagi 21 juga dibulatkan turun menjadi 20. Hasilnya 54.000 : 20 = 2.700.</dd></div>
+    <div><dt>Cara lain</dt><dd>Lihat dulu 87 : 21. Karena 84 : 21 = 4, nilai 87 : 21 sedikit di atas 4. Hasil soal sedikit di atas 647 × 4 = 2.588, dengan tambahan 647 × 3 : 21, kira-kira 90. Perkiraannya sekitar 2.680, paling dekat ke 2.700.</dd></div>
+    <div><dt>Cek balik</dt><dd>Kalikan balik: 2.700 × 21 = 56.700, sedangkan 647 × 87 = 56.289. Selisihnya kurang dari 1%. Pilihan tetangga 2.400 × 21 = 50.400 sudah meleset lebih dari 10%.</dd></div>
+  </dl></div>
+  <div class="gugur"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><span class="v">1.800<span class="uji">600 × 90 : 30</span></span><div class="x"><b>Pembagi dibulatkan ke arah yang salah.</b> 21 dibulatkan naik menjadi 30 agar searah dengan 87 yang naik ke 90. Padahal arah pembagi mengikuti geseran hasil kali 600 × 90, yang turun. Pembagi yang naik membuat hasilnya terlalu kecil.</div></div><div class="g"><span class="h">B</span><span class="v">2.100<span class="uji">700 × 90 : 30</span></span><div class="x"><b>Ketiga bilangan dibulatkan naik.</b> Ketiga bilangan dibulatkan ke atas. Pembulatan 647 ke 700 saja sudah menggeser hasil sekitar 8%, dan 21 ke 30 menggesernya jauh lebih besar lagi.</div></div><div class="g"><span class="h">C</span><span class="v">2.400<span class="uji">600 × 80 : 20</span></span><div class="x"><b>Kedua faktor dibulatkan turun.</b> 647 dan 87 sama-sama dibulatkan turun. Dua geseran ke bawah menumpuk, jadi hasilnya jatuh sekitar 10% di bawah nilai sebenarnya.</div></div><div class="g"><span class="h">E</span><span class="v">3.000<span class="uji">600 × 100 : 20</span></span><div class="x"><b>Pembulatan terlalu kasar.</b> 87 dibulatkan ke ratusan menjadi 100, padahal 87 jauh lebih dekat ke 90. Pembulatan sekasar itu menggeser faktor 87 kira-kira 15% ke atas, dan hasilnya ikut naik.</div></div></div>
+  <div class="jwb"><span>D</span><p><b>Jawaban: D.</b> Pembulatan berlawanan arah dengan pembagi searah memberi 2.700, dan nilai sebenarnya, sekitar 2.680, paling dekat ke pilihan ini.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti menaksir belanja di pasar: harga yang dibulatkan ke atas dan banyak barang yang dibulatkan ke bawah saling menutupi, sehingga taksiran totalnya tetap dekat dengan struk.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Membulatkan setiap bilangan tanpa memeriksa arahnya. Kebiasaan itu yang melahirkan pilihan B, C, dan E. Periksa selalu: perkalian dibulatkan berlawanan arah, pembagi searah dengan geseran hasil kali.</span></div></div>
+  <p class="balik"><a class="ke" href="#soal-B06-P01">Kembali ke soal</a></p>
+</div>
+<!--B06-P01-bahas:selesai-->
+
+  <div class="utuh">
+  <h3>Contoh Soal dan Pembahasan</h3>
+<!--B06-C01:mulai-->
+<div data-soal="HB-TIU-B06-C01" data-target="45">
+  <div class="soal">
+    <div class="meta"><span>Contoh 1</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 45 detik</span></div>
+    <p class="stem"><mark>Hasil dari</mark> 3,975 × 1.400 adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>5.460</b></div><div><span class="h">B</span><b>5.495</b></div><div><span class="h">C</span><b>5.565</b></div><div><span class="h">D</span><b>5.572</b></div><div><span class="h">E</span><b>5.600</b></div></div>
+  </div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal menanyakan nilai tepat 3,975 × 1.400. Kalimat penentunya “Hasil dari”: tidak tertulis “paling mendekati”, jadi jawaban harus sama persis, padahal pilihan yang bersebelahan hanya berselisih 7 sampai 70.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat<small>paling lama 30 detik</small></dt><dd>3,975 = 4 − 0,025. Hitung 4 × 1.400 = 5.600, lalu 0,025 × 1.400 = 35. Hasilnya 5.600 − 35 = 5.565.</dd></div>
+    <div><dt>Cara lain</dt><dd>1.400 = 1.000 + 400. Hitung 3,975 × 1.000 = 3.975 dan 3,975 × 400 = 1.590, lalu jumlahkan: 3.975 + 1.590 = 5.565.</dd></div>
+    <div><dt>Cek balik</dt><dd>Sisa pembagian oleh 9, koma diabaikan: 3.975 bersisa 6 (3 + 9 + 7 + 5 = 24) dan 1.400 bersisa 5, jadi hasilnya bersisa 30, yaitu 3. 5.565 juga bersisa 3 (5 + 5 + 6 + 5 = 21). Cocok.</dd></div>
+  </dl></div>
+  <div class="gugur"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><span class="v">5.460<span class="uji">Dikurangi 140</span></span><div class="x"><b>Persen dihitung dari bilangan yang salah.</b> 3,975 dibaca “4 dikurangi 2,5%”, sehingga yang dikurangkan 2,5% × 5.600 = 140. Padahal 0,025 adalah selisih dari 4; yang dikurangkan cukup 0,025 × 1.400 = 35.</div></div><div class="g"><span class="h">B</span><span class="v">5.495<span class="uji">Dikurangi 105</span></span><div class="x"><b>Pecahan campuran diubah dengan keliru.</b> 3 <span class="fr"><sup>39</sup>⁄<sub>40</sub></span> ditulis (3 × 39 + 40) : 40 = <span class="fr"><sup>157</sup>⁄<sub>40</sub></span>, lalu 157 × 35 = 5.495. Bilangan bulat dikalikan penyebut: (3 × 40 + 39) : 40 = <span class="fr"><sup>159</sup>⁄<sub>40</sub></span>.</div></div><div class="g"><span class="h">D</span><span class="v">5.572<span class="uji">Dikurangi 28</span></span><div class="x"><b>Desimal dibulatkan sebelum dihitung.</b> 3,975 dibulatkan menjadi 3,98 agar bisa dihitung 4 − 0,02: 5.600 − 28 = 5.572. Selisih 0,005 ikut terbuang.</div></div><div class="g"><span class="h">E</span><span class="v">5.600<span class="uji">Tidak dikurangi</span></span><div class="x"><b>Berhenti satu langkah sebelum selesai.</b> 5.600 belum dikurangi 0,025 × 1.400 = 35.</div></div></div>
+  <div class="jwb"><span>C</span><p><b>Jawaban: C.</b> Hasilnya 35 di bawah 5.600, yaitu 5.565, dan sisa pembagiannya oleh 9 cocok.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti membeli barang seharga Rp3.975 dengan uang Rp4.000: kamu menerima kembalian Rp25. Membeli 1.400 barang berarti membayar 1.400 × Rp4.000, lalu menerima kembalian 1.400 × Rp25. Harga totalnya Rp5.565.000.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Melihat 3,975 hampir 4, lalu memilih pilihan terdekat di bawah 5.600. Pilihan itu 5.572, hasil dari 3,98, bukan 3,975. Selisih 0,005 memang kecil, tetapi soal meminta hasil tepat.</span></div></div>
+</div>
+<!--B06-C01:selesai-->
+  </div>
+  <p>Contoh 1 di atas memperagakan hitung tepat dengan pilihan rapat. Tiga contoh berikutnya memperagakan hitung campuran, pertukaran persen dan sifat distributif, serta perbandingan kuantitatif. Kerjakan setiap contoh sendiri dalam target waktunya sebelum membaca pembahasan.</p>
+<!--B06-C02:mulai-->
+<div data-soal="HB-TIU-B06-C02" data-target="60">
+  <div class="soal">
+    <div class="meta"><span>Contoh 2</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 60 detik</span></div>
+    <p class="stem"><mark>Hasil dari</mark> 125% × 96 − 36 : 1,5 + 3<span class="fr"><sup>2</sup>⁄<sub>5</sub></span> × 10 adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>62</b></div><div><span class="h">B</span><b>90</b></div><div><span class="h">C</span><b>100</b></div><div><span class="h">D</span><b>118</b></div><div><span class="h">E</span><b>130</b></div></div>
+  </div>
+  <div class="guru"><b>HIT ekspresi, campuran persen, desimal, pecahan campuran.</b> Kunci E. Kode: A J-URUTAN · B J-URUTAN · C J-SEDERHANA · D J-SEDERHANA · E <b>kunci</b>. Kerangka: HIT ekspresi · persen ramah × bilangan − bilangan : desimal + pecahan campuran × 10 · dua tingkat operasi · jalur benar bulat. TO terdekat: TO P1 tanpa hitung campuran; bukan 0,375 × 1.600 dan bukan bentuk tabel urutan operasi (narasi). Bukti: pecahan tepat; tiap jalur salah dievaluasi; sisa bagi 9 kunci tunggal Jarak kunci ke pilihan terdekat 12, median jarak 15. Slot memasang J-BASIS dan J-NOL; pada bentuk murni tanpa cerita, jalur salah dasar persen tidak wajar, dan salah koma menghasilkan pilihan sepuluh kali (pencilan). Diganti jalur kedua J-URUTAN dan J-SEDERHANA. Kunci = pilihan terbesar; jarak ke tetangga 12 ≤ median 15.</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta nilai tepat sebuah bentuk campuran. Kalimat penentunya “Hasil dari”. Kerjakan kali dan bagi lebih dulu, lalu tambah dan kurang dari kiri ke kanan.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Ubah tiap bagian ke pecahan ramah. 125% × 96 = <span class="fr"><sup>5</sup>⁄<sub>4</sub></span> × 96 = 120. 36 : 1,5 = 36 × <span class="fr"><sup>2</sup>⁄<sub>3</sub></span> = 24. 3<span class="fr"><sup>2</sup>⁄<sub>5</sub></span> × 10 = 30 + 4 = 34. Lalu dari kiri ke kanan: 120 − 24 + 34 = 130.</dd></div>
+    <div><dt>Cara lain</dt><dd>Hitung tanpa pecahan. 125% × 96 = 96 + 25% × 96 = 96 + 24 = 120. 36 : 1,5 = 360 : 15 = 24. 3,4 × 10 = 34. Hasilnya tetap 120 − 24 + 34 = 130.</dd></div>
+    <div><dt>Cek balik</dt><dd>Sisa pembagian oleh 9: 120 bersisa 3, 24 bersisa 6, dan 34 bersisa 7. 3 − 6 + 7 = 4, dan 130 juga bersisa 4 (1 + 3 + 0 = 4). Cocok. Pilihan lain bersisa 8, 0, 1, dan 1, jadi gugur semua.</dd></div>
+  </dl></div>
+  <div class="gugur"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><span class="v">62<span class="uji">120 − (24 + 34)</span></span><div class="x"><b>Menjumlahkan sebelum mengurangkan.</b> 24 dan 34 dijumlahkan dulu, baru dikurangkan dari 120. Tanda kurang hanya mengenai 24; tambah dan kurang dikerjakan dari kiri ke kanan.</div></div><div class="g"><span class="h">B</span><span class="v">90<span class="uji">(120 − 36) : 1,5</span></span><div class="x"><b>Mengurangkan sebelum membagi.</b> 36 dikurangkan dari 120 sebelum dibagi 1,5. Pembagian mengikat 36 dengan 1,5 lebih dulu: 36 : 1,5 = 24.</div></div><div class="g"><span class="h">C</span><span class="v">100<span class="uji">36 × 1,5 = 54</span></span><div class="x"><b>Membagi dengan desimal dikira mengalikan.</b> Membagi dengan 1,5 dikira sama dengan mengalikan 1,5, sehingga hasilnya 120 − 54 + 34 = 100. Membagi dengan <span class="fr"><sup>3</sup>⁄<sub>2</sub></span> sama dengan mengalikan <span class="fr"><sup>2</sup>⁄<sub>3</sub></span>.</div></div><div class="g"><span class="h">D</span><span class="v">118<span class="uji">3<span class="fr"><sup>2</sup>⁄<sub>5</sub></span> ditulis <span class="fr"><sup>11</sup>⁄<sub>5</sub></span></span></span><div class="x"><b>Pecahan campuran diubah dengan keliru.</b> 3<span class="fr"><sup>2</sup>⁄<sub>5</sub></span> ditulis (3 × 2 + 5) : 5 = <span class="fr"><sup>11</sup>⁄<sub>5</sub></span>. Bilangan bulat dikalikan penyebut lebih dulu: (3 × 5 + 2) : 5 = <span class="fr"><sup>17</sup>⁄<sub>5</sub></span>, sehingga 3<span class="fr"><sup>2</sup>⁄<sub>5</sub></span> × 10 = 34, bukan 22.</div></div></div>
+  <div class="jwb"><span>E</span><p><b>Jawaban: E.</b> Dengan urutan yang benar, 120 − 24 + 34 = 130, dan sisa pembagiannya oleh 9 cocok.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti mencatat uang di dompet: isinya 120 ribu, kamu membayar 24 ribu, lalu menerima 34 ribu. Membayar dan menerima dicatat berurutan; menjumlahkan 24 dan 34 dulu sama saja dengan menganggap uang yang kamu terima ikut keluar.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Menghitung 120 − 36 lebih dulu karena letaknya paling kiri, sehingga muncul 90. Garis bawahi dulu tiga bagian kali dan bagi, hitung masing-masing, baru gabungkan.</span></div></div>
+</div>
+<!--B06-C02:selesai-->
+<!--B06-C03:mulai-->
+<div data-soal="HB-TIU-B06-C03" data-target="45">
+  <div class="soal">
+    <div class="meta"><span>Contoh 3</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 45 detik</span></div>
+    <p class="stem"><mark>Hasil dari</mark> 36% × 175 + 63 × 98 adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>6.237</b></div><div><span class="h">B</span><b>6.285</b></div><div><span class="h">C</span><b>6.300</b></div><div><span class="h">D</span><b>6.363</b></div><div><span class="h">E</span><b>6.489</b></div></div>
+  </div>
+  <div class="guru"><b>HIT tukarPersen + distributif, a% × b + c × (100 − 2).</b> Kunci A. Kode: A <b>kunci</b> · B J-BASIS · C J-LANGKAH · D J-TANDA · E J-TANDA. Kerangka: HIT tukar persen (a% dari b = b% dari a) menghasilkan faktor yang sama dengan suku kedua · distributif k × (10ⁿ − 1) · kunci terkecil · dua jalur tanda terbalik. TO terdekat: tidak ada di TO P1; bukan 18% dari 50, 47 × 99, 36 × 101 (narasi); bukan komplemen desimal Contoh 1. Bukti: pecahan tepat: 36% × 175 = 63, 63 + 63 × 98 = 63 × 99 Jarak kunci ke pilihan terdekat 48, median jarak 55,5. Slot memasang J-PENGALIH; diganti J-LANGKAH (63 × 100 tanpa dikurangi 63), karena bentuk tanpa cerita tidak memuat data pengalih. Sisa bagi 9 tidak memisahkan 6.300 dan 6.363 dari kunci (selisih kelipatan 9); pembahasan menyatakannya terang dan memakai cara lain sebagai pemisah. Revisi cek buta 1: pilihan E 6.804 (salah koma, terpencil) diganti 6.489 = 6.300 + 126 + 63 (tanda terbalik di 63 × (100 − 2)).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta nilai tepat. Kalimat penentunya “Hasil dari”. Kedua bagian sulit bila dihitung apa adanya, tetapi keduanya menyimpan bilangan yang sama.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat<small>paling lama 30 detik</small></dt><dd>Tukar persennya: 36% × 175 sama dengan 175% × 36 = 36 + 27 = 63. Bentuk soal menjadi 63 + 63 × 98 = 63 × 99. Lalu 63 × 99 = 6.300 − 63 = 6.237.</dd></div>
+    <div><dt>Cara lain</dt><dd>Hitung terpisah. 36% × 175 = 63, dan 63 × 98 = 63 × 100 − 63 × 2 = 6.300 − 126 = 6.174. Jumlahnya 63 + 6.174 = 6.237.</dd></div>
+    <div><dt>Cek balik</dt><dd>Sisa pembagian oleh 9: 63 bersisa 0, jadi 63 × 99 juga bersisa 0, dan 6.237 bersisa 0 (6 + 2 + 3 + 7 = 18). Uji ini tidak menggugurkan 6.300, 6.363, dan 6.489, yang juga bersisa 0; ketiganya gugur oleh cara lain di atas, yang memberi tepat 6.237.</dd></div>
+  </dl></div>
+  <div class="gugur"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">B</span><span class="v">6.285<span class="uji">36 + 75 + 6.174</span></span><div class="x"><b>Persen dihitung dari bilangan yang salah.</b> 36% hanya dikenakan pada 100 dari 175, lalu sisanya, 75, ditambahkan utuh. Persen harus dikenakan pada seluruh 175: 36% × 175 = 63.</div></div><div class="g"><span class="h">C</span><span class="v">6.300<span class="uji">63 × 100</span></span><div class="x"><b>Berhenti satu langkah sebelum selesai.</b> 63 + 63 × 98 dibulatkan menjadi 63 × 100 = 6.300, lalu lupa dikurangi. Banyaknya 63 hanya 1 + 98 = 99, jadi masih harus dikurangi 63.</div></div><div class="g"><span class="h">D</span><span class="v">6.363<span class="uji">6.300 + 63</span></span><div class="x"><b>Salah tanda.</b> 63 × 99 ditulis 63 × 100 + 63. Karena 99 = 100 − 1, kelebihan 63 harus dikurangkan, bukan ditambahkan.</div></div><div class="g"><span class="h">E</span><span class="v">6.489<span class="uji">6.300 + 126 + 63</span></span><div class="x"><b>Salah tanda.</b> 63 × 98 ditulis 63 × 100 + 63 × 2 = 6.426, padahal 98 = 100 − 2, jadi 63 × 2 harus dikurangkan. Ditambah 63, hasilnya 6.426 + 63 = 6.489.</div></div></div>
+  <div class="jwb"><span>A</span><p><b>Jawaban: A.</b> Tukar persen memberi 63, lalu 63 × 99 = 6.237.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti membeli 98 kotak susu seharga 63 ribu per kotak, lalu menambah satu kotak lagi: kamu membayar 99 kotak, yaitu 100 kotak dikurangi satu kotak.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Langsung mengalikan 63 × 98 bersusun lalu menambahkan 63, tanpa melihat bahwa keduanya bisa digabung. Hasilnya tetap benar, tetapi waktunya habis dua kali lipat. Begitu melihat bilangan yang sama di dua bagian, gabungkan dulu.</span></div></div>
+</div>
+<!--B06-C03:selesai-->
+<!--B06-C04:mulai-->
+<div data-soal="HB-TIU-B06-C04" data-target="45">
+  <div class="soal">
+    <div class="meta"><span>Contoh 4</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 45 detik</span></div>
+    <p class="stem">Bandingkan dua besaran berikut: P = 103 × 97 dan Q = 101 × 99.</p>
+    <p class="stem"><mark>Hubungan yang tepat</mark> antara P dan Q adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>P &gt; Q</span></li><li><span class="h">B</span><span>P &lt; Q</span></li><li><span class="h">C</span><span>P = Q</span></li><li><span class="h">D</span><span>Hubungan P dan Q tidak dapat ditentukan</span></li></ol>
+  </div>
+  <div class="guru"><b>PKU dua bilangan, hasil kali dekat 10.000.</b> Kunci B. Kode: A J-BULAT · B <b>kunci</b> · C J-BULAT · D J-TENTU. Kerangka: PKU dua hasil kali bersuku tengah 100 · selisih relatif 0,08% · pembulatan sepihak membalik, pembulatan penuh menyamakan · empat pilihan tetap. TO terdekat: tidak ada di TO P1; bukan 7/8 lawan 8/9 dan bukan 49 × 51 lawan 50 × 50 (narasi). Bukti: P = 9.991, Q = 9.999 dihitung tepat. Kode = rencana slot (J-BULAT ×2, J-TENTU). Kunci B.</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta hubungan pasti antara dua hasil kali yang sama-sama dekat dengan 10.000. Kalimat penentunya “Hubungan yang tepat”: yang dicari tanda lebih besar, lebih kecil, atau sama, bukan nilainya. Cari bentuk yang membuat selisihnya terlihat.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Tulis setiap faktor sebagai 100 ditambah atau dikurangi sesuatu. 103 × 97 = (100 + 3) × (100 − 3) = 10.000 − 9, sedangkan 101 × 99 = (100 + 1) × (100 − 1) = 10.000 − 1. P dikurangi 9, Q hanya dikurangi 1, jadi P lebih kecil.</dd></div>
+    <div><dt>Cara lain</dt><dd>Hitung tepat: 103 × 97 = 9.991 dan 101 × 99 = 9.999. Q lebih besar 9.999 − 9.991 = 8.</dd></div>
+    <div><dt>Cek balik</dt><dd>Dua bilangan yang jumlahnya sama, di sini 200, memberi hasil kali makin besar bila keduanya makin berdekatan. 101 dan 99 lebih berdekatan daripada 103 dan 97, jadi Q yang lebih besar. Cocok dengan hitungan.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">103 × 100 dan 101 × 100</span><b>Pembulatan sepihak membalik hubungan.</b> Hanya 97 dan 99 yang dibulatkan ke 100, sedangkan 103 dan 101 dibiarkan. P terlihat 10.300 dan Q 10.100, sehingga hubungannya terbalik.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">100 × 100 dan 100 × 100</span><b>Pembulatan menyamakan dua bilangan yang berbeda.</b> Keempat bilangan dibulatkan ke 100, sehingga P dan Q sama-sama 10.000. Selisih 8 hilang oleh pembulatan.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">dikira terlalu dekat</span><b>Hubungan yang pasti dikira tidak dapat ditentukan.</b> P dan Q memang berdekatan, tetapi keduanya bilangan tetap. Bilangan tetap selalu punya hubungan pasti; jawaban tidak dapat ditentukan hanya mungkin bila soal memuat peubah atau datanya kurang.</div></div></div>
+  <div class="jwb"><span>B</span><p><b>Jawaban: B.</b> P sama dengan 10.000 dikurangi 9 dan Q sama dengan 10.000 dikurangi 1, sehingga P lebih kecil daripada Q.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti dua kebun berpagar sama panjang: kebun yang bentuknya paling mendekati persegi selalu paling luas. Makin jauh panjang dan lebarnya berbeda, makin kecil luasnya.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Membulatkan semua bilangan ke 100 karena terlihat dekat, lalu memilih P = Q. Pada soal perbandingan, pembulatan justru menghapus selisih yang sedang ditanyakan.</span></div></div>
+</div>
+<!--B06-C04:selesai-->
+
+  <h3>Latihan</h3>
+  <p>Tiga latihan berikut tersusun dari yang paling ringan, dengan target total {{WAKTU_LATIHAN}}. Kerjakan dengan pengatur waktu dan tanpa melihat pembahasan. Kunci dan pembahasannya ada di lampiran.</p>
+<!--B06-L01:mulai-->
+<div data-soal="HB-TIU-B06-L01" data-target="45">
+  <div class="soal">
+    <div class="meta"><span id="soal-B06-L01">Latihan 1<a class="ke" href="#bahas-B06-L01">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 45 detik</span></div>
+    <p class="stem"><mark>Hasil dari</mark> −54 : (−9) − 7 × (2 − (−3)) adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>−41</b></div><div><span class="h">B</span><b>−29</b></div><div><span class="h">C</span><b>−5</b></div><div><span class="h">D</span><b>1</b></div><div><span class="h">E</span><b>13</b></div></div>
+  </div>
+  <div class="guru"><b>HIT ekspresi bertanda, bagi negatif, kali, kurung berisi pengurangan bilangan negatif.</b> Kunci B. Kode: A J-TANDA · B <b>kunci</b> · C J-URUTAN · D J-LANGKAH · E J-TANDA. Kerangka: HIT bertanda · a : (−b) − c × (d − (−e)) · empat jalur: tanda bagi, tanda kurung, urutan, langkah terlewat. TO terdekat: tidak ada di TO P1; bukan 7 − (−5) (narasi). Bukti: pecahan tepat; tiap jalur dievaluasi Jarak kunci ke pilihan terdekat 12, median jarak 12. Kode = rencana slot (J-URUTAN, J-TANDA ×2, J-LANGKAH).</div>
+</div>
+<!--B06-L01:selesai-->
+<!--B06-L02:mulai-->
+<div data-soal="HB-TIU-B06-L02" data-target="45">
+  <div class="soal">
+    <div class="meta"><span id="soal-B06-L02">Latihan 2<a class="ke" href="#bahas-B06-L02">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 45 detik</span></div>
+    <p class="stem">Bilangan berikut yang <mark>paling dekat</mark> dengan hasil 1.987 : <span class="fr"><sup>5</sup>⁄<sub>8</sub></span> adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>320</b></div><div><span class="h">B</span><b>400</b></div><div><span class="h">C</span><b>1.250</b></div><div><span class="h">D</span><b>3.200</b></div><div><span class="h">E</span><b>4.000</b></div></div>
+  </div>
+  <div class="guru"><b>HIT perkiraan, bilangan empat angka : pecahan biasa.</b> Kunci D. Kode: A J-NOL · B J-LANGKAH · C J-SEDERHANA · D <b>kunci</b> · E J-BULAT. Kerangka: HIT perkiraan · N empat angka dekat ribuan : p/q · jalur: dikali p/q, lupa kali q, kurang satu nol, p/q dibulatkan ½. TO terdekat: TO P1 no. 37 (desimal + akar); Bab 2 L3 bagi desimal. Bukti: nilai tepat 3.179,2 terdekat ke D Jarak kunci ke pilihan terdekat 800, median jarak 825. Kode = rencana slot. Pilihan A (kurang satu nol) dirujuk Latihan A Bab 19 (J-NOL).</div>
+</div>
+<!--B06-L02:selesai-->
+<!--B06-L03:mulai-->
+<div data-soal="HB-TIU-B06-L03" data-target="75">
+  <div class="soal">
+    <div class="meta"><span id="soal-B06-L03">Latihan 3<a class="ke" href="#bahas-B06-L03">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 75 detik</span></div>
+    <p class="stem"><i>x</i> adalah <mark>bilangan bulat dengan 6 &lt; <i>x</i> &lt; 11</mark>. Diketahui P = <i>x</i><sup>2</sup> + 3 dan Q = 8<i>x</i> − 9.</p>
+    <p class="stem">Hubungan yang tepat antara P dan Q adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>P &gt; Q</span></li><li><span class="h">B</span><span>P &lt; Q</span></li><li><span class="h">C</span><span>P = Q</span></li><li><span class="h">D</span><span>Hubungan P dan Q tidak dapat ditentukan</span></li></ol>
+  </div>
+  <div class="guru"><b>PKU berpeubah, P dan Q rumus dalam x, rentang terbuka.</b> Kunci A. Kode: A <b>kunci</b> · B J-TANDA · C J-BATAS · D J-TENTU. Kerangka: PKU berpeubah · P − Q berakar 2 dan 6 · rentang 6 < x < 11 (terbuka) · ujung rentang memberi P = Q · tanda konstanta terbalik memberi P < Q di x = 7. TO terdekat: tidak ada di TO P1; bukan x² lawan 3x − 2 (narasi). Bukti: semua x bulat 7–10 dihitung: P > Q di keempatnya; P − Q = (x − 2)(x − 6). Putusan T4-13: kunci hubungan pasti untuk setiap x. Slot menulis J-MUNGKIN ×3; dipakai J-TENTU (D), J-BATAS (C, ujung x = 6), J-TANDA (B), sebab mencoba satu nilai x di rentang selalu memberi hubungan yang benar.</div>
+</div>
+<!--B06-L03:selesai-->
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Asal Rancangan Bab 6</h4>
+    <p>Putusan T2-1b: Bab 6 = 1 pembuka + 4 contoh + 3 latihan (dari 10 slot latihan laporan T2-C). Dipilih L6 (Standar: urutan dan tanda), L2 (HOTS: pecahan, nol, pembulatan), L10 (HOTS+: perbandingan berpeubah). Alasan: tingkat naik; sebaran kekeliruan K6 (urutan, tanda, sederhana, nol, bulat) dan K4 (mungkin dikira pasti); kerangka paling jauh dari TO P1 no. 37. Gugur: L1 (perkiraan jumlah dua hasil kali, dekat TO 37 dan Bab 2 C3/L3), L3, L4, L5 (kembar bentuk Contoh 1), L7, L8 (distributif sudah di Contoh 3), L9 (tukar persen P = Q sudah di narasi dan Contoh 3).</p>
+    <p>Contoh 1 = soal asli yang disetujui Gusti (T3-f), dipasang apa adanya dari prototipe; cek_bab06_10.mjs memastikan blok di buku sama persis dengan prototipe dan cocok dengan scripts/data/bab6_c1.json. Patokan jarak ±10% adalah patokan kerja penulis, belum diverifikasi ke siswa. Format resmi soal perbandingan kuantitatif belum diverifikasi (masuk L2 pengajar).</p>
+  </div>
+
+  <div class="ringkas">
+    <h4>Ringkasan Bab 6</h4>
+    <ol>
+      <li>Sebelum menghitung, periksa tiga <b>besaran tetap</b>: ukuran hasil, angka satuan, dan sisa pembagian oleh 9.</li>
+      <li>Jarak antarpilihan menentukan cara: jauh, perkirakan; rapat, sederhanakan lalu hitung tepat.</li>
+      <li>Perkalian dibulatkan <b>berlawanan arah</b>; pembagian dibulatkan <b>searah</b>.</li>
+      <li>Ubah desimal dan persen ke pecahan ramah, lalu bagi dulu, baru kali. <i>a</i>% dari <i>b</i> = <i>b</i>% dari <i>a</i>.</li>
+      <li>Pecah pengali yang dekat dengan 10, 100, atau 1.000. Urutan operasi: kurung, kali dan bagi, tambah dan kurang, masing-masing dari kiri ke kanan.</li>
+      <li>P dan Q dibandingkan lewat bentuknya, bukan lewat hitungan penuh. Bila ada peubah, periksa setiap nilai yang diizinkan.</li>
+    </ol>
+  </div>
+</section>

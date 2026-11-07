@@ -1,0 +1,873 @@
+[
+  {
+    "id": "HB-TIU-B14-C01",
+    "bab": 14,
+    "jenis": "FIG-ANA-OBJ",
+    "tier": 2,
+    "target_detik": 45,
+    "instruksi": "Perhatikan hubungan gambar berikut.",
+    "tanya": "Gambar manakah yang tepat untuk mengganti tanda tanya?",
+    "gambar": "img/B14-C01.svg",
+    "opsi_gambar": {
+      "A": "img/B14-C01-A.svg",
+      "B": "img/B14-C01-B.svg",
+      "C": "img/B14-C01-C.svg",
+      "D": "img/B14-C01-D.svg",
+      "E": "img/B14-C01-E.svg"
+    },
+    "kunci": "D",
+    "kode": {
+      "A": "JF-SUMBU",
+      "B": "JF-PUTCER",
+      "C": "JF-SUMBU",
+      "E": "JF-SALIN",
+      "D": "kunci"
+    },
+    "keluarga": [
+      "tanduk",
+      "helai"
+    ],
+    "bentuk": [
+      "tanduk5-901",
+      "helai4-903"
+    ],
+    "spec": {
+      "satu": true,
+      "tier": 2,
+      "key": "D",
+      "a": "tanduk5-901",
+      "c": "helai4-903",
+      "t": "md1",
+      "salah": [
+        [
+          "md2",
+          "garis cerminnya salah"
+        ],
+        [
+          "r90",
+          "putaran dikira cermin"
+        ],
+        [
+          "mkk",
+          "hanya cermin kiri-kanan"
+        ],
+        [
+          "tetap",
+          "gambar (3) disalin tanpa diubah"
+        ]
+      ]
+    },
+    "bocor": {
+      "sekilas": [
+        0.73,
+        0.82,
+        0.83,
+        0.74,
+        0.81
+      ],
+      "tinta": [
+        459,
+        459,
+        459,
+        459,
+        459
+      ],
+      "bagian": [
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "rasio": [
+        1.5,
+        1.5,
+        0.7,
+        1.5,
+        0.7
+      ],
+      "irisan": "lulus"
+    },
+    "bahan_pembahasan": "Yang ditanya: gambar (4) supaya hubungan (1):(2) sama dengan (3):(4).\nCara cepat: Gambar (1) ke (2): dicermin pada garis miring /. Kenakan gerak yang sama pada gambar (3).\nKenapa opsi lain gugur:\nOpsi A gugur: gambar (3) dicermin pada garis miring \\, garis cerminnya salah.\nOpsi B gugur: gambar (3) diputar 90° searah jarum jam, putaran dikira cermin.\nOpsi C gugur: gambar (3) dicermin kiri-kanan, hanya cermin kiri-kanan.\nOpsi E gugur: gambar (3) tidak berubah, gambar (3) disalin tanpa diubah.\nJawaban: Opsi D. Opsi D adalah gambar (3) yang dicermin pada garis miring /.\nAnalogi: -\nKekeliruan yang Mungkin Terjadi: -",
+    "gambar_pembahasan": "img/B14-C01-pembahasan.svg"
+  },
+  {
+    "id": "HB-TIU-B14-C02",
+    "bab": 14,
+    "jenis": "FIG-ANA-OBJ",
+    "tier": 3,
+    "target_detik": 60,
+    "instruksi": "Perhatikan hubungan gambar berikut.",
+    "tanya": "Gambar manakah yang tepat untuk mengganti tanda tanya?",
+    "gambar": "img/B14-C02.svg",
+    "opsi_gambar": {
+      "A": "img/B14-C02-A.svg",
+      "B": "img/B14-C02-B.svg",
+      "C": "img/B14-C02-C.svg",
+      "D": "img/B14-C02-D.svg",
+      "E": "img/B14-C02-E.svg"
+    },
+    "kunci": "A",
+    "kode": {
+      "B": "J-LANGKAH+JF-SUMBU",
+      "C": "JF-SUMBU+JF-WARNA",
+      "D": "JF-WARNA+JF-TUKAR",
+      "E": "JF-WARNA",
+      "A": "kunci"
+    },
+    "keluarga": [
+      "tanduk",
+      "cakar"
+    ],
+    "bentuk": [
+      "tanduk4-951",
+      "cakar3-952",
+      "tanduk5-955",
+      "cakar4-956"
+    ],
+    "spec": {
+      "tier": 3,
+      "key": "A",
+      "a": [
+        "tanduk4-951",
+        "cakar3-952"
+      ],
+      "c": [
+        "tanduk5-955",
+        "cakar4-956"
+      ],
+      "ts": [
+        "mkk",
+        "tetap"
+      ],
+      "q": 2,
+      "tukar": [
+        0,
+        1
+      ],
+      "siluet": true,
+      "petak": 1
+    },
+    "bocor": {
+      "sekilas": [
+        0.86,
+        0.83,
+        0.88,
+        0.8,
+        0.81
+      ],
+      "tinta": [
+        315,
+        313,
+        167,
+        168,
+        169
+      ],
+      "bagian": [
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "rasio": [
+        1.5,
+        1.5,
+        1.5,
+        1.5,
+        1.5
+      ],
+      "irisan": "lulus"
+    },
+    "bahan_pembahasan": "Yang ditanya: gambar (3) supaya hubungan (1):(2) sama dengan (3):(4).\nCara cepat: Lihat pasangan yang lengkap, (1):(2). Periksa setiap objek sendiri-sendiri, jangan sekaligus. Objek kiri: dicermin kiri-kanan. Objek kanan: tidak berubah. Selain itu, objek kiri dan kanan bertukar tempat. Karena tanda tanya ada di sebelah kiri, balik perubahannya: mulai dari gambar kanan lalu kembalikan setiap objek.\nKenapa opsi lain gugur:\nOpsi B gugur: objek kiri tidak berubah (harusnya dicermin kiri-kanan) dan objek kanan dicermin kiri-kanan (harusnya tidak berubah), kesalahannya: objeknya dibiarkan tidak berubah sekaligus salah arah putar atau cermin.\nOpsi C gugur: objek kiri dicermin atas-bawah (harusnya dicermin kiri-kanan) dan objek kanan hanya dibalik warnanya (harusnya tidak berubah), kesalahannya: salah arah putar atau cermin sekaligus salah soal balik warna.\nOpsi D gugur: objek kiri dicermin kiri-kanan lalu dibalik warnanya (harusnya dicermin kiri-kanan) dan objek kiri dan objek kanan ada di tempat yang salah, kesalahannya: salah soal balik warna sekaligus salah menerapkan tukar tempat.\nOpsi E gugur: objek kanan hanya dibalik warnanya (harusnya tidak berubah), kesalahannya: salah soal balik warna.\nJawaban: Opsi A. Opsi A satu-satunya gambar yang setiap objeknya berubah persis seperti pasangan contoh, termasuk tempatnya.\nAnalogi: Seperti resep untuk tiga bahan: tiap bahan punya perlakuannya sendiri, ada yang dipotong, ada yang dibiarkan utuh.\nKekeliruan yang Mungkin Terjadi: Opsi yang salah hanya keliru di satu objek. Kalau kamu berhenti setelah objek pertama cocok, kamu bisa terkecoh.",
+    "gambar_pembahasan": "img/B14-C02-pembahasan.svg"
+  },
+  {
+    "id": "HB-TIU-B15-C01",
+    "bab": 15,
+    "jenis": "FIG-SERI-P3",
+    "tier": 2,
+    "target_detik": 40,
+    "instruksi": "Perhatikan urutan gambar berikut.",
+    "tanya": "Gambar manakah yang tepat untuk mengganti tanda tanya?",
+    "gambar": "img/B15-C01.svg",
+    "opsi_gambar": {
+      "A": "img/B15-C01-A.svg",
+      "B": "img/B15-C01-B.svg",
+      "C": "img/B15-C01-C.svg",
+      "D": "img/B15-C01-D.svg",
+      "E": "img/B15-C01-E.svg"
+    },
+    "kunci": "E",
+    "kode": {
+      "A": "JF-PUTCER",
+      "B": "JF-SUMBU",
+      "C": "JF-SALIN",
+      "D": "JF-PUTCER",
+      "E": "kunci"
+    },
+    "keluarga": [
+      "pakis",
+      "cakar",
+      "helai"
+    ],
+    "bentuk": [
+      "pakis5-902",
+      "cakar4-901",
+      "helai4-902"
+    ],
+    "spec": {
+      "tier": 2,
+      "key": "E",
+      "bentuk": [
+        "pakis5-902",
+        "cakar4-901",
+        "helai4-902"
+      ],
+      "t": "mab",
+      "rupa": [
+        "hitam",
+        "hitam",
+        "hitam"
+      ]
+    },
+    "bocor": {
+      "sekilas": [
+        0.73,
+        0.71,
+        0.73,
+        0.8,
+        0.7
+      ],
+      "tinta": [
+        429,
+        429,
+        429,
+        429,
+        429
+      ],
+      "bagian": [
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "rasio": [
+        0.7,
+        0.7,
+        0.7,
+        1.5,
+        0.7
+      ],
+      "irisan": "lulus"
+    },
+    "bahan_pembahasan": "Yang ditanya: gambar (6), lanjutan dari pola selang tiga.\nCara cepat: Bentuk (1), (2), (3) berbeda semua, jadi jangan membandingkan gambar yang bersebelahan. Bandingkan (1) dengan (4) dan (2) dengan (5). Keduanya dicermin atas-bawah. Gambar (6) = gambar (3) yang dicermin atas-bawah.\nKenapa opsi lain gugur:\nOpsi A gugur: gambar (3) diputar 180°, sesudah diubah, gambar ikut dicermin kiri-kanan; aturan di soal dicermin atas-bawah.\nOpsi B gugur: gambar (3) dicermin kiri-kanan, garis cerminnya salah; aturan di soal dicermin atas-bawah.\nOpsi C gugur: gambar (3) tidak berubah, hanya menyalin gambar (3); aturan di soal dicermin atas-bawah.\nOpsi D gugur: gambar (3) diputar 90° berlawanan arah jarum jam, diputar 90° berlawanan arah; aturan di soal dicermin atas-bawah.\nJawaban: Opsi E. Opsi E adalah gambar (3) yang dicermin atas-bawah, sama dengan perubahan (1)→(4) dan (2)→(5).\nAnalogi: Seperti jadwal piket tiga hari: hari keempat mengulang hari pertama, hari keenam mengulang hari ketiga.\nKekeliruan yang Mungkin Terjadi: Dicermin dan diputar 180° sering terlihat mirip. Cek satu ujung bentuk: pada cermin, ujung itu tetap di sisi yang sama.",
+    "gambar_pembahasan": "img/B15-C01-pembahasan.svg"
+  },
+  {
+    "id": "HB-TIU-B15-C02",
+    "bab": 15,
+    "jenis": "FIG-SERI-P3",
+    "tier": 3,
+    "target_detik": 55,
+    "instruksi": "Perhatikan urutan gambar berikut.",
+    "tanya": "Gambar manakah yang tepat untuk mengganti tanda tanya?",
+    "gambar": "img/B15-C02.svg",
+    "opsi_gambar": {
+      "A": "img/B15-C02-A.svg",
+      "B": "img/B15-C02-B.svg",
+      "C": "img/B15-C02-C.svg",
+      "D": "img/B15-C02-D.svg",
+      "E": "img/B15-C02-E.svg"
+    },
+    "kunci": "E",
+    "kode": {
+      "A": "JF-PUTCER+J-LANGKAH",
+      "B": "JF-PUTCER+JF-OBJEK",
+      "C": "JF-PUTCER",
+      "D": "JF-OBJEK",
+      "E": "kunci"
+    },
+    "keluarga": [
+      "cakar",
+      "pakis",
+      "tanduk"
+    ],
+    "bentuk": [
+      "cakar3-961",
+      "pakis4-962",
+      "tanduk6-963"
+    ],
+    "spec": {
+      "tier": 3,
+      "key": "E",
+      "bentuk": [
+        "cakar3-961",
+        "pakis4-962",
+        "tanduk6-963"
+      ],
+      "t": "md2",
+      "siluet": true,
+      "bintik": 3
+    },
+    "bocor": {
+      "sekilas": [
+        0.59,
+        0.7,
+        0.57,
+        0.58,
+        0.56
+      ],
+      "tinta": [
+        554,
+        508,
+        580,
+        505,
+        576
+      ],
+      "bagian": [
+        14,
+        12,
+        15,
+        12,
+        15
+      ],
+      "rasio": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "irisan": "lulus"
+    },
+    "bahan_pembahasan": "Yang ditanya: gambar (6). Ada dua hal yang berubah, dan keduanya punya irama sendiri.\nCara cepat: Bentuk besar (1), (2), (3) berbeda semua, jadi bentuk besar dibandingkan selang tiga: (1) dengan (4), (2) dengan (5). Keduanya dicermin pada garis miring \\, jadi bentuk besar di (6) = bentuk (3) yang dicermin pada garis miring \\. Bintik dihitung berurutan: 3, 4, 5, 6, 7. Bertambah satu setiap langkah, jadi gambar (6) punya 8 bintik. Letak bintik berpindah-pindah; yang dihitung hanya jumlahnya.\nKenapa opsi lain gugur:\nOpsi A gugur: gambar (3) diputar 180° dan bintiknya 7, sama dengan gambar (5), kesalahannya: diputar 180° sekaligus lupa menambah bintik.\nOpsi B gugur: gambar (3) diputar 90° searah jarum jam dan bintiknya 5, disalin dari gambar (3), kesalahannya: sesudah diubah, gambar ikut dicermin kiri-kanan sekaligus bintik ikut pola selang tiga, padahal bintik bertambah satu tiap langkah.\nOpsi C gugur: gambar (3) diputar 180°, kesalahannya: diputar 180°.\nOpsi D gugur: bintiknya 5, disalin dari gambar (3), kesalahannya: bintik ikut pola selang tiga, padahal bintik bertambah satu tiap langkah.\nJawaban: Opsi E. Opsi E satu-satunya yang bentuk besarnya dicermin pada garis miring \\ dari gambar (3) dan bintiknya 8.\nAnalogi: Seperti jadwal piket tiga hari yang berulang, sementara tanggal di kalender tetap maju satu hari setiap hari.\nKekeliruan yang Mungkin Terjadi: Setelah menemukan pola selang tiga, banyak orang ikut menerapkannya pada bintik. Bintik punya irama sendiri: maju satu setiap langkah.",
+    "gambar_pembahasan": "img/B15-C02-pembahasan.svg"
+  },
+  {
+    "id": "HB-TIU-B16-C01",
+    "bab": 16,
+    "jenis": "FIG-ANA-OBJ",
+    "tier": 2,
+    "target_detik": 45,
+    "instruksi": "Perhatikan hubungan gambar berikut.",
+    "tanya": "Gambar manakah yang tepat untuk mengganti tanda tanya?",
+    "gambar": "img/B16-C01.svg",
+    "opsi_gambar": {
+      "A": "img/B16-C01-A.svg",
+      "B": "img/B16-C01-B.svg",
+      "C": "img/B16-C01-C.svg",
+      "D": "img/B16-C01-D.svg",
+      "E": "img/B16-C01-E.svg"
+    },
+    "kunci": "B",
+    "kode": {
+      "A": "JF-SUMBU+JF-WARNA",
+      "C": "J-LANGKAH+JF-PUTCER",
+      "D": "JF-SATU",
+      "E": "JF-PUTCER",
+      "B": "kunci"
+    },
+    "keluarga": [
+      "helai",
+      "cakar"
+    ],
+    "bentuk": [
+      "helai5-921",
+      "cakar4-922",
+      "helai4-923",
+      "cakar3-924"
+    ],
+    "spec": {
+      "tier": 2,
+      "key": "B",
+      "a": [
+        "helai5-921",
+        "cakar4-922"
+      ],
+      "c": [
+        "helai4-923",
+        "cakar3-924"
+      ],
+      "ts": [
+        "mab",
+        "mab"
+      ],
+      "q": 2,
+      "siluet": true,
+      "petak": 1
+    },
+    "bocor": {
+      "sekilas": [
+        0.96,
+        0.66,
+        0.65,
+        0.64,
+        0.66
+      ],
+      "tinta": [
+        128,
+        253,
+        253,
+        253,
+        253
+      ],
+      "bagian": [
+        14,
+        14,
+        14,
+        14,
+        14
+      ],
+      "rasio": [
+        1.4,
+        1.4,
+        1.4,
+        1.4,
+        1.4
+      ],
+      "irisan": "lulus"
+    },
+    "bahan_pembahasan": "Yang ditanya: gambar (3) supaya hubungan (1):(2) sama dengan (3):(4).\nCara cepat: Lihat pasangan yang lengkap, (1):(2). Periksa setiap objek sendiri-sendiri, jangan sekaligus. Objek kiri: dicermin atas-bawah. Objek kanan: dicermin atas-bawah. Karena tanda tanya ada di sebelah kiri, balik perubahannya: mulai dari gambar kanan lalu kembalikan setiap objek.\nKenapa opsi lain gugur:\nOpsi A gugur: objek kiri dicermin kiri-kanan (harusnya dicermin atas-bawah) dan objek kanan dicermin atas-bawah lalu dibalik warnanya (harusnya dicermin atas-bawah), kesalahannya: salah arah putar atau cermin sekaligus salah soal balik warna.\nOpsi C gugur: objek kiri tidak berubah (harusnya dicermin atas-bawah) dan objek kanan diputar 180° (harusnya dicermin atas-bawah), kesalahannya: objeknya dibiarkan tidak berubah sekaligus ikut dicermin kiri-kanan.\nOpsi D gugur: objek kiri tidak berubah (harusnya dicermin atas-bawah), kesalahannya: objeknya dibiarkan tidak berubah.\nOpsi E gugur: objek kanan diputar 180° (harusnya dicermin atas-bawah), kesalahannya: ikut dicermin kiri-kanan.\nJawaban: Opsi B. Opsi B satu-satunya gambar yang setiap objeknya berubah persis seperti pasangan contoh.\nAnalogi: Seperti resep untuk tiga bahan: tiap bahan punya perlakuannya sendiri, ada yang dipotong, ada yang dibiarkan utuh.\nKekeliruan yang Mungkin Terjadi: Opsi yang salah hanya keliru di satu objek. Kalau kamu berhenti setelah objek pertama cocok, kamu bisa terkecoh.",
+    "gambar_pembahasan": "img/B16-C01-pembahasan.svg"
+  },
+  {
+    "id": "HB-TIU-B16-C02",
+    "bab": 16,
+    "jenis": "FIG-ANA-UBAH",
+    "tier": 3,
+    "target_detik": 70,
+    "instruksi": "Perhatikan hubungan gambar berikut.",
+    "tanya": "Gambar manakah yang tepat untuk mengganti tanda tanya?",
+    "gambar": "img/B16-C02.svg",
+    "opsi_gambar": {
+      "A": "img/B16-C02-A.svg",
+      "B": "img/B16-C02-B.svg",
+      "C": "img/B16-C02-C.svg",
+      "D": "img/B16-C02-D.svg",
+      "E": "img/B16-C02-E.svg"
+    },
+    "kunci": "D",
+    "kode": {
+      "A": "J-LANGKAH",
+      "B": "JF-HITUNG+JF-PUTCER",
+      "C": "JF-HITUNG+JF-SUMBU",
+      "E": "JF-TUKAR+JF-PUTCER",
+      "D": "kunci"
+    },
+    "keluarga": [
+      "cakar",
+      "tanduk",
+      "helai"
+    ],
+    "bentuk": [
+      "cakar4-1003",
+      "cakar3-1004"
+    ],
+    "spec": {
+      "tier": 3,
+      "key": "D",
+      "a": [
+        {
+          "jenis": "tanduk",
+          "n": 5,
+          "seed": 1031
+        },
+        {
+          "jenis": "helai",
+          "n": 3,
+          "seed": 1032
+        },
+        "cakar4-1003"
+      ],
+      "c": [
+        {
+          "jenis": "tanduk",
+          "n": 6,
+          "seed": 1034
+        },
+        {
+          "jenis": "helai",
+          "n": 3,
+          "seed": 1035
+        },
+        "cakar3-1004"
+      ],
+      "dn": [
+        -1,
+        2
+      ],
+      "tukar": true,
+      "t": "mab",
+      "q": 1,
+      "siluet": true
+    },
+    "bocor": {
+      "sekilas": [
+        0.49,
+        0.59,
+        0.56,
+        0.49,
+        0.59
+      ],
+      "tinta": [
+        400,
+        420,
+        406,
+        418,
+        406
+      ],
+      "bagian": [
+        17,
+        21,
+        16,
+        22,
+        16
+      ],
+      "rasio": [
+        0.9,
+        1,
+        0.9,
+        1,
+        0.9
+      ],
+      "irisan": "lulus"
+    },
+    "bahan_pembahasan": "Yang ditanya: gambar (2) supaya hubungan (1):(2) sama dengan (3):(4).\nCara cepat: Lihat pasangan yang lengkap, (3):(4). Ada tiga objek, dan setiap objek punya perubahannya sendiri. Tanduk: 6 menjadi 5 cincin, jadi berkurang 1. Bulu: 3 menjadi 5 helai, jadi bertambah 2. Dua objek atas juga bertukar tempat: yang tadinya di kiri pindah ke kanan. Objek bawah dicermin atas-bawah. Terapkan ke gambar (1): cincin 5 menjadi 4, helai 3 menjadi 5, tukar tempatnya, lalu ubah objek bawah dengan cara yang sama.\nKenapa opsi lain gugur:\nOpsi A gugur: cincin tetap 5 dan helai tetap 3, kesalahannya: lupa mengubah jumlah cincin sekaligus lupa mengubah jumlah helai.\nOpsi B gugur: ada 3 cincin (harusnya 4) dan dua objek atas tidak bertukar tempat, kesalahannya: salah hitung kurang satu sekaligus lupa menukar tempat.\nOpsi C gugur: helai tetap 3 dan objek bawah tidak berubah, kesalahannya: lupa mengubah jumlah helai sekaligus lupa mengubah objek bawah.\nOpsi E gugur: helai tetap 3 dan dua objek atas tidak bertukar tempat, kesalahannya: lupa mengubah jumlah helai sekaligus lupa menukar tempat.\nJawaban: Opsi D. Opsi D satu-satunya yang jumlah cincin dan helainya tepat, tempat objek atasnya benar, dan objek bawahnya dicermin atas-bawah.\nAnalogi: Seperti tiga orang yang diberi tugas berbeda: satu menambah kelereng, satu membuang kelereng, satu hanya membalik badan. Tugas mereka tidak tertukar.\nKekeliruan yang Mungkin Terjadi: Rupa cincin dan helai ikut berubah ketika jumlahnya berubah, jadi jangan mencocokkan rupa, cukup hitung. Opsi yang salah sering benar di dua hal dan keliru di hal lain, jadi periksa ketiga objek sampai selesai.",
+    "gambar_pembahasan": "img/B16-C02-pembahasan.svg"
+  },
+  {
+    "id": "HB-TIU-B17-C01",
+    "bab": 17,
+    "jenis": "FIG-BEDA-PUTAR",
+    "tier": 3,
+    "target_detik": 45,
+    "instruksi": "Perhatikan kelima gambar berikut.",
+    "tanya": "Gambar manakah yang berbeda dari yang lain?",
+    "gambar": null,
+    "opsi_gambar": {
+      "A": "img/B17-C01-A.svg",
+      "B": "img/B17-C01-B.svg",
+      "C": "img/B17-C01-C.svg",
+      "D": "img/B17-C01-D.svg",
+      "E": "img/B17-C01-E.svg"
+    },
+    "kunci": "C",
+    "kode": {
+      "A": "J-PENGALIH",
+      "B": "J-PENGALIH",
+      "D": "J-PENGALIH",
+      "E": "J-PENGALIH",
+      "C": "kunci"
+    },
+    "keluarga": [
+      "tanduk",
+      "helai"
+    ],
+    "bentuk": [
+      "tanduk5-991",
+      "helai4-992"
+    ],
+    "spec": {
+      "tier": 3,
+      "key": "C",
+      "bentuk": [
+        "tanduk5-991",
+        "helai4-992"
+      ],
+      "petak": 1,
+      "cermin": 1,
+      "seed": 993,
+      "acak": true
+    },
+    "bocor": {
+      "sekilas": [
+        0.63,
+        0.73,
+        0.71,
+        0.64,
+        0.74
+      ],
+      "tinta": [
+        266,
+        265,
+        266,
+        267,
+        268
+      ],
+      "bagian": [
+        15,
+        15,
+        15,
+        15,
+        15
+      ],
+      "rasio": [
+        1.3,
+        1.2,
+        1.6,
+        1.3,
+        1.6
+      ],
+      "irisan": "lulus"
+    },
+    "bahan_pembahasan": "Yang ditanya: satu gambar yang salah satu objeknya tidak bisa didapat hanya dengan memutar.\nCara cepat: Letak objek sama di kelima gambar, tetapi setiap objek diputar sendiri-sendiri. Gambar utuhnya tidak akan cocok satu sama lain, jadi jangan mencocokkan gambar sekaligus. Periksa per letak. Bandingkan objek kiri di kelima gambar, lalu objek kanan. Di setiap letak, pilih satu ujung yang khas, lalu lihat apakah sisi kiri dan kanannya tertukar. Objek yang diputar tetap punya urutan sisi yang sama; objek yang dicermin urutannya terbalik.\nKenapa opsi lain gugur:\nOpsi A gugur: keempat objeknya hanya diputar, tidak ada yang dibalik, jadi masih sekelompok.\nOpsi B gugur: keempat objeknya hanya diputar, tidak ada yang dibalik, jadi masih sekelompok.\nOpsi D gugur: keempat objeknya hanya diputar, tidak ada yang dibalik, jadi masih sekelompok.\nOpsi E gugur: keempat objeknya hanya diputar, tidak ada yang dibalik, jadi masih sekelompok.\nJawaban: Opsi C. Objek kanan di opsi C dibalik seperti bayangan cermin. Diputar ke arah mana pun, ia tidak bisa sama dengan objek kanan di empat gambar lain.\nAnalogi: Seperti memeriksa lima tumpukan sarung tangan kanan yang diletakkan miring ke berbagai arah: arahnya boleh beda-beda, yang dicari satu sarung tangan kiri.\nKekeliruan yang Mungkin Terjadi: Karena semua gambar tampak berbeda, mata mudah memilih gambar yang paling aneh susunannya. Yang menentukan hanya satu objek, dan objek itu bukan yang terbesar.",
+    "gambar_pembahasan": "img/B17-C01-pembahasan.svg"
+  },
+  {
+    "id": "HB-TIU-B17-C02",
+    "bab": 17,
+    "jenis": "FIG-BEDA-HITUNG",
+    "tier": 3,
+    "target_detik": 55,
+    "instruksi": "Perhatikan kelima gambar berikut.",
+    "tanya": "Gambar manakah yang berbeda dari yang lain?",
+    "gambar": null,
+    "opsi_gambar": {
+      "A": "img/B17-C02-A.svg",
+      "B": "img/B17-C02-B.svg",
+      "C": "img/B17-C02-C.svg",
+      "D": "img/B17-C02-D.svg",
+      "E": "img/B17-C02-E.svg"
+    },
+    "kunci": "A",
+    "kode": {
+      "B": "J-PENGALIH",
+      "C": "J-PENGALIH",
+      "D": "J-PENGALIH",
+      "E": "J-PENGALIH",
+      "A": "kunci"
+    },
+    "keluarga": [
+      "cakar",
+      "pakis",
+      "tanduk"
+    ],
+    "bentuk": [
+      "cakar3-951",
+      "pakis3-952",
+      "tanduk3-953"
+    ],
+    "spec": {
+      "tier": 3,
+      "key": "A",
+      "siluet": true,
+      "seed": 959,
+      "butir": [
+        "cakar3-951",
+        "pakis3-952",
+        "tanduk3-953"
+      ],
+      "namaButir": [
+        "cakar",
+        "pakis",
+        "tanduk"
+      ]
+    },
+    "bocor": {
+      "sekilas": [
+        0.74,
+        0.67,
+        0.74,
+        0.76,
+        0.65
+      ],
+      "tinta": [
+        430,
+        427,
+        406,
+        408,
+        424
+      ],
+      "bagian": [
+        42,
+        43,
+        41,
+        41,
+        43
+      ],
+      "rasio": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "irisan": "lulus"
+    },
+    "bahan_pembahasan": "Yang ditanya: satu gambar yang isinya tidak mengikuti aturan keempat gambar lain.\nCara cepat: Letak dan arah butir diacak di setiap gambar, jadi jangan mencari pola posisi atau putaran. Hitung tiap jenis butir. Jumlah satu jenis saja ternyata berubah-ubah di semua gambar, jadi aturannya bukan jumlah tetap. Bandingkan dua jenis sekaligus: di empat gambar, jumlah pakis selalu sama dengan jumlah tanduk.\nKenapa opsi lain gugur:\nOpsi B gugur: ada 2 pakis dan 2 tanduk, jumlahnya sama.\nOpsi C gugur: ada 4 pakis dan 4 tanduk, jumlahnya sama.\nOpsi D gugur: ada 4 pakis dan 4 tanduk, jumlahnya sama.\nOpsi E gugur: ada 2 pakis dan 2 tanduk, jumlahnya sama.\nJawaban: Opsi A. Hanya opsi A yang jumlahnya tidak sama: 2 pakis dan 3 tanduk.\nAnalogi: Seperti memeriksa pasangan sepatu di rak: jumlah sepatunya boleh berbeda di tiap rak, yang dicek apakah kiri dan kanannya selalu berpasangan.\nKekeliruan yang Mungkin Terjadi: Kalau kamu hanya menghitung satu jenis, angkanya berubah-ubah dan kamu akan mengira soal ini tanpa pola. Polanya ada pada hubungan dua jenis.",
+    "gambar_pembahasan": "img/B17-C02-pembahasan.svg"
+  },
+  {
+    "id": "HB-TIU-B18-C01",
+    "bab": 18,
+    "jenis": "FIG-MTX-PUTAR",
+    "tier": 3,
+    "target_detik": 60,
+    "instruksi": "Perhatikan pola gambar pada matriks berikut.",
+    "tanya": "Gambar manakah yang tepat untuk mengganti tanda tanya?",
+    "gambar": "img/B18-C01.svg",
+    "opsi_gambar": {
+      "A": "img/B18-C01-A.svg",
+      "B": "img/B18-C01-B.svg",
+      "C": "img/B18-C01-C.svg",
+      "D": "img/B18-C01-D.svg",
+      "E": "img/B18-C01-E.svg"
+    },
+    "kunci": "C",
+    "kode": {
+      "A": "J-LANGKAH",
+      "B": "JF-AWAL",
+      "D": "JF-ARAH",
+      "E": "JF-SUMBU",
+      "C": "kunci"
+    },
+    "keluarga": [
+      "tanduk",
+      "helai",
+      "cakar"
+    ],
+    "bentuk": [
+      "tanduk5-961",
+      "helai4-962",
+      "cakar3-966"
+    ],
+    "spec": {
+      "tier": 3,
+      "key": "C",
+      "bentuk": [
+        "tanduk5-961",
+        "helai4-962",
+        "cakar3-966"
+      ],
+      "arah": "kolom",
+      "t1": "mab",
+      "t2": "r270",
+      "sudut": false,
+      "siluet": true,
+      "awal": [
+        "r90",
+        "tetap",
+        "r180"
+      ]
+    },
+    "bocor": {
+      "sekilas": [
+        0.66,
+        0.62,
+        0.65,
+        0.71,
+        0.66
+      ],
+      "tinta": [
+        414,
+        414,
+        414,
+        413,
+        413
+      ],
+      "bagian": [
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "rasio": [
+        1.3,
+        1.3,
+        0.8,
+        0.8,
+        0.8
+      ],
+      "irisan": "lulus"
+    },
+    "bahan_pembahasan": "Yang ditanya: sel kanan bawah matriks 3×3.\nCara cepat: Setiap baris memakai satu bentuk, jadi bandingkan sel dalam baris yang sama. Dari kolom 1 ke kolom 2: dicermin atas-bawah. Dari kolom 2 ke kolom 3: diputar 90° berlawanan arah jarum jam. Cek aturan itu di dua deret yang lengkap sebelum dipakai ke deret yang ada tanda tanyanya.\nKenapa opsi lain gugur:\nOpsi A gugur: langkah kedua tidak dikerjakan, padahal langkah kedua diputar 90° berlawanan arah jarum jam.\nOpsi B gugur: bentuk dianggap kembali ke posisi awal, padahal perubahan terus berlanjut sampai sel terakhir.\nOpsi D gugur: langkah kedua diputar 90° searah jarum jam, padahal langkah kedua diputar 90° berlawanan arah jarum jam.\nOpsi E gugur: jawaban yang dicermin kiri-kanan, bentuknya terbalik sisi.\nJawaban: Opsi C. Opsi C mengikuti kedua langkah perubahan sampai sel terakhir.\nAnalogi: Seperti jarum jam yang terus maju: di jam ketiga jarumnya tidak kembali ke angka awal.\nKekeliruan yang Mungkin Terjadi: Cermin atas-bawah dan cermin kiri-kanan mudah tertukar. Ikuti satu ujung bentuk: pada cermin atas-bawah ujung itu pindah dari atas ke bawah.",
+    "gambar_pembahasan": "img/B18-C01-pembahasan.svg"
+  },
+  {
+    "id": "HB-TIU-B18-C02",
+    "bab": 18,
+    "jenis": "FIG-MTX-HITUNG",
+    "tier": 3,
+    "target_detik": 45,
+    "instruksi": "Perhatikan pola gambar pada matriks berikut.",
+    "tanya": "Gambar manakah yang tepat untuk mengganti tanda tanya?",
+    "gambar": "img/B18-C02.svg",
+    "opsi_gambar": {
+      "A": "img/B18-C02-A.svg",
+      "B": "img/B18-C02-B.svg",
+      "C": "img/B18-C02-C.svg",
+      "D": "img/B18-C02-D.svg",
+      "E": "img/B18-C02-E.svg"
+    },
+    "kunci": "B",
+    "kode": {
+      "A": "JF-HITUNG",
+      "C": "JF-HITUNG",
+      "D": "JF-HITUNG",
+      "E": "JF-HITUNG",
+      "B": "kunci"
+    },
+    "keluarga": [
+      "cakar",
+      "tanduk",
+      "helai"
+    ],
+    "bentuk": [
+      "cakar3-900",
+      "tanduk3-901",
+      "cakar4-902"
+    ],
+    "spec": {
+      "tier": 3,
+      "key": "B",
+      "cabang": 3,
+      "tambahBaris": 0,
+      "kecil": 2,
+      "kecilBaris": 1,
+      "seed": 972,
+      "siluet": true,
+      "pusat": "helai",
+      "kecilBentuk": [
+        "cakar3-900",
+        "tanduk3-901",
+        "cakar4-902"
+      ]
+    },
+    "bocor": {
+      "sekilas": [
+        0.38,
+        0.41,
+        0.46,
+        0.42,
+        0.37
+      ],
+      "tinta": [
+        403,
+        344,
+        369,
+        359,
+        381
+      ],
+      "bagian": [
+        29,
+        37,
+        46,
+        33,
+        31
+      ],
+      "rasio": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "irisan": "lulus"
+    },
+    "bahan_pembahasan": "Yang ditanya: sel kanan bawah. Bentuk dan letak objek kecil diacak, jadi yang dihitung hanya jumlahnya.\nCara cepat: Hitung dua hal di setiap sel: helai bulu di tengah dan objek kecil di pinggir. Baris 1: 3/2, 4/3, 5/4 (helai/objek kecil). Keduanya bertambah satu tiap kolom. Baris 3 mulai dari 3/4, 4/5, jadi sel terakhir 5 helai dan 6 objek kecil. Cek lewat kolom 3: 5/4, 5/5, lalu 5/6. Selisihnya tetap, hasilnya sama.\nKenapa opsi lain gugur:\nOpsi A gugur: helai 4 (harusnya 5) dan objek kecil 8 (harusnya 6), kesalahannya: hitungan helai kurang satu sekaligus hitungan objek kecil lebih dua.\nOpsi C gugur: objek kecil 8 (harusnya 6), kesalahannya: hitungan objek kecil lebih dua.\nOpsi D gugur: helai 4 (harusnya 5), kesalahannya: hitungan helai kurang satu.\nOpsi E gugur: helai 4 (harusnya 5) dan objek kecil 7 (harusnya 6), kesalahannya: hitungan helai kurang satu sekaligus hitungan objek kecil lebih satu.\nJawaban: Opsi B. Opsi B satu-satunya yang punya 5 helai dan 6 objek kecil.\nAnalogi: Seperti menghitung uang di dompet: bentuk koin dan letaknya tidak penting, jumlahnya yang dicek.\nKekeliruan yang Mungkin Terjadi: Objek kecil berbentuk macam-macam supaya kamu sibuk mencari pola bentuk. Hitung saja semuanya, apa pun bentuknya.",
+    "gambar_pembahasan": "img/B18-C02-pembahasan.svg"
+  }
+]

@@ -1,0 +1,329 @@
+<!-- ═════════ BAB 12 · PENALARAN ANALITIS ═════════
+     Rencana: reports/tahap2_D_kck_analitis_optimasi.md Bab 12 + sebaran T2-1b (4 latihan) + Putusan 8 (jadwal + pencocokan
+     atribut) + T2-7(7) (urutan opsi diacak di B12-L02). Banyak susunan, arah kanan, urutan sebagian, pencocokan, dan jadwal
+     di narasi dihitung di scripts/cek_bab11_13.mjs; kedua gambar dibangkitkan script yang sama (node … --svg). -->
+<section class="bab num" data-bab="12">
+  <header class="band">
+    <div class="no">12</div>
+    <div>
+      <h2>Penalaran Analitis</h2>
+      <p>Bab ini membahas susunan yang mungkin, kekuatan setiap syarat, urutan berjajar dan duduk melingkar, urutan sebagian yang digambar dengan panah, syarat tambahan di kalimat tanya, serta jadwal dan pencocokan atribut.</p>
+      <p class="waktu"><svg class="ico"><use href="#jam"/></svg>{{TARGET}}</p>
+    </div>
+    <div class="kisi" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="emas"></i></div>
+  </header>
+
+  <p class="lead">Soal penalaran analitis memberi beberapa orang atau benda beserta sejumlah syarat, lalu menanyakan apa yang pasti, mungkin, atau tidak mungkin. Jawabannya jarang memerlukan satu susunan lengkap. Yang diperlukan adalah gambaran semua susunan yang masih tersisa setelah syarat dipasang. Kerjakan pertanyaan pembuka berikut sebelum membaca uraiannya.</p>
+
+<!--B12-P01:mulai-->
+<div data-soal="HB-TIU-B12-P01" data-target="120">
+  <div class="soal">
+    <div class="meta"><span id="soal-B12-P01">Pertanyaan Pembuka<a class="ke" href="#bahas-B12-P01">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 120 detik</span></div>
+    <p class="stem">Lima orang, yaitu Laras, Maya, Nanda, Oki, dan Prita, tinggal di sebuah gedung lima lantai. Setiap lantai dihuni tepat satu orang, dan lantai 1 adalah lantai paling bawah. Ketentuannya sebagai berikut.</p>
+    <dl class="premis syarat"><div><dt>1.</dt><dd>Maya tinggal tepat satu lantai di atas Laras.</dd></div><div><dt>2.</dt><dd>Oki tinggal di lantai yang lebih tinggi daripada Maya.</dd></div><div><dt>3.</dt><dd>Nanda tidak tinggal di lantai 1.</dd></div><div><dt>4.</dt><dd>Prita tinggal di lantai yang lebih rendah daripada Laras.</dd></div></dl>
+    <p class="stem">Pernyataan yang <mark>pasti benar</mark> adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Laras tinggal di lantai 2.</span></li><li><span class="h">B</span><span>Oki tinggal di lantai 5.</span></li><li><span class="h">C</span><span>Nanda tinggal di lantai yang lebih tinggi daripada Maya.</span></li><li><span class="h">D</span><span>Laras tinggal tepat satu lantai di atas Maya.</span></li><li><span class="h">E</span><span>Prita tinggal di lantai 1.</span></li></ol>
+  </div>
+  <div class="guru"><b>ANA urutan tegak, lima lantai, pasti benar.</b> Kunci E. Kode: A J-MUNGKIN · B J-MUNGKIN · C J-MUNGKIN · D J-BALIK · E <b>kunci</b>. Kerangka: ANA urutan tegak · 5 unsur tanpa atribut · blok + lebih tinggi + bukan + lebih rendah · 3 susunan · pasti benar. TO terdekat: TO P1 no. 53 (garis + atribut hari), no. 55 (panah 6). Bukti: 120 susunan lima lantai; sah 3: PLMNO, PLMON, PNLMO (lantai 1 → 5); pilihan benar di {"A":2,"B":2,"C":2,"D":0,"E":3} susunan; tanpa syarat 1–4 tersisa 24/9/4/9. Kode = rencana slot (J-MUNGKIN ×3, J-BALIK); tiga pilihan satu kode diterima untuk pembuka (T5-12). Tiap syarat mengubah status pilihan bila dibuang.</div>
+</div>
+<!--B12-P01:selesai-->
+
+  <h3>Pasti, Mungkin, dan Tidak Mungkin</h3>
+  <p>Satu <b>susunan</b> adalah satu cara menempatkan semua orang yang memenuhi semua syarat. Kata tanya soal analitis menunjuk berapa banyak susunan yang harus membenarkan sebuah pilihan, dan dari situ pula cara menggugurkan pilihan lain.</p>
+  <table class="tb">
+    <thead><tr><th style="width:21%">Kata tanya</th><th style="width:36%">Pilihan benar bila</th><th>Pilihan lain gugur bila</th></tr></thead>
+    <tbody>
+      <tr><td><b>Pasti benar</b></td><td>benar di semua susunan yang sah</td><td>ada satu susunan sah yang membuatnya salah</td></tr>
+      <tr><td><b>Mungkin benar</b></td><td>benar di sedikitnya satu susunan sah</td><td>tidak terjadi di susunan sah mana pun</td></tr>
+      <tr><td><b>Tidak mungkin benar</b></td><td>salah di semua susunan sah</td><td>ada satu susunan sah yang membenarkannya</td></tr>
+      <tr><td><b>Pilih susunan</b></td><td>memenuhi semua syarat</td><td>melanggar satu syarat yang dapat ditunjuk</td></tr>
+      <tr><td><b>Dapat ditentukan</b></td><td>bernilai sama di semua susunan sah</td><td>ada dua susunan sah dengan nilai berbeda</td></tr>
+    </tbody>
+  </table>
+  <p>Satu susunan yang cocok belum membuktikan "pasti". Ini prinsip contoh penyangkal dari Bab 2: menggugurkan cukup dengan satu susunan, sedangkan membenarkan "pasti" memerlukan semua susunan yang sah.</p>
+
+  <h3>Kekuatan Setiap Syarat</h3>
+  <p>Lima orang A, B, C, D, dan E dapat berjajar dalam 5 × 4 × 3 × 2 × 1 = 120 susunan. Setiap syarat mencoret sebagian, dan banyak susunan yang tersisa menunjukkan kekuatan syarat itu.</p>
+  <table class="tb">
+    <thead><tr><th style="width:30%">Syarat</th><th style="width:18%" class="n">Susunan tersisa</th><th>Alasan</th></tr></thead>
+    <tbody>
+      <tr><td>A di urutan ke-2</td><td class="n">24</td><td>empat orang lain mengisi empat tempat: 4 × 3 × 2 × 1</td></tr>
+      <tr><td>B tepat setelah A</td><td class="n">24</td><td>AB menjadi satu kotak, sehingga yang disusun tinggal empat kotak</td></tr>
+      <tr><td>A dan B bersebelahan</td><td class="n">48</td><td>kotaknya boleh AB atau BA, masing-masing 24</td></tr>
+      <tr><td>A sebelum B</td><td class="n">60</td><td>tepat separuh susunan menaruh A lebih dulu</td></tr>
+      <tr><td>A tidak di urutan ke-1</td><td class="n">96</td><td>hanya mencoret susunan yang diawali A, yaitu 24 susunan</td></tr>
+    </tbody>
+  </table>
+  <p>Urutan pemasangan yang efisien mengikuti tabel ini: <b>letak tetap dan blok "tepat"</b> lebih dulu, lalu bersebelahan, lalu "sebelum" dan "sesudah", dan syarat "tidak" paling akhir. Syarat "tidak" tetap wajib dipakai. Syarat itu lemah untuk mempersempit di awal, tetapi menentukan saat mencoret cabang terakhir.</p>
+  <p>Perhatikan kata <b>tepat</b>. "B setelah A" menyisakan 60 susunan, sedangkan "B tepat setelah A" hanya 24. Kata "tepat" berarti bersebelahan; tanpa kata itu, A dan B boleh berjarak.</p>
+
+  <h3>Urutan Berjajar dan Pilihan Susunan</h3>
+  <p>Soal urutan berjajar sering disertai atribut, misalnya warna, kota asal, atau mata pelajaran. Gambar garis bernomor, isi letak tetap dan blok lebih dulu, lalu bercabang bila perlu. Tulis setiap cabang di baris sendiri supaya tidak tercampur.</p>
+  <p>Pada bentuk <b>pilih susunan yang memenuhi semua syarat</b>, bandingkan pilihan lebih dulu. Cari posisi tempat pilihan-pilihan itu berbeda, lalu uji syarat yang menyentuh posisi tersebut. Setiap pilihan salah melanggar sedikitnya satu syarat yang dapat kamu tunjuk.</p>
+  <div class="note catatan">
+    <h4>Catatan</h4>
+    <p>Syarat yang dipenuhi semua pilihan tidak berguna untuk memilih, walaupun syarat itu tampak paling ketat. Di soal latihan di luar buku ini pernah ditemukan syarat letak tetap yang dipenuhi kelima pilihan, sehingga hanya syarat lain yang menggugurkan pilihan salah. Mulailah dari syarat yang membedakan pilihan.</p>
+  </div>
+
+  <h3>Duduk Melingkar</h3>
+  <div class="konsep">
+    <div class="def">
+      <p>Pada meja bundar, memutar seluruh susunan tidak mengubah siapa duduk di sebelah siapa. Enam orang dapat menempati enam kursi bernomor dalam 6 × 5 × 4 × 3 × 2 × 1 = 720 cara, tetapi setiap susunan muncul dalam enam putaran. Susunan yang benar-benar berbeda hanya 720 : 6 = 120. Mengunci satu orang di satu kursi membuang semua putaran kembar itu sejak awal.</p>
+      <p>Kursi <b>berhadapan</b> di meja berkursi genap terpisah setengah putaran: di meja enam kursi, kursi 1 berhadapan dengan kursi 4. Meja berkursi ganjil tidak punya pasangan berhadapan.</p>
+      <p>Arah kanan bergantung pada arah duduk. Bila semua orang menghadap ke tengah, tetangga kanan seseorang terletak <b>berlawanan arah jarum jam</b> bila meja dilihat dari atas. Pada gambar, kursi diberi nomor searah jarum jam, dan tetangga kanan orang di kursi 1 adalah kursi 6, bukan kursi 2.</p>
+    </div>
+    <figure class="diag">
+      <svg viewBox="0 0 160 124" role="img" aria-label="Enam kursi melingkar bernomor searah jarum jam; orang di kursi 1 menghadap ke tengah, tetangga kanannya di kursi 6"><defs><marker id="ujung" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L8 4L0 8z"/></marker></defs><circle class="meja" cx="80" cy="62" r="24"/><path class="pn" marker-end="url(#ujung)" d="M80 89V70"/><path class="pn ka" marker-end="url(#ujung)" d="M91 102Q106.5 102 118.9 89"/><circle class="k t" cx="80" cy="100" r="9"/><text x="80" y="103.4">1</text><circle class="k" cx="47.1" cy="81" r="9"/><text x="47.1" y="84.4">2</text><circle class="k" cx="47.1" cy="43" r="9"/><text x="47.1" y="46.4">3</text><circle class="k" cx="80" cy="24" r="9"/><text x="80" y="27.4">4</text><circle class="k" cx="112.9" cy="43" r="9"/><text x="112.9" y="46.4">5</text><circle class="k" cx="112.9" cy="81" r="9"/><text x="112.9" y="84.4">6</text><text class="ket" x="110" y="115">kanan</text></svg>
+      <figcaption>Kursi 1 menghadap ke tengah<span>tetangga kanannya kursi 6</span></figcaption>
+    </figure>
+  </div>
+  <p>Bila soal tidak menyebut arah duduk, kunci soal yang baik tetap sama untuk kedua arah kanan. Uji kedua arah sebelum memilih; pilihan yang hanya benar di satu arah lahir dari kanan dan kiri yang tertukar.</p>
+
+  <h3>Urutan Sebagian dan Gambar Panah</h3>
+  <div class="konsep">
+    <div class="def">
+      <p>Syarat "X lebih dahulu daripada Y" digambar sebagai panah dari X ke Y. Perhatikan lima syarat: P sebelum Q, P sebelum R, Q sebelum S, R sebelum S, dan T sebelum R. Dari 120 cara menyusun lima unsur, hanya lima susunan yang memenuhi kelimanya.</p>
+      <p>S tidak punya panah keluar, sedangkan setiap unsur lain punya sesuatu sesudahnya. Unsur yang masih punya penerus tidak dapat menjadi yang terakhir, jadi S pasti terakhir. Urutan pertama tidak dapat ditentukan: P dan T sama-sama tanpa panah masuk, dan susunan P Q T R S dan T P Q R S membuktikannya.</p>
+    </div>
+    <figure class="diag">
+      <svg viewBox="0 0 152 104" role="img" aria-label="Panah urutan: P ke Q, P ke R, Q ke S, R ke S, T ke R; hanya S tanpa panah keluar"><path class="pn" marker-end="url(#ujung)" d="M26 22L64 22"/><path class="pn" marker-end="url(#ujung)" d="M23.1 29.1L67.5 73.5"/><path class="pn" marker-end="url(#ujung)" d="M84.9 26.5L125.3 46.6"/><path class="pn" marker-end="url(#ujung)" d="M84.9 77.5L125.3 57.4"/><path class="pn" marker-end="url(#ujung)" d="M26 82L64 82"/><circle class="k" cx="16" cy="22" r="9"/><text x="16" y="25.4">P</text><circle class="k" cx="16" cy="82" r="9"/><text x="16" y="85.4">T</text><circle class="k" cx="76" cy="22" r="9"/><text x="76" y="25.4">Q</text><circle class="k" cx="76" cy="82" r="9"/><text x="76" y="85.4">R</text><circle class="k t" cx="136" cy="52" r="9"/><text x="136" y="55.4">S</text></svg>
+      <figcaption>Hanya S tanpa panah keluar<span>S pasti terakhir</span></figcaption>
+    </figure>
+  </div>
+  <p>Urutan sebagian tidak boleh dilengkapi sendiri. Bila dua unsur tidak dihubungkan panah, baik langsung maupun lewat unsur lain, urutan keduanya terbuka, dan pilihan yang menetapkannya hanya mungkin benar.</p>
+
+  <h3>Syarat Tambahan pada Kalimat Tanya</h3>
+  <p class="utuh">Sebagian soal menambahkan syarat di kalimat tanya, misalnya "Jika C duduk tepat di kanan A, pernyataan yang pasti benar adalah …". Syarat itu hanya berlaku untuk soal tersebut. Pasang syarat tambahan itu pada susunan yang sudah tersisa, lalu jawab. Pada satu set soal yang memakai data sama, syarat tambahan dari soal sebelumnya tidak dibawa ke soal berikutnya.</p>
+
+  <div class="utuh">
+  <h3>Jadwal dan Pencocokan Atribut</h3>
+  <p>Dua bentuk lain memakai cara yang sama dengan wadah berbeda. Pada soal <b>jadwal</b>, orang dibagi ke hari atau sesi. Enam orang yang dibagi ke tiga hari, dua orang per hari: ada 90 cara. Syarat "bersama", "tidak bersama", dan "pada hari tertentu" memangkasnya dengan cepat bila setiap hari ditulis sebagai kolom.</p>
+  <p class="utuh">Pada soal <b>pencocokan atribut</b>, setiap orang dipasangkan dengan tepat satu nilai atribut. Tabel centang-silang memuat orang di baris dan nilai atribut di kolom. Setiap syarat "bukan" mengisi satu sel dengan tanda silang, dan baris atau kolom yang tinggal satu sel kosong langsung terisi.</p>
+  </div>
+  <p>Misalkan Dika, Eka, dan Fajar dibagi menjadi notulen, moderator, dan penerima tamu. Eka bukan notulen dan bukan moderator; Dika bukan moderator. Dari 3 × 2 × 1 = 6 pemetaan, hanya satu yang memenuhi: Dika notulen, Eka penerima tamu, dan Fajar moderator.</p>
+  <table class="tb silang">
+    <thead><tr><th style="width:22%"></th><th>Notulen</th><th>Moderator</th><th>Penerima tamu</th><th style="width:34%">Asal isian</th></tr></thead>
+    <tbody>
+      <tr><td><b>Eka</b></td><td>×</td><td>×</td><td><b>ya</b></td><td>dua silang dari syarat, sel sisa terisi</td></tr>
+      <tr><td><b>Dika</b></td><td><b>ya</b></td><td>×</td><td>×</td><td>moderator dari syarat, penerima tamu sudah milik Eka</td></tr>
+      <tr><td><b>Fajar</b></td><td>×</td><td><b>ya</b></td><td>×</td><td>tinggal satu tugas</td></tr>
+    </tbody>
+  </table>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Cakupan Jadwal dan Pencocokan</h4>
+    <p>Putusan 8 (1): subbagian pendek jadwal + pencocokan atribut, dengan soal C04 (pencocokan 2 atribut) dan L03 (jadwal). Bentuk ini tidak terlihat di TR (urutan + atribut, melingkar, urutan parsial); kemunculannya di SKD 2026 belum diverifikasi. Klaim arah kanan (menghadap ke tengah = berlawanan arah jarum jam dilihat dari atas) dibuktikan di <code>cek_bab11_13.mjs</code> dengan vektor arah hadap; gambar kursi dan panah dibangkitkan script yang sama.</p>
+  </div>
+
+  <h3>Langkah Penyelesaian Soal Analitis</h3>
+  <div class="rules satu">
+    <div><b>Hitung tokoh dan tempat,</b> lalu gambar wadahnya: garis bernomor, lingkaran kursi, panah, kolom hari, atau tabel centang-silang.</div>
+    <div><b>Pilah syarat:</b> letak tetap, blok "tepat", urutan, larangan, dan syarat tambahan di kalimat tanya.</div>
+    <div><b>Pasang letak tetap dan blok lebih dulu;</b> di meja bundar, kunci satu orang di satu kursi.</div>
+    <div><b>Bercabang bila perlu,</b> dengan setiap cabang di baris sendiri.</div>
+    <div><b>Coret cabang</b> yang melanggar syarat larangan.</div>
+    <div><b>Jawab sesuai kata tanya:</b> pasti, mungkin, tidak mungkin, pilih susunan, atau dapat ditentukan.</div>
+    <div><b>Cek balik:</b> kunci memenuhi semua syarat, setiap pilihan lain gugur oleh satu susunan atau satu syarat yang dapat ditunjuk, dan arah kanan sudah diuji.</div>
+  </div>
+
+  <h3>Kekeliruan pada Soal Analitis</h3>
+  <p>Setiap pilihan salah pada soal analitis D'Ajiks lahir dari salah satu kekeliruan berikut. Nama-nama ini dipakai di setiap pembahasan bab ini.</p>
+  <table class="tb">
+    <thead><tr><th style="width:5%">No.</th><th style="width:32%">Kekeliruan</th><th>Contoh</th><th style="width:27%">Pertanyaan uji</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><b>Menganggap yang mungkin benar sebagai pasti benar</b></td><td>berhenti di satu susunan yang cocok</td><td>Ada susunan sah yang membantah?</td></tr>
+      <tr><td>2</td><td><b>Membaca hubungan dari arah sebaliknya</b></td><td>kanan dan kiri tertukar; "A sebelum B" ditulis B lalu A</td><td>Arah hadapnya ke mana?</td></tr>
+      <tr><td>3</td><td><b>Melewatkan atau melonggarkan satu syarat</b></td><td>syarat "tidak" terlewat; "tepat setelah" dibaca "setelah"</td><td>Setiap syarat sudah dipakai persis?</td></tr>
+      <tr><td>4</td><td><b>Memakai keterangan yang tidak tertulis di soal</b></td><td>urutan sebagian dianggap urutan lengkap</td><td>Urutan ini tertulis atau dugaanmu?</td></tr>
+      <tr><td>5</td><td><b>Membawa syarat tambahan ke soal lain</b></td><td>syarat "jika" satu soal dipakai di soal berikutnya</td><td>Syarat ini milik soal yang mana?</td></tr>
+      <tr><td>6</td><td><b>Salah menghitung posisi atau kursi</b></td><td>posisi ke-3 dihitung dari ujung lain; kursi berhadapan meleset satu</td><td>Dihitung dari ujung yang mana?</td></tr>
+      <tr><td>7</td><td><b>Berhenti setelah pernyataan (1) cukup</b></td><td>soal analitis berbentuk kecukupan data</td><td>Pernyataan (2) sudah dinilai sendiri?</td></tr>
+      <tr><td>8</td><td><b>Memilih karena katanya sama dengan soal</b></td><td>pilihan memakai kata dari ketentuan, tetapi isinya bertentangan dengan ketentuan itu</td><td>Isinya cocok, bukan hanya katanya?</td></tr>
+    </tbody>
+  </table>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Padanan Nama Kekeliruan dan Kode</h4>
+    <p>1 J-MUNGKIN (K4) · 2 J-BALIK (K3) · 3 J-SYARAT (K2) · 4 J-ASUMSI (K1) · 5 J-ASUMSI, syarat satu soal dibawa ke soal lain (K1) · 6 J-NOMOR (K6) · 7 J-BERHENTI, ANA bentuk KCK (K2) · 8 J-KATA (K7). Pengecoh dari salah baca dibangkitkan fungsi salah baca per kode di <code>bab12_analitis.mjs</code> (kanan ↔ kiri, "tepat setelah" → "setelah", "tidak" dibuang, sebelum ↔ sesudah, posisi dari ujung lain).</p>
+  </div>
+
+<!--B12-P01-bahas:mulai-->
+  <h3 id="bahas-B12-P01">Pembahasan Pertanyaan Pembuka</h3>
+<div class="bahas-pembuka">
+  <div class="soal">
+    <div class="meta"><span>Pertanyaan Pembuka</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 120 detik</span></div>
+    <p class="stem">Lima orang, yaitu Laras, Maya, Nanda, Oki, dan Prita, tinggal di sebuah gedung lima lantai. Setiap lantai dihuni tepat satu orang, dan lantai 1 adalah lantai paling bawah. Ketentuannya sebagai berikut.</p>
+    <dl class="premis syarat"><div><dt>1.</dt><dd>Maya tinggal tepat satu lantai di atas Laras.</dd></div><div><dt>2.</dt><dd>Oki tinggal di lantai yang lebih tinggi daripada Maya.</dd></div><div><dt>3.</dt><dd>Nanda tidak tinggal di lantai 1.</dd></div><div><dt>4.</dt><dd>Prita tinggal di lantai yang lebih rendah daripada Laras.</dd></div></dl>
+    <p class="stem">Pernyataan yang <mark>pasti benar</mark> adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Laras tinggal di lantai 2.</span></li><li><span class="h">B</span><span>Oki tinggal di lantai 5.</span></li><li><span class="h">C</span><span>Nanda tinggal di lantai yang lebih tinggi daripada Maya.</span></li><li><span class="h">D</span><span>Laras tinggal tepat satu lantai di atas Maya.</span></li><li><span class="h">E</span><span>Prita tinggal di lantai 1.</span></li></ol>
+  </div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Kata tanyanya “pasti benar”: pilihan harus benar di setiap susunan yang memenuhi keempat ketentuan. Satu susunan yang cocok belum cukup.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Pasang blok lebih dulu: Maya tepat di atas Laras, Oki di atas Maya, dan Prita di bawah Laras. Prita harus berada di bawah Laras, jadi Laras paling rendah di lantai 2. Bila Laras di lantai 2, Prita pasti di lantai 1. Bila Laras di lantai 3, lantai 1 dan 2 diisi Prita dan Nanda, dan Nanda tidak boleh di lantai 1, jadi Prita lagi-lagi di lantai 1. Ada tiga susunan sah, dan ketiganya menaruh Prita di lantai 1.</dd></div>
+    <div><dt>Cara lain</dt><dd>Tulis ketiga susunan dari lantai 1 ke lantai 5: Prita, Laras, Maya, Nanda, Oki; Prita, Laras, Maya, Oki, Nanda; Prita, Nanda, Laras, Maya, Oki. Bandingkan lantai 1: selalu Prita.</dd></div>
+    <div><dt>Cek balik</dt><dd>Uji pilihan lain dengan susunan pembantah. Susunan ketiga menaruh Laras di lantai 3 dan Nanda di bawah Maya, sedangkan susunan kedua menaruh Oki di lantai 4. Tidak satu pun susunan menaruh Laras di atas Maya.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">salah di susunan ketiga</span><b>Menganggap yang mungkin benar sebagai pasti benar.</b> Laras di lantai 2 benar di dua susunan pertama. Susunan Prita, Nanda, Laras, Maya, Oki menaruh Laras di lantai 3.</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">salah di susunan kedua</span><b>Menganggap yang mungkin benar sebagai pasti benar.</b> Oki di lantai 5 benar di dua susunan, tetapi susunan Prita, Laras, Maya, Oki, Nanda menaruh Oki di lantai 4.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">salah di susunan ketiga</span><b>Menganggap yang mungkin benar sebagai pasti benar.</b> Nanda di atas Maya benar bila Nanda di lantai 4 atau 5. Pada susunan ketiga, Nanda di lantai 2, di bawah Maya.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">ketentuan 1 dibalik</span><b>Membaca hubungan dari arah sebaliknya.</b> Ketentuan pertama menaruh Maya tepat di atas Laras. Pilihan ini membalik arahnya, sehingga salah di setiap susunan.</div></div></div>
+  <div class="jwb"><span>E</span><p><b>Jawaban: E.</b> Prita harus di bawah Laras, sedangkan Laras paling rendah di lantai 2 dan Nanda tidak boleh di lantai 1, sehingga lantai 1 selalu milik Prita.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti mencari tempat duduk adik di bus yang penuh aturan: setiap kemungkinan yang kamu coba ternyata menaruhnya di kursi depan. Bukan karena kamu memilih begitu, tetapi karena aturan tidak menyisakan kursi lain untuknya.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Menemukan satu susunan, misalnya Prita, Laras, Maya, Nanda, Oki, lalu memilih pilihan pertama yang cocok dengan susunan itu. Pada kata tanya “pasti”, setiap pilihan harus diuji di semua susunan.</span></div></div>
+  <p class="balik"><a class="ke" href="#soal-B12-P01">Kembali ke soal</a></p>
+</div>
+<!--B12-P01-bahas:selesai-->
+
+  <h3>Contoh Soal dan Pembahasan</h3>
+  <p>Empat contoh berikut memperagakan pilihan susunan dengan atribut, duduk melingkar dengan syarat tambahan, urutan sebagian, dan pencocokan atribut. Kerjakan setiap contoh sendiri dalam target waktunya sebelum membaca pembahasan. Pembahasan setiap contoh menyertakan gambar wadahnya dan bagian Pilihan yang Gugur yang menunjuk syarat atau susunan pembantah untuk setiap pilihan salah.</p>
+<!--B12-C01:mulai-->
+<div data-soal="HB-TIU-B12-C01" data-target="120">
+  <div class="soal">
+    <div class="meta"><span>Contoh 1</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 120 detik</span></div>
+    <p class="stem">Enam siswa, yaitu Arif, Bunga, Candra, Dewi, Erlan, dan Fitri, mempresentasikan proyek secara bergiliran, satu siswa pada setiap giliran. Arif dan Dewi dari kelas X, Bunga dan Candra dari kelas XI, sedangkan Erlan dan Fitri dari kelas XII. Ketentuannya sebagai berikut.</p>
+    <dl class="premis syarat"><div><dt>1.</dt><dd>Bunga tampil <mark>tepat sebelum</mark> Erlan.</dd></div><div><dt>2.</dt><dd>Dua siswa dari kelas yang sama tidak tampil berurutan.</dd></div><div><dt>3.</dt><dd>Penampil pertama berasal dari kelas XII.</dd></div><div><dt>4.</dt><dd>Dewi tampil sebelum Arif.</dd></div></dl>
+    <p class="stem">Urutan penampil dari giliran pertama sampai keenam yang memenuhi semua ketentuan adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Fitri, Bunga, Dewi, Erlan, Candra, Arif</span></li><li><span class="h">B</span><span>Fitri, Bunga, Erlan, Dewi, Arif, Candra</span></li><li><span class="h">C</span><span>Fitri, Dewi, Candra, Arif, Bunga, Erlan</span></li><li><span class="h">D</span><span>Fitri, Candra, Arif, Bunga, Erlan, Dewi</span></li><li><span class="h">E</span><span>Candra, Dewi, Bunga, Erlan, Arif, Fitri</span></li></ol>
+  </div>
+  <div class="guru"><b>ANA pilih susunan, enam penampil dengan kelas, pilih susunan.</b> Kunci C. Kode: A J-SYARAT · B J-SYARAT · C <b>kunci</b> · D J-BALIK · E J-NOMOR. Kerangka: ANA pilih susunan · 6 unsur + atribut 3 nilai × 2 · blok tepat, tidak berurutan sekelas, posisi-atribut, sebelum · tiap ketentuan menggugurkan satu pilihan. TO terdekat: TO P1 tidak memakai pilih susunan; TR no. 53 punya syarat tak berguna. Bukti: syarat 1–4 menggugurkan pilihan A · B · E · D; tiap pilihan salah melanggar tepat satu syarat; skor unsur bersama {"A":5,"B":5,"C":4,"D":3,"E":3}; susunan sah di luar pilihan 5. Kode = rencana slot (J-SYARAT ×2: tepat dilonggarkan, tidak terlewat; J-BALIK; J-NOMOR). Skor unsur bersama kunci di tengah (bukan tertinggi/terendah).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Bentuk soalnya memilih susunan: tepat satu pilihan memenuhi keempat ketentuan. Kalimat penentunya “tepat sebelum”: Bunga dan Erlan harus bersebelahan, dengan Bunga lebih dulu.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Uji ketentuan yang paling mudah dilihat pada kelima pilihan. Ketentuan 3: pilihan E diawali Candra dari kelas XI, gugur. Ketentuan 1: pada pilihan A, Bunga di giliran 2 dan Erlan di giliran 4, tidak bersebelahan, gugur. Ketentuan 4: pada pilihan D, Arif tampil sebelum Dewi, gugur. Ketentuan 2: pada pilihan B, Dewi dan Arif dari kelas X tampil berurutan, gugur. Tinggal C.</dd></div>
+    <div><dt>Cara lain</dt><dd>Uji C terhadap semua ketentuan: giliran pertama Fitri dari kelas XII; kelasnya berurutan XII, X, XI, X, XI, XII, tanpa dua kelas sama berdampingan; Bunga di giliran 5 tepat sebelum Erlan di giliran 6; Dewi di giliran 2 sebelum Arif di giliran 4.</dd></div>
+    <div><dt>Cek balik</dt><dd>Setiap ketentuan menggugurkan tepat satu pilihan: ketentuan 1 menggugurkan A, ketentuan 2 menggugurkan B, ketentuan 3 menggugurkan E, dan ketentuan 4 menggugurkan D. Tidak ada ketentuan yang terlewat.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">ketentuan 1</span><b>Melewatkan atau melonggarkan satu syarat.</b> Bunga memang tampil sebelum Erlan, tetapi tidak tepat sebelumnya: di antara mereka ada Dewi. Kata “tepat” menuntut keduanya bersebelahan.</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">ketentuan 2</span><b>Melewatkan atau melonggarkan satu syarat.</b> Dewi dan Arif, sama-sama kelas X, tampil di giliran 4 dan 5. Ketentuan “tidak tampil berurutan” terlewat.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">ketentuan 4</span><b>Membaca hubungan dari arah sebaliknya.</b> Arif tampil di giliran 3, sedangkan Dewi di giliran 6. Urutan Dewi dan Arif terbalik.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">ketentuan 3</span><b>Menghitung giliran dari ujung yang salah.</b> Siswa kelas XII ada di giliran terakhir, bukan giliran pertama; penampil pertama, Candra, dari kelas XI. Giliran dihitung dari ujung yang salah.</div></div></div>
+  <div class="jwb"><span>C</span><p><b>Jawaban: C.</b> Pilihan C memenuhi keempat ketentuan, sedangkan setiap pilihan lain melanggar tepat satu ketentuan yang dapat ditunjuk.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti memeriksa lima jadwal piket yang diajukan teman-temanmu: kamu tidak perlu menyusun jadwal sendiri. Cukup coret jadwal yang melanggar aturan, satu aturan demi satu aturan, sampai tersisa satu.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Membaca “Bunga tampil tepat sebelum Erlan” sebagai “Bunga tampil sebelum Erlan”, lalu meloloskan pilihan A. Kata “tepat” berarti tidak ada siapa pun di antara keduanya.</span></div></div>
+</div>
+<!--B12-C01:selesai-->
+<!--B12-C02:mulai-->
+<div data-soal="HB-TIU-B12-C02" data-target="150">
+  <div class="soal">
+    <div class="meta"><span>Contoh 2</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 150 detik</span></div>
+    <p class="stem">Delapan orang, yaitu Andi, Beni, Cahya, Dina, Eva, Farhan, Gani, dan Hesti, duduk mengelilingi meja bundar dengan delapan kursi berjarak sama. Semuanya menghadap ke tengah meja. Ketentuannya sebagai berikut.</p>
+    <dl class="premis syarat"><div><dt>1.</dt><dd>Cahya duduk berhadapan dengan Dina.</dd></div><div><dt>2.</dt><dd>Cahya duduk tepat di sebelah kanan Beni.</dd></div><div><dt>3.</dt><dd>Dina duduk tepat di antara Eva dan Farhan.</dd></div><div><dt>4.</dt><dd>Gani tidak duduk bersebelahan dengan Andi.</dd></div></dl>
+    <p class="stem"><mark>Jika Hesti duduk berhadapan dengan Andi</mark>, pernyataan yang pasti benar adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Beni duduk tepat di sebelah kanan Andi.</span></li><li><span class="h">B</span><span>Eva duduk tepat di sebelah kanan Dina.</span></li><li><span class="h">C</span><span>Hesti duduk tepat di sebelah kiri Gani.</span></li><li><span class="h">D</span><span>Gani duduk berhadapan dengan Andi.</span></li><li><span class="h">E</span><span>Farhan duduk bersebelahan dengan Hesti.</span></li></ol>
+  </div>
+  <div class="guru"><b>ANA melingkar, delapan kursi + syarat jika, pasti benar.</b> Kunci A. Kode: A <b>kunci</b> · B J-MUNGKIN · C J-BALIK · D J-NOMOR · E J-MUNGKIN. Kerangka: ANA melingkar · 8 kursi menghadap ke tengah · berhadapan, kanan, tepat di antara, tidak bersebelahan · syarat jika · pasti benar. TO terdekat: TO P1 no. 54 (meja 6, tanpa jika). Bukti: Andi dikunci di kursi 0; 5.040 susunan, sah 8; dengan syarat jika tersisa 2 (A E D F H G C B | A F D E H G C B, searah jarum jam dari Andi); pilihan benar di {"A":2,"B":1,"C":0,"D":0,"E":1}; arah kanan dibalik → kunci tetap A; tanpa syarat 1–4 (dengan jika) tersisa 4/4/14/4. Kode = rencana slot (J-BALIK, J-NOMOR, J-MUNGKIN ×2). Model menghitung ulang dengan arah kanan terbalik: kunci tetap A (semua ketentuan ikut tercermin). Setiap ketentuan mengubah status pilihan bila dibuang (dengan syarat jika). Revisi cek buta 1: B "Eva di kiri Andi" diganti "Eva di kanan Dina" (tetap 1 dari 2 susunan) agar kunci tidak berada di pasangan kanan/kiri Andi yang menyendiri.</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Syarat tambahan “Jika Hesti duduk berhadapan dengan Andi” hanya berlaku untuk soal ini. Pilihan harus benar di setiap susunan yang memenuhi keempat ketentuan dan syarat tambahan itu.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Taruh Andi di satu kursi dan Hesti tepat di hadapannya. Cahya dan Dina juga berhadapan, dan Beni duduk tepat di kiri Cahya. Coba setiap pasangan kursi berhadapan untuk Cahya dan Dina. Kebanyakan gugur: Dina terapit Andi atau Hesti, Beni terdesak ke kursi Andi atau Hesti, atau Gani terpaksa duduk di samping Andi. Yang tersisa: Beni tepat di kanan Andi, Cahya di kanan Beni, Dina di hadapan Cahya diapit Eva dan Farhan, dan Gani di kursi sisanya.</dd></div>
+    <div><dt>Cara lain</dt><dd>Beri nomor kursi 0 sampai 7 searah jarum jam dengan Andi di kursi 0; kanan seseorang ada di kursi sebelumnya. Hesti di kursi 4. Cahya hanya bisa di kursi 6, dengan Beni di kursi 7 dan Dina di kursi 2. Eva dan Farhan menempati kursi 1 dan 3 dalam urutan mana pun, dan Gani di kursi 5. Dua susunan, keduanya menaruh Beni di kursi 7, tepat di kanan Andi.</dd></div>
+    <div><dt>Cek balik</dt><dd>Uji arah kanan dengan membayangkan dirimu duduk di kursi Andi menghadap ke tengah: tangan kananmu menunjuk kursi 7. Bila kanan dan kiri ditukar di semua ketentuan, seluruh susunan ikut tercermin dan jawabannya tetap sama.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">B</span><div class="x"><span class="uji">1 dari 2 susunan</span><b>Menganggap yang mungkin benar sebagai pasti benar.</b> Eva memang tetangga Dina, tetapi sisinya belum tentu. Eva di kanan Dina hanya terjadi bila Eva di kursi 1; pada susunan lain kursi itu milik Farhan.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">kanan-kiri tertukar</span><b>Membaca hubungan dari arah sebaliknya.</b> Hesti duduk tepat di sebelah kanan Gani, bukan di kirinya. Pilihan ini membalik arah, sehingga salah di kedua susunan.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">kursi dihitung kurang satu</span><b>Salah menghitung posisi atau kursi.</b> Gani berjarak tiga kursi dari Andi, bukan empat. Berhadapan di meja delapan kursi berarti terpisah empat kursi, dan pasangan Andi adalah Hesti.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">1 dari 2 susunan</span><b>Menganggap yang mungkin benar sebagai pasti benar.</b> Farhan di samping Hesti hanya terjadi bila Farhan di kursi 3. Pada susunan lain Farhan di kursi 1, jauh dari Hesti.</div></div></div>
+  <div class="jwb"><span>A</span><p><b>Jawaban: A.</b> Kedua susunan yang sah menaruh Beni tepat di sebelah kanan Andi, sedangkan pilihan lain gagal di sedikitnya satu susunan.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti mengatur tempat duduk keluarga besar di meja makan bundar dengan banyak permintaan: begitu kursi kakek dan nenek ditetapkan, permintaan lain biasanya hanya menyisakan dua atau tiga cara. Yang pasti adalah yang sama di semua cara itu.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Membaca kanan sebagai searah jarum jam. Orang yang menghadap ke tengah meja melihat tetangga kanannya di arah berlawanan jarum jam bila meja dilihat dari atas. Gambar dulu, lalu bayangkan dirimu duduk di kursi itu.</span></div></div>
+</div>
+<!--B12-C02:selesai-->
+<!--B12-C03:mulai-->
+<div data-soal="HB-TIU-B12-C03" data-target="120">
+  <div class="soal">
+    <div class="meta"><span>Contoh 3</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 120 detik</span></div>
+    <p class="stem">Tujuh surat, yaitu surat A, B, C, D, E, F, dan G, diarsipkan satu per satu secara berurutan. Ketentuannya sebagai berikut.</p>
+    <dl class="premis syarat"><div><dt>1.</dt><dd>Surat A dan surat B diarsipkan sebelum surat C.</dd></div><div><dt>2.</dt><dd>Surat C diarsipkan sebelum surat E.</dd></div><div><dt>3.</dt><dd>Surat E dan surat F diarsipkan sebelum surat G.</dd></div><div><dt>4.</dt><dd>Surat D diarsipkan <mark>tepat setelah</mark> surat B.</dd></div></dl>
+    <p class="stem">Pernyataan yang tidak mungkin benar adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Surat F diarsipkan sebelum surat A.</span></li><li><span class="h">B</span><span>Surat F diarsipkan keenam.</span></li><li><span class="h">C</span><span>Surat A diarsipkan kedua.</span></li><li><span class="h">D</span><span>Surat E diarsipkan kelima.</span></li><li><span class="h">E</span><span>Surat C diarsipkan sebelum surat D.</span></li></ol>
+  </div>
+  <div class="guru"><b>ANA urutan sebagian, tujuh surat, panah + tepat setelah, tidak mungkin.</b> Kunci E. Kode: A J-ASUMSI · B J-BALIK · C J-MUNGKIN · D J-NOMOR · E <b>kunci</b>. Kerangka: ANA urutan sebagian · 7 unsur · panah + satu blok tepat setelah · tidak mungkin. TO terdekat: TO P1 no. 55 (pasti); TR no. 55 (yang terakhir); bukan panah narasi P, Q, R, S, T. Bukti: 5.040 urutan; sah 10 (ABDCEFG, ABDCFEG, ABDFCEG, AFBDCEG, FABDCEG, BDACEFG, BDACFEG, BDAFCEG, BDFACEG, FBDACEG); pilihan benar di {"A":3,"B":2,"C":1,"D":2,"E":0} susunan; "tepat setelah" dilonggarkan → C sebelum D jadi mungkin; tanpa syarat 1–6 tersisa 24*/24/80*/30*/12*/70. Kode slot J-ASUMSI, J-BALIK; J-SYARAT (slot) tidak punya jalur yang membuat pilihan mungkin tampak mustahil, diganti J-MUNGKIN (C, berhenti di satu susunan) dan J-NOMOR (E, posisi dari belakang). Untuk kata tanya tidak mungkin, uji tiap ketentuan perlu memakai banyak susunan yang membenarkan pilihan (ketentuan 1–3 tidak mengubah status, hanya hitungannya). Revisi cek buta 1: tiga pilihan tentang surat F membuat kunci menyendiri; C kini "A kedua" (1 dari 10 urutan, J-MUNGKIN), J-NOMOR "E kelima" pindah ke D, kunci pindah D → E agar sebaran kelompok tetap seimbang.</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Kata tanyanya “tidak mungkin benar”: pilihan yang dicari salah di setiap urutan sah. Pilihan lain cukup digugurkan dengan satu urutan sah yang membenarkannya. Kalimat penentunya “tepat setelah”.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Gambar panah: A dan B menuju C, C menuju E, E dan F menuju G, dan D menempel tepat di belakang B. D langsung menyusul B, sedangkan C harus sesudah B, jadi C tidak dapat menyelip di antara B dan D. Akibatnya D selalu lebih dulu daripada C, dan pilihan E tidak mungkin benar.</dd></div>
+    <div><dt>Cara lain</dt><dd>Urutan sah ada sepuluh. Pada setiap urutan, B dan D muncul berdampingan, lalu C datang sesudahnya, misalnya A, B, D, C, E, F, G atau B, D, A, C, F, E, G.</dd></div>
+    <div><dt>Cek balik</dt><dd>Gugurkan pilihan lain dengan contoh: urutan F, A, B, D, C, E, G membenarkan A dan C; urutan A, B, D, C, E, F, G membenarkan B dan D.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">mungkin: F, A, B, D, C, E, G</span><b>Memakai keterangan yang tidak tertulis di soal.</b> F hanya wajib lebih dulu daripada G. Tidak ada panah antara F dan A, sehingga F boleh mendahului A. Menganggap urutan huruf atau urutan gambar sebagai urutan lengkap membuat pilihan ini tampak mustahil.</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">mungkin: A, B, D, C, E, F, G</span><b>Membaca hubungan dari arah sebaliknya.</b> F di urutan keenam sah selama G datang sesudahnya. Pilihan ini tampak mustahil hanya bila panah dari F ke G dibaca terbalik.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">mungkin: F, A, B, D, C, E, G</span><b>Berhenti di satu susunan yang dicoba.</b> A di urutan kedua hanya terjadi di satu dari sepuluh urutan, yaitu bila F diarsipkan paling awal. Bila yang dicoba hanya satu atau dua urutan lain, pilihan ini terkesan mustahil, padahal satu contoh sah sudah membuktikan sebaliknya.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">mungkin: A, B, D, C, E, F, G</span><b>Menghitung urutan dari ujung yang salah.</b> E di urutan kelima sah. Kekeliruan muncul bila urutan dihitung dari belakang: kelima dari belakang sama dengan ketiga dari depan, dan E memang tidak pernah di urutan ketiga.</div></div></div>
+  <div class="jwb"><span>E</span><p><b>Jawaban: E.</b> Surat D selalu diarsipkan tepat setelah surat B, sedangkan C harus sesudah B dan tidak dapat menyela B dan D, sehingga C tidak mungkin mendahului D.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti antre di loket bersama adikmu yang selalu menempel di belakangmu: siapa pun yang harus datang setelah kamu otomatis juga datang setelah adikmu.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Membaca “tepat setelah” sebagai “setelah”. Tanpa kata “tepat”, C bisa menyelip di antara B dan D, dan pilihan E menjadi mungkin.</span></div></div>
+</div>
+<!--B12-C03:selesai-->
+<!--B12-C04:mulai-->
+<div data-soal="HB-TIU-B12-C04" data-target="120">
+  <div class="soal">
+    <div class="meta"><span>Contoh 4</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 120 detik</span></div>
+    <p class="stem">Empat peserta pelatihan, yaitu Ilham, Juwita, Kevin, dan Lestari, berasal dari empat kota yang berbeda, yaitu Bogor, Cirebon, Garut, dan Serang. Mereka datang dengan empat kendaraan yang berbeda, yaitu bus, kereta, mobil, dan motor. Ketentuannya sebagai berikut.</p>
+    <dl class="premis syarat"><div><dt>1.</dt><dd>Juwita tidak berasal dari Bogor dan tidak naik kereta.</dd></div><div><dt>2.</dt><dd>Peserta dari Garut naik motor.</dd></div><div><dt>3.</dt><dd>Kevin naik bus.</dd></div><div><dt>4.</dt><dd>Ilham tidak berasal dari Garut maupun Serang.</dd></div></dl>
+    <p class="stem">Pernyataan yang <mark>mungkin benar</mark> adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Peserta dari Cirebon naik motor.</span></li><li><span class="h">B</span><span>Juwita berasal dari Cirebon.</span></li><li><span class="h">C</span><span>Kevin berasal dari Garut.</span></li><li><span class="h">D</span><span>Peserta dari Garut naik bus.</span></li><li><span class="h">E</span><span>Ilham berasal dari Serang.</span></li></ol>
+  </div>
+  <div class="guru"><b>ANA pencocokan, empat orang × kota × kendaraan, mungkin benar.</b> Kunci B. Kode: A J-SYARAT · B <b>kunci</b> · C J-SYARAT · D J-KATA · E J-SYARAT. Kerangka: ANA pencocokan · 4 orang × 2 atribut tanpa urutan · bukan, jika-Garut-maka-motor, tetap, bukan-maupun · mungkin benar. TO terdekat: belum ada di TO atau soal beredar; bukan Dika, Eka, Fajar (narasi). Bukti: 576 pemetaan; sah 11; pilihan benar di {"A":0,"B":1,"C":0,"D":0,"E":0} pemetaan; B hanya di I Bogor/kereta, J Cirebon/mobil, K Serang/bus, L Garut/motor; C gugur oleh syarat 2 dan 3 bersama; tanpa syarat 1–4 tersisa 16*/40/48/20. PENYIMPANGAN: kata tanya slot "pasti benar" diganti "mungkin benar" agar Bab 12 tetap punya satu soal "mungkin" (B12-L03 dijadikan "pasti" karena rujukan Bab 19 menuntut pilihan J-MUNGKIN). Kode: J-SYARAT ×3 (ketentuan berbeda), J-KATA; J-MUNGKIN/J-ASUMSI (slot) tidak punya jalur pada kata tanya mungkin. Ketentuan 1 hanya mengubah hitungan, bukan status. Revisi cek buta 1: kata Cirebon hanya ada di kunci; A "Ilham naik motor" diganti "Peserta dari Cirebon naik motor" (jalur sama: motor milik peserta Garut terlewat).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Kata tanyanya “mungkin benar”: cukup satu pemetaan sah yang membenarkan pilihan. Empat pilihan lain harus salah di setiap pemetaan.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Isi tabel centang-silang. Kevin naik bus. Peserta dari Garut naik motor, jadi Kevin bukan dari Garut, dan Ilham juga bukan dari Garut. Juwita tidak naik kereta dan bukan dari Bogor. Coba Juwita dari Cirebon: Ilham tidak boleh dari Garut atau Serang, jadi Ilham dari Bogor; Garut dan Serang tersisa untuk Kevin dan Lestari, dan Kevin bukan dari Garut, jadi Lestari dari Garut dan naik motor, Kevin dari Serang. Juwita naik mobil dan Ilham naik kereta. Semua ketentuan terpenuhi, jadi B mungkin benar.</dd></div>
+    <div><dt>Cara lain</dt><dd>Gugurkan dulu pilihan yang bertabrakan dengan ketentuan. Yang naik motor selalu peserta dari Garut, bukan peserta dari Cirebon. Kevin naik bus, jadi bukan dari Garut. Peserta dari Garut naik motor, bukan bus. Ilham tidak dari Serang. Yang tersisa B.</dd></div>
+    <div><dt>Cek balik</dt><dd>Pemetaan contoh untuk B: Ilham dari Bogor naik kereta, Juwita dari Cirebon naik mobil, Kevin dari Serang naik bus, dan Lestari dari Garut naik motor. Uji keempat ketentuan satu per satu; semuanya terpenuhi.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">motor milik peserta Garut</span><b>Melewatkan atau melonggarkan satu syarat.</b> Setiap kendaraan dipakai tepat satu orang, dan peserta dari Garut naik motor. Motor sudah menjadi milik peserta dari Garut, jadi peserta dari Cirebon tidak dapat memakainya.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">ketentuan 2 dan 3</span><b>Melewatkan atau melonggarkan satu syarat.</b> Bila Kevin dari Garut, ia harus naik motor, padahal ketentuan 3 menaruhnya di bus. Pilihan ini lolos hanya bila salah satu ketentuan itu terlewat.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">ketentuan 2 dibantah</span><b>Memilih karena katanya sama dengan soal.</b> Pilihan ini memakai kata yang sama dengan ketentuan 2, Garut dan kendaraan, tetapi isinya bertentangan: peserta dari Garut naik motor, bukan bus.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">kata “maupun” terlewat</span><b>Melewatkan atau melonggarkan satu syarat.</b> Ketentuan 4 melarang Ilham berasal dari Garut dan juga dari Serang. Pilihan ini lolos hanya bila bagian “maupun Serang” terlewat.</div></div></div>
+  <div class="jwb"><span>B</span><p><b>Jawaban: B.</b> Pemetaan Ilham dari Bogor, Juwita dari Cirebon, Kevin dari Serang, dan Lestari dari Garut memenuhi semua ketentuan, sedangkan pilihan lain melanggar ketentuan di setiap pemetaan.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti mencocokkan empat kunci dengan empat gembok: bila satu kunci sudah pasti milik gembok merah, kunci itu tidak bisa dicoba di gembok lain.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Lupa bahwa kota dan kendaraan masing-masing dipakai tepat satu orang. Akibatnya “peserta dari Garut naik motor” dibaca sepihak, dan peserta dari kota lain dikira masih boleh naik motor.</span></div></div>
+</div>
+<!--B12-C04:selesai-->
+
+  <h3>Latihan</h3>
+  <p>Empat latihan berikut tersusun dari yang paling ringan, dengan target total {{WAKTU_LATIHAN}}. Kerjakan dengan pengatur waktu dan tanpa melihat pembahasan. Gambar wadahnya lebih dulu, baru membaca pilihan. Kunci dan pembahasannya ada di lampiran.</p>
+<!--B12-L01:mulai-->
+<div data-soal="HB-TIU-B12-L01" data-target="90">
+  <div class="soal">
+    <div class="meta"><span id="soal-B12-L01">Latihan 1<a class="ke" href="#bahas-B12-L01">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 90 detik</span></div>
+    <p class="stem">Tujuh peserta lomba pidato, yaitu Galih, Hana, Irfan, Jihan, Kirana, Lutfi, dan Mira, tampil satu per satu. Ketentuannya sebagai berikut.</p>
+    <dl class="premis syarat"><div><dt>1.</dt><dd>Hana tampil tepat setelah Galih.</dd></div><div><dt>2.</dt><dd>Irfan tidak tampil pertama dan tidak tampil terakhir.</dd></div><div><dt>3.</dt><dd>Jihan tampil sebelum Kirana.</dd></div><div><dt>4.</dt><dd>Lutfi tampil di <mark>urutan ketiga</mark>.</dd></div></dl>
+    <p class="stem">Urutan penampil dari pertama sampai ketujuh yang memenuhi semua ketentuan adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Jihan, Galih, Lutfi, Kirana, Irfan, Hana, Mira</span></li><li><span class="h">B</span><span>Mira, Jihan, Lutfi, Irfan, Galih, Hana, Kirana</span></li><li><span class="h">C</span><span>Irfan, Mira, Lutfi, Galih, Hana, Jihan, Kirana</span></li><li><span class="h">D</span><span>Mira, Kirana, Lutfi, Jihan, Irfan, Galih, Hana</span></li><li><span class="h">E</span><span>Jihan, Mira, Irfan, Kirana, Lutfi, Galih, Hana</span></li></ol>
+  </div>
+  <div class="guru"><b>ANA pilih susunan, tujuh penampil berjajar, pilih susunan.</b> Kunci B. Kode: A J-SYARAT · B <b>kunci</b> · C J-SYARAT · D J-BALIK · E J-NOMOR. Kerangka: ANA pilih susunan · garis 7 tanpa atribut · tepat setelah + tidak di ujung + sebelum + posisi tetap. TO terdekat: belum ada di TO. Bukti: syarat 1–4 menggugurkan pilihan A · C · D · E; tiap pilihan salah melanggar tepat satu syarat; skor unsur bersama {"A":7,"B":6,"C":5,"D":7,"E":5}. Kode = rencana slot (J-SYARAT ×2, J-NOMOR, J-BALIK).</div>
+</div>
+<!--B12-L01:selesai-->
+<!--B12-L02:mulai-->
+<div data-soal="HB-TIU-B12-L02" data-target="120">
+  <div class="soal">
+    <div class="meta"><span id="soal-B12-L02">Latihan 2<a class="ke" href="#bahas-B12-L02">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 120 detik</span></div>
+    <p class="stem">Enam orang, yaitu Nadia, Omar, Putri, Raka, Sari, dan Tegar, duduk mengelilingi meja bundar dengan enam kursi berjarak sama, semuanya menghadap ke tengah meja. Nadia duduk berhadapan dengan Omar.</p>
+    <dl class="premis"><div><dt>(1)</dt><dd>Omar duduk tepat di sebelah kiri Putri.</dd></div><div><dt>(2)</dt><dd>Putri duduk bersebelahan dengan Raka.</dd></div></dl>
+    <p class="stem">Siapa yang duduk <mark>tepat di sebelah kanan Raka</mark>?</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.</span></li><li><span class="h">B</span><span>Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.</span></li><li><span class="h">C</span><span>Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.</span></li><li><span class="h">D</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan.</span></li><li><span class="h">E</span><span>Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.</span></li></ol>
+  </div>
+  <div class="guru"><b>ANA bentuk kecukupan data, lingkar enam, urutan bunyi diacak.</b> Kunci A. Kode: A <b>kunci</b> · B J-ASUMSI · C J-MUNGKIN · D J-SYARAT · E J-ASUMSI. Kerangka: ANA bentuk KCK · lingkar 6 + satu pasangan berhadapan di soal · (1) kiri · (2) bersebelahan · gabungan. TO terdekat: soal beredar memakai urutan garis (pelari, tinggi). Bukti: Nadia dikunci di kursi 0, Omar di hadapannya: 24 susunan; (1) 4 kemungkinan, (2) 3 kemungkinan, gabungan 2 susunan dengan jawaban Nadia; arah kanan dibalik → makna tetap; urutan bunyi G · 1 · M · X · 2. URUTAN BUNYI DIACAK (T2-7(7)): A = gabungan, B = hanya (1), C = masing-masing, D = digabung pun tidak, E = hanya (2); kunci A. Kode slot J-ASUMSI; J-BERHENTI dan J-BALIK (slot) tidak punya jalur di kunci gabungan, diganti J-MUNGKIN (C) dan J-SYARAT (D, pasangan berhadapan terlewat). Makna sama untuk kedua arah kanan.</div>
+</div>
+<!--B12-L02:selesai-->
+<!--B12-L03:mulai-->
+<div data-soal="HB-TIU-B12-L03" data-target="150">
+  <div class="soal">
+    <div class="meta"><span id="soal-B12-L03">Latihan 3<a class="ke" href="#bahas-B12-L03">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 150 detik</span></div>
+    <p class="stem">Enam anggota OSIS, yaitu Tito, Umar, Vina, Wulan, Yoga, dan Zahra, menjaga stan pameran sekolah pada hari Senin, Selasa, dan Rabu. Setiap hari stan dijaga tepat dua orang, dan setiap orang bertugas tepat satu hari. Ketentuannya sebagai berikut.</p>
+    <dl class="premis syarat"><div><dt>1.</dt><dd>Umar dan Vina bertugas pada hari yang sama.</dd></div><div><dt>2.</dt><dd>Wulan tidak bertugas bersama Yoga.</dd></div><div><dt>3.</dt><dd>Zahra bertugas pada hari Rabu.</dd></div><div><dt>4.</dt><dd>Tito <mark>tidak bertugas pada hari Senin</mark>.</dd></div></dl>
+    <p class="stem">Pernyataan yang pasti benar adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Tito bertugas pada hari Selasa.</span></li><li><span class="h">B</span><span>Wulan bertugas pada hari Selasa.</span></li><li><span class="h">C</span><span>Yoga bertugas bersama Zahra.</span></li><li><span class="h">D</span><span>Tito bertugas pada hari Senin.</span></li><li><span class="h">E</span><span>Wulan bertugas pada hari Rabu.</span></li></ol>
+  </div>
+  <div class="guru"><b>ANA jadwal, enam orang ke tiga hari, pasti benar.</b> Kunci A. Kode: A <b>kunci</b> · B J-MUNGKIN · C J-ASUMSI · D J-SYARAT · E J-MUNGKIN. Kerangka: ANA jadwal · 6 orang, 3 hari, 2 per hari · bersama, tidak bersama, hari tetap, bukan hari · pasti benar. TO terdekat: TO P1 no. 53 (satu regu per hari). Bukti: 90 pembagian; sah 2 (Senin UV, Selasa TW, Rabu YZ | Senin UV, Selasa TY, Rabu WZ); pilihan benar di {"A":2,"B":1,"C":1,"D":0,"E":1}; "tidak" syarat 4 terlewat → D pasti; tanpa syarat 1–4 tersisa 14/4/8/4. PENYIMPANGAN: kata tanya slot "mungkin benar" diganti "pasti benar": rujukan Latihan A Bab 19 no. 5 menuntut pilihan J-MUNGKIN ("menganggap yang mungkin benar sebagai pasti benar"), dan kekeliruan itu hanya punya jalur pada kata tanya pasti. B = pilihan yang disorot Latihan A. Kode slot J-SYARAT (D, E: kata tidak terlewat), J-ASUMSI (C), J-MUNGKIN (B). Revisi cek buta 1: E "Wulan bersama Yoga" (membalik ketentuan 2, langsung tercoret) diganti "Wulan bertugas pada hari Rabu" (1 dari 2 jadwal, J-MUNGKIN); kini dua pasangan sejenis (Tito Selasa/Senin, Wulan Selasa/Rabu), kunci tidak di pasangan tunggal.</div>
+</div>
+<!--B12-L03:selesai-->
+<!--B12-L04:mulai-->
+<div data-soal="HB-TIU-B12-L04" data-target="150">
+  <div class="soal">
+    <div class="meta"><span id="soal-B12-L04">Latihan 4<a class="ke" href="#bahas-B12-L04">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 150 detik</span></div>
+    <p class="stem">Tujuh orang, yaitu Aldi, Bella, Ciko, Dara, Elang, Fani, dan Galuh, duduk mengelilingi meja bundar dengan tujuh kursi berjarak sama, semuanya menghadap ke tengah meja. Seseorang duduk tepat di antara dua orang berarti kedua orang itu tetangga kiri dan kanannya. Dua orang <mark>berjarak satu kursi</mark> berarti di antara mereka ada tepat satu kursi. Ketentuannya sebagai berikut.</p>
+    <dl class="premis syarat"><div><dt>1.</dt><dd>Bella duduk tepat di antara Aldi dan Ciko.</dd></div><div><dt>2.</dt><dd>Dara dan Elang berjarak satu kursi.</dd></div><div><dt>3.</dt><dd>Fani duduk tepat di sebelah kanan Ciko.</dd></div></dl>
+    <p class="stem">Pernyataan yang tidak mungkin benar adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Dara duduk bersebelahan dengan Aldi.</span></li><li><span class="h">B</span><span>Galuh duduk tepat di antara Dara dan Elang.</span></li><li><span class="h">C</span><span>Dara duduk tepat di sebelah kanan Fani.</span></li><li><span class="h">D</span><span>Elang duduk tepat di antara Galuh dan Fani.</span></li><li><span class="h">E</span><span>Fani duduk tepat di antara Dara dan Elang.</span></li></ol>
+  </div>
+  <div class="guru"><b>ANA melingkar, tujuh kursi, tepat di antara + berjarak satu kursi, tidak mungkin.</b> Kunci E. Kode: A J-MUNGKIN · B J-NOMOR · C J-BALIK · D J-MUNGKIN · E <b>kunci</b>. Kerangka: ANA melingkar ganjil · 7 kursi tanpa hadapan · tepat di antara, berjarak satu kursi, kanan · tidak mungkin. TO terdekat: belum ada di TO. Bukti: Aldi dikunci di kursi 0; 720 susunan, sah 2 (A D G E F C B | A E G D F C B, searah jarum jam); pilihan benar di {"A":1,"B":2,"C":1,"D":1,"E":0}; arah kanan dibalik → kunci tetap E; tanpa syarat 1–3 tersisa 36/6/16. Kode = rencana slot (J-BALIK, J-MUNGKIN ×2, J-NOMOR). Kunci sama untuk kedua arah kanan. Revisi cek buta 1: D "Elang bersebelahan dengan Fani" ditulis ulang "Elang tepat di antara Galuh dan Fani" (isi sama, 1 dari 2 susunan); kini tiga pilihan berbentuk tepat di antara dan tiap pasangannya berbagi dua nama, sehingga pasangan B/E tidak menyendiri.</div>
+</div>
+<!--B12-L04:selesai-->
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Asal Rancangan Bab 12</h4>
+    <p>Putusan T2-1b: Bab 12 = 1 pembuka + 4 contoh + 4 latihan (dari 10 latihan T2-D). Dipilih: L1 (Standar, pilih susunan), L10 (HOTS, bentuk kecukupan data, urutan opsi diacak), L8 (HOTS, jadwal, Putusan 8), L4 (HOTS+, melingkar ganjil). Alasan: kata tanya berbeda di setiap latihan (pilih susunan, kecukupan data, pasti, tidak mungkin); wadah berbeda (garis, lingkar, jadwal); kode tersebar di K1, K2, K3, K4, K6; tingkat naik; tidak ada yang sekerangka dengan TO P1 no. 53–55.</p>
+    <p>Gugur: L2 (pilih susunan melingkar; pilih susunan sudah di C01 + L01) · L3 (lingkar dengan kursi kosong; melingkar sudah di C02 + L04) · L5 (urutan parsial yang dapat ditentukan; sudah di narasi panah + C03) · L6 (urutan parsial + "jika"; syarat tambahan sudah di C02) · L7 (urutan + atribut, mungkin benar; atribut di C01, kata tanya "mungkin" di C04) · L9 (pencocokan 3 atribut; pencocokan sudah di C04 + narasi). Latihan Bukti B5 tidak dimuat: kedua Latihan Bukti ditempatkan di Bab 11 (T2-1b). Sebaran huruf terpasang: P E · C1 C · C2 A · C3 E · C4 B · L01 B · L02 A · L03 A · L04 E. C3 dipindah dari D ke E sesudah cek buta 1, ketika topik pilihan disebar agar kunci tidak menyendiri (T5-21). Kata tanya L03 diubah menjadi "pasti benar" dan C04 menjadi "mungkin benar" (T5-21).</p>
+  </div>
+
+  <div class="ringkas">
+    <h4>Ringkasan Bab 12</h4>
+    <ol>
+      <li><b>Pasti</b> = benar di semua susunan sah, <b>mungkin</b> = di sedikitnya satu, <b>tidak mungkin</b> = di tidak satu pun. Satu susunan yang cocok bukan bukti "pasti".</li>
+      <li>Pasang syarat terkuat lebih dulu: letak tetap dan blok "tepat", lalu bersebelahan, lalu urutan, dan larangan paling akhir.</li>
+      <li>"Tepat setelah" berarti bersebelahan; "setelah" boleh berjarak.</li>
+      <li>Pada pilihan susunan, bandingkan pilihan dulu dan uji syarat yang membedakannya.</li>
+      <li>Di meja bundar, kunci satu orang. Menghadap ke tengah: kanan = berlawanan arah jarum jam dilihat dari atas.</li>
+      <li>Pada urutan sebagian, unsur tunggal tanpa panah keluar pasti terakhir; urutan yang tidak dihubungkan panah tetap terbuka.</li>
+      <li>Syarat tambahan di kalimat tanya hanya berlaku untuk soal itu. Jadwal dan pencocokan memakai cara yang sama dengan tabel kolom atau tabel centang-silang.</li>
+    </ol>
+  </div>
+</section>

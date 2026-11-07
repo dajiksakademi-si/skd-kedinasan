@@ -1,0 +1,30 @@
+name: Catatan kontributor
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  cek-log:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Wajib isi kontributor/<username>/LOG.md
+        env:
+          AKTOR: ${{ github.event.pull_request.user.login || github.actor }}
+          AWAL: ${{ github.event.pull_request.base.sha || github.event.before }}
+          AKHIR: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          if [ "$AWAL" = "0000000000000000000000000000000000000000" ]; then
+            echo "Push pertama ke cabang baru, pemeriksaan dilewati."; exit 0
+          fi
+          berubah=$(git diff --name-only "$AWAL" "$AKHIR")
+          if echo "$berubah" | grep -qx "kontributor/$AKTOR/LOG.md"; then
+            echo "OK: kontributor/$AKTOR/LOG.md diperbarui."
+          else
+            echo "::error::Perubahan wajib dicatat di kontributor/$AKTOR/LOG.md (lihat kontributor/README.md)."
+            exit 1
+          fi

@@ -1,0 +1,107 @@
+[
+  {
+    "id": "HB-TIU-B01-C01",
+    "target_detik": 60,
+    "soal": {
+      "pengantar": "Sebuah tryout memakai aturan SKD sekolah kedinasan 2026: setiap jawaban benar TIU bernilai 5, jawaban salah atau kosong bernilai 0, dan ambang batasnya TWK 65, TIU 80, serta TKP 156. Bima, yang bukan peserta afirmasi, memperoleh nilai TWK 95, TIU 70, dan TKP 180.",
+      "tanya": "Agar ketiga nilainya memenuhi ambang batas, Bima memerlukan paling sedikit … jawaban benar TIU lagi."
+    },
+    "opsi": {
+      "A": "0",
+      "B": "2",
+      "C": "3",
+      "D": "10",
+      "E": "16"
+    }
+  },
+  {
+    "id": "HB-TIU-B01-C02",
+    "target_detik": 60,
+    "soal": {
+      "pengantar": "Raka memakai lembar rencana waktu di bab ini: TWK selesai pada menit ke-27, jam di layar menunjukkan sisa waktu dan menghitung mundur dari 100:00, dan nomor 45 direncanakan selesai saat layar menunjukkan 56:30. Kenyataannya, saat Raka selesai mengerjakan nomor 45, layar menunjukkan 53:40. Nomor 46 adalah soal kecukupan data dengan patokan 90 detik. Raka sudah mengerjakannya lebih dari 90 detik dan belum menemukan jawaban.",
+      "tanya": "Menurut aturan melompati soal di bab ini, langkah Raka yang tepat adalah …"
+    },
+    "opsi": {
+      "A": "Terus mengerjakan nomor 46 sampai 180 detik, yaitu dua kali patokan 90 detik.",
+      "B": "Menandai nomor 46 tanpa mengisi jawaban, lalu kembali ke nomor itu di waktu cadangan.",
+      "C": "Terus mengerjakan nomor 46 sampai 150 detik, yaitu dua kali patokan 75 detik.",
+      "D": "Terus mengerjakan nomor 46, sebab Raka masih 2 menit 50 detik lebih cepat dari rencana.",
+      "E": "Mengisi jawaban sementara di nomor 46, menandai nomornya, lalu lanjut ke nomor 47."
+    }
+  },
+  {
+    "id": "HB-TIU-B02-C01",
+    "target_detik": 60,
+    "soal": {
+      "pengantar": "Anggap semua premis berikut benar.",
+      "butir": [
+        [
+          "P1",
+          "Semua petugas perpustakaan desa sudah mengikuti pelatihan katalog digital."
+        ],
+        [
+          "P2",
+          "Sebagian petugas perpustakaan desa adalah mahasiswa."
+        ]
+      ],
+      "tanya": "Kesimpulan yang pasti benar adalah …"
+    },
+    "opsi": {
+      "A": "Ada mahasiswa yang sudah mengikuti pelatihan katalog digital.",
+      "B": "Semua mahasiswa sudah mengikuti pelatihan katalog digital.",
+      "C": "Ada petugas perpustakaan desa yang bekerja paruh waktu.",
+      "D": "Semua peserta pelatihan katalog digital adalah petugas perpustakaan desa.",
+      "E": "Ada mahasiswa yang bukan petugas perpustakaan desa."
+    }
+  },
+  {
+    "id": "HB-TIU-B02-C02",
+    "target_detik": 75,
+    "soal": {
+      "pengantar": "Pemasangan paving blok di halaman balai desa direncanakan selesai dalam 10 hari oleh 12 pekerja. Setelah 4 hari bekerja, 4 pekerja dipindahkan ke proyek lain. Pekerja yang tersisa melanjutkan pemasangan dengan kecepatan kerja yang sama.",
+      "tanya": "Pemasangan paving blok itu selesai dalam … hari, dihitung sejak hari pertama."
+    },
+    "opsi": {
+      "A": "8",
+      "B": "9",
+      "C": "13",
+      "D": "15",
+      "E": "19"
+    }
+  },
+  {
+    "id": "HB-TIU-B19-C01",
+    "target_detik": 75,
+    "soal": {
+      "pengantar": "Sebuah koperasi tani memanen 48.000 kg gabah pada tahun 2024. Pada tahun 2025, hasil panennya turun 10% karena kemarau panjang. Dari hasil panen 2025 itu, 3.200 kg disimpan sebagai benih. Pada tahun 2026, hasil panen naik 25% dari hasil panen tahun 2025.",
+      "tanya": "Hasil panen koperasi itu pada tahun 2026 adalah … kg."
+    },
+    "opsi": {
+      "A": "43.200",
+      "B": "44.280",
+      "C": "50.000",
+      "D": "54.000",
+      "E": "55.200"
+    }
+  },
+  {
+    "id": "HB-TIU-B19-C02",
+    "target_detik": 120,
+    "soal": {
+      "pengantar": "Lima stan pameran usaha kecil berjajar dari barat ke timur dan diberi nomor 1 sampai 5, dengan stan 1 di ujung barat. Kelima stan itu menjual batik, gerabah, keripik, madu, dan tenun, masing-masing satu stan. Keripik dan madu adalah stan makanan. Ketentuannya sebagai berikut.",
+      "syarat": [
+        "Tidak ada stan makanan yang berada di ujung barat atau ujung timur.",
+        "Stan gerabah berada tepat di sebelah timur stan batik.",
+        "Di antara stan tenun dan stan keripik terdapat tepat satu stan lain."
+      ],
+      "tanya": "Susunan stan dari barat ke timur yang memenuhi semua ketentuan adalah …"
+    },
+    "opsi": {
+      "A": "Tenun, madu, keripik, gerabah, batik",
+      "B": "Batik, gerabah, tenun, madu, keripik",
+      "C": "Batik, gerabah, madu, keripik, tenun",
+      "D": "Batik, madu, keripik, gerabah, tenun",
+      "E": "Tenun, madu, keripik, batik, gerabah"
+    }
+  }
+]

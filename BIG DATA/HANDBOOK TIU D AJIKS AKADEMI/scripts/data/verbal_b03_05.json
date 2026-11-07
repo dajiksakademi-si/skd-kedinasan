@@ -1,0 +1,2308 @@
+{
+  "keterangan": "Handbook TIU · Tahap 5 · kelompok verbal Bab 3–5 · satu sumber data. Ditulis tangan, diperiksa dan dirender oleh scripts/soal_verbal.mjs (status logika Bab 4 dihitung mesin; field bukti ditulis ulang script). Kode J-* hanya untuk edisi pengajar.",
+  "kbbi": {
+    "status": "DIPERIKSA 2026-11-01 di kbbi.kemendikdasmen.go.id (izin Putusan T5-1)",
+    "catatan": "Situs lain tidak dibuka. Beberapa permintaan beruntun dibalas 403 lalu diulang satu-satu; 'helm' hanya menampilkan halaman hasil pencarian kosong; 'pengeras suara', 'berulir', 'timah putih', 'mencicipi' tidak berentri sendiri (dicek lema induk).",
+    "lema": {
+      "pelumas": "lumas: n minyak kental yang digunakan untuk melicinkan (melancarkan) jalannya mesin mobil dan sebagainya; minyak pelicin",
+      "gesekan": "gesek: n 1 perbuatan menggesek; 2 hasil menggesek; 3 Olr kekuatan paralel antara dua permukaan yang menahan geseran",
+      "tirai": "n 1 kain berumbai untuk perhiasan langit-langit tempat tidur; 2 kain penutup pintu (jendela dan sebagainya); gorden; 3 kain pemisah ruangan",
+      "termos": "n botol yang diberi dinding rangkap untuk menyimpan minuman agar tetap memiliki suhu yang semula",
+      "silau": "a 1 berkilau-kilau pandangannya, tidak dapat melihat nyata karena terlampau terang cahayanya",
+      "pengeras": "n 2 alat atau bahan untuk mengeraskan atau memperkeras ('pengeras suara' tidak berentri sendiri)",
+      "berbisik": "bisik: v 1 berkata dengan suara perlahan-lahan (seakan hanya mendesis dan tidak nyaring)",
+      "berteriak": "teriak: v berseru (berkata, memanggil, dan sebagainya) dengan suara keras; memekik",
+      "berjalan": "jalan1: v 1 melangkahkan kaki bergerak maju",
+      "berlari": "lari1: v lari; lari v 1 melangkahkan kaki dengan cepat yang pada setiap langkahnya kedua kaki tidak menjejak tanah",
+      "melahap": "lahap1: v 1 makan banyak-banyak",
+      "mencicipi": "cicip1: v 1 mencicip; 2 menyantap (makanan) — cicip: coba untuk merasai",
+      "lompat": "v bergerak menjauhi permukaan secara horizontal dengan menggunakan otot-otot kaki",
+      "loncat": "v 1 bergerak menjauhi permukaan secara vertikal (ke atas) dengan menggunakan otot kaki; 2 lompat",
+      "bercakap": "cakap2: v 1 berbincang; berkata; 2 berbahasa",
+      "berbicara": "bicara: v 1 berkata; 2 melahirkan pendapat",
+      "koki": "n juru masak; ahli dalam seni boga",
+      "dapur": "n 1 ruang tempat memasak",
+      "masakan": "masak1: n 1 hasil memasak (lauk-pauk, penganan, dan sebagainya)",
+      "percetakan": "cetak: n 1 tempat (perusahaan) cetak-mencetak (buku dan sebagainya); kantor cetak",
+      "sawah": "n tanah yang digarap dan diairi untuk tempat menanam padi",
+      "perunggu": "n 1 logam campuran tembaga dan timah putih, berwarna cokelat kekuningan; gangsa",
+      "timah": "n logam tidak keras, digunakan sebagai campuran untuk kertas bungkus, perkakas dapur, bahan solder; stanum",
+      "meracik": "racik3: v mencampur bahan-bahan untuk dijadikan jamu (obat); meramu",
+      "pahat": "pahat1: n alat (perkakas) bertukang berupa bilah besi yang tajam pada ujungnya untuk melubangi atau mengukir kayu",
+      "memeras": "peras1: v 1 memijit (menekan dan sebagainya) supaya keluar airnya; memerah",
+      "komponis": "n penggubah lagu (musik)",
+      "penenun": "tenun: n orang yang menenun",
+      "insinyur": "n 1 ark sarjana teknik; 2 lulusan pendidikan keinsinyuran yang ahli dalam rekayasa teknik",
+      "paruh": "paruh1: n moncong atau mulut (burung, ayam, itik); cotok",
+      "belalai": "n jungur atau hidung yang panjang pada beberapa binatang, ada yang berfungsi sebagai tangan (pada gajah)",
+      "belang": "belang1: n 1 warna yang lebih dari semacam; 2 berwarna loreng-loreng",
+      "pelana": "n 1 lapik pada punggung kuda dan sebagainya; 2 tempat duduk orang yang menunggang",
+      "busa": "busa2: n karet gembus dan empuk, biasanya untuk isi jok atau kasur",
+      "ulir": "ulir1: n alur-alur berputar seperti pada sekrup",
+      "helm": "tidak terbaca: halaman hanya hasil pencarian kosong (belum diverifikasi)"
+    }
+  },
+  "butir": [
+    {
+      "id": "HB-TIU-B03-P01",
+      "bab": 3,
+      "peran": "pembuka",
+      "jenis": "ANL pasangan",
+      "bentuk": "sifat tanda",
+      "target_detik": 45,
+      "soal": {
+        "tanya": "PELUMAS : GESEKAN = … : …"
+      },
+      "kalimat_penentu": "PELUMAS : GESEKAN",
+      "opsi": {
+        "A": "OLI : MESIN",
+        "B": "PENGERAS SUARA : BUNYI",
+        "C": "SILAU : KACAMATA HITAM",
+        "D": "TIRAI : CAHAYA",
+        "E": "TERMOS : PANAS"
+      },
+      "kunci": "D",
+      "kode": {
+        "A": "J-KATA",
+        "B": "J-BALIK",
+        "C": "J-BALIK",
+        "D": "kunci",
+        "E": "J-RELASI"
+      },
+      "nama": {
+        "A": "Topiknya sama, hubungannya berbeda",
+        "B": "Tandanya terbalik",
+        "C": "Arahnya terbalik",
+        "E": "Hubungan mirip, tetapi berbeda"
+      },
+      "uji": {
+        "kalimat": "__ dipakai untuk mengurangi __",
+        "soal": "benar: pelumas dipakai untuk mengurangi gesekan",
+        "opsi": {
+          "A": [
+            "salah",
+            "relasi: mesin tempat oli dipakai, bukan hal yang dikurangi"
+          ],
+          "B": [
+            "salah",
+            "tanda: pengeras suara menambah bunyi"
+          ],
+          "C": [
+            "salah",
+            "arah: dibaca dari kiri, hal yang dikurangi di depan"
+          ],
+          "D": [
+            "benar",
+            "lolos; cek balik: cahaya dikurangi oleh tirai"
+          ],
+          "E": [
+            "salah",
+            "relasi: termos menjaga panas, tidak mengurangi"
+          ]
+        }
+      },
+      "kbbi": [
+        "pelumas",
+        "gesekan",
+        "tirai",
+        "termos",
+        "silau",
+        "pengeras"
+      ],
+      "alasan_kunci": "Tirai dipakai untuk mengurangi cahaya; pasangan ini lolos kalimat uji dari kiri dan dari kanan, sedangkan PENGERAS SUARA : BUNYI gagal di tanda.",
+      "kerangka": "ANL pasangan · alat : hal yang dikurangi · pengecoh tanda (menambah), arah (dibalik), menjaga ≠ mengurangi, topik sebidang",
+      "to_terdekat": "TO P1 no. 35 (alat ukur : besaran); TR no. 35 (meredakan keadaan buruk) — relasi beda",
+      "catatan_reviu": "Spek menyebut 'beberapa pilihan menambah'; dipasang satu (B) agar keempat kode slot tetap terpakai. Kalimat uji sama dengan narasi (rem : laju) sesudahnya, disengaja: pembuka memperkenalkan sifat tanda.",
+      "pembahasan": {
+        "ditanya": "Soal meminta pasangan yang aturannya sama dengan PELUMAS : GESEKAN, termasuk arahnya. Kalimat penentunya adalah urutan pasangan itu sendiri: benda di kiri, hal yang dikurangi di kanan.",
+        "cepat": "Tulis kalimat uji “__ dipakai untuk mengurangi __”. Pelumas dipakai untuk mengurangi gesekan: benar. Masukkan setiap pilihan dengan urutan yang sama. Hanya TIRAI : CAHAYA yang membuat kalimat itu tetap benar.",
+        "mengapa": "Kata “mengurangi” membawa dua sifat dalam satu kalimat: tandanya (mengurangi, bukan menambah) dan arahnya (benda dulu, hal yang dikurangi kemudian). Pilihan yang gagal di salah satu sifat langsung tersaring.",
+        "cek": "Baca dari kanan: gesekan dikurangi oleh pelumas, cahaya dikurangi oleh tirai. Kedua kalimat tetap benar.",
+        "gugur": {
+          "A": {
+            "uji": "Topik sama",
+            "teks": "Oli memang sejenis pelumas, tetapi mesin adalah tempat oli dipakai, bukan hal yang dikurangi. “Oli dipakai untuk mengurangi mesin” tidak masuk akal."
+          },
+          "B": {
+            "uji": "Menambah",
+            "teks": "Pengeras suara memperbesar bunyi. Kalimat uji gagal di kata “mengurangi”."
+          },
+          "C": {
+            "uji": "Urutan dibalik",
+            "teks": "Kacamata hitam memang mengurangi silau, tetapi pasangan ini menaruh hal yang dikurangi di kiri. Dengan urutan soal, kalimatnya menjadi “silau dipakai untuk mengurangi kacamata hitam”."
+          },
+          "E": {
+            "uji": "Menjaga",
+            "teks": "Termos dipakai untuk menjaga panas minuman agar tidak cepat hilang. Panas di dalam termos dipertahankan, bukan dikurangi."
+          }
+        },
+        "kunci": "Tirai dipakai untuk mengurangi cahaya, persis seperti pelumas dipakai untuk mengurangi gesekan, dan pasangan ini tetap benar dibaca dari kanan.",
+        "analogi": "Bayangkan tombol volume di remote televisi. Tombol turun dan tombol naik sama-sama mengatur suara, tetapi kerjanya berlawanan. Soal seperti ini sering menaruh tombol yang salah tepat di sebelah tombol yang benar.",
+        "waspada": "Memilih OLI : MESIN karena oli sejenis pelumas. Kata yang sebidang terasa paling dekat dengan soal, padahal hubungannya sudah berubah dari “mengurangi” menjadi “dipakai pada”."
+      },
+      "bukti": {
+        "metode": "tabel kalimat uji × pilihan (tulis tangan) + cek buta",
+        "kalimat_uji": "__ dipakai untuk mengurangi __",
+        "lolos": [
+          "D"
+        ]
+      }
+    },
+    {
+      "id": "HB-TIU-B03-C01",
+      "bab": 3,
+      "peran": "contoh",
+      "jenis": "ANL pasangan",
+      "bentuk": "sifat tingkat",
+      "target_detik": 45,
+      "soal": {
+        "tanya": "BERBISIK : BERTERIAK = … : …"
+      },
+      "kalimat_penentu": "BERBISIK : BERTERIAK",
+      "opsi": {
+        "A": "BERJALAN : BERLARI",
+        "B": "MELOMPAT : MELONCAT",
+        "C": "MIKROFON : SUARA",
+        "D": "MELAHAP : MENCICIPI",
+        "E": "BERBICARA : BERCAKAP"
+      },
+      "kunci": "A",
+      "kode": {
+        "A": "kunci",
+        "B": "J-RELASI",
+        "C": "J-KATA",
+        "D": "J-BALIK",
+        "E": "J-RELASI"
+      },
+      "nama": {
+        "B": "Hubungan mirip, tetapi berbeda",
+        "C": "Topiknya sama, hubungannya berbeda",
+        "D": "Arahnya terbalik",
+        "E": "Hubungan mirip, tetapi berbeda (sinonim)"
+      },
+      "uji": {
+        "kalimat": "__ adalah kadar yang lebih ringan dari __ pada kegiatan yang sama",
+        "soal": "benar: berbisik dan berteriak sama-sama bersuara, berbisik paling pelan",
+        "opsi": {
+          "A": [
+            "benar",
+            "lolos; skala kecepatan, pelan ke cepat"
+          ],
+          "B": [
+            "salah",
+            "relasi: dua arah gerak (KBBI lompat = mendatar, loncat = ke atas), bukan dua kadar"
+          ],
+          "C": [
+            "salah",
+            "relasi + topik: alat dan yang diperkuat"
+          ],
+          "D": [
+            "salah",
+            "arah: dari banyak ke sedikit"
+          ],
+          "E": [
+            "salah",
+            "relasi: dua kata bermakna sama (KBBI: bercakap = berbincang; berkata), kadarnya sama"
+          ]
+        }
+      },
+      "kbbi": [
+        "berbisik",
+        "berteriak",
+        "berjalan",
+        "berlari",
+        "melahap",
+        "mencicipi",
+        "lompat",
+        "loncat",
+        "bercakap",
+        "berbicara"
+      ],
+      "alasan_kunci": "Berjalan dan berlari adalah dua kadar melangkahkan kaki (KBBI: lari = melangkahkan kaki dengan cepat), bergerak dari pelan ke cepat seperti berbisik ke berteriak; BERBICARA : BERCAKAP berimbuhan sama, tetapi kadarnya sama.",
+      "kerangka": "ANL pasangan · dua kata kerja satu kegiatan, kadar lemah → kuat · pengecoh kuat → lemah, sinonim, dua peran, alat sebidang",
+      "to_terdekat": "tidak ada sifat tingkat di TO P1; skala narasi (suhu, curah hujan) tidak dipakai",
+      "catatan_reviu": "Kunci di A (sebaran kelompok). Opsi B sinonim dipasang untuk pembaca yang hanya mencari 'dua kata sebidang'. Revisi pasca cek buta: E diganti pasangan ber- : ber- (sinonim) agar kunci bukan pasangan berimbuhan tunggal; teks B mengikuti KBBI (lompat mendatar, loncat ke atas).",
+      "pembahasan": {
+        "ditanya": "Soal meminta pasangan yang hubungannya sama dengan berbisik dan berteriak. Kalimat penentunya urutan BERBISIK : BERTERIAK: kegiatan yang sama, dari kadar paling pelan ke paling keras.",
+        "cepat": "Tulis kalimat uji “__ adalah kadar yang lebih ringan dari __ pada kegiatan yang sama”. Berbisik dan berteriak sama-sama bersuara; berbisik paling pelan. Berjalan dan berlari sama-sama bergerak dengan kaki; berjalan lebih pelan. Hanya A yang lolos.",
+        "mengapa": "Pasangan tingkat selalu punya dua syarat: kedua kata berada pada satu kegiatan, dan urutannya naik. Kalimat uji di atas memuat kedua syarat itu, sehingga pilihan yang hanya memenuhi satu syarat ikut gugur.",
+        "cek": "Baca dari kanan: berteriak adalah kadar terkuat dari bersuara, berlari adalah kadar tercepat dari bergerak dengan kaki. Arah keduanya tetap sama.",
+        "gugur": {
+          "B": {
+            "uji": "Arah gerak",
+            "teks": "Melompat bergerak mendatar, meloncat bergerak ke atas. Keduanya dua arah gerak, bukan kadar yang lebih ringan dan lebih kuat."
+          },
+          "C": {
+            "uji": "Alat dan hasil",
+            "teks": "Kata “suara” membuat pilihan ini terasa dekat dengan soal. Mikrofon adalah alat yang menangkap suara, bukan kadar yang lebih ringan dari suara."
+          },
+          "D": {
+            "uji": "Kuat ke lemah",
+            "teks": "Melahap dan mencicipi memang dua kadar makan, tetapi urutannya dari banyak ke sedikit. Soal bergerak dari pelan ke keras."
+          },
+          "E": {
+            "uji": "Kadarnya sama",
+            "teks": "Imbuhannya sama dengan soal, dan itu yang menarik mata. Berbicara dan bercakap bermakna sama, jadi tidak ada kadar yang lebih ringan."
+          }
+        },
+        "kunci": "Berjalan ke berlari bergerak dari pelan ke cepat pada kegiatan yang sama, persis seperti berbisik ke berteriak bergerak dari pelan ke keras.",
+        "analogi": "Seperti tombol kipas angin: angka 1 dan angka 3 sama-sama memutar baling-baling, bedanya hanya kencangnya. Pasangan tingkat selalu menyebut kegiatan yang sama dengan kadar berbeda.",
+        "waspada": "Memilih E karena pasangannya sama-sama berawalan ber-, persis seperti soal. Kemiripan bentuk kata tidak berarti kemiripan hubungan; pasangan tingkat butuh dua kadar yang berbeda."
+      },
+      "bukti": {
+        "metode": "tabel kalimat uji × pilihan (tulis tangan) + cek buta",
+        "kalimat_uji": "__ adalah kadar yang lebih ringan dari __ pada kegiatan yang sama",
+        "lolos": [
+          "A"
+        ]
+      },
+      "revisi": [
+        "Revisi pasca cek buta: E diganti pasangan ber- : ber- (sinonim) agar kunci bukan pasangan berimbuhan tunggal; teks B mengikuti KBBI (lompat mendatar, loncat ke atas)."
+      ]
+    },
+    {
+      "id": "HB-TIU-B03-C02",
+      "bab": 3,
+      "peran": "contoh",
+      "jenis": "ANL tiga kata",
+      "bentuk": "dua aturan bersambung",
+      "target_detik": 60,
+      "soal": {
+        "tanya": "KOKI : DAPUR : MASAKAN = … : … : …"
+      },
+      "kalimat_penentu": "KOKI : DAPUR : MASAKAN",
+      "opsi": {
+        "A": "PERAWAT : RUMAH SAKIT : OBAT",
+        "B": "NELAYAN : IKAN : LAUT",
+        "C": "PETANI : SAWAH : PADI",
+        "D": "KOMPOR : WAJAN : MASAKAN",
+        "E": "PEMBACA : PERCETAKAN : BUKU"
+      },
+      "kunci": "C",
+      "kode": {
+        "A": "J-RELASI",
+        "B": "J-BALIK",
+        "C": "kunci",
+        "D": "J-KATA",
+        "E": "J-RELASI"
+      },
+      "nama": {
+        "A": "Benar di satu sambungan saja",
+        "B": "Perannya tertukar",
+        "D": "Kata yang sama, hubungannya berbeda",
+        "E": "Benar di satu sambungan saja"
+      },
+      "uji": {
+        "kalimat": "(1) __ bekerja di __ ; (2) __ adalah tempat __ dihasilkan",
+        "soal": "benar: koki bekerja di dapur; dapur tempat masakan dihasilkan",
+        "opsi": {
+          "A": [
+            "salah",
+            "sambungan 1 benar, sambungan 2 salah: obat tidak dihasilkan di rumah sakit"
+          ],
+          "B": [
+            "salah",
+            "peran tertukar: urutan pelaku : hasil : tempat"
+          ],
+          "C": [
+            "benar",
+            "sambungan 1 dan 2 benar"
+          ],
+          "D": [
+            "salah",
+            "kompor tidak bekerja di wajan; kata MASAKAN dipinjam dari soal"
+          ],
+          "E": [
+            "salah",
+            "sambungan 1 salah: pembaca tidak bekerja di percetakan; sambungan 2 benar"
+          ]
+        }
+      },
+      "kbbi": [
+        "koki",
+        "dapur",
+        "masakan",
+        "percetakan",
+        "sawah"
+      ],
+      "alasan_kunci": "Petani bekerja di sawah dan padi dihasilkan di sawah, jadi kedua sambungan benar; PERAWAT : RUMAH SAKIT : OBAT hanya benar di sambungan pertama.",
+      "kerangka": "ANL tiga kata · pelaku : tempat kerja : hasil tempat itu · dua pengecoh benar di satu sambungan, satu peran tertukar, satu meminjam kata",
+      "to_terdekat": "tidak ada tiga kata di TO P1; bukan bahan–produk–pembuat (SL no. 2) dan bukan tumbuh–menghasilkan (narasi)",
+      "catatan_reviu": "Nelayan–laut sengaja dipakai di B dengan urutan rusak agar 'pelaku + tempat' tidak cukup untuk menebak kunci.",
+      "pembahasan": {
+        "ditanya": "Soal tiga kata memuat dua aturan. Kalimat penentunya urutan KOKI : DAPUR : MASAKAN: satu aturan dari koki ke dapur, satu aturan dari dapur ke masakan. Pilihan yang benar harus lolos di kedua sambungan dengan urutan yang sama.",
+        "cepat": "Sambungan pertama: “koki bekerja di dapur”. Sambungan kedua: “dapur adalah tempat masakan dihasilkan”. Uji setiap pilihan di dua kalimat itu secara terpisah. Hanya C yang lolos di keduanya: petani bekerja di sawah, dan sawah adalah tempat padi dihasilkan.",
+        "mengapa": "Dua aturan berarti dua saringan. Satu sambungan yang cocok belum berarti apa-apa; pilihan baru lolos bila saringan kedua juga dilewati.",
+        "cek": "Baca dari kanan: padi dihasilkan di sawah, tempat petani bekerja. Masakan dihasilkan di dapur, tempat koki bekerja. Polanya sama.",
+        "gugur": {
+          "A": {
+            "uji": "Sambungan kedua gagal",
+            "teks": "Perawat memang bekerja di rumah sakit, tetapi obat tidak dihasilkan di sana. Obat dibuat di pabrik, lalu diberikan di rumah sakit."
+          },
+          "B": {
+            "uji": "Urutan peran",
+            "teks": "Ketiga kata saling berkaitan, tetapi urutannya pelaku, hasil, lalu tempat. Dengan urutan soal, kalimatnya menjadi “nelayan bekerja di ikan”."
+          },
+          "D": {
+            "uji": "Kata dari soal",
+            "teks": "Kata “masakan” diambil langsung dari soal. Kompor tidak bekerja di wajan; kompor memanaskan wajan."
+          },
+          "E": {
+            "uji": "Sambungan pertama gagal",
+            "teks": "Buku memang dicetak di percetakan, tetapi pembaca tidak bekerja di sana. Pembaca adalah pemakai buku."
+          }
+        },
+        "kunci": "Petani bekerja di sawah, dan padi dihasilkan di sawah, sehingga pilihan C lolos di kedua sambungan.",
+        "analogi": "Seperti alamat pada paket: nama penerima, nama jalan, lalu nomor rumah. Satu bagian yang salah membuat paket tidak sampai, setepat apa pun bagian lainnya.",
+        "waspada": "Memilih A karena sambungan pertamanya sangat meyakinkan. Perawat dan rumah sakit memang pasangan kuat; pemeriksaan berhenti sebelum sambungan kedua diuji."
+      },
+      "bukti": {
+        "metode": "tabel kalimat uji × pilihan (tulis tangan) + cek buta",
+        "kalimat_uji": "(1) __ bekerja di __ ; (2) __ adalah tempat __ dihasilkan",
+        "lolos": [
+          "C"
+        ]
+      }
+    },
+    {
+      "id": "HB-TIU-B03-C03",
+      "bab": 3,
+      "peran": "contoh",
+      "jenis": "HUB pola sama",
+      "bentuk": "pelaku + dua benda + tujuan",
+      "target_detik": 75,
+      "soal": {
+        "pengantar": "Perajin logam mencampur tembaga dan timah untuk membuat perunggu.",
+        "tanya": "Kalimat yang hubungannya sepadan dengan kalimat di atas adalah …"
+      },
+      "kalimat_penentu": "mencampur tembaga dan timah untuk membuat perunggu",
+      "opsi": {
+        "A": "Petugas kebersihan mencampur sabun dan air untuk membersihkan lantai.",
+        "B": "Tukang kayu memakai gergaji dan pahat untuk membuat kursi.",
+        "C": "Pedagang ikan mencampur es batu dan garam kasar untuk menjaga ikan tetap segar.",
+        "D": "Penjual minuman memeras jeruk untuk menghasilkan sari buah.",
+        "E": "Penjual jamu meracik kunyit dan asam jawa untuk menghasilkan jamu kunyit asam."
+      },
+      "kunci": "E",
+      "kode": {
+        "A": "J-RELASI",
+        "B": "J-KATA",
+        "C": "J-RELASI",
+        "D": "J-RELASI",
+        "E": "kunci"
+      },
+      "nama": {
+        "A": "Pola kalimatnya sama, isi hubungannya berbeda",
+        "B": "Kata yang sama, hubungannya berbeda",
+        "C": "Pola kalimatnya sama, isi hubungannya berbeda",
+        "D": "Unsurnya kurang"
+      },
+      "uji": {
+        "kalimat": "peta: pelaku → dua bahan dicampur → tujuan: menghasilkan bahan/benda baru dari campuran itu",
+        "soal": "dua bahan (tembaga, timah) dicampur; hasil = perunggu (KBBI: logam campuran tembaga dan timah putih)",
+        "opsi": {
+          "A": [
+            "salah",
+            "label sama (dua bahan dicampur), tujuan beda: membersihkan"
+          ],
+          "B": [
+            "salah",
+            "label beda: dua alat, tidak dicampur; tujuan sama jenis; kata 'membuat' dipinjam"
+          ],
+          "C": [
+            "salah",
+            "label sama, tujuan beda: menjaga kesegaran"
+          ],
+          "D": [
+            "salah",
+            "unsur kurang: satu bahan"
+          ],
+          "E": [
+            "benar",
+            "dua bahan diracik; hasil = minuman (benda baru)"
+          ]
+        }
+      },
+      "kbbi": [
+        "perunggu",
+        "timah",
+        "meracik",
+        "pahat",
+        "memeras"
+      ],
+      "alasan_kunci": "Kunyit dan asam jawa diracik menjadi jamu kunyit asam (KBBI meracik: mencampur bahan untuk dijadikan jamu), seperti tembaga dan timah dicampur menjadi perunggu; pilihan A dan C juga mencampur dua bahan, tetapi tujuannya bukan menghasilkan benda baru.",
+      "kerangka": "HUB pola sama · dua bahan dicampur → benda baru · dua opsi label sama tujuan beda, satu opsi dua alat + kata kerja sama, satu opsi satu bahan · kata kerja tujuan kunci ≠ soal",
+      "to_terdekat": "TO P1 no. 36 (satu ciri tubuh + tujuan); TR no. 36 (dua hal berlawanan dipakai bergantian) — relasi kunci beda",
+      "catatan_reviu": "Kelompok label 'dua bahan dicampur' = A, C, E; kelompok tujuan 'menghasilkan benda baru' = B, D, E. Kunci = irisan kedua kelompok, tidak tunggal di salah satu ciri. Pengecoh 'unsur kurang' (slot L8 gugur) dipasang di D. Revisi pasca cek buta: soal semen + pasir → adukan diganti tembaga + timah → perunggu (adukan nyata juga memakai air; perunggu tepat dua bahan menurut KBBI). Revisi cek buta 2: hasil di E dipersempit dari 'minuman' menjadi 'jamu kunyit asam' (setara kekhususan dengan 'perunggu').",
+      "pembahasan": {
+        "ditanya": "Soal meminta kalimat yang isi hubungannya sama, bukan susunan katanya. Kalimat penentunya “mencampur tembaga dan timah untuk membuat perunggu”: dua bahan dicampur, dan hasilnya benda baru.",
+        "cepat": "Buat peta kalimat soal: pelaku, dua bahan yang dicampur, lalu tujuan berupa benda baru dari campuran itu. Coret pilihan yang tujuannya bukan benda baru (A, C), pilihan yang bendanya bukan bahan campuran (B), dan pilihan yang bahannya hanya satu (D). Tersisa E.",
+        "mengapa": "Kelima kalimat sengaja sepola: pelaku, benda, lalu “untuk …”. Kemiripan pola tidak membedakan apa pun. Yang membedakan adalah dua label di peta: hubungan antara dua benda, dan jenis tujuannya.",
+        "cek": "Kunyit dan asam jawa lebur menjadi jamu, sama seperti tembaga dan timah lebur menjadi perunggu. Kata kerjanya berbeda (meracik, menghasilkan), tetapi petanya sama.",
+        "gugur": {
+          "A": {
+            "uji": "Tujuan berbeda",
+            "teks": "Sabun dan air memang dicampur, tetapi campurannya dipakai untuk membersihkan lantai. Tujuannya membersihkan, bukan menghasilkan benda baru."
+          },
+          "B": {
+            "uji": "Dua alat",
+            "teks": "Kata “membuat” sama dengan soal, dan itu yang menarik perhatian. Gergaji dan pahat tidak dicampur dan tidak menjadi bagian kursi; keduanya alat."
+          },
+          "C": {
+            "uji": "Tujuan berbeda",
+            "teks": "Es batu dan garam kasar dicampur untuk menjaga ikan tetap segar. Campuran itu menjaga barang lain, bukan menjadi barang baru."
+          },
+          "D": {
+            "uji": "Satu bahan",
+            "teks": "Tujuannya memang menghasilkan benda baru, tetapi bahannya hanya jeruk. Peta soal memuat dua bahan yang dicampur."
+          }
+        },
+        "kunci": "Penjual jamu mencampur dua bahan menjadi jamu kunyit asam, sehingga petanya sama dengan tembaga dan timah yang dicampur menjadi perunggu.",
+        "analogi": "Seperti membuat teh manis: teh dan gula diaduk menjadi minuman baru. Sendok dan gelas ikut dipakai, tetapi keduanya alat, bukan bahan yang larut ke dalam minuman.",
+        "waspada": "Memilih B karena kata “membuat” muncul lagi di sana. Kesamaan kata terasa seperti kesamaan hubungan, padahal gergaji dan pahat tidak pernah tercampur menjadi kursi."
+      },
+      "bukti": {
+        "metode": "tabel kalimat uji × pilihan (tulis tangan) + cek buta",
+        "kalimat_uji": "peta: pelaku → dua bahan dicampur → tujuan: menghasilkan bahan/benda baru dari campuran itu",
+        "lolos": [
+          "E"
+        ]
+      },
+      "revisi": [
+        "Revisi pasca cek buta: soal semen + pasir → adukan diganti tembaga + timah → perunggu (adukan nyata juga memakai air; perunggu tepat dua bahan menurut KBBI)."
+      ],
+      "revisi2": [
+        "hasil di E dipersempit dari 'minuman' menjadi 'jamu kunyit asam' (setara kekhususan dengan 'perunggu')."
+      ]
+    },
+    {
+      "id": "HB-TIU-B03-L01",
+      "bab": 3,
+      "peran": "latihan",
+      "jenis": "ANL pasangan",
+      "bentuk": "sifat arah",
+      "target_detik": 40,
+      "soal": {
+        "tanya": "KOMPONIS : LAGU = … : …"
+      },
+      "kalimat_penentu": "KOMPONIS : LAGU",
+      "opsi": {
+        "A": "TUKANG CUKUR : GUNTING",
+        "B": "PENENUN : KAIN",
+        "C": "JEMBATAN : INSINYUR",
+        "D": "PENYANYI : PANGGUNG",
+        "E": "SOPIR : PENUMPANG"
+      },
+      "kunci": "B",
+      "kode": {
+        "A": "J-RELASI",
+        "B": "kunci",
+        "C": "J-BALIK",
+        "D": "J-KATA",
+        "E": "J-RELASI"
+      },
+      "nama": {
+        "A": "Hubungan mirip, tetapi berbeda",
+        "C": "Arahnya terbalik",
+        "D": "Topiknya sama, hubungannya berbeda",
+        "E": "Hubungan mirip, tetapi berbeda"
+      },
+      "uji": {
+        "kalimat": "__ menghasilkan __ sebagai hasil kerjanya",
+        "soal": "benar: komponis menghasilkan lagu",
+        "opsi": {
+          "A": [
+            "salah",
+            "relasi: pengguna : alat"
+          ],
+          "B": [
+            "benar",
+            "penenun menghasilkan kain"
+          ],
+          "C": [
+            "salah",
+            "arah: hasil : pembuat"
+          ],
+          "D": [
+            "salah",
+            "topik musik; relasi pelaku : tempat tampil"
+          ],
+          "E": [
+            "salah",
+            "relasi: pelaku : orang yang dilayani"
+          ]
+        }
+      },
+      "kbbi": [
+        "komponis",
+        "penenun",
+        "insinyur"
+      ],
+      "alasan_kunci": "Penenun menghasilkan kain sebagai hasil kerjanya, seperti komponis menghasilkan lagu; JEMBATAN : INSINYUR memuat hubungan yang sama dengan arah dibalik.",
+      "kerangka": "ANL pasangan · pelaku : hasil kerja · pengecoh hasil : pelaku, pengguna : alat, pelaku : yang dilayani, topik musik",
+      "to_terdekat": "bukan alat ukur (TO P1 no. 35); bukan penulis : buku (narasi)",
+      "catatan_reviu": "Latihan: pembahasan menyusul Tahap 6.",
+      "bukti": {
+        "metode": "tabel kalimat uji × pilihan (tulis tangan) + cek buta",
+        "kalimat_uji": "__ menghasilkan __ sebagai hasil kerjanya",
+        "lolos": [
+          "B"
+        ]
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta pasangan yang hubungannya sama dengan “KOMPONIS : LAGU”. Komponis adalah pembuat, lagu adalah hasil karyanya. Urutannya pembuat dulu, lalu hasil.",
+        "cepat": "Buat kalimat uji dari pasangan soal: “komponis menghasilkan lagu sebagai hasil kerjanya”. Masukkan setiap pilihan ke kalimat yang sama. Penenun menghasilkan kain sebagai hasil kerjanya, jadi B lolos. Empat pilihan lain gagal di kalimat itu.",
+        "mengapa": "Kalimat uji memaksa kamu menyebut hubungannya dengan tepat. Pasangan yang hanya “berkaitan” belum tentu lolos; yang lolos harus membuat kalimat itu benar dengan urutan kata yang sama.",
+        "cek": "Baca dari kanan: lagu adalah hasil kerja komponis, dan kain adalah hasil kerja penenun. Arah dan isi hubungannya sama.",
+        "gugur": {
+          "A": {
+            "uji": "alat, bukan hasil",
+            "teks": "Tukang cukur memang bekerja dengan gunting, tetapi gunting adalah alatnya. Hasil kerja tukang cukur adalah rambut yang rapi, bukan gunting."
+          },
+          "C": {
+            "uji": "urutan terbalik",
+            "teks": "Insinyur merancang jembatan, jadi isi hubungannya sama dengan soal. Urutannya yang dibalik: hasil dulu, baru pembuatnya. Dengan urutan soal, kalimatnya menjadi “jembatan menghasilkan insinyur”."
+          },
+          "D": {
+            "uji": "sama-sama musik",
+            "teks": "Penyanyi dan panggung dekat dengan dunia musik, seperti komponis dan lagu. Panggung adalah tempat penyanyi tampil, bukan hasil kerjanya."
+          },
+          "E": {
+            "uji": "orang yang dilayani",
+            "teks": "Sopir bekerja untuk penumpang. Penumpang adalah orang yang dilayani, bukan sesuatu yang dihasilkan sopir."
+          }
+        },
+        "kunci": "Penenun menghasilkan kain sebagai hasil kerjanya, sama seperti komponis menghasilkan lagu, dan urutannya pun sama: pembuat, lalu hasil.",
+        "analogi": "Seperti label di etalase toko kue: nama pembuatnya di atas, nama kuenya di bawah. Label yang menaruh nama kue di atas, atau menulis nama oven sebagai hasil, jelas keliru walaupun semuanya ada di dapur yang sama.",
+        "waspada": "Memilih C karena insinyur dan jembatan memang pasangan pembuat dan hasil. Isinya benar, tetapi urutannya terbalik. Baca kalimat uji dari kiri ke kanan untuk setiap pilihan."
+      }
+    },
+    {
+      "id": "HB-TIU-B03-L02",
+      "bab": 3,
+      "peran": "latihan",
+      "jenis": "ANL pasangan",
+      "bentuk": "sifat keharusan",
+      "target_detik": 45,
+      "soal": {
+        "tanya": "BURUNG : PARUH = … : …"
+      },
+      "kalimat_penentu": "BURUNG : PARUH",
+      "opsi": {
+        "A": "KUCING : BELANG",
+        "B": "BURUNG HANTU : MALAM",
+        "C": "LEBAH : MADU",
+        "D": "GAJAH : BELALAI",
+        "E": "KUDA : PELANA"
+      },
+      "kunci": "D",
+      "kode": {
+        "A": "J-SEBAGIAN",
+        "B": "J-KATA",
+        "C": "J-RELASI",
+        "D": "kunci",
+        "E": "J-SEBAGIAN"
+      },
+      "nama": {
+        "A": "Kadang-kadang dikira selalu",
+        "B": "Topiknya sama, hubungannya berbeda",
+        "C": "Hubungan mirip, tetapi berbeda",
+        "E": "Kadang-kadang dikira selalu"
+      },
+      "uji": {
+        "kalimat": "setiap __ memiliki __ sebagai bagian tubuhnya",
+        "soal": "benar: setiap burung memiliki paruh",
+        "opsi": {
+          "A": [
+            "salah",
+            "keharusan: tidak setiap kucing belang"
+          ],
+          "B": [
+            "salah",
+            "topik burung; relasi waktu aktif"
+          ],
+          "C": [
+            "salah",
+            "relasi: penghasil : hasil, bukan bagian tubuh"
+          ],
+          "D": [
+            "benar",
+            "setiap gajah memiliki belalai"
+          ],
+          "E": [
+            "salah",
+            "keharusan: tidak setiap kuda berpelana; pelana bukan bagian tubuh"
+          ]
+        }
+      },
+      "kbbi": [
+        "paruh",
+        "belalai",
+        "belang",
+        "pelana"
+      ],
+      "alasan_kunci": "Setiap gajah memiliki belalai, seperti setiap burung memiliki paruh; KUDA : PELANA gagal karena pelana hanya kadang dipasang dan bukan bagian tubuh.",
+      "kerangka": "ANL pasangan · makhluk : bagian tubuh yang selalu ada · dua pengecoh ciri kadang ada, satu hasil, satu topik sama",
+      "to_terdekat": "bukan bangun datar (narasi); TO P1 tanpa sifat keharusan",
+      "catatan_reviu": "Latihan: pembahasan menyusul Tahap 6. Revisi pasca cek buta: E SAPI : TANDUK (bisa dibela sebagai hewan : bagian tubuh) diganti KUDA : PELANA.",
+      "bukti": {
+        "metode": "tabel kalimat uji × pilihan (tulis tangan) + cek buta",
+        "kalimat_uji": "setiap __ memiliki __ sebagai bagian tubuhnya",
+        "lolos": [
+          "D"
+        ]
+      },
+      "revisi": [
+        "Revisi pasca cek buta: E SAPI : TANDUK (bisa dibela sebagai hewan : bagian tubuh) diganti KUDA : PELANA."
+      ],
+      "pembahasan": {
+        "ditanya": "Soal meminta pasangan yang hubungannya sama dengan “BURUNG : PARUH”. Paruh adalah bagian tubuh yang dimiliki setiap burung, bukan hanya burung tertentu.",
+        "cepat": "Kalimat uji: “setiap burung memiliki paruh sebagai bagian tubuhnya”. Uji setiap pilihan. Setiap gajah memiliki belalai sebagai bagian tubuhnya, jadi D lolos. Kata “setiap” menyaring pilihan yang hanya kadang berlaku, dan kata “bagian tubuh” menyaring hasil, waktu, dan barang pakai.",
+        "mengapa": "Hubungan bagian dengan keseluruhan di soal ini punya dua syarat: benda itu bagian dari tubuh, dan bagian itu selalu ada. Kalimat uji yang memuat “setiap” dan “bagian tubuh” memeriksa kedua syarat dalam satu kalimat.",
+        "cek": "Baca dari kanan: paruh adalah bagian tubuh burung, belalai adalah bagian tubuh gajah. Tidak ada burung tanpa paruh, dan tidak ada gajah tanpa belalai.",
+        "gugur": {
+          "A": {
+            "uji": "tidak setiap kucing",
+            "teks": "Belang memang ciri sebagian kucing, tetapi banyak kucing berbulu polos. Kalimat “setiap kucing memiliki belang” salah."
+          },
+          "B": {
+            "uji": "waktu aktif",
+            "teks": "Burung hantu masih sebangsa burung, jadi terasa dekat dengan soal. Malam adalah waktu ia aktif, bukan bagian tubuhnya."
+          },
+          "C": {
+            "uji": "hasil, bukan bagian",
+            "teks": "Madu memang selalu berkaitan dengan lebah, tetapi madu adalah hasil kerja lebah. Madu bukan bagian tubuhnya."
+          },
+          "E": {
+            "uji": "pelana dipasang",
+            "teks": "Pelana hanya dipasang saat kuda ditunggangi, dan pelana adalah barang buatan, bukan bagian tubuh. Kalimat uji gagal di dua tempat."
+          }
+        },
+        "kunci": "Setiap gajah memiliki belalai sebagai bagian tubuhnya, persis seperti setiap burung memiliki paruh.",
+        "analogi": "Seperti membedakan jari dan cincin. Jari selalu ada di tangan, sedangkan cincin hanya dipakai sebagian orang dan bisa dilepas. Soal ini meminta jari, bukan cincin.",
+        "waspada": "Memilih E karena pelana tampak melekat pada kuda di banyak gambar. Ajukan dua pertanyaan: apakah setiap kuda memilikinya, dan apakah ia bagian tubuh. Jawaban keduanya “tidak”."
+      }
+    },
+    {
+      "id": "HB-TIU-B03-L03",
+      "bab": 3,
+      "peran": "latihan",
+      "jenis": "HUB benda buatan",
+      "bentuk": "benda + ciri rancangan + tujuan",
+      "target_detik": 60,
+      "soal": {
+        "pengantar": "Helm memiliki lapisan busa di bagian dalam untuk meredam benturan pada kepala.",
+        "tanya": "Kalimat yang hubungannya sepadan dengan kalimat di atas adalah …"
+      },
+      "kalimat_penentu": "untuk meredam benturan pada kepala",
+      "opsi": {
+        "A": "Mobil memiliki kantong udara di setir untuk melindungi tubuh pengemudi saat tabrakan.",
+        "B": "Sofa memiliki lapisan busa tebal untuk membuat duduk terasa empuk.",
+        "C": "Botol minum memiliki tutup berulir yang rapat untuk mencegah isinya tumpah di dalam tas.",
+        "D": "Kursi kantor memiliki roda di bagian kaki untuk memudahkan perpindahan.",
+        "E": "Payung memiliki rangka lipat untuk memudahkan dibawa bepergian."
+      },
+      "kunci": "A",
+      "kode": {
+        "A": "kunci",
+        "B": "J-KATA",
+        "C": "J-RELASI",
+        "D": "J-RELASI",
+        "E": "J-RELASI"
+      },
+      "nama": {
+        "B": "Topiknya sama, hubungannya berbeda",
+        "C": "Pola kalimatnya sama, isi hubungannya berbeda",
+        "D": "Pola kalimatnya sama, isi hubungannya berbeda",
+        "E": "Pola kalimatnya sama, isi hubungannya berbeda"
+      },
+      "uji": {
+        "kalimat": "peta: benda buatan → bagian rancangan → tujuan: melindungi tubuh pemakai dari benturan",
+        "soal": "helm, lapisan busa, melindungi kepala dari benturan",
+        "opsi": {
+          "A": [
+            "benar",
+            "kantong udara melindungi tubuh dari benturan; bagian dan kata kerja beda dari soal"
+          ],
+          "B": [
+            "salah",
+            "bagian sama (lapisan busa), tujuan kenyamanan"
+          ],
+          "C": [
+            "salah",
+            "tujuan menjaga isi"
+          ],
+          "D": [
+            "salah",
+            "tujuan kemudahan gerak"
+          ],
+          "E": [
+            "salah",
+            "tujuan kepraktisan"
+          ]
+        }
+      },
+      "kbbi": [
+        "helm",
+        "busa",
+        "ulir"
+      ],
+      "alasan_kunci": "Kantong udara di setir dirancang untuk melindungi tubuh dari benturan, sama dengan tujuan lapisan busa helm; SOFA memakai bagian yang sama untuk tujuan kenyamanan.",
+      "kerangka": "HUB benda buatan · bagian rancangan → perlindungan tubuh dari benturan · bagian kunci ≠ soal, kata kerja kunci ≠ soal · pengecoh: bagian sama tujuan beda, tiga tujuan lain",
+      "to_terdekat": "TO P1 no. 36 = makhluk hidup + menghemat air; di sini benda buatan + keselamatan",
+      "catatan_reviu": "Dirujuk Latihan A Bab 19 (J-RELASI, 'Pola kalimatnya sama, isi hubungannya berbeda'): C, D, E berkode itu. Latihan: pembahasan menyusul Tahap 6.",
+      "bukti": {
+        "metode": "tabel kalimat uji × pilihan (tulis tangan) + cek buta",
+        "kalimat_uji": "peta: benda buatan → bagian rancangan → tujuan: melindungi tubuh pemakai dari benturan",
+        "lolos": [
+          "A"
+        ]
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta kalimat yang hubungannya sepadan. Kalimat penentunya “untuk meredam benturan pada kepala”: helm diberi satu bagian rancangan supaya tubuh pemakainya terlindung dari benturan.",
+        "cepat": "Petakan kalimat soal menjadi tiga bagian: benda buatan, bagian rancangannya, dan tujuan bagian itu, yaitu melindungi tubuh pemakai dari benturan. Cari pilihan yang tujuannya sama. Kantong udara di setir mobil melindungi tubuh pengemudi saat tabrakan, jadi A lolos. Pilihan lain bertujuan kenyamanan, menjaga isi, kemudahan gerak, atau kepraktisan.",
+        "mengapa": "Yang disamakan dalam soal hubungan kalimat adalah isi hubungannya, bukan kata-katanya. Pola “benda memiliki bagian untuk tujuan” dipakai kelima pilihan, jadi pembedanya ada pada tujuan bagian itu.",
+        "cek": "Ajukan pertanyaan: bila bagian itu dilepas, apa yang terancam? Tanpa busa, kepala terancam benturan. Tanpa kantong udara, tubuh pengemudi terancam benturan. Pada sofa, botol, kursi, dan payung, yang hilang hanya rasa nyaman atau kemudahan.",
+        "gugur": {
+          "B": {
+            "uji": "busa untuk empuk",
+            "teks": "Kata “lapisan busa” sama persis dengan soal, sehingga terasa paling cocok. Tujuannya lain: busa sofa membuat duduk empuk, bukan melindungi tubuh dari benturan."
+          },
+          "C": {
+            "uji": "menjaga isi",
+            "teks": "Tutup berulir melindungi isi botol, bukan tubuh pemakainya. Yang dijaga barang di dalam tas."
+          },
+          "D": {
+            "uji": "kemudahan gerak",
+            "teks": "Roda membuat kursi mudah dipindahkan. Tidak ada tubuh yang dilindungi dari benturan."
+          },
+          "E": {
+            "uji": "kepraktisan",
+            "teks": "Rangka lipat membuat payung mudah dibawa. Tujuannya kepraktisan, bukan perlindungan dari benturan."
+          }
+        },
+        "kunci": "Kantong udara di setir dirancang untuk melindungi tubuh pengemudi dari benturan, sama dengan tujuan lapisan busa pada helm.",
+        "analogi": "Seperti memilih perlengkapan untuk pemain sepak bola yang sering cedera. Pelindung tulang kering dan sepatu baru sama-sama barang olahraga, tetapi hanya pelindung tulang kering yang menjaga kaki dari benturan.",
+        "waspada": "Memilih B karena kata “lapisan busa” muncul lagi. Kata yang sama bukan tanda hubungan yang sama; bandingkan selalu tujuan bagian itu."
+      }
+    },
+    {
+      "id": "HB-TIU-B04-P01",
+      "bab": 4,
+      "peran": "pembuka",
+      "jenis": "SIL pilih kesimpulan",
+      "bentuk": "3 premis, 1 negatif bersambung + 1 pengalih",
+      "target_detik": 75,
+      "soal": {
+        "pengantar": "Anggap semua premis berikut benar.",
+        "butir": [
+          [
+            "P1",
+            "Tidak ada petugas loket yang bekerja paruh waktu."
+          ],
+          [
+            "P2",
+            "Sebagian pegawai baru adalah petugas loket."
+          ],
+          [
+            "P3",
+            "Semua pegawai bagian arsip berkantor di lantai dua."
+          ]
+        ],
+        "tanya": "Kesimpulan yang pasti benar adalah …"
+      },
+      "kalimat_penentu": "pasti benar",
+      "opsi": {
+        "A": "Semua pegawai yang tidak bekerja paruh waktu adalah petugas loket.",
+        "B": "Ada pegawai baru yang tidak bekerja paruh waktu.",
+        "C": "Semua pegawai baru tidak bekerja paruh waktu.",
+        "D": "Hubungan antara pegawai baru dan pekerja paruh waktu tidak dapat dipastikan.",
+        "E": "Ada pegawai baru yang berkantor di lantai dua."
+      },
+      "kunci": "B",
+      "kode": {
+        "A": "J-BALIK",
+        "B": "kunci",
+        "C": "J-SEBAGIAN",
+        "D": "J-TENTU",
+        "E": "J-KATA"
+      },
+      "nama": {
+        "A": "Arahnya dibalik",
+        "C": "Sebagian dibaca semua",
+        "D": "Kesimpulan yang pasti dikira tidak ada",
+        "E": "Terpancing kata dari premis pengalih"
+      },
+      "status_rencana": {
+        "A": "tidak dapat dipastikan",
+        "B": "pasti benar",
+        "C": "tidak dapat dipastikan",
+        "D": "pasti salah",
+        "E": "tidak dapat dipastikan"
+      },
+      "alasan_kunci": "Pegawai baru yang menjadi petugas loket pasti ada (P2) dan tidak bekerja paruh waktu (P1); pilihan C memperluas hal itu ke semua pegawai baru tanpa dukungan premis.",
+      "kerangka": "SIL pilih kesimpulan · 'tidak ada M yang P' + 'sebagian S adalah M' → 'ada S yang bukan P' + premis pengalih 'semua R adalah T' · 5 istilah",
+      "to_terdekat": "TO P1 no. 32 (semua + tidak ada → tidak ada); pola kunci beda",
+      "catatan_reviu": "Spek slot: ≤ 4 istilah. Narasi Bab 4 mendefinisikan premis pengalih sebagai premis tanpa istilah bersama, sehingga P3 butuh 2 istilah baru → 5 istilah. Script tidak memakai 2^32 dunia: daerah yang dilarang premis 'semua/tidak ada' dibuang dulu (18 daerah tersisa, 2^18 dunia), tetap pemeriksaan semua dunia. Revisi pasca cek buta: D (J-MUNGKIN 'semua petugas loket adalah pegawai baru') diganti opsi berbentuk 'hubungan tidak dapat dipastikan' (J-TENTU, pasti salah) agar bentuk kunci B04-L04 tidak tunggal.",
+      "pembahasan": {
+        "ditanya": "Soal meminta kesimpulan yang tidak mungkin salah selama ketiga premis benar. Kalimat penentunya “pasti benar”: kesimpulan yang hanya mungkin atau masuk akal belum cukup.",
+        "cepat": "Cari istilah yang muncul di dua premis: “petugas loket” di P1 dan P2. P3 tidak berbagi istilah dengan premis lain, jadi P3 pengalih. P2 menjamin ada pegawai baru yang menjadi petugas loket. P1 berkata petugas loket tidak bekerja paruh waktu. Orang itu pasti pegawai baru yang tidak bekerja paruh waktu.",
+        "mengapa": "Gambar lingkaran petugas loket terpisah dari lingkaran pekerja paruh waktu. Titik milik P2 berada di irisan pegawai baru dan petugas loket. Titik itu otomatis berada di luar lingkaran paruh waktu, di gambar mana pun yang kamu buat.",
+        "cek": "Coba bantah B: buat semua pegawai baru bekerja paruh waktu. Gambar itu langsung melanggar P1 dan P2, jadi tidak ada gambar yang membuat B salah.",
+        "gugur": {
+          "A": {
+            "uji": "Arah dibalik",
+            "teks": "P1 hanya berkata petugas loket berada di luar kelompok paruh waktu. Gambar pegawai lain yang juga tidak paruh waktu tetapi bukan petugas loket: premis tetap benar, A salah."
+          },
+          "C": {
+            "uji": "Sebagian jadi semua",
+            "teks": "P2 hanya menjamin sebagian pegawai baru menjadi petugas loket. Pegawai baru yang lain boleh bekerja paruh waktu, dan C langsung salah."
+          },
+          "D": {
+            "uji": "Ada yang pasti",
+            "teks": "Kalimat ini menyerah terlalu cepat. P1 dan P2 sudah memastikan satu hubungan: ada pegawai baru yang tidak bekerja paruh waktu. Karena ada hubungan yang pasti, pernyataan “tidak dapat dipastikan” justru pasti salah."
+          },
+          "E": {
+            "uji": "Kata dari P3",
+            "teks": "“Lantai dua” berasal dari P3, yang hanya membicarakan bagian arsip. Tidak ada premis yang menghubungkan pegawai baru dengan lantai dua."
+          }
+        },
+        "kunci": "Pegawai baru yang menjadi petugas loket pasti ada, dan semua petugas loket tidak bekerja paruh waktu, sehingga B benar di setiap gambar yang memenuhi premis.",
+        "analogi": "Seperti aturan kartu ujian: tidak ada pemegang kartu yang belum membayar. Bila kamu tahu sebagian teman sekelasmu memegang kartu, kamu pasti tahu ada teman sekelas yang sudah membayar. Tentang teman yang tidak memegang kartu, kamu tidak tahu apa-apa.",
+        "waspada": "Memilih C karena P1 terdengar seperti aturan yang berlaku untuk semua orang. Aturan itu hanya mengikat petugas loket; pegawai baru yang bukan petugas loket tidak tersentuh."
+      },
+      "bukti": {
+        "metode": "dunia himpunan 5 istilah, daerah sah 18, 262143 dunia × 4 bacaan (kosong · sebagian)",
+        "status": {
+          "A": "tidak dapat dipastikan",
+          "B": "pasti benar",
+          "C": "tidak dapat dipastikan",
+          "D": "pasti salah",
+          "E": "tidak dapat dipastikan"
+        },
+        "penyangkal": {
+          "A": "{} {petugas loket, pegawai baru}",
+          "C": "{petugas loket, pegawai baru} {paruh waktu, pegawai baru}",
+          "E": "{petugas loket, pegawai baru}"
+        }
+      },
+      "revisi": [
+        "Revisi pasca cek buta: D (J-MUNGKIN 'semua petugas loket adalah pegawai baru') diganti opsi berbentuk 'hubungan tidak dapat dipastikan' (J-TENTU, pasti salah) agar bentuk kunci B04-L04 tidak tunggal."
+      ]
+    },
+    {
+      "id": "HB-TIU-B04-C01",
+      "bab": 4,
+      "peran": "contoh",
+      "jenis": "SIL pilih kesimpulan",
+      "bentuk": "semua + sebagian, premis berlawanan kenyataan",
+      "target_detik": 60,
+      "soal": {
+        "pengantar": "Anggap semua premis berikut benar.",
+        "butir": [
+          [
+            "P1",
+            "Semua logam larut dalam air."
+          ],
+          [
+            "P2",
+            "Sebagian benda berwarna kuning adalah logam."
+          ]
+        ],
+        "tanya": "Kesimpulan yang pasti benar adalah …"
+      },
+      "kalimat_penentu": "Anggap semua premis berikut benar",
+      "opsi": {
+        "A": "Semua benda yang berwarna kuning larut dalam air.",
+        "B": "Sebagian logam tidak larut dalam air.",
+        "C": "Benda yang bukan logam tidak larut dalam air.",
+        "D": "Semua benda yang larut dalam air berwarna kuning.",
+        "E": "Benda yang tidak larut dalam air bukan logam."
+      },
+      "kunci": "E",
+      "kode": {
+        "A": "J-SEBAGIAN",
+        "B": "J-AKAL",
+        "C": "J-BALIK",
+        "D": "J-MUNGKIN",
+        "E": "kunci"
+      },
+      "nama": {
+        "A": "Sebagian dibaca semua",
+        "B": "Benar di dunia nyata, tidak dari premis",
+        "C": "“Tidak” dipasang di dua sisi tanpa menukar",
+        "D": "Yang mungkin dikira pasti"
+      },
+      "status_rencana": {
+        "A": "tidak dapat dipastikan",
+        "B": "pasti salah",
+        "C": "tidak dapat dipastikan",
+        "D": "tidak dapat dipastikan",
+        "E": "pasti benar"
+      },
+      "alasan_kunci": "Semua logam larut (P1), jadi benda yang tidak larut pasti berada di luar kelompok logam; pilihan C sebentuk dengan kunci, tetapi hanya memasang 'tidak' di kedua sisi tanpa menukar, sehingga tidak pasti.",
+      "kerangka": "SIL pilih kesimpulan · 'semua M adalah P' + 'sebagian S adalah M' · kunci kontraposisi P1 (universal), P2 pengalih untuk pengecoh · P1 berlawanan kenyataan · satu opsi pasti salah, dua pasangan cermin (A–D di pengecoh, C–E memuat kunci), dua pengecoh sebentuk 'Benda yang …' (sebagian→semua, 'tidak' di dua sisi)",
+      "to_terdekat": "TO P1 no. 32 (semua + tidak ada); Bab 2 C01 nanti wajib arah sambungan lain (registri kerangka)",
+      "catatan_reviu": "Revisi mesin 2026-11-01: versi awal (P2 'sebagian logam berwarna kuning', A 'semua logam berwarna kuning') ditolak soal_verbal.mjs karena A pasti salah bila 'sebagian' dibaca 'tidak semua'. Bab 2 C01 (semua + sebagian, tanpa rantai) wajib memakai susunan dan istilah lain (registri kerangka). Revisi pasca cek buta: kunci 'Ada benda kuning yang larut' (pola Semua/Ada) diganti kontraposisi P1 berbentuk universal; opsi berawalan 'Ada' (D) kini pilihan salah; pembahasan menyebut terang bahwa P1 salah di dunia nyata. Revisi cek buta 2: A dan C ditulis ulang berbentuk 'Benda yang …' agar kunci bukan opsi tunggal berbentuk kontraposisi; C kini 'tidak' di dua sisi (J-BALIK). Revisi cek buta 3: D diganti 'Benda yang larut dalam air berwarna kuning.' (cermin A, J-MUNGKIN) agar kunci tidak berada di tunggal pasangan cermin.",
+      "pembahasan": {
+        "ditanya": "Soal meminta kesimpulan yang pasti benar bila kedua premis dianggap benar. Kalimat penentunya “Anggap semua premis berikut benar”. P1 salah di dunia nyata, sebab logam tidak larut dalam air, tetapi di soal ini P1 tetap kamu ikuti apa adanya.",
+        "cepat": "P1 berkata semua logam larut. Benda yang tidak larut tidak mungkin logam, sebab kalau ia logam, ia pasti larut. Jadi benda yang tidak larut dalam air bukan logam. P2 tidak diperlukan untuk kesimpulan ini.",
+        "mengapa": "Gambar lingkaran logam di dalam lingkaran benda yang larut. Benda yang tidak larut berada di luar lingkaran besar, jadi pasti juga di luar lingkaran logam. Ini kontraposisi P1: kedua bagian ditukar dan masing-masing diberi “tidak”.",
+        "cek": "Coba gambar benda yang tidak larut tetapi logam. Benda itu harus berada di dalam lingkaran logam dan di luar lingkaran benda yang larut, padahal lingkaran logam seluruhnya di dalam lingkaran itu. Gambar seperti itu tidak bisa dibuat.",
+        "gugur": {
+          "A": {
+            "uji": "Sebagian jadi semua",
+            "teks": "Kalimat ini berlaku untuk semua benda kuning, padahal P2 hanya berkata sebagian benda kuning adalah logam. Benda kuning yang lain, misalnya kertas kuning, berada di luar lingkaran logam dan boleh tidak larut."
+          },
+          "B": {
+            "uji": "Melawan P1",
+            "teks": "Di dunia nyata pilihan ini benar. Menurut P1, semua logam larut, jadi “sebagian logam tidak larut” justru pasti salah."
+          },
+          "C": {
+            "uji": "Tidak di dua sisi",
+            "teks": "Bentuknya mirip kunci, tetapi “tidak” dipasang pada kedua bagian P1 tanpa menukar urutannya. Gula bukan logam, dan menurut premis gula tetap boleh larut, jadi C tidak pasti."
+          },
+          "D": {
+            "uji": "Hanya mungkin",
+            "teks": "Ini kebalikan pilihan A, dan sama lemahnya. Premis tidak berkata apa pun tentang warna benda yang larut. Gambar gula putih yang larut: kedua premis tetap benar, D salah."
+          }
+        },
+        "kunci": "Semua logam larut, sehingga benda yang tidak larut pasti bukan logam, di gambar mana pun yang memenuhi premis.",
+        "analogi": "Seperti permainan dengan aturan aneh: “anggap semua kucing bisa berenang”. Dalam permainan itu, kucingmu pasti bisa berenang, walaupun di rumah ia takut air. Kamu bermain dengan aturan, bukan dengan kenyataan.",
+        "waspada": "Memilih C karena bentuknya mirip kunci: sama-sama diawali “Benda yang” dan memuat dua kata ingkar. Bedanya ada pada urutan. Kunci menukar kedua bagian P1, sedangkan C hanya menambahkan “tidak” di tempat yang sama."
+      },
+      "bukti": {
+        "metode": "dunia himpunan 3 istilah, daerah sah 6, 63 dunia × 4 bacaan (kosong · sebagian)",
+        "status": {
+          "A": "tidak dapat dipastikan",
+          "B": "pasti salah",
+          "C": "tidak dapat dipastikan",
+          "D": "tidak dapat dipastikan",
+          "E": "pasti benar"
+        },
+        "penyangkal": {
+          "A": "{kuning} {logam, larut, kuning}",
+          "B": "{logam, larut, kuning}",
+          "C": "{larut} {logam, larut, kuning}",
+          "D": "{larut} {logam, larut, kuning}"
+        },
+        "cermin": [
+          "AD",
+          "BE",
+          "CE"
+        ]
+      },
+      "revisi": [
+        "Revisi pasca cek buta: kunci 'Ada benda kuning yang larut' (pola Semua/Ada) diganti kontraposisi P1 berbentuk universal; opsi berawalan 'Ada' (D) kini pilihan salah; pembahasan menyebut terang bahwa P1 salah di dunia nyata."
+      ],
+      "revisi2": [
+        "A dan C ditulis ulang berbentuk 'Benda yang …' agar kunci bukan opsi tunggal berbentuk kontraposisi; C kini 'tidak' di dua sisi (J-BALIK)."
+      ],
+      "revisi3": [
+        "D diganti 'Benda yang larut dalam air berwarna kuning.' (cermin A, J-MUNGKIN) agar kunci tidak berada di satu-satunya pasangan cermin."
+      ]
+    },
+    {
+      "id": "HB-TIU-B04-C02",
+      "bab": 4,
+      "peran": "contoh",
+      "jenis": "SIL menilai dua kesimpulan",
+      "bentuk": "(1) sah, (2) konvers",
+      "target_detik": 60,
+      "soal": {
+        "pengantar": "Anggap semua premis berikut benar.",
+        "butir": [
+          [
+            "P1",
+            "Semua pemain inti tim basket sekolah lulus tes kebugaran."
+          ],
+          [
+            "P2",
+            "Sebagian pemain inti tim basket sekolah adalah anggota OSIS."
+          ],
+          [
+            "(1)",
+            "Ada anggota OSIS yang lulus tes kebugaran."
+          ],
+          [
+            "(2)",
+            "Semua siswa yang lulus tes kebugaran adalah pemain inti tim basket sekolah."
+          ]
+        ],
+        "tanya": "Penilaian yang tepat untuk kesimpulan (1) dan (2) adalah …"
+      },
+      "kalimat_penentu": "kesimpulan (1) dan (2)",
+      "opsi": {
+        "A": "(1) pasti benar, (2) pasti benar.",
+        "B": "(1) pasti benar, (2) pasti salah.",
+        "C": "(1) pasti benar, (2) tidak dapat dipastikan.",
+        "D": "(1) tidak dapat dipastikan, (2) pasti benar.",
+        "E": "(1) tidak dapat dipastikan, (2) tidak dapat dipastikan."
+      },
+      "kunci": "C",
+      "kode": {
+        "A": "J-BALIK",
+        "B": "J-TENTU",
+        "C": "kunci",
+        "D": "J-MUNGKIN",
+        "E": "J-SEBAGIAN"
+      },
+      "nama": {
+        "A": "Arahnya dibalik",
+        "B": "Pasti salah tertukar dengan tidak dapat dipastikan",
+        "D": "Yang mungkin dikira pasti",
+        "E": "Kata “sebagian” dibaca terlalu lemah"
+      },
+      "alasan_kunci": "Kesimpulan (1) benar di setiap gambar, sedangkan (2) membalik arah P1 sehingga benar di sebagian gambar dan salah di gambar lain; pilihan B menyamakan 'belum pasti' dengan 'pasti salah'.",
+      "kerangka": "SIL dua kesimpulan · 'semua M adalah P' + 'sebagian M adalah S' (istilah tengah subjek di kedua premis) · (1) 'ada S yang P', (2) konvers P1 · opsi gabungan 1,2,3,7,9 urutan baku",
+      "to_terdekat": "bentuk TR no. 32 (opsi '(1) atau (2)' tidak dipakai, engine v0.4.3); TO P1 tanpa dua kesimpulan",
+      "catatan_reviu": "Opsi = 5 dari 9 gabungan, urutan baku v0.4.3. D dan E menyalahi (1); kode slot J-MUNGKIN dan J-SEBAGIAN dipasang pada dua cara keliru menilai (1): D menukar status kedua kesimpulan, E membaca 'sebagian' sebagai 'mungkin tidak ada'. Kode J-SEBAGIAN di E = perluasan (salah baca 'sebagian'), bukan 'sebagian dibaca semua'.",
+      "pembahasan": {
+        "ditanya": "Soal meminta status masing-masing kesimpulan: pasti benar, pasti salah, atau tidak dapat dipastikan. Kalimat penentunya “kesimpulan (1) dan (2)”: pilihan yang benar harus tepat untuk keduanya, bukan hanya salah satu.",
+        "cepat": "Nilai (1) dulu. P2 menjamin ada pemain inti yang menjadi anggota OSIS, dan P1 berkata semua pemain inti lulus tes. Jadi (1) pasti benar. Lalu (2): kalimat ini membalik P1. Coret semua pilihan yang tidak menulis “(1) pasti benar”, lalu tentukan status (2).",
+        "mengapa": "Kesimpulan (2) benar bila lingkaran pemain inti sama besar dengan lingkaran yang lulus tes, dan salah bila ada siswa lain yang lulus tes tanpa menjadi pemain inti. Kedua gambar memenuhi premis, jadi (2) tidak dapat dipastikan.",
+        "cek": "Untuk “pasti salah”, harus tidak ada satu gambar pun yang membuat (2) benar. Gambar lingkaran yang sama besar membuat (2) benar, jadi (2) bukan pasti salah.",
+        "gugur": {
+          "A": {
+            "uji": "(2) dibalik",
+            "teks": "P1 menaruh pemain inti di dalam kelompok yang lulus tes. Kesimpulan (2) membaca P1 dari arah sebaliknya, padahal siswa lain boleh lulus tes tanpa menjadi pemain inti."
+          },
+          "B": {
+            "uji": "(2) belum pasti",
+            "teks": "Kamu benar bahwa (2) tidak pasti benar, tetapi “tidak pasti benar” belum berarti “pasti salah”. Ada gambar yang membuat (2) benar."
+          },
+          "D": {
+            "uji": "Status tertukar",
+            "teks": "Status kedua kesimpulan bertukar tempat. Yang pasti adalah (1); yang hanya benar di sebagian gambar adalah (2)."
+          },
+          "E": {
+            "uji": "(1) diragukan",
+            "teks": "Kata “sebagian” di P2 kamu baca sebagai “mungkin ada, mungkin tidak”. Dalam logika, “sebagian” berarti paling sedikit satu, jadi pemain inti yang menjadi anggota OSIS pasti ada."
+          }
+        },
+        "kunci": "Kesimpulan (1) benar di setiap gambar yang memenuhi premis, sedangkan (2) benar di satu gambar dan salah di gambar lain, sehingga jawabannya C.",
+        "analogi": "Seperti kabar “semua anak yang ikut lomba sudah mendapat kaus panitia”. Kalau adikmu ikut lomba, ia pasti punya kaus itu. Tetapi melihat seseorang memakai kaus panitia belum membuktikan ia ikut lomba; bisa saja ia panitia.",
+        "waspada": "Memilih B. Sesudah tahu (2) tidak mengikuti premis, kamu langsung menganggapnya salah. Kesimpulan yang belum terbukti benar belum tentu terbukti salah."
+      },
+      "bukti": {
+        "metode": "dunia himpunan 3 istilah, 63 dunia × 4 bacaan",
+        "status_1": "pasti benar",
+        "status_2": "tidak dapat dipastikan",
+        "penyangkal_2": "{lulus tes} {pemain inti, lulus tes, anggota OSIS}"
+      }
+    },
+    {
+      "id": "HB-TIU-B04-C03",
+      "bab": 4,
+      "peran": "contoh",
+      "jenis": "SIL rantai bersyarat + atau",
+      "bentuk": "fakta di tengah rantai, kerja mundur",
+      "target_detik": 90,
+      "soal": {
+        "pengantar": "Anggap semua premis berikut benar.",
+        "butir": [
+          [
+            "P1",
+            "Jika panitia memesan aula, maka acara diadakan pada hari Sabtu."
+          ],
+          [
+            "P2",
+            "Jika acara diadakan pada hari Sabtu, maka peserta dari luar kota datang dengan bus atau menginap di asrama."
+          ],
+          [
+            "P3",
+            "Jika peserta dari luar kota menginap di asrama, maka konsumsi disiapkan sejak Jumat malam."
+          ],
+          [
+            "P4",
+            "Acara tidak diadakan pada hari Sabtu."
+          ]
+        ],
+        "tanya": "Kesimpulan yang pasti benar adalah …"
+      },
+      "kalimat_penentu": "Acara tidak diadakan pada hari Sabtu",
+      "opsi": {
+        "A": "Panitia tidak memesan aula.",
+        "B": "Konsumsi tidak disiapkan sejak Jumat malam.",
+        "C": "Acara diadakan pada hari Minggu.",
+        "D": "Panitia tidak memesan aula dan peserta dari luar kota tidak menginap di asrama.",
+        "E": "Peserta dari luar kota memerlukan tempat menginap."
+      },
+      "kunci": "A",
+      "kode": {
+        "A": "kunci",
+        "B": "J-BALIK",
+        "C": "J-ASUMSI",
+        "D": "J-MUNGKIN",
+        "E": "J-AKAL"
+      },
+      "nama": {
+        "B": "“Tidak” dipasang di dua sisi tanpa menukar",
+        "C": "Memakai keterangan yang tidak tertulis",
+        "D": "Yang mungkin dikira pasti",
+        "E": "Benar di dunia nyata, tidak dari premis"
+      },
+      "status_rencana": {
+        "A": "pasti benar",
+        "B": "tidak dapat dipastikan",
+        "C": "tidak dapat dipastikan",
+        "D": "tidak dapat dipastikan",
+        "E": "tidak dapat dipastikan"
+      },
+      "alasan_kunci": "Fakta P4 menolak akibat P1, sehingga sebab P1 juga tidak terjadi; pilihan D benar di separuh pertama, tetapi separuh keduanya hanya mungkin.",
+      "kerangka": "SIL rantai bersyarat 3 premis + 1 fakta · cabang 'atau' di P2 · fakta = ingkaran akibat premis pertama (tengah rantai) → kerja mundur satu langkah · P2–P3 tidak bergerak",
+      "to_terdekat": "TO P1 no. 34 (rantai lurus 2 premis + ingkaran akibat akhir, mundur dua langkah); di sini fakta di tengah + cabang atau",
+      "catatan_reviu": "P2 dan P3 tidak diperlukan untuk kunci (berperan sebagai pengalih bersyarat); dicatat sebagai sifat soal, bukan cacat: inti soal adalah tidak mengalir ke bagian rantai yang tidak bergerak.",
+      "pembahasan": {
+        "ditanya": "Soal meminta satu kesimpulan yang tidak mungkin salah. Kalimat penentunya fakta P4, “Acara tidak diadakan pada hari Sabtu”: dari fakta inilah kamu mulai bekerja.",
+        "cepat": "Mulai dari P4. Cari premis yang menyebut “hari Sabtu” di bagian akibat: P1. Akibat P1 tidak terjadi, jadi sebabnya juga tidak terjadi. Panitia tidak memesan aula.",
+        "mengapa": "P1 hanya melarang satu keadaan: aula dipesan, tetapi acara tidak hari Sabtu. P4 sudah memastikan acara tidak hari Sabtu. Bila aula dipesan, keadaan terlarang itu terjadi, jadi aula pasti tidak dipesan.",
+        "cek": "P2 dan P3 hanya bercerita tentang apa yang terjadi bila acara hari Sabtu. Acaranya tidak hari Sabtu, jadi kedua premis itu diam: tidak ada yang bisa disimpulkan tentang bus, asrama, atau konsumsi.",
+        "gugur": {
+          "B": {
+            "uji": "“Tidak” di dua sisi",
+            "teks": "Dari “tidak Sabtu” kamu menyimpulkan “tidak menginap”, lalu “konsumsi tidak disiapkan”. P2 dan P3 tidak bekerja ke arah itu; konsumsi tetap boleh disiapkan Jumat malam karena alasan lain."
+          },
+          "C": {
+            "uji": "Tidak tertulis",
+            "teks": "Premis tidak menyebut hari lain. Acara bisa diadakan hari Minggu, hari Jumat, atau bahkan batal."
+          },
+          "D": {
+            "uji": "Separuh benar",
+            "teks": "Bagian pertama memang pasti, tetapi bagian kedua hanya mungkin. Kalimat bersambung “dan” baru pasti benar bila kedua bagiannya pasti."
+          },
+          "E": {
+            "uji": "Dunia nyata",
+            "teks": "Peserta dari luar kota memang biasanya butuh tempat menginap, tetapi tidak satu pun premis mengatakannya."
+          }
+        },
+        "kunci": "Akibat P1 dibantah oleh fakta P4, sehingga sebab P1 juga gugur: panitia pasti tidak memesan aula.",
+        "analogi": "Seperti pesan ibu: “Kalau kamu ke pasar, kamu pasti lewat jembatan.” Tetangga bercerita kamu tidak lewat jembatan hari ini. Ibu langsung tahu kamu tidak ke pasar, walaupun belum tahu ke mana kamu pergi.",
+        "waspada": "Membaca premis dari atas ke bawah lalu ikut mengalir ke P2 dan P3. Rantai itu hanya bergerak bila acara hari Sabtu, dan fakta P4 memotongnya di tengah."
+      },
+      "bukti": {
+        "metode": "tabel kebenaran 7 pernyataan dasar (128 baris) × 2 bacaan 'atau'",
+        "status": {
+          "A": "pasti benar",
+          "B": "tidak dapat dipastikan",
+          "C": "tidak dapat dipastikan",
+          "D": "tidak dapat dipastikan",
+          "E": "tidak dapat dipastikan"
+        },
+        "catatan": "P1 + P4 perlu; P2, P3 tidak dipakai kunci (pengalih bersyarat)"
+      }
+    },
+    {
+      "id": "HB-TIU-B04-C04",
+      "bab": 4,
+      "peran": "contoh",
+      "jenis": "EKV setara",
+      "bentuk": "kontraposisi",
+      "target_detik": 45,
+      "soal": {
+        "tanya": "Pernyataan yang setara dengan “Jika air di dalam ketel mendidih, maka peluit ketel berbunyi” adalah …"
+      },
+      "kalimat_penentu": "setara",
+      "opsi": {
+        "A": "Jika peluit ketel berbunyi, maka air di dalam ketel mendidih.",
+        "B": "Air di dalam ketel mendidih, tetapi peluit ketel tidak berbunyi.",
+        "C": "Jika air di dalam ketel tidak mendidih, maka peluit ketel tidak berbunyi.",
+        "D": "Jika peluit ketel tidak berbunyi, maka air di dalam ketel tidak mendidih.",
+        "E": "Air di dalam ketel tidak mendidih dan peluit ketel tidak berbunyi."
+      },
+      "kunci": "D",
+      "kode": {
+        "A": "J-BALIK",
+        "B": "J-INGKAR",
+        "C": "J-BALIK",
+        "D": "kunci",
+        "E": "J-INGKAR"
+      },
+      "nama": {
+        "A": "Arahnya dibalik",
+        "B": "Ingkaran dikira setara",
+        "C": "“Tidak” dipasang di dua sisi tanpa menukar",
+        "E": "Ingkaran keliru"
+      },
+      "alasan_kunci": "Kontraposisi melarang keadaan yang sama dengan pernyataan asal (mendidih tetapi tidak berbunyi); bentuk C memasang 'tidak' tanpa menukar dan setara dengan konvers.",
+      "kerangka": "EKV setara · jika p maka q → kontraposisi · pengecoh konvers, tidak-tidak, ingkaran sejati (p dan tidak q), ingkaran keliru (tidak p dan tidak q)",
+      "to_terdekat": "tidak ada setara di TO P1; isi bukan hujan–lapangan (narasi)",
+      "catatan_reviu": "C dan D sama-sama berbentuk 'jika tidak …, maka tidak …', jadi bentuk kunci tidak tunggal.",
+      "pembahasan": {
+        "ditanya": "Soal meminta pernyataan yang nilainya selalu sama dengan pernyataan asal di setiap keadaan. Kalimat penentunya “setara”, bukan “ingkaran”.",
+        "cepat": "Tulis keadaan terlarang pernyataan asal: air mendidih, tetapi peluit tidak berbunyi. Cari pilihan yang melarang keadaan yang sama. Pilihan D berkata: bila peluit tidak berbunyi, air tidak mendidih. Keadaan yang dilarangnya juga peluit diam padahal air mendidih.",
+        "mengapa": "Dua pernyataan bersyarat setara bila melarang keadaan yang sama. Kontraposisi menukar kedua bagian dan memberi “tidak” pada keduanya, sehingga keadaan terlarangnya tidak berubah.",
+        "cek": "Uji keadaan air tidak mendidih dan peluit berbunyi (misalnya peluit ditiup orang). Pernyataan asal tetap benar, D tetap benar. Pernyataan A dan C sama-sama salah di keadaan itu.",
+        "gugur": {
+          "A": {
+            "uji": "Konvers",
+            "teks": "Kedua bagian ditukar tanpa “tidak”. Pernyataan ini melarang peluit berbunyi tanpa air mendidih, keadaan yang diizinkan pernyataan asal."
+          },
+          "B": {
+            "uji": "Ingkaran",
+            "teks": "Kalimat ini adalah keadaan terlarang itu sendiri, jadi nilainya selalu berlawanan dengan pernyataan asal. Ini ingkaran, bukan pernyataan setara."
+          },
+          "C": {
+            "uji": "Tidak di dua sisi",
+            "teks": "“Tidak” dipasang di kedua bagian tanpa menukar urutannya. Bentuk ini melarang keadaan yang sama dengan pilihan A."
+          },
+          "E": {
+            "uji": "Bukan ingkaran",
+            "teks": "Kalimat “dan” ini hanya menggambarkan satu keadaan yang diizinkan pernyataan asal. Ia tidak setara, dan juga bukan ingkarannya."
+          }
+        },
+        "kunci": "Pilihan D menukar kedua bagian dan memberi “tidak” pada keduanya, sehingga keadaan yang dilarangnya sama dengan pernyataan asal.",
+        "analogi": "Seperti alarm asap: “Jika ada asap, alarm berbunyi.” Bila alarm diam, kamu tahu tidak ada asap. Tetapi alarm yang berbunyi belum tentu karena asap; mungkin seseorang menekan tombol ujinya.",
+        "waspada": "Memilih C karena terlihat rapi: “tidak” dipasang di depan kedua bagian. Bentuknya mirip kunci, hanya urutannya tidak ditukar, dan justru di situ perbedaannya."
+      },
+      "bukti": {
+        "metode": "tabel kebenaran 4 baris",
+        "setara": [
+          "D"
+        ],
+        "ingkaran": [
+          "B"
+        ],
+        "catatan": "A dan C setara satu sama lain (konvers = 'tidak' di dua sisi), keduanya tidak setara dengan pernyataan asal",
+        "cermin": [
+          "AB",
+          "AC",
+          "AE",
+          "BD",
+          "CD",
+          "DE"
+        ]
+      }
+    },
+    {
+      "id": "HB-TIU-B04-L01",
+      "bab": 4,
+      "peran": "latihan",
+      "jenis": "SIL bersyarat satu langkah",
+      "bentuk": "premis bertanda tidak + fakta",
+      "target_detik": 45,
+      "soal": {
+        "pengantar": "Anggap semua premis berikut benar.",
+        "butir": [
+          [
+            "P1",
+            "Jika sebuah paket tidak diberi label alamat, maka paket itu tidak dikirim hari ini."
+          ],
+          [
+            "P2",
+            "Paket milik Dodi dikirim hari ini."
+          ]
+        ],
+        "tanya": "Kesimpulan yang pasti benar adalah …"
+      },
+      "kalimat_penentu": "pasti benar",
+      "opsi": {
+        "A": "Jika sebuah paket diberi label alamat, maka paket itu dikirim hari ini.",
+        "B": "Paket tanpa label alamat dapat tersesat di perjalanan.",
+        "C": "Paket milik Dodi sudah diberi label alamat.",
+        "D": "Jika sebuah paket tidak dikirim hari ini, maka paket itu tidak diberi label alamat.",
+        "E": "Paket milik Dodi tiba di tujuan hari ini."
+      },
+      "kunci": "C",
+      "kode": {
+        "A": "J-BALIK",
+        "B": "J-AKAL",
+        "C": "kunci",
+        "D": "J-BALIK",
+        "E": "J-MUNGKIN"
+      },
+      "nama": {
+        "A": "“Tidak” dipasang di dua sisi tanpa menukar",
+        "B": "Benar di dunia nyata, tidak dari premis",
+        "D": "Arahnya dibalik",
+        "E": "Yang mungkin dikira pasti"
+      },
+      "status_rencana": {
+        "A": "tidak dapat dipastikan",
+        "B": "tidak dapat dipastikan",
+        "C": "pasti benar",
+        "D": "tidak dapat dipastikan",
+        "E": "tidak dapat dipastikan"
+      },
+      "alasan_kunci": "Paket Dodi dikirim hari ini, padahal paket tanpa label tidak dikirim hari ini, jadi paket Dodi pasti berlabel; pilihan E juga tentang paket Dodi, tetapi premis tidak berkata apa pun tentang waktu tibanya.",
+      "kerangka": "SIL bersyarat satu langkah · 'jika tidak p maka tidak q' + q → p · pengecoh tidak-tidak, konvers, akal sehat, dugaan tentang individu yang sama",
+      "to_terdekat": "TO P1 no. 34 (rantai dua premis + ingkaran akibat akhir); di sini satu langkah dengan 'tidak' di kedua bagian",
+      "catatan_reviu": "Latihan: pembahasan menyusul Tahap 6. Revisi pasca cek buta: E diganti pernyataan lain tentang paket Dodi (J-MUNGKIN) agar kunci bukan opsi tunggal yang menyebut Dodi; kunci tidak lagi terpendek.",
+      "bukti": {
+        "metode": "dunia himpunan 4 istilah + individu, daerah sah 12, 24576 dunia × 4 bacaan (kosong · sebagian)",
+        "status": {
+          "A": "tidak dapat dipastikan",
+          "B": "tidak dapat dipastikan",
+          "C": "pasti benar",
+          "D": "tidak dapat dipastikan",
+          "E": "tidak dapat dipastikan"
+        },
+        "penyangkal": {
+          "A": "{berlabel} {berlabel, dikirim hari ini · paket Dodi}",
+          "B": "{} {berlabel, dikirim hari ini · paket Dodi}",
+          "D": "{berlabel} {berlabel, dikirim hari ini · paket Dodi}",
+          "E": "{berlabel, dikirim hari ini · paket Dodi}"
+        },
+        "cermin": [
+          "AD"
+        ]
+      },
+      "revisi": [
+        "Revisi pasca cek buta: E diganti pernyataan lain tentang paket Dodi (J-MUNGKIN) agar kunci bukan opsi tunggal yang menyebut Dodi; kunci tidak lagi terpendek."
+      ],
+      "pembahasan": {
+        "ditanya": "Soal meminta kesimpulan yang “pasti benar” bila kedua premis dianggap benar. P1 kalimat bersyarat tentang semua paket, sedangkan P2 menyebut satu paket tertentu, yaitu paket milik Dodi.",
+        "cepat": "Ubah P1 menjadi kontraposisinya: tukar kedua bagian dan beri “tidak” pada masing-masing. Hasilnya: paket yang dikirim hari ini pasti diberi label alamat. P2 berkata paket Dodi dikirim hari ini. Jadi paket Dodi sudah diberi label alamat.",
+        "mengapa": "Andaikan paket Dodi tanpa label. Menurut P1, paket itu tidak dikirim hari ini, padahal P2 berkata paket itu dikirim hari ini. Dua kalimat itu bertentangan, jadi andaian tadi salah dan paket Dodi pasti berlabel.",
+        "cek": "Coba gambar keadaan yang memenuhi kedua premis dengan paket Dodi tanpa label. Paket itu harus berada di kelompok yang tidak dikirim hari ini dan juga di kelompok yang dikirim hari ini. Gambar seperti itu tidak bisa dibuat.",
+        "gugur": {
+          "A": {
+            "uji": "tidak di dua sisi",
+            "teks": "Kalimat ini membuang kedua “tidak” dari P1 tanpa menukar urutannya. P1 tidak melarang paket berlabel tertunda; paket berlabel yang tidak dikirim hari ini tetap cocok dengan kedua premis."
+          },
+          "B": {
+            "uji": "di luar premis",
+            "teks": "Paket tanpa label memang mudah tersesat, tetapi premis tidak membicarakan tersesat atau tidak. Kalimat yang tidak berasal dari premis tidak dapat dipastikan."
+          },
+          "D": {
+            "uji": "kebalikan arah",
+            "teks": "Kedua bagian P1 ditukar, tetapi “tidak” yang dipakai tetap sama dengan P1. Paket berlabel yang tertunda tidak dikirim hari ini padahal berlabel; kedua premis tetap benar, D salah."
+          },
+          "E": {
+            "uji": "tiba belum tentu",
+            "teks": "Premis hanya menyebut pengiriman, bukan waktu tiba. Paket yang dikirim hari ini bisa tiba besok, dan kedua premis tetap benar."
+          }
+        },
+        "kunci": "Paket tanpa label tidak dikirim hari ini, sedangkan paket Dodi dikirim hari ini, sehingga paket Dodi pasti sudah diberi label alamat.",
+        "analogi": "Seperti penjaga gerbang yang menahan setiap motor tanpa stiker parkir. Begitu kamu melihat motor Pak Budi sudah terparkir di dalam, kamu tahu motor itu berstiker, walaupun stikernya tidak terlihat dari tempatmu.",
+        "waspada": "Memilih D karena bentuknya mirip P1 dan sama-sama memuat dua “tidak”. Kontraposisi menukar kedua bagian dan memberi “tidak” pada keduanya; D menukar bagiannya, tetapi tetap memakai “tidak” yang sama, sehingga yang didapat kebalikan arah."
+      }
+    },
+    {
+      "id": "HB-TIU-B04-L02",
+      "bab": 4,
+      "peran": "latihan",
+      "jenis": "SIL kata izin",
+      "bentuk": "izin di dalam nama kelompok",
+      "target_detik": 60,
+      "soal": {
+        "pengantar": "Anggap semua premis berikut benar.",
+        "butir": [
+          [
+            "P1",
+            "Semua karyawan yang memegang izin masuk ruang server telah mengikuti pelatihan keamanan data."
+          ],
+          [
+            "P2",
+            "Rudi adalah karyawan yang memegang izin masuk ruang server."
+          ]
+        ],
+        "tanya": "Kesimpulan yang pasti benar adalah …"
+      },
+      "kalimat_penentu": "memegang izin masuk ruang server",
+      "opsi": {
+        "A": "Rudi masuk ruang server.",
+        "B": "Rudi telah mengikuti pelatihan keamanan data.",
+        "C": "Semua karyawan yang telah mengikuti pelatihan keamanan data memegang izin masuk ruang server.",
+        "D": "Karyawan yang belum mengikuti pelatihan keamanan data tidak pernah masuk ruang server.",
+        "E": "Sebagian karyawan yang telah mengikuti pelatihan keamanan data tidak memegang izin masuk ruang server."
+      },
+      "kunci": "B",
+      "kode": {
+        "A": "J-IZIN",
+        "B": "kunci",
+        "C": "J-BALIK",
+        "D": "J-IZIN",
+        "E": "J-MUNGKIN"
+      },
+      "nama": {
+        "A": "Boleh dikira pasti terjadi",
+        "C": "Arahnya dibalik",
+        "D": "Boleh dikira pasti terjadi",
+        "E": "Yang mungkin dikira pasti"
+      },
+      "status_rencana": {
+        "A": "tidak dapat dipastikan",
+        "B": "pasti benar",
+        "C": "tidak dapat dipastikan",
+        "D": "tidak dapat dipastikan",
+        "E": "tidak dapat dipastikan"
+      },
+      "alasan_kunci": "Rudi termasuk pemegang izin, dan semua pemegang izin telah dilatih, jadi Rudi pasti telah dilatih; pilihan A mengubah izin masuk menjadi kejadian masuk.",
+      "kerangka": "SIL izin di dalam nama kelompok · 'semua pemegang izin X adalah P' + individu pemegang izin → individu P · dua opsi izin → kejadian (masuk; tidak pernah masuk), konvers, dugaan",
+      "to_terdekat": "TO P1 tanpa kata izin; bukan kartu anggota perpustakaan (narasi)",
+      "catatan_reviu": "Dirujuk Latihan A Bab 19 (J-IZIN, 'Boleh dikira pasti terjadi'): A dan D. Premis tetap berbentuk fakta (Pilar 4 SIL): izin hanya di dalam nama kelompok. Latihan: pembahasan menyusul Tahap 6.",
+      "bukti": {
+        "metode": "dunia himpunan 3 istilah + individu, daerah sah 6, 192 dunia × 4 bacaan (kosong · sebagian)",
+        "status": {
+          "A": "tidak dapat dipastikan",
+          "B": "pasti benar",
+          "C": "tidak dapat dipastikan",
+          "D": "tidak dapat dipastikan",
+          "E": "tidak dapat dipastikan"
+        },
+        "penyangkal": {
+          "A": "{pemegang izin, terlatih · Rudi}",
+          "C": "{terlatih} {pemegang izin, terlatih · Rudi}",
+          "D": "{pemegang izin, terlatih · Rudi} {masuk ruang server}",
+          "E": "{pemegang izin, terlatih · Rudi}"
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta kesimpulan yang pasti benar. Kalimat penentunya “memegang izin masuk ruang server”: premis membicarakan izin, yaitu hal yang boleh dilakukan, bukan hal yang sudah terjadi.",
+        "cepat": "P1: semua pemegang izin telah mengikuti pelatihan. P2: Rudi pemegang izin. Rudi masuk ke kelompok pemegang izin, dan seluruh kelompok itu berada di dalam kelompok yang telah dilatih. Jadi Rudi telah mengikuti pelatihan keamanan data.",
+        "mengapa": "Gambar lingkaran pemegang izin di dalam lingkaran orang yang telah dilatih, lalu taruh titik Rudi di lingkaran kecil. Titik itu otomatis berada di lingkaran besar.",
+        "cek": "Coba taruh Rudi di luar lingkaran orang yang telah dilatih. Ia tetap harus berada di lingkaran pemegang izin, padahal lingkaran itu seluruhnya di dalam lingkaran yang telah dilatih. Tidak bisa.",
+        "gugur": {
+          "A": {
+            "uji": "izin, bukan kejadian",
+            "teks": "Memegang izin berarti boleh masuk, bukan pasti masuk. Rudi bisa saja tidak pernah masuk ruang server, dan kedua premis tetap benar."
+          },
+          "C": {
+            "uji": "dibaca terbalik",
+            "teks": "P1 dibaca dari belakang. Premis tidak melarang adanya karyawan terlatih yang belum memegang izin."
+          },
+          "D": {
+            "uji": "kejadian masuk",
+            "teks": "Premis hanya mengatur siapa yang memegang izin, bukan siapa yang benar-benar masuk. Tidak ada premis yang membicarakan kejadian masuk, jadi D tidak dapat dipastikan."
+          },
+          "E": {
+            "uji": "belum tentu ada",
+            "teks": "Mungkin ada karyawan terlatih tanpa izin, mungkin juga tidak. Gambar semua orang terlatih sebagai pemegang izin: kedua premis tetap benar, E salah."
+          }
+        },
+        "kunci": "Rudi pemegang izin dan semua pemegang izin telah dilatih, sehingga Rudi pasti telah mengikuti pelatihan keamanan data.",
+        "analogi": "Seperti tiket konser yang hanya dijual kepada pemilik kartu anggota. Temanmu memegang tiket, jadi ia pasti punya kartu anggota. Memegang tiket belum berarti ia datang ke konser.",
+        "waspada": "Memilih A karena “izin masuk” dan “masuk” terdengar sama. Garis bawahi kata izin, boleh, berhak, dan diizinkan. Kata-kata itu tidak pernah memberi tahu apa yang benar-benar terjadi."
+      }
+    },
+    {
+      "id": "HB-TIU-B04-L03",
+      "bab": 4,
+      "peran": "latihan",
+      "jenis": "EKV ingkaran",
+      "bentuk": "ingkaran 'semua'",
+      "target_detik": 45,
+      "soal": {
+        "tanya": "Ingkaran dari pernyataan “Semua penumpang kapal memakai pelampung” adalah …"
+      },
+      "kalimat_penentu": "Ingkaran",
+      "opsi": {
+        "A": "Semua penumpang kapal tidak memakai pelampung.",
+        "B": "Tidak semua orang yang memakai pelampung adalah penumpang kapal.",
+        "C": "Ada penumpang kapal yang memakai pelampung.",
+        "D": "Tidak semua penumpang kapal memakai pelampung.",
+        "E": "Semua orang yang tidak memakai pelampung bukan penumpang kapal."
+      },
+      "kunci": "D",
+      "kode": {
+        "A": "J-INGKAR",
+        "B": "J-BALIK",
+        "C": "J-SEBAGIAN",
+        "D": "kunci",
+        "E": "J-INGKAR"
+      },
+      "nama": {
+        "A": "Ingkaran keliru",
+        "B": "Arahnya dibalik",
+        "C": "Ingkaran keliru",
+        "E": "Ingkaran keliru"
+      },
+      "alasan_kunci": "Pernyataan 'semua' dibantah oleh satu penumpang tanpa pelampung, dan 'tidak semua … memakai' tepat berarti itu; pilihan A 'semua … tidak memakai' terlalu kuat, dan pilihan C berawalan 'ada' tidak membantah apa pun. Pilihan B juga berawalan 'tidak semua', tetapi membalik arah pernyataan.",
+      "kerangka": "EKV ingkaran 'semua A adalah B' → 'tidak semua A adalah B' · pengecoh 'semua tidak', konvers, 'ada A yang B', kontraposisi",
+      "to_terdekat": "tidak ada ingkaran di TO P1",
+      "catatan_reviu": "Kontraposisi (E) dipasang agar siswa membedakan setara dan ingkaran. Latihan: pembahasan menyusul Tahap 6. Revisi pasca cek buta: kunci 'Ada … yang tidak' (opsi tunggal berawalan 'Ada') diganti 'Tidak semua …' (setara, dibuktikan mesin); C diganti 'Ada … yang memakai' sebagai pilihan salah. Revisi cek buta 2: B diganti 'Tidak semua orang yang memakai pelampung adalah penumpang kapal.' (arah dibalik) agar kunci bukan opsi tunggal berawalan 'Tidak semua'.",
+      "bukti": {
+        "metode": "semua dunia himpunan 2 istilah × 4 bacaan",
+        "ingkaran": [
+          "D"
+        ],
+        "setara": [
+          "E"
+        ],
+        "cermin": [
+          "AB",
+          "AE",
+          "BC",
+          "BD",
+          "CE",
+          "DE"
+        ]
+      },
+      "revisi": [
+        "Revisi pasca cek buta: kunci 'Ada … yang tidak' (opsi tunggal berawalan 'Ada') diganti 'Tidak semua …' (setara, dibuktikan mesin); C diganti 'Ada … yang memakai' sebagai pilihan salah."
+      ],
+      "revisi2": [
+        "B diganti 'Tidak semua orang yang memakai pelampung adalah penumpang kapal.' (arah dibalik) agar kunci bukan opsi tunggal berawalan 'Tidak semua'."
+      ],
+      "pembahasan": {
+        "ditanya": "Soal meminta “Ingkaran”, yaitu pernyataan yang selalu bernilai kebalikan dari pernyataan asal: benar ketika pernyataan asal salah, dan salah ketika pernyataan asal benar.",
+        "cepat": "Pernyataan “semua penumpang memakai pelampung” salah bila ada sedikitnya satu penumpang tanpa pelampung. Kalimat yang tepat berarti itu adalah “Tidak semua penumpang kapal memakai pelampung”.",
+        "mengapa": "Pernyataan “semua A adalah B” cukup dibantah oleh satu contoh, jadi ingkarannya berbunyi “ada A yang bukan B”, atau dengan arti yang sama, “tidak semua A adalah B”. Kata “tidak” ditaruh di depan “semua”, bukan di depan kata kerja.",
+        "cek": "Uji dua keadaan. Semua penumpang berpelampung: pernyataan asal benar, D salah. Satu penumpang tanpa pelampung: pernyataan asal salah, D benar. Nilainya selalu berlawanan.",
+        "gugur": {
+          "A": {
+            "uji": "terlalu kuat",
+            "teks": "Kalimat ini benar hanya bila tidak seorang penumpang pun memakai pelampung. Bila separuh penumpang berpelampung, pernyataan asal salah dan A juga salah, jadi A bukan kebalikannya."
+          },
+          "B": {
+            "uji": "kelompok tertukar",
+            "teks": "B membicarakan orang yang memakai pelampung, bukan penumpang kapal. Kelompoknya tertukar, sehingga B tidak membantah pernyataan asal."
+          },
+          "C": {
+            "uji": "tidak membantah",
+            "teks": "“Ada penumpang yang memakai pelampung” justru benar ketika semua penumpang berpelampung. Kalimat ini tidak membantah pernyataan asal."
+          },
+          "E": {
+            "uji": "setara, bukan lawan",
+            "teks": "E adalah kontraposisi pernyataan asal: kedua bagian ditukar dan diberi “tidak”. Kalimat ini selalu bernilai sama dengan pernyataan asal, padahal ingkaran harus selalu berlawanan."
+          }
+        },
+        "kunci": "Pernyataan “semua” cukup dibantah oleh satu penumpang tanpa pelampung, dan “Tidak semua penumpang kapal memakai pelampung” tepat berarti itu.",
+        "analogi": "Seperti guru yang berkata, “Semua siswa sudah mengumpulkan tugas.” Untuk membantahnya, kamu cukup menunjuk satu teman yang belum mengumpulkan. Kamu tidak perlu membuktikan bahwa tidak ada seorang pun yang mengumpulkan.",
+        "waspada": "Memilih A karena kata “tidak” langsung dipasang di depan kata kerja. Ingkaran “semua” bukan “semua … tidak”; yang diingkari adalah kata “semua”."
+      }
+    },
+    {
+      "id": "HB-TIU-B04-L04",
+      "bab": 4,
+      "peran": "latihan",
+      "jenis": "SIL tidak dapat disimpulkan",
+      "bentuk": "dua premis 'semua' dengan predikat sama",
+      "target_detik": 60,
+      "soal": {
+        "pengantar": "Anggap semua premis berikut benar.",
+        "butir": [
+          [
+            "P1",
+            "Semua pemenang lomba poster adalah anggota klub seni."
+          ],
+          [
+            "P2",
+            "Semua anggota tim dekorasi adalah anggota klub seni."
+          ]
+        ],
+        "tanya": "Kesimpulan yang pasti benar adalah …"
+      },
+      "kalimat_penentu": "pasti benar",
+      "opsi": {
+        "A": "Tidak dapat dipastikan apakah semua pemenang lomba poster adalah anggota klub seni.",
+        "B": "Semua pemenang lomba poster adalah anggota tim dekorasi.",
+        "C": "Semua anggota tim dekorasi adalah pemenang lomba poster.",
+        "D": "Semua anggota klub seni pandai menggambar.",
+        "E": "Hubungan pemenang lomba poster dan anggota tim dekorasi tidak dapat dipastikan."
+      },
+      "kunci": "E",
+      "kode": {
+        "A": "J-TENTU",
+        "B": "J-MUNGKIN",
+        "C": "J-MUNGKIN",
+        "D": "J-AKAL",
+        "E": "kunci"
+      },
+      "nama": {
+        "A": "Pasti salah tertukar dengan tidak dapat dipastikan",
+        "B": "Yang mungkin dikira pasti",
+        "C": "Yang mungkin dikira pasti",
+        "D": "Benar di dunia nyata, tidak dari premis"
+      },
+      "status_rencana": {
+        "A": "pasti salah",
+        "B": "tidak dapat dipastikan",
+        "C": "tidak dapat dipastikan",
+        "D": "tidak dapat dipastikan",
+        "E": "pasti benar"
+      },
+      "alasan_kunci": "Kedua kelompok hanya sama-sama berada di dalam klub seni, sehingga tidak satu pun hubungan antara pemenang lomba poster dan anggota tim dekorasi pasti; pilihan A juga berbunyi 'tidak dapat dipastikan', tetapi P1 justru memastikan semua pemenang lomba poster anggota klub seni.",
+      "kerangka": "SIL kunci 'hubungan tidak dapat dipastikan' · 'semua A adalah M' + 'semua C adalah M' (istilah tengah hanya di predikat) · pengecoh: 'tidak dapat dipastikan apakah …' yang sebenarnya pasti, pasangan cermin A⊂C / C⊂A, akal sehat",
+      "to_terdekat": "TO P1 tanpa kunci 'tidak dapat disimpulkan'",
+      "catatan_reviu": "Revisi pasca cek buta: bunyi kunci 'Tidak ada kesimpulan yang pasti benar' (berlebihan: premis sendiri pasti benar) diganti 'Hubungan antara … tidak dapat dipastikan'; bentuk serupa kini juga dipasang sebagai pilihan salah di B04-P01. Latihan: pembahasan menyusul Tahap 6. Revisi cek buta 2: A diganti pilihan sebentuk 'Hubungan … tidak dapat dipastikan' yang salah (tim dekorasi pasti di dalam klub seni, J-TENTU); redaksi kunci diseragamkan 'pemenang lomba poster', 'anggota tim dekorasi'. Revisi cek buta 3: A diganti 'Tidak dapat dipastikan apakah semua pemenang lomba poster adalah anggota klub seni.' (tegas salah karena P1; menutup dalih 'setengah benar'); B–C dijadikan pasangan cermin pengecoh (pemenang ⊂ tim dekorasi / tim dekorasi ⊂ pemenang). Kode C J-BALIK → J-MUNGKIN (kembali ke spek slot J-MUNGKIN ×2).",
+      "bukti": {
+        "metode": "dunia himpunan 4 istilah, daerah sah 10, 1023 dunia × 4 bacaan (kosong · sebagian)",
+        "status": {
+          "A": "pasti salah",
+          "B": "tidak dapat dipastikan",
+          "C": "tidak dapat dipastikan",
+          "D": "tidak dapat dipastikan",
+          "E": "pasti benar"
+        },
+        "penyangkal": {
+          "B": "{pemenang poster, klub seni}",
+          "C": "{klub seni, tim dekorasi}",
+          "D": "{klub seni}"
+        },
+        "cermin": [
+          "BC",
+          "CE"
+        ]
+      },
+      "revisi": [
+        "bunyi kunci E diganti"
+      ],
+      "revisi2": [
+        "A diganti pilihan sebentuk 'Hubungan … tidak dapat dipastikan' yang salah (tim dekorasi pasti di dalam klub seni, J-TENTU); redaksi kunci diseragamkan 'pemenang lomba poster', 'anggota tim dekorasi'."
+      ],
+      "revisi3": [
+        "A diganti 'Tidak dapat dipastikan apakah semua pemenang lomba poster adalah anggota klub seni.' (tegas salah karena P1; menutup dalih 'setengah benar'); B–C dijadikan pasangan cermin pengecoh (pemenang ⊂ tim dekorasi / tim dekorasi ⊂ pemenang). Kode C J-BALIK → J-MUNGKIN (kembali ke spek slot J-MUNGKIN ×2)."
+      ],
+      "pembahasan": {
+        "ditanya": "Soal meminta kesimpulan yang “pasti benar”. Kedua premis menaruh dua kelompok di dalam kelompok ketiga yang sama, jadi periksa dulu apakah hubungan kedua kelompok itu memang bisa dipastikan.",
+        "cepat": "Gambar lingkaran besar klub seni. Lingkaran pemenang lomba poster dan lingkaran tim dekorasi sama-sama di dalamnya. Kedua lingkaran kecil itu boleh terpisah, boleh beririsan, boleh juga yang satu di dalam yang lain. Tidak ada hubungan yang wajib, jadi yang pasti benar adalah E.",
+        "mengapa": "Dua kelompok yang berada di dalam kelompok yang sama hanya diketahui sama-sama anggota kelompok itu. Premis tidak berkata apa pun tentang hubungan di antara keduanya.",
+        "cek": "Buat dua gambar. Gambar pertama: tidak ada pemenang poster yang ikut tim dekorasi. Gambar kedua: semua pemenang poster ikut tim dekorasi. Kedua gambar memenuhi P1 dan P2, jadi hubungan keduanya memang tidak dapat dipastikan.",
+        "gugur": {
+          "A": {
+            "uji": "P1 memastikannya",
+            "teks": "A berkata hubungan pemenang poster dengan klub seni tidak dapat dipastikan, padahal P1 memastikannya: semua pemenang poster anggota klub seni. Kalimat A pasti salah."
+          },
+          "B": {
+            "uji": "gambar pertama menolak",
+            "teks": "Pada gambar pertama, tidak ada pemenang poster yang ikut tim dekorasi, dan kedua premis tetap benar. B hanya mungkin."
+          },
+          "C": {
+            "uji": "gambar pertama menolak",
+            "teks": "Sama seperti B dengan arah dibalik. Anggota tim dekorasi boleh tidak pernah memenangi lomba poster."
+          },
+          "D": {
+            "uji": "di luar premis",
+            "teks": "Anggota klub seni memang biasanya pandai menggambar, tetapi premis tidak menyebut kemampuan menggambar sama sekali."
+          }
+        },
+        "kunci": "Kedua kelompok hanya sama-sama berada di dalam klub seni, sehingga tidak satu pun hubungan antara pemenang lomba poster dan anggota tim dekorasi pasti.",
+        "analogi": "Seperti dua temanmu yang sama-sama tinggal di Bandung. Dari situ kamu belum tahu apakah mereka bertetangga, satu kompleks, atau tinggal berjauhan.",
+        "waspada": "Memilih B karena kedua premis terasa menyambungkan pemenang poster dan tim dekorasi lewat klub seni. Dua kelompok di dalam satu wadah tidak otomatis saling memuat; gambar dua lingkaran kecil yang terpisah untuk mengujinya."
+      }
+    },
+    {
+      "id": "HB-TIU-B05-P01",
+      "bab": 5,
+      "peran": "pembuka",
+      "jenis": "ARG klaim urutan",
+      "bentuk": "memperlemah",
+      "target_detik": 60,
+      "soal": {
+        "pengantar": "Seorang pengamat menyatakan: “Semakin sering seorang pedagang mengunggah promosi di media sosial, semakin besar omzet penjualannya.”",
+        "tanya": "Pernyataan manakah yang paling memperlemah pendapat pengamat tersebut?"
+      },
+      "kalimat_penentu": "paling memperlemah",
+      "opsi": {
+        "A": "Pedagang yang mengunggah promosi setiap hari memiliki omzet lebih besar daripada pedagang serupa yang hanya mengunggah promosi sepekan sekali.",
+        "B": "Media sosial kini menjadi tempat promosi yang paling banyak dipakai oleh pedagang kecil.",
+        "C": "Pedagang P mengunggah promosi dua kali lebih sering daripada pedagang Q yang menjual barang serupa, tetapi omzet bulanan keduanya sama.",
+        "D": "Pedagang yang makin rajin berpromosi di media sosial makin banyak meraih penjualan.",
+        "E": "Pedagang perlu memahami kebutuhan pembeli agar dagangannya laku."
+      },
+      "kunci": "C",
+      "kode": {
+        "A": "J-BALIK",
+        "B": "J-KATA",
+        "C": "kunci",
+        "D": "J-ULANG",
+        "E": "J-AKAL"
+      },
+      "nama": {
+        "A": "Arah perintah terbalik",
+        "B": "Topiknya sama, hubungannya tidak tersentuh",
+        "D": "Cuma mengulang klaim",
+        "E": "Benar secara umum, tetapi di luar klaim"
+      },
+      "status": {
+        "A": "memperkuat",
+        "B": "tidak menyentuh",
+        "C": "memperlemah",
+        "D": "mengulang",
+        "E": "tidak menyentuh"
+      },
+      "bentuk_opsi": {
+        "A": "pembanding",
+        "B": "umum",
+        "C": "pembanding",
+        "D": "ulang",
+        "E": "umum"
+      },
+      "alasan_kunci": "Pedagang yang lebih sering berpromosi ternyata tidak lebih besar omzetnya, jadi akibat klaim urutan tidak muncul; pilihan A juga membandingkan dua pedagang, tetapi hasilnya justru sesuai klaim.",
+      "kerangka": "ARG klaim urutan 'semakin X semakin Y' · memperlemah · kunci dua kasus setara, X lebih banyak, Y sama · pengecoh pembanding searah klaim, topik, ulang, nasihat umum",
+      "to_terdekat": "TR no. 33 bentuk (topik lain); TO P1 tanpa klaim urutan; bukan olahraga–kebugaran (narasi)",
+      "catatan_reviu": "Kunci memakai 'sama' (bukan 'lebih kecil') agar sambung dengan subbagian Ingkaran 'Lebih'.",
+      "pembahasan": {
+        "ditanya": "Soal meminta satu pernyataan yang paling membuat pendapat pengamat diragukan. Kalimat penentunya “paling memperlemah”, jadi pernyataan yang mendukung pendapat itu harus dicoret, sekuat apa pun.",
+        "cepat": "Tulis akibat klaimnya: dari dua pedagang serupa, yang lebih sering berpromosi semestinya beromzet lebih besar. Cari pilihan yang memperlihatkan akibat itu tidak muncul. Pilihan C: P berpromosi dua kali lebih sering, tetapi omzetnya sama dengan Q.",
+        "mengapa": "Klaim urutan berjanji bahwa yang lebih sering pasti lebih besar. Ingkaran “lebih besar” adalah “tidak lebih besar”, termasuk sama. Dua pedagang serupa dengan omzet sama sudah cukup untuk mematahkan janji itu.",
+        "cek": "C menyentuh hubungan dalam klaim (frekuensi promosi dan omzet), dan arahnya melemahkan. Barang yang dijual juga serupa, sehingga perbedaan barang tidak bisa dijadikan alasan.",
+        "gugur": {
+          "A": {
+            "uji": "Memperkuat",
+            "teks": "Pilihan ini memang membandingkan dua pedagang, tetapi hasilnya cocok dengan klaim. Soal meminta yang melemahkan, jadi A berlawanan dengan perintah."
+          },
+          "B": {
+            "uji": "Topik saja",
+            "teks": "Kalimat ini tentang media sosial dan pedagang, tetapi tidak berkata apa pun tentang hubungan seringnya promosi dengan besarnya omzet."
+          },
+          "D": {
+            "uji": "Mengulang",
+            "teks": "Ini klaim pengamat yang ditulis dengan kata lain. Mengulang klaim tidak menambah bukti, apalagi melemahkannya."
+          },
+          "E": {
+            "uji": "Nasihat umum",
+            "teks": "Nasihat ini benar, tetapi tetap benar walaupun klaim pengamat benar atau salah. Pernyataan seperti itu tidak menggeser klaim ke mana pun."
+          }
+        },
+        "kunci": "Pedagang yang berpromosi dua kali lebih sering ternyata tidak beromzet lebih besar, sehingga janji “semakin sering, semakin besar” tidak terpenuhi.",
+        "analogi": "Seperti iklan sampo yang berkata “semakin sering dipakai, semakin lebat rambutmu”. Kakakmu memakainya setiap hari, kamu dua hari sekali, dan rambut kalian sama lebatnya. Iklan itu langsung terdengar meragukan.",
+        "waspada": "Memilih A karena bentuknya mirip kunci: ada dua pedagang yang dibandingkan. Bentuk pembanding belum menentukan arah; isinya justru mendukung klaim."
+      },
+      "bukti": {
+        "metode": "tabel akibat klaim × pilihan (tulis tangan) + cek buta",
+        "perintah": "memperlemah",
+        "status": {
+          "A": "memperkuat",
+          "B": "tidak menyentuh",
+          "C": "memperlemah",
+          "D": "mengulang",
+          "E": "tidak menyentuh"
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B05-C01",
+      "bab": 5,
+      "peran": "contoh",
+      "jenis": "ARG dua argumen",
+      "bentuk": "fakta membuktikan cara argumen 2",
+      "target_detik": 75,
+      "soal": {
+        "butir": [
+          [
+            "Argumen 1",
+            "Menambah jumlah loket pendaftaran adalah salah satu cara mempersingkat waktu tunggu pasien di puskesmas."
+          ],
+          [
+            "Argumen 2",
+            "Pendaftaran jarak jauh sehari sebelum berobat dapat mempersingkat waktu tunggu pasien di puskesmas."
+          ],
+          [
+            "Fakta",
+            "Di puskesmas yang menerima pendaftaran lewat ponsel pada hari sebelumnya, pasien rata-rata menunggu 20 menit lebih singkat daripada di puskesmas serupa yang hanya melayani pendaftaran di loket."
+          ]
+        ],
+        "tanya": "Pengaruh fakta tersebut terhadap kedua argumen adalah …"
+      },
+      "kalimat_penentu": "Pengaruh fakta tersebut terhadap kedua argumen",
+      "opsi": {
+        "A": "memperkuat argumen 1",
+        "B": "memperkuat argumen 2",
+        "C": "memperlemah argumen 1",
+        "D": "memperlemah argumen 2",
+        "E": "tidak relevan dengan kedua argumen"
+      },
+      "kunci": "B",
+      "kode": {
+        "A": "J-KATA",
+        "B": "kunci",
+        "C": "J-SEBAGIAN",
+        "D": "J-BALIK",
+        "E": "J-KATA"
+      },
+      "nama": {
+        "A": "Topiknya sama, hubungannya tidak tersentuh",
+        "C": "Cara lain dikira bantahan",
+        "D": "Arah perintah terbalik",
+        "E": "Fakta dianggap tidak berhubungan"
+      },
+      "status_argumen": {
+        "1": "tidak menyentuh",
+        "2": "memperkuat"
+      },
+      "alasan_kunci": "Fakta membandingkan puskesmas dengan dan tanpa pendaftaran lewat ponsel pada hari sebelumnya, jadi yang terbukti adalah cara argumen 2 dengan kata berbeda; argumen 1 hanya menyebut tambahan loket sebagai salah satu cara, sehingga tidak terbantah.",
+      "kerangka": "ARG dua argumen · arg 1 'salah satu cara' (loket), arg 2 cara lain (daring) · fakta = pembanding dua kelompok untuk cara arg 2, kata 'loket' muncul di fakta",
+      "to_terdekat": "tidak ada dua argumen di TO P1; bukan suhu kota (narasi)",
+      "catatan_reviu": "Status fakta: arg 1 tidak menyentuh, arg 2 memperkuat (tepat satu argumen tersentuh, engine v0.4.3). Revisi pasca cek buta: fakta tidak lagi berbagi frasa 'pendaftaran daring' dengan argumen 2 (jarak jauh ↔ lewat ponsel); waktu 'sehari sebelum berobat' kini ada di fakta ('pada hari sebelumnya').",
+      "pembahasan": {
+        "ditanya": "Soal menanyakan argumen mana yang disentuh fakta, dan ke arah mana. Kalimat penentunya “terhadap kedua argumen”: status fakta untuk argumen 1 dan argumen 2 harus kamu tulis dua-duanya.",
+        "cepat": "Tulis cara di setiap argumen. Argumen 1: tambah loket. Argumen 2: daftar dari jauh sehari sebelumnya. Fakta membandingkan puskesmas yang menerima daftar lewat ponsel pada hari sebelumnya dengan yang tidak, dan yang pertama lebih cepat. Itu cara argumen 2. Argumen 1 tidak diuji sama sekali.",
+        "mengapa": "Fakta hanya menguji cara yang dibandingkannya. Yang berbeda antara kedua puskesmas adalah ada atau tidaknya pendaftaran dari jauh sebelum hari berobat, bukan jumlah loket.",
+        "cek": "Status fakta: argumen 1 tidak tersentuh, argumen 2 diperkuat. Tepat satu argumen tersentuh, jadi tidak ada dua pilihan yang sama-sama bisa dibela.",
+        "gugur": {
+          "A": {
+            "uji": "Kata “loket”",
+            "teks": "Kata “loket” muncul di fakta dan di argumen 1, tetapi fakta tidak membandingkan puskesmas berloket banyak dengan yang berloket sedikit."
+          },
+          "C": {
+            "uji": "Salah satu cara",
+            "teks": "Argumen 1 hanya menyebut tambahan loket sebagai salah satu cara. Keberhasilan pendaftaran daring tidak membuktikan bahwa tambahan loket gagal."
+          },
+          "D": {
+            "uji": "Arah terbalik",
+            "teks": "Waktu tunggu lebih singkat di puskesmas yang menerima pendaftaran lewat ponsel. Itu dukungan untuk argumen 2, bukan bantahannya."
+          },
+          "E": {
+            "uji": "Kata berbeda",
+            "teks": "Fakta tidak memakai kata “jarak jauh”, tetapi mendaftar lewat ponsel pada hari sebelumnya adalah cara yang sama dengan argumen 2."
+          }
+        },
+        "kunci": "Fakta membuktikan pendaftaran dari jauh sehari sebelumnya mempersingkat waktu tunggu dan tidak menguji tambahan loket, sehingga fakta itu memperkuat argumen 2.",
+        "analogi": "Seperti dua saran agar tidak terlambat ke sekolah: naik sepeda, atau berangkat lebih pagi. Bukti bahwa berangkat lebih pagi membuatmu tepat waktu tidak berarti sepeda tidak berguna.",
+        "waspada": "Memilih A karena kata “loket” di fakta langsung mengingatkan pada argumen 1. Kata yang sama belum tentu cara yang sama."
+      },
+      "bukti": {
+        "metode": "status fakta terhadap kedua argumen (tulis tangan) + cek buta",
+        "status_argumen": {
+          "1": "tidak menyentuh",
+          "2": "memperkuat"
+        }
+      },
+      "revisi": [
+        "Revisi pasca cek buta: fakta tidak lagi berbagi frasa 'pendaftaran daring' dengan argumen 2 (jarak jauh ↔ lewat ponsel); waktu 'sehari sebelum berobat' kini ada di fakta ('pada hari sebelumnya')."
+      ]
+    },
+    {
+      "id": "HB-TIU-B05-C02",
+      "bab": 5,
+      "peran": "contoh",
+      "jenis": "ARG klaim umum",
+      "bentuk": "memperlemah",
+      "target_detik": 45,
+      "soal": {
+        "pengantar": "Kepala desa menyatakan: “Setiap kali hujan turun lebih dari dua jam, jalan di depan balai desa tergenang.”",
+        "tanya": "Pernyataan manakah yang paling memperlemah pernyataan kepala desa?"
+      },
+      "kalimat_penentu": "Setiap kali",
+      "opsi": {
+        "A": "Kemarin hujan turun selama tiga jam, tetapi jalan di depan balai desa tetap kering.",
+        "B": "Bulan lalu hujan turun lebih dari dua jam sebanyak tiga kali, dan setiap kali itu jalan di depan balai desa tergenang.",
+        "C": "Jalan di depan balai desa pernah tergenang karena pipa air bocor, padahal hari itu tidak hujan.",
+        "D": "Hujan yang turun lebih dari dua jam selalu membuat jalan di depan balai desa tergenang.",
+        "E": "Genangan di jalan dapat mengganggu warga yang hendak ke balai desa."
+      },
+      "kunci": "A",
+      "kode": {
+        "A": "kunci",
+        "B": "J-BALIK",
+        "C": "J-BALIK",
+        "D": "J-ULANG",
+        "E": "J-AKAL"
+      },
+      "nama": {
+        "B": "Arah perintah terbalik",
+        "C": "Arah hubungan dibalik",
+        "D": "Cuma mengulang klaim",
+        "E": "Benar secara umum, tetapi di luar klaim"
+      },
+      "status": {
+        "A": "memperlemah",
+        "B": "memperkuat",
+        "C": "tidak menyentuh",
+        "D": "mengulang",
+        "E": "tidak menyentuh"
+      },
+      "bentuk_opsi": {
+        "A": "kasus",
+        "B": "kasus",
+        "C": "kasus",
+        "D": "ulang",
+        "E": "umum"
+      },
+      "alasan_kunci": "Hujan tiga jam memenuhi syarat klaim, tetapi akibatnya tidak muncul, jadi pilihan A contoh penyangkal; pilihan C hanya menunjukkan genangan bisa datang dari sebab lain, yang tidak dilarang klaim.",
+      "kerangka": "ARG klaim umum 'setiap kali X, Y' · memperlemah · kunci X terjadi tanpa Y · pengecoh X dengan Y (memperkuat), Y tanpa X (konvers), ulang, akibat umum",
+      "to_terdekat": "tidak ada klaim umum di TO P1; bukan pasar malam (narasi)",
+      "catatan_reviu": "Tiga opsi berbentuk kasus (A, B, C), jadi bentuk kunci tidak tunggal.",
+      "pembahasan": {
+        "ditanya": "Soal meminta pernyataan yang paling membantah klaim kepala desa. Kalimat penentunya “setiap kali”: klaim ini umum, jadi satu kejadian yang melawan sudah cukup untuk melemahkannya.",
+        "cepat": "Klaim umum berbentuk “setiap kali X, Y”. Contoh penyangkalnya selalu sama: X terjadi, Y tidak. Cari hujan lebih dari dua jam yang tidak membuat jalan tergenang. Pilihan A: hujan tiga jam, jalan tetap kering.",
+        "mengapa": "Ini cara berpikir yang sama dengan Bab 4. Pernyataan “setiap kali X, Y” hanya melarang satu keadaan: X terjadi tanpa Y. Pernyataan yang menunjukkan keadaan terlarang itu benar-benar terjadi langsung melemahkan klaim.",
+        "cek": "Hujan tiga jam memenuhi syarat “lebih dari dua jam”. Jalan yang tetap kering berarti akibatnya tidak muncul. Kedua syarat contoh penyangkal terpenuhi.",
+        "gugur": {
+          "B": {
+            "uji": "Memperkuat",
+            "teks": "Tiga kejadian yang cocok dengan klaim menambah keyakinan pada klaim itu. Soal meminta yang melemahkan."
+          },
+          "C": {
+            "uji": "Sebab lain",
+            "teks": "Klaim tidak berkata genangan hanya datang dari hujan. Genangan karena pipa bocor tidak bertentangan dengan apa pun dalam klaim."
+          },
+          "D": {
+            "uji": "Mengulang",
+            "teks": "Ini klaim kepala desa dengan susunan kata berbeda. Pengulangan tidak menambah atau mengurangi bukti."
+          },
+          "E": {
+            "uji": "Di luar klaim",
+            "teks": "Pernyataan ini benar, tetapi membicarakan akibat genangan bagi warga, bukan hubungan hujan dengan genangan."
+          }
+        },
+        "kunci": "Hujan tiga jam memenuhi syarat klaim, tetapi jalan tetap kering, sehingga pilihan A adalah contoh penyangkal yang melemahkan klaim.",
+        "analogi": "Seperti teman yang berkata, “Setiap kali aku begadang, besoknya aku mengantuk.” Satu pagi ketika ia begadang tetapi segar bugar sudah cukup untuk membantahnya. Pagi ketika ia mengantuk tanpa begadang tidak membantah apa-apa.",
+        "waspada": "Memilih C karena genangan tanpa hujan terasa seperti bukti yang melawan. Klaim hanya berbicara tentang apa yang terjadi sesudah hujan lama, bukan tentang semua penyebab genangan."
+      },
+      "bukti": {
+        "metode": "tabel akibat klaim × pilihan (tulis tangan) + cek buta",
+        "perintah": "memperlemah",
+        "status": {
+          "A": "memperlemah",
+          "B": "memperkuat",
+          "C": "tidak menyentuh",
+          "D": "mengulang",
+          "E": "tidak menyentuh"
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B05-C03",
+      "bab": 5,
+      "peran": "contoh",
+      "jenis": "ARG klaim sebab dua kelompok",
+      "bentuk": "memperkuat",
+      "target_detik": 75,
+      "soal": {
+        "pengantar": "Kantor kecamatan membagi pegawai bagian pelayanan menjadi dua kelompok pada bulan yang sama. Kelompok pertama mengikuti pelatihan aplikasi arsip digital, kelompok kedua tidak. Sebulan kemudian, kelompok pertama menyelesaikan berkas warga lebih cepat daripada kelompok kedua. Camat menyimpulkan bahwa pelatihan itulah yang mempercepat penyelesaian berkas.",
+        "tanya": "Pernyataan manakah yang paling memperkuat kesimpulan camat?"
+      },
+      "kalimat_penentu": "paling memperkuat",
+      "opsi": {
+        "A": "Seorang pegawai yang mengikuti pelatihan kini dapat menyelesaikan seluruh berkasnya sebelum jam istirahat.",
+        "B": "Pegawai di kelompok pertama sejak awal adalah pegawai yang paling cepat bekerja di kantor itu.",
+        "C": "Aplikasi arsip digital yang sama juga dipakai di kantor kecamatan lain di kabupaten itu.",
+        "D": "Sebelum pelatihan, kecepatan kedua kelompok dalam menyelesaikan berkas warga sama.",
+        "E": "Pegawai yang mengikuti pelatihan menyelesaikan berkas warga lebih cepat daripada pegawai yang tidak mengikutinya."
+      },
+      "kunci": "D",
+      "kode": {
+        "A": "J-MUNGKIN",
+        "B": "J-BALIK",
+        "C": "J-KATA",
+        "D": "kunci",
+        "E": "J-ULANG"
+      },
+      "nama": {
+        "A": "Lupa pembanding",
+        "B": "Arah perintah terbalik",
+        "C": "Topiknya sama, hubungannya tidak tersentuh",
+        "E": "Cuma mengulang klaim"
+      },
+      "status": {
+        "A": "tidak menyentuh",
+        "B": "memperlemah",
+        "C": "tidak menyentuh",
+        "D": "memperkuat",
+        "E": "mengulang"
+      },
+      "bentuk_opsi": {
+        "A": "kasus",
+        "B": "kelompok",
+        "C": "umum",
+        "D": "kelompok",
+        "E": "ulang"
+      },
+      "alasan_kunci": "Bila kedua kelompok sama cepat sebelum pelatihan, perbedaan sesudahnya tidak bisa dijelaskan oleh kemampuan awal, jadi pelatihan menjadi penjelasan terkuat; pilihan A hanya satu kisah tanpa pembanding.",
+      "kerangka": "ARG klaim sebab dari dua kelompok pada waktu sama · memperkuat · kunci kesetaraan awal kedua kelompok · pengecoh kisah tunggal (lupa pembanding), unggul sejak awal (memperlemah), topik aplikasi, ulang data",
+      "to_terdekat": "TO P1 no. 31 (sebelum–sesudah satu tempat, pemerkuat menyingkirkan pengganggu tetap); dipertahankan Putusan T4-7",
+      "catatan_reviu": "Pilihan A 'tidak menyentuh' = hampir tidak menambah (lupa pembanding), tidak searah perintah dalam arti kuat; tepat satu opsi memperkuat.",
+      "pembahasan": {
+        "ditanya": "Soal meminta pernyataan yang paling membuat kesimpulan camat lebih meyakinkan. Kalimat penentunya “paling memperkuat”: pernyataan yang melemahkan atau hanya bercerita tanpa bukti harus dicoret.",
+        "cepat": "Klaim sebab dari dua kelompok punya satu celah besar: mungkin kelompok pertama memang sudah lebih cepat sebelum pelatihan. Cari pilihan yang menutup celah itu. Pilihan D: sebelum pelatihan, kecepatan kedua kelompok sama.",
+        "mengapa": "Bila kedua kelompok mulai dari kecepatan yang sama dan berbeda hanya pada pelatihan, perbedaan sesudahnya paling masuk akal datang dari pelatihan. Pernyataan D menyingkirkan penjelasan “sejak awal memang lebih cepat”.",
+        "cek": "D menyentuh hubungan pelatihan dan kecepatan, dan arahnya menguatkan. Pernyataan B membahas hal yang sama dengan arah sebaliknya, jadi keduanya tidak mungkin sama-sama benar sebagai pemerkuat.",
+        "gugur": {
+          "A": {
+            "uji": "Satu kisah",
+            "teks": "Satu pegawai yang kini cepat belum membuktikan apa pun. Mungkin ia memang cepat sejak dulu, dan tidak ada pegawai tanpa pelatihan untuk dibandingkan."
+          },
+          "B": {
+            "uji": "Melemahkan",
+            "teks": "Bila kelompok pertama sudah paling cepat sejak awal, keunggulan mereka bisa dijelaskan tanpa pelatihan. Pernyataan ini justru melemahkan."
+          },
+          "C": {
+            "uji": "Topik saja",
+            "teks": "Kantor lain memakai aplikasi yang sama, tetapi itu tidak berkata apa pun tentang pengaruh pelatihan terhadap kecepatan."
+          },
+          "E": {
+            "uji": "Mengulang",
+            "teks": "Ini data dalam soal yang ditulis ulang. Data itulah yang sedang dijelaskan, jadi tidak bisa dipakai sebagai buktinya sendiri."
+          }
+        },
+        "kunci": "Kedua kelompok sama cepat sebelum pelatihan, sehingga perbedaan sesudahnya paling kuat dijelaskan oleh pelatihan itu sendiri.",
+        "analogi": "Seperti membandingkan dua tanaman, satu diberi pupuk dan satu tidak. Hasilnya baru berarti bila kedua tanaman sama besar sejak awal; tanaman yang sudah lebih tinggi sejak ditanam tidak membuktikan apa pun tentang pupuk.",
+        "waspada": "Memilih A karena kisah pegawai itu terdengar seperti bukti nyata. Satu kisah tanpa pembanding tidak bisa membedakan pengaruh pelatihan dari kemampuan orang itu sendiri."
+      },
+      "bukti": {
+        "metode": "tabel akibat klaim × pilihan (tulis tangan) + cek buta",
+        "perintah": "memperkuat",
+        "status": {
+          "A": "tidak menyentuh",
+          "B": "memperlemah",
+          "C": "tidak menyentuh",
+          "D": "memperkuat",
+          "E": "mengulang"
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B05-L01",
+      "bab": 5,
+      "peran": "latihan",
+      "jenis": "ARG cara tunggal",
+      "bentuk": "memperlemah",
+      "target_detik": 45,
+      "soal": {
+        "pengantar": "Seorang petani menyatakan: “Hanya penyemprotan pestisida yang dapat melindungi tanaman cabai dari serangan kutu daun.”",
+        "tanya": "Pernyataan manakah yang paling memperlemah pernyataan petani itu?"
+      },
+      "kalimat_penentu": "Hanya",
+      "opsi": {
+        "A": "Kebun cabai yang memakai kepik pemangsa kutu daun, tanpa pestisida, tidak terserang kutu daun.",
+        "B": "Kebun cabai di sebelahnya yang tidak disemprot pestisida sama sekali diserang kutu daun hingga gagal panen.",
+        "C": "Pestisida untuk tanaman cabai dijual dalam berbagai merek dan ukuran kemasan.",
+        "D": "Tanpa pestisida, tidak ada cara lain untuk melindungi tanaman cabai dari kutu daun.",
+        "E": "Pestisida perlu dipakai sesuai takaran pada kemasan agar aman bagi petani."
+      },
+      "kunci": "A",
+      "kode": {
+        "A": "kunci",
+        "B": "J-BALIK",
+        "C": "J-KATA",
+        "D": "J-ULANG",
+        "E": "J-AKAL"
+      },
+      "nama": {
+        "B": "Arah perintah terbalik",
+        "C": "Topiknya sama, hubungannya tidak tersentuh",
+        "D": "Cuma mengulang klaim",
+        "E": "Benar secara umum, tetapi di luar klaim"
+      },
+      "status": {
+        "A": "memperlemah",
+        "B": "memperkuat",
+        "C": "tidak menyentuh",
+        "D": "mengulang",
+        "E": "tidak menyentuh"
+      },
+      "bentuk_opsi": {
+        "A": "kasus",
+        "B": "kasus",
+        "C": "umum",
+        "D": "ulang",
+        "E": "umum"
+      },
+      "alasan_kunci": "Klaim cara tunggal langsung melemah oleh satu cara lain yang terbukti berhasil, yaitu kepik pemangsa tanpa pestisida; pilihan B justru menunjukkan pestisida berguna.",
+      "kerangka": "ARG klaim cara tunggal ('hanya X yang dapat Y') · memperlemah · kunci cara lain berhasil tanpa X · pengecoh tanpa X gagal (memperkuat), topik, ulang, aturan pakai",
+      "to_terdekat": "tidak ada klaim cara tunggal di TO P1",
+      "catatan_reviu": "Putusan T4-6: klaim cara tunggal memakai 'hanya'. Dirujuk Latihan A Bab 19 (J-AKAL, 'Benar secara umum, tetapi di luar klaim'): E. Latihan: pembahasan menyusul Tahap 6.",
+      "bukti": {
+        "metode": "tabel akibat klaim × pilihan (tulis tangan) + cek buta",
+        "perintah": "memperlemah",
+        "status": {
+          "A": "memperlemah",
+          "B": "memperkuat",
+          "C": "tidak menyentuh",
+          "D": "mengulang",
+          "E": "tidak menyentuh"
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta pernyataan yang paling memperlemah. Kalimat penentunya “Hanya”: petani mengklaim tidak ada cara lain selain pestisida.",
+        "cepat": "Klaim “hanya” runtuh oleh satu cara lain yang terbukti berhasil. Pilihan A menyebut kepik pemangsa kutu daun yang melindungi kebun tanpa pestisida. Itulah cara lain yang dicari.",
+        "mengapa": "Klaim cara tunggal berbunyi “tanpa cara ini, hasilnya tidak tercapai”. Satu contoh hasil tercapai tanpa cara itu sudah cukup untuk membantahnya, seperti satu angsa hitam membantah “semua angsa berwarna putih”.",
+        "cek": "Uji arah tiap pilihan terhadap klaim: A memperlemah, B memperkuat, C dan E tidak menyentuh, D hanya mengulang. Hanya A yang searah perintah “memperlemah”.",
+        "gugur": {
+          "B": {
+            "uji": "justru memperkuat",
+            "teks": "Kebun tanpa pestisida yang gagal panen menunjukkan pestisida berguna. Pernyataan ini mendukung petani, berlawanan dengan perintah soal."
+          },
+          "C": {
+            "uji": "soal merek",
+            "teks": "Pilihan ini membicarakan pestisida, tetapi merek dan ukuran kemasan tidak berkaitan dengan ada atau tidaknya cara lain."
+          },
+          "D": {
+            "uji": "kata lain",
+            "teks": "D berkata tidak ada cara lain selain pestisida, sama dengan klaim petani. Pengulangan tidak menambah atau mengurangi kekuatan klaim."
+          },
+          "E": {
+            "uji": "soal keamanan",
+            "teks": "Takaran memang penting untuk keselamatan petani, tetapi klaimnya tentang cara melindungi cabai, bukan cara memakai pestisida dengan aman."
+          }
+        },
+        "kunci": "Kepik pemangsa melindungi cabai tanpa pestisida, sehingga klaim bahwa hanya pestisida yang dapat melindungi tanaman itu langsung goyah.",
+        "analogi": "Seperti teman yang berkata, “Hanya ojek yang bisa mengantarku tepat waktu.” Begitu kamu menunjukkan bus sekolah yang kemarin juga tiba tepat waktu, kata “hanya” itu tidak bertahan.",
+        "waspada": "Memilih B karena ceritanya paling panjang dan paling meyakinkan. Tentukan dulu arahnya: gagal panen tanpa pestisida justru membela petani."
+      }
+    },
+    {
+      "id": "HB-TIU-B05-L02",
+      "bab": 5,
+      "peran": "latihan",
+      "jenis": "ARG dua argumen",
+      "bentuk": "kunci tidak relevan",
+      "target_detik": 75,
+      "soal": {
+        "butir": [
+          [
+            "Argumen 1",
+            "Menyediakan tempat isi ulang air minum adalah salah satu cara mengurangi sampah botol plastik di sekolah."
+          ],
+          [
+            "Argumen 2",
+            "Kantin yang mewajibkan pembeli membawa wadah sendiri dapat mengurangi sampah bungkus makanan di sekolah."
+          ],
+          [
+            "Fakta",
+            "Sebuah sekolah lain berhasil mengurangi sampah plastik yang dibuang ke tempat pembuangan akhir dengan memilah sampahnya untuk didaur ulang."
+          ]
+        ],
+        "tanya": "Pengaruh fakta tersebut terhadap kedua argumen adalah …"
+      },
+      "kalimat_penentu": "Pengaruh fakta tersebut terhadap kedua argumen",
+      "opsi": {
+        "A": "memperkuat argumen 1",
+        "B": "memperkuat argumen 2",
+        "C": "memperlemah argumen 1",
+        "D": "memperlemah argumen 2",
+        "E": "tidak relevan dengan kedua argumen"
+      },
+      "kunci": "E",
+      "kode": {
+        "A": "J-KATA",
+        "B": "J-KATA",
+        "C": "J-SEBAGIAN",
+        "D": "J-BALIK",
+        "E": "kunci"
+      },
+      "nama": {
+        "A": "Topiknya sama, hubungannya tidak tersentuh",
+        "B": "Topiknya sama, hubungannya tidak tersentuh",
+        "C": "Cara lain dikira bantahan",
+        "D": "Arah perintah terbalik"
+      },
+      "status_argumen": {
+        "1": "tidak menyentuh",
+        "2": "tidak menyentuh"
+      },
+      "alasan_kunci": "Fakta menguji cara ketiga (memilah untuk daur ulang), bukan isi ulang air minum dan bukan wadah bawaan, jadi kedua argumen tidak tersentuh; pilihan C membaca 'salah satu cara' seolah klaim cara tunggal.",
+      "kerangka": "ARG dua argumen · arg 1 'salah satu cara', arg 2 cara lain · fakta = keberhasilan cara ketiga bertopik sama · kunci tidak relevan",
+      "to_terdekat": "tidak ada dua argumen di TO P1",
+      "catatan_reviu": "D (J-BALIK): keberhasilan cara ketiga dibaca sebagai bukti bahwa cara argumen 2 tidak diperlukan, lalu dipilih 'memperlemah'. Status fakta: tidak menyentuh kedua argumen. Latihan: pembahasan menyusul Tahap 6.",
+      "bukti": {
+        "metode": "status fakta terhadap kedua argumen (tulis tangan) + cek buta",
+        "status_argumen": {
+          "1": "tidak menyentuh",
+          "2": "tidak menyentuh"
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta pengaruh fakta terhadap “kedua argumen”. Argumen 1 tentang tempat isi ulang air minum, argumen 2 tentang wadah bawaan di kantin. Fakta diuji terhadap masing-masing.",
+        "cepat": "Fakta menceritakan sekolah lain yang berhasil lewat cara ketiga, yaitu memilah sampah untuk didaur ulang. Fakta itu tidak menguji tempat isi ulang dan tidak menguji wadah bawaan. Kedua argumen tidak tersentuh, jawabannya E.",
+        "mengapa": "Fakta memperkuat sebuah argumen bila menunjukkan cara dalam argumen itu berhasil, dan memperlemahnya bila menunjukkan cara itu gagal. Keberhasilan cara lain tidak menunjukkan apa pun tentang kedua cara di argumen.",
+        "cek": "Argumen 1 berbunyi “salah satu cara”, jadi keberhasilan cara lain tidak membantahnya. Argumen 2 membicarakan sampah bungkus makanan di kantin, sedangkan fakta tidak menyebut kantin atau wadah.",
+        "gugur": {
+          "A": {
+            "uji": "sama-sama sampah",
+            "teks": "Fakta dan argumen 1 sama-sama tentang sampah plastik, tetapi fakta tidak menyebut tempat isi ulang air minum."
+          },
+          "B": {
+            "uji": "sama-sama sekolah",
+            "teks": "Argumen 2 dan fakta sama-sama tentang sekolah dan sampah, tetapi fakta tidak menguji kewajiban membawa wadah sendiri."
+          },
+          "C": {
+            "uji": "salah satu cara",
+            "teks": "Argumen 1 tidak berkata isi ulang adalah cara tunggal; ia menyebutnya “salah satu cara”. Cara lain yang berhasil tidak membuat cara isi ulang gagal."
+          },
+          "D": {
+            "uji": "dikira melemahkan",
+            "teks": "Tidak ada bagian fakta yang menunjukkan wadah bawaan gagal. Fakta tidak menyentuh argumen 2, apalagi memperlemahnya."
+          }
+        },
+        "kunci": "Fakta menguji cara ketiga, yaitu memilah sampah untuk daur ulang, sehingga tempat isi ulang dan wadah bawaan sama-sama tidak tersentuh.",
+        "analogi": "Seperti dua teman yang masing-masing menyarankan lari pagi dan bersepeda untuk menjaga kebugaran. Berita bahwa seseorang bugar karena rutin berenang tidak membuktikan lari pagi atau bersepeda keliru.",
+        "waspada": "Memilih C karena keberhasilan cara lain terasa seperti saingan argumen 1. Baca ulang bunyi argumennya: “salah satu cara” memberi tempat bagi cara lain."
+      }
+    },
+    {
+      "id": "HB-TIU-B05-L03",
+      "bab": 5,
+      "peran": "latihan",
+      "jenis": "ARG klaim sebab",
+      "bentuk": "memperkuat, penyebab dihentikan",
+      "target_detik": 75,
+      "soal": {
+        "pengantar": "Sejak papan nomor antrean digital dipasang di sebuah kantor pos, keluhan pengunjung tentang antrean berkurang. Kepala kantor menyimpulkan bahwa papan antrean itulah yang mengurangi keluhan.",
+        "tanya": "Pernyataan manakah yang paling memperkuat kesimpulan tersebut?"
+      },
+      "kalimat_penentu": "paling memperkuat",
+      "opsi": {
+        "A": "Seorang pengunjung menulis di kotak saran bahwa ia puas dengan papan antrean itu.",
+        "B": "Pada bulan yang sama dengan pemasangan papan, kantor pos itu menambah dua petugas loket dan memperpanjang jam layanan.",
+        "C": "Saat papan itu rusak dua minggu, keluhan naik lagi seperti semula, lalu turun setelah papan diperbaiki.",
+        "D": "Papan nomor antrean digital juga banyak dipasang di bank dan rumah sakit.",
+        "E": "Setelah papan antrean digital dipasang, keluhan pengunjung kantor pos itu memang berkurang."
+      },
+      "kunci": "C",
+      "kode": {
+        "A": "J-MUNGKIN",
+        "B": "J-BALIK",
+        "C": "kunci",
+        "D": "J-KATA",
+        "E": "J-ULANG"
+      },
+      "nama": {
+        "A": "Lupa pembanding",
+        "B": "Arah perintah terbalik",
+        "D": "Topiknya sama, hubungannya tidak tersentuh",
+        "E": "Cuma mengulang klaim"
+      },
+      "status": {
+        "A": "tidak menyentuh",
+        "B": "memperlemah",
+        "C": "memperkuat",
+        "D": "tidak menyentuh",
+        "E": "mengulang"
+      },
+      "bentuk_opsi": {
+        "A": "kasus",
+        "B": "kasus",
+        "C": "kasus",
+        "D": "umum",
+        "E": "ulang"
+      },
+      "alasan_kunci": "Keluhan naik saat papan dimatikan dan turun lagi saat papan menyala, jadi akibat ikut hilang bersama penyebabnya; pilihan B menunjukkan penyebab lain yang terjadi bersamaan sehingga justru melemahkan.",
+      "kerangka": "ARG klaim sebab dari sebelum–sesudah · memperkuat · kunci penyebab dihentikan lalu dipulihkan · pengecoh kisah tunggal, penyebab lain bersamaan (memperlemah), topik, ulang",
+      "to_terdekat": "TO P1 no. 31 (pemerkuat menyingkirkan pengganggu tetap) dan no. 33 (pelemah penyebab lain bersamaan = opsi B di sini); kunci beda: penyebab dihentikan",
+      "catatan_reviu": "Latihan: pembahasan menyusul Tahap 6.",
+      "bukti": {
+        "metode": "tabel akibat klaim × pilihan (tulis tangan) + cek buta",
+        "perintah": "memperkuat",
+        "status": {
+          "A": "tidak menyentuh",
+          "B": "memperlemah",
+          "C": "memperkuat",
+          "D": "tidak menyentuh",
+          "E": "mengulang"
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta pernyataan yang “paling memperkuat” kesimpulan bahwa papan antrean itulah penyebab keluhan berkurang.",
+        "cepat": "Klaim sebab paling kuat didukung bila akibatnya ikut hilang ketika penyebabnya hilang. Pilihan C melaporkan hal itu: saat papan rusak, keluhan naik lagi, dan setelah papan diperbaiki, keluhan turun.",
+        "mengapa": "Penurunan keluhan sesudah papan dipasang bisa saja kebetulan. Bila keluhan naik turun mengikuti papan menyala atau mati, dugaan kebetulan makin sulit dipertahankan.",
+        "cek": "Uji arah tiap pilihan: C memperkuat, B memperlemah, A dan D tidak menyentuh, E hanya mengulang klaim.",
+        "gugur": {
+          "A": {
+            "uji": "satu orang puas",
+            "teks": "Kepuasan satu pengunjung tidak menunjukkan keluhan berkurang karena papan. Tidak ada keadaan tanpa papan untuk dibandingkan."
+          },
+          "B": {
+            "uji": "sebab lain",
+            "teks": "Penambahan petugas dan jam layanan pada bulan yang sama adalah penyebab lain yang mungkin. Pernyataan ini memperlemah kesimpulan, berlawanan dengan perintah."
+          },
+          "D": {
+            "uji": "tempat lain",
+            "teks": "Banyaknya bank dan rumah sakit yang memasang papan serupa tidak menunjukkan apa pun tentang keluhan di kantor pos ini."
+          },
+          "E": {
+            "uji": "kata lain",
+            "teks": "E hanya menegaskan bahwa keluhan berkurang setelah papan dipasang. Itu data awal yang sudah ada di soal, bukan dukungan baru."
+          }
+        },
+        "kunci": "Keluhan naik saat papan rusak dan turun lagi setelah papan diperbaiki, sehingga akibatnya terbukti ikut hilang bersama penyebabnya.",
+        "analogi": "Seperti mencurigai kipas angin sebagai penyebab kamarmu sejuk. Bukti terkuat adalah kamar kembali gerah saat kipas dimatikan, lalu sejuk lagi saat kipas dinyalakan.",
+        "waspada": "Memilih E karena kalimatnya paling sejalan dengan kesimpulan. Pernyataan yang sejalan belum tentu memperkuat; yang memperkuat harus menambah bukti baru."
+      }
+    }
+  ]
+}

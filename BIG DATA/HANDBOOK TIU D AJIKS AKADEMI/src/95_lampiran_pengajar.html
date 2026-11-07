@@ -1,0 +1,175 @@
+<!-- ═════════ LAMPIRAN PENGAJAR L1–L5 (hanya edisi pengajar; L6 di 96_lampiran_l6.html) ═════════
+     Rencana T2-A 3.4 + Putusan 11b. Nama tryout/bimbel HANYA di antara penanda L1 (dan L6); cek_lampiran.mjs menolaknya di tempat lain.
+     L4: angka latihan dicek terhadap slot src. L5: tabel 47 kode = blok GEN dari engine v0.4.3 Pilar 3. -->
+<section class="bab lamp guru">
+  <header class="band">
+    <div class="no">L</div>
+    <div>
+      <h2>Lampiran Pengajar</h2>
+      <p>Sumber beserta tingkat kepastiannya, hal yang belum boleh dikutip kepada siswa, ringkasan aturan menulis soal, rencana sepuluh pertemuan, cara membaca kesalahan siswa, dan asal setiap soal di buku ini.</p>
+    </div>
+    <div class="kisi" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="emas"></i></div>
+  </header>
+
+<!--L1:mulai-->
+  <h3 data-l="L1">L1 · Sumber dan Status Verifikasi</h3>
+  <p>Status: <b>Resmi</b> = dibaca langsung dari naskah resmi; <b>Usulan</b> = keputusan tim D'Ajiks yang belum diuji pada siswa; <b>Internal</b> = bahan kerja D'Ajiks; <b>Dianalisis</b> = bahan pihak luar yang hanya dipelajari polanya, tidak disalin. Nama tryout dan bimbel hanya ditulis di L1 dan L6; catatan pengajar di bab memakai sebutan pendek pada tabel kedua.</p>
+  <table class="tb pecah rujuk kata">
+    <thead><tr><th style="width:35%">Sumber</th><th style="width:16%">Dipakai di</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td>KepmenPANRB 406/2026, Nilai Ambang Batas SKD Sekolah Kedinasan TA 2026, ditetapkan 27 Juli 2026 (PDF 7 halaman, REFERENSI LUAR)</td><td>Bab 1, 19</td><td><b>Resmi.</b> Diktum KEDUA huruf b (kisi-kisi dan ejaan "tes intelegensia umum"), KETIGA (100 menit untuk seluruh SKD), KEEMPAT (35 soal TIU), KELIMA huruf a (benar 5, salah atau kosong 0), KEENAM (nilai tertinggi 175), KETUJUH dan KEDELAPAN huruf b (ambang 80), KESEMBILAN dan KESEPULUH (afirmasi: kumulatif 281, TIU 55). Halaman 1 berupa pindaian; nomor dan judul dicek dengan mata.</td></tr>
+      <tr><td>Patokan waktu TIU ±50,5 menit (100 − 27 TWK − 22,5 TKP), rata-rata ±86 detik per soal</td><td>Bab 1, pita Bab 2–19, Bab 19</td><td><b>Usulan</b> (Putusan 5), diturunkan dari patokan Handbook TWK dan Handbook TKP. Detik per jenis soal adalah taksiran dari banyak langkah pemeriksaan, belum dikalibrasi dengan catatan waktu tryout siswa.</td></tr>
+      <tr><td>Komposisi 35 soal dan susunan blok V6 · N9 · KCK7 · A3 · O1 · F9, nomor 31–65</td><td>Bab 1, 19</td><td><b>Dianalisis.</b> Rekonstruksi dari TIU Al Faiz Paket 41 (2026), dibandingkan dengan Al Faiz Part 39 dan berkas TIU002. Keyakinan sedang; dua bimbel tidak sejalan untuk figural (0 lawan 7–9 soal). Bukan kisi resmi.</td></tr>
+      <tr><td>Engine TIU D'Ajiks v0.4.3 (3K, Pilar 1–6, G1–G8, 47 kode Pilar 3) dan aturan tetap B-14, B-15, C-5; skill <code>references/tiu.md</code>, <code>tiu-verbal-figural.md</code></td><td>semua bab, L3, L5</td><td><b>Internal</b>, draf. Belum diuji pada paket nyata di luar TO Paket 1.</td></tr>
+      <tr><td>Generator figural <code>k12-spatial-engine</code> (modul TIU)</td><td>Bab 2, 14–19</td><td><b>Internal.</b> Setiap gambar wajib cek mata; tiga paket TO figural diuji ulang bila generator diubah (Putusan 10).</td></tr>
+      <tr><td>TO Paket 1 TIU D'Ajiks (<code>paket/paket-1/</code>)</td><td>catatan pembeda kerangka di semua bab</td><td><b>Internal</b>, tuntas 2026-10-30. Soal buku ini tidak boleh berkerangka sama dengan 26 butir nonfigural TO Paket 1.</td></tr>
+      <tr><td>Uji TIU Al Faiz Paket 41 oleh tim (log 2026-10-28) dan riset Al Faiz Part 39</td><td>catatan pengajar Bab 3–5, 11–13</td><td><b>Dianalisis.</b> Temuan cacat soal (asumsi diam, syarat pajangan, dua pilihan benar harfiah) menjadi aturan engine; soalnya tidak disalin.</td></tr>
+      <tr><td>Pejuang Kedinasan: buku Verbal dan Figural (124 halaman) serta Numerik (64 halaman)</td><td>peta bab; catatan pengajar Bab 11, 15</td><td><b>Dianalisis</b> struktur dan urutan babnya saja. Nama bab boleh sama, isi dan cara menjelaskan ditulis sendiri (arahan Gusti 2026-10-30).</td></tr>
+      <tr><td>TIU002 (berkas soal dan pembahasan, REFERENSI LUAR)</td><td>catatan pengajar Bab 3, 13</td><td><b>Dianalisis.</b> Dipakai untuk menghitung bentuk soal; penerbit berkas belum diverifikasi.</td></tr>
+      <tr><td>Fakta matematika: angka narasi, tabel Lampiran D, bagan Bab 12 dan 14</td><td>semua bab</td><td>Dihitung dan diperiksa script <code>cek_bab*.mjs</code> dan <code>cek_lampiran.mjs</code> setiap build.</td></tr>
+      <tr><td>KBBI</td><td>Bab 1 (ejaan), Bab 3</td><td><b>Belum diverifikasi.</b> Ejaan baku "inteligensi" belum dicek daring; buku mengikuti Kepmen (Putusan T3-d). Makna kata soal Bab 3 dicek di KBBI daring saat T5 (izin Putusan T2-8).</td></tr>
+    </tbody>
+  </table>
+  <table class="tb rujuk kata">
+    <thead><tr><th style="width:12%">Sebutan</th><th style="width:44%">Dipakai di catatan pengajar untuk</th><th>Keterangan</th></tr></thead>
+    <tbody>
+      <tr><td><b>TR</b></td><td>tryout rujukan: TIU Al Faiz Paket 41 (2026)</td><td>dasar susunan blok dan banyak soal per jenis</td></tr>
+      <tr><td><b>TB</b></td><td>tryout banding: Al Faiz Part 39</td><td>pembanding TR dari bimbel yang sama</td></tr>
+      <tr><td><b>SL</b></td><td>berkas soal luar TIU002</td><td>pembanding bentuk soal</td></tr>
+      <tr><td><b>BL</b></td><td>buku latihan Pejuang Kedinasan</td><td>pembanding urutan bab dan cara menjelaskan</td></tr>
+      <tr><td><b>TO P1</b></td><td>TO Paket 1 TIU D'Ajiks</td><td>bahan D'Ajiks sendiri, bukan pihak luar</td></tr>
+    </tbody>
+  </table>
+<!--L1:selesai-->
+
+  <h3 data-l="L2">L2 · Hal yang Belum Boleh Dikutip kepada Siswa</h3>
+  <p>Butir berikut tidak disampaikan sebagai fakta dan tidak boleh menentukan kunci soal mana pun. Bila siswa menanyakannya, katakan bahwa ketentuannya belum ditemukan di naskah resmi, lalu sebutkan yang sudah pasti. Nomor butir dirujuk dari Bab 1 dan Bab 19.</p>
+  <table class="tb pecah rujuk kata">
+    <thead><tr><th style="width:5%">No.</th><th style="width:40%">Butir</th><th>Yang boleh dikatakan di kelas</th><th style="width:11%">Bab</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Jatah waktu resmi per subtes</td><td>Kepmen hanya menetapkan 100 menit untuk seluruh SKD; ±50,5 menit TIU adalah patokan latihan buku ini.</td><td>1, 19</td></tr>
+      <tr><td>2</td><td>Urutan nomor 31–65 dan urutan subtes di layar CAT</td><td>Susunan di buku mengikuti tryout yang dipelajari; periksa layar saat ujian.</td><td>1, 19</td></tr>
+      <tr><td>3</td><td>Kebebasan berpindah soal dan subtes di CAT</td><td>Siapkan peta kerja yang tetap berlaku bila urutan tidak dapat diubah.</td><td>1, 19</td></tr>
+      <tr><td>4</td><td>Bentuk jam di layar CAT (sisa waktu atau waktu berjalan)</td><td>Titik periksa ditulis dalam menit sejak TIU dimulai; hitung ulang bila bentuk jamnya lain.</td><td>1, 19</td></tr>
+      <tr><td>5</td><td>Susunan blok sebagai ketentuan resmi</td><td>Kisi-kisi resmi hanya menyebut jenis materi, tanpa banyak soal per jenis.</td><td>1, 19</td></tr>
+      <tr><td>6</td><td>Format resmi soal perbandingan kuantitatif (empat atau lima pilihan)</td><td>Buku memakai empat pilihan tetap; di ujian bisa muncul lima.</td><td>6, 11</td></tr>
+      <tr><td>7</td><td>Kebiasaan soal resmi menganggap angka di pernyataan sebagai jumlah awal</td><td>Soal di buku ini tidak memakai anggapan diam; kotak Catatan Bab 11 cukup sebagai peringatan.</td><td>11</td></tr>
+      <tr><td>8</td><td>Kepmen tahun lain yang dikutip bahan luar, misalnya 208/2025</td><td>Yang dipakai hanya Kepmen 406/2026.</td><td>1</td></tr>
+      <tr><td>9</td><td>Patokan detik per jenis soal sebagai aturan</td><td>Patokan itu alat latihan dan dikalibrasi dari catatan tryout.</td><td>pita semua bab</td></tr>
+      <tr><td>10</td><td>Fakta sains di soal hubungan kalimat yang belum dicek (pelajaran TO P1 no. 36)</td><td>Soal hubungan kalimat hanya memakai fakta umum yang sudah dicek sumbernya.</td><td>3, 19</td></tr>
+      <tr><td>11</td><td>Bacaan resmi kata "sebagian", himpunan kosong, dan "atau"</td><td>Buku menyusun soal sehingga kunci sama untuk setiap bacaan (Putusan T2-7(4)).</td><td>4</td></tr>
+      <tr><td>12</td><td>Kebiasaan soal resmi yang memberi tiga suku saja</td><td>Tiga suku belum membuktikan pola; soal buku ini selalu memberi titik yang cukup.</td><td>8</td></tr>
+      <tr><td>13</td><td>Bunyi dan urutan lima pilihan kecukupan data di soal resmi</td><td>Cocokkan hasil tiga pemeriksaan dengan bunyi pilihan, bukan dengan hurufnya.</td><td>11</td></tr>
+      <tr><td>14</td><td>Kemunculan di SKD 2026: jadwal dan pencocokan atribut, porsi membaca data tabel, putaran 45°, persegi latin, gabungan warna, bunyi perintah gambar berbeda</td><td>Semuanya dimuat sebagai pengetahuan pendamping, bukan ramalan isi ujian.</td><td>12–14, 17, 18</td></tr>
+      <tr><td>15</td><td>Ejaan baku KBBI "inteligensi" dan makna pasangan penjelas Bab 3</td><td>Nama tes ditulis seperti Kepmen; makna kata soal dicek KBBI daring saat T5.</td><td>1, 3</td></tr>
+      <tr><td>16</td><td>Patokan jarak ±10% di Bab 6 dan patokan "tiga kali" pada Peta Diri</td><td>Keduanya patokan kerja penulis; ubah bila data siswa menunjukkan lain.</td><td>6, 19</td></tr>
+    </tbody>
+  </table>
+
+  <h3 data-l="L3">L3 · Aturan Menulis Soal TIU D'Ajiks (Ringkasan Engine v0.4.3)</h3>
+  <div class="rules">
+    <div><b>3K.</b> Setiap soal HOTS punya satu kalimat kunci yang adil tetapi mudah terlewat; setiap pilihan salah lahir dari satu kesalahan bernama; kunci dihitung script dan dibuktikan tunggal.</div>
+    <div><b>Hukum data lengkap.</b> Tulis daftar kebutuhan jawaban sebelum menulis soal. Setiap butir tertulis, atau sengaja dihilangkan karena itulah yang diuji. Kata kabur seperti "beberapa" dan "sejumlah" dilarang.</div>
+    <div><b>47 kode, 7 kelompok.</b> Setiap pilihan salah punya tepat satu kode Pilar 3. Buku siswa memakai kalimat guru, tanpa kode dan tanpa kata "jebakan" (L5).</div>
+    <div><b>Kecukupan data.</b> Lima bunyi templat Pilar 5 tanpa "atau"; pernyataan berdiri sendiri; diuji <code>dunia()</code>. Soal tidak boleh diam-diam menjawab salah satu pernyataan (uji coret, G3).</div>
+    <div><b>Pasangan operasi.</b> Pengecoh "hanya satu ruas" muncul di ≥ 2 pilihan; pasangan cermin tidak boleh tampil sendirian; bentuk <i>a</i> × 10<i>b</i> dan <i>b</i> × 10<i>a</i> selalu sama, jadi dilarang menjadi pilihan salah.</div>
+    <div><b>Barisan dan tabel.</b> Titik data ≥ banyak parameter + 1; aturan lain dengan ≤ 3 operasi tidak boleh cocok di semua titik; kunci bukan pencilan menurut jarak angka.</div>
+    <div><b>Penalaran analitis.</b> Setiap syarat menggugurkan ≥ 1 pilihan, dan pengecoh gugur di syarat yang berbeda-beda.</div>
+    <div><b>Optimasi.</b> Kunci adalah optimum global dari semua kombinasi, termasuk sisa dan kelebihan; paket terbesar tidak otomatis termurah (B-15).</div>
+    <div><b>Figural.</b> Hanya dari generator, bentuk kiral, aturan tunggal untuk semua tafsir, jawaban bukan salinan gambar yang terlihat, cek mata wajib. Handbook boleh soal satu aturan hanya di pembuka, contoh pertama, dan latihan pertama (T2-2).</div>
+    <div><b>Perbandingan P dan Q.</b> Empat pilihan tetap: P &gt; Q, P &lt; Q, P = Q, hubungan tidak dapat ditentukan.</div>
+    <div><b>Gerbang G1–G8.</b> Keunikan, data cukup, tanpa asumsi diam, pilihan saling meniadakan, bentuk tidak bocor, pengecoh bernama, konteks dan fakta, aturan paket.</div>
+    <div><b>Paket dan bab.</b> Kunci seimbang A–E (paket 35: 7 per huruf), huruf sama ≤ 2 berturut-turut, kerangka tidak kembar dengan TO maupun bab lain, level 30/50/20, waktu ±50,5 menit.</div>
+  </div>
+  <p>Rincian lengkap ada di <code>ENGINE_GENERATE_SOAL_TIU.md</code> versi 0.4.3. Ringkasan ini ditulis ulang setiap kali engine berubah.</p>
+
+  <h3 data-l="L4">L4 · Rencana Sepuluh Pertemuan (Usulan)</h3>
+  <p>Usulan: satu pertemuan berlangsung ±90 menit (belum diuji di kelas). Kolom latihan menghitung soal latihan bertarget waktu di bab itu, dan waktunya adalah jumlah target soal-soal tersebut; keduanya dihitung script dari isi buku. Sisa pertemuan dipakai untuk pembuka, uraian, contoh, dan pembahasan.</p>
+  <table class="tb pecah rujuk kata" data-l4="pertemuan">
+    <thead><tr><th style="width:6%" class="n">Ke</th><th style="width:13%">Bahan</th><th style="width:9%" class="n">Latihan</th><th style="width:16%" class="n">Waktu latihan</th><th>Kegiatan utama</th></tr></thead>
+    <tbody>
+      <tr data-bab="1,2"><td class="n">1</td><td>Bab 1–2</td><td class="n">0</td><td class="n">0 menit</td><td>Ambang 80 = 16 benar; isi Lembar Rencana Waktu. Empat contoh soal dibahas bersama, lalu siswa menyiapkan Peta Diri untuk tryout pertama.</td></tr>
+      <tr data-bab="3,4"><td class="n">2</td><td>Bab 3–4</td><td class="n">7</td><td class="n">5 menit 55 detik</td><td>Kalimat hubungan yang makin rinci; silogisme dengan gambar himpunan dan dua bacaan "sebagian".</td></tr>
+      <tr data-bab="5,6"><td class="n">3</td><td>Bab 5–6</td><td class="n">6</td><td class="n">6 menit</td><td>Bukti, klaim, dan pembanding; perkiraan dulu, hitung kemudian; perbandingan P dan Q.</td></tr>
+      <tr data-bab="7,8"><td class="n">4</td><td>Bab 7–8</td><td class="n">7</td><td class="n">7 menit 15 detik</td><td>Faktor prima sebagai sidik jari; titik data yang cukup untuk membuktikan pola.</td></tr>
+      <tr data-bab="9,10"><td class="n">5</td><td>Bab 9–10</td><td class="n">9</td><td class="n">11 menit 15 detik</td><td>Aturan tabel diuji di semua baris; hasil = laju × waktu, satuan disamakan dulu.</td></tr>
+      <tr data-bab="11"><td class="n">6</td><td>Bab 11</td><td class="n">5</td><td class="n">7 menit 30 detik</td><td>Tiga pemeriksaan kecukupan data; dua Latihan Bukti dikerjakan tertulis tanpa pilihan.</td></tr>
+      <tr data-bab="12,13"><td class="n">7</td><td>Bab 12–13</td><td class="n">7</td><td class="n">14 menit 15 detik</td><td>Diagram susunan dan pengguguran per syarat; optimum dari semua kombinasi.</td></tr>
+      <tr data-bab="14,15"><td class="n">8</td><td>Bab 14–15</td><td class="n">0</td><td class="n">0 menit</td><td>Delapan gerak dan aturan banyak cermin dengan kartu kertas; seri gambar per objek.</td></tr>
+      <tr data-bab="16,17,18"><td class="n">9</td><td>Bab 16–18</td><td class="n">0</td><td class="n">0 menit</td><td>Analogi gambar, gambar berbeda, dan matriks; setiap objek diperiksa sampai sel terakhir.</td></tr>
+      <tr data-bab="19"><td class="n">10</td><td>Bab 19</td><td class="n">0</td><td class="n">0 menit</td><td>Latihan A (14 butir, 7 menit) menamai kekeliruan; dua contoh soal dikerjakan dalam target waktunya; bandingkan Peta Diri antartryout.</td></tr>
+    </tbody>
+  </table>
+  <p>Pertemuan 6 dan 7 paling padat waktu latihannya. Bila kelas tertinggal, pindahkan Contoh 6 dan 7 Bab 11 ke tugas rumah, bukan latihannya.</p>
+
+  <h3 data-l="L5">L5 · Membaca Kesalahan Siswa</h3>
+  <p>Saat membahas latihan, minta siswa menulis nama kekeliruan di samping setiap pilihan yang dicoretnya, lalu nomor kelompoknya. Tabel pertama memadankan kalimat guru dengan kode dan nama kamus engine; siswa hanya mengenal kalimat guru. Kolom Bab menunjukkan bab yang tabel kekeliruannya memuat kode itu. Tabel kedua berisi satu tindakan untuk kelompok yang paling sering muncul di Peta Diri kelas.</p>
+<!--GEN:L5-->
+<table class="tb pecah rujuk kata l5">
+  <thead><tr><th style="width:6%">Kel.</th><th style="width:36%">Kalimat guru (buku siswa)</th><th style="width:15%">Kode</th><th style="width:25%">Nama kamus</th><th>Bab</th></tr></thead>
+  <tbody>
+    <tr><td>K1</td><td>memakai keterangan yang tidak tertulis di soal</td><td><code>J-ASUMSI</code></td><td>Jebakan Asumsi Diam</td><td>10–12</td></tr>
+    <tr><td>K1</td><td>memakai data atau ciri yang tidak diperlukan</td><td><code>J-PENGALIH</code></td><td>Jebakan Angka Pengalih</td><td>6, 10–11, 13, 17</td></tr>
+    <tr><td>K1</td><td>benar di dunia nyata, tetapi bukan dari soal</td><td><code>J-AKAL</code></td><td>Jebakan Akal Sehat</td><td>4–5, 13</td></tr>
+    <tr><td>K1</td><td>mengira perbandingan sudah memberi nilai sebenarnya</td><td><code>J-RASIO</code></td><td>Jebakan Rasio Tanpa Ukuran</td><td>10–11</td></tr>
+    <tr class="awal"><td>K2</td><td>berhenti setelah pernyataan (1) cukup</td><td><code>J-BERHENTI</code></td><td>Jebakan Berhenti di (1)</td><td>11–12</td></tr>
+    <tr><td>K2</td><td>berhenti satu langkah sebelum selesai</td><td><code>J-LANGKAH</code></td><td>Jebakan Setengah Jalan</td><td>6, 8–11, 13–14, 18</td></tr>
+    <tr><td>K2</td><td>hanya memeriksa satu ruas</td><td><code>J-SISI</code></td><td>Jebakan Sisi Kiri</td><td>7</td></tr>
+    <tr><td>K2</td><td>menyimpulkan pola dari terlalu sedikit data</td><td><code>J-TIGA</code></td><td>Jebakan Tiga Titik</td><td>8–9, 16–18</td></tr>
+    <tr><td>K2</td><td>melewatkan atau melonggarkan satu syarat soal</td><td><code>J-SYARAT</code></td><td>Jebakan Syarat Terlewat</td><td>12–13</td></tr>
+    <tr><td>K2</td><td>menentukan termurah tanpa menghitung semua kombinasi</td><td><code>J-HEMAT</code></td><td>Jebakan Paket Besar</td><td>13</td></tr>
+    <tr><td>K2</td><td>hanya memeriksa satu objek atau bagian</td><td><code>JF-SATU</code></td><td>Jebakan Satu Objek</td><td>15–18</td></tr>
+    <tr><td>K2</td><td>lupa membalik warna, atau membalik yang tetap</td><td><code>JF-WARNA</code></td><td>Jebakan Balik Warna</td><td>14, 16</td></tr>
+    <tr><td>K2</td><td>lupa menukar tempat, atau menukar yang tetap</td><td><code>JF-TUKAR</code></td><td>Jebakan Tukar Tempat</td><td>14, 16</td></tr>
+    <tr class="awal"><td>K3</td><td>membaca hubungan dari arah sebaliknya</td><td><code>J-BALIK</code></td><td>Jebakan Arah Terbalik</td><td>3–5, 11–12, 14, 16</td></tr>
+    <tr><td>K3</td><td>menghitung perbandingan berbalik nilai sebagai senilai</td><td><code>J-SEARAH</code></td><td>Jebakan Searah</td><td>10</td></tr>
+    <tr><td>K3</td><td>salah tanda atau urutan pengurangan terbalik</td><td><code>J-TANDA</code></td><td>Jebakan Tanda</td><td>6, 8–11</td></tr>
+    <tr><td>K3</td><td>menghitung persen dari bilangan yang salah</td><td><code>J-BASIS</code></td><td>Jebakan Basis Persen</td><td>6, 10–11, 13</td></tr>
+    <tr><td>K3</td><td>membalik arah putar atau arah pindah</td><td><code>JF-ARAH</code></td><td>Jebakan Arah Putar</td><td>14–16, 18</td></tr>
+    <tr><td>K3</td><td>menyamakan putaran dengan pencerminan</td><td><code>JF-PUTCER</code></td><td>Jebakan Putar ≠ Cermin</td><td>14–15, 17</td></tr>
+    <tr><td>K3</td><td>mencerminkan pada garis yang salah</td><td><code>JF-SUMBU</code></td><td>Jebakan Garis Cermin</td><td>14</td></tr>
+    <tr class="awal"><td>K4</td><td>salah membaca batas, termasuk hasil yang tepat sama</td><td><code>J-BATAS</code></td><td>Jebakan Batas</td><td>5, 11, 13</td></tr>
+    <tr><td>K4</td><td>membaca "tidak boleh" sebagai "tidak pernah"</td><td><code>J-IZIN</code></td><td>Jebakan Boleh ≠ Pasti</td><td>4</td></tr>
+    <tr><td>K4</td><td>membaca "sebagian" sebagai "semua"</td><td><code>J-SEBAGIAN</code></td><td>Jebakan Sebagian jadi Semua</td><td>3–5</td></tr>
+    <tr><td>K4</td><td>mengerjakan kebalikan dari yang diminta soal</td><td><code>J-PERINTAH</code></td><td>Jebakan Perintah Terbalik</td><td>7</td></tr>
+    <tr><td>K4</td><td>menganggap yang mungkin benar sebagai pasti benar</td><td><code>J-MUNGKIN</code></td><td>Jebakan Mungkin ≠ Pasti</td><td>4–6, 11–12</td></tr>
+    <tr><td>K4</td><td>menyamakan "pasti tidak" dengan "tidak dapat ditentukan"</td><td><code>J-TENTU</code></td><td>Jebakan Tidak ≠ Tak Tentu</td><td>4, 6, 11, 13</td></tr>
+    <tr><td>K4</td><td>menulis ingkaran "semua" sebagai "semua tidak"</td><td><code>J-INGKAR</code></td><td>Jebakan Ingkaran Keliru</td><td>4</td></tr>
+    <tr class="awal"><td>K5</td><td>menganggap selisihnya selalu sama</td><td><code>J-RATA</code></td><td>Jebakan Selisih Rata</td><td>8–9</td></tr>
+    <tr><td>K5</td><td>lupa bilangan tetap dalam rumus</td><td><code>J-KONST</code></td><td>Jebakan Lupa Konstanta</td><td>8–9</td></tr>
+    <tr><td>K5</td><td>mengira pasangan bertukar angka pasti sama</td><td><code>J-CERMIN</code></td><td>Jebakan Cermin Semu</td><td>7</td></tr>
+    <tr><td>K5</td><td>mengira gambar kembali ke posisi awal</td><td><code>JF-AWAL</code></td><td>Jebakan Kembali ke Awal</td><td>15, 18</td></tr>
+    <tr><td>K5</td><td>menyalin gambar yang sudah terlihat</td><td><code>JF-SALIN</code></td><td>Jebakan Salin Tetangga</td><td>15, 18</td></tr>
+    <tr><td>K5</td><td>memakai aturan satu objek untuk objek lain</td><td><code>JF-OBJEK</code></td><td>Jebakan Objek Tertukar</td><td>15–16, 18</td></tr>
+    <tr><td>K5</td><td>mengubah seluruh gambar, padahal yang berubah tiap objek</td><td><code>JF-UTUH</code></td><td>Jebakan Seluruh Gambar</td><td>14, 17</td></tr>
+    <tr><td>K5</td><td>membuang bagian yang sama, padahal digabung</td><td><code>JF-GABUNG</code></td><td>Jebakan Gabung Dibuang</td><td>18</td></tr>
+    <tr class="awal"><td>K6</td><td>tertukar antara banyak langkah dan nomor suku</td><td><code>J-NOMOR</code></td><td>Jebakan Nomor Suku</td><td>8–9, 12, 15, 18</td></tr>
+    <tr><td>K6</td><td>salah menyederhanakan pecahan</td><td><code>J-SEDERHANA</code></td><td>Jebakan Salah Sederhanakan</td><td>6–7</td></tr>
+    <tr><td>K6</td><td>kelebihan satu nol atau salah letak koma</td><td><code>J-NOL</code></td><td>Jebakan Salah Nol</td><td>6–7</td></tr>
+    <tr><td>K6</td><td>membulatkan semua bilangan ke arah yang sama</td><td><code>J-BULAT</code></td><td>Jebakan Pembulatan Sepihak</td><td>6</td></tr>
+    <tr><td>K6</td><td>menjumlahkan sebelum mengalikan atau membagi</td><td><code>J-URUTAN</code></td><td>Jebakan Urutan Hitung</td><td>6–7, 9</td></tr>
+    <tr><td>K6</td><td>lupa menyamakan satuan</td><td><code>J-SATUAN</code></td><td>Jebakan Satuan</td><td>10</td></tr>
+    <tr><td>K6</td><td>menjumlahkan waktu, padahal yang dijumlahkan laju</td><td><code>J-LAJU</code></td><td>Jebakan Jumlah Waktu</td><td>10</td></tr>
+    <tr><td>K6</td><td>salah hitung lebih atau kurang satu</td><td><code>JF-HITUNG</code></td><td>Jebakan Hitungan Meleset</td><td>15–18</td></tr>
+    <tr class="awal"><td>K7</td><td>memilih karena kata atau topiknya sama dengan soal; dua argumen (kebalikannya): fakta itu kamu anggap tidak berhubungan, padahal menyentuh salah satu argumen</td><td><code>J-KATA</code></td><td>Jebakan Kata Sama</td><td>3–5, 12</td></tr>
+    <tr><td>K7</td><td>menganggap pengulangan sebagai informasi baru</td><td><code>J-ULANG</code></td><td>Jebakan Mengulang Klaim</td><td>5, 11</td></tr>
+    <tr><td>K7</td><td>memilih hubungan yang mirip, tetapi berbeda</td><td><code>J-RELASI</code></td><td>Jebakan Hubungan Tetangga</td><td>3</td></tr>
+    <tr><td>K7</td><td>menilai cukup dari banyaknya persamaan</td><td><code>J-PERSAMAAN</code></td><td>Jebakan Hitung Persamaan</td><td>11</td></tr>
+  </tbody>
+</table>
+<!--/GEN:L5-->
+  <table class="tb rujuk kata" data-tindak="kelompok">
+    <thead><tr><th style="width:5%">No.</th><th style="width:30%">Kelompok</th><th>Tindakan pengajar bila kelompok ini terbanyak</th></tr></thead>
+    <tbody>
+      <tr data-k="K1"><td>1</td><td><b>Data yang Tidak Tertulis atau Tidak Dipakai</b></td><td>Minta siswa menunjuk kalimat soal untuk setiap data yang dipakainya; data tanpa kalimat dicoret. Ulangi daftar kebutuhan Bab 11 dan klaim Bab 5.</td></tr>
+      <tr data-k="K2"><td>2</td><td><b>Pemeriksaan yang Belum Tuntas</b></td><td>Tetapkan daftar periksa sebelum soal dibaca: dua ruas, tiga pemeriksaan, semua objek; siswa mencentang setiap butir. Ulangi Bab 7, 11, dan 18.</td></tr>
+      <tr data-k="K3"><td>3</td><td><b>Arah yang Terbalik</b></td><td>Siswa menuliskan arah dengan panah sebelum menghitung: persen dari apa, siapa sebelum siapa, ke mana putarannya. Ulangi Bab 4, 10, dan 14.</td></tr>
+      <tr data-k="K4"><td>4</td><td><b>Kata Penentu yang Salah Dibaca</b></td><td>Lingkari kata penentu (pasti, paling sedikit, tidak boleh, sebagian, batas) sebelum pilihan dibuka. Ulangi Bab 4 dan 11.</td></tr>
+      <tr data-k="K5"><td>5</td><td><b>Pola yang Belum Terbukti</b></td><td>Wajibkan uji di satu titik tambahan dan di sel terakhir sebelum jawaban ditulis. Ulangi Bab 8, 9, dan 15.</td></tr>
+      <tr data-k="K6"><td>6</td><td><b>Kekeliruan Hitung dan Satuan</b></td><td>Biasakan cek balik dengan cara lain: perkiraan ukuran, sisa bagi 9, satuan disamakan di awal. Ulangi Bab 6 dan 10.</td></tr>
+      <tr data-k="K7"><td>7</td><td><b>Penilaian dari Bentuk Luar</b></td><td>Tutup kata yang sama dengan soal, lalu uji hubungan dengan kalimat yang lebih rinci. Ulangi Bab 3 dan 5.</td></tr>
+    </tbody>
+  </table>
+  <p>Perluasan makna kode pada soal dua kesimpulan (Putusan T5-7): <code>J-MUNGKIN</code> juga dipakai untuk status kedua kesimpulan yang tertukar ("pasti" dibaca "tidak dapat dipastikan" dan sebaliknya), dan <code>J-SEBAGIAN</code> untuk "sebagian" yang dibaca "mungkin tidak ada" sehingga kesimpulan yang pasti dianggap tidak pasti (B04-C02 pilihan D dan E).</p>
+  <p>Bab 2 dan Bab 19 merujuk ke tabel ini dan tidak menggandakannya. Nama yang berbeda antarbab untuk satu kode dibiarkan seperti di bab asalnya (Putusan T4-35); tabel Bab 19 menyatukannya per kelompok.</p>
+</section>

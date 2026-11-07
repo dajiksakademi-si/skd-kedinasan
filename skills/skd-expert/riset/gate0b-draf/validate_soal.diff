@@ -1,0 +1,43 @@
+--- validate_soal.orig.js	2026-10-25 23:32:57
++++ validate_soal.js	2026-10-25 23:32:57
+@@ -341,6 +341,12 @@
+   pairs.add([it.n, other.n].sort((a, b) => a - b).join('-'));
+ }
+ if (pairs.size < 3) paketIssue(`pasangan kontras ${pairs.size}, minimal 3 per paket (Pilar 6)`);
++
++// Distribusi kunci (Pilar 6): huruf kunci yang sama tidak berderet > 2
++for (let i = 2; i < items.length; i += 1) {
++  const [a, b, c] = items.slice(i - 2, i + 1).map((it) => it.kunci);
++  if (a && a === b && b === c) paketIssue(`Soal ${items[i - 2].n}-${items[i].n}: kunci ${a} berderet 3x (Pilar 6)`);
++}
+ 
+ 
+ if (itemCount === 30) {
+@@ -359,6 +365,27 @@
+   }
+ }
+ 
++// Peta paket 45 (Pilar 6). Grid = heuristik engine: KepmenPANRB 406/2026 tidak mengatur porsi per aspek.
++if (itemCount === 45) {
++  const grid45 = {
++    Profesionalisme: 9, 'Pelayanan Publik': 9, 'Jejaring Kerja': 7,
++    'Sosial Budaya': 7, TIK: 6, 'Anti Radikalisme': 7,
++  };
++  for (const [dim, expected] of Object.entries(grid45)) {
++    const actual = dimCounts[dim] || 0;
++    if (actual !== expected) errors.push(`dimension "${dim}" count=${actual}, must be ${expected} per paket 45 (Pilar 6)`);
++  }
++  const tinggi = levelCounts.Tinggi || 0;
++  const sangat = levelCounts['Sangat Tinggi'] || 0;
++  if (tinggi < 25 || tinggi > 29 || sangat < 16 || sangat > 20) {
++    errors.push(`level Tinggi ${tinggi} / Sangat Tinggi ${sangat}, must be 25-29 / 16-20 (default 27/18, Pilar 6)`);
++  }
++  for (const letter of letters) {
++    const c = keyCounts[letter] || 0;
++    if (c < 7 || c > 11) errors.push(`kunci letter ${letter} used ${c}x, must be 7-11 per 45 soal (Pilar 6)`);
++  }
++}
++
+ console.log(JSON.stringify({
+   file,
+   item_count: itemCount,

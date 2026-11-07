@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Handbook TIU D'Ajiks Akademi · {{VERSI}}</title>
+<!-- CSS halaman isi = prototipe/gaya_halaman_tiu.html (DISETUJUI 2026-10-31) apa adanya; tambahan di bawah tanda "tambahan buku". -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+/* palet: navy + emas seri SKD, biru pucat dari sampul kubus TIU (#e9f0fb → #d9e5f5) */
+:root{
+  --navy:#0c2350; --navy-2:#14336f; --royal:#1f4fa6;
+  --ice:#edf2fb; --line:#d8e1ef; --paper:#fbfcfe;
+  --gold:#f2b705; --gold-soft:#fff6d9; --gold-ink:#7a5a00;
+  --ink:#13203b; --body:#2b3856; --muted:#5b6782; --no-ink:#8c2f2f; --no-soft:#fbefec;
+}
+@page{ size:A4; margin:17mm 17mm 16mm; background:#fbfcfe;
+  @top-left{ content:"TES INTELEGENSIA UMUM"; font-family:"Plus Jakarta Sans",sans-serif; font-size:7pt; font-weight:800; letter-spacing:.16em; color:#0c2350; }
+  @top-right{ content:"D'Ajiks Akademi"; font-family:"Cinzel",serif; font-size:8.6pt; font-weight:700; letter-spacing:.06em; color:#7a5a00; }
+  @bottom-left{ content:"Handbook TIU · {{VERSI}} · Edisi 2026"; font-family:"Plus Jakarta Sans",sans-serif; font-size:7pt; color:#8f99ae }
+  @bottom-right{ content:counter(page); font-family:"Plus Jakarta Sans",sans-serif; font-size:8.4pt; font-weight:800; color:#0c2350 }
+}
+*{box-sizing:border-box}
+html{-webkit-print-color-adjust:exact; print-color-adjust:exact; background:var(--paper)}
+body{margin:0; background:var(--paper); color:var(--body); font-family:"Plus Jakarta Sans",system-ui,sans-serif; font-size:9.8pt; line-height:1.6; font-variant-numeric:tabular-nums lining-nums}
+h2,h3,h4{margin:0; color:var(--ink); line-height:1.2; letter-spacing:-.015em; text-wrap:balance; break-after:avoid}
+h3{display:flex; align-items:center; gap:3mm; font-size:13.6pt; font-weight:800; margin:5.4mm 0 2.8mm}
+h3::before{content:""; flex:none; width:1.7mm; height:5.6mm; border-radius:99px; background:var(--gold)}
+p{margin:0 0 2.8mm; text-wrap:pretty}
+b{font-weight:700; color:var(--ink)}
+p, .tahap dd, .g .x, .duo span, .note p{text-align:justify}
+i.v{font-style:italic; font-family:inherit}
+mark{background:linear-gradient(180deg,transparent 55%,rgba(242,183,5,.45) 55%); color:inherit; padding:0 .4mm}
+::selection{background:var(--gold); color:var(--navy)}
+.hal2{break-before:page}
+.hal2 > h3:first-child{margin-top:0}
+/* pecahan sebaris: pembilang naik, penyebut turun, garis miring pecahan */
+.fr{white-space:nowrap; font-size:.86em}
+.fr sup,.fr sub{font-size:.8em; line-height:0}
+.fr sup{vertical-align:.42em}
+.fr sub{vertical-align:-.08em}
+.ico{width:3.3mm; height:3.3mm; flex:none}
+
+/* ── pembuka bab: pita biru pucat + kisi kubus ── */
+.band{display:grid; grid-template-columns:auto 1fr auto; gap:0 5.6mm; align-items:start; border-radius:5mm; padding:6mm 6.6mm 5.4mm; margin:0 0 5mm;
+  background:linear-gradient(180deg,#e9f0fb 0%,#dbe6f5 100%); box-shadow:inset 0 0 0 .3mm rgba(12,35,80,.07); break-inside:avoid}
+.band .no{font-size:42pt; font-weight:800; line-height:.86; letter-spacing:-.04em; color:var(--navy)}
+.band .no::after{content:""; display:block; width:8.4mm; height:.9mm; margin-top:2.4mm; background:var(--gold-ink)}
+.band h2{font-size:21pt; font-weight:800; line-height:1.08; letter-spacing:-.025em; color:var(--navy); margin:.4mm 0 2.2mm}
+.band p{font-size:9.3pt; line-height:1.52; color:#2a3857; margin:0; text-align:left}
+.band .waktu{display:flex; align-items:center; gap:1.6mm; margin-top:2.6mm; font-size:8.2pt; font-weight:700; color:var(--navy-2)}
+.kisi{display:grid; grid-template-columns:repeat(3,3.6mm); gap:1mm; margin-top:.6mm}
+.kisi i{width:3.6mm; height:3.6mm; border-radius:.8mm; background:var(--navy); opacity:.88}
+.kisi i:nth-child(2n){opacity:.5}
+.kisi i.emas{background:var(--gold); opacity:1}
+.lead{font-size:10.4pt; line-height:1.6; color:var(--ink)}
+
+/* ── konsep inti: uraian kiri, tabel hitung kanan ── */
+.konsep{display:grid; grid-template-columns:1fr 61mm; gap:5mm; margin:0 0 3.4mm; break-inside:avoid}
+.def p{margin:0 0 1.8mm; font-size:9.5pt; line-height:1.56}
+.def p:last-child{margin:0}
+table.hit{width:100%; border-collapse:collapse; table-layout:fixed; background:var(--ice); border-radius:3.2mm; overflow:hidden; font-size:8.7pt; line-height:1.35; color:var(--ink); align-self:start}
+.hit th{font-size:6.4pt; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); text-align:left; padding:2.4mm 2.4mm 1.4mm}
+.hit td{padding:1.5mm 2.4mm; border-top:1px solid rgba(12,35,80,.08)}
+.hit th:first-child{width:16mm} .hit th:last-child{width:15mm}
+.hit th:last-child,.hit td:last-child{text-align:right}
+.hit td{white-space:nowrap}
+.hit td:last-child{font-weight:700; color:var(--navy)}
+.hit tr.uji td{color:var(--royal); font-weight:700; padding-bottom:2.2mm}
+
+/* ── kotak ── */
+.note{border-radius:3.6mm; padding:3.8mm 4.8mm 3.8mm; margin:3.6mm 0 0; break-inside:avoid}
+.note h4{display:inline-block; font-size:6.9pt; font-weight:800; letter-spacing:.12em; text-transform:uppercase; line-height:1.3; padding:.9mm 2.8mm; border-radius:99px; margin:0 0 2mm}
+.note p{font-size:9.3pt; line-height:1.58; margin:0}
+.note.catatan{background:var(--gold-soft)}
+.note.catatan h4{background:var(--gold); color:var(--navy)}
+
+/* ── contoh soal ── */
+.soal{background:#fff; border:1px solid var(--line); border-radius:4.2mm; padding:4.2mm 5.2mm 4.4mm; margin:0 0 3mm; box-shadow:0 .8mm 2.6mm rgba(12,35,80,.06); break-inside:avoid}
+.soal .meta{display:flex; justify-content:space-between; align-items:center; font-size:7pt; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--royal); margin-bottom:2.2mm}
+.soal .meta .waktu{display:flex; align-items:center; gap:1.4mm; letter-spacing:.06em; color:var(--navy-2)}
+a.ke{display:inline-block; margin-left:2.4mm; padding:.9mm 2.8mm; border-radius:99px; background:var(--navy); color:var(--gold); font-size:7.2pt; font-weight:800; letter-spacing:.08em; text-transform:uppercase; text-decoration:none; line-height:1.3}
+.balik{margin:0 0 4mm; text-align:right}
+.soal .stem{font-size:11.2pt; font-weight:500; color:var(--ink); margin:0 0 3.2mm}
+.opsi5{display:grid; grid-template-columns:repeat(5,1fr); gap:2mm}
+.opsi5 div{display:flex; align-items:center; gap:2.4mm; border:1px solid #e6ebf3; border-radius:2.6mm; padding:1.8mm 2.4mm}
+.opsi5 b{font-size:10.8pt; font-weight:700}
+.h{flex:none; width:6mm; height:6mm; border-radius:1.7mm; background:var(--navy); color:#fff; font-size:8.2pt; font-weight:800; display:flex; align-items:center; justify-content:center}
+.kotak{border-radius:3.4mm; padding:3.2mm 4.4mm; margin:0 0 2.6mm; break-inside:avoid}
+.lbl, .duo b{display:block; font-size:6.9pt; font-weight:800; letter-spacing:.12em; text-transform:uppercase; color:var(--royal); margin-bottom:1.4mm}
+.kotak p{font-size:9.3pt; line-height:1.56; margin:0}
+.inti{background:var(--ice)}
+.langkah{background:#fff; border:1px solid var(--line)}
+.tahap{margin:0; display:grid; gap:1.6mm}
+.tahap div{display:grid; grid-template-columns:25mm 1fr; gap:3mm}
+.tahap dt{font-size:8.4pt; font-weight:800; color:var(--navy); line-height:1.5}
+.tahap dt small{display:block; font-size:7.2pt; font-weight:700; color:var(--gold-ink)}
+.tahap dd{margin:0; font-size:9pt; line-height:1.54}
+.tahap div + div{padding-top:1.6mm; border-top:1px solid #edf0f6}
+.gugur{border:1px solid var(--line); border-radius:3.4mm; background:#fff; padding:2.8mm 4.4mm .6mm; margin:0 0 2.6mm; break-inside:avoid}
+.g{display:grid; grid-template-columns:6mm 23mm 1fr; gap:0 2.8mm; align-items:start; padding:1.9mm 0; border-top:1px solid #edf0f6}
+.lbl + .g{border-top:0; padding-top:.4mm}
+.g .v{font-size:9.8pt; font-weight:700; color:var(--ink); line-height:6mm; display:flex; flex-direction:column; align-items:flex-start}
+.g .x{font-size:8.8pt; line-height:1.5; color:var(--body); padding-top:.6mm}
+.g .x b{color:var(--no-ink)}
+.g .uji{font-size:6.6pt; font-weight:700; letter-spacing:.02em; line-height:1.3; color:var(--no-ink); background:var(--no-soft); border-radius:99px; padding:.6mm 2.2mm; margin-top:.2mm; white-space:nowrap}
+.jwb{display:flex; gap:4mm; align-items:center; background:var(--navy); border-radius:3.4mm; padding:3.2mm 4.6mm; margin:0 0 2.6mm; break-inside:avoid}
+.jwb > span{flex:none; width:9mm; height:9mm; border-radius:2.4mm; background:var(--gold); color:var(--navy); font-size:12.6pt; font-weight:800; display:flex; align-items:center; justify-content:center}
+.jwb p{margin:0; font-size:9.3pt; line-height:1.52; color:#e6ecf8; text-align:left}
+.jwb p b{color:var(--gold)}
+.duo{display:grid; grid-template-columns:1fr 1fr; gap:2.8mm; break-inside:avoid}
+.duo > div{background:var(--ice); border-radius:3.4mm; padding:3.2mm 4.2mm}
+.duo span{display:block; font-size:8.9pt; line-height:1.54}
+.duo .il{background:var(--gold-soft)}
+.duo .il b{color:var(--gold-ink)}
+
+/* ════════ tambahan buku (komponen yang belum ada di prototipe; palet dan ukuran sama) ════════ */
+.bab{break-before:page}
+.src{font-size:7.4pt; line-height:1.5; color:#8a94a8; margin:-1.4mm 0 3.4mm; text-align:left; break-before:avoid}
+.muted{color:var(--muted)}
+.m{white-space:nowrap}  /* ungkapan hitung tidak dipenggal */
+h4.sub{font-size:10.4pt; font-weight:800; color:var(--navy); margin:4mm 0 1.6mm}
+ul.daftar{margin:0 0 2.8mm; padding-left:4.6mm}
+ul.daftar li{margin-bottom:1.2mm; text-align:justify}
+ul.daftar li::marker{color:var(--gold-ink)}
+
+/* tabel isi: kartu putih bergaris tipis, kepala kapital kecil seperti .hit */
+table.tb{width:100%; border-collapse:separate; border-spacing:0; border:1px solid var(--line); border-radius:3.4mm; overflow:hidden; background:#fff; font-size:8.8pt; line-height:1.45; color:var(--body); margin:1mm 0 3.6mm; break-inside:avoid}
+.tb th{background:var(--ice); font-size:6.4pt; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); text-align:left; padding:2.2mm 2.8mm 1.6mm; border-bottom:1px solid var(--line)}
+.tb td{padding:1.7mm 2.8mm; border-top:1px solid #edf0f6; vertical-align:top}
+.tb tbody tr:first-child td{border-top:0}
+.tb td.n, .tb th.n{text-align:right; white-space:nowrap}
+.tb tr.jml td{background:var(--ice); font-weight:700; color:var(--navy)}
+.tb td b{color:var(--navy)}
+
+/* angka resmi: empat sel */
+.facts{display:grid; grid-template-columns:repeat(4,1fr); background:#fff; border:1px solid var(--line); border-radius:3.4mm; overflow:hidden; margin:1mm 0 2.4mm; break-inside:avoid}
+.facts div{padding:2.6mm 3.2mm; border-right:1px solid #edf0f6}
+.facts div:last-child{border-right:0}
+.facts b{display:block; font-size:16pt; font-weight:800; color:var(--navy); letter-spacing:-.02em; line-height:1.1; margin-bottom:.6mm}
+.facts span{display:block; font-size:7.9pt; line-height:1.4; color:var(--muted)}
+
+/* daftar bernomor dua kolom */
+.rules{counter-reset:r; display:grid; grid-template-columns:1fr 1fr; gap:1.8mm 5mm; margin:1mm 0 3mm}
+.rules > div{counter-increment:r; position:relative; padding-left:7mm; font-size:9pt; line-height:1.5; break-inside:avoid}
+.rules > div::before{content:counter(r); position:absolute; left:0; top:.2mm; width:5mm; height:5mm; border-radius:50%; background:var(--navy); color:var(--gold); font-size:7.2pt; font-weight:800; display:flex; align-items:center; justify-content:center}
+.rules.satu{grid-template-columns:1fr}
+
+/* empat prinsip: kartu biru pucat dua kolom */
+.prinsip{display:grid; grid-template-columns:1fr 1fr; gap:3mm; margin:1mm 0 3.4mm}
+.prinsip > div{background:var(--ice); border-radius:3.4mm; padding:3.4mm 4.2mm; break-inside:avoid}
+.prinsip .k{display:block; font-size:6.9pt; font-weight:800; letter-spacing:.12em; text-transform:uppercase; color:var(--gold-ink); margin-bottom:1mm}
+.prinsip h4{font-size:10.4pt; font-weight:800; color:var(--navy); margin:0 0 1.4mm}
+.prinsip p{font-size:8.9pt; line-height:1.52; margin:0 0 1.4mm}
+.prinsip p:last-child{margin:0}
+.prinsip p{text-align:left}  /* kartu ±80 mm: rata kiri (Chrome tidak memenggal kata) */
+
+/* tempat soal yang belum diisi (Tahap 5): kartu soal bergaris putus */
+.slot{background:#fff; border:1.2px dashed #b9c6dc; border-radius:4.2mm; padding:3.6mm 5.2mm 3.8mm; margin:0 0 3mm; break-inside:avoid}
+.slot .meta{display:flex; justify-content:space-between; align-items:center; gap:4mm; font-size:7pt; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--royal); margin-bottom:1.6mm}
+.slot .meta .waktu{display:flex; align-items:center; gap:1.4mm; letter-spacing:.06em; color:var(--navy-2); white-space:nowrap}
+.slot .id{font-size:7pt; font-weight:700; letter-spacing:.04em; color:#8f99ae; text-transform:none}
+.slot p.spek{font-size:9.2pt; color:var(--ink); margin:0; text-align:left}
+.slot .kosong{display:block; font-size:7.6pt; color:#8f99ae; margin-top:1.4mm}
+.slot .guru{margin-top:2mm; padding-top:1.8mm; border-top:1px solid #edf0f6; font-size:8pt; line-height:1.5; color:var(--muted); text-align:left}
+.slot .guru b{color:var(--royal)}
+
+/* kotak khusus pengajar (dibuang di versi siswa) */
+.note.teach{background:#fff; box-shadow:inset 0 0 0 1.2px var(--royal)}
+.note.teach h4{display:block; background:none; padding:0; border-radius:0; font-size:10.4pt; letter-spacing:-.01em; text-transform:none; color:var(--navy); margin:0 0 1.4mm}
+.note.teach .who{float:right; margin:0 0 0 3mm; background:var(--royal); color:#fff; font-size:6.6pt; font-weight:700; letter-spacing:.1em; text-transform:uppercase; padding:.7mm 2.4mm; border-radius:99px}
+.note.teach p + p{margin-top:1.6mm}
+.note.biru{background:var(--ice)}
+.note.biru h4{background:var(--navy); color:var(--gold)}
+
+/* ringkasan bab */
+.ringkas{background:var(--navy); color:#d8e1f3; border-radius:4.2mm; padding:4.6mm 5.4mm 4.2mm; margin:4mm 0 0; break-inside:avoid}
+.ringkas h4{font-size:6.9pt; font-weight:800; letter-spacing:.12em; text-transform:uppercase; color:var(--gold); margin:0 0 2.4mm}
+.ringkas ol{margin:0; padding-left:5mm; display:grid; gap:1.4mm}
+.ringkas li{font-size:9pt; line-height:1.5; text-align:left}
+.ringkas li::marker{color:var(--gold); font-weight:800}
+.ringkas b{color:#fff}
+
+/* gambar himpunan Bab 4: empat kartu biru pucat, garis navy, titik anggota emas (kelompok 2) */
+.himp{display:grid; grid-template-columns:repeat(4,1fr); gap:3mm; margin:1mm 0 3.4mm; break-inside:avoid}
+.himp figure{margin:0; background:var(--ice); border-radius:3.4mm; padding:2.8mm 3mm 2.6mm}
+.himp svg{display:block; width:100%; height:auto}
+.himp circle{fill:rgba(31,79,166,.07); stroke:var(--navy); stroke-width:1.2}
+.himp circle.t{fill:var(--gold); stroke:var(--navy); stroke-width:.9}
+.himp text{font-family:"Plus Jakarta Sans",sans-serif; font-size:10px; font-weight:800; fill:var(--navy); text-anchor:middle}
+.himp figcaption{margin-top:1.6mm; font-size:8.2pt; font-weight:700; line-height:1.35; color:var(--ink); text-align:center}
+.himp figcaption span{display:block; font-size:7.5pt; font-weight:500; color:var(--muted)}
+
+/* soal verbal Bab 3–5 (Tahap 5): pilihan berupa kalimat ditumpuk, premis berlabel, pilihan gugur tanpa kolom angka */
+.opsiv{list-style:none; margin:0; padding:0; display:grid; gap:1.5mm}
+.opsiv li{display:flex; align-items:flex-start; gap:2.6mm; border:1px solid #e6ebf3; border-radius:2.6mm; padding:1.5mm 2.4mm; font-size:9.6pt; line-height:1.45; color:var(--ink)}
+.opsiv li > span:last-child{padding-top:.3mm}
+.premis{margin:-.6mm 0 3mm; display:grid; gap:1.1mm}
+.premis div{display:grid; grid-template-columns:19mm 1fr; gap:2.4mm}
+.premis dt{font-size:9pt; font-weight:800; color:var(--navy); line-height:1.5}
+.premis dd{margin:0; font-size:9.8pt; line-height:1.5; color:var(--ink)}
+[data-soal] > .guru{margin:-1.4mm 0 3mm; padding:2.4mm 4mm; border-radius:3mm; box-shadow:inset 0 0 0 1px var(--royal); font-size:8pt; line-height:1.5; color:var(--muted); text-align:left; break-inside:avoid}
+[data-soal] > .guru b{color:var(--royal)}
+.gugur.vb .g{grid-template-columns:6mm 1fr}
+.gugur.vb .uji{display:inline-block; margin:0 1.8mm .4mm 0; vertical-align:.2mm}
+.bab h3 + p:has(+ [data-soal]){break-after:avoid}  /* judul Contoh/Latihan + pengantar tidak tertinggal di kaki halaman */
+
+/* bab numerik (kelompok 3): judul + kalimat pengantar tidak tertinggal di kaki halaman; Contoh 1 Bab 6 utuh satu halaman */
+.num h3 + p{break-after:avoid}
+.utuh{break-inside:avoid}
+
+/* gambar penalaran analitis Bab 12 (kelompok 4): kartu biru pucat seperti .himp; kursi/simpul putih bergaris navy, sorotan emas */
+figure.diag{margin:0; background:var(--ice); border-radius:3.2mm; padding:3mm 3.4mm 2.6mm; align-self:start; break-inside:avoid}
+.diag svg{display:block; width:100%; height:auto}
+.diag .k{fill:#fff; stroke:var(--navy); stroke-width:1.1}
+.diag .k.t{fill:var(--gold)}
+.diag .meja{fill:rgba(31,79,166,.07); stroke:rgba(12,35,80,.18); stroke-width:.8}
+.diag .pn{fill:none; stroke:var(--navy); stroke-width:1.2; stroke-linecap:round}
+.diag .pn.ka{stroke:var(--gold-ink)}
+.diag marker path{fill:var(--navy)}
+.diag text{font-family:"Plus Jakarta Sans",sans-serif; font-size:9px; font-weight:800; fill:var(--navy); text-anchor:middle}
+.diag text.ket{font-size:7.5px; fill:var(--gold-ink)}
+.diag figcaption{margin-top:1.6mm; font-size:8.2pt; font-weight:700; line-height:1.35; color:var(--ink); text-align:center}
+.diag figcaption span{display:block; font-size:7.5pt; font-weight:500; color:var(--muted)}
+/* Bab 11–13: paragraf narasi pendek tidak dipenggal antarhalaman (mencegah baris yatim di puncak halaman) */
+.bab[data-bab="11"] p, .bab[data-bab="12"] p, .bab[data-bab="13"] p{break-inside:avoid}
+.bab[data-bab="11"] h3 + p, .bab[data-bab="12"] h3 + p, .bab[data-bab="13"] h3 + p{break-after:auto}  /* paragraf sudah utuh; rantai avoid panjang membuat Chrome memenggal */
+.bab[data-bab="11"] p:has(+ table.tb), .bab[data-bab="12"] p:has(+ table.tb), .bab[data-bab="13"] p:has(+ table.tb){break-after:avoid}  /* pengantar tabel ikut tabelnya */
+/* bab figural 14–18 (kelompok 5): bagan tiga panel memakai kartu .diag; aturan pemenggalan sama dengan Bab 11–13 */
+.diag3{display:grid; grid-template-columns:repeat(3,1fr); gap:3mm; margin:1mm 0 3.4mm; break-inside:avoid}
+.diag3 svg{max-width:34mm; margin:0 auto}
+.diag3:has(img){margin:3.4mm 0 1.6mm}
+.diag3:has(img) figure.diag{align-self:stretch; padding:2.4mm 2mm 2.2mm}
+.diag3 img{display:block; width:100%; max-width:27mm; margin:0 auto}
+.diag3.empat{grid-template-columns:repeat(4,1fr); gap:2.4mm}
+.diag3.lima{grid-template-columns:repeat(5,1fr); gap:2mm}
+.diag3.dua{grid-template-columns:repeat(2,1fr); max-width:96mm}
+.diag3.satu{grid-template-columns:1fr; max-width:72mm; margin-left:auto; margin-right:auto}
+.diag3.satu img{max-width:58mm}
+.diag3.lebar img{max-width:none}
+.latA-soal .soal{zoom:.88; margin-bottom:2.6mm}  /* cetak ulang ringkas Latihan A */
+.latA-soal .soal img.gbr{max-height:46mm}
+.latA-soal li.sorot, .latA-soal div.sorot{background:var(--gold-soft); outline:1.4px solid var(--gold-ink); outline-offset:-1px; border-radius:1.6mm}
+/* daftar isi (gaya seri Handbook TKP) */
+.daftar-isi{break-before:page}
+.daftar-isi h2{font-size:19pt; color:var(--navy); margin-bottom:1mm}
+.toc-part{display:flex; align-items:baseline; gap:3mm; margin:2.6mm 0 .6mm; padding-bottom:.8mm; border-bottom:1.5px solid var(--navy); break-after:avoid}
+.toc-part b{font-size:7.4pt; letter-spacing:.14em; text-transform:uppercase; color:var(--royal)}
+.toc-part span{font-size:10pt; font-weight:800; color:var(--navy)}
+.toc-row{display:grid; grid-template-columns:8mm 1fr 11mm; gap:2mm; align-items:baseline; padding:.45mm 0; border-bottom:1px solid var(--line); line-height:1.3; font-size:9.2pt; break-inside:avoid}
+.toc-row .n{font-weight:800; color:var(--gold-ink)}
+.toc-row .t{font-weight:700; color:var(--ink); text-align:left}
+.toc-row .d{display:block; font-size:7.8pt; color:var(--muted); font-weight:400}
+.toc-row .p{font-weight:700; color:var(--navy); text-align:right; font-variant-numeric:tabular-nums}
+.ket-gbr{font-size:8.6pt; color:var(--muted); text-align:left; margin:0 0 3.4mm; break-before:avoid}
+.ket-baris{font-size:8.6pt; font-weight:700; color:var(--ink); text-align:left; margin:2.4mm 0 -1.8mm; break-after:avoid}
+.bab.fig p{break-inside:avoid}
+.bab.fig p:has(+ table.tb), .bab.fig p:has(+ .diag3){break-after:avoid}  /* p:has(+ .slot) dicoba lalu dicabut: kartu soal terbelah */
+.bab.fig .rules{break-inside:avoid}
+.bab.fig table.tb.pecah{break-inside:auto}  /* tabel kekeliruan panjang boleh berlanjut ke halaman berikut; kepala tabel diulang Chrome */
+.bab.fig table.tb.pecah tr{break-inside:avoid}
+/* Bab 19 penutup (kelompok 6): tabel tujuh kelompok boleh berlanjut ke halaman berikut; kotak pertanyaan uji menempel ke tabelnya */
+.bab[data-bab="19"] p{break-inside:avoid}
+.bab[data-bab="19"] table.tb.pecah{break-inside:auto}
+.bab[data-bab="19"] table.tb.pecah tr{break-inside:avoid}
+.bab[data-bab="19"] .kotak.inti{break-after:avoid; margin-bottom:1.6mm}
+.bab[data-bab="19"] .kotak.inti p{font-weight:600; color:var(--ink)}
+.bab[data-bab="19"] p:has(+ table.tb){break-after:avoid}
+.slot.rujuk table.tb{margin:1.4mm 0 0}
+.latA td{height:8.6mm; vertical-align:middle}
+.latA td:last-child{white-space:nowrap}
+.latA td .id{display:none}  /* kode butir tidak tampil di buku siswa (T7) */
+.slot.rujuk:has(.latA){break-inside:auto}
+.latA tr{break-inside:avoid}
+.latA td .guru{margin:0; padding:0; border:0; font-size:8.2pt; line-height:1.4; color:var(--royal); font-weight:600}
+/* tabel centang-silang Bab 12: sel tanda di tengah */
+.tb.silang td:nth-child(n+2):nth-child(-n+4), .tb.silang th:nth-child(n+2):nth-child(-n+4){text-align:center}
+/* soal numerik Bab 6–10 (Tahap 5): tabel pola di dalam kartu soal — angka di tengah, petak X/Y dan angka acuan disorot */
+.soal table.tb.pola{width:auto; margin:0 auto 3.2mm; font-size:10.2pt; line-height:1.3; color:var(--ink)}
+.tb.pola td, .tb.pola th{text-align:center; padding:1.5mm 5.2mm; min-width:9mm; font-variant-numeric:tabular-nums lining-nums}
+.tb.pola.datar th{background:var(--ice); border-bottom:0; border-right:1px solid var(--line); text-align:left; font-size:6.6pt; vertical-align:middle}
+.tb.pola.datar tr + tr th, .tb.pola.datar tr + tr td{border-top:1px solid #edf0f6}
+.tb.pola.petak td{border-left:1px solid #edf0f6; font-weight:600}
+/* soal figural Bab 14–18 (T6-5): gambar soal dari generator k12-spatial-engine (SVG), pilihan berupa gambar */
+.soal img.gbr, .langkah img.gbr{display:block; margin:0 auto 3.4mm; max-width:100%; max-height:64mm; width:auto}
+.opsi5.gbr5 div{flex-direction:column; gap:1.2mm; padding:1.8mm 1.8mm 2mm}
+.opsi5.gbr5 img{width:100%; max-width:27mm; height:auto}
+.opsi5.gbr5.lebar{grid-template-columns:repeat(3,1fr); gap:3mm}  /* butir kecil gambar berbeda: pilihan diperbesar (cek buta 1) */
+.opsi5.gbr5.lebar img{max-width:44mm}
+.bab.fig h3 + p:has(+ [data-soal]){break-after:auto}  /* kartu soal bergambar tinggi: pengantar tidak boleh menarik kartu sampai terbelah */
+.tb.pola.petak td:first-child{border-left:0}
+.tb.pola td.x{color:var(--royal); font-weight:800}
+.tb.pola td.ac{background:var(--ice); color:var(--navy); font-weight:800}
+
+/* lampiran (siswa A–D, pengajar L1–L6): tabel rujukan padat, angka rata kanan, judul menempel ke tabelnya */
+.lamp p{break-inside:avoid}
+.lamp h3{break-after:avoid}
+.lamp p:has(+ table.tb), .lamp p:has(+ .trujuk){break-after:avoid}
+.lamp table.tb.pecah{break-inside:auto}
+.lamp table.tb.pecah tr{break-inside:avoid}
+.trujuk{break-inside:avoid; margin:0 0 4.4mm}
+.trujuk h4.sub{display:flex; align-items:baseline; gap:2.4mm; margin:0 0 1.8mm}
+.trujuk .bab-r{margin-left:auto; font-size:7pt; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--gold-ink)}
+.trujuk table.tb{margin:0 0 1.8mm}
+.tb.rujuk{font-size:8.5pt; line-height:1.38}
+.tb.rujuk td{padding:1.15mm 2.6mm}
+.tb.rujuk td.k{color:var(--navy); font-weight:700}
+.tb.rujuk .fr{font-size:.92em}
+.tb.rujuk.kata{font-size:8.3pt; line-height:1.45}
+.tb.rujuk.kata td{padding:1.5mm 2.6mm}
+p.kenapa{font-size:8.5pt; line-height:1.5; color:var(--muted); margin:0; text-align:left}
+p.kenapa b{color:var(--royal); font-weight:700}
+.duaT{display:grid; grid-template-columns:1fr 1fr; gap:3.4mm; align-items:start}
+.duaT table.tb{margin:0 0 1.8mm}
+.tb tr.awal td{border-top:1px solid var(--line)}
+.tb tr.grp td{background:var(--ice); font-size:6.8pt; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:var(--navy); padding:1.5mm 2.4mm 1.2mm}
+.tb.l6{font-size:7.4pt; line-height:1.3}
+.tb.l6 td{padding:.9mm 2mm; height:5.4mm}
+.tb.l6 td.id{font-weight:700; color:var(--navy); white-space:nowrap}
+.tb.l6 td.nw, .tb.l5 td:nth-child(3){white-space:nowrap}
+.lamp p.kiri{text-align:left}
+.tb.l5 code, .tb.l6 code{font-size:.92em; color:var(--navy)}
+.tb.jawab td:first-child{font-weight:800; color:var(--navy)}
+.tb.jawab td b{display:block; margin-bottom:.4mm}
+.tb.jawab td .guru{color:var(--royal); font-weight:700}
+.slot.lampiran .meta{margin-bottom:1.2mm}
+
+/* ════════ sampul (prototipe/sampul_tiu_kubus.html, figure kiri "C baru"; isi DIKUNCI, hanya selektor diberi awalan .cover) ════════ */
+@page cover{ margin:0; @top-left{content:none} @top-right{content:none} @bottom-left{content:none} @bottom-right{content:none} }
+.cover{page:cover; --navy:#0c2350;--gold:#f2b705;--gold-ink:#7a5a00;width:210mm;height:297mm;position:relative;overflow:hidden;font-size:10.4pt;line-height:1.68;color:var(--navy)}
+.cover.datar{width:100%;height:auto;aspect-ratio:210/296.9}.cover.datar img{display:block;width:100%;height:100%;object-fit:cover}/* lebar mengikuti halaman: Chrome mengecilkan cetakan bila ada isi melewati batas kanan */
+.cover h1,.cover p{margin:0; text-align:left}
+.cover .art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cover .veil{position:absolute;inset:0}
+.cover .masthead{position:absolute;top:14mm;left:16mm;right:16mm;display:flex;align-items:center;gap:3.2mm}
+.cover .badge{width:14mm;height:14mm;display:grid;place-items:center;border-radius:3mm;background:var(--navy);flex:none}
+.cover .badge img{width:11mm;height:10mm;object-fit:contain}
+.cover .series{font-size:8pt;font-weight:800;letter-spacing:.075em;white-space:nowrap}
+.cover .score{font:700 25pt/1 "Cinzel",serif;letter-spacing:-.035em;margin-left:auto}
+.cover .score::after{content:"";display:block;width:12mm;height:1mm;background:var(--gold-ink);margin:2mm 0 0 auto}
+.cover .copy{position:absolute;top:40mm;left:16mm;right:16mm}
+.cover .copy h1{font-size:46pt;font-weight:800;letter-spacing:-.035em;line-height:1.02;color:var(--navy)}
+.cover .copy h1 span{display:block;color:var(--gold-ink)}
+.cover .copy p{margin-top:5mm;font-size:11pt;line-height:1.55;font-weight:500;max-width:122mm}
+.cover .tags{display:flex;gap:2mm;margin-top:5mm}
+.cover .tags i{font-style:normal;font-size:8pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:1.6mm 3.6mm;border-radius:99px;line-height:1;box-shadow:inset 0 0 0 1px currentColor}
+.cover .tags i:first-child{background:var(--navy);color:#fff;box-shadow:none}
+.cover .foot{position:absolute;left:16mm;right:16mm;bottom:12mm}
+.cover .aspek{display:flex;justify-content:space-between;font-size:6.9pt;font-weight:700;letter-spacing:.07em;white-space:nowrap;text-transform:uppercase}
+.cover .aspek b{color:var(--gold-ink)}
+.cover .ed{margin-top:3.4mm;font-size:8pt;font-weight:600}
+.cover.f{background:linear-gradient(180deg,#e9f0fb,#d9e5f5)}
+.cover.f .art{inset:auto;left:13.33mm;top:27mm;width:183.33mm;height:275mm;mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent),linear-gradient(180deg,transparent,#000 10%,#000 95%,transparent);mask-composite:intersect}
+.cover.f .veil{background:linear-gradient(180deg,rgba(9,26,62,0) 90%,rgba(9,26,62,.55) 93%,rgba(9,26,62,.88) 95.5%,rgba(9,26,62,.95) 100%)}
+.cover.f .foot{bottom:7mm}
+.cover.f .copy p{color:#2a3857}
+.cover.f .aspek{color:#e6ecf8}.cover.f .aspek b{color:var(--gold)}
+.cover.f .ed{color:#b9c6e2}
+.cover .lbl{position:absolute;transform:translateX(-50%);font-size:6.4pt;font-weight:800;letter-spacing:.09em;text-transform:uppercase;white-space:nowrap;line-height:1;color:#1d2f5c;margin:0}
+.cover .sisi{position:absolute;transform:translate(-50%,-50%) rotate(var(--r));font-size:5.9pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;line-height:1;color:#f2c94c;background:#0c2350;padding:1.05mm 2.6mm;border-radius:99px;box-shadow:inset 0 0 0 .25mm rgba(242,201,76,.75),0 .6mm 1.6mm rgba(9,26,62,.22)}
+</style>
+</head>
+<body>
+<span aria-hidden="true" style="position:absolute;opacity:0;font-family:Cinzel;font-weight:700">D'Ajiks Akademi</span>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="jam" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.4" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 4.6V8l2.4 1.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol></svg>

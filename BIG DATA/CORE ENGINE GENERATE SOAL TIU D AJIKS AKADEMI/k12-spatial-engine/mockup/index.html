@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockup Soal Gambar TIU</title>
+<style>
+  :root { --ink: #16202b; --muted: #5b6673; --line: #d9dee4; --bg: #f6f7f9; --card: #fff; --hijau: #1a7f37; --merah: #b42318; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: var(--bg); }
+  header { padding: 18px 24px; border-bottom: 1px solid var(--line); background: var(--card); }
+  header h1 { margin: 0; font-size: 18px; }
+  header p { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+  main { display: grid; grid-template-columns: minmax(300px, 380px) 1fr; gap: 20px; padding: 20px 24px; }
+  @media (max-width: 860px) { main { grid-template-columns: 1fr; padding: 16px; } }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
+  label { display: block; font-size: 12px; font-weight: 600; color: var(--muted); margin: 10px 0 4px; }
+  select, textarea, button { font: inherit; width: 100%; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; background: #fff; color: var(--ink); }
+  textarea { min-height: 230px; font: 12.5px/1.45 ui-monospace, Menlo, monospace; resize: vertical; }
+  button { margin-top: 10px; background: var(--ink); color: #fff; border: 0; cursor: pointer; font-weight: 600; }
+  button:active { transform: scale(0.98); }
+  .baris { display: flex; align-items: center; gap: 8px; margin-top: 10px; font-size: 13px; }
+  .baris input { width: auto; }
+  #galat { color: var(--merah); font-size: 13px; margin-top: 10px; }
+  .ins { margin: 0 0 12px; }
+  .stem svg { max-width: 100%; height: auto; }
+  .opsi { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+  .opsi figure { margin: 0; text-align: center; font-weight: 700; }
+  .opsi svg { width: 104px; height: 104px; border-radius: 4px; }
+  .opsi .k svg { outline: 4px solid var(--hijau); }
+  details pre { white-space: pre-wrap; font: 13.5px/1.55 system-ui, sans-serif; background: var(--bg); padding: 12px; border-radius: 8px; }
+  .gal { display: flex; flex-wrap: wrap; gap: 8px; }
+  .gal figure { margin: 0; text-align: center; font-size: 12px; }
+  .gal svg { width: 180px; height: 60px; }
+  h3 { font-size: 13px; text-transform: capitalize; margin: 14px 0 6px; }
+  code { background: var(--bg); padding: 1px 5px; border-radius: 4px; }
+  ul { padding-left: 18px; font-size: 13px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Mockup Soal Gambar TIU · D'Ajiks Akademi</h1>
+  <p>Ubah spesifikasi lalu tekan Buat soal (atau Ctrl/⌘ + Enter). Soal yang melanggar aturan dasar ditolak beserta alasannya.</p>
+</header>
+<main>
+  <section>
+    <label for="jenis">Jenis soal</label><select id="jenis"></select>
+    <label for="contoh">Mulai dari</label><select id="contoh"></select>
+    <label for="spec">Spesifikasi (JSON)</label><textarea id="spec" spellcheck="false"></textarea>
+    <button id="buat">Buat soal</button>
+    <div class="baris"><input type="checkbox" id="kunci" checked><label for="kunci" style="margin:0">Tampilkan kunci dan pembahasan</label></div>
+    <div id="galat"></div>
+    <div id="galeri"></div>
+  </section>
+  <section id="hasil"></section>
+</main>
+<script src="mockup.js"></script>
+</body>
+</html>

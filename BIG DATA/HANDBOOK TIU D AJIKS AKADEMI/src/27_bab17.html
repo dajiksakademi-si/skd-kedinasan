@@ -1,0 +1,146 @@
+<!-- ═════════ BAB 17 · GAMBAR BERBEDA ═════════
+     Rencana: reports/tahap2_E_figural.md Bab 17 + sebaran T2-1b (3 latihan) + T2-2 + T2-6 + T4-22 (judul = label sampul).
+     Tabel hubungan dua jumlah dihitung di scripts/cek_bab14_18.mjs. Perintah soal = perintah generator (tiu-fig-siluet.ts,
+     tiu-fig-baru.ts); bunyi perintah di CAT 2026 belum diverifikasi (celah T1-E). -->
+<section class="bab fig" data-bab="17">
+  <header class="band">
+    <div class="no">17</div>
+    <div>
+      <h2>Gambar Berbeda</h2>
+      <p>Bab ini membahas empat gambar yang sekeluarga dan sifat yang tetap di antara mereka: urutan keliling setiap objek, hubungan dua jumlah, dan pasangan aturan, serta ciri mencolok yang sengaja dipasang untuk menyesatkan.</p>
+      <p class="waktu"><svg class="ico"><use href="#jam"/></svg>{{TARGET}}</p>
+    </div>
+    <div class="kisi" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="emas"></i></div>
+  </header>
+
+  <p class="lead">Soal gambar berbeda tidak memiliki gambar soal. Lima pilihan itulah soalnya: empat gambar mengikuti satu aturan, dan satu gambar tidak. Kesulitannya, gambar yang tampak paling lain sekilas tidak dapat dijadikan pegangan.</p>
+
+  <h3>Empat Gambar Sekeluarga</h3>
+  <p>Keempat gambar yang sekeluarga terhubung oleh perubahan yang diizinkan soal, misalnya memutar setiap objek di tempatnya. Gambar yang berbeda tidak dapat dicapai dengan perubahan itu. Untuk membuktikannya, cari <b>sifat yang tidak berubah</b> oleh perubahan yang diizinkan, lalu tunjukkan bahwa sifat itu dimiliki tepat empat gambar.</p>
+  <p>Kata <b>tepat</b> di sini menentukan. Sifat yang dimiliki tiga gambar, atau dimiliki kelima gambar, tidak memilih apa pun. Sifat yang sah juga tidak boleh ditandingi sifat lain yang menunjuk gambar berbeda. Bila dua sifat menunjuk dua gambar yang berlainan, salah satu sifat itu keliru dibaca.</p>
+  <div class="note catatan">
+    <h4>Catatan</h4>
+    <p>Soal gambar berbeda di buku ini memakai perintah "Perhatikan kelima gambar berikut. Gambar manakah yang berbeda dari yang lain?". Bunyi perintah di CAT SKD 2026 belum diverifikasi. Perintah lain yang maknanya sama, misalnya menanyakan gambar yang tidak sekelompok, dikerjakan dengan cara yang sama.</p>
+  </div>
+
+  <h3>Tiga Sifat yang Tetap</h3>
+  <table class="tb">
+    <thead><tr><th style="width:31%">Perubahan yang diizinkan</th><th style="width:36%">Sifat yang tetap</th><th>Gambar berbeda bila</th></tr></thead>
+    <tbody>
+      <tr><td>setiap objek diputar di tempatnya</td><td>urutan keliling setiap objek</td><td>ada objek yang dicermin</td></tr>
+      <tr><td>banyak bagian berubah dari gambar ke gambar</td><td>hubungan dua jumlah, misalnya selisihnya</td><td>hubungan itu tidak berlaku</td></tr>
+      <tr><td>susunan dan bentuk berubah</td><td>pasangan aturan berbentuk <span class="lg">jika … maka …</span></td><td>aturan itu dilanggar</td></tr>
+    </tbody>
+  </table>
+  <p>Sifat pertama memakai aturan urutan keliling dari Bab 14. Pada soal putar, setiap objek diputar sendiri di tempatnya, sehingga memutar seluruh gambar untuk mencocokkan dua pilihan tidak akan berhasil. Periksa objek demi objek, menurut letaknya: objek di letak yang sama pada gambar lain harus dapat diperoleh dengan memutar. Objek yang dicermin sering kali objek kecil, bukan objek terbesar.</p>
+  <p>Sifat kedua memerlukan dua hitungan. Misalkan setiap gambar memuat daun dan bintik. Banyak daun dan banyak bintik berubah dari gambar ke gambar, sehingga tidak satu pun jumlah yang tetap. Yang tetap adalah hubungan keduanya.</p>
+  <table class="tb">
+    <thead><tr><th style="width:22%">Gambar</th><th class="n">Daun</th><th class="n">Bintik</th><th class="n">Bintik − daun</th></tr></thead>
+    <tbody>
+      <tr><td><b>A</b></td><td class="n">3</td><td class="n">5</td><td class="n">2</td></tr>
+      <tr><td><b>B</b></td><td class="n">1</td><td class="n">3</td><td class="n">2</td></tr>
+      <tr><td><b>C</b></td><td class="n">4</td><td class="n">6</td><td class="n">2</td></tr>
+      <tr class="jml"><td><b>D</b></td><td class="n">2</td><td class="n">5</td><td class="n">3</td></tr>
+      <tr><td><b>E</b></td><td class="n">5</td><td class="n">7</td><td class="n">2</td></tr>
+    </tbody>
+  </table>
+  <p>Gambar D berbeda: selisihnya 3, sedangkan empat gambar lain berselisih 2. Bila kamu hanya menghitung bintik, banyaknya 5, 3, 6, 5, dan 7, dan tidak satu pun yang menonjol. Bila hanya menghitung daun, kelimanya berbeda. Hubungan dua jumlah baru tampak setelah keduanya dihitung.</p>
+  <p>Sifat ketiga adalah pasangan aturan yang berlaku dua arah, misalnya <span class="lg">jika bentuk hitam berada di depan, maka dua hiasan pojoknya sama besar</span>, dan sebaliknya. Pada setiap gambar, catat dua hal: bentuk hitam di depan atau di belakang, dan hiasan sama besar atau tidak. Satu ciri saja tidak cukup, karena setiap ciri muncul di beberapa gambar. Gambar berbeda adalah gambar yang memiliki salah satu ciri tanpa pasangannya.</p>
+
+  <h3>Ciri Mencolok yang Menyesatkan</h3>
+  <p>Soal gambar berbeda yang tersusun baik memasang petunjuk palsu. Tiga yang paling sering adalah berikut.</p>
+  <ul class="daftar">
+    <li><b>Bentuk utama berbeda di setiap gambar.</b> Kelima bentuk tidak sama, sehingga tidak ada yang dapat dipilih dari bentuknya.</li>
+    <li><b>Satu gambar tampak paling lain.</b> Susunannya paling tidak rapi atau warnanya paling gelap, padahal gambar itu mengikuti aturan.</li>
+    <li><b>Satu ciri mencolok dimiliki dua gambar.</b> Ciri itu tampak seperti pembeda, padahal pembeda yang sah hanya menunjuk satu gambar.</li>
+  </ul>
+  <p>Coret petunjuk seperti itu lebih dulu, lalu cari sifat yang tetap. Gambar yang menjadi jawaban biasanya tampak biasa saja sampai sifatnya diperiksa.</p>
+
+  <h3>Langkah Penyelesaian Soal Gambar Berbeda</h3>
+  <div class="rules satu">
+    <div><b>Abaikan bentuk utama, kerapian, dan susunan;</b> ketiganya sering sengaja dibuat berbeda.</div>
+    <div><b>Uji urutan keliling setiap objek,</b> letak demi letak, di kelima gambar.</div>
+    <div><b>Bila semua objek hanya diputar,</b> hitung dua jenis bagian dan cari hubungannya.</div>
+    <div><b>Bila tidak ada hubungan hitungan,</b> cari pasangan aturan jika–maka dari dua ciri yang muncul di semua gambar.</div>
+    <div><b>Pastikan sifat itu berlaku tepat di empat gambar.</b></div>
+    <div><b>Pastikan tidak ada sifat lain</b> yang menunjuk gambar berbeda yang lain.</div>
+  </div>
+
+  <h3>Kekeliruan pada Soal Gambar Berbeda</h3>
+  <table class="tb pecah">
+    <thead><tr><th style="width:5%">No.</th><th style="width:31%">Kekeliruan</th><th>Contoh</th><th style="width:27%">Pertanyaan uji</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><b>Memilih gambar yang tampak paling lain</b></td><td>gambar paling gelap atau paling tidak rapi dipilih tanpa diuji</td><td>Sifat apa yang tidak dimilikinya?</td></tr>
+      <tr><td>2</td><td><b>Mengikuti bentuk utama atau hiasan</b></td><td>bentuk utama berbeda di setiap gambar dijadikan pembeda</td><td>Ciri ini dimiliki berapa gambar?</td></tr>
+      <tr><td>3</td><td><b>Menyamakan putaran dengan pencerminan</b></td><td>objek yang hanya diputar dikira dicermin</td><td>Urutan kelilingnya tetap atau terbalik?</td></tr>
+      <tr><td>4</td><td><b>Mengubah seluruh gambar, padahal yang berubah tiap objek</b></td><td>seluruh gambar diputar untuk mencocokkan dua pilihan</td><td>Objek di letak yang sama sudah dibandingkan?</td></tr>
+      <tr><td>5</td><td><b>Hanya menghitung satu jenis bagian</b></td><td>bintik dihitung, daun dilewatkan</td><td>Hubungan dua jumlah sudah diperiksa?</td></tr>
+      <tr><td>6</td><td><b>Salah hitung lebih atau kurang satu</b></td><td>bintik yang bertumpuk terhitung satu</td><td>Sudah dihitung dua kali?</td></tr>
+      <tr><td>7</td><td><b>Menyimpulkan dari sebagian gambar</b></td><td>sifat diuji di tiga gambar, lalu langsung dipakai</td><td>Sifat ini berlaku tepat di empat gambar?</td></tr>
+    </tbody>
+  </table>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Padanan Nama Kekeliruan dan Kode</h4>
+    <p>1 J-PENGALIH (K1; varian "yang paling aneh sekilas") · 2 J-PENGALIH (K1) · 3 JF-PUTCER (K3) · 4 JF-UTUH (K5) · 5 JF-SATU (K2; dua hal dihitung, hanya satu) · 6 JF-HITUNG (K6) · 7 J-TIGA (K2). Generator menegakkan "tidak ada ciri lain yang menunjuk tepat satu opsi selain kunci" (engine Pilar 4 FIG) dan <code>cekSekilas</code>.</p>
+  </div>
+
+  <h3>Contoh Soal dan Pembahasan</h3>
+  <p>Dua contoh berikut memperagakan dua sifat yang tetap: urutan keliling setiap objek dan hubungan dua jumlah. Kerjakan setiap contoh sendiri dalam target waktunya sebelum membaca pembahasan. Pembahasan setiap contoh menunjukkan sifat yang berlaku di empat gambar dan bagian Pilihan yang Gugur yang menjelaskan mengapa empat gambar lain sekeluarga.</p>
+<!--B17-C01:mulai-->
+<div data-soal="HB-TIU-B17-C01" data-target="45">
+  <div class="soal">
+    <div class="meta"><span>Contoh 1</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 45 detik</span></div>
+    <p class="stem">Perhatikan kelima gambar berikut. Gambar manakah yang berbeda dari yang lain?</p>
+    <div class="opsi5 gbr5"><div><span class="h">A</span><img src="aset/figural/img/B17-C01-A.svg" alt="Pilihan A"></div><div><span class="h">B</span><img src="aset/figural/img/B17-C01-B.svg" alt="Pilihan B"></div><div><span class="h">C</span><img src="aset/figural/img/B17-C01-C.svg" alt="Pilihan C"></div><div><span class="h">D</span><img src="aset/figural/img/B17-C01-D.svg" alt="Pilihan D"></div><div><span class="h">E</span><img src="aset/figural/img/B17-C01-E.svg" alt="Pilihan E"></div></div>
+  </div>
+  <div class="guru"><b>FIG-BEDA-PUTAR siluet 2 objek (T2-E C17-1), tingkat 2, kunci C.</b> Contoh pertama satu aturan (T2-2); objek kecil dicermin. Kode: JF-PUTCER, J-PENGALIH, JF-UTUH. Keluarga LAUT. Pembuat: G4 (2 objek, <code>PETAK[2]</code>).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta gambar yang “berbeda dari yang lain”. Kelima gambar berisi tanduk dan bulu, dan setiap objek diputar sendiri-sendiri.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><img class="gbr" src="aset/figural/img/B17-C01-pembahasan.svg" alt="Gambar pembahasan"><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Gambar utuhnya tidak akan cocok satu sama lain, jadi jangan mencocokkan gambar secara utuh. Periksa per objek. Bulu paling mudah, karena daunnya hanya ada di satu sisi batang. Dalam pikiran, putar setiap bulu sampai ujungnya di atas, lalu lihat di sisi mana daunnya. Di empat gambar daunnya di sisi yang sama; di C daunnya di sisi lain.</dd></div>
+    <div><dt>Cara lain</dt><dd>Pakai urutan keliling. Pilih satu ujung yang khas pada bulu, lalu baca bagian-bagiannya searah jarum jam. Bulu yang hanya diputar punya urutan yang sama; bulu yang dicermin urutannya terbalik.</dd></div>
+    <div><dt>Cek balik</dt><dd>Periksa tanduk dengan cara yang sama: kelima tanduk hanya diputar. Jadi pembedanya tepat satu objek di satu gambar, yaitu bulu di C.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">tanduk dan bulu diputar</span><b>Kedua objek hanya diputar.</b> Tanduk dan bulu di A hanya diputar. Setelah ujung bulu diputar ke atas, daunnya di sisi yang sama dengan bulu di B, D, dan E.</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">tanduk dan bulu diputar</span><b>Kedua objek hanya diputar.</b> Tanduk dan bulu di B hanya diputar. Urutan keliling bulunya sama dengan bulu di A, jadi B masih sekelompok.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">tanduk dan bulu diputar</span><b>Kedua objek hanya diputar.</b> Bulu di D condong ke arah lain, tetapi condongnya karena diputar. Urutan kelilingnya sama dengan bulu di A, jadi D masih sekelompok.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">tanduk dan bulu diputar</span><b>Kedua objek hanya diputar.</b> Bulu di E rebah mendatar, tetapi rebah karena diputar, bukan dicermin. Urutan kelilingnya tetap, jadi E masih sekelompok.</div></div></div>
+  <div class="jwb"><span>C</span><p><b>Jawaban: C.</b> Bulu di pilihan C adalah bayangan cermin, jadi diputar ke arah mana pun ia tidak bisa sama dengan bulu di empat gambar lain.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti memeriksa lima sarung tangan kanan yang diletakkan miring ke berbagai arah. Arahnya boleh berbeda-beda; yang dicari satu sarung tangan kiri.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Karena semua gambar tampak berbeda, mata mudah memilih gambar yang paling aneh susunannya. Yang menentukan hanya satu objek, dan objek itu bukan yang terbesar.</span></div></div>
+</div>
+<!--B17-C01:selesai-->
+<!--B17-C02:mulai-->
+<div data-soal="HB-TIU-B17-C02" data-target="55">
+  <div class="soal">
+    <div class="meta"><span>Contoh 2</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 55 detik</span></div>
+    <p class="stem">Perhatikan kelima gambar berikut. Gambar manakah yang berbeda dari yang lain?</p>
+    <div class="opsi5 gbr5 lebar"><div><span class="h">A</span><img src="aset/figural/img/B17-C02-A.svg" alt="Pilihan A"></div><div><span class="h">B</span><img src="aset/figural/img/B17-C02-B.svg" alt="Pilihan B"></div><div><span class="h">C</span><img src="aset/figural/img/B17-C02-C.svg" alt="Pilihan C"></div><div><span class="h">D</span><img src="aset/figural/img/B17-C02-D.svg" alt="Pilihan D"></div><div><span class="h">E</span><img src="aset/figural/img/B17-C02-E.svg" alt="Pilihan E"></div></div>
+  </div>
+  <div class="guru"><b>FIG-BEDA-HITUNG (T2-E C17-2), tingkat 3, kunci A.</b> Hubungan dua jumlah tetap di empat gambar, ≥ 3 jenis butir; gambar berbeda bukan yang paling gelap atau terang. Kode: JF-SATU, JF-HITUNG, J-PENGALIH. Keluarga WARISAN (butir 24 satuan: cek mata). Bukan daun-bintik narasi.</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta gambar yang “berbeda dari yang lain”. Setiap gambar berisi sembilan butir dari tiga jenis: cakar bertiga jari, pakis yang bergulung, dan tanduk yang melengkung.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><img class="gbr" src="aset/figural/img/B17-C02-pembahasan.svg" alt="Gambar pembahasan"><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Letak dan arah butir diacak di setiap gambar, jadi jangan mencari pola letak atau putaran. Hitung setiap jenis. Banyak satu jenis saja berubah-ubah di semua gambar, jadi aturannya bukan jumlah tetap. Bandingkan dua jenis: di empat gambar, pakis selalu sama banyak dengan tanduk. Di A ada 2 pakis dan 3 tanduk.</dd></div>
+    <div><dt>Cara lain</dt><dd>Hitung cakar saja. Setiap gambar berisi 9 butir. Kalau pakis sama banyak dengan tanduk, keduanya berjumlah genap, jadi cakarnya ganjil. Cakar di B, C, D, dan E berjumlah 5, 1, 1, dan 5, semuanya ganjil. Di A cakarnya 4.</dd></div>
+    <div><dt>Cek balik</dt><dd>Jumlahkan butir di A: 2 pakis, 3 tanduk, dan 4 cakar menjadi 9. Hitunganmu lengkap, dan A memang tidak mengikuti aturan.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">B</span><div class="x"><span class="uji">2 pakis, 2 tanduk</span><b>Pakis dan tanduk sama banyak.</b> Pakis dan tanduk sama-sama 2, jadi B mengikuti aturan.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">4 pakis, 4 tanduk</span><b>Pakis dan tanduk sama banyak.</b> Pakis dan tanduk sama-sama 4. Cakarnya tinggal 1, tetapi aturannya tetap terpenuhi.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">4 pakis, 4 tanduk</span><b>Pakis dan tanduk sama banyak.</b> Sama seperti C: 4 pakis, 4 tanduk, dan 1 cakar.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">2 pakis, 2 tanduk</span><b>Pakis dan tanduk sama banyak.</b> Pakis dan tanduk sama-sama 2, jadi E mengikuti aturan.</div></div></div>
+  <div class="jwb"><span>A</span><p><b>Jawaban: A.</b> Hanya di pilihan A pakis dan tanduk tidak sama banyak: 2 pakis dan 3 tanduk.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti memeriksa sepatu di rak. Banyak sepatu di tiap rak boleh berbeda; yang dicek apakah sepatu kiri dan kanan selalu berpasangan.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Kalau kamu hanya menghitung satu jenis, angkanya berubah-ubah dan soal ini terasa tanpa pola. Polanya ada pada hubungan dua jenis.</span></div></div>
+</div>
+<!--B17-C02:selesai-->
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Asal Rancangan Bab 17</h4>
+    <p>Putusan T2-1b: Bab 17 = 1 pembuka + 3 contoh + 3 latihan (dari 6 latihan T2-E). Dipilih satu latihan per jenis generator: L17-1 (putar, tingkat 2), L17-3 (hitung), L17-5 (tumpuk). Penutup dua soal tingkat 3 (T2-2). Gugur: L17-2 (putar 3 objek; sudah di pembuka) · L17-4 (hitung jenis lain; sejenis L02) · L17-6 (tumpuk lain; sejenis L03). Tes Awal Bab 2 Latihan 4 (gambar berbeda hitung atau tumpuk) harus beda kerangka dari C02, C03, L02, L03: dicek saat T5.</p>
+    <p>Sebaran huruf rencana: P D · C1 C · C2 A · C3 E · L1 B · L2 D · L3 A. Sifat "hubungan arah dua elemen" (bimbel lain) tidak dimuat: tidak ada di generator dan kemunculannya belum diverifikasi.</p>
+  </div>
+
+  <div class="ringkas">
+    <h4>Ringkasan Bab 17</h4>
+    <ol>
+      <li>Lima pilihan adalah soalnya: empat gambar sekeluarga, satu tidak.</li>
+      <li>Cari <b>sifat yang tetap</b> oleh perubahan yang diizinkan, lalu pastikan sifat itu dimiliki <b>tepat empat</b> gambar.</li>
+      <li>Tiga sifat yang dipakai: urutan keliling setiap objek, hubungan dua jumlah, dan pasangan aturan jika–maka.</li>
+      <li>Pada soal putar, bandingkan objek demi objek menurut letaknya; jangan memutar seluruh gambar.</li>
+      <li>Hitung dua jenis bagian; satu jumlah saja jarang menunjuk jawaban.</li>
+      <li>Bentuk utama yang berbeda semua, gambar yang paling lain sekilas, dan ciri mencolok milik dua gambar adalah petunjuk palsu.</li>
+    </ol>
+  </div>
+</section>

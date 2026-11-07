@@ -1,0 +1,300 @@
+<!-- ═════════ BAB 14 · PERUBAHAN GAMBAR ═════════
+     Rencana: reports/tahap2_E_figural.md Bab 14 + sebaran T2-1b (3 latihan) + T2-2 (satu aturan) + T2-6 (keluarga benda)
+     + T2-7(10) (latihan dasar di luar format ujian, catatan 45° dan jam di cermin) + Putusan 8(2)(4) + 9b (istilah) + T4-22 (judul).
+     Delapan gerak, gabungan, pembatal, periode, dan jam di cermin dibuktikan di scripts/cek_bab14_18.mjs (matriks 2 × 2);
+     bagan urutan keliling dibangkitkan script yang sama (node … --svg). Gambar penjelas lain = tempat kosong sampai T5. -->
+<section class="bab fig" data-bab="14">
+  <header class="band">
+    <div class="no">14</div>
+    <div>
+      <h2>Perubahan Gambar</h2>
+      <p>Bab ini membahas delapan gerak sebuah gambar, cara membedakan putaran dari pencerminan, gabungan dan pembatal perubahan, bentuk simetris, balik warna dan pindah tempat, serta kalimat perubahan yang dipakai di seluruh bab gambar.</p>
+      <p class="waktu"><svg class="ico"><use href="#jam"/></svg>{{TARGET}}</p>
+    </div>
+    <div class="kisi" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="emas"></i></div>
+  </header>
+
+  <p class="lead">Soal gambar di TIU tampak beragam, tetapi sebagian besar disusun dari sedikit perubahan yang sama: gambar diputar, dicermin, dibalik warnanya, atau dipindah tempatnya. Bab ini menamai perubahan itu dengan tepat dan menunjukkan cara mengenalinya dalam beberapa detik.</p>
+
+  <h3>Konsep Transformasi Gambar dan Pencacahan Objek</h3>
+  <p>Lima bab gambar dalam buku ini, Bab 14 sampai Bab 18, berpegang pada dua pertanyaan. Pertama, <b>perubahan apa yang dialami setiap objek?</b> Jawabannya hampir selalu salah satu dari empat jenis: diputar, dicermin, dibalik warnanya, atau dipindah tempatnya. Kedua, <b>apa yang dapat dihitung?</b> Sebagian soal tidak memutar apa pun. Yang berubah adalah banyak bagian, dan rupa bagian itu sengaja dibuat berbeda-beda supaya perhatianmu teralih dari jumlahnya.</p>
+  <table class="tb">
+    <thead><tr><th style="width:24%">Bab</th><th style="width:38%">Yang diperiksa</th><th>Akibatnya</th></tr></thead>
+    <tbody>
+      <tr><td><b>14</b> Perubahan Gambar</td><td>delapan gerak, balik warna, dan pindah tempat pada setiap objek</td><td>setiap perubahan dapat dinamai, digabung, dan dibatalkan</td></tr>
+      <tr><td><b>15</b> Seri Gambar</td><td>perubahan yang diulang dari gambar ke gambar</td><td>keadaan gambar ke-<i>n</i> ditentukan oleh sisa pembagian dengan periode</td></tr>
+      <tr><td><b>16</b> Analogi Gambar</td><td>aturan perubahan setiap objek pada pasangan yang lengkap</td><td>aturan yang sama dipasang pada pasangan yang memuat tanda tanya</td></tr>
+      <tr><td><b>17</b> Gambar Berbeda</td><td>sifat yang tetap di empat gambar</td><td>gambar yang tidak memiliki sifat itu adalah jawabannya</td></tr>
+      <tr><td><b>18</b> Matriks</td><td>aturan yang sama di setiap baris atau kolom</td><td>sel terakhir dibuktikan dari dua jalan</td></tr>
+    </tbody>
+  </table>
+  <p>Satu kebiasaan berlaku di kelima bab: <b>periksa setiap objek pada setiap pilihan</b>. Pilihan salah pada soal buku ini disusun keliru di satu atau dua hal saja, sehingga pilihan yang cocok pada objek pertama belum tentu benar. Menggugurkan satu pilihan untuk setiap objek yang diperiksa adalah cara yang tidak dapat diandalkan di sini. Yang dapat diandalkan adalah pemeriksaan tuntas.</p>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Konsep Inti Figural</h4>
+    <p>Putusan 1 (2026-10-30): konsep inti figural = transformasi gambar + pencacahan objek. Bahasa perubahan menjangkau ±5–6 dari 9 soal figural per paket (seri, analogi per objek, gambar berbeda putar, matriks putar); hitung, gabung, dan tumpuk memerlukan ide kedua (laporan T1-E A3). Pemeriksaan tuntas = aturan-tetap B-14. Strategi "tiap objek menggugurkan satu opsi" yang diajarkan bimbel lain sengaja dipatahkan generator: pengecoh keliru 1–2 hal, kunci bukan opsi yang paling mirip.</p>
+  </div>
+
+  <h3>Delapan Gerak pada Sebuah Gambar</h3>
+  <p>Bayangkan sebuah gambar dicetak pada kartu persegi. Kartu itu dapat diletakkan kembali di tempatnya dengan delapan cara: empat putaran (tidak diputar, diputar 90° searah jarum jam, diputar 180°, dan diputar 90° berlawanan arah jarum jam) dan empat pencerminan. Tidak ada cara kesembilan. Gabungan gerak apa pun, berapa pun banyak langkahnya, selalu jatuh pada salah satu dari delapan gerak ini.</p>
+  <p>Nama pencerminan di buku ini menyebut bagian yang bertukar. Pada <b>cermin kiri-kanan</b>, bagian kiri dan kanan bertukar, seperti bayangan di cermin rias. Pada <b>cermin atas-bawah</b>, bagian atas dan bawah bertukar, seperti bayangan di permukaan air yang tenang. Pada <b>cermin garis miring</b>, gambar dibalik pada garis yang menghubungkan dua pojok kartu yang berseberangan, ditulis / atau \ menurut arah garisnya.</p>
+  <table class="tb">
+    <thead><tr><th style="width:44%">Gerak</th><th style="width:28%">Penanda di atas pindah ke</th><th>Urutan keliling</th></tr></thead>
+    <tbody>
+      <tr><td>tidak diputar</td><td>atas</td><td>tetap</td></tr>
+      <tr><td>diputar 90° searah jarum jam</td><td>kanan</td><td>tetap</td></tr>
+      <tr><td>diputar 180°</td><td>bawah</td><td>tetap</td></tr>
+      <tr><td>diputar 90° berlawanan arah jarum jam</td><td>kiri</td><td>tetap</td></tr>
+      <tr><td>cermin kiri-kanan</td><td>atas</td><td>terbalik</td></tr>
+      <tr><td>cermin atas-bawah</td><td>bawah</td><td>terbalik</td></tr>
+      <tr><td>cermin garis miring /</td><td>kanan</td><td>terbalik</td></tr>
+      <tr><td>cermin garis miring \</td><td>kiri</td><td>terbalik</td></tr>
+    </tbody>
+  </table>
+  <p>Perhatikan dua baris yang kolom keduanya sama: diputar 90° searah jarum jam dan cermin garis miring / sama-sama memindahkan penanda di atas ke kanan. Satu penanda belum cukup untuk membedakan putaran dari pencerminan. Pembedanya ada di kolom ketiga, yang diuraikan pada subbagian berikut.</p>
+  <div class="note catatan">
+    <h4>Catatan</h4>
+    <p>Buku ini tidak memakai istilah <b>cermin vertikal</b> dan <b>cermin horizontal</b>. Istilah itu dipakai dengan arti yang berlawanan: ada yang menamai menurut letak cerminnya, ada yang menamai menurut arah gambar terbalik. Bila soal memakai salah satunya, tentukan dulu bagian yang bertukar, kiri dengan kanan atau atas dengan bawah, lalu kerjakan dengan nama di buku ini.</p>
+  </div>
+  <div data-soal="HB-TIU-B14-I01">
+    <div class="diag3 empat">
+      <figure class="diag"><img src="aset/ilustrasi/B14-I01-tetap.svg" alt="Bentuk sayap: Tidak diputar"><figcaption>Tidak diputar</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I01-r90.svg" alt="Bentuk sayap: Diputar 90° searah jarum jam"><figcaption>Diputar 90° searah jarum jam</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I01-r180.svg" alt="Bentuk sayap: Diputar 180°"><figcaption>Diputar 180°</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I01-r270.svg" alt="Bentuk sayap: Diputar 90° berlawanan arah jarum jam"><figcaption>Diputar 90° berlawanan arah jarum jam</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I01-mkk.svg" alt="Bentuk sayap: Cermin kiri-kanan"><figcaption>Cermin kiri-kanan</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I01-mab.svg" alt="Bentuk sayap: Cermin atas-bawah"><figcaption>Cermin atas-bawah</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I01-md1.svg" alt="Bentuk sayap: Cermin garis miring /"><figcaption>Cermin garis miring /</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I01-md2.svg" alt="Bentuk sayap: Cermin garis miring \"><figcaption>Cermin garis miring \</figcaption></figure>
+    </div>
+    <p class="ket-gbr">Satu bentuk dalam delapan gerak. Baris atas memuat empat putaran, baris bawah memuat empat pencerminan.</p>
+    <div class="guru"><b>ILUS (T2-E I14-1), tanpa opsi dan kunci.</b> Skrip ilustrasi G7 <code>src/tiu-ilustrasi.ts</code> (Putusan 10a); keluarga ILUS rajawali; nama dari <code>T_NAME</code> (sudah sesuai Putusan 9b). ILUS tidak pernah dijadikan soal (T2-6). Rajawali = satwa lambang yang pernah gagal cek mata (menggumpal, log figural 2026-10-28): cek mata wajib; cadangan bolakisi atau sayapbulu.</div>
+  </div><!--HB-TIU-B14-I01:selesai-->
+
+  <h3>Membedakan Putaran dan Pencerminan</h3>
+  <p>Tandai tiga titik pada gambar asal, lalu baca urutannya dengan berkeliling searah jarum jam: 1, 2, 3. Putaran menggeser kartu di atas meja tanpa mengangkatnya, sehingga urutan itu tetap 1, 2, 3 searah jarum jam. Pencerminan membalik kartu dan memperlihatkan sisi belakangnya, sehingga urutan 1, 2, 3 kini berjalan berlawanan arah jarum jam.</p>
+  <div class="diag3">
+    <figure class="diag">
+      <svg viewBox="0 0 100 96" role="img" aria-label="Gambar asal: titik 1, 2, 3 berurutan searah jarum jam"><defs><marker id="ujung14tetap" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L8 4L0 8z"/></marker></defs><circle class="meja" cx="50" cy="48" r="41"/><path class="pn ka" marker-end="url(#ujung14tetap)" d="M55.1 33.9A15 15 0 1 1 35.9 53.1"/><circle class="k t" cx="50" cy="17" r="8.5"/><text x="50" y="20.4">1</text><circle class="k" cx="78.1" cy="61.1" r="8.5"/><text x="78.1" y="64.5">2</text><circle class="k" cx="24.6" cy="65.8" r="8.5"/><text x="24.6" y="69.2">3</text></svg>
+      <figcaption>Gambar asal<span>1, 2, 3 searah jarum jam</span></figcaption>
+    </figure>
+    <figure class="diag">
+      <svg viewBox="0 0 100 96" role="img" aria-label="Diputar 90° searah jarum jam: titik 1, 2, 3 tetap berurutan searah jarum jam"><defs><marker id="ujung14r90" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L8 4L0 8z"/></marker></defs><circle class="meja" cx="50" cy="48" r="41"/><path class="pn ka" marker-end="url(#ujung14r90)" d="M64.1 53.1A15 15 0 1 1 44.9 33.9"/><circle class="k t" cx="81" cy="48" r="8.5"/><text x="81" y="51.4">1</text><circle class="k" cx="36.9" cy="76.1" r="8.5"/><text x="36.9" y="79.5">2</text><circle class="k" cx="32.2" cy="22.6" r="8.5"/><text x="32.2" y="26">3</text></svg>
+      <figcaption>Diputar 90° searah jarum jam<span>urutan tetap searah jarum jam</span></figcaption>
+    </figure>
+    <figure class="diag">
+      <svg viewBox="0 0 100 96" role="img" aria-label="Dicermin kiri-kanan: titik 1, 2, 3 berurutan berlawanan arah jarum jam"><defs><marker id="ujung14kk" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L8 4L0 8z"/></marker></defs><circle class="meja" cx="50" cy="48" r="41"/><path class="pn ka" marker-end="url(#ujung14kk)" d="M44.9 33.9A15 15 0 1 0 64.1 53.1"/><circle class="k t" cx="50" cy="17" r="8.5"/><text x="50" y="20.4">1</text><circle class="k" cx="21.9" cy="61.1" r="8.5"/><text x="21.9" y="64.5">2</text><circle class="k" cx="75.4" cy="65.8" r="8.5"/><text x="75.4" y="69.2">3</text></svg>
+      <figcaption>Dicermin kiri-kanan<span>urutan menjadi berlawanan arah</span></figcaption>
+    </figure>
+  </div>
+  <p>Dari sini lahir <b>aturan banyak cermin</b>. Setiap cermin membalik urutan keliling satu kali, sedangkan putaran tidak membaliknya. Gabungan yang memuat cermin dalam jumlah genap mengembalikan urutan, sehingga hasilnya pasti sebuah putaran. Gabungan yang memuat cermin dalam jumlah ganjil membalik urutan, sehingga hasilnya pasti sebuah cermin.</p>
+  <p>Setelah jenisnya diketahui, sudut atau garisnya ditentukan dengan satu penanda. Untuk putaran, lihat ke mana penanda di atas berpindah: ke kanan berarti 90° searah jarum jam, ke bawah berarti 180°, dan ke kiri berarti 90° berlawanan arah jarum jam. Untuk pencerminan, cari garis yang titik-titiknya tidak berpindah. Garis itulah garis cerminnya.</p>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Bukti di Script</h4>
+    <p>Delapan gerak = matriks 2 × 2 pada koordinat (x ke kanan, y ke atas); putar 90° searah = (x, y) → (y, −x). <code>cek_bab14_18.mjs</code> menguji: 64 gabungan dua gerak tertutup di delapan gerak; semua rangkaian tiga langkah memenuhi aturan banyak cermin (determinan −1 tepat bila banyak cermin ganjil); kolom "penanda di atas" dan "urutan keliling" tabel di atas; arah titik pada tiga panel bagan (hasil kali silang). Bagan menggantikan gambar penjelas I14-2 rencana T2-E (cukup tiga titik bernomor, tanpa bentuk generator).</p>
+  </div>
+
+  <h3>Menggabungkan dan Membatalkan Perubahan</h3>
+  <p>Dua gerak yang dikerjakan berturut-turut sama dengan satu gerak. Untuk dua putaran, sudutnya dijumlah, dan urutan pengerjaannya tidak berpengaruh. Untuk gabungan yang memuat cermin, tentukan jenis hasilnya dengan aturan banyak cermin, lalu tentukan sudut atau garisnya dengan satu penanda.</p>
+  <table class="tb">
+    <thead><tr><th style="width:50%">Gabungan, dikerjakan dari kiri</th><th style="width:16%" class="n">Banyak cermin</th><th>Sama dengan</th></tr></thead>
+    <tbody>
+      <tr><td>diputar 90° searah jarum jam tiga kali</td><td class="n">0</td><td>diputar 90° berlawanan arah jarum jam</td></tr>
+      <tr><td>cermin kiri-kanan lalu cermin atas-bawah</td><td class="n">2</td><td>diputar 180°</td></tr>
+      <tr><td>cermin kiri-kanan lalu cermin garis miring /</td><td class="n">2</td><td>diputar 90° searah jarum jam</td></tr>
+      <tr><td>cermin kiri-kanan lalu diputar 90° searah jarum jam</td><td class="n">1</td><td>cermin garis miring /</td></tr>
+      <tr><td>diputar 90° searah jarum jam lalu cermin kiri-kanan</td><td class="n">1</td><td>cermin garis miring \</td></tr>
+    </tbody>
+  </table>
+  <p>Dua baris terakhir memuat gerak yang sama dengan urutan berbeda, dan hasilnya berbeda. Pada gabungan yang memuat cermin, urutan berpengaruh. Kerjakan langkah-langkahnya sesuai urutan yang tertulis di soal.</p>
+  <p>Setiap gerak dapat dibatalkan. Putaran 90° searah jarum jam dibatalkan oleh putaran 90° berlawanan arah jarum jam. Putaran 180°, setiap cermin, balik warna, dan pindah tempat dibatalkan oleh dirinya sendiri: dikerjakan dua kali, gambar kembali seperti semula. Untuk membatalkan dua langkah, batalkan langkah terakhir lebih dulu. Gambar yang dicermin atas-bawah lalu diputar 90° searah jarum jam dikembalikan dengan memutarnya 90° berlawanan arah jarum jam, baru kemudian mencerminnya atas-bawah, sama seperti sepatu yang dilepas sebelum kaus kaki.</p>
+  <p>Pembatalan dipakai ketika tanda tanya terletak di depan: gambar asal dicari dengan membatalkan perubahan pada gambar hasil. Pembatalan juga menjadi cek balik. Kenakan pembatal pada jawabanmu, dan gambar harus kembali ke asalnya.</p>
+
+  <h3>Bentuk Simetris</h3>
+  <p>Aturan urutan keliling memerlukan bentuk yang tidak simetris. Bila sebuah bentuk simetris kiri-kanan, misalnya daun yang belahan kirinya sama dengan belahan kanannya, cermin kiri-kanan tidak mengubah tampilannya, dan cermin atas-bawah menghasilkan tampilan yang sama dengan putaran 180°. Pada bentuk seperti itu, putaran dan pencerminan tidak dapat dibedakan dari bentuknya sendiri.</p>
+  <p>Sebelum memutuskan putar atau cermin, periksa apakah objek itu simetris. Bila simetris, pakai penanda lain yang tidak simetris: titik, guratan hiasan, atau objek kecil di dekatnya. Semua bentuk di soal buku ini dipilih tidak simetris, sehingga kedelapan gerak selalu memberi tampilan berbeda. Soal dari sumber lain belum tentu demikian.</p>
+  <div data-soal="HB-TIU-B14-I05">
+    <div class="diag3 ">
+      <figure class="diag"><img src="aset/ilustrasi/B14-I01-tetap.svg" alt="Bentuk tidak simetris"><figcaption>Bentuk tidak simetris</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I01-mab.svg" alt="Cermin atas-bawah"><figcaption>Cermin atas-bawah</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I01-r180.svg" alt="Diputar 180°"><figcaption>Diputar 180°</figcaption></figure>
+    </div>
+    <div class="diag3 ">
+      <figure class="diag"><img src="aset/ilustrasi/B14-I05-daun-asal.svg" alt="Bentuk simetris"><figcaption>Bentuk simetris</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I05-daun-mab.svg" alt="Cermin atas-bawah"><figcaption>Cermin atas-bawah</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I05-daun-r180.svg" alt="Diputar 180°"><figcaption>Diputar 180°</figcaption></figure>
+    </div>
+    <p class="ket-gbr">Pada bentuk tidak simetris, dua gerak itu memberi tampilan berbeda. Pada daun yang simetris kiri-kanan, tampilannya sama.</p>
+    <div class="guru"><b>ILUS (T2-E I14-5).</b> G7; keluarga ILUS bolakisi (bukan rajawali: burung simetris mudah menyerupai lambang lembaga). Bentuk simetris dibuat di skrip ilustrasi, tidak didaftarkan ke <code>BENTUK</code> (pemeriksa kiral menolaknya).</div>
+  </div><!--HB-TIU-B14-I05:selesai-->
+
+  <h3>Balik Warna dan Pindah Tempat</h3>
+  <p>Dua perubahan lain tidak menggerakkan bentuk. <b>Balik warna</b> menukar bagian hitam dengan bagian putih: bentuk hitam penuh menjadi bentuk bergaris tepi dengan isi putih, atau sebaliknya. <b>Pindah tempat</b> memindahkan objek ke letak lain, misalnya dua objek bertukar tempat. Keduanya tidak bergantung pada urutan terhadap putaran atau pencerminan objek itu, sehingga dapat diperiksa terpisah: gerak dulu, lalu warna, lalu tempat.</p>
+  <p>Bedakan dua keadaan yang tampak mirip. Bila <b>seluruh kotak</b> dicermin kiri-kanan, setiap objek ikut dicermin dan juga berpindah ke sisi seberang: objek yang semula di kiri kini di kanan. Bila <b>setiap objek dicermin di tempatnya</b>, tidak ada objek yang berpindah. Soal gambar sering memakai keadaan kedua, dan pilihan yang mencerminkan seluruh kotak sengaja disediakan.</p>
+  <div data-soal="HB-TIU-B14-I06">
+    <div class="diag3 dua">
+      <figure class="diag"><img src="aset/ilustrasi/B14-I01-tetap.svg" alt="Sebelum"><figcaption>Sebelum</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I06-balik.svg" alt="Sesudah dibalik warnanya"><figcaption>Sesudah dibalik warnanya</figcaption></figure>
+    </div>
+    <p class="ket-gbr">Bentuknya tidak bergerak. Yang berubah hanya bagian hitam dan bagian putih.</p>
+    <div class="guru"><b>ILUS (T2-E I14-6).</b> G7 + <code>balikWarna</code>; bentuk gemuk (tebal ≥ 0,2), ILUS bolakisi.</div>
+  </div><!--HB-TIU-B14-I06:selesai-->
+  <div data-soal="HB-TIU-B14-I07">
+    <div class="diag3 empat lebar">
+      <figure class="diag"><img src="aset/ilustrasi/B14-I07-asal.svg" alt="Keadaan asal"><figcaption>Keadaan asal</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I07-tukar.svg" alt="Dua objek bertukar tempat"><figcaption>Dua objek bertukar tempat</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I07-seluruh.svg" alt="Seluruh kotak dicermin kiri-kanan"><figcaption>Seluruh kotak dicermin kiri-kanan</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I07-tiap.svg" alt="Setiap objek dicermin di tempatnya"><figcaption>Setiap objek dicermin di tempatnya</figcaption></figure>
+    </div>
+    <p class="ket-gbr">Pada gambar ketiga, objek berpindah ke sisi seberang. Pada gambar keempat, objek tetap di sisinya.</p>
+    <div class="guru"><b>ILUS (T2-E I14-7).</b> G7; logika <code>tukar</code> (ANA-OBJ) dan <code>tata(…, t)</code> (seluruh kotak). Dua objek ILUS berbeda jenis supaya tetap terlacak.</div>
+  </div><!--HB-TIU-B14-I07:selesai-->
+
+  <h3>Kalimat Perubahan</h3>
+  <p>Hasil pengamatan ditulis sebagai satu kalimat untuk setiap objek, dengan urutan lapis yang tetap: letak objek, gerak, warna, tempat, lalu jumlah. Urutan yang tetap mencegah satu lapis terlewat. Contoh berikut mencatat perubahan sebuah kotak berisi tiga objek.</p>
+  <table class="tb">
+    <thead><tr><th style="width:24%">Objek</th><th style="width:22%">Gerak</th><th style="width:12%">Warna</th><th>Tempat</th><th style="width:11%">Jumlah</th></tr></thead>
+    <tbody>
+      <tr><td>objek besar di kiri</td><td>diputar 90° searah jarum jam</td><td>tetap</td><td>tetap</td><td>tetap</td></tr>
+      <tr><td>objek kecil di kanan atas</td><td>cermin kiri-kanan</td><td>dibalik</td><td>bertukar dengan objek kanan bawah</td><td>tetap</td></tr>
+      <tr><td>objek kecil di kanan bawah</td><td>tidak diputar</td><td>tetap</td><td>bertukar dengan objek kanan atas</td><td>tetap</td></tr>
+    </tbody>
+  </table>
+  <p>Kalimat ini dipakai di semua bab gambar. Pada seri gambar, kalimat itu diulang dari gambar ke gambar. Pada analogi gambar, kalimat dari pasangan yang lengkap dipasang pada pasangan yang memuat tanda tanya. Pada matriks, kalimat yang sama harus berlaku di setiap baris.</p>
+
+  <h3>Perubahan yang Bukan Gerak</h3>
+  <p>Sebagian soal mengubah sesuatu yang tidak tercakup delapan gerak: <b>banyak bagian</b> bertambah atau berkurang (lekuk, cabang, atau bintik), dua gambar <b>digabung</b> menjadi satu, atau objek <b>membesar</b> dan <b>mengecil</b>. Perubahan jumlah dibahas di Bab 16 dan Bab 18, dan penggabungan di Bab 18. Perubahan ukuran ditulis di kalimat perubahan sebagai lapis tersendiri. Ukuran melekat pada objeknya: objek kecil yang berpindah tempat tetap kecil di tempat barunya.</p>
+  <div data-soal="HB-TIU-B14-I08">
+    <div class="diag3 lebar">
+      <figure class="diag"><img src="aset/ilustrasi/B14-I08-bagian.svg" alt="Banyak bagian bertambah dua"><figcaption>Banyak bagian bertambah dua</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I08-gabung.svg" alt="Dua gambar digabung"><figcaption>Dua gambar digabung</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I08-besar.svg" alt="Objek membesar"><figcaption>Objek membesar</figcaption></figure>
+    </div>
+    <p class="ket-gbr">Tiga perubahan yang tidak termasuk delapan gerak.</p>
+    <div class="guru"><b>ILUS (T2-E I14-8, Putusan 8(2)).</b> G7 + G6 (ukuran, beda skala ≥ 35%); TO·H keris benih ≥ 900, pola ranting, ILUS obor. Ukuran hanya muncul di gambar ini dan narasi; latihan berukuran (T2-E L16-5) gugur saat pemangkasan T2-1b.</div>
+  </div><!--HB-TIU-B14-I08:selesai-->
+  <div class="note catatan">
+    <h4>Catatan</h4>
+    <p><b>Putaran 45°.</b> Semua soal gambar di buku ini memakai putaran kelipatan 90°. Sebagian bahan latihan di luar buku ini memakai putaran 45°. Aturannya sama: sudut dijumlah, dan delapan kali putaran 45° kembali ke posisi awal karena 8 × 45° = 360°. Kemunculan putaran 45° di SKD 2026 belum diverifikasi.</p>
+  </div>
+  <div data-soal="HB-TIU-B14-I09">
+    <div class="diag3 ">
+      <figure class="diag"><img src="aset/ilustrasi/B14-I09-0.svg" alt="Bentuk sayap pada putaran 0°"><figcaption>0°</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I09-45.svg" alt="Bentuk sayap pada putaran 45°"><figcaption>45°</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I09-90.svg" alt="Bentuk sayap pada putaran 90°"><figcaption>90°</figcaption></figure>
+    </div>
+    <p class="ket-gbr">Satu bentuk pada putaran 0°, 45°, dan 90° searah jarum jam. Kemunculan putaran 45° di SKD 2026 belum diverifikasi.</p>
+    <div class="guru"><b>ILUS (T2-E I14-9, T2-7(10)).</b> G7, <code>tf</code> berderajat bebas; ILUS sayapbulu. Keterangan "belum diverifikasi" wajib ikut di keterangan gambar.</div>
+  </div><!--HB-TIU-B14-I09:selesai-->
+  <div class="note catatan">
+    <h4>Catatan</h4>
+    <p><b>Jam di cermin.</b> Bila jam dinding dilihat di cermin kiri-kanan, jarum yang berada sekian derajat di kanan angka 12 tampak sekian derajat di kirinya. Akibatnya, waktu asli dan waktu yang terbaca di cermin selalu berjumlah 12 jam. Cara cepatnya: kurangkan waktu asli dari 12.00. Untuk pukul 11.35, 12.00 − 11.35 = 00.25, yang pada jam dinding terbaca 12.25. Kemunculan soal jam di cermin di SKD 2026 belum diverifikasi.</p>
+  </div>
+  <table class="tb">
+    <thead><tr><th style="width:50%">Waktu asli</th><th>Waktu terbaca di cermin</th></tr></thead>
+    <tbody>
+      <tr><td>03.00</td><td>09.00</td></tr>
+      <tr><td>02.20</td><td>09.40</td></tr>
+      <tr><td>04.15</td><td>07.45</td></tr>
+      <tr><td>10.50</td><td>01.10</td></tr>
+      <tr><td>11.35</td><td>12.25</td></tr>
+      <tr><td>06.00</td><td>06.00</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Langkah Penyelesaian Soal Perubahan Gambar</h3>
+  <div class="rules satu">
+    <div><b>Pilih penanda yang tidak simetris:</b> ujung, cabang, lekuk, atau titik. Bila objeknya simetris, cari penanda di objek lain.</div>
+    <div><b>Baca urutan keliling</b> tiga penanda di gambar asal dan gambar hasil: tetap berarti putar, terbalik berarti cermin.</div>
+    <div><b>Tentukan sudut atau garisnya:</b> ke mana penanda di atas berpindah, atau garis mana yang titik-titiknya tidak berpindah.</div>
+    <div><b>Periksa warna, lalu tempat,</b> lalu jumlah dan ukuran.</div>
+    <div><b>Tulis kalimat perubahan</b> untuk setiap objek.</div>
+    <div><b>Cocokkan setiap objek dengan kelima pilihan,</b> bukan hanya objek pertama.</div>
+    <div><b>Cek balik:</b> kenakan pembatal pada jawabanmu; gambar harus kembali ke asalnya.</div>
+  </div>
+
+  <h3>Kekeliruan pada Soal Perubahan Gambar</h3>
+  <p>Setiap pilihan salah pada soal perubahan gambar D'Ajiks lahir dari salah satu kekeliruan berikut. Nama-nama ini dipakai di setiap pembahasan bab gambar.</p>
+  <table class="tb pecah">
+    <thead><tr><th style="width:5%">No.</th><th style="width:31%">Kekeliruan</th><th>Contoh</th><th style="width:27%">Pertanyaan uji</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><b>Membalik arah putar</b></td><td>90° searah jarum jam dibaca berlawanan arah, atau sebaliknya</td><td>Penanda di atas pindah ke kanan atau ke kiri?</td></tr>
+      <tr><td>2</td><td><b>Menyamakan putaran dengan pencerminan</b></td><td>putaran 180° tertukar dengan cermin atas-bawah</td><td>Urutan kelilingnya tetap atau terbalik?</td></tr>
+      <tr><td>3</td><td><b>Mencerminkan pada garis yang salah</b></td><td>cermin kiri-kanan tertukar dengan atas-bawah; urutan "cermin lalu putar" dibalik</td><td>Garis mana yang titiknya tidak berpindah?</td></tr>
+      <tr><td>4</td><td><b>Lupa membalik warna, atau membalik yang tetap</b></td><td>objek hitam di gambar asal tetap hitam di pilihan</td><td>Warna setiap objek sudah dibandingkan?</td></tr>
+      <tr><td>5</td><td><b>Lupa menukar tempat, atau menukar yang tetap</b></td><td>dua objek tidak bertukar di gambar hasil</td><td>Letak setiap objek sudah dibandingkan?</td></tr>
+      <tr><td>6</td><td><b>Mengubah seluruh gambar, padahal yang berubah tiap objek</b></td><td>seluruh kotak dicermin, padahal tiap objek dicermin di tempatnya</td><td>Ada objek yang berpindah sisi?</td></tr>
+      <tr><td>7</td><td><b>Membaca perubahan dari arah sebaliknya</b></td><td>gambar asal dicari dengan perubahan maju, bukan pembatalnya</td><td>Yang dicari gambar asal atau gambar hasil?</td></tr>
+      <tr><td>8</td><td><b>Berhenti di langkah pertama</b></td><td>dari dua langkah di perintah, hanya satu yang dikerjakan</td><td>Semua langkah sudah dikerjakan?</td></tr>
+    </tbody>
+  </table>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Padanan Nama Kekeliruan dan Kode</h4>
+    <p>1 JF-ARAH (K3) · 2 JF-PUTCER (K3) · 3 JF-SUMBU (K3; termasuk urutan gabungan dibalik) · 4 JF-WARNA (K2) · 5 JF-TUKAR (K2) · 6 JF-UTUH (K5) · 7 J-BALIK (K3) · 8 J-LANGKAH (K2). Kalimat guru = kolom "Kalimat guru (buku siswa)" engine TIU v0.4.3 Pilar 3, disesuaikan sedikit agar menjadi frasa benda.</p>
+  </div>
+
+  <h3>Contoh Soal dan Pembahasan</h3>
+  <p>Dua contoh berikut memperagakan satu gerak pada satu objek, lalu gerak, warna, dan tempat pada dua objek. Kerjakan setiap contoh sendiri dalam target waktunya sebelum membaca pembahasan. Pembahasannya menuliskan kalimat perubahan setiap objek dan bagian Pilihan yang Gugur yang menamai gerak keliru di setiap pilihan salah.</p>
+<!--B14-C01:mulai-->
+<div data-soal="HB-TIU-B14-C01" data-target="45">
+  <div class="soal">
+    <div class="meta"><span>Contoh 1</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 45 detik</span></div>
+    <p class="stem">Perhatikan hubungan gambar berikut. Gambar manakah yang tepat untuk mengganti tanda tanya?</p>
+    <img class="gbr" src="aset/figural/img/B14-C01.svg" alt="Gambar soal">
+    <div class="opsi5 gbr5"><div><span class="h">A</span><img src="aset/figural/img/B14-C01-A.svg" alt="Pilihan A"></div><div><span class="h">B</span><img src="aset/figural/img/B14-C01-B.svg" alt="Pilihan B"></div><div><span class="h">C</span><img src="aset/figural/img/B14-C01-C.svg" alt="Pilihan C"></div><div><span class="h">D</span><img src="aset/figural/img/B14-C01-D.svg" alt="Pilihan D"></div><div><span class="h">E</span><img src="aset/figural/img/B14-C01-E.svg" alt="Pilihan E"></div></div>
+  </div>
+  <div class="guru"><b>FIG-ANA-OBJ 1 objek (T2-E C14-1), tingkat 2, kunci D.</b> Contoh pertama satu aturan (T2-2). Aturan: cermin garis miring / (= cermin kiri-kanan lalu putar 90° searah). Pengecoh dari delapan gerak: cermin garis \ (JF-SUMBU, urutan dibalik), putar 90° searah (JF-PUTCER: penanda atas sama-sama ke kanan), cermin kiri-kanan saja (JF-SUMBU), salinan gambar (3) (JF-SALIN); cadangan bila cek kembar membuang satu opsi: putar 90° berlawanan (JF-ARAH). Keluarga LAUT (khusus handbook). Pembuat: G5 (ANA-OBJ <code>PETAK[1]</code>), spesifikasi <code>src/tiu-handbook.ts</code>.</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta gambar untuk “mengganti tanda tanya”, yaitu gambar (4). Bulu di gambar (3) harus mengalami gerak yang sama dengan gerak tanduk dari (1) ke (2).</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><img class="gbr" src="aset/figural/img/B14-C01-pembahasan.svg" alt="Gambar pembahasan"><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Bandingkan tanduk di (1) dan (2). Urutan kelilingnya terbalik, jadi geraknya cermin, bukan putaran. Garis cermin yang membawa (1) tepat ke (2) adalah garis miring /. Kenakan cermin garis miring / pada bulu di gambar (3).</dd></div>
+    <div><dt>Cara lain</dt><dd>Uji delapan gerak satu per satu pada tanduk: tetap, tiga putaran, dan empat cermin. Hanya cermin garis miring / yang mengubah (1) menjadi (2). Setelah geraknya pasti, cari pilihan yang memuat bulu dengan gerak itu.</dd></div>
+    <div><dt>Cek balik</dt><dd>Cermin dua kali pada garis yang sama mengembalikan gambar ke asalnya. Cerminkan bulu di pilihan D sekali lagi pada garis miring /: hasilnya kembali menjadi gambar (3).</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">cermin garis miring \</span><b>Mencerminkan pada garis yang salah.</b> Jenis geraknya sudah cermin, tetapi garisnya miring ke arah lain. Bulu di A berbeda arah dengan hasil cermin garis miring /.</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">diputar 90° searah jarum jam</span><b>Menyamakan putaran dengan pencerminan.</b> Putaran 90° searah jarum jam dan cermin garis miring / sama-sama memindahkan penanda di atas ke kanan, jadi sekilas mirip. Bedanya, putaran tidak membalik urutan keliling, padahal tanduk dari (1) ke (2) terbalik.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">cermin kiri-kanan</span><b>Mencerminkan pada garis yang salah.</b> Cermin kiri-kanan juga membalik urutan keliling, tetapi garisnya tegak. Bulu hanya berbalik dari kiri ke kanan, tidak mengikuti garis miring /.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">tidak berubah</span><b>Menyalin gambar (3) apa adanya.</b> Pilihan E sama persis dengan gambar (3). Tanduk dari (1) ke (2) berubah, jadi bulu juga harus berubah.</div></div></div>
+  <div class="jwb"><span>D</span><p><b>Jawaban: D.</b> Pilihan D adalah bulu di gambar (3) yang dicermin pada garis miring /, gerak yang sama dengan tanduk dari (1) ke (2).</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti meniru gerakan senam dari pelatih. Badanmu berbeda dengan badan pelatih, tetapi gerakannya sama. Tanduk dan bulu berbeda bentuk, dan yang ditiru hanya geraknya.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Memilih B karena penanda di atas pindah ke kanan, sama seperti pada cermin garis miring /. Satu penanda belum cukup untuk membedakan putaran dari cermin; periksa juga apakah urutan kelilingnya terbalik.</span></div></div>
+</div>
+<!--B14-C01:selesai-->
+<!--B14-C02:mulai-->
+<div data-soal="HB-TIU-B14-C02" data-target="60">
+  <div class="soal">
+    <div class="meta"><span>Contoh 2</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 60 detik</span></div>
+    <p class="stem">Perhatikan hubungan gambar berikut. Gambar manakah yang tepat untuk mengganti tanda tanya?</p>
+    <img class="gbr" src="aset/figural/img/B14-C02.svg" alt="Gambar soal">
+    <div class="opsi5 gbr5"><div><span class="h">A</span><img src="aset/figural/img/B14-C02-A.svg" alt="Pilihan A"></div><div><span class="h">B</span><img src="aset/figural/img/B14-C02-B.svg" alt="Pilihan B"></div><div><span class="h">C</span><img src="aset/figural/img/B14-C02-C.svg" alt="Pilihan C"></div><div><span class="h">D</span><img src="aset/figural/img/B14-C02-D.svg" alt="Pilihan D"></div><div><span class="h">E</span><img src="aset/figural/img/B14-C02-E.svg" alt="Pilihan E"></div></div>
+  </div>
+  <div class="guru"><b>FIG-ANA-OBJ 2 objek (T2-E C14-2), tingkat 3, kunci A.</b> Objek 1 dicermin + balik warna, objek 2 tetap, keduanya bertukar tempat. Pengecoh: seluruh kotak dicermin (JF-UTUH), tidak ditukar (JF-TUKAR), warna tidak dibalik (JF-WARNA), objek 2 ikut berubah (JF-SATU). Keluarga WARISAN bentuk gemuk (tebal ≥ 0,2 untuk balik warna). Beda dari Bab 2 Contoh 5 (putar + balik warna, tanpa tukar).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Tanda tanya ada di posisi gambar (3). Soal meminta gambar untuk “mengganti tanda tanya”, yaitu gambar asal yang berubah menjadi gambar (4).</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><img class="gbr" src="aset/figural/img/B14-C02-pembahasan.svg" alt="Gambar pembahasan"><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Baca pasangan yang lengkap, (1):(2), satu objek demi satu objek. Tanduk dicermin kiri-kanan, cakar tidak berubah, lalu keduanya bertukar tempat. Karena yang dicari gambar asal, mulailah dari gambar (4): kembalikan tanduk dan cakar ke tempat semula, cerminkan tanduk kiri-kanan sekali lagi, dan biarkan cakar.</dd></div>
+    <div><dt>Cara lain</dt><dd>Coba setiap pilihan sebagai gambar (3) dan kenakan aturan maju: tanduk dicermin kiri-kanan, cakar tetap, lalu tukar tempat. Pilihan yang benar berubah tepat menjadi gambar (4).</dd></div>
+    <div><dt>Cek balik</dt><dd>Cermin kiri-kanan dua kali kembali ke asal, jadi membatalkan cermin sama dengan mencermin sekali lagi. Tukar tempat juga begitu: ditukar dua kali, objek kembali ke tempatnya. Warna tidak berubah di pasangan contoh, jadi kedua objek di jawaban tetap hitam.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">B</span><div class="x"><span class="uji">aturannya tertukar</span><b>Menukar aturan antarobjek.</b> Tanduk dibiarkan, sedangkan cakar yang dicermin kiri-kanan. Aturannya dipasang pada objek yang salah.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">cermin atas-bawah, warna dibalik</span><b>Mencerminkan pada garis yang salah.</b> Tanduk dicermin atas-bawah, padahal aturannya cermin kiri-kanan. Cakarnya pun dibalik warnanya, padahal di pasangan contoh warna tidak berubah.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">tempat belum dikembalikan</span><b>Lupa menukar tempat, atau menukar yang tetap.</b> Tanduk dan cakar masih di tempat yang sama dengan gambar (4), jadi tukar tempatnya belum dibatalkan. Tanduknya juga dibalik warnanya.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">warna cakar dibalik</span><b>Lupa membalik warna, atau membalik yang tetap.</b> Tanduk dan tempatnya sudah benar, tetapi cakar dibalik warnanya. Di pasangan contoh, cakar tidak berubah sama sekali.</div></div></div>
+  <div class="jwb"><span>A</span><p><b>Jawaban: A.</b> Pilihan A adalah gambar (4) yang tukar tempatnya dibatalkan dan tanduknya dicermin kiri-kanan sekali lagi, sedangkan cakar dibiarkan.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti mengembalikan barang yang dipindah temanmu. Kamu tahu barang mana dipindah ke mana, lalu kamu balik langkahnya satu per satu sampai susunannya seperti semula.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Pilihan E hanya keliru di warna cakar. Kalau kamu berhenti setelah tanduk cocok, E terasa benar. Periksa setiap objek sampai selesai: arah, warna, dan tempatnya.</span></div></div>
+</div>
+<!--B14-C02:selesai-->
+
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Asal Rancangan Bab 14</h4>
+    <p>Putusan T2-1b: Bab 14 = 1 pembuka + 2 contoh + 3 latihan (dari 6 latihan T2-E). Dipilih: L14-1 (tingkat 1, sebutkan perubahan), L14-3 (dua langkah tertulis), L14-6 (tingkat 3, bentuk ujian). Alasan: tiga bentuk berbeda, tingkat naik, kode tersebar di K2, K3, K5. Gugur: L14-2 (sebutkan perubahan berupa cermin; sejenis L01) · L14-4 (dua langkah lain; sejenis L02) · L14-5 ("?" di (1), pembatal; diajarkan lagi di Bab 16 pembuka).</p>
+    <p>Gambar penjelas: I14-1, I14-5 s.d. I14-9 tetap tempat kosong (G7, menunggu T5); I14-2 diganti bagan tiga titik buatan script; I14-3 dan I14-4 (rantai gabungan, urutan berpengaruh) diganti tabel gabungan karena isinya nama gerak, bukan rupa. Jam di cermin = teks + tabel tanpa gambar (T2-7(10)). Sebaran huruf rencana: P B · C1 D · C2 A · L1 E · L2 C · L3 B. Syarat T2-6: lembar banding benda bergaya siluet ditinjau Gusti sebelum T5.</p>
+  </div>
+
+  <div class="ringkas">
+    <h4>Ringkasan Bab 14</h4>
+    <ol>
+      <li>Sebuah gambar punya <b>delapan gerak</b>: empat putaran dan empat pencerminan. Gabungan gerak apa pun jatuh pada salah satunya.</li>
+      <li>Putaran mempertahankan <b>urutan keliling</b>, pencerminan membaliknya. Cermin genap kali menghasilkan putaran; cermin ganjil kali menghasilkan cermin.</li>
+      <li>Sudut putar dibaca dari ke mana penanda di atas berpindah; garis cermin adalah garis yang titiknya tidak berpindah.</li>
+      <li>Pada gabungan yang memuat cermin, urutan berpengaruh. Dua langkah dibatalkan dari langkah terakhir.</li>
+      <li>Bentuk simetris tidak dapat membedakan putar dari cermin; cari penanda lain.</li>
+      <li>Balik warna dan pindah tempat diperiksa terpisah dari gerak. Mencermin seluruh kotak berbeda dengan mencermin setiap objek di tempatnya.</li>
+      <li>Tulis <b>kalimat perubahan</b> untuk setiap objek: gerak, warna, tempat, jumlah, dan ukuran.</li>
+    </ol>
+  </div>
+</section>

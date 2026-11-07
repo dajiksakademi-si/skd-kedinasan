@@ -1,0 +1,83 @@
+[
+  {
+    "id": "HB-TIU-B07-L01",
+    "bab": 7,
+    "target_detik": 45,
+    "soal": {
+      "tanya": "Pasangan perkalian yang kedua ruasnya bernilai sama adalah …"
+    },
+    "opsi": {
+      "A": "36 × 30 dan 12 × 60",
+      "B": "27 × 40 dan 9 × 120",
+      "C": "30 × 36 dan 90 × 18",
+      "D": "45 × 24 dan 90 × 8",
+      "E": "54 × 20 dan 27 × 10"
+    }
+  },
+  {
+    "id": "HB-TIU-B08-C04",
+    "bab": 8,
+    "target_detik": 60,
+    "soal": {
+      "tanya": "Suku berikutnya dari barisan B3, E6, J12, Q24, Z48, … adalah …"
+    },
+    "opsi": {
+      "A": "K96",
+      "B": "K48",
+      "C": "I72",
+      "D": "K72",
+      "E": "K51"
+    }
+  },
+  {
+    "id": "HB-TIU-B08-L03",
+    "bab": 8,
+    "target_detik": 60,
+    "soal": {
+      "tanya": "Suku berikutnya dari barisan MN, PK, TG, YB, … adalah …"
+    },
+    "opsi": {
+      "A": "EV",
+      "B": "DV",
+      "C": "FU",
+      "D": "DW",
+      "E": "FV"
+    }
+  },
+  {
+    "id": "HB-TIU-B09-C04",
+    "bab": 9,
+    "target_detik": 90,
+    "soal": {
+      "pengantar": "Bilangan pada kotak berikut tersusun menurut pola.",
+      "tabel": {
+        "xy": [
+          [
+            3,
+            7,
+            13,
+            21,
+            31,
+            "X"
+          ],
+          [
+            5,
+            13,
+            25,
+            41,
+            61,
+            "Y"
+          ]
+        ]
+      },
+      "tanya": "Nilai X dan Y berturut-turut adalah …"
+    },
+    "opsi": {
+      "A": "41 dan 81",
+      "B": "43 dan 81",
+      "C": "43 dan 85",
+      "D": "43 dan 89",
+      "E": "45 dan 89"
+    }
+  }
+]

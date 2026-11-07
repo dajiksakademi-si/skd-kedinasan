@@ -1,0 +1,863 @@
+{
+  "meta": {
+    "judul": "Bank Soal TWK — HOTS (gaya Viracun)",
+    "versi": "1.0",
+    "jumlah": 50,
+    "level": "Medium–HOTS",
+    "aturan_engine": "L1 (≥2 langkah kognitif), L2 (kunci disamarkan), L3 (surface-match trap)",
+    "penomoran_kunci": "A=0 ... E=4 pada indeks; field kunci memakai huruf",
+    "distribusi": {"E1": 7, "E2": 8, "E3": 9, "E4": 11, "E5": 4, "E6": 4, "E7": 2, "E8": 5}
+  },
+  "soal": [
+    {
+      "no": 1,
+      "tipe_kode": "E1",
+      "tipe_nama": "Cari Akarnya, Bukan Buahnya",
+      "level": "Medium–HOTS",
+      "tema": "Negara hukum",
+      "soal": "Di sebuah negara, warga taat membayar pajak, aparat bekerja efisien, dan pembangunan berjalan lancar. Namun ketika seorang pejabat tinggi melanggar aturan, ia tidak pernah diproses sebagaimana warga biasa. Kondisi yang paling menunjukkan bahwa prinsip dasar bernegara secara hukum BELUM tegak adalah ...",
+      "opsi": {
+        "A": "Tingkat kepatuhan pajak yang tinggi ternyata tidak menjamin terwujudnya keadilan.",
+        "B": "Kekuasaan tidak tunduk pada aturan yang sama seperti yang mengikat warga biasa.",
+        "C": "Efisiensi kerja aparat belum diiringi pemerataan pelayanan bagi masyarakat.",
+        "D": "Pembangunan berjalan tanpa pengawasan yang memadai dari masyarakat.",
+        "E": "Ketaatan warga terhadap aturan belum diimbangi kesadaran hukum para pejabat."
+      },
+      "kunci": "B",
+      "pembahasan": "Inti (akar) negara hukum adalah supremasi hukum: hukum berlaku sama bagi semua, termasuk pemegang kekuasaan (equality before the law). Kunci B menangkap akar ini tanpa menyebut istilah 'negara hukum'. A, C, D benar sebagai fakta tetapi hanya 'buah' (gejala turunan: pajak, efisiensi, pengawasan) — bukan akar. Distraktor terkuat E memakai kata 'hukum/aturan' (jebakan permukaan) dan terdengar tepat, tetapi membingkai masalah sebagai 'kesadaran', padahal masalah sesungguhnya adalah kekuasaan yang kebal hukum."
+    },
+    {
+      "no": 2,
+      "tipe_kode": "E1",
+      "tipe_nama": "Cari Akarnya, Bukan Buahnya",
+      "level": "Medium–HOTS",
+      "tema": "Keadilan sosial (sila ke-5)",
+      "soal": "Sebuah pemerintah daerah memperoleh surplus anggaran dan menyiapkan beberapa program yang semuanya bermanfaat. Dalam kerangka nilai keadilan sosial, dasar pertimbangan yang paling mendasar untuk menentukan prioritas program adalah ...",
+      "opsi": {
+        "A": "Program yang hasilnya paling cepat terlihat agar kepercayaan publik meningkat.",
+        "B": "Program yang menjangkau kelompok paling rentan yang selama ini belum terlayani.",
+        "C": "Program yang paling hemat anggaran sehingga sisanya bisa dialokasikan ulang.",
+        "D": "Program yang paling banyak diminati warga berdasarkan hasil jajak pendapat.",
+        "E": "Program yang paling selaras dengan target pembangunan pemerintah pusat."
+      },
+      "kunci": "B",
+      "pembahasan": "Akar keadilan sosial adalah pemerataan yang berpihak pada yang paling lemah/tertinggal. Kunci B. A (citra), C (efisiensi), E (keselarasan pusat) adalah pertimbangan sah tetapi bukan inti keadilan sosial — hanya instrumen. Distraktor terkuat D 'suara terbanyak' menggoda karena terdengar demokratis, tetapi keadilan sosial bukan sekadar melayani mayoritas; justru kelompok kecil yang rentan yang harus didahulukan."
+    },
+    {
+      "no": 3,
+      "tipe_kode": "E1",
+      "tipe_nama": "Cari Akarnya, Bukan Buahnya",
+      "level": "Medium–HOTS",
+      "tema": "Demokrasi",
+      "soal": "Sebuah negara rutin menyelenggarakan pemilu dengan tingkat partisipasi tinggi dan hasil yang diumumkan terbuka. Namun kritik terhadap penguasa sering berujung pada tekanan hukum. Hal yang paling mendasar menunjukkan demokrasi di negara itu belum sehat adalah ...",
+      "opsi": {
+        "A": "Partisipasi pemilih yang tinggi belum tentu mencerminkan kualitas pilihan rakyat.",
+        "B": "Ruang bagi warga untuk mengkritik kekuasaan tanpa rasa takut masih dibatasi.",
+        "C": "Keterbukaan hasil pemilu belum diimbangi dengan pengawasan penghitungan suara.",
+        "D": "Penyelenggaraan pemilu yang rutin belum menjamin pergantian kepemimpinan.",
+        "E": "Antusiasme rakyat terhadap pemilu belum diikuti pemahaman politik yang memadai."
+      },
+      "kunci": "B",
+      "pembahasan": "Inti demokrasi bukan sekadar adanya pemilu (prosedur), melainkan adanya kebebasan berpendapat dan mengontrol kekuasaan. Kunci B. A, C, D, E menyoroti aspek teknis pemilu (partisipasi, penghitungan, keterbukaan) — itu 'buah', bukan akar. Fakta kunci di soal adalah 'kritik berujung tekanan hukum', yang langsung menohok kebebasan sipil sebagai jantung demokrasi."
+    },
+    {
+      "no": 4,
+      "tipe_kode": "E1",
+      "tipe_nama": "Cari Akarnya, Bukan Buahnya",
+      "level": "Medium–HOTS",
+      "tema": "Pancasila sebagai dasar negara",
+      "soal": "Di tengah menguatnya budaya serba cepat dan berorientasi keuntungan, sebagian kalangan menilai nilai-nilai lama tidak lagi relevan. Dalam situasi ini, peran Pancasila yang paling esensial bagi bangsa adalah ...",
+      "opsi": {
+        "A": "Menjadi pedoman agar seluruh kebijakan negara tetap efisien dan terukur.",
+        "B": "Menjadi dasar moral dan arah yang menyeimbangkan kemajuan dengan martabat manusia dan keadilan.",
+        "C": "Menjadi simbol kenegaraan yang cukup diperingati agar tetap diingat masyarakat.",
+        "D": "Menjadi alat pemersatu untuk menghadapi persaingan global antarbangsa.",
+        "E": "Menjadi alternatif ideologi yang bersaing dengan paham-paham modern dari luar."
+      },
+      "kunci": "B",
+      "pembahasan": "Esensi Pancasila adalah sebagai dasar moral dan penuntun arah kehidupan berbangsa yang menyeimbangkan kemajuan material dengan kemanusiaan dan keadilan. Kunci B. A menyempitkan Pancasila jadi alat administratif; C menurunkannya menjadi seremonial; D benar sebagian (pemersatu) tetapi terlalu sempit — bukan peran paling esensial; E keliru karena Pancasila bukan sekadar 'pesaing' ideologi, melainkan fondasi nilai bangsa."
+    },
+    {
+      "no": 5,
+      "tipe_kode": "E1",
+      "tipe_nama": "Cari Akarnya, Bukan Buahnya",
+      "level": "Medium–HOTS",
+      "tema": "Kedaulatan rakyat",
+      "soal": "Sebuah lembaga negara mengklaim seluruh kebijakannya 'untuk rakyat', namun keputusan penting selalu diambil tanpa membuka ruang masukan publik. Prinsip paling mendasar yang dilanggar dalam praktik tersebut adalah ...",
+      "opsi": {
+        "A": "Transparansi informasi kepada masyarakat luas.",
+        "B": "Rakyat sebagai pemegang kedaulatan yang berhak ikut menentukan kebijakan.",
+        "C": "Efektivitas kebijakan yang seharusnya diukur dari manfaat bagi rakyat.",
+        "D": "Akuntabilitas lembaga dalam mempertanggungjawabkan keputusannya.",
+        "E": "Pelibatan ahli agar kebijakan yang diambil berkualitas dan tepat sasaran."
+      },
+      "kunci": "B",
+      "pembahasan": "Akar persoalan adalah kedaulatan rakyat: rakyat bukan sekadar objek yang 'dilayani', melainkan subjek pemegang kedaulatan yang berhak ikut menentukan. Kunci B. A (transparansi) dan D (akuntabilitas) adalah turunan/mekanisme dari kedaulatan rakyat, bukan prinsip paling dasarnya. C dan E menyoroti mutu kebijakan, bukan hak rakyat untuk menentukan."
+    },
+    {
+      "no": 6,
+      "tipe_kode": "E1",
+      "tipe_nama": "Cari Akarnya, Bukan Buahnya",
+      "level": "Medium–HOTS",
+      "tema": "Ideologi terbuka",
+      "soal": "Pancasila disebut ideologi terbuka. Sebuah kebijakan publik baru dirancang menyesuaikan perkembangan teknologi. Implementasi yang paling sesuai dengan hakikat ideologi terbuka adalah ...",
+      "opsi": {
+        "A": "Mengubah rumusan sila-sila agar sesuai dengan tuntutan masyarakat modern.",
+        "B": "Menafsirkan nilai Pancasila secara sesuai zaman tanpa mengubah nilai intinya.",
+        "C": "Menetapkan tafsir Pancasila secara tetap agar tidak terjadi penyimpangan.",
+        "D": "Mengutamakan efisiensi kebijakan meski tidak sepenuhnya mencerminkan nilai Pancasila.",
+        "E": "Mengganti sebagian nilai lama yang dianggap tidak lagi relevan dengan nilai baru."
+      },
+      "kunci": "B",
+      "pembahasan": "Hakikat ideologi terbuka: nilai inti (hakikat) tetap, tetapi penafsiran dan penerapannya menyesuaikan zaman. Kunci B. A dan E salah karena mengubah/mengganti nilai inti — itu bukan 'terbuka' melainkan kehilangan jati diri. C justru kebalikannya (ideologi tertutup/kaku). D mengorbankan nilai demi efisiensi, menyimpang dari maksud keterbukaan."
+    },
+    {
+      "no": 7,
+      "tipe_kode": "E1",
+      "tipe_nama": "Cari Akarnya, Bukan Buahnya",
+      "level": "Medium–HOTS",
+      "tema": "Persatuan (NKRI)",
+      "soal": "Sebuah daerah menuntut porsi hasil sumber daya alam lebih besar dan mengancam akan menahan setoran ke pusat. Ditinjau dari nilai persatuan, akar persoalan yang paling mendasar untuk diselesaikan adalah ...",
+      "opsi": {
+        "A": "Ketidakpuasan daerah terhadap besaran dana bagi hasil dari pusat.",
+        "B": "Rapuhnya rasa saling memiliki sebagai satu bangsa yang menempatkan kepentingan bersama di atas golongan.",
+        "C": "Lemahnya pengawasan pusat terhadap pengelolaan sumber daya di daerah.",
+        "D": "Tingginya potensi konflik antara pemerintah pusat dan pemerintah daerah.",
+        "E": "Belum adilnya pembagian kewenangan antara pusat dan daerah dalam otonomi."
+      },
+      "kunci": "B",
+      "pembahasan": "Akar persatuan adalah rasa senasib-sebangsa yang menempatkan kepentingan bersama di atas kepentingan golongan/daerah. Kunci B. A dan E adalah pemicu teknis-administratif (angka bagi hasil, kewenangan) — penting, tetapi turunan. C soal pengawasan, dan D hanya menamai gejalanya (konflik), bukan akarnya."
+    },
+    {
+      "no": 8,
+      "tipe_kode": "E2",
+      "tipe_nama": "Jangan Pilih yang Terlalu Ekstrem",
+      "level": "Medium–HOTS",
+      "tema": "Ekonomi digital vs usaha tradisional",
+      "soal": "Pemerintah pusat mendorong digitalisasi UMKM secara nasional, sementara banyak pelaku usaha di daerah masih mengandalkan cara tradisional yang menjadi identitas ekonomi lokal. Kebijakan yang paling tepat adalah ...",
+      "opsi": {
+        "A": "Mewajibkan seluruh UMKM beralih ke platform digital agar tidak tertinggal secara nasional.",
+        "B": "Menggabungkan keduanya dengan tetap menjadikan target digitalisasi nasional sebagai ukuran utama keberhasilan.",
+        "C": "Memadukan digitalisasi dengan penguatan usaha tradisional melalui pendampingan bertahap dan insentif yang terukur.",
+        "D": "Menyerahkan sepenuhnya kepada tiap daerah untuk menentukan cara berusaha masing-masing.",
+        "E": "Menunda digitalisasi hingga seluruh pelaku usaha daerah menyatakan kesiapannya."
+      },
+      "kunci": "C",
+      "pembahasan": "Dua opsi sama-sama berbunyi 'menggabungkan/memadukan' (B dan C) sehingga tidak bisa dibedakan dari bentuknya — pembeda ada di isi. B adalah keseimbangan semu: mengaku memadukan tetapi diam-diam berat sebelah (target nasional dijadikan satu-satunya ukuran). C benar karena menyeimbangkan kedua sisi DENGAN mekanisme konkret (pendampingan bertahap + insentif terukur). A ekstrem seragam, D ekstrem lepas, E netral-pasif (menunda)."
+    },
+    {
+      "no": 9,
+      "tipe_kode": "E2",
+      "tipe_nama": "Jangan Pilih yang Terlalu Ekstrem",
+      "level": "Medium–HOTS",
+      "tema": "Otonomi daerah (Bhinneka Tunggal Ika)",
+      "soal": "Sebuah daerah kaya adat ingin melestarikan tradisinya, sementara pemerintah pusat mendorong standar pelayanan publik yang seragam. Sikap kebijakan yang paling mencerminkan semangat Bhinneka Tunggal Ika adalah ...",
+      "opsi": {
+        "A": "Menerapkan standar nasional secara penuh agar tidak ada kesenjangan mutu antardaerah.",
+        "B": "Menyelaraskan keduanya dengan tetap menempatkan keseragaman nasional sebagai patokan akhir.",
+        "C": "Menjadikan standar mutu nasional sebagai kerangka, sambil memberi ruang penyesuaian bermuatan budaya lokal.",
+        "D": "Menyerahkan sepenuhnya urusan pelayanan kepada daerah sesuai kekhasannya.",
+        "E": "Menyeragamkan seluruh pelayanan dan menempatkan budaya lokal sebagai kegiatan seremonial."
+      },
+      "kunci": "C",
+      "pembahasan": "Bhinneka Tunggal Ika = kesatuan yang merangkul keberagaman. Kunci C: kerangka nasional + ruang lokal (ada mekanisme: kerangka & penyesuaian). B keseimbangan semu — 'menyelaraskan' tetapi ujungnya menuntut keseragaman. A dan E ekstrem 'seragam', D ekstrem 'lepas'. Perhatikan B dan C sama-sama terdengar menyeimbangkan; bedakan dari isinya."
+    },
+    {
+      "no": 10,
+      "tipe_kode": "E2",
+      "tipe_nama": "Jangan Pilih yang Terlalu Ekstrem",
+      "level": "Medium–HOTS",
+      "tema": "Globalisasi budaya",
+      "soal": "Arus budaya global masuk deras lewat media digital dan digemari generasi muda. Sikap paling tepat agar jati diri bangsa tetap terjaga adalah ...",
+      "opsi": {
+        "A": "Menolak seluruh budaya asing yang masuk agar budaya lokal tidak tergerus.",
+        "B": "Menerima budaya global apa adanya karena merupakan konsekuensi zaman.",
+        "C": "Membuka diri terhadap budaya global sambil menyaringnya dengan nilai bangsa dan memperkuat budaya sendiri.",
+        "D": "Terbuka terhadap budaya global dengan tetap menjadikan tren internasional sebagai acuan utama.",
+        "E": "Membatasi akses budaya global hingga generasi muda cukup dewasa menyikapinya."
+      },
+      "kunci": "C",
+      "pembahasan": "Kunci C: keterbukaan + penyaringan nilai + penguatan budaya sendiri (mekanisme jelas). A ekstrem menolak (menutup diri), B ekstrem menerima (larut). D keseimbangan semu — 'terbuka' tetapi menjadikan tren asing sebagai acuan utama, sehingga sebenarnya condong ke luar. E netral-pasif (menunda/membatasi tanpa solusi)."
+    },
+    {
+      "no": 11,
+      "tipe_kode": "E2",
+      "tipe_nama": "Jangan Pilih yang Terlalu Ekstrem",
+      "level": "Medium–HOTS",
+      "tema": "Kebebasan berpendapat di ruang digital",
+      "soal": "Media sosial memberi ruang luas untuk menyampaikan pendapat, tetapi juga rawan ujaran kebencian. Sikap bela negara di era digital yang paling tepat adalah ...",
+      "opsi": {
+        "A": "Menyuarakan pendapat sebebas-bebasnya karena kebebasan berekspresi dijamin negara.",
+        "B": "Menghindari semua isu sensitif agar tidak menimbulkan perpecahan di ruang digital.",
+        "C": "Berpendapat aktif dengan menjunjung etika, kebenaran informasi, dan kepentingan bangsa.",
+        "D": "Berpendapat bebas asalkan tetap mendukung setiap kebijakan pemerintah yang berlaku.",
+        "E": "Menyerahkan pengawasan seluruh konten kepada pemerintah demi keamanan nasional."
+      },
+      "kunci": "C",
+      "pembahasan": "Kunci C: aktif berpartisipasi + dibingkai etika dan tanggung jawab (menyeimbangkan kebebasan dan ketertiban). A ekstrem bebas tanpa batas, B ekstrem pasif (menghindar), E ekstrem menyerahkan semua ke kontrol negara. D keseimbangan semu — 'bebas' tetapi disyaratkan selalu mendukung pemerintah, yang justru mengingkari kebebasan itu sendiri."
+    },
+    {
+      "no": 12,
+      "tipe_kode": "E2",
+      "tipe_nama": "Jangan Pilih yang Terlalu Ekstrem",
+      "level": "Medium–HOTS",
+      "tema": "Pembangunan vs lingkungan",
+      "soal": "Sebuah proyek investasi menjanjikan lapangan kerja besar, tetapi berpotensi merusak kawasan hutan lindung. Kebijakan pemerintah yang paling tepat adalah ...",
+      "opsi": {
+        "A": "Menyetujui proyek sepenuhnya karena penyerapan tenaga kerja adalah prioritas utama.",
+        "B": "Menyetujui proyek dengan syarat administratif seperlunya agar investasi tetap masuk cepat.",
+        "C": "Menolak seluruh proyek yang bersinggungan dengan kawasan lindung tanpa terkecuali.",
+        "D": "Menyeimbangkan keduanya melalui kajian dampak lingkungan yang ketat dan kewajiban pemulihan yang terukur.",
+        "E": "Menunda keputusan hingga masyarakat sekitar mencapai kesepakatan penuh."
+      },
+      "kunci": "D",
+      "pembahasan": "Kunci D: menyeimbangkan ekonomi dan lingkungan DENGAN mekanisme konkret (AMDAL ketat + kewajiban pemulihan). A ekstrem pro-ekonomi, C ekstrem pro-lingkungan. B keseimbangan semu — terlihat 'bersyarat' tetapi 'syarat seperlunya agar cepat' sebenarnya berpihak ke investasi. E netral-pasif."
+    },
+    {
+      "no": 13,
+      "tipe_kode": "E2",
+      "tipe_nama": "Jangan Pilih yang Terlalu Ekstrem",
+      "level": "Medium–HOTS",
+      "tema": "Toleransi beragama",
+      "soal": "Di sebuah wilayah, pembangunan rumah ibadah kelompok minoritas menimbulkan keberatan sebagian warga mayoritas. Sikap pemerintah daerah yang paling mencerminkan nilai kebangsaan adalah ...",
+      "opsi": {
+        "A": "Menghentikan pembangunan demi menjaga ketenangan mayoritas warga setempat.",
+        "B": "Melanjutkan pembangunan tanpa memedulikan keberatan warga demi menegakkan hak minoritas.",
+        "C": "Memfasilitasi dialog dan memastikan hak beribadah dijamin sesuai aturan sambil merawat kerukunan warga.",
+        "D": "Menjaga hak minoritas dengan tetap menjadikan persetujuan mayoritas sebagai penentu akhir.",
+        "E": "Menunda pembangunan sampai seluruh warga tanpa kecuali menyatakan setuju."
+      },
+      "kunci": "C",
+      "pembahasan": "Kunci C: menjamin hak konstitusional (beribadah) + merawat kerukunan lewat dialog (mekanisme). A ekstrem tunduk pada mayoritas (mengorbankan hak minoritas), B ekstrem mengabaikan warga (memicu konflik). D keseimbangan semu — mengaku menjaga minoritas tetapi menyerahkan penentuan akhir pada mayoritas, sehingga hak minoritas jadi bergantung suara terbanyak. E netral-pasif yang tak realistis."
+    },
+    {
+      "no": 14,
+      "tipe_kode": "E2",
+      "tipe_nama": "Jangan Pilih yang Terlalu Ekstrem",
+      "level": "Medium–HOTS",
+      "tema": "Impor vs proteksi",
+      "soal": "Demi menjaga neraca perdagangan, pemerintah mengatur impor komoditas tertentu melalui badan usaha. Agar sesuai prinsip keadilan dan hak berusaha, sikap yang paling tepat adalah ...",
+      "opsi": {
+        "A": "Memberi hak tunggal kepada satu badan usaha agar kontrol terpusat dan pasokan aman.",
+        "B": "Membuka impor bebas bagi semua badan usaha tanpa syarat agar pasar benar-benar terbuka.",
+        "C": "Melarang seluruh impor oleh swasta agar produksi dalam negeri diprioritaskan penuh.",
+        "D": "Menetapkan kuota impor bagi badan usaha dengan syarat transparan dan dapat diawasi publik agar persaingan tetap sehat.",
+        "E": "Menyerahkan pengaturan impor kepada mekanisme pasar dengan pengawasan seperlunya."
+      },
+      "kunci": "D",
+      "pembahasan": "Kunci D: menyeimbangkan pengaturan negara dan hak berusaha DENGAN mekanisme (kuota + transparansi + pengawasan publik). A ekstrem monopoli, B dan C ekstrem berlawanan (bebas total vs larangan total). E keseimbangan semu — 'diawasi seperlunya' berarti pengawasan lemah dan condong menyerahkan ke pasar."
+    },
+    {
+      "no": 15,
+      "tipe_kode": "E2",
+      "tipe_nama": "Jangan Pilih yang Terlalu Ekstrem",
+      "level": "Medium–HOTS",
+      "tema": "Wajib militer / bela negara",
+      "soal": "Wacana penerapan wajib militer menuai pro-kontra. Ditinjau dari semangat bela negara sekaligus penghormatan hak warga, sikap yang paling tepat adalah ...",
+      "opsi": {
+        "A": "Menerapkan wajib militer bagi seluruh warga tanpa kecuali demi kesiapan pertahanan.",
+        "B": "Membatalkan seluruh wacana karena dianggap membatasi kebebasan individu.",
+        "C": "Menerapkannya dengan tetap menjadikan target jumlah pasukan sebagai ukuran keberhasilan utama.",
+        "D": "Mengembangkan bela negara dalam beragam bentuk partisipatif dan sukarela sesuai kapasitas warga, dengan pelatihan yang terstruktur.",
+        "E": "Menunda kebijakan hingga seluruh elemen masyarakat menyatakan setuju."
+      },
+      "kunci": "D",
+      "pembahasan": "Bela negara tidak identik dengan angkat senjata; ia bisa beragam bentuk. Kunci D menyeimbangkan kebutuhan pertahanan dan hak warga melalui partisipasi beragam + pelatihan terstruktur (mekanisme). A ekstrem memaksa semua, B ekstrem menolak total. C keseimbangan semu — 'menerapkan' dengan ukuran tunggal jumlah pasukan, mengabaikan hak. E netral-pasif."
+    },
+    {
+      "no": 16,
+      "tipe_kode": "E3",
+      "tipe_nama": "Nilai Lama, Terapkan Sekarang",
+      "level": "Medium–HOTS",
+      "tema": "Ki Hajar Dewantara",
+      "soal": "Ki Hajar Dewantara mendirikan Taman Siswa untuk memberi akses pendidikan bagi kaum terpinggirkan, dengan semangat 'pendidikan yang memerdekakan'. Penerapan semangat itu yang paling relevan saat ini adalah ...",
+      "opsi": {
+        "A": "Mendirikan kembali sekolah dengan metode dan kurikulum persis seperti Taman Siswa dahulu.",
+        "B": "Mengembangkan pembelajaran yang menumbuhkan nalar kritis dan kemandirian, bukan sekadar kepatuhan.",
+        "C": "Memperbanyak upacara penghormatan terhadap jasa tokoh pendidikan nasional di sekolah.",
+        "D": "Menambah jam pelajaran sejarah agar siswa mengenal perjuangan tokoh pendidikan.",
+        "E": "Mewajibkan seluruh sekolah memakai semboyan dan simbol Taman Siswa."
+      },
+      "kunci": "B",
+      "pembahasan": "'Memerdekakan' berarti memerdekakan pikiran/kemandirian — nilainya yang ditransfer, bukan bentuk fisiknya. Kunci B. A dan E adalah peniruan literal-historis (anakronistis: meniru bentuk lama). C dan D hanya seremonial/kognitif dangkal (menghormati, menghafal), belum menyentuh esensi 'memerdekakan'."
+    },
+    {
+      "no": 17,
+      "tipe_kode": "E3",
+      "tipe_nama": "Nilai Lama, Terapkan Sekarang",
+      "level": "Medium–HOTS",
+      "tema": "Sumpah Pemuda 1928",
+      "soal": "Sumpah Pemuda 1928 menyatukan pemuda dari berbagai daerah dalam satu identitas kebangsaan. Penerapan semangat itu yang paling tepat di era sekarang adalah ...",
+      "opsi": {
+        "A": "Menghidupkan kembali kongres pemuda dengan format seperti tahun 1928.",
+        "B": "Memperingati hari Sumpah Pemuda dengan upacara yang lebih meriah setiap tahun.",
+        "C": "Merawat rasa satu bangsa dengan berkolaborasi lintas daerah dan latar untuk tujuan bersama.",
+        "D": "Menekankan penggunaan bahasa daerah agar identitas kedaerahan semakin kuat.",
+        "E": "Menghafalkan isi ikrar Sumpah Pemuda di setiap jenjang pendidikan."
+      },
+      "kunci": "C",
+      "pembahasan": "Esensi Sumpah Pemuda: melebur identitas kedaerahan menjadi identitas nasional yang satu, lewat kolaborasi. Kunci C. A dan B peniruan bentuk/seremonial. E sekadar hafalan. D justru berlawanan arah — menonjolkan kedaerahan, padahal semangatnya menyatukan (walau bahasa daerah baik, konteks soal menuntut penyatuan)."
+    },
+    {
+      "no": 18,
+      "tipe_kode": "E3",
+      "tipe_nama": "Nilai Lama, Terapkan Sekarang",
+      "level": "Medium–HOTS",
+      "tema": "Budi Utomo",
+      "soal": "Budi Utomo (1908) memelopori kebangkitan nasional melalui jalur pendidikan dan kesadaran organisasi. Penerapan semangat Budi Utomo yang paling relevan hari ini adalah ...",
+      "opsi": {
+        "A": "Mendirikan organisasi dengan nama dan struktur menyerupai Budi Utomo.",
+        "B": "Memajukan kualitas sumber daya manusia melalui pendidikan dan literasi yang merata.",
+        "C": "Memperingati Hari Kebangkitan Nasional dengan kegiatan yang lebih besar.",
+        "D": "Mengumpulkan kembali kaum terpelajar dalam satu wadah kedaerahan seperti dahulu.",
+        "E": "Menuliskan sejarah Budi Utomo dalam buku pelajaran secara lebih rinci."
+      },
+      "kunci": "B",
+      "pembahasan": "Inti Budi Utomo: kemajuan bangsa melalui pendidikan dan peningkatan kualitas manusia. Kunci B. A dan D peniruan literal (bahkan D mengulang sifat kedaerahan awal yang justru kemudian ditinggalkan). C seremonial, E sekadar dokumentasi sejarah."
+    },
+    {
+      "no": 19,
+      "tipe_kode": "E3",
+      "tipe_nama": "Nilai Lama, Terapkan Sekarang",
+      "level": "Medium–HOTS",
+      "tema": "Sarekat Islam",
+      "soal": "Sarekat Islam lahir sebagai gerakan ekonomi sekaligus politik untuk memperkuat kemandirian pedagang pribumi. Penerapan nilai perjuangan SI yang paling tepat di era sekarang adalah ...",
+      "opsi": {
+        "A": "Menghidupkan kembali organisasi dagang dengan nama Sarekat Islam.",
+        "B": "Memberdayakan ekonomi umat dan komunitas lokal agar mandiri dan mampu bersaing.",
+        "C": "Menjadikan satu partai politik sebagai wakil tunggal kepentingan umat.",
+        "D": "Membatasi peran pedagang asing agar pasar dikuasai pengusaha dalam negeri.",
+        "E": "Mengadakan peringatan berdirinya Sarekat Islam secara rutin."
+      },
+      "kunci": "B",
+      "pembahasan": "Nilai inti SI: kemandirian ekonomi rakyat/umat. Kunci B. A dan E peniruan bentuk/seremonial. C menyempitkan menjadi dominasi satu partai (berlebihan dan tidak demokratis). D bersifat proteksionis-ekstrem, bukan pemberdayaan."
+    },
+    {
+      "no": 20,
+      "tipe_kode": "E3",
+      "tipe_nama": "Nilai Lama, Terapkan Sekarang",
+      "level": "Medium–HOTS",
+      "tema": "Diplomasi Mohammad Hatta",
+      "soal": "Mohammad Hatta memperjuangkan kemerdekaan Indonesia di forum internasional dengan menegaskan hak bangsa menentukan nasib sendiri. Penerapan semangat diplomasi Hatta yang paling relevan saat ini adalah ...",
+      "opsi": {
+        "A": "Mengirim delegasi ke luar negeri dengan gaya orasi seperti masa Hatta.",
+        "B": "Memperjuangkan kepentingan nasional di forum global melalui argumentasi berbasis prinsip dan hukum internasional.",
+        "C": "Menghafal pidato-pidato Hatta sebagai teladan retorika kebangsaan.",
+        "D": "Menuntut pengakuan negara lain atas kejayaan sejarah bangsa Indonesia.",
+        "E": "Memperbanyak kegiatan mengenang jasa para diplomat pendiri bangsa."
+      },
+      "kunci": "B",
+      "pembahasan": "Esensi diplomasi Hatta: memperjuangkan kepentingan bangsa lewat prinsip universal dan argumentasi (bukan sekadar gaya bicara). Kunci B. A peniruan gaya, C hafalan, E seremonial. D keliru arah — diplomasi Hatta menuntut hak menentukan nasib sendiri, bukan pengakuan atas kejayaan masa lalu."
+    },
+    {
+      "no": 21,
+      "tipe_kode": "E3",
+      "tipe_nama": "Nilai Lama, Terapkan Sekarang",
+      "level": "Medium–HOTS",
+      "tema": "Jenderal Sudirman",
+      "soal": "Dalam kondisi sakit parah, Jenderal Sudirman tetap memimpin perang gerilya demi mempertahankan kemerdekaan. Penerapan semangat pengabdian Sudirman yang paling relevan bagi warga biasa hari ini adalah ...",
+      "opsi": {
+        "A": "Ikut latihan militer agar siap berperang seperti masa gerilya.",
+        "B": "Menuntaskan tanggung jawab dan tugas dengan sepenuh hati meski menghadapi keterbatasan.",
+        "C": "Mengenang perjuangan Sudirman melalui napak tilas rute gerilya.",
+        "D": "Menceritakan kisah Sudirman kepada generasi muda sebagai teladan.",
+        "E": "Memasang foto pahlawan di ruang publik agar semangatnya dikenang."
+      },
+      "kunci": "B",
+      "pembahasan": "Nilai inti Sudirman: pengabdian dan tanggung jawab tuntas meski dalam keterbatasan. Kunci B (dapat diterapkan siapa pun dalam tugasnya). A peniruan literal (perang), C/D/E seremonial dan mengenang, belum menerjemahkan nilai ke tindakan sehari-hari."
+    },
+    {
+      "no": 22,
+      "tipe_kode": "E3",
+      "tipe_nama": "Nilai Lama, Terapkan Sekarang",
+      "level": "Medium–HOTS",
+      "tema": "R.A. Kartini",
+      "soal": "R.A. Kartini memperjuangkan akses pendidikan bagi perempuan pada masanya. Penerapan semangat Kartini yang paling relevan saat ini adalah ...",
+      "opsi": {
+        "A": "Menyelenggarakan peringatan Hari Kartini dengan mengenakan busana adat.",
+        "B": "Membuka dan memperluas kesempatan yang setara bagi perempuan untuk berkembang di berbagai bidang.",
+        "C": "Menerbitkan ulang kumpulan surat Kartini agar dibaca generasi muda.",
+        "D": "Mendirikan sekolah khusus perempuan seperti yang dirintis Kartini.",
+        "E": "Menjadikan tanggal lahir Kartini sebagai hari libur nasional."
+      },
+      "kunci": "B",
+      "pembahasan": "Esensi perjuangan Kartini: kesetaraan kesempatan bagi perempuan. Kunci B. A dan E seremonial, C dokumentasi. D peniruan bentuk yang justru menyempit (sekolah khusus) — semangat Kartini adalah membuka kesetaraan seluas-luasnya, bukan memisahkan."
+    },
+    {
+      "no": 23,
+      "tipe_kode": "E3",
+      "tipe_nama": "Nilai Lama, Terapkan Sekarang",
+      "level": "Medium–HOTS",
+      "tema": "Semangat musyawarah BPUPKI",
+      "soal": "Dalam sidang BPUPKI, para tokoh berbeda pandangan tajam soal dasar negara, namun tetap mengutamakan kesepakatan bersama. Penerapan semangat itu dalam kehidupan berbangsa hari ini yang paling tepat adalah ...",
+      "opsi": {
+        "A": "Menggelar sidang perumusan ulang dasar negara secara berkala.",
+        "B": "Menyelesaikan perbedaan pendapat melalui musyawarah yang mengutamakan kepentingan bersama di atas ego kelompok.",
+        "C": "Memperingati jasa para perumus dasar negara dalam berbagai kegiatan.",
+        "D": "Menghafalkan proses dan tokoh-tokoh sidang BPUPKI secara rinci.",
+        "E": "Mengganti keputusan bersama bila salah satu pihak merasa dirugikan."
+      },
+      "kunci": "B",
+      "pembahasan": "Nilai inti: musyawarah mufakat yang mengutamakan kepentingan bersama. Kunci B. A peniruan bentuk (mengulang sidang), C seremonial, D hafalan. E menyalahi semangatnya — keputusan bersama justru dijaga, bukan dibongkar sepihak."
+    },
+    {
+      "no": 24,
+      "tipe_kode": "E3",
+      "tipe_nama": "Nilai Lama, Terapkan Sekarang",
+      "level": "Medium–HOTS",
+      "tema": "Kongres Perempuan Indonesia 1928",
+      "soal": "Kongres Perempuan Indonesia pertama (1928) menyatukan organisasi-organisasi perempuan untuk memperjuangkan hak dan peran perempuan dalam kehidupan bangsa. Penerapan semangat itu yang paling relevan saat ini adalah ...",
+      "opsi": {
+        "A": "Mengadakan kongres perempuan dengan susunan acara seperti tahun 1928.",
+        "B": "Menguatkan kolaborasi lintas organisasi untuk memperjuangkan peran perempuan di ruang publik masa kini.",
+        "C": "Memperingati Hari Ibu dengan kegiatan yang lebih besar tiap tahun.",
+        "D": "Mendokumentasikan hasil-hasil kongres perempuan dalam arsip nasional.",
+        "E": "Mengenang tokoh-tokoh perempuan pendiri organisasi dalam seminar rutin."
+      },
+      "kunci": "B",
+      "pembahasan": "Esensi: kolaborasi memperjuangkan peran perempuan. Kunci B. A peniruan bentuk, C seremonial, D dokumentasi, E mengenang — semuanya belum menerjemahkan nilai ke perjuangan nyata masa kini."
+    },
+    {
+      "no": 25,
+      "tipe_kode": "E4",
+      "tipe_nama": "Beda Tipis Antar-Nilai",
+      "level": "Medium–HOTS",
+      "tema": "Objektivitas vs integritas",
+      "soal": "Seorang jurnalis memperoleh data yang bisa menjatuhkan tokoh yang secara pribadi tidak ia sukai. Setelah verifikasi, sebagian data tak terbukti, dan ia hanya memberitakan bagian yang terbukti meski dampaknya jadi kecil. Nilai yang paling tepat tercermin adalah ...",
+      "opsi": {
+        "A": "Keberanian, karena ia tetap memberitakan tokoh berpengaruh.",
+        "B": "Kejujuran, karena ia tidak menambah atau membesar-besarkan informasi.",
+        "C": "Objektivitas, karena ia memisahkan sikap pribadi dari fakta yang dapat dibuktikan.",
+        "D": "Integritas, karena ia tetap memegang prinsip meski terhadap orang yang tak ia sukai.",
+        "E": "Netralitas, karena ia tidak berpihak kepada tokoh mana pun."
+      },
+      "kunci": "C",
+      "pembahasan": "Fitur yang ditonjolkan narasi: keputusan berbasis FAKTA yang terbukti sambil menyingkirkan rasa suka/tidak suka → itu ciri objektivitas. Kunci C. Distraktor terkuat D 'integritas' sering disambar karena terdengar paling luhur, tetapi integritas menekankan keselarasan prinsip-tindakan secara umum, bukan pemisahan perasaan dari fakta. B (jujur) dan E (netral) near-synonym yang menggoda tetapi kurang tepat menangkap 'berbasis bukti'."
+    },
+    {
+      "no": 26,
+      "tipe_kode": "E4",
+      "tipe_nama": "Beda Tipis Antar-Nilai",
+      "level": "Medium–HOTS",
+      "tema": "Netralitas (konflik kepentingan)",
+      "soal": "Seorang panitia seleksi mengetahui salah satu pelamar berperingkat tertinggi adalah adik kandungnya. Ia lalu mengundurkan diri dari kepanitiaan dan menyerahkan penilaian kepada anggota lain. Nilai yang paling tepat tercermin adalah ...",
+      "opsi": {
+        "A": "Objektivitas, karena ia menilai semua pelamar berdasarkan data.",
+        "B": "Kejujuran, karena ia mengakui adanya hubungan keluarga secara terbuka.",
+        "C": "Netralitas, karena ia menarik diri agar keputusan bebas dari keberpihakan.",
+        "D": "Profesionalisme, karena ia memahami tugas kepanitiaan dengan baik.",
+        "E": "Tanggung jawab, karena ia menjaga kelancaran proses seleksi."
+      },
+      "kunci": "C",
+      "pembahasan": "Fitur inti: MENARIK DIRI dari situasi konflik kepentingan agar keputusan tidak berpihak → netralitas. Kunci C. A keliru karena ia justru TIDAK ikut menilai. B benar sebagian (ia mengakui) tetapi tindakan intinya bukan pengakuan melainkan penarikan diri. D dan E terlalu umum."
+    },
+    {
+      "no": 27,
+      "tipe_kode": "E4",
+      "tipe_nama": "Beda Tipis Antar-Nilai",
+      "level": "Medium–HOTS",
+      "tema": "Kesederhanaan (Bung Hatta)",
+      "soal": "Bung Hatta menolak fasilitas negara yang tidak sesuai ketentuan dan memilih memenuhi kebutuhannya dengan uang pribadi meski menjabat Wakil Presiden. Nilai yang paling tercermin adalah ...",
+      "opsi": {
+        "A": "Mandiri, karena ia tidak ingin bergantung pada fasilitas negara.",
+        "B": "Kesederhanaan, karena ia menolak gaya hidup mewah dan hidup sesuai kemampuan.",
+        "C": "Kejujuran, karena ia terbuka dalam penggunaan anggaran.",
+        "D": "Keadilan, karena ia memperlakukan diri sama seperti rakyat.",
+        "E": "Tanggung jawab, karena ia tidak membebani keuangan negara."
+      },
+      "kunci": "B",
+      "pembahasan": "Fitur yang ditonjolkan: menolak kemewahan dan hidup secukupnya → kesederhanaan. Kunci B. A benar sebagian (mandiri) tetapi narasi menekankan 'menolak yang tidak sesuai ketentuan/mewah', bukan sekadar tidak bergantung. C, D, E menyorot aspek lain (keterbukaan, kesetaraan, beban negara) yang tidak sekuat 'kesederhanaan' dalam narasi."
+    },
+    {
+      "no": 28,
+      "tipe_kode": "E4",
+      "tipe_nama": "Beda Tipis Antar-Nilai",
+      "level": "Medium–HOTS",
+      "tema": "Integritas (KPK, kerabat)",
+      "soal": "Seorang penyelidik menemukan bukti kuat keterlibatan kerabat dekatnya dalam kasus suap, lalu tetap melanjutkan proses hukum sesuai bukti. Nilai yang paling tepat tercermin adalah ...",
+      "opsi": {
+        "A": "Netralitas dalam menghadapi konflik kepentingan.",
+        "B": "Objektivitas dalam pengambilan keputusan.",
+        "C": "Integritas dalam menjalankan tugas.",
+        "D": "Kepatuhan terhadap aturan internal lembaga.",
+        "E": "Profesionalisme berbasis kompetensi."
+      },
+      "kunci": "C",
+      "pembahasan": "Yang ditonjolkan: ia tetap MENJALANKAN kewajiban benar meski berbenturan dengan kepentingan pribadi/keluarga — keselarasan prinsip dan tindakan di bawah tekanan = integritas. Kunci C. A (netralitas) lebih cocok bila ia MUNDUR dari kasus (bandingkan soal no.26); di sini ia justru maju menegakkan hukum, sehingga integritas lebih tepat. B menekankan basis fakta (tidak ditonjolkan pemisahan perasaan di sini), D dan E terlalu prosedural/umum."
+    },
+    {
+      "no": 29,
+      "tipe_kode": "E4",
+      "tipe_nama": "Beda Tipis Antar-Nilai",
+      "level": "Medium–HOTS",
+      "tema": "Kejujuran vs tanggung jawab (ASN)",
+      "soal": "Seorang ASN menyadari laporan yang ia susun memuat data keliru yang menguntungkan kinerjanya. Sebelum diperiksa siapa pun, ia melapor ke atasan dan memperbaikinya. Nilai yang paling tepat tercermin adalah ...",
+      "opsi": {
+        "A": "Tanggung jawab, karena ia menuntaskan pekerjaannya.",
+        "B": "Kejujuran, karena ia mengakui kesalahan sendiri tanpa menunggu ketahuan.",
+        "C": "Disiplin, karena ia menaati prosedur pelaporan.",
+        "D": "Keberanian, karena ia menghadapi risiko teguran.",
+        "E": "Integritas, karena ia menjaga nama baik institusi."
+      },
+      "kunci": "B",
+      "pembahasan": "Fitur kunci: mengakui kesalahan sendiri secara sukarela SEBELUM ketahuan → kejujuran. Kunci B. A dan C benar tetapi generik (menuntaskan/menaati prosedur). D menonjolkan risiko, bukan pengakuan. E 'integritas' menggoda, tetapi alasan yang ditawarkan ('menjaga nama baik institusi') justru bukan motif jujur — ini sengaja dipasang agar tidak asal memilih kata yang terdengar hebat."
+    },
+    {
+      "no": 30,
+      "tipe_kode": "E4",
+      "tipe_nama": "Beda Tipis Antar-Nilai",
+      "level": "Medium–HOTS",
+      "tema": "Ancaman: radikalisme",
+      "soal": "Seorang pemuda menolak simbol negara dan mengajak masyarakat mengganti sistem bernegara dengan satu ideologi yang diyakininya secara paksa. Bentuk ancaman yang paling tepat adalah ...",
+      "opsi": {
+        "A": "Intoleransi terhadap simbol kebangsaan.",
+        "B": "Radikalisme yang bertentangan dengan konsensus nasional.",
+        "C": "Separatisme yang memicu pemisahan wilayah.",
+        "D": "Fanatisme kelompok yang menolak keberagaman.",
+        "E": "Disintegrasi sosial akibat konflik pandangan."
+      },
+      "kunci": "B",
+      "pembahasan": "Fitur kunci: hendak MENGGANTI SISTEM/DASAR NEGARA secara paksa → radikalisme. Kunci B. A (intoleransi) hanya menyoal penolakan simbol (gejala), bukan penggantian sistem. C (separatisme) menuntut pemisahan WILAYAH, bukan penggantian ideologi. D (fanatisme) soal sikap kelompok, E (disintegrasi) adalah akibat, bukan bentuk ancamannya."
+    },
+    {
+      "no": 31,
+      "tipe_kode": "E4",
+      "tipe_nama": "Beda Tipis Antar-Nilai",
+      "level": "Medium–HOTS",
+      "tema": "Ancaman: separatisme",
+      "soal": "Sekelompok orang di suatu wilayah menggalang dukungan untuk memisahkan daerahnya dari NKRI dan membentuk negara sendiri. Bentuk ancaman yang paling tepat adalah ...",
+      "opsi": {
+        "A": "Radikalisme terhadap ideologi negara.",
+        "B": "Separatisme yang mengancam keutuhan wilayah NKRI.",
+        "C": "Intoleransi terhadap pemerintah pusat.",
+        "D": "Disintegrasi akibat kesenjangan pembangunan.",
+        "E": "Fanatisme kedaerahan yang berlebihan."
+      },
+      "kunci": "B",
+      "pembahasan": "Fitur kunci: memisahkan WILAYAH dari NKRI → separatisme. Kunci B. A (radikalisme) soal ideologi, bukan wilayah. C (intoleransi) tidak tepat. D (disintegrasi) adalah dampak/kondisi, bukan bentuk gerakan yang dilakukan. E (fanatisme) menyorot sikap, bukan tindakan memisahkan diri."
+    },
+    {
+      "no": 32,
+      "tipe_kode": "E4",
+      "tipe_nama": "Beda Tipis Antar-Nilai",
+      "level": "Medium–HOTS",
+      "tema": "Ancaman: intoleransi",
+      "soal": "Seseorang menghalangi tetangganya menjalankan ibadah dan melarang perayaan hari besar agama yang berbeda dengannya, meski tanpa maksud memisahkan wilayah atau mengganti dasar negara. Bentuk ancaman yang paling tepat adalah ...",
+      "opsi": {
+        "A": "Radikalisme terhadap konsensus nasional.",
+        "B": "Separatisme berbasis identitas agama.",
+        "C": "Intoleransi terhadap keberagaman.",
+        "D": "Disintegrasi bangsa.",
+        "E": "Fanatisme politik."
+      },
+      "kunci": "C",
+      "pembahasan": "Fitur kunci: menolak/menghalangi perbedaan (agama) → intoleransi. Kunci C. Narasi sengaja menegaskan 'tanpa maksud memisahkan wilayah atau mengganti dasar negara' untuk menutup jebakan B (separatisme) dan A (radikalisme). D adalah dampak sistemik, bukan perilaku individu ini. E (fanatisme politik) tidak sesuai konteks agama."
+    },
+    {
+      "no": 33,
+      "tipe_kode": "E4",
+      "tipe_nama": "Beda Tipis Antar-Nilai",
+      "level": "Medium–HOTS",
+      "tema": "Tanggung jawab (Sudirman)",
+      "soal": "Dalam kondisi lemah karena sakit, Jenderal Sudirman tetap memimpin pasukan di medan gerilya dan menolak tinggal di tempat aman. Nilai integritas yang paling menonjol adalah ...",
+      "opsi": {
+        "A": "Berani, karena ia mengambil risiko besar demi kedaulatan bangsa.",
+        "B": "Tanggung jawab, karena ia tetap menjalankan kewajibannya sebagai panglima meski dalam kondisi lemah.",
+        "C": "Kerja keras, karena ia berjuang tanpa mengenal lelah.",
+        "D": "Disiplin, karena ia menaati sumpah jabatan hingga akhir.",
+        "E": "Peduli, karena ia memikirkan keselamatan pasukannya."
+      },
+      "kunci": "B",
+      "pembahasan": "Fitur yang ditonjolkan: ia MENOLAK meninggalkan tugas kepemimpinan walau sakit → tanggung jawab (tetap memikul kewajiban). Kunci B. A (berani) menyorot risiko, benar sebagian tetapi bukan inti 'tetap menjalankan kewajiban'. C, D, E menyoroti aspek lain (ketekunan, ketaatan, kepedulian) yang tidak sekuat 'tanggung jawab atas jabatannya'."
+    },
+    {
+      "no": 34,
+      "tipe_kode": "E4",
+      "tipe_nama": "Beda Tipis Antar-Nilai",
+      "level": "Medium–HOTS",
+      "tema": "Kecuali (Hatta) — logika dibalik",
+      "soal": "Bung Hatta hidup sederhana meski pernah menjabat tinggi, pernah ditolak kartu kredit karena tabungannya tak cukup, dan menolak pemberian dari pihak berkepentingan. Sikap tersebut mencerminkan nilai integritas berikut, KECUALI ...",
+      "opsi": {
+        "A": "Keteladanan dalam kejujuran dan kesederhanaan.",
+        "B": "Menjaga independensi dari pengaruh kekuasaan luar.",
+        "C": "Konsistensi antara prinsip dan perilaku dalam kehidupan publik.",
+        "D": "Ketegasan dalam mengambil keputusan strategis pemerintahan.",
+        "E": "Tanggung jawab moral sebagai pejabat publik kepada rakyat."
+      },
+      "kunci": "D",
+      "pembahasan": "Soal 'kecuali' → cari yang TIDAK tercermin. Narasi berbicara tentang kesederhanaan, menolak gratifikasi, dan konsistensi hidup — semua tercermin di A, B, C, E. D (ketegasan mengambil keputusan strategis pemerintahan) tidak disinggung sama sekali oleh narasi; itu ranah kepemimpinan/kebijakan, bukan integritas pribadi yang diceritakan. Kunci D."
+    },
+    {
+      "no": 35,
+      "tipe_kode": "E4",
+      "tipe_nama": "Beda Tipis Antar-Nilai",
+      "level": "Medium–HOTS",
+      "tema": "Kepedulian vs solidaritas (bencana)",
+      "soal": "Saat bencana, warga sebuah desa membangun dapur umum, membagikan logistik, dan menjaga ketertiban tanpa menunggu bantuan luar. Nilai yang paling tepat tercermin adalah ...",
+      "opsi": {
+        "A": "Kemanusiaan yang diwujudkan melalui gotong royong tanpa pamrih.",
+        "B": "Kepatuhan terhadap instruksi penanggulangan bencana.",
+        "C": "Kedisiplinan warga dalam keadaan darurat.",
+        "D": "Ketaatan pada pemimpin desa setempat.",
+        "E": "Kemandirian ekonomi masyarakat desa."
+      },
+      "kunci": "A",
+      "pembahasan": "Fitur kunci: bergerak bersama menolong sesama secara sukarela tanpa menunggu perintah → nilai kemanusiaan dalam bentuk gotong royong. Kunci A. B dan D keliru karena justru 'tanpa menunggu bantuan/instruksi'. C (disiplin) dan E (kemandirian ekonomi) menyorot aspek yang tidak sekuat 'kemanusiaan/gotong royong' dalam narasi."
+    },
+    {
+      "no": 36,
+      "tipe_kode": "E5",
+      "tipe_nama": "Pilih yang Benar Walau Berisiko",
+      "level": "Medium–HOTS",
+      "tema": "Pengadaan (gratifikasi setelah lelang)",
+      "soal": "Seorang panitia pengadaan mengetahui rekannya diam-diam menerima 'ucapan terima kasih' berupa uang dari vendor setelah lelang selesai. Rekannya berdalih uang itu sukarela dan tidak memengaruhi keputusan yang sudah terjadi. Langkah yang paling mencerminkan integritas adalah ...",
+      "opsi": {
+        "A": "Menegur rekannya secara pribadi agar mengembalikan pemberian tersebut.",
+        "B": "Membiarkannya karena keputusan lelang memang sudah selesai dan tak terpengaruh.",
+        "C": "Mencatat kejadian sebagai pengingat untuk mengawasi rekannya di kemudian hari.",
+        "D": "Melaporkan kejadian melalui mekanisme pengawasan yang berlaku meski merenggangkan hubungan.",
+        "E": "Melaporkan secara anonim ke pihak luar agar dirinya tidak terseret konflik."
+      },
+      "kunci": "D",
+      "pembahasan": "Gratifikasi tetap pelanggaran meski diberikan SETELAH keputusan. Langkah benar = menempuh jalur pengawasan resmi meski berisiko personal. Kunci D. A menyelesaikan secara pribadi (setengah jalan, tidak akuntabel), B rasionalisasi/pembiaran, C menunda. E benar niat tetapi salah kanal — anonim ke pihak luar melompati mekanisme resmi dan terkesan menghindar."
+    },
+    {
+      "no": 37,
+      "tipe_kode": "E5",
+      "tipe_nama": "Pilih yang Benar Walau Berisiko",
+      "level": "Medium–HOTS",
+      "tema": "ASN keuangan (tekanan atasan)",
+      "soal": "Rani, ASN bagian keuangan, menemukan kesalahan pada laporan anggaran yang telah disetujui dan akan diaudit. Atasannya meminta kesalahan itu dibiarkan karena nilainya kecil dan revisi memperlambat proses. Langkah Rani yang paling mencerminkan integritas adalah ...",
+      "opsi": {
+        "A": "Melaporkan kesalahan secara anonim agar tidak berselisih dengan atasan.",
+        "B": "Mengikuti arahan atasan demi kelancaran proses audit.",
+        "C": "Membiarkan laporan berjalan dan mencatatnya untuk diperbaiki periode berikutnya.",
+        "D": "Mengusulkan perbaikan setelah audit selesai agar tidak mengganggu proses.",
+        "E": "Mengoreksi laporan sesuai prosedur meski berakibat keterlambatan audit."
+      },
+      "kunci": "E",
+      "pembahasan": "Integritas = memperbaiki yang keliru lewat prosedur benar meski berisiko (di sini: keterlambatan/berselisih dengan atasan). Kunci E. B pembiaran, C dan D menunda perbaikan (membiarkan laporan salah tetap diaudit). A benar niat tetapi memilih jalur anonim untuk menghindari risiko konfrontasi — bukan cara paling berintegritas dibanding koreksi terbuka sesuai prosedur."
+    },
+    {
+      "no": 38,
+      "tipe_kode": "E5",
+      "tipe_nama": "Pilih yang Benar Walau Berisiko",
+      "level": "Medium–HOTS",
+      "tema": "Auditor BUMN (iming-iming promosi)",
+      "soal": "Seorang auditor internal BUMN menemukan indikasi penyimpangan dana. Direksi menekannya agar tidak melanjutkan laporan demi citra perusahaan, dan menjanjikan promosi bila ia 'bersikap bijak'. Tindakan yang paling mencerminkan integritas adalah ...",
+      "opsi": {
+        "A": "Meminta waktu mengumpulkan bukti lebih kuat agar tidak gegabah.",
+        "B": "Menyampaikan temuan kepada komite audit/pengawas sesuai mekanisme meski berisiko pada kariernya.",
+        "C": "Menolak tekanan direksi namun menyimpan temuan demi stabilitas internal.",
+        "D": "Menerima promosi lalu perlahan mendorong perbaikan dari dalam.",
+        "E": "Melaporkan langsung ke media agar cepat menjadi perhatian publik."
+      },
+      "kunci": "B",
+      "pembahasan": "Kunci B: menempuh saluran pengawasan resmi (komite audit) meski mengorbankan karier. A terdengar hati-hati tetapi berpotensi jadi dalih menunda; C menolak tekanan tetapi menyembunyikan temuan (tidak tuntas); D kompromi yang menukar prinsip dengan jabatan. E salah kanal — membocorkan ke media melompati mekanisme internal yang seharusnya ditempuh lebih dulu."
+    },
+    {
+      "no": 39,
+      "tipe_kode": "E5",
+      "tipe_nama": "Pilih yang Benar Walau Berisiko",
+      "level": "Medium–HOTS",
+      "tema": "Konflik kepentingan keluarga (proyek)",
+      "soal": "Seorang pejabat pengadaan mengetahui perusahaan yang ikut tender adalah milik iparnya, dan perusahaan itu memenuhi syarat teknis. Langkah yang paling mencerminkan integritas adalah ...",
+      "opsi": {
+        "A": "Meloloskan perusahaan itu karena memang memenuhi syarat teknis.",
+        "B": "Menggugurkan perusahaan itu diam-diam agar tidak dicurigai.",
+        "C": "Menyatakan konflik kepentingan dan mundur dari proses penilaian tender tersebut.",
+        "D": "Melanjutkan penilaian sendiri namun bersikap ekstra ketat pada perusahaan itu.",
+        "E": "Meminta iparnya mengundurkan diri agar situasi tidak menyulitkan."
+      },
+      "kunci": "C",
+      "pembahasan": "Menghadapi konflik kepentingan, langkah berintegritas = menyatakannya secara terbuka dan mundur dari penilaian, apa pun risikonya. Kunci C. A berpotensi keberpihakan, B manipulatif (menggugurkan diam-diam juga tidak adil), D tetap membuka celah bias karena ia menilai sendiri, E menggeser masalah ke pihak lain alih-alih menempuh prosedur benar."
+    },
+    {
+      "no": 40,
+      "tipe_kode": "E6",
+      "tipe_nama": "Lembaga Mana yang Berwenang",
+      "level": "Medium–HOTS",
+      "tema": "DPD",
+      "soal": "Pemerintah menyiapkan RUU tentang pembagian hasil tambang antara pusat dan daerah yang berdampak besar pada otonomi daerah. Lembaga yang paling tepat memberi pertimbangan kepada DPR terkait RUU ini adalah ...",
+      "opsi": {
+        "A": "Mahkamah Konstitusi, karena menilai kesesuaian RUU dengan UUD 1945.",
+        "B": "DPD, karena berwenang memberi pertimbangan atas RUU yang berkaitan dengan otonomi dan sumber daya daerah.",
+        "C": "BPK, karena mengaudit pengelolaan sumber daya alam di daerah.",
+        "D": "DPRD, karena mewakili rakyat di tingkat daerah.",
+        "E": "Kementerian Dalam Negeri, karena membina dan mengawasi daerah."
+      },
+      "kunci": "B",
+      "pembahasan": "DPD berwenang mengajukan dan ikut membahas serta memberi pertimbangan atas RUU terkait otonomi daerah, hubungan pusat-daerah, dan pengelolaan sumber daya alam. Kunci B. A keliru: MK menguji UU yang SUDAH disahkan, bukan memberi pertimbangan atas RUU. C: BPK mengaudit keuangan, bukan menimbang RUU. D: DPRD bekerja di ranah daerah, bukan memberi pertimbangan ke DPR pusat. E: Kemendagri eksekutif, bukan pemberi pertimbangan legislasi ke DPR."
+    },
+    {
+      "no": 41,
+      "tipe_kode": "E6",
+      "tipe_nama": "Lembaga Mana yang Berwenang",
+      "level": "Medium–HOTS",
+      "tema": "Mahkamah Konstitusi",
+      "soal": "Sekelompok warga menilai sebuah undang-undang yang telah disahkan bertentangan dengan hak konstitusional mereka dalam UUD 1945. Lembaga yang tepat untuk menguji hal itu adalah ...",
+      "opsi": {
+        "A": "Mahkamah Agung, karena mengadili perkara pada tingkat kasasi.",
+        "B": "Mahkamah Konstitusi, karena berwenang menguji undang-undang terhadap UUD 1945.",
+        "C": "Komisi Yudisial, karena menjaga kehormatan dan perilaku hakim.",
+        "D": "DPR, karena lembaga yang membentuk undang-undang tersebut.",
+        "E": "Mahkamah Agung, karena menguji peraturan di bawah undang-undang."
+      },
+      "kunci": "B",
+      "pembahasan": "Pengujian UNDANG-UNDANG terhadap UUD 1945 (judicial review) adalah kewenangan Mahkamah Konstitusi. Kunci B. A (kasasi) dan C (pengawasan hakim) bukan pengujian norma. D keliru: DPR pembentuk UU, bukan pengujinya. E adalah jebakan terkuat — MA memang menguji peraturan, tetapi hanya peraturan DI BAWAH undang-undang (mis. PP, Perda), bukan undang-undang terhadap UUD."
+    },
+    {
+      "no": 42,
+      "tipe_kode": "E6",
+      "tipe_nama": "Lembaga Mana yang Berwenang",
+      "level": "Medium–HOTS",
+      "tema": "BPK",
+      "soal": "Muncul dugaan bahwa pengelolaan anggaran sebuah kementerian tidak sesuai ketentuan dan berpotensi merugikan keuangan negara. Lembaga yang paling tepat memeriksa pengelolaan keuangan tersebut adalah ...",
+      "opsi": {
+        "A": "KPK, karena menindak tindak pidana korupsi.",
+        "B": "BPK, karena berwenang memeriksa pengelolaan dan tanggung jawab keuangan negara.",
+        "C": "Kejaksaan, karena melakukan penuntutan perkara.",
+        "D": "Inspektorat Jenderal kementerian, karena mengawasi internal kementerian.",
+        "E": "DPR, karena mengawasi jalannya pemerintahan."
+      },
+      "kunci": "B",
+      "pembahasan": "Pemeriksaan pengelolaan dan tanggung jawab KEUANGAN NEGARA adalah kewenangan konstitusional BPK. Kunci B. A dan C masuk bila sudah masuk ranah pidana (penindakan/penuntutan), bukan pemeriksaan keuangan itu sendiri. D (Itjen) mengawasi internal tetapi bukan pemeriksa eksternal keuangan negara. E (DPR) mengawasi secara politik, bukan memeriksa keuangan secara teknis."
+    },
+    {
+      "no": 43,
+      "tipe_kode": "E6",
+      "tipe_nama": "Lembaga Mana yang Berwenang",
+      "level": "Medium–HOTS",
+      "tema": "Mahkamah Agung (uji peraturan)",
+      "soal": "Sebuah organisasi menilai isi sebuah Peraturan Daerah bertentangan dengan undang-undang yang lebih tinggi. Lembaga yang tepat untuk menguji Perda tersebut adalah ...",
+      "opsi": {
+        "A": "Mahkamah Konstitusi, karena menguji semua bentuk peraturan.",
+        "B": "Mahkamah Agung, karena berwenang menguji peraturan di bawah undang-undang terhadap undang-undang.",
+        "C": "DPRD, karena lembaga yang membentuk Perda tersebut.",
+        "D": "Kementerian Dalam Negeri, karena membatalkan Perda bermasalah.",
+        "E": "Mahkamah Konstitusi, karena Perda menyangkut hak warga daerah."
+      },
+      "kunci": "B",
+      "pembahasan": "Pengujian peraturan DI BAWAH undang-undang (termasuk Perda) terhadap undang-undang adalah kewenangan Mahkamah Agung. Kunci B. A dan E keliru — MK menguji undang-undang terhadap UUD, bukan Perda terhadap UU (jebakan yang membalik kewenangan MK dan MA). C pembentuk Perda, bukan pengujinya. D bersifat administratif eksekutif, bukan pengujian yudisial."
+    },
+    {
+      "no": 44,
+      "tipe_kode": "E7",
+      "tipe_nama": "Pilih yang Cocok dari Daftar",
+      "level": "Medium–HOTS",
+      "tema": "Pengamalan sila ke-3",
+      "soal": "Perhatikan kegiatan berikut: (1) Mengutamakan kepentingan sekolah daripada kelompok kelas tertentu; (2) Ikut lomba antardaerah membawa nama baik provinsi; (3) Menghormati teman berbeda agama dan suku; (4) Mengibarkan Merah Putih saat upacara dengan khidmat; (5) Memilih teman berdasarkan daerah asal yang sama; (6) Ikut gotong royong tanpa membeda-bedakan asal daerah. Yang merupakan pengamalan sila ke-3 adalah ...",
+      "opsi": {
+        "A": "1 dan 4",
+        "B": "2 dan 3",
+        "C": "1 dan 6",
+        "D": "3 dan 6",
+        "E": "4 dan 6"
+      },
+      "kunci": "C",
+      "pembahasan": "Sila ke-3 (Persatuan Indonesia) menekankan mengutamakan kepentingan bersama dan kesatuan tanpa membeda-bedakan asal. Item (1) mengutamakan kepentingan bersama (sekolah) dan (6) gotong royong tanpa membeda-bedakan asal daerah = paling murni sila ke-3. Kunci C. Item (3) 'menghormati beda agama/suku' lebih condong ke sila ke-2 (kemanusiaan/toleransi), (4) lebih ke cinta tanah air/simbol, (2) sarat identitas kedaerahan (bisa multitafsir), dan (5) jelas anti-persatuan (memilih teman berdasar asal daerah) — sengaja dipasang sebagai jebakan."
+    },
+    {
+      "no": 45,
+      "tipe_kode": "E7",
+      "tipe_nama": "Pilih yang Cocok dari Daftar",
+      "level": "Medium–HOTS",
+      "tema": "Pengamalan sila ke-4",
+      "soal": "Perhatikan tindakan berikut: (1) Menentukan keputusan kelas melalui musyawarah; (2) Memaksakan pendapat karena merasa paling benar; (3) Menerima hasil keputusan bersama dengan lapang dada; (4) Menghormati hasil pemilihan ketua kelas meski calon pilihannya kalah; (5) Mengambil keputusan sendiri agar lebih cepat; (6) Menyumbang untuk teman yang terkena musibah. Yang merupakan pengamalan sila ke-4 adalah ...",
+      "opsi": {
+        "A": "1 dan 6",
+        "B": "2 dan 5",
+        "C": "1 dan 4",
+        "D": "3 dan 6",
+        "E": "4 dan 5"
+      },
+      "kunci": "C",
+      "pembahasan": "Sila ke-4 (Kerakyatan yang dipimpin hikmat kebijaksanaan dalam permusyawaratan) menekankan musyawarah dan menghormati hasil keputusan bersama. Item (1) musyawarah dan (4) menghormati hasil pemilihan meski kalah = paling tepat. Kunci C. Item (3) juga bernuansa sila ke-4 tetapi (1) dan (4) lebih kuat sebagai pasangan; (2) dan (5) justru bertentangan (memaksakan pendapat/memutuskan sendiri); (6) adalah sila ke-2/ke-5 (kepedulian sosial). Pilih pasangan yang keduanya paling murni sila ke-4."
+    },
+    {
+      "no": 46,
+      "tipe_kode": "E8",
+      "tipe_nama": "Soal Bahasa Indonesia",
+      "level": "Medium",
+      "tema": "Diksi rumpang",
+      "soal": "Kata yang tepat untuk melengkapi kalimat berikut: 'Dalam menghadapi era globalisasi, generasi muda harus ______ kemampuan berpikir kritis agar mampu ______ perkembangan ilmu pengetahuan dan teknologi dengan baik.'",
+      "opsi": {
+        "A": "mengasah – mengikuti",
+        "B": "melatih – menghindari",
+        "C": "mempertajam – menanggapi",
+        "D": "mengembangkan – menyesuaikan",
+        "E": "meningkatkan – menolak"
+      },
+      "kunci": "A",
+      "pembahasan": "Pasangan yang paling padu maknanya: 'mengasah kemampuan berpikir kritis' (kolokasi lazim) dan 'mengikuti perkembangan iptek' (bersikap adaptif-positif). Kunci A. B 'menghindari' dan E 'menolak' berlawanan makna dengan 'dengan baik'. C 'menanggapi' dan D 'menyesuaikan' bisa masuk secara longgar, tetapi 'mengasah–mengikuti' paling tepat dan alami sebagai pasangan."
+    },
+    {
+      "no": 47,
+      "tipe_kode": "E8",
+      "tipe_nama": "Soal Bahasa Indonesia",
+      "level": "Medium",
+      "tema": "Kalimat efektif",
+      "soal": "Kalimat berikut tidak efektif: 'Berdasarkan hasil daripada rapat kemarin itu memutuskan bahwa kegiatan akan diundur sampai waktu yang belum ditentukan.' Perbaikan yang paling tepat adalah ...",
+      "opsi": {
+        "A": "Berdasarkan hasil rapat kemarin, diputuskan bahwa kegiatan diundur sampai waktu yang belum ditentukan.",
+        "B": "Berdasarkan daripada hasil rapat kemarin, kegiatan itu diputuskan untuk diundur.",
+        "C": "Hasil rapat kemarin itu memutuskan bahwa kegiatan akan diundur sampai waktu yang belum ditentukan.",
+        "D": "Rapat kemarin memutuskan kegiatan diundur sampai dengan waktu yang belum bisa untuk ditentukan.",
+        "E": "Berdasarkan hasil rapat kemarin, maka kegiatan diundur sampai waktu yang belum ditentukan."
+      },
+      "kunci": "A",
+      "pembahasan": "Kunci A menghapus 'daripada' (tidak baku di sini), memperbaiki subjek (rapat/hasil tidak bisa 'memutuskan' → bentuk pasif 'diputuskan'), dan tidak memakai 'maka' yang mubazir. B tetap salah ('daripada'). C mempertahankan kesalahan subjek + 'itu'. D bertele-tele ('bisa untuk ditentukan'). E redundan karena 'Berdasarkan ...' tidak perlu diikuti 'maka'."
+    },
+    {
+      "no": 48,
+      "tipe_kode": "E8",
+      "tipe_nama": "Soal Bahasa Indonesia",
+      "level": "Medium",
+      "tema": "Kalimat baku",
+      "soal": "Kalimat yang menggunakan struktur dan ejaan baku sesuai kaidah bahasa Indonesia adalah ...",
+      "opsi": {
+        "A": "Para hadirin sekalian dimohon memperhatikan susunan acara yang telah dibagikan.",
+        "B": "Untuk mengoptimalkan kinerja, manajemen akan merevisi SOP yang berlaku semenjak tahun lalu.",
+        "C": "Beliau menyarankan agar kita senantiasa menjaga kesehatan dan pola hidup yang teratur.",
+        "D": "Rapat tersebut tidak dapat dihadiri oleh saya karena ada kegiatan yang tidak dapat ditinggal.",
+        "E": "Demi kelancaran acara, panitia mengkoordinir peserta agar segera memasuki ruangan."
+      },
+      "kunci": "C",
+      "pembahasan": "Kunci C baku dan efektif. A salah: 'para hadirin sekalian' pleonasme (hadirin sudah jamak). B memakai 'semenjak' (tidak baku, seharusnya 'sejak'). D berstruktur kurang wajar ('tidak dapat dihadiri oleh saya' → lebih baik 'saya tidak dapat menghadiri'). E memakai 'mengkoordinir' (tidak baku, seharusnya 'mengoordinasi')."
+    },
+    {
+      "no": 49,
+      "tipe_kode": "E8",
+      "tipe_nama": "Soal Bahasa Indonesia",
+      "level": "Medium",
+      "tema": "Diksi rumpang (pengaruh)",
+      "soal": "Kata yang tepat untuk melengkapi kalimat berikut: 'Kemajuan teknologi informasi saat ini ______ kehidupan manusia, baik dari segi komunikasi maupun cara berpikir, sehingga kita perlu ______ dengan bijak.'",
+      "opsi": {
+        "A": "merubah – menggunakannya",
+        "B": "mempengaruhi – menanggapinya",
+        "C": "memengaruhi – menggunakannya",
+        "D": "mengubah – menolaknya",
+        "E": "merubah – memanfaatkannya"
+      },
+      "kunci": "C",
+      "pembahasan": "Bentuk baku adalah 'memengaruhi' (bukan 'mempengaruhi'), dan pasangan 'menggunakannya dengan bijak' paling padu. Kunci C. A dan E memakai 'merubah' (tidak baku, seharusnya 'mengubah'). B memakai bentuk tidak baku 'mempengaruhi'. D 'menolaknya' bertentangan dengan konteks 'dengan bijak'."
+    },
+    {
+      "no": 50,
+      "tipe_kode": "E8",
+      "tipe_nama": "Soal Bahasa Indonesia",
+      "level": "Medium",
+      "tema": "Perbaikan kalimat tidak efektif",
+      "soal": "Kalimat 'Untuk dapat memperoleh hasil yang maksimal, maka kita harus berusaha dengan sungguh-sungguh dan penuh semangat yang tinggi.' tidak efektif. Perbaikan yang paling tepat adalah ...",
+      "opsi": {
+        "A": "Untuk memperoleh hasil maksimal, kita harus berusaha sungguh-sungguh dan penuh semangat.",
+        "B": "Untuk mendapatkan hasil maksimal, maka kita harus berusaha sungguh-sungguh dan penuh semangat.",
+        "C": "Maka kita harus berusaha sungguh-sungguh supaya hasil yang didapatkan bisa maksimal.",
+        "D": "Untuk dapat memperoleh hasil yang maksimal, kita harus dengan semangat tinggi berusaha sungguh-sungguh.",
+        "E": "Agar hasilnya maksimal, maka kita harus sungguh-sungguh dan penuh semangat berusaha."
+      },
+      "kunci": "A",
+      "pembahasan": "Kunci A menghilangkan 'maka' yang mubazir setelah anak kalimat 'Untuk ...', membuang 'dapat' dan 'yang tinggi' yang berlebihan, sehingga ringkas dan efektif. B dan E masih memakai 'maka' yang mubazir. C berawalan 'Maka' yang janggal. D bertele-tele dan susunannya kurang wajar ('dengan semangat tinggi berusaha')."
+    }
+  ]
+}

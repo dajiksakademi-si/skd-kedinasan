@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAT TWK — Bank Soal (bank_soal.json)</title>
+<style>
+  :root{
+    --bg:#0f172a; --panel:#1e293b; --panel2:#334155; --line:#475569;
+    --text:#f1f5f9; --muted:#94a3b8; --accent:#38bdf8; --accent2:#0ea5e9;
+    --ok:#22c55e; --bad:#ef4444; --warn:#f59e0b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.55;min-height:100vh}
+  .wrap{max-width:880px;margin:0 auto;padding:20px}
+  header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 18px;background:var(--panel);border-radius:14px;margin-bottom:16px;flex-wrap:wrap}
+  header h1{font-size:15px;font-weight:700;letter-spacing:.3px}
+  .timer{font-variant-numeric:tabular-nums;background:var(--panel2);padding:6px 12px;border-radius:20px;font-weight:600;font-size:14px}
+  .card{background:var(--panel);border-radius:16px;padding:22px 24px}
+  .qmeta{font-size:12px;color:var(--muted);margin-bottom:10px;text-transform:uppercase;letter-spacing:.6px}
+  .stem{font-size:16.5px;margin-bottom:20px;white-space:pre-line}
+  .opt{display:flex;gap:12px;align-items:flex-start;padding:13px 15px;border:1.5px solid var(--line);border-radius:12px;margin-bottom:10px;cursor:pointer;transition:.15s;background:transparent}
+  .opt:hover{border-color:var(--accent);background:rgba(56,189,248,.06)}
+  .opt.sel{border-color:var(--accent);background:rgba(56,189,248,.14)}
+  .opt .lab{font-weight:700;color:var(--accent);min-width:20px}
+  .opt.correct{border-color:var(--ok);background:rgba(34,197,94,.14)}
+  .opt.wrong{border-color:var(--bad);background:rgba(239,68,68,.14)}
+  .nav{display:flex;justify-content:space-between;align-items:center;margin-top:20px;gap:10px;flex-wrap:wrap}
+  .grid{display:flex;gap:8px;flex-wrap:wrap}
+  .dot{width:38px;height:38px;border-radius:10px;border:1.5px solid var(--line);background:var(--panel2);color:var(--text);font-weight:600;cursor:pointer;font-size:13px}
+  .dot.active{border-color:var(--accent);background:var(--accent);color:#03212f}
+  .dot.answered{border-color:var(--accent2)}
+  .dot.flag{border-color:var(--warn)}
+  button.btn{background:var(--accent);color:#03212f;border:none;padding:11px 20px;border-radius:10px;font-weight:700;cursor:pointer;font-size:14px}
+  button.btn:hover{background:var(--accent2)}
+  button.ghost{background:transparent;color:var(--text);border:1.5px solid var(--line)}
+  button.ghost:hover{border-color:var(--accent)}
+  button:disabled{opacity:.4;cursor:not-allowed}
+  .flagbtn{background:transparent;border:1.5px solid var(--warn);color:var(--warn);padding:9px 14px;border-radius:10px;cursor:pointer;font-weight:600;font-size:13px}
+  .flagbtn.on{background:var(--warn);color:#3a2600}
+  .center{text-align:center}
+  .big{font-size:40px;font-weight:800;margin:8px 0}
+  .muted{color:var(--muted)}
+  .res-item{background:var(--panel);border-radius:14px;padding:18px 20px;margin-bottom:14px;border-left:4px solid var(--line)}
+  .res-item.r-ok{border-left-color:var(--ok)}
+  .res-item.r-bad{border-left-color:var(--bad)}
+  .tag{display:inline-block;font-size:11px;padding:3px 9px;border-radius:20px;background:var(--panel2);color:var(--muted);margin:2px 6px 2px 0;font-weight:600}
+  .tag.slow{background:rgba(245,158,11,.2);color:var(--warn)}
+  .pemb{font-size:14px;color:var(--muted);margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
+  .hidden{display:none}
+  .row{display:flex;gap:14px;flex-wrap:wrap;margin-top:16px}
+  .stat{flex:1;min-width:120px;background:var(--panel2);border-radius:12px;padding:14px;text-align:center}
+  .stat .n{font-size:22px;font-weight:800}
+  .stat .l{font-size:12px;color:var(--muted)}
+  input.name,select.name{background:var(--panel2);border:1.5px solid var(--line);color:var(--text);padding:11px 14px;border-radius:10px;font-size:15px;width:100%;max-width:340px;margin:8px 0}
+  table{width:100%;border-collapse:collapse;margin-top:10px;font-size:14px}
+  th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase}
+  .bar{height:8px;border-radius:5px;background:var(--panel2);overflow:hidden;min-width:80px}
+  .bar>span{display:block;height:100%;background:var(--accent)}
+  .err{background:rgba(239,68,68,.14);border:1.5px solid var(--bad);color:#fecaca;padding:12px 14px;border-radius:10px;font-size:14px;margin:12px 0}
+  .field{margin:14px 0;text-align:left;max-width:340px;margin-left:auto;margin-right:auto}
+  .field label{font-size:13px;color:var(--muted);display:block;margin-bottom:4px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- START -->
+  <section id="start" class="card center">
+    <div class="qmeta">Computer Assisted Test — Tes Wawasan Kebangsaan</div>
+    <h1 style="font-size:22px;margin-bottom:6px">Latihan Soal TWK (HOTS)</h1>
+    <p class="muted" id="bankInfo">Memuat bank soal…</p>
+
+    <div id="pickerBox" class="hidden">
+      <div class="err">Bank soal tidak bisa dimuat otomatis (kemungkinan file dibuka langsung / <code>file://</code>).
+        Pilih file <b>bank_soal.json</b> secara manual di bawah, atau jalankan lewat server lokal
+        (<code>python3 -m http.server</code>).</div>
+      <input type="file" id="filePick" accept="application/json,.json" class="name">
+    </div>
+
+    <div id="startForm" class="hidden">
+      <div class="field">
+        <label>Nama peserta (opsional)</label>
+        <input class="name" id="pname" placeholder="Nama peserta">
+      </div>
+      <div class="field">
+        <label>Jumlah soal</label>
+        <select class="name" id="jml"></select>
+      </div>
+      <div class="field">
+        <label>Urutan</label>
+        <select class="name" id="mode">
+          <option value="urut">Urut (no. 1 ke atas)</option>
+          <option value="acak">Acak</option>
+        </select>
+      </div>
+      <p class="muted" style="font-size:13px;max-width:520px;margin:6px auto 18px">
+        Sistem mencatat waktu di tiap soal. Kunci &amp; pembahasan muncul di akhir, lengkap dengan
+        analisis per tipe soal — berguna melihat tipe mana yang paling menguras waktu/menjebak.
+      </p>
+      <button class="btn" onclick="startTest()">Mulai Tes</button>
+    </div>
+  </section>
+
+  <!-- TEST -->
+  <section id="test" class="hidden">
+    <header>
+      <h1 id="hdrName">Peserta</h1>
+      <div class="timer">⏱ <span id="clock">00:00</span></div>
+    </header>
+    <div class="card">
+      <div class="qmeta">Soal <span id="qnum">1</span> dari <span id="qtot">0</span>
+        &nbsp;·&nbsp; <span id="qtipe"></span> &nbsp;·&nbsp; ⏱ soal ini: <span id="qclock">00:00</span></div>
+      <div class="stem" id="stem"></div>
+      <div id="opts"></div>
+      <div class="nav">
+        <button class="flagbtn" id="flagBtn" onclick="toggleFlag()">⚑ Ragu-ragu</button>
+        <div class="grid" id="grid"></div>
+      </div>
+      <div class="nav">
+        <button class="ghost btn" onclick="prev()">‹ Sebelumnya</button>
+        <button class="btn" id="nextBtn" onclick="next()">Berikutnya ›</button>
+      </div>
+    </div>
+    <div class="center" style="margin-top:14px">
+      <button class="ghost btn" onclick="if(confirm('Selesaikan tes sekarang?'))finish()">Selesai &amp; Lihat Hasil</button>
+    </div>
+  </section>
+
+  <!-- RESULT -->
+  <section id="result" class="hidden">
+    <div class="card center">
+      <div class="qmeta">Hasil</div>
+      <div class="big" id="score">0/0</div>
+      <div class="muted" id="scoreSub"></div>
+      <div class="row">
+        <div class="stat"><div class="n" id="totalTime">0:00</div><div class="l">Total waktu</div></div>
+        <div class="stat"><div class="n" id="avgTime">0s</div><div class="l">Rata-rata / soal</div></div>
+        <div class="stat"><div class="n" id="slowQ">-</div><div class="l">Paling lama</div></div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <div class="qmeta">Analisis per Tipe Soal</div>
+      <table id="tipeTable"><thead><tr><th>Tipe</th><th>Benar</th><th>Akurasi</th><th>Rata² waktu</th></tr></thead><tbody></tbody></table>
+      <p class="muted" style="font-size:13px;margin-top:10px">Tag <span class="tag slow">LAMBAT</span> = waktu &gt; 90 detik (indikasi jebakan HOTS).</p>
+    </div>
+
+    <div id="review" style="margin-top:16px"></div>
+    <div class="center" style="margin:20px 0">
+      <button class="btn" onclick="location.reload()">Ulangi</button>
+    </div>
+  </section>
+
+</div>
+
+<script>
+/* ================= LOAD BANK ================= */
+let BANK_ALL=[];          // seluruh soal dari json
+let META=null;
+
+async function loadBank(){
+  try{
+    const r=await fetch('bank_soal.json',{cache:'no-store'});
+    if(!r.ok) throw new Error('http');
+    const j=await r.json();
+    onBankLoaded(j);
+  }catch(e){
+    // fallback: file:// -> minta user pilih file
+    document.getElementById('bankInfo').textContent='Perlu memuat bank soal secara manual.';
+    document.getElementById('pickerBox').classList.remove('hidden');
+  }
+}
+document.getElementById('filePick').addEventListener('change',ev=>{
+  const f=ev.target.files[0]; if(!f) return;
+  const rd=new FileReader();
+  rd.onload=()=>{ try{ onBankLoaded(JSON.parse(rd.result)); document.getElementById('pickerBox').classList.add('hidden'); }
+                 catch(err){ alert('File JSON tidak valid: '+err.message); } };
+  rd.readAsText(f);
+});
+
+function onBankLoaded(j){
+  META=j.meta||{};
+  BANK_ALL=j.soal||[];
+  document.getElementById('bankInfo').textContent =
+    `Bank dimuat: ${BANK_ALL.length} soal · ${(META.judul||'TWK')} ${META.versi?('v'+META.versi):''}`;
+  // isi opsi jumlah soal
+  const sel=document.getElementById('jml'); sel.innerHTML='';
+  const opts=[10,25,50].filter(n=>n<=BANK_ALL.length);
+  if(!opts.includes(BANK_ALL.length)) opts.push(BANK_ALL.length);
+  opts.forEach(n=>{const o=document.createElement('option');o.value=n;o.textContent=n+' soal';sel.appendChild(o);});
+  sel.value=String(BANK_ALL.length);
+  document.getElementById('startForm').classList.remove('hidden');
+}
+
+/* ================= STATE ================= */
+let Q=[];                 // soal terpilih untuk sesi ini
+let cur=0, answers=[], flags=[], qTime=[];
+let qEnterTs=0, totalStart=0, clockInt;
+
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+
+function startTest(){
+  const n=parseInt(document.getElementById('jml').value,10);
+  const mode=document.getElementById('mode').value;
+  let pool=[...BANK_ALL];
+  if(mode==='acak') pool=shuffle(pool);
+  else pool.sort((a,b)=>a.no-b.no);
+  Q = (n<pool.length) ? (mode==='acak'? pool.slice(0,n) : shuffle([...pool]).slice(0,n).sort((a,b)=>a.no-b.no)) : pool;
+  // reset state
+  answers=Array(Q.length).fill(null); flags=Array(Q.length).fill(false); qTime=Array(Q.length).fill(0);
+  cur=0;
+  document.getElementById('hdrName').textContent=(document.getElementById('pname').value.trim()||'Peserta');
+  document.getElementById('qtot').textContent=Q.length;
+  document.getElementById('start').classList.add('hidden');
+  document.getElementById('test').classList.remove('hidden');
+  totalStart=Date.now(); qEnterTs=Date.now();
+  clockInt=setInterval(tick,1000);
+  buildGrid(); render();
+}
+function tick(){
+  document.getElementById('clock').textContent=fmt(Math.floor((Date.now()-totalStart)/1000));
+  document.getElementById('qclock').textContent=fmt(qTime[cur]+Math.floor((Date.now()-qEnterTs)/1000));
+}
+function fmt(s){const m=Math.floor(s/60),x=s%60;return String(m).padStart(2,'0')+':'+String(x).padStart(2,'0');}
+function commitTime(){ qTime[cur]+=Math.floor((Date.now()-qEnterTs)/1000); qEnterTs=Date.now(); }
+
+function buildGrid(){
+  const g=document.getElementById('grid'); g.innerHTML='';
+  Q.forEach((_,i)=>{const d=document.createElement('button');d.className='dot';d.textContent=i+1;
+    d.onclick=()=>{commitTime();cur=i;render();};g.appendChild(d);});
+}
+function render(){
+  const q=Q[cur];
+  document.getElementById('qnum').textContent=cur+1;
+  document.getElementById('qtipe').textContent=q.tipe_nama||q.tipe_kode||'';
+  document.getElementById('stem').textContent=q.soal;
+  const box=document.getElementById('opts'); box.innerHTML='';
+  const labels=['A','B','C','D','E'];
+  labels.forEach(L=>{
+    if(q.opsi[L]===undefined) return;
+    const el=document.createElement('div');
+    el.className='opt'+(answers[cur]===L?' sel':'');
+    el.innerHTML=`<span class="lab">${L}</span><span>${q.opsi[L]}</span>`;
+    el.onclick=()=>{answers[cur]=L;render();};
+    box.appendChild(el);
+  });
+  document.getElementById('flagBtn').classList.toggle('on',flags[cur]);
+  document.querySelectorAll('.dot').forEach((d,i)=>{
+    d.classList.toggle('active',i===cur);
+    d.classList.toggle('answered',answers[i]!==null);
+    d.classList.toggle('flag',flags[i]);
+  });
+  document.getElementById('nextBtn').textContent = cur===Q.length-1 ? 'Selesai ✓' : 'Berikutnya ›';
+  tick();
+}
+function toggleFlag(){flags[cur]=!flags[cur];render();}
+function prev(){ if(cur>0){commitTime();cur--;render();} }
+function next(){ if(cur<Q.length-1){commitTime();cur++;render();} else finish(); }
+
+function finish(){
+  commitTime(); clearInterval(clockInt);
+  document.getElementById('test').classList.add('hidden');
+  document.getElementById('result').classList.remove('hidden');
+  const labels=['A','B','C','D','E'];
+  let correct=0,total=0,slowIdx=-1,slowMax=-1;
+  const tipeAgg={}; // kode -> {nama,benar,jml,waktu}
+  qTime.forEach((t,i)=>{total+=t; if(t>slowMax){slowMax=t;slowIdx=i;}});
+  Q.forEach((q,i)=>{
+    const ok=answers[i]===q.kunci; if(ok)correct++;
+    const k=q.tipe_kode||'?';
+    if(!tipeAgg[k]) tipeAgg[k]={nama:q.tipe_nama||k,benar:0,jml:0,waktu:0};
+    tipeAgg[k].jml++; tipeAgg[k].waktu+=qTime[i]; if(ok)tipeAgg[k].benar++;
+  });
+  // ringkasan
+  document.getElementById('score').textContent=correct+'/'+Q.length;
+  document.getElementById('scoreSub').textContent='Skor '+Math.round(correct/Q.length*100)+' / 100';
+  document.getElementById('totalTime').textContent=fmt(total);
+  document.getElementById('avgTime').textContent=Math.round(total/Q.length)+'s';
+  document.getElementById('slowQ').textContent='Soal '+(slowIdx+1)+' ('+fmt(slowMax)+')';
+  // tabel per tipe
+  const tb=document.querySelector('#tipeTable tbody'); tb.innerHTML='';
+  Object.keys(tipeAgg).sort().forEach(k=>{
+    const a=tipeAgg[k]; const pct=Math.round(a.benar/a.jml*100);
+    const tr=document.createElement('tr');
+    tr.innerHTML=`<td>${k} · ${a.nama}</td><td>${a.benar}/${a.jml}</td>
+      <td><div style="display:flex;align-items:center;gap:8px"><div class="bar"><span style="width:${pct}%"></span></div>${pct}%</div></td>
+      <td>${Math.round(a.waktu/a.jml)}s</td>`;
+    tb.appendChild(tr);
+  });
+  // review detail
+  const rv=document.getElementById('review'); rv.innerHTML='';
+  Q.forEach((q,i)=>{
+    const ok=answers[i]===q.kunci;
+    const slow=qTime[i]>90;
+    const pick=answers[i]===null?'<i>kosong</i>':answers[i];
+    const item=document.createElement('div');
+    item.className='res-item '+(ok?'r-ok':'r-bad');
+    item.innerHTML=`
+      <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center">
+        <strong>Soal ${i+1} — No.${q.no} ${ok?'✓':'✗'}</strong>
+        <div>
+          <span class="tag">${q.tipe_kode} · ${q.tipe_nama}</span>
+          <span class="tag">⏱ ${fmt(qTime[i])}</span>
+          ${slow?'<span class="tag slow">LAMBAT</span>':''}
+        </div>
+      </div>
+      <div style="margin-top:8px;font-size:14px" class="muted">${q.soal}</div>
+      <div style="margin-top:8px;font-size:14px">Jawabanmu: <b style="color:${ok?'var(--ok)':'var(--bad)'}">${pick}</b>
+        &nbsp;·&nbsp; Kunci: <b style="color:var(--ok)">${q.kunci}</b>
+        &nbsp;→ ${q.opsi[q.kunci]}</div>
+      <div class="pemb">${q.pembahasan}</div>`;
+    rv.appendChild(item);
+  });
+  window.scrollTo(0,0);
+}
+
+/* go */
+loadBank();
+</script>
+</body>
+</html>

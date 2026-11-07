@@ -1,0 +1,26 @@
+.DS_Store
+node_modules/
+tmp/
+prototipe/
+*.mov
+*.pdf
+
+# hasil cetak handbook (dicetak ulang dari src/)
+BIG DATA/HANDBOOK */Handbook_*.html
+
+# bahan pihak luar — tidak boleh masuk repo
+BIG DATA/REFERENSI LUAR/
+SOAL PAKET 41 AL FAIZ/
+
+# data bisnis internal
+BIG DATA/RENCANA BISNIS KELAS 2027/
+
+# repo terpisah (lihat README)
+BIG DATA/GENERATE SOAL TERBARU SKD 2026/
+**/cat-tkp-app/
+**/cat-twk-app/
+**/MATERI TWK 6 JUNI 2026/
+
+# hasil uji engine gambar + foto rujukan tak terpakai
+.test-out*/
+**/aset/ref_*

@@ -1,0 +1,285 @@
+<!-- ═════════ BAB 13 · OPTIMASI TABEL ═════════
+     Rencana: reports/tahap2_D_kck_analitis_optimasi.md Bab 13 + sebaran T2-1b (3 latihan) + T2-7(9) (membaca data: tabel saja,
+     tanpa grafik) + aturan-tetap B-15 (optimum global). Semua kombinasi, batas bawah/atas, dan status pernyataan data di narasi
+     dihitung di scripts/cek_bab11_13.mjs. Kotak soal = tempat kosong sampai T5. -->
+<section class="bab num" data-bab="13">
+  <header class="band">
+    <div class="no">13</div>
+    <div>
+      <h2>Optimasi Tabel</h2>
+      <p>Bab ini membahas harga satuan, batas bawah biaya, rentang jumlah yang sah, cara mendaftar kombinasi secara teratur, jumlah terbanyak dengan anggaran tetap, serta cara membaca data tabel.</p>
+      <p class="waktu"><svg class="ico"><use href="#jam"/></svg>{{TARGET}}</p>
+    </div>
+    <div class="kisi" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="emas"></i></div>
+  </header>
+
+  <p class="lead">Soal optimasi memberi tabel paket dengan isi dan harga, lalu menanyakan kombinasi termurah yang memenuhi kebutuhan. Lima pilihan jawaban hanyalah lima contoh dari puluhan kombinasi. Pilihan termurah di antara kelimanya belum tentu sah, dan kombinasi yang benar harus termurah di antara <b>semua</b> kombinasi yang sah. Kerjakan pertanyaan pembuka berikut sebelum membaca uraiannya.</p>
+
+<!--B13-P01:mulai-->
+<div data-soal="HB-TIU-B13-P01" data-target="150">
+  <div class="soal">
+    <div class="meta"><span id="soal-B13-P01">Pertanyaan Pembuka<a class="ke" href="#bahas-B13-P01">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 150 detik</span></div>
+    <p class="stem">Panitia lomba lari membutuhkan <mark>paling sedikit 90 botol</mark> air minum. Toko menjual air minum dalam empat kemasan berikut.</p>
+    <table class="tb soal-data"><thead><tr><th>Kemasan</th><th>Harga</th></tr></thead><tbody><tr><td>isi 8 botol</td><td class="n">Rp20.000</td></tr><tr><td>isi 12 botol</td><td class="n">Rp28.800</td></tr><tr><td>isi 15 botol</td><td class="n">Rp34.500</td></tr><tr><td>isi 24 botol</td><td class="n">Rp57.600</td></tr></tbody></table>
+    <p class="stem">Kombinasi kemasan dengan biaya termurah yang memenuhi kebutuhan panitia adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>1 kemasan isi 12 dan 5 kemasan isi 15</span></li><li><span class="h">B</span><span>12 kemasan isi 8</span></li><li><span class="h">C</span><span>1 kemasan isi 8, 1 kemasan isi 12, dan 3 kemasan isi 24</span></li><li><span class="h">D</span><span>6 kemasan isi 15</span></li><li><span class="h">E</span><span>4 kemasan isi 24</span></li></ol>
+  </div>
+  <div class="guru"><b>OPT termurah, empat kemasan, optimum tepat di batas bawah, pilihan kombinasi.</b> Kunci D. Kode: A J-BATAS · B J-LANGKAH · C J-HEMAT · D <b>kunci</b> · E J-HEMAT. Kerangka: OPT termurah · 4 kemasan · kebutuhan minimal saja · kemasan terbesar bukan paling hemat · optimum tepat di batas bawah · pilihan kombinasi. TO terdekat: TO P1 no. 56 (3 paket, terbesar paling hemat, opsi biaya); bukan kemasan 2, 5, 10 liter (narasi). Bukti: 6720 kombinasi; 6487 memenuhi ≥ 90 botol; optimum tunggal 6 kemasan isi 15 = Rp207.000 = batas bawah 90 × Rp2.300; pilihan: A 87 botol Rp201.300 (tidak sah), B 96 botol Rp240.000, C 92 botol Rp221.600, D 90 botol Rp207.000, E 96 botol Rp230.400. Kode = rencana slot (J-HEMAT ×2, J-BATAS kurang, J-LANGKAH: harga per kemasan dibandingkan tanpa dibagi isi; isi 8 dipakai, bukan isi 6, agar tidak ada pasangan cermin 15 × 6 / 6 × 15 dengan kunci). Pilihan termurah (A) tidak sah. Urutan pilihan kombinasi tidak mengikuti aturan angka urut naik.</div>
+</div>
+<!--B13-P01:selesai-->
+
+  <h3>Harga Satuan dan Batas Bawah</h3>
+  <div class="konsep">
+    <div class="def">
+      <p><b>Harga satuan</b> adalah harga untuk satu satuan isi, misalnya per liter. Harga satuan menunjukkan kemasan yang paling hemat, dan kemasan terbesar belum tentu yang paling hemat. Pada tabel di samping, kemasan yang paling hemat adalah kemasan 5 liter.</p>
+      <p><b>Batas bawah</b> biaya adalah kebutuhan minimal dikali harga satuan termurah. Untuk kebutuhan 21 liter, batas bawahnya 21 × Rp16.000 = Rp336.000. Tidak ada kombinasi yang lebih murah dari batas ini, sebab setiap liter paling murah berharga Rp16.000 dan yang dibeli sedikitnya 21 liter.</p>
+      <p>Bila satu kombinasi sah tepat menyentuh batas bawah, kombinasi itu pasti termurah tanpa perlu mencoba kombinasi lain.</p>
+    </div>
+    <table class="hit">
+      <thead><tr><th style="width:15mm">Kemasan</th><th>Harga</th><th style="width:22mm">Per liter</th></tr></thead>
+      <tbody>
+        <tr><td>2 liter</td><td class="n">Rp34.000</td><td class="n">Rp17.000</td></tr>
+        <tr><td>5 liter</td><td class="n">Rp80.000</td><td class="n">Rp16.000</td></tr>
+        <tr><td>10 liter</td><td class="n">Rp165.000</td><td class="n">Rp16.500</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Rentang Jumlah yang Sah</h3>
+  <p>Kebutuhan minimal dan kelebihan maksimal bersama-sama membentuk <b>rentang sah</b>. Kebutuhan 21 liter dengan kelebihan paling banyak 3 liter berarti total isi harus 21 sampai 24 liter. Kombinasi di bawah 21 liter tidak memenuhi kebutuhan, dan kombinasi di atas 24 liter melampaui kelebihan yang diizinkan.</p>
+  <p>Dua kombinasi yang terasa paling masuk akal ternyata gagal. Kemasan paling hemat saja tidak pernah pas. Empat kemasan 5 liter baru 20 liter, sedangkan lima kemasan sudah 25 liter. Mengutamakan kemasan terbesar memberi dua kemasan 10 liter ditambah satu kemasan 2 liter: 22 liter seharga Rp364.000, baru urutan keenam dari yang termurah.</p>
+
+  <h3>Mendaftar Kombinasi secara Teratur</h3>
+  <p class="utuh">Bila batas bawah tidak tersentuh, cari di sekitarnya dengan teratur. Mulailah dari kemasan paling hemat sebanyak mungkin, tambal sisanya dengan kemasan lain sesedikit mungkin, lalu kurangi kemasan paling hemat satu per satu.</p>
+  <table class="tb">
+    <thead><tr><th class="n" style="width:22%">Kemasan 5 liter</th><th class="n" style="width:22%">Kemasan 2 liter</th><th class="n" style="width:24%">Isi</th><th class="n">Biaya</th></tr></thead>
+    <tbody>
+      <tr><td class="n">4</td><td class="n">1</td><td class="n">22 liter</td><td class="n">Rp354.000</td></tr>
+      <tr class="jml"><td class="n">3</td><td class="n">3</td><td class="n">21 liter</td><td class="n">Rp342.000</td></tr>
+      <tr><td class="n">2</td><td class="n">6</td><td class="n">22 liter</td><td class="n">Rp364.000</td></tr>
+      <tr><td class="n">1</td><td class="n">8</td><td class="n">21 liter</td><td class="n">Rp352.000</td></tr>
+    </tbody>
+  </table>
+  <p>Ada 18 kombinasi sah pada contoh ini, tetapi daftar teratur menemukan yang termurah dalam empat baris, yaitu tiga kemasan 5 liter dan tiga kemasan 2 liter: 21 liter seharga Rp342.000, hanya Rp6.000 di atas batas bawah. Kombinasi yang memuat kemasan 10 liter paling murah Rp347.000, jadi tidak ada yang lebih baik.</p>
+
+  <h3>Cara Cepat Menghadapi Pilihan</h3>
+  <p>Di ujian, kamu tidak harus mendaftar semua kombinasi. Coret dulu pilihan yang keluar dari rentang sah, hitung biaya pilihan yang tersisa, lalu bandingkan yang termurah dengan batas bawah. Pilihan yang lebih murah dari batas bawah pasti melanggar syarat. Pilihan yang jauh di atas batas bawah patut dicurigai; ujilah dengan satu kombinasi yang mengutamakan kemasan paling hemat.</p>
+  <div class="note catatan">
+    <h4>Catatan</h4>
+    <p>Kombinasi termurah yang sebenarnya bisa tidak tercantum di antara pilihan. Hal ini pernah ditemukan di soal latihan sebuah tryout: satu kombinasi yang tepat menyentuh batas bawah tidak ada di pilihan. Bila batas bawah menunjukkan hal serupa, jangan memburu jawaban yang hilang. Pilih pilihan termurah yang sah, lalu lanjutkan ke soal berikutnya.</p>
+  </div>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Dasar Catatan Optimum di Luar Pilihan</h4>
+    <p>TR no. 56: lima paket, kebutuhan minimal + kelebihan maksimal; kombinasi satu jenis paket dengan harga satuan termurah tepat menyentuh batas bawah dan tidak ada di opsi (log uji TR, 2026-10-28; diperiksa ulang 2026-10-30, 255 kombinasi sah). Kunci resmi B = opsi termurah yang sah. Nama tryout hanya di edisi pengajar (Putusan 11b). Soal D'Ajiks wajib memuat optimum global di opsi (B-15).</p>
+  </div>
+
+  <h3>Jumlah Terbanyak dengan Anggaran Tetap</h3>
+  <p>Kembaran soal termurah adalah soal terbanyak: anggaran tetap, sisa uang boleh, dan yang dicari isi paling banyak. Alatnya <b>batas atas</b>, yaitu anggaran dibagi harga satuan termurah. Dengan anggaran Rp250.000 dan tabel yang sama, batas atasnya Rp250.000 : Rp16.000 = 15,625 liter. Isi setiap kombinasi berupa bilangan bulat liter, sehingga paling banyak 15 liter, dan 15 liter memang tercapai, misalnya dengan tiga kemasan 5 liter seharga Rp240.000.</p>
+
+  <h3>Membaca Data Tabel</h3>
+  <div class="utuh">
+  <p class="utuh">Bentuk terakhir bab ini tidak meminta kombinasi, tetapi menilai pernyataan tentang sebuah tabel. Setiap pernyataan jatuh ke salah satu dari tiga golongan: <b>pasti benar</b>, <b>pasti salah</b>, atau <b>tidak dapat ditentukan</b> dari tabel. Golongan ketiga sama dengan "tidak cukup" di Bab 11: ada dua keadaan yang sama-sama cocok dengan tabel, tetapi memberi jawaban berbeda.</p>
+  <table class="tb">
+    <thead><tr><th style="width:31%">Angkatan pelatihan</th><th class="n" style="width:21%">Peserta</th><th class="n" style="width:21%">Lulus</th><th class="n">Persentase lulus</th></tr></thead>
+    <tbody>
+      <tr><td>Angkatan I</td><td class="n">40</td><td class="n">30</td><td class="n">75%</td></tr>
+      <tr><td>Angkatan II</td><td class="n">50</td><td class="n">35</td><td class="n">70%</td></tr>
+    </tbody>
+  </table>
+  <table class="tb">
+    <thead><tr><th style="width:38%">Pernyataan</th><th style="width:20%">Golongan</th><th>Alasan</th></tr></thead>
+    <tbody>
+      <tr><td>Lulusan Angkatan II lebih banyak daripada lulusan Angkatan I.</td><td><b>pasti benar</b></td><td>35 lebih dari 30</td></tr>
+      <tr><td>Persentase kelulusan Angkatan II lebih tinggi daripada Angkatan I.</td><td><b>pasti salah</b></td><td>70% kurang dari 75%, walaupun jumlah lulusannya lebih banyak</td></tr>
+      <tr><td>Lulusan perempuan Angkatan II lebih banyak daripada Angkatan I.</td><td><b>tidak dapat ditentukan</b></td><td>tabel tidak memuat jenis kelamin; banyak lulusan perempuan kedua angkatan bisa 10 dan 20, atau 20 dan 10</td></tr>
+      <tr><td>Kelulusan Angkatan II lebih rendah karena jadwalnya lebih padat.</td><td><b>tidak dapat ditentukan</b></td><td>tabel menunjukkan apa yang terjadi, bukan mengapa</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Dua kekeliruan paling sering di sini adalah membandingkan jumlah padahal yang ditanya persentase, dan menyamakan "tidak dapat ditentukan" dengan "pasti salah". Tabel tidak membantah pernyataan golongan ketiga; tabel hanya tidak cukup untuk membenarkannya.</p>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Cakupan Membaca Data</h4>
+    <p>Putusan T2-7(9): tabel saja, tanpa grafik batang. Bentuk ini 0 soal di TR dan 2 soal di SL; porsi resmi belum diverifikasi, karena itu subbagiannya pendek (C03 + L01). Aturan T2-D §2.3 no. 10: kata sebab ("karena") tidak boleh menjadi penanda tunggal opsi salah; minimal satu opsi berkata sebab gugur karena angkanya salah.</p>
+  </div>
+
+  <h3>Langkah Penyelesaian Soal Optimasi</h3>
+  <div class="rules satu">
+    <div><b>Tulis syarat sebagai rentang:</b> kebutuhan minimal sampai kebutuhan minimal ditambah kelebihan maksimal, atau anggaran yang tersedia.</div>
+    <div><b>Hitung harga satuan</b> setiap paket dan urutkan dari yang paling hemat.</div>
+    <div><b>Hitung batas bawah</b> biaya, atau batas atas isi untuk soal terbanyak.</div>
+    <div><b>Coret pilihan</b> yang keluar dari rentang atau melanggar syarat lain, seperti stok dan jenis barang.</div>
+    <div><b>Hitung biaya pilihan yang tersisa,</b> termasuk ongkos tetap bila ada, lalu pilih yang termurah.</div>
+    <div><b>Cek balik:</b> bandingkan dengan batas bawah. Bila jauh di atasnya, uji satu kombinasi yang mengutamakan paket paling hemat.</div>
+  </div>
+  <p>Untuk soal membaca data, baca judul, satuan, dan dasar persen lebih dulu. Ubah setiap pilihan menjadi pertanyaan "dapat dihitung dari tabel?", hitung hanya yang perlu, dan golongkan pilihan yang cocok dengan dua keadaan sebagai tidak dapat ditentukan.</p>
+
+  <h3>Kekeliruan pada Soal Optimasi dan Data</h3>
+  <p>Setiap pilihan salah pada soal optimasi dan membaca data D'Ajiks lahir dari salah satu kekeliruan berikut. Nama-nama ini dipakai di setiap pembahasan bab ini.</p>
+  <table class="tb">
+    <thead><tr><th style="width:5%">No.</th><th style="width:32%">Kekeliruan</th><th>Contoh</th><th style="width:27%">Pertanyaan uji</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><b>Menentukan termurah tanpa menghitung kombinasi lain</b></td><td>paket terbesar atau harga satuan termurah dianggap pasti memberi total termurah</td><td>Sisa dan kelebihannya sudah dihitung?</td></tr>
+      <tr><td>2</td><td><b>Melewatkan atau melonggarkan satu syarat</b></td><td>stok terlewat; satu jenis barang tidak terpenuhi; pilihan termurah dipilih tanpa cek syarat</td><td>Semua syarat sudah dicek?</td></tr>
+      <tr><td>3</td><td><b>Salah membaca batas</b></td><td>total kurang dari kebutuhan atau melampaui kelebihan maksimal</td><td>Totalnya di dalam rentang sah?</td></tr>
+      <tr><td>4</td><td><b>Berhenti satu langkah sebelum selesai</b></td><td>ongkos kirim terlupa; salah jumlah biaya</td><td>Semua biaya sudah dijumlahkan?</td></tr>
+      <tr><td>5</td><td><b>Memakai data yang tidak dibutuhkan</b></td><td>kolom tabel yang tidak memengaruhi biaya ikut dihitung</td><td>Kolom ini memengaruhi jawaban?</td></tr>
+      <tr><td>6</td><td><b>Persen dihitung dari bilangan yang salah</b></td><td>jumlah dibandingkan padahal yang ditanya persentase</td><td>Yang ditanya jumlah atau persen?</td></tr>
+      <tr><td>7</td><td><b>Menyamakan "tidak dapat ditentukan" dengan "pasti salah"</b></td><td>pernyataan yang tidak dibantah tabel digolongkan salah</td><td>Tabel membantah atau hanya diam?</td></tr>
+      <tr><td>8</td><td><b>Dugaan sebab dikira data</b></td><td>pernyataan "karena …" dibenarkan oleh angka</td><td>Tabel menjelaskan mengapa?</td></tr>
+    </tbody>
+  </table>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Padanan Nama Kekeliruan dan Kode</h4>
+    <p>1 J-HEMAT (K2) · 2 J-SYARAT (K2) · 3 J-BATAS (K4) · 4 J-LANGKAH (K2) · 5 J-PENGALIH (K1) · 6 J-BASIS, varian DAT (K3) · 7 J-TENTU, varian DAT (K4) · 8 J-AKAL (K1). Opsi salah optimasi = tidak sah (syarat yang dilanggar disebut) atau sah tetapi lebih mahal (selisih dicatat), masing-masing berkode (T2-D §2.3).</p>
+  </div>
+
+<!--B13-P01-bahas:mulai-->
+  <h3 id="bahas-B13-P01">Pembahasan Pertanyaan Pembuka</h3>
+<div class="bahas-pembuka">
+  <div class="soal">
+    <div class="meta"><span>Pertanyaan Pembuka</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 150 detik</span></div>
+    <p class="stem">Panitia lomba lari membutuhkan <mark>paling sedikit 90 botol</mark> air minum. Toko menjual air minum dalam empat kemasan berikut.</p>
+    <table class="tb soal-data"><thead><tr><th>Kemasan</th><th>Harga</th></tr></thead><tbody><tr><td>isi 8 botol</td><td class="n">Rp20.000</td></tr><tr><td>isi 12 botol</td><td class="n">Rp28.800</td></tr><tr><td>isi 15 botol</td><td class="n">Rp34.500</td></tr><tr><td>isi 24 botol</td><td class="n">Rp57.600</td></tr></tbody></table>
+    <p class="stem">Kombinasi kemasan dengan biaya termurah yang memenuhi kebutuhan panitia adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>1 kemasan isi 12 dan 5 kemasan isi 15</span></li><li><span class="h">B</span><span>12 kemasan isi 8</span></li><li><span class="h">C</span><span>1 kemasan isi 8, 1 kemasan isi 12, dan 3 kemasan isi 24</span></li><li><span class="h">D</span><span>6 kemasan isi 15</span></li><li><span class="h">E</span><span>4 kemasan isi 24</span></li></ol>
+  </div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Yang dicari kombinasi termurah di antara semua kombinasi yang sah, bukan termurah di antara lima pilihan. Kalimat penentunya “paling sedikit 90 botol”: kurang dari 90 botol tidak sah, lebih boleh.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Hitung harga per botol: 20.000 : 8 = 2.500, 28.800 : 12 = 2.400, 34.500 : 15 = 2.300, dan 57.600 : 24 = 2.400. Kemasan isi 15 paling hemat, dan 90 botol pas dipenuhi enam kemasan isi 15. Biayanya 6 × 34.500 = 207.000, sama dengan batas bawah 90 × 2.300 = 207.000. Tidak ada kombinasi yang lebih murah daripada batas bawah, jadi D termurah.</dd></div>
+    <div><dt>Cara lain</dt><dd>Hitung biaya tiap pilihan: A Rp201.300 untuk 87 botol, B Rp240.000, C Rp221.600, D Rp207.000, dan E Rp230.400. A paling murah, tetapi kurang dari 90 botol; di antara pilihan yang sah, D termurah.</dd></div>
+    <div><dt>Cek balik</dt><dd>Bandingkan dengan batas bawah. D tepat Rp207.000. Kombinasi lain mana pun memakai kemasan yang lebih mahal per botol atau membeli lebih dari 90 botol, sehingga biayanya pasti di atas Rp207.000.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">87 botol</span><b>Salah membaca batas.</b> 5 × 15 + 12 = 87 botol, kurang 3 botol dari kebutuhan. Biayanya memang paling rendah, Rp201.300, tetapi kombinasi itu tidak sah.</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">Rp240.000</span><b>Berhenti satu langkah sebelum selesai.</b> Kemasan isi 8 dipilih karena harga per kemasannya paling murah, Rp20.000. Harga per botolnya justru paling mahal, Rp2.500, dan 12 kemasan isi 8 memberi 96 botol seharga 12 × 20.000 = 240.000.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">Rp221.600</span><b>Menentukan termurah tanpa menghitung kombinasi lain.</b> Kemasan terbesar didahulukan: 3 × 24 = 72 botol, lalu sisa 18 botol ditambal isi 12 dan isi 8 sehingga menjadi 92 botol. Totalnya 172.800 + 28.800 + 20.000 = 221.600, lebih mahal 221.600 − 207.000 = 14.600 rupiah daripada D.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">Rp230.400</span><b>Menentukan termurah tanpa menghitung kombinasi lain.</b> Empat kemasan isi 24 memberi 96 botol. Kemasan terbesar dikira paling hemat, padahal harga per botolnya Rp2.400, dan 6 botol yang berlebih ikut terbayar.</div></div></div>
+  <div class="jwb"><span>D</span><p><b>Jawaban: D.</b> Kemasan isi 15 paling hemat per botol dan 90 botol pas dipenuhi enam kemasan, sehingga biayanya Rp207.000, tepat di batas bawah.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti membeli telur untuk hajatan: rak besar belum tentu paling murah per butir. Yang menentukan adalah harga per butir, lalu apakah kebutuhanmu pas dengan isi rak itu.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Memilih A karena paling murah di antara pilihan. Cek syarat lebih dulu: pilihan yang tidak memenuhi kebutuhan tidak ikut dibandingkan.</span></div></div>
+  <p class="balik"><a class="ke" href="#soal-B13-P01">Kembali ke soal</a></p>
+</div>
+<!--B13-P01-bahas:selesai-->
+
+  <h3>Contoh Soal dan Pembahasan</h3>
+  <p>Tiga contoh berikut memperagakan termurah dengan stok terbatas, terbanyak dengan anggaran, dan membaca data tabel. Kerjakan setiap contoh sendiri dalam target waktunya sebelum membaca pembahasan. Setiap pembahasan menyertakan batas bawah atau batas atas, dan bagian Pilihan yang Gugur menyebut syarat yang dilanggar atau selisih biaya setiap pilihan salah.</p>
+<!--B13-C01:mulai-->
+<div data-soal="HB-TIU-B13-C01" data-target="120">
+  <div class="soal">
+    <div class="meta"><span>Contoh 1</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 120 detik</span></div>
+    <p class="stem">Penyelenggara pelatihan memesan buku catatan untuk peserta. Kebutuhannya paling sedikit 64 buku, dengan kelebihan paling banyak 6 buku. Toko menyediakan empat kemasan dengan <mark>stok terbatas</mark> seperti pada tabel.</p>
+    <table class="tb soal-data"><thead><tr><th>Kemasan</th><th>Harga</th><th>Stok</th></tr></thead><tbody><tr><td>isi 5 buku</td><td class="n">Rp27.000</td><td class="n">6 kemasan</td></tr><tr><td>isi 8 buku</td><td class="n">Rp41.600</td><td class="n">4 kemasan</td></tr><tr><td>isi 12 buku</td><td class="n">Rp63.600</td><td class="n">6 kemasan</td></tr><tr><td>isi 20 buku</td><td class="n">Rp110.000</td><td class="n">3 kemasan</td></tr></tbody></table>
+    <p class="stem">Biaya termurah yang dapat dicapai penyelenggara adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>Rp332.800</b></div><div><span class="h">B</span><b>Rp337.600</b></div><div><span class="h">C</span><b>Rp338.000</b></div><div><span class="h">D</span><b>Rp357.200</b></div><div><span class="h">E</span><b>Rp374.600</b></div></div>
+  </div>
+  <div class="guru"><b>OPT termurah, stok terbatas + kelebihan maksimal, pilihan biaya.</b> Kunci B. Kode: A J-SYARAT · B <b>kunci</b> · C J-LANGKAH · D J-HEMAT · E J-BATAS. Kerangka: OPT termurah · 4 kemasan · kebutuhan minimal + kelebihan maksimal + stok tiap kemasan · batas bawah tak tersentuh · pilihan biaya. TO terdekat: syarat stok tidak ada di TO P1 maupun TR. Bukti: 7480 kombinasi; 56 sah (64–70 buku, stok dipatuhi); optimum tunggal 0,2,4,0 = Rp337.600; batas bawah Rp332.800 hanya dicapai 8 paket isi 8 (stok 4). Jarak kunci ke pilihan terdekat 400, median jarak 11100. Kode = rencana slot (J-SYARAT stok, J-HEMAT, J-BATAS kelebihan, J-LANGKAH). Pilihan biaya urut naik: kunci B; A (lebih murah) tidak sah.</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Cari biaya termurah di antara kombinasi yang memenuhi semua syarat: 64 sampai 70 buku, dan banyak kemasan tidak melebihi stok. Kalimat penentunya “stok terbatas”.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Harga per buku: isi 5 Rp5.400, isi 8 Rp5.200, isi 12 Rp5.300, dan isi 20 Rp5.500. Batas bawahnya 64 × 5.200 = 332.800, tetapi angka itu butuh 8 kemasan isi 8, padahal stoknya 4. Batas bawah tidak tersentuh, jadi daftar dengan teratur menurut banyak kemasan isi 8: 4 kemasan paling murah Rp338.000, 3 kemasan Rp342.600, 2 kemasan Rp337.600, 1 kemasan Rp340.400, dan tanpa isi 8 Rp345.000. Yang termurah Rp337.600.</dd></div>
+    <div><dt>Cara lain</dt><dd>Periksa kombinasi itu: 2 kemasan isi 8 dan 4 kemasan isi 12 memberi 16 + 48 = 64 buku, tepat kebutuhan, dengan biaya 2 × 41.600 + 4 × 63.600 = 337.600. Stok isi 8 dan isi 12 mencukupi.</dd></div>
+    <div><dt>Cek balik</dt><dd>Bandingkan dengan batas bawah: selisihnya 337.600 − 332.800 = 4.800 rupiah. Biaya yang lebih rendah daripada Rp337.600 hanya dapat dicapai dengan melanggar stok atau batas kebutuhan.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">8 kemasan isi 8</span><b>Melewatkan atau melonggarkan satu syarat.</b> Rp332.800 adalah biaya 8 kemasan isi 8, karena 8 × 41.600 = 332.800. Stoknya hanya 4, sehingga kombinasi itu tidak dapat dibeli.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">stok isi 8 dihabiskan</span><b>Berhenti satu langkah sebelum selesai.</b> Keempat kemasan isi 8 dipakai, lalu sisa 32 buku ditambal 4 kemasan isi 5 dan 1 kemasan isi 12, totalnya Rp338.000. Langkah berikutnya, mengurangi isi 8 menjadi 2 kemasan, belum dicoba; di situ biaya turun menjadi Rp337.600.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">urut harga satuan</span><b>Menentukan termurah tanpa menghitung kombinasi lain.</b> Kemasan diambil menurut harga per buku: 4 kemasan isi 8, lalu 3 kemasan isi 12 sampai kebutuhan terlampaui. Hasilnya 68 buku seharga 166.400 + 190.800 = 357.200, sah tetapi jauh lebih mahal karena 4 buku berlebih ikut dibayar.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">71 buku</span><b>Salah membaca batas.</b> Rp374.600 adalah biaya 3 kemasan isi 5, 4 kemasan isi 8, dan 2 kemasan isi 12, yang berisi 15 + 32 + 24 = 71 buku. Kelebihannya 7 buku, melampaui batas 6 buku.</div></div></div>
+  <div class="jwb"><span>B</span><p><b>Jawaban: B.</b> Dengan stok isi 8 hanya 4 kemasan, kombinasi termurah yang sah adalah 2 kemasan isi 8 dan 4 kemasan isi 12, yaitu Rp337.600.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti belanja promo yang stoknya terbatas: harga termurah per barang tidak menolong bila barangnya tinggal sedikit. Kamu harus mencari campuran terbaik dari yang masih tersedia.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Berhenti di kombinasi pertama yang menghabiskan stok kemasan paling hemat. Coba juga mengurangi kemasan itu satu per satu; kadang campuran lain lebih pas dengan kebutuhan.</span></div></div>
+</div>
+<!--B13-C01:selesai-->
+<!--B13-C02:mulai-->
+<div data-soal="HB-TIU-B13-C02" data-target="120">
+  <div class="soal">
+    <div class="meta"><span>Contoh 2</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 120 detik</span></div>
+    <p class="stem">Sekolah menyiapkan anggaran paling banyak Rp320.000 untuk membeli pot bunga. Toko menjual pot dalam tiga kemasan berikut, dan <mark>sisa anggaran boleh tidak terpakai</mark>.</p>
+    <table class="tb soal-data"><thead><tr><th>Kemasan</th><th>Harga</th></tr></thead><tbody><tr><td>isi 3 pot</td><td class="n">Rp33.000</td></tr><tr><td>isi 5 pot</td><td class="n">Rp50.000</td></tr><tr><td>isi 8 pot</td><td class="n">Rp104.000</td></tr></tbody></table>
+    <p class="stem">Banyak pot paling banyak yang dapat dibeli adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>27 pot</b></div><div><span class="h">B</span><b>29 pot</b></div><div><span class="h">C</span><b>30 pot</b></div><div><span class="h">D</span><b>31 pot</b></div><div><span class="h">E</span><b>32 pot</b></div></div>
+  </div>
+  <div class="guru"><b>OPT terbanyak, anggaran tetap, sisa boleh, pilihan isi.</b> Kunci D. Kode: A J-HEMAT · B J-BATAS · C J-LANGKAH · D <b>kunci</b> · E J-HEMAT. Kerangka: OPT terbanyak · 3 kemasan · anggaran tetap, sisa boleh · batas atas tak tercapai · pilihan isi. TO terdekat: kembaran termurah yang belum ada di TO P1 maupun TR; bukan Rp250.000 dan tabel tinta (narasi). Bukti: 585 kombinasi; 69 dalam anggaran; isi terbanyak 31 pot (2,5,0); batas atas 320.000 : 10.000 = 32 tidak tercapai; habis tepat Rp320.000 paling banyak 29 pot. Jarak kunci ke pilihan terdekat 1, median jarak 1. Kunci rencana slot E dipindah ke D: batas atas 32 (J-HEMAT, batas atas dianggap tercapai) harus jadi pilihan di atas kunci; B13-L02 dipindah D → E sehingga sebaran bab tetap. Kode slot J-HEMAT, J-BATAS (anggaran dibaca harus habis), J-LANGKAH (sisa uang tidak dipakai).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Yang dicari isi terbanyak dengan biaya tidak lebih dari Rp320.000. Kalimat penentunya “sisa anggaran boleh tidak terpakai”: anggaran tidak harus habis.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Harga per pot: isi 3 Rp11.000, isi 5 Rp10.000, dan isi 8 Rp13.000. Batas atasnya 320.000 : 10.000 = 32 pot. Mulai dari kemasan isi 5 sebanyak mungkin: 6 kemasan memberi 30 pot seharga Rp300.000, dan sisa Rp20.000 tidak cukup untuk kemasan apa pun. Kurangi satu kemasan isi 5: sisa uang menjadi Rp70.000, cukup untuk 2 kemasan isi 3. Hasilnya 5 × 5 + 2 × 3 = 31 pot.</dd></div>
+    <div><dt>Cara lain</dt><dd>Uji apakah 32 pot mungkin. 32 pot dengan biaya paling banyak Rp320.000 berarti rata-rata Rp10.000 per pot, dan harga itu hanya dicapai bila semuanya kemasan isi 5. 32 bukan kelipatan 5, jadi 32 pot mustahil dan 31 pot terbanyak.</dd></div>
+    <div><dt>Cek balik</dt><dd>Periksa biaya kunci: 5 kemasan isi 5 dan 2 kemasan isi 3 berharga 250.000 + 66.000 = 316.000, masih di bawah anggaran.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">isi 3 diborong</span><b>Menentukan termurah tanpa menghitung kombinasi lain.</b> Kemasan isi 3 dipilih karena harga per kemasannya paling murah: 9 × 33.000 = 297.000 untuk 27 pot. Harga per potnya justru Rp11.000, lebih mahal daripada kemasan isi 5.</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">anggaran dikira harus habis</span><b>Salah membaca batas.</b> Anggaran dibaca harus terpakai tepat Rp320.000. Kombinasi yang biayanya tepat sebesar itu paling banyak 29 pot. Soal membolehkan sisa uang, jadi 31 pot seharga Rp316.000 lebih baik.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">sisa Rp20.000 dibiarkan</span><b>Berhenti satu langkah sebelum selesai.</b> 6 kemasan isi 5 memberi 30 pot dan sisa Rp20.000. Satu langkah lagi, menukar satu kemasan isi 5 dengan dua kemasan isi 3, menambah 1 pot dan masih dalam anggaran.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">batas atas</span><b>Menganggap batas atas pasti tercapai.</b> 32 pot adalah batas atas, 320.000 : 10.000. Batas itu hanya tercapai bila setiap pot berharga Rp10.000, artinya semuanya kemasan isi 5, padahal 32 bukan kelipatan 5.</div></div></div>
+  <div class="jwb"><span>D</span><p><b>Jawaban: D.</b> Lima kemasan isi 5 dan dua kemasan isi 3 memberi 31 pot seharga Rp316.000, sedangkan 32 pot mustahil dalam anggaran.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti mengisi tas belanja dengan uang pas-pasan: menukar satu bungkus besar dengan dua bungkus kecil kadang justru memberi barang lebih banyak, karena sisa uangnya ikut terpakai.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Langsung menjawab 32 dari pembagian anggaran dengan harga per pot termurah. Batas atas hanya batas; periksa apakah kombinasi kemasan benar-benar dapat mencapainya.</span></div></div>
+</div>
+<!--B13-C02:selesai-->
+<!--B13-C03:mulai-->
+<div data-soal="HB-TIU-B13-C03" data-target="90">
+  <div class="soal">
+    <div class="meta"><span>Contoh 3</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 90 detik</span></div>
+    <p class="stem">Tabel berikut mencatat banyak petugas dan pengunjung tiga perpustakaan keliling selama dua semester.</p>
+    <table class="tb soal-data"><thead><tr><th>Perpustakaan keliling</th><th>Petugas</th><th>Pengunjung Semester 1</th><th>Pengunjung Semester 2</th></tr></thead><tbody><tr><td>Pustaka Melati</td><td class="n">3</td><td class="n">240</td><td class="n">300</td></tr><tr><td>Pustaka Kenari</td><td class="n">4</td><td class="n">400</td><td class="n">480</td></tr><tr><td>Pustaka Seroja</td><td class="n">5</td><td class="n">150</td><td class="n">135</td></tr></tbody></table>
+    <p class="stem"><mark>Berdasarkan tabel</mark>, pernyataan yang pasti benar adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Persentase kenaikan pengunjung Pustaka Melati lebih besar daripada Pustaka Kenari.</span></li><li><span class="h">B</span><span>Pustaka Kenari mengalami persentase kenaikan pengunjung terbesar.</span></li><li><span class="h">C</span><span>Pengunjung Pustaka Seroja turun karena jadwal kunjungannya dikurangi.</span></li><li><span class="h">D</span><span>Perpustakaan yang petugasnya paling banyak juga paling banyak pengunjungnya pada Semester 2.</span></li><li><span class="h">E</span><span>Pengunjung ketiga perpustakaan pada Semester 2 lebih sedikit daripada pengunjung pada Semester 1.</span></li></ol>
+  </div>
+  <div class="guru"><b>DAT dua periode, tiga perpustakaan × dua semester, pasti benar.</b> Kunci A. Kode: A <b>kunci</b> · B J-BASIS · C J-AKAL · D J-PENGALIH · E J-LANGKAH. Kerangka: DAT dua periode · 3 kategori + kolom petugas · persen kenaikan vs jumlah, sebab, kolom pengalih, total · pasti benar. TO terdekat: tidak ada di TO; soal SL hanya dianalisis; bukan tabel dua angkatan (narasi). Bukti: status dari tabel: A pasti benar · B pasti salah · C tidak dapat ditentukan · D pasti salah · E pasti salah; kenaikan 25%, 20%, −10%; jumlah 790 → 915. Kode slot J-BASIS, J-AKAL, J-PENGALIH; J-TENTU (slot) tidak punya jalur pada kata tanya pasti benar, diganti J-LANGKAH untuk E (total tidak dijumlahkan). Revisi cek buta 1: dua pilihan berkata "karena" mudah dicoret bersama; kata "karena" di E dibuang (jalur tetap: total tidak dijumlahkan).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Pilihan yang benar harus terbukti dari angka tabel. Kalimat penentunya “Berdasarkan tabel”: pernyataan yang tidak dibantah tabel, tetapi juga tidak dibuktikannya, bukan jawaban.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Hitung persentase kenaikan. Melati: 300 − 240 = 60, dan 60 : 240 = 25%. Kenari: 480 − 400 = 80, dan 80 : 400 = 20%. Seroja turun 150 − 135 = 15, yaitu 10%. Persentase kenaikan Melati 25%, lebih besar daripada Kenari 20%, jadi A pasti benar.</dd></div>
+    <div><dt>Cara lain</dt><dd>Bandingkan dengan pecahan: Melati naik 60 dari 240, yaitu seperempat; Kenari naik 80 dari 400, yaitu seperlima. Seperempat lebih besar daripada seperlima.</dd></div>
+    <div><dt>Cek balik</dt><dd>Uji pilihan lain dengan angka tabel. Pengunjung Semester 1 berjumlah 240 + 400 + 150 = 790 dan Semester 2 berjumlah 300 + 480 + 135 = 915, jadi total naik. Perpustakaan dengan petugas terbanyak, Seroja, justru pengunjungnya paling sedikit.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">B</span><div class="x"><span class="uji">80 dari 400</span><b>Membandingkan jumlah padahal yang ditanya persentase.</b> Kenari memang bertambah paling banyak, 80 orang. Yang ditanya persentase, dan 80 dari 400 hanya 20%, kalah dari Melati.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">sebab tidak tertulis</span><b>Dugaan sebab dikira data.</b> Tabel menunjukkan pengunjung Seroja turun, tetapi tidak menyebut jadwal apa pun. Sebab penurunannya tidak dapat ditentukan dari tabel.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">Seroja 5 petugas</span><b>Memakai data yang tidak dibutuhkan.</b> Kolom petugas tidak menentukan banyak pengunjung. Di tabel ini Seroja punya petugas terbanyak, 5 orang, tetapi pengunjung Semester 2-nya paling sedikit, 135 orang.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">total naik</span><b>Berhenti satu langkah sebelum selesai.</b> Penurunan di Seroja mudah membuat orang mengira total ikut turun. Setelah dijumlahkan, total pengunjung naik dari 790 menjadi 915, jadi pernyataan ini pasti salah.</div></div></div>
+  <div class="jwb"><span>A</span><p><b>Jawaban: A.</b> Kenaikan Melati 60 dari 240, yaitu 25%, sedangkan kenaikan Kenari 80 dari 400, yaitu 20%.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti membandingkan kenaikan uang saku: naik Rp5.000 dari Rp20.000 lebih terasa daripada naik Rp8.000 dari Rp40.000, walaupun angka kenaikannya lebih kecil.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Memilih B karena 80 lebih besar daripada 60. Sebelum membandingkan, tanyakan dulu: yang diminta jumlah atau persen?</span></div></div>
+</div>
+<!--B13-C03:selesai-->
+
+  <h3>Latihan</h3>
+  <p>Tiga latihan berikut tersusun dari yang paling ringan, dengan target total {{WAKTU_LATIHAN}}. Kerjakan dengan pengatur waktu dan tanpa melihat pembahasan. Hitung batas bawah atau batas atas sebelum menghitung biaya pilihan. Kunci dan pembahasannya ada di lampiran.</p>
+<!--B13-L01:mulai-->
+<div data-soal="HB-TIU-B13-L01" data-target="75">
+  <div class="soal">
+    <div class="meta"><span id="soal-B13-L01">Latihan 1<a class="ke" href="#bahas-B13-L01">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 75 detik</span></div>
+    <p class="stem">Tabel berikut memuat hasil uji keterampilan empat kelompok peserta pelatihan kerja. Peserta yang belum lulus mengikuti uji ulang pada minggu berikutnya.</p>
+    <table class="tb soal-data"><thead><tr><th>Kelompok</th><th>Peserta</th><th>Lulus</th></tr></thead><tbody><tr><td>Las</td><td class="n">30</td><td class="n">24</td></tr><tr><td>Listrik</td><td class="n">40</td><td class="n">30</td></tr><tr><td>Otomotif</td><td class="n">25</td><td class="n">22</td></tr><tr><td>Tata Boga</td><td class="n">35</td><td class="n">28</td></tr></tbody></table>
+    <p class="stem">Pernyataan yang <mark>tidak dapat ditentukan benar atau salahnya</mark> dari tabel adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Peserta yang mengikuti uji ulang paling banyak berasal dari kelompok Listrik.</span></li><li><span class="h">B</span><span>Kelompok Listrik meluluskan peserta paling banyak.</span></li><li><span class="h">C</span><span>Semua peserta kelompok Otomotif yang mengikuti uji ulang dinyatakan lulus.</span></li><li><span class="h">D</span><span>Karena pesertanya paling banyak, kelompok Listrik memiliki persentase kelulusan tertinggi.</span></li><li><span class="h">E</span><span>Kelompok yang pesertanya paling sedikit juga meluluskan peserta paling sedikit.</span></li></ol>
+  </div>
+  <div class="guru"><b>DAT satu periode, empat kelompok, tidak dapat ditentukan benar atau salahnya.</b> Kunci C. Kode: A J-LANGKAH · B J-BASIS · C <b>kunci</b> · D J-TENTU · E J-AKAL. Kerangka: DAT satu periode · 4 kategori, peserta + lulus · selisih peserta − lulus, jumlah vs persen, sebab dengan angka salah, hasil di luar tabel · tidak dapat ditentukan. TO terdekat: belum ada di TO. Bukti: status dari tabel: A pasti benar · B pasti benar · C tidak dapat ditentukan · D pasti salah · E pasti benar; tidak lulus 6, 10, 3, 7 (uji ulang); persentase 80%, 75%, 88%, 80%. Kunci rencana T2-D B dipindah ke C (T4-19). Kode slot J-TENTU (D), J-AKAL (E), J-BASIS (B) + J-LANGKAH (A, total tidak dijumlahkan). Revisi cek buta 1: kata tanya "tidak dapat dipastikan kebenarannya" (ambigu: pernyataan yang pasti salah juga tidak dapat dipastikan benar) diganti "tidak dapat ditentukan benar atau salahnya"; kata "perempuan" (hanya di kunci) dibuang: pengantar menyebut uji ulang, kunci dan A sama-sama memakai "uji ulang" (A pasti benar lewat peserta − lulus, J-LANGKAH).</div>
+</div>
+<!--B13-L01:selesai-->
+<!--B13-L02:mulai-->
+<div data-soal="HB-TIU-B13-L02" data-target="120">
+  <div class="soal">
+    <div class="meta"><span id="soal-B13-L02">Latihan 2<a class="ke" href="#bahas-B13-L02">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 120 detik</span></div>
+    <p class="stem">Kantin sekolah membutuhkan paling sedikit 40 kg tepung terigu. Pemasok menjual tepung dalam tiga kemasan berikut. Setiap jenis kemasan dikirim dari gudang yang berbeda, sehingga ada ongkos kirim Rp15.000 <mark>untuk setiap jenis kemasan yang dipesan</mark>.</p>
+    <table class="tb soal-data"><thead><tr><th>Kemasan</th><th>Harga</th></tr></thead><tbody><tr><td>isi 5 kg</td><td class="n">Rp50.000</td></tr><tr><td>isi 10 kg</td><td class="n">Rp90.000</td></tr><tr><td>isi 25 kg</td><td class="n">Rp200.000</td></tr></tbody></table>
+    <p class="stem">Biaya termurah, termasuk ongkos kirim, untuk memenuhi kebutuhan kantin adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>Rp335.000</b></div><div><span class="h">B</span><b>Rp340.000</b></div><div><span class="h">C</span><b>Rp370.000</b></div><div><span class="h">D</span><b>Rp375.000</b></div><div><span class="h">E</span><b>Rp385.000</b></div></div>
+  </div>
+  <div class="guru"><b>OPT termurah, ongkos kirim per jenis kemasan, pilihan biaya.</b> Kunci D. Kode: A J-HEMAT · B J-LANGKAH · C J-BATAS · D <b>kunci</b> · E J-HEMAT. Kerangka: OPT termurah + ongkos tetap · 3 kemasan · ongkos per jenis mengubah kombinasi termurah · pilihan biaya. TO terdekat: belum ada di TO. Bukti: 180 kombinasi; optimum dengan ongkos 0,4,0 = Rp375.000; tanpa ongkos 1,1,1 = Rp340.000; C = 5,1,0 (35 kg, kurang); E = 1,1,1 + 3 ongkos = Rp385.000. Jarak kunci ke pilihan terdekat 5000, median jarak 7500. Kunci rencana slot D dipindah ke E (pasangan B13-C02 D). Kode slot J-LANGKAH ×2 (ongkos terlupa; ongkos dihitung sekali), J-HEMAT (batas bawah + satu ongkos), J-BATAS (35 kg, kurang). Revisi cek buta 1: semua pilihan salah lebih murah dari kunci (kunci = angka terbesar). Pilihan Rp355.000 (ongkos dihitung sekali) diganti Rp385.000 = kombinasi termurah tanpa ongkos (5 + 10 + 25 kg) lalu tiga ongkos ditambahkan (sah, lebih mahal; J-HEMAT); kunci E → D.</div>
+</div>
+<!--B13-L02:selesai-->
+<!--B13-L03:mulai-->
+<div data-soal="HB-TIU-B13-L03" data-target="150">
+  <div class="soal">
+    <div class="meta"><span id="soal-B13-L03">Latihan 3<a class="ke" href="#bahas-B13-L03">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 150 detik</span></div>
+    <p class="stem">Koperasi menjual alat tulis dalam tiga paket campuran berikut. Seorang guru membutuhkan paling sedikit 9 buku dan <mark>paling sedikit 11 pulpen</mark>.</p>
+    <table class="tb soal-data"><thead><tr><th>Paket</th><th>Isi buku</th><th>Isi pulpen</th><th>Harga</th></tr></thead><tbody><tr><td>Paket X</td><td class="n">3</td><td class="n">1</td><td class="n">Rp40.000</td></tr><tr><td>Paket Y</td><td class="n">1</td><td class="n">3</td><td class="n">Rp38.000</td></tr><tr><td>Paket Z</td><td class="n">2</td><td class="n">2</td><td class="n">Rp41.000</td></tr></tbody></table>
+    <p class="stem">Kombinasi paket dengan biaya termurah yang memenuhi kebutuhan guru adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>1 paket X dan 4 paket Y</span></li><li><span class="h">B</span><span>4 paket X dan 1 paket Y</span></li><li><span class="h">C</span><span>3 paket Y dan 1 paket Z</span></li><li><span class="h">D</span><span>1 paket Y dan 4 paket Z</span></li><li><span class="h">E</span><span>2 paket X dan 3 paket Y</span></li></ol>
+  </div>
+  <div class="guru"><b>OPT termurah, dua jenis barang dalam paket campuran, pilihan kombinasi.</b> Kunci E. Kode: A J-BATAS · B J-SYARAT · C J-SYARAT · D J-HEMAT · E <b>kunci</b>. Kerangka: OPT termurah dua barang · 3 paket campuran · kebutuhan minimal tiap jenis · pilihan kombinasi. TO terdekat: belum ada di TO. Bukti: 729 kombinasi; 649 memenuhi ≥ 9 buku dan ≥ 11 pulpen; optimum tunggal 2 X + 3 Y = Rp194.000; A 7 buku 13 pulpen Rp192.000, B 13 buku 7 pulpen Rp198.000, C 5 buku 11 pulpen Rp155.000, D 9 buku 11 pulpen Rp202.000, E 9 buku 11 pulpen Rp194.000. Kode = rencana slot (J-SYARAT ×2, J-HEMAT, J-BATAS: kebutuhan dibaca sebagai jumlah seluruh barang). Revisi cek buta 1: B 3 X + 1 Y diganti 4 X + 1 Y (13 buku, 7 pulpen, Rp198.000) agar ciri "X + Y" dan "5 paket" beririsan di tiga pilihan (A, B, E), bukan di A dan E saja; B dan A kini cermin satu sama lain, bukan dengan kunci.</div>
+</div>
+<!--B13-L03:selesai-->
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Asal Rancangan Bab 13</h4>
+    <p>Putusan T2-1b: Bab 13 = 1 pembuka + 3 contoh + 3 latihan (dari 6 latihan T2-D). Dipilih: L5 (Standar, membaca data, kata tanya "tidak dapat ditentukan benar atau salahnya" yang melengkapi "pasti benar" di C03), L4 (HOTS, ongkos tetap), L2 (HOTS+, dua jenis barang). Alasan: tiga syarat baru yang belum muncul di pembuka dan contoh (ongkos, campuran dua barang, kata tanya data yang lain); kode tersebar di K1, K2, K3, K4; tingkat naik.</p>
+    <p>Gugur: L1 (5 paket + minimal + kelebihan maksimal, opsi biaya: kerangka paling dekat TR no. 56) · L3 (terbanyak + minimal satu tiap jenis; terbanyak sudah di C02 + narasi) · L6 (data komposisi persen; data sudah di C03 + L01). Grafik tidak dimuat (T2-7(9)). Latihan Bukti B6 tidak dimuat: kedua Latihan Bukti ditempatkan di Bab 11 (T2-1b).</p>
+  </div>
+
+  <div class="ringkas">
+    <h4>Ringkasan Bab 13</h4>
+    <ol>
+      <li><b>Termurah</b> berarti termurah di antara semua kombinasi yang sah, bukan di antara lima pilihan.</li>
+      <li>Harga satuan menunjukkan paket paling hemat; paket terbesar belum tentu yang paling hemat.</li>
+      <li><b>Batas bawah</b> = kebutuhan minimal × harga satuan termurah. Kombinasi sah yang menyentuhnya pasti termurah.</li>
+      <li>Rentang sah = kebutuhan minimal sampai kebutuhan ditambah kelebihan maksimal. Coret pilihan di luar rentang lebih dulu.</li>
+      <li>Bila batas bawah tidak tersentuh, daftar kombinasi secara teratur di sekitarnya.</li>
+      <li><b>Batas atas</b> isi = anggaran : harga satuan termurah, untuk soal terbanyak.</li>
+      <li>Pernyataan tentang tabel bisa pasti benar, pasti salah, atau tidak dapat ditentukan. Bandingkan persen dengan persen, dan jangan membaca sebab dari angka.</li>
+    </ol>
+  </div>
+</section>

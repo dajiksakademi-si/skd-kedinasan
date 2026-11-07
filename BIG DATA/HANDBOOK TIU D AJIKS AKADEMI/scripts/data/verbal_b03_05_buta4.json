@@ -1,0 +1,54 @@
+[
+  {
+    "id": "HB-TIU-B04-C01",
+    "bab": 4,
+    "target_detik": 60,
+    "soal": {
+      "pengantar": "Anggap semua premis berikut benar.",
+      "butir": [
+        [
+          "P1",
+          "Semua logam larut dalam air."
+        ],
+        [
+          "P2",
+          "Sebagian benda berwarna kuning adalah logam."
+        ]
+      ],
+      "tanya": "Kesimpulan yang pasti benar adalah …"
+    },
+    "opsi": {
+      "A": "Semua benda yang berwarna kuning larut dalam air.",
+      "B": "Sebagian logam tidak larut dalam air.",
+      "C": "Benda yang bukan logam tidak larut dalam air.",
+      "D": "Semua benda yang larut dalam air berwarna kuning.",
+      "E": "Benda yang tidak larut dalam air bukan logam."
+    }
+  },
+  {
+    "id": "HB-TIU-B04-L04",
+    "bab": 4,
+    "target_detik": 60,
+    "soal": {
+      "pengantar": "Anggap semua premis berikut benar.",
+      "butir": [
+        [
+          "P1",
+          "Semua pemenang lomba poster adalah anggota klub seni."
+        ],
+        [
+          "P2",
+          "Semua anggota tim dekorasi adalah anggota klub seni."
+        ]
+      ],
+      "tanya": "Kesimpulan yang pasti benar adalah …"
+    },
+    "opsi": {
+      "A": "Tidak dapat dipastikan apakah semua pemenang lomba poster adalah anggota klub seni.",
+      "B": "Semua pemenang lomba poster adalah anggota tim dekorasi.",
+      "C": "Semua anggota tim dekorasi adalah pemenang lomba poster.",
+      "D": "Semua anggota klub seni pandai menggambar.",
+      "E": "Hubungan pemenang lomba poster dan anggota tim dekorasi tidak dapat dipastikan."
+    }
+  }
+]

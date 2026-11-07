@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ruang tryout · D'Ajiks Akademi</title>
+<link rel="icon" href="assets/dajiks-emblem.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap">
+<style>
+/* Ruang tryout: susunan kotak sesuai acuan Gusti (judul + sisa waktu di atas, soal kiri, daftar soal kanan), warna D'Ajiks.
+   Satu daftar nomor 1–110, tanpa pemisah subtes. Terjawab hijau, nomor yang dibuka bersinar emas. */
+body{margin:0;background:#f3f5fa;font-family:'Inter Tight',system-ui,sans-serif;color:#172a35}
+[hidden]{display:none !important}
+button{font-family:inherit}
+:focus-visible{outline:2px solid #c9a24a;outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.atas{background:#fff;border-bottom:1px solid #e3e8f0}
+.atas>div{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:1240px;height:72px;margin:0 auto;padding:0 32px;box-sizing:border-box}
+.atas img{height:44px;width:auto;display:block}
+.simpan{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:500;color:#087453}
+.hal{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:24px;max-width:1240px;margin:0 auto;padding:24px 32px 40px;box-sizing:border-box}
+.kiri,.kanan{display:flex;flex-direction:column;gap:20px;min-width:0}
+.kanan{position:sticky;top:20px;align-self:start}
+.kotak{border:1px solid #e3e8f0;border-radius:22px;background:#fff;box-shadow:0 18px 44px -36px rgba(3,23,57,.4)}
+.kicker{margin:0 0 8px;font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#7a5710}
+.kepala,.waktu{min-height:140px;box-sizing:border-box}
+.kepala{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:24px 32px}
+.kepala h1{margin:0;font-weight:700;font-size:22px;letter-spacing:-.02em;line-height:1.3;color:#031739}
+.mock-note{margin:12px 0 0;padding:5px 12px;border-radius:10px;background:#e8c766;color:#031739;font-size:12.5px;font-weight:700}
+.waktu{padding:22px}
+.jam{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.jam span{display:flex;flex-direction:column;align-items:center;padding:8px 0 9px;border-radius:12px;background:#031739;box-shadow:inset 0 -3px 0 #e8c766;color:rgba(255,255,255,.78);font-size:12px;font-weight:500;transition:background-color 300ms ease}
+.jam b{font-size:26px;font-weight:700;line-height:1.25;color:#fff;font-variant-numeric:tabular-nums}
+.waktu.low .jam span{background:#a95b0d}.waktu.critical .jam span{background:#a31e3b}
+.soal{padding:28px 32px;scroll-margin-top:16px}
+.q-kepala{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 12px;margin:0 0 12px;font-size:15px;font-weight:700;color:#7a5710}
+/* aspek TKP di pojok kanan atas soal */
+.aspek{padding:4px 12px;border:1px solid #ecdcae;border-radius:999px;background:#faf6ec;font-size:13px;font-weight:600;color:#7a5710}.q-teks{margin:0;max-width:72ch;font-size:17.5px;font-weight:500;line-height:1.65;color:#0d1f33}
+.q-pernyataan{margin:14px 0 0;padding:14px 18px 14px 40px;border-left:3px solid #e8c766;border-radius:10px;background:#f7f8fb;font-size:16.5px;line-height:1.6}
+.q-perintah{margin:16px 0 0;font-size:17.5px;font-weight:700;line-height:1.55;color:#031739}
+.q-gambar{display:block;max-width:min(100%,560px);max-height:300px;margin:18px auto 0;padding:8px;border:1px solid #e3e8f0;border-radius:12px;background:#fff}
+/* opsi: kotak berisi warna lembut; terpilih = kotak putih bergaris navy */
+.opsi{display:grid;gap:10px;margin-top:22px}
+.op{display:flex;align-items:center;gap:16px;width:100%;min-height:56px;padding:12px 20px;border:1.5px solid transparent;border-radius:14px;background:#f3f5fa;color:#172a35;font-size:16px;font-weight:500;line-height:1.5;text-align:left;cursor:pointer;transition:border-color 160ms ease,background-color 160ms ease}
+.op:hover{background:#eaeef5}
+.op .h{flex:none;width:18px;font-weight:700;font-size:15px;text-align:center;color:#031739}
+.op[aria-pressed=true]{border-color:#031739;background:#fff;box-shadow:inset 0 0 0 1px #031739}
+.op[aria-pressed=true] .h{color:#7a5710}
+/* opsi bergambar (TIU figural): kartu tegak, 5 kolom di layar lebar */
+.opsi.fig{grid-template-columns:repeat(5,minmax(0,1fr))}
+.opsi.fig .op{flex-direction:column;justify-content:center;gap:10px;padding:14px 10px}
+.opsi.fig img{width:100%;max-height:120px;object-fit:contain}
+.arah{display:flex;justify-content:space-between;gap:12px;margin-top:28px}
+.arah button{display:inline-flex;align-items:center;gap:6px;min-height:48px;padding:0 22px;border-radius:999px;font-weight:600;font-size:15.5px;cursor:pointer;transition:background-color 160ms ease,transform 160ms cubic-bezier(.23,1,.32,1)}
+.arah button:active{transform:scale(.97)}
+.arah button:disabled{opacity:.4;cursor:not-allowed}
+#mundur{border:1px solid #dbe0ea;background:#fff;color:#031739}
+#mundur:hover:not(:disabled){background:#f3f5fa}
+#maju{border:0;background:#031739;color:#fff}
+#maju:hover:not(:disabled){background:#0f3360}
+#maju svg{color:#e8c766}
+.daftar{padding:22px}
+.d-kepala{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.hitung{margin:0;font-size:13.5px;font-weight:600;color:#526772;font-variant-numeric:tabular-nums}
+.hitung b{color:#031739}
+.legenda{display:flex;flex-wrap:wrap;gap:6px 14px;margin:4px 0 14px;padding:0;list-style:none;font-size:13px;color:#526772}
+.legenda li{display:flex;align-items:center;gap:6px}
+.legenda i{width:13px;height:13px;border-radius:4px;border:1px solid #dbe0ea;background:#fff}
+.legenda .l-ok{border-color:#087453;background:#e3f3ec}
+.legenda .l-ini{border-color:#c9a24a;background:#fbf4dd}
+#nomor{position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;max-height:max(220px,calc(100vh - 500px));overflow-y:auto;padding:4px}
+.no{height:42px;padding:0;border:1px solid #dbe0ea;border-radius:10px;background:#fff;color:#172a35;font-weight:600;font-size:14px;font-variant-numeric:tabular-nums;cursor:pointer;transition:border-color 160ms ease,background-color 160ms ease}
+.no:hover{border-color:#8a9ab2}
+.no.ok{border-color:#087453;background:#e3f3ec;color:#087453}
+.no[aria-current]{border-color:#c9a24a;background:#fbf4dd;color:#7a5710;box-shadow:0 0 0 1px #c9a24a,0 0 12px 1px rgba(201,162,74,.38)}
+.akhiri{min-height:50px;border:1px solid #ecdcae;border-radius:999px;background:#faf6ec;color:#7a5710;font-weight:700;font-size:15.5px;cursor:pointer;transition:background-color 160ms ease,transform 160ms cubic-bezier(.23,1,.32,1)}
+.akhiri:hover{background:#f5edd6}.akhiri:active{transform:scale(.98)}
+dialog{width:min(460px,calc(100% - 32px));box-sizing:border-box;padding:28px;border:0;border-radius:22px;box-shadow:0 40px 80px -30px rgba(3,23,57,.6)}
+dialog::backdrop{background:rgba(3,23,57,.6)}
+dialog[open]{animation:muncul 200ms cubic-bezier(.23,1,.32,1)}
+@keyframes muncul{from{opacity:0;transform:scale(.96)}}
+dialog h2{margin:0 0 8px;font-weight:600;font-size:24px;letter-spacing:-.03em;color:#031739}
+dialog p{margin:0 0 22px;font-size:15.5px;line-height:1.6;color:#3d5260}
+dialog p b{color:#031739}
+.d-aksi{display:flex;flex-direction:column;gap:8px}
+.btn{display:flex;align-items:center;justify-content:center;min-height:52px;border:0;border-radius:999px;background:#031739;color:#fff;font-weight:600;font-size:16.5px;text-decoration:none;cursor:pointer;transition:background-color 160ms ease,transform 160ms cubic-bezier(.23,1,.32,1)}
+.btn:hover{background:#0f3360}.btn:active{transform:scale(.98)}
+.batal{min-height:44px;border:0;border-radius:999px;background:none;color:#526772;font-weight:600;font-size:15px;cursor:pointer}
+.batal:hover{background:#eef1f6}
+/* layar sempit: kotak bertumpuk (judul, waktu, soal, daftar, akhiri); kotak waktu menempel di atas saat menggulir */
+@media (max-width:1023px){
+  .atas>div{height:64px;padding:0 16px}.atas img{height:36px}
+  .hal{grid-template-columns:1fr;gap:14px;padding:14px 16px 32px}
+  .kiri,.kanan{display:contents}
+  .kepala{order:1;min-height:0;padding:18px 20px}
+  .kepala h1{font-size:19px}
+  .waktu{order:2;position:sticky;top:8px;z-index:10;min-height:0;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px 10px 18px;border-radius:16px}
+  .waktu .kicker{margin:0}
+  .jam{gap:6px}.jam span{min-width:48px;padding:4px 8px 6px;font-size:10.5px}.jam b{font-size:19px}
+  .soal{order:3;padding:22px 18px;scroll-margin-top:84px}
+  .daftar{order:4}.akhiri{order:5}
+  .q-teks,.q-perintah{font-size:16.5px}
+  .op{font-size:15.5px;padding:12px 16px}
+  .opsi.fig{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .arah button{padding:0 18px}
+  #nomor{grid-template-columns:repeat(auto-fill,minmax(44px,1fr));max-height:none;overflow:visible}
+  .no{height:44px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none !important}dialog[open]{animation:none}}
+</style>
+</head>
+<body>
+<header class="atas"><div>
+<img src="assets/dajiks-lockup.png" alt="D'Ajiks Akademi">
+<span class="simpan" role="status" id="simpan"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Jawaban tersimpan</span>
+</div></header>
+<p aria-live="polite" id="umum" class="sr"></p>
+
+<div class="hal">
+<main class="kiri">
+<section class="kotak kepala">
+<p class="kicker" id="j-to">Tryout</p>
+<h1 id="j-paket"></h1>
+<p class="mock-note">DATA CONTOH: soal diambil dari bank D'Ajiks untuk memperlihatkan tampilan, belum paket tryout resmi.</p>
+</section>
+<article class="kotak soal" id="soal">
+<div id="kartu" aria-live="polite"></div>
+<div class="arah">
+<button type="button" id="mundur"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>Sebelumnya</button>
+<button type="button" id="maju">Soal berikutnya<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+</article>
+</main>
+<aside class="kanan" aria-label="Waktu dan daftar soal">
+<section class="kotak waktu" id="waktu">
+<p class="kicker">Sisa waktu</p>
+<div class="jam"><span><b id="t-j">01</b>Jam</span><span><b id="t-m">40</b>Menit</span><span><b id="t-d">00</b>Detik</span></div>
+</section>
+<section class="kotak daftar" aria-label="Daftar soal">
+<div class="d-kepala"><p class="kicker">Daftar soal</p><p class="hitung" id="hitung"></p></div>
+<ul class="legenda"><li><i class="l-ok"></i>Terjawab</li><li><i></i>Belum</li><li><i class="l-ini"></i>Sedang dibuka</li></ul>
+<div id="nomor"></div>
+</section>
+<button type="button" class="akhiri" id="b-selesai">Akhiri tryout</button>
+</aside>
+</div>
+
+<dialog id="d-selesai" aria-labelledby="h-selesai">
+<h2 id="h-selesai">Kumpulkan jawaban?</h2>
+<p id="d-isi"></p>
+<div class="d-aksi"><button type="button" class="btn" id="b-kumpul">Kumpulkan sekarang</button><button type="button" class="batal" id="b-kembali">Kembali mengerjakan</button></div>
+</dialog>
+<dialog id="d-habis" aria-labelledby="h-habis">
+<h2 id="h-habis">Waktu habis</h2>
+<p>Jawabanmu sudah dikumpulkan otomatis. Lihat nilai dan pembahasannya di halaman hasil.</p>
+<div class="d-aksi"><a class="btn" id="b-hasil" href="#">Lihat hasil</a></div>
+</dialog>
+
+<script src="data/to-contoh.js"></script>
+<script>
+// prototipe tanpa server: jawaban + waktu mulai disimpan di peramban (kunci per paket + nomor tryout).
+// ?sisa=detik memulai dengan sisa waktu tertentu (untuk melihat warna jam).
+var q = new URLSearchParams(location.search), PAKET = q.get('paket') || 'Tryout contoh', N = q.get('n') || '1',
+  DURASI = 100 * 60, KEY = 'to:' + PAKET + ':' + N, HASIL = 'hasil.html?paket=' + encodeURIComponent(PAKET) + '&n=' + N;
+var st = {};
+try { st = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) {}
+if (!st.mulai) st = { mulai: Date.now(), j: {}, i: 0 };
+if (q.get('sisa')) st.mulai = Date.now() - (DURASI - +q.get('sisa')) * 1000;
+function simpan() { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) {} }
+simpan();
+
+var $ = function (id) { return document.getElementById(id); };
+$('j-to').textContent = 'Tryout ' + N;
+$('j-paket').textContent = PAKET;
+document.title = 'Tryout ' + N + ' · ' + PAKET;
+
+$('nomor').innerHTML = SOAL.map(function (x, i) { return '<button type="button" class="no" data-i="' + i + '" aria-label="Soal ' + (i + 1) + '">' + (i + 1) + '</button>'; }).join('');
+var NO = document.querySelectorAll('.no');
+
+function terjawab() { return Object.keys(st.j).length; }
+function hitung() {
+  NO.forEach(function (b, i) { b.classList.toggle('ok', !!st.j[i]); });
+  $('hitung').innerHTML = '<b>' + terjawab() + '</b>/' + SOAL.length + ' terjawab';
+}
+function buka(i) {
+  st.i = i; simpan();
+  var x = SOAL[i], j = st.j[i];
+  var h = '<p class="q-kepala"><span>Soal nomor ' + (i + 1) + '</span>' + (x.a ? '<span class="aspek">' + x.a + '</span>' : '') + '</p><p class="q-teks">' + x.t + '</p>';
+  if (x.r) h += '<ol class="q-pernyataan">' + x.r.map(function (r) { return '<li>' + r + '</li>'; }).join('') + '</ol>';
+  if (x.g) h += '<img class="q-gambar" src="' + x.g + '" alt="Gambar soal ' + (i + 1) + '">';
+  if (x.p) h += '<p class="q-perintah">' + x.p + '</p>';
+  h += '<div class="opsi' + (x.og ? ' fig' : '') + '" role="group" aria-label="Pilihan jawaban">' + 'ABCDE'.split('').map(function (k) {
+    return '<button type="button" class="op" data-k="' + k + '" aria-pressed="' + (j === k) + '"><span class="h">' + k + '</span>' +
+      (x.og ? '<img src="' + x.o[k] + '" alt="Pilihan ' + k + '">' : '<span>' + x.o[k] + '</span>') + '</button>';
+  }).join('') + '</div>';
+  $('kartu').innerHTML = h;
+  NO.forEach(function (b) { b.removeAttribute('aria-current'); });
+  NO[i].setAttribute('aria-current', 'step');
+  // gulir hanya di dalam daftar nomor (bukan seluruh halaman), lalu tampilkan awal soal bila sudah tergulir lewat
+  var g = $('nomor'), b = NO[i];
+  if (b.offsetTop < g.scrollTop || b.offsetTop + b.offsetHeight > g.scrollTop + g.clientHeight) g.scrollTop = b.offsetTop - g.clientHeight / 2;
+  if ($('soal').getBoundingClientRect().top < 0) $('soal').scrollIntoView();
+  $('mundur').disabled = i === 0;
+  $('maju').disabled = i === SOAL.length - 1;
+}
+function pilih(k) {
+  st.j[st.i] = k; simpan(); hitung();
+  document.querySelectorAll('.op').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.k === k); });
+}
+
+document.addEventListener('click', function (e) {
+  var t = e.target.closest('button');
+  if (!t) return;
+  if (t.classList.contains('op')) pilih(t.dataset.k);
+  else if (t.classList.contains('no')) buka(+t.dataset.i);
+});
+$('mundur').onclick = function () { buka(st.i - 1); };
+$('maju').onclick = function () { buka(st.i + 1); };
+// papan ketik: panah kiri/kanan pindah soal, huruf A–E memilih jawaban
+document.addEventListener('keydown', function (e) {
+  if (e.metaKey || e.ctrlKey || e.altKey || document.querySelector('dialog[open]')) return;
+  if (e.key === 'ArrowRight' && st.i < SOAL.length - 1) buka(st.i + 1);
+  else if (e.key === 'ArrowLeft' && st.i > 0) buka(st.i - 1);
+  else if (/^[a-e]$/i.test(e.key)) pilih(e.key.toUpperCase());
+});
+
+var dS = $('d-selesai');
+$('b-selesai').onclick = function () {
+  var sisa = SOAL.length - terjawab();
+  $('d-isi').innerHTML = (sisa ? 'Masih ada <b>' + sisa + ' soal</b> belum dijawab.' : 'Semua soal sudah dijawab.') + ' Setelah dikumpulkan, jawaban tidak bisa diubah lagi.';
+  dS.showModal();
+};
+$('b-kembali').onclick = function () { dS.close(); };
+dS.addEventListener('click', function (e) { if (e.target === dS) dS.close(); });
+// jawaban dikumpulkan: disimpan untuk halaman hasil/pembahasan, catatan percobaan dihapus (membuka lagi = percobaan baru)
+function kumpul() { try { localStorage.setItem('hasil:' + PAKET + ':' + N, JSON.stringify({ j: st.j, mulai: st.mulai, selesai: Date.now() })); localStorage.removeItem(KEY); } catch (e) {} }
+$('b-kumpul').onclick = function () { kumpul(); location.href = HASIL; };
+$('b-hasil').href = HASIL;
+$('d-habis').addEventListener('cancel', function (e) { e.preventDefault(); });
+
+// jam: satu waktu 100 menit untuk 110 soal; kuning saat sisa 5 menit, merah saat sisa 1 menit
+var umum = {};
+function dua(n) { return (n < 10 ? '0' : '') + n; }
+function detak() {
+  var s = Math.max(0, Math.round(DURASI - (Date.now() - st.mulai) / 1000));
+  $('t-j').textContent = dua(Math.floor(s / 3600));
+  $('t-m').textContent = dua(Math.floor(s % 3600 / 60));
+  $('t-d').textContent = dua(s % 60);
+  $('waktu').className = 'kotak waktu' + (s <= 60 ? ' critical' : s <= 300 ? ' low' : '');
+  [600, 300, 60].forEach(function (t) { if (s <= t && s > t - 5 && !umum[t]) { umum[t] = 1; $('umum').textContent = 'Sisa waktu ' + t / 60 + ' menit.'; } });
+  if (s === 0) { clearInterval(jalan); kumpul(); if (dS.open) dS.close(); $('d-habis').showModal(); }
+}
+var jalan = setInterval(detak, 1000);
+detak(); hitung(); buka(st.i || 0);
+</script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+{
+  "id": "HB-TIU-B06-C01",
+  "bab": 6,
+  "slot": "contoh",
+  "urut": 1,
+  "subbagian": "Angka Satuan dan Sisa Pembagian oleh Sembilan",
+  "keluarga": "HIT",
+  "bentuk": "desimal-kali-bilangan-rapat",
+  "level": "Standar",
+  "target_detik": 45,
+  "revisi": 2,
+  "soal": "Hasil dari 3,975 × 1.400 adalah …",
+  "kalimat_penentu": "Hasil dari",
+  "opsi": {
+    "A": "5.460",
+    "B": "5.495",
+    "C": "5.565",
+    "D": "5.572",
+    "E": "5.600"
+  },
+  "kunci": "C",
+  "pembahasan": {
+    "ditanya": "Soal menanyakan nilai tepat 3,975 × 1.400. Kalimat penentunya “Hasil dari”: tidak tertulis “paling mendekati”, jadi jawaban harus sama persis, padahal pilihan yang bersebelahan hanya berselisih 7 sampai 70.",
+    "cepat": "3,975 = 4 − 0,025. Hitung 4 × 1.400 = 5.600, lalu 0,025 × 1.400 = 35. Hasilnya 5.600 − 35 = 5.565.",
+    "lain": "1.400 = 1.000 + 400. Hitung 3,975 × 1.000 = 3.975 dan 3,975 × 400 = 1.590, lalu jumlahkan: 3.975 + 1.590 = 5.565.",
+    "cek": "Sisa pembagian oleh 9, koma diabaikan: 3.975 bersisa 6 (3 + 9 + 7 + 5 = 24) dan 1.400 bersisa 5, jadi hasilnya bersisa 30, yaitu 3. 5.565 juga bersisa 3 (5 + 5 + 6 + 5 = 21). Cocok.",
+    "kunci": "Hasilnya 35 di bawah 5.600, yaitu 5.565, dan sisa pembagiannya oleh 9 cocok.",
+    "analogi": "Seperti membeli barang seharga Rp3.975 dengan uang Rp4.000: kamu menerima kembalian Rp25. Membeli 1.400 barang berarti membayar 1.400 × Rp4.000, lalu menerima kembalian 1.400 × Rp25. Harga totalnya Rp5.565.000.",
+    "waspada": "Melihat 3,975 hampir 4, lalu memilih pilihan terdekat di bawah 5.600. Pilihan itu 5.572, hasil dari 3,98, bukan 3,975. Selisih 0,005 memang kecil, tetapi soal meminta hasil tepat.",
+    "gugur": {
+      "A": {
+        "nama": "Persen dihitung dari bilangan yang salah.",
+        "teks": "3,975 dibaca “4 dikurangi 2,5%”, sehingga yang dikurangkan 2,5% × 5.600 = 140. Padahal 0,025 adalah selisih dari 4; yang dikurangkan cukup 0,025 × 1.400 = 35.",
+        "uji": "Dikurangi 140"
+      },
+      "B": {
+        "nama": "Pecahan campuran diubah dengan keliru.",
+        "teks": "3 <span class=\"fr\"><sup>39</sup>⁄<sub>40</sub></span> ditulis (3 × 39 + 40) : 40 = <span class=\"fr\"><sup>157</sup>⁄<sub>40</sub></span>, lalu 157 × 35 = 5.495. Bilangan bulat dikalikan penyebut: (3 × 40 + 39) : 40 = <span class=\"fr\"><sup>159</sup>⁄<sub>40</sub></span>.",
+        "uji": "Dikurangi 105"
+      },
+      "D": {
+        "nama": "Desimal dibulatkan sebelum dihitung.",
+        "teks": "3,975 dibulatkan menjadi 3,98 agar bisa dihitung 4 − 0,02: 5.600 − 28 = 5.572. Selisih 0,005 ikut terbuang.",
+        "uji": "Dikurangi 28"
+      },
+      "E": {
+        "nama": "Berhenti satu langkah sebelum selesai.",
+        "teks": "5.600 belum dikurangi 0,025 × 1.400 = 35.",
+        "uji": "Tidak dikurangi"
+      }
+    }
+  },
+  "reviu": {
+    "jebakan": {
+      "A": "J-BASIS",
+      "B": "J-SEDERHANA",
+      "C": "kunci",
+      "D": "J-BULAT",
+      "E": "J-LANGKAH"
+    },
+    "fungsi": {
+      "A": "selisihDibacaPersen",
+      "B": "campuranKeliru",
+      "C": "p/q × N",
+      "D": "bulatDuaDesimal",
+      "E": "lupaMengurangi"
+    },
+    "kerangka": "HIT tepat · desimal tiga angka dekat bilangan bulat (per-empat puluh) × bilangan 4 angka, hasil bulat · opsi rapat urut naik · taksiran → satuan → sisa 9 masing-masing menggugurkan · J-BASIS, J-SEDERHANA, J-BULAT, J-LANGKAH",
+    "catatan_slot": "Laporan C memasang J-NOL; tidak dipakai karena nol/koma bergeser selalu berselisih kelipatan 9 dari kunci (bertentangan dengan syarat sisa 9 pemisah). Revisi 2 (Gusti 2026-10-31): pembahasan diringkas ke cara cepat c × N − selisih (cara tentor), cara lain N = 1.000 + sisa, cek balik sisa 9; taksiran, cara pecahan, dan uji angka satuan dikeluarkan dari pembahasan (uji soal di atas tetap di-assert). Revisi 1 mengganti 2,875 × 2.120 (apit 2,75–3 menyisakan kunci saja; semua opsi kelipatan 265).",
+    "bukti": {
+      "metode": "hasil tepat BigInt (3975 × 1400 = 5565 × 1000), tiap opsi dicek; taksiran, satuan, sisa 9, pencilan, FPB opsi di-assert",
+      "pecahan": "159/40",
+      "N_bagi_q": 35,
+      "satuan_kunci": 5,
+      "sisa9_kunci": 3,
+      "sisa9_opsi": {
+        "A": 6,
+        "B": 5,
+        "C": 3,
+        "D": 1,
+        "E": 2
+      },
+      "satuan_opsi": {
+        "A": 0,
+        "B": 5,
+        "C": 5,
+        "D": 2,
+        "E": 0
+      },
+      "tersisa": {
+        "taksiran_satu_desimal": [
+          "5.495",
+          "5.565",
+          "5.572"
+        ],
+        "taksiran_perempat": [
+          "5.460",
+          "5.495",
+          "5.565",
+          "5.572"
+        ],
+        "angka_satuan": [
+          "5.495",
+          "5.565"
+        ],
+        "sisa9": [
+          "5.565"
+        ]
+      },
+      "jarak_bertetangga": [
+        35,
+        70,
+        7,
+        28
+      ],
+      "median_jarak": 31.5,
+      "jarak_kunci_terdekat": 7,
+      "fpb_opsi": 7,
+      "beda_TO": "TO Paket 1 TIU: 1 butir HIT (no. 37), semuanya \"paling mendekati\" (perkiraan + akar); tidak ada butir \"Hasil dari desimal × bilangan\" dan kunci 5.565 tidak muncul di opsi TO."
+    }
+  }
+}

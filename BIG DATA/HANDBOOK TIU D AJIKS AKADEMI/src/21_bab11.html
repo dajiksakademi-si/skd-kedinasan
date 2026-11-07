@@ -1,0 +1,484 @@
+<!-- ═════════ BAB 11 · KECUKUPAN DATA ═════════
+     Rencana: reports/tahap2_D_kck_analitis_optimasi.md Bab 11 + sebaran T2-1b (5 latihan + 2 Latihan Bukti) + Putusan 6, 7,
+     T2-7(7)(8). Lima bentuk = Pilar 2 = Pilar 4 engine v0.4.3. Bunyi pilihan = templat Pilar 5. Semua angka dan status logika
+     di narasi dihitung di scripts/cek_bab11_13.mjs (pemeriksaan semua keadaan). Kotak soal = tempat kosong sampai T5. -->
+<section class="bab num" data-bab="11">
+  <header class="band">
+    <div class="no">11</div>
+    <div>
+      <h2>Kecukupan Data</h2>
+      <p>Bab ini membahas arti data yang cukup, lima pilihan baku, daftar kebutuhan, cara membuktikan cukup dan tidak cukup, lima bentuk soal, serta perbandingan dua besaran yang memuat huruf.</p>
+      <p class="waktu"><svg class="ico"><use href="#jam"/></svg>{{TARGET}}</p>
+    </div>
+    <div class="kisi" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="emas"></i></div>
+  </header>
+
+  <p class="lead">Soal kecukupan data tidak meminta jawabannya. Soal itu menanyakan apakah keterangan yang tersedia sudah memaksa jawabannya menjadi tunggal. Perbedaan ini mengubah cara kerja: kamu jarang perlu menghitung sampai selesai, tetapi kamu harus yakin bahwa tidak ada keadaan lain yang juga cocok dengan data. Kerjakan pertanyaan pembuka berikut sebelum membaca uraiannya.</p>
+
+<!--B11-P01:mulai-->
+<div data-soal="HB-TIU-B11-P01" data-target="120">
+  <div class="soal">
+    <div class="meta"><span id="soal-B11-P01">Pertanyaan Pembuka<a class="ke" href="#bahas-B11-P01">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 120 detik</span></div>
+    <p class="stem">Mesin fotokopi P dan Q akan menggandakan 4.800 lembar naskah. Kedua mesin mulai bekerja bersamaan dan terus bekerja sampai seluruh naskah selesai. Laju setiap mesin tetap selama bekerja.</p>
+    <dl class="premis"><div><dt>(1)</dt><dd>Mesin P yang bekerja sendirian dapat menggandakan 4.800 lembar itu dalam 4 jam.</dd></div><div><dt>(2)</dt><dd>Laju mesin Q setengah dari laju mesin P.</dd></div></dl>
+    <p class="stem">Apakah seluruh naskah selesai digandakan dalam waktu <mark>paling lama 2 jam</mark>?</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.</span></li><li><span class="h">B</span><span>Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.</span></li><li><span class="h">C</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.</span></li><li><span class="h">D</span><span>Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.</span></li><li><span class="h">E</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan.</span></li></ol>
+  </div>
+  <div class="guru"><b>KCK ya/tidak + laju, dua mesin berlaju beda, gabungan pasti tidak.</b> Kunci C. Kode: A J-ASUMSI · B J-RASIO · C <b>kunci</b> · D J-MUNGKIN · E J-TENTU. Kerangka: KCK ya/tidak + laju · dua mesin berlaju beda, beban tertulis · (1) waktu P sendirian · (2) laju Q relatif terhadap P · gabungan pasti tidak. TO terdekat: TO P1 no. 48 (pelaksana identik, tim lain); engine Contoh 1 (relawan); konteks relawan/paket konsumsi tidak dipakai. Bukti: semua laju P, Q 100–4.000 lembar/jam (diperlebar 8.000); (1) tidak cukup · (2) tidak cukup · gabungan cukup; gabungan 4.800 : 1.800 = 2 jam 40 menit, pasti tidak. Kode = rencana slot (J-TENTU, J-RASIO, J-ASUMSI) + J-MUNGKIN untuk D (masing-masing cukup), karena jalur D yang wajar = satu angka dicoba untuk tiap pernyataan.</div>
+</div>
+<!--B11-P01:selesai-->
+
+  <h3>Konsep Pemeriksaan Semua Kemungkinan</h3>
+  <p>Bab 11 sampai Bab 13 berpegang pada satu cara kerja: <b>periksa semua keadaan yang masih mungkin</b>. Setiap keterangan di soal mencoret sebagian keadaan, dan keadaan yang tersisa menentukan jawabannya. Bedanya hanya pada apa yang disebut satu keadaan dan apa yang ditanyakan tentang keadaan-keadaan itu.</p>
+  <table class="tb">
+    <thead><tr><th style="width:21%">Bab</th><th style="width:25%">Satu keadaan</th><th style="width:28%">Yang ditanya</th><th>Bukti "tidak"</th></tr></thead>
+    <tbody>
+      <tr><td><b>11</b> Kecukupan Data</td><td>satu pasang nilai yang memenuhi data</td><td>apakah jawabannya tunggal</td><td>dua keadaan dengan jawaban berbeda</td></tr>
+      <tr><td><b>12</b> Penalaran Analitis</td><td>satu susunan yang memenuhi semua syarat</td><td>apa yang benar di semua, sebagian, atau tidak satu pun susunan</td><td>satu susunan yang membantah</td></tr>
+      <tr><td><b>13</b> Optimasi Tabel</td><td>satu kombinasi yang memenuhi syarat</td><td>kombinasi termurah atau isi terbanyak di antara semuanya</td><td>satu kombinasi sah yang lebih baik</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Arti Data yang Cukup</h3>
+  <div class="konsep">
+    <div class="def">
+      <p>Data <b>cukup</b> bila semua keadaan yang memenuhi data memberi <b>satu jawaban yang sama</b>. Data tidak cukup bila ada dua keadaan yang sama-sama memenuhi data, tetapi jawabannya berbeda.</p>
+      <p>Misalkan <i>a</i> dan <i>b</i> bilangan bulat positif, dan pertanyaannya: berapa nilai <i>a</i>? Keterangan (1) berbunyi <i>a</i> + <i>b</i> = 7. Keadaan yang memenuhinya ada enam: (1, 6), (2, 5), (3, 4), (4, 3), (5, 2), dan (6, 1). Nilai <i>a</i> berbeda-beda, jadi (1) tidak cukup.</p>
+      <p>Keterangan (2) berbunyi <i>a</i> − <i>b</i> = 3. Keadaannya tidak pernah habis: (4, 1), (5, 2), (6, 3), dan seterusnya. Kedua keterangan bersama menyisakan hanya <i>a</i> = 5 dan <i>b</i> = 2. Satu keadaan, satu jawaban: data cukup.</p>
+    </div>
+    <table class="hit">
+      <thead><tr><th style="width:19mm">Data</th><th>Keadaan</th><th style="width:18mm">Nilai <i>a</i></th></tr></thead>
+      <tbody>
+        <tr><td>(1) saja</td><td>6 keadaan</td><td>1 sampai 6</td></tr>
+        <tr><td>(2) saja</td><td>tak terhingga</td><td>4, 5, 6, …</td></tr>
+        <tr class="uji"><td>(1) dan (2)</td><td>1 keadaan</td><td>5</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Dari definisi ini lahir dua akibat yang dipakai di seluruh bab. Pertama, <b>bukti tidak cukup</b> cukup berupa dua keadaan sah dengan jawaban berbeda, misalnya keadaan (1, 6) dan (2, 5) untuk keterangan (1). Kedua, <b>bukti cukup</b> tidak boleh berupa satu contoh yang cocok. Diperlukan alasan yang berlaku untuk setiap keadaan.</p>
+
+  <h3>Jawaban Ya atau Tidak</h3>
+  <p>Sebagian soal bertanya dalam bentuk ya atau tidak. Data cukup bila jawabannya pasti, dan jawaban yang pasti "tidak" tetap jawaban yang pasti. Dengan keterangan <i>a</i> + <i>b</i> = 7 saja, ajukan pertanyaan: Apakah <i>a</i> &gt; 6? Di keenam keadaan, nilai <i>a</i> paling besar 6, sehingga jawabannya selalu "tidak". Keterangan itu cukup.</p>
+  <p>Batas dibaca persis. Untuk pertanyaan "Apakah <i>a</i> ≥ 6?", keadaan (6, 1) menjawab "ya", sedangkan (5, 2) menjawab "tidak". Keterangan yang sama kini tidak cukup. Sebaliknya, bila semua keadaan memberi satu hasil yang tepat sama dengan batas, jawabannya tetap tunggal dan data tetap cukup.</p>
+
+  <h3>Lima Pilihan Baku</h3>
+  <p>Soal kecukupan data hampir selalu memakai lima pilihan yang sama. Buku ini memakai bunyi berikut. Setiap bunyi menutup keadaan yang dimaksud bunyi lain, sehingga tepat satu pilihan benar.</p>
+  <table class="tb">
+    <thead><tr><th style="width:8%">Pilihan</th><th>Bunyi</th><th style="width:27%">Artinya</th></tr></thead>
+    <tbody>
+      <tr><td><b>A</b></td><td>Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.</td><td>hanya (1) yang cukup</td></tr>
+      <tr><td><b>B</b></td><td>Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.</td><td>hanya (2) yang cukup</td></tr>
+      <tr><td><b>C</b></td><td>Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.</td><td>masing-masing tidak cukup, gabungannya cukup</td></tr>
+      <tr><td><b>D</b></td><td>Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.</td><td>masing-masing cukup</td></tr>
+      <tr><td><b>E</b></td><td>Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan.</td><td>digabung pun tidak cukup</td></tr>
+    </tbody>
+  </table>
+  <p>Pemeriksaannya selalu tiga langkah: (1) saja, (2) saja, lalu gabungan bila keduanya tidak cukup. Hasil tiga langkah itu langsung menunjuk satu pilihan.</p>
+  <table class="tb">
+    <thead><tr><th style="width:22%">(1) saja</th><th style="width:22%">(2) saja</th><th style="width:30%">(1) dan (2) bersama</th><th>Pilihan</th></tr></thead>
+    <tbody>
+      <tr><td>cukup</td><td>tidak cukup</td><td>tidak perlu diperiksa</td><td><b>A</b></td></tr>
+      <tr><td>tidak cukup</td><td>cukup</td><td>tidak perlu diperiksa</td><td><b>B</b></td></tr>
+      <tr><td>tidak cukup</td><td>tidak cukup</td><td>cukup</td><td><b>C</b></td></tr>
+      <tr><td>cukup</td><td>cukup</td><td>tidak perlu diperiksa</td><td><b>D</b></td></tr>
+      <tr><td>tidak cukup</td><td>tidak cukup</td><td>tidak cukup</td><td><b>E</b></td></tr>
+    </tbody>
+  </table>
+  <p>Bunyi dan urutan pilihan di ujian dapat berbeda dari bunyi di buku ini. Karena itu, cocokkan hasil pemeriksaanmu dengan <b>bunyi</b> pilihan, bukan dengan hurufnya. Beberapa latihan di buku ini sengaja menyusun kelima bunyi dalam urutan lain.</p>
+  <div class="note catatan">
+    <h4>Catatan</h4>
+    <p>Sebagian soal latihan di luar buku ini memakai bunyi pilihan yang longgar. Ada pilihan E berbunyi "Pernyataan (1) dan (2) tidak cukup", yang dapat dibaca "masing-masing tidak cukup" padahal maksudnya "digabung pun tidak cukup". Ada pula pilihan "(1) saja cukup atau (2) saja cukup" yang benar untuk lebih dari satu hasil pemeriksaan. Bila bertemu bunyi seperti itu, tentukan dulu hasil tiga langkah pemeriksaanmu, lalu pilih bunyi yang paling tepat menggambarkannya. Kebiasaan bunyi pilihan pada soal resmi belum diverifikasi.</p>
+  </div>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Bunyi Pilihan dan Urutan Acak</h4>
+    <p>Kelima bunyi = templat Pilar 5 engine v0.4.3, persis. Bunyi longgar di Catatan = temuan TR no. 45–52 (empat set bunyi dalam satu tryout; no. 51 dan 52 punya dua opsi benar harfiah). Putusan T2-7(7): urutan opsi diacak di dua latihan, B11-L02 dan B12-L02; bunyi tetap Pilar 5, huruf kunci kedua soal itu dicatat script dari urutan acaknya saat T5.</p>
+  </div>
+
+  <h3>Daftar Kebutuhan dan Kalimat Penentu</h3>
+  <p>Sebelum membaca pernyataan (1) dan (2), tulis <b>daftar kebutuhan</b>: besaran apa saja yang harus diketahui supaya pertanyaan terjawab. Centang besaran yang sudah diberikan kalimat soal. Pernyataan baru dinilai sesudah itu.</p>
+  <p>Misalkan soal bertanya apakah suatu pesanan selesai sebelum batas waktu bila dikerjakan beberapa mesin. Daftar kebutuhannya: besar pesanan, laju setiap mesin, dan banyak mesin yang bekerja. Bila soal menulis "mesin ditambah dua", banyak mesin awal juga masuk daftar. Besaran yang tidak tertulis di mana pun tidak boleh kamu isi sendiri.</p>
+  <p>Lingkari pula <b>kalimat penentu</b>, yaitu kata atau frasa yang mengubah arti data, seperti "berbeda", "ditambah", "sedang", "sama", dan "tersebut". Laju yang diukur pada pekerjaan yang <i>berbeda</i> tidak dapat dipakai untuk pekerjaan yang ditanya, walaupun angkanya lengkap.</p>
+  <p>Terakhir, lakukan <b>uji coret</b>: bayangkan sebuah pernyataan dihapus. Bila keadaan yang tersisa tidak berubah, pernyataan itu hanya mengulang kalimat soal dan tidak memberi keterangan baru, betapapun banyak angkanya.</p>
+
+  <h3>Perkirakan Dulu: Banyak Besaran dan Banyak Keterangan</h3>
+  <p>Sebelum menghitung, bandingkan banyak besaran yang belum diketahui dengan banyak keterangan yang benar-benar baru. Pada umumnya dua besaran memerlukan dua keterangan, dan tiga besaran memerlukan tiga. Perkiraan ini cepat, tetapi punya tiga pengecualian yang sering muncul.</p>
+  <table class="tb">
+    <thead><tr><th style="width:22%">Pengecualian</th><th style="width:34%">Contoh</th><th>Akibatnya</th></tr></thead>
+    <tbody>
+      <tr><td><b>Yang ditanya bentuk gabungan</b></td><td>ditanya <i>a</i> + <i>b</i>, diketahui 3<i>a</i> + 3<i>b</i> = 21</td><td>satu persamaan sudah memberi <i>a</i> + <i>b</i> = 7 tanpa mengetahui <i>a</i> dan <i>b</i> masing-masing</td></tr>
+      <tr><td><b>Keterangan kembar</b></td><td><i>a</i> + 2<i>b</i> = 8 dan 2<i>a</i> + 4<i>b</i> = 16</td><td>persamaan kedua hanya dua kali persamaan pertama; untuk bilangan bulat positif tetap tersisa (2, 3), (4, 2), dan (6, 1)</td></tr>
+      <tr><td><b>Kuadrat dan ketaksamaan</b></td><td><i>x</i><sup>2</sup> = 16 dipenuhi <i>x</i> = 4 dan <i>x</i> = −4</td><td>satu persamaan memberi dua nilai; perlu keterangan tanda untuk memilih salah satunya</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Membuktikan Cukup dan Tidak Cukup</h3>
+  <p>Klaim "tidak cukup" dibuktikan dengan <b>dua keadaan</b> yang sama-sama memenuhi data, tetapi jawabannya berbeda. Klaim "cukup" dibuktikan dengan <b>alasan umum</b> yang berlaku untuk setiap keadaan.</p>
+  <p>Misalkan <i>x</i> dan <i>y</i> bilangan positif, dan pertanyaannya: Apakah <i>x</i> + <i>y</i> &gt; 10? Bila hanya diketahui <i>x</i> &gt; 6, keadaan <i>x</i> = 7, <i>y</i> = 4 memberi 11, jawabannya "ya"; keadaan <i>x</i> = 7, <i>y</i> = 1 memberi 8, jawabannya "tidak". Dua keadaan itu membuktikan bahwa data tidak cukup. Siapa pun yang hanya mencoba keadaan pertama akan mengira data cukup.</p>
+  <p>Bila diketahui pula <i>y</i> &gt; 5, setiap keadaan memenuhi <i>x</i> + <i>y</i> &gt; 6 + 5 = 11, sehingga jawabannya pasti "ya". Inilah alasan umum: tidak ada keadaan yang perlu dicoba satu per satu, sebab jumlah keduanya selalu lebih dari 11, dan 11 sudah lebih dari 10.</p>
+  <p>Dua latihan berikut tidak memakai pilihan jawaban. Kamu diminta menuliskan bukti, bukan memilih. Kerjakan tanpa batas waktu; di sini ketelitian lebih penting daripada kecepatan.</p>
+<!--B11-B01:mulai-->
+<div data-soal="HB-TIU-B11-B01">
+  <div class="soal">
+    <div class="meta"><span id="soal-B11-B01">Latihan Bukti 1<a class="ke" href="#bahas-B11-B01">Lihat pembahasan</a></span><span class="waktu">Tanpa pilihan</span></div>
+    <p class="stem">Sebuah toples hanya berisi permen jahe dan permen mint. Pertanyaannya: berapa banyak permen mint di toples itu?</p>
+    <dl class="premis"><div><dt>(1)</dt><dd>Perbandingan banyak permen jahe dan permen mint adalah 3 : 4.</dd></div></dl>
+    <p class="stem">Pernyataan itu tidak cukup. Buktikan dengan menuliskan <mark>dua keadaan</mark> yang sama-sama memenuhi kalimat soal dan pernyataan, tetapi memberi banyak permen mint yang berbeda.</p>
+  </div>
+  <div class="guru"><b>Latihan Bukti rasio, dua keadaan untuk satu pernyataan perbandingan.</b> Contoh jawaban: 3 permen jahe dan 4 permen mint, atau 6 permen jahe dan 8 permen mint. Syarat jawaban sah: kedua keadaan berupa bilangan cacah positif, berbanding 3 : 4, dan banyak permen mintnya berbeda; pasangan lain yang memenuhi syarat ini juga benar. Kerangka: KCK rasio · satu pernyataan perbandingan tanpa ukuran · tulis dua keadaan. TO terdekat: TO P1 no. 49 (rasio + total); bukan a + b = 7 (narasi). Bukti: semua pasangan jahe–mint 1–200 yang berbanding 3 : 4; dua keadaan paling sederhana (3, 4) dan (6, 8). Kode sasaran: J-RASIO, J-MUNGKIN (satu contoh dikira bukti). Kunci = contoh jawaban; pembahasan di Lampiran B (Tahap 6).</div>
+</div>
+<!--B11-B01:selesai-->
+<!--B11-B02:mulai-->
+<div data-soal="HB-TIU-B11-B02">
+  <div class="soal">
+    <div class="meta"><span id="soal-B11-B02">Latihan Bukti 2<a class="ke" href="#bahas-B11-B02">Lihat pembahasan</a></span><span class="waktu">Tanpa pilihan</span></div>
+    <p class="stem">Dalam pemilihan ketua kelas hanya ada dua calon, Rani dan Sigit, dan setiap siswa memberikan tepat satu suara untuk salah satu calon. Pertanyaannya: berapa persen suara yang diperoleh Rani?</p>
+    <dl class="premis"><div><dt>(1)</dt><dd>Suara yang diperoleh Sigit 50% lebih banyak daripada suara yang diperoleh Rani.</dd></div></dl>
+    <p class="stem">Pernyataan itu cukup. Tuliskan <mark>alasan umum</mark> mengapa jawabannya sama untuk berapa pun banyak siswanya, tanpa mencoba contoh angka. Kamu boleh memakai huruf, misalnya r untuk suara Rani.</p>
+  </div>
+  <div class="guru"><b>Latihan Bukti persen, alasan umum untuk persen yang cukup.</b> Contoh jawaban: Misalkan suara Rani r. Suara Sigit 1,5r, jadi seluruh suara r + 1,5r = 2,5r. Persentase Rani r : 2,5r × 100% = 40%. Huruf r saling menghapus, sehingga hasilnya 40% untuk setiap r. Syarat jawaban sah: alasan memakai lambang untuk suara Rani (atau seluruh suara) dan menunjukkan lambang itu saling menghapus; jawaban yang hanya mencoba satu atau dua angka belum sah. Kerangka: KCK persen · selisih persen terhadap satu bagian · ditanya persentase · alasan umum. TO terdekat: TO P1 no. 50 (hitung balik basis); bukan x &gt; 6, y &gt; 5 (narasi). Bukti: semua suara Rani 1–300 dengan Sigit = 1,5 × Rani: persentase Rani selalu 40%. Kode sasaran: J-MUNGKIN, J-BASIS (50% dihitung dari seluruh suara memberi Rani 50%). Revisi cek buta 1: kalimat tanya menegaskan boleh memakai huruf (misalnya r).</div>
+</div>
+<!--B11-B02:selesai-->
+
+  <h3>Lima Bentuk Soal Kecukupan Data</h3>
+  <p>Soal kecukupan data di tryout yang menjadi rujukan buku ini datang dalam lima bentuk. Setiap bentuk punya kebutuhan khas dan kekeliruan khas. Ketujuh contoh di akhir bab memperagakan kelimanya.</p>
+  <table class="tb">
+    <thead><tr><th style="width:20%">Bentuk</th><th style="width:31%">Yang dibutuhkan</th><th>Kekeliruan khas</th><th style="width:9%" class="n">Contoh</th></tr></thead>
+    <tbody>
+      <tr><td><b>Aljabar dan nilai gabungan</b></td><td>persamaan sebanyak besaran, kecuali bila yang ditanya bentuk gabungan</td><td>menilai cukup dari banyaknya persamaan; lupa nilai negatif</td><td class="n">1</td></tr>
+      <tr><td><b>Nilai dari cerita atau tabel</b></td><td>setiap besaran yang dipakai dalam hitungan</td><td>memakai angka yang tidak dibutuhkan; berhenti setelah (1) cukup</td><td class="n">2</td></tr>
+      <tr><td><b>Ya atau tidak dengan laju</b></td><td>beban kerja, laju setiap pelaksana, dan banyak pelaksana yang bekerja</td><td>mengisi sendiri data yang tidak tertulis; mengira jawaban "tidak" berarti tidak terjawab</td><td class="n">3</td></tr>
+      <tr><td><b>Perbandingan</b></td><td>satu besaran nyata di samping perbandingan</td><td>mengira perbandingan sudah memberi nilai sebenarnya</td><td class="n">4</td></tr>
+      <tr><td><b>Persen</b></td><td>dasar persen yang tepat; bila yang ditanya persentase, perbandingan sering sudah cukup</td><td>mengira persen dari bilangan yang belum diketahui tidak dapat dihitung balik</td><td class="n">5</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Tiga Pernyataan dan Nilai terhadap Batas</h3>
+  <p>Dua bentuk lain lebih jarang, tetapi pernah muncul. Pada soal <b>tiga pernyataan</b>, pilihan disusun khusus untuk setiap soal. Periksa ketujuh himpunan: tiga pernyataan tunggal, tiga pasangan, dan ketiganya bersama. Mulailah dari himpunan yang terkecil. Begitu satu himpunan cukup, setiap himpunan yang memuatnya juga cukup.</p>
+  <p>Pada soal <b>nilai terhadap batas</b>, pernyataan berupa ketaksamaan, sehingga yang tersisa sebuah rentang, bukan satu nilai. Data cukup hanya bila seluruh rentang itu jatuh di satu sisi batas. Rentang yang memotong batas berarti ada keadaan "ya" dan ada keadaan "tidak".</p>
+
+  <h3>Perbandingan Nilai yang Memuat Huruf</h3>
+  <p>Bab 6 memperkenalkan perbandingan P dan Q dengan empat pilihan tetap. Bila P dan Q memuat huruf, soal itu sebenarnya soal kecukupan data: kalimat soal memberi rentang nilai huruf, dan hubungan P dengan Q harus sama di <b>setiap</b> nilai dalam rentang itu.</p>
+  <div class="konsep">
+    <div class="def">
+      <p>Misalkan <i>x</i> bilangan bulat, P = <i>x</i><sup>2</sup> + 1, dan Q = 2<i>x</i>. Untuk 1 ≤ <i>x</i> ≤ 5, nilai <i>x</i> = 1 memberi P = Q, sedangkan nilai lain memberi P &gt; Q. Hubungannya tidak tetap, jadi jawabannya "hubungan P dan Q tidak dapat ditentukan".</p>
+      <p>Ubah rentangnya menjadi 1 &lt; <i>x</i> ≤ 5. Nilai <i>x</i> = 1 keluar dari rentang, dan P &gt; Q di setiap nilai yang tersisa. Alasan umumnya: P − Q = (<i>x</i> − 1)<sup>2</sup>, yang bernilai nol hanya di <i>x</i> = 1 dan positif di nilai lain. Satu tanda ≤ atau &lt; di ujung rentang mengubah jawaban.</p>
+    </div>
+    <table class="hit">
+      <thead><tr><th style="width:9mm"><i>x</i></th><th>P</th><th>Q</th><th style="width:19mm">Hubungan</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>2</td><td>2</td><td>P = Q</td></tr>
+        <tr><td>2</td><td>5</td><td>4</td><td>P &gt; Q</td></tr>
+        <tr><td>3</td><td>10</td><td>6</td><td>P &gt; Q</td></tr>
+        <tr><td>4</td><td>17</td><td>8</td><td>P &gt; Q</td></tr>
+        <tr><td>5</td><td>26</td><td>10</td><td>P &gt; Q</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="utuh">Jawaban "P = Q" lahir dari mencoba satu nilai saja, dan jawaban "P &gt; Q" lahir dari melewatkan ujung rentang. Pemeriksaan setiap nilai dalam rentang, atau satu alasan umum seperti selisih berbentuk kuadrat, mencegah keduanya.</p>
+
+  <h3>Bila Soal Ujian Kurang Satu Data</h3>
+  <p>Buku ini memakai logika ketat: data dinilai hanya dari yang tertulis. Soal di buku ini disusun supaya setiap besaran dalam daftar kebutuhan tertulis di kalimat soal atau di pernyataan, sehingga logika ketat selalu memberi satu kunci.</p>
+  <div class="note catatan">
+    <h4>Catatan</h4>
+    <p>Di sebagian soal latihan di luar buku ini pernah ditemukan soal yang menanyakan hasil sesudah pelaksana ditambah, padahal banyak pelaksana awal tidak tertulis. Kunci soal itu menganggap angka di salah satu pernyataan sebagai jumlah awal. Dengan logika ketat, data seperti itu tidak cukup: bila kalimat jumlah awal dihapus, keadaan yang sah bertambah dan jawabannya tidak lagi tunggal. Ketahuilah bahwa sebagian pembuat soal memakai anggapan tersebut. Kebiasaan soal resmi dalam hal ini belum diverifikasi, sehingga buku ini tidak mengajarkannya sebagai aturan.</p>
+  </div>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Dasar Catatan Kurang Data</h4>
+    <p>Putusan 6. Dasar: TR no. 50 dan TB no. 49 (kunci resmi A, logika ketat E); dua soal dari satu bimbel. Ilustrasi rencana T2-D dari L6 ("ditambah k") tidak dipakai karena L6 tidak terpilih sebagai latihan (kerangkanya paling dekat TR no. 50); Catatan berupa teks saja sesuai T2-D. Soal D'Ajiks tetap tanpa asumsi diam (J-ASUMSI, G3: uji coret + kutipan daftar kebutuhan di <code>periksa.mjs</code>).</p>
+  </div>
+
+  <h3>Langkah Penyelesaian Soal Kecukupan Data</h3>
+  <div class="rules satu">
+    <div><b>Tentukan jenis pertanyaan:</b> nilai atau ya/tidak. Untuk ya/tidak, tulis batasnya beserta tandanya.</div>
+    <div><b>Tulis daftar kebutuhan,</b> centang yang sudah diberikan kalimat soal, lalu lingkari kalimat penentu.</div>
+    <div><b>Nilai (1) saja.</b> Perkirakan dengan banyak besaran dan banyak keterangan; bila ragu, cari dua keadaan.</div>
+    <div><b>Nilai (2) saja,</b> dengan pernyataan (1) benar-benar dilupakan.</div>
+    <div><b>Gabungkan</b> bila keduanya tidak cukup, dan pastikan keduanya tidak bertentangan.</div>
+    <div><b>Cocokkan hasilnya dengan bunyi pilihan,</b> bukan dengan hurufnya.</div>
+    <div><b>Cek balik:</b> untuk "tidak cukup", sebut dua keadaan; untuk "cukup", sebut alasan umumnya; lakukan uji coret pada setiap pernyataan.</div>
+  </div>
+
+  <h3>Kekeliruan pada Soal Kecukupan Data</h3>
+  <p>Setiap pilihan salah pada soal kecukupan data D'Ajiks lahir dari salah satu kekeliruan berikut. Nama-nama ini dipakai di setiap pembahasan bab ini.</p>
+  <table class="tb">
+    <thead><tr><th style="width:5%">No.</th><th style="width:31%">Kekeliruan</th><th>Contoh</th><th style="width:27%">Pertanyaan uji</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><b>Memakai keterangan yang tidak tertulis di soal</b></td><td>angka di pernyataan dianggap jumlah pelaksana awal</td><td>Besaran ini tertulis di soal?</td></tr>
+      <tr><td>2</td><td><b>Berhenti setelah pernyataan (1) cukup</b></td><td>memilih "hanya (1) cukup" tanpa menilai (2)</td><td>Pernyataan (2) sudah dinilai sendiri?</td></tr>
+      <tr><td>3</td><td><b>Memakai data yang tidak dibutuhkan</b></td><td>jam mulai atau data periode lain ikut dihitung</td><td>Angka ini ada di daftar kebutuhan?</td></tr>
+      <tr><td>4</td><td><b>Mengira pengulangan soal sebagai keterangan baru</b></td><td>pernyataan menyebut ulang isi kalimat soal dengan angka</td><td>Uji coret mengubah keadaan yang tersisa?</td></tr>
+      <tr><td>5</td><td><b>Menilai cukup dari banyaknya persamaan</b></td><td>persamaan kedua hanya kelipatan persamaan pertama</td><td>Persamaan ini kelipatan persamaan lain?</td></tr>
+      <tr><td>6</td><td><b>Lupa nilai negatif atau akar kedua</b></td><td>kuadrat sebuah bilangan dibaca hanya memberi nilai positif</td><td>Ada nilai negatif yang juga memenuhi?</td></tr>
+      <tr><td>7</td><td><b>Mengira jawaban "tidak" berarti tidak terjawab</b></td><td>jawaban yang pasti "tidak" dinilai tidak cukup</td><td>Jawabannya tunggal, walaupun "tidak"?</td></tr>
+      <tr><td>8</td><td><b>Mengira perbandingan sudah memberi nilai sebenarnya</b></td><td>dua pernyataan perbandingan yang saling cocok dianggap cukup</td><td>Ada satu besaran nyata?</td></tr>
+      <tr><td>9</td><td><b>Mengira persen dari bilangan yang belum diketahui tidak dapat dihitung balik</b></td><td>pernyataan berisi persen dan sisa dianggap buntu</td><td>Dasarnya dapat dihitung balik?</td></tr>
+      <tr><td>10</td><td><b>Menganggap satu contoh yang cocok sebagai bukti</b></td><td>satu keadaan memberi "ya", lalu data dinilai cukup</td><td>Sudah dicari keadaan yang membantah?</td></tr>
+      <tr><td>11</td><td><b>Salah membaca batas</b></td><td>"lebih dari" dibaca "paling sedikit"</td><td>Tandanya &lt;, ≤, &gt;, atau ≥?</td></tr>
+      <tr><td>12</td><td><b>Berhenti satu langkah sebelum selesai</b></td><td>rata-rata tidak dikalikan banyak data, padahal hasilnya memberi jumlah</td><td>Angka ini masih dapat diolah satu langkah lagi?</td></tr>
+      <tr><td>13</td><td><b>Tertukar membaca kotak yang dihasilkan</b></td><td>angka yang terhitung milik kotak lain, bukan kotak yang ditanya</td><td>Angka ini milik besaran yang ditanya?</td></tr>
+    </tbody>
+  </table>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Padanan Nama Kekeliruan dan Kode</h4>
+    <p>1 J-ASUMSI (K1) · 2 J-BERHENTI (K2) · 3 J-PENGALIH (K1) · 4 J-ULANG, varian KCK (K7) · 5 J-PERSAMAAN (K7) · 6 J-TANDA (K3) · 7 J-TENTU (K4) · 8 J-RASIO (K1) · 9 J-BASIS, varian KCK yang berdaya mengubah kunci (K3) · 10 J-MUNGKIN (K4) · 11 J-BATAS (K4) · 12 J-LANGKAH (K2) · 13 J-BALIK, varian KCK (K3). J-SEARAH dibahas di Contoh 3 sebagai salah paham yang tidak mengubah kunci. Hasil tepat di batas pada soal ya/tidak tidak mengubah status cukup (engine Contoh 1, catatan J-BATAS).</p>
+  </div>
+
+<!--B11-P01-bahas:mulai-->
+  <h3 id="bahas-B11-P01">Pembahasan Pertanyaan Pembuka</h3>
+<div class="bahas-pembuka">
+  <div class="soal">
+    <div class="meta"><span>Pertanyaan Pembuka</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 120 detik</span></div>
+    <p class="stem">Mesin fotokopi P dan Q akan menggandakan 4.800 lembar naskah. Kedua mesin mulai bekerja bersamaan dan terus bekerja sampai seluruh naskah selesai. Laju setiap mesin tetap selama bekerja.</p>
+    <dl class="premis"><div><dt>(1)</dt><dd>Mesin P yang bekerja sendirian dapat menggandakan 4.800 lembar itu dalam 4 jam.</dd></div><div><dt>(2)</dt><dd>Laju mesin Q setengah dari laju mesin P.</dd></div></dl>
+    <p class="stem">Apakah seluruh naskah selesai digandakan dalam waktu <mark>paling lama 2 jam</mark>?</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.</span></li><li><span class="h">B</span><span>Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.</span></li><li><span class="h">C</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.</span></li><li><span class="h">D</span><span>Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.</span></li><li><span class="h">E</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan.</span></li></ol>
+  </div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal tidak meminta lama kerjanya. Yang ditanya: apakah data sudah memastikan jawaban ya atau tidak untuk batas “paling lama 2 jam”. Daftar kebutuhannya dua, yaitu laju mesin P dan laju mesin Q; banyak naskah sudah tertulis, 4.800 lembar.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Periksa tiga langkah. (1) saja memberi laju P, 4.800 : 4 = 1.200 lembar per jam, tetapi laju Q masih bebas: tidak cukup. (2) saja memberi hubungan Q dengan P tanpa satu laju nyata: tidak cukup. Gabungan: laju Q 1.200 : 2 = 600, laju berdua 1.200 + 600 = 1.800 lembar per jam, dan 4.800 lembar butuh 2 jam 40 menit. Lebih dari 2 jam, jadi jawabannya pasti “tidak”, dan jawaban yang pasti berarti data cukup.</dd></div>
+    <div><dt>Cara lain</dt><dd>Bandingkan dengan laju yang dibutuhkan. Supaya selesai dalam 2 jam, kedua mesin harus menggandakan 4.800 : 2 = 2.400 lembar per jam. Gabungan (1) dan (2) hanya memberi 1.800 lembar per jam, kurang dari yang dibutuhkan.</dd></div>
+    <div><dt>Cek balik</dt><dd>Sebut dua keadaan untuk setiap pernyataan yang tidak cukup. (1) saja: bila laju Q 1.200, berdua 2.400 lembar per jam dan selesai tepat 2 jam (ya); bila laju Q 600, selesai 2 jam 40 menit (tidak). (2) saja: laju P 1.600 dan laju Q 800 memberi 2.400 lembar per jam (ya), sedangkan laju P 1.200 memberi jawaban tidak.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">(1) dianggap cukup</span><b>Memakai keterangan yang tidak tertulis di soal.</b> Pilihan ini muncul bila mesin Q diam-diam dianggap secepat mesin P. Dengan anggapan itu laju berdua 2.400 lembar per jam dan naskah selesai tepat 2 jam. Soal tidak pernah menyebut laju Q sama dengan laju P, sehingga (1) saja masih menyisakan jawaban ya dan tidak.</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">(2) dianggap cukup</span><b>Mengira perbandingan sudah memberi nilai sebenarnya.</b> Kata “setengah” terasa seperti angka, padahal ia hanya membandingkan dua laju. Tanpa satu laju nyata, lama kerjanya bisa berapa saja: laju P 1.600 membuat naskah selesai tepat 2 jam, laju P 1.200 tidak.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">satu contoh dicoba</span><b>Menganggap satu contoh yang cocok sebagai bukti.</b> Setiap pernyataan dicoba dengan satu angka yang kebetulan cocok, lalu dianggap cukup. Satu contoh tidak membuktikan cukup; untuk (1) dan (2) masing-masing ada dua keadaan sah dengan jawaban berbeda.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">“tidak” dikira kurang data</span><b>Mengira jawaban “tidak” berarti tidak terjawab.</b> Gabungan kedua pernyataan memberi 2 jam 40 menit, dan jawabannya “tidak”. Jawaban “tidak” yang pasti tetap jawaban. Data dinilai tidak cukup hanya bila masih ada keadaan sah yang menjawab ya.</div></div></div>
+  <div class="jwb"><span>C</span><p><b>Jawaban: C.</b> Masing-masing pernyataan menyisakan jawaban ya dan tidak, sedangkan gabungannya memberi laju 1.800 lembar per jam sehingga jawabannya pasti tidak.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Bayangkan kamu ditanya apakah dua temanmu sanggup mengangkat 40 kardus sebelum magrib. Tahu kecepatan satu orang belum cukup, tahu bahwa yang lain hanya setengah kecepatannya juga belum cukup. Begitu keduanya digabung, kamu bisa menjawab dengan yakin, walaupun jawabannya “tidak sanggup”.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Memilih E karena hasil gabungannya “tidak”. Soal kecukupan data menanyakan apakah jawabannya pasti, bukan apakah jawabannya ya. Selama semua keadaan sah memberi jawaban yang sama, data cukup.</span></div></div>
+  <p class="balik"><a class="ke" href="#soal-B11-P01">Kembali ke soal</a></p>
+</div>
+<!--B11-P01-bahas:selesai-->
+
+  <h3>Contoh Soal dan Pembahasan</h3>
+  <p>Tujuh contoh berikut memperagakan kelima bentuk, satu soal tiga pernyataan, dan satu perbandingan nilai yang memuat huruf. Kerjakan setiap contoh sendiri dalam target waktunya sebelum membaca pembahasan. Setiap pembahasan memuat Inti Pertanyaan dengan kalimat penentunya, Langkah Penyelesaian, Pilihan yang Gugur, Jawaban, Ilustrasi, dan Kekeliruan yang Mungkin Terjadi.</p>
+<!--B11-C01:mulai-->
+<div data-soal="HB-TIU-B11-C01" data-target="90">
+  <div class="soal">
+    <div class="meta"><span>Contoh 1</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 90 detik</span></div>
+    <p class="stem"><i>x</i> dan <i>y</i> adalah bilangan bulat.</p>
+    <dl class="premis"><div><dt>(1)</dt><dd><i>x</i><sup>2</sup> − <i>y</i><sup>2</sup> = 48</dd></div><div><dt>(2)</dt><dd><i>x</i> − <i>y</i> = 6</dd></div></dl>
+    <p class="stem">Berapa nilai <mark><i>x</i> + <i>y</i></mark>?</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.</span></li><li><span class="h">B</span><span>Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.</span></li><li><span class="h">C</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.</span></li><li><span class="h">D</span><span>Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.</span></li><li><span class="h">E</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan.</span></li></ol>
+  </div>
+  <div class="guru"><b>KCK aljabar, bentuk gabungan x + y lewat pemfaktoran.</b> Kunci C. Kode: A J-MUNGKIN · B J-PERSAMAAN · C <b>kunci</b> · D J-PERSAMAAN · E J-TANDA. Kerangka: KCK aljabar · tanya bentuk gabungan dua huruf · (1) selisih kuadrat · (2) selisih · gabungan lewat pemfaktoran. TO terdekat: TO P1 no. 46 (kelipatan gabungan); bukan 3a + 3b = 21 (narasi). Bukti: semua x, y bulat −60…60 (diperlebar −120…120); (1) tidak cukup · (2) tidak cukup · gabungan cukup; x + y di (1): ±2, ±4, ±6, ±8, ±12, ±24; gabungan x = 7, y = 1. Kode slot J-PERSAMAAN, J-TANDA, J-ASUMSI; J-ASUMSI diganti J-MUNGKIN untuk A karena jalur A yang wajar = satu pasangan (7, 1) dicoba. B dan D sama-sama J-PERSAMAAN dengan jalur berbeda.</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Yang ditanya satu bentuk gabungan, “<i>x</i> + <i>y</i>”, bukan nilai <i>x</i> dan <i>y</i> masing-masing. <i>x</i> dan <i>y</i> boleh negatif, jadi setiap kemungkinan tanda ikut diperiksa.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Kenali bentuknya: <i>x</i><sup>2</sup> − <i>y</i><sup>2</sup> = (<i>x</i> − <i>y</i>)(<i>x</i> + <i>y</i>). (1) saja: hasil kali dua faktor itu 48, dan banyak pasangan memenuhinya. <i>x</i> = 7, <i>y</i> = 1 memberi <i>x</i> + <i>y</i> = 8, sedangkan <i>x</i> = 8, <i>y</i> = 4 memberi 12. Tidak cukup. (2) saja hanya memberi selisih: tidak cukup. Gabungan: 6 dikali (<i>x</i> + <i>y</i>) sama dengan 48, sehingga <i>x</i> + <i>y</i> = 48 : 6 = 8. Cukup, tanpa perlu mencari <i>x</i> dan <i>y</i>.</dd></div>
+    <div><dt>Cara lain</dt><dd>Cari nilai masing-masing untuk memastikan. Dari <i>x</i> − <i>y</i> = 6 dan <i>x</i> + <i>y</i> = 8, jumlahkan kedua persamaan: 2<i>x</i> = 14, jadi <i>x</i> = 7 dan <i>y</i> = 1. Uji: 49 − 1 = 48.</dd></div>
+    <div><dt>Cek balik</dt><dd>Bukti (1) tidak cukup: pasangan 7 dan 1 serta 8 dan 4 sama-sama memenuhi, sebab 64 − 16 = 48, tetapi jumlahnya 8 dan 12. Bukti gabungan cukup: faktor <i>x</i> − <i>y</i> sudah pasti 6 dan positif, sehingga <i>x</i> + <i>y</i> pasti positif dan sama dengan 48 : 6 = 8.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">(1) dicoba satu pasangan</span><b>Menganggap satu contoh yang cocok sebagai bukti.</b> Pasangan 7 dan 1 memang memenuhi (1), tetapi masih ada pasangan lain. Pasangan 8 dan 4 memberi jumlah 12, dan pasangan 13 dan 11 memberi 24.</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">(2) dianggap cukup</span><b>Menilai cukup dari banyaknya persamaan.</b> Yang ditanya satu bentuk dan (2) juga satu persamaan, sehingga terasa pas. Padahal (2) hanya memberi selisih: pasangan 7 dan 1 berjumlah 8, pasangan 10 dan 4 berjumlah 14, dan keduanya berselisih 6.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">masing-masing dianggap cukup</span><b>Mengira setiap persamaan langsung memberi bentuk yang ditanya.</b> Setiap pernyataan memang satu persamaan, tetapi satu persamaan baru cukup bila langsung memberi <i>x</i> + <i>y</i>. (1) memberi hasil kali dan (2) memberi selisih; keduanya baru menunjuk <i>x</i> + <i>y</i> setelah digabung.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">dikira bisa −8</span><b>Mengira tanda minus masih terbuka.</b> Karena ada kuadrat, muncul dugaan bahwa <i>x</i> + <i>y</i> bisa 8 atau −8. Gabungan menutup dugaan itu: <i>x</i> − <i>y</i> = 6 positif, sehingga <i>x</i> + <i>y</i> harus 48 : 6 = 8.</div></div></div>
+  <div class="jwb"><span>C</span><p><b>Jawaban: C.</b> Masing-masing pernyataan menyisakan beberapa nilai, sedangkan gabungannya memberi 6 dikali (<i>x</i> + <i>y</i>) sama dengan 48, sehingga <i>x</i> + <i>y</i> = 8.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti tagihan Rp48.000 untuk beberapa porsi bakso seharga Rp6.000 per porsi. Kamu tidak perlu tahu siapa saja yang makan untuk tahu bahwa porsinya 8. Di soal ini, hasil kali 48 dan satu faktor 6 sudah memberi faktor yang lain.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Langsung memilih E karena mengira dua huruf selalu butuh nilai masing-masing, atau karena takut tanda minus. Periksa dulu apakah yang ditanya bentuk gabungan; bila ya, susun pernyataan menjadi bentuk itu.</span></div></div>
+</div>
+<!--B11-C01:selesai-->
+<!--B11-C02:mulai-->
+<div data-soal="HB-TIU-B11-C02" data-target="75">
+  <div class="soal">
+    <div class="meta"><span>Contoh 2</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 75 detik</span></div>
+    <p class="stem">Empat kelompok karang taruna menanam bibit pohon di taman kota. Tabel berikut mencatat banyak anggota, lama kerja, dan banyak bibit yang ditanam setiap kelompok. Dua sel milik kelompok Cendana belum terisi.</p>
+    <table class="tb soal-data"><thead><tr><th>Kelompok</th><th>Banyak anggota</th><th>Lama kerja (jam)</th><th>Bibit yang ditanam</th></tr></thead><tbody><tr><td>Akasia</td><td class="n">6</td><td class="n">3</td><td class="n">54</td></tr><tr><td>Beringin</td><td class="n">8</td><td class="n">4</td><td class="n">70</td></tr><tr><td>Cendana</td><td class="n">7</td><td class="n">…</td><td class="n">…</td></tr><tr><td>Damar</td><td class="n">5</td><td class="n">2</td><td class="n">48</td></tr></tbody></table>
+    <dl class="premis"><div><dt>(1)</dt><dd>Banyak bibit yang ditanam keempat kelompok <mark>rata-rata 57</mark>.</dd></div><div><dt>(2)</dt><dd>Setiap anggota kelompok Cendana menanam tepat 8 bibit.</dd></div></dl>
+    <p class="stem">Berapa banyak bibit yang ditanam kelompok Cendana?</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.</span></li><li><span class="h">B</span><span>Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.</span></li><li><span class="h">C</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.</span></li><li><span class="h">D</span><span>Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.</span></li><li><span class="h">E</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan.</span></li></ol>
+  </div>
+  <div class="guru"><b>KCK nilai dari tabel, sel kosong, rata-rata kolom, kolom lama kerja tidak dipakai.</b> Kunci D. Kode: A J-BERHENTI · B J-LANGKAH · C J-PENGALIH · D <b>kunci</b> · E J-PENGALIH. Kerangka: KCK nilai dari tabel · 4 baris, sel kosong + kolom lama kerja tak dipakai · (1) rata-rata kolom · (2) bibit per anggota sebaris · masing-masing cukup. TO terdekat: tidak ada di TO P1; rata-rata kelas beredar memakai rata-rata gabungan. Bukti: bibit Cendana 0–300 × lama kerja 1–10 jam (diperlebar); (1) cukup · (2) cukup · gabungan cukup; (1) 4 × 57 − 172 = 56, (2) 7 × 8 = 56. Slot (1) = total kolom; dipakai rata-rata (jumlah tersamar) agar pilihan B punya jalur nyata (J-LANGKAH, di luar kode slot). Kode slot J-BERHENTI, J-PENGALIH tetap. Revisi cek buta 1: kepala tabel "Regu" disamakan dengan teks soal menjadi "Kelompok".</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Yang ditanya satu angka, bibit kelompok Cendana. Kalimat penentunya “rata-rata 57” di pernyataan (1). Kolom lama kerja tidak dipakai untuk menghitung banyak bibit.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>(1) saja: rata-rata 57 dari empat kelompok berarti jumlahnya 4 × 57 = 228. Bibit tiga kelompok lain 54 + 70 + 48 = 172, jadi Cendana 228 − 172 = 56. Cukup. (2) saja: Cendana beranggota 7 orang, masing-masing 8 bibit, jadi 7 × 8 = 56. Cukup juga. Keduanya cukup sendiri-sendiri.</dd></div>
+    <div><dt>Cara lain</dt><dd>Perkirakan tanpa menghitung: (1) memberi jumlah keempat kelompok, dan sel bibit yang kosong hanya satu, jadi sel itu pasti terhitung. (2) menautkan bibit dengan banyak anggota yang sudah ada di tabel. Masing-masing menutup sel kosong tanpa bantuan pernyataan lain.</dd></div>
+    <div><dt>Cek balik</dt><dd>Kedua pernyataan memberi angka yang sama, 56. Itu tanda keduanya tidak bertentangan, dan memang wajar pada pilihan “masing-masing cukup”. Lama kerja Cendana tetap kosong, tetapi tidak satu pun hitungan membutuhkannya.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">(2) tidak dinilai</span><b>Berhenti setelah pernyataan (1) cukup.</b> Setelah (1) terbukti cukup, pemeriksaan berhenti. Pernyataan (2) belum dinilai sendiri, padahal 7 × 8 = 56 juga langsung memberi jawabannya.</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">rata-rata dibiarkan</span><b>Berhenti satu langkah sebelum selesai.</b> Angka 57 dikira hanya rata-rata yang tidak bisa diolah. Satu langkah lagi, rata-rata dikali banyak kelompok, memberi jumlah 228, dan dari jumlah itu sel kosong langsung terhitung.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">lama kerja dikira perlu</span><b>Memakai data yang tidak dibutuhkan.</b> Muncul dugaan bahwa bibit harus dihitung dari laju per jam, sehingga kedua pernyataan perlu digabung. Soal menanyakan banyak bibit, bukan laju kerja; kolom lama kerja tidak masuk hitungan mana pun.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">sel kosong kedua</span><b>Menganggap sel kosong pasti dibutuhkan.</b> Lama kerja Cendana yang kosong dianggap harus diketahui dulu. Sel itu tidak berhubungan dengan banyak bibit, jadi kekosongannya tidak membuat data kurang.</div></div></div>
+  <div class="jwb"><span>D</span><p><b>Jawaban: D.</b> Pernyataan (1) memberi 228 − 172 = 56 dan pernyataan (2) memberi 7 × 8 = 56, sehingga masing-masing cukup.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti mencari uang saku satu teman: kamu bisa tahu dari total uang empat orang dikurangi uang tiga orang lainnya, atau dari uang harian dikali banyak hari. Dua jalan berbeda, tetapi masing-masing sudah sampai.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Berhenti di (1) lalu memilih A. Kebiasaan yang aman: setiap kali (1) cukup, tetap nilai (2) sendiri, dengan (1) benar-benar dilupakan.</span></div></div>
+</div>
+<!--B11-C02:selesai-->
+<!--B11-C03:mulai-->
+<div data-soal="HB-TIU-B11-C03" data-target="90">
+  <div class="soal">
+    <div class="meta"><span>Contoh 3</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 90 detik</span></div>
+    <p class="stem">Tim A sedang mengecat pagar sekolah sepanjang 120 meter. Sampai pukul 10.00, tim itu sudah bekerja 3 jam dan pagar belum selesai. Laju kerja tim A tetap, dan tim A bekerja tanpa jeda sampai pagar selesai.</p>
+    <dl class="premis"><div><dt>(1)</dt><dd>Tim B, yang anggotanya sama banyak dengan tim A, mengecat tembok sepanjang 50 meter dalam 2 jam pada <mark>pekerjaan yang berbeda</mark>.</dd></div><div><dt>(2)</dt><dd>Sampai pukul 10.00, 40% pagar sudah dicat.</dd></div></dl>
+    <p class="stem">Apakah seluruh pagar selesai dicat paling lambat pukul 13.00?</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.</span></li><li><span class="h">B</span><span>Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.</span></li><li><span class="h">C</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.</span></li><li><span class="h">D</span><span>Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.</span></li><li><span class="h">E</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan.</span></li></ol>
+  </div>
+  <div class="guru"><b>KCK ya/tidak + laju, pekerjaan sudah berjalan, laju dari kemajuan kerja.</b> Kunci B. Kode: A J-ASUMSI · B <b>kunci</b> · C J-PENGALIH · D J-ASUMSI · E J-TENTU. Kerangka: KCK ya/tidak + laju · pekerjaan sudah berjalan · (1) laju tim lain pada pekerjaan berbeda · (2) persen kemajuan + waktu terpakai · hanya (2), pasti tidak. TO terdekat: TO P1 no. 48 (data tim lain sah dipakai); laju dari kemajuan kerja belum pernah dipakai. Bukti: laju tim A 1–39 m/jam dengan pagar belum selesai (diperlebar ke langkah 0,5); (1) tidak cukup · (2) cukup · gabungan cukup; (2) 48 : 3 = 16 m/jam, sisa 72 m perlu 4,5 jam. Kode slot J-ASUMSI, J-PENGALIH + J-TENTU untuk E (jawaban pasti tidak). J-SEARAH dibahas di Kekeliruan yang Mungkin Terjadi (tidak mengubah kunci).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Ditanya ya atau tidak: selesai paling lambat pukul 13.00, artinya sisa pekerjaan harus beres dalam 3 jam setelah pukul 10.00. Kebutuhannya satu, yaitu laju tim A. Kalimat penentunya “pekerjaan yang berbeda”.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>(1) bercerita tentang tim lain di pekerjaan lain, jadi tidak memberi laju tim A: tidak cukup. (2) memberi kemajuan tim A sendiri: 40% × 120 = 48 meter dalam 3 jam, lajunya 48 : 3 = 16 meter per jam. Sisa 120 − 48 = 72 meter perlu 72 : 16 = 4,5 jam, sehingga pagar selesai pukul 14.30. Pasti tidak selesai pukul 13.00, dan jawaban yang pasti berarti cukup.</dd></div>
+    <div><dt>Cara lain</dt><dd>Bandingkan dengan laju yang dibutuhkan. Agar 72 meter selesai dalam 3 jam, tim A harus mengecat 72 : 3 = 24 meter per jam. Lajunya hanya 16 meter per jam, jadi tidak keburu.</dd></div>
+    <div><dt>Cek balik</dt><dd>Bukti (1) tidak cukup: bila laju tim A 30 meter per jam, sisa 30 meter selesai dalam 1 jam (ya); bila 10 meter per jam, sisa 90 meter perlu 9 jam (tidak). Keduanya sah, sebab (1) sama sekali tidak menyentuh tim A.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">laju tim B dipinjam</span><b>Memakai keterangan yang tidak tertulis di soal.</b> Laju tim B, 50 : 2 = 25 meter per jam, dipakai untuk tim A karena anggotanya sama banyak. Soal menulis bahwa tim B bekerja pada pekerjaan yang berbeda; tembok dan pagar tidak harus sama sulitnya. Pilihan ini juga menilai (2) tidak cukup, padahal (2) memberi jawaban pasti.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">(1) dikira perlu</span><b>Memakai data yang tidak dibutuhkan.</b> Data tim B ikut digabung seolah-olah membantu. (2) sudah memberi laju tim A sendiri; menambahkan (1) tidak mengubah apa pun.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">dua-duanya dianggap cukup</span><b>Memakai keterangan yang tidak tertulis di soal.</b> Seperti pilihan A, laju tim B dianggap berlaku untuk tim A, hanya saja (2) dinilai dengan benar. Anggapan tentang tim B tetap tidak tertulis di soal.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">“tidak” dikira kurang data</span><b>Mengira jawaban “tidak” berarti tidak terjawab.</b> Hasil (2) adalah pukul 14.30, lewat dari batas, lalu soal dikira tidak terjawab. Jawaban “tidak” yang pasti tetap jawaban yang cukup.</div></div></div>
+  <div class="jwb"><span>B</span><p><b>Jawaban: B.</b> Hanya (2) yang memberi laju tim A, yaitu 16 meter per jam, dan dari laju itu pagar pasti baru selesai pukul 14.30.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Kamu ingin tahu apakah adikmu selesai mengerjakan PR sebelum makan malam. Kecepatan teman sekelasnya mengerjakan PR lain tidak menolong. Yang menolong adalah melihat sudah berapa halaman yang adikmu kerjakan sejak tadi.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Mengira sisa pekerjaan yang lebih banyak butuh waktu lebih sedikit, misalnya “40% selesai dalam 3 jam, jadi 60% sisanya cukup 2 jam”. Sisa yang lebih banyak justru butuh waktu lebih lama: 60% butuh 4,5 jam.</span></div></div>
+</div>
+<!--B11-C03:selesai-->
+<!--B11-C04:mulai-->
+<div data-soal="HB-TIU-B11-C04" data-target="75">
+  <div class="soal">
+    <div class="meta"><span>Contoh 4</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 75 detik</span></div>
+    <p class="stem">Sebuah kebun hanya ditanami pohon mangga dan pohon jambu.</p>
+    <dl class="premis"><div><dt>(1)</dt><dd>Perbandingan banyak pohon mangga dan pohon jambu adalah 3 : 2.</dd></div><div><dt>(2)</dt><dd>Banyak pohon mangga <mark>1,5 kali</mark> banyak pohon jambu.</dd></div></dl>
+    <p class="stem">Berapa banyak pohon jambu di kebun itu?</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.</span></li><li><span class="h">B</span><span>Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.</span></li><li><span class="h">C</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.</span></li><li><span class="h">D</span><span>Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.</span></li><li><span class="h">E</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan.</span></li></ol>
+  </div>
+  <div class="guru"><b>KCK rasio, dua bentuk perbandingan yang sama, tanpa ukuran.</b> Kunci E. Kode: A J-RASIO · B J-RASIO · C J-PERSAMAAN · D J-MUNGKIN · E <b>kunci</b>. Kerangka: KCK rasio · dua kelompok tanpa angka · (1) perbandingan · (2) perbandingan yang sama dalam bentuk kali · digabung pun tidak cukup. TO terdekat: TO P1 no. 49 (rasio + total, D); susu sapi beredar memakai besaran yang tak pernah disebut. Bukti: semua pasangan mangga–jambu 1–300 (diperlebar 600); (1) tidak cukup · (2) tidak cukup · gabungan tidak cukup; kedua pernyataan sama-sama 2m = 3j. Kode slot J-RASIO, J-PERSAMAAN + J-MUNGKIN untuk D (satu pasangan dicoba).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Yang ditanya banyak pohon jambu, sebuah bilangan nyata. Kalimat penentunya “1,5 kali”: bentuknya lain, tetapi isinya perbandingan juga.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>(1) memberi perbandingan 3 : 2 tanpa satu pun ukuran: kebun bisa berisi 3 mangga dan 2 jambu, bisa juga 30 mangga dan 20 jambu. Tidak cukup. (2) berarti mangga : jambu = 1,5 : 1 = 3 : 2, perbandingan yang sama. Tidak cukup. Digabung pun yang kamu punya tetap satu perbandingan, jadi tetap tidak cukup.</dd></div>
+    <div><dt>Cara lain</dt><dd>Ubah keduanya menjadi persamaan. (1): 2 dikali banyak mangga sama dengan 3 dikali banyak jambu. (2): banyak mangga sama dengan 1,5 dikali banyak jambu; dikali 2, hasilnya persamaan yang sama dengan (1). Dua persamaan yang sama hanyalah satu keterangan.</dd></div>
+    <div><dt>Cek balik</dt><dd>Dua keadaan yang memenuhi kedua pernyataan: 6 mangga dan 4 jambu, serta 45 mangga dan 30 jambu. Banyak jambunya 4 dan 30, berbeda.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">(1) dibaca 2 jambu</span><b>Mengira perbandingan sudah memberi nilai sebenarnya.</b> Angka 2 pada perbandingan 3 : 2 dibaca sebagai banyak jambu. Perbandingan hanya menyebut bagian; satu bagian bisa berapa pohon saja.</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">(2) dikira ukuran</span><b>Mengira perbandingan sudah memberi nilai sebenarnya.</b> “1,5 kali” terdengar seperti keterangan yang tegas, padahal hanya menyebut berapa kali lipat. Tanpa satu jumlah nyata, banyak jambu tetap terbuka.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">dua pernyataan, dua persamaan</span><b>Menilai cukup dari banyaknya persamaan.</b> Dua pernyataan terasa seperti dua persamaan untuk dua besaran. Keduanya ternyata persamaan yang sama dalam bentuk lain, jadi keadaannya tidak berkurang saat digabung.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">satu pasangan dicoba</span><b>Menganggap satu contoh yang cocok sebagai bukti.</b> Pasangan 3 dan 2 dicoba, cocok, lalu dianggap jawaban. Pasangan 6 dan 4 juga cocok dengan setiap pernyataan, sehingga satu contoh belum membuktikan apa-apa.</div></div></div>
+  <div class="jwb"><span>E</span><p><b>Jawaban: E.</b> Kedua pernyataan sama-sama berarti mangga : jambu = 3 : 2, dan tanpa satu ukuran nyata banyak jambu tetap bisa 2, 4, 20, atau bilangan lain.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti resep es teh: gula dan teh dengan perbandingan 1 : 4. Dua orang yang menyebut resep yang sama dengan kata berbeda belum memberitahumu berapa gelas yang dibuat.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Memilih C karena ada dua pernyataan. Sebelum menggabungkan, tanyakan: apakah pernyataan kedua memberi keterangan baru, atau hanya mengulang yang pertama?</span></div></div>
+</div>
+<!--B11-C04:selesai-->
+<!--B11-C05:mulai-->
+<div data-soal="HB-TIU-B11-C05" data-target="90">
+  <div class="soal">
+    <div class="meta"><span>Contoh 5</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 90 detik</span></div>
+    <p class="stem">Semua peserta lomba cerdas cermat tingkat kecamatan berasal dari SMP atau MTs, dan tidak ada peserta yang berasal dari keduanya.</p>
+    <dl class="premis"><div><dt>(1)</dt><dd>Perbandingan banyak peserta dari SMP dan dari MTs adalah 7 : 3.</dd></div><div><dt>(2)</dt><dd>Peserta yang berasal dari MTs ada 36 orang.</dd></div></dl>
+    <p class="stem"><mark>Berapa persen</mark> peserta yang berasal dari MTs?</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.</span></li><li><span class="h">B</span><span>Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.</span></li><li><span class="h">C</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.</span></li><li><span class="h">D</span><span>Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.</span></li><li><span class="h">E</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan.</span></li></ol>
+  </div>
+  <div class="guru"><b>KCK persen, yang ditanya persentase, perbandingan sudah cukup.</b> Kunci A. Kode: A <b>kunci</b> · B J-ASUMSI · C J-PENGALIH · D J-ASUMSI · E J-BASIS. Kerangka: KCK persen · ditanya persentase satu bagian · (1) perbandingan dua bagian · (2) ukuran satu bagian · hanya (1). TO terdekat: TO P1 no. 50 (menanyakan nilai basis). Bukti: semua pasangan SMP–MTs 1–300 (diperlebar 600); (1) cukup · (2) tidak cukup · gabungan cukup; (1) 3 : (7 + 3) = 30%. Kode slot J-PENGALIH (C), J-ASUMSI (B, D) + J-BASIS varian KCK untuk E (dasar persen dikira tidak ada).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Yang ditanya persentase, bukan banyak orang. Kalimat penentunya “Berapa persen”. Persentase membandingkan bagian dengan seluruhnya, jadi ukuran nyata belum tentu diperlukan.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>(1): dari setiap 7 + 3 = 10 bagian peserta, 3 bagian dari MTs. Persentasenya 3 : 10 × 100% = 30%, berapa pun banyak pesertanya. Cukup. (2): ada 36 orang dari MTs, tetapi jumlah seluruh peserta tidak diketahui. Tidak cukup. Jadi hanya (1) yang cukup.</dd></div>
+    <div><dt>Cara lain</dt><dd>Misalkan peserta MTs 3<i>k</i> dan SMP 7<i>k</i>. Seluruhnya 10<i>k</i>, dan bagian MTs 3<i>k</i> dari 10<i>k</i>, yaitu 30%. Huruf <i>k</i> saling menghapus, sehingga hasilnya tidak bergantung pada banyak peserta.</dd></div>
+    <div><dt>Cek balik</dt><dd>Bukti (2) tidak cukup: bila peserta SMP 84 orang, seluruhnya 120 dan MTs 30%; bila peserta SMP 14 orang, seluruhnya 50 dan MTs 72%. Bukti (1) cukup sudah berupa alasan umum di atas.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">B</span><div class="x"><span class="uji">jumlah peserta ditebak</span><b>Memakai keterangan yang tidak tertulis di soal.</b> Jumlah seluruh peserta diisi sendiri, misalnya dianggap 100 orang, sehingga 36 orang tampak seperti 36%. Soal tidak menyebut jumlah peserta; tebakan itulah yang membuat (2) terlihat cukup.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">ukuran dikira wajib</span><b>Mengira ukuran nyata selalu dibutuhkan.</b> Muncul anggapan bahwa persen selalu butuh angka nyata, sehingga (1) harus dilengkapi 36 orang. Untuk persentase, perbandingan bagian dengan seluruh sudah cukup.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">(2) dilengkapi tebakan</span><b>Memakai keterangan yang tidak tertulis di soal.</b> (1) dinilai benar, tetapi (2) juga dianggap cukup dengan jumlah peserta yang ditebak. Tanpa tebakan itu, 36 orang bisa berarti 30% atau 72%.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">dasar persen dikira hilang</span><b>Mengira persen dari bilangan yang belum diketahui tidak dapat dihitung.</b> Jumlah seluruh peserta tidak disebut, lalu persen dianggap mustahil dihitung. Perbandingan 7 : 3 sudah memberi seluruhnya sebagai 10 bagian; dasar persennya ada.</div></div></div>
+  <div class="jwb"><span>A</span><p><b>Jawaban: A.</b> Perbandingan 7 : 3 memberi MTs 3 dari 10 bagian, yaitu 30% untuk berapa pun banyak pesertanya, sedangkan 36 orang saja tidak memberi dasar persennya.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti nilai ujian: tahu kamu menjawab benar 3 dari setiap 10 soal sudah memberi persentase benarmu, walaupun kamu tidak tahu soalnya ada berapa.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Memilih C karena persen tanpa angka nyata terasa “kosong”. Ingat bentuk soalnya: bila yang ditanya persentase, cek dulu apakah perbandingan sudah cukup.</span></div></div>
+</div>
+<!--B11-C05:selesai-->
+<!--B11-C06:mulai-->
+<div data-soal="HB-TIU-B11-C06" data-target="120">
+  <div class="soal">
+    <div class="meta"><span>Contoh 6</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 120 detik</span></div>
+    <p class="stem">Tiga kotak, yaitu kotak P, Q, dan R, berisi kelereng.</p>
+    <dl class="premis"><div><dt>(1)</dt><dd>Kotak P dan kotak Q berisi 45 kelereng.</dd></div><div><dt>(2)</dt><dd>Kotak Q dan kotak R berisi 52 kelereng.</dd></div><div><dt>(3)</dt><dd><mark>Ketiga kotak berisi 80 kelereng</mark>.</dd></div></dl>
+    <p class="stem">Berapa banyak kelereng di kotak R?</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Pernyataan (3) SAJA cukup untuk menjawab pertanyaan.</span></li><li><span class="h">B</span><span>Pernyataan (1) dan (2) bersama-sama cukup, tetapi pasangan lain dan setiap pernyataan SAJA tidak cukup.</span></li><li><span class="h">C</span><span>Pernyataan (1) dan (3) bersama-sama cukup, tetapi pasangan lain dan setiap pernyataan SAJA tidak cukup.</span></li><li><span class="h">D</span><span>Pernyataan (2) dan (3) bersama-sama cukup, tetapi pasangan lain dan setiap pernyataan SAJA tidak cukup.</span></li><li><span class="h">E</span><span>Ketiga pernyataan bersama-sama cukup, tetapi setiap pasangan pernyataan tidak cukup.</span></li></ol>
+  </div>
+  <div class="guru"><b>KCK tiga pernyataan, tiga besaran, hanya pasangan (1) dan (3) cukup.</b> Kunci C. Kode: A J-ASUMSI · B J-PERSAMAAN · C <b>kunci</b> · D J-BALIK · E J-PERSAMAAN. Kerangka: KCK tiga pernyataan · tiga besaran, total tak diketahui · (1) jumlah ke-1 + ke-2 · (2) jumlah ke-2 + ke-3 · (3) total · hanya pasangan (1) + (3). TO terdekat: tiga pernyataan beredar memakai untung-rugi. Bukti: semua isi kotak 0–100 (diperlebar 200), tujuh himpunan pernyataan: hanya {1, 3} dan {1, 2, 3} cukup; 19 peta monoton diuji, tiap peta paling banyak satu pilihan benar. Kunci rencana slot B (opsi per soal) dipindah ke C untuk keseimbangan kelompok. J-BERHENTI (slot) tidak dipakai: bunyi pilihan khusus tidak punya jalur berhenti di (1); diganti J-ASUMSI (A) dan J-BALIK (D, kotak P dikira R). Bunyi diuji di 19 peta monoton.</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Yang ditanya isi satu kotak, R. Pilihan jawabannya disusun khusus untuk soal ini, jadi baca bunyinya satu per satu. Kalimat penentunya “Ketiga kotak berisi 80 kelereng”: hanya pernyataan ini yang menyebut seluruh isi.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Tidak ada pernyataan tunggal yang cukup, sebab masing-masing hanya menyebut dua kotak atau seluruhnya. Coba pasangan. (1) dan (3): R = 80 − 45 = 35. Cukup. (2) dan (3): yang terhitung justru P = 80 − 52 = 28, sedangkan R tetap terbuka. (1) dan (2): dua jumlah yang sama-sama memuat Q, tanpa seluruh isi, tidak memberi R. Hanya pasangan (1) dan (3) yang cukup.</dd></div>
+    <div><dt>Cara lain</dt><dd>Pikirkan apa yang tersisa dari seluruh isi. Seluruh isi dikurangi isi P dan Q menyisakan R, jadi R butuh (3) dan pernyataan yang memuat tepat P dan Q, yaitu (1). Pasangan lain menyisakan kotak yang salah.</dd></div>
+    <div><dt>Cek balik</dt><dd>Bukti pasangan (2) dan (3) tidak cukup: isi P, Q, R = 28, 17, 35 dan 28, 27, 25 sama-sama memenuhi keduanya, tetapi R berbeda. Bukti pasangan (1) dan (2) tidak cukup: 10, 35, 17 dan 20, 25, 27 sama-sama memenuhi, tetapi R berbeda.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">isi kotak dianggap sama</span><b>Memakai keterangan yang tidak tertulis di soal.</b> Seluruh isi 80 belum menunjukkan isi tiap kotak. Pilihan ini masuk akal hanya bila isi ketiga kotak dianggap sama atau berpola, dan soal tidak menulis apa pun tentang itu.</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">dua persamaan dianggap cukup</span><b>Menilai cukup dari banyaknya persamaan.</b> Ada dua persamaan dan yang ditanya satu kotak, sehingga terasa cukup. Padahal ada tiga isi kotak yang belum diketahui, dan kedua persamaan itu tidak menyisakan R sendirian.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">P dikira R</span><b>Tertukar membaca kotak yang dihasilkan.</b> Dari (2) dan (3) memang keluar satu angka, 28. Angka itu isi kotak P, bukan R: seluruh isi dikurangi Q dan R menyisakan P.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">tiga pernyataan dikira wajib</span><b>Mengira tiga besaran selalu butuh tiga keterangan.</b> Tiga kotak memunculkan anggapan bahwa ketiga pernyataan harus dipakai. Untuk R, (1) dan (3) sudah cukup, jadi tidak benar bahwa setiap pasangan tidak cukup.</div></div></div>
+  <div class="jwb"><span>C</span><p><b>Jawaban: C.</b> Pasangan (1) dan (3) memberi R = 80 − 45 = 35, sedangkan pasangan lain dan setiap pernyataan saja masih menyisakan beberapa nilai R.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti menghitung uang di dompet ketiga: total uang tiga dompet dan total dua dompet pertama sudah cukup. Total dompet kedua dan ketiga justru memberitahumu isi dompet pertama.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Menemukan angka 28 dari (2) dan (3), lalu mengira itu isi R. Sebelum memilih, tanyakan kotak mana yang benar-benar tersisa setelah pengurangan.</span></div></div>
+</div>
+<!--B11-C06:selesai-->
+<!--B11-C07:mulai-->
+<div data-soal="HB-TIU-B11-C07" data-target="90">
+  <div class="soal">
+    <div class="meta"><span>Contoh 7</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 90 detik</span></div>
+    <p class="stem"><i>x</i> adalah bilangan bulat dengan <mark>3 ≤ <i>x</i> ≤ 7</mark>. Diketahui P = <i>x</i><sup>2</sup> − 4<i>x</i> + 10 dan Q = 7<i>x</i> − 14.</p>
+    <p class="stem">Hubungan yang tepat antara P dan Q adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>P &gt; Q</span></li><li><span class="h">B</span><span>P &lt; Q</span></li><li><span class="h">C</span><span>P = Q</span></li><li><span class="h">D</span><span>Hubungan P dan Q tidak dapat ditentukan</span></li></ol>
+  </div>
+  <div class="guru"><b>PKU berpeubah, P = Q di ujung rentang, P &lt; Q di nilai lain.</b> Kunci D. Kode: A J-TANDA · B J-BATAS · C J-MUNGKIN · D <b>kunci</b>. Kerangka: PKU berpeubah · satu huruf, rentang bulat inklusif · selisih = hasil kali dua faktor linear · nol di ujung kiri. TO terdekat: B06-L03 (hubungan pasti, pasangan T4-13); bukan P = x² + 1, Q = 2x (narasi) dan bukan P = x², Q = 3x − 2 (Bab 6). Bukti: semua x bulat 3–7: P = Q di x = 3, P &lt; Q di x = 4–7; ujung kiri dibalik (4–7) → hanya P &lt; Q (pilihan B); P − Q = (x − 3)(x − 8). Kode = rencana slot (J-MUNGKIN, J-TANDA, J-BATAS); ujung kiri dibalik oleh model → P &lt; Q = pilihan B (J-BATAS).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Hubungan P dan Q harus berlaku untuk setiap <i>x</i> dalam rentang. Kalimat penentunya “3 ≤ <i>x</i> ≤ 7”: tanda ≤ berarti 3 dan 7 ikut diperiksa.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Hitung selisihnya sekali: P − Q = <i>x</i><sup>2</sup> − 11<i>x</i> + 24 = (<i>x</i> − 3)(<i>x</i> − 8). Di <i>x</i> = 3 selisihnya 0, jadi P = Q. Untuk <i>x</i> = 4 sampai 7, faktor <i>x</i> − 3 positif dan <i>x</i> − 8 negatif, sehingga P &lt; Q. Ada dua hubungan di dalam rentang, jadi hubungannya tidak dapat ditentukan.</dd></div>
+    <div><dt>Cara lain</dt><dd>Tabel lima nilai: <i>x</i> = 3 memberi P = 7 dan Q = 7; <i>x</i> = 4 memberi 10 dan 14; <i>x</i> = 5 memberi 15 dan 21; <i>x</i> = 6 memberi 22 dan 28; <i>x</i> = 7 memberi 31 dan 35. Satu sama, empat lebih kecil.</dd></div>
+    <div><dt>Cek balik</dt><dd>Dua nilai bantahan sudah cukup: <i>x</i> = 3 memberi P = Q, sedangkan <i>x</i> = 5 memberi P &lt; Q. Bila rentangnya 3 &lt; <i>x</i> ≤ 7, nilai 3 keluar dan jawabannya menjadi P &lt; Q; satu tanda di ujung rentang mengubah jawaban.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">Q − P dibaca P − Q</span><b>Mengurangkan dengan urutan terbalik.</b> Selisih dihitung sebagai Q − P, yang positif untuk <i>x</i> = 4 sampai 7, lalu dibaca seolah-olah P lebih besar. Urutan pengurangan yang terbalik membalik arah hubungan.</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">x = 3 dilewatkan</span><b>Melewatkan nilai di ujung rentang.</b> Untuk <i>x</i> = 4, 5, 6, dan 7 memang P &lt; Q. Pilihan ini lupa bahwa tanda ≤ memasukkan <i>x</i> = 3, tempat P dan Q sama-sama 7.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">hanya x = 3 dicoba</span><b>Menganggap satu nilai yang dicoba sebagai bukti.</b> Nilai pertama yang dicoba, <i>x</i> = 3, memberi P = Q, lalu pemeriksaan berhenti. Nilai lain dalam rentang memberi P &lt; Q, jadi P = Q tidak berlaku umum.</div></div></div>
+  <div class="jwb"><span>D</span><p><b>Jawaban: D.</b> Di <i>x</i> = 3 berlaku P = Q, sedangkan di <i>x</i> = 4 sampai 7 berlaku P &lt; Q, sehingga hubungannya tidak tetap.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti membandingkan tinggi dua anak dari foto tahun ke tahun: di satu foto tingginya sama, di foto lain yang satu lebih pendek. Kamu tidak bisa berkata “selalu sama” atau “selalu lebih pendek”.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Mencoba satu atau dua nilai di tengah rentang, mendapat P &lt; Q, lalu memilih B. Pada soal P dan Q yang memuat huruf, selalu periksa kedua ujung rentang.</span></div></div>
+</div>
+<!--B11-C07:selesai-->
+
+  <h3>Latihan</h3>
+  <p>Lima latihan berikut tersusun dari yang paling ringan, dengan target total {{WAKTU_LATIHAN}}. Kerjakan dengan pengatur waktu dan tanpa melihat pembahasan. Baca bunyi pilihan di setiap soal; urutannya tidak selalu sama dengan urutan di uraian bab. Kunci dan pembahasannya ada di lampiran.</p>
+<!--B11-L01:mulai-->
+<div data-soal="HB-TIU-B11-L01" data-target="75">
+  <div class="soal">
+    <div class="meta"><span id="soal-B11-L01">Latihan 1<a class="ke" href="#bahas-B11-L01">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 75 detik</span></div>
+    <p class="stem">Di koperasi sekolah, harga sebuah pensil Rp2.500 dan harga sebuah penghapus Rp1.500. Pada hari Senin, uang hasil penjualan pensil dan penghapus seluruhnya Rp44.000.</p>
+    <dl class="premis"><div><dt>(1)</dt><dd>Pada hari Senin, banyak penghapus yang terjual dua kali banyak pensil yang terjual.</dd></div><div><dt>(2)</dt><dd><mark>Pada hari Sabtu</mark>, koperasi menjual 6 pensil dan 14 penghapus.</dd></div></dl>
+    <p class="stem">Berapa banyak pensil yang terjual pada hari Senin?</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.</span></li><li><span class="h">B</span><span>Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.</span></li><li><span class="h">C</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.</span></li><li><span class="h">D</span><span>Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.</span></li><li><span class="h">E</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan.</span></li></ol>
+  </div>
+  <div class="guru"><b>KCK nilai dari cerita, dua sumber data, data hari lain sebagai pengalih.</b> Kunci A. Kode: A <b>kunci</b> · B J-PENGALIH · C J-PENGALIH · D J-ASUMSI · E J-PERSAMAAN. Kerangka: KCK nilai dari cerita · harga dua barang + uang total · (1) hubungan banyak dua barang di hari yang sama · (2) data hari lain · hanya (1). TO terdekat: TR no. 46 (pengalih jam berangkat); di sini hari lain. Bukti: semua banyak pensil–penghapus yang memberi Rp44.000; (1) cukup · (2) tidak cukup · gabungan cukup; (1) 2.500p + 3.000p = 44.000 → p = 8. Kode slot J-PENGALIH, J-ASUMSI; D J-ASUMSI (penjualan Senin dianggap sama dengan Sabtu) = pilihan yang disorot Latihan A Bab 19 no. 10; E J-PERSAMAAN (dua barang dikira butuh dua data baru).</div>
+</div>
+<!--B11-L01:selesai-->
+<!--B11-L02:mulai-->
+<div data-soal="HB-TIU-B11-L02" data-target="75">
+  <div class="soal">
+    <div class="meta"><span id="soal-B11-L02">Latihan 2<a class="ke" href="#bahas-B11-L02">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 75 detik</span></div>
+    <p class="stem">Setiap anggota sebuah taman bacaan terdaftar di kelompok anak atau kelompok remaja.</p>
+    <dl class="premis"><div><dt>(1)</dt><dd>Saat ini, perbandingan banyak anggota kelompok anak dan kelompok remaja adalah 5 : 3.</dd></div><div><dt>(2)</dt><dd>Jika 6 anggota remaja baru mendaftar, perbandingan banyak anggota kelompok anak dan kelompok remaja menjadi 5 : 4.</dd></div></dl>
+    <p class="stem">Berapa banyak anggota kelompok remaja <mark>saat ini</mark>?</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.</span></li><li><span class="h">B</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.</span></li><li><span class="h">C</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan.</span></li><li><span class="h">D</span><span>Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.</span></li><li><span class="h">E</span><span>Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.</span></li></ol>
+  </div>
+  <div class="guru"><b>KCK rasio, perbandingan + tambahan anggota, urutan bunyi diacak.</b> Kunci B. Kode: A J-ASUMSI · B <b>kunci</b> · C J-PERSAMAAN · D J-RASIO · E J-RASIO. Kerangka: KCK rasio · dua kelompok tanpa total · (1) perbandingan awal · (2) tambahan k + perbandingan sesudahnya · gabungan. TO terdekat: TO P1 no. 49 (total diketahui); soal beredar tanpa perubahan. Bukti: semua pasangan anak–remaja 1–200 (diperlebar 400); (1) tidak cukup · (2) tidak cukup · gabungan cukup; gabungan 5k : (3k + 6) = 5 : 4 → k = 6, remaja 18; urutan bunyi 2 · G · X · 1 · M. URUTAN BUNYI DIACAK (T2-7(7)): A = hanya (2), B = gabungan, C = digabung pun tidak, D = hanya (1), E = masing-masing; kunci B. Kode slot J-RASIO, J-ASUMSI, J-PERSAMAAN.</div>
+</div>
+<!--B11-L02:selesai-->
+<!--B11-L03:mulai-->
+<div data-soal="HB-TIU-B11-L03" data-target="90">
+  <div class="soal">
+    <div class="meta"><span id="soal-B11-L03">Latihan 3<a class="ke" href="#bahas-B11-L03">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 90 detik</span></div>
+    <p class="stem">Panitia memindahkan 600 kursi dari gudang ke aula dengan 4 troli yang bekerja bersamaan. Laju setiap troli tetap selama bekerja.</p>
+    <dl class="premis"><div><dt>(1)</dt><dd>Dua dari keempat troli itu masing-masing memindahkan 130 kursi per jam.</dd></div><div><dt>(2)</dt><dd>Setiap troli memindahkan <mark>paling banyak 140</mark> kursi per jam.</dd></div></dl>
+    <p class="stem">Apakah seluruh kursi dapat dipindahkan dalam waktu kurang dari 1 jam?</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.</span></li><li><span class="h">B</span><span>Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.</span></li><li><span class="h">C</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.</span></li><li><span class="h">D</span><span>Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.</span></li><li><span class="h">E</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan.</span></li></ol>
+  </div>
+  <div class="guru"><b>KCK ya/tidak + laju, batas laju seluruh pelaksana, waktu terkecil di atas batas.</b> Kunci B. Kode: A J-ASUMSI · B <b>kunci</b> · C J-BATAS · D J-ASUMSI · E J-TENTU. Kerangka: KCK ya/tidak + laju · empat pelaksana, beban tertulis · (1) laju sebagian pelaksana · (2) batas laju semua pelaksana · hanya (2), pasti tidak. TO terdekat: bukti lewat nilai terbesar belum ada di TO atau soal beredar; bukan x &gt; 6, y &gt; 5 (narasi). Bukti: laju tiap troli 10–300 kursi/jam (diperlebar 20–600); (1) tidak cukup · (2) cukup · gabungan cukup; (2) paling banyak 4 × 140 = 560 &lt; 600. Kode = rencana slot (J-TENTU, J-BATAS, J-ASUMSI); J-ASUMSI di A dan D (troli lain dianggap sama cepat).</div>
+</div>
+<!--B11-L03:selesai-->
+<!--B11-L04:mulai-->
+<div data-soal="HB-TIU-B11-L04" data-target="90">
+  <div class="soal">
+    <div class="meta"><span id="soal-B11-L04">Latihan 4<a class="ke" href="#bahas-B11-L04">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 90 detik</span></div>
+    <p class="stem">Sebuah perpustakaan daerah menerima sumbangan 480 buku yang terdiri atas buku anak, buku remaja, dan buku dewasa.</p>
+    <dl class="premis"><div><dt>(1)</dt><dd>Buku remaja 35% dari seluruh buku sumbangan.</dd></div><div><dt>(2)</dt><dd>Ada 120 buku anak, dan banyak buku remaja <mark>40% lebih banyak daripada banyak buku anak</mark>.</dd></div></dl>
+    <p class="stem">Berapa banyak buku remaja dalam sumbangan itu?</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.</span></li><li><span class="h">B</span><span>Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.</span></li><li><span class="h">C</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.</span></li><li><span class="h">D</span><span>Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.</span></li><li><span class="h">E</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan.</span></li></ol>
+  </div>
+  <div class="guru"><b>KCK persen, persen dari total dan lebih banyak p% daripada bagian lain.</b> Kunci D. Kode: A J-BERHENTI · B J-PENGALIH · C J-BASIS · D <b>kunci</b> · E J-PENGALIH. Kerangka: KCK persen · total tertulis, tiga golongan · (1) persen dari total · (2) bagian lain + lebih banyak p% (basis diketahui) · masing-masing. TO terdekat: TR no. 51 (kunci C); basis TO P1 no. 50 tidak diketahui. Bukti: semua pembagian 480 buku ke tiga golongan (total tertulis, tanpa rentang buatan); (1) cukup · (2) cukup · gabungan cukup; (1) 35% × 480 = 168, (2) 140% × 120 = 168. Kode = rencana slot (J-BERHENTI, J-BASIS, J-PENGALIH); E J-PENGALIH (buku dewasa dikira perlu).</div>
+</div>
+<!--B11-L04:selesai-->
+<!--B11-L05:mulai-->
+<div data-soal="HB-TIU-B11-L05" data-target="120">
+  <div class="soal">
+    <div class="meta"><span id="soal-B11-L05">Latihan 5<a class="ke" href="#bahas-B11-L05">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 120 detik</span></div>
+    <p class="stem"><i>a</i> dan <i>b</i> adalah <mark>bilangan bulat positif</mark>.</p>
+    <dl class="premis"><div><dt>(1)</dt><dd><i>a</i> + <i>b</i> = 12</dd></div><div><dt>(2)</dt><dd><i>a</i><sup>2</sup> + 2<i>ab</i> + <i>b</i><sup>2</sup> = 144</dd></div></dl>
+    <p class="stem">Berapa nilai <i>a</i>?</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.</span></li><li><span class="h">B</span><span>Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.</span></li><li><span class="h">C</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.</span></li><li><span class="h">D</span><span>Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.</span></li><li><span class="h">E</span><span>Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan.</span></li></ol>
+  </div>
+  <div class="guru"><b>KCK aljabar, pernyataan kedua hanya bentuk kuadrat dari pernyataan pertama.</b> Kunci E. Kode: A J-ASUMSI · B J-MUNGKIN · C J-ULANG · D J-PERSAMAAN · E <b>kunci</b>. Kerangka: KCK aljabar · dua huruf positif · (1) jumlah · (2) kuadrat jumlah (turunan kalimat soal + (1)) · digabung pun tidak cukup. TO terdekat: nota beredar = kelipatan langsung; bukan a + 2b = 8 (narasi). Bukti: semua a, b bulat positif 1–50 (diperlebar 100); (1) tidak cukup · (2) tidak cukup · gabungan tidak cukup; uji coret: (2) benar tepat di keadaan yang sama dengan (1), karena (a + b)² = 144 dan a + b positif. Kode slot J-PERSAMAAN, J-ULANG (C = pilihan yang disorot Latihan A Bab 19 no. 14); J-BERHENTI (slot) tidak punya jalur di kunci E, diganti J-ASUMSI (A, a dan b dianggap sama) dan J-MUNGKIN (B, satu pasangan dicoba). Uji coret: (2) benar tepat di keadaan yang sama dengan (1).</div>
+</div>
+<!--B11-L05:selesai-->
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Asal Rancangan Bab 11</h4>
+    <p>Putusan T2-1b: Bab 11 = 1 pembuka + 7 contoh + 5 latihan + 2 Latihan Bukti (dari 12 latihan dan 4 Latihan Bukti T2-D). Latihan dipilih: L4 (Standar), L7 (Standar, urutan opsi diacak), L5 (HOTS), L9 (HOTS), L2 (HOTS+). Alasan: kelima bentuk Pilar 2 masing-masing satu latihan; makna kunci 1, G, 2, M, X lengkap; kode tersebar di K1, K2, K3, K4, K7; tingkat naik; kerangka paling jauh dari TO P1 no. 46–52, TR, dan 20 soal beredar.</p>
+    <p>Gugur: L1 (kuadrat dua akar, dekat Bab 2 C04 dan narasi <i>x</i><sup>2</sup> = 16) · L3 (mengulang soal + persen hitung balik; mengulang sudah di L05) · L6 ("ditambah k", paling dekat TR no. 50) · L8 (rasio tiga kelompok; rasio sudah di C04 + L02) · L10 (persen berantai; persen sudah di C05 + L04) · L11 (nilai vs batas, bentuk cadangan; dibahas di narasi) · L12 (P vs Q hubungan tetap; peran ini dipegang B06-L03, T4-13). Latihan Bukti: B2 (rasio, dua keadaan) dan B4 (persen, alasan umum), satu per jenis bukti; B1 aljabar dan B3 ya/tidak gugur karena bentuk buktinya sudah diperagakan narasi.</p>
+    <p>Sebaran huruf terpasang (T5): P C · C1 C · C2 D · C3 B · C4 E · C5 A · C6 C · C7 D · L01 A · L02 B · L03 B · L04 D · L05 E. C6 (opsi per soal) dipindah dari B ke C untuk keseimbangan kunci kelompok Bab 11–13 (T5-21); C7 mengikuti templat PKU empat pilihan. Dicek <code>cekBab()</code> saat T5. Kebiasaan bunyi pilihan pada soal resmi dan kebiasaan "jumlah awal" belum diverifikasi.</p>
+  </div>
+
+  <div class="ringkas">
+    <h4>Ringkasan Bab 11</h4>
+    <ol>
+      <li><b>Cukup berarti tunggal:</b> semua keadaan yang memenuhi data memberi satu jawaban yang sama. Jawaban yang pasti "tidak" juga tunggal.</li>
+      <li>Periksa tiga langkah: (1) saja, (2) saja, lalu gabungan. Cocokkan hasilnya dengan bunyi pilihan, bukan hurufnya.</li>
+      <li>Tulis daftar kebutuhan sebelum membaca pernyataan; lingkari kalimat penentu; jangan mengisi sendiri besaran yang tidak tertulis.</li>
+      <li>Uji coret: pernyataan yang tidak mengubah keadaan yang tersisa hanya mengulang kalimat soal.</li>
+      <li>Perkirakan dengan banyak besaran dan banyak keterangan. Waspadai bentuk gabungan, keterangan kembar, serta kuadrat dan ketaksamaan.</li>
+      <li><b>Bukti tidak cukup</b> = dua keadaan dengan jawaban berbeda. <b>Bukti cukup</b> = alasan umum, bukan satu contoh.</li>
+      <li>P dan Q yang memuat huruf diperiksa di setiap nilai dalam rentang; satu tanda di ujung rentang dapat mengubah jawaban.</li>
+    </ol>
+  </div>
+</section>

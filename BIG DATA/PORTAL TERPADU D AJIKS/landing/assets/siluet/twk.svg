@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none" stroke="#e8c766" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M16 80 96 18 176 80Z"/>
+  <path d="M47 69 96 31 145 69"/>
+  <rect x="18" y="85" width="156" height="12" rx="2"/>
+  <rect x="28" y="104" width="17" height="74" rx="2"/>
+  <rect x="66" y="104" width="17" height="74" rx="2"/>
+  <rect x="104" y="104" width="17" height="74" rx="2"/>
+  <rect x="142" y="104" width="17" height="43" rx="2"/>
+  <line x1="24" y1="101" x2="49" y2="101"/>
+  <line x1="62" y1="101" x2="87" y2="101"/>
+  <line x1="100" y1="101" x2="125" y2="101"/>
+  <line x1="138" y1="101" x2="163" y2="101"/>
+  <path d="M24 183H132V194H19V205H128"/>
+  <path d="M19 205H13V217H130"/>
+  <path d="M150 155H212C219 155 223 160 223 167V211C223 217 219 222 213 222H149C142 222 138 218 138 212"/>
+  <path d="M150 155C143 155 139 160 139 166S143 177 149 177H155V167C155 163 153 160 150 160"/>
+  <path d="M149 177V207H207C201 207 197 210 197 215S201 222 207 222"/>
+  <line x1="165" y1="174" x2="205" y2="174"/>
+  <line x1="165" y1="186" x2="205" y2="186"/>
+  <line x1="165" y1="198" x2="189" y2="198"/>
+</svg>

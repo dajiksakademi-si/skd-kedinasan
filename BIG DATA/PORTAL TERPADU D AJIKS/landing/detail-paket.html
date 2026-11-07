@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Isi paket · D'Ajiks Akademi</title>
+<link rel="icon" href="assets/dajiks-emblem.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap">
+<style>
+body{margin:0;background:#f7f8fb;font-family:'Inter Tight',system-ui,sans-serif;color:#172a35}
+[hidden]{display:none !important}
+.wrap{max-width:1160px;margin:0 auto;padding:0 32px;box-sizing:border-box}
+.atas{background:#fff;border-bottom:1px solid #e3e8f0}
+.atas .wrap{display:flex;align-items:center;gap:40px;height:80px}
+.atas .logo img{height:48px;width:auto;display:block}
+.menu{display:flex;gap:6px}
+.menu a{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;color:#526772;font-weight:600;font-size:15.5px;text-decoration:none;white-space:nowrap;transition:background-color 160ms ease,color 160ms ease}
+.menu a:hover{background:#eef1f6;color:#031739}
+.menu a[aria-current=page]{background:#031739;color:#fff}
+.akun{margin-left:auto;display:flex;align-items:center;gap:12px;font-weight:600;font-size:15px;color:#031739}
+.inisial{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#031739;color:#e8c766;font-size:14px}
+.keluar{color:#526772;font-weight:500;font-size:14.5px}
+a:focus-visible,button:focus-visible{outline:2px solid #c9a24a;outline-offset:3px}
+.mock-note{margin:24px 0 0;padding:6px 14px;border-radius:999px;background:#e8c766;color:#031739;font-size:13px;font-weight:700;text-align:center}
+.balik{display:inline-flex;align-items:center;gap:6px;min-height:44px;margin-top:16px;color:#526772;font-weight:600;font-size:15px;text-decoration:none}
+.balik:hover{color:#031739}
+/* kepala paket: spanduk lebar, pola sama dengan kartu Paket saya */
+.kepala{position:relative;overflow:hidden;display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;margin-top:8px;padding:36px 40px;border-radius:24px;background:radial-gradient(80% 120% at 0% 0%,rgba(212,175,79,.42),rgba(212,175,79,0) 60%),#031739;color:#fff}
+.sil{position:absolute;top:0;right:0;bottom:0;width:34%;display:flex;align-items:center;justify-content:flex-end;gap:18px;padding-right:32px;opacity:.2;pointer-events:none;-webkit-mask-image:linear-gradient(90deg,transparent,#000 60%);mask-image:linear-gradient(90deg,transparent,#000 60%)}
+.sil img{width:84px;height:84px}
+.kepala>*:not(.sil){position:relative}
+.t-pill{display:inline-block;margin-bottom:12px;padding:4px 10px;border-radius:8px;background:rgba(3,23,57,.6);border:1px solid rgba(232,199,102,.4);color:#e8c766;font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.kepala h1{margin:0;font-weight:600;font-size:36px;line-height:1.15;letter-spacing:-.035em}
+.kepala .aktif{margin:8px 0 0;font-size:15.5px;color:#c5cfe0}
+.kepala .aktif.habis{color:#f2b8b5;font-weight:600}
+.maju{width:min(420px,100%);margin-top:22px}
+.maju p{display:flex;justify-content:space-between;margin:0 0 8px;font-size:14.5px;color:#dfe5f3}
+.maju b{color:#fff;font-variant-numeric:tabular-nums}
+.jalur{height:8px;border-radius:999px;background:rgba(255,255,255,.14);overflow:hidden}
+.jalur i{display:block;height:100%;border-radius:inherit;background:#e8c766;transform-origin:left;animation:isi 700ms cubic-bezier(.23,1,.32,1) both}
+@keyframes isi{from{transform:scaleX(0)}}
+.btn{display:inline-flex;align-items:center;justify-content:space-between;gap:20px;min-height:54px;box-sizing:border-box;padding:0 8px 0 24px;border:0;border-radius:999px;background:#e8c766;color:#031739;font:600 16.5px 'Inter Tight',sans-serif;text-decoration:none;cursor:pointer;transition:transform 160ms cubic-bezier(.23,1,.32,1),background-color 160ms ease}
+.btn:hover{background:#dcb850}.btn:active{transform:scale(.98)}
+.btn .go{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:#031739;color:#e8c766}
+.btn.navy{background:#031739;color:#fff}.btn.navy:hover{background:#0f3360}
+.btn.navy .go{background:#e8c766;color:#031739}
+.rak-kepala{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:28px 0 14px}
+.ket{margin:0;font-size:15px;color:#526772}
+.ket b{color:#031739}
+.panah{display:flex;gap:8px}
+.panah button{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;border:1.5px solid #dbe0ea;border-radius:50%;background:#fff;color:#031739;cursor:pointer;transition:border-color 160ms ease,transform 160ms cubic-bezier(.23,1,.32,1)}
+.panah button:hover:not(:disabled){border-color:#8a9ab2}
+.panah button:active:not(:disabled){transform:scale(.95)}
+.panah button:disabled{opacity:.35;cursor:not-allowed}
+.daftar{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 40px)/3);gap:20px;margin:0 -4px 96px;padding:4px 4px 20px;scroll-padding-left:4px;list-style:none;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:#c3ccd9 transparent}
+/* kartu tryout = gaya kartu paket (paket.html): spanduk navy + kapsul + tulisan putih/emas + siluet, isi, tombol emas penuh */
+.to{scroll-snap-align:start;display:flex;flex-direction:column;box-sizing:border-box;padding:14px;border:1px solid #e3e8f0;border-radius:22px;background:#fff;box-shadow:0 18px 44px -32px rgba(3,23,57,.35)}
+.to.berikut{border-color:#c9a24a;box-shadow:0 0 0 1px #c9a24a,0 18px 44px -32px rgba(3,23,57,.35)}
+.k-ban{position:relative;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;aspect-ratio:15/8;padding:0 24px;border-radius:14px;overflow:hidden}
+.k-ban>*{position:relative}
+.t-bg{position:absolute;inset:0;background:radial-gradient(110% 85% at 0% 0%,rgba(212,175,79,.4),rgba(212,175,79,0) 60%),#031739;transition:transform 700ms cubic-bezier(.16,1,.3,1)}
+.to:hover .t-bg{transform:scale(1.05)}
+.k-sil{position:absolute;top:0;right:0;bottom:0;width:40%;pointer-events:none;-webkit-mask-image:linear-gradient(90deg,transparent,#000 50%);mask-image:linear-gradient(90deg,transparent,#000 50%)}
+.k-sil img{position:absolute;right:14px;width:50px;height:50px;opacity:.32}
+.k-sil img:nth-child(1){top:12px}.k-sil img:nth-child(2){top:calc(50% - 25px)}.k-sil img:nth-child(3){bottom:12px}
+.k-b1{font-weight:700;font-size:28px;line-height:1;letter-spacing:-.02em;color:#fff;text-transform:uppercase}
+.k-b2{margin-top:6px;font-weight:700;font-size:38px;line-height:1;letter-spacing:-.03em;color:#e8c766;text-transform:uppercase;font-variant-numeric:tabular-nums}
+.k-body{display:flex;flex-direction:column;flex:1;padding:20px 8px 6px}
+.to h2{margin:0;font-weight:600;font-size:21px;line-height:1.3;letter-spacing:-.02em;color:#031739}
+.k-ket{margin:8px 0 0;font-size:15px;line-height:1.55;color:#3d5260}
+.kali{margin:12px 0 0;font-size:14px;font-weight:600;line-height:1.45;color:#031739}
+.kali.belum{color:#9a7416}
+.skor{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:18px 0 0;padding-top:16px;border-top:1px solid #e3e8f0;font-size:14px;color:#526772}
+.skor .tot{width:100%;display:flex;align-items:baseline;gap:8px;font-size:34px;font-weight:700;letter-spacing:-.03em;color:#7a5710;font-variant-numeric:tabular-nums}
+.skor .tot small{font-size:14px;font-weight:500;letter-spacing:0;color:#6b7f88}
+.chip{padding:4px 10px;border-radius:8px;background:#f3f5fa;font-variant-numeric:tabular-nums}
+.chip b{color:#031739}
+.terbaik{font-size:13.5px}
+.terbaik b{color:#7a5710}
+.kosong-skor{font-size:14.5px;line-height:1.5;color:#8a9ab2}
+.tbl{display:flex;flex-direction:column;gap:8px;margin-top:auto;padding-top:20px}
+.to .btn{width:100%;min-height:52px}
+.to .btn:disabled{background:#e3e8f0;color:#8a9ab2;cursor:not-allowed}
+.to .btn:disabled .go{background:#c3ccd9;color:#fff}
+.bahas{display:inline-flex;align-items:center;justify-content:center;min-height:48px;border:1.5px solid #dbe0ea;border-radius:999px;background:#fff;color:#031739;font:600 15.5px 'Inter Tight',sans-serif;text-decoration:none;transition:transform 160ms cubic-bezier(.23,1,.32,1),border-color 160ms ease}
+.bahas:hover{border-color:#8a9ab2}.bahas:active{transform:scale(.97)}
+.hilang{padding:72px 0 120px;text-align:center;color:#526772}
+dialog{width:min(480px,calc(100% - 32px));box-sizing:border-box;padding:28px;border:0;border-radius:22px;box-shadow:0 40px 80px -30px rgba(3,23,57,.6)}
+dialog::backdrop{background:rgba(3,23,57,.55)}
+dialog[open]{animation:muncul 200ms cubic-bezier(.23,1,.32,1)}
+@keyframes muncul{from{opacity:0;transform:scale(.96)}}
+dialog h2{margin:0 0 6px;font-weight:600;font-size:24px;letter-spacing:-.03em;color:#031739}
+dialog .sub{margin:0 0 20px;font-size:15px;color:#526772}
+dialog ul{margin:0 0 24px;padding:16px 18px 16px 36px;border-radius:14px;background:#f7f8fb;font-size:15px;line-height:1.7;color:#24333d}
+.d-aksi{display:flex;flex-direction:column;gap:8px}
+.d-aksi .btn{width:100%}
+.batal{all:unset;cursor:pointer;display:flex;align-items:center;justify-content:center;min-height:44px;border-radius:999px;font-weight:600;font-size:15px;color:#526772}
+.batal:hover{background:#eef1f6}
+@media (max-width:960px){.daftar{grid-auto-columns:calc((100% - 20px)/2)}}
+@media (max-width:720px){
+  .wrap{padding:0 16px}
+  .atas .wrap{flex-wrap:wrap;height:auto;gap:0;padding-top:12px}
+  .atas .logo img{height:40px}
+  .menu{order:3;width:100%;margin:10px -16px 0;padding:0 16px 12px;overflow-x:auto;scrollbar-width:none}
+  .akun .nama{display:none}
+  .kepala{padding:28px 22px}.kepala h1{font-size:27px}
+  .sil{width:46%;padding-right:12px;gap:8px}.sil img{width:52px;height:52px}
+  .kepala .btn{width:100%}
+  .daftar{grid-auto-columns:85%;gap:12px;margin:0 -16px 72px;padding:4px 16px 20px;scroll-padding-left:16px}
+  .k-b1{font-size:24px}.k-b2{font-size:34px}
+  .panah{display:none}
+}
+@media (prefers-reduced-motion:reduce){.btn,.bahas,.panah button,.t-bg{transition:none}.jalur i,dialog[open]{animation:none}}
+</style>
+</head>
+<body>
+<header class="atas"><div class="wrap">
+<a class="logo" href="index.html"><img src="assets/dajiks-lockup.png" alt="D'Ajiks Akademi, ke beranda"></a>
+<nav class="menu" aria-label="Menu siswa"><a href="paket-saya.html" aria-current="page">Paket saya</a><a href="riwayat.html">Riwayat nilai</a><a href="profil.html">Profil</a></nav>
+<div class="akun"><span class="inisial" aria-hidden="true">SC</span><span class="nama">Siswa Contoh</span><a class="keluar" href="masuk.html">Keluar</a></div>
+</div></header>
+
+<main class="wrap">
+<p class="mock-note">DATA CONTOH: paket, jumlah pengerjaan, dan nilai di halaman ini belum data asli.</p>
+<a class="balik" href="paket-saya.html"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>Paket saya</a>
+<div id="isi"></div>
+</main>
+
+<dialog id="d-mulai" aria-labelledby="h-mulai">
+<h2 id="h-mulai"></h2>
+<p class="sub" id="d-sub"></p>
+<ul><li>110 soal: TWK 30, TIU 35, dan TKP 45</li><li>Waktu 100 menit</li><li>Waktu berjalan terus setelah dimulai, juga saat halaman ditutup</li></ul>
+<div class="d-aksi"><a class="btn navy" id="d-go" href="#">Mulai sekarang<span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7l5 5-5 5M13 7l5 5-5 5"/></svg></span></a><button type="button" class="batal" id="d-batal">Batal</button></div>
+</dialog>
+
+<script>
+// prototipe tanpa server. MILIK disalin dari paket-saya.html (DATA CONTOH); to[i] = daftar nilai tiap pengerjaan [TWK, TIU, TKP].
+// ponytail: data disalin di dua halaman; nanti diganti satu sumber dari server.
+var KLS = {
+  skd: { uji: 'SKD sekolah kedinasan 2027', sil: ['twk', 'tiu', 'tkp'] },
+  ipdn: { uji: 'seleksi IPDN 2027' },
+  cpns: { uji: 'SKD CPNS berikutnya', sil: ['twk', 'tiu', 'tkp'] },
+  polri: { uji: 'seleksi POLRI 2027' },
+  tni: { uji: 'seleksi TNI 2027' }
+};
+var MILIK = [
+  { k: 'skd', nama: 'Bundling 9 Tryout SKD Kedinasan', total: 9, aktif: true, to: [[[75, 95, 180], [85, 105, 188]], [[80, 100, 185]], [[95, 110, 190], [90, 100, 186]], [[100, 120, 192]]] },
+  { k: 'cpns', nama: 'Tryout CPNS Paket 1', total: 1, aktif: true, to: [] },
+  { k: 'ipdn', nama: 'Tryout IPDN Paket 1', total: 1, aktif: false, to: [[[85, 100, 203]]] }
+];
+// paket yang baru dibayar (disimpan bayar.html) ikut dicari, didahulukan dari paket contoh
+try { MILIK = (JSON.parse(localStorage.getItem('beli')) || []).concat(MILIK); } catch (e) {}
+var GO = '<span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7l5 5-5 5M13 7l5 5-5 5"/></svg></span>';
+var PANAH = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>';
+function esc(t) { return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
+function jml(s) { return s[0] + s[1] + s[2]; }
+var nama = new URLSearchParams(location.search).get('paket'),
+  m = MILIK.filter(function (x) { return x.nama === nama; })[0], isi = document.getElementById('isi');
+if (!m) {
+  isi.innerHTML = '<p class="hilang">Paket tidak ditemukan. Kembali ke <a href="paket-saya.html">Paket saya</a>.</p>';
+} else {
+  var K = KLS[m.k], done = m.to.length, q = '?paket=' + encodeURIComponent(m.nama);
+  document.title = m.nama + ' · D\'Ajiks Akademi';
+  var utama = !m.aktif ? '<a class="btn" href="paket.html?k=' + m.k + '">Perpanjang' + GO + '</a>'
+    : done < m.total ? '<button type="button" class="btn" data-n="' + (done + 1) + '">' + (done ? 'Lanjutkan ke Tryout ' + (done + 1) : 'Mulai Tryout 1') + GO + '</button>' : '';
+  var baris = '', SIL = K.sil ? '<span class="k-sil">' + K.sil.map(function (x) { return '<img src="assets/siluet/' + x + '.svg" alt="">'; }).join('') + '</span>' : '';
+  for (var i = 0; i < m.total; i++) {
+    var a = m.to[i] || [], n = i + 1, skor, tbl;
+    // hasil yang dikumpulkan di perangkat ini (tryout.html) membuka halaman hasil; pembahasan ada di sana
+    var ada = false;
+    try { ada = !!localStorage.getItem('hasil:' + m.nama + ':' + n); } catch (e) {}
+    if (a.length) {
+      var akhir = a[a.length - 1], best = Math.max.apply(null, a.map(jml));
+      skor = '<span class="tot">' + jml(akhir) + '<small>nilai terakhir</small></span>' +
+        '<span class="chip">TWK <b>' + akhir[0] + '</b></span><span class="chip">TIU <b>' + akhir[1] + '</b></span><span class="chip">TKP <b>' + akhir[2] + '</b></span>' +
+        (best > jml(akhir) ? '<span class="terbaik">Terbaik <b>' + best + '</b></span>' : '');
+      tbl = '<a class="bahas" href="pembahasan.html' + q + '&n=' + n + '">Pembahasan</a>';
+    } else {
+      skor = '<span class="kosong-skor">' + (ada ? 'Nilai dan rinciannya ada di halaman hasil.' : 'Nilai muncul setelah tryout ini dikerjakan.') + '</span>';
+      tbl = '';
+    }
+    if (ada) tbl = '<a class="bahas" href="hasil.html' + q + '&n=' + n + '">Lihat hasil</a>';
+    tbl = '<button type="button" class="btn" data-n="' + n + '"' + (m.aktif ? '' : ' disabled') + '>' + (a.length || ada ? 'Kerjakan lagi' : 'Kerjakan') + GO + '</button>' + tbl;
+    var berikut = m.aktif && n === done + 1, sudah = a.length || ada;
+    baris += '<li class="to' + (berikut ? ' berikut' : '') + '"><div class="k-ban" aria-hidden="true"><span class="t-bg">' + SIL + '</span>' +
+      '<span class="t-pill">' + (berikut ? 'Berikutnya' : sudah ? 'Selesai' : 'Belum dikerjakan') + '</span><span class="k-b1">Tryout</span><span class="k-b2">' + (n < 10 ? '0' + n : n) + '</span></div>' +
+      '<div class="k-body"><h2>Tryout ' + n + '</h2><p class="k-ket">TWK 30 · TIU 35 · TKP 45 · 100 menit</p>' +
+      '<p class="kali' + (sudah ? '' : ' belum') + '">' + (a.length ? 'Sudah dikerjakan ' + a.length + ' kali' : ada ? 'Sudah dikerjakan' : 'Belum dikerjakan') + '</p>' +
+      '<div class="skor">' + skor + '</div><div class="tbl">' + tbl + '</div></div></li>';
+  }
+  isi.innerHTML = '<section class="kepala">' +
+    (K.sil ? '<span class="sil" aria-hidden="true">' + K.sil.map(function (x) { return '<img src="assets/siluet/' + x + '.svg" alt="">'; }).join('') + '</span>' : '') +
+    '<div><span class="t-pill">' + (m.v === 'penuh' ? 'Akses penuh' : 'Tryout saja') + '</span><h1>' + esc(m.nama) + '</h1>' +
+    '<p class="aktif' + (m.aktif ? '' : ' habis') + '">' + (m.aktif ? 'Aktif hingga ' + esc(K.uji) + ' selesai' : 'Masa aktif sudah habis. Pembahasan tetap bisa kamu buka.') + '</p>' +
+    '<div class="maju"><p><span>Tryout dikerjakan</span><b>' + done + ' dari ' + m.total + '</b></p><div class="jalur" aria-hidden="true"><i style="width:' + (done / m.total * 100) + '%"></i></div></div></div>' +
+    utama + '</section>' +
+    '<div class="rak-kepala"><p class="ket">Tiap tryout: <b>110 soal</b> (TWK 30, TIU 35, TKP 45), waktu <b>100 menit</b>. Boleh dikerjakan berulang.</p>' +
+    '<div class="panah"><button type="button" id="kiri" aria-label="Geser ke kiri">' + PANAH.replace('M9', 'M15').replace('l6 6-6 6', 'l-6 6 6 6') + '</button><button type="button" id="kanan" aria-label="Geser ke kanan">' + PANAH + '</button></div></div>' +
+    '<ol class="daftar" id="rak" tabindex="0" aria-label="Daftar tryout, geser ke kiri atau kanan">' + baris + '</ol>';
+  // geser satu kartu per tekan panah; panah mati di ujung; mulai dari kartu tryout berikutnya
+  var rak = document.getElementById('rak'), kiri = document.getElementById('kiri'), kanan = document.getElementById('kanan');
+  var halus = matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+  function langkah() { return rak.firstElementChild.offsetWidth + 16; }
+  function ujung() { kiri.disabled = rak.scrollLeft < 4; kanan.disabled = rak.scrollLeft + rak.clientWidth > rak.scrollWidth - 4; }
+  kiri.onclick = function () { rak.scrollBy({ left: -langkah(), behavior: halus }); };
+  kanan.onclick = function () { rak.scrollBy({ left: langkah(), behavior: halus }); };
+  rak.addEventListener('scroll', ujung, { passive: true });
+  var brk = rak.querySelector('.berikut');
+  if (brk) rak.scrollLeft = brk.offsetLeft - rak.firstElementChild.offsetLeft;
+  ujung();
+}
+var d = document.getElementById('d-mulai');
+document.addEventListener('click', function (e) {
+  var b = e.target.closest('[data-n]');
+  if (!b || b.disabled) return;
+  var n = b.dataset.n;
+  document.getElementById('h-mulai').textContent = 'Mulai Tryout ' + n + '?';
+  document.getElementById('d-sub').textContent = m.nama;
+  document.getElementById('d-go').href = 'tryout.html?paket=' + encodeURIComponent(m.nama) + '&n=' + n;
+  d.showModal();
+});
+document.getElementById('d-batal').addEventListener('click', function () { d.close(); });
+d.addEventListener('click', function (e) { if (e.target === d) d.close(); });
+</script>
+</body>
+</html>

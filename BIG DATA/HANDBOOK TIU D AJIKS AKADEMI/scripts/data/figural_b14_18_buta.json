@@ -1,0 +1,152 @@
+[
+  {
+    "id": "HB-TIU-B14-C01",
+    "bab": 14,
+    "target_detik": 45,
+    "instruksi": "Perhatikan hubungan gambar berikut.",
+    "tanya": "Gambar manakah yang tepat untuk mengganti tanda tanya?",
+    "gambar": "aset/figural/img/B14-C01.svg",
+    "opsi_gambar": {
+      "A": "aset/figural/img/B14-C01-A.svg",
+      "B": "aset/figural/img/B14-C01-B.svg",
+      "C": "aset/figural/img/B14-C01-C.svg",
+      "D": "aset/figural/img/B14-C01-D.svg",
+      "E": "aset/figural/img/B14-C01-E.svg"
+    }
+  },
+  {
+    "id": "HB-TIU-B14-C02",
+    "bab": 14,
+    "target_detik": 60,
+    "instruksi": "Perhatikan hubungan gambar berikut.",
+    "tanya": "Gambar manakah yang tepat untuk mengganti tanda tanya?",
+    "gambar": "aset/figural/img/B14-C02.svg",
+    "opsi_gambar": {
+      "A": "aset/figural/img/B14-C02-A.svg",
+      "B": "aset/figural/img/B14-C02-B.svg",
+      "C": "aset/figural/img/B14-C02-C.svg",
+      "D": "aset/figural/img/B14-C02-D.svg",
+      "E": "aset/figural/img/B14-C02-E.svg"
+    }
+  },
+  {
+    "id": "HB-TIU-B15-C01",
+    "bab": 15,
+    "target_detik": 40,
+    "instruksi": "Perhatikan urutan gambar berikut.",
+    "tanya": "Gambar manakah yang tepat untuk mengganti tanda tanya?",
+    "gambar": "aset/figural/img/B15-C01.svg",
+    "opsi_gambar": {
+      "A": "aset/figural/img/B15-C01-A.svg",
+      "B": "aset/figural/img/B15-C01-B.svg",
+      "C": "aset/figural/img/B15-C01-C.svg",
+      "D": "aset/figural/img/B15-C01-D.svg",
+      "E": "aset/figural/img/B15-C01-E.svg"
+    }
+  },
+  {
+    "id": "HB-TIU-B15-C02",
+    "bab": 15,
+    "target_detik": 55,
+    "instruksi": "Perhatikan urutan gambar berikut.",
+    "tanya": "Gambar manakah yang tepat untuk mengganti tanda tanya?",
+    "gambar": "aset/figural/img/B15-C02.svg",
+    "opsi_gambar": {
+      "A": "aset/figural/img/B15-C02-A.svg",
+      "B": "aset/figural/img/B15-C02-B.svg",
+      "C": "aset/figural/img/B15-C02-C.svg",
+      "D": "aset/figural/img/B15-C02-D.svg",
+      "E": "aset/figural/img/B15-C02-E.svg"
+    }
+  },
+  {
+    "id": "HB-TIU-B16-C01",
+    "bab": 16,
+    "target_detik": 45,
+    "instruksi": "Perhatikan hubungan gambar berikut.",
+    "tanya": "Gambar manakah yang tepat untuk mengganti tanda tanya?",
+    "gambar": "aset/figural/img/B16-C01.svg",
+    "opsi_gambar": {
+      "A": "aset/figural/img/B16-C01-A.svg",
+      "B": "aset/figural/img/B16-C01-B.svg",
+      "C": "aset/figural/img/B16-C01-C.svg",
+      "D": "aset/figural/img/B16-C01-D.svg",
+      "E": "aset/figural/img/B16-C01-E.svg"
+    }
+  },
+  {
+    "id": "HB-TIU-B16-C02",
+    "bab": 16,
+    "target_detik": 70,
+    "instruksi": "Perhatikan hubungan gambar berikut.",
+    "tanya": "Gambar manakah yang tepat untuk mengganti tanda tanya?",
+    "gambar": "aset/figural/img/B16-C02.svg",
+    "opsi_gambar": {
+      "A": "aset/figural/img/B16-C02-A.svg",
+      "B": "aset/figural/img/B16-C02-B.svg",
+      "C": "aset/figural/img/B16-C02-C.svg",
+      "D": "aset/figural/img/B16-C02-D.svg",
+      "E": "aset/figural/img/B16-C02-E.svg"
+    }
+  },
+  {
+    "id": "HB-TIU-B17-C01",
+    "bab": 17,
+    "target_detik": 45,
+    "instruksi": "Perhatikan kelima gambar berikut.",
+    "tanya": "Gambar manakah yang berbeda dari yang lain?",
+    "gambar": null,
+    "opsi_gambar": {
+      "A": "aset/figural/img/B17-C01-A.svg",
+      "B": "aset/figural/img/B17-C01-B.svg",
+      "C": "aset/figural/img/B17-C01-C.svg",
+      "D": "aset/figural/img/B17-C01-D.svg",
+      "E": "aset/figural/img/B17-C01-E.svg"
+    }
+  },
+  {
+    "id": "HB-TIU-B17-C02",
+    "bab": 17,
+    "target_detik": 55,
+    "instruksi": "Perhatikan kelima gambar berikut.",
+    "tanya": "Gambar manakah yang berbeda dari yang lain?",
+    "gambar": null,
+    "opsi_gambar": {
+      "A": "aset/figural/img/B17-C02-A.svg",
+      "B": "aset/figural/img/B17-C02-B.svg",
+      "C": "aset/figural/img/B17-C02-C.svg",
+      "D": "aset/figural/img/B17-C02-D.svg",
+      "E": "aset/figural/img/B17-C02-E.svg"
+    }
+  },
+  {
+    "id": "HB-TIU-B18-C01",
+    "bab": 18,
+    "target_detik": 60,
+    "instruksi": "Perhatikan pola gambar pada matriks berikut.",
+    "tanya": "Gambar manakah yang tepat untuk mengganti tanda tanya?",
+    "gambar": "aset/figural/img/B18-C01.svg",
+    "opsi_gambar": {
+      "A": "aset/figural/img/B18-C01-A.svg",
+      "B": "aset/figural/img/B18-C01-B.svg",
+      "C": "aset/figural/img/B18-C01-C.svg",
+      "D": "aset/figural/img/B18-C01-D.svg",
+      "E": "aset/figural/img/B18-C01-E.svg"
+    }
+  },
+  {
+    "id": "HB-TIU-B18-C02",
+    "bab": 18,
+    "target_detik": 45,
+    "instruksi": "Perhatikan pola gambar pada matriks berikut.",
+    "tanya": "Gambar manakah yang tepat untuk mengganti tanda tanya?",
+    "gambar": "aset/figural/img/B18-C02.svg",
+    "opsi_gambar": {
+      "A": "aset/figural/img/B18-C02-A.svg",
+      "B": "aset/figural/img/B18-C02-B.svg",
+      "C": "aset/figural/img/B18-C02-C.svg",
+      "D": "aset/figural/img/B18-C02-D.svg",
+      "E": "aset/figural/img/B18-C02-E.svg"
+    }
+  }
+]

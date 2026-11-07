@@ -1,0 +1,185 @@
+<!-- ═════════ BAB 18 · MATRIKS ═════════
+     Rencana: reports/tahap2_E_figural.md Bab 18 + sebaran T2-1b (4 latihan) + T2-2 + T2-6 + T2-7(10) (catatan persegi latin
+     dan gabungan warna) + Putusan 8(4) + T4-22 (judul = label sampul "Matriks"). Matriks hitung, gerak gabungan, tabel gabung,
+     gabungan warna, dan persegi latin dihitung di scripts/cek_bab14_18.mjs. Gambar penjelas = tempat kosong sampai T5. -->
+<section class="bab fig" data-bab="18">
+  <header class="band">
+    <div class="no">18</div>
+    <div>
+      <h2>Matriks</h2>
+      <p>Bab ini membahas aturan yang berlaku di setiap baris atau kolom matriks gambar 3 × 3: matriks gerak dengan dua langkah, matriks hitung, dan matriks gabung, serta catatan tentang persegi latin dan gabungan warna.</p>
+      <p class="waktu"><svg class="ico"><use href="#jam"/></svg>{{TARGET}}</p>
+    </div>
+    <div class="kisi" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="emas"></i></div>
+  </header>
+
+  <p class="lead">Matriks gambar berisi sembilan sel dalam tiga baris dan tiga kolom, dan satu sel, biasanya sel kanan bawah, diganti tanda tanya. Setiap baris, atau setiap kolom, membawa aturan yang sama. Delapan sel yang terlihat cukup untuk menemukan aturan itu dan membuktikannya dua kali.</p>
+
+  <h3>Satu Aturan untuk Setiap Baris</h3>
+  <p>Tentukan dulu arah bacanya. Bandingkan sel yang bersebelahan di baris pertama, lalu di kolom pertama. Arah yang memperlihatkan perubahan sederhana dan berulang adalah arah bacanya. Tulis aturan dari baris pertama, lalu <b>uji pada baris kedua</b>. Aturan yang hanya cocok di satu baris belum terbukti, sebab dua baris lengkap adalah seluruh bukti yang tersedia di matriks.</p>
+  <table class="tb">
+    <thead><tr><th style="width:16%">Keluarga aturan</th><th style="width:44%">Isi aturan</th><th>Yang diperiksa</th></tr></thead>
+    <tbody>
+      <tr><td><b>Gerak</b></td><td>kolom 1 menjadi kolom 2 dengan satu perubahan, kolom 2 menjadi kolom 3 dengan perubahan berikutnya</td><td>putar, cermin, warna, dan letak titik kecil</td></tr>
+      <tr><td><b>Hitung</b></td><td>banyak bagian bertambah tetap dari sel ke sel</td><td>jumlah setiap jenis bagian, bukan rupanya</td></tr>
+      <tr><td><b>Gabung</b></td><td>kolom 3 adalah kolom 1 digabung dengan kolom 2</td><td>bagian yang tetap ada, bertambah, atau berubah kecil</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Matriks Gerak</h3>
+  <p>Pada matriks gerak, kolom 1 menjadi kolom 2 dengan perubahan pertama, dan kolom 2 menjadi kolom 3 dengan perubahan kedua. Kedua langkah dapat digabung menjadi satu gerak seperti di Bab 14. Akibatnya, sel tanda tanya dapat dicari dari dua jalan: dari sel di sebelah kirinya dengan perubahan kedua, dan dari sel pertama barisnya dengan gerak gabungan. Kedua jalan harus memberi gambar yang sama.</p>
+  <p>Misalkan perubahan pertama adalah putar 90° searah jarum jam dan perubahan kedua adalah cermin kiri-kanan. Gerak gabungannya cermin garis miring \, sesuai tabel gabungan di Bab 14. Bila kedua langkahnya putar 90° searah jarum jam, sel ketiga terputar 180° dari sel pertama. Perubahan berlanjut; gambar tidak kembali ke posisi awal hanya karena barisnya berakhir.</p>
+  <p>Sebagian matriks gerak menambahkan titik kecil di salah satu pojok sel. Titik itu berpindah pojok menurut aturannya sendiri, misalnya satu pojok searah jarum jam setiap langkah. Periksa titik sebagai lapis tersendiri setelah bentuknya benar.</p>
+
+  <h3>Matriks Hitung</h3>
+  <p>Pada matriks hitung, bentuk dan letak bagian sering diacak supaya perhatianmu teralih. Yang membawa aturan hanya jumlahnya. Hitung setiap jenis bagian di setiap sel dan tulis angkanya. Matriks gambar berubah menjadi matriks bilangan.</p>
+  <table class="tb">
+    <thead><tr><th style="width:25%"></th><th class="n">Kolom 1</th><th class="n">Kolom 2</th><th class="n">Kolom 3</th></tr></thead>
+    <tbody>
+      <tr><td><b>Baris 1</b></td><td class="n">1</td><td class="n">3</td><td class="n">5</td></tr>
+      <tr><td><b>Baris 2</b></td><td class="n">2</td><td class="n">4</td><td class="n">6</td></tr>
+      <tr><td><b>Baris 3</b></td><td class="n">3</td><td class="n">5</td><td class="n">?</td></tr>
+    </tbody>
+  </table>
+  <p>Menurut baris, banyak bagian bertambah 2 dari kolom ke kolom, sehingga sel tanda tanya berisi 5 + 2 = 7. Menurut kolom, banyak bagian bertambah 1 dari baris ke baris, sehingga sel itu berisi 6 + 1 = 7. Dua arah memberi angka yang sama, dan itulah bukti keduanya. Bila dua arah memberi angka berbeda, salah satu hitunganmu meleset.</p>
+
+  <h3>Matriks Gabung</h3>
+  <p>Pada matriks gabung, sel kolom 3 adalah sel kolom 1 dan kolom 2 yang ditumpuk menjadi satu. Bagian yang muncul di kedua kolom tetap ada, cukup sekali. Bacaan yang berbeda, <b>buang yang sama</b>, menghapus bagian yang muncul di kedua kolom. Kedua bacaan hanya berbeda pada bagian yang dimiliki kedua kolom.</p>
+  <table class="tb">
+    <thead><tr><th>Bagian di kolom 1</th><th>Bagian di kolom 2</th><th>Digabung</th><th>Buang yang sama</th></tr></thead>
+    <tbody>
+      <tr><td>ada</td><td>ada</td><td>ada</td><td>tidak ada</td></tr>
+      <tr><td>ada</td><td>tidak ada</td><td>ada</td><td>ada</td></tr>
+      <tr><td>tidak ada</td><td>ada</td><td>ada</td><td>ada</td></tr>
+      <tr><td>tidak ada</td><td>tidak ada</td><td>tidak ada</td><td>tidak ada</td></tr>
+    </tbody>
+  </table>
+  <p>Karena itu, periksa bagian yang dimiliki kedua kolom di baris pertama: bila bagian itu tetap ada di kolom 3, aturannya digabung. Matriks gabung juga sering menambahkan perubahan kecil, misalnya ujung yang semula lancip menjadi tumpul di kolom 3. Bentuk yang benar dengan ujung yang salah tetap pilihan salah.</p>
+
+  <h3>Persegi Latin dan Gabungan Warna</h3>
+  <p>Dua bentuk matriks lain dipakai sebagian bahan latihan di luar buku ini. Pada <b>persegi latin</b>, tiga bentuk muncul tepat sekali di setiap baris dan setiap kolom, sehingga sel kosong diisi bentuk yang belum muncul di baris itu, lalu dicek pada kolomnya.</p>
+  <table class="tb">
+    <thead><tr><th style="width:25%"></th><th>Kolom 1</th><th>Kolom 2</th><th>Kolom 3</th></tr></thead>
+    <tbody>
+      <tr><td><b>Baris 1</b></td><td>daun</td><td>bulan</td><td>bintang</td></tr>
+      <tr><td><b>Baris 2</b></td><td>bulan</td><td>bintang</td><td>daun</td></tr>
+      <tr><td><b>Baris 3</b></td><td>bintang</td><td>daun</td><td>?</td></tr>
+    </tbody>
+  </table>
+  <p>Baris 3 belum memuat bulan, dan kolom 3 juga belum memuat bulan. Sel tanda tanya berisi bulan. Pada <b>gabungan warna</b>, dua sel ditumpuk dan warna setiap bagian mengikuti bacaan buang yang sama: hitam dengan hitam menjadi putih, hitam dengan putih menjadi hitam, dan putih dengan putih tetap putih.</p>
+  <div class="note catatan">
+    <h4>Catatan</h4>
+    <p>Soal matriks di buku ini memakai matriks gerak, hitung, dan gabung. Persegi latin dan gabungan warna dimuat sebagai pengetahuan pendamping; kemunculan keduanya di SKD 2026 belum diverifikasi. Bila menjumpainya, pakai langkah yang sama: tulis aturan dari baris pertama, uji pada baris kedua.</p>
+  </div>
+  <div data-soal="HB-TIU-B18-I01">
+    <div class="diag3 satu">
+      <figure class="diag"><img src="aset/ilustrasi/B18-I01.svg" alt="Persegi latin 3 × 3 berisi daun, bulan, dan bintang dengan satu sel tanda tanya"></figure>
+    </div>
+    <p class="ket-gbr">Daun, bulan, dan bintang muncul tepat sekali di setiap baris dan setiap kolom. Sel tanda tanya berisi bulan.</p>
+    <div class="guru"><b>ILUS (T2-E I18-1, T2-7(10)).</b> G7; keluarga ILUS; isi sel = tabel narasi (daun, bulan, bintang) supaya gambar dan tabel sejalan. Generator TIU siluet belum punya persegi latin; modul PSI lama bergaya geometris ditolak.</div>
+  </div><!--HB-TIU-B18-I01:selesai-->
+  <div data-soal="HB-TIU-B18-I02">
+    <div class="diag3 empat">
+      <figure class="diag"><img src="aset/ilustrasi/B18-I02-a.svg" alt="Sel pertama"><figcaption>Sel pertama</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B18-I02-b.svg" alt="Sel kedua"><figcaption>Sel kedua</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B18-I02-gabung.svg" alt="Digabung"><figcaption>Digabung</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B18-I02-warna.svg" alt="Gabungan warna"><figcaption>Gabungan warna</figcaption></figure>
+    </div>
+    <p class="ket-gbr">Bagian yang tumpang tindih tetap hitam pada digabung, dan menjadi putih pada gabungan warna.</p>
+    <div class="guru"><b>ILUS (T2-E I18-2, T2-7(10)).</b> G7, diambil dari bagian gabung FIG-MTX-GABUNG; pembeda "gabung" vs "buang yang sama".</div>
+  </div><!--HB-TIU-B18-I02:selesai-->
+
+  <h3>Langkah Penyelesaian Soal Matriks</h3>
+  <div class="rules satu">
+    <div><b>Tentukan arah baca</b> dari sel yang bersebelahan.</div>
+    <div><b>Tulis aturan dari baris pertama</b> dan uji pada baris kedua.</div>
+    <div><b>Matriks gerak:</b> catat dua perubahan, lalu gabungkan menjadi satu gerak.</div>
+    <div><b>Matriks hitung:</b> hitung setiap jenis bagian, abaikan rupa dan letaknya, lalu uji arah yang lain.</div>
+    <div><b>Matriks gabung:</b> periksa bagian yang ada di dua kolom; tetap ada berarti digabung.</div>
+    <div><b>Isi sel tanda tanya lapis demi lapis:</b> bentuk, warna, titik pojok, dan ujung.</div>
+    <div><b>Buktikan dari jalan kedua:</b> dari sel pertama dengan gerak gabungan, atau dari arah baca yang lain.</div>
+  </div>
+
+  <h3>Kekeliruan pada Soal Matriks</h3>
+  <table class="tb pecah">
+    <thead><tr><th style="width:5%">No.</th><th style="width:31%">Kekeliruan</th><th>Contoh</th><th style="width:27%">Pertanyaan uji</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><b>Berhenti di langkah pertama</b></td><td>hanya perubahan pertama yang dikenakan pada sel terakhir</td><td>Kedua langkah sudah dikerjakan?</td></tr>
+      <tr><td>2</td><td><b>Mengira gambar kembali ke posisi awal</b></td><td>sel ketiga dianggap tegak lagi seperti sel pertama</td><td>Putarannya sudah genap 360°?</td></tr>
+      <tr><td>3</td><td><b>Menyalin gambar yang sudah terlihat</b></td><td>jawaban sama dengan sel di sebelah kirinya</td><td>Langkah kedua mengubah apa?</td></tr>
+      <tr><td>4</td><td><b>Membalik arah putar</b></td><td>langkah pertama dibaca berlawanan arah jarum jam</td><td>Penanda di atas pindah ke mana?</td></tr>
+      <tr><td>5</td><td><b>Tertukar antara banyak langkah dan nomor sel</b></td><td>perubahan dikerjakan satu kali terlalu banyak</td><td>Berapa langkah dari sel pertama?</td></tr>
+      <tr><td>6</td><td><b>Hanya memeriksa satu bagian</b></td><td>bentuk benar, tetapi titik di pojok yang salah atau ujung tidak ditumpulkan</td><td>Setiap lapis sudah dicocokkan?</td></tr>
+      <tr><td>7</td><td><b>Salah hitung lebih atau kurang satu</b></td><td>cabang yang berimpit terhitung satu</td><td>Arah baris dan arah kolom memberi angka sama?</td></tr>
+      <tr><td>8</td><td><b>Membuang bagian yang sama, padahal digabung</b></td><td>bagian yang ada di dua kolom dihapus</td><td>Bagian bersama tetap ada di baris pertama?</td></tr>
+      <tr><td>9</td><td><b>Memakai aturan satu objek untuk objek lain</b></td><td>bagian diambil dari kolom yang salah</td><td>Bagian ini berasal dari kolom mana?</td></tr>
+      <tr><td>10</td><td><b>Menyimpulkan aturan dari satu baris</b></td><td>aturan baris pertama langsung dipakai tanpa diuji</td><td>Aturan ini cocok di baris kedua?</td></tr>
+    </tbody>
+  </table>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Padanan Nama Kekeliruan dan Kode</h4>
+    <p>1 J-LANGKAH (K2) · 2 JF-AWAL (K5) · 3 JF-SALIN (K5) · 4 JF-ARAH (K3) · 5 J-NOMOR (K6) · 6 JF-SATU (K2; rincian titik pojok, ujung) · 7 JF-HITUNG (K6) · 8 JF-GABUNG (K5) · 9 JF-OBJEK (K5; salah ambil kolom) · 10 J-TIGA (K2). Pemeriksa generator: matriks gerak semua pasangan langkah 8 × 8, matriks hitung arah baris = arah kolom, matriks gabung 7 aturan himpunan diuji (engine Pilar 4 FIG).</p>
+  </div>
+
+  <h3>Contoh Soal dan Pembahasan</h3>
+  <p>Dua contoh berikut memperagakan dua keluarga aturan: gerak dua langkah, lalu hitung dua jenis bagian. Kerjakan setiap contoh sendiri dalam target waktunya sebelum membaca pembahasan. Pembahasan setiap contoh memuat bukti dari dua jalan dan bagian Pilihan yang Gugur.</p>
+<!--B18-C01:mulai-->
+<div data-soal="HB-TIU-B18-C01" data-target="60">
+  <div class="soal">
+    <div class="meta"><span>Contoh 1</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 60 detik</span></div>
+    <p class="stem">Perhatikan pola gambar pada matriks berikut. Gambar manakah yang tepat untuk mengganti tanda tanya?</p>
+    <img class="gbr" src="aset/figural/img/B18-C01.svg" alt="Gambar soal">
+    <div class="opsi5 gbr5"><div><span class="h">A</span><img src="aset/figural/img/B18-C01-A.svg" alt="Pilihan A"></div><div><span class="h">B</span><img src="aset/figural/img/B18-C01-B.svg" alt="Pilihan B"></div><div><span class="h">C</span><img src="aset/figural/img/B18-C01-C.svg" alt="Pilihan C"></div><div><span class="h">D</span><img src="aset/figural/img/B18-C01-D.svg" alt="Pilihan D"></div><div><span class="h">E</span><img src="aset/figural/img/B18-C01-E.svg" alt="Pilihan E"></div></div>
+  </div>
+  <div class="guru"><b>FIG-MTX-PUTAR + titik pojok (T2-E C18-1), tingkat 3, kunci C.</b> Dua langkah berbeda; pembahasan memakai bukti dua jalan. Kode: J-LANGKAH, JF-AWAL, JF-SUMBU, JF-SATU (titik pojok). Keluarga TO·H kerang, benih ≥ 900 (MTX-PUTAR × kerang tidak dipakai TO; TO memakai awan).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta gambar untuk “mengganti tanda tanya”, yaitu sel kanan bawah matriks 3 × 3. Setiap baris memakai satu bentuk: tanduk, bulu, lalu cakar.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><img class="gbr" src="aset/figural/img/B18-C01-pembahasan.svg" alt="Gambar pembahasan"><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Bandingkan sel dalam baris yang sama. Dari kolom 1 ke kolom 2: dicermin atas-bawah. Dari kolom 2 ke kolom 3: diputar 90° berlawanan arah jarum jam. Pastikan aturan itu cocok di baris tanduk dan baris bulu, lalu kenakan langkah kedua pada cakar di sel tengah baris 3.</dd></div>
+    <div><dt>Cara lain</dt><dd>Mulai dari cakar di kolom 1 baris 3 dan kerjakan kedua langkah berurutan: cermin atas-bawah, lalu putar 90° berlawanan arah jarum jam. Hasilnya harus sama dengan jalan pintas dari sel tengah.</dd></div>
+    <div><dt>Cek balik</dt><dd>Pakai satu penanda pada cakar di sel tengah baris 3. Putaran 90° berlawanan arah jarum jam memindahkan penanda yang di atas ke kiri, dan yang di kanan ke atas. Cocokkan penanda itu dengan setiap pilihan.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">sama dengan sel tengah</span><b>Menyalin gambar yang sudah terlihat.</b> Pilihan A sama dengan sel di sebelah kirinya, jadi langkah kedua tidak dikerjakan.</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">kembali seperti kolom 1</span><b>Mengira gambar kembali ke posisi awal.</b> Bentuk dianggap kembali ke posisi awal seperti kolom 1. Di baris tanduk dan bulu, sel ketiga tidak sama dengan sel pertama.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">diputar searah jarum jam</span><b>Membalik arah putar.</b> Langkah kedua dikerjakan, tetapi arah putarnya terbalik. Di baris tanduk dan bulu, kolom 2 ke kolom 3 diputar berlawanan arah jarum jam.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">bayangan cermin jawaban</span><b>Bentuk terbalik sisi.</b> Pilihan E adalah bayangan cermin kiri-kanan dari jawaban yang benar. Urutan kelilingnya terbalik, jadi tidak cocok dengan hasil kedua langkah.</div></div></div>
+  <div class="jwb"><span>C</span><p><b>Jawaban: C.</b> Pilihan C adalah cakar di sel tengah baris 3 yang diputar 90° berlawanan arah jarum jam, sesuai kedua langkah di dua baris lain.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti jarum jam yang terus maju. Di jam ketiga, jarumnya tidak kembali ke angka awal.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Cermin atas-bawah dan cermin kiri-kanan mudah tertukar. Ikuti satu ujung bentuk: pada cermin atas-bawah, ujung itu pindah dari atas ke bawah dan tetap di sisi kiri atau kanan yang sama.</span></div></div>
+</div>
+<!--B18-C01:selesai-->
+<!--B18-C02:mulai-->
+<div data-soal="HB-TIU-B18-C02" data-target="45">
+  <div class="soal">
+    <div class="meta"><span>Contoh 2</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 45 detik</span></div>
+    <p class="stem">Perhatikan pola gambar pada matriks berikut. Gambar manakah yang tepat untuk mengganti tanda tanya?</p>
+    <img class="gbr" src="aset/figural/img/B18-C02.svg" alt="Gambar soal">
+    <div class="opsi5 gbr5"><div><span class="h">A</span><img src="aset/figural/img/B18-C02-A.svg" alt="Pilihan A"></div><div><span class="h">B</span><img src="aset/figural/img/B18-C02-B.svg" alt="Pilihan B"></div><div><span class="h">C</span><img src="aset/figural/img/B18-C02-C.svg" alt="Pilihan C"></div><div><span class="h">D</span><img src="aset/figural/img/B18-C02-D.svg" alt="Pilihan D"></div><div><span class="h">E</span><img src="aset/figural/img/B18-C02-E.svg" alt="Pilihan E"></div></div>
+  </div>
+  <div class="guru"><b>FIG-MTX-HITUNG (T2-E C18-2), tingkat 3, kunci B.</b> Cabang +1 dan objek kecil +k; cek baris = kolom. Kode: JF-HITUNG, JF-SATU, J-PENGALIH. Keluarga TO·H keris (pusat) + PERKAKAS (kecil). Desain MTX-HITUNG = yang DIPERTAHANKAN Gusti 2026-10-28.</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta gambar untuk “mengganti tanda tanya”, yaitu sel kanan bawah. Bentuk dan letak objek kecil diacak, jadi yang dihitung hanya jumlahnya.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><img class="gbr" src="aset/figural/img/B18-C02-pembahasan.svg" alt="Gambar pembahasan"><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Hitung dua hal di setiap sel: helai bulu di tengah dan objek kecil di pinggir. Baris 1: 3 dan 2, 4 dan 3, 5 dan 4. Keduanya bertambah satu setiap kolom. Baris 3 dimulai dari 3 dan 4, lalu 4 dan 5, jadi sel terakhir punya 5 helai dan 6 objek kecil.</dd></div>
+    <div><dt>Cara lain</dt><dd>Baca per kolom. Setiap turun satu baris, helai tetap dan objek kecil bertambah satu. Kolom 3: 5 dan 4, 5 dan 5, jadi sel terakhir 5 helai dan 6 objek kecil.</dd></div>
+    <div><dt>Cek balik</dt><dd>Arah baris dan arah kolom memberi angka yang sama, 5 helai dan 6 objek kecil. Di pilihan B, hitung semua objek kecil apa pun bentuknya, termasuk bulatan.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">4 helai, 8 objek kecil</span><b>Salah hitung lebih atau kurang satu.</b> Helainya kurang satu dan objek kecilnya lebih dua. Keduanya meleset.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">5 helai, 8 objek kecil</span><b>Salah hitung lebih atau kurang satu.</b> Helainya sudah 5, tetapi objek kecilnya 8, lebih dua dari yang seharusnya.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">4 helai, 6 objek kecil</span><b>Salah hitung lebih atau kurang satu.</b> Objek kecilnya sudah 6, tetapi helainya 4, kurang satu.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">4 helai, 7 objek kecil</span><b>Salah hitung lebih atau kurang satu.</b> Helainya kurang satu dan objek kecilnya lebih satu.</div></div></div>
+  <div class="jwb"><span>B</span><p><b>Jawaban: B.</b> Pilihan B punya 5 helai dan 6 objek kecil, sesuai hitungan arah baris dan arah kolom.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti menghitung uang koin di dompet. Bentuk dan letak koinnya tidak penting; yang dicek jumlahnya.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Objek kecil dibuat bermacam-macam bentuknya supaya kamu sibuk mencari pola bentuk. Hitung semuanya, apa pun bentuknya.</span></div></div>
+</div>
+<!--B18-C02:selesai-->
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Asal Rancangan Bab 18</h4>
+    <p>Putusan T2-1b: Bab 18 = 1 pembuka + 3 contoh + 4 latihan (dari 7 latihan T2-E). Dipilih: L18-1 (gerak, tingkat 2), L18-2 (gerak dua langkah, arah kolom), L18-4 (hitung), L18-7 (gabung, memuat J-TIGA). Alasan: ketiga keluarga aturan terwakili, penutup tiga soal tingkat 3 (T2-2 minimal dua), arah baris dan kolom sama-sama dilatih. Gugur: L18-3 (gerak + titik pojok; sudah di C01) · L18-5 (hitung lain; sejenis L03) · L18-6 (gabung lain; sejenis L04).</p>
+    <p>Sebaran huruf rencana: P A · C1 C · C2 B · C3 E · L1 D · L2 A · L3 E · L4 B. Persegi latin dan gabungan warna = catatan + tabel narasi + gambar penjelas (Putusan 8(4), T2-7(10)); tidak ada soal untuk keduanya.</p>
+  </div>
+
+  <div class="ringkas">
+    <h4>Ringkasan Bab 18</h4>
+    <ol>
+      <li>Setiap baris, atau setiap kolom, membawa aturan yang sama. Tulis aturan dari baris pertama dan uji pada baris kedua.</li>
+      <li>Tiga keluarga aturan: <b>gerak</b>, <b>hitung</b>, dan <b>gabung</b>.</li>
+      <li>Matriks gerak: dua langkah digabung menjadi satu gerak; sel tanda tanya dibuktikan dari dua jalan. Perubahan berlanjut, tidak kembali ke awal.</li>
+      <li>Matriks hitung: abaikan rupa, hitung setiap jenis bagian; arah baris dan arah kolom harus memberi angka yang sama.</li>
+      <li>Matriks gabung: bagian yang ada di dua kolom tetap ada. Perhatikan perubahan kecil seperti ujung yang ditumpulkan.</li>
+      <li>Isi sel tanda tanya lapis demi lapis: bentuk, warna, titik pojok, dan ujung.</li>
+    </ol>
+  </div>
+</section>

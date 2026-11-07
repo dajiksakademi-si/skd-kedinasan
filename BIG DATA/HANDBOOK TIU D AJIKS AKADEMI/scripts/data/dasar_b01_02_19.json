@@ -1,0 +1,447 @@
+{
+  "catatan": "Contoh soal Bab 1, 2, 19 (T6-5, T6-12). Diperiksa + dirender oleh scripts/soal_dasar.mjs. Pembahasan ditulis sesudah cek buta.",
+  "butir": [
+    {
+      "id": "HB-TIU-B01-C01",
+      "bab": 1,
+      "peran": "contoh",
+      "target_detik": 60,
+      "jenis": "CRT ambang batas",
+      "bentuk": "pilihan angka",
+      "kerangka": "ambang per subtes · nilai dua subtes lain sudah lolos · tanya tambahan jawaban benar · lupa bobot, batas, total menutupi, jumlah akhir",
+      "to_terdekat": "tidak ada padanan di TO (materi Bab 1)",
+      "soal": {
+        "pengantar": "Sebuah tryout memakai aturan SKD sekolah kedinasan 2026: setiap jawaban benar TIU bernilai 5, jawaban salah atau kosong bernilai 0, dan ambang batasnya TWK 65, TIU 80, serta TKP 156. Bima, yang bukan peserta afirmasi, memperoleh nilai TWK 95, TIU 70, dan TKP 180.",
+        "tanya": "Agar ketiga nilainya memenuhi ambang batas, Bima memerlukan paling sedikit … jawaban benar TIU lagi."
+      },
+      "kalimat_penentu": "paling sedikit",
+      "opsi": {
+        "A": "0",
+        "B": "2",
+        "C": "3",
+        "D": "10",
+        "E": "16"
+      },
+      "kunci": "B",
+      "kode": {
+        "A": "J-ASUMSI",
+        "B": "kunci",
+        "C": "J-BATAS",
+        "D": "J-SATUAN",
+        "E": "J-LANGKAH"
+      },
+      "nama": {
+        "A": "Mengira nilai subtes lain menutup kekurangan TIU",
+        "C": "Mengira nilai harus melebihi ambang",
+        "D": "Lupa membagi dengan bobot 5",
+        "E": "Berhenti satu langkah sebelum selesai"
+      },
+      "catatan_reviu": "Angka resmi dari Diktum KELIMA a dan KEDELAPAN b (sudah di Bab 1). Pilihan 0 menguji kalimat Bab 1: nilai TWK atau TKP yang tinggi tidak menggantikan TIU.",
+      "bukti": {
+        "metode": "TIU 70 = 14 benar; ambang 80 = 16 benar; tambahan 2; melebihi ambang 3",
+        "bentuk": {
+          "jarak": 1,
+          "median": 4,
+          "terpencil": 1.5,
+          "letak": "B"
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal menanyakan tambahan jawaban benar TIU, bukan tambahan nilai. Kalimat penentunya “paling sedikit”: cari tambahan terkecil yang sudah membuat TIU memenuhi ambang 80.",
+        "cepat": "TWK 95 dan TKP 180 sudah di atas ambangnya, jadi yang perlu dikejar hanya TIU. Nilai 70 berarti 70 : 5 = 14 jawaban benar, sedangkan ambang 80 berarti 80 : 5 = 16 jawaban benar. Tambahannya 16 − 14 = 2.",
+        "lain": "Hitung dari kekurangan nilainya. TIU kurang 80 − 70 = 10 nilai, dan setiap jawaban benar menambah 5, jadi diperlukan 10 : 5 = 2 jawaban benar lagi.",
+        "cek": "Dengan 2 tambahan, Bima punya 16 jawaban benar dan nilai TIU-nya 16 × 5 = 80, tepat di ambang. Dengan 1 tambahan saja, nilainya 15 × 5 = 75, masih kurang. Jadi 2 memang yang paling sedikit.",
+        "gugur": {
+          "A": {
+            "uji": "TWK dan TKP berlebih",
+            "teks": "TWK lebih 95 − 65 = 30 dan TKP lebih 180 − 156 = 24, sehingga kelebihan itu terasa bisa menutup kekurangan TIU. Ambang batas berlaku untuk tiap subtes sendiri-sendiri. Nilai TWK atau TKP setinggi apa pun tidak menggantikan TIU yang kurang dari 80."
+          },
+          "C": {
+            "uji": "harus di atas 80",
+            "teks": "Dengan 3 tambahan, nilai TIU menjadi 17 × 5 = 85. Angka ini muncul bila ambang dibaca sebagai nilai yang harus dilampaui. Ambang adalah nilai minimal, jadi nilai tepat 80 sudah memenuhi."
+          },
+          "D": {
+            "uji": "selisih nilai",
+            "teks": "80 − 70 = 10 adalah kekurangan nilai, bukan banyak soal. Satu jawaban benar bernilai 5, jadi kekurangan 10 nilai cukup ditutup dua soal."
+          },
+          "E": {
+            "uji": "jumlah benar seluruhnya",
+            "teks": "80 : 5 = 16 adalah banyak jawaban benar yang dibutuhkan seluruhnya. Bima sudah punya 14, jadi tinggal dikurangi: 16 − 14 = 2."
+          }
+        },
+        "kunci": "Ambang TIU 80 setara dengan 16 jawaban benar, dan Bima sudah punya 14, sehingga ia perlu 2 jawaban benar lagi.",
+        "analogi": "Seperti mengumpulkan stempel di kartu belanja: setiap belanja mendapat satu stempel, dan hadiah baru boleh diambil setelah kartunya penuh. Yang kamu hitung adalah stempel yang belum ada, dan stempel di kartu toko lain tidak ikut dihitung.",
+        "waspada": "Menjawab 10, karena angka itu yang pertama muncul saat kamu membandingkan 70 dengan 80. Biasakan bertanya dulu: yang ditanya nilai atau banyak soal? Di TIU, satu soal sama dengan 5 nilai."
+      }
+    },
+    {
+      "id": "HB-TIU-B01-C02",
+      "bab": 1,
+      "peran": "contoh",
+      "target_detik": 60,
+      "jenis": "STR titik periksa",
+      "bentuk": "pilihan tindakan",
+      "kerangka": "titik periksa nomor 45 · jam hitung mundur · tertinggal lebih dari 2 menit · soal berikutnya melewati patokan · tandai, dua kali patokan, patokan blok lama, kosongkan, arah jam",
+      "to_terdekat": "tidak ada padanan di TO (materi Bab 1)",
+      "soal": {
+        "pengantar": "Raka memakai lembar rencana waktu di bab ini: TWK selesai pada menit ke-27, jam di layar menunjukkan sisa waktu dan menghitung mundur dari 100:00, dan nomor 45 direncanakan selesai saat layar menunjukkan 56:30. Kenyataannya, saat Raka selesai mengerjakan nomor 45, layar menunjukkan 53:40. Nomor 46 adalah soal kecukupan data dengan patokan 90 detik. Raka sudah mengerjakannya lebih dari 90 detik dan belum menemukan jawaban.",
+        "tanya": "Menurut aturan melompati soal di bab ini, langkah Raka yang tepat adalah …"
+      },
+      "kalimat_penentu": "layar menunjukkan 53:40",
+      "opsi": {
+        "A": "Terus mengerjakan nomor 46 sampai 180 detik, yaitu dua kali patokan 90 detik.",
+        "B": "Menandai nomor 46 tanpa mengisi jawaban, lalu kembali ke nomor itu di waktu cadangan.",
+        "C": "Terus mengerjakan nomor 46 sampai 150 detik, yaitu dua kali patokan 75 detik.",
+        "D": "Terus mengerjakan nomor 46, sebab Raka masih 2 menit 50 detik lebih cepat dari rencana.",
+        "E": "Mengisi jawaban sementara di nomor 46, menandai nomornya, lalu lanjut ke nomor 47."
+      },
+      "kunci": "E",
+      "kode": {
+        "A": "J-SYARAT",
+        "B": "J-LANGKAH",
+        "C": "J-PENGALIH",
+        "D": "J-BALIK",
+        "E": "kunci"
+      },
+      "nama": {
+        "A": "Melewatkan aturan untuk peserta yang tertinggal",
+        "B": "Menandai tanpa mengisi jawaban sementara",
+        "C": "Memakai patokan blok yang sudah selesai",
+        "D": "Membaca jam hitung mundur dari arah sebaliknya"
+      },
+      "catatan_reviu": "Patokan, titik periksa, dan empat aturan = tabel Bab 1 (dicek cek_bab01_02.mjs). Kunci disimulasikan model: tertinggal 170 detik > 120 detik → batas nomor 46 = 1 × patokan.",
+      "bukti": {
+        "metode": "rencana 56:30, layar 53:40, tertinggal 170 detik > 120 → batas nomor 46 = 90 detik; tanpa aturan tertinggal 180; patokan blok lama ×2 = 150"
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta langkah yang tepat untuk nomor 46. Kalimat penentunya “layar menunjukkan 53:40”: dari angka itulah kamu tahu Raka tertinggal atau tidak, dan aturan mana yang berlaku.",
+        "cepat": "Jam di layar menghitung mundur, jadi angka yang lebih kecil berarti waktu yang terpakai lebih banyak. Rencananya 56:30, kenyataannya 53:40. Raka tertinggal 2 menit 50 detik, lebih dari 2 menit. Aturan tertinggal berlaku: soal berikutnya yang melewati patokan langsung ditandai. Nomor 46 sudah lewat 90 detik, jadi isi jawaban sementara, tandai, lalu lanjut.",
+        "lain": "Hitung dengan menit sejak TIU dimulai. TIU dimulai saat layar menunjukkan 73:00, dan menurut rencana nomor 45 selesai pada menit 16:30. Layar 53:40 berarti Raka sudah bekerja 19 menit 20 detik. Selisihnya dengan 16:30 tetap 2 menit 50 detik.",
+        "cek": "Bayangkan Raka memilih menunggu sampai 180 detik. Ia sudah tertinggal hampir 3 menit, lalu nomor 46 menambah 90 detik lagi di luar patokan. Aturan tertinggal dibuat untuk mencegah hal itu: waktu yang hilang di satu titik tidak boleh menular ke soal berikutnya.",
+        "gugur": {
+          "A": {
+            "uji": "aturan dua kali patokan",
+            "teks": "Batas 180 detik adalah aturan untuk peserta yang tepat waktu. Raka tertinggal lebih dari 2 menit, sehingga batasnya turun menjadi satu kali patokan, yaitu 90 detik."
+          },
+          "B": {
+            "uji": "ditandai, tetapi kosong",
+            "teks": "Menandai sudah benar, tetapi nomornya dibiarkan kosong. Aturan meminta jawaban sementara lebih dulu, sebab soal kosong pasti bernilai 0, sedangkan tebakan masih punya peluang benar."
+          },
+          "C": {
+            "uji": "patokan nomor 45",
+            "teks": "75 detik adalah patokan blok numerik yang baru saja selesai. Nomor 46 sudah masuk blok kecukupan data, dan patokannya 90 detik."
+          },
+          "D": {
+            "uji": "jam dibaca terbalik",
+            "teks": "Pada jam yang menghitung mundur, 53:40 datang sesudah 56:30, bukan sebelumnya. Sisa waktu Raka lebih sedikit dari rencana, jadi ia tertinggal 2 menit 50 detik, bukan lebih cepat."
+          }
+        },
+        "kunci": "Raka tertinggal 2 menit 50 detik, lebih dari 2 menit, sehingga nomor 46 yang sudah melewati patokan 90 detik dijawab sementara, ditandai, lalu ditinggal.",
+        "analogi": "Seperti bus yang sudah terlambat dari jadwal. Sopir tidak lagi berhenti lama di setiap halte; penumpang yang belum siap diminta naik bus berikutnya, supaya keterlambatan tidak terus bertambah.",
+        "waspada": "Membaca 53:40 sebagai tanda Raka lebih cepat, karena angka itu lebih kecil dari 56:30 dan angka kecil terasa seperti waktu yang sedikit terpakai. Di jam hitung mundur, kebalikannya yang benar. Sebelum ujian, pastikan dulu jam di layarmu menghitung maju atau mundur."
+      }
+    },
+    {
+      "id": "HB-TIU-B02-C01",
+      "bab": 2,
+      "peran": "contoh",
+      "target_detik": 60,
+      "jenis": "SIL pilih kesimpulan",
+      "bentuk": "pilihan kalimat",
+      "kerangka": "semua M–P · sebagian M–S · kunci ada S–P · sebagian jadi semua, konversi, mungkin, akal sehat",
+      "to_terdekat": "TO P1 no. 32 (semua + tidak ada, rantai); bentuk premis beda dari Bab 4 C01 (sebagian S–M) dan C02 (menilai dua kesimpulan)",
+      "soal": {
+        "pengantar": "Anggap semua premis berikut benar.",
+        "butir": [
+          [
+            "P1",
+            "Semua petugas perpustakaan desa sudah mengikuti pelatihan katalog digital."
+          ],
+          [
+            "P2",
+            "Sebagian petugas perpustakaan desa adalah mahasiswa."
+          ]
+        ],
+        "tanya": "Kesimpulan yang pasti benar adalah …"
+      },
+      "kalimat_penentu": "pasti benar",
+      "opsi": {
+        "A": "Ada mahasiswa yang sudah mengikuti pelatihan katalog digital.",
+        "B": "Semua mahasiswa sudah mengikuti pelatihan katalog digital.",
+        "C": "Ada petugas perpustakaan desa yang bekerja paruh waktu.",
+        "D": "Semua peserta pelatihan katalog digital adalah petugas perpustakaan desa.",
+        "E": "Ada mahasiswa yang bukan petugas perpustakaan desa."
+      },
+      "kunci": "A",
+      "kode": {
+        "A": "kunci",
+        "B": "J-SEBAGIAN",
+        "C": "J-AKAL",
+        "D": "J-BALIK",
+        "E": "J-MUNGKIN"
+      },
+      "nama": {
+        "B": "Membaca “sebagian” sebagai “semua”",
+        "C": "Benar di dunia nyata, tetapi bukan dari premis",
+        "D": "Membalik arah “semua”",
+        "E": "Menganggap yang mungkin benar sebagai pasti benar"
+      },
+      "catatan_reviu": "Status tiap pilihan dihitung semua dunia himpunan 4 istilah × 4 bacaan (kosong boleh/tidak · sebagian longgar/ketat); kedua premis diuji perlu.",
+      "bukti": {
+        "metode": "dunia himpunan 4 istilah, daerah sah 12, 4095 dunia × 4 bacaan (kosong · sebagian); kedua premis perlu",
+        "status": {
+          "A": "pasti benar",
+          "B": "tidak dapat dipastikan",
+          "C": "tidak dapat dipastikan",
+          "D": "tidak dapat dipastikan",
+          "E": "tidak dapat dipastikan"
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta kesimpulan yang tetap benar dalam setiap keadaan yang memenuhi kedua premis. Kalimat penentunya “pasti benar”: pilihan yang benar hanya di sebagian keadaan belum cukup.",
+        "cepat": "Ambil satu petugas yang juga mahasiswa. Orang itu pasti ada, sebab P2 menyebut sebagian petugas adalah mahasiswa. Menurut P1, setiap petugas sudah mengikuti pelatihan, jadi orang itu juga sudah. Akibatnya, ada mahasiswa yang sudah mengikuti pelatihan.",
+        "lain": "Gambar tiga lingkaran. Lingkaran petugas berada utuh di dalam lingkaran peserta pelatihan (P1). Lingkaran mahasiswa memotong lingkaran petugas (P2). Daerah potongan itu pasti berisi orang, dan daerah itu berada di dalam lingkaran pelatihan. Bagaimanapun lingkaran mahasiswa digambar, potongan itu selalu ada.",
+        "cek": "Coba gugurkan A dengan contoh penyangkal: kamu perlu keadaan tanpa satu pun mahasiswa yang ikut pelatihan. Keadaan itu tidak mungkin, sebab mahasiswa yang menjadi petugas pasti ikut pelatihan. A lolos uji, sedangkan keempat pilihan lain gugur oleh satu gambar masing-masing.",
+        "gugur": {
+          "B": {
+            "uji": "ada mahasiswa di luar",
+            "teks": "Premis hanya bercerita tentang mahasiswa yang menjadi petugas. Gambar satu mahasiswa yang bukan petugas dan belum ikut pelatihan: kedua premis tetap benar, tetapi B salah."
+          },
+          "C": {
+            "uji": "istilah baru",
+            "teks": "Petugas perpustakaan memang sering bekerja paruh waktu, tetapi premis tidak menyebut paruh waktu sama sekali. Keadaan semua petugas bekerja penuh waktu tetap memenuhi kedua premis."
+          },
+          "D": {
+            "uji": "P1 dibalik",
+            "teks": "P1 berkata semua petugas ikut pelatihan, bukan semua peserta pelatihan adalah petugas. Peserta pelatihan boleh saja ada yang datang dari luar perpustakaan, misalnya guru, dan kedua premis tetap benar."
+          },
+          "E": {
+            "uji": "bisa, belum tentu",
+            "teks": "Mungkin saja ada mahasiswa di luar perpustakaan, tetapi premis tidak menjaminnya. Bila semua mahasiswa kebetulan bekerja sebagai petugas, kedua premis tetap benar dan E salah."
+          }
+        },
+        "kunci": "Mahasiswa yang menjadi petugas pasti ada (P2) dan pasti ikut pelatihan (P1), sehingga A benar di setiap keadaan.",
+        "analogi": "Misalkan semua anggota paduan suara sekolahmu memakai batik setiap Jumat, dan sebagian anggota paduan suara adalah anak kelas XI. Tanpa melihat daftar, kamu sudah tahu ada anak kelas XI yang memakai batik pada hari Jumat. Kamu belum tahu apakah semua anak kelas XI ikut memakainya.",
+        "waspada": "Memilih E karena kata “sebagian” terdengar seperti “ada yang ya, ada yang tidak”. Kata itu hanya menjamin ada; sisanya tidak diceritakan premis. Sebelum memilih, cari satu gambar yang membuat pilihanmu salah. Bila gambar itu ada, pilihan itu belum pasti."
+      }
+    },
+    {
+      "id": "HB-TIU-B02-C02",
+      "bab": 2,
+      "peran": "contoh",
+      "target_detik": 75,
+      "jenis": "CRT kerja tetap",
+      "bentuk": "pilihan angka",
+      "kerangka": "orang-hari tetap · pekerja berkurang di tengah · tanya lama seluruhnya · searah, sisa hari, pekerja baru sejak awal, lupa pekerjaan yang selesai",
+      "to_terdekat": "TO P1 no. 48 (KCK penjahit); Bab 10 C02 (pekerja tambahan sesudah jeda) — tanya dan arah perubahan beda",
+      "soal": {
+        "pengantar": "Pemasangan paving blok di halaman balai desa direncanakan selesai dalam 10 hari oleh 12 pekerja. Setelah 4 hari bekerja, 4 pekerja dipindahkan ke proyek lain. Pekerja yang tersisa melanjutkan pemasangan dengan kecepatan kerja yang sama.",
+        "tanya": "Pemasangan paving blok itu selesai dalam … hari, dihitung sejak hari pertama."
+      },
+      "kalimat_penentu": "dihitung sejak hari pertama",
+      "opsi": {
+        "A": "8",
+        "B": "9",
+        "C": "13",
+        "D": "15",
+        "E": "19"
+      },
+      "kunci": "C",
+      "kode": {
+        "A": "J-SEARAH",
+        "B": "J-LANGKAH",
+        "C": "kunci",
+        "D": "J-ASUMSI",
+        "E": "J-LANGKAH"
+      },
+      "nama": {
+        "A": "Menghitung perbandingan berbalik nilai sebagai senilai",
+        "B": "Berhenti satu langkah sebelum selesai",
+        "D": "Menganggap 8 pekerja bekerja sejak hari pertama",
+        "E": "Lupa mengurangi pekerjaan yang sudah selesai"
+      },
+      "catatan_reviu": "Pecahan tepat; semua pilihan dihitung model dari langkah kelirunya.",
+      "bukti": {
+        "metode": "12 × 10 = 120 orang-hari; selesai 48; sisa 72 : 8 = 9 hari; seluruhnya 13",
+        "bentuk": {
+          "jarak": 2,
+          "median": 3,
+          "terpencil": 1.33,
+          "letak": "C"
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta lama seluruh pekerjaan. Kalimat penentunya “dihitung sejak hari pertama”: empat hari yang sudah lewat ikut dihitung.",
+        "cepat": "Besar pekerjaan tidak berubah walaupun pekerjanya berubah. Hitung dalam orang-hari: 12 × 10 = 120. Empat hari pertama menghabiskan 12 × 4 = 48, sisanya 120 − 48 = 72. Sisa itu dikerjakan 8 pekerja, jadi 72 : 8 = 9 hari. Seluruhnya 4 + 9 = 13 hari.",
+        "lain": "Lihat sisa rencana. Tanpa pemindahan, sisa 6 hari dikerjakan 12 pekerja. Pekerjanya kini 8, sedangkan banyak pekerja dan banyak hari berbalik nilai: 6 × 12 : 8 = 9 hari. Hasilnya sama, 4 + 9 = 13.",
+        "cek": "Masukkan kembali: 12 pekerja selama 4 hari memberi 48 orang-hari, dan 8 pekerja selama 9 hari memberi 72 orang-hari. Jumlahnya 48 + 72 = 120, tepat sebesar pekerjaan yang direncanakan.",
+        "gugur": {
+          "A": {
+            "uji": "pekerja berkurang, hari berkurang",
+            "teks": "Sisa 6 hari dikali 8 lalu dibagi 12: 6 × 8 : 12 = 4, sehingga seluruhnya terhitung 8 hari. Pekerja yang lebih sedikit tidak mungkin menyelesaikan pekerjaan lebih cepat; pekerja dan hari berbalik nilai."
+          },
+          "B": {
+            "uji": "sisa hari saja",
+            "teks": "9 hari adalah waktu yang dipakai 8 pekerja untuk sisa pekerjaan. Soal meminta lama sejak hari pertama, jadi 4 hari awal masih harus ditambahkan."
+          },
+          "D": {
+            "uji": "8 pekerja sejak awal",
+            "teks": "120 : 8 = 15 menganggap 8 pekerja bekerja sejak hari pertama. Selama 4 hari pertama pekerjanya masih 12, jadi pekerjaan berjalan lebih cepat dari itu."
+          },
+          "E": {
+            "uji": "pekerjaan awal lupa dikurangi",
+            "teks": "15 hari dihitung untuk seluruh pekerjaan, lalu ditambah 4 hari awal: 15 + 4 = 19. Pekerjaan empat hari pertama terhitung dua kali, padahal 48 orang-hari itu sudah selesai."
+          }
+        },
+        "kunci": "Sisa 72 orang-hari dikerjakan 8 pekerja dalam 9 hari, sehingga seluruhnya 4 + 9 = 13 hari.",
+        "analogi": "Seperti mengecat dinding rumah bersama teman. Kalau dua teman pulang di tengah jalan, dinding yang sudah dicat tidak hilang; yang dihitung ulang hanya bagian yang belum dicat, dengan tangan yang tersisa.",
+        "waspada": "Berhenti di 9 karena hitungannya terasa sudah selesai. Sebelum memilih, baca lagi apa yang diminta: lama sisa pekerjaan atau lama seluruhnya."
+      }
+    },
+    {
+      "id": "HB-TIU-B19-C01",
+      "bab": 19,
+      "peran": "contoh",
+      "target_detik": 75,
+      "jenis": "CRT dua perubahan persen",
+      "bentuk": "pilihan angka",
+      "kerangka": "turun 10% lalu naik 25% dari tahun sebelumnya · satu angka pengalih (benih) · empat pengecoh dari empat kelompok",
+      "to_terdekat": "TO P1 no. 44 (persen kapasitas); beda dari Bab 10 C01 (kapasitas) dan C07 (dua diskon)",
+      "soal": {
+        "pengantar": "Sebuah koperasi tani memanen 48.000 kg gabah pada tahun 2024. Pada tahun 2025, hasil panennya turun 10% karena kemarau panjang. Dari hasil panen 2025 itu, 3.200 kg disimpan sebagai benih. Pada tahun 2026, hasil panen naik 25% dari hasil panen tahun 2025.",
+        "tanya": "Hasil panen koperasi itu pada tahun 2026 adalah … kg."
+      },
+      "kalimat_penentu": "naik 25% dari hasil panen tahun 2025",
+      "opsi": {
+        "A": "43.200",
+        "B": "44.280",
+        "C": "50.000",
+        "D": "54.000",
+        "E": "55.200"
+      },
+      "kunci": "D",
+      "kode": {
+        "A": "J-LANGKAH",
+        "B": "J-NOL",
+        "C": "J-PENGALIH",
+        "D": "kunci",
+        "E": "J-BASIS"
+      },
+      "nama": {
+        "A": "Berhenti satu langkah sebelum selesai",
+        "B": "Kelebihan satu nol atau salah letak koma",
+        "C": "Memakai data yang tidak dibutuhkan",
+        "E": "Persen dihitung dari bilangan yang salah"
+      },
+      "catatan_reviu": "Empat pengecoh dari kelompok 1, 2, 3, 6 (rencana T2-A pembuka Bab 19); pembahasan merujuk ke subbagian kelompoknya.",
+      "bukti": {
+        "metode": "48.000 × 90% = 43.200; × 125% = 54.000; benih tidak mengubah hasil panen",
+        "bentuk": {
+          "jarak": 1200,
+          "median": 2600,
+          "terpencil": 1.54,
+          "letak": "D"
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta hasil panen tahun 2026 dalam kilogram. Kalimat penentunya “naik 25% dari hasil panen tahun 2025”: dasar persennya hasil panen 2025, bukan 2024, dan bukan sisa sesudah benih disimpan.",
+        "cepat": "Turun 10% sama dengan dikali 90%: 48.000 × 90% = 43.200. Naik 25% sama dengan dikali 125%: 43.200 × 125% = 54.000. Angka 3.200 kg benih tidak dipakai, sebab menyimpan benih tidak mengubah besar panen.",
+        "lain": "Hitung kenaikannya dulu: 25% × 43.200 = 10.800. Tambahkan ke hasil 2025: 43.200 + 10.800 = 54.000.",
+        "cek": "Kerjakan mundur. 54.000 : 125% = 43.200, lalu 43.200 : 90% = 48.000, tepat hasil panen tahun 2024.",
+        "gugur": {
+          "A": {
+            "uji": "baru sampai 2025",
+            "teks": "43.200 kg adalah hasil panen tahun 2025. Kenaikan 25% pada tahun 2026 belum dihitung. Kekeliruan ini masuk kelompok 2, pemeriksaan yang belum tuntas."
+          },
+          "B": {
+            "uji": "koma bergeser",
+            "teks": "Kenaikan 25% dari 43.200 adalah 10.800, tetapi tertulis 1.080 karena koma bergeser satu tempat: 43.200 + 1.080 = 44.280. Kenaikan seperempat dari puluhan ribu kilogram jelas lebih dari seribuan. Kelompok 6, kekeliruan hitung dan satuan."
+          },
+          "C": {
+            "uji": "benih dikurangkan",
+            "teks": "Benih dikurangkan dulu: (43.200 − 3.200) × 125% = 50.000. Hasil panen 2025 tetap 43.200 kg walaupun sebagian disimpan untuk benih. Kelompok 1, data yang tidak tertulis atau tidak dipakai."
+          },
+          "E": {
+            "uji": "dasar 2024",
+            "teks": "Kenaikan dihitung dari hasil 2024: 25% × 48.000 = 12.000, lalu 43.200 + 12.000 = 55.200. Jalan pintas −10% + 25% = 15% memberi angka yang sama dengan kekeliruan yang sama, sebab kedua persen punya dasar berbeda. Kelompok 3, arah yang terbalik."
+          }
+        },
+        "kunci": "Hasil 2025 adalah 48.000 × 90% = 43.200 kg, dan kenaikan 25% dari angka itu memberi 54.000 kg.",
+        "analogi": "Seperti harga barang yang didiskon 10%, lalu naik 25% dari harga diskon itu. Kenaikan kedua menempel pada harga terakhir, bukan pada harga awal di label.",
+        "waspada": "Menggabungkan kedua persen menjadi naik 15% dari 48.000. Persen berturut-turut tidak boleh dijumlahkan, sebab setiap persen memakai dasar yang berbeda. Kerjakan satu per satu sesuai urutan tahun."
+      }
+    },
+    {
+      "id": "HB-TIU-B19-C02",
+      "bab": 19,
+      "peran": "contoh",
+      "target_detik": 120,
+      "jenis": "ANA pilih susunan",
+      "bentuk": "pilihan susunan",
+      "kerangka": "lima stan berjajar + atribut makanan · syarat tidak di ujung, tepat di timur, tepat satu di antara · tiap pilihan salah melanggar tepat satu syarat",
+      "to_terdekat": "TO P1 no. 53–55 (pasti benar, melingkar); beda dari Bab 12 C01 (giliran + kelas) dan L01 (tujuh peserta)",
+      "soal": {
+        "pengantar": "Lima stan pameran usaha kecil berjajar dari barat ke timur dan diberi nomor 1 sampai 5, dengan stan 1 di ujung barat. Kelima stan itu menjual batik, gerabah, keripik, madu, dan tenun, masing-masing satu stan. Keripik dan madu adalah stan makanan. Ketentuannya sebagai berikut.",
+        "syarat": [
+          "Tidak ada stan makanan yang berada di ujung barat atau ujung timur.",
+          "Stan gerabah berada tepat di sebelah timur stan batik.",
+          "Di antara stan tenun dan stan keripik terdapat tepat satu stan lain."
+        ],
+        "tanya": "Susunan stan dari barat ke timur yang memenuhi semua ketentuan adalah …"
+      },
+      "kalimat_penentu": "tepat di sebelah timur",
+      "opsi": {
+        "A": "Tenun, madu, keripik, gerabah, batik",
+        "B": "Batik, gerabah, tenun, madu, keripik",
+        "C": "Batik, gerabah, madu, keripik, tenun",
+        "D": "Batik, madu, keripik, gerabah, tenun",
+        "E": "Tenun, madu, keripik, batik, gerabah"
+      },
+      "kunci": "E",
+      "kode": {
+        "A": "J-BALIK",
+        "B": "J-SYARAT",
+        "C": "J-NOMOR",
+        "D": "J-SYARAT",
+        "E": "kunci"
+      },
+      "nama": {
+        "A": "Membalik arah “di sebelah timur”",
+        "B": "Melewatkan syarat “tidak”",
+        "C": "Menghitung jarak meleset satu",
+        "D": "Membaca “tepat di sebelah timur” sebagai “di sebelah timur”"
+      },
+      "catatan_reviu": "Semua 120 urutan dicacah; tiap pilihan salah melanggar tepat satu syarat (pilih() model_ana).",
+      "bukti": {
+        "metode": "120 urutan; sah 2 (BGKMT, TMKBG); syarat 1–3 menggugurkan B · AD · C; tiap pilihan salah melanggar tepat satu syarat; skor unsur bersama {\"A\":6,\"B\":3,\"C\":4,\"D\":8,\"E\":5}"
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta susunan yang lolos ketiga ketentuan. Kalimat penentunya “tepat di sebelah timur”: gerabah harus menempel di sisi timur batik, tanpa stan lain di antaranya.",
+        "cepat": "Uji kelima pilihan dengan satu ketentuan setiap kali. Ketentuan 1 menggugurkan B, karena keripik berada di ujung timur. Ketentuan 2 menggugurkan A (gerabah di barat batik) dan D (batik dan gerabah berjauhan). Ketentuan 3 menggugurkan C, karena tenun dan keripik bersebelahan. Tinggal E.",
+        "lain": "Susun sendiri dari ketentuan terkuat. Kedua stan makanan harus di tengah, jadi kedua ujung diisi stan kerajinan. Batik dan gerabah menempel, sehingga pasangan itu mengisi salah satu ujung. Bila pasangan itu di ujung timur, tenun di ujung barat dan keripik di stan 3: tenun, madu, keripik, batik, gerabah, sama dengan E. Susunan batik, gerabah, keripik, madu, tenun juga sah, tetapi tidak tercantum di pilihan.",
+        "cek": "Periksa E sekali lagi. Madu di stan 2 dan keripik di stan 3, keduanya tidak di ujung. Batik di stan 4 dan gerabah di stan 5. Tenun di stan 1 dan keripik di stan 3, dengan madu di antaranya.",
+        "gugur": {
+          "A": {
+            "uji": "gerabah di barat batik",
+            "teks": "Gerabah di stan 4 dan batik di stan 5. Keduanya bersebelahan, tetapi arahnya terbalik: gerabah berada di barat batik. Kelompok 3, arah yang terbalik."
+          },
+          "B": {
+            "uji": "keripik di ujung",
+            "teks": "Batik dan gerabah sudah benar, dan madu memisahkan tenun dari keripik. Sayangnya keripik berada di stan 5, ujung timur, padahal ketentuan 1 melarang stan makanan di ujung. Kelompok 2, pemeriksaan yang belum tuntas."
+          },
+          "C": {
+            "uji": "tanpa stan di antara",
+            "teks": "Tenun di stan 5 dan keripik di stan 4 bersebelahan, jadi tidak ada stan di antara keduanya. Ketentuan 3 meminta tepat satu stan di antaranya, artinya selisih nomor stannya 2. Kelompok 6, kekeliruan hitung dan satuan."
+          },
+          "D": {
+            "uji": "batik dan gerabah berjauhan",
+            "teks": "Gerabah memang di timur batik, tetapi batik di stan 1 dan gerabah di stan 4, dengan dua stan di antaranya. Kata “tepat” meminta keduanya bersebelahan. Kelompok 2, pemeriksaan yang belum tuntas."
+          }
+        },
+        "kunci": "Hanya E yang lolos ketiga ketentuan: kedua stan makanan di tengah, gerabah menempel di timur batik, dan madu memisahkan tenun dari keripik.",
+        "analogi": "Seperti mengatur tempat duduk keluarga di meja panjang dengan beberapa pesan: adik duduk tepat di sebelah kanan ibu, dan kakek tidak boleh di ujung. Setiap pesan dicocokkan satu per satu, dan satu pesan yang dilanggar sudah cukup membatalkan susunan itu.",
+        "waspada": "Memilih A karena tiga stan pertamanya sama dengan E dan batik tampak berdampingan dengan gerabah. Bersebelahan belum cukup; periksa juga arahnya. Pada ketentuan berarah, tentukan dulu mana barat dan mana timur sebelum membandingkan."
+      }
+    }
+  ]
+}

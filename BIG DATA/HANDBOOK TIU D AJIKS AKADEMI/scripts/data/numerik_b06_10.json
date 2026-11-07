@@ -1,0 +1,3742 @@
+{
+  "keterangan": "Handbook TIU · Tahap 5 · 45 soal numerik Bab 6–10 (Contoh 1 Bab 6 tetap di bab6_c1.json). Teks ditulis tangan; semua angka pilihan, kunci, dan tabel dihitung scripts/numerik/model_a.mjs + model_b.mjs dan diperiksa scripts/soal_numerik.mjs. Pecahan ditulis {a/b}. Field bukti ditulis script.",
+  "butir": [
+    {
+      "id": "HB-TIU-B06-P01",
+      "bab": 6,
+      "peran": "pembuka",
+      "jenis": "HIT perkiraan",
+      "bentuk": "(a × b) : c, pilihan berjauhan",
+      "target_detik": 30,
+      "soal": {
+        "tanya": "Bilangan berikut yang paling dekat dengan hasil 647 × 87 : 21 adalah …"
+      },
+      "kalimat_penentu": "paling dekat",
+      "opsi": {
+        "A": "1.800",
+        "B": "2.100",
+        "C": "2.400",
+        "D": "2.700",
+        "E": "3.000"
+      },
+      "kunci": "D",
+      "kode": {
+        "A": "J-BULAT",
+        "B": "J-BULAT",
+        "C": "J-BULAT",
+        "D": "kunci",
+        "E": "J-BULAT"
+      },
+      "nama": {
+        "A": "Pembagi dibulatkan ke arah yang salah",
+        "B": "Ketiga bilangan dibulatkan naik",
+        "C": "Kedua faktor dibulatkan turun",
+        "E": "Pembulatan terlalu kasar"
+      },
+      "alasan_kunci": "600 × 90 : 20 = 2.700 (perkalian berlawanan arah, pembagi searah); nilai tepat 2.680,43 terdekat ke D.",
+      "kerangka": "HIT perkiraan · tiga angka × dua angka : dua angka · pilihan berjarak tetap 300 · empat jalur pembulatan sepihak",
+      "to_terdekat": "TO P1 no. 37 (desimal + akar); bukan 46 × 76 dan 588 : 21 (narasi)",
+      "catatan_reviu": "Slot memasang J-NOL dan J-SEDERHANA; tidak dipakai: pilihan salah nol pasti berjarak sepuluh kali (melanggar jarak 12–20% slot), dan (a × b) : c tidak punya jalur salah sederhanakan yang wajar. Keempat pilihan salah = empat jalur pembulatan yang berbeda (preseden TO no. 41: satu kode lewat jalur berbeda). Revisi cek buta 1: pilihan E 3.150 (terpencil) diganti 3.000 = 600 × 100 : 20 (87 dibulatkan ke ratusan).",
+      "pembahasan": {
+        "ditanya": "Soal meminta perkiraan, bukan hasil tepat. Kalimat penentunya “paling dekat”: cukup cari pilihan yang jaraknya paling kecil dari hasil sebenarnya. Pilihan yang bersebelahan berjarak 300, jauh lebih besar daripada geseran pembulatan yang rapi.",
+        "cepat_batas": "paling lama 30 detik",
+        "cepat": "Bulatkan 647 turun menjadi 600 dan 87 naik menjadi 90, supaya geserannya saling menghapus. Hasil kali 600 × 90 = 54.000 sedikit di bawah hasil kali sebenarnya, jadi pembagi 21 juga dibulatkan turun menjadi 20. Hasilnya 54.000 : 20 = 2.700.",
+        "lain": "Lihat dulu 87 : 21. Karena 84 : 21 = 4, nilai 87 : 21 sedikit di atas 4. Hasil soal sedikit di atas 647 × 4 = 2.588, dengan tambahan 647 × 3 : 21, kira-kira 90. Perkiraannya sekitar 2.680, paling dekat ke 2.700.",
+        "cek": "Kalikan balik: 2.700 × 21 = 56.700, sedangkan 647 × 87 = 56.289. Selisihnya kurang dari 1%. Pilihan tetangga 2.400 × 21 = 50.400 sudah meleset lebih dari 10%.",
+        "gugur": {
+          "A": {
+            "uji": "600 × 90 : 30",
+            "teks": "21 dibulatkan naik menjadi 30 agar searah dengan 87 yang naik ke 90. Padahal arah pembagi mengikuti geseran hasil kali 600 × 90, yang turun. Pembagi yang naik membuat hasilnya terlalu kecil."
+          },
+          "B": {
+            "uji": "700 × 90 : 30",
+            "teks": "Ketiga bilangan dibulatkan ke atas. Pembulatan 647 ke 700 saja sudah menggeser hasil sekitar 8%, dan 21 ke 30 menggesernya jauh lebih besar lagi."
+          },
+          "C": {
+            "uji": "600 × 80 : 20",
+            "teks": "647 dan 87 sama-sama dibulatkan turun. Dua geseran ke bawah menumpuk, jadi hasilnya jatuh sekitar 10% di bawah nilai sebenarnya."
+          },
+          "E": {
+            "uji": "600 × 100 : 20",
+            "teks": "87 dibulatkan ke ratusan menjadi 100, padahal 87 jauh lebih dekat ke 90. Pembulatan sekasar itu menggeser faktor 87 kira-kira 15% ke atas, dan hasilnya ikut naik."
+          }
+        },
+        "kunci": "Pembulatan berlawanan arah dengan pembagi searah memberi 2.700, dan nilai sebenarnya, sekitar 2.680, paling dekat ke pilihan ini.",
+        "analogi": "Seperti menaksir belanja di pasar: harga yang dibulatkan ke atas dan banyak barang yang dibulatkan ke bawah saling menutupi, sehingga taksiran totalnya tetap dekat dengan struk.",
+        "waspada": "Membulatkan setiap bilangan tanpa memeriksa arahnya. Kebiasaan itu yang melahirkan pilihan B, C, dan E. Periksa selalu: perkalian dibulatkan berlawanan arah, pembagi searah dengan geseran hasil kali."
+      },
+      "bukti": {
+        "metode": "nilai tepat 56.289 : 21 = 2.680,43 terdekat ke D; tiap jalur pembulatan menunjuk pilihannya",
+        "tepat": "2680.43",
+        "bentuk": {
+          "jarak": 300,
+          "median": 300,
+          "terpencil": 1,
+          "letak": "D"
+        }
+      },
+      "revisi1": {
+        "alasan": "pilihan E 3.150 (terpencil) diganti 3.000 = 600 × 100 : 20 (87 dibulatkan ke ratusan).",
+        "lama": {
+          "kunci": "D",
+          "opsi": {
+            "A": "1.800",
+            "B": "2.100",
+            "C": "2.400",
+            "D": "2.700",
+            "E": "3.150"
+          }
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B06-C02",
+      "bab": 6,
+      "peran": "contoh",
+      "jenis": "HIT ekspresi",
+      "bentuk": "campuran persen, desimal, pecahan campuran",
+      "target_detik": 60,
+      "soal": {
+        "tanya": "Hasil dari 125% × 96 − 36 : 1,5 + 3{2/5} × 10 adalah …"
+      },
+      "kalimat_penentu": "Hasil dari",
+      "opsi": {
+        "A": "62",
+        "B": "90",
+        "C": "100",
+        "D": "118",
+        "E": "130"
+      },
+      "kunci": "E",
+      "kode": {
+        "A": "J-URUTAN",
+        "B": "J-URUTAN",
+        "C": "J-SEDERHANA",
+        "D": "J-SEDERHANA",
+        "E": "kunci"
+      },
+      "nama": {
+        "A": "Menjumlahkan sebelum mengurangkan",
+        "B": "Mengurangkan sebelum membagi",
+        "C": "Membagi dengan desimal dikira mengalikan",
+        "D": "Pecahan campuran diubah dengan keliru"
+      },
+      "alasan_kunci": "120 − 24 + 34 = 130; sisa bagi 9 kunci (4) tunggal di antara pilihan.",
+      "kerangka": "HIT ekspresi · persen ramah × bilangan − bilangan : desimal + pecahan campuran × 10 · dua tingkat operasi · jalur benar bulat",
+      "to_terdekat": "TO P1 tanpa hitung campuran; bukan 0,375 × 1.600 dan bukan bentuk tabel urutan operasi (narasi)",
+      "catatan_reviu": "Slot memasang J-BASIS dan J-NOL; pada bentuk murni tanpa cerita, jalur salah dasar persen tidak wajar, dan salah koma menghasilkan pilihan sepuluh kali (pencilan). Diganti jalur kedua J-URUTAN dan J-SEDERHANA. Kunci = pilihan terbesar; jarak ke tetangga 12 ≤ median 15.",
+      "pembahasan": {
+        "ditanya": "Soal meminta nilai tepat sebuah bentuk campuran. Kalimat penentunya “Hasil dari”. Kerjakan kali dan bagi lebih dulu, lalu tambah dan kurang dari kiri ke kanan.",
+        "cepat": "Ubah tiap bagian ke pecahan ramah. 125% × 96 = {5/4} × 96 = 120. 36 : 1,5 = 36 × {2/3} = 24. 3{2/5} × 10 = 30 + 4 = 34. Lalu dari kiri ke kanan: 120 − 24 + 34 = 130.",
+        "lain": "Hitung tanpa pecahan. 125% × 96 = 96 + 25% × 96 = 96 + 24 = 120. 36 : 1,5 = 360 : 15 = 24. 3,4 × 10 = 34. Hasilnya tetap 120 − 24 + 34 = 130.",
+        "cek": "Sisa pembagian oleh 9: 120 bersisa 3, 24 bersisa 6, dan 34 bersisa 7. 3 − 6 + 7 = 4, dan 130 juga bersisa 4 (1 + 3 + 0 = 4). Cocok. Pilihan lain bersisa 8, 0, 1, dan 1, jadi gugur semua.",
+        "gugur": {
+          "A": {
+            "uji": "120 − (24 + 34)",
+            "teks": "24 dan 34 dijumlahkan dulu, baru dikurangkan dari 120. Tanda kurang hanya mengenai 24; tambah dan kurang dikerjakan dari kiri ke kanan."
+          },
+          "B": {
+            "uji": "(120 − 36) : 1,5",
+            "teks": "36 dikurangkan dari 120 sebelum dibagi 1,5. Pembagian mengikat 36 dengan 1,5 lebih dulu: 36 : 1,5 = 24."
+          },
+          "C": {
+            "uji": "36 × 1,5 = 54",
+            "teks": "Membagi dengan 1,5 dikira sama dengan mengalikan 1,5, sehingga hasilnya 120 − 54 + 34 = 100. Membagi dengan {3/2} sama dengan mengalikan {2/3}."
+          },
+          "D": {
+            "uji": "3{2/5} ditulis {11/5}",
+            "teks": "3{2/5} ditulis (3 × 2 + 5) : 5 = {11/5}. Bilangan bulat dikalikan penyebut lebih dulu: (3 × 5 + 2) : 5 = {17/5}, sehingga 3{2/5} × 10 = 34, bukan 22."
+          }
+        },
+        "kunci": "Dengan urutan yang benar, 120 − 24 + 34 = 130, dan sisa pembagiannya oleh 9 cocok.",
+        "analogi": "Seperti mencatat uang di dompet: isinya 120 ribu, kamu membayar 24 ribu, lalu menerima 34 ribu. Membayar dan menerima dicatat berurutan; menjumlahkan 24 dan 34 dulu sama saja dengan menganggap uang yang kamu terima ikut keluar.",
+        "waspada": "Menghitung 120 − 36 lebih dulu karena letaknya paling kiri, sehingga muncul 90. Garis bawahi dulu tiga bagian kali dan bagi, hitung masing-masing, baru gabungkan."
+      },
+      "bukti": {
+        "metode": "pecahan tepat; tiap jalur salah dievaluasi; sisa bagi 9 kunci tunggal",
+        "bentuk": {
+          "jarak": 12,
+          "median": 15,
+          "terpencil": 1.87,
+          "letak": "E"
+        },
+        "sisa9": {
+          "A": 8,
+          "B": 0,
+          "C": 1,
+          "D": 1,
+          "E": 4
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B06-C03",
+      "bab": 6,
+      "peran": "contoh",
+      "jenis": "HIT tukarPersen + distributif",
+      "bentuk": "a% × b + c × (100 − 2)",
+      "target_detik": 45,
+      "soal": {
+        "tanya": "Hasil dari 36% × 175 + 63 × 98 adalah …"
+      },
+      "kalimat_penentu": "Hasil dari",
+      "opsi": {
+        "A": "6.237",
+        "B": "6.285",
+        "C": "6.300",
+        "D": "6.363",
+        "E": "6.489"
+      },
+      "kunci": "A",
+      "kode": {
+        "A": "kunci",
+        "B": "J-BASIS",
+        "C": "J-LANGKAH",
+        "D": "J-TANDA",
+        "E": "J-TANDA"
+      },
+      "nama": {
+        "B": "Persen dihitung dari bilangan yang salah",
+        "C": "Berhenti satu langkah sebelum selesai",
+        "D": "Salah tanda",
+        "E": "Salah tanda"
+      },
+      "alasan_kunci": "36% × 175 = 175% × 36 = 63; 63 + 63 × 98 = 63 × 99 = 6.237.",
+      "kerangka": "HIT tukar persen (a% dari b = b% dari a) menghasilkan faktor yang sama dengan suku kedua · distributif k × (10ⁿ − 1) · kunci terkecil · dua jalur tanda terbalik",
+      "to_terdekat": "tidak ada di TO P1; bukan 18% dari 50, 47 × 99, 36 × 101 (narasi); bukan komplemen desimal Contoh 1",
+      "catatan_reviu": "Slot memasang J-PENGALIH; diganti J-LANGKAH (63 × 100 tanpa dikurangi 63), karena bentuk tanpa cerita tidak memuat data pengalih. Sisa bagi 9 tidak memisahkan 6.300 dan 6.363 dari kunci (selisih kelipatan 9); pembahasan menyatakannya terang dan memakai cara lain sebagai pemisah. Revisi cek buta 1: pilihan E 6.804 (salah koma, terpencil) diganti 6.489 = 6.300 + 126 + 63 (tanda terbalik di 63 × (100 − 2)).",
+      "pembahasan": {
+        "ditanya": "Soal meminta nilai tepat. Kalimat penentunya “Hasil dari”. Kedua bagian sulit bila dihitung apa adanya, tetapi keduanya menyimpan bilangan yang sama.",
+        "cepat_batas": "paling lama 30 detik",
+        "cepat": "Tukar persennya: 36% × 175 sama dengan 175% × 36 = 36 + 27 = 63. Bentuk soal menjadi 63 + 63 × 98 = 63 × 99. Lalu 63 × 99 = 6.300 − 63 = 6.237.",
+        "lain": "Hitung terpisah. 36% × 175 = 63, dan 63 × 98 = 63 × 100 − 63 × 2 = 6.300 − 126 = 6.174. Jumlahnya 63 + 6.174 = 6.237.",
+        "cek": "Sisa pembagian oleh 9: 63 bersisa 0, jadi 63 × 99 juga bersisa 0, dan 6.237 bersisa 0 (6 + 2 + 3 + 7 = 18). Uji ini tidak menggugurkan 6.300, 6.363, dan 6.489, yang juga bersisa 0; ketiganya gugur oleh cara lain di atas, yang memberi tepat 6.237.",
+        "gugur": {
+          "B": {
+            "uji": "36 + 75 + 6.174",
+            "teks": "36% hanya dikenakan pada 100 dari 175, lalu sisanya, 75, ditambahkan utuh. Persen harus dikenakan pada seluruh 175: 36% × 175 = 63."
+          },
+          "C": {
+            "uji": "63 × 100",
+            "teks": "63 + 63 × 98 dibulatkan menjadi 63 × 100 = 6.300, lalu lupa dikurangi. Banyaknya 63 hanya 1 + 98 = 99, jadi masih harus dikurangi 63."
+          },
+          "D": {
+            "uji": "6.300 + 63",
+            "teks": "63 × 99 ditulis 63 × 100 + 63. Karena 99 = 100 − 1, kelebihan 63 harus dikurangkan, bukan ditambahkan."
+          },
+          "E": {
+            "uji": "6.300 + 126 + 63",
+            "teks": "63 × 98 ditulis 63 × 100 + 63 × 2 = 6.426, padahal 98 = 100 − 2, jadi 63 × 2 harus dikurangkan. Ditambah 63, hasilnya 6.426 + 63 = 6.489."
+          }
+        },
+        "kunci": "Tukar persen memberi 63, lalu 63 × 99 = 6.237.",
+        "analogi": "Seperti membeli 98 kotak susu seharga 63 ribu per kotak, lalu menambah satu kotak lagi: kamu membayar 99 kotak, yaitu 100 kotak dikurangi satu kotak.",
+        "waspada": "Langsung mengalikan 63 × 98 bersusun lalu menambahkan 63, tanpa melihat bahwa keduanya bisa digabung. Hasilnya tetap benar, tetapi waktunya habis dua kali lipat. Begitu melihat bilangan yang sama di dua bagian, gabungkan dulu."
+      },
+      "bukti": {
+        "metode": "pecahan tepat: 36% × 175 = 63, 63 + 63 × 98 = 63 × 99",
+        "bentuk": {
+          "jarak": 48,
+          "median": 55.5,
+          "terpencil": 2.27,
+          "letak": "A"
+        }
+      },
+      "revisi1": {
+        "alasan": "pilihan E 6.804 (salah koma, terpencil) diganti 6.489 = 6.300 + 126 + 63 (tanda terbalik di 63 × (100 − 2)).",
+        "lama": {
+          "kunci": "A",
+          "opsi": {
+            "A": "6.237",
+            "B": "6.285",
+            "C": "6.300",
+            "D": "6.363",
+            "E": "6.804"
+          }
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B06-C04",
+      "bab": 6,
+      "peran": "contoh",
+      "jenis": "PKU dua bilangan",
+      "bentuk": "hasil kali dekat 10.000",
+      "target_detik": 45,
+      "soal": {
+        "pengantar": "Bandingkan dua besaran berikut: P = 103 × 97 dan Q = 101 × 99.",
+        "tanya": "Hubungan yang tepat antara P dan Q adalah …"
+      },
+      "kalimat_penentu": "Hubungan yang tepat",
+      "opsi": {
+        "A": "P > Q",
+        "B": "P < Q",
+        "C": "P = Q",
+        "D": "Hubungan P dan Q tidak dapat ditentukan"
+      },
+      "kunci": "B",
+      "kode": {
+        "A": "J-BULAT",
+        "B": "kunci",
+        "C": "J-BULAT",
+        "D": "J-TENTU"
+      },
+      "nama": {
+        "A": "Pembulatan sepihak membalik hubungan",
+        "C": "Pembulatan menyamakan dua bilangan yang berbeda",
+        "D": "Hubungan yang pasti dikira tidak dapat ditentukan"
+      },
+      "alasan_kunci": "P = 10.000 − 9 = 9.991, Q = 10.000 − 1 = 9.999, jadi P < Q.",
+      "kerangka": "PKU dua hasil kali bersuku tengah 100 · selisih relatif 0,08% · pembulatan sepihak membalik, pembulatan penuh menyamakan · empat pilihan tetap",
+      "to_terdekat": "tidak ada di TO P1; bukan 7/8 lawan 8/9 dan bukan 49 × 51 lawan 50 × 50 (narasi)",
+      "catatan_reviu": "Kode = rencana slot (J-BULAT ×2, J-TENTU). Kunci B.",
+      "pembahasan": {
+        "ditanya": "Soal meminta hubungan pasti antara dua hasil kali yang sama-sama dekat dengan 10.000. Kalimat penentunya “Hubungan yang tepat”: yang dicari tanda lebih besar, lebih kecil, atau sama, bukan nilainya. Cari bentuk yang membuat selisihnya terlihat.",
+        "cepat": "Tulis setiap faktor sebagai 100 ditambah atau dikurangi sesuatu. 103 × 97 = (100 + 3) × (100 − 3) = 10.000 − 9, sedangkan 101 × 99 = (100 + 1) × (100 − 1) = 10.000 − 1. P dikurangi 9, Q hanya dikurangi 1, jadi P lebih kecil.",
+        "lain": "Hitung tepat: 103 × 97 = 9.991 dan 101 × 99 = 9.999. Q lebih besar 9.999 − 9.991 = 8.",
+        "cek": "Dua bilangan yang jumlahnya sama, di sini 200, memberi hasil kali makin besar bila keduanya makin berdekatan. 101 dan 99 lebih berdekatan daripada 103 dan 97, jadi Q yang lebih besar. Cocok dengan hitungan.",
+        "gugur": {
+          "A": {
+            "uji": "103 × 100 dan 101 × 100",
+            "teks": "Hanya 97 dan 99 yang dibulatkan ke 100, sedangkan 103 dan 101 dibiarkan. P terlihat 10.300 dan Q 10.100, sehingga hubungannya terbalik."
+          },
+          "C": {
+            "uji": "100 × 100 dan 100 × 100",
+            "teks": "Keempat bilangan dibulatkan ke 100, sehingga P dan Q sama-sama 10.000. Selisih 8 hilang oleh pembulatan."
+          },
+          "D": {
+            "uji": "dikira terlalu dekat",
+            "teks": "P dan Q memang berdekatan, tetapi keduanya bilangan tetap. Bilangan tetap selalu punya hubungan pasti; jawaban tidak dapat ditentukan hanya mungkin bila soal memuat peubah atau datanya kurang."
+          }
+        },
+        "kunci": "P sama dengan 10.000 dikurangi 9 dan Q sama dengan 10.000 dikurangi 1, sehingga P lebih kecil daripada Q.",
+        "analogi": "Seperti dua kebun berpagar sama panjang: kebun yang bentuknya paling mendekati persegi selalu paling luas. Makin jauh panjang dan lebarnya berbeda, makin kecil luasnya.",
+        "waspada": "Membulatkan semua bilangan ke 100 karena terlihat dekat, lalu memilih P = Q. Pada soal perbandingan, pembulatan justru menghapus selisih yang sedang ditanyakan."
+      },
+      "bukti": {
+        "metode": "P = 9.991, Q = 9.999 dihitung tepat",
+        "P": 9991,
+        "Q": 9999
+      }
+    },
+    {
+      "id": "HB-TIU-B06-L01",
+      "bab": 6,
+      "peran": "latihan",
+      "jenis": "HIT ekspresi bertanda",
+      "bentuk": "bagi negatif, kali, kurung berisi pengurangan bilangan negatif",
+      "target_detik": 45,
+      "soal": {
+        "tanya": "Hasil dari −54 : (−9) − 7 × (2 − (−3)) adalah …"
+      },
+      "kalimat_penentu": "Hasil dari",
+      "opsi": {
+        "A": "−41",
+        "B": "−29",
+        "C": "−5",
+        "D": "1",
+        "E": "13"
+      },
+      "kunci": "B",
+      "kode": {
+        "A": "J-TANDA",
+        "B": "kunci",
+        "C": "J-URUTAN",
+        "D": "J-LANGKAH",
+        "E": "J-TANDA"
+      },
+      "nama": {
+        "A": "Salah tanda",
+        "C": "Menjumlahkan sebelum mengalikan atau membagi",
+        "D": "Berhenti satu langkah sebelum selesai",
+        "E": "Salah tanda"
+      },
+      "alasan_kunci": "6 − 7 × 5 = 6 − 35 = −29.",
+      "kerangka": "HIT bertanda · a : (−b) − c × (d − (−e)) · empat jalur: tanda bagi, tanda kurung, urutan, langkah terlewat",
+      "to_terdekat": "tidak ada di TO P1; bukan 7 − (−5) (narasi)",
+      "catatan_reviu": "Kode = rencana slot (J-URUTAN, J-TANDA ×2, J-LANGKAH).",
+      "bukti": {
+        "metode": "pecahan tepat; tiap jalur dievaluasi",
+        "bentuk": {
+          "jarak": 12,
+          "median": 12,
+          "terpencil": 1,
+          "letak": "B"
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta hasil satu ungkapan bertanda, “−54 : (−9) − 7 × (2 − (−3))”. Ada pembagian, perkalian, pengurangan, dan kurung bertingkat, jadi urutan kerjanya menentukan.",
+        "cepat": "Kerjakan kurung dulu: 2 − (−3) = 5. Lalu bagi dan kali: −54 : (−9) = 6 dan 7 × 5 = 35. Terakhir kurangkan: 6 − 35 = −29.",
+        "lain": "Ubah pengurangan menjadi penjumlahan lawannya: 6 + (−35) = −29. Atau hitung besarnya dulu, 35 − 6 = 29, lalu beri tanda minus karena bilangan yang dikurangkan lebih besar.",
+        "cek": "Perkirakan tandanya: hasil bagi dua bilangan negatif positif dan kecil, sedangkan 7 × 5 besar dan dikurangkan. Hasil akhirnya harus negatif dan lebih dekat ke −35 daripada ke 0.",
+        "gugur": {
+          "A": {
+            "uji": "tanda hasil bagi",
+            "teks": "Hasil bagi dua bilangan negatif dikira negatif, sehingga −6 − 35 = −41. Negatif dibagi negatif hasilnya positif."
+          },
+          "C": {
+            "uji": "kurang dulu",
+            "teks": "Pengurangan dikerjakan sebelum perkalian: (6 − 7) × 5 = −5. Perkalian harus didahulukan."
+          },
+          "D": {
+            "uji": "× 7 terlewat",
+            "teks": "Perkalian dengan 7 terlewat, sehingga yang dikurangkan hanya isi kurung: 6 − 5 = 1."
+          },
+          "E": {
+            "uji": "−(−3) dibaca −3",
+            "teks": "Kurung dalam dibaca 2 − 3 = −1, sehingga 6 − 7 × (−1) = 13. Mengurangkan bilangan negatif sama dengan menambahkan: 2 − (−3) = 2 + 3."
+          }
+        },
+        "kunci": "Kurung bernilai 5 dan hasil bagi bernilai 6, sehingga 6 − 7 × 5 = −29.",
+        "analogi": "Seperti mencoret utang di buku catatan: mencoret utang tiga ribu sama dengan menambah uangmu tiga ribu. Itu sebabnya mengurangkan −3 sama dengan menambahkan 3.",
+        "waspada": "Melihat dua tanda minus di −54 : (−9) lalu tergesa menulis −6. Tulis tanda hasil setiap langkah sebelum menghitung angkanya."
+      }
+    },
+    {
+      "id": "HB-TIU-B06-L02",
+      "bab": 6,
+      "peran": "latihan",
+      "jenis": "HIT perkiraan",
+      "bentuk": "bilangan empat angka : pecahan biasa",
+      "target_detik": 45,
+      "soal": {
+        "tanya": "Bilangan berikut yang paling dekat dengan hasil 1.987 : {5/8} adalah …"
+      },
+      "kalimat_penentu": "paling dekat",
+      "opsi": {
+        "A": "320",
+        "B": "400",
+        "C": "1.250",
+        "D": "3.200",
+        "E": "4.000"
+      },
+      "kunci": "D",
+      "kode": {
+        "A": "J-NOL",
+        "B": "J-LANGKAH",
+        "C": "J-SEDERHANA",
+        "D": "kunci",
+        "E": "J-BULAT"
+      },
+      "nama": {
+        "A": "Kelebihan satu nol atau salah letak koma",
+        "B": "Berhenti satu langkah sebelum selesai",
+        "C": "Salah menyederhanakan pecahan",
+        "E": "Membulatkan semua bilangan ke arah yang sama"
+      },
+      "alasan_kunci": "2.000 × 8 : 5 = 3.200; nilai tepat 3.179,2.",
+      "kerangka": "HIT perkiraan · N empat angka dekat ribuan : p/q · jalur: dikali p/q, lupa kali q, kurang satu nol, p/q dibulatkan ½",
+      "to_terdekat": "TO P1 no. 37 (desimal + akar); Bab 2 L3 bagi desimal",
+      "catatan_reviu": "Kode = rencana slot. Pilihan A (kurang satu nol) dirujuk Latihan A Bab 19 (J-NOL).",
+      "bukti": {
+        "metode": "nilai tepat 3.179,2 terdekat ke D",
+        "tepat": 3179.2,
+        "bentuk": {
+          "jarak": 800,
+          "median": 825,
+          "terpencil": 1.03,
+          "letak": "D"
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta bilangan yang “paling dekat” dengan hasil 1.987 : {5/8}, jadi cukup perkiraan yang rapi, bukan hasil tepat.",
+        "cepat": "Bulatkan 1.987 menjadi 2.000. Membagi dengan {5/8} sama dengan mengalikan dengan {8/5}: 2.000 × 8 : 5 = 3.200.",
+        "lain": "Hitung tepat: 1.987 × 8 = 15.896, lalu 15.896 : 5 = 3.179,2. Bilangan terdekat di pilihan tetap 3.200.",
+        "cek": "Uji ukuran: {5/8} kurang dari 1, jadi hasil baginya harus lebih besar dari 1.987. Pilihan 320, 400, dan 1.250 langsung gugur.",
+        "gugur": {
+          "A": {
+            "uji": "kurang satu nol",
+            "teks": "200 × 8 : 5 = 320: angka 2.000 tertulis 200, sehingga hasilnya sepuluh kali terlalu kecil."
+          },
+          "B": {
+            "uji": "lupa × 8",
+            "teks": "2.000 : 5 = 400 baru separuh jalan; hasil itu masih harus dikalikan 8."
+          },
+          "C": {
+            "uji": "dikali, bukan dibagi",
+            "teks": "2.000 × 5 : 8 = 1.250 berarti mengalikan dengan {5/8}, bukan membagi. Membagi dengan pecahan berarti mengalikan dengan kebalikannya."
+          },
+          "E": {
+            "uji": "{5/8} jadi {1/2}",
+            "teks": "{5/8} dibulatkan ke {1/2}, sehingga 2.000 : {1/2} = 4.000. Pembulatan itu dan 1.987 yang dibulatkan ke atas sama-sama memperbesar hasil, jadi hasilnya melonjak jauh."
+          }
+        },
+        "kunci": "Membagi dengan {5/8} sama dengan mengalikan dengan {8/5}, dan 2.000 × 8 : 5 = 3.200 adalah pilihan terdekat dengan nilai tepat 3.179,2.",
+        "analogi": "Seperti memotong pita menjadi potongan yang lebih pendek dari 1 meter. Banyak potongan yang kamu dapat selalu lebih besar daripada panjang pitanya dalam meter.",
+        "waspada": "Mengalikan dengan {5/8} karena lupa membalik pecahan. Ingat ukurannya: membagi dengan bilangan di bawah 1 selalu memperbesar hasil."
+      }
+    },
+    {
+      "id": "HB-TIU-B06-L03",
+      "bab": 6,
+      "peran": "latihan",
+      "jenis": "PKU berpeubah",
+      "bentuk": "P dan Q rumus dalam x, rentang terbuka",
+      "target_detik": 75,
+      "soal": {
+        "pengantar": "<i>x</i> adalah bilangan bulat dengan 6 &lt; <i>x</i> &lt; 11. Diketahui P = <i>x</i><sup>2</sup> + 3 dan Q = 8<i>x</i> − 9.",
+        "tanya": "Hubungan yang tepat antara P dan Q adalah …"
+      },
+      "kalimat_penentu": "bilangan bulat dengan 6 &lt; <i>x</i> &lt; 11",
+      "opsi": {
+        "A": "P > Q",
+        "B": "P < Q",
+        "C": "P = Q",
+        "D": "Hubungan P dan Q tidak dapat ditentukan"
+      },
+      "kunci": "A",
+      "kode": {
+        "A": "kunci",
+        "B": "J-TANDA",
+        "C": "J-BATAS",
+        "D": "J-TENTU"
+      },
+      "nama": {
+        "B": "Salah tanda",
+        "C": "Batas rentang ikut dihitung",
+        "D": "Hubungan yang pasti dikira tidak dapat ditentukan"
+      },
+      "alasan_kunci": "P − Q = (x − 2)(x − 6) > 0 untuk x = 7, 8, 9, 10.",
+      "kerangka": "PKU berpeubah · P − Q berakar 2 dan 6 · rentang 6 < x < 11 (terbuka) · ujung rentang memberi P = Q · tanda konstanta terbalik memberi P < Q di x = 7",
+      "to_terdekat": "tidak ada di TO P1; bukan x² lawan 3x − 2 (narasi)",
+      "catatan_reviu": "Putusan T4-13: kunci hubungan pasti untuk setiap x. Slot menulis J-MUNGKIN ×3; dipakai J-TENTU (D), J-BATAS (C, ujung x = 6), J-TANDA (B), sebab mencoba satu nilai x di rentang selalu memberi hubungan yang benar.",
+      "bukti": {
+        "metode": "semua x bulat 7–10 dihitung: P > Q di keempatnya; P − Q = (x − 2)(x − 6)",
+        "nilai": [
+          [
+            7,
+            52,
+            47
+          ],
+          [
+            8,
+            67,
+            55
+          ],
+          [
+            9,
+            84,
+            63
+          ],
+          [
+            10,
+            103,
+            71
+          ]
+        ]
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta hubungan P dan Q untuk setiap bilangan bulat “6 &lt; <i>x</i> &lt; 11”, yaitu <i>x</i> = 7, 8, 9, dan 10. Hubungan yang dipilih harus berlaku di keempat nilai itu.",
+        "cepat": "Lihat selisihnya. P − Q = <i>x</i><sup>2</sup> + 3 − 8<i>x</i> + 9, dan bilangan tetapnya 3 + 9 = 12, jadi P − Q = <i>x</i><sup>2</sup> − 8<i>x</i> + 12 = (<i>x</i> − 2)(<i>x</i> − 6). Untuk <i>x</i> di atas 6, kedua kurung bernilai positif, sehingga P − Q selalu positif dan P lebih besar.",
+        "lain": "Hitung keempat nilai. Untuk 7: 7 × 7 + 3 = 52 dan 8 × 7 − 9 = 47. Untuk 8: 8 × 8 + 3 = 67 dan 8 × 8 − 9 = 55. Untuk 9: 9 × 9 + 3 = 84 dan 8 × 9 − 9 = 63. Untuk 10: 10 × 10 + 3 = 103 dan 8 × 10 − 9 = 71. P lebih besar di keempatnya.",
+        "cek": "Uji batasnya: untuk 6, nilai yang tidak termasuk rentang, 6 × 6 + 3 = 39 dan 8 × 6 − 9 = 39, sama besar. Begitu <i>x</i> naik ke 7, P sudah lebih besar, dan selisihnya terus membesar.",
+        "gugur": {
+          "B": {
+            "uji": "−9 dibaca +9",
+            "teks": "Bila Q dibaca 8<i>x</i> + 9, untuk 7 didapat 8 × 7 + 9 = 65, lebih besar dari P. Tanda di Q adalah minus."
+          },
+          "C": {
+            "uji": "6 ikut dihitung",
+            "teks": "Nilai 6 memberi P sama dengan Q, tetapi tanda “&lt;” berarti 6 tidak termasuk. Di semua nilai yang sah, P lebih besar."
+          },
+          "D": {
+            "uji": "dikira bebas",
+            "teks": "Adanya peubah <i>x</i> tidak otomatis membuat hubungannya tak tentu. Di keempat nilai yang sah hubungannya sama, jadi hubungan itu pasti."
+          }
+        },
+        "kunci": "P − Q = (<i>x</i> − 2)(<i>x</i> − 6) positif untuk <i>x</i> = 7, 8, 9, dan 10, sehingga P &gt; Q di setiap nilai yang sah.",
+        "analogi": "Seperti dua pelari yang berdampingan tepat di garis 6. Sesudah garis itu, pelari P makin jauh di depan, jadi penonton di garis 7 sampai 10 selalu melihat P memimpin.",
+        "waspada": "Mencoba 6 karena angka itu tertulis di soal, lalu memilih P sama dengan Q. Baca tanda “&lt;” dengan teliti: batasnya tidak ikut."
+      }
+    },
+    {
+      "id": "HB-TIU-B07-P01",
+      "bab": 7,
+      "peran": "pembuka",
+      "jenis": "PAS kali",
+      "bentuk": "dua angka × dua angka, tanpa cermin",
+      "target_detik": 45,
+      "soal": {
+        "tanya": "Pasangan perkalian berikut yang kedua ruasnya bernilai sama adalah …"
+      },
+      "kalimat_penentu": "kedua ruasnya bernilai sama",
+      "opsi": {
+        "A": "28 × 54 dan 32 × 48",
+        "B": "24 × 63 dan 12 × 125",
+        "C": "27 × 56 dan 36 × 42",
+        "D": "31 × 49 dan 33 × 46",
+        "E": "18 × 84 dan 36 × 44"
+      },
+      "kunci": "C",
+      "kode": {
+        "A": "J-SISI",
+        "B": "J-SISI",
+        "C": "kunci",
+        "D": "J-SISI",
+        "E": "J-SISI"
+      },
+      "nama": {
+        "A": "Hanya memeriksa satu ruas",
+        "B": "Hanya memeriksa satu ruas",
+        "D": "Dua ruas berdekatan dikira sama",
+        "E": "Faktor dipindah dengan keliru"
+      },
+      "alasan_kunci": "27 × 56 dan 36 × 42 sama-sama 2³ × 3³ × 7 = 1.512.",
+      "kerangka": "PAS kali · kunci bersidik prima sama tanpa pola cermin · 4 pilihan ruas kiri = 1.512 (A, B, E, kunci) · satu pilihan dua ruas berselisih 1 · satu faktor dipindah keliru",
+      "to_terdekat": "TO P1 no. 42 (cermin semu sebagai pilihan salah); di sini tanpa cermin. Bukan 24 × 35, 28 × 30, 21 × 40, 26 × 32 (narasi)",
+      "catatan_reviu": "Kode = rencana slot. Ruas kiri A, B, E semuanya 1.512, jadi hanya menghitung ruas kiri tidak memisahkan apa pun. Revisi cek buta 1: pilihan E 18 × 84 dan 54 × 280 (ruas kanan sepuluh kali, terpencil) diganti 18 × 84 dan 36 × 44 (faktor dipindah keliru: 84 : 2 ditulis 44).",
+      "pembahasan": {
+        "ditanya": "Soal meminta satu pasangan yang ruas kiri dan ruas kanannya sama besar. Kalimat penentunya “kedua ruasnya bernilai sama”: kedua ruas wajib diperiksa, bukan hanya ruas kiri.",
+        "cepat": "Pecah tiap bilangan menjadi faktor kecil. 27 = 3 × 3 × 3 dan 56 = 2 × 2 × 2 × 7. 36 = 2 × 2 × 3 × 3 dan 42 = 2 × 3 × 7. Kedua ruas sama-sama memuat tiga angka 2, tiga angka 3, dan satu angka 7, jadi nilainya sama.",
+        "lain": "Pakai uji perbandingan: 27 : 36 = 3 : 4 dan 42 : 56 = 3 : 4. Perbandingannya sama, jadi 27 × 56 = 36 × 42 = 1.512.",
+        "cek": "Pastikan pilihan lain gagal di salah satu ruas: 32 × 48 = 1.536, 12 × 125 = 1.500, 31 × 49 = 1.519 sedangkan 33 × 46 = 1.518, dan 36 × 44 = 1.584.",
+        "gugur": {
+          "A": {
+            "uji": "32 × 48 = 1.536",
+            "teks": "Ruas kiri 28 × 54 = 1.512 memang sama dengan nilai kunci, tetapi ruas kanannya 1.536. Ruas kanan hanya memuat satu faktor 3, padahal ruas kiri memuat tiga."
+          },
+          "B": {
+            "uji": "12 × 125 = 1.500",
+            "teks": "Ruas kiri 24 × 63 = 1.512, tetapi ruas kanan memuat faktor 5 yang tidak ada di ruas kiri."
+          },
+          "D": {
+            "uji": "1.519 dan 1.518",
+            "teks": "Kedua ruas hanya berselisih 1. Berdekatan belum berarti sama; angka satuan 9 dan 8 sudah menunjukkan bedanya."
+          },
+          "E": {
+            "uji": "36 × 44 = 1.584",
+            "teks": "Ruas kiri 18 × 84 = 1.512. Ruas kanan tampak seperti hasil memindahkan faktor 2, tetapi 84 : 2 = 42, bukan 44. Faktor yang dipindah harus tepat: 36 × 42 = 1.512."
+          }
+        },
+        "kunci": "Faktor prima 27 × 56 dan 36 × 42 sama persis, dan keduanya bernilai 1.512.",
+        "analogi": "Seperti dua kantong kelereng: isinya sama bila banyak kelereng setiap warnanya sama, berapa pun cara kelereng itu dibagi ke dalam kantong-kantong kecil.",
+        "waspada": "Berhenti di pilihan A karena 28 × 54 ternyata 1.512, lalu ruas kanannya tidak dihitung. Empat pilihan di soal ini punya ruas kiri bernilai 1.512; yang membedakan hanya ruas kanan."
+      },
+      "bukti": {
+        "metode": "kedua ruas tiap pilihan dihitung tepat",
+        "nilai": {
+          "A": "1.512 dan 1.536",
+          "B": "1.512 dan 1.500",
+          "C": "1.512 dan 1.512",
+          "D": "1.519 dan 1.518",
+          "E": "1.512 dan 1.584"
+        }
+      },
+      "revisi1": {
+        "alasan": "pilihan E 18 × 84 dan 54 × 280 (ruas kanan sepuluh kali, terpencil) diganti 18 × 84 dan 36 × 44 (faktor dipindah keliru: 84 : 2 ditulis 44).",
+        "lama": {
+          "kunci": "C",
+          "opsi": {
+            "A": "28 × 54 dan 32 × 48",
+            "B": "24 × 63 dan 12 × 125",
+            "C": "27 × 56 dan 36 × 42",
+            "D": "31 × 49 dan 33 × 46",
+            "E": "18 × 84 dan 54 × 280"
+          }
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B07-C01",
+      "bab": 7,
+      "peran": "contoh",
+      "jenis": "PAS kali",
+      "bentuk": "kunci cermin sejati, dua cermin semu",
+      "target_detik": 45,
+      "soal": {
+        "tanya": "Di antara pasangan berikut, pasangan yang kedua ruasnya sama besar adalah …"
+      },
+      "kalimat_penentu": "sama besar",
+      "opsi": {
+        "A": "34 × 260 dan 26 × 340",
+        "B": "38 × 270 dan 28 × 370",
+        "C": "52 × 170 dan 65 × 140",
+        "D": "46 × 190 dan 16 × 490",
+        "E": "68 × 130 dan 17 × 530"
+      },
+      "kunci": "A",
+      "kode": {
+        "A": "kunci",
+        "B": "J-CERMIN",
+        "C": "J-SISI",
+        "D": "J-CERMIN",
+        "E": "J-SISI"
+      },
+      "nama": {
+        "B": "Mengira pasangan bertukar angka pasti sama",
+        "C": "Hanya memeriksa satu ruas",
+        "D": "Mengira pasangan bertukar angka pasti sama",
+        "E": "Hanya memeriksa satu ruas"
+      },
+      "alasan_kunci": "34 × 260 dan 26 × 340 = a × 10b dan b × 10a, selalu sama (8.840).",
+      "kerangka": "PAS kali · kunci cermin sejati a × 10b dan b × 10a · dua cermin semu (satu angka ditukar antarfaktor) · ruas kiri C dan E = nilai kunci",
+      "to_terdekat": "TO P1 no. 42: cermin semu sebagai pilihan salah dan kunci bukan cermin; di sini kunci justru cermin sejati. Bukan 17 × 230, 23 × 170, 27 × 130 (narasi); bukan 28 × 330 / 38 × 230 (TO)",
+      "catatan_reviu": "Kode = rencana slot. Tiga pilihan tampak bertukar angka (A, B, D), jadi kunci bukan pasangan bercermin tunggal; lintCermin lulus. Revisi cek buta 1: pilihan E 68 × 13 dan 17 × 520 (sepuluh kali, terpencil) diganti 68 × 130 dan 17 × 530 (ruas kiri = nilai kunci, ruas kanan berdekatan).",
+      "pembahasan": {
+        "ditanya": "Soal meminta pasangan yang kedua ruasnya sama besar. Kalimat penentunya “sama besar”. Tiga pilihan tampak seperti angka yang dipertukarkan; tugasmu membedakan pertukaran yang menjaga nilai dari yang tidak.",
+        "cepat": "Cari bentuk <i>a</i> × 10<i>b</i> dan <i>b</i> × 10<i>a</i>. Pada pilihan A, 34 × 260 = 34 × 26 × 10 dan 26 × 340 = 26 × 34 × 10. Kedua ruas memuat 34, 26, dan 10, jadi pasti sama.",
+        "lain": "Hitung langsung: 34 × 26 = 884, dan 884 × 10 = 8.840. Kedua ruas sama-sama 8.840.",
+        "cek": "Uji pilihan bertukar angka lainnya. Pada B, 38 × 270 = 10.260 dan 28 × 370 = 10.360. Pada D, 46 × 190 = 8.740 dan 16 × 490 = 7.840. Angka yang ditukar antarfaktor mengubah susunan faktor primanya.",
+        "gugur": {
+          "B": {
+            "uji": "10.260 dan 10.360",
+            "teks": "Angka 3 dan 2 ditukar antara 38 dan 270. Bilangannya berubah menjadi 28 dan 370, bukan sekadar berpindah tempat, jadi nilainya berbeda."
+          },
+          "C": {
+            "uji": "65 × 140 = 9.100",
+            "teks": "Ruas kiri 52 × 170 = 8.840 sama dengan nilai kunci, tetapi ruas kanannya 9.100. Ruas kanan tidak pernah dihitung."
+          },
+          "D": {
+            "uji": "8.740 dan 7.840",
+            "teks": "Angka 4 dan 1 ditukar antara 46 dan 190. Hasilnya dua bilangan baru, 16 dan 490, dan kedua ruas berselisih 8.740 − 7.840 = 900."
+          },
+          "E": {
+            "uji": "17 × 530 = 9.010",
+            "teks": "Ruas kiri 68 × 130 = 8.840 sama dengan nilai kunci. Ruas kanan tampak memindahkan faktor 4 dari 68 ke 130, tetapi 130 × 4 = 520, bukan 530: 17 × 530 = 9.010."
+          }
+        },
+        "kunci": "Pilihan A berbentuk <i>a</i> × 10<i>b</i> dan <i>b</i> × 10<i>a</i>, sehingga kedua ruasnya pasti sama, yaitu 8.840.",
+        "analogi": "Seperti 3 kotak berisi 20 buku dan 2 kotak berisi 30 buku: 3 × 20 = 2 × 30 = 60. Lain halnya bila satu angka dipindah ke kotak lain: 3 × 21 = 63, sedangkan 2 × 31 = 62.",
+        "waspada": "Mengira setiap pasangan yang angkanya tampak dipertukarkan pasti sama, lalu ragu di antara A, B, dan D. Pertukaran yang aman hanya memindahkan bilangan utuh dan nolnya; menukar satu angka di dalam bilangan selalu perlu dihitung."
+      },
+      "bukti": {
+        "metode": "kedua ruas tiap pilihan dihitung tepat; lintCermin",
+        "nilai": {
+          "A": "8.840 dan 8.840",
+          "B": "10.260 dan 10.360",
+          "C": "8.840 dan 9.100",
+          "D": "8.740 dan 7.840",
+          "E": "8.840 dan 9.010"
+        }
+      },
+      "revisi1": {
+        "alasan": "pilihan E 68 × 13 dan 17 × 520 (sepuluh kali, terpencil) diganti 68 × 130 dan 17 × 530 (ruas kiri = nilai kunci, ruas kanan berdekatan).",
+        "lama": {
+          "kunci": "A",
+          "opsi": {
+            "A": "34 × 260 dan 26 × 340",
+            "B": "38 × 270 dan 28 × 370",
+            "C": "52 × 170 dan 65 × 140",
+            "D": "46 × 190 dan 16 × 490",
+            "E": "68 × 13 dan 17 × 520"
+          }
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B07-C02",
+      "bab": 7,
+      "peran": "contoh",
+      "jenis": "PAS bagi",
+      "bentuk": "bagi murni, pembagi berfaktor 11",
+      "target_detik": 45,
+      "soal": {
+        "tanya": "Pasangan pembagian yang hasil kedua ruasnya sama adalah …"
+      },
+      "kalimat_penentu": "hasil kedua ruasnya sama",
+      "opsi": {
+        "A": "936 : 26 dan 1.110 : 30",
+        "B": "1.008 : 56 dan 252 : 7",
+        "C": "684 : 19 dan 875 : 25",
+        "D": "1.080 : 30 dan 544 : 16",
+        "E": "1.188 : 33 dan 792 : 22"
+      },
+      "kunci": "E",
+      "kode": {
+        "A": "J-SISI",
+        "B": "J-SEDERHANA",
+        "C": "J-SISI",
+        "D": "J-SISI",
+        "E": "kunci"
+      },
+      "nama": {
+        "A": "Hanya memeriksa satu ruas",
+        "B": "Mencoret faktor dengan keliru",
+        "C": "Hanya memeriksa satu ruas",
+        "D": "Hanya memeriksa satu ruas"
+      },
+      "alasan_kunci": "1.188 : 33 = 792 : 22 = 36; kali silang 1.188 × 22 = 33 × 792 = 26.136.",
+      "kerangka": "PAS bagi · tiga–empat angka : dua angka berfaktor 11 · tiga ruas kiri = 36 · satu pasangan tampak hasil coret (1.008 : 56 → 252 : 7)",
+      "to_terdekat": "TO P1 no. 41 (pilihan koma 2×); di sini koma tidak dipakai, kelebihan nol 1×. Bukan 672 : 16 dan 588 : 14 (narasi)",
+      "catatan_reviu": "Kode = rencana slot (J-SISI ×2, J-SEDERHANA coret keliru, J-NOL). Revisi cek buta 1: pilihan D 7.560 : 21 dan 1.080 : 30 (360, terpencil) diganti 1.080 : 30 dan 544 : 16 (36 dan 34).",
+      "pembahasan": {
+        "ditanya": "Soal meminta pembagian yang hasil kedua ruasnya sama. Kalimat penentunya “hasil kedua ruasnya sama”: hitung hasil bagi di kiri dan di kanan, lalu bandingkan.",
+        "cepat": "Coret faktor yang sama. Pembilang dan penyebut ruas kiri sama-sama dibagi 11: 1.188 : 33 = 108 : 3 = 36. Ruas kanan juga dibagi 11: 792 : 22 = 72 : 2 = 36. Kedua ruas 36.",
+        "lain": "Kali silang: 1.188 × 22 = 26.136 dan 33 × 792 = 26.136. Hasil kali silang sama, jadi kedua hasil bagi sama.",
+        "cek": "Hitung ruas kanan pilihan lain: 1.110 : 30 = 37, 875 : 25 = 35, 544 : 16 = 34, dan 1.008 : 56 = 18 walaupun 252 : 7 = 36. Semua gagal di salah satu ruas.",
+        "gugur": {
+          "A": {
+            "uji": "1.110 : 30 = 37",
+            "teks": "Ruas kiri 936 : 26 = 36, tetapi ruas kanan 37. Ruas kanan dilewati."
+          },
+          "B": {
+            "uji": "1.008 : 56 = 18",
+            "teks": "252 : 7 tampak seperti bentuk sederhana dari 1.008 : 56, padahal 1.008 dibagi 4 sedangkan 56 dibagi 8. Pembilang dan penyebut harus dibagi bilangan yang sama: 1.008 : 56 = 126 : 7 = 18."
+          },
+          "C": {
+            "uji": "875 : 25 = 35",
+            "teks": "Ruas kiri 684 : 19 = 36, ruas kanan 35. Selisih 1 tidak terlihat bila hanya ruas kiri yang dihitung."
+          },
+          "D": {
+            "uji": "544 : 16 = 34",
+            "teks": "Ruas kiri 1.080 : 30 = 36, tetapi ruas kanan 34. Selisihnya kecil, jadi ruas kanan harus benar-benar dihitung."
+          }
+        },
+        "kunci": "1.188 : 33 dan 792 : 22 sama-sama 36, dan kali silangnya sama.",
+        "analogi": "Seperti membagi 1.188 roti ke 33 kelas dan 792 roti ke 22 kelas: setiap kelas tetap kebagian 36 roti.",
+        "waspada": "Tergoda pilihan B karena 252 dan 7 tampak lahir dari 1.008 dan 56 setelah dicoret. Mencoret hanya sah bila pembilang dan penyebut dibagi bilangan yang sama."
+      },
+      "bukti": {
+        "metode": "kedua ruas tiap pilihan dihitung tepat; kali silang kunci",
+        "nilai": {
+          "A": "36 dan 37",
+          "B": "18 dan 36",
+          "C": "36 dan 35",
+          "D": "36 dan 34",
+          "E": "36 dan 36"
+        }
+      },
+      "revisi1": {
+        "alasan": "pilihan D 7.560 : 21 dan 1.080 : 30 (360, terpencil) diganti 1.080 : 30 dan 544 : 16 (36 dan 34).",
+        "lama": {
+          "kunci": "E",
+          "opsi": {
+            "A": "936 : 26 dan 1.110 : 30",
+            "B": "1.008 : 56 dan 252 : 7",
+            "C": "684 : 19 dan 875 : 25",
+            "D": "7.560 : 21 dan 1.080 : 30",
+            "E": "1.188 : 33 dan 792 : 22"
+          }
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B07-C03",
+      "bab": 7,
+      "peran": "contoh",
+      "jenis": "PAS campuran",
+      "bentuk": "bagi dan kali tanpa kurung, kiri ke kanan",
+      "target_detik": 60,
+      "soal": {
+        "tanya": "Pasangan yang bernilai sama pada kedua ruasnya adalah …"
+      },
+      "kalimat_penentu": "bernilai sama pada kedua ruasnya",
+      "opsi": {
+        "A": "72 : 8 × 6 dan 9 × 12 : 2",
+        "B": "81 : 9 × 6 dan 7 × 16 : 2",
+        "C": "120 : 6 × 2 dan 5 × 8 : 4",
+        "D": "64 : 8 × 7 dan 3 × 36 : 2",
+        "E": "45 : 5 × 6 dan 8 × 13 : 2"
+      },
+      "kunci": "A",
+      "kode": {
+        "A": "kunci",
+        "B": "J-SISI",
+        "C": "J-URUTAN",
+        "D": "J-SISI",
+        "E": "J-SISI"
+      },
+      "nama": {
+        "B": "Hanya memeriksa satu ruas",
+        "C": "Mengalikan sebelum membagi",
+        "D": "Hanya memeriksa satu ruas",
+        "E": "Hanya memeriksa satu ruas"
+      },
+      "alasan_kunci": "72 : 8 × 6 = 54 dan 9 × 12 : 2 = 54.",
+      "kerangka": "PAS campuran : dan × tanpa kurung · ruas kiri B, E = 54 dan ruas kanan D = 54 · satu pasangan tampak sama bila kali dikerjakan sebelum bagi",
+      "to_terdekat": "TO P1 no. 43 (berkurung + TIDAK); di sini tanpa kurung, perintah sama",
+      "catatan_reviu": "Slot memasang J-SEDERHANA; diganti J-URUTAN (120 : 6 × 2 dibaca 120 : 12), kekeliruan yang paling wajar pada bentuk tanpa kurung. Revisi cek buta 1: pilihan D 630 : 7 × 6 (540, terpencil) diganti 64 : 8 × 7 dan 3 × 36 : 2 (56 dan 54).",
+      "pembahasan": {
+        "ditanya": "Setiap ruas memuat bagi dan kali tanpa tanda kurung. Kalimat penentunya “bernilai sama pada kedua ruasnya”. Kali dan bagi setingkat, jadi keduanya dikerjakan dari kiri ke kanan.",
+        "cepat": "Ruas kiri A: 72 : 8 × 6 = 9 × 6 = 54. Ruas kanan A: 9 × 12 : 2 = 108 : 2 = 54. Kedua ruas 54.",
+        "lain": "Ubah bagi menjadi kali pecahan: 72 × {1/8} × 6 = 54 dan 9 × 12 × {1/2} = 54.",
+        "cek": "Ruas kiri B dan E juga 54, tetapi ruas kanannya 7 × 16 : 2 = 56 dan 8 × 13 : 2 = 52. Pada C, 120 : 6 × 2 = 40 sedangkan 5 × 8 : 4 = 10. Pada D, ruas kanannya 54 tetapi ruas kirinya 64 : 8 × 7 = 56.",
+        "gugur": {
+          "B": {
+            "uji": "7 × 16 : 2 = 56",
+            "teks": "Ruas kiri 81 : 9 × 6 = 54 memang sama dengan kunci, tetapi ruas kanannya 56."
+          },
+          "C": {
+            "uji": "120 : (6 × 2) = 10",
+            "teks": "6 × 2 dikerjakan lebih dulu, sehingga ruas kiri terlihat 10, sama dengan ruas kanan. Dari kiri ke kanan, 120 : 6 × 2 = 20 × 2 = 40."
+          },
+          "E": {
+            "uji": "8 × 13 : 2 = 52",
+            "teks": "Ruas kiri 45 : 5 × 6 = 54, ruas kanan 52. Satu ruas saja belum cukup."
+          },
+          "D": {
+            "uji": "64 : 8 × 7 = 56",
+            "teks": "Ruas kanan 3 × 36 : 2 = 54 memang sama dengan kunci, tetapi ruas kirinya 64 : 8 × 7 = 8 × 7 = 56."
+          }
+        },
+        "kunci": "Dari kiri ke kanan, 72 : 8 × 6 = 54 dan 9 × 12 : 2 = 54.",
+        "analogi": "Seperti resep yang ditulis berurutan: 72 butir telur dibagi ke 8 nampan, lalu isi satu nampan dikalikan 6. Urutan langkah menentukan hasil; menukar urutannya sama dengan memasak resep lain.",
+        "waspada": "Membaca 120 : 6 × 2 sebagai 120 : 12 karena kali terasa lebih kuat daripada bagi. Pada soal ini kesalahan itu membuat pilihan C tampak benar. Kali dan bagi setingkat; kerjakan dari kiri."
+      },
+      "bukti": {
+        "metode": "kedua ruas dihitung kiri ke kanan; jalur urutan keliru diuji",
+        "nilai": {
+          "A": "54 dan 54",
+          "B": "54 dan 56",
+          "C": "40 dan 10",
+          "D": "56 dan 54",
+          "E": "54 dan 52"
+        }
+      },
+      "revisi1": {
+        "alasan": "pilihan D 630 : 7 × 6 (540, terpencil) diganti 64 : 8 × 7 dan 3 × 36 : 2 (56 dan 54).",
+        "lama": {
+          "kunci": "A",
+          "opsi": {
+            "A": "72 : 8 × 6 dan 9 × 12 : 2",
+            "B": "81 : 9 × 6 dan 7 × 16 : 2",
+            "C": "120 : 6 × 2 dan 5 × 8 : 4",
+            "D": "630 : 7 × 6 dan 3 × 36 : 2",
+            "E": "45 : 5 × 6 dan 8 × 13 : 2"
+          }
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B07-L01",
+      "bab": 7,
+      "peran": "latihan",
+      "jenis": "PAS kali",
+      "bentuk": "faktor dipindah (× 2, : 2)",
+      "target_detik": 45,
+      "soal": {
+        "tanya": "Pasangan perkalian yang kedua ruasnya bernilai sama adalah …"
+      },
+      "kalimat_penentu": "kedua ruasnya bernilai sama",
+      "opsi": {
+        "A": "36 × 30 dan 12 × 60",
+        "B": "27 × 40 dan 9 × 120",
+        "C": "30 × 36 dan 90 × 18",
+        "D": "45 × 24 dan 90 × 8",
+        "E": "54 × 20 dan 27 × 10"
+      },
+      "kunci": "B",
+      "kode": {
+        "A": "J-SISI",
+        "B": "kunci",
+        "C": "J-SISI",
+        "D": "J-SISI",
+        "E": "J-SISI"
+      },
+      "nama": {
+        "A": "Hanya memeriksa satu ruas",
+        "C": "Hanya memeriksa satu ruas",
+        "D": "Hanya memeriksa satu ruas",
+        "E": "Hanya memeriksa satu ruas"
+      },
+      "alasan_kunci": "27 × 40 = (27 : 3) × (40 × 3) = 9 × 120 = 1.080.",
+      "kerangka": "PAS kali · ruas kiri kelima pilihan bernilai 1.080 · semua ruas kanan = pindah faktor yang rapi · kunci ÷3 ×3 · pengecoh ÷3 ×2, ×3 ÷2, ×2 ÷3, ÷2 ÷2",
+      "to_terdekat": "tidak ada di TO P1; bukan 18 × 45 dan 9 × 90 (narasi)",
+      "catatan_reviu": "Kode = rencana slot. Dirujuk Latihan A Bab 19 (J-SISI). Revisi cek buta 1: pilihan E 24 × 70 dan 12 × 1.400 (sepuluh kali, terpencil) diganti 24 × 70 dan 48 × 36 (faktor dipindah keliru); kunci dipindah C → B untuk sebaran. Revisi cek buta 2: pola pindah faktor kini tepat di tiga pilihan (kunci ÷3 ×3, C ×3 ÷2, D ×2 ÷3) dan meleset tipis di dua pilihan, sehingga kunci tidak terbaca dari pola; nilai kunci 1.080. Revisi cek buta 3: A dan E diganti pasangan berpola rapi tetapi salah nilai (A 36 : 3 dan 30 × 2 → 12 × 60 = 720; E kedua faktor dibagi 2 → 27 × 10 = 270); kelima ruas kanan kini berpola pindah faktor yang rapi, hanya kunci yang pengali dan pembaginya sama.",
+      "bukti": {
+        "metode": "kedua ruas tiap pilihan dihitung tepat",
+        "nilai": {
+          "A": "1.080 dan 720",
+          "B": "1.080 dan 1.080",
+          "C": "1.080 dan 1.620",
+          "D": "1.080 dan 720",
+          "E": "1.080 dan 270"
+        }
+      },
+      "revisi1": {
+        "alasan": "pilihan E 24 × 70 dan 12 × 1.400 (sepuluh kali, terpencil) diganti 24 × 70 dan 48 × 36 (faktor dipindah keliru); kunci dipindah C → B untuk sebaran.",
+        "lama": {
+          "kunci": "C",
+          "opsi": {
+            "A": "42 × 40 dan 21 × 78",
+            "B": "56 × 30 dan 28 × 62",
+            "C": "35 × 48 dan 70 × 24",
+            "D": "33 × 52 dan 66 × 25",
+            "E": "24 × 70 dan 12 × 1.400"
+          }
+        }
+      },
+      "revisi2": {
+        "alasan": "pola pindah faktor kini tepat di tiga pilihan (kunci ÷3 ×3, C ×3 ÷2, D ×2 ÷3) dan meleset tipis di dua pilihan, sehingga kunci tidak terbaca dari pola; nilai kunci 1.080.",
+        "lama": {
+          "kunci": "B",
+          "opsi": {
+            "A": "42 × 40 dan 21 × 78",
+            "B": "35 × 48 dan 70 × 24",
+            "C": "56 × 30 dan 28 × 62",
+            "D": "33 × 52 dan 66 × 25",
+            "E": "24 × 70 dan 48 × 36"
+          }
+        }
+      },
+      "revisi3": {
+        "alasan": "A dan E diganti pasangan berpola rapi tetapi salah nilai (A 36 : 3 dan 30 × 2 → 12 × 60 = 720; E kedua faktor dibagi 2 → 27 × 10 = 270); kelima ruas kanan kini berpola pindah faktor yang rapi, hanya kunci yang pengali dan pembaginya sama.",
+        "lama": {
+          "kunci": "B",
+          "opsi": {
+            "A": "36 × 30 dan 18 × 62",
+            "B": "27 × 40 dan 9 × 120",
+            "C": "30 × 36 dan 90 × 18",
+            "D": "45 × 24 dan 90 × 8",
+            "E": "54 × 20 dan 27 × 41"
+          }
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta pasangan yang “kedua ruasnya bernilai sama”. Kedua ruas harus dibandingkan, bukan hanya pola pindah faktornya.",
+        "cepat": "Kelima ruas kiri bernilai 1.080. Periksa ruas kanan dengan pindah faktor: pada B, 27 dibagi 3 menjadi 9 dan 40 dikali 3 menjadi 120. Pengali dan pembaginya sama, jadi hasil kalinya tetap: 9 × 120 = 1.080.",
+        "lain": "Hitung kedua ruas langsung: 27 × 40 = 1.080 dan 9 × 120 = 1.080.",
+        "cek": "Tulis pindah faktornya dalam satu baris: (27 : 3) × (40 × 3) = 9 × 120 = 1.080.",
+        "gugur": {
+          "A": {
+            "uji": "÷ 3 tetapi × 2",
+            "teks": "36 dibagi 3 menjadi 12, tetapi 30 hanya dikali 2 menjadi 60, sehingga 12 × 60 = 720."
+          },
+          "C": {
+            "uji": "× 3 tetapi ÷ 2",
+            "teks": "30 dikali 3 menjadi 90, tetapi 36 dibagi 2 menjadi 18, sehingga 90 × 18 = 1.620."
+          },
+          "D": {
+            "uji": "× 2 tetapi ÷ 3",
+            "teks": "45 dikali 2 menjadi 90, tetapi 24 dibagi 3 menjadi 8, sehingga 90 × 8 = 720."
+          },
+          "E": {
+            "uji": "keduanya ÷ 2",
+            "teks": "Kedua faktor sama-sama dibagi 2: 27 × 10 = 270, seperempat dari ruas kiri."
+          }
+        },
+        "kunci": "Pada B, 27 dibagi 3 dan 40 dikali 3, sehingga 9 × 120 = 1.080, sama dengan 27 × 40.",
+        "analogi": "Seperti menata 1.080 kursi: 27 baris berisi 40 kursi bisa diubah menjadi 9 baris berisi 120 kursi. Barisnya dibagi tiga, isi tiap baris dikali tiga, banyak kursinya tetap.",
+        "waspada": "Melihat pola pindah faktor yang rapi lalu langsung memilih. Kelima pilihan memakai pola rapi; pembedanya hanya apakah pengali dan pembaginya sama."
+      }
+    },
+    {
+      "id": "HB-TIU-B07-L02",
+      "bab": 7,
+      "peran": "latihan",
+      "jenis": "PAS TIDAK",
+      "bentuk": "desimal, persen, pecahan, tanpa kurung",
+      "target_detik": 75,
+      "soal": {
+        "tanya": "Pasangan berikut yang kedua ruasnya <b>TIDAK</b> bernilai sama adalah …"
+      },
+      "kalimat_penentu": "<b>TIDAK</b> bernilai sama",
+      "opsi": {
+        "A": "1,25 × 56 dan {5/8} × 120",
+        "B": "0,25 × 64 dan 8 : 0,5",
+        "C": "12,5% × 72 dan 0,36 × 25",
+        "D": "2{1/4} × 16 dan 0,72 × 50",
+        "E": "1,2 × 35 dan 14 × 3"
+      },
+      "kunci": "A",
+      "kode": {
+        "A": "kunci",
+        "B": "J-NOL",
+        "C": "J-SEDERHANA",
+        "D": "J-SEDERHANA",
+        "E": "J-PERINTAH"
+      },
+      "nama": {
+        "B": "Kelebihan satu nol atau salah letak koma",
+        "C": "Salah mengubah desimal atau persen ke pecahan",
+        "D": "Salah mengubah desimal atau persen ke pecahan",
+        "E": "Mengerjakan kebalikan perintah"
+      },
+      "alasan_kunci": "1,25 × 56 = 70, sedangkan {5/8} × 120 = 75; empat pasangan lain sama.",
+      "kerangka": "PAS perintah TIDAK · empat pasangan sama yang tampak beda oleh satu sebab (bagi desimal, persen, campuran, faktor dipindah) · kunci tampak sama ({5/8} ≈ 1,25 : 2)",
+      "to_terdekat": "TO P1 no. 43 (berkurung + TIDAK); di sini tanpa kurung. Bukan 25% × 36 dan 1,5 × 6 (narasi)",
+      "catatan_reviu": "Kode = rencana slot (J-PERINTAH, J-NOL, J-SEDERHANA ×2).",
+      "bukti": {
+        "metode": "kedua ruas tiap pilihan dihitung tepat; tepat satu pasangan tidak sama",
+        "nilai": {
+          "A": "70 dan 75",
+          "B": "16 dan 16",
+          "C": "9 dan 9",
+          "D": "36 dan 36",
+          "E": "42 dan 42"
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta pasangan yang kedua ruasnya “TIDAK bernilai sama”. Empat pilihan bernilai sama, dan yang dicari pasangan yang berbeda.",
+        "cepat": "Ubah desimal dan persen ke pecahan yang mudah. Pada A, 1,25 = {5/4}, jadi 1,25 × 56 = 70, sedangkan {5/8} × 120 = 75. Kedua ruas berbeda.",
+        "lain": "Periksa empat pasangan lain agar yakin. B: 0,25 × 64 = 16 dan 8 : 0,5 = 16. C: 12,5% × 72 = 9 dan 0,36 × 25 = 9. D: 2{1/4} × 16 = 36 dan 0,72 × 50 = 36. E: 1,2 × 35 = 42 dan 14 × 3 = 42.",
+        "cek": "Uji A dengan cara lain: {5/8} × 120 sama dengan 120 : 8 × 5 = 75, dan 1,25 × 56 sama dengan 56 : 4 × 5 = 70. Selisihnya 5, jadi keduanya pasti berbeda.",
+        "gugur": {
+          "B": {
+            "uji": "koma pada 0,5",
+            "teks": "Membagi dengan 0,5 sama dengan mengalikan dengan 2, sehingga 8 : 0,5 = 16, sama dengan 0,25 × 64. Bila komanya salah dibaca, hasilnya bisa menjadi 8 × 0,5 = 4 atau 8 : 5 = 1,6, dan pasangan ini tampak berbeda."
+          },
+          "C": {
+            "uji": "12,5% = {1/8}",
+            "teks": "12,5% sama dengan {1/8}, jadi 72 : 8 = 9, sama dengan 0,36 × 25. Bila 12,5% dikira {1/4}, ruas kiri tampak 72 : 4 = 18."
+          },
+          "D": {
+            "uji": "2{1/4} = 2,25",
+            "teks": "2{1/4} × 16 = 32 + 4 = 36, sama dengan 0,72 × 50. Bila 2{1/4} dibaca 2,4, ruas kiri tampak 2,4 × 16 = 38,4."
+          },
+          "E": {
+            "uji": "dicari yang sama",
+            "teks": "1,2 × 35 dan 14 × 3 sama-sama 42. Soal meminta pasangan yang TIDAK sama, jadi pasangan yang terbukti sama justru gugur."
+          }
+        },
+        "kunci": "1,25 × 56 = 70, sedangkan {5/8} × 120 = 75, sehingga hanya pasangan A yang kedua ruasnya berbeda.",
+        "analogi": "Seperti memeriksa lima timbangan: empat seimbang, satu miring. Begitu yang miring ketemu, empat lainnya cukup dicek sekilas.",
+        "waspada": "Berhenti di pasangan pertama yang terbukti sama lalu memilihnya, padahal soal meminta yang TIDAK sama. Lingkari kata TIDAK sebelum mulai menghitung."
+      }
+    },
+    {
+      "id": "HB-TIU-B07-L03",
+      "bab": 7,
+      "peran": "latihan",
+      "jenis": "PAS bertukar angka",
+      "bentuk": "ab × cd dan ba × dc",
+      "target_detik": 60,
+      "soal": {
+        "tanya": "Pasangan perkalian yang kedua ruasnya sama besar adalah …"
+      },
+      "kalimat_penentu": "sama besar",
+      "opsi": {
+        "A": "24 × 84 dan 42 × 48",
+        "B": "14 × 63 dan 41 × 36",
+        "C": "28 × 72 dan 82 × 27",
+        "D": "23 × 74 dan 32 × 47",
+        "E": "32 × 63 dan 23 × 36"
+      },
+      "kunci": "A",
+      "kode": {
+        "A": "kunci",
+        "B": "J-CERMIN",
+        "C": "J-SISI",
+        "D": "J-CERMIN",
+        "E": "J-SISI"
+      },
+      "nama": {
+        "B": "Mengira pasangan bertukar angka pasti sama",
+        "C": "Hanya memeriksa satu ruas",
+        "D": "Mengira pasangan bertukar angka pasti sama",
+        "E": "Hanya memeriksa satu ruas"
+      },
+      "alasan_kunci": "Untuk 24 × 84: 2 × 8 = 4 × 4, jadi ruas cerminnya sama (2.016).",
+      "kerangka": "PAS ab × cd dan ba × dc · kunci memenuhi a·c = b·d · dua ruas kiri = 2.016 tanpa a·c = b·d · dua cermin biasa",
+      "to_terdekat": "tidak ada di TO P1; bukan 12 × 42, 21 × 24, 12 × 43, 21 × 34 (narasi)",
+      "catatan_reviu": "Kode = rencana slot. Kelima pilihan berbentuk sama, jadi bentuk tidak membocorkan kunci.",
+      "bukti": {
+        "metode": "kedua ruas dihitung tepat + uji a·c = b·d",
+        "nilai": {
+          "A": "2.016 dan 2.016",
+          "B": "882 dan 1.476",
+          "C": "2.016 dan 2.214",
+          "D": "1.702 dan 1.504",
+          "E": "2.016 dan 828"
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta pasangan yang kedua ruasnya “sama besar”. Kelima pilihan berbentuk sama: ruas kanan adalah ruas kiri dengan angka puluhan dan satuan setiap bilangan ditukar.",
+        "cepat": "Untuk bentuk <i>ab</i> × <i>cd</i> dan <i>ba</i> × <i>dc</i>, kedua ruas sama bila hasil kali angka puluhan sama dengan hasil kali angka satuan. Pada A: 2 × 8 = 4 × 4 = 16. Pilihan lain tidak lolos uji ini.",
+        "lain": "Hitung kedua ruas A: 24 × 84 = 2.016 dan 42 × 48 = 2.016.",
+        "cek": "Uji pilihan B dengan cara yang sama: 1 × 6 = 6, sedangkan 4 × 3 = 12. Hasilnya tidak sama, dan hitungannya memang berbeda: 14 × 63 = 882, sedangkan 41 × 36 = 1.476.",
+        "gugur": {
+          "B": {
+            "uji": "1 × 6 dan 4 × 3",
+            "teks": "14 × 63 = 882, sedangkan 41 × 36 = 1.476. Menukar angka tidak otomatis menjaga hasil kali."
+          },
+          "C": {
+            "uji": "ruas kiri 2.016",
+            "teks": "28 × 72 = 2.016, sama dengan nilai ruas kiri A, sehingga tampak benar. Ruas kanannya 82 × 27 = 2.214."
+          },
+          "D": {
+            "uji": "2 × 7 dan 3 × 4",
+            "teks": "23 × 74 = 1.702, sedangkan 32 × 47 = 1.504. Uji puluhan dan satuannya gagal."
+          },
+          "E": {
+            "uji": "ruas kiri 2.016",
+            "teks": "32 × 63 = 2.016, tetapi ruas kanannya 23 × 36 = 828."
+          }
+        },
+        "kunci": "Pada A, 2 × 8 = 4 × 4, sehingga 24 × 84 dan 42 × 48 sama-sama bernilai 2.016.",
+        "analogi": "Seperti menukar letak dua pasang roda gigi. Mesinnya tetap berputar sama cepat hanya bila kedua pasang itu memang serasi; menukar sembarang roda gigi biasanya mengubah putarannya.",
+        "waspada": "Memilih C atau E karena ruas kirinya 2.016, sama dengan ruas kiri A. Nilai yang sama di satu ruas belum berarti apa-apa; bandingkan kedua ruas dalam pilihan yang sama."
+      }
+    },
+    {
+      "id": "HB-TIU-B08-P01",
+      "bab": 8,
+      "peran": "pembuka",
+      "jenis": "SUK linear",
+      "bentuk": "nomor meloncat tidak urut, suku jauh",
+      "target_detik": 60,
+      "soal": {
+        "pengantar": "Tabel berikut memuat beberapa suku sebuah barisan bilangan.",
+        "tanya": "Nilai suku ke-50 barisan itu adalah …"
+      },
+      "kalimat_penentu": "suku ke-50",
+      "opsi": {
+        "A": "389",
+        "B": "397",
+        "C": "400",
+        "D": "403",
+        "E": "405"
+      },
+      "kunci": "B",
+      "kode": {
+        "A": "J-NOMOR",
+        "B": "kunci",
+        "C": "J-KONST",
+        "D": "J-TANDA",
+        "E": "J-NOMOR"
+      },
+      "nama": {
+        "A": "Tertukar antara banyak langkah dan nomor suku",
+        "C": "Lupa bilangan tetap dalam rumus",
+        "D": "Salah tanda",
+        "E": "Tertukar antara banyak langkah dan nomor suku"
+      },
+      "alasan_kunci": "Kenaikan per suku 8; U₅₀ = 109 + 36 × 8 = 397 (U = 8n − 3).",
+      "kerangka": "SUK linear · 4 titik nomor 6, 3, 14, 11 (tidak urut, jarak 3, 5, 3 tak berpola) · tanya suku ke-50 (≥ 3 × nomor terbesar) · ±1 langkah, konstanta, tanda",
+      "to_terdekat": "TO P1 no. 38 (kuadrat); Bab 19 Latihan B (suku jauh, mengalah). Bukan 5n + 2 (narasi)",
+      "catatan_reviu": "Slot memasang J-NOMOR selisih mentah; tidak dipakai karena hasilnya jauh terpencil (selisih 24 per baris memberi 971), diganti J-NOMOR langkah lebih satu (E).",
+      "pembahasan": {
+        "ditanya": "Soal meminta suku ke-50, jauh di luar tabel. Kalimat penentunya “suku ke-50”. Nomor suku di tabel tidak urut dan meloncat, jadi selisih nilai harus dibagi selisih nomornya.",
+        "cepat": "Urutkan nomornya: 3, 6, 11, 14. Dari suku ke-3 ke suku ke-6, kenaikannya (45 − 21) : (6 − 3) = 8. Dari suku ke-11 ke suku ke-14, kenaikannya (109 − 85) : (14 − 11) = 8. Kenaikan per suku tetap 8. Dari suku ke-14 ke suku ke-50 ada 50 − 14 = 36 langkah, jadi nilainya 109 + 36 × 8 = 397.",
+        "lain": "Cari rumusnya. Dari suku ke-3: 8 × 3 = 24, padahal nilainya 21, jadi bilangan tetapnya 21 − 24 = −3. Rumusnya U<sub><i>n</i></sub> = 8<i>n</i> − 3, dan 8 × 50 − 3 = 397.",
+        "cek": "Uji rumus di dua titik lain: 8 × 11 − 3 = 85 dan 8 × 6 − 3 = 45. Cocok dengan tabel.",
+        "gugur": {
+          "A": {
+            "uji": "35 langkah",
+            "teks": "Dari suku ke-14 ke suku ke-50 dihitung 35 langkah, sehingga yang didapat suku ke-49: 109 + 35 × 8 = 389."
+          },
+          "C": {
+            "uji": "8 × 50",
+            "teks": "Rumus ditulis 8<i>n</i>, bilangan tetap −3 terlupa. Tabel langsung menolaknya: 8 × 3 = 24, padahal suku ke-3 bernilai 21."
+          },
+          "D": {
+            "uji": "8 × 50 + 3",
+            "teks": "Bilangan tetapnya dibaca +3. Pada suku ke-3 rumus itu memberi 8 × 3 + 3 = 27, bukan 21."
+          },
+          "E": {
+            "uji": "37 langkah",
+            "teks": "Banyak langkah dihitung 50 − 14 + 1 = 37, seolah suku ke-14 ikut dilangkahi. Hasilnya 109 + 37 × 8 = 405, yaitu suku ke-51."
+          }
+        },
+        "kunci": "Kenaikan per suku tetap 8, dan 36 langkah dari suku ke-14 memberi 109 + 36 × 8 = 397.",
+        "analogi": "Seperti tangga yang setiap anak tangganya setinggi 8 cm. Dari anak tangga ke-14 ke anak tangga ke-50 ada 36 langkah naik, bukan 37.",
+        "waspada": "Menjawab 405 karena menghitung banyak anak tangga dari 14 sampai 50, termasuk anak tangga ke-14. Yang dihitung adalah langkahnya: nomor tujuan dikurangi nomor awal."
+      },
+      "bukti": {
+        "metode": "polinom derajat 1 tepat di 4 titik; rumus lain ≤ 3 operasi diperiksa",
+        "rumus": "8n − 3",
+        "lain": [
+          "((a×(2^3))−3)"
+        ],
+        "bentuk": {
+          "jarak": 3,
+          "median": 3,
+          "terpencil": 2.67,
+          "letak": "B"
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B08-C01",
+      "bab": 8,
+      "peran": "contoh",
+      "jenis": "SUK linear",
+      "bentuk": "nilai diketahui, nomor dicari",
+      "target_detik": 60,
+      "soal": {
+        "pengantar": "Perhatikan tabel suku-suku sebuah barisan berikut.",
+        "tanya": "Pada barisan itu, bilangan 180 merupakan suku ke- …"
+      },
+      "kalimat_penentu": "suku ke-",
+      "opsi": {
+        "A": "43",
+        "B": "44",
+        "C": "45",
+        "D": "47",
+        "E": "48"
+      },
+      "kunci": "D",
+      "kode": {
+        "A": "J-TANDA",
+        "B": "J-NOMOR",
+        "C": "J-KONST",
+        "D": "kunci",
+        "E": "J-NOMOR"
+      },
+      "nama": {
+        "A": "Salah tanda",
+        "B": "Tertukar antara banyak langkah dan nomor suku",
+        "C": "Lupa bilangan tetap dalam rumus",
+        "E": "Titik awal dihitung dua kali"
+      },
+      "alasan_kunci": "Kenaikan 4; (180 − 4) : 4 = 44 langkah dari suku ke-3, jadi suku ke-47.",
+      "kerangka": "SUK linear · 4 titik nomor 3, 7, 10, 16 · tanya nomor dari nilai · banyak langkah, langkah + 1, tanda, konstanta",
+      "to_terdekat": "tidak ada di TO P1; bukan 5n + 2 dan nilai 152 (narasi)",
+      "catatan_reviu": "Kode = rencana slot (J-NOMOR ×2, J-TANDA, J-KONST).",
+      "pembahasan": {
+        "ditanya": "Nilai sukunya diketahui, nomornya yang ditanya. Kalimat penentunya “suku ke-”: jawabannya nomor suku, bukan banyak langkah.",
+        "cepat": "Kenaikan per suku: (20 − 4) : (7 − 3) = 4. Dari nilai 4 ke nilai 180 ada (180 − 4) : 4 = 44 langkah. Nomornya 3 + 44 = 47.",
+        "lain": "Rumusnya 4<i>n</i> − 8, karena 4 × 3 − 8 = 4. Agar nilainya 180, 4<i>n</i> harus 180 + 8 = 188, jadi <i>n</i> = 188 : 4 = 47.",
+        "cek": "4 × 47 − 8 = 180. Cocok.",
+        "gugur": {
+          "A": {
+            "uji": "(180 − 8) : 4",
+            "teks": "Bilangan tetap −8 dikurangkan lagi, padahal harus ditambahkan untuk membalik rumus: (180 − 8) : 4 = 43. Ujinya 4 × 43 − 8 = 164, bukan 180."
+          },
+          "B": {
+            "uji": "44 langkah",
+            "teks": "44 adalah banyak langkah dari suku ke-3. Nomor sukunya 3 + 44 = 47."
+          },
+          "C": {
+            "uji": "180 : 4",
+            "teks": "Rumus dikira 4<i>n</i> tanpa −8: 180 : 4 = 45. Padahal suku ke-3 bernilai 4, bukan 4 × 3 = 12."
+          },
+          "E": {
+            "uji": "16 + 31 + 1",
+            "teks": "Dari suku ke-16 ada (180 − 56) : 4 = 31 langkah, lalu suku ke-16 dihitung sekali lagi: 16 + 31 + 1 = 48. Nomor tujuannya cukup 16 + 31 = 47."
+          }
+        },
+        "kunci": "Dari suku ke-3 dibutuhkan 44 langkah berkenaikan 4, jadi 180 adalah suku ke-47.",
+        "analogi": "Seperti naik lift: dari lantai 3 naik 44 lantai, kamu tiba di lantai 47, bukan lantai 44.",
+        "waspada": "Menjawab 44 karena hasil bagi (180 − 4) : 4 langsung dianggap jawaban. Hasil bagi itu banyak langkah; tambahkan nomor titik awalnya."
+      },
+      "bukti": {
+        "metode": "barisan linear; nomor dari nilai dihitung tepat",
+        "rumus": "4n − 8",
+        "lain": [
+          "(2×(2×(a−2)))"
+        ],
+        "bentuk": {
+          "jarak": 1,
+          "median": 1,
+          "terpencil": 1,
+          "letak": "D"
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B08-C02",
+      "bab": 8,
+      "peran": "contoh",
+      "jenis": "SUK kuadrat",
+      "bentuk": "koefisien ½ (bilangan segitiga + 4), empat titik meloncat",
+      "target_detik": 75,
+      "soal": {
+        "pengantar": "Tabel berikut memuat empat suku sebuah barisan.",
+        "tanya": "Nilai suku ke-30 barisan itu adalah …"
+      },
+      "kalimat_penentu": "suku ke-30",
+      "opsi": {
+        "A": "133",
+        "B": "217",
+        "C": "439",
+        "D": "465",
+        "E": "469"
+      },
+      "kunci": "E",
+      "kode": {
+        "A": "J-RATA",
+        "B": "J-RATA",
+        "C": "J-NOMOR",
+        "D": "J-KONST",
+        "E": "kunci"
+      },
+      "nama": {
+        "A": "Menganggap selisihnya selalu sama",
+        "B": "Menganggap selisihnya selalu sama",
+        "C": "Tertukar antara banyak langkah dan nomor suku",
+        "D": "Lupa bilangan tetap dalam rumus"
+      },
+      "alasan_kunci": "Nilai = n(n + 1) : 2 + 4; U₃₀ = 465 + 4 = 469.",
+      "kerangka": "SUK kuadrat koefisien ½ · selisih tingkat dua 1 · 4 titik nomor 2, 5, 6, 9 · suku ke-30 · linear dari pasangan awal/akhir, nomor −1, konstanta",
+      "to_terdekat": "TO P1 no. 38: koefisien bulat, 5 titik, suku ke-30; di sini koefisien ½, 4 titik. Bukan n² + n (narasi)",
+      "catatan_reviu": "Slot: J-RATA, J-KONST, J-NOMOR ×2; dipakai J-RATA ×2 + J-NOMOR + J-KONST agar kunci tidak terapit (kunci E, jarak 4 ≤ median 55).",
+      "pembahasan": {
+        "ditanya": "Soal meminta suku ke-30 dari empat titik bernomor meloncat. Kalimat penentunya “suku ke-30”. Periksa dulu apakah kenaikan per sukunya tetap.",
+        "cepat": "Kenaikan per suku: (19 − 7) : 3 = 4, (25 − 19) : 1 = 6, dan (49 − 25) : 3 = 8. Kenaikannya bertambah, jadi polanya bukan linear; pada nomor berurutan kenaikannya naik 1 setiap suku, ciri bilangan segitiga. Kurangi bilangan segitiga dari setiap nilai: 7 − 3 = 4, 19 − 15 = 4, 25 − 21 = 4, dan 49 − 45 = 4. Sisanya tetap 4, jadi nilai suku ke-30 adalah 30 × 31 : 2 + 4 = 469.",
+        "lain": "Lanjutkan dari suku ke-9 yang bernilai 49. Kenaikan ke suku ke-10 adalah 10, ke suku ke-11 adalah 11, dan seterusnya sampai 30. Ada 21 kenaikan dengan rata-rata 20, jadi jumlahnya 21 × 20 = 420, dan nilai suku ke-30 adalah 49 + 420 = 469.",
+        "cek": "Uji rumus di dua titik tabel: 6 × 7 : 2 + 4 = 25 dan 2 × 3 : 2 + 4 = 7. Cocok.",
+        "gugur": {
+          "A": {
+            "uji": "kenaikan 4 terus",
+            "teks": "Kenaikan dari dua titik pertama, 4 per suku, dianggap tetap: 49 + 21 × 4 = 133. Kenaikan itu sudah berubah di titik berikutnya."
+          },
+          "B": {
+            "uji": "kenaikan 8 terus",
+            "teks": "Kenaikan dari dua titik terakhir, 8 per suku, dianggap tetap: 49 + 21 × 8 = 217. Pada pola ini kenaikannya terus bertambah."
+          },
+          "C": {
+            "uji": "suku ke-29",
+            "teks": "29 × 30 : 2 + 4 = 439 adalah suku ke-29. Nomor yang dimasukkan ke rumus kurang satu."
+          },
+          "D": {
+            "uji": "tanpa + 4",
+            "teks": "30 × 31 : 2 = 465 baru bilangan segitiganya. Sisa tetap 4 belum ditambahkan."
+          }
+        },
+        "kunci": "Setiap nilai sama dengan bilangan segitiga ditambah 4, jadi suku ke-30 bernilai 30 × 31 : 2 + 4 = 469.",
+        "analogi": "Seperti menyusun kaleng di etalase berbentuk segitiga: baris ke-30 menambah 30 kaleng, sehingga tambahannya makin banyak. Menganggap tambahannya tetap sama dengan mengira tumpukan itu berbentuk persegi panjang.",
+        "waspada": "Melihat kenaikan 4 di dua titik pertama lalu langsung melanjutkannya. Empat titik disediakan justru untuk menguji apakah kenaikannya tetap; periksa semua pasangan titik sebelum memilih rumus."
+      },
+      "bukti": {
+        "metode": "derajat 2 (selisih tingkat dua tetap 1); linear gagal; rumus lain ≤ 3 operasi diperiksa",
+        "rumus": "(n² + n) : 2 + 4",
+        "lain": [],
+        "bentuk": {
+          "jarak": 4,
+          "median": 55,
+          "terpencil": 1.53,
+          "letak": "E"
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B08-C03",
+      "bab": 8,
+      "peran": "contoh",
+      "jenis": "SUK deret sebaris",
+      "bentuk": "kali 3 lalu kurang 2",
+      "target_detik": 45,
+      "soal": {
+        "tanya": "Suku berikutnya dari barisan 2, 4, 10, 28, 82, … adalah …"
+      },
+      "kalimat_penentu": "Suku berikutnya",
+      "opsi": {
+        "A": "164",
+        "B": "172",
+        "C": "244",
+        "D": "246",
+        "E": "248"
+      },
+      "kunci": "C",
+      "kode": {
+        "A": "J-TIGA",
+        "B": "J-RATA",
+        "C": "kunci",
+        "D": "J-LANGKAH",
+        "E": "J-TANDA"
+      },
+      "nama": {
+        "A": "Menyimpulkan pola dari terlalu sedikit titik",
+        "B": "Menganggap selisihnya selalu sama",
+        "D": "Berhenti satu langkah sebelum selesai",
+        "E": "Salah tanda"
+      },
+      "alasan_kunci": "Selisih 2, 6, 18, 54 berlipat 3: Uₙ₊₁ = 3Uₙ − 2, suku berikutnya 244.",
+      "kerangka": "SUK deret sebaris kU + c, k = 3, c = −2 · 5 suku · selisih berlipat · kali 2 dari pasangan awal, selisih kedua tetap, lupa −2, +2",
+      "to_terdekat": "tidak ada di TO P1; bukan (k, c) = (2, 1) dan suku awal 3 (narasi)",
+      "catatan_reviu": "Kode = rencana slot. Aturan lain deret (aritmetika, geometri, kU + c, selisih bertingkat ≤ 3, berselang, rekursif dua suku) hanya memberi 244. Revisi cek buta 1: pilihan E 730 (suku ke-7, terpencil) diganti 248 = 3 × 82 + 2 (tanda terbalik).",
+      "pembahasan": {
+        "ditanya": "Soal meminta satu suku sesudah 82. Kalimat penentunya “Suku berikutnya”: cukup satu langkah, dengan aturan yang cocok di semua suku.",
+        "cepat": "Selisihnya 2, 6, 18, 54: setiap selisih tiga kali selisih sebelumnya. Itu tanda aturan kali 3 lalu tambah atau kurang. Dari 2 ke 4: 3 × 2 = 6, lalu dikurangi 2 menjadi 4. Uji: 3 × 4 − 2 = 10, 3 × 10 − 2 = 28, dan 3 × 28 − 2 = 82. Suku berikutnya 3 × 82 − 2 = 244.",
+        "lain": "Lanjutkan selisihnya. Selisih berikutnya 3 × 54 = 162, jadi suku berikutnya 82 + 162 = 244.",
+        "cek": "Aturan kali 3 kurang 2 cocok di keempat langkah. Aturan lain yang sederhana, seperti selisih tetap atau kali 2, sudah gagal di suku ketiga.",
+        "gugur": {
+          "A": {
+            "uji": "82 × 2",
+            "teks": "Aturan kali 2 diambil dari 2 ke 4 saja. Dari 4 ke 10 aturan itu sudah gagal, sebab 4 × 2 = 8."
+          },
+          "B": {
+            "uji": "82 + 54 + 36",
+            "teks": "Selisih kedua 4, 12, 36 dianggap tetap, jadi selisih berikutnya 54 + 36 = 90 dan sukunya 172. Padahal selisih kedua itu sendiri berlipat tiga."
+          },
+          "D": {
+            "uji": "82 × 3",
+            "teks": "Langkah kali 3 dikerjakan, langkah kurang 2 terlupa: 82 × 3 = 246."
+          },
+          "E": {
+            "uji": "82 × 3 + 2",
+            "teks": "Bilangan tetapnya dibaca +2. Uji di suku awal langsung menolaknya: 3 × 2 + 2 = 8, padahal suku kedua 4."
+          }
+        },
+        "kunci": "Aturan kali 3 kurang 2 cocok di semua suku, dan 3 × 82 − 2 = 244.",
+        "analogi": "Seperti tabungan yang setiap bulan dilipatkan tiga oleh orang tuamu, lalu kamu ambil 2 ribu untuk jajan. Selisih saldo dari bulan ke bulan ikut berlipat tiga.",
+        "waspada": "Berhenti di 246 karena selisihnya jelas berlipat tiga, lalu lupa bahwa ada pengurangan kecil. Setelah menemukan pengalinya, cocokkan satu suku untuk mencari bilangan tambahannya."
+      },
+      "bukti": {
+        "metode": "aturan kali 3 kurang 2 cocok di 4 langkah; aturan lain (aritmetika, geometri, kU + c, selisih bertingkat ≤ 3, berselang, rekursif dua suku) hanya memberi 244",
+        "selisih": [
+          2,
+          6,
+          18,
+          54
+        ],
+        "bentuk": {
+          "jarak": 2,
+          "median": 5,
+          "terpencil": 1.6,
+          "letak": "C"
+        }
+      },
+      "revisi1": {
+        "alasan": "pilihan E 730 (suku ke-7, terpencil) diganti 248 = 3 × 82 + 2 (tanda terbalik).",
+        "lama": {
+          "kunci": "C",
+          "opsi": {
+            "A": "164",
+            "B": "172",
+            "C": "244",
+            "D": "246",
+            "E": "730"
+          }
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B08-C04",
+      "bab": 8,
+      "peran": "contoh",
+      "jenis": "SUK huruf-angka",
+      "bentuk": "nomor huruf n² + 1 melewati Z, angka × 2",
+      "target_detik": 60,
+      "soal": {
+        "tanya": "Suku berikutnya dari barisan B3, E6, J12, Q24, Z48, … adalah …"
+      },
+      "kalimat_penentu": "Suku berikutnya",
+      "opsi": {
+        "A": "K96",
+        "B": "K48",
+        "C": "I72",
+        "D": "K72",
+        "E": "K51"
+      },
+      "kunci": "A",
+      "kode": {
+        "A": "kunci",
+        "B": "J-LANGKAH",
+        "C": "J-RATA",
+        "D": "J-RATA",
+        "E": "J-TIGA"
+      },
+      "nama": {
+        "B": "Berhenti satu langkah sebelum selesai",
+        "C": "Menganggap selisihnya selalu sama",
+        "D": "Menganggap selisihnya selalu sama",
+        "E": "Menyimpulkan pola dari terlalu sedikit titik"
+      },
+      "alasan_kunci": "Nomor huruf 2, 5, 10, 17, 26 → 37 − 26 = 11 (K); angka 48 × 2 = 96.",
+      "kerangka": "SUK huruf-angka · huruf bernomor n² + 1 melewati Z · angka × 2 · angka belum dikali, selisih terakhir tetap (keduanya / angka saja), aturan angka dua suku awal",
+      "to_terdekat": "tidak ada di TO P1; bukan C, F, J, O, U (narasi)",
+      "catatan_reviu": "Slot: J-NOMOR (meleset), J-NOMOR (lupa berputar), J-TIGA, J-RATA; lupa berputar diwujudkan sebagai kurang 25 atau 27 (dua arah meleset). Pilihan huruf tidak diurutkan; huruf K dimiliki dua pilihan, angka 96 empat pilihan. Revisi cek buta 1: huruf K dan angka 96 tidak lagi terpusat di kunci: dua pilihan salah kini mengenakan satu kekeliruan pada huruf dan angka bersamaan (I72 selisih terakhir dianggap tetap, C51 aturan dua suku awal). Simpul unsur bersama: kunci seri dengan L96 dan J96. Revisi cek buta 2: angka 96 kini hanya di dua pilihan (K96, I96) dan huruf I serta K masing-masing dua pilihan; kunci bukan huruf tengah gugus. Jalur meleset sesudah Z (J-NOMOR) diganti I96 (selisih huruf tetap) dan K48 (angka belum dikali 2); meleset tetap dibahas di Kekeliruan yang Mungkin Terjadi. Revisi cek buta 3: tebakan bagian terbanyak per posisi (K dan 72) kini jatuh di K72, pilihan salah; I72 berbagi angka dengan K72, sehingga tidak ada pilihan yang menyendiri. C51 dan I96 diganti K72 dan K51.",
+      "pembahasan": {
+        "ditanya": "Setiap suku memuat huruf dan angka. Kalimat penentunya “Suku berikutnya”. Pisahkan deret huruf dan deret angka, lalu kerjakan masing-masing.",
+        "cepat": "Huruf B, E, J, Q, Z bernomor 2, 5, 10, 17, 26, dengan selisih 3, 5, 7, 9. Selisih berikutnya 11, jadi nomornya 26 + 11 = 37. Abjad dianggap berputar: sesudah Z kembali ke A, sehingga nomor yang melewati 26 dikurangi 26: 37 − 26 = 11, yaitu K. Angka 3, 6, 12, 24, 48 selalu dikali 2, jadi angka berikutnya 48 × 2 = 96. Sukunya K96.",
+        "lain": "Nomor huruf sama dengan kuadrat urutannya ditambah 1: 1 × 1 + 1 = 2 sampai 5 × 5 + 1 = 26. Suku keenam bernomor 6 × 6 + 1 = 37, jadi hurufnya tetap K.",
+        "cek": "Hitung maju dari Z sebanyak 11 huruf: A, B, C, D, E, F, G, H, I, J, K. Huruf kesebelas adalah K.",
+        "gugur": {
+          "B": {
+            "uji": "48 belum dikali 2",
+            "teks": "Hurufnya benar, tetapi angka 48 disalin dari suku sebelumnya tanpa dikali 2. Langkah kali 2 belum dikerjakan."
+          },
+          "C": {
+            "uji": "selisih terakhir tetap",
+            "teks": "Selisih terakhir dianggap tetap untuk huruf dan angka: huruf 26 + 9 = 35, yaitu I, dan angka 48 + 24 = 72. Selisih huruf naik 2 setiap suku, dan angka dikali 2."
+          },
+          "D": {
+            "uji": "48 + 24",
+            "teks": "Hurufnya benar, tetapi angka dianggap bertambah tetap 24 seperti dari 24 ke 48: 48 + 24 = 72. Dari 3 ke 6 dan 6 ke 12 tambahannya sudah berbeda; yang tetap adalah kali 2."
+          },
+          "E": {
+            "uji": "48 + 3",
+            "teks": "Hurufnya benar, tetapi aturan angka dibaca dari 3 ke 6 saja, yaitu tambah 3: 48 + 3 = 51. Dari 6 ke 12 aturan itu sudah gagal."
+          }
+        },
+        "kunci": "Huruf bernomor 37 − 26 = 11 adalah K, dan angkanya 48 × 2 = 96.",
+        "analogi": "Seperti kursi bianglala yang berputar: sesudah kursi ke-26, kursi berikutnya kembali bernomor 1. Kursi ke-37 sama dengan kursi ke-11.",
+        "waspada": "Menebak dari angka yang paling sering muncul di pilihan, lalu memilih K72. Hurufnya benar, tetapi angkanya mengikuti selisih tetap; angka deret ini selalu dikali 2. Hitung kedua bagian sendiri-sendiri."
+      },
+      "bukti": {
+        "metode": "huruf: nomor 2, 5, 10, 17, 26 selisih 3, 5, 7, 9 (atau n² + 1) → 37 − 26 = 11; angka × 2",
+        "terbanyak": [
+          "D"
+        ],
+        "simpul": {
+          "A": 3,
+          "B": 3,
+          "C": 1,
+          "D": 4,
+          "E": 3
+        }
+      },
+      "revisi1": {
+        "alasan": "huruf K dan angka 96 tidak lagi terpusat di kunci: dua pilihan salah kini mengenakan satu kekeliruan pada huruf dan angka bersamaan (I72 selisih terakhir dianggap tetap, C51 aturan dua suku awal). Simpul unsur bersama: kunci seri dengan L96 dan J96.",
+        "lama": {
+          "kunci": "A",
+          "opsi": {
+            "A": "K96",
+            "B": "L96",
+            "C": "I96",
+            "D": "K51",
+            "E": "J96"
+          }
+        }
+      },
+      "revisi2": {
+        "alasan": "angka 96 kini hanya di dua pilihan (K96, I96) dan huruf I serta K masing-masing dua pilihan; kunci bukan huruf tengah gugus. Jalur meleset sesudah Z (J-NOMOR) diganti I96 (selisih huruf tetap) dan K48 (angka belum dikali 2); meleset tetap dibahas di Kekeliruan yang Mungkin Terjadi.",
+        "lama": {
+          "kunci": "A",
+          "opsi": {
+            "A": "K96",
+            "B": "I72",
+            "C": "L96",
+            "D": "C51",
+            "E": "J96"
+          }
+        }
+      },
+      "revisi3": {
+        "alasan": "tebakan bagian terbanyak per posisi (K dan 72) kini jatuh di K72, pilihan salah; I72 berbagi angka dengan K72, sehingga tidak ada pilihan yang menyendiri. C51 dan I96 diganti K72 dan K51.",
+        "lama": {
+          "kunci": "A",
+          "opsi": {
+            "A": "K96",
+            "B": "I96",
+            "C": "K48",
+            "D": "C51",
+            "E": "I72"
+          }
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B08-L01",
+      "bab": 8,
+      "peran": "latihan",
+      "jenis": "SUK deret celah",
+      "bentuk": "selisih bertingkat dua, celah di tengah",
+      "target_detik": 45,
+      "soal": {
+        "tanya": "Bilangan yang tepat untuk mengisi titik-titik pada barisan 3, 5, …, 15, 23, 33 adalah …"
+      },
+      "kalimat_penentu": "mengisi titik-titik",
+      "opsi": {
+        "A": "7",
+        "B": "9",
+        "C": "10",
+        "D": "11",
+        "E": "13"
+      },
+      "kunci": "B",
+      "kode": {
+        "A": "J-RATA",
+        "B": "kunci",
+        "C": "J-RATA",
+        "D": "J-NOMOR",
+        "E": "J-TIGA"
+      },
+      "nama": {
+        "A": "Menganggap selisihnya selalu sama",
+        "C": "Menganggap selisihnya selalu sama",
+        "D": "Selisih dipasang di tempat yang salah",
+        "E": "Menyimpulkan pola dari terlalu sedikit titik"
+      },
+      "alasan_kunci": "Selisih 2, 4, 6, 8, 10 → 5 + 4 = 9.",
+      "kerangka": "SUK deret sebaris · selisih bertingkat dua (2, 4, 6, 8, 10) · celah di suku ke-3 · selisih pertama tetap, nilai tengah, selisih salah letak, dibaca berselang",
+      "to_terdekat": "Bab 2 L4 (dua deret berselang); bukan 2, 6, 12, 20, 30 (narasi)",
+      "catatan_reviu": "Slot: J-RATA, J-TIGA, J-NOMOR; J-RATA dipakai dua jalur. Isian −50 sampai 100 dicoba mesin: hanya 9 membuat deret mengikuti aturan sederhana.",
+      "bukti": {
+        "metode": "isian −50…100 dicoba: hanya 9 membuat deret mengikuti aturan sederhana",
+        "sah": [
+          9
+        ],
+        "bentuk": {
+          "jarak": 1,
+          "median": 1.5,
+          "terpencil": 1.33,
+          "letak": "B"
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta bilangan untuk “titik-titik” di posisi ketiga barisan 3, 5, …, 15, 23, 33.",
+        "cepat": "Lihat selisih di bagian yang utuh: 23 − 15 = 8 dan 33 − 23 = 10. Dari depan, 5 − 3 = 2. Selisihnya naik 2 setiap langkah: 2, 4, 6, 8, 10. Titik-titik bernilai 5 + 4 = 9.",
+        "lain": "Mundur dari belakang: selisih sebelum 8 adalah 6, jadi 15 − 6 = 9. Bilangan 9 cocok dari kedua arah.",
+        "cek": "Tulis barisan lengkapnya: 3, 5, 9, 15, 23, 33. Selisihnya 2, 4, 6, 8, 10, naik tetap 2. Semua titik cocok.",
+        "gugur": {
+          "A": {
+            "uji": "selisih 2 terus",
+            "teks": "Selisih pertama dipakai lagi: 5 + 2 = 7. Dari 7 ke 15 selisihnya 8, tidak mengikuti pola."
+          },
+          "C": {
+            "uji": "nilai tengah",
+            "teks": "10 adalah nilai tengah antara 5 dan 15, sebab (5 + 15) : 2 = 10, seolah dua selisih di sana sama besar. Selisih 5 lalu 5 tidak cocok dengan selisih 8 dan 10 di belakangnya."
+          },
+          "D": {
+            "uji": "selisih 6 di depan",
+            "teks": "Selisih 6 dipasang langsung sesudah 5: 5 + 6 = 11. Selisih 4 terlewat, padahal selisih naik satu tangga setiap langkah."
+          },
+          "E": {
+            "uji": "rata-rata 3 dan 23",
+            "teks": "13 didapat dari (3 + 23) : 2 = 13, seolah barisan berselang. Dua titik itu terlalu sedikit untuk menentukan pola, dan selisih dari semua titik menolaknya."
+          }
+        },
+        "kunci": "Selisihnya 2, 4, 6, 8, 10, sehingga titik-titik bernilai 5 + 4 = 9.",
+        "analogi": "Seperti anak tangga yang makin tinggi: tangga kedua naik 2 cm, tangga ketiga naik 4 cm, tangga keempat naik 6 cm. Bila satu anak tangga hilang, tingginya bisa ditebak dari tangga di depan dan di belakangnya.",
+        "waspada": "Langsung mengisi dengan selisih pertama tanpa melihat bagian belakang barisan. Hitung selisih di bagian yang utuh dulu; bagian itulah yang membuka pola."
+      }
+    },
+    {
+      "id": "HB-TIU-B08-L02",
+      "bab": 8,
+      "peran": "latihan",
+      "jenis": "SUK linear",
+      "bentuk": "selisih dua suku jauh",
+      "target_detik": 60,
+      "soal": {
+        "pengantar": "Tabel berikut memuat beberapa suku sebuah barisan.",
+        "tanya": "Selisih suku ke-75 dan suku ke-40 barisan itu adalah …"
+      },
+      "kalimat_penentu": "Selisih",
+      "opsi": {
+        "A": "295",
+        "B": "306",
+        "C": "315",
+        "D": "324",
+        "E": "325"
+      },
+      "kunci": "C",
+      "kode": {
+        "A": "J-TANDA",
+        "B": "J-NOMOR",
+        "C": "kunci",
+        "D": "J-NOMOR",
+        "E": "J-PENGALIH"
+      },
+      "nama": {
+        "A": "Salah tanda",
+        "B": "Tertukar antara banyak langkah dan nomor suku",
+        "D": "Tertukar antara banyak langkah dan nomor suku",
+        "E": "Memakai data yang tidak dibutuhkan"
+      },
+      "alasan_kunci": "U₇₅ − U₄₀ = 9 × (75 − 40) = 315; bilangan tetap saling menghapus.",
+      "kerangka": "SUK linear 9n + 10 · 4 titik 3, 8, 12, 17 · tanya selisih dua suku jauh · tanda konstanta di satu suku, langkah ±1, konstanta ikut ditambah",
+      "to_terdekat": "tidak ada di TO P1",
+      "catatan_reviu": "Slot: J-NOMOR, J-LANGKAH, J-TANDA, J-PENGALIH; J-LANGKAH diganti J-NOMOR selisih mentah (kekeliruan nomor meloncat Bab 8 no. 3). Revisi cek buta 1: pilihan E 1.260 (selisih mentah, terpencil) dibuang; barisan diganti 9n + 10 agar jalur tanda dan bilangan tetap berdekatan; ditambah langkah kurang satu. Kunci B → C.",
+      "bukti": {
+        "metode": "Up − Uq = 9 × (75 − 40); bilangan tetap saling menghapus",
+        "lain": [],
+        "bentuk": {
+          "jarak": 9,
+          "median": 9,
+          "terpencil": 1.22,
+          "letak": "C"
+        }
+      },
+      "revisi1": {
+        "alasan": "pilihan E 1.260 (selisih mentah, terpencil) dibuang; barisan diganti 9n + 10 agar jalur tanda dan bilangan tetap berdekatan; ditambah langkah kurang satu. Kunci B → C.",
+        "lama": {
+          "kunci": "B",
+          "opsi": {
+            "A": "275",
+            "B": "315",
+            "C": "324",
+            "D": "335",
+            "E": "1.260"
+          }
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta “Selisih suku ke-75 dan suku ke-40”. Nomor suku di tabel meloncat, jadi cari dulu kenaikan per suku.",
+        "cepat": "Kenaikan per suku: (82 − 37) : (8 − 3) = 45 : 5 = 9. Dari suku ke-40 ke suku ke-75 ada 75 − 40 = 35 langkah, jadi selisihnya 9 × 35 = 315.",
+        "lain": "Cari rumusnya: 9 × 3 = 27 dan 37 − 27 = 10, jadi rumusnya 9<i>n</i> + 10. Bilangan tetap 10 ada di kedua suku dan saling menghapus, sehingga selisihnya 9 × (75 − 40) = 315.",
+        "cek": "Uji rumus di titik tabel yang lain: 9 × 12 + 10 = 118 dan 9 × 17 + 10 = 163. Cocok.",
+        "gugur": {
+          "A": {
+            "uji": "+10 dan −10",
+            "teks": "Bilangan tetap diberi tanda berbeda di dua suku: (9 × 75 − 10) − (9 × 40 + 10) = 295. Bilangan tetapnya sama di kedua suku, jadi saling menghapus."
+          },
+          "B": {
+            "uji": "34 langkah",
+            "teks": "Banyak langkah dihitung kurang satu: 9 × 34 = 306. Dari suku ke-40 ke suku ke-75 ada 35 langkah."
+          },
+          "D": {
+            "uji": "36 langkah",
+            "teks": "Banyak suku yang dihitung, bukan banyak langkah: 9 × 36 = 324."
+          },
+          "E": {
+            "uji": "+10 ikut",
+            "teks": "Bilangan tetap 10 ditambahkan ke selisih: 315 + 10 = 325. Pada selisih dua suku, bilangan tetap tidak ikut."
+          }
+        },
+        "kunci": "Kenaikan per suku 9 dan ada 35 langkah, sehingga selisihnya 9 × 35 = 315.",
+        "analogi": "Seperti lantai gedung yang tiap lantainya menambah tinggi yang sama. Beda tinggi lantai 40 dan lantai 75 cukup dihitung dari banyak lantai di antaranya; tinggi lantai dasar tidak berpengaruh.",
+        "waspada": "Menghitung banyak suku dari nomor 40 sampai 75 lalu mengalikannya dengan 9. Selisih dua suku memakai banyak langkah: nomor besar dikurangi nomor kecil."
+      }
+    },
+    {
+      "id": "HB-TIU-B08-L03",
+      "bab": 8,
+      "peran": "latihan",
+      "jenis": "SUK huruf cermin",
+      "bentuk": "huruf berputar + huruf cermin berjumlah 27",
+      "target_detik": 60,
+      "soal": {
+        "tanya": "Suku berikutnya dari barisan MN, PK, TG, YB, … adalah …"
+      },
+      "kalimat_penentu": "Suku berikutnya",
+      "opsi": {
+        "A": "EV",
+        "B": "DV",
+        "C": "FU",
+        "D": "DW",
+        "E": "FV"
+      },
+      "kunci": "A",
+      "kode": {
+        "A": "kunci",
+        "B": "J-NOMOR",
+        "C": "J-NOMOR",
+        "D": "J-RATA",
+        "E": "J-NOMOR"
+      },
+      "nama": {
+        "B": "Lupa berputar setelah Z, atau meleset satu huruf",
+        "C": "Lupa berputar setelah Z, atau meleset satu huruf",
+        "D": "Menganggap selisihnya selalu sama",
+        "E": "Lupa berputar setelah Z, atau meleset satu huruf"
+      },
+      "alasan_kunci": "Huruf pertama 13, 16, 20, 25 (+3, +4, +5) → 31 − 26 = 5 (E); huruf kedua 27 − 5 = 22 (V).",
+      "kerangka": "SUK huruf · huruf pertama selisih bertambah, melewati Z · huruf kedua (cermin, berjumlah 27, atau polanya sendiri −3, −4, −5, −6) · meleset −27 / −25, selisih terakhir tetap untuk kedua huruf",
+      "to_terdekat": "tidak ada di TO P1; bukan D–W (narasi)",
+      "catatan_reviu": "Kode = rencana slot. Huruf E dimiliki dua pilihan, huruf V dua pilihan. Revisi cek buta 1: E dan V tidak lagi terpusat di kunci: pilihan meleset kini konsisten pada huruf kedua (FU, DW), EU tetap; simpul unsur bersama jatuh di EU, bukan kunci. Catatan cek buta 2 untuk Tahap 6: pembahasan latihan ini wajib menyebut bahwa abjad berputar (sesudah Z kembali ke A), sebab soal tidak menyebutnya; narasi Bab 8 sudah menyatakannya. Revisi cek buta 3: pilihan disusun ulang mengikuti aturan kombinasi: gabungan bagian terbanyak per posisi (D atau F dengan V) adalah pilihan salah, huruf E kunci tidak terbanyak, dan setiap pilihan berbagi bagian. EU dan BY diganti DV dan FV (huruf pertama meleset, huruf kedua dari polanya sendiri); DW kini = selisih terakhir tetap untuk kedua huruf.",
+      "bukti": {
+        "metode": "huruf pertama 13, 16, 20, 25 selisih 3, 4, 5 → 31 − 26 = 5 (E); huruf kedua = 27 − nomor huruf pertama (V)",
+        "terbanyak": [
+          "B",
+          "E"
+        ],
+        "simpul": {
+          "A": 2,
+          "B": 3,
+          "C": 1,
+          "D": 1,
+          "E": 3
+        }
+      },
+      "revisi1": {
+        "alasan": "E dan V tidak lagi terpusat di kunci: pilihan meleset kini konsisten pada huruf kedua (FU, DW), EU tetap; simpul unsur bersama jatuh di EU, bukan kunci.",
+        "lama": {
+          "kunci": "A",
+          "opsi": {
+            "A": "EV",
+            "B": "DV",
+            "C": "ZA",
+            "D": "EU",
+            "E": "BY"
+          }
+        }
+      },
+      "revisi3": {
+        "alasan": "pilihan disusun ulang mengikuti aturan kombinasi: gabungan bagian terbanyak per posisi (D atau F dengan V) adalah pilihan salah, huruf E kunci tidak terbanyak, dan setiap pilihan berbagi bagian. EU dan BY diganti DV dan FV (huruf pertama meleset, huruf kedua dari polanya sendiri); DW kini = selisih terakhir tetap untuk kedua huruf.",
+        "lama": {
+          "kunci": "A",
+          "opsi": {
+            "A": "EV",
+            "B": "FU",
+            "C": "DW",
+            "D": "EU",
+            "E": "BY"
+          }
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta “Suku berikutnya” dari barisan pasangan huruf. Setiap suku terdiri atas dua huruf, jadi huruf pertama dan huruf kedua diperiksa masing-masing.",
+        "cepat": "Ubah huruf pertama menjadi nomor urut: M, P, T, Y adalah 13, 16, 20, 25, dengan selisih 16 − 13 = 3, 20 − 16 = 4, dan 25 − 20 = 5. Selisih berikutnya 6, jadi 25 + 6 = 31. Abjad hanya 26 huruf dan berputar ke A sesudah Z, jadi nomor 31 adalah 31 − 26 = 5, yaitu E.",
+        "lain": "Huruf kedua adalah cermin huruf pertama: nomornya 27 dikurangi nomor huruf pertama, misalnya 27 − 13 = 14 untuk N dan 27 − 25 = 2 untuk B. Untuk E, 27 − 5 = 22, yaitu V. Huruf kedua juga punya pola sendiri: N, K, G, B mundur 3, 4, 5, lalu mundur 6 dari B, berputar lewat Z, sampai di V.",
+        "cek": "Cek dengan cermin: E huruf kelima dari depan dan V huruf kelima dari belakang. Pasangan MN, PK, TG, dan YB juga berjarak sama dari kedua ujung abjad.",
+        "gugur": {
+          "B": {
+            "uji": "D, meleset satu",
+            "teks": "Putaran dihitung meleset satu: 31 − 27 = 4, yaitu D. Sesudah Z langsung A, jadi nomor 31 adalah E."
+          },
+          "C": {
+            "uji": "F, meleset satu",
+            "teks": "Putaran dihitung meleset ke arah lain: 31 − 25 = 6, yaitu F, dengan cermin U. Abjad berisi 26 huruf, bukan 25."
+          },
+          "D": {
+            "uji": "selisih 5 lagi",
+            "teks": "Selisih terakhir dipakai lagi: 25 + 5 = 30, lalu 30 − 26 = 4, yaitu D, dan huruf kedua mundur 5 dari B menjadi W. Selisihnya naik 3, 4, 5, jadi berikutnya 6."
+          },
+          "E": {
+            "uji": "F, meleset satu",
+            "teks": "Huruf pertama meleset seperti C menjadi F, sedangkan huruf kedua tetap V. Kedua huruf harus berasal dari nomor yang sama."
+          }
+        },
+        "kunci": "Huruf pertama melompat 3, 4, 5, lalu 6 sampai E sesudah berputar lewat Z, dan huruf keduanya cermin E, yaitu V.",
+        "analogi": "Seperti hari dalam sepekan: sesudah Minggu kembali ke Senin. Abjad juga begitu, sesudah Z hitungan kembali ke A.",
+        "waspada": "Berhenti di nomor 31 karena merasa abjad sudah habis, atau menghitung putarannya meleset satu. Soal tidak menulisnya, tetapi barisan huruf berputar kembali ke A sesudah Z, seperti diuraikan di Bab 8."
+      }
+    },
+    {
+      "id": "HB-TIU-B08-L04",
+      "bab": 8,
+      "peran": "latihan",
+      "jenis": "SUK pangkat tiga",
+      "bentuk": "n × (n² + 3), lima titik meloncat",
+      "target_detik": 90,
+      "soal": {
+        "pengantar": "Tabel berikut memuat lima suku sebuah barisan.",
+        "tanya": "Nilai suku ke-12 barisan itu adalah …"
+      },
+      "kalimat_penentu": "suku ke-12",
+      "opsi": {
+        "A": "1.064",
+        "B": "1.364",
+        "C": "1.540",
+        "D": "1.728",
+        "E": "1.764"
+      },
+      "kunci": "E",
+      "kode": {
+        "A": "J-RATA",
+        "B": "J-NOMOR",
+        "C": "J-TIGA",
+        "D": "J-KONST",
+        "E": "kunci"
+      },
+      "nama": {
+        "A": "Menganggap selisihnya selalu sama",
+        "B": "Tertukar antara banyak langkah dan nomor suku",
+        "C": "Menyimpulkan pola dari terlalu sedikit titik",
+        "D": "Lupa bilangan tetap dalam rumus"
+      },
+      "alasan_kunci": "Nilai : nomor = n² + 3; U₁₂ = 12 × 147 = 1.764.",
+      "kerangka": "SUK pangkat tiga n(n² + 3) · 5 titik 1, 2, 4, 5, 8 · sidik bagi n · linear dua titik akhir, suku −1, kuadrat tiga titik akhir, n³",
+      "to_terdekat": "TO P1 no. 38 (kuadrat 5 titik); di sini pangkat tiga",
+      "catatan_reviu": "Kode = rencana slot. Dirujuk Latihan A Bab 19 (J-KONST, pilihan D). Revisi cek buta 1: tabel dibuat lebih mudah dibaca (nomor 1, 2, 4, 5, 8: hasil bagi nilai : nomor = 4, 7, 19, 28, 67 = n² + 3 terlihat langsung); target tetap 90 detik (105 detik melampaui rata-rata TIU ±86 detik per soal, Putusan 5).",
+      "bukti": {
+        "metode": "derajat 3 tepat di 5 titik; kuadrat gagal; sidik bagi n: n² + 3",
+        "lain": [
+          "(a×(3+(a×a)))"
+        ],
+        "bentuk": {
+          "jarak": 36,
+          "median": 182,
+          "terpencil": 1.65,
+          "letak": "E"
+        }
+      },
+      "revisi1": {
+        "alasan": "tabel dibuat lebih mudah dibaca (nomor 1, 2, 4, 5, 8: hasil bagi nilai : nomor = 4, 7, 19, 28, 67 = n² + 3 terlihat langsung); target tetap 90 detik (105 detik melampaui rata-rata TIU ±86 detik per soal, Putusan 5).",
+        "lama": {
+          "kunci": "E",
+          "opsi": {
+            "A": "1.364",
+            "B": "1.524",
+            "C": "1.708",
+            "D": "1.728",
+            "E": "1.764"
+          }
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta “suku ke-12” dari lima suku bernomor meloncat. Periksa dulu pola nilai terhadap nomornya.",
+        "cepat": "Bagi setiap nilai dengan nomornya: 4 : 1 = 4, 14 : 2 = 7, 76 : 4 = 19, 140 : 5 = 28, dan 536 : 8 = 67. Hasilnya selalu nomor dikuadratkan ditambah 3, misalnya 4 × 4 + 3 = 19 dan 8 × 8 + 3 = 67. Suku ke-12 bernilai 12 × (12 × 12 + 3) = 12 × 147 = 1.764.",
+        "lain": "Hitung 12 × 147 dengan membulatkan: 12 × 147 = 12 × 150 − 12 × 3 = 1.800 − 36 = 1.764.",
+        "cek": "Uji rumus di titik lain: 5 × (5 × 5 + 3) = 140 dan 2 × (2 × 2 + 3) = 14. Cocok.",
+        "gugur": {
+          "A": {
+            "uji": "kenaikan tetap",
+            "teks": "Kenaikan dua titik terakhir, (536 − 140) : 3 = 132 per suku, dianggap tetap: 536 + 4 × 132 = 1.064."
+          },
+          "B": {
+            "uji": "suku ke-11",
+            "teks": "11 × (11 × 11 + 3) = 1.364 adalah suku ke-11. Nomor yang dimasukkan kurang satu."
+          },
+          "C": {
+            "uji": "tiga titik akhir",
+            "teks": "1.540 didapat dari pola kuadrat yang hanya dicocokkan pada tiga titik terakhir. Pola itu gagal di titik-titik awal; kelima titik disediakan untuk diuji semuanya."
+          },
+          "D": {
+            "uji": "tanpa + 3",
+            "teks": "12 × 12 × 12 = 1.728 baru bagian pangkatnya. Tambahan 3 di dalam kurung terlupa, padahal nilainya 12 × 3 = 36."
+          }
+        },
+        "kunci": "Setiap nilai sama dengan nomor dikali (nomor kuadrat + 3), sehingga suku ke-12 bernilai 12 × 147 = 1.764.",
+        "analogi": "Seperti struk parkir yang hanya mencantumkan lama parkir dan total bayar, sedangkan tarif per jamnya ikut naik. Membagi total dengan lama parkir membuka tarif per jamnya, dan di situlah polanya terlihat.",
+        "waspada": "Melanjutkan kenaikan dua titik terakhir seolah tetap, lalu mendapat 1.064. Bila kenaikan antartitik berubah-ubah, coba bagi nilai dengan nomornya."
+      }
+    },
+    {
+      "id": "HB-TIU-B09-P01",
+      "bab": 9,
+      "peran": "pembuka",
+      "jenis": "TBD 3 × 3 per baris",
+      "bentuk": "a : b + b, empat baris (bank D'Ajiks Soal 7)",
+      "target_detik": 75,
+      "soal": {
+        "pengantar": "Bilangan pada setiap baris tabel berikut mengikuti aturan yang sama.",
+        "tanya": "Nilai X yang tepat adalah …"
+      },
+      "kalimat_penentu": "aturan yang sama",
+      "opsi": {
+        "A": "9",
+        "B": "16",
+        "C": "22",
+        "D": "56",
+        "E": "70"
+      },
+      "kunci": "B",
+      "kode": {
+        "A": "J-LANGKAH",
+        "B": "kunci",
+        "C": "J-TIGA",
+        "D": "J-PENGALIH",
+        "E": "J-PENGALIH"
+      },
+      "nama": {
+        "A": "Berhenti satu langkah sebelum selesai",
+        "C": "Aturan cocok di satu baris, tidak diuji di baris lain",
+        "D": "Mengurangkan tanpa menguji baris lain",
+        "E": "Menjumlahkan tanpa menguji baris lain"
+      },
+      "alasan_kunci": "c = a : b + b: 36 : 4 + 4 = 13, 35 : 5 + 5 = 12, 48 : 6 + 6 = 14, 63 : 7 + 7 = 16.",
+      "kerangka": "Soal 7 bank deret tabel D'Ajiks Level 5–6 apa adanya (tabel, aturan, kelima pilihan); hanya urutan pilihan disusun naik",
+      "to_terdekat": "bank deret tabel D'Ajiks Level 5–6 Soal 7",
+      "catatan_reviu": "Ganti soal lama a × (a − b) bernegatif (T6-6). Sumber: GENERATE SOAL TERBARU SKD 2026/docs/deret-tabel-level-5-6 (scripts/build-deret-tabel-lv56.js), Soal 7, kunci sumber C (16). Urut naik membuat kunci B.",
+      "sumber": "Deret Tabel Level 5–6 Soal 7",
+      "pembahasan": {
+        "ditanya": "Soal meminta X di baris terakhir. Kalimat penentunya “aturan yang sama”: aturan yang kamu temukan harus berlaku di ketiga baris lengkap, bukan cuma di baris pertama.",
+        "cepat": "<b>Pola:</b> angka pertama dibagi angka kedua, lalu ditambah angka kedua. Petunjuknya, angka pertama selalu habis dibagi angka kedua (36 : 4, 35 : 5, 48 : 6). Itu tanda kuat ada pembagian. 36 : 4 = 9, padahal isinya 13, masih kurang 4, dan 4 itu angka kedua sendiri. <b>Cek ke semua baris:</b><table class=\"hit\"><thead><tr><th>Baris</th><th>Hitungan</th><th>Isi</th></tr></thead><tbody><tr><td>1 </td><td>36 : 4 + 4 = 9 + 4 </td><td>13 </td></tr><tr><td>2 </td><td>35 : 5 + 5 = 7 + 5 </td><td>12 </td></tr><tr><td>3 </td><td>48 : 6 + 6 = 8 + 6 </td><td>14 </td></tr></tbody></table><b>Hitung X:</b> 63 : 7 + 7 = 9 + 7 = 16.",
+        "lain": "Kurangi isi dengan hasil baginya. Baris 1: 13 − 9 = 4, baris 2: 12 − 7 = 5, baris 3: 14 − 8 = 6. Kelebihannya selalu sama dengan angka kedua, jadi baris terakhir 9 + 7 = 16.",
+        "cek": "Masukkan 16 ke baris terakhir: 16 − 7 = 9, dan 9 × 7 = 63, tepat angka pertamanya. Aturan sederhana lain yang cocok di ketiga baris tidak menunjuk pilihan lain.",
+        "gugur": {
+          "A": {
+            "uji": "63 : 7 = 9",
+            "teks": "Baru hasil baginya. Langkah menambah angka kedua belum dikerjakan, jadi masih kurang 7."
+          },
+          "C": {
+            "uji": "63 : 3 + 1 = 22",
+            "teks": "Dibagi 3 lalu ditambah 1 memang cocok di baris 1 (36 : 3 + 1 = 13). Di baris 2, 35 : 3 bahkan tidak habis, jadi aturan itu gugur."
+          },
+          "D": {
+            "uji": "63 − 7 = 56",
+            "teks": "Operasinya ditebak dari dua angka yang terlihat, tanpa dicoba ke baris lain. Di baris 1, 36 − 4 = 32, bukan 13."
+          },
+          "E": {
+            "uji": "63 + 7 = 70",
+            "teks": "Tebakan yang sama, hanya tandanya tambah. Di baris 1, 36 + 4 = 40, jauh dari 13."
+          }
+        },
+        "kunci": "Angka pertama dibagi angka kedua lalu ditambah angka kedua berlaku di ketiga baris lengkap, dan baris terakhir memberi 63 : 7 + 7 = 16.",
+        "analogi": "Seperti resep kue: takarannya baru bisa dipercaya kalau hasilnya bagus setiap kali dicoba, bukan cuma sekali. Aturan tabel juga begitu, harus jadi di setiap baris.",
+        "waspada": "Berhenti di 63 : 7 = 9 lalu langsung memilih 9. Di baris 1 kamu sudah melihat 9 masih kurang 4 dari 13, jadi langkah menambah itu jangan tertinggal di baris terakhir."
+      },
+      "bukti": {
+        "metode": "bank D'Ajiks GENERATE SOAL TERBARU SKD 2026, Deret Tabel Level 5–6 Soal 7; X tunggal (brute force); rumus lain sumber tidak membenarkan pilihan salah",
+        "bentuk": {
+          "jarak": 6,
+          "median": 10.5,
+          "terpencil": 1.33,
+          "letak": "B"
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B09-C01",
+      "bab": 9,
+      "peran": "contoh",
+      "jenis": "TBD dua kolom",
+      "bentuk": "kanan = kiri² + 9, kiri tidak urut",
+      "target_detik": 60,
+      "soal": {
+        "pengantar": "Setiap bilangan di kolom kanan diperoleh dari bilangan di kolom kiri dengan aturan yang sama.",
+        "tanya": "Bilangan di kolom kanan untuk bilangan 13 di kolom kiri adalah …"
+      },
+      "kalimat_penentu": "untuk bilangan 13",
+      "opsi": {
+        "A": "130",
+        "B": "153",
+        "C": "160",
+        "D": "169",
+        "E": "178"
+      },
+      "kunci": "E",
+      "kode": {
+        "A": "J-RATA",
+        "B": "J-NOMOR",
+        "C": "J-RATA",
+        "D": "J-KONST",
+        "E": "kunci"
+      },
+      "nama": {
+        "A": "Menganggap selisihnya selalu sama",
+        "B": "Bilangan kiri meleset satu",
+        "C": "Menganggap selisihnya selalu sama",
+        "D": "Lupa bilangan tetap dalam rumus"
+      },
+      "alasan_kunci": "Kanan − kiri² selalu 9; 13 × 13 + 9 = 178.",
+      "kerangka": "TBD dua kolom kuadrat · kiri 7, 3, 10, 4 (tidak urut, meloncat) · tanya kiri 13 · linear dari pasangan 3–4 dan 7–10, kiri 12, tanpa konstanta",
+      "to_terdekat": "TO P1 tanpa dua kolom; bukan kiri² + 1 dan kiri × (kiri + 3) (narasi)",
+      "catatan_reviu": "Kode = rencana slot (J-RATA, J-KONST, J-NOMOR; J-RATA dua jalur).",
+      "pembahasan": {
+        "ditanya": "Tabel dua kolom ini adalah tabel suku ke-<i>n</i> dengan kolom kiri sebagai nomor. Kalimat penentunya “untuk bilangan 13”. Kolom kiri tidak urut, jadi urutkan dulu: 3, 4, 7, 10.",
+        "cepat": "Kenaikan per suku: dari 3 ke 4, (25 − 18) : 1 = 7; dari 7 ke 10, (109 − 58) : 3 = 17. Kenaikannya tidak tetap, jadi coba kuadrat. Kurangi kuadrat kolom kiri: 18 − 9 = 9, 25 − 16 = 9, 58 − 49 = 9, dan 109 − 100 = 9. Aturannya kiri dikuadratkan lalu ditambah 9, dan 13 × 13 + 9 = 178.",
+        "lain": "Lanjutkan dari kiri 10. Kenaikan dari 10 ke 11 adalah 11 × 11 − 10 × 10 = 21, lalu naik 2 setiap langkah: 21, 23, 25. Bilangan kanannya 109 + 21 + 23 + 25 = 178.",
+        "cek": "Uji aturan di baris kiri 7: 7 × 7 + 9 = 58. Cocok.",
+        "gugur": {
+          "A": {
+            "uji": "kenaikan 7",
+            "teks": "Kenaikan 7 dari pasangan 3 dan 4 dipakai sampai 13: 109 + 3 × 7 = 130. Kenaikan pola kuadrat makin besar."
+          },
+          "B": {
+            "uji": "kiri 12",
+            "teks": "Aturannya benar, tetapi bilangan kiri yang dimasukkan meleset: 12 × 12 + 9 = 153. Periksa lagi bilangan yang ditanya."
+          },
+          "C": {
+            "uji": "kenaikan 17",
+            "teks": "Kenaikan 17 dari pasangan 7 dan 10 dianggap tetap: 109 + 3 × 17 = 160. Pada pola ini kenaikannya terus bertambah."
+          },
+          "D": {
+            "uji": "13 × 13 = 169",
+            "teks": "Kuadratnya sudah benar, tetapi bilangan tetap 9 belum ditambahkan."
+          }
+        },
+        "kunci": "Setiap bilangan kanan sama dengan kuadrat bilangan kiri ditambah 9, jadi untuk 13 hasilnya 178.",
+        "analogi": "Seperti menghitung ubin lantai persegi ditambah 9 ubin cadangan: berapa pun panjang sisinya, cadangan 9 ubin selalu ikut dihitung.",
+        "waspada": "Lupa menambahkan 9 setelah menemukan kuadratnya, sehingga memilih 169. Setelah merumuskan aturan, uji kembali di satu baris tabel."
+      },
+      "bukti": {
+        "metode": "derajat 2 di 4 baris; rumus lain ≤ 3 operasi",
+        "lain": [
+          "((a×a)+(3^2))"
+        ],
+        "bentuk": {
+          "jarak": 9,
+          "median": 9,
+          "terpencil": 2.56,
+          "letak": "E"
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B09-C02",
+      "bab": 9,
+      "peran": "contoh",
+      "jenis": "TBD 3 × 3 per kolom",
+      "bentuk": "3 × atas − tengah, X di tengah (bank D'Ajiks Soal 11)",
+      "target_detik": 75,
+      "soal": {
+        "pengantar": "Bilangan di baris bawah setiap kolom tabel berikut dihitung dari dua bilangan di atasnya dengan aturan yang sama.",
+        "tanya": "Nilai X adalah …"
+      },
+      "kalimat_penentu": "dengan aturan yang sama",
+      "opsi": {
+        "A": "11",
+        "B": "16",
+        "C": "21",
+        "D": "31",
+        "E": "37"
+      },
+      "kunci": "A",
+      "kode": {
+        "A": "kunci",
+        "B": "J-RATA",
+        "C": "J-PENGALIH",
+        "D": "J-BALIK",
+        "E": "J-TANDA"
+      },
+      "nama": {
+        "B": "Menebak dari baris tengah saja",
+        "C": "Menjumlahkan tanpa menguji kolom lain",
+        "D": "Angka atas dan bawah tertukar",
+        "E": "Arah hitung pengurang terbalik"
+      },
+      "alasan_kunci": "bawah = 3 × atas − tengah: 21 − 4 = 17, 15 − 6 = 9, 27 − 10 = 17; kolom 4: 24 − X = 13, X = 11.",
+      "kerangka": "Soal 11 bank deret tabel D'Ajiks Level 5–6; tabel dan aturan apa adanya; pilihan 5 (13 − 8) diganti 31 (3 × 13 − 8, atas dan bawah tertukar) agar urut naik memberi kunci A",
+      "to_terdekat": "bank deret tabel D'Ajiks Level 5–6 Soal 11",
+      "catatan_reviu": "Ganti soal lama a² − b² bernegatif (T6-6). Sumber: GENERATE SOAL TERBARU SKD 2026/docs/deret-tabel-level-5-6 (scripts/build-deret-tabel-lv56.js), Soal 11, kunci sumber E (11). Pilihan 37, 16, 21 dari sumber; 31 baru, dicek pemeriksa rumus lain sumber.",
+      "sumber": "Deret Tabel Level 5–6 Soal 11",
+      "pembahasan": {
+        "ditanya": "Soal meminta X, angka tengah di kolom terakhir. Kalimat penentunya “dengan aturan yang sama”: aturan dicari per kolom, dari atas ke bawah, dan harus berlaku di setiap kolom yang lengkap.",
+        "cepat": "<b>Pola:</b> tiga kali angka atas, dikurangi angka tengah. Petunjuknya, angka bawah selalu sedikit di bawah tiga kali angka atas (3 × 7 = 21, 3 × 5 = 15, 3 × 9 = 27). Kurangnya 21 − 17 = 4, 15 − 9 = 6, dan 27 − 17 = 10, persis angka tengah. <b>Cek ke semua kolom:</b><table class=\"hit\"><thead><tr><th>Kolom</th><th>Hitungan</th><th>Isi</th></tr></thead><tbody><tr><td>1 </td><td>3 × 7 − 4 = 21 − 4 </td><td>17 </td></tr><tr><td>2 </td><td>3 × 5 − 6 = 15 − 6 </td><td>9 </td></tr><tr><td>3 </td><td>3 × 9 − 10 = 27 − 10 </td><td>17 </td></tr></tbody></table><b>Hitung X:</b> kolom terakhir memberi 3 × 8 − X = 13. Jadi 24 − X = 13, dan X = 24 − 13 = 11.",
+        "lain": "Tulis aturannya sebagai bawah + tengah = tiga kali atas. Kolom terakhir: 13 + X = 24, jadi X = 11.",
+        "cek": "Masukkan 11 ke kolom terakhir: 3 × 8 − 11 = 24 − 11 = 13, sama dengan angka bawahnya.",
+        "gugur": {
+          "B": {
+            "uji": "10 + 6 = 16",
+            "teks": "Baris tengah dibaca sendiri: 4, 6, 10 naik 2 lalu 4, ditebak naik 6. Angka tengah tidak berpola sendiri, ia ditentukan angka atas dan bawah di kolomnya."
+          },
+          "C": {
+            "uji": "8 + 13 = 21",
+            "teks": "Dua angka di kolom itu dijumlahkan tanpa dicoba ke kolom lain. Di kolom pertama, 7 + 17 = 24, bukan 4."
+          },
+          "D": {
+            "uji": "3 × 13 − 8 = 31",
+            "teks": "Yang dikali tiga adalah angka atas (8), bukan angka bawah (13)."
+          },
+          "E": {
+            "uji": "24 + 13 = 37",
+            "teks": "X adalah angka pengurang. Dari 24 − X = 13, X dicari dengan 24 − 13, bukan 24 + 13."
+          }
+        },
+        "kunci": "Tiga kali angka atas dikurangi angka tengah berlaku di setiap kolom lengkap, dan kolom terakhir memberi 24 − 11 = 13, jadi X = 11.",
+        "analogi": "Seperti uang saku: uang dari orang tua dikurangi jajan sama dengan sisa di dompet. Kalau uang awal dan sisanya sudah tahu, jajanmu dicari dengan mengurangkan, bukan menjumlahkan.",
+        "waspada": "Melihat X di tengah lalu menebak dari baris tengah saja. Pada tabel per kolom, angka yang hilang tetap dicari lewat aturan kolomnya, walaupun letaknya bukan di bawah."
+      },
+      "bukti": {
+        "metode": "bank D'Ajiks GENERATE SOAL TERBARU SKD 2026, Deret Tabel Level 5–6 Soal 11 (pilihan 5 diganti 31); X tunggal (brute force); rumus lain sumber tidak membenarkan pilihan salah",
+        "bentuk": {
+          "jarak": 5,
+          "median": 5.5,
+          "terpencil": 1.09,
+          "letak": "A"
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B09-C03",
+      "bab": 9,
+      "peran": "contoh",
+      "jenis": "TBD model kotak beracuan",
+      "bentuk": "3 × acuan baris + (acuan kolom)²",
+      "target_detik": 90,
+      "soal": {
+        "pengantar": "Isi setiap petak pada model kotak berikut ditentukan oleh angka acuan di tepi barisnya dan angka acuan di tepi kolomnya.",
+        "tanya": "Nilai X adalah …"
+      },
+      "kalimat_penentu": "angka acuan",
+      "opsi": {
+        "A": "32",
+        "B": "41",
+        "C": "42",
+        "D": "51",
+        "E": "54"
+      },
+      "kunci": "D",
+      "kode": {
+        "A": "J-RATA",
+        "B": "J-LANGKAH",
+        "C": "J-TIGA",
+        "D": "kunci",
+        "E": "J-RATA"
+      },
+      "nama": {
+        "A": "Mencari selisih tetap padahal isinya dari angka acuan",
+        "B": "Berhenti satu langkah sebelum selesai",
+        "C": "Aturan cocok di satu baris, tidak diuji di baris lain",
+        "E": "Mencari selisih tetap padahal isinya dari angka acuan"
+      },
+      "alasan_kunci": "Uji pemisahan: selisih antarkolom tetap 8 dan 27; X = 24 + 27 = 51 = 3 × 5 + 6².",
+      "kerangka": "TBD acuan · sel = 3r + c², acuan baris 2, 4, 5, kolom 1, 3, 6 · X di pojok kanan bawah · selisih sebaris tetap, selisih antarbaris tetap, lupa kali 3, aturan satu baris",
+      "to_terdekat": "pola acuan bank CAT dihindari (pola_terpakai.txt); bukan r² + 2c (narasi)",
+      "catatan_reviu": "Kode = rencana slot. Rumus lain ≤ 3 operasi atas (acuan baris, acuan kolom) yang cocok di 8 petak hanya memberi 51. Revisi cek buta 1: pilihan E 123 (terpencil) diganti 54 = 48 + 6 (selisih antarbaris dianggap tetap).",
+      "pembahasan": {
+        "ditanya": "Isi petak bergantung pada acuan baris dan acuan kolomnya. Kalimat penentunya “angka acuan”: selisih antarpetak bertetangga saja tidak cukup.",
+        "cepat": "Uji pemisahan. Kolom kedua dikurangi kolom pertama selalu 8 (15 − 7, 21 − 13, 24 − 16), dan kolom ketiga dikurangi kolom kedua di dua baris atas selalu 27 (42 − 15, 48 − 21). Selisih yang sama di setiap baris berarti acuan kolom masuk sebagai penjumlah. Jadi X = 24 + 27 = 51.",
+        "lain": "Rumuskan aturannya. Selisih 8 = 3 × 3 − 1 × 1 dan 27 = 6 × 6 − 3 × 3, jadi acuan kolom dikuadratkan. Sisanya di petak pertama 7 − 1 = 6 = 3 × 2, jadi acuan baris dikali 3. Untuk baris 5 dan kolom 6: 3 × 5 + 6 × 6 = 51.",
+        "cek": "Uji aturan di petak lain: 3 × 4 + 3 × 3 = 21. Cocok dengan isi petak baris 4, kolom 3.",
+        "gugur": {
+          "A": {
+            "uji": "24 + 8",
+            "teks": "Selisih 8 antara kolom pertama dan kedua dipakai lagi untuk kolom ketiga: 24 + 8 = 32. Selisih antarkolom bergantung pada acuan kolom, dan dari kolom kedua ke ketiga selisihnya 27."
+          },
+          "B": {
+            "uji": "5 + 36",
+            "teks": "Acuan baris tidak dikali 3: 5 + 6 × 6 = 41. Di petak pertama cara ini memberi 2 + 1 = 3, bukan 7."
+          },
+          "C": {
+            "uji": "36 + 6",
+            "teks": "Aturan kuadrat acuan kolom ditambah 6 diambil dari baris acuan 2 saja: 36 + 6 = 42. Di baris acuan 4, tambahannya 3 × 4 = 12, bukan 6."
+          },
+          "E": {
+            "uji": "48 + 6",
+            "teks": "Selisih dari baris acuan 2 ke baris acuan 4 di kolom ketiga, 48 − 42 = 6, dipakai lagi ke baris acuan 5: 48 + 6 = 54. Acuan baris naik 2 lalu 1, jadi selisih antarbaris tidak tetap; di kolom pertama, 16 − 13 = 3."
+          }
+        },
+        "kunci": "Isi petak sama dengan 3 kali acuan baris ditambah kuadrat acuan kolom, dan untuk baris 5, kolom 6 hasilnya 15 + 36 = 51.",
+        "analogi": "Seperti harga paket les: biaya pertemuan ditentukan oleh baris paket, biaya modul ditentukan oleh kolom jenjang. Harga sebuah petak adalah jumlah keduanya, sehingga selisih dua jenjang selalu sama di setiap paket.",
+        "waspada": "Melihat 16, 24 di baris terakhir, lalu menambah 8 sekali lagi. Selisih itu hanya berlaku antara kolom pertama dan kedua; selisih kolom kedua ke ketiga berbeda dan terlihat di baris atasnya."
+      },
+      "bukti": {
+        "metode": "uji pemisahan + rumus lain ≤ 3 operasi atas (acuan baris, acuan kolom)",
+        "lain": [
+          "((a×3)+(b×b))"
+        ],
+        "bentuk": {
+          "jarak": 3,
+          "median": 6,
+          "terpencil": 1.5,
+          "letak": "D"
+        }
+      },
+      "revisi1": {
+        "alasan": "pilihan E 123 (terpencil) diganti 54 = 48 + 6 (selisih antarbaris dianggap tetap).",
+        "lama": {
+          "kunci": "D",
+          "opsi": {
+            "A": "32",
+            "B": "41",
+            "C": "42",
+            "D": "51",
+            "E": "123"
+          }
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B09-C04",
+      "bab": 9,
+      "peran": "contoh",
+      "jenis": "TBD kotak X-Y",
+      "bentuk": "baris atas selisih bertingkat, bawah = 2 × atas − 1 sekolom",
+      "target_detik": 90,
+      "soal": {
+        "pengantar": "Bilangan pada kotak berikut tersusun menurut pola.",
+        "tanya": "Nilai X dan Y berturut-turut adalah …"
+      },
+      "kalimat_penentu": "berturut-turut",
+      "opsi": {
+        "A": "41 dan 81",
+        "B": "43 dan 81",
+        "C": "43 dan 85",
+        "D": "43 dan 89",
+        "E": "45 dan 89"
+      },
+      "kunci": "C",
+      "kode": {
+        "A": "J-RATA",
+        "B": "J-RATA",
+        "C": "kunci",
+        "D": "J-NOMOR",
+        "E": "J-NOMOR"
+      },
+      "nama": {
+        "A": "Menganggap selisihnya selalu sama",
+        "B": "Menganggap selisihnya selalu sama",
+        "D": "Selisih berikutnya dihitung satu langkah terlalu jauh",
+        "E": "Selisih berikutnya dihitung satu langkah terlalu jauh"
+      },
+      "alasan_kunci": "X = 31 + 12 = 43; Y = 2 × 43 − 1 = 85.",
+      "kerangka": "TBD 2 × 6 X-Y · atas 3, 7, 13, 21, 31 (selisih +2) · bawah = 2 × atas − 1 sekolom · pilihan salah: selisih atas tetap, selisih bawah tetap, selisih bawah dilompati, selisih atas dilompati",
+      "to_terdekat": "TO P1 no. 39: bawah dari kolom sebelumnya, 4 kolom; di sini dari kolom sendiri, 5 kolom diketahui",
+      "catatan_reviu": "Kode = rencana slot. Lima kolom diketahui (pelajaran TO P1: empat kolom membuat aturan rekursif lain memberi X = 33). Skor frekuensi angka: kunci 4, pilihan E 5 (kunci bukan tertinggi); tanpa pasangan tertukar atau cermin tanda. Revisi cek buta 1: angka 43 tidak lagi terpusat di kunci: pilihan E 43 dan 45 diganti 41 dan 85 (X dari selisih tetap, Y dari baris bawah dibaca sendiri), sehingga 85 dan 41 juga dimiliki dua pilihan. Revisi cek buta 2: pilihan D 43 dan 86 diganti 43 dan 81 (X benar, selisih bawah dianggap tetap 20); kini 41, 43, 81, 85 masing-masing muncul di dua pilihan dan empat pilihan sama-sama berbagi dua unsur. Revisi cek buta 3: kisi 2 × 2 {41, 43} × {81, 85} dipecah: B 41 dan 85 diganti 43 dan 81, D diganti 43 dan 89 (selisih bawah dilompati), E tetap 45 dan 89; tebakan bagian terbanyak per posisi (43 dengan 81 atau 89) jatuh di pilihan salah, dan setiap pilihan berbagi bagian.",
+      "pembahasan": {
+        "ditanya": "Kotak memuat dua petak kosong. Kalimat penentunya “berturut-turut”: nilai pertama di pilihan adalah X, nilai kedua Y, dan keduanya harus benar.",
+        "cepat": "Baris atas: selisihnya 4, 6, 8, 10, jadi selisih berikutnya 12 dan X = 31 + 12 = 43. Baris bawah dihitung dari baris atas sekolom: 2 × 3 − 1 = 5, 2 × 7 − 1 = 13, sampai 2 × 31 − 1 = 61. Jadi Y = 2 × 43 − 1 = 85.",
+        "lain": "Baris bawah juga dapat dibaca sendiri: selisihnya 8, 12, 16, 20, jadi selisih berikutnya 24 dan Y = 61 + 24 = 85. Kedua cara memberi Y yang sama.",
+        "cek": "Uji pasangan 43 dan 85 di aturan bawah: 2 × 43 − 1 = 85. Tiga pilihan memuat X = 43, tetapi hanya C yang Y-nya cocok dengan aturan bawah.",
+        "gugur": {
+          "A": {
+            "uji": "selisih atas 10 lagi",
+            "teks": "Selisih atas dianggap tetap 10: X = 31 + 10 = 41, lalu Y = 2 × 41 − 1 = 81. Selisih baris atas naik 2 setiap langkah."
+          },
+          "B": {
+            "uji": "selisih bawah 20 lagi",
+            "teks": "X sudah benar, tetapi baris bawah dibaca sendiri dengan selisih dianggap tetap 20: 61 + 20 = 81. Selisih baris bawah naik 4 setiap langkah (8, 12, 16, 20), jadi berikutnya 24."
+          },
+          "D": {
+            "uji": "selisih bawah 28",
+            "teks": "X sudah benar, tetapi selisih bawah dilompati satu: sesudah 20 dipakai 28, bukan 24, sehingga Y = 61 + 28 = 89."
+          },
+          "E": {
+            "uji": "selisih atas 14",
+            "teks": "Selisih atas dilompati satu: sesudah 10 dipakai 14, bukan 12. Hasilnya X = 45 dan Y = 2 × 45 − 1 = 89."
+          }
+        },
+        "kunci": "Selisih atas berikutnya 12 memberi X = 43, dan aturan sekolom memberi Y = 2 × 43 − 1 = 85.",
+        "analogi": "Seperti dua baris tiang pagar yang berpasangan: tinggi tiang belakang selalu dua kali tiang depan dikurangi 1. Menentukan tiang depan saja belum cukup; tiang belakangnya dihitung dari pasangan yang sama.",
+        "waspada": "Memilih angka yang paling sering muncul di setiap posisi. X = 43 memang muncul tiga kali, tetapi Y yang paling sering, 81 dan 89, sama-sama salah. Hitung Y dari aturan bawah, jangan dari pilihan."
+      },
+      "bukti": {
+        "metode": "atas: selisih 4, 6, 8, 10 (aturan lain hanya 43); bawah = 2 × atas − 1 (rumus lain hanya 85); skor frekuensi",
+        "skor": {
+          "A": 3,
+          "B": 5,
+          "C": 4,
+          "D": 5,
+          "E": 3
+        },
+        "lainB": [
+          "(a+(a−1))"
+        ],
+        "terbanyak": [
+          "B",
+          "D"
+        ],
+        "simpul": {
+          "A": 1,
+          "B": 3,
+          "C": 2,
+          "D": 3,
+          "E": 1
+        }
+      },
+      "revisi1": {
+        "alasan": "angka 43 tidak lagi terpusat di kunci: pilihan E 43 dan 45 diganti 41 dan 85 (X dari selisih tetap, Y dari baris bawah dibaca sendiri), sehingga 85 dan 41 juga dimiliki dua pilihan.",
+        "lama": {
+          "kunci": "C",
+          "opsi": {
+            "A": "41 dan 81",
+            "B": "43 dan 86",
+            "C": "43 dan 85",
+            "D": "45 dan 89",
+            "E": "43 dan 45"
+          }
+        }
+      },
+      "revisi2": {
+        "alasan": "pilihan D 43 dan 86 diganti 43 dan 81 (X benar, selisih bawah dianggap tetap 20); kini 41, 43, 81, 85 masing-masing muncul di dua pilihan dan empat pilihan sama-sama berbagi dua unsur.",
+        "lama": {
+          "kunci": "C",
+          "opsi": {
+            "A": "41 dan 81",
+            "B": "41 dan 85",
+            "C": "43 dan 85",
+            "D": "43 dan 86",
+            "E": "45 dan 89"
+          }
+        }
+      },
+      "revisi3": {
+        "alasan": "kisi 2 × 2 {41, 43} × {81, 85} dipecah: B 41 dan 85 diganti 43 dan 81, D diganti 43 dan 89 (selisih bawah dilompati), E tetap 45 dan 89; tebakan bagian terbanyak per posisi (43 dengan 81 atau 89) jatuh di pilihan salah, dan setiap pilihan berbagi bagian.",
+        "lama": {
+          "kunci": "C",
+          "opsi": {
+            "A": "41 dan 81",
+            "B": "41 dan 85",
+            "C": "43 dan 85",
+            "D": "43 dan 81",
+            "E": "45 dan 89"
+          }
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B09-L01",
+      "bab": 9,
+      "peran": "latihan",
+      "jenis": "TBD dua kolom",
+      "bentuk": "linear, kiri tidak urut",
+      "target_detik": 60,
+      "soal": {
+        "pengantar": "Setiap bilangan di kolom kanan diperoleh dari bilangan di kolom kiri dengan aturan yang sama.",
+        "tanya": "Bilangan di kolom kanan untuk bilangan 20 di kolom kiri adalah …"
+      },
+      "kalimat_penentu": "aturan yang sama",
+      "opsi": {
+        "A": "71",
+        "B": "75",
+        "C": "79",
+        "D": "80",
+        "E": "85"
+      },
+      "kunci": "B",
+      "kode": {
+        "A": "J-NOMOR",
+        "B": "kunci",
+        "C": "J-NOMOR",
+        "D": "J-KONST",
+        "E": "J-TANDA"
+      },
+      "nama": {
+        "A": "Bilangan kiri meleset satu",
+        "C": "Bilangan kiri meleset satu",
+        "D": "Lupa bilangan tetap dalam rumus",
+        "E": "Salah tanda atau urutan pengurangan terbalik"
+      },
+      "alasan_kunci": "Kanan = 4 × kiri − 5; 4 × 20 − 5 = 75.",
+      "kerangka": "TBD dua kolom linear 4k − 5 · kiri 5, 2, 9, 7 · tanya kiri 20 · kiri ±1, tanpa konstanta, tanda",
+      "to_terdekat": "TO P1 tanpa dua kolom",
+      "catatan_reviu": "Kode = rencana slot (J-NOMOR ×2, J-KONST, J-TANDA). Revisi cek buta 1: pilihan E 119 (selisih mentah, terpencil) diganti 79 = 4 × 21 − 5 (kiri meleset satu ke atas).",
+      "bukti": {
+        "metode": "linear di 4 baris; rumus lain ≤ 3 operasi",
+        "lain": [],
+        "bentuk": {
+          "jarak": 4,
+          "median": 4,
+          "terpencil": 1.25,
+          "letak": "B"
+        }
+      },
+      "revisi1": {
+        "alasan": "pilihan E 119 (selisih mentah, terpencil) diganti 79 = 4 × 21 − 5 (kiri meleset satu ke atas).",
+        "lama": {
+          "kunci": "B",
+          "opsi": {
+            "A": "71",
+            "B": "75",
+            "C": "80",
+            "D": "85",
+            "E": "119"
+          }
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta bilangan kanan untuk bilangan “20” di kolom kiri, dengan aturan yang sama untuk setiap baris.",
+        "cepat": "Dari kiri 5 ke kiri 7, kanan naik 23 − 15 = 8, jadi setiap kiri naik 1, kanan naik 4. Bilangan tetapnya 4 × 5 − 15 = 5, jadi aturannya 4 × kiri − 5. Untuk kiri 20: 4 × 20 − 5 = 75.",
+        "lain": "Mulai dari baris terdekat. Dari kiri 9 ke kiri 20 ada 20 − 9 = 11 langkah, jadi kanan bertambah 4 × 11 = 44, dan 31 + 44 = 75.",
+        "cek": "Uji aturan di keempat baris: 4 × 2 − 5 = 3, 4 × 5 − 5 = 15, 4 × 7 − 5 = 23, dan 4 × 9 − 5 = 31. Semua cocok.",
+        "gugur": {
+          "A": {
+            "uji": "kiri 19",
+            "teks": "4 × 19 − 5 = 71 adalah bilangan kanan untuk kiri 19. Bilangan kiri yang dimasukkan kurang satu."
+          },
+          "C": {
+            "uji": "kiri 21",
+            "teks": "4 × 21 − 5 = 79 adalah bilangan kanan untuk kiri 21. Bilangan kiri yang dimasukkan lebih satu."
+          },
+          "D": {
+            "uji": "tanpa − 5",
+            "teks": "4 × 20 = 80 baru bagian perkaliannya; pengurangan 5 terlupa."
+          },
+          "E": {
+            "uji": "+ 5",
+            "teks": "4 × 20 + 5 = 85: bilangan tetap ditambahkan, padahal aturannya dikurangi 5. Uji di baris mana pun langsung menolaknya, misalnya 4 × 5 + 5 = 25, bukan 15."
+          }
+        },
+        "kunci": "Aturannya 4 × kiri − 5 dan cocok di keempat baris, sehingga kiri 20 menghasilkan 4 × 20 − 5 = 75.",
+        "analogi": "Seperti tarif ojek daring: harga per kilometer dikali jarak, lalu dipotong diskon tetap. Begitu harga per kilometer dan diskonnya ketemu dari beberapa perjalanan, jarak berapa pun bisa dihitung.",
+        "waspada": "Menebak aturan dari satu baris, misalnya 5 menjadi 15 dibaca “dikali 3”. Aturan itu gagal di baris 2 dan 3; uji setiap tebakan di semua baris."
+      }
+    },
+    {
+      "id": "HB-TIU-B09-L02",
+      "bab": 9,
+      "peran": "latihan",
+      "jenis": "TBD dua kolom",
+      "bentuk": "kiri × (2 × kiri − 1), sidik faktor",
+      "target_detik": 75,
+      "soal": {
+        "pengantar": "Kolom kanan tabel berikut diperoleh dari kolom kiri dengan satu aturan.",
+        "tanya": "Bilangan kanan untuk kiri 11 adalah …"
+      },
+      "kalimat_penentu": "satu aturan",
+      "opsi": {
+        "A": "143",
+        "B": "190",
+        "C": "201",
+        "D": "231",
+        "E": "242"
+      },
+      "kunci": "D",
+      "kode": {
+        "A": "J-TIGA",
+        "B": "J-NOMOR",
+        "C": "J-RATA",
+        "D": "kunci",
+        "E": "J-KONST"
+      },
+      "nama": {
+        "A": "Aturan cocok di satu baris, tidak diuji di baris lain",
+        "B": "Bilangan kiri meleset satu",
+        "C": "Mencari selisih tetap padahal isinya dari angka acuan",
+        "E": "Lupa bilangan tetap dalam rumus"
+      },
+      "alasan_kunci": "Kanan : kiri = 2 × kiri − 1; 11 × 21 = 231.",
+      "kerangka": "TBD dua kolom k(2k − 1) · kiri 3, 5, 8, 6 · baris pertama juga cocok k(k + 2) · sidik bagi kiri · kiri −1, linear dua baris akhir, tanpa −1",
+      "to_terdekat": "TO P1 tanpa dua kolom; bukan kiri × (kiri + 3) (narasi)",
+      "catatan_reviu": "Kode = rencana slot (J-RATA, J-TIGA, J-KONST) + J-NOMOR.",
+      "bukti": {
+        "metode": "kanan : kiri = 2 × kiri − 1; rumus lain ≤ 3 operasi",
+        "lain": [
+          "(a×(a+(a−1)))"
+        ],
+        "bentuk": {
+          "jarak": 11,
+          "median": 20.5,
+          "terpencil": 2.29,
+          "letak": "D"
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta bilangan kanan untuk “kiri 11”, dengan satu aturan yang berlaku di semua baris.",
+        "cepat": "Bagi kanan dengan kiri: 15 : 3 = 5, 45 : 5 = 9, 120 : 8 = 15, dan 66 : 6 = 11. Hasil baginya selalu 2 × kiri − 1, misalnya 2 × 8 − 1 = 15. Untuk kiri 11: 2 × 11 − 1 = 21, jadi bilangan kanannya 11 × 21 = 231.",
+        "lain": "Hitung 11 × 21 dengan memecah: 11 × 21 = 11 × 20 + 11 = 220 + 11 = 231.",
+        "cek": "Uji di baris lain: 5 × (2 × 5 − 1) = 45 dan 6 × (2 × 6 − 1) = 66. Cocok.",
+        "gugur": {
+          "A": {
+            "uji": "kiri × (kiri + 2)",
+            "teks": "3 × 5 = 15 cocok di baris pertama, lalu dipakai untuk 11: 11 × 13 = 143. Di baris kedua aturan itu memberi 5 × 7 = 35, bukan 45."
+          },
+          "B": {
+            "uji": "kiri 10",
+            "teks": "10 × (2 × 10 − 1) = 190 adalah bilangan kanan untuk kiri 10. Bilangan kiri yang dimasukkan kurang satu."
+          },
+          "C": {
+            "uji": "kenaikan tetap",
+            "teks": "Kenaikan dari kiri 6 ke kiri 8, (120 − 66) : 2 = 27 per langkah, dianggap tetap: 120 + 3 × 27 = 201. Kenaikannya tidak tetap; dari kiri 3 ke kiri 5 hanya (45 − 15) : 2 = 15."
+          },
+          "E": {
+            "uji": "tanpa − 1",
+            "teks": "11 × 22 = 242: hasil bagi dihitung 2 × kiri tanpa dikurangi 1."
+          }
+        },
+        "kunci": "Kanan dibagi kiri selalu sama dengan 2 × kiri − 1, sehingga kiri 11 menghasilkan 11 × 21 = 231.",
+        "analogi": "Seperti struk belanja yang hanya mencantumkan banyak barang dan total harga. Membagi total dengan banyak barang membuka harga satuannya, dan di situlah aturannya terlihat.",
+        "waspada": "Berhenti di aturan yang cocok di baris pertama, yaitu kiri × (kiri + 2). Satu baris yang cocok belum bukti; uji tebakanmu di semua baris sebelum menghitung kiri 11."
+      }
+    },
+    {
+      "id": "HB-TIU-B09-L03",
+      "bab": 9,
+      "peran": "latihan",
+      "jenis": "TBD model kotak tetangga",
+      "bentuk": "kiri + atas − 2, 4 × 4",
+      "target_detik": 90,
+      "soal": {
+        "pengantar": "Pada kotak berikut, setiap petak selain baris teratas dan kolom paling kiri dihitung dari petak di sebelah kirinya dan petak di atasnya dengan aturan yang sama.",
+        "tanya": "Nilai X adalah …"
+      },
+      "kalimat_penentu": "petak di sebelah kirinya dan petak di atasnya",
+      "opsi": {
+        "A": "33",
+        "B": "49",
+        "C": "61",
+        "D": "63",
+        "E": "65"
+      },
+      "kunci": "C",
+      "kode": {
+        "A": "J-TIGA",
+        "B": "J-RATA",
+        "C": "kunci",
+        "D": "J-LANGKAH",
+        "E": "J-TANDA"
+      },
+      "nama": {
+        "A": "Aturan cocok di satu baris, tidak diuji di baris lain",
+        "B": "Mencari selisih tetap padahal isinya dari angka acuan",
+        "D": "Berhenti satu langkah sebelum selesai",
+        "E": "Salah tanda atau urutan pengurangan terbalik"
+      },
+      "alasan_kunci": "Petak = kiri + atas − 2; X = 31 + 32 − 2 = 61.",
+      "kerangka": "TBD tetangga 4 × 4 · petak = kiri + atas − 2 · 8 petak isian sebagai saksi · atas + 1 (cocok petak pertama), selisih sebaris tetap, tanpa −2, + 2",
+      "to_terdekat": "bank CAT memakai kiri + atas; di sini dikurangi 2",
+      "catatan_reviu": "Slot: J-TIGA, J-URUTAN, J-RATA; J-URUTAN tidak bermakna pada aturan tambah-kurang, diganti J-LANGKAH dan J-TANDA.",
+      "bukti": {
+        "metode": "8 petak isian dicek; rumus lain ≤ 3 operasi atas (kiri, atas)",
+        "lain": [
+          "(a+(b−2))"
+        ],
+        "bentuk": {
+          "jarak": 2,
+          "median": 7,
+          "terpencil": 2.29,
+          "letak": "C"
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta “Nilai X”, yang dihitung dari petak di sebelah kirinya dan petak di atasnya. Aturannya sama untuk setiap petak isian.",
+        "cepat": "Coba petak isian pertama: kiri 3 dan atas 6 menghasilkan 7, dan 3 + 6 − 2 = 7. Uji di petak lain: 13 + 9 − 2 = 20 dan 20 + 14 − 2 = 32. Aturannya kiri + atas − 2, jadi X = 31 + 32 − 2 = 61.",
+        "lain": "Kerjakan bertahap untuk X: jumlahkan kedua tetangganya, 31 + 32 = 63, lalu kurangi 2: 63 − 2 = 61.",
+        "cek": "Uji di baris bawah sebelum X: 2 + 13 − 2 = 13 dan 13 + 20 − 2 = 31. Kedua petak cocok, jadi aturan ini berlaku sampai baris terakhir.",
+        "gugur": {
+          "A": {
+            "uji": "atas + 1",
+            "teks": "Di petak pertama 6 + 1 = 7, jadi aturan “atas + 1” cocok, lalu dipakai untuk X: 32 + 1 = 33. Di petak sebelahnya aturan itu memberi 4 + 1 = 5, bukan 9."
+          },
+          "B": {
+            "uji": "selisih sebaris",
+            "teks": "Selisih di baris bawah, 31 − 13 = 18, dianggap tetap: 31 + 18 = 49. Isi petak dihitung dari tetangganya, bukan dari selisih tetap."
+          },
+          "D": {
+            "uji": "lupa − 2",
+            "teks": "31 + 32 = 63 baru jumlahnya; pengurangan 2 belum dikerjakan."
+          },
+          "E": {
+            "uji": "+ 2",
+            "teks": "31 + 32 + 2 = 65: angka 2 ditambahkan, padahal aturannya dikurangi."
+          }
+        },
+        "kunci": "Setiap petak sama dengan kiri ditambah atas lalu dikurangi 2, sehingga X = 31 + 32 − 2 = 61.",
+        "analogi": "Seperti ubin mozaik yang warnanya ditentukan ubin di kiri dan di atasnya. Begitu aturan dua tetangga itu ketemu, kamu bisa melanjutkan pola sampai sudut terakhir.",
+        "waspada": "Berhenti pada aturan yang cocok di petak pertama. Uji aturanmu di sedikitnya dua petak lain, termasuk petak di baris yang berbeda."
+      }
+    },
+    {
+      "id": "HB-TIU-B09-L04",
+      "bab": 9,
+      "peran": "latihan",
+      "jenis": "TBD 4 kolom per baris",
+      "bentuk": "a + b × c, empat baris (bank D'Ajiks Soal 2)",
+      "target_detik": 90,
+      "soal": {
+        "pengantar": "Bilangan terakhir di setiap baris tabel berikut dihitung dari tiga bilangan sebelumnya dengan aturan yang sama.",
+        "tanya": "Nilai X yang tepat adalah …"
+      },
+      "kalimat_penentu": "dengan aturan yang sama",
+      "opsi": {
+        "A": "7",
+        "B": "18",
+        "C": "26",
+        "D": "30",
+        "E": "42"
+      },
+      "kunci": "C",
+      "kode": {
+        "A": "J-TIGA",
+        "B": "J-LANGKAH",
+        "C": "kunci",
+        "D": "J-PENGALIH",
+        "E": "J-URUTAN"
+      },
+      "nama": {
+        "A": "Aturan cocok di satu baris, tidak diuji di baris lain",
+        "B": "Berhenti satu langkah sebelum selesai",
+        "D": "Salah memilih angka yang dikali",
+        "E": "Menjumlahkan sebelum mengalikan"
+      },
+      "alasan_kunci": "d = a + b × c: 3 + 20 = 23, 6 + 14 = 20, 5 + 12 = 17, 8 + 18 = 26.",
+      "kerangka": "Soal 2 bank deret tabel D'Ajiks Level 5–6; tabel dan aturan apa adanya; pilihan 51 (8 × 6 + 3) diganti 7 (c² − 2, cocok di baris 1 saja) karena 51 terpencil (jarak > 3 × median) dan agar urut naik memberi kunci C",
+      "to_terdekat": "bank deret tabel D'Ajiks Level 5–6 Soal 2",
+      "catatan_reviu": "Ganti soal lama a² − 2b bernegatif (T6-6, masukan Gusti: terlalu kompleks). Sumber: GENERATE SOAL TERBARU SKD 2026/docs/deret-tabel-level-5-6 (scripts/build-deret-tabel-lv56.js), Soal 2, kunci sumber A (26). Pilihan 18, 30, 42 dari sumber; 7 baru, dicek pemeriksa rumus lain sumber.",
+      "sumber": "Deret Tabel Level 5–6 Soal 2",
+      "pembahasan": {
+        "ditanya": "Soal meminta X, angka terakhir baris keempat. Kalimat penentunya “dengan aturan yang sama”: aturan dari tiga bilangan pertama harus berlaku di ketiga baris lengkap.",
+        "cepat": "<b>Pola:</b> angka pertama ditambah hasil kali angka kedua dan ketiga. Petunjuknya, angka terakhir jauh lebih besar dari jumlah tiga angka sebelumnya (3 + 4 + 5 = 12, padahal isinya 23). Berarti ada perkalian. Di baris 1, 4 × 5 = 20, tinggal ditambah 3. <b>Cek ke semua baris:</b><table class=\"hit\"><thead><tr><th>Baris</th><th>Hitungan</th><th>Isi</th></tr></thead><tbody><tr><td>1 </td><td>3 + 4 × 5 = 3 + 20 </td><td>23 </td></tr><tr><td>2 </td><td>6 + 2 × 7 = 6 + 14 </td><td>20 </td></tr><tr><td>3 </td><td>5 + 3 × 4 = 5 + 12 </td><td>17 </td></tr></tbody></table><b>Hitung X:</b> 8 + 6 × 3 = 8 + 18 = 26.",
+        "lain": "Kurangi angka terakhir dengan angka pertama: 23 − 3 = 20, 20 − 6 = 14, 17 − 5 = 12. Sisanya selalu hasil kali angka kedua dan ketiga. Baris terakhir: 6 × 3 = 18, lalu 18 + 8 = 26.",
+        "cek": "Masukkan 26: 26 − 8 = 18, dan 18 memang 6 × 3. Jumlah biasa tidak cocok di baris mana pun, jadi perkalian itu memang perlu.",
+        "gugur": {
+          "A": {
+            "uji": "3 × 3 − 2 = 7",
+            "teks": "23 dekat dengan 5 × 5, lalu ditebak angka ketiga dikuadratkan dikurangi 2. Cocok di baris 1, tetapi di baris 2 hasilnya 7 × 7 − 2 = 47, bukan 20."
+          },
+          "B": {
+            "uji": "6 × 3 = 18",
+            "teks": "Hasil kalinya sudah benar, tapi angka pertama, 8, belum ditambahkan."
+          },
+          "D": {
+            "uji": "8 × 3 + 6 = 30",
+            "teks": "Yang dikali angka pertama dan ketiga. Di baris 1 cara itu memberi 3 × 5 + 4 = 19, bukan 23."
+          },
+          "E": {
+            "uji": "(8 + 6) × 3 = 42",
+            "teks": "8 dan 6 dijumlah dulu, baru dikali 3. Di baris 1 cara itu memberi (3 + 4) × 5 = 35, bukan 23. Perkalian dikerjakan lebih dulu."
+          }
+        },
+        "kunci": "Angka pertama ditambah hasil kali angka kedua dan ketiga berlaku di ketiga baris lengkap, dan baris terakhir memberi 8 + 18 = 26.",
+        "analogi": "Seperti bayar parkir 8 ribu lalu membeli 6 barang seharga 3 ribu per barang. Totalnya 8 + 6 × 3, bukan (8 + 6) × 3, sebab yang dikali hanya harga barangnya.",
+        "waspada": "Mengerjakan dari kiri ke kanan begitu saja. Ingat urutan hitung: kali dan bagi dikerjakan sebelum tambah dan kurang."
+      },
+      "bukti": {
+        "metode": "bank D'Ajiks GENERATE SOAL TERBARU SKD 2026, Deret Tabel Level 5–6 Soal 2 (pilihan 51 diganti 7); X tunggal (brute force); rumus lain sumber tidak membenarkan pilihan salah",
+        "bentuk": {
+          "jarak": 4,
+          "median": 9.5,
+          "terpencil": 1.26,
+          "letak": "C"
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B10-P01",
+      "bab": 10,
+      "peran": "pembuka",
+      "jenis": "CRT kerja bersama",
+      "bentuk": "satu pelaku berhenti, tanya total waktu",
+      "target_detik": 90,
+      "soal": {
+        "pengantar": "Ani dapat mengecat sebuah pagar sendirian dalam 6 jam, sedangkan Budi dalam 9 jam. Mereka mulai mengecat bersama-sama. Setelah 2 jam, Budi pergi, dan Ani menyelesaikan sisanya sendirian.",
+        "tanya": "Pagar selesai dicat setelah …, dihitung sejak mereka mulai."
+      },
+      "kalimat_penentu": "dihitung sejak mereka mulai",
+      "opsi": {
+        "A": "2 jam 40 menit",
+        "B": "3 jam 36 menit",
+        "C": "4 jam 24 menit",
+        "D": "4 jam 36 menit",
+        "E": "4 jam 40 menit"
+      },
+      "kunci": "E",
+      "kode": {
+        "A": "J-LANGKAH",
+        "B": "J-ASUMSI",
+        "C": "J-SATUAN",
+        "D": "J-SATUAN",
+        "E": "kunci"
+      },
+      "nama": {
+        "A": "Berhenti satu langkah sebelum selesai",
+        "B": "Memakai keterangan yang tidak tertulis di soal",
+        "C": "Lupa menyamakan satuan",
+        "D": "Lupa menyamakan satuan"
+      },
+      "alasan_kunci": "18 bagian; 2 jam bersama = 10 bagian; sisa 8 : 3 = 2 jam 40 menit; total 4 jam 40 menit.",
+      "kerangka": "CRT kerja bersama · kapasitas = KPK 6, 9 · pelaku kedua berhenti setelah 2 jam · tahap akhir saja, terus bersama, menit dibaca desimal, ⅔ jam dibulatkan",
+      "to_terdekat": "TO P1 no. 45 (pengosong terlambat); Bab 2 C2 (pekerja berubah, tanya total hari)",
+      "catatan_reviu": "Slot: J-LANGKAH, J-LAJU, J-ASUMSI, J-SATUAN; J-LAJU (waktu dirata-rata) menghasilkan pilihan berbentuk jam bulat yang tunggal bentuknya, diganti jalur kedua J-SATUAN agar kelima pilihan berbentuk jam-menit.",
+      "pembahasan": {
+        "ditanya": "Soal meminta lama seluruh pekerjaan. Kalimat penentunya “dihitung sejak mereka mulai”: jawabannya mencakup 2 jam kerja bersama dan lama Ani bekerja sendirian.",
+        "cepat": "Anggap pagar 18 bagian, KPK dari 6 dan 9. Laju Ani 18 : 6 = 3 bagian per jam, laju Budi 18 : 9 = 2 bagian per jam. Dua jam bersama menyelesaikan (3 + 2) × 2 = 10 bagian. Sisa 18 − 10 = 8 bagian dikerjakan Ani dalam 8 : 3 = 2{2/3} jam, yaitu 2 jam 40 menit. Totalnya 4 jam 40 menit.",
+        "lain": "Pakai pecahan pekerjaan. Dalam 2 jam Ani menyelesaikan {1/3} dan Budi {2/9}, jumlahnya {1/3} + {2/9} = {5/9}. Sisa {4/9} pekerjaan dikerjakan Ani dengan laju {1/6} per jam, perlu {4/9} × 6 = {8/3} jam.",
+        "cek": "Uji masuk akal: 4 jam 40 menit kurang dari 6 jam (Ani sendirian), tetapi lebih dari 3 jam 36 menit (berdua sampai selesai). Jawabannya memang berada di antara keduanya.",
+        "gugur": {
+          "A": {
+            "uji": "tahap kedua saja",
+            "teks": "2 jam 40 menit adalah lama Ani bekerja sendirian. Dua jam pertama belum ditambahkan."
+          },
+          "B": {
+            "uji": "Budi terus bekerja",
+            "teks": "Budi dianggap bekerja sampai pagar selesai: 18 : 5 = 3{3/5} jam, yaitu 3 jam 36 menit. Soal menyebut Budi pergi setelah 2 jam."
+          },
+          "C": {
+            "uji": "menit dibaca desimal",
+            "teks": "2 jam 40 menit ditulis 2,40 jam, lalu 4,40 jam dibaca 4 jam 24 menit. Menit bukan bagian desimal jam; 40 menit sama dengan {2/3} jam."
+          },
+          "D": {
+            "uji": "{2/3} jam dibulatkan",
+            "teks": "{2/3} jam dibulatkan menjadi 0,6 jam, lalu dihitung 0,6 × 60 = 36 menit. Yang tepat {2/3} × 60 = 40 menit."
+          }
+        },
+        "kunci": "Dua jam bersama menyelesaikan 10 dari 18 bagian, sisanya dikerjakan Ani dalam 2 jam 40 menit, jadi totalnya 4 jam 40 menit.",
+        "analogi": "Seperti dua teman yang memanen cabai bersama lalu satu orang pulang: sisa kebun yang dipanen sendirian jadi lebih lama, dan lama panen dihitung dari pagi, bukan dari saat temannya pulang.",
+        "waspada": "Menjawab 2 jam 40 menit sebab angka itulah yang terakhir dihitung. Baca lagi pertanyaannya: sejak mereka mulai berarti dua jam pertama ikut dihitung."
+      },
+      "bukti": {
+        "metode": "kapasitas 18 bagian (KPK 6, 9); tahap 1: 10 bagian, tahap 2: 8 bagian : 3",
+        "total": 4.666666666666667,
+        "bentuk": {
+          "jarak": 0.06666666666666732,
+          "median": 0.4999999999999998,
+          "terpencil": 1.87,
+          "letak": "E"
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B10-C01",
+      "bab": 10,
+      "peran": "contoh",
+      "jenis": "CRT persen kapasitas",
+      "bentuk": "isi turun karena pemakaian, tanya tambahan",
+      "target_detik": 60,
+      "soal": {
+        "pengantar": "Tangki air sebuah sekolah terisi 75% dari kapasitasnya. Setelah dipakai 360 liter, isinya tinggal 45%.",
+        "tanya": "Agar tangki terisi 90%, air yang perlu ditambahkan sebanyak … liter."
+      },
+      "kalimat_penentu": "terisi 90%",
+      "opsi": {
+        "A": "54",
+        "B": "180",
+        "C": "405",
+        "D": "486",
+        "E": "540"
+      },
+      "kunci": "E",
+      "kode": {
+        "A": "J-NOL",
+        "B": "J-PENGALIH",
+        "C": "J-BASIS",
+        "D": "J-BASIS",
+        "E": "kunci"
+      },
+      "nama": {
+        "A": "Kurang satu nol",
+        "B": "Memakai keadaan yang sudah lewat",
+        "C": "Persen dihitung dari bilangan yang salah",
+        "D": "Persen dihitung dari bilangan yang salah"
+      },
+      "alasan_kunci": "30% = 360 liter → 1% = 12 liter; dari 45% ke 90% perlu 45 × 12 = 540 liter.",
+      "kerangka": "CRT persen kapasitas dua keadaan · turun 75% → 45% oleh 360 liter · tanya tambahan ke 90% · kurang nol, keadaan awal, 45% dari isi awal, 45% dari isi target",
+      "to_terdekat": "TO P1 no. 44 (10% → 60%, tanya kapasitas); bukan 40% → 65% dan 50 liter (narasi)",
+      "catatan_reviu": "Slot: J-BASIS, J-LANGKAH, J-PENGALIH, J-NOL; J-LANGKAH (kapasitas 1.200 atau isi target 1.080) diganti J-BASIS kedua agar kunci tidak terapit pilihan besar yang jauh (kunci E, jarak 54 ≤ median 103,5).",
+      "pembahasan": {
+        "ditanya": "Soal meminta tambahan air dalam liter. Kalimat penentunya “terisi 90%”: 90% dihitung dari kapasitas penuh tangki, bukan dari isi sekarang.",
+        "cepat": "Pemakaian 360 liter menurunkan isi sebesar 75% − 45% = 30%. Jadi 1% kapasitas sama dengan 360 : 30 = 12 liter. Dari 45% ke 90% perlu 45%, yaitu 45 × 12 = 540 liter.",
+        "lain": "Kapasitas tangki 100 × 12 = 1.200 liter. Isi sekarang 45% × 1.200 = 540 liter, dan isi yang diinginkan 90% × 1.200 = 1.080 liter. Tambahannya 1.080 − 540 = 540 liter.",
+        "cek": "Tambahan 540 liter sama dengan 45% dari 1.200 liter. Isi sekarang juga 45%, jadi sesudah ditambah, tangki terisi tepat 90%. Cocok.",
+        "gugur": {
+          "A": {
+            "uji": "360 : 300",
+            "teks": "360 dibagi 300, bukan 30, sehingga 1% dikira 1,2 liter dan tambahannya 45 × 1,2 = 54 liter. Bandingkan dengan pemakaian 360 liter: menaikkan isi 45% jelas butuh lebih banyak dari itu."
+          },
+          "B": {
+            "uji": "90% − 75%",
+            "teks": "Kenaikan dihitung dari 75%, padahal isi itu sudah turun menjadi 45%: 15 × 12 = 180 liter. Titik awalnya adalah isi sekarang."
+          },
+          "C": {
+            "uji": "45% dari isi awal",
+            "teks": "45% dihitung dari isi awal: 45% × 900 = 405. Persen kapasitas selalu dihitung dari kapasitas penuh, 1.200 liter."
+          },
+          "D": {
+            "uji": "45% dari isi target",
+            "teks": "45% dihitung dari isi yang diinginkan, 1.080 liter: 45% × 1.080 = 486. Dasar persennya tetap kapasitas penuh."
+          }
+        },
+        "kunci": "Satu persen kapasitas bernilai 12 liter, dan kekurangan 45% bernilai 540 liter.",
+        "analogi": "Seperti mengisi daya baterai ponsel: dari 45% ke 90% kamu mengisi 45% dari kapasitas baterai, bukan 45% dari daya yang tersisa.",
+        "waspada": "Menghitung 45% dari air yang ada di tangki, karena isi itulah yang terbayang. Pada soal persen kapasitas, setiap persen adalah bagian dari tangki penuh."
+      },
+      "bukti": {
+        "metode": "30% = 360 liter → kapasitas 1.200 liter; tambahan 45% × 1.200",
+        "kap": 1200,
+        "bentuk": {
+          "jarak": 54,
+          "median": 103.5,
+          "terpencil": 1.22,
+          "letak": "E"
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B10-C02",
+      "bab": 10,
+      "peran": "contoh",
+      "jenis": "CRT berbalik nilai",
+      "bentuk": "pekerjaan terhenti, tanya pekerja tambahan",
+      "target_detik": 75,
+      "soal": {
+        "pengantar": "Pembangunan sebuah pos ronda direncanakan selesai dalam 28 hari oleh 20 pekerja. Setelah 8 hari bekerja, pembangunan terhenti 4 hari karena hujan.",
+        "tanya": "Agar pembangunan selesai tepat waktu, banyak pekerja tambahan yang diperlukan adalah …"
+      },
+      "kalimat_penentu": "pekerja tambahan",
+      "opsi": {
+        "A": "4",
+        "B": "5",
+        "C": "15",
+        "D": "20",
+        "E": "25"
+      },
+      "kunci": "B",
+      "kode": {
+        "A": "J-SEARAH",
+        "B": "kunci",
+        "C": "J-LANGKAH",
+        "D": "J-ASUMSI",
+        "E": "J-LANGKAH"
+      },
+      "nama": {
+        "A": "Berbalik nilai dihitung senilai",
+        "C": "Pekerjaan yang sudah selesai tidak dikurangkan",
+        "D": "Memakai keterangan yang tidak tertulis di soal",
+        "E": "Berhenti satu langkah sebelum selesai"
+      },
+      "alasan_kunci": "Sisa 560 − 160 = 400 pekerja-hari dalam 16 hari → 25 pekerja → tambahan 5.",
+      "kerangka": "CRT berbalik nilai · rencana 20 pekerja × 28 hari · 8 hari kerja, 4 hari berhenti · tanya tambahan · senilai, sisa tidak dikurangi, tambahan hanya 4 hari, jumlah bukan tambahan",
+      "to_terdekat": "Bab 2 C2 (tanya total hari); bukan 6 pekerja 10 hari (narasi)",
+      "catatan_reviu": "Kode = rencana slot (J-SEARAH, J-LANGKAH, J-ASUMSI) + J-LANGKAH kedua; J-LAJU tidak dipakai (tidak ada jalur waktu dijumlah yang wajar di cerita ini).",
+      "pembahasan": {
+        "ditanya": "Soal meminta banyak pekerja yang ditambahkan, bukan banyak pekerja seluruhnya. Kalimat penentunya “pekerja tambahan”.",
+        "cepat": "Seluruh pekerjaan 20 × 28 = 560 pekerja-hari. Delapan hari pertama menyelesaikan 20 × 8 = 160, sisanya 560 − 160 = 400. Waktu tersisa 28 − 8 − 4 = 16 hari, jadi diperlukan 400 : 16 = 25 pekerja. Tambahannya 25 − 20 = 5.",
+        "lain": "Sisa rencana 28 − 8 = 20 hari, tetapi yang tersedia hanya 16 hari. Banyak pekerja berbalik nilai dengan lama kerja: 20 × 20 : 16 = 25 pekerja, jadi perlu tambahan 5.",
+        "cek": "25 × 16 = 400 pekerja-hari, tepat sama dengan sisa pekerjaan.",
+        "gugur": {
+          "A": {
+            "uji": "dihitung senilai",
+            "teks": "Waktu yang lebih pendek dikira membutuhkan pekerja lebih sedikit: 20 × 16 : 20 = 16 pekerja, lalu selisihnya 4 dibaca sebagai tambahan. Uji dua kali lipat: bila waktu dipotong, pekerja harus ditambah."
+          },
+          "C": {
+            "uji": "560 : 16",
+            "teks": "Seluruh pekerjaan dianggap belum dikerjakan: 560 : 16 = 35 pekerja, tambahan 15. Delapan hari pertama sudah menyelesaikan 160 pekerja-hari."
+          },
+          "D": {
+            "uji": "80 : 4",
+            "teks": "Pekerjaan yang tertunda, 20 × 4 = 80 pekerja-hari, dianggap harus dikejar dalam 4 hari, sehingga muncul 20 pekerja tambahan. Soal tidak menyebut batas itu; pekerja tambahan bekerja selama 16 hari sisanya."
+          },
+          "E": {
+            "uji": "jumlah pekerja",
+            "teks": "25 adalah banyak pekerja yang dibutuhkan seluruhnya. Pertanyaannya tambahan, jadi masih dikurangi 20 pekerja yang sudah ada."
+          }
+        },
+        "kunci": "Sisa 400 pekerja-hari dalam 16 hari membutuhkan 25 pekerja, yaitu tambahan 5.",
+        "analogi": "Seperti panitia yang harus melipat 400 undangan dalam waktu yang tinggal sedikit: makin sempit waktunya, makin banyak tangan yang dibutuhkan, dan yang dicari hanyalah tangan tambahannya.",
+        "waspada": "Menjawab 25 karena hitungannya sudah selesai. Baca lagi kata tambahan di pertanyaan sebelum memilih."
+      },
+      "bukti": {
+        "metode": "pekerja-hari tetap: 560; sisa 400 dalam 16 hari",
+        "perlu": 25,
+        "bentuk": {
+          "jarak": 1,
+          "median": 5,
+          "terpencil": 1,
+          "letak": "B"
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B10-C03",
+      "bab": 10,
+      "peran": "contoh",
+      "jenis": "CRT keran",
+      "bentuk": "tiga keran, pengosong sejak awal, pengisi ditutup di tengah",
+      "target_detik": 105,
+      "soal": {
+        "pengantar": "Sebuah bak penampungan dapat diisi penuh oleh keran A dalam 6 jam dan oleh keran B dalam 10 jam. Keran pembuang C dapat mengosongkan bak yang penuh dalam 10 jam. Mula-mula bak kosong, lalu ketiga keran dibuka bersamaan. Setelah 2 jam, keran B ditutup, sedangkan A dan C tetap terbuka.",
+        "tanya": "Bak penuh setelah … sejak ketiga keran dibuka."
+      },
+      "kalimat_penentu": "sejak ketiga keran dibuka",
+      "opsi": {
+        "A": "3 jam",
+        "B": "6 jam",
+        "C": "9 jam",
+        "D": "10 jam",
+        "E": "12 jam"
+      },
+      "kunci": "E",
+      "kode": {
+        "A": "J-TANDA",
+        "B": "J-ASUMSI",
+        "C": "J-ASUMSI",
+        "D": "J-LANGKAH",
+        "E": "kunci"
+      },
+      "nama": {
+        "A": "Laju pengosong ikut dijumlahkan",
+        "B": "Memakai keterangan yang tidak tertulis di soal",
+        "C": "Memakai keterangan yang tidak tertulis di soal",
+        "D": "Berhenti satu langkah sebelum selesai"
+      },
+      "alasan_kunci": "30 bagian; tahap 1 (5 + 3 − 3) × 2 = 10; tahap 2 20 : 2 = 10 jam; total 12 jam.",
+      "kerangka": "CRT tiga keran · A 6 jam, B 10 jam, pembuang C 10 jam (B dan C saling menghapus) · B ditutup setelah 2 jam · pembuang dijumlah, B tetap, C belakangan, tahap kedua saja",
+      "to_terdekat": "TO P1 no. 45 (pengosong dibuka terlambat); bukan 4, 6, 12 jam (narasi)",
+      "catatan_reviu": "Slot: J-TANDA, J-LANGKAH, J-LAJU, J-ASUMSI; J-LAJU diganti J-ASUMSI kedua (C dianggap dibuka belakangan) karena jalur waktu dijumlah memberi pilihan berbentuk jam-menit tunggal.",
+      "pembahasan": {
+        "ditanya": "Soal meminta lama mengisi sampai penuh, dihitung dari awal. Kalimat penentunya “sejak ketiga keran dibuka”. Ada dua tahap: tiga keran terbuka, lalu dua keran.",
+        "cepat": "Anggap bak 30 bagian. Laju A 5, laju B 3, dan laju C −3 bagian per jam. Tahap 1: B dan C saling menghapus, jadi selama 2 jam hanya A yang terasa: 5 × 2 = 10 bagian. Tahap 2: A dan C, lajunya 5 − 3 = 2 bagian per jam. Sisa 30 − 10 = 20 bagian perlu 20 : 2 = 10 jam. Totalnya 2 + 10 = 12 jam.",
+        "lain": "Hitung dengan pecahan. Tahap 1: {1/6} + {1/10} − {1/10} = {1/6} bak per jam, selama 2 jam terisi {1/3}. Tahap 2: {1/6} − {1/10} = {1/15} bak per jam, dan sisa {2/3} perlu {2/3} × 15 = 10 jam.",
+        "cek": "Uji masuk akal: bila B tidak pernah ditutup, bak penuh dalam 30 : 5 = 6 jam. Menutup B membuat bak lebih lambat penuh, dan 12 jam memang lebih lama daripada 6 jam.",
+        "gugur": {
+          "A": {
+            "uji": "pembuang dijumlah",
+            "teks": "Laju C ditambahkan seperti keran pengisi, sehingga tahap 1 menjadi 5 + 3 + 3 = 11 bagian per jam dan bak tampak penuh dalam 3 jam. Pembuang mengurangi isi; lajunya bertanda negatif."
+          },
+          "B": {
+            "uji": "B tidak ditutup",
+            "teks": "B dianggap tetap terbuka sampai bak penuh: 30 : 5 = 6 jam. Soal menyebut B ditutup setelah 2 jam."
+          },
+          "C": {
+            "uji": "C dibuka belakangan",
+            "teks": "C dianggap baru dibuka saat B ditutup: 2 jam pertama mengisi (5 + 3) × 2 = 16 bagian, lalu sisa 14 : 2 = 7 jam, totalnya 9 jam. Soal menyebut ketiga keran dibuka bersamaan."
+          },
+          "D": {
+            "uji": "tahap kedua saja",
+            "teks": "10 jam adalah lama tahap kedua. Dua jam tahap pertama belum ditambahkan."
+          }
+        },
+        "kunci": "Tahap 1 mengisi 10 bagian dalam 2 jam dan tahap 2 mengisi 20 bagian dalam 10 jam, jadi bak penuh setelah 12 jam.",
+        "analogi": "Seperti mengisi ember bocor sambil seorang teman ikut menuang air: selama teman itu menuang, bocornya tertutupi. Begitu ia berhenti, bocor itu baru terasa dan ember lama penuh.",
+        "waspada": "Menjumlahkan semua laju tanpa memberi tanda negatif pada pembuang, lalu mendapat 3 jam. Sebelum menghitung, tandai setiap keran: pengisi plus, pembuang minus."
+      },
+      "bukti": {
+        "metode": "kapasitas 30 bagian; tahap 1 laju 5 + 3 − 3; tahap 2 laju 5 − 3",
+        "bentuk": {
+          "jarak": 2,
+          "median": 2.5,
+          "terpencil": 1.2,
+          "letak": "E"
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B10-C04",
+      "bab": 10,
+      "peran": "contoh",
+      "jenis": "CRT laju relatif",
+      "bentuk": "menyusul dengan selang berangkat, tanya pukul",
+      "target_detik": 90,
+      "soal": {
+        "pengantar": "Pukul 07.15 Dika berangkat bersepeda dari rumah dengan laju tetap 18 km/jam. Pukul 07.35 kakaknya menyusul lewat jalan yang sama dengan sepeda motor berlaju tetap 42 km/jam.",
+        "tanya": "Kakak menyusul Dika pada pukul …"
+      },
+      "kalimat_penentu": "pada pukul",
+      "opsi": {
+        "A": "07.30",
+        "B": "07.41",
+        "C": "07.44",
+        "D": "07.50",
+        "E": "07.55"
+      },
+      "kunci": "D",
+      "kode": {
+        "A": "J-LANGKAH",
+        "B": "J-TANDA",
+        "C": "J-SATUAN",
+        "D": "kunci",
+        "E": "J-LAJU"
+      },
+      "nama": {
+        "A": "Lama ditambahkan pada pukul yang salah",
+        "B": "Laju dijumlahkan, padahal searah",
+        "C": "Lupa menyamakan satuan",
+        "E": "Memakai laju satu kendaraan saja"
+      },
+      "alasan_kunci": "Jarak awal 18 × 20 : 60 = 6 km; 6 : (42 − 18) = ¼ jam; pukul 07.50.",
+      "kerangka": "CRT menyusul · jeda 20 menit · laju 18 dan 42 km/jam · tanya pukul · dari pukul pertama, laju dijumlah, 20 menit = 0,2 jam, laju Dika saja",
+      "to_terdekat": "tidak ada di TO P1; bukan 40 dan 60 km/jam dengan jeda 30 menit (narasi)",
+      "catatan_reviu": "Slot: J-TANDA, J-LANGKAH (lama, bukan pukul), J-SATUAN, J-LANGKAH (jarak awal terlupa); jarak awal terlupa tidak memberi waktu yang wajar, diganti J-LAJU (memakai laju Dika saja).",
+      "pembahasan": {
+        "ditanya": "Soal meminta pukul, bukan lama perjalanan. Kalimat penentunya “pada pukul”: lama menyusul harus ditambahkan pada saat kakak berangkat.",
+        "cepat": "Selama 20 menit lebih dulu, Dika menempuh 18 × 20 : 60 = 6 km. Kakak mendekat dengan selisih laju 42 − 18 = 24 km/jam, jadi jarak 6 km habis dalam 6 : 24 = {1/4} jam, yaitu 15 menit. Kakak menyusul 15 menit sesudah pukul 07.35, yaitu pukul 07.50.",
+        "lain": "Hitung jarak dari rumah pada pukul 07.50. Dika sudah bersepeda 35 menit: 18 × 35 : 60 = 10,5 km. Kakak sudah melaju 15 menit: 42 × 15 : 60 = 10,5 km. Keduanya berada di titik yang sama.",
+        "cek": "Jarak yang sama, 10,5 km, pada pukul yang sama membuktikan bahwa pukul 07.50 adalah saat kakak menyusul.",
+        "gugur": {
+          "A": {
+            "uji": "dari pukul 07.15",
+            "teks": "Lama menyusul, 15 menit, ditambahkan pada pukul Dika berangkat. Kakak baru berangkat pukul 07.35, jadi hitungan dimulai dari situ."
+          },
+          "B": {
+            "uji": "18 + 42",
+            "teks": "Laju dijumlahkan seperti dua kendaraan yang saling mendekat dari arah berlawanan: 6 : 60 = {1/10} jam, yaitu 6 menit. Keduanya bergerak searah, jadi yang dipakai selisih lajunya."
+          },
+          "C": {
+            "uji": "20 menit dibaca 0,2 jam",
+            "teks": "Jarak awal dikira 18 × 0,2 = 3,6 km dan disusul dalam 3,6 : 24 = 0,15 jam, yaitu 9 menit. Padahal 20 menit sama dengan {1/3} jam."
+          },
+          "E": {
+            "uji": "6 : 18",
+            "teks": "Jarak awal dibagi laju Dika saja: 6 : 18 = {1/3} jam, yaitu 20 menit. Yang menghabiskan jarak 6 km adalah selisih laju keduanya, 24 km/jam."
+          }
+        },
+        "kunci": "Jarak awal 6 km habis oleh selisih laju 24 km/jam dalam 15 menit, jadi kakak menyusul pukul 07.50.",
+        "analogi": "Seperti mengejar teman di lintasan lari: yang menentukan kapan kamu menyusul adalah seberapa jauh kamu lebih cepat darinya, bukan kecepatanmu sendiri.",
+        "waspada": "Menjawab 07.30 karena 15 menit langsung ditambahkan pada pukul pertama yang terbaca di soal. Tandai siapa berangkat pukul berapa sebelum menghitung."
+      },
+      "bukti": {
+        "metode": "jarak awal 18 × 20 : 60 = 6 km; laju relatif 42 − 18 = 24 km/jam",
+        "bentuk": {
+          "jarak": 5,
+          "median": 5.5,
+          "terpencil": 2,
+          "letak": "D"
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B10-C05",
+      "bab": 10,
+      "peran": "contoh",
+      "jenis": "CRT kereta",
+      "bentuk": "melintasi terowongan, km/jam ke m/detik",
+      "target_detik": 75,
+      "soal": {
+        "pengantar": "Sebuah kereta sepanjang 300 meter melaju tetap 90 km/jam dan melintasi terowongan sepanjang 1.200 meter.",
+        "tanya": "Waktu sejak ujung depan kereta masuk terowongan sampai ujung belakangnya keluar adalah … detik."
+      },
+      "kalimat_penentu": "ujung belakangnya keluar",
+      "opsi": {
+        "A": "36",
+        "B": "48",
+        "C": "50",
+        "D": "60",
+        "E": "72"
+      },
+      "kunci": "D",
+      "kode": {
+        "A": "J-TANDA",
+        "B": "J-LANGKAH",
+        "C": "J-SATUAN",
+        "D": "kunci",
+        "E": "J-ASUMSI"
+      },
+      "nama": {
+        "A": "Panjang kereta dikurangkan, bukan ditambahkan",
+        "B": "Panjang kereta terlupa",
+        "C": "Lupa menyamakan satuan",
+        "E": "Panjang kereta dihitung dua kali"
+      },
+      "alasan_kunci": "(1.200 + 300) : 25 = 60 detik.",
+      "kerangka": "CRT kereta · panjang 300 m, terowongan 1.200 m, 90 km/jam = 25 m/detik · dikurangkan, terlupa, dibagi 3, dihitung dua kali",
+      "to_terdekat": "tidak ada di TO P1; bukan 700 m, 200 m, 72 km/jam (narasi)",
+      "catatan_reviu": "Slot: J-LANGKAH, J-SATUAN, J-TANDA, J-NOL; J-NOL (sepuluh kali) diganti J-ASUMSI (panjang kereta dihitung dua kali) agar kunci tidak terapit pilihan jauh. J-NOL tetap dipakai di Contoh 1.",
+      "pembahasan": {
+        "ditanya": "Soal meminta lama kereta melintas dalam detik. Kalimat penentunya “ujung belakangnya keluar”: kereta baru selesai melintas setelah gerbong terakhir keluar, jadi panjang kereta ikut ditempuh.",
+        "cepat": "Jarak yang ditempuh 1.200 + 300 = 1.500 meter. Laju 90 km/jam sama dengan 90 × 5 : 18 = 25 meter per detik. Waktunya 1.500 : 25 = 60 detik.",
+        "lain": "Dalam 1 jam kereta menempuh 90 × 1.000 = 90.000 meter, jadi dalam 1 menit menempuh 90.000 : 60 = 1.500 meter. Jarak 1.500 meter ditempuh tepat 1 menit, yaitu 60 detik.",
+        "cek": "Dalam 60 detik kereta menempuh 60 × 25 = 1.500 meter: 1.200 meter terowongan ditambah 300 meter panjang kereta itu sendiri.",
+        "gugur": {
+          "A": {
+            "uji": "1.200 − 300",
+            "teks": "Panjang kereta dikurangkan: (1.200 − 300) : 25 = 36 detik. Pada detik ke-36 ujung depan kereta bahkan belum keluar terowongan."
+          },
+          "B": {
+            "uji": "1.200 : 25",
+            "teks": "Hanya panjang terowongan yang dihitung: 1.200 : 25 = 48 detik. Saat itu baru ujung depan yang keluar; masih ada 300 meter kereta di dalam."
+          },
+          "C": {
+            "uji": "90 : 3 = 30",
+            "teks": "km/jam diubah ke m/detik dengan membagi 3, sehingga laju dikira 30 m/detik dan waktunya 1.500 : 30 = 50 detik. Pembaginya 3,6, sebab 3.600 : 1.000 = 3,6."
+          },
+          "E": {
+            "uji": "1.200 + 2 × 300",
+            "teks": "Panjang kereta dihitung dua kali, saat masuk dan saat keluar: 1.800 : 25 = 72 detik. Panjang kereta cukup ditambahkan sekali."
+          }
+        },
+        "kunci": "Kereta menempuh 1.500 meter dengan laju 25 meter per detik, jadi melintas selama 60 detik.",
+        "analogi": "Seperti barisan pramuka yang melewati gapura: barisan baru selesai lewat ketika anggota paling belakang keluar gapura, jadi panjang barisan ikut berjalan.",
+        "waspada": "Membagi panjang terowongan saja dengan laju, karena soal terasa hanya membicarakan terowongan. Bayangkan gerbong terakhir: ia harus berjalan sejauh terowongan ditambah panjang kereta."
+      },
+      "bukti": {
+        "metode": "90 km/jam = 25 m/detik; jarak = 1.200 + 300",
+        "bentuk": {
+          "jarak": 10,
+          "median": 11,
+          "terpencil": 1.09,
+          "letak": "D"
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B10-C06",
+      "bab": 10,
+      "peran": "contoh",
+      "jenis": "CRT umur",
+      "bentuk": "dua perbandingan, selisih tetap",
+      "target_detik": 75,
+      "soal": {
+        "pengantar": "Perbandingan umur Kak Ratna dan Dimas sekarang 3 : 2. Lima tahun lagi, perbandingan umur mereka menjadi 7 : 5.",
+        "tanya": "Umur Kak Ratna sekarang adalah … tahun."
+      },
+      "kalimat_penentu": "sekarang adalah",
+      "opsi": {
+        "A": "3",
+        "B": "15",
+        "C": "20",
+        "D": "25",
+        "E": "30"
+      },
+      "kunci": "E",
+      "kode": {
+        "A": "J-RASIO",
+        "B": "J-BASIS",
+        "C": "J-LANGKAH",
+        "D": "J-LANGKAH",
+        "E": "kunci"
+      },
+      "nama": {
+        "A": "Mengira perbandingan sudah memberi nilai sebenarnya",
+        "B": "Bagian dua perbandingan tidak disamakan",
+        "C": "Umur orang yang lain",
+        "D": "Umur pada waktu yang lain"
+      },
+      "alasan_kunci": "3 : 2 = 6 : 4; dari 6 : 4 ke 7 : 5 tiap bagian +1 = 5 tahun; Ratna 6 × 5 = 30.",
+      "kerangka": "CRT umur · 3 : 2 sekarang, 7 : 5 lima tahun lagi · selisih umur tetap · angka perbandingan, bagian tidak disamakan, umur Dimas, umur Dimas lima tahun lagi",
+      "to_terdekat": "tidak ada di TO P1; bukan 7 : 3 dan 28 tahun (narasi)",
+      "catatan_reviu": "Slot: J-RASIO, J-LANGKAH, J-TANDA (lalu/lagi tertukar), J-BASIS; J-TANDA tidak dipakai karena membaca lima tahun lalu memberi umur negatif. Diganti J-LANGKAH kedua.",
+      "pembahasan": {
+        "ditanya": "Soal meminta umur Kak Ratna saat ini. Kalimat penentunya “sekarang adalah”. Dua perbandingan diberikan; besaran yang tetap adalah selisih umur mereka.",
+        "cepat": "Selisih umur tidak berubah. Pada 3 : 2 selisihnya 1 bagian, pada 7 : 5 selisihnya 2 bagian. Samakan selisihnya: 3 : 2 = 6 : 4. Dari 6 : 4 ke 7 : 5, setiap bagian bertambah 1, dan tambahan itu lima tahun. Jadi 1 bagian pada 6 : 4 bernilai 5 tahun, dan umur Kak Ratna 6 × 5 = 30 tahun.",
+        "lain": "Coba pilihan terbesar. Bila Kak Ratna 30 tahun, Dimas 30 × 2 : 3 = 20 tahun. Lima tahun lagi umur mereka 35 dan 25, dan 35 : 25 = 7 : 5. Cocok.",
+        "cek": "Selisih umur sekarang 30 − 20 = 10 dan lima tahun lagi 35 − 25 = 10. Selisihnya tetap, sesuai sifat umur.",
+        "gugur": {
+          "A": {
+            "uji": "angka perbandingan",
+            "teks": "Angka 3 pada perbandingan dibaca sebagai umur. Perbandingan hanya menyatakan bagian; nilai satu bagian harus dicari dari keterangan lima tahun lagi."
+          },
+          "B": {
+            "uji": "bagian tidak disamakan",
+            "teks": "Selisih bagian 1 dan 2 dibandingkan tanpa menyamakan perbandingannya, sehingga 1 bagian dikira 5 tahun dan umurnya 3 × 5 = 15. Bila Kak Ratna 15 tahun, Dimas 10 tahun, dan lima tahun lagi 20 : 15 = 4 : 3, bukan 7 : 5."
+          },
+          "C": {
+            "uji": "umur Dimas",
+            "teks": "20 tahun adalah umur Dimas sekarang. Yang ditanya umur Kak Ratna."
+          },
+          "D": {
+            "uji": "lima tahun lagi",
+            "teks": "25 tahun adalah umur Dimas lima tahun lagi. Yang ditanya umur Kak Ratna sekarang."
+          }
+        },
+        "kunci": "Selisih umur yang tetap membuat satu bagian bernilai 5 tahun, sehingga umur Kak Ratna 6 × 5 = 30 tahun.",
+        "analogi": "Seperti dua anak tangga yang berjarak tetap: setinggi apa pun keduanya naik bersama, jarak di antara keduanya tidak berubah. Yang berubah hanya perbandingan tinggi keduanya.",
+        "waspada": "Memakai selisih angka perbandingan apa adanya, 3 − 2 dan 7 − 5, seolah bagian kedua perbandingan sama besar. Samakan dulu selisih kedua perbandingan sebelum membandingkan bagiannya."
+      },
+      "bukti": {
+        "metode": "selisih tetap: 3 : 2 = 6 : 4 dan 7 : 5 → 1 bagian berubah = 5 tahun",
+        "Ra": 30,
+        "Di": 20,
+        "bentuk": {
+          "jarak": 5,
+          "median": 5,
+          "terpencil": 2.4,
+          "letak": "E"
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B10-C07",
+      "bab": 10,
+      "peran": "contoh",
+      "jenis": "CRT persen dagang",
+      "bentuk": "diskon bertingkat lalu persen untung terhadap harga beli",
+      "target_detik": 60,
+      "soal": {
+        "pengantar": "Sebuah toko membeli tas seharga Rp80.000 dan memasang harga Rp200.000. Saat obral, tas itu didiskon 40%, lalu didiskon lagi 10% dari harga setelah diskon pertama.",
+        "tanya": "Persentase keuntungan toko terhadap harga beli adalah …"
+      },
+      "kalimat_penentu": "terhadap harga beli",
+      "opsi": {
+        "A": "14%",
+        "B": "25%",
+        "C": "28%",
+        "D": "35%",
+        "E": "50%"
+      },
+      "kunci": "D",
+      "kode": {
+        "A": "J-BASIS",
+        "B": "J-BASIS",
+        "C": "J-SATUAN",
+        "D": "kunci",
+        "E": "J-LANGKAH"
+      },
+      "nama": {
+        "A": "Persen dihitung dari bilangan yang salah",
+        "B": "Diskon bertingkat dijumlahkan",
+        "C": "Rupiah dibaca sebagai persen",
+        "E": "Berhenti satu langkah sebelum selesai"
+      },
+      "alasan_kunci": "Jual 200.000 × 60% × 90% = 108.000; untung 28.000 : 80.000 = 35%.",
+      "kerangka": "CRT diskon bertingkat + untung · beli 80 ribu, pasang 200 ribu, diskon 40% lalu 10% · untung dari harga pasang, diskon dijumlah, rupiah dibaca persen, satu diskon",
+      "to_terdekat": "Bab 19 pembuka (dua perubahan persen); bukan 20% lalu 10% dan Rp80.000 sebagai harga beli narasi untung 25%",
+      "catatan_reviu": "Slot: J-BASIS (diskon dijumlah), J-BASIS (untung dari harga jual), J-LANGKAH, J-PENGALIH; untung dari harga jual (25,9%) tidak bulat, diganti untung dari harga pasang. Catatan: potongan diskon pertama kebetulan Rp80.000 = harga beli; tidak melahirkan jalur salah yang bernilai di pilihan. Revisi cek buta 1: pilihan E 150% (terpencil) diganti 28% (untung Rp28.000 dibaca 28%); kunci C → D.",
+      "pembahasan": {
+        "ditanya": "Soal meminta persen untung. Kalimat penentunya “terhadap harga beli”: dasarnya Rp80.000, bukan harga pasang atau harga jual.",
+        "cepat": "Harga jual 200.000 × 60% × 90% = 108.000. Untungnya 108.000 − 80.000 = 28.000. Persen untung 28.000 : 80.000 = 35%.",
+        "lain": "Potongan pertama 40% × 200.000 = 80.000 rupiah, harga menjadi 120.000. Potongan kedua 10% × 120.000 = 12.000, jadi harga jual 120.000 − 12.000 = 108.000. Untung 28.000 dari modal 80.000 sama dengan 35 per 100.",
+        "cek": "80.000 × 135% = 108.000. Cocok dengan harga jual.",
+        "gugur": {
+          "A": {
+            "uji": "28.000 : 200.000",
+            "teks": "Untung dibandingkan dengan harga pasang: 28.000 : 200.000 = 14%. Persen untung selalu terhadap harga beli."
+          },
+          "B": {
+            "uji": "diskon 50%",
+            "teks": "Dua diskon dijumlahkan menjadi 50%, sehingga harga jual dikira 200.000 × 50% = 100.000 dan untungnya 25%. Diskon kedua dihitung dari harga yang sudah turun, jadi potongan totalnya 100% − 54% = 46%."
+          },
+          "C": {
+            "uji": "28.000 dibaca 28%",
+            "teks": "Untungnya memang Rp28.000, tetapi angka rupiah itu langsung dibaca sebagai persen. Persen untung adalah untung dibagi harga beli: 28.000 : 80.000 = 35%."
+          },
+          "E": {
+            "uji": "diskon pertama saja",
+            "teks": "Hanya diskon 40% yang dihitung: harga 120.000 dan untungnya 120.000 − 80.000 = 40.000, yaitu 50%. Diskon 10% belum dikenakan."
+          }
+        },
+        "kunci": "Harga jual Rp108.000 memberi untung Rp28.000, yaitu 35% dari harga beli Rp80.000.",
+        "analogi": "Seperti nilai ulangan yang dihitung dari soal yang tersedia: 28 benar dari 80 soal berbeda maknanya dengan 28 benar dari 200 soal. Persen selalu bertanya: dari berapa?",
+        "waspada": "Menjumlahkan diskon 40% dan 10% karena terasa wajar, atau berhenti di angka untung Rp28.000. Diskon kedua dikenakan pada harga yang sudah dipotong, dan untung masih harus dibagi harga beli."
+      },
+      "bukti": {
+        "metode": "jual 200.000 × 60% × 90% = 108.000; untung 28.000 dari 80.000",
+        "jual": 108000,
+        "bentuk": {
+          "jarak": 7,
+          "median": 9,
+          "terpencil": 1.67,
+          "letak": "D"
+        }
+      },
+      "revisi1": {
+        "alasan": "pilihan E 150% (terpencil) diganti 28% (untung Rp28.000 dibaca 28%); kunci C → D.",
+        "lama": {
+          "kunci": "C",
+          "opsi": {
+            "A": "14%",
+            "B": "25%",
+            "C": "35%",
+            "D": "50%",
+            "E": "150%"
+          }
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B10-L01",
+      "bab": 10,
+      "peran": "latihan",
+      "jenis": "CRT perbandingan",
+      "bentuk": "perbandingan dan selisih, tanya jumlah",
+      "target_detik": 45,
+      "soal": {
+        "pengantar": "Perbandingan banyak perangko koleksi Adi dan Banu 5 : 3. Perangko Adi 30 lembar lebih banyak daripada perangko Banu.",
+        "tanya": "Jumlah perangko mereka berdua adalah … lembar."
+      },
+      "kalimat_penentu": "Jumlah perangko mereka berdua",
+      "opsi": {
+        "A": "8",
+        "B": "75",
+        "C": "80",
+        "D": "120",
+        "E": "240"
+      },
+      "kunci": "D",
+      "kode": {
+        "A": "J-RASIO",
+        "B": "J-LANGKAH",
+        "C": "J-BASIS",
+        "D": "kunci",
+        "E": "J-BASIS"
+      },
+      "nama": {
+        "A": "Mengira perbandingan sudah memberi nilai sebenarnya",
+        "B": "Berhenti satu langkah sebelum selesai",
+        "C": "Selisih dikira bagian Banu",
+        "E": "Selisih dikira satu bagian"
+      },
+      "alasan_kunci": "2 bagian = 30 → 1 bagian 15; jumlah 8 × 15 = 120.",
+      "kerangka": "CRT jumlah-selisih · 5 : 3, selisih 30 · tanya jumlah · jumlah angka perbandingan, milik Adi saja, selisih sebagai bagian Banu, selisih sebagai satu bagian",
+      "to_terdekat": "tidak ada di TO P1; bukan 7 : 3 dan 28 (narasi umur)",
+      "catatan_reviu": "Kode = rencana slot (J-BASIS, J-RASIO, J-LANGKAH; J-BASIS dua jalur).",
+      "bukti": {
+        "metode": "2 bagian = 30 → 1 bagian 15; jumlah 8 bagian",
+        "bentuk": {
+          "jarak": 40,
+          "median": 53.5,
+          "terpencil": 2.24,
+          "letak": "D"
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta “Jumlah perangko mereka berdua”. Perbandingan 5 : 3 baru memberi bagian, sedangkan selisih 30 lembar memberi ukurannya.",
+        "cepat": "Selisih bagiannya 5 − 3 = 2 bagian, dan selisih itu sama dengan 30 lembar. Satu bagian 30 : 2 = 15 lembar. Jumlah mereka 5 + 3 = 8 bagian, jadi 8 × 15 = 120 lembar.",
+        "lain": "Hitung masing-masing: Adi 5 × 15 = 75 lembar dan Banu 3 × 15 = 45 lembar. Jumlahnya 75 + 45 = 120 lembar.",
+        "cek": "Uji kedua syarat: 75 − 45 = 30 lembar, dan 75 lembar banding 45 lembar sama dengan 5 banding 3. Keduanya cocok.",
+        "gugur": {
+          "A": {
+            "uji": "5 + 3",
+            "teks": "8 adalah banyak bagian, bukan banyak lembar. Perbandingan baru menjadi lembar setelah ukuran satu bagiannya diketahui."
+          },
+          "B": {
+            "uji": "Adi saja",
+            "teks": "75 lembar baru perangko Adi. Perangko Banu belum ditambahkan."
+          },
+          "C": {
+            "uji": "30 dikira 3 bagian",
+            "teks": "Selisih 30 dianggap milik Banu yang 3 bagian: satu bagian 30 : 3 = 10, lalu 8 × 10 = 80. Angka 30 adalah selisih, yaitu 2 bagian."
+          },
+          "E": {
+            "uji": "30 per bagian",
+            "teks": "Selisih 30 dianggap satu bagian: 8 × 30 = 240. Selisih Adi dan Banu adalah 2 bagian, bukan 1."
+          }
+        },
+        "kunci": "Selisih 2 bagian sama dengan 30 lembar, sehingga satu bagian 15 lembar dan jumlah 8 bagian adalah 120 lembar.",
+        "analogi": "Seperti dua tumpukan buku setebal sama: tumpukan Adi lima buku, tumpukan Banu tiga buku, dan beda tingginya 30 cm. Dua buku setinggi 30 cm, jadi satu buku 15 cm, dan delapan buku 120 cm.",
+        "waspada": "Membagi 30 dengan 3 karena angka 3 milik Banu terasa paling dekat. Tentukan dulu angka 30 itu mewakili berapa bagian; di soal ini 30 adalah selisih, jadi 2 bagian."
+      }
+    },
+    {
+      "id": "HB-TIU-B10-L02",
+      "bab": 10,
+      "peran": "latihan",
+      "jenis": "CRT kecepatan rata-rata",
+      "bentuk": "pergi-pulang, laju berbeda",
+      "target_detik": 75,
+      "soal": {
+        "pengantar": "Sebuah truk mengangkut pasir dari tambang ke lokasi proyek yang berjarak 90 km. Saat bermuatan, truk melaju 20 km/jam; saat kembali kosong lewat jalan yang sama, truk melaju 60 km/jam.",
+        "tanya": "Kecepatan rata-rata truk untuk perjalanan pergi dan pulang adalah … km/jam."
+      },
+      "kalimat_penentu": "pergi dan pulang",
+      "opsi": {
+        "A": "15",
+        "B": "30",
+        "C": "40",
+        "D": "45",
+        "E": "60"
+      },
+      "kunci": "B",
+      "kode": {
+        "A": "J-LANGKAH",
+        "B": "kunci",
+        "C": "J-LAJU",
+        "D": "J-SATUAN",
+        "E": "J-LAJU"
+      },
+      "nama": {
+        "A": "Berhenti satu langkah sebelum selesai",
+        "C": "Menjumlahkan waktu, padahal yang dijumlahkan laju",
+        "D": "Lupa menyamakan satuan",
+        "E": "Menjumlahkan waktu, padahal yang dijumlahkan laju"
+      },
+      "alasan_kunci": "Total jarak 180 km : total waktu 4,5 + 1,5 = 6 jam = 30 km/jam.",
+      "kerangka": "CRT kecepatan rata-rata · 90 km, 20 dan 60 km/jam · jarak sekali jalan, rata-rata dua laju, setengah jam terbuang, dibagi rata-rata waktu",
+      "to_terdekat": "Bab 19 B7 (dua tahap, satuan campur); bukan 60 dan 40 km/jam, 120 km (narasi)",
+      "catatan_reviu": "Slot: J-LAJU, J-SATUAN, J-LANGKAH; J-SATUAN tidak dipakai (soal satu satuan), diganti jalur kedua J-LAJU dan J-LANGKAH. Revisi cek buta 1: pilihan E 120 (terpencil) diganti 45 = 180 : 4 (4 jam 30 menit dihitung 4 jam); 60 pindah ke E.",
+      "bukti": {
+        "metode": "total jarak 180 km : total waktu 4,5 + 1,5 jam",
+        "bentuk": {
+          "jarak": 10,
+          "median": 12.5,
+          "terpencil": 1.2,
+          "letak": "B"
+        }
+      },
+      "revisi1": {
+        "alasan": "pilihan E 120 (terpencil) diganti 45 = 180 : 4 (4 jam 30 menit dihitung 4 jam); 60 pindah ke E.",
+        "lama": {
+          "kunci": "B",
+          "opsi": {
+            "A": "15",
+            "B": "30",
+            "C": "40",
+            "D": "60",
+            "E": "120"
+          }
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta kecepatan rata-rata untuk perjalanan “pergi dan pulang”, yaitu total jarak dibagi total waktu.",
+        "cepat": "Waktu pergi 90 : 20 = 4,5 jam dan waktu pulang 90 : 60 = 1,5 jam. Total jarak 90 + 90 = 180 km dan total waktu 4,5 + 1,5 = 6 jam, jadi rata-ratanya 180 : 6 = 30 km/jam.",
+        "lain": "Untuk dua jarak yang sama, rata-ratanya dua kali hasil kali kedua laju dibagi jumlah kedua laju: 2 × 20 × 60 : (20 + 60) = 2.400 : 80 = 30 km/jam.",
+        "cek": "Uji masuk akal: truk lebih lama berjalan pelan, 4,5 jam, daripada cepat, 1,5 jam. Rata-ratanya harus lebih dekat ke 20 daripada ke 60, dan 30 memang begitu.",
+        "gugur": {
+          "A": {
+            "uji": "jarak pulang terlupa",
+            "teks": "90 : 6 = 15 memakai total waktu pergi dan pulang, tetapi hanya jarak pergi. Jarak pulang 90 km belum ditambahkan."
+          },
+          "C": {
+            "uji": "rata-rata dua laju",
+            "teks": "(20 + 60) : 2 = 40 merata-ratakan dua angka laju. Cara itu hanya tepat bila lama tempuh keduanya sama, padahal truk lebih lama di jalan saat bermuatan."
+          },
+          "D": {
+            "uji": "4,5 jam jadi 4",
+            "teks": "4 jam 30 menit dibaca 4 jam, sehingga 180 : 4 = 45. Waktu pergi 4,5 jam."
+          },
+          "E": {
+            "uji": "rata-rata waktu",
+            "teks": "180 : 3 = 60 membagi total jarak dengan rata-rata waktu, (4,5 + 1,5) : 2 = 3 jam. Kecepatan rata-rata memakai total waktu."
+          }
+        },
+        "kunci": "Total jarak 180 km ditempuh dalam total waktu 6 jam, sehingga rata-ratanya 180 : 6 = 30 km/jam.",
+        "analogi": "Seperti nilai rata-rata yang bobotnya berbeda: bagian yang dijalani lebih lama lebih berpengaruh. Di perjalanan ini, laju pelan dijalani lebih lama, jadi rata-ratanya condong ke laju pelan.",
+        "waspada": "Langsung merata-ratakan 20 dan 60 menjadi 40. Rata-rata laju dihitung lewat total jarak dan total waktu, bukan rata-rata dua angka laju."
+      }
+    },
+    {
+      "id": "HB-TIU-B10-L03",
+      "bab": 10,
+      "peran": "latihan",
+      "jenis": "CRT arus sungai",
+      "bentuk": "waktu hilir dan hulu diketahui, tanya laju perahu",
+      "target_detik": 90,
+      "soal": {
+        "pengantar": "Sebuah perahu motor menempuh 60 km menyusuri sungai searah arus dalam 2 jam, lalu kembali ke tempat semula melawan arus dalam 3 jam.",
+        "tanya": "Laju perahu itu di air tenang adalah … km/jam."
+      },
+      "kalimat_penentu": "di air tenang",
+      "opsi": {
+        "A": "5",
+        "B": "10",
+        "C": "24",
+        "D": "25",
+        "E": "30"
+      },
+      "kunci": "D",
+      "kode": {
+        "A": "J-PERINTAH",
+        "B": "J-TANDA",
+        "C": "J-LAJU",
+        "D": "kunci",
+        "E": "J-LANGKAH"
+      },
+      "nama": {
+        "A": "Yang dijawab laju arus",
+        "B": "Salah tanda",
+        "C": "Menjumlahkan waktu, padahal yang dijumlahkan laju",
+        "E": "Berhenti satu langkah sebelum selesai"
+      },
+      "alasan_kunci": "Hilir 30 = perahu + arus, hulu 20 = perahu − arus → perahu (30 + 20) : 2 = 25.",
+      "kerangka": "CRT arus · 60 km, 2 jam hilir, 3 jam hulu · tanya laju perahu · laju arus, selisih hilir−hulu, rata-rata pergi-pulang, laju hilir",
+      "to_terdekat": "tidak ada di TO P1; bukan 24 dan 16 km/jam (narasi)",
+      "catatan_reviu": "Slot: J-TANDA, J-LAJU, J-SATUAN; J-SATUAN tidak dipakai (waktu dalam jam bulat), diganti J-PERINTAH (menjawab laju arus) dan J-LANGKAH.",
+      "bukti": {
+        "metode": "hilir 30 = perahu + arus, hulu 20 = perahu − arus",
+        "bentuk": {
+          "jarak": 1,
+          "median": 5,
+          "terpencil": 1,
+          "letak": "D"
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta laju perahu “di air tenang”, bukan laju searah arus dan bukan laju arus.",
+        "cepat": "Laju searah arus 60 : 2 = 30 km/jam, yaitu laju perahu ditambah laju arus. Laju melawan arus 60 : 3 = 20 km/jam, yaitu laju perahu dikurangi laju arus. Laju perahu tepat di tengah keduanya: (30 + 20) : 2 = 25 km/jam.",
+        "lain": "Hitung laju arus lebih dulu: (30 − 20) : 2 = 5 km/jam. Laju perahu 30 − 5 = 25 km/jam.",
+        "cek": "Uji balik: 25 + 5 = 30 dan 30 × 2 = 60 km; 25 − 5 = 20 dan 20 × 3 = 60 km. Kedua arah cocok.",
+        "gugur": {
+          "A": {
+            "uji": "laju arus",
+            "teks": "5 km/jam adalah laju arus. Soal menanyakan laju perahu di air tenang."
+          },
+          "B": {
+            "uji": "30 − 20",
+            "teks": "30 − 20 = 10 adalah dua kali laju arus. Hasil itu belum dibagi 2 dan bukan laju perahu."
+          },
+          "C": {
+            "uji": "rata-rata pulang pergi",
+            "teks": "120 : 5 = 24 adalah kecepatan rata-rata pulang pergi: jarak 60 + 60 = 120 km dalam 2 + 3 = 5 jam. Laju perahu di air tenang bukan rata-rata itu."
+          },
+          "E": {
+            "uji": "laju searah arus",
+            "teks": "30 km/jam masih memuat dorongan arus. Laju perahu didapat setelah dorongan itu dikurangkan."
+          }
+        },
+        "kunci": "Laju perahu tepat di tengah laju searah arus dan laju melawan arus, yaitu (30 + 20) : 2 = 25 km/jam.",
+        "analogi": "Seperti berjalan di eskalator: searah eskalator kamu terbantu, melawan arahnya kamu tertahan. Kecepatan langkahmu sendiri ada di tengah kedua kecepatan itu.",
+        "waspada": "Menjawab 30, laju pertama yang kamu dapat. Tanyakan lagi apa yang diminta: laju di air tenang tidak memuat arus."
+      }
+    },
+    {
+      "id": "HB-TIU-B10-L04",
+      "bab": 10,
+      "peran": "latihan",
+      "jenis": "CRT bruto-neto-tara",
+      "bentuk": "tara persen dari bruto, harga per kg neto, data pengalih",
+      "target_detik": 75,
+      "soal": {
+        "pengantar": "Seorang pedagang membeli 5 peti apel. Bobot setiap peti beserta isinya 40 kg, dengan tara 5%. Harga apel Rp15.000 per kg neto. Ongkos angkut Rp50.000 per peti ditanggung pemasok.",
+        "tanya": "Uang yang dibayar pedagang untuk apel itu adalah …"
+      },
+      "kalimat_penentu": "per kg neto",
+      "opsi": {
+        "A": "Rp2.625.000",
+        "B": "Rp2.700.000",
+        "C": "Rp2.850.000",
+        "D": "Rp2.900.000",
+        "E": "Rp3.000.000"
+      },
+      "kunci": "C",
+      "kode": {
+        "A": "J-SATUAN",
+        "B": "J-LANGKAH",
+        "C": "kunci",
+        "D": "J-PENGALIH",
+        "E": "J-BASIS"
+      },
+      "nama": {
+        "A": "Lupa menyamakan satuan",
+        "B": "Tara dikurangkan dua kali",
+        "D": "Memakai data yang tidak dibutuhkan",
+        "E": "Harga dihitung dari bruto"
+      },
+      "alasan_kunci": "Neto 40 × 95% = 38 kg per peti; 5 × 38 × 15.000 = 2.850.000.",
+      "kerangka": "CRT bruto-neto-tara · 5 peti × 40 kg, tara 5% · harga per kg neto · ongkos ditanggung pemasok (pengalih) · tara 5 kg, tara dua kali, ongkos satu peti, dari bruto",
+      "to_terdekat": "tidak ada di TO P1; bukan 50 kg dan 4% (narasi); konteks karung TO KCK tidak dipakai",
+      "catatan_reviu": "Kode = rencana slot (J-BASIS, J-LANGKAH, J-PENGALIH) + J-SATUAN. Dirujuk Latihan A Bab 19 (J-BASIS, pilihan D). Revisi cek buta 1: pilihan A Rp570.000 (satu peti, terpencil) dan E Rp3.100.000 diganti Rp2.700.000 (tara dikurangkan dua kali) dan Rp2.900.000 (ongkos satu peti ikut dihitung).",
+      "bukti": {
+        "metode": "neto 38 kg per peti × 5 peti × Rp15.000",
+        "bentuk": {
+          "jarak": 50000,
+          "median": 87500,
+          "terpencil": 1.14,
+          "letak": "C"
+        }
+      },
+      "revisi1": {
+        "alasan": "pilihan A Rp570.000 (satu peti, terpencil) dan E Rp3.100.000 diganti Rp2.700.000 (tara dikurangkan dua kali) dan Rp2.900.000 (ongkos satu peti ikut dihitung).",
+        "lama": {
+          "kunci": "C",
+          "opsi": {
+            "A": "Rp570.000",
+            "B": "Rp2.625.000",
+            "C": "Rp2.850.000",
+            "D": "Rp3.000.000",
+            "E": "Rp3.100.000"
+          }
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta uang yang dibayar pedagang. Harga berlaku “per kg neto”, dan ongkos angkut ditanggung pemasok, jadi ongkos itu tidak dibayar pedagang.",
+        "cepat": "Tara 5% × 40 = 2 kg per peti, jadi neto 40 − 2 = 38 kg per peti. Lima peti berisi 5 × 38 = 190 kg neto. Uang yang dibayar 190 × 15.000 = 2.850.000 rupiah.",
+        "lain": "Hitung bruto dulu: 5 × 40 = 200 kg, lalu ambil netonya: 95% × 200 = 190 kg. Hasilnya sama, 190 × 15.000 = 2.850.000 rupiah.",
+        "cek": "Uji ukuran: tanpa tara, harganya 200 × 15.000 = 3.000.000 rupiah. Tara membuat harganya sedikit lebih murah, dan 2.850.000 memang sedikit di bawah 3.000.000.",
+        "gugur": {
+          "A": {
+            "uji": "5% dibaca 5 kg",
+            "teks": "Tara dibaca 5 kg per peti: 5 × (40 − 5) × 15.000 = 2.625.000. Tara 5% dari 40 kg hanya 2 kg."
+          },
+          "B": {
+            "uji": "tara dua kali",
+            "teks": "Tara dikurangkan dua kali: 40 − 2 − 2 = 36 kg per peti, lalu 5 × 36 × 15.000 = 2.700.000. Tara cukup dikurangkan sekali."
+          },
+          "D": {
+            "uji": "ongkos ikut",
+            "teks": "Ongkos satu peti ikut dibayar: 2.850.000 + 50.000 = 2.900.000. Ongkos ditanggung pemasok, jadi tidak masuk hitungan pedagang."
+          },
+          "E": {
+            "uji": "harga dari bruto",
+            "teks": "200 × 15.000 = 3.000.000 memakai berat bruto. Harga di soal berlaku per kg neto."
+          }
+        },
+        "kunci": "Neto per peti 38 kg, sehingga lima peti berisi 190 kg dan harganya 190 × 15.000 = 2.850.000 rupiah.",
+        "analogi": "Seperti membeli keripik dalam toples: yang kamu bayar keripiknya, bukan toplesnya. Berat toples dikurangkan dulu sebelum dikalikan harga per kilogram.",
+        "waspada": "Menambahkan ongkos angkut karena angkanya tertulis di soal. Baca siapa yang menanggung setiap biaya sebelum memasukkannya ke hitungan."
+      }
+    },
+    {
+      "id": "HB-TIU-B10-L05",
+      "bab": 10,
+      "peran": "latihan",
+      "jenis": "CRT bunga tunggal",
+      "bentuk": "lama dalam tahun dan bulan, tanya saldo",
+      "target_detik": 75,
+      "soal": {
+        "pengantar": "Bu Lina menabung Rp2.400.000 dengan bunga tunggal 10% per tahun.",
+        "tanya": "Saldo tabungannya setelah 1 tahun 6 bulan adalah …"
+      },
+      "kalimat_penentu": "bunga tunggal",
+      "opsi": {
+        "A": "Rp2.520.000",
+        "B": "Rp2.640.000",
+        "C": "Rp2.760.000",
+        "D": "Rp2.772.000",
+        "E": "Rp2.784.000"
+      },
+      "kunci": "C",
+      "kode": {
+        "A": "J-LANGKAH",
+        "B": "J-LANGKAH",
+        "C": "kunci",
+        "D": "J-BASIS",
+        "E": "J-SATUAN"
+      },
+      "nama": {
+        "A": "Berhenti satu langkah sebelum selesai",
+        "B": "Berhenti satu langkah sebelum selesai",
+        "D": "Persen dihitung dari bilangan yang salah",
+        "E": "Lupa menyamakan satuan"
+      },
+      "alasan_kunci": "Bunga 2.400.000 × 10% × 18 : 12 = 360.000; saldo 2.760.000.",
+      "kerangka": "CRT bunga tunggal · Rp2.400.000, 10% per tahun, 1 tahun 6 bulan · hanya 6 bulan, satu tahun saja, bunga dibungakan, 1 tahun 6 bulan dibaca 1,6 tahun",
+      "to_terdekat": "tidak ada di TO P1; bukan Rp2.000.000, 6%, 8 bulan (narasi)",
+      "catatan_reviu": "Kode = rencana slot (J-SATUAN, J-BASIS, J-LANGKAH bunga saja) + J-LANGKAH satu tahun. Revisi cek buta 1: pilihan A Rp360.000 (bunga saja, terpencil) diganti Rp2.520.000 (hanya bunga 6 bulan).",
+      "bukti": {
+        "metode": "bunga tunggal 2.400.000 × 10% × 18 : 12",
+        "bentuk": {
+          "jarak": 12000,
+          "median": 66000,
+          "terpencil": 1.82,
+          "letak": "C"
+        }
+      },
+      "revisi1": {
+        "alasan": "pilihan A Rp360.000 (bunga saja, terpencil) diganti Rp2.520.000 (hanya bunga 6 bulan).",
+        "lama": {
+          "kunci": "C",
+          "opsi": {
+            "A": "Rp360.000",
+            "B": "Rp2.640.000",
+            "C": "Rp2.760.000",
+            "D": "Rp2.772.000",
+            "E": "Rp2.784.000"
+          }
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta “Saldo tabungannya”, yaitu tabungan awal ditambah bunga, setelah 1 tahun 6 bulan dengan bunga tunggal.",
+        "cepat": "Bunga setahun 10% × 2.400.000 = 240.000. Satu tahun enam bulan sama dengan 1,5 tahun, jadi bunganya 1,5 × 240.000 = 360.000. Saldonya 2.400.000 + 360.000 = 2.760.000 rupiah.",
+        "lain": "Hitung per bulan: 240.000 : 12 = 20.000 per bulan, dan 18 bulan memberi 18 × 20.000 = 360.000. Hasilnya sama.",
+        "cek": "Uji ukuran: bunga 1,5 tahun harus lebih dari bunga setahun, 240.000, dan kurang dari bunga dua tahun, 2 × 240.000 = 480.000. Bunga 360.000 ada di antaranya.",
+        "gugur": {
+          "A": {
+            "uji": "bunga 6 bulan",
+            "teks": "2.400.000 + 120.000 = 2.520.000 hanya memuat bunga enam bulan. Bunga satu tahun pertama belum masuk."
+          },
+          "B": {
+            "uji": "bunga 1 tahun",
+            "teks": "2.400.000 + 240.000 = 2.640.000 hanya memuat bunga satu tahun. Bunga enam bulan sesudahnya belum masuk."
+          },
+          "D": {
+            "uji": "bunga dibungakan",
+            "teks": "Bunga enam bulan dihitung dari saldo sesudah setahun, 5% × 2.640.000 = 132.000, sehingga saldonya 2.640.000 + 132.000 = 2.772.000. Pada bunga tunggal, bunga selalu dihitung dari tabungan awal."
+          },
+          "E": {
+            "uji": "1,6 tahun",
+            "teks": "1 tahun 6 bulan dibaca 1,6 tahun: bunganya 1,6 × 240.000 = 384.000 dan saldonya 2.784.000. Enam bulan sama dengan 6 : 12 = 0,5 tahun."
+          }
+        },
+        "kunci": "Bunga 1,5 tahun dari tabungan awal adalah 360.000, sehingga saldonya 2.400.000 + 360.000 = 2.760.000 rupiah.",
+        "analogi": "Seperti uang saku mingguan yang tetap: berapa pun lamanya, setiap minggu kamu menerima jumlah yang sama. Bunga tunggal juga begitu, setiap tahun bunganya sama karena dihitung dari tabungan awal.",
+        "waspada": "Membaca 1 tahun 6 bulan sebagai 1,6 tahun. Ubah bulan ke tahun dengan membagi 12: enam bulan sama dengan setengah tahun."
+      }
+    }
+  ]
+}

@@ -1,0 +1,799 @@
+[
+  {
+    "id": "HB-TIU-B11-P01",
+    "bab": 11,
+    "target_detik": 120,
+    "soal": {
+      "pengantar": "Mesin fotokopi P dan Q akan menggandakan 4.800 lembar naskah. Kedua mesin mulai bekerja bersamaan dan terus bekerja sampai seluruh naskah selesai. Laju setiap mesin tetap selama bekerja.",
+      "pernyataan": [
+        "Mesin P yang bekerja sendirian dapat menggandakan 4.800 lembar itu dalam 4 jam.",
+        "Laju mesin Q setengah dari laju mesin P."
+      ],
+      "tanya": "Apakah seluruh naskah selesai digandakan dalam waktu paling lama 2 jam?"
+    },
+    "opsi": {
+      "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+      "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+      "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+      "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+      "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+    }
+  },
+  {
+    "id": "HB-TIU-B11-B01",
+    "bab": 11,
+    "soal": {
+      "pengantar": "Sebuah toples hanya berisi permen jahe dan permen mint. Pertanyaannya: berapa banyak permen mint di toples itu?",
+      "pernyataan": [
+        "Perbandingan banyak permen jahe dan permen mint adalah 3 : 4."
+      ],
+      "tanya": "Pernyataan itu tidak cukup. Buktikan dengan menuliskan dua keadaan yang sama-sama memenuhi kalimat soal dan pernyataan, tetapi memberi banyak permen mint yang berbeda."
+    }
+  },
+  {
+    "id": "HB-TIU-B11-B02",
+    "bab": 11,
+    "soal": {
+      "pengantar": "Dalam pemilihan ketua kelas hanya ada dua calon, Rani dan Sigit, dan setiap siswa memberikan tepat satu suara untuk salah satu calon. Pertanyaannya: berapa persen suara yang diperoleh Rani?",
+      "pernyataan": [
+        "Suara yang diperoleh Sigit 50% lebih banyak daripada suara yang diperoleh Rani."
+      ],
+      "tanya": "Pernyataan itu cukup. Tuliskan alasan umum mengapa jawabannya sama untuk berapa pun banyak siswanya, tanpa mencoba contoh angka. Kamu boleh memakai huruf, misalnya r untuk suara Rani."
+    }
+  },
+  {
+    "id": "HB-TIU-B11-C01",
+    "bab": 11,
+    "target_detik": 90,
+    "soal": {
+      "pengantar": "x dan y adalah bilangan bulat.",
+      "pernyataan": [
+        "x² − y² = 48",
+        "x − y = 6"
+      ],
+      "tanya": "Berapa nilai x + y?"
+    },
+    "opsi": {
+      "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+      "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+      "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+      "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+      "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+    }
+  },
+  {
+    "id": "HB-TIU-B11-C02",
+    "bab": 11,
+    "target_detik": 75,
+    "soal": {
+      "pengantar": "Empat kelompok karang taruna menanam bibit pohon di taman kota. Tabel berikut mencatat banyak anggota, lama kerja, dan banyak bibit yang ditanam setiap kelompok. Dua sel milik kelompok Cendana belum terisi.",
+      "tabel": {
+        "kepala": [
+          "Kelompok",
+          "Banyak anggota",
+          "Lama kerja (jam)",
+          "Bibit yang ditanam"
+        ],
+        "baris": [
+          [
+            "Akasia",
+            "6",
+            "3",
+            "54"
+          ],
+          [
+            "Beringin",
+            "8",
+            "4",
+            "70"
+          ],
+          [
+            "Cendana",
+            "7",
+            "…",
+            "…"
+          ],
+          [
+            "Damar",
+            "5",
+            "2",
+            "48"
+          ]
+        ]
+      },
+      "pernyataan": [
+        "Banyak bibit yang ditanam keempat kelompok rata-rata 57.",
+        "Setiap anggota kelompok Cendana menanam tepat 8 bibit."
+      ],
+      "tanya": "Berapa banyak bibit yang ditanam kelompok Cendana?"
+    },
+    "opsi": {
+      "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+      "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+      "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+      "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+      "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+    }
+  },
+  {
+    "id": "HB-TIU-B11-C03",
+    "bab": 11,
+    "target_detik": 90,
+    "soal": {
+      "pengantar": "Tim A sedang mengecat pagar sekolah sepanjang 120 meter. Sampai pukul 10.00, tim itu sudah bekerja 3 jam dan pagar belum selesai. Laju kerja tim A tetap, dan tim A bekerja tanpa jeda sampai pagar selesai.",
+      "pernyataan": [
+        "Tim B, yang anggotanya sama banyak dengan tim A, mengecat tembok sepanjang 50 meter dalam 2 jam pada pekerjaan yang berbeda.",
+        "Sampai pukul 10.00, 40% pagar sudah dicat."
+      ],
+      "tanya": "Apakah seluruh pagar selesai dicat paling lambat pukul 13.00?"
+    },
+    "opsi": {
+      "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+      "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+      "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+      "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+      "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+    }
+  },
+  {
+    "id": "HB-TIU-B11-C04",
+    "bab": 11,
+    "target_detik": 75,
+    "soal": {
+      "pengantar": "Sebuah kebun hanya ditanami pohon mangga dan pohon jambu.",
+      "pernyataan": [
+        "Perbandingan banyak pohon mangga dan pohon jambu adalah 3 : 2.",
+        "Banyak pohon mangga 1,5 kali banyak pohon jambu."
+      ],
+      "tanya": "Berapa banyak pohon jambu di kebun itu?"
+    },
+    "opsi": {
+      "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+      "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+      "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+      "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+      "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+    }
+  },
+  {
+    "id": "HB-TIU-B11-C05",
+    "bab": 11,
+    "target_detik": 90,
+    "soal": {
+      "pengantar": "Semua peserta lomba cerdas cermat tingkat kecamatan berasal dari SMP atau MTs, dan tidak ada peserta yang berasal dari keduanya.",
+      "pernyataan": [
+        "Perbandingan banyak peserta dari SMP dan dari MTs adalah 7 : 3.",
+        "Peserta yang berasal dari MTs ada 36 orang."
+      ],
+      "tanya": "Berapa persen peserta yang berasal dari MTs?"
+    },
+    "opsi": {
+      "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+      "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+      "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+      "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+      "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+    }
+  },
+  {
+    "id": "HB-TIU-B11-C06",
+    "bab": 11,
+    "target_detik": 120,
+    "soal": {
+      "pengantar": "Tiga kotak, yaitu kotak P, Q, dan R, berisi kelereng.",
+      "pernyataan": [
+        "Kotak P dan kotak Q berisi 45 kelereng.",
+        "Kotak Q dan kotak R berisi 52 kelereng.",
+        "Ketiga kotak berisi 80 kelereng."
+      ],
+      "tanya": "Berapa banyak kelereng di kotak R?"
+    },
+    "opsi": {
+      "A": "Pernyataan (3) SAJA cukup untuk menjawab pertanyaan.",
+      "B": "Pernyataan (1) dan (2) bersama-sama cukup, tetapi pasangan lain dan setiap pernyataan SAJA tidak cukup.",
+      "C": "Pernyataan (1) dan (3) bersama-sama cukup, tetapi pasangan lain dan setiap pernyataan SAJA tidak cukup.",
+      "D": "Pernyataan (2) dan (3) bersama-sama cukup, tetapi pasangan lain dan setiap pernyataan SAJA tidak cukup.",
+      "E": "Ketiga pernyataan bersama-sama cukup, tetapi setiap pasangan pernyataan tidak cukup."
+    }
+  },
+  {
+    "id": "HB-TIU-B11-C07",
+    "bab": 11,
+    "target_detik": 90,
+    "soal": {
+      "pengantar": "x adalah bilangan bulat dengan 3 ≤ x ≤ 7. Diketahui P = x² − 4x + 10 dan Q = 7x − 14.",
+      "tanya": "Hubungan yang tepat antara P dan Q adalah …"
+    },
+    "opsi": {
+      "A": "P > Q",
+      "B": "P < Q",
+      "C": "P = Q",
+      "D": "Hubungan P dan Q tidak dapat ditentukan"
+    }
+  },
+  {
+    "id": "HB-TIU-B11-L01",
+    "bab": 11,
+    "target_detik": 75,
+    "soal": {
+      "pengantar": "Di koperasi sekolah, harga sebuah pensil Rp2.500 dan harga sebuah penghapus Rp1.500. Pada hari Senin, uang hasil penjualan pensil dan penghapus seluruhnya Rp44.000.",
+      "pernyataan": [
+        "Pada hari Senin, banyak penghapus yang terjual dua kali banyak pensil yang terjual.",
+        "Pada hari Sabtu, koperasi menjual 6 pensil dan 14 penghapus."
+      ],
+      "tanya": "Berapa banyak pensil yang terjual pada hari Senin?"
+    },
+    "opsi": {
+      "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+      "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+      "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+      "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+      "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+    }
+  },
+  {
+    "id": "HB-TIU-B11-L02",
+    "bab": 11,
+    "target_detik": 75,
+    "soal": {
+      "pengantar": "Setiap anggota sebuah taman bacaan terdaftar di kelompok anak atau kelompok remaja.",
+      "pernyataan": [
+        "Saat ini, perbandingan banyak anggota kelompok anak dan kelompok remaja adalah 5 : 3.",
+        "Jika 6 anggota remaja baru mendaftar, perbandingan banyak anggota kelompok anak dan kelompok remaja menjadi 5 : 4."
+      ],
+      "tanya": "Berapa banyak anggota kelompok remaja saat ini?"
+    },
+    "opsi": {
+      "A": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+      "B": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+      "C": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan.",
+      "D": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+      "E": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan."
+    }
+  },
+  {
+    "id": "HB-TIU-B11-L03",
+    "bab": 11,
+    "target_detik": 90,
+    "soal": {
+      "pengantar": "Panitia memindahkan 600 kursi dari gudang ke aula dengan 4 troli yang bekerja bersamaan. Laju setiap troli tetap selama bekerja.",
+      "pernyataan": [
+        "Dua dari keempat troli itu masing-masing memindahkan 130 kursi per jam.",
+        "Setiap troli memindahkan paling banyak 140 kursi per jam."
+      ],
+      "tanya": "Apakah seluruh kursi dapat dipindahkan dalam waktu kurang dari 1 jam?"
+    },
+    "opsi": {
+      "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+      "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+      "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+      "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+      "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+    }
+  },
+  {
+    "id": "HB-TIU-B11-L04",
+    "bab": 11,
+    "target_detik": 90,
+    "soal": {
+      "pengantar": "Sebuah perpustakaan daerah menerima sumbangan 480 buku yang terdiri atas buku anak, buku remaja, dan buku dewasa.",
+      "pernyataan": [
+        "Buku remaja 35% dari seluruh buku sumbangan.",
+        "Ada 120 buku anak, dan banyak buku remaja 40% lebih banyak daripada banyak buku anak."
+      ],
+      "tanya": "Berapa banyak buku remaja dalam sumbangan itu?"
+    },
+    "opsi": {
+      "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+      "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+      "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+      "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+      "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+    }
+  },
+  {
+    "id": "HB-TIU-B11-L05",
+    "bab": 11,
+    "target_detik": 120,
+    "soal": {
+      "pengantar": "a dan b adalah bilangan bulat positif.",
+      "pernyataan": [
+        "a + b = 12",
+        "a² + 2ab + b² = 144"
+      ],
+      "tanya": "Berapa nilai a?"
+    },
+    "opsi": {
+      "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+      "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+      "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+      "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+      "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+    }
+  },
+  {
+    "id": "HB-TIU-B12-P01",
+    "bab": 12,
+    "target_detik": 120,
+    "soal": {
+      "pengantar": "Lima orang, yaitu Laras, Maya, Nanda, Oki, dan Prita, tinggal di sebuah gedung lima lantai. Setiap lantai dihuni tepat satu orang, dan lantai 1 adalah lantai paling bawah. Ketentuannya sebagai berikut.",
+      "syarat": [
+        "Maya tinggal tepat satu lantai di atas Laras.",
+        "Oki tinggal di lantai yang lebih tinggi daripada Maya.",
+        "Nanda tidak tinggal di lantai 1.",
+        "Prita tinggal di lantai yang lebih rendah daripada Laras."
+      ],
+      "tanya": "Pernyataan yang pasti benar adalah …"
+    },
+    "opsi": {
+      "A": "Laras tinggal di lantai 2.",
+      "B": "Oki tinggal di lantai 5.",
+      "C": "Nanda tinggal di lantai yang lebih tinggi daripada Maya.",
+      "D": "Laras tinggal tepat satu lantai di atas Maya.",
+      "E": "Prita tinggal di lantai 1."
+    }
+  },
+  {
+    "id": "HB-TIU-B12-C01",
+    "bab": 12,
+    "target_detik": 120,
+    "soal": {
+      "pengantar": "Enam siswa, yaitu Arif, Bunga, Candra, Dewi, Erlan, dan Fitri, mempresentasikan proyek secara bergiliran, satu siswa pada setiap giliran. Arif dan Dewi dari kelas X, Bunga dan Candra dari kelas XI, sedangkan Erlan dan Fitri dari kelas XII. Ketentuannya sebagai berikut.",
+      "syarat": [
+        "Bunga tampil tepat sebelum Erlan.",
+        "Dua siswa dari kelas yang sama tidak tampil berurutan.",
+        "Penampil pertama berasal dari kelas XII.",
+        "Dewi tampil sebelum Arif."
+      ],
+      "tanya": "Urutan penampil dari giliran pertama sampai keenam yang memenuhi semua ketentuan adalah …"
+    },
+    "opsi": {
+      "A": "Fitri, Bunga, Dewi, Erlan, Candra, Arif",
+      "B": "Fitri, Bunga, Erlan, Dewi, Arif, Candra",
+      "C": "Fitri, Dewi, Candra, Arif, Bunga, Erlan",
+      "D": "Fitri, Candra, Arif, Bunga, Erlan, Dewi",
+      "E": "Candra, Dewi, Bunga, Erlan, Arif, Fitri"
+    }
+  },
+  {
+    "id": "HB-TIU-B12-C02",
+    "bab": 12,
+    "target_detik": 150,
+    "soal": {
+      "pengantar": "Delapan orang, yaitu Andi, Beni, Cahya, Dina, Eva, Farhan, Gani, dan Hesti, duduk mengelilingi meja bundar dengan delapan kursi berjarak sama. Semuanya menghadap ke tengah meja. Ketentuannya sebagai berikut.",
+      "syarat": [
+        "Cahya duduk berhadapan dengan Dina.",
+        "Cahya duduk tepat di sebelah kanan Beni.",
+        "Dina duduk tepat di antara Eva dan Farhan.",
+        "Gani tidak duduk bersebelahan dengan Andi."
+      ],
+      "tanya": "Jika Hesti duduk berhadapan dengan Andi, pernyataan yang pasti benar adalah …"
+    },
+    "opsi": {
+      "A": "Beni duduk tepat di sebelah kanan Andi.",
+      "B": "Eva duduk tepat di sebelah kanan Dina.",
+      "C": "Hesti duduk tepat di sebelah kiri Gani.",
+      "D": "Gani duduk berhadapan dengan Andi.",
+      "E": "Farhan duduk bersebelahan dengan Hesti."
+    }
+  },
+  {
+    "id": "HB-TIU-B12-C03",
+    "bab": 12,
+    "target_detik": 120,
+    "soal": {
+      "pengantar": "Tujuh surat, yaitu surat A, B, C, D, E, F, dan G, diarsipkan satu per satu secara berurutan. Ketentuannya sebagai berikut.",
+      "syarat": [
+        "Surat A dan surat B diarsipkan sebelum surat C.",
+        "Surat C diarsipkan sebelum surat E.",
+        "Surat E dan surat F diarsipkan sebelum surat G.",
+        "Surat D diarsipkan tepat setelah surat B."
+      ],
+      "tanya": "Pernyataan yang tidak mungkin benar adalah …"
+    },
+    "opsi": {
+      "A": "Surat F diarsipkan sebelum surat A.",
+      "B": "Surat F diarsipkan keenam.",
+      "C": "Surat A diarsipkan kedua.",
+      "D": "Surat E diarsipkan kelima.",
+      "E": "Surat C diarsipkan sebelum surat D."
+    }
+  },
+  {
+    "id": "HB-TIU-B12-C04",
+    "bab": 12,
+    "target_detik": 120,
+    "soal": {
+      "pengantar": "Empat peserta pelatihan, yaitu Ilham, Juwita, Kevin, dan Lestari, berasal dari empat kota yang berbeda, yaitu Bogor, Cirebon, Garut, dan Serang. Mereka datang dengan empat kendaraan yang berbeda, yaitu bus, kereta, mobil, dan motor. Ketentuannya sebagai berikut.",
+      "syarat": [
+        "Juwita tidak berasal dari Bogor dan tidak naik kereta.",
+        "Peserta dari Garut naik motor.",
+        "Kevin naik bus.",
+        "Ilham tidak berasal dari Garut maupun Serang."
+      ],
+      "tanya": "Pernyataan yang mungkin benar adalah …"
+    },
+    "opsi": {
+      "A": "Peserta dari Cirebon naik motor.",
+      "B": "Juwita berasal dari Cirebon.",
+      "C": "Kevin berasal dari Garut.",
+      "D": "Peserta dari Garut naik bus.",
+      "E": "Ilham berasal dari Serang."
+    }
+  },
+  {
+    "id": "HB-TIU-B12-L01",
+    "bab": 12,
+    "target_detik": 90,
+    "soal": {
+      "pengantar": "Tujuh peserta lomba pidato, yaitu Galih, Hana, Irfan, Jihan, Kirana, Lutfi, dan Mira, tampil satu per satu. Ketentuannya sebagai berikut.",
+      "syarat": [
+        "Hana tampil tepat setelah Galih.",
+        "Irfan tidak tampil pertama dan tidak tampil terakhir.",
+        "Jihan tampil sebelum Kirana.",
+        "Lutfi tampil di urutan ketiga."
+      ],
+      "tanya": "Urutan penampil dari pertama sampai ketujuh yang memenuhi semua ketentuan adalah …"
+    },
+    "opsi": {
+      "A": "Jihan, Galih, Lutfi, Kirana, Irfan, Hana, Mira",
+      "B": "Mira, Jihan, Lutfi, Irfan, Galih, Hana, Kirana",
+      "C": "Irfan, Mira, Lutfi, Galih, Hana, Jihan, Kirana",
+      "D": "Mira, Kirana, Lutfi, Jihan, Irfan, Galih, Hana",
+      "E": "Jihan, Mira, Irfan, Kirana, Lutfi, Galih, Hana"
+    }
+  },
+  {
+    "id": "HB-TIU-B12-L02",
+    "bab": 12,
+    "target_detik": 120,
+    "soal": {
+      "pengantar": "Enam orang, yaitu Nadia, Omar, Putri, Raka, Sari, dan Tegar, duduk mengelilingi meja bundar dengan enam kursi berjarak sama, semuanya menghadap ke tengah meja. Nadia duduk berhadapan dengan Omar.",
+      "pernyataan": [
+        "Omar duduk tepat di sebelah kiri Putri.",
+        "Putri duduk bersebelahan dengan Raka."
+      ],
+      "tanya": "Siapa yang duduk tepat di sebelah kanan Raka?"
+    },
+    "opsi": {
+      "A": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+      "B": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+      "C": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+      "D": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan.",
+      "E": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup."
+    }
+  },
+  {
+    "id": "HB-TIU-B12-L03",
+    "bab": 12,
+    "target_detik": 150,
+    "soal": {
+      "pengantar": "Enam anggota OSIS, yaitu Tito, Umar, Vina, Wulan, Yoga, dan Zahra, menjaga stan pameran sekolah pada hari Senin, Selasa, dan Rabu. Setiap hari stan dijaga tepat dua orang, dan setiap orang bertugas tepat satu hari. Ketentuannya sebagai berikut.",
+      "syarat": [
+        "Umar dan Vina bertugas pada hari yang sama.",
+        "Wulan tidak bertugas bersama Yoga.",
+        "Zahra bertugas pada hari Rabu.",
+        "Tito tidak bertugas pada hari Senin."
+      ],
+      "tanya": "Pernyataan yang pasti benar adalah …"
+    },
+    "opsi": {
+      "A": "Tito bertugas pada hari Selasa.",
+      "B": "Wulan bertugas pada hari Selasa.",
+      "C": "Yoga bertugas bersama Zahra.",
+      "D": "Tito bertugas pada hari Senin.",
+      "E": "Wulan bertugas pada hari Rabu."
+    }
+  },
+  {
+    "id": "HB-TIU-B12-L04",
+    "bab": 12,
+    "target_detik": 150,
+    "soal": {
+      "pengantar": "Tujuh orang, yaitu Aldi, Bella, Ciko, Dara, Elang, Fani, dan Galuh, duduk mengelilingi meja bundar dengan tujuh kursi berjarak sama, semuanya menghadap ke tengah meja. Seseorang duduk tepat di antara dua orang berarti kedua orang itu tetangga kiri dan kanannya. Dua orang berjarak satu kursi berarti di antara mereka ada tepat satu kursi. Ketentuannya sebagai berikut.",
+      "syarat": [
+        "Bella duduk tepat di antara Aldi dan Ciko.",
+        "Dara dan Elang berjarak satu kursi.",
+        "Fani duduk tepat di sebelah kanan Ciko."
+      ],
+      "tanya": "Pernyataan yang tidak mungkin benar adalah …"
+    },
+    "opsi": {
+      "A": "Dara duduk bersebelahan dengan Aldi.",
+      "B": "Galuh duduk tepat di antara Dara dan Elang.",
+      "C": "Dara duduk tepat di sebelah kanan Fani.",
+      "D": "Elang duduk tepat di antara Galuh dan Fani.",
+      "E": "Fani duduk tepat di antara Dara dan Elang."
+    }
+  },
+  {
+    "id": "HB-TIU-B13-P01",
+    "bab": 13,
+    "target_detik": 150,
+    "soal": {
+      "pengantar": "Panitia lomba lari membutuhkan paling sedikit 90 botol air minum. Toko menjual air minum dalam empat kemasan berikut.",
+      "tabel": {
+        "kepala": [
+          "Kemasan",
+          "Harga"
+        ],
+        "baris": [
+          [
+            "isi 8 botol",
+            "Rp20.000"
+          ],
+          [
+            "isi 12 botol",
+            "Rp28.800"
+          ],
+          [
+            "isi 15 botol",
+            "Rp34.500"
+          ],
+          [
+            "isi 24 botol",
+            "Rp57.600"
+          ]
+        ]
+      },
+      "tanya": "Kombinasi kemasan dengan biaya termurah yang memenuhi kebutuhan panitia adalah …"
+    },
+    "opsi": {
+      "A": "1 kemasan isi 12 dan 5 kemasan isi 15",
+      "B": "12 kemasan isi 8",
+      "C": "1 kemasan isi 8, 1 kemasan isi 12, dan 3 kemasan isi 24",
+      "D": "6 kemasan isi 15",
+      "E": "4 kemasan isi 24"
+    }
+  },
+  {
+    "id": "HB-TIU-B13-C01",
+    "bab": 13,
+    "target_detik": 120,
+    "soal": {
+      "pengantar": "Penyelenggara pelatihan memesan buku catatan untuk peserta. Kebutuhannya paling sedikit 64 buku, dengan kelebihan paling banyak 6 buku. Toko menyediakan empat kemasan dengan stok terbatas seperti pada tabel.",
+      "tabel": {
+        "kepala": [
+          "Kemasan",
+          "Harga",
+          "Stok"
+        ],
+        "baris": [
+          [
+            "isi 5 buku",
+            "Rp27.000",
+            "6 kemasan"
+          ],
+          [
+            "isi 8 buku",
+            "Rp41.600",
+            "4 kemasan"
+          ],
+          [
+            "isi 12 buku",
+            "Rp63.600",
+            "6 kemasan"
+          ],
+          [
+            "isi 20 buku",
+            "Rp110.000",
+            "3 kemasan"
+          ]
+        ]
+      },
+      "tanya": "Biaya termurah yang dapat dicapai penyelenggara adalah …"
+    },
+    "opsi": {
+      "A": "Rp332.800",
+      "B": "Rp337.600",
+      "C": "Rp338.000",
+      "D": "Rp357.200",
+      "E": "Rp374.600"
+    }
+  },
+  {
+    "id": "HB-TIU-B13-C02",
+    "bab": 13,
+    "target_detik": 120,
+    "soal": {
+      "pengantar": "Sekolah menyiapkan anggaran paling banyak Rp320.000 untuk membeli pot bunga. Toko menjual pot dalam tiga kemasan berikut, dan sisa anggaran boleh tidak terpakai.",
+      "tabel": {
+        "kepala": [
+          "Kemasan",
+          "Harga"
+        ],
+        "baris": [
+          [
+            "isi 3 pot",
+            "Rp33.000"
+          ],
+          [
+            "isi 5 pot",
+            "Rp50.000"
+          ],
+          [
+            "isi 8 pot",
+            "Rp104.000"
+          ]
+        ]
+      },
+      "tanya": "Banyak pot paling banyak yang dapat dibeli adalah …"
+    },
+    "opsi": {
+      "A": "27 pot",
+      "B": "29 pot",
+      "C": "30 pot",
+      "D": "31 pot",
+      "E": "32 pot"
+    }
+  },
+  {
+    "id": "HB-TIU-B13-C03",
+    "bab": 13,
+    "target_detik": 90,
+    "soal": {
+      "pengantar": "Tabel berikut mencatat banyak petugas dan pengunjung tiga perpustakaan keliling selama dua semester.",
+      "tabel": {
+        "kepala": [
+          "Perpustakaan keliling",
+          "Petugas",
+          "Pengunjung Semester 1",
+          "Pengunjung Semester 2"
+        ],
+        "baris": [
+          [
+            "Pustaka Melati",
+            "3",
+            "240",
+            "300"
+          ],
+          [
+            "Pustaka Kenari",
+            "4",
+            "400",
+            "480"
+          ],
+          [
+            "Pustaka Seroja",
+            "5",
+            "150",
+            "135"
+          ]
+        ]
+      },
+      "tanya": "Berdasarkan tabel, pernyataan yang pasti benar adalah …"
+    },
+    "opsi": {
+      "A": "Persentase kenaikan pengunjung Pustaka Melati lebih besar daripada Pustaka Kenari.",
+      "B": "Pustaka Kenari mengalami persentase kenaikan pengunjung terbesar.",
+      "C": "Pengunjung Pustaka Seroja turun karena jadwal kunjungannya dikurangi.",
+      "D": "Perpustakaan yang petugasnya paling banyak juga paling banyak pengunjungnya pada Semester 2.",
+      "E": "Pengunjung ketiga perpustakaan pada Semester 2 lebih sedikit daripada pengunjung pada Semester 1."
+    }
+  },
+  {
+    "id": "HB-TIU-B13-L01",
+    "bab": 13,
+    "target_detik": 75,
+    "soal": {
+      "pengantar": "Tabel berikut memuat hasil uji keterampilan empat kelompok peserta pelatihan kerja. Peserta yang belum lulus mengikuti uji ulang pada minggu berikutnya.",
+      "tabel": {
+        "kepala": [
+          "Kelompok",
+          "Peserta",
+          "Lulus"
+        ],
+        "baris": [
+          [
+            "Las",
+            "30",
+            "24"
+          ],
+          [
+            "Listrik",
+            "40",
+            "30"
+          ],
+          [
+            "Otomotif",
+            "25",
+            "22"
+          ],
+          [
+            "Tata Boga",
+            "35",
+            "28"
+          ]
+        ]
+      },
+      "tanya": "Pernyataan yang tidak dapat ditentukan benar atau salahnya dari tabel adalah …"
+    },
+    "opsi": {
+      "A": "Peserta yang mengikuti uji ulang paling banyak berasal dari kelompok Listrik.",
+      "B": "Kelompok Listrik meluluskan peserta paling banyak.",
+      "C": "Semua peserta kelompok Otomotif yang mengikuti uji ulang dinyatakan lulus.",
+      "D": "Karena pesertanya paling banyak, kelompok Listrik memiliki persentase kelulusan tertinggi.",
+      "E": "Kelompok yang pesertanya paling sedikit juga meluluskan peserta paling sedikit."
+    }
+  },
+  {
+    "id": "HB-TIU-B13-L02",
+    "bab": 13,
+    "target_detik": 120,
+    "soal": {
+      "pengantar": "Kantin sekolah membutuhkan paling sedikit 40 kg tepung terigu. Pemasok menjual tepung dalam tiga kemasan berikut. Setiap jenis kemasan dikirim dari gudang yang berbeda, sehingga ada ongkos kirim Rp15.000 untuk setiap jenis kemasan yang dipesan.",
+      "tabel": {
+        "kepala": [
+          "Kemasan",
+          "Harga"
+        ],
+        "baris": [
+          [
+            "isi 5 kg",
+            "Rp50.000"
+          ],
+          [
+            "isi 10 kg",
+            "Rp90.000"
+          ],
+          [
+            "isi 25 kg",
+            "Rp200.000"
+          ]
+        ]
+      },
+      "tanya": "Biaya termurah, termasuk ongkos kirim, untuk memenuhi kebutuhan kantin adalah …"
+    },
+    "opsi": {
+      "A": "Rp335.000",
+      "B": "Rp340.000",
+      "C": "Rp370.000",
+      "D": "Rp375.000",
+      "E": "Rp385.000"
+    }
+  },
+  {
+    "id": "HB-TIU-B13-L03",
+    "bab": 13,
+    "target_detik": 150,
+    "soal": {
+      "pengantar": "Koperasi menjual alat tulis dalam tiga paket campuran berikut. Seorang guru membutuhkan paling sedikit 9 buku dan paling sedikit 11 pulpen.",
+      "tabel": {
+        "kepala": [
+          "Paket",
+          "Isi buku",
+          "Isi pulpen",
+          "Harga"
+        ],
+        "baris": [
+          [
+            "Paket X",
+            "3",
+            "1",
+            "Rp40.000"
+          ],
+          [
+            "Paket Y",
+            "1",
+            "3",
+            "Rp38.000"
+          ],
+          [
+            "Paket Z",
+            "2",
+            "2",
+            "Rp41.000"
+          ]
+        ]
+      },
+      "tanya": "Kombinasi paket dengan biaya termurah yang memenuhi kebutuhan guru adalah …"
+    },
+    "opsi": {
+      "A": "1 paket X dan 4 paket Y",
+      "B": "4 paket X dan 1 paket Y",
+      "C": "3 paket Y dan 1 paket Z",
+      "D": "1 paket Y dan 4 paket Z",
+      "E": "2 paket X dan 3 paket Y"
+    }
+  }
+]

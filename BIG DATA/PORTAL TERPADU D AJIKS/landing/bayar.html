@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pembayaran, D'Ajiks Akademi</title>
+<link rel="icon" href="assets/dajiks-emblem.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap">
+<style>
+body{margin:0;background:#f7f8fb;color:#172a35;font-family:'Inter Tight',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#08254b}
+button{font-family:inherit}
+[hidden]{display:none !important}
+:focus-visible{outline:2px solid #c9a24a;outline-offset:2px}
+.shell{display:grid;grid-template-columns:260px minmax(0,1fr);min-height:100vh}
+.side{background:#fff;border-right:1px solid #e6eaf1;padding:24px 20px}
+.side a.nav{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:10px;text-decoration:none;color:#3d5260;font-weight:500}
+.side a.nav.on{background:#eef1f8;color:#031739;font-weight:600}
+.side svg{width:22px;height:22px;flex:none}
+.top{height:76px;display:flex;align-items:center;gap:16px;padding:0 32px;background:#fff;border-bottom:1px solid #e6eaf1}
+.main{padding:32px}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;max-width:1080px;margin:0 auto;align-items:start}
+.box{background:#fff;border:1px solid #e3e8f0;border-radius:18px;box-shadow:0 10px 30px -22px rgba(3,23,57,.35)}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:50px;border-radius:10px;font-weight:600;font-size:16px;text-decoration:none;cursor:pointer;border:0;transition:transform 160ms cubic-bezier(.23,1,.32,1),background-color 160ms ease}
+.btn:active{transform:scale(.98)}
+.btn-main{background:#08254b;color:#fff}.btn-main:hover{background:#0f3360}
+.btn-line{background:#fff;color:#031739;border:1.5px solid #cdd4e2}.btn-line:hover{background:#f5f7fb}
+.btn-pay{width:auto;padding:0 28px;background:#d4af4f;color:#031739}.btn-pay:hover{background:#e0bd5c}
+.btn svg{width:20px;height:20px}
+.label{margin:0;font-weight:600;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#7a5710}
+.row{display:flex;justify-content:space-between;gap:16px;align-items:baseline}
+.muted{color:#526772}
+.icon-btn{all:unset;cursor:pointer;display:inline-flex;padding:4px;border-radius:6px;color:#526772}
+.icon-btn:hover{background:#eef1f8;color:#031739}
+.icon-btn svg{width:18px;height:18px}
+/* langkah */
+.steps{display:flex;align-items:center;justify-content:center;gap:10px}
+.st{width:56px;height:56px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;border:2px solid #dbe0ea;color:#8a9ab2;background:#fff}
+.st svg{width:24px;height:24px}
+.st.done{background:#eef1f8;border-color:#eef1f8;color:#08254b}
+.st.now{border-color:#08254b;color:#08254b}
+.st.ok{background:#eaf6f0;border-color:#eaf6f0;color:#087453}
+.dash{width:28px;border-top:2px dashed #cdd4e2}
+.time{display:flex;gap:12px;justify-content:center}
+.time div{width:84px;padding:12px 0;border-radius:14px;background:#faf6ec;border:1px solid #ecdcae;text-align:center}
+.time b{display:block;font-size:30px;color:#031739;font-variant-numeric:tabular-nums}
+.time span{font-size:12px;letter-spacing:.06em;color:#7a5710}
+/* modal */
+.overlay{position:fixed;inset:0;background:rgba(3,23,57,.45);display:flex;align-items:flex-start;justify-content:center;padding:48px 16px;overflow:auto;z-index:5}
+.modal{width:100%;max-width:520px;background:#fff;border-radius:20px;padding:32px;box-sizing:border-box;box-shadow:0 30px 60px -20px rgba(3,23,57,.5)}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.seg label{display:flex;flex-direction:column;gap:2px;padding:12px 14px;border:1.5px solid #dbe0ea;border-radius:12px;cursor:pointer}
+.seg input{position:absolute;opacity:0}
+.seg label:has(input:checked){border-color:#08254b;background:#f3f5fa}
+.seg label:has(input:focus-visible){outline:2px solid #c9a24a;outline-offset:2px}
+details{border-bottom:1px solid #e6eaf1}
+summary{list-style:none;display:flex;align-items:center;gap:12px;padding:16px 0;cursor:pointer;font-weight:500}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";margin-left:auto;width:10px;height:10px;border-right:2px solid #526772;border-bottom:2px solid #526772;transform:rotate(45deg) translateY(-3px);transition:transform 160ms ease}
+details[open] summary::after{transform:rotate(-135deg)}
+summary svg{width:22px;height:22px;color:#08254b}
+.pm{display:flex;align-items:center;gap:12px;padding:14px 16px;margin-bottom:10px;border:1.5px solid #dbe0ea;border-radius:12px;cursor:pointer}
+.pm:has(input:checked){border-color:#08254b;background:#f3f5fa}
+.pm input{accent-color:#08254b;width:18px;height:18px;margin:0}
+.fee{margin-left:auto;padding:3px 8px;border-radius:6px;background:#faf6ec;color:#7a5710;font-size:12px;font-weight:600}
+.toast{position:fixed;top:20px;left:50%;transform:translateX(-50%);background:#fff;border-radius:14px;box-shadow:0 20px 40px -16px rgba(3,23,57,.4);padding:16px 20px;display:flex;gap:12px;align-items:flex-start;min-width:300px;z-index:6;overflow:hidden}
+.toast::after{content:"";position:absolute;left:0;bottom:0;height:4px;width:100%;background:#087453;transform-origin:left;animation:bar 4s linear forwards}
+@keyframes bar{to{transform:scaleX(0)}}
+.konfirm{margin-top:20px;padding:18px 20px;border-radius:14px;background:#faf6ec;border:1px solid #ecdcae}
+.konfirm .btn[aria-busy=true]{opacity:.7;pointer-events:none}
+@media (max-width:900px){
+.shell{grid-template-columns:1fr}.side{display:none}
+.grid{grid-template-columns:1fr}.main,.top{padding-left:16px;padding-right:16px}
+.modal{padding:24px 18px}
+}
+@media print{.side,.top button,.no-print,.toast{display:none !important}.shell{display:block}body{background:#fff}}
+@media (prefers-reduced-motion:reduce){.btn,summary::after{transition:none}.toast::after{animation:none}}
+</style>
+</head>
+<body>
+
+<div class="shell">
+<aside class="side">
+<a href="index.html"><img src="assets/dajiks-lockup.png" alt="D'Ajiks Akademi" style="height:56px;display:block;margin:0 0 28px 8px"></a>
+<a class="nav" href="paket-saya.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg>Paket Saya</a>
+<a class="nav on" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>Pesanan</a>
+<a class="nav" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Tryout</a>
+<a class="nav" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>Profil</a>
+</aside>
+
+<div>
+<header class="top">
+<button class="icon-btn" onclick="history.back()" aria-label="Kembali"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:22px;height:22px"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+<h1 style="margin:0;font-size:20px;font-weight:600;color:#031739">Detail Pesanan</h1>
+<span class="muted" style="margin-left:auto;font-size:15px">[email siswa]</span>
+</header>
+
+<main class="main">
+<div class="grid" id="order" hidden>
+<!-- kiri: status -->
+<div class="box" style="padding:32px 32px 28px">
+<div class="steps" aria-label="Tahap pesanan">
+<span class="st done" title="Pesanan dibuat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.4a1.5 1.5 0 0 0 1.5 1.1h8.8a1.5 1.5 0 0 0 1.5-1.1L21 7H6"/></svg></span>
+<span class="dash"></span>
+<span class="st" id="st2" title="Pembayaran"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M16 15h2"/></svg></span>
+<span class="dash"></span>
+<span class="st" id="st3" title="Selesai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+</div>
+
+<div id="wait">
+<p style="margin:24px 0 18px;text-align:center;font-size:20px;font-weight:500">Menunggu Pembayaran</p>
+<div class="time" aria-live="off"><div><b id="hh">24</b><span>JAM</span></div><div><b id="mm">00</b><span>MENIT</span></div><div><b id="ss">00</b><span>DETIK</span></div></div>
+<div id="payArea" style="margin:24px 0 18px"></div>
+<div class="no-print" style="display:flex;flex-direction:column;gap:10px">
+<button class="btn btn-main" id="dlBtn" onclick="alert('Kode bayar diberikan oleh penyedia pembayaran. Belum tersambung.')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span id="dlLabel">Unduh QR</span></button>
+<button class="btn btn-line" onclick="print()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9V3h10v6M7 17H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2M7 14h10v7H7z"/></svg>Cetak invoice</button>
+</div>
+<div class="konfirm no-print">
+<p style="margin:0 0 4px;font-weight:600;color:#031739">Sudah membayar?</p>
+<p class="muted" style="margin:0 0 14px;font-size:14.5px;line-height:1.5">Tekan tombol ini setelah pembayaran berhasil di aplikasimu. Paket langsung aktif di Paket Saya.</p>
+<button class="btn btn-pay" id="cekBayar" type="button" style="width:100%">Saya sudah bayar</button>
+<p class="muted" style="margin:10px 0 0;font-size:13px;line-height:1.5">Contoh tampilan. Di sistem asli, tombol ini mengecek ke penyedia pembayaran, dan status juga berubah sendiri begitu pembayaran diterima.</p>
+</div>
+</div>
+
+<div id="paid" hidden>
+<p style="margin:24px 0 22px;text-align:center;font-size:20px;font-weight:500">Pembayaran kamu berhasil</p>
+<p class="muted" style="margin:-10px 0 22px;text-align:center;font-size:15px">Kelas sudah aktif di Paket Saya.</p>
+<div class="no-print" style="display:flex;flex-direction:column;gap:10px">
+<a class="btn btn-main" href="paket-saya.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Buka Paket Saya</a>
+<button class="btn btn-line" onclick="print()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9V3h10v6M7 17H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2M7 14h10v7H7z"/></svg>Cetak invoice</button>
+</div>
+</div>
+</div>
+
+<!-- kanan: rincian -->
+<div style="display:flex;flex-direction:column;gap:20px">
+<div class="box" style="overflow:hidden">
+<div style="background:#f3f5fa;padding:22px 28px;display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start;border-bottom:1px solid #e3e8f0">
+<div><p class="label" style="color:#526772">Nomor pesanan</p><p style="margin:6px 0 0;font-weight:600;font-size:17px;display:flex;gap:8px;align-items:center"><span id="inv"></span><button class="icon-btn no-print" data-copy="inv" aria-label="Salin nomor pesanan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a1 1 0 0 1 1-1h10"/></svg></button></p></div>
+<div><p class="label" style="color:#526772">Tanggal pembelian</p><p style="margin:6px 0 0;font-weight:600;font-size:17px" id="tgl"></p></div>
+</div>
+<div style="padding:22px 28px">
+<p class="label">Detail item</p>
+<div class="row muted" style="margin-top:14px;font-size:14px"><span>Item</span><span>Harga</span></div>
+<div class="row" style="margin-top:8px;font-size:16px"><span id="itemName" style="font-weight:500"></span><span id="itemPrice"></span></div>
+<div style="border-top:1px solid #e6eaf1;margin:18px 0"></div>
+<div class="row muted" style="font-size:15px"><span>Fee pembayaran (<span id="methodName"></span>)</span><span>[menyusul]</span></div>
+</div>
+<div class="row" style="padding:20px 28px;background:#f7f8fb;border-top:1px solid #e3e8f0">
+<span class="muted">Total pembayaran</span>
+<span style="display:flex;gap:8px;align-items:center;font-weight:700;font-size:22px;color:#031739"><span id="total"></span><button class="icon-btn no-print" data-copy="total" aria-label="Salin total"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a1 1 0 0 1 1-1h10"/></svg></button></span>
+</div>
+</div>
+
+<div class="box no-print" id="guide" style="padding:24px 28px">
+<p style="margin:0 0 14px;font-weight:600;color:#031739">Petunjuk pembayaran</p>
+<ol id="guideList" style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:10px;font-size:15px;line-height:1.55;color:#3d5260"></ol>
+</div>
+
+<a class="box no-print" href="https://wa.me/" style="padding:18px 22px;display:flex;gap:16px;align-items:center;text-decoration:none">
+<span style="flex:none;width:52px;height:52px;border-radius:12px;background:#eaf6f0;color:#087453;display:inline-flex;align-items:center;justify-content:center"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 0 1-11.8 7L4 20l1.1-4A8 8 0 1 1 20 12z"/><path d="M9 9.5c.3 2.3 2.2 4.3 4.5 4.8l1.2-1.1 1.8.8-.4 1.7c-3.6.3-7.5-3.4-7.2-7.2l1.7-.4.8 1.8z"/></svg></span>
+<span><span style="display:block;color:#172a35">Mengalami kendala atau keluhan?</span><span style="font-weight:600;color:#08254b">Hubungi admin D'Ajiks [nomor menyusul]</span></span>
+</a>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+<!-- langkah 1: pilih metode -->
+<div class="overlay" id="checkout" role="dialog" aria-modal="true" aria-labelledby="coTitle">
+<form class="modal" id="coForm">
+<p id="coTitle" style="margin:0 0 14px;font-weight:600;font-size:18px;color:#031739">Kelas yang dipilih</p>
+<div style="display:flex;gap:14px;align-items:center;padding:14px;border-radius:14px;background:#f3f5fa">
+<img src="assets/dajiks-emblem.png" alt="" style="width:44px;height:44px">
+<div><p id="coKelas" style="margin:0;font-weight:600;color:#031739"></p><p id="coHarga" style="margin:2px 0 0;font-size:14px;color:#7a5710;font-weight:600">[Harga menyusul]</p></div>
+</div>
+<div class="seg" style="margin-top:12px">
+<label><input type="radio" name="versi" value="penuh"><span style="font-weight:600;color:#031739">Akses penuh</span><span class="muted" style="font-size:13px">Materi, tryout, pembahasan</span></label>
+<label><input type="radio" name="versi" value="tryout"><span style="font-weight:600;color:#031739">Tryout saja</span><span class="muted" style="font-size:13px">Tryout dan pembahasan</span></label>
+</div>
+
+<details style="margin-top:12px">
+<summary><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9V6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v3a3 3 0 0 0 0 6v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-3a3 3 0 0 0 0-6zM14 5v14"/></svg>Punya kode promo?</summary>
+<div style="display:flex;gap:8px;padding-bottom:16px">
+<label for="promo" class="muted" style="position:absolute;left:-9999px">Kode promo</label>
+<input id="promo" placeholder="Masukkan kode" style="flex:1;min-width:0;height:46px;padding:0 14px;border:1.5px solid #877d66;border-radius:10px;font:inherit">
+<button type="button" class="btn btn-line" style="width:auto;padding:0 18px;min-height:46px" onclick="document.getElementById('promoMsg').textContent='Kode promo belum tersedia.'">Pakai</button>
+</div>
+<p id="promoMsg" class="muted" style="margin:-8px 0 14px;font-size:13px" aria-live="polite"></p>
+</details>
+
+<p style="margin:22px 0 4px;font-weight:600;font-size:16px;color:#031739">Metode pembayaran</p>
+<details open>
+<summary><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3M8 9h3v3H8zM13 13h3v3h-3z"/></svg>QRIS</summary>
+<label class="pm"><input type="radio" name="metode" value="QRIS" checked>QRIS, semua e-wallet dan m-banking<span class="fee">Biaya [menyusul]</span></label>
+</details>
+<details>
+<summary><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></svg>Virtual Account</summary>
+<label class="pm"><input type="radio" name="metode" value="Virtual Account [bank menyusul]">[Daftar bank menyusul]<span class="fee">Biaya [menyusul]</span></label>
+</details>
+<details>
+<summary><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7zM4 7l12-3v3M16 13h2"/></svg>E-Wallet</summary>
+<label class="pm"><input type="radio" name="metode" value="E-Wallet [menyusul]">[Daftar e-wallet menyusul]<span class="fee">Biaya [menyusul]</span></label>
+</details>
+
+<div style="display:flex;align-items:center;gap:16px;margin-top:24px">
+<span id="coTotal" style="font-weight:700;font-size:20px;color:#031739">[Total menyusul]</span>
+<a href="index.html#kelas" style="margin-left:auto;font-weight:500;text-decoration:none;color:#3d5260">Batal</a>
+<button class="btn btn-pay" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg>Bayar</button>
+</div>
+</form>
+</div>
+
+<div class="toast" id="toast" role="status" hidden>
+<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#087453" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>
+<div><p style="margin:0;font-weight:600">Berhasil</p><p class="muted" style="margin:2px 0 0;font-size:14px">Pesanan sudah dibayar.</p></div>
+<button class="icon-btn" style="margin-left:auto" aria-label="Tutup" onclick="this.parentNode.hidden=true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+</div>
+
+<script>
+var KELAS = { skd: 'SKD Kedinasan', ipdn: 'IPDN', polri: 'Persiapan POLRI', tni: 'Persiapan TNI', cpns: 'CPNS' };
+var VERSI = { penuh: 'akses penuh', tryout: 'tryout saja' };
+var GUIDE = {
+  QRIS: ['Klik Unduh QR atau ambil tangkapan layar kode QRIS.', 'Buka aplikasi e-wallet atau m-banking yang mendukung QRIS.', 'Pilih menu Pindai atau Bayar.', 'Unggah gambar QRIS yang sudah kamu simpan.', 'Periksa nama penerima dan jumlah bayar, lalu konfirmasi.'],
+  other: ['Salin kode bayar di sebelah kiri.', 'Buka aplikasi bank atau e-wallet kamu.', 'Pilih menu pembayaran dan tempel kode bayar.', 'Periksa nama penerima dan jumlah bayar, lalu konfirmasi.']
+};
+var q = new URLSearchParams(location.search);
+var kelas = KELAS[q.get('kelas')] ? q.get('kelas') : 'skd';
+var versi = VERSI[q.get('versi')] ? q.get('versi') : 'penuh';
+var $ = function (id) { return document.getElementById(id); };
+var form = $('coForm');
+
+// paket & harga dari kartu kelas (DATA CONTOH, ganti sebelum dipublikasikan)
+var paket = (q.get('paket') || '').slice(0, 80);
+var harga = parseInt(q.get('harga'), 10);
+var hargaTeks = harga > 0 && harga < 100000000 ? 'Rp' + harga.toLocaleString('id-ID') : '[Harga menyusul]';
+$('coHarga').textContent = hargaTeks;
+if (harga > 0) $('coTotal').textContent = hargaTeks + ' + biaya';
+if (paket) form.versi[0].closest('.seg').hidden = true; // versi sudah ditentukan oleh paket
+function namaItem() { return paket || KELAS[kelas] + ', ' + VERSI[form.versi.value]; }
+form.versi.value = versi;
+$('coKelas').textContent = namaItem();
+form.addEventListener('change', function () { $('coKelas').textContent = namaItem(); });
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  var metode = form.metode.value, qris = metode === 'QRIS', now = new Date();
+  $('inv').textContent = 'DAJ' + now.getTime();
+  $('tgl').textContent = now.toLocaleString('id-ID', { dateStyle: 'medium', timeStyle: 'short' });
+  $('itemName').textContent = namaItem();
+  $('itemPrice').textContent = hargaTeks;
+  $('total').textContent = harga > 0 ? hargaTeks + ' + biaya' : '[Total menyusul]';
+  $('methodName').textContent = metode;
+  $('dlLabel').textContent = qris ? 'Unduh QR' : 'Salin kode bayar';
+  $('payArea').innerHTML = qris
+    ? '<div style="aspect-ratio:1;max-width:300px;margin:0 auto;border:2px dashed #cdd4e2;border-radius:16px;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;color:#526772;font-size:14px">Kode QRIS dari penyedia pembayaran muncul di sini</div>'
+    : '<div style="padding:18px;border-radius:14px;background:#f3f5fa;text-align:center"><p class="muted" style="margin:0;font-size:14px">Kode bayar</p><p style="margin:6px 0 0;font-weight:700;font-size:22px;letter-spacing:.08em;color:#031739">[dari penyedia]</p></div>';
+  $('guideList').innerHTML = '';
+  (qris ? GUIDE.QRIS : GUIDE.other).forEach(function (t) { var li = document.createElement('li'); li.textContent = t; $('guideList').appendChild(li); });
+  $('st2').className = 'st now';
+  $('checkout').hidden = true;
+  $('order').hidden = false;
+  mulaiHitung(now.getTime() + 24 * 3600 * 1000);
+});
+
+var timer;
+function mulaiHitung(batas) {
+  function tik() {
+    var s = Math.max(0, Math.floor((batas - Date.now()) / 1000));
+    $('hh').textContent = String(Math.floor(s / 3600)).padStart(2, '0');
+    $('mm').textContent = String(Math.floor(s / 60) % 60).padStart(2, '0');
+    $('ss').textContent = String(s % 60).padStart(2, '0');
+    if (!s) clearInterval(timer);
+  }
+  tik(); timer = setInterval(tik, 1000);
+}
+
+// prototipe: pengecekan ke penyedia pembayaran ditiru dengan jeda singkat, lalu selalu berhasil
+$('cekBayar').addEventListener('click', function () {
+  var b = this;
+  b.setAttribute('aria-busy', 'true'); b.textContent = 'Mengecek pembayaran…';
+  setTimeout(lunas, 900);
+});
+// paket yang dibayar disimpan di peramban supaya muncul paling atas di Paket Saya (prototipe; nanti dari server).
+// Jumlah tryout dibaca dari nama paket; jumlah kelas akses penuh mengikuti PAKET contoh (Reguler 5, Intensif 9, Premium 15).
+function simpanBeli() {
+  var nama = namaItem(), v = form.versi.value, S = { skd: 'SKD', ipdn: 'IPDN', polri: 'POLRI', tni: 'TNI', cpns: 'CPNS' };
+  var m = nama.match(/(\d+) Tryout/), tingkat = (nama.match(/Reguler|Intensif|Premium/) || [])[0];
+  var total = m ? +m[1] : { Reguler: 5, Intensif: 9, Premium: 15 }[tingkat] || (v === 'penuh' ? 5 : 1);
+  var item = { k: kelas, v: v, nama: nama, total: total, done: 0, aktif: true, to: [],
+    b1: (v === 'penuh' ? 'Kelas ' : total > 1 ? 'Bundling ' : 'Tryout ') + S[kelas],
+    b2: total > 1 ? total + ' Tryout' : (nama.match(/Paket \d+/) || ['1 Tryout'])[0] };
+  try {
+    var beli = JSON.parse(localStorage.getItem('beli')) || [];
+    localStorage.setItem('beli', JSON.stringify([item].concat(beli.filter(function (b) { return b.nama !== nama; }))));
+  } catch (e) {}
+}
+function lunas() {
+  clearInterval(timer);
+  simpanBeli();
+  $('wait').hidden = true; $('paid').hidden = false; $('guide').hidden = true;
+  $('st2').className = 'st done'; $('st3').className = 'st ok';
+  $('toast').hidden = false;
+  setTimeout(function () { $('toast').hidden = true; }, 4000);
+  $('paid').querySelector('a').focus();
+}
+
+document.querySelectorAll('[data-copy]').forEach(function (b) {
+  b.addEventListener('click', function () { navigator.clipboard && navigator.clipboard.writeText($(b.dataset.copy).textContent); });
+});
+</script>
+</body>
+</html>

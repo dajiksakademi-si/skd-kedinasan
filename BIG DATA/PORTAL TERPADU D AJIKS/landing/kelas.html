@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kelas · D'Ajiks Akademi</title>
+<link rel="icon" href="assets/dajiks-emblem.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap">
+<style>
+/* gaya bersama disalin dari index.html (menu, kartu paket, kaki halaman); bagian khusus halaman kelas di bawah */
+body{margin:0;background:#fff;color:#172a35;font-family:'Inter Tight',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#08254b}a:hover{color:#0f3360}
+::selection{background:#e8c766;color:#031739}
+:focus-visible{outline:2px solid #c9a24a;outline-offset:3px}
+h1,h2,h3{text-wrap:balance}p{text-wrap:pretty}
+img{max-width:100%}
+[hidden]{display:none !important}
+.top{position:sticky;top:0;z-index:2;padding:16px 40px;margin-bottom:-112px}
+.bar{max-width:1160px;margin:0 auto;height:80px;box-sizing:border-box;padding:0 10px 0 28px;display:flex;align-items:center;gap:40px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);transition:background-color 220ms ease,box-shadow 220ms ease}
+.top.scrolled .bar{background:rgba(3,23,57,.9);box-shadow:0 16px 40px -20px rgba(3,23,57,.6)}
+.nav-links a:hover{color:#fff !important}
+.masuk{margin-left:auto;display:inline-flex;align-items:center;gap:12px;min-height:54px;padding:0 7px 0 24px;border-radius:999px;background:#fff;color:#031739;font-weight:600;text-decoration:none;box-shadow:0 0 0 4px rgba(255,255,255,.18);transition:transform 160ms cubic-bezier(.23,1,.32,1)}
+.masuk:active{transform:scale(.97)}
+.masuk .go{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#031739;color:#e8c766}
+.wrap{max-width:1240px;margin:0 auto;padding:0 40px;box-sizing:border-box}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:56px;padding:0 34px;border-radius:999px;font:600 17px 'Inter Tight',sans-serif;text-decoration:none;box-sizing:border-box;transition:transform 160ms cubic-bezier(.23,1,.32,1),background-color 160ms ease}
+.btn:active{transform:scale(.97)}
+.seg{display:inline-flex;gap:4px;padding:5px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25)}
+.seg button{all:unset;cursor:pointer;min-height:38px;padding:0 18px;border-radius:999px;font:600 15px 'Inter Tight',sans-serif;color:#dfe5f3;transition:background-color 160ms ease,color 160ms ease}
+.seg button[aria-pressed=true]{background:#fff;color:#031739}
+.seg button:focus-visible{outline:2px solid #e8c766;outline-offset:2px}
+.seg-k{flex-wrap:wrap;justify-content:center;border-radius:24px}
+.mock-note{margin:4px 0 0;padding:6px 14px;border-radius:999px;background:#e8c766;color:#031739;font-size:13px;font-weight:700;text-align:center}
+.tier .aktif{position:relative;margin:8px 0 0;max-width:15em;font-size:13.5px;line-height:1.45;color:#b7c3d2}
+.tier .was{position:relative;margin:18px 0 0;display:flex;align-items:center;gap:8px;font-size:14px;color:#8a9ab2}
+.tier .was b{padding:2px 8px;border-radius:6px;background:#e8c766;color:#031739;font-size:12.5px}
+.tier .now{position:relative;margin:2px 0 0;font-weight:700;font-size:36px;letter-spacing:-.03em;color:#fff;font-variant-numeric:tabular-nums}
+.t-head{position:relative;overflow:hidden;border-radius:16px;padding:18px 20px 22px;background:radial-gradient(110% 85% at 0% 0%,rgba(212,175,79,var(--g,.4)),rgba(212,175,79,0) 60%),#031739}
+.tier.t0{--g:.26}.tier.t1{--g:.55}.tier.t2{--g:.4}
+.t-pill{position:relative;display:inline-block;padding:6px 14px;border-radius:10px;background:rgba(3,23,57,.6);border:1px solid rgba(232,199,102,.4);color:#e8c766;font-weight:700;font-size:14px}
+.sil{position:absolute;top:0;right:0;bottom:0;width:40%;pointer-events:none;-webkit-mask-image:linear-gradient(90deg,transparent,#000 50%);mask-image:linear-gradient(90deg,transparent,#000 50%)}
+.sil img{position:absolute;right:10px;width:60px;height:60px;opacity:var(--o,.32)}
+.tier.t1 .sil{--o:.42}
+.sil img:nth-child(1){top:10px}.sil img:nth-child(2){top:calc(50% - 30px)}.sil img:nth-child(3){bottom:10px}
+.t-body{display:flex;flex-direction:column;flex:1;padding:20px 10px 6px}
+.tiers{display:flex;flex-wrap:wrap;justify-content:center;gap:0 20px;align-items:stretch;max-width:1000px;margin:56px auto 0}
+.tier{box-sizing:border-box;width:calc((100% - 40px)/3);margin:32px 0;background:#fff;border-radius:22px;padding:10px;box-shadow:0 24px 50px -30px rgba(3,23,57,.55);display:flex;flex-direction:column}
+.tier.mid{margin:0;padding:12px;box-shadow:0 0 0 1.5px rgba(232,199,102,.8),0 0 48px 6px rgba(212,175,79,.35),0 40px 70px -30px rgba(3,23,57,.6)}
+.tier h3{margin:0;font-weight:600;font-size:21px;line-height:1.3;letter-spacing:-.02em;color:#031739}
+.tier .pr{margin:14px 0 0;font-weight:700;font-size:20px;color:#7a5710}
+.tier ul{list-style:none;margin:20px 0 28px;padding:0;display:flex;flex-direction:column;gap:12px}
+.tier li{display:flex;gap:10px;font-size:15px;line-height:1.5;color:#24333d}
+.tier li::before{content:"";flex:none;width:16px;height:16px;margin-top:3px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23031739' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7'/%3E%3C/svg%3E") no-repeat}
+.tier .btn{margin-top:auto;min-height:52px;width:100%;padding:0 8px 0 24px;justify-content:space-between;background:#e8c766;color:#031739}
+.tier .btn .go{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:#031739;color:#e8c766}
+.tier .note{margin:10px 0 0;text-align:center;font-size:13px;color:#6b7f88}
+.kaki{background:#f7f8fb;margin-top:96px}
+.kaki .wrap{border-left:1px solid #e3e8f0;border-right:1px solid #e3e8f0}
+.foot{display:grid;grid-template-columns:minmax(0,1.6fr) repeat(3,minmax(0,1fr));gap:48px;padding-top:96px;padding-bottom:96px;padding-left:72px;padding-right:72px}
+.merk{display:flex;align-items:center;gap:14px;font-weight:700;font-size:30px;letter-spacing:-.03em;color:#031739}
+.merk img{width:52px;height:52px}
+.foot .tag{margin:24px 0 0;max-width:20em;font-size:17px;line-height:1.65;color:#3d5260}
+.foot .wa{display:inline-flex;align-items:center;gap:10px;margin-top:28px;min-height:44px;padding:0 18px 0 8px;border-radius:999px;background:#031739;color:#fff;font-weight:600;font-size:15px;text-decoration:none}
+.foot .wa svg{width:28px;height:28px;padding:6px;box-sizing:border-box;border-radius:50%;background:#e8c766;color:#031739}
+.foot h4{margin:0 0 26px;font-size:16px;font-weight:500;color:#526772}
+.foot nav a{display:block;margin-bottom:18px;color:#031739;text-decoration:none;font-size:17px;font-weight:500;transition:color 160ms ease}
+.foot nav a:hover{color:#9a7416}
+.garis{position:relative;height:1px;background:#e3e8f0}
+.garis i{position:absolute;top:-10px;width:21px;height:21px;margin-left:-10px;background:#f7f8fb}
+.garis i::before,.garis i::after{content:"";position:absolute;background:#b7c3d2}
+.garis i::before{left:10px;top:0;width:1px;height:21px}.garis i::after{top:10px;left:0;width:21px;height:1px}
+.hak{margin:0;padding:36px 16px 40px;text-align:center;font-size:16px;color:#3d5260}
+.hak b{font-weight:600;color:#031739}
+.eyebrow{margin:0 0 14px;font-size:14px;font-weight:600;letter-spacing:.04em;color:#7a5710}
+.eyebrow::before{content:"";display:inline-block;width:8px;height:8px;margin-right:10px;border-radius:2px;background:#d4af4f;transform:rotate(45deg) translateY(-2px)}
+.o-ph{position:relative;margin:0;border-radius:20px;overflow:hidden}
+.o-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.55,.085,.68,.53)}
+.o-ph figcaption{position:absolute;left:10px;bottom:10px;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.92);font-size:13px;font-weight:600;color:#031739}
+.bar{position:relative}
+.mega-t{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-weight:500;color:#dfe5f3}
+.mega-t svg{transition:transform 200ms cubic-bezier(.23,1,.32,1)}
+.mega-p{position:absolute;left:0;right:0;top:100%;padding-top:12px;visibility:hidden;opacity:0;transform:translateY(-6px);transition:opacity 180ms ease,transform 220ms cubic-bezier(.23,1,.32,1),visibility 0s 220ms}
+.mega-in{display:grid;grid-template-columns:1fr 1fr;gap:56px;padding:32px 40px 36px;border-radius:24px;background:#fff;box-shadow:0 30px 60px -24px rgba(3,23,57,.45)}
+.mega-h{margin:0 0 10px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#526772}
+.mega-in a{display:flex;flex-direction:column;padding:13px 0;border-bottom:1px solid #e3e8f0;color:#031739 !important;font-size:17px;font-weight:500;text-decoration:none;transition:color 160ms ease,padding-left 200ms cubic-bezier(.23,1,.32,1)}
+.mega-in a span{margin-top:2px;font-size:13.5px;font-weight:400;color:#526772}
+.mega-in a:hover{color:#9a7416 !important;padding-left:6px}
+/* baris bawah menu Kelas: tautan ke katalog semua paket (paket.html) */
+.mega-in{row-gap:14px}
+.mega-in a.mega-all{grid-column:1/-1;flex-direction:row;align-items:center;justify-content:space-between;padding:12px 10px 12px 20px;border:0;border-radius:16px;background:#f7f8fb;font-weight:600}
+.mega-in a.mega-all:hover{padding-left:20px;background:#eef1f6}
+.mega-all .go{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#031739;color:#e8c766}
+.mega.open .mega-p{visibility:visible;opacity:1;transform:none;transition:opacity 180ms ease,transform 220ms cubic-bezier(.23,1,.32,1)}
+.mega.open .mega-t svg{transform:rotate(180deg)}
+html{scroll-behavior:smooth}
+html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopped{overflow:clip}.lenis [data-lenis-prevent]{overscroll-behavior:contain}.lenis.lenis-smooth iframe{pointer-events:none}html.lenis.lenis-smooth{scroll-behavior:auto!important}
+.kaki{margin-top:0;border-top:1px solid #e3e8f0}
+.k-hero{position:relative;overflow:hidden;padding:176px 40px 88px;text-align:center;background:radial-gradient(60% 80% at 50% 0%,rgba(212,175,79,.22),rgba(212,175,79,0) 70%),linear-gradient(180deg,#031739,#0d2e5c)}
+.jejak{position:relative;display:inline-flex;align-items:center;gap:10px;margin:0 0 18px;font-size:15px;font-weight:600;color:#8a9ab2}
+.jejak a{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 16px 0 10px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);color:#dfe5f3;text-decoration:none;transition:background-color 160ms ease,color 160ms ease,transform 160ms cubic-bezier(.23,1,.32,1)}
+.jejak a:hover{background:rgba(255,255,255,.16);color:#fff}
+.jejak a:active{transform:scale(.97)}
+.jejak a svg{transition:transform 200ms cubic-bezier(.23,1,.32,1)}
+.jejak a:hover svg{transform:translateX(-2px)}
+.jejak [aria-current]{color:#e8c766}
+.k-hero h1{position:relative;margin:0;font-weight:600;font-size:72px;line-height:1.04;letter-spacing:-.045em;color:#fff}
+.k-hero .lead{position:relative;margin:20px auto 0;max-width:34em;font-size:19px;line-height:1.6;color:#c9d1e6}
+.k-sil{position:absolute;inset:0;pointer-events:none}
+.k-sil img{position:absolute;width:200px;height:200px;opacity:.13}
+.k-sil img:nth-child(1){left:6%;top:120px}.k-sil img:nth-child(2){right:7%;top:96px}.k-sil img:nth-child(3){right:20%;bottom:-40px;width:160px;height:160px}
+.k-paket{background:#f7f8fb;padding:56px 0 96px}
+.k-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-bottom:24px;border-bottom:1px solid #e3e8f0}
+.chips{display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.chip{all:unset;box-sizing:border-box;flex:none;cursor:pointer;min-height:48px;padding:0 22px;border-radius:999px;border:1.5px solid #dbe0ea;background:#fff;font:600 16px 'Inter Tight',sans-serif;color:#526772;display:inline-flex;align-items:center;transition:background-color 180ms ease,color 180ms ease,border-color 180ms ease,transform 160ms cubic-bezier(.23,1,.32,1)}
+.chip:hover{border-color:#b7c3d2;color:#031739}
+.chip:active{transform:scale(.97)}
+.chip[aria-pressed=true]{background:#031739;border-color:#031739;color:#fff}
+.chip:focus-visible{outline:2px solid #c9a24a;outline-offset:2px}
+.k-paket .seg{background:#e8ecf3;border:0}.k-paket .seg button{color:#526772}.k-paket .seg button[aria-pressed=true]{background:#031739;color:#fff}
+.k-paket .mock-note{display:table;margin:20px auto 0}
+.k-paket .tiers{margin-top:28px}
+/* kartu paket: kepala navy membesar halus di dalam bingkainya saat disentuh kursor (pola acuan Choroo) */
+.t-head{background:#031739}
+.t-bg{position:absolute;inset:0;background:radial-gradient(110% 85% at 0% 0%,rgba(212,175,79,var(--g,.4)),rgba(212,175,79,0) 60%),#031739;transition:transform 700ms cubic-bezier(.16,1,.3,1)}
+.tier{transition:transform 160ms cubic-bezier(.23,1,.32,1)}
+.tier:active{transform:scale(.985)}
+.tier .btn .go{transition:transform 220ms cubic-bezier(.23,1,.32,1)}
+@media (hover:hover){.tier:hover .t-bg{transform:scale(1.05)}.tier:hover .btn .go{transform:translateX(3px)}.o-ph:hover img{transform:scale(1.05);transition-timing-function:cubic-bezier(.25,.46,.45,.94)}}
+.k-sec{padding:96px 0 0}
+.k-h2{margin:0;font-weight:600;font-size:40px;line-height:1.15;letter-spacing:-.035em;color:#031739}
+.k-sub{margin:12px 0 0;max-width:40em;font-size:17px;line-height:1.65;color:#3d5260}
+.materi{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:36px;padding:0;list-style:none}
+.materi li{display:flex;flex-direction:column;gap:12px;padding:24px;border:1px solid #e3e8f0;border-radius:20px;background:#fff}
+.materi .ic{width:64px;height:64px;border-radius:16px;background:#031739;display:flex;align-items:center;justify-content:center}
+.materi .ic img{width:46px;height:46px}
+.materi b{font-size:19px;font-weight:600;color:#031739}
+.materi span{font-size:15.5px;line-height:1.6;color:#3d5260}
+.k-foto{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:16px;margin-top:36px}
+.k-foto .o-ph{aspect-ratio:4/5}
+.k-foto .o-ph:first-child{aspect-ratio:auto}
+@media (max-width:900px){
+.nav-links{display:none !important}
+.top{padding:12px 16px;margin-bottom:-92px}.bar{height:68px;padding:0 8px 0 18px}.bar img{height:42px !important}.masuk{min-height:48px;padding-left:18px}.masuk .go{width:36px;height:36px}
+.wrap{padding:0 16px}
+.k-hero{padding:140px 16px 64px}.k-hero h1{font-size:44px}.k-hero .lead{font-size:17px}
+.k-sil img{width:130px;height:130px}.k-sil img:nth-child(1){left:-30px;top:90px}.k-sil img:nth-child(2){right:-30px;top:70px}.k-sil img:nth-child(3){display:none}
+.k-bar{flex-direction:column;align-items:stretch}.k-paket .seg{align-self:center}
+.tiers{flex-direction:column;gap:16px;max-width:440px}.tier{width:auto;margin:0}
+.k-h2{font-size:30px}
+.k-foto{grid-template-columns:1fr 1fr}.k-foto .o-ph:first-child{grid-column:1/-1;aspect-ratio:4/3}
+.foot{grid-template-columns:1fr 1fr;gap:40px 24px;padding:64px 20px}.foot>div:first-child{grid-column:1/-1}.garis i{display:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.t-bg,.tier,.chip,.o-ph img,.mega-p,.tier .btn .go{transition:none}}
+</style>
+</head>
+<body>
+<header class="top" id="top">
+<nav class="bar" aria-label="Utama">
+<a href="index.html"><img src="assets/dajiks-lockup.png" alt="D'Ajiks Akademi" style="height:52px;width:auto;display:block"></a>
+<div class="nav-links" style="display:flex;gap:40px;flex:1;justify-content:center">
+<div class="mega"><button type="button" class="mega-t" aria-expanded="false" aria-controls="mega-p">Kelas<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="mega-p" id="mega-p"><div class="mega-in"><div><p class="mega-h">Pilih kelas</p><a href="kelas.html?k=skd">SKD Kedinasan</a><a href="kelas.html?k=ipdn">IPDN</a><a href="kelas.html?k=polri">Persiapan POLRI</a><a href="kelas.html?k=tni">Persiapan TNI</a><a href="kelas.html?k=cpns">CPNS</a></div><div><p class="mega-h">Pilih versi</p><a href="kelas.html?v=penuh">Akses penuh<span>Materi, tryout, dan pembahasan</span></a><a href="kelas.html?v=tryout">Tryout saja<span>Paket tryout CAT dengan pembahasan</span></a></div><a class="mega-all" href="paket.html">Lihat semua paket belajar<i class="go" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7l5 5-5 5M13 7l5 5-5 5"/></svg></i></a></div></div></div>
+<a href="index.html#fitur" style="font-weight:500;text-decoration:none;color:#dfe5f3">Fitur</a>
+<a href="index.html#cara" style="font-weight:500;text-decoration:none;color:#dfe5f3">Cara daftar</a>
+<a href="index.html#testimoni" style="font-weight:500;text-decoration:none;color:#dfe5f3">Testimoni</a>
+<a href="index.html#pengajar" style="font-weight:500;text-decoration:none;color:#dfe5f3">Pengajar</a>
+<a href="index.html#faq" style="font-weight:500;text-decoration:none;color:#dfe5f3">FAQ</a>
+</div>
+<a href="masuk.html" class="masuk">Masuk<span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7l5 5-5 5M13 7l5 5-5 5"/></svg></span></a>
+</nav>
+</header>
+
+<section class="k-hero">
+<div class="k-sil" id="k-sil"></div>
+<nav class="jejak" aria-label="Jejak halaman"><a href="index.html"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>Beranda</a><span aria-hidden="true">/</span><span aria-current="page">Kelas</span></nav>
+<h1 id="k-judul">SKD Kedinasan</h1>
+<p class="lead" id="k-lead"></p>
+</section>
+
+<section class="k-paket" id="paket">
+<div class="wrap">
+<div class="k-bar">
+<div class="chips" role="group" aria-label="Pilih kelas"><button class="chip" data-k="skd" aria-pressed="false">SKD Kedinasan</button><button class="chip" data-k="ipdn" aria-pressed="false">IPDN</button><button class="chip" data-k="polri" aria-pressed="false">POLRI</button><button class="chip" data-k="tni" aria-pressed="false">TNI</button><button class="chip" data-k="cpns" aria-pressed="false">CPNS</button></div>
+<div class="seg" role="group" aria-label="Versi kelas"><button data-v="penuh" aria-pressed="true">Akses penuh</button><button data-v="tryout" aria-pressed="false">Tryout saja</button></div>
+</div>
+<p class="mock-note">DATA CONTOH: nama paket dan harga belum asli (kisaran Al Faiz). Ganti sebelum dipublikasikan.</p>
+<div class="tiers" id="tiers" aria-live="polite"><noscript><p style="text-align:center">Aktifkan JavaScript untuk melihat daftar paket.</p></noscript></div>
+
+<div class="k-sec">
+<p class="eyebrow">Isi kelas</p>
+<h2 class="k-h2">Yang kamu pelajari</h2>
+<ul class="materi" id="materi"></ul>
+<p class="mock-note" id="materi-note" hidden>DATA CONTOH: isi kelas ini belum diperiksa pengajar.</p>
+</div>
+
+<div class="k-sec">
+<p class="eyebrow">Suasana kelas</p>
+<h2 class="k-h2">Belajar bersama di D'Ajiks</h2>
+<p class="k-sub">Kelas tatap muka di Kendari, dengan simulasi dan pembahasan bersama pengajar.</p>
+<div class="k-foto" id="foto"></div>
+</div>
+</div>
+</section>
+
+<footer class="kaki">
+<div class="wrap foot">
+<div>
+<p class="merk" style="margin:0"><img src="assets/dajiks-emblem.png" alt="">D'Ajiks Akademi</p>
+<p class="tag">Persiapan TNI/POLRI, CPNS, dan Sekolah Kedinasan dalam satu pintu, dari belajar sampai hari tes.</p>
+<a class="wa" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.6-.1 1.1z"/></svg>WhatsApp [nomor menyusul]</a>
+</div>
+<nav aria-label="Kelas"><h4>Kelas</h4><a href="kelas.html?k=skd">SKD Kedinasan</a><a href="kelas.html?k=ipdn">IPDN</a><a href="kelas.html?k=polri">Persiapan POLRI</a><a href="kelas.html?k=tni">Persiapan TNI</a><a href="kelas.html?k=cpns">CPNS</a></nav>
+<nav aria-label="Portal"><h4>Portal</h4><a href="index.html#fitur">Fitur</a><a href="index.html#cara">Cara daftar</a><a href="index.html#offline">Kelas offline</a><a href="index.html#testimoni">Testimoni</a><a href="index.html#pengajar">Pengajar</a></nav>
+<nav aria-label="Bantuan"><h4>Bantuan</h4><a href="index.html#faq">FAQ</a><a href="daftar.html">Daftar</a><a href="masuk.html">Masuk</a><a href="bayar.html">Pembayaran</a></nav>
+</div>
+<div class="garis"><div class="wrap" style="position:relative;height:1px;border:0"><i style="left:0"></i><i style="left:100%"></i></div></div>
+<div class="wrap"><p class="hak">© 2026 <b>D'Ajiks Akademi</b>. Hak cipta dilindungi.</p></div>
+</footer>
+
+<script>
+var GO = '<span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7l5 5-5 5M13 7l5 5-5 5"/></svg></span>';
+// menu Kelas bertingkat: SATU pengendali (kelas .open). Kursor masuk membuka, keluar menutup setelah 150 ms;
+// klik membuka/menutup; Esc, klik di luar, gulir, dan fokus keluar menutup.
+var mega = document.querySelector('.mega'), megaT = mega.querySelector('.mega-t'), megaJeda, megaKursor = matchMedia('(hover:hover)').matches;
+function megaSet(o) { clearTimeout(megaJeda); mega.classList.toggle('open', o); megaT.setAttribute('aria-expanded', o); }
+if (megaKursor) {
+  mega.addEventListener('mouseenter', function () { megaSet(true); });
+  mega.addEventListener('mouseleave', function () { megaJeda = setTimeout(function () { megaSet(false); }, 150); });
+}
+// perangkat berkursor: menu sudah terbuka oleh kursor, klik tidak menutupnya; layar sentuh: klik membuka/menutup
+megaT.addEventListener('click', function () { megaSet(megaKursor || !mega.classList.contains('open')); });
+mega.addEventListener('focusout', function (e) { if (!mega.contains(e.relatedTarget)) megaSet(false); });
+document.addEventListener('click', function (e) { if (!mega.contains(e.target)) megaSet(false); });
+document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && mega.classList.contains('open')) { megaSet(false); megaT.focus(); } });
+window.addEventListener('scroll', function () { if (mega.classList.contains('open')) megaSet(false); }, { passive: true });
+var KLS = {
+  skd: { n: 'SKD Kedinasan', isi: 'TWK, TIU, dan TKP', uji: 'SKD sekolah kedinasan 2027', sil: ['twk', 'tiu', 'tkp'],
+    lead: 'Latihan TWK, TIU, dan TKP lewat tryout CAT, nilai per subtes, dan pembahasan setiap soal.',
+    materi: [['twk', 'TWK', 'Wawasan kebangsaan: Pancasila, UUD 1945, NKRI, dan Bhinneka Tunggal Ika.'], ['tiu', 'TIU', 'Kemampuan verbal, numerik, dan figural, dengan cara cepat untuk tiap jenis soal.'], ['tkp', 'TKP', 'Sikap kerja dan pelayanan dalam situasi kerja sehari-hari.']],
+    foto: [['o-kelas1', 'Sesi belajar tatap muka', 'Peserta kelas offline belajar dengan laptop di ruang kelas'], ['o-papan', 'Bahas soal di papan', 'Pengajar menjelaskan materi di papan tulis'], ['o-kelas3', 'Diskusi & simulasi', 'Peserta mengerjakan simulasi di ruang kelas']] },
+  ipdn: { n: 'IPDN', isi: 'TWK, TIU, dan TKP', uji: 'seleksi IPDN 2027', contoh: true,
+    lead: 'Persiapan SKD dan simulasi CEST TKBI untuk calon praja IPDN.',
+    materi: [['twk', 'SKD', 'TWK, TIU, dan TKP lewat tryout CAT dan pembahasan setiap soal.'], ['', 'CEST TKBI', 'Simulasi tes bahasa Inggris di aplikasi CEST D\'Ajiks.']],
+    foto: [['o-cest', 'Simulasi CEST', 'Pengajar memandu simulasi CEST TKBI IPDN di layar besar'], ['o-ruang', 'Simulasi bersama', 'Peserta mengikuti simulasi bersama di ruang kelas'], ['o-kelas3', 'Diskusi & simulasi', 'Peserta mengerjakan simulasi di ruang kelas']] },
+  polri: { n: 'POLRI', isi: 'tes akademik dan psikotes', uji: 'seleksi POLRI 2027',
+    lead: 'Akademik, psikotes, dan jasmani dalam satu program persiapan seleksi POLRI.',
+    materi: [['', 'Akademik', 'Matematika dasar, Bahasa Indonesia, wawasan kebangsaan, pengetahuan umum, dan Bahasa Inggris.'], ['', 'Simulasi CAT', 'Tryout penuh berbasis komputer dengan waktu seperti tes asli.'], ['', 'Jasmani', 'Program jasmani bertahap 16 minggu: fondasi, pembangunan, lalu simulasi kesamaptaan.']],
+    foto: [['o-pullup', 'Pull-up & kekuatan', 'Peserta latihan pull-up kesamaptaan'], ['o-renang', 'Latihan renang', 'Pelatih mendampingi latihan renang kesamaptaan'], ['o-pushup', 'Push-up & daya tahan', 'Peserta latihan push-up kesamaptaan']] },
+  tni: { n: 'TNI', isi: 'tes akademik dan psikotes', uji: 'seleksi TNI 2027', contoh: true,
+    lead: 'Akademik, psikotes, dan jasmani untuk persiapan seleksi TNI.',
+    materi: [['', 'Akademik', 'Latihan soal akademik dan pembahasannya.'], ['', 'Psikotes', 'Latihan psikotes dengan simulasi berwaktu.'], ['', 'Jasmani', 'Latihan kesamaptaan bertahap bersama pelatih.']],
+    foto: [['o-pushup', 'Push-up & daya tahan', 'Peserta latihan push-up kesamaptaan'], ['o-pullup', 'Pull-up & kekuatan', 'Peserta latihan pull-up kesamaptaan'], ['o-kelas1', 'Sesi belajar tatap muka', 'Peserta kelas offline belajar dengan laptop']] },
+  cpns: { n: 'CPNS', isi: 'TWK, TIU, dan TKP', uji: 'SKD CPNS berikutnya', sil: ['twk', 'tiu', 'tkp'],
+    lead: 'Latihan SKD CPNS: TWK, TIU, dan TKP lewat tryout CAT dan pembahasan setiap soal.',
+    materi: [['twk', 'TWK', 'Wawasan kebangsaan: Pancasila, UUD 1945, NKRI, dan Bhinneka Tunggal Ika.'], ['tiu', 'TIU', 'Kemampuan verbal, numerik, dan figural, dengan cara cepat untuk tiap jenis soal.'], ['tkp', 'TKP', 'Sikap kerja dan pelayanan dalam situasi kerja sehari-hari.']],
+    foto: [['o-ruang', 'Simulasi bersama', 'Peserta mengikuti simulasi bersama di ruang kelas'], ['o-papan', 'Bahas soal di papan', 'Pengajar menjelaskan materi di papan tulis'], ['o-kelas1', 'Sesi belajar tatap muka', 'Peserta belajar dengan laptop di ruang kelas']] }
+};
+var PAKET = {
+  tryout: [
+    { p: '1 Tryout', nama: 'Tryout {n} Paket 1', h: 12000, c: 25000, f: ['1 paket tryout {isi}', 'Bisa dikerjakan berulang', 'Nilai per subtes', 'Pembahasan tiap soal'] },
+    { p: '5 Tryout', nama: 'Bundling 5 Tryout {n}', h: 27900, c: 100000, f: ['5 paket tryout {isi}', 'Bisa dikerjakan berulang', 'Nilai per subtes', 'Pembahasan tiap soal', 'Riwayat skor antar tryout'] },
+    { p: '9 Tryout', nama: 'Bundling 9 Tryout {n}', h: 45000, c: 180000, f: ['9 paket tryout {isi}', 'Bisa dikerjakan berulang', 'Nilai per subtes', 'Pembahasan tiap soal', 'Riwayat skor antar tryout'] }
+  ],
+  penuh: [
+    { p: 'Reguler', nama: 'Kelas {n} Reguler', h: 149000, c: 300000, f: ['Materi {isi}', '5 paket tryout', 'Pembahasan tiap soal'] },
+    { p: 'Intensif', nama: 'Kelas {n} Intensif', h: 249000, c: 500000, f: ['Materi {isi}', '9 paket tryout', 'Pembahasan tiap soal', 'Riwayat skor antar tryout'] },
+    { p: 'Premium', nama: 'Kelas {n} Premium', h: 399000, c: 800000, f: ['Materi {isi}', '15 paket tryout', 'Pembahasan tiap soal', 'Riwayat skor antar tryout', '[Pendampingan pengajar menyusul]'] }
+  ]
+};
+var q = new URLSearchParams(location.search);
+var pilih = { k: KLS[q.get('k')] ? q.get('k') : 'skd', v: q.get('v') === 'tryout' ? 'tryout' : 'penuh' };
+function rp(x) { return 'Rp' + x.toLocaleString('id-ID'); }
+function isi(t, k) { return t.replace('{n}', KLS[k].n).replace('{isi}', KLS[k].isi); }
+function esc(t) { return t.replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
+function sil(k, cls) { return KLS[k].sil ? '<div class="' + cls + '" aria-hidden="true">' + KLS[k].sil.map(function (x) { return '<img src="assets/siluet/' + x + '.svg" alt="">'; }).join('') + '</div>' : ''; }
+function tampil() {
+  var k = pilih.k, v = pilih.v, K = KLS[k];
+  document.title = 'Kelas ' + K.n + ' · D\'Ajiks Akademi';
+  document.getElementById('k-judul').textContent = K.n;
+  document.getElementById('k-lead').textContent = K.lead;
+  document.getElementById('k-sil').innerHTML = sil(k, 'k-sil-in');
+  document.getElementById('tiers').innerHTML = PAKET[v].map(function (p, i) {
+    var nama = isi(p.nama, k);
+    var href = 'bayar.html?kelas=' + k + '&versi=' + v + '&paket=' + encodeURIComponent(nama) + '&harga=' + p.h;
+    return '<article class="tier t' + i + (i === 1 ? ' mid' : '') + '"><div class="t-head"><div class="t-bg">' + sil(k, 'sil') + '</div><span class="t-pill">' + esc(p.p) + '</span>' +
+      '<p class="was"><b>-' + Math.round((1 - p.h / p.c) * 100) + '%</b><s>' + rp(p.c) + '</s></p><p class="now">' + rp(p.h) + '</p>' +
+      '<p class="aktif">Aktif hingga ' + esc(K.uji) + ' selesai</p></div>' +
+      '<div class="t-body"><h3>' + esc(nama) + '</h3>' +
+      '<ul>' + p.f.map(function (t) { return '<li>' + esc(isi(t, k)) + '</li>'; }).join('') + '</ul>' +
+      '<a href="' + esc(href) + '" class="btn">Pilih paket ini' + GO + '</a><p class="note">Bayar lewat QRIS, VA, atau e-wallet</p></div></article>';
+  }).join('');
+  document.getElementById('materi').innerHTML = K.materi.map(function (m) {
+    return '<li>' + (m[0] ? '<span class="ic"><img src="assets/siluet/' + m[0] + '.svg" alt=""></span>' : '') + '<b>' + esc(m[1]) + '</b><span>' + esc(m[2]) + '</span></li>';
+  }).join('');
+  document.getElementById('materi-note').hidden = !K.contoh;
+  document.getElementById('foto').innerHTML = K.foto.map(function (f) {
+    return '<figure class="o-ph"><img src="assets/' + f[0] + '.jpg" alt="' + esc(f[2]) + '" loading="lazy"><figcaption>' + esc(f[1]) + '</figcaption></figure>';
+  }).join('');
+  document.querySelectorAll('[data-k]').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.k === k); });
+  document.querySelectorAll('[data-v]').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.v === v); });
+  history.replaceState(null, '', '?k=' + k + '&v=' + v);
+}
+document.querySelectorAll('[data-k],[data-v]').forEach(function (b) {
+  b.addEventListener('click', function () { if (b.dataset.k) pilih.k = b.dataset.k; else pilih.v = b.dataset.v; tampil(); });
+});
+tampil();
+// menu atas: navy pekat begitu halaman digulir
+var top_ = document.getElementById('top');
+function cekGulir() { top_.classList.toggle('scrolled', window.scrollY > 40); }
+window.addEventListener('scroll', cekGulir, { passive: true }); cekGulir();
+</script>
+<script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
+<script>
+// Gulir halus, pengaturan sama dengan acuan Choroo; mati bila pengguna mematikan animasi
+if (window.Lenis && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  var lenis = new Lenis({ duration: 0.9, easing: function (t) { return 1 - Math.pow(1 - t, 3); }, allowNestedScroll: true, smoothWheel: true, autoRaf: true });
+  // tautan #bagian: meluncur halus tanpa menambah #bagian ke alamat (kalau ditambah, muat ulang selalu melompat ke bagian itu)
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a[href^="#"]'), el = a && a.getAttribute('href').length > 1 && document.querySelector(a.getAttribute('href'));
+    if (!el) return;
+    e.preventDefault(); lenis.scrollTo(el);
+  });
+}
+</script>
+</body>
+</html>

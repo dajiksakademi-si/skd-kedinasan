@@ -1,0 +1,214 @@
+<!-- ═════════ BAB 2 · PRINSIP DASAR PENYELESAIAN SOAL TIU ═════════
+     Angka ilustrasi: scripts/cek_bab01_02.mjs. Kotak soal = tempat kosong sampai tahap produksi soal (T5). -->
+<section class="bab" data-bab="2">
+  <header class="band">
+    <div class="no">2</div>
+    <div>
+      <h2>Prinsip Dasar Penyelesaian Soal TIU</h2>
+      <p>Bab ini membahas contoh penyangkal, empat prinsip yang dipakai di semua bab, urutan mengerjakan satu soal, kebiasaan memeriksa jawaban, tujuh kelompok kekeliruan, dan susunan pembahasan. Bab ditutup dengan dua contoh soal.</p>
+      <p class="waktu"><svg class="ico"><use href="#jam"/></svg>{{TARGET}}</p>
+    </div>
+    <div class="kisi" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="emas"></i></div>
+  </header>
+
+  <p class="lead">Lima bilangan pertama sebuah barisan masing-masing dua kali bilangan sebelumnya. Apakah bilangan keenam pasti dua kali bilangan kelima? Titik-titik pada sebuah lingkaran menjawab pertanyaan itu, dan seluruh bab ini bertumpu pada jawabannya.</p>
+
+
+  <h3>Contoh Penyangkal</h3>
+  <div class="konsep">
+    <div class="def">
+      <p>Letakkan beberapa titik pada keliling lingkaran, lalu hubungkan setiap dua titik dengan garis lurus. Garis-garis itu membagi lingkaran menjadi beberapa daerah. Untuk satu sampai lima titik, banyak daerahnya 1, 2, 4, 8, 16. Setiap bilangan dua kali bilangan sebelumnya, sehingga tebakan yang wajar untuk enam titik adalah 32. Bila enam titik digambar dan daerahnya dihitung satu per satu, hasilnya 31 daerah. Pola berlipat dua patah tepat di titik keenam.</p>
+      <p>Lima kecocokan tidak membuktikan sebuah pola, sedangkan satu ketidakcocokan cukup untuk menggugurkannya. Gambar enam titik itu adalah <b>contoh penyangkal</b> bagi dugaan "banyak daerah selalu berlipat dua".</p>
+    </div>
+    <table class="hit">
+      <thead><tr><th>Titik</th><th>Berlipat dua</th><th>Dihitung</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>1</td><td>1</td></tr>
+        <tr><td>2</td><td>2</td><td>2</td></tr>
+        <tr><td>3</td><td>4</td><td>4</td></tr>
+        <tr><td>4</td><td>8</td><td>8</td></tr>
+        <tr><td>5</td><td>16</td><td>16</td></tr>
+        <tr class="uji"><td>6</td><td>32</td><td>31</td></tr>
+      </tbody>
+    </table>
+  </div>
+    <div class="diag3 satu">
+      <figure class="diag"><img src="aset/ilustrasi/B02-I01.svg" alt="Lingkaran dengan enam titik tidak beraturan, setiap dua titik dihubungkan garis lurus"></figure>
+    </div>
+    <p class="ket-gbr">Enam titik yang letaknya tidak beraturan membagi lingkaran menjadi 31 daerah.</p>
+  <p><b>Contoh penyangkal</b> adalah satu keadaan yang memenuhi semua syarat, tetapi membuat sebuah pernyataan umum menjadi salah. Pernyataan yang memakai kata <i>semua</i>, <i>selalu</i>, <i>pasti</i>, atau <i>tidak pernah</i> gugur oleh satu contoh penyangkal. Pernyataan "semua bilangan prima ganjil", misalnya, gugur oleh bilangan 2, yang prima dan genap. Sebaliknya, satu contoh yang cocok tidak cukup untuk membenarkan pernyataan umum. Untuk itu kamu memerlukan alasan yang berlaku bagi semua keadaan, atau pemeriksaan semua keadaan satu per satu.</p>
+  <p>Ketimpangan ini dipakai di seluruh TIU: menggugurkan pilihan cukup dengan satu contoh penyangkal, memilih kunci memerlukan bukti. Pada silogisme, satu gambar himpunan yang memenuhi kedua premis tetapi membuat sebuah pilihan salah sudah menggugurkan pilihan itu. Pada deret angka, satu suku yang tidak cocok menggugurkan aturan yang kamu duga. Pada soal gambar, satu objek yang tidak mengikuti aturan menggugurkan pilihan yang memuatnya.</p>
+  <div class="note catatan">
+    <h4>Catatan</h4>
+    <p>Gambar enam titik harus memakai titik yang letaknya tidak beraturan. Bila keenam titik membentuk segi enam beraturan, tiga garis terpanjang bertemu di pusat lingkaran dan hanya terbentuk 30 daerah. Selisih itu tidak berasal dari pola, tetapi dari syarat yang dilanggar: tidak boleh ada tiga garis yang bertemu di satu titik.</p>
+  </div>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Rumus Banyak Daerah</h4>
+    <p>Untuk <i>n</i> titik dalam posisi umum, banyak daerah = C(<i>n</i>, 4) + C(<i>n</i>, 2) + 1, yang memberi 1, 2, 4, 8, 16, 31, 57 untuk <i>n</i> = 1 sampai 7. Alasannya: setiap tali busur menambah satu daerah, dan setiap titik potong di dalam lingkaran (ditentukan oleh empat titik) menambah satu lagi. Rumus ini cukup disebut bila siswa bertanya; inti pelajarannya adalah pola yang patah. Di kelas, minta siswa menggambar enam titik sendiri dan menghitung; selisih hasil antarsiswa biasanya berasal dari tiga garis yang bertemu di satu titik.</p>
+  </div>
+
+  <h3>Empat Prinsip Penyelesaian Soal</h3>
+  <p>Contoh penyangkal adalah satu dari empat prinsip yang dipakai buku ini di setiap bab. Keempatnya ditulis di bawah, masing-masing dengan satu ilustrasi.</p>
+  <div class="prinsip">
+    <div>
+      <span class="k">Prinsip 1</span>
+      <h4>Cara Cepat Disertai Alasan</h4>
+      <p>Setiap cara cepat di buku ini datang bersama alasan mengapa ia benar. Cara cepat tanpa alasan mudah terlupa, atau terpakai pada soal yang tidak cocok.</p>
+      <p>Mengalikan dengan 25 sama dengan mengalikan dengan 100 lalu membagi 4, sebab <span class="m">25 = 100 : 4</span>. Jadi <span class="m">36 × 25 = 3.600 : 4 = 900</span>.</p>
+    </div>
+    <div>
+      <span class="k">Prinsip 2</span>
+      <h4>Satu Ide untuk Banyak Jenis Soal</h4>
+      <p>Soal TIU tampak beragam, tetapi lima ide menopang hampir semuanya (tabel di bawah). Ide yang sama muncul berulang dengan wajah berbeda.</p>
+      <p>Besaran tetap, misalnya, menjelaskan mengapa <span class="m">24 × 50 = 12 × 100 = 1.200</span>: satu faktor dibagi 2, faktor lainnya dikali 2, hasil kalinya tidak berubah. Gagasan yang sama dipakai pada kerja bersama, kecepatan, dan pasangan operasi.</p>
+    </div>
+    <div>
+      <span class="k">Prinsip 3</span>
+      <h4>Kunci yang Tahan Uji</h4>
+      <p>Kunci harus lolos dua pemeriksaan. <b>Cek balik</b>: masukkan jawaban ke semua syarat soal. <b>Contoh penyangkal</b>: untuk setiap pilihan lain, temukan satu keadaan yang membuatnya salah.</p>
+      <p>Cek balik saja belum cukup. Bila <span class="m"><i>x</i>² = 49</span>, nilai 7 lolos cek balik, tetapi kesimpulan "<i>x</i> pasti 7" gugur oleh <span class="m"><i>x</i> = −7</span>, sebab <span class="m">(−7)² = 49</span>.</p>
+    </div>
+    <div>
+      <span class="k">Prinsip 4</span>
+      <h4>Perkirakan Dulu, Hitung Kemudian</h4>
+      <p>Sebelum menghitung tepat, batasi jawabannya. Untuk 198 × 51, bulatkan kedua bilangan ke bawah, lalu ke atas: <span class="m">190 × 50 = 9.500</span> dan <span class="m">200 × 52 = 10.400</span>. Pilihan di luar rentang itu gugur tanpa hitungan.</p>
+      <p>Hitungan tepat, <span class="m">198 × 51 = 10.098</span>, baru diperlukan bila lebih dari satu pilihan tersisa di dalam rentang.</p>
+    </div>
+  </div>
+  <p>Lima ide yang dimaksud prinsip kedua tercantum di tabel berikut. Setiap ide diuraikan lengkap di bab tempat ia pertama kali dipakai.</p>
+  <table class="tb">
+    <thead><tr><th style="width:27%">Konsep inti</th><th>Isinya</th><th style="width:11%">Bab</th></tr></thead>
+    <tbody>
+      <tr><td><b>Contoh penyangkal</b></td><td>Pernyataan umum gugur oleh satu keadaan yang tidak cocok. Kesimpulan yang pasti benar harus berlaku di setiap gambar himpunan yang memenuhi premis.</td><td>3, 4</td></tr>
+      <tr><td><b>Akibat klaim</b></td><td>Klaim yang benar membawa akibat. Argumen menguat bila akibat itu tampak, dan melemah bila akibat itu tidak muncul.</td><td>5</td></tr>
+      <tr><td><b>Besaran tetap</b></td><td>Cari yang tidak berubah: selisih, hasil kali, laju, atau total pekerjaan.</td><td>6–10</td></tr>
+      <tr><td><b>Pemeriksaan semua kemungkinan</b></td><td>Data dikatakan cukup bila semua keadaan yang tersisa memberi satu jawaban. Pilihan termurah harus termurah di antara semua kombinasi yang sah.</td><td>11–13</td></tr>
+      <tr><td><b>Transformasi gambar dan pencacahan objek</b></td><td>Perubahan gambar dibaca sebagai putar, cermin, balik warna, atau pindah tempat; setiap objek dihitung dan diperiksa sendiri.</td><td>14–18</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Urutan Mengerjakan Satu Soal</h3>
+  <p>Empat prinsip itu menjadi enam langkah yang sama untuk setiap soal, apa pun bloknya.</p>
+  <div class="rules satu">
+    <div><b>Tentukan yang ditanya, lalu tandai kalimat penentunya.</b> Kalimat penentu adalah kata atau frasa di soal yang menentukan jawaban, misalnya <i>paling sedikit</i>, <i>pasti</i>, atau <i>TIDAK</i>.</div>
+    <div><b>Perkirakan.</b> Untuk soal hitung, tentukan batas bawah dan batas atas. Untuk soal gambar, cari ciri kasar. Untuk soal kata, jawab dulu dengan kata-katamu sendiri.</div>
+    <div><b>Kerjakan cara cepat yang alasannya kamu ketahui.</b></div>
+    <div><b>Cek balik</b> jawabanmu ke semua syarat soal.</div>
+    <div><b>Gugurkan keempat pilihan lain</b>, masing-masing dengan nama kekeliruannya.</div>
+    <div><b>Bila dua pilihan bertahan</b>, baca ulang kalimat penentu. Bila tetap dua, pilih salah satu, tandai nomornya, lalu lanjutkan.</div>
+  </div>
+
+  <h3>Kebiasaan Memeriksa Jawaban</h3>
+  <p>Delapan kebiasaan berikut adalah bentuk pendek dari langkah-langkah tadi. Kolom tengah berisi pertanyaan yang kamu ajukan dalam hati sebelum menetapkan jawaban.</p>
+  <table class="tb">
+    <thead><tr><th style="width:27%">Kebiasaan</th><th>Pertanyaan dalam hati</th><th style="width:13%">Bab</th></tr></thead>
+    <tbody>
+      <tr><td><b>Periksa kelima pilihan</b></td><td>Sudahkah setiap pilihan gugur dengan alasan, termasuk sesudah aku menemukan yang cocok?</td><td>12, 15–18</td></tr>
+      <tr><td><b>Uji pola di semua titik</b></td><td>Apakah aturan ini cocok dengan setiap angka atau gambar, bukan hanya tiga yang pertama?</td><td>8, 9, 15, 18</td></tr>
+      <tr><td><b>Pakai yang tertulis</b></td><td>Kalimat mana di soal yang memberi data ini?</td><td>4, 10–12</td></tr>
+      <tr><td><b>Baca pilihan sampai titik</b></td><td>Pilihan ini berkata <i>saja</i> atau <i>bersama-sama</i>, <i>pasti</i> atau <i>mungkin</i>?</td><td>4, 11, 12</td></tr>
+      <tr><td><b>Abaikan bentuk pilihan</b></td><td>Aku memilih karena isinya, atau karena pilihan ini paling panjang, paling tengah, atau paling mencolok?</td><td>3, 7, 8</td></tr>
+      <tr><td><b>Cari asal pilihan salah</b></td><td>Langkah keliru apa yang menghasilkan pilihan ini, dan apakah langkahku sama dengan itu?</td><td>6–10</td></tr>
+      <tr><td><b>Utamakan isi soal, periksa satuan</b></td><td>Kesimpulan ini lahir dari premis atau dari pengetahuanku sendiri? Satuannya sudah sama?</td><td>4, 5, 10</td></tr>
+      <tr><td><b>Baca ulang soal yang mirip</b></td><td>Apakah datanya benar-benar sama dengan soal yang pernah kukerjakan?</td><td>11, 15–18</td></tr>
+    </tbody>
+  </table>
+  <p>Satu pertanyaan penutup berlaku untuk semua soal: bisakah pilihan terkuat kedua dibela dengan teks soal saja? Bila bisa, kalimat penentunya belum terbaca dengan benar.</p>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Padanan dengan Gerbang Mutu Engine</h4>
+    <p>Delapan kebiasaan = Gerbang G1–G8 engine TIU v0.4.3 dalam bahasa siswa, berurutan: G1 Keunikan, G2 Data cukup, G3 Tanpa asumsi diam, G4 Opsi saling meniadakan, G5 Bentuk tidak bocor, G6 Pengecoh bernama, G7 Konteks dan fakta, G8 Paket. Pertanyaan penutup = "uji siswa teliti". Kolom Bab dari laporan Tahap 1 bagian A Tabel 3C.</p>
+  </div>
+
+  <h3>Tujuh Kelompok Kekeliruan</h3>
+  <p>Setiap pilihan salah pada soal D'Ajiks lahir dari satu langkah keliru yang bisa dinamai. Langkah keliru yang sama muncul di soal kata, soal hitung, dan soal gambar. Karena itu buku ini mengelompokkannya menjadi tujuh, dan nama-nama di tabel berikut dipakai di setiap pembahasan. Uraian lengkapnya ada di Bab 19.</p>
+  <table class="tb">
+    <thead><tr><th style="width:5%">No.</th><th style="width:24%">Kelompok</th><th>Contoh kekeliruan</th><th style="width:28%">Pertanyaan uji</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><b>Data yang tidak tertulis atau tidak dipakai</b></td><td>memakai keterangan yang tidak tertulis di soal; memakai data yang tidak diperlukan</td><td>Kalimat mana di soal yang memberi data ini?</td></tr>
+      <tr><td>2</td><td><b>Pemeriksaan yang belum tuntas</b></td><td>berhenti setelah pernyataan (1) cukup; menyimpulkan pola dari terlalu sedikit data</td><td>Sudahkah semua pernyataan, titik, dan objek diperiksa?</td></tr>
+      <tr><td>3</td><td><b>Arah yang terbalik</b></td><td>membaca hubungan dari arah sebaliknya; menghitung persen dari bilangan yang salah</td><td>Dari mana ke mana arahnya?</td></tr>
+      <tr><td>4</td><td><b>Kata penentu yang salah dibaca</b></td><td>membaca "sebagian" sebagai "semua"; menganggap yang mungkin benar sebagai pasti benar</td><td>Kata apa yang tertulis di soal?</td></tr>
+      <tr><td>5</td><td><b>Pola yang belum terbukti</b></td><td>menganggap selisihnya selalu sama; mengira gambar kembali ke posisi awal</td><td>Apakah pola ini berlaku di semua titik?</td></tr>
+      <tr><td>6</td><td><b>Kekeliruan hitung dan satuan</b></td><td>kelebihan satu nol atau salah letak koma; lupa menyamakan satuan</td><td>Bila dihitung dengan cara lain, hasilnya sama?</td></tr>
+      <tr><td>7</td><td><b>Penilaian dari bentuk luar</b></td><td>memilih karena kata atau topiknya sama dengan soal; memilih hubungan yang mirip, tetapi berbeda</td><td>Tanpa kata yang sama dengan soal, apakah pilihan ini masih cocok?</td></tr>
+    </tbody>
+  </table>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Padanan Nomor Kelompok dan Kode</h4>
+    <p>Nomor 1–7 = K1–K7 engine Pilar 3. Contoh kekeliruan di tabel: K1 J-ASUMSI, J-PENGALIH · K2 J-BERHENTI, J-TIGA · K3 J-BALIK, J-BASIS · K4 J-SEBAGIAN, J-MUNGKIN · K5 J-RATA, JF-AWAL · K6 J-NOL, J-SATUAN · K7 J-KATA, J-RELASI. Daftar lengkap 47 kode dengan kalimat guru ada di Lampiran L5. Siswa hanya membaca kalimat guru; kode dan nama kamus tidak diucapkan di kelas.</p>
+  </div>
+
+  <h3>Susunan Pembahasan di Buku Ini</h3>
+  <p>Pembahasan setiap contoh dan latihan memakai tujuh bagian yang sama. Urutan ini mengikuti urutan berpikir yang baru saja dibahas.</p>
+  <table class="tb">
+    <thead><tr><th style="width:30%">Bagian</th><th>Isinya</th></tr></thead>
+    <tbody>
+      <tr><td><b>Pratinjau soal</b></td><td>soal dan kelima pilihannya ditampilkan ulang</td></tr>
+      <tr><td><b>Inti pertanyaan</b></td><td>yang sebenarnya ditanya, dalam satu kalimat, beserta kutipan kalimat penentunya</td></tr>
+      <tr><td><b>Langkah penyelesaian</b></td><td>cara cepat dan alasannya; pada soal hitung: cara cepat, satu cara lain, dan cek balik</td></tr>
+      <tr><td><b>Pilihan yang gugur</b></td><td>keempat pilihan salah, masing-masing dengan nama kekeliruan yang menghasilkannya</td></tr>
+      <tr><td><b>Jawaban</b></td><td>huruf kunci dan alasannya dalam satu kalimat</td></tr>
+      <tr><td><b>Ilustrasi</b></td><td>kejadian sehari-hari yang bekerja dengan cara yang sama</td></tr>
+      <tr><td><b>Kekeliruan yang Mungkin Terjadi</b></td><td>kekeliruan yang paling mungkin kamu lakukan pada soal itu, dan sebabnya</td></tr>
+    </tbody>
+  </table>
+  <p>Pada soal hitung, langkah penyelesaian dibuat ringkas. Cara cepat selesai dalam 30 detik. Cara lain menghitung ulang dari arah berbeda, sebab dua jalan yang tiba di angka yang sama lebih meyakinkan daripada satu jalan yang diulang. Cek balik memakai sisa pembagian oleh 9, yang alasannya diuraikan di Bab 6.</p>
+
+  <h3>Contoh Soal dan Pembahasan</h3>
+  <p>Dua contoh berikut memperagakan dua prinsip dari bab ini: kunci yang tahan uji dan cara cepat disertai alasan. Kerjakan setiap contoh sendiri dalam target waktunya sebelum membaca pembahasan.</p>
+<!--B02-C01:mulai-->
+<div data-soal="HB-TIU-B02-C01" data-target="60">
+  <div class="soal">
+    <div class="meta"><span>Contoh 1</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 60 detik</span></div>
+    <p class="stem">Anggap semua premis berikut benar.</p>
+    <dl class="premis"><div><dt>P1</dt><dd>Semua petugas perpustakaan desa sudah mengikuti pelatihan katalog digital.</dd></div><div><dt>P2</dt><dd>Sebagian petugas perpustakaan desa adalah mahasiswa.</dd></div></dl>
+    <p class="stem">Kesimpulan yang <mark>pasti benar</mark> adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Ada mahasiswa yang sudah mengikuti pelatihan katalog digital.</span></li><li><span class="h">B</span><span>Semua mahasiswa sudah mengikuti pelatihan katalog digital.</span></li><li><span class="h">C</span><span>Ada petugas perpustakaan desa yang bekerja paruh waktu.</span></li><li><span class="h">D</span><span>Semua peserta pelatihan katalog digital adalah petugas perpustakaan desa.</span></li><li><span class="h">E</span><span>Ada mahasiswa yang bukan petugas perpustakaan desa.</span></li></ol>
+  </div>
+  <div class="guru"><b>SIL pilih kesimpulan, pilihan kalimat.</b> Kunci A. Kode: A <b>kunci</b> · B J-SEBAGIAN · C J-AKAL · D J-BALIK · E J-MUNGKIN. Kerangka: semua M–P · sebagian M–S · kunci ada S–P · sebagian jadi semua, konversi, mungkin, akal sehat. TO terdekat: TO P1 no. 32 (semua + tidak ada, rantai); bentuk premis beda dari Bab 4 C01 (sebagian S–M) dan C02 (menilai dua kesimpulan). Bukti: dunia himpunan 4 istilah, daerah sah 12, 4095 dunia × 4 bacaan (kosong · sebagian); kedua premis perlu. Status tiap pilihan dihitung semua dunia himpunan 4 istilah × 4 bacaan (kosong boleh/tidak · sebagian longgar/ketat); kedua premis diuji perlu.</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta kesimpulan yang tetap benar dalam setiap keadaan yang memenuhi kedua premis. Kalimat penentunya “pasti benar”: pilihan yang benar hanya di sebagian keadaan belum cukup.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Ambil satu petugas yang juga mahasiswa. Orang itu pasti ada, sebab P2 menyebut sebagian petugas adalah mahasiswa. Menurut P1, setiap petugas sudah mengikuti pelatihan, jadi orang itu juga sudah. Akibatnya, ada mahasiswa yang sudah mengikuti pelatihan.</dd></div>
+    <div><dt>Cara lain</dt><dd>Gambar tiga lingkaran. Lingkaran petugas berada utuh di dalam lingkaran peserta pelatihan (P1). Lingkaran mahasiswa memotong lingkaran petugas (P2). Daerah potongan itu pasti berisi orang, dan daerah itu berada di dalam lingkaran pelatihan. Bagaimanapun lingkaran mahasiswa digambar, potongan itu selalu ada.</dd></div>
+    <div><dt>Cek balik</dt><dd>Coba gugurkan A dengan contoh penyangkal: kamu perlu keadaan tanpa satu pun mahasiswa yang ikut pelatihan. Keadaan itu tidak mungkin, sebab mahasiswa yang menjadi petugas pasti ikut pelatihan. A lolos uji, sedangkan keempat pilihan lain gugur oleh satu gambar masing-masing.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">B</span><div class="x"><span class="uji">ada mahasiswa di luar</span><b>Membaca “sebagian” sebagai “semua”.</b> Premis hanya bercerita tentang mahasiswa yang menjadi petugas. Gambar satu mahasiswa yang bukan petugas dan belum ikut pelatihan: kedua premis tetap benar, tetapi B salah.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">istilah baru</span><b>Benar di dunia nyata, tetapi bukan dari premis.</b> Petugas perpustakaan memang sering bekerja paruh waktu, tetapi premis tidak menyebut paruh waktu sama sekali. Keadaan semua petugas bekerja penuh waktu tetap memenuhi kedua premis.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">P1 dibalik</span><b>Membalik arah “semua”.</b> P1 berkata semua petugas ikut pelatihan, bukan semua peserta pelatihan adalah petugas. Peserta pelatihan boleh saja ada yang datang dari luar perpustakaan, misalnya guru, dan kedua premis tetap benar.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">bisa, belum tentu</span><b>Menganggap yang mungkin benar sebagai pasti benar.</b> Mungkin saja ada mahasiswa di luar perpustakaan, tetapi premis tidak menjaminnya. Bila semua mahasiswa kebetulan bekerja sebagai petugas, kedua premis tetap benar dan E salah.</div></div></div>
+  <div class="jwb"><span>A</span><p><b>Jawaban: A.</b> Mahasiswa yang menjadi petugas pasti ada (P2) dan pasti ikut pelatihan (P1), sehingga A benar di setiap keadaan.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Misalkan semua anggota paduan suara sekolahmu memakai batik setiap Jumat, dan sebagian anggota paduan suara adalah anak kelas XI. Tanpa melihat daftar, kamu sudah tahu ada anak kelas XI yang memakai batik pada hari Jumat. Kamu belum tahu apakah semua anak kelas XI ikut memakainya.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Memilih E karena kata “sebagian” terdengar seperti “ada yang ya, ada yang tidak”. Kata itu hanya menjamin ada; sisanya tidak diceritakan premis. Sebelum memilih, cari satu gambar yang membuat pilihanmu salah. Bila gambar itu ada, pilihan itu belum pasti.</span></div></div>
+</div>
+<!--B02-C01:selesai-->
+<!--B02-C02:mulai-->
+<div data-soal="HB-TIU-B02-C02" data-target="75">
+  <div class="soal">
+    <div class="meta"><span>Contoh 2</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 75 detik</span></div>
+    <p class="stem">Pemasangan paving blok di halaman balai desa direncanakan selesai dalam 10 hari oleh 12 pekerja. Setelah 4 hari bekerja, 4 pekerja dipindahkan ke proyek lain. Pekerja yang tersisa melanjutkan pemasangan dengan kecepatan kerja yang sama.</p>
+    <p class="stem">Pemasangan paving blok itu selesai dalam … hari, <mark>dihitung sejak hari pertama</mark>.</p>
+    <div class="opsi5"><div><span class="h">A</span><b>8</b></div><div><span class="h">B</span><b>9</b></div><div><span class="h">C</span><b>13</b></div><div><span class="h">D</span><b>15</b></div><div><span class="h">E</span><b>19</b></div></div>
+  </div>
+  <div class="guru"><b>CRT kerja tetap, pilihan angka.</b> Kunci C. Kode: A J-SEARAH · B J-LANGKAH · C <b>kunci</b> · D J-ASUMSI · E J-LANGKAH. Kerangka: orang-hari tetap · pekerja berkurang di tengah · tanya lama seluruhnya · searah, sisa hari, pekerja baru sejak awal, lupa pekerjaan yang selesai. TO terdekat: TO P1 no. 48 (KCK penjahit); Bab 10 C02 (pekerja tambahan sesudah jeda) — tanya dan arah perubahan beda. Bukti: 12 × 10 = 120 orang-hari; selesai 48; sisa 72 : 8 = 9 hari; seluruhnya 13; jarak kunci ke pilihan terdekat 2, median jarak 3. Pecahan tepat; semua pilihan dihitung model dari langkah kelirunya.</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta lama seluruh pekerjaan. Kalimat penentunya “dihitung sejak hari pertama”: empat hari yang sudah lewat ikut dihitung.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Besar pekerjaan tidak berubah walaupun pekerjanya berubah. Hitung dalam orang-hari: 12 × 10 = 120. Empat hari pertama menghabiskan 12 × 4 = 48, sisanya 120 − 48 = 72. Sisa itu dikerjakan 8 pekerja, jadi 72 : 8 = 9 hari. Seluruhnya 4 + 9 = 13 hari.</dd></div>
+    <div><dt>Cara lain</dt><dd>Lihat sisa rencana. Tanpa pemindahan, sisa 6 hari dikerjakan 12 pekerja. Pekerjanya kini 8, sedangkan banyak pekerja dan banyak hari berbalik nilai: 6 × 12 : 8 = 9 hari. Hasilnya sama, 4 + 9 = 13.</dd></div>
+    <div><dt>Cek balik</dt><dd>Masukkan kembali: 12 pekerja selama 4 hari memberi 48 orang-hari, dan 8 pekerja selama 9 hari memberi 72 orang-hari. Jumlahnya 48 + 72 = 120, tepat sebesar pekerjaan yang direncanakan.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">pekerja berkurang, hari berkurang</span><b>Menghitung perbandingan berbalik nilai sebagai senilai.</b> Sisa 6 hari dikali 8 lalu dibagi 12: 6 × 8 : 12 = 4, sehingga seluruhnya terhitung 8 hari. Pekerja yang lebih sedikit tidak mungkin menyelesaikan pekerjaan lebih cepat; pekerja dan hari berbalik nilai.</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">sisa hari saja</span><b>Berhenti satu langkah sebelum selesai.</b> 9 hari adalah waktu yang dipakai 8 pekerja untuk sisa pekerjaan. Soal meminta lama sejak hari pertama, jadi 4 hari awal masih harus ditambahkan.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">8 pekerja sejak awal</span><b>Menganggap 8 pekerja bekerja sejak hari pertama.</b> 120 : 8 = 15 menganggap 8 pekerja bekerja sejak hari pertama. Selama 4 hari pertama pekerjanya masih 12, jadi pekerjaan berjalan lebih cepat dari itu.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">pekerjaan awal lupa dikurangi</span><b>Lupa mengurangi pekerjaan yang sudah selesai.</b> 15 hari dihitung untuk seluruh pekerjaan, lalu ditambah 4 hari awal: 15 + 4 = 19. Pekerjaan empat hari pertama terhitung dua kali, padahal 48 orang-hari itu sudah selesai.</div></div></div>
+  <div class="jwb"><span>C</span><p><b>Jawaban: C.</b> Sisa 72 orang-hari dikerjakan 8 pekerja dalam 9 hari, sehingga seluruhnya 4 + 9 = 13 hari.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti mengecat dinding rumah bersama teman. Kalau dua teman pulang di tengah jalan, dinding yang sudah dicat tidak hilang; yang dihitung ulang hanya bagian yang belum dicat, dengan tangan yang tersisa.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Berhenti di 9 karena hitungannya terasa sudah selesai. Sebelum memilih, baca lagi apa yang diminta: lama sisa pekerjaan atau lama seluruhnya.</span></div></div>
+</div>
+<!--B02-C02:selesai-->
+
+  <div class="ringkas">
+    <h4>Ringkasan Bab 2</h4>
+    <ol>
+      <li>Satu <b>contoh penyangkal</b> cukup untuk menggugurkan pernyataan umum. Membenarkannya memerlukan alasan umum atau pemeriksaan semua keadaan.</li>
+      <li>Empat prinsip: cara cepat disertai alasan; satu ide untuk banyak jenis soal; kunci lolos cek balik dan pilihan lain gugur oleh contoh penyangkal; perkirakan dulu, hitung kemudian.</li>
+      <li>Urutan satu soal: yang ditanya dan kalimat penentu, perkiraan, cara cepat, cek balik, gugurkan empat pilihan, lalu baca ulang bila dua pilihan bertahan.</li>
+      <li>Tujuh kelompok kekeliruan: data yang tidak tertulis, pemeriksaan belum tuntas, arah terbalik, kata penentu salah dibaca, pola belum terbukti, kekeliruan hitung, penilaian dari bentuk luar.</li>
+      <li>Pembahasan soal hitung: cara cepat, satu cara lain, dan cek balik dengan sisa pembagian oleh 9.</li>
+    </ol>
+  </div>
+</section>

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paket saya · D'Ajiks Akademi</title>
+<link rel="icon" href="assets/dajiks-emblem.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap">
+<style>
+body{margin:0;background:#f7f8fb;font-family:'Inter Tight',system-ui,sans-serif;color:#172a35}
+[hidden]{display:none !important}
+.wrap{max-width:1160px;margin:0 auto;padding:0 32px;box-sizing:border-box}
+.atas{background:#fff;border-bottom:1px solid #e3e8f0}
+.atas .wrap{display:flex;align-items:center;gap:40px;height:80px}
+.atas .logo img{height:48px;width:auto;display:block}
+.menu{display:flex;gap:6px}
+.menu a{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;color:#526772;font-weight:600;font-size:15.5px;text-decoration:none;white-space:nowrap;transition:background-color 160ms ease,color 160ms ease}
+.menu a:hover{background:#eef1f6;color:#031739}
+.menu a[aria-current=page]{background:#031739;color:#fff}
+.akun{margin-left:auto;display:flex;align-items:center;gap:12px;font-weight:600;font-size:15px;color:#031739}
+.inisial{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#031739;color:#e8c766;font-size:14px}
+.keluar{color:#526772;font-weight:500;font-size:14.5px}
+a:focus-visible,.btn:focus-visible{outline:2px solid #c9a24a;outline-offset:3px}
+.mock-note{margin:24px 0 0;padding:6px 14px;border-radius:999px;background:#e8c766;color:#031739;font-size:13px;font-weight:700;text-align:center}
+.sapa{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;padding:40px 0 32px}
+.sapa h1{margin:0;font-weight:600;font-size:38px;letter-spacing:-.035em;color:#031739}
+.sapa p{margin:8px 0 0;font-size:16.5px;color:#526772}
+.ringkas{display:flex;gap:0;background:#fff;border:1px solid #e3e8f0;border-radius:18px}
+.ringkas div{padding:16px 26px;border-left:1px solid #e3e8f0}
+.ringkas div:first-child{border-left:0}
+.ringkas b{display:block;font-size:26px;font-weight:700;letter-spacing:-.02em;color:#031739;font-variant-numeric:tabular-nums}
+.ringkas span{font-size:13.5px;color:#526772}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding-bottom:96px}
+.kartu{display:flex;flex-direction:column;background:#fff;border:1px solid #e3e8f0;border-radius:22px;padding:14px;box-shadow:0 18px 44px -32px rgba(3,23,57,.35)}
+.k-ban{position:relative;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;aspect-ratio:15/7;padding:0 24px;border-radius:14px;overflow:hidden}
+.t-bg{position:absolute;inset:0;background:radial-gradient(110% 85% at 0% 0%,rgba(212,175,79,.42),rgba(212,175,79,0) 60%),#031739}
+.sil{position:absolute;top:0;right:0;bottom:0;width:40%;-webkit-mask-image:linear-gradient(90deg,transparent,#000 50%);mask-image:linear-gradient(90deg,transparent,#000 50%)}
+.sil img{position:absolute;right:14px;width:44px;height:44px;opacity:.36}
+.sil img:nth-child(1){top:10px}.sil img:nth-child(2){top:calc(50% - 22px)}.sil img:nth-child(3){bottom:10px}
+.t-pill{position:relative;margin-bottom:10px;padding:4px 10px;border-radius:8px;background:rgba(3,23,57,.6);border:1px solid rgba(232,199,102,.4);color:#e8c766;font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.k-b1{position:relative;font-weight:700;font-size:24px;line-height:1;letter-spacing:-.02em;color:#fff;text-transform:uppercase}
+.k-b2{position:relative;margin-top:6px;font-weight:700;font-size:32px;line-height:1;letter-spacing:-.03em;color:#e8c766;text-transform:uppercase}
+.k-body{display:flex;flex-direction:column;flex:1;padding:20px 8px 6px}
+.kartu h2{margin:0;font-weight:600;font-size:20px;line-height:1.3;letter-spacing:-.02em;color:#031739}
+.k-aktif{margin:8px 0 0;font-size:14px;line-height:1.45;color:#526772}
+.maju{margin:20px 0 0}
+.maju p{display:flex;justify-content:space-between;margin:0 0 8px;font-size:14.5px;color:#24333d}
+.maju p b{font-variant-numeric:tabular-nums;color:#031739}
+.jalur{height:8px;border-radius:999px;background:#eef1f6;overflow:hidden}
+.jalur i{display:block;height:100%;border-radius:inherit;background:#c9a24a;transform-origin:left;animation:isi 700ms cubic-bezier(.23,1,.32,1) both}
+@keyframes isi{from{transform:scaleX(0)}}
+.nilai{margin:12px 0 0;font-size:14.5px;color:#526772}
+.nilai b{color:#031739;font-variant-numeric:tabular-nums}
+.aksi{display:flex;flex-direction:column;gap:10px;margin-top:auto;padding-top:22px}
+.btn{display:flex;align-items:center;justify-content:space-between;min-height:52px;box-sizing:border-box;padding:0 8px 0 24px;border-radius:999px;background:#031739;color:#fff;font:600 16.5px 'Inter Tight',sans-serif;text-decoration:none;transition:transform 160ms cubic-bezier(.23,1,.32,1),background-color 160ms ease}
+.btn:hover{background:#0f3360}.btn:active{transform:scale(.98)}
+.btn .go{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:#e8c766;color:#031739;transition:transform 220ms cubic-bezier(.23,1,.32,1)}
+.btn:hover .go{transform:translateX(3px)}
+.btn.emas{background:#e8c766;color:#031739}.btn.emas:hover{background:#dcb850}
+.btn.emas .go{background:#031739;color:#e8c766}
+.lihat{display:flex;align-items:center;justify-content:center;min-height:44px;border-radius:999px;color:#031739;font-weight:600;font-size:15px;text-decoration:none}
+.lihat:hover{background:#eef1f6}
+/* masa aktif habis: spanduk diredupkan, tombol beralih ke perpanjang */
+.habis .k-ban{filter:grayscale(1);opacity:.55}
+.habis .k-aktif{color:#b3261e;font-weight:600}
+.kosong{display:flex;flex-direction:column;align-items:center;text-align:center;padding:72px 24px 120px}
+.kosong .ik{display:flex;align-items:center;justify-content:center;width:72px;height:72px;border-radius:20px;background:#031739;border:1px solid rgba(232,199,102,.4)}
+.kosong .ik img{width:44px;height:44px}
+.kosong h2{margin:24px 0 8px;font-weight:600;font-size:26px;letter-spacing:-.03em;color:#031739}
+.kosong p{margin:0 0 28px;max-width:28em;font-size:16px;line-height:1.6;color:#526772}
+.kosong .btn{min-width:260px}
+@media (max-width:1024px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:720px){
+  .wrap{padding:0 16px}
+  .atas .wrap{flex-wrap:wrap;height:auto;gap:0;padding-top:12px}
+  .atas .logo img{height:40px}
+  .menu{order:3;width:100%;margin:10px -16px 0;padding:0 16px 12px;overflow-x:auto;scrollbar-width:none}
+  .akun .nama{display:none}
+  .sapa{padding:28px 0 24px}.sapa h1{font-size:30px}
+  .ringkas{width:100%}.ringkas div{flex:1;padding:14px 14px}.ringkas b{font-size:22px}
+  .grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){.btn,.btn .go{transition:none}.jalur i{animation:none}}
+</style>
+</head>
+<body>
+<header class="atas"><div class="wrap">
+<a class="logo" href="index.html"><img src="assets/dajiks-lockup.png" alt="D'Ajiks Akademi, ke beranda"></a>
+<nav class="menu" aria-label="Menu siswa"><a href="paket-saya.html" aria-current="page">Paket saya</a><a href="riwayat.html">Riwayat nilai</a><a href="profil.html">Profil</a></nav>
+<div class="akun"><span class="inisial" aria-hidden="true">SC</span><span class="nama">Siswa Contoh</span><a class="keluar" href="masuk.html">Keluar</a></div>
+</div></header>
+
+<main class="wrap">
+<p class="mock-note">DATA CONTOH: nama siswa, paket, kemajuan, dan nilai di halaman ini belum data asli.</p>
+<section class="sapa" id="sapa">
+<div><h1>Halo, Siswa Contoh</h1><p>Lanjutkan dari tryout yang belum kamu kerjakan.</p></div>
+<div class="ringkas" id="ringkas"></div>
+</section>
+<div class="grid" id="grid"></div>
+<section class="kosong" id="kosong" hidden>
+<span class="ik" aria-hidden="true"><img src="assets/siluet/paket.svg" alt=""></span>
+<h2>Kamu belum punya paket</h2>
+<p>Pilih paket tryout atau kelas dulu. Setelah pembayaran berhasil, paketmu langsung muncul di sini.</p>
+<a class="btn emas" href="paket.html">Pilih paket<span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7l5 5-5 5M13 7l5 5-5 5"/></svg></span></a>
+</section>
+</main>
+
+<script>
+// prototipe tanpa server: MILIK = paket yang sudah dibeli siswa (DATA CONTOH). ?kosong=1 memperlihatkan keadaan belum punya paket.
+var KLS = {
+  skd: { n: 'SKD Kedinasan', uji: 'SKD sekolah kedinasan 2027', sil: ['twk', 'tiu', 'tkp'] },
+  ipdn: { n: 'IPDN', uji: 'seleksi IPDN 2027' },
+  cpns: { n: 'CPNS', uji: 'SKD CPNS berikutnya', sil: ['twk', 'tiu', 'tkp'] },
+  polri: { n: 'POLRI', uji: 'seleksi POLRI 2027' },
+  tni: { n: 'TNI', uji: 'seleksi TNI 2027' }
+};
+var MILIK = [
+  { k: 'skd', nama: 'Bundling 9 Tryout SKD Kedinasan', b1: 'Bundling SKD', b2: '9 Tryout', total: 9, done: 4, nilai: 412, aktif: true },
+  { k: 'cpns', nama: 'Tryout CPNS Paket 1', b1: 'Tryout CPNS', b2: 'Paket 1', total: 1, done: 0, aktif: true },
+  { k: 'ipdn', nama: 'Tryout IPDN Paket 1', b1: 'Tryout IPDN', b2: 'Paket 1', total: 1, done: 1, nilai: 388, aktif: false }
+];
+// paket yang baru dibayar (disimpan bayar.html) tampil paling atas; paket contoh bernama sama disembunyikan
+try { var BELI = JSON.parse(localStorage.getItem('beli')) || []; MILIK = BELI.concat(MILIK.filter(function (m) { return !BELI.some(function (b) { return b.nama === m.nama; }); })); } catch (e) {}
+if (/kosong=1/.test(location.search)) MILIK = [];
+var GO = '<span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7l5 5-5 5M13 7l5 5-5 5"/></svg></span>';
+function esc(t) { return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
+function kartu(m) {
+  var K = KLS[m.k], q = '?paket=' + encodeURIComponent(m.nama), aksi;
+  if (!m.aktif) aksi = '<a class="btn emas" href="paket.html?k=' + m.k + '">Perpanjang' + GO + '</a>';
+  else if (m.done < m.total) aksi = '<a class="btn" href="tryout.html' + q + '&n=' + (m.done + 1) + '">' + (m.done ? 'Lanjutkan ke Tryout ' + (m.done + 1) : 'Mulai Tryout 1') + GO + '</a>';
+  else aksi = '<a class="btn" href="riwayat.html' + q + '">Lihat nilai' + GO + '</a>';
+  return '<article class="kartu' + (m.aktif ? '' : ' habis') + '">' +
+    '<div class="k-ban" aria-hidden="true"><span class="t-bg">' + (K.sil ? '<span class="sil">' + K.sil.map(function (x) { return '<img src="assets/siluet/' + x + '.svg" alt="">'; }).join('') + '</span>' : '') + '</span><span class="t-pill">' + (m.v === 'penuh' ? 'Akses penuh' : 'Tryout saja') + '</span><span class="k-b1">' + esc(m.b1) + '</span><span class="k-b2">' + esc(m.b2) + '</span></div>' +
+    '<div class="k-body"><h2>' + esc(m.nama) + '</h2>' +
+    '<p class="k-aktif">' + (m.aktif ? 'Aktif hingga ' + esc(K.uji) + ' selesai' : 'Masa aktif sudah habis') + '</p>' +
+    '<div class="maju"><p><span>Tryout dikerjakan</span><b>' + m.done + ' dari ' + m.total + '</b></p><div class="jalur" aria-hidden="true"><i style="width:' + (m.done / m.total * 100) + '%"></i></div></div>' +
+    (m.nilai ? '<p class="nilai">Nilai terakhir <b>' + m.nilai + '</b></p>' : '') +
+    '<div class="aksi">' + aksi + '<a class="lihat" href="detail-paket.html' + q + '">Lihat isi paket</a>' + '</div></div></article>';
+}
+var aktif = MILIK.filter(function (m) { return m.aktif; }).length,
+  done = MILIK.reduce(function (s, m) { return s + m.done; }, 0),
+  akhir = MILIK.filter(function (m) { return m.nilai; })[0];
+document.getElementById('grid').innerHTML = MILIK.map(kartu).join('');
+document.getElementById('ringkas').innerHTML = '<div><b>' + aktif + '</b><span>Paket aktif</span></div><div><b>' + done + '</b><span>Tryout dikerjakan</span></div><div><b>' + (akhir ? akhir.nilai : '–') + '</b><span>Nilai terakhir</span></div>';
+if (!MILIK.length) {
+  document.getElementById('kosong').hidden = false;
+  document.getElementById('ringkas').hidden = true;
+  document.querySelector('#sapa p').textContent = 'Paket yang kamu beli akan muncul di halaman ini.';
+}
+</script>
+</body>
+</html>

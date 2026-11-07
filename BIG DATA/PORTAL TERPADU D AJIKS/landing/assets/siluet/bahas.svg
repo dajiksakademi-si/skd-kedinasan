@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none" stroke="#e8c766" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+  <style>*{vector-effect:non-scaling-stroke}</style>
+  <path d="M120 108C90 92 56 86 18 92V204C56 198 90 204 120 222C150 204 184 198 222 204V100C184 94 150 98 120 108Z"/>
+  <line x1="120" y1="108" x2="120" y2="222"/>
+  <path d="M42 124C60 124 78 128 96 135"/>
+  <path d="M42 148C60 148 78 152 96 159"/>
+  <path d="M42 172C56 172 70 175 84 180"/>
+  <path d="M144 135C162 128 180 126 198 128"/>
+  <path d="M144 159C162 152 180 150 198 152"/>
+  <path d="M144 183C158 178 172 175 186 175"/>
+  <path d="M158 18H214C218 18 222 22 222 26V68C222 72 218 76 214 76H190L174 90V76H158C154 76 150 72 150 68V26C150 22 154 18 158 18Z"/>
+  <path d="m170 47 10 10 22-24"/>
+</svg>

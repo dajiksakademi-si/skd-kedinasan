@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daftar akun D'Ajiks</title>
+<link rel="icon" href="assets/dajiks-emblem.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap">
+<style>
+body{margin:0;background:#f7f8fb;font-family:'Inter Tight',system-ui,sans-serif;color:#172a35}
+a{color:#08254b}
+.field{display:flex;flex-direction:column;gap:8px}
+.field label{font-weight:600;font-size:15px;color:#031739}
+.input{box-sizing:border-box;width:100%;height:52px;padding:0 16px;border:1.5px solid #877d66;border-radius:10px;font:400 16px 'Inter Tight',sans-serif;color:#172a35;background:#fff}
+.input:focus,.wa:focus-within{outline:none;border-color:#08254b;box-shadow:0 0 0 3px rgba(201,162,74,.45)}
+.input::placeholder,.wa input::placeholder{color:#6b7f88}
+.wa{display:flex;align-items:center;height:52px;border:1.5px solid #877d66;border-radius:10px;overflow:hidden;background:#fff}
+.hint{font-size:13px;color:#526772}
+.btn{display:flex;align-items:center;justify-content:center;width:100%;height:54px;border:0;border-radius:999px;background:#08254b;color:#fff;font:600 17px 'Inter Tight',sans-serif;cursor:pointer;transition:transform 160ms cubic-bezier(.23,1,.32,1)}
+.btn:hover{background:#0f3360}.btn:active{transform:scale(.98)}
+.btn:focus-visible{outline:2px solid #c9a24a;outline-offset:3px}
+[hidden]{display:none !important}
+.stage{position:relative;width:100%;max-width:1040px;margin-top:8px;padding-bottom:40px}
+.stage::before{content:"";position:absolute;right:-40px;bottom:-20px;width:520px;height:420px;background:radial-gradient(closest-side,rgba(212,175,79,.35),rgba(42,74,120,.18) 60%,transparent);pointer-events:none}
+.shot{position:relative;width:72%;border-radius:18px;overflow:hidden;box-shadow:0 0 0 1px #e3e8f0,0 30px 60px -30px rgba(3,23,57,.45)}
+.shot img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;filter:blur(1.5px);opacity:.6}
+.pick{position:absolute;right:0;top:56px;width:400px;box-sizing:border-box;background:#fff;border-radius:22px;padding:32px 28px 28px;box-shadow:0 0 0 1.5px rgba(232,199,102,.8),0 0 48px 6px rgba(212,175,79,.3),0 40px 80px -30px rgba(3,23,57,.6)}
+.tiles{display:grid;gap:10px;margin:22px 0 20px}
+.tile{display:flex;gap:14px;align-items:center;padding:14px 16px;border:1.5px solid #dbe0ea;border-radius:14px;cursor:pointer;transition:border-color 160ms ease,background-color 160ms ease}
+.tile:hover{border-color:#8a9ab2}
+.tile input{width:20px;height:20px;margin:0;accent-color:#08254b;flex:none}
+.tile:has(input:checked){border-color:#08254b;background:#f3f5fa}
+.tile:has(input:focus-visible){outline:2px solid #c9a24a;outline-offset:2px}
+.tile b{display:block;font-weight:600;font-size:16px;color:#031739}
+.tile small{font-size:13.5px;color:#526772}
+.seg{display:flex;gap:4px;padding:4px;border-radius:999px;background:#eef1f6}
+.seg label{flex:1;text-align:center;min-height:38px;line-height:38px;border-radius:999px;font-weight:600;font-size:14.5px;color:#526772;cursor:pointer}
+.seg input{position:absolute;opacity:0}
+.seg label:has(input:checked){background:#08254b;color:#fff}
+.seg label:has(input:focus-visible){outline:2px solid #c9a24a;outline-offset:2px}
+@media (max-width:900px){.shot{display:none}.pick{position:static;width:100%;max-width:520px;margin:0 auto}.stage::before{display:none}}
+@media (max-width:560px){form{padding:28px 20px !important}}
+</style>
+</head>
+<body>
+<main style="min-height:100vh;box-sizing:border-box;padding:48px 16px 64px;display:flex;flex-direction:column;align-items:center">
+<a href="index.html"><img src="assets/dajiks-lockup.png" alt="D'Ajiks Akademi, kembali ke beranda" style="height:84px;width:auto;display:block"></a>
+<div id="langkah1" style="display:contents">
+<h1 style="margin:20px 0 6px;font-weight:600;font-size:32px;letter-spacing:-.035em;color:#031739">Daftar akun baru</h1>
+<p style="margin:0 0 32px;font-size:16px;color:#526772;text-align:center">Satu akun untuk semua kelas D'Ajiks.</p>
+<form onsubmit="event.preventDefault();document.getElementById('langkah1').hidden=true;document.getElementById('langkah2').hidden=false;window.scrollTo(0,0)" style="width:100%;max-width:520px;box-sizing:border-box;background:#fff;border-radius:22px;padding:40px;box-shadow:0 20px 50px -28px rgba(3,23,57,.35);display:flex;flex-direction:column;gap:22px">
+<div class="field"><label for="nama">Nama lengkap</label><input class="input" id="nama" type="text" autocomplete="name" required></div>
+<div class="field"><label for="email">Email</label><input class="input" id="email" type="email" autocomplete="email" required></div>
+<div class="field"><label for="wa">Nomor WhatsApp</label>
+<div class="wa"><span style="padding:0 12px 0 16px;font-weight:500;color:#031739">+62</span><input id="wa" type="tel" inputmode="numeric" pattern="8[0-9]{8,12}" autocomplete="tel-national" placeholder="81234567890" required style="flex:1;min-width:0;height:100%;border:0;outline:none;font:400 16px 'Inter Tight',sans-serif;color:#172a35;background:transparent"></div>
+<span class="hint">Dipakai untuk info kelas dan jadwal tryout.</span>
+</div>
+<div class="field"><label for="pw">Kata sandi</label><input class="input" id="pw" type="password" autocomplete="new-password" minlength="8" required><span class="hint">Minimal 8 karakter.</span></div>
+<label style="display:flex;gap:12px;align-items:flex-start;padding:16px;border-radius:12px;background:#faf6ec;border:1px solid #ddd3c0;font-size:15px;line-height:1.5;color:#24333d;cursor:pointer">
+<input type="checkbox" required style="width:20px;height:20px;margin:2px 0 0;accent-color:#08254b;flex:none">
+<span>Saya sudah membaca dan setuju dengan <a href="#syarat" style="font-weight:600">Syarat dan Ketentuan</a> D'Ajiks Akademi.</span>
+</label>
+<button class="btn" type="submit">Daftar</button>
+<p style="margin:0;text-align:center;font-size:15px;color:#526772">Sudah punya akun? <a href="masuk.html" style="font-weight:600">Masuk</a></p>
+</form>
+</div>
+<div id="langkah2" hidden style="width:100%;display:flex;flex-direction:column;align-items:center">
+<h1 style="margin:20px 0 6px;font-weight:600;font-size:32px;letter-spacing:-.035em;color:#031739;text-align:center">Satu langkah lagi</h1>
+<p style="margin:0 0 40px;font-size:16px;color:#526772;text-align:center">Pilih kelas yang ingin kamu ikuti. Kelas lain bisa ditambah kapan saja.</p>
+<div class="stage">
+<div class="shot"><img src="assets/c-skd-cat.jpg" alt=""></div>
+<form class="pick" action="bayar.html">
+<p style="margin:0;font-weight:600;font-size:20px;letter-spacing:-.02em;color:#031739">Pilih kelasmu</p>
+<p style="margin:4px 0 0;font-size:14.5px;color:#526772">Pilih satu dulu, lalu lanjut ke pembayaran.</p>
+<div class="tiles">
+<label class="tile"><input type="radio" name="kelas" value="skd" required><span><b>SKD Kedinasan</b><small>TWK, TIU, dan TKP</small></span></label>
+<label class="tile"><input type="radio" name="kelas" value="ipdn"><span><b>IPDN</b><small>[Isi kelas menyusul]</small></span></label>
+<label class="tile"><input type="radio" name="kelas" value="polri"><span><b>Persiapan POLRI</b><small>[Isi kelas menyusul]</small></span></label>
+<label class="tile"><input type="radio" name="kelas" value="tni"><span><b>Persiapan TNI</b><small>[Isi kelas menyusul]</small></span></label>
+<label class="tile"><input type="radio" name="kelas" value="cpns"><span><b>CPNS</b><small>[Isi kelas menyusul]</small></span></label>
+</div>
+<div class="seg" role="radiogroup" aria-label="Versi kelas">
+<label><input type="radio" name="versi" value="penuh" checked>Akses penuh</label>
+<label><input type="radio" name="versi" value="tryout">Tryout saja</label>
+</div>
+<button class="btn" type="submit" style="margin-top:20px">Lanjut ke pembayaran</button>
+<p style="margin:14px 0 0;text-align:center;font-size:14.5px"><a href="index.html" style="color:#526772">Nanti saja</a></p>
+</form>
+</div>
+</div>
+</main>
+</body>
+</html>

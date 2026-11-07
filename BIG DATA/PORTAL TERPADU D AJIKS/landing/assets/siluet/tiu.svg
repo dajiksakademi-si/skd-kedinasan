@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none" stroke="#e8c766" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M20 70H100V150H20Z"/>
+  <path d="M20 70L56 34H136L100 70M136 34V114L100 150"/>
+  <path d="M56 34V114H136M20 150L56 114" stroke-dasharray="6 6"/>
+  <rect x="148" y="128" width="20" height="20"/>
+  <rect x="168" y="128" width="20" height="20"/>
+  <rect x="168" y="148" width="20" height="20"/>
+  <rect x="188" y="148" width="20" height="20"/>
+  <rect x="188" y="168" width="20" height="20"/>
+  <rect x="208" y="168" width="20" height="20"/>
+  <path d="M37 186C55 223 127 228 174 199"/>
+  <polyline points="158,201 174,199 165,213"/>
+</svg>

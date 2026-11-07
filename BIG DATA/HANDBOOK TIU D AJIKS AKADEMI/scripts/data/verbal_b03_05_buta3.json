@@ -1,0 +1,85 @@
+[
+  {
+    "id": "HB-TIU-B03-C03",
+    "bab": 3,
+    "target_detik": 75,
+    "soal": {
+      "pengantar": "Perajin logam mencampur tembaga dan timah untuk membuat perunggu.",
+      "tanya": "Kalimat yang hubungannya sepadan dengan kalimat di atas adalah …"
+    },
+    "opsi": {
+      "A": "Petugas kebersihan mencampur sabun dan air untuk membersihkan lantai.",
+      "B": "Tukang kayu memakai gergaji dan pahat untuk membuat kursi.",
+      "C": "Pedagang ikan mencampur es batu dan garam kasar untuk menjaga ikan tetap segar.",
+      "D": "Penjual minuman memeras jeruk untuk menghasilkan sari buah.",
+      "E": "Penjual jamu meracik kunyit dan asam jawa untuk menghasilkan jamu kunyit asam."
+    }
+  },
+  {
+    "id": "HB-TIU-B04-C01",
+    "bab": 4,
+    "target_detik": 60,
+    "soal": {
+      "pengantar": "Anggap semua premis berikut benar.",
+      "butir": [
+        [
+          "P1",
+          "Semua logam larut dalam air."
+        ],
+        [
+          "P2",
+          "Sebagian benda berwarna kuning adalah logam."
+        ]
+      ],
+      "tanya": "Kesimpulan yang pasti benar adalah …"
+    },
+    "opsi": {
+      "A": "Semua benda yang berwarna kuning larut dalam air.",
+      "B": "Sebagian logam tidak larut dalam air.",
+      "C": "Benda yang bukan logam tidak larut dalam air.",
+      "D": "Semua benda yang larut dalam air berwarna kuning.",
+      "E": "Benda yang tidak larut dalam air bukan logam."
+    }
+  },
+  {
+    "id": "HB-TIU-B04-L03",
+    "bab": 4,
+    "target_detik": 45,
+    "soal": {
+      "tanya": "Ingkaran dari pernyataan “Semua penumpang kapal memakai pelampung” adalah …"
+    },
+    "opsi": {
+      "A": "Semua penumpang kapal tidak memakai pelampung.",
+      "B": "Tidak semua orang yang memakai pelampung adalah penumpang kapal.",
+      "C": "Ada penumpang kapal yang memakai pelampung.",
+      "D": "Tidak semua penumpang kapal memakai pelampung.",
+      "E": "Semua orang yang tidak memakai pelampung bukan penumpang kapal."
+    }
+  },
+  {
+    "id": "HB-TIU-B04-L04",
+    "bab": 4,
+    "target_detik": 60,
+    "soal": {
+      "pengantar": "Anggap semua premis berikut benar.",
+      "butir": [
+        [
+          "P1",
+          "Semua pemenang lomba poster adalah anggota klub seni."
+        ],
+        [
+          "P2",
+          "Semua anggota tim dekorasi adalah anggota klub seni."
+        ]
+      ],
+      "tanya": "Kesimpulan yang pasti benar adalah …"
+    },
+    "opsi": {
+      "A": "Tidak dapat dipastikan apakah semua pemenang lomba poster adalah anggota klub seni.",
+      "B": "Semua pemenang lomba poster adalah anggota tim dekorasi.",
+      "C": "Semua anggota tim dekorasi adalah pemenang lomba poster.",
+      "D": "Semua anggota klub seni pandai menggambar.",
+      "E": "Hubungan pemenang lomba poster dan anggota tim dekorasi tidak dapat dipastikan."
+    }
+  }
+]

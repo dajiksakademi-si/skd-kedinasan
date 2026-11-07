@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hasil tryout · D'Ajiks Akademi</title>
+<link rel="icon" href="assets/dajiks-emblem.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap">
+<style>
+/* Hasil: spanduk navy (nilai total + status ambang), tiga kotak subtes dengan garis ambang emas, lalu tombol lanjut. */
+body{margin:0;background:#f3f5fa;font-family:'Inter Tight',system-ui,sans-serif;color:#172a35}
+[hidden]{display:none !important}
+button{font-family:inherit}
+:focus-visible{outline:2px solid #c9a24a;outline-offset:3px}
+.atas{background:#fff;border-bottom:1px solid #e3e8f0}
+.atas>div{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:1160px;height:72px;margin:0 auto;padding:0 32px;box-sizing:border-box}
+.atas img{height:44px;width:auto;display:block}
+.balik{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 4px;color:#031739;font-weight:600;font-size:15px;text-decoration:none}
+.balik:hover{text-decoration:underline;text-underline-offset:3px}
+main{max-width:1160px;margin:0 auto;padding:24px 32px 80px;box-sizing:border-box}
+.mock-note{margin:0 0 16px;padding:6px 14px;border-radius:999px;background:#e8c766;color:#031739;font-size:13px;font-weight:700;text-align:center}
+/* spanduk */
+.kepala{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:32px;padding:36px 40px;border-radius:24px;background:radial-gradient(80% 120% at 0% 0%,rgba(212,175,79,.42),rgba(212,175,79,0) 60%),#031739;color:#fff}
+.kicker{margin:0 0 10px;font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#e8c766}
+.kepala h1{margin:0;font-weight:600;font-size:34px;line-height:1.15;letter-spacing:-.035em}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0;padding:0;list-style:none}
+.meta li{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border-radius:10px;background:rgba(255,255,255,.08);font-size:14px;color:#dfe5f3}
+.meta svg{color:#e8c766}
+.skor{min-width:240px;padding-left:40px;border-left:1px solid rgba(255,255,255,.16)}
+.skor .kicker{margin-bottom:2px}
+.total{margin:0;font-size:22px;font-weight:600;color:#9fb0cc;font-variant-numeric:tabular-nums}
+.total b{font-size:76px;font-weight:700;letter-spacing:-.045em;line-height:1;color:#fff}
+.status{display:inline-flex;align-items:center;gap:8px;margin-top:14px;padding:7px 14px;border-radius:999px;font-size:14.5px;font-weight:700}
+.status.lolos{background:#e3f3ec;color:#087453}
+.status.belum{background:#fbeaee;color:#a31e3b}
+.amb-ket{margin:10px 0 0;font-size:13px;color:#9fb0cc}
+.kosong-ket{max-width:34ch;margin:0;font-size:15px;line-height:1.55;color:#dfe5f3}
+/* kotak subtes */
+h2{margin:36px 0 14px;font-weight:600;font-size:20px;letter-spacing:-.02em;color:#031739}
+.subtes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.st{padding:24px;border:1px solid #e3e8f0;border-radius:22px;background:#fff;box-shadow:0 18px 44px -36px rgba(3,23,57,.4)}
+.st header{display:flex;align-items:center;gap:10px}
+.kode{padding:4px 10px;border-radius:8px;background:#031739;color:#e8c766;font-size:13px;font-weight:700;letter-spacing:.04em}
+.st h3{margin:0;font-size:15px;font-weight:600;color:#526772}
+.angka{margin:18px 0 14px;font-size:17px;font-weight:600;color:#6b7f88;font-variant-numeric:tabular-nums}
+.angka b{font-size:44px;font-weight:700;letter-spacing:-.04em;color:#031739}
+.garis{position:relative;height:10px;border-radius:999px;background:#eef1f6}
+.garis i{display:block;height:100%;border-radius:inherit;background:#031739;transform-origin:left;animation:isi 700ms cubic-bezier(.23,1,.32,1) both}
+.st.lolos .garis i{background:#087453}
+.garis .tanda{position:absolute;top:-5px;bottom:-5px;width:3px;margin-left:-1.5px;border-radius:2px;background:#c9a24a}
+@keyframes isi{from{transform:scaleX(0)}}
+.bawah{display:flex;justify-content:space-between;gap:8px;margin:12px 0 0;font-size:14px;color:#526772;font-variant-numeric:tabular-nums}
+.bawah b{color:#7a5710}
+.cap{font-weight:700}
+.st.lolos .cap{color:#087453}
+.st.belum .cap{color:#a31e3b}
+.hitung{display:flex;flex-wrap:wrap;gap:6px 16px;margin:18px 0 0;padding:16px 0 0;border-top:1px solid #e3e8f0;list-style:none;font-size:14px;color:#526772;font-variant-numeric:tabular-nums}
+.hitung li{display:flex;align-items:center;gap:6px}
+.hitung b{color:#031739}
+.hitung i{width:10px;height:10px;border-radius:3px}
+.hitung .benar{background:#087453}.hitung .salah{background:#a31e3b}.hitung .kosong{background:#c3ccd9}.hitung .isi{background:#031739}
+/* tombol */
+.aksi{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:32px}
+.btn{display:inline-flex;align-items:center;justify-content:space-between;gap:20px;min-height:54px;box-sizing:border-box;padding:0 8px 0 24px;border:0;border-radius:999px;background:#031739;color:#fff;font:600 16.5px 'Inter Tight',sans-serif;text-decoration:none;cursor:pointer;transition:transform 160ms cubic-bezier(.23,1,.32,1),background-color 160ms ease}
+.btn:hover{background:#0f3360}.btn:active,.lagi:active{transform:scale(.98)}
+.btn .go{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:#e8c766;color:#031739}
+.lagi{display:inline-flex;align-items:center;min-height:54px;padding:0 24px;border:1.5px solid #dbe0ea;border-radius:999px;background:#fff;color:#031739;font-weight:600;font-size:16px;cursor:pointer;transition:transform 160ms cubic-bezier(.23,1,.32,1),border-color 160ms ease}
+.lagi:hover{border-color:#8a9ab2}
+.isi-paket{min-height:44px;display:inline-flex;align-items:center;padding:0 8px;color:#526772;font-weight:600;font-size:15px}
+.isi-paket:hover{color:#031739}
+dialog{width:min(480px,calc(100% - 32px));box-sizing:border-box;padding:28px;border:0;border-radius:22px;box-shadow:0 40px 80px -30px rgba(3,23,57,.6)}
+dialog::backdrop{background:rgba(3,23,57,.55)}
+dialog[open]{animation:muncul 200ms cubic-bezier(.23,1,.32,1)}
+@keyframes muncul{from{opacity:0;transform:scale(.96)}}
+dialog h2{margin:0 0 6px;font-size:24px;letter-spacing:-.03em}
+dialog .sub{margin:0 0 20px;font-size:15px;color:#526772}
+dialog ul{margin:0 0 24px;padding:16px 18px 16px 36px;border-radius:14px;background:#f7f8fb;font-size:15px;line-height:1.7;color:#24333d}
+.d-aksi{display:flex;flex-direction:column;gap:8px}
+.d-aksi .btn{width:100%}
+.batal{all:unset;cursor:pointer;display:flex;align-items:center;justify-content:center;min-height:44px;border-radius:999px;font-weight:600;font-size:15px;color:#526772}
+.batal:hover{background:#eef1f6}
+@media (max-width:900px){.subtes{grid-template-columns:1fr}}
+@media (max-width:720px){
+  .atas>div{height:64px;padding:0 16px}.atas img{height:36px}
+  main{padding:14px 16px 56px}
+  .kepala{grid-template-columns:1fr;gap:24px;padding:28px 22px}
+  .kepala h1{font-size:26px}
+  .skor{min-width:0;padding:22px 0 0;border-left:0;border-top:1px solid rgba(255,255,255,.16)}
+  .total b{font-size:64px}
+  h2{margin-top:28px}
+  .st{padding:20px}
+  .aksi>*{width:100%;justify-content:center}
+  .btn{justify-content:space-between}
+}
+@media (prefers-reduced-motion:reduce){.btn,.lagi{transition:none}.garis i,dialog[open]{animation:none}}
+</style>
+</head>
+<body>
+<header class="atas"><div>
+<img src="assets/dajiks-lockup.png" alt="D'Ajiks Akademi">
+<a class="balik" id="balik" href="#"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>Kembali ke isi paket</a>
+</div></header>
+
+<main>
+<p class="mock-note">DATA CONTOH: soal dan kunci dari bank D'Ajiks untuk memperlihatkan tampilan; nilai dihitung dari jawabanmu di perangkat ini.</p>
+<section class="kepala" id="kepala"></section>
+<div id="rinci" hidden>
+<h2>Rincian per subtes</h2>
+<div class="subtes" id="subtes"></div>
+</div>
+<div class="aksi">
+<a class="btn" id="b-bahas" href="#">Lihat pembahasan<span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7l5 5-5 5M13 7l5 5-5 5"/></svg></span></a>
+<button type="button" class="lagi" id="b-lagi">Kerjakan lagi</button>
+<a class="isi-paket" id="b-isi" href="#">Kembali ke isi paket</a>
+</div>
+</main>
+
+<dialog id="d-mulai" aria-labelledby="h-mulai">
+<h2 id="h-mulai"></h2>
+<p class="sub" id="d-sub"></p>
+<ul><li>110 soal: TWK 30, TIU 35, dan TKP 45</li><li>Waktu 100 menit</li><li>Waktu berjalan terus setelah dimulai, juga saat halaman ditutup</li><li>Nilai baru menggantikan nilai di halaman ini</li></ul>
+<div class="d-aksi"><a class="btn" id="d-go" href="#">Mulai sekarang<span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7l5 5-5 5M13 7l5 5-5 5"/></svg></span></a><button type="button" class="batal" id="d-batal">Batal</button></div>
+</dialog>
+
+<script src="data/to-contoh.js"></script>
+<script src="data/to-bahas.js"></script>
+<script>
+// jawaban yang dikumpulkan disimpan tryout.html di peramban: 'hasil:' + paket + ':' + nomor = {j, mulai, selesai}
+var q = new URLSearchParams(location.search), PAKET = q.get('paket') || 'Tryout contoh', N = q.get('n') || '1',
+  ALAMAT = '?paket=' + encodeURIComponent(PAKET) + '&n=' + N, ISI = 'detail-paket.html?paket=' + encodeURIComponent(PAKET);
+var H = null;
+try { H = JSON.parse(localStorage.getItem('hasil:' + PAKET + ':' + N)); } catch (e) {}
+var J = H ? H.j : {};
+var $ = function (id) { return document.getElementById(id); };
+function esc(t) { return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
+document.title = 'Hasil Tryout ' + N + ' · ' + PAKET;
+$('balik').href = $('b-isi').href = ISI;
+$('b-bahas').href = 'pembahasan.html' + ALAMAT;
+
+// ambang kedinasan 2026 (KepmenPANRB 406/2026). CPNS/POLRI/TNI tanpa status sampai ambangnya diverifikasi.
+var AMB = /CPNS|POLRI|TNI/i.test(PAKET) ? null : { TWK: 65, TIU: 80, TKP: 156 };
+var NAMA = { TWK: 'Tes Wawasan Kebangsaan', TIU: 'Tes Intelegensia Umum', TKP: 'Tes Karakteristik Pribadi' };
+// ponytail: hitung nilai disalin dari pembahasan.html; nanti nilai dihitung server
+function poin(i) { var b = BAHAS[i], j = J[i]; return !j ? 0 : b.p ? b.p[j] : j === b.k ? 5 : 0; }
+var S = {};
+['TWK', 'TIU', 'TKP'].forEach(function (s) { S[s] = { n: 0, soal: 0, benar: 0, salah: 0, kosong: 0 }; });
+SOAL.forEach(function (x, i) {
+  var t = S[x.s], p = poin(i);
+  t.n += p; t.soal++;
+  if (!J[i]) t.kosong++; else if (p === 5) t.benar++; else t.salah++;
+});
+var total = S.TWK.n + S.TIU.n + S.TKP.n,
+  lolos = AMB && ['TWK', 'TIU', 'TKP'].every(function (s) { return S[s].n >= AMB[s]; });
+
+var IKON_TGL = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="3"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>',
+  IKON_JAM = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>';
+function lama(ms) {
+  var m = Math.min(100, Math.max(1, Math.round(ms / 60000)));
+  return m < 60 ? m + ' menit' : Math.floor(m / 60) + ' jam' + (m % 60 ? ' ' + m % 60 + ' menit' : '');
+}
+var judul = '<div><p class="kicker">Hasil · Tryout ' + esc(N) + '</p><h1>' + esc(PAKET) + '</h1>';
+if (!H) {
+  $('kepala').innerHTML = judul + '</div><div class="skor"><p class="kosong-ket">Hasil tryout ini tidak tersimpan di perangkat ini. Kunci dan pembahasan tetap bisa kamu baca.</p></div>';
+} else {
+  var meta = '<li>' + IKON_TGL + new Date(H.selesai).toLocaleString('id-ID', { day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit' }) + '</li>' +
+    (H.mulai ? '<li>' + IKON_JAM + 'Dikerjakan ' + lama(H.selesai - H.mulai) + '</li>' : '');
+  $('kepala').innerHTML = judul + '<ul class="meta">' + meta + '</ul></div>' +
+    '<div class="skor"><p class="kicker">Nilai total</p><p class="total"><b>' + total + '</b> / 550</p>' +
+    (AMB ? '<span class="status ' + (lolos ? 'lolos' : 'belum') + '">' + (lolos ? 'Lolos ambang batas' : 'Belum lolos ambang batas') + '</span>' +
+      '<p class="amb-ket">Ambang kedinasan 2026: TWK 65 · TIU 80 · TKP 156</p>'
+      : '<p class="amb-ket">Status lolos belum ditampilkan: ambang batas untuk seleksi ini belum kami pastikan.</p>') + '</div>';
+  $('subtes').innerHTML = ['TWK', 'TIU', 'TKP'].map(function (s) {
+    var t = S[s], maks = t.soal * 5, a = AMB && AMB[s], ok = a && t.n >= a;
+    var hitung = s === 'TKP'
+      ? '<li><i class="isi"></i>Dijawab <b>' + (t.soal - t.kosong) + '</b></li><li><i class="kosong"></i>Kosong <b>' + t.kosong + '</b></li>'
+      : '<li><i class="benar"></i>Benar <b>' + t.benar + '</b></li><li><i class="salah"></i>Salah <b>' + t.salah + '</b></li><li><i class="kosong"></i>Kosong <b>' + t.kosong + '</b></li>';
+    return '<article class="st' + (a ? ok ? ' lolos' : ' belum' : '') + '"><header><span class="kode">' + s + '</span><h3>' + NAMA[s] + '</h3></header>' +
+      '<p class="angka"><b>' + t.n + '</b> / ' + maks + '</p>' +
+      '<div class="garis" role="img" aria-label="Nilai ' + t.n + ' dari ' + maks + (a ? ', ambang ' + a : '') + '"><i style="width:' + (t.n / maks * 100) + '%"></i>' + (a ? '<span class="tanda" style="left:' + (a / maks * 100) + '%"></span>' : '') + '</div>' +
+      (a ? '<p class="bawah"><span>Ambang <b>' + a + '</b></span><span class="cap">' + (ok ? 'Lolos' : 'Kurang ' + (a - t.n)) + '</span></p>' : '') +
+      '<ul class="hitung">' + hitung + '</ul></article>';
+  }).join('');
+  $('rinci').hidden = false;
+}
+
+var d = $('d-mulai');
+$('h-mulai').textContent = 'Kerjakan lagi Tryout ' + N + '?';
+$('d-sub').textContent = PAKET;
+$('d-go').href = 'tryout.html' + ALAMAT;
+$('b-lagi').onclick = function () { d.showModal(); };
+$('d-batal').onclick = function () { d.close(); };
+d.addEventListener('click', function (e) { if (e.target === d) d.close(); });
+</script>
+</body>
+</html>

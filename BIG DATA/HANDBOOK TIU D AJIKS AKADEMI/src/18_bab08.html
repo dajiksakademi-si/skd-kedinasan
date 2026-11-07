@@ -1,0 +1,319 @@
+<!-- ═════════ BAB 8 · DERET ANGKA DAN SUKU KE-N ═════════
+     Rencana: reports/tahap2_C_numerik.md Bab 8 + sebaran latihan T2-1b (4 latihan) + Putusan T2-7(6): jumlah n suku,
+     sisipan, tiga titik = Catatan; deret geometri tak hingga tidak dimuat; slot bersyarat B1/B2 gugur (T2-1).
+     Semua angka narasi dihitung di scripts/cek_bab06_10.mjs. -->
+<section class="bab num" data-bab="8">
+  <header class="band">
+    <div class="no">8</div>
+    <div>
+      <h2>Deret Angka dan Suku ke-n</h2>
+      <p>Bab ini membahas kenaikan per suku pada nomor yang meloncat, selisih bertingkat, banyak titik yang membuktikan pola, deret sebaris, aturan kali lalu tambah, dan deret huruf.</p>
+      <p class="waktu"><svg class="ico"><use href="#jam"/></svg>{{TARGET}}</p>
+    </div>
+    <div class="kisi" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="emas"></i></div>
+  </header>
+
+  <p class="lead">Barisan bilangan menyimpan satu aturan yang membawa suku ke suku berikutnya. Pada soal suku ke-<i>n</i>, aturan itu disajikan sebagai tabel nomor suku dan nilainya, sering dengan nomor yang meloncat dan suku yang ditanya jauh di luar tabel. Bab ini memakai satu alat untuk semua bentuk: selisih. Kerjakan pertanyaan pembuka berikut sebelum membaca uraiannya.</p>
+
+<!--B08-P01:mulai-->
+<div data-soal="HB-TIU-B08-P01" data-target="60">
+  <div class="soal">
+    <div class="meta"><span id="soal-B08-P01">Pertanyaan Pembuka<a class="ke" href="#bahas-B08-P01">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 60 detik</span></div>
+    <p class="stem">Tabel berikut memuat beberapa suku sebuah barisan bilangan.</p>
+    <table class="tb pola datar"><tbody><tr><th>Suku ke-</th><td>6</td><td>3</td><td>14</td><td>11</td></tr><tr><th>Nilai</th><td>45</td><td>21</td><td>109</td><td>85</td></tr></tbody></table>
+    <p class="stem">Nilai <mark>suku ke-50</mark> barisan itu adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>389</b></div><div><span class="h">B</span><b>397</b></div><div><span class="h">C</span><b>400</b></div><div><span class="h">D</span><b>403</b></div><div><span class="h">E</span><b>405</b></div></div>
+  </div>
+  <div class="guru"><b>SUK linear, nomor meloncat tidak urut, suku jauh.</b> Kunci B. Kode: A J-NOMOR · B <b>kunci</b> · C J-KONST · D J-TANDA · E J-NOMOR. Kerangka: SUK linear · 4 titik nomor 6, 3, 14, 11 (tidak urut, jarak 3, 5, 3 tak berpola) · tanya suku ke-50 (≥ 3 × nomor terbesar) · ±1 langkah, konstanta, tanda. TO terdekat: TO P1 no. 38 (kuadrat); Bab 19 Latihan B (suku jauh, mengalah). Bukan 5n + 2 (narasi). Bukti: polinom derajat 1 tepat di 4 titik; rumus lain ≤ 3 operasi diperiksa Jarak kunci ke pilihan terdekat 3, median jarak 3. Slot memasang J-NOMOR selisih mentah; tidak dipakai karena hasilnya jauh terpencil (selisih 24 per baris memberi 971), diganti J-NOMOR langkah lebih satu (E).</div>
+</div>
+<!--B08-P01:selesai-->
+
+  <h3>Kenaikan per Suku pada Nomor yang Meloncat</h3>
+  <p>Pada barisan linear, setiap langkah dari satu suku ke suku berikutnya menambahkan bilangan yang sama, yaitu beda. Bila nomor suku meloncat, selisih nilai dua titik harus dibagi selisih nomornya. Hasil bagi itu disebut <b>kenaikan per suku</b>, dan pada barisan linear besarnya tetap.</p>
+  <table class="tb">
+    <thead><tr><th class="n">Nomor suku</th><th class="n">Nilai</th><th class="n">Selisih nilai</th><th class="n">Selisih nomor</th><th class="n">Kenaikan per suku</th></tr></thead>
+    <tbody>
+      <tr><td class="n">3</td><td class="n">17</td><td class="n"></td><td class="n"></td><td class="n"></td></tr>
+      <tr><td class="n">7</td><td class="n">37</td><td class="n">20</td><td class="n">4</td><td class="n"><b>5</b></td></tr>
+      <tr><td class="n">10</td><td class="n">52</td><td class="n">15</td><td class="n">3</td><td class="n"><b>5</b></td></tr>
+      <tr><td class="n">15</td><td class="n">77</td><td class="n">25</td><td class="n">5</td><td class="n"><b>5</b></td></tr>
+    </tbody>
+  </table>
+  <p>Kenaikan per suku tetap 5 di ketiga pasangan titik, jadi barisannya linear dengan beda 5. Dari suku ke-3 ke suku ke-40 ada 40 − 3 = 37 langkah, sehingga U<sub>40</sub> = 17 + 37 × 5 = 202. Rumus umumnya U<sub><i>n</i></sub> = 5<i>n</i> + 2; uji kembali rumus itu di keempat titik sebelum dipakai.</p>
+
+  <h3>Selisih Bertingkat dan Pangkat Pola</h3>
+  <p>Bila kenaikan per suku berubah-ubah, ambil selisih sekali lagi. Selisih pertama yang tetap menandakan pola linear; selisih kedua yang tetap menandakan pola kuadrat. Alasannya terlihat dari rumus. Untuk U<sub><i>n</i></sub> = <i>an</i><sup>2</sup> + <i>bn</i> + <i>c</i>, selisih dua suku berurutan adalah U<sub><i>n</i>+1</sub> − U<sub><i>n</i></sub> = 2<i>an</i> + <i>a</i> + <i>b</i>, yaitu pola linear dengan beda 2<i>a</i>. Setiap kali selisih diambil, pangkat pola turun satu. Akibatnya koefisien <i>a</i> sama dengan selisih kedua dibagi 2.</p>
+  <table class="tb">
+    <thead><tr><th style="width:24%"></th><th class="n">1</th><th class="n">2</th><th class="n">3</th><th class="n">4</th><th class="n">5</th></tr></thead>
+    <tbody>
+      <tr><td><b>Suku</b></td><td class="n">2</td><td class="n">6</td><td class="n">12</td><td class="n">20</td><td class="n">30</td></tr>
+      <tr><td><b>Selisih pertama</b></td><td class="n"></td><td class="n">4</td><td class="n">6</td><td class="n">8</td><td class="n">10</td></tr>
+      <tr><td><b>Selisih kedua</b></td><td class="n"></td><td class="n"></td><td class="n">2</td><td class="n">2</td><td class="n">2</td></tr>
+    </tbody>
+  </table>
+  <p>Selisih kedua tetap 2, sehingga <i>a</i> = 2 : 2 = 1. Kurangi <i>n</i><sup>2</sup> dari setiap suku: 2 − 1, 6 − 4, 12 − 9, 20 − 16, dan 30 − 25 menghasilkan 1, 2, 3, 4, 5, yaitu <i>n</i> sendiri. Rumusnya U<sub><i>n</i></sub> = <i>n</i><sup>2</sup> + <i>n</i>. Bila nomor suku meloncat, selisih bertingkat tidak dapat dibaca langsung; kurangi <i>n</i><sup>2</sup> (atau 2<i>n</i><sup>2</sup>) dari setiap nilai, lalu periksa apakah sisanya linear.</p>
+
+  <h3>Banyak Titik yang Membuktikan Pola</h3>
+  <p>Pola linear ditentukan oleh dua titik dan pola kuadrat oleh tiga titik. Titik sebanyak itu selalu cocok dengan suatu pola berpangkat tersebut, berapa pun nilainya, sehingga belum membuktikan apa pun. Bukti baru ada bila satu titik lagi ikut cocok. Aturannya: <b>banyak titik paling sedikit sama dengan banyak bilangan dalam rumus, ditambah satu</b>. Pola linear memerlukan tiga titik, pola kuadrat empat titik.</p>
+  <p>Contoh penyangkal: barisan 1, 2, 4 dapat dilanjutkan dengan 8, bila setiap suku dikali 2, atau dengan 7, bila selisihnya 1, 2, 3. Kedua aturan cocok dengan ketiga suku yang diketahui, tetapi memberi suku keempat yang berbeda.</p>
+  <div class="note catatan">
+    <h4>Catatan</h4>
+    <p>Sebagian soal latihan di luar buku ini hanya memberi tiga suku berurutan, misalnya 4, 9, 16, lalu meminta suku berikutnya. Kebiasaan menjawab soal semacam itu: pilih pola berpangkat paling rendah yang cocok, di sini kuadrat dengan suku berikutnya 25, lalu periksa apakah hasilnya ada di pilihan. Kebiasaan ini bukan bukti, dan apakah soal resmi mengikutinya belum diverifikasi. Soal di buku ini selalu memberi titik yang cukup.</p>
+  </div>
+
+  <h3>Mencari Nomor Suku dari Nilainya</h3>
+  <p>Soal dapat dibalik: nilainya diketahui, nomor sukunya ditanya. Pada barisan U<sub><i>n</i></sub> = 5<i>n</i> + 2 di atas, nilai 152 dicapai ketika 5<i>n</i> + 2 = 152, yaitu <i>n</i> = 30. Tanpa rumus, hitung banyak langkah dari titik yang diketahui. Dari nilai 17 ke nilai 152 ada (152 − 17) : 5 = 27 langkah, jadi nomornya 3 + 27 = 30, bukan 27.</p>
+
+  <h3>Deret Sebaris: Selisih, Rasio, dan Selang-seling</h3>
+  <p>Deret yang ditulis sebaris diuji dengan tiga pertanyaan berurutan. Pertama, apakah selisihnya tetap atau bertingkat? Kedua, apakah hasil baginya tetap? Ketiga, apakah suku urutan ganjil dan suku urutan genap membentuk dua deret terpisah?</p>
+  <table class="tb">
+    <thead><tr><th style="width:30%">Deret</th><th>Uji yang berhasil</th><th class="n" style="width:16%">Suku berikutnya</th></tr></thead>
+    <tbody>
+      <tr><td><b>5, 8, 11, 14, …</b></td><td>selisih tetap 3</td><td class="n">17</td></tr>
+      <tr><td><b>3, 6, 12, 24, …</b></td><td>hasil bagi tetap 2</td><td class="n">48</td></tr>
+      <tr><td><b>2, 9, 4, 12, 6, 15, …</b></td><td>urutan ganjil 2, 4, 6 (tambah 2); urutan genap 9, 12, 15 (tambah 3)</td><td class="n">8</td></tr>
+    </tbody>
+  </table>
+  <p>Bila ketiga uji itu gagal, periksa apakah selisihnya berlipat sebelum mencoba aturan lain.</p>
+
+  <h3>Selisih yang Berlipat: Aturan Kali lalu Tambah</h3>
+  <p>Misalkan setiap suku diperoleh dari suku sebelumnya dengan aturan U<sub><i>n</i>+1</sub> = <i>k</i> × U<sub><i>n</i></sub> + <i>c</i>. Kurangkan dua aturan yang berurutan: bilangan <i>c</i> hilang, dan setiap selisih sama dengan <i>k</i> kali selisih sebelumnya. Selisih yang berlipat adalah tanda aturan kali lalu tambah.</p>
+  <div class="konsep">
+    <div class="def">
+      <p>Pada deret 3, 7, 15, 31, 63, selisihnya 4, 8, 16, 32: setiap selisih dua kali selisih sebelumnya, jadi <i>k</i> = 2. Bilangan <i>c</i> dihitung dari dua suku pertama: 7 = 2 × 3 + <i>c</i>, sehingga <i>c</i> = 1.</p>
+      <p>Uji di semua suku: 2 × 7 + 1 = 15, 2 × 15 + 1 = 31, dan 2 × 31 + 1 = 63. Suku berikutnya 2 × 63 + 1 = 127.</p>
+    </div>
+    <table class="hit">
+      <thead><tr><th>Suku</th><th>Selisih</th><th>Lipatan</th></tr></thead>
+      <tbody>
+        <tr><td>3</td><td></td><td></td></tr>
+        <tr><td>7</td><td>4</td><td></td></tr>
+        <tr><td>15</td><td>8</td><td>× 2</td></tr>
+        <tr><td>31</td><td>16</td><td>× 2</td></tr>
+        <tr class="uji"><td>63</td><td>32</td><td>× 2</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Deret Huruf sebagai Deret Nomor Urut</h3>
+  <p>Huruf diubah menjadi nomor urut, A = 1 sampai Z = 26, lalu dikerjakan seperti deret angka. Bila nomornya melewati 26, kurangi 26: urutannya berputar kembali ke A. Pasangan huruf yang berjarak sama dari kedua ujung abjad, seperti A dan Z atau D dan W, selalu berjumlah nomor 27.</p>
+  <table class="tb">
+    <thead><tr><th style="width:24%"></th><th class="n">1</th><th class="n">2</th><th class="n">3</th><th class="n">4</th><th class="n">5</th><th class="n">6</th></tr></thead>
+    <tbody>
+      <tr><td><b>Huruf</b></td><td class="n">C</td><td class="n">F</td><td class="n">J</td><td class="n">O</td><td class="n">U</td><td class="n"><b>B</b></td></tr>
+      <tr><td><b>Nomor</b></td><td class="n">3</td><td class="n">6</td><td class="n">10</td><td class="n">15</td><td class="n">21</td><td class="n">28 − 26 = 2</td></tr>
+      <tr><td><b>Selisih</b></td><td class="n"></td><td class="n">3</td><td class="n">4</td><td class="n">5</td><td class="n">6</td><td class="n">7</td></tr>
+    </tbody>
+  </table>
+  <p>Selisihnya naik satu demi satu, sehingga suku keenam bernomor 21 + 7 = 28. Nomor itu melewati 26, jadi hurufnya bernomor 2, yaitu B. Deret yang setiap sukunya memuat huruf dan angka dipisah menjadi deret huruf dan deret angka, lalu masing-masing diuji sendiri.</p>
+
+  <div class="note catatan">
+    <h4>Catatan</h4>
+    <p>Dua bentuk lain kadang muncul di soal latihan. <b>Jumlah n suku barisan linear:</b> pasangan suku dari dua ujung berjumlah tetap. Pada 3 + 7 + 11 + … + 39 ada (39 − 3) : 4 + 1 = 10 suku, yang membentuk 5 pasangan berjumlah 3 + 39 = 42; jumlahnya 5 × 42 = 210. <b>Sisipan:</b> bila di antara dua bilangan disisipkan <i>k</i> bilangan sehingga terbentuk barisan linear, selisih lama dibagi rata ke <i>k</i> + 1 langkah. Menyisipkan 3 bilangan di antara 5 dan 29 memberi kenaikan (29 − 5) : 4 = 6, sehingga barisannya 5, 11, 17, 23, 29.</p>
+  </div>
+
+  <h3>Langkah Penyelesaian Soal Barisan</h3>
+  <div class="rules satu">
+    <div><b>Urutkan titik</b> menurut nomor suku.</div>
+    <div><b>Hitung kenaikan per suku</b> di setiap pasangan titik berurutan: selisih nilai dibagi selisih nomor.</div>
+    <div><b>Semua sama:</b> pola linear. <b>Tidak sama:</b> kurangi <i>n</i><sup>2</sup> atau 2<i>n</i><sup>2</sup>, lalu periksa apakah sisanya linear.</div>
+    <div><b>Perkirakan ukuran suku jauh.</b> Pola kuadrat tumbuh jauh lebih cepat daripada pola linear; buang pilihan yang ukurannya salah.</div>
+    <div><b>Hitung suku yang ditanya.</b> Dari suku ke-<i>p</i> ke suku ke-<i>q</i> ada <i>q</i> − <i>p</i> langkah.</div>
+    <div><b>Cek balik:</b> uji rumus di semua titik, lalu hitung juga suku tetangganya agar tidak meleset satu langkah.</div>
+    <div><b>Deret sebaris dan deret huruf:</b> uji selisih, hasil bagi, selang-seling, lalu selisih berlipat; huruf diubah ke nomor lebih dulu.</div>
+  </div>
+
+  <h3>Kekeliruan pada Soal Barisan</h3>
+  <p>Setiap pilihan salah pada soal barisan D'Ajiks lahir dari salah satu kekeliruan berikut. Nama-nama ini dipakai di setiap pembahasan bab ini.</p>
+  <table class="tb">
+    <thead><tr><th style="width:5%">No.</th><th style="width:32%">Kekeliruan</th><th>Contoh</th><th style="width:27%">Pertanyaan uji</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><b>Menganggap selisihnya selalu sama</b></td><td>2, 6, 12, 20 dilanjutkan dengan 28</td><td>Selisih pertamanya memang tetap?</td></tr>
+      <tr><td>2</td><td><b>Menyimpulkan pola dari terlalu sedikit titik</b></td><td>1, 2, 4 dianggap pasti berlanjut 8</td><td>Ada titik lain yang ikut membuktikan?</td></tr>
+      <tr><td>3</td><td><b>Selisih nilai dipakai mentah saat nomor meloncat</b></td><td>beda dianggap 20 dari suku ke-3 ke suku ke-7</td><td>Selisih nilai sudah dibagi selisih nomor?</td></tr>
+      <tr><td>4</td><td><b>Tertukar antara banyak langkah dan nomor suku</b></td><td>menjawab 27, padahal nomornya 30</td><td>Yang ditanya langkah atau nomor?</td></tr>
+      <tr><td>5</td><td><b>Lupa bilangan tetap dalam rumus</b></td><td>U<sub><i>n</i></sub> = 5<i>n</i>, padahal 5<i>n</i> + 2</td><td>Rumusnya sudah diuji di satu titik?</td></tr>
+      <tr><td>6</td><td><b>Salah tanda</b></td><td>barisan menurun dibaca naik</td><td>Nilainya bertambah atau berkurang?</td></tr>
+      <tr><td>7</td><td><b>Lupa berputar setelah Z, atau meleset satu huruf</b></td><td>nomor 28 tidak dikurangi 26</td><td>Nomornya sudah melewati 26?</td></tr>
+      <tr><td>8</td><td><b>Dua deret berselang dibaca sebagai satu deret</b></td><td>2, 9, 4, 12, 6, 15 dicari selisihnya berurutan</td><td>Urutan ganjil dan genap sudah dipisah?</td></tr>
+      <tr><td>9</td><td><b>Berhenti satu langkah sebelum selesai</b></td><td>2 × 63 = 126 tanpa ditambah 1</td><td>Semua bagian aturan sudah dipakai?</td></tr>
+    </tbody>
+  </table>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Padanan Nama Kekeliruan dan Kode</h4>
+    <p>1 J-RATA (K5) · 2 J-TIGA (K2) · 3 J-NOMOR (K6) · 4 J-NOMOR (K6) · 5 J-KONST (K5) · 6 J-TANDA (K3) · 7 J-NOMOR (K6) · 8 J-TIGA (K2) · 9 J-LANGKAH (K2). Slot L02 juga memakai J-PENGALIH (K1). Deret geometri tak hingga tidak dimuat (Putusan T2-7(6)).</p>
+    <p><b>Rumus kenaikan untuk pola kuadrat (khusus pengajar, T2-C3(d)).</b> Untuk U<sub><i>n</i></sub> = <i>an</i><sup>2</sup> + <i>bn</i> + <i>c</i>, kenaikan per suku dari suku ke-<i>p</i> ke suku ke-<i>q</i> sama dengan <i>a</i>(<i>p</i> + <i>q</i>) + <i>b</i>, karena <i>q</i><sup>2</sup> − <i>p</i><sup>2</sup> = (<i>q</i> − <i>p</i>)(<i>q</i> + <i>p</i>). Dua kenaikan memberi <i>a</i> tanpa menebak. Contoh U<sub><i>n</i></sub> = <i>n</i><sup>2</sup> + <i>n</i>: dari suku ke-2 ke suku ke-5, (30 − 6) : 3 = 8 = 1 × (2 + 5) + 1. Untuk siswa cukup cara "kurangi <i>n</i><sup>2</sup>, lalu uji".</p>
+  </div>
+
+<!--B08-P01-bahas:mulai-->
+  <h3 id="bahas-B08-P01">Pembahasan Pertanyaan Pembuka</h3>
+<div class="bahas-pembuka">
+  <div class="soal">
+    <div class="meta"><span>Pertanyaan Pembuka</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 60 detik</span></div>
+    <p class="stem">Tabel berikut memuat beberapa suku sebuah barisan bilangan.</p>
+    <table class="tb pola datar"><tbody><tr><th>Suku ke-</th><td>6</td><td>3</td><td>14</td><td>11</td></tr><tr><th>Nilai</th><td>45</td><td>21</td><td>109</td><td>85</td></tr></tbody></table>
+    <p class="stem">Nilai <mark>suku ke-50</mark> barisan itu adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>389</b></div><div><span class="h">B</span><b>397</b></div><div><span class="h">C</span><b>400</b></div><div><span class="h">D</span><b>403</b></div><div><span class="h">E</span><b>405</b></div></div>
+  </div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta suku ke-50, jauh di luar tabel. Kalimat penentunya “suku ke-50”. Nomor suku di tabel tidak urut dan meloncat, jadi selisih nilai harus dibagi selisih nomornya.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Urutkan nomornya: 3, 6, 11, 14. Dari suku ke-3 ke suku ke-6, kenaikannya (45 − 21) : (6 − 3) = 8. Dari suku ke-11 ke suku ke-14, kenaikannya (109 − 85) : (14 − 11) = 8. Kenaikan per suku tetap 8. Dari suku ke-14 ke suku ke-50 ada 50 − 14 = 36 langkah, jadi nilainya 109 + 36 × 8 = 397.</dd></div>
+    <div><dt>Cara lain</dt><dd>Cari rumusnya. Dari suku ke-3: 8 × 3 = 24, padahal nilainya 21, jadi bilangan tetapnya 21 − 24 = −3. Rumusnya U<sub><i>n</i></sub> = 8<i>n</i> − 3, dan 8 × 50 − 3 = 397.</dd></div>
+    <div><dt>Cek balik</dt><dd>Uji rumus di dua titik lain: 8 × 11 − 3 = 85 dan 8 × 6 − 3 = 45. Cocok dengan tabel.</dd></div>
+  </dl></div>
+  <div class="gugur"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><span class="v">389<span class="uji">35 langkah</span></span><div class="x"><b>Tertukar antara banyak langkah dan nomor suku.</b> Dari suku ke-14 ke suku ke-50 dihitung 35 langkah, sehingga yang didapat suku ke-49: 109 + 35 × 8 = 389.</div></div><div class="g"><span class="h">C</span><span class="v">400<span class="uji">8 × 50</span></span><div class="x"><b>Lupa bilangan tetap dalam rumus.</b> Rumus ditulis 8<i>n</i>, bilangan tetap −3 terlupa. Tabel langsung menolaknya: 8 × 3 = 24, padahal suku ke-3 bernilai 21.</div></div><div class="g"><span class="h">D</span><span class="v">403<span class="uji">8 × 50 + 3</span></span><div class="x"><b>Salah tanda.</b> Bilangan tetapnya dibaca +3. Pada suku ke-3 rumus itu memberi 8 × 3 + 3 = 27, bukan 21.</div></div><div class="g"><span class="h">E</span><span class="v">405<span class="uji">37 langkah</span></span><div class="x"><b>Tertukar antara banyak langkah dan nomor suku.</b> Banyak langkah dihitung 50 − 14 + 1 = 37, seolah suku ke-14 ikut dilangkahi. Hasilnya 109 + 37 × 8 = 405, yaitu suku ke-51.</div></div></div>
+  <div class="jwb"><span>B</span><p><b>Jawaban: B.</b> Kenaikan per suku tetap 8, dan 36 langkah dari suku ke-14 memberi 109 + 36 × 8 = 397.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti tangga yang setiap anak tangganya setinggi 8 cm. Dari anak tangga ke-14 ke anak tangga ke-50 ada 36 langkah naik, bukan 37.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Menjawab 405 karena menghitung banyak anak tangga dari 14 sampai 50, termasuk anak tangga ke-14. Yang dihitung adalah langkahnya: nomor tujuan dikurangi nomor awal.</span></div></div>
+  <p class="balik"><a class="ke" href="#soal-B08-P01">Kembali ke soal</a></p>
+</div>
+<!--B08-P01-bahas:selesai-->
+
+  <h3>Contoh Soal dan Pembahasan</h3>
+  <p>Empat contoh berikut memperagakan pencarian nomor suku, pola kuadrat dengan nomor meloncat, aturan kali lalu tambah, dan deret huruf. Kerjakan setiap contoh sendiri dalam target waktunya sebelum membaca pembahasan.</p>
+<!--B08-C01:mulai-->
+<div data-soal="HB-TIU-B08-C01" data-target="60">
+  <div class="soal">
+    <div class="meta"><span>Contoh 1</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 60 detik</span></div>
+    <p class="stem">Perhatikan tabel suku-suku sebuah barisan berikut.</p>
+    <table class="tb pola datar"><tbody><tr><th>Suku ke-</th><td>3</td><td>7</td><td>10</td><td>16</td></tr><tr><th>Nilai</th><td>4</td><td>20</td><td>32</td><td>56</td></tr></tbody></table>
+    <p class="stem">Pada barisan itu, bilangan 180 merupakan <mark>suku ke-</mark> …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>43</b></div><div><span class="h">B</span><b>44</b></div><div><span class="h">C</span><b>45</b></div><div><span class="h">D</span><b>47</b></div><div><span class="h">E</span><b>48</b></div></div>
+  </div>
+  <div class="guru"><b>SUK linear, nilai diketahui, nomor dicari.</b> Kunci D. Kode: A J-TANDA · B J-NOMOR · C J-KONST · D <b>kunci</b> · E J-NOMOR. Kerangka: SUK linear · 4 titik nomor 3, 7, 10, 16 · tanya nomor dari nilai · banyak langkah, langkah + 1, tanda, konstanta. TO terdekat: tidak ada di TO P1; bukan 5n + 2 dan nilai 152 (narasi). Bukti: barisan linear; nomor dari nilai dihitung tepat Jarak kunci ke pilihan terdekat 1, median jarak 1. Kode = rencana slot (J-NOMOR ×2, J-TANDA, J-KONST).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Nilai sukunya diketahui, nomornya yang ditanya. Kalimat penentunya “suku ke-”: jawabannya nomor suku, bukan banyak langkah.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Kenaikan per suku: (20 − 4) : (7 − 3) = 4. Dari nilai 4 ke nilai 180 ada (180 − 4) : 4 = 44 langkah. Nomornya 3 + 44 = 47.</dd></div>
+    <div><dt>Cara lain</dt><dd>Rumusnya 4<i>n</i> − 8, karena 4 × 3 − 8 = 4. Agar nilainya 180, 4<i>n</i> harus 180 + 8 = 188, jadi <i>n</i> = 188 : 4 = 47.</dd></div>
+    <div><dt>Cek balik</dt><dd>4 × 47 − 8 = 180. Cocok.</dd></div>
+  </dl></div>
+  <div class="gugur"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><span class="v">43<span class="uji">(180 − 8) : 4</span></span><div class="x"><b>Salah tanda.</b> Bilangan tetap −8 dikurangkan lagi, padahal harus ditambahkan untuk membalik rumus: (180 − 8) : 4 = 43. Ujinya 4 × 43 − 8 = 164, bukan 180.</div></div><div class="g"><span class="h">B</span><span class="v">44<span class="uji">44 langkah</span></span><div class="x"><b>Tertukar antara banyak langkah dan nomor suku.</b> 44 adalah banyak langkah dari suku ke-3. Nomor sukunya 3 + 44 = 47.</div></div><div class="g"><span class="h">C</span><span class="v">45<span class="uji">180 : 4</span></span><div class="x"><b>Lupa bilangan tetap dalam rumus.</b> Rumus dikira 4<i>n</i> tanpa −8: 180 : 4 = 45. Padahal suku ke-3 bernilai 4, bukan 4 × 3 = 12.</div></div><div class="g"><span class="h">E</span><span class="v">48<span class="uji">16 + 31 + 1</span></span><div class="x"><b>Titik awal dihitung dua kali.</b> Dari suku ke-16 ada (180 − 56) : 4 = 31 langkah, lalu suku ke-16 dihitung sekali lagi: 16 + 31 + 1 = 48. Nomor tujuannya cukup 16 + 31 = 47.</div></div></div>
+  <div class="jwb"><span>D</span><p><b>Jawaban: D.</b> Dari suku ke-3 dibutuhkan 44 langkah berkenaikan 4, jadi 180 adalah suku ke-47.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti naik lift: dari lantai 3 naik 44 lantai, kamu tiba di lantai 47, bukan lantai 44.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Menjawab 44 karena hasil bagi (180 − 4) : 4 langsung dianggap jawaban. Hasil bagi itu banyak langkah; tambahkan nomor titik awalnya.</span></div></div>
+</div>
+<!--B08-C01:selesai-->
+<!--B08-C02:mulai-->
+<div data-soal="HB-TIU-B08-C02" data-target="75">
+  <div class="soal">
+    <div class="meta"><span>Contoh 2</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 75 detik</span></div>
+    <p class="stem">Tabel berikut memuat empat suku sebuah barisan.</p>
+    <table class="tb pola datar"><tbody><tr><th>Suku ke-</th><td>2</td><td>5</td><td>6</td><td>9</td></tr><tr><th>Nilai</th><td>7</td><td>19</td><td>25</td><td>49</td></tr></tbody></table>
+    <p class="stem">Nilai <mark>suku ke-30</mark> barisan itu adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>133</b></div><div><span class="h">B</span><b>217</b></div><div><span class="h">C</span><b>439</b></div><div><span class="h">D</span><b>465</b></div><div><span class="h">E</span><b>469</b></div></div>
+  </div>
+  <div class="guru"><b>SUK kuadrat, koefisien ½ (bilangan segitiga + 4), empat titik meloncat.</b> Kunci E. Kode: A J-RATA · B J-RATA · C J-NOMOR · D J-KONST · E <b>kunci</b>. Kerangka: SUK kuadrat koefisien ½ · selisih tingkat dua 1 · 4 titik nomor 2, 5, 6, 9 · suku ke-30 · linear dari pasangan awal/akhir, nomor −1, konstanta. TO terdekat: TO P1 no. 38: koefisien bulat, 5 titik, suku ke-30; di sini koefisien ½, 4 titik. Bukan n² + n (narasi). Bukti: derajat 2 (selisih tingkat dua tetap 1); linear gagal; rumus lain ≤ 3 operasi diperiksa Jarak kunci ke pilihan terdekat 4, median jarak 55. Slot: J-RATA, J-KONST, J-NOMOR ×2; dipakai J-RATA ×2 + J-NOMOR + J-KONST agar kunci tidak terapit (kunci E, jarak 4 ≤ median 55).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta suku ke-30 dari empat titik bernomor meloncat. Kalimat penentunya “suku ke-30”. Periksa dulu apakah kenaikan per sukunya tetap.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Kenaikan per suku: (19 − 7) : 3 = 4, (25 − 19) : 1 = 6, dan (49 − 25) : 3 = 8. Kenaikannya bertambah, jadi polanya bukan linear; pada nomor berurutan kenaikannya naik 1 setiap suku, ciri bilangan segitiga. Kurangi bilangan segitiga dari setiap nilai: 7 − 3 = 4, 19 − 15 = 4, 25 − 21 = 4, dan 49 − 45 = 4. Sisanya tetap 4, jadi nilai suku ke-30 adalah 30 × 31 : 2 + 4 = 469.</dd></div>
+    <div><dt>Cara lain</dt><dd>Lanjutkan dari suku ke-9 yang bernilai 49. Kenaikan ke suku ke-10 adalah 10, ke suku ke-11 adalah 11, dan seterusnya sampai 30. Ada 21 kenaikan dengan rata-rata 20, jadi jumlahnya 21 × 20 = 420, dan nilai suku ke-30 adalah 49 + 420 = 469.</dd></div>
+    <div><dt>Cek balik</dt><dd>Uji rumus di dua titik tabel: 6 × 7 : 2 + 4 = 25 dan 2 × 3 : 2 + 4 = 7. Cocok.</dd></div>
+  </dl></div>
+  <div class="gugur"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><span class="v">133<span class="uji">kenaikan 4 terus</span></span><div class="x"><b>Menganggap selisihnya selalu sama.</b> Kenaikan dari dua titik pertama, 4 per suku, dianggap tetap: 49 + 21 × 4 = 133. Kenaikan itu sudah berubah di titik berikutnya.</div></div><div class="g"><span class="h">B</span><span class="v">217<span class="uji">kenaikan 8 terus</span></span><div class="x"><b>Menganggap selisihnya selalu sama.</b> Kenaikan dari dua titik terakhir, 8 per suku, dianggap tetap: 49 + 21 × 8 = 217. Pada pola ini kenaikannya terus bertambah.</div></div><div class="g"><span class="h">C</span><span class="v">439<span class="uji">suku ke-29</span></span><div class="x"><b>Tertukar antara banyak langkah dan nomor suku.</b> 29 × 30 : 2 + 4 = 439 adalah suku ke-29. Nomor yang dimasukkan ke rumus kurang satu.</div></div><div class="g"><span class="h">D</span><span class="v">465<span class="uji">tanpa + 4</span></span><div class="x"><b>Lupa bilangan tetap dalam rumus.</b> 30 × 31 : 2 = 465 baru bilangan segitiganya. Sisa tetap 4 belum ditambahkan.</div></div></div>
+  <div class="jwb"><span>E</span><p><b>Jawaban: E.</b> Setiap nilai sama dengan bilangan segitiga ditambah 4, jadi suku ke-30 bernilai 30 × 31 : 2 + 4 = 469.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti menyusun kaleng di etalase berbentuk segitiga: baris ke-30 menambah 30 kaleng, sehingga tambahannya makin banyak. Menganggap tambahannya tetap sama dengan mengira tumpukan itu berbentuk persegi panjang.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Melihat kenaikan 4 di dua titik pertama lalu langsung melanjutkannya. Empat titik disediakan justru untuk menguji apakah kenaikannya tetap; periksa semua pasangan titik sebelum memilih rumus.</span></div></div>
+</div>
+<!--B08-C02:selesai-->
+<!--B08-C03:mulai-->
+<div data-soal="HB-TIU-B08-C03" data-target="45">
+  <div class="soal">
+    <div class="meta"><span>Contoh 3</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 45 detik</span></div>
+    <p class="stem"><mark>Suku berikutnya</mark> dari barisan 2, 4, 10, 28, 82, … adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>164</b></div><div><span class="h">B</span><b>172</b></div><div><span class="h">C</span><b>244</b></div><div><span class="h">D</span><b>246</b></div><div><span class="h">E</span><b>248</b></div></div>
+  </div>
+  <div class="guru"><b>SUK deret sebaris, kali 3 lalu kurang 2.</b> Kunci C. Kode: A J-TIGA · B J-RATA · C <b>kunci</b> · D J-LANGKAH · E J-TANDA. Kerangka: SUK deret sebaris kU + c, k = 3, c = −2 · 5 suku · selisih berlipat · kali 2 dari pasangan awal, selisih kedua tetap, lupa −2, +2. TO terdekat: tidak ada di TO P1; bukan (k, c) = (2, 1) dan suku awal 3 (narasi). Bukti: aturan kali 3 kurang 2 cocok di 4 langkah; aturan lain (aritmetika, geometri, kU + c, selisih bertingkat ≤ 3, berselang, rekursif dua suku) hanya memberi 244 Jarak kunci ke pilihan terdekat 2, median jarak 5. Kode = rencana slot. Aturan lain deret (aritmetika, geometri, kU + c, selisih bertingkat ≤ 3, berselang, rekursif dua suku) hanya memberi 244. Revisi cek buta 1: pilihan E 730 (suku ke-7, terpencil) diganti 248 = 3 × 82 + 2 (tanda terbalik).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta satu suku sesudah 82. Kalimat penentunya “Suku berikutnya”: cukup satu langkah, dengan aturan yang cocok di semua suku.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Selisihnya 2, 6, 18, 54: setiap selisih tiga kali selisih sebelumnya. Itu tanda aturan kali 3 lalu tambah atau kurang. Dari 2 ke 4: 3 × 2 = 6, lalu dikurangi 2 menjadi 4. Uji: 3 × 4 − 2 = 10, 3 × 10 − 2 = 28, dan 3 × 28 − 2 = 82. Suku berikutnya 3 × 82 − 2 = 244.</dd></div>
+    <div><dt>Cara lain</dt><dd>Lanjutkan selisihnya. Selisih berikutnya 3 × 54 = 162, jadi suku berikutnya 82 + 162 = 244.</dd></div>
+    <div><dt>Cek balik</dt><dd>Aturan kali 3 kurang 2 cocok di keempat langkah. Aturan lain yang sederhana, seperti selisih tetap atau kali 2, sudah gagal di suku ketiga.</dd></div>
+  </dl></div>
+  <div class="gugur"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><span class="v">164<span class="uji">82 × 2</span></span><div class="x"><b>Menyimpulkan pola dari terlalu sedikit titik.</b> Aturan kali 2 diambil dari 2 ke 4 saja. Dari 4 ke 10 aturan itu sudah gagal, sebab 4 × 2 = 8.</div></div><div class="g"><span class="h">B</span><span class="v">172<span class="uji">82 + 54 + 36</span></span><div class="x"><b>Menganggap selisihnya selalu sama.</b> Selisih kedua 4, 12, 36 dianggap tetap, jadi selisih berikutnya 54 + 36 = 90 dan sukunya 172. Padahal selisih kedua itu sendiri berlipat tiga.</div></div><div class="g"><span class="h">D</span><span class="v">246<span class="uji">82 × 3</span></span><div class="x"><b>Berhenti satu langkah sebelum selesai.</b> Langkah kali 3 dikerjakan, langkah kurang 2 terlupa: 82 × 3 = 246.</div></div><div class="g"><span class="h">E</span><span class="v">248<span class="uji">82 × 3 + 2</span></span><div class="x"><b>Salah tanda.</b> Bilangan tetapnya dibaca +2. Uji di suku awal langsung menolaknya: 3 × 2 + 2 = 8, padahal suku kedua 4.</div></div></div>
+  <div class="jwb"><span>C</span><p><b>Jawaban: C.</b> Aturan kali 3 kurang 2 cocok di semua suku, dan 3 × 82 − 2 = 244.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti tabungan yang setiap bulan dilipatkan tiga oleh orang tuamu, lalu kamu ambil 2 ribu untuk jajan. Selisih saldo dari bulan ke bulan ikut berlipat tiga.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Berhenti di 246 karena selisihnya jelas berlipat tiga, lalu lupa bahwa ada pengurangan kecil. Setelah menemukan pengalinya, cocokkan satu suku untuk mencari bilangan tambahannya.</span></div></div>
+</div>
+<!--B08-C03:selesai-->
+<!--B08-C04:mulai-->
+<div data-soal="HB-TIU-B08-C04" data-target="60">
+  <div class="soal">
+    <div class="meta"><span>Contoh 4</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 60 detik</span></div>
+    <p class="stem"><mark>Suku berikutnya</mark> dari barisan B3, E6, J12, Q24, Z48, … adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>K96</b></div><div><span class="h">B</span><b>K48</b></div><div><span class="h">C</span><b>I72</b></div><div><span class="h">D</span><b>K72</b></div><div><span class="h">E</span><b>K51</b></div></div>
+  </div>
+  <div class="guru"><b>SUK huruf-angka, nomor huruf n² + 1 melewati Z, angka × 2.</b> Kunci A. Kode: A <b>kunci</b> · B J-LANGKAH · C J-RATA · D J-RATA · E J-TIGA. Kerangka: SUK huruf-angka · huruf bernomor n² + 1 melewati Z · angka × 2 · angka belum dikali, selisih terakhir tetap (keduanya / angka saja), aturan angka dua suku awal. TO terdekat: tidak ada di TO P1; bukan C, F, J, O, U (narasi). Bukti: huruf: nomor 2, 5, 10, 17, 26 selisih 3, 5, 7, 9 (atau n² + 1) → 37 − 26 = 11; angka × 2. Slot: J-NOMOR (meleset), J-NOMOR (lupa berputar), J-TIGA, J-RATA; lupa berputar diwujudkan sebagai kurang 25 atau 27 (dua arah meleset). Pilihan huruf tidak diurutkan; huruf K dimiliki dua pilihan, angka 96 empat pilihan. Revisi cek buta 1: huruf K dan angka 96 tidak lagi terpusat di kunci: dua pilihan salah kini mengenakan satu kekeliruan pada huruf dan angka bersamaan (I72 selisih terakhir dianggap tetap, C51 aturan dua suku awal). Simpul unsur bersama: kunci seri dengan L96 dan J96. Revisi cek buta 2: angka 96 kini hanya di dua pilihan (K96, I96) dan huruf I serta K masing-masing dua pilihan; kunci bukan huruf tengah gugus. Jalur meleset sesudah Z (J-NOMOR) diganti I96 (selisih huruf tetap) dan K48 (angka belum dikali 2); meleset tetap dibahas di Kekeliruan yang Mungkin Terjadi. Revisi cek buta 3: tebakan bagian terbanyak per posisi (K dan 72) kini jatuh di K72, pilihan salah; I72 berbagi angka dengan K72, sehingga tidak ada pilihan yang menyendiri. C51 dan I96 diganti K72 dan K51.</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Setiap suku memuat huruf dan angka. Kalimat penentunya “Suku berikutnya”. Pisahkan deret huruf dan deret angka, lalu kerjakan masing-masing.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Huruf B, E, J, Q, Z bernomor 2, 5, 10, 17, 26, dengan selisih 3, 5, 7, 9. Selisih berikutnya 11, jadi nomornya 26 + 11 = 37. Abjad dianggap berputar: sesudah Z kembali ke A, sehingga nomor yang melewati 26 dikurangi 26: 37 − 26 = 11, yaitu K. Angka 3, 6, 12, 24, 48 selalu dikali 2, jadi angka berikutnya 48 × 2 = 96. Sukunya K96.</dd></div>
+    <div><dt>Cara lain</dt><dd>Nomor huruf sama dengan kuadrat urutannya ditambah 1: 1 × 1 + 1 = 2 sampai 5 × 5 + 1 = 26. Suku keenam bernomor 6 × 6 + 1 = 37, jadi hurufnya tetap K.</dd></div>
+    <div><dt>Cek balik</dt><dd>Hitung maju dari Z sebanyak 11 huruf: A, B, C, D, E, F, G, H, I, J, K. Huruf kesebelas adalah K.</dd></div>
+  </dl></div>
+  <div class="gugur"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">B</span><span class="v">K48<span class="uji">48 belum dikali 2</span></span><div class="x"><b>Berhenti satu langkah sebelum selesai.</b> Hurufnya benar, tetapi angka 48 disalin dari suku sebelumnya tanpa dikali 2. Langkah kali 2 belum dikerjakan.</div></div><div class="g"><span class="h">C</span><span class="v">I72<span class="uji">selisih terakhir tetap</span></span><div class="x"><b>Menganggap selisihnya selalu sama.</b> Selisih terakhir dianggap tetap untuk huruf dan angka: huruf 26 + 9 = 35, yaitu I, dan angka 48 + 24 = 72. Selisih huruf naik 2 setiap suku, dan angka dikali 2.</div></div><div class="g"><span class="h">D</span><span class="v">K72<span class="uji">48 + 24</span></span><div class="x"><b>Menganggap selisihnya selalu sama.</b> Hurufnya benar, tetapi angka dianggap bertambah tetap 24 seperti dari 24 ke 48: 48 + 24 = 72. Dari 3 ke 6 dan 6 ke 12 tambahannya sudah berbeda; yang tetap adalah kali 2.</div></div><div class="g"><span class="h">E</span><span class="v">K51<span class="uji">48 + 3</span></span><div class="x"><b>Menyimpulkan pola dari terlalu sedikit titik.</b> Hurufnya benar, tetapi aturan angka dibaca dari 3 ke 6 saja, yaitu tambah 3: 48 + 3 = 51. Dari 6 ke 12 aturan itu sudah gagal.</div></div></div>
+  <div class="jwb"><span>A</span><p><b>Jawaban: A.</b> Huruf bernomor 37 − 26 = 11 adalah K, dan angkanya 48 × 2 = 96.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti kursi bianglala yang berputar: sesudah kursi ke-26, kursi berikutnya kembali bernomor 1. Kursi ke-37 sama dengan kursi ke-11.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Menebak dari angka yang paling sering muncul di pilihan, lalu memilih K72. Hurufnya benar, tetapi angkanya mengikuti selisih tetap; angka deret ini selalu dikali 2. Hitung kedua bagian sendiri-sendiri.</span></div></div>
+</div>
+<!--B08-C04:selesai-->
+
+  <h3>Latihan</h3>
+  <p>Empat latihan berikut tersusun dari yang paling ringan, dengan target total {{WAKTU_LATIHAN}}. Kerjakan dengan pengatur waktu dan tanpa melihat pembahasan. Kunci dan pembahasannya ada di lampiran.</p>
+<!--B08-L01:mulai-->
+<div data-soal="HB-TIU-B08-L01" data-target="45">
+  <div class="soal">
+    <div class="meta"><span id="soal-B08-L01">Latihan 1<a class="ke" href="#bahas-B08-L01">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 45 detik</span></div>
+    <p class="stem">Bilangan yang tepat untuk <mark>mengisi titik-titik</mark> pada barisan 3, 5, …, 15, 23, 33 adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>7</b></div><div><span class="h">B</span><b>9</b></div><div><span class="h">C</span><b>10</b></div><div><span class="h">D</span><b>11</b></div><div><span class="h">E</span><b>13</b></div></div>
+  </div>
+  <div class="guru"><b>SUK deret celah, selisih bertingkat dua, celah di tengah.</b> Kunci B. Kode: A J-RATA · B <b>kunci</b> · C J-RATA · D J-NOMOR · E J-TIGA. Kerangka: SUK deret sebaris · selisih bertingkat dua (2, 4, 6, 8, 10) · celah di suku ke-3 · selisih pertama tetap, nilai tengah, selisih salah letak, dibaca berselang. TO terdekat: Bab 2 L4 (dua deret berselang); bukan 2, 6, 12, 20, 30 (narasi). Bukti: isian −50…100 dicoba: hanya 9 membuat deret mengikuti aturan sederhana Jarak kunci ke pilihan terdekat 1, median jarak 1,5. Slot: J-RATA, J-TIGA, J-NOMOR; J-RATA dipakai dua jalur. Isian −50 sampai 100 dicoba mesin: hanya 9 membuat deret mengikuti aturan sederhana.</div>
+</div>
+<!--B08-L01:selesai-->
+<!--B08-L02:mulai-->
+<div data-soal="HB-TIU-B08-L02" data-target="60">
+  <div class="soal">
+    <div class="meta"><span id="soal-B08-L02">Latihan 2<a class="ke" href="#bahas-B08-L02">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 60 detik</span></div>
+    <p class="stem">Tabel berikut memuat beberapa suku sebuah barisan.</p>
+    <table class="tb pola datar"><tbody><tr><th>Suku ke-</th><td>3</td><td>8</td><td>12</td><td>17</td></tr><tr><th>Nilai</th><td>37</td><td>82</td><td>118</td><td>163</td></tr></tbody></table>
+    <p class="stem"><mark>Selisih</mark> suku ke-75 dan suku ke-40 barisan itu adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>295</b></div><div><span class="h">B</span><b>306</b></div><div><span class="h">C</span><b>315</b></div><div><span class="h">D</span><b>324</b></div><div><span class="h">E</span><b>325</b></div></div>
+  </div>
+  <div class="guru"><b>SUK linear, selisih dua suku jauh.</b> Kunci C. Kode: A J-TANDA · B J-NOMOR · C <b>kunci</b> · D J-NOMOR · E J-PENGALIH. Kerangka: SUK linear 9n + 10 · 4 titik 3, 8, 12, 17 · tanya selisih dua suku jauh · tanda konstanta di satu suku, langkah ±1, konstanta ikut ditambah. TO terdekat: tidak ada di TO P1. Bukti: Up − Uq = 9 × (75 − 40); bilangan tetap saling menghapus Jarak kunci ke pilihan terdekat 9, median jarak 9. Slot: J-NOMOR, J-LANGKAH, J-TANDA, J-PENGALIH; J-LANGKAH diganti J-NOMOR selisih mentah (kekeliruan nomor meloncat Bab 8 no. 3). Revisi cek buta 1: pilihan E 1.260 (selisih mentah, terpencil) dibuang; barisan diganti 9n + 10 agar jalur tanda dan bilangan tetap berdekatan; ditambah langkah kurang satu. Kunci B → C.</div>
+</div>
+<!--B08-L02:selesai-->
+<!--B08-L03:mulai-->
+<div data-soal="HB-TIU-B08-L03" data-target="60">
+  <div class="soal">
+    <div class="meta"><span id="soal-B08-L03">Latihan 3<a class="ke" href="#bahas-B08-L03">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 60 detik</span></div>
+    <p class="stem"><mark>Suku berikutnya</mark> dari barisan MN, PK, TG, YB, … adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>EV</b></div><div><span class="h">B</span><b>DV</b></div><div><span class="h">C</span><b>FU</b></div><div><span class="h">D</span><b>DW</b></div><div><span class="h">E</span><b>FV</b></div></div>
+  </div>
+  <div class="guru"><b>SUK huruf cermin, huruf berputar + huruf cermin berjumlah 27.</b> Kunci A. Kode: A <b>kunci</b> · B J-NOMOR · C J-NOMOR · D J-RATA · E J-NOMOR. Kerangka: SUK huruf · huruf pertama selisih bertambah, melewati Z · huruf kedua (cermin, berjumlah 27, atau polanya sendiri −3, −4, −5, −6) · meleset −27 / −25, selisih terakhir tetap untuk kedua huruf. TO terdekat: tidak ada di TO P1; bukan D–W (narasi). Bukti: huruf pertama 13, 16, 20, 25 selisih 3, 4, 5 → 31 − 26 = 5 (E); huruf kedua = 27 − nomor huruf pertama (V). Kode = rencana slot. Huruf E dimiliki dua pilihan, huruf V dua pilihan. Revisi cek buta 1: E dan V tidak lagi terpusat di kunci: pilihan meleset kini konsisten pada huruf kedua (FU, DW), EU tetap; simpul unsur bersama jatuh di EU, bukan kunci. Catatan cek buta 2 untuk Tahap 6: pembahasan latihan ini wajib menyebut bahwa abjad berputar (sesudah Z kembali ke A), sebab soal tidak menyebutnya; narasi Bab 8 sudah menyatakannya. Revisi cek buta 3: pilihan disusun ulang mengikuti aturan kombinasi: gabungan bagian terbanyak per posisi (D atau F dengan V) adalah pilihan salah, huruf E kunci tidak terbanyak, dan setiap pilihan berbagi bagian. EU dan BY diganti DV dan FV (huruf pertama meleset, huruf kedua dari polanya sendiri); DW kini = selisih terakhir tetap untuk kedua huruf.</div>
+</div>
+<!--B08-L03:selesai-->
+<!--B08-L04:mulai-->
+<div data-soal="HB-TIU-B08-L04" data-target="90">
+  <div class="soal">
+    <div class="meta"><span id="soal-B08-L04">Latihan 4<a class="ke" href="#bahas-B08-L04">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 90 detik</span></div>
+    <p class="stem">Tabel berikut memuat lima suku sebuah barisan.</p>
+    <table class="tb pola datar"><tbody><tr><th>Suku ke-</th><td>1</td><td>2</td><td>4</td><td>5</td><td>8</td></tr><tr><th>Nilai</th><td>4</td><td>14</td><td>76</td><td>140</td><td>536</td></tr></tbody></table>
+    <p class="stem">Nilai <mark>suku ke-12</mark> barisan itu adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>1.064</b></div><div><span class="h">B</span><b>1.364</b></div><div><span class="h">C</span><b>1.540</b></div><div><span class="h">D</span><b>1.728</b></div><div><span class="h">E</span><b>1.764</b></div></div>
+  </div>
+  <div class="guru"><b>SUK pangkat tiga, n × (n² + 3), lima titik meloncat.</b> Kunci E. Kode: A J-RATA · B J-NOMOR · C J-TIGA · D J-KONST · E <b>kunci</b>. Kerangka: SUK pangkat tiga n(n² + 3) · 5 titik 1, 2, 4, 5, 8 · sidik bagi n · linear dua titik akhir, suku −1, kuadrat tiga titik akhir, n³. TO terdekat: TO P1 no. 38 (kuadrat 5 titik); di sini pangkat tiga. Bukti: derajat 3 tepat di 5 titik; kuadrat gagal; sidik bagi n: n² + 3 Jarak kunci ke pilihan terdekat 36, median jarak 182. Kode = rencana slot. Dirujuk Latihan A Bab 19 (J-KONST, pilihan D). Revisi cek buta 1: tabel dibuat lebih mudah dibaca (nomor 1, 2, 4, 5, 8: hasil bagi nilai : nomor = 4, 7, 19, 28, 67 = n² + 3 terlihat langsung); target tetap 90 detik (105 detik melampaui rata-rata TIU ±86 detik per soal, Putusan 5).</div>
+</div>
+<!--B08-L04:selesai-->
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Asal Rancangan Bab 8</h4>
+    <p>Putusan T2-1b: Bab 8 = 1 pembuka + 4 contoh + 4 latihan (dari 10 slot latihan laporan T2-C); slot bersyarat B1 (jumlah n suku) dan B2 (sisipan) gugur (T2-1), isinya menjadi Catatan (T2-7(6)). Dipilih L7 (Standar: deret sebaris, celah di tengah), L3 (HOTS: selisih dua suku jauh; hanya slot ini yang memuat data pengalih), L10 (HOTS+: huruf berputar dan huruf cermin), L6 (HOTS+: pangkat tiga atau nomor × linear). Alasan: tingkat naik; kekeliruan tersebar di K1, K2, K5, K6; kerangka paling jauh dari TO 38 (kuadrat koefisien bulat, a &gt; 0). Gugur: L1, L2 (linear, sudah di pembuka dan Contoh 1), L4 (kuadrat tanya nomor, dekat Contoh 2), L5 (kuadrat berpuncak, paling dekat TO 38), L8 (rekursif dua suku, pola sejenis di bank CAT), L9 (huruf tunggal, dekat Contoh 4).</p>
+    <p>Kebiasaan soal resmi atas tiga suku berurutan belum diverifikasi (Catatan siswa ditandai begitu).</p>
+  </div>
+
+  <div class="ringkas">
+    <h4>Ringkasan Bab 8</h4>
+    <ol>
+      <li><b>Kenaikan per suku</b> = selisih nilai dibagi selisih nomor. Bila tetap, polanya linear.</li>
+      <li>Tingkat selisih pertama yang tetap menunjukkan <b>pangkat pola</b>; pada pola kuadrat, <i>a</i> = selisih kedua dibagi 2.</li>
+      <li>Banyak titik paling sedikit banyak bilangan dalam rumus ditambah satu. Tiga suku belum membuktikan pola apa pun.</li>
+      <li>Dari suku ke-<i>p</i> ke suku ke-<i>q</i> ada <i>q</i> − <i>p</i> langkah; banyak langkah berbeda dengan nomor suku.</li>
+      <li>Deret sebaris diuji berurutan: selisih, hasil bagi, selang-seling, lalu selisih berlipat untuk aturan kali lalu tambah.</li>
+      <li>Huruf = nomor 1 sampai 26; lewat 26, kurangi 26. Pasangan dari dua ujung abjad berjumlah nomor 27.</li>
+    </ol>
+  </div>
+</section>

@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Bank Soal TKP HOTS — 12 Soal Uji Coba</title>
+<style>
+  @page { size: A4; margin: 18mm 16mm 20mm 16mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #1a1a1a;
+    margin: 0;
+  }
+  .cover {
+    page-break-after: always;
+    padding-top: 60mm;
+    text-align: center;
+  }
+  .cover .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 10pt;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #6b6b6b;
+    margin-bottom: 10mm;
+  }
+  .cover h1 {
+    font-size: 26pt;
+    margin: 0 0 6mm 0;
+    color: #111;
+  }
+  .cover .sub {
+    font-size: 12pt;
+    color: #444;
+    margin-bottom: 14mm;
+  }
+  .cover .meta-box {
+    display: inline-block;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6mm 10mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9.5pt;
+    color: #333;
+  }
+  .cover .meta-box div { margin: 1.5mm 0; }
+  .cover .meta-box b { color: #111; }
+  .cover .note {
+    margin-top: 16mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    color: #888;
+    max-width: 120mm;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2.section-title {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 13pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111;
+    border-bottom: 2px solid #111;
+    padding-bottom: 2mm;
+    margin: 0 0 6mm 0;
+  }
+
+  table.summary {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.8pt;
+    margin-bottom: 4mm;
+  }
+  table.summary th, table.summary td {
+    border: 1px solid #ccc;
+    padding: 2mm 2.2mm;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.summary th {
+    background: #f2f2f2;
+    font-weight: 700;
+  }
+  table.summary td.center { text-align: center; }
+
+  .soal {
+    page-break-inside: avoid;
+    margin-bottom: 9mm;
+    padding-bottom: 7mm;
+    border-bottom: 1px solid #ddd;
+  }
+  .soal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 3mm;
+  }
+  .soal-num {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 11.5pt;
+    color: #111;
+  }
+  .badge {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    padding: 1mm 3mm;
+    border-radius: 10px;
+    color: #fff;
+    white-space: nowrap;
+  }
+  .dim-Profesionalisme { background: #2f5fa8; }
+  .dim-PelayananPublik { background: #1f8a56; }
+  .dim-JejaringKerja { background: #6b3fa0; }
+  .dim-SosialBudaya { background: #c9701d; }
+  .dim-TIK { background: #0f8b8d; }
+  .dim-AntiRadikalisme { background: #b3282d; }
+
+  .stem { margin-bottom: 3mm; text-align: justify; }
+
+  .options { margin: 0 0 4mm 0; padding: 0; list-style: none; }
+  .options li {
+    display: flex;
+    gap: 2.5mm;
+    margin-bottom: 1.6mm;
+    align-items: flex-start;
+  }
+  .opt-letter {
+    flex: 0 0 auto;
+    font-weight: 700;
+    width: 5mm;
+  }
+  .opt-letter.kunci { color: #1f8a56; }
+  .opt-text { flex: 1 1 auto; }
+  .opt-text.kunci { font-weight: 700; }
+
+  .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.6pt;
+    background: #f7f7f7;
+    border-left: 3px solid #111;
+    padding: 2.5mm 3.5mm;
+    margin-bottom: 2.5mm;
+  }
+  .meta div { margin: 0.8mm 0; }
+  .meta .label { font-weight: 700; display: inline-block; width: 22mm; color: #444; }
+
+  .pembahasan {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    background: #fbfbf5;
+    border: 1px solid #e6e2c8;
+    padding: 3mm 4mm;
+  }
+  .pembahasan .ph-title {
+    font-weight: 700;
+    font-size: 8.6pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6b6320;
+    margin-bottom: 1.5mm;
+  }
+  .pembahasan ol { margin: 0; padding-left: 4mm; }
+  .pembahasan li { margin-bottom: 1.3mm; text-align: justify; }
+
+  .footer-note {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    color: #999;
+    text-align: center;
+    margin-top: 10mm;
+  }
+
+  code.sumbu {
+    background: #eee;
+    padding: 0.2mm 1.2mm;
+    border-radius: 3px;
+    font-family: "Courier New", monospace;
+    font-size: 8.2pt;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="kicker">Draf Uji Coba &middot; Bukan Bank Final</div>
+  <h1>Bank Soal TKP&nbsp;HOTS</h1>
+  <div class="sub">12 Soal Percobaan — Klaster Poin 3&ndash;4&ndash;5 (Sumbu Presisi)</div>
+  <div class="meta-box">
+    <div><b>Engine:</b> ENGINE_GENERATE_SOAL_TKP.md v1.1</div>
+    <div><b>Mekanisme:</b> Pilar 3 &mdash; Taksonomi Distraktor 5 Poin + Sumbu Presisi (S1&ndash;S5)</div>
+    <div><b>Cakupan dimensi:</b> 6 dimensi resmi (Permenpan RB No. 1/2023), 2 soal/dimensi</div>
+    <div><b>Tanggal cetak:</b> 27 Agustus 2026</div>
+    <div><b>Tujuan:</b> Verifikasi tim ahli sebelum masuk bank soal produksi</div>
+  </div>
+  <p class="note">
+    Dokumen ini memuat kunci jawaban dan pembahasan lengkap (mode belajar) untuk keperluan
+    review internal &mdash; bukan format ujian. Setiap soal menyertakan tag sumbu presisi
+    (S1&ndash;S5) yang menjelaskan alasan gagal tiap distraktor kuat (poin 3 &amp; 4),
+    sesuai Gerbang 3 pada dokumen engine.
+  </p>
+</div>
+
+<h2 class="section-title">Ringkasan Paket</h2>
+<table class="summary">
+  <tr>
+    <th>No</th><th>Dimensi</th><th>Konstruk (L2)</th><th class="center">Kunci</th>
+    <th class="center">Sumbu Poin 4</th><th class="center">Sumbu Poin 3</th><th class="center">Level</th>
+  </tr>
+  <tr><td>1</td><td>Profesionalisme</td><td>prioritas audit rutin vs penanganan cepat dugaan kejanggalan</td><td class="center">C</td><td class="center">S3</td><td class="center">S1</td><td class="center">Tinggi</td></tr>
+  <tr><td>2</td><td>Profesionalisme</td><td>tenggat input nilai vs keadilan penilaian esai</td><td class="center">A</td><td class="center">S5</td><td class="center">S4</td><td class="center">Sangat Tinggi</td></tr>
+  <tr><td>3</td><td>Pelayanan Publik</td><td>kepatuhan jadwal bus vs skema pendapatan sopir</td><td class="center">E</td><td class="center">S2</td><td class="center">S1</td><td class="center">Tinggi</td></tr>
+  <tr><td>4</td><td>Pelayanan Publik</td><td>efisiensi antre digital vs akses kelompok rentan</td><td class="center">B</td><td class="center">S4</td><td class="center">S2</td><td class="center">Sangat Tinggi</td></tr>
+  <tr><td>5</td><td>Jejaring Kerja</td><td>proses etik tiap kampus vs linimasa riset bersama</td><td class="center">D</td><td class="center">S3</td><td class="center">S4</td><td class="center">Sangat Tinggi</td></tr>
+  <tr><td>6</td><td>Jejaring Kerja</td><td>kerelawanan kader vs konsistensi data gizi</td><td class="center">A</td><td class="center">S5</td><td class="center">S3</td><td class="center">Tinggi</td></tr>
+  <tr><td>7</td><td>Sosial Budaya</td><td>target produksi shift vs pemerataan waktu ibadah lintas agama</td><td class="center">C</td><td class="center">S2</td><td class="center">S4</td><td class="center">Sangat Tinggi</td></tr>
+  <tr><td>8</td><td>Sosial Budaya</td><td>kekhasan acara vs keterwakilan budaya warga pendatang</td><td class="center">E</td><td class="center">S3</td><td class="center">S2</td><td class="center">Tinggi</td></tr>
+  <tr><td>9</td><td>TIK</td><td>efisiensi presensi wajah vs keamanan data biometrik</td><td class="center">B</td><td class="center">S5</td><td class="center">S1</td><td class="center">Sangat Tinggi</td></tr>
+  <tr><td>10</td><td>TIK</td><td>kecepatan layanan digital vs jangkauan warga minim akses</td><td class="center">D</td><td class="center">S4</td><td class="center">S2</td><td class="center">Sangat Tinggi</td></tr>
+  <tr><td>11</td><td>Anti Radikalisme</td><td>respons cepat isu grup kerja vs kehati-hatian sebelum klarifikasi</td><td class="center">C</td><td class="center">S3</td><td class="center">S2</td><td class="center">Tinggi</td></tr>
+  <tr><td>12</td><td>Anti Radikalisme</td><td>manfaat pelatihan gratis vs materi bermuatan intoleran</td><td class="center">A</td><td class="center">S1</td><td class="center">S3</td><td class="center">Sangat Tinggi</td></tr>
+</table>
+<p style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:8pt;color:#888;">
+  S1 Urutan/Timing &middot; S2 Skop/Cakupan &middot; S3 Kewenangan/Peran &middot; S4 Keberlanjutan/Institusionalisasi &middot; S5 Verifikasi/Kepastian
+</p>
+
+<div style="page-break-before: always;"></div>
+<h2 class="section-title">Soal 1&ndash;12</h2>
+
+<!-- SOAL 1 -->
+<div class="soal">
+  <div class="soal-head">
+    <span class="soal-num">Soal No 1</span>
+    <span class="badge dim-Profesionalisme">Profesionalisme</span>
+  </div>
+  <div class="stem">
+    Anda auditor internal di sebuah BUMN. Anda sedang menyelesaikan audit rutin unit keuangan
+    yang harus tuntas akhir minggu ini, ketika pimpinan meminta Anda mendadak turut memeriksa
+    dugaan kejanggalan pengadaan di unit lain yang muncul kemarin. Langkah paling tepat adalah&hellip;
+  </div>
+  <ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menyelidiki langsung dugaan kejanggalan pengadaan tersebut secara mandiri, sambil tetap menuntaskan audit rutin sesuai jadwal kerja yang sudah berjalan.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Mengalihkan penuh perhatian ke dugaan kejanggalan pengadaan karena itu permintaan pimpinan yang harus diutamakan.</span></li>
+    <li><span class="opt-letter kunci">C.</span><span class="opt-text kunci">Mengonfirmasi prioritas kedua tugas kepada pimpinan, sambil segera mengamankan bukti awal kejanggalan tanpa menghentikan audit rutin yang berjalan.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menuntaskan audit rutin sesuai linimasa terlebih dahulu, kemudian menangani dugaan kejanggalan pengadaan segera setelah itu selesai.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menunggu keputusan resmi dari pimpinan sebelum menangani salah satu dari dua penugasan tersebut.</span></li>
+  </ul>
+  <div class="meta">
+    <div><span class="label">Kunci</span>C</div>
+    <div><span class="label">Konstruk</span>prioritas audit rutin terjadwal vs kecepatan penanganan dugaan kejanggalan yang rawan bukti hilang</div>
+    <div><span class="label">Poin</span>A=4 <code class="sumbu">S3</code> &middot; B=2+J1("permintaan pimpinan") &middot; C=5 (kunci) &middot; D=3 <code class="sumbu">S1</code> &middot; E=1</div>
+    <div><span class="label">Level</span>Tinggi</div>
+  </div>
+  <div class="pembahasan">
+    <div class="ph-title">Pembahasan</div>
+    <ol>
+      <li>Dilema: audit rutin sudah terjadwal ketat, tapi dugaan kejanggalan pengadaan berisiko kehilangan bukti kalau tidak segera ditangani.</li>
+      <li>C menutup kutub kewenangan lewat "mengonfirmasi prioritas ke pimpinan" dan kutub kecepatan lewat "segera mengamankan bukti awal" &mdash; dua langkah berjalan beriringan, bukan berurutan menunggu.</li>
+      <li>A dan D sama-sama proaktif dan menutup dua kutub secara permukaan. A menyelidiki dugaan kejanggalan <i>sendiri</i> tanpa konfirmasi prioritas/kewenangan dari pimpinan &mdash; berpotensi tumpang tindih lingkup audit yang bukan otoritasnya (S3 gagal). D menyelesaikan audit rutin dulu baru menangani kejanggalan &mdash; urutan ini menunda penanganan isu yang rawan bukti hilang (S1 gagal), dan karena risikonya lebih langsung, D dinilai lebih rendah dari A.</li>
+      <li><b>Kunci vs A:</b> A bertindak tanpa memastikan kewenangannya menangani lingkup pengadaan; C memastikan itu dulu ke pimpinan sebelum bertindak.<br>
+      <b>Kunci vs D:</b> D menunda penanganan bukti sampai audit rutin selesai; C mengamankan bukti awal secara paralel, bukan menunggu.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- SOAL 2 -->
+<div class="soal">
+  <div class="soal-head">
+    <span class="soal-num">Soal No 2</span>
+    <span class="badge dim-Profesionalisme">Profesionalisme</span>
+  </div>
+  <div class="stem">
+    Anda guru yang mengoreksi ratusan lembar jawaban ujian akhir semester. Sistem sekolah
+    mewajibkan nilai diinput paling lambat besok pagi untuk pencetakan rapor, sementara Anda
+    menemukan sebagian jawaban esai butuh waktu lebih lama untuk dinilai secara adil karena
+    jawabannya bervariasi dan tidak bisa dicocokkan kunci baku. Apa tindakan paling tepat? (Profesionalisme)
+  </div>
+  <ul class="options">
+    <li><span class="opt-letter kunci">A.</span><span class="opt-text kunci">Menyusun rubrik penilaian esai lebih rinci agar koreksi lebih cepat, diterapkan bersama rekan guru dengan kriteria yang sama.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Membuat catatan penyesuaian khusus untuk tiap jawaban esai yang sulit dinilai pada ujian kali ini saja agar tetap adil.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Menunda input nilai esai ini sampai ada kelonggaran waktu tambahan dari pihak sekolah.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Meminta rekan guru membantu mengoreksi separuh jawaban esai yang tersisa, menggunakan penilaian masing-masing secara mandiri.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menginput nilai esai apa adanya sesuai kunci baku agar tenggat sistem sekolah besok pagi tetap terpenuhi.</span></li>
+  </ul>
+  <div class="meta">
+    <div><span class="label">Kunci</span>A</div>
+    <div><span class="label">Konstruk</span>tenggat input nilai untuk rapor vs keadilan penilaian esai yang bervariasi</div>
+    <div><span class="label">Poin</span>A=5 (kunci) &middot; B=3 <code class="sumbu">S4</code> &middot; C=1 &middot; D=4 <code class="sumbu">S5</code> &middot; E=2+J1("besok pagi")</div>
+    <div><span class="label">Level</span>Sangat Tinggi</div>
+  </div>
+  <div class="pembahasan">
+    <div class="ph-title">Pembahasan</div>
+    <ol>
+      <li>Dilema: tenggat administratif tidak bisa mundur, tapi penilaian esai yang terburu-buru berisiko tidak adil.</li>
+      <li>A menutup kutub kecepatan lewat rubrik rinci (mempercepat proses koreksi) dan kutub keadilan lewat kriteria yang sama diterapkan bersama rekan &mdash; konsistensi terjamin, bukan sekadar dibagi.</li>
+      <li>D dan B sama-sama proaktif. D melibatkan rekan guru untuk mempercepat (menutup kutub tenggat), tapi tiap guru menilai <i>secara mandiri</i> tanpa kriteria bersama &mdash; hasilnya rawan tidak konsisten antarpenilai (S5 gagal). B membuat penyesuaian yang menjaga keadilan untuk ujian ini, tapi sifatnya "khusus kali ini" &mdash; tidak jadi pedoman baku untuk ujian berikutnya (S4 gagal).</li>
+      <li><b>Kunci vs D:</b> D mempercepat tapi tanpa jaminan konsistensi penilaian; A mengikat rekan guru pada kriteria yang sama sehingga hasilnya terverifikasi.<br>
+      <b>Kunci vs B:</b> B adil untuk ujian ini saja; A menghasilkan rubrik yang bisa dipakai ulang.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- SOAL 3 -->
+<div class="soal">
+  <div class="soal-head">
+    <span class="soal-num">Soal No 3</span>
+    <span class="badge dim-PelayananPublik">Pelayanan Publik</span>
+  </div>
+  <div class="stem">
+    Anda kepala UPT terminal bus kota. Warga mengeluh jadwal keberangkatan bus sering meleset
+    karena sopir menunggu penumpang penuh dulu, sementara penumpang yang datang tepat waktu
+    jadi telat sampai tujuan. Sopir mengandalkan penumpang penuh karena pendapatan mereka
+    bergantung jumlah penumpang, bukan gaji tetap. Langkah paling tepat adalah&hellip; (Pelayanan Publik)
+  </div>
+  <ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menyerahkan sepenuhnya penentuan waktu keberangkatan kepada sopir sesuai kebiasaan lama di terminal.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Menegur secara langsung dan tegas tiap sopir yang kerap berangkat terlambat agar segera mematuhi jadwal keberangkatan yang berlaku.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Meminta sopir tetap berangkat tepat waktu meski penumpang belum penuh, sambil mencatat keluhan warga untuk laporan bulanan.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Mengusulkan perubahan skema pendapatan sopir dari berbasis penumpang menjadi gaji tetap kepada manajemen terminal.</span></li>
+    <li><span class="opt-letter kunci">E.</span><span class="opt-text kunci">Menerapkan jadwal keberangkatan tetap dengan insentif bagi sopir tepat waktu, sambil mengusulkan evaluasi menyeluruh skema pendapatan sopir.</span></li>
+  </ul>
+  <div class="meta">
+    <div><span class="label">Kunci</span>E</div>
+    <div><span class="label">Konstruk</span>kepatuhan jadwal keberangkatan vs skema pendapatan sopir yang bergantung penumpang penuh</div>
+    <div><span class="label">Poin</span>A=1 &middot; B=4 <code class="sumbu">S2</code> &middot; C=2+J2 &middot; D=3 <code class="sumbu">S1</code> &middot; E=5 (kunci)</div>
+    <div><span class="label">Level</span>Tinggi</div>
+  </div>
+  <div class="pembahasan">
+    <div class="ph-title">Pembahasan</div>
+    <ol>
+      <li>Dilema: jadwal harus dihormati demi penumpang, tapi kepatuhan langsung merugikan pendapatan sopir yang bergantung jumlah penumpang.</li>
+      <li>E menutup kutub jadwal lewat insentif tepat waktu (solusi berjalan sekarang) dan kutub sistemik lewat usulan evaluasi skema pendapatan &mdash; dua mekanisme, bukan satu tindakan sesaat.</li>
+      <li>B dan D sama-sama proaktif. B menegur sopir yang sering telat &mdash; hanya menyasar individu, tidak menyentuh akar sistem insentif yang memengaruhi seluruh sopir (S2 gagal). D mengusulkan perubahan skema pendapatan yang sistemik, tapi proses persetujuannya panjang, sementara jadwal tetap meleset selama masa tunggu itu tanpa solusi sementara (S1 gagal).</li>
+      <li><b>Kunci vs B:</b> B menyasar sebagian sopir saja; E memberi insentif untuk seluruh sopir sekaligus mengusulkan solusi sistemik.<br>
+      <b>Kunci vs D:</b> D tidak punya solusi untuk kondisi saat ini; E memberi solusi jangka pendek (insentif) sambil tetap mengusulkan solusi jangka panjang.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- SOAL 4 -->
+<div class="soal">
+  <div class="soal-head">
+    <span class="soal-num">Soal No 4</span>
+    <span class="badge dim-PelayananPublik">Pelayanan Publik</span>
+  </div>
+  <div class="stem">
+    Anda petugas Disdukcapil. Lansia dan penyandang disabilitas yang mengurus KTP elektronik
+    sering kesulitan mengikuti proses antre digital berbasis aplikasi, sehingga banyak yang
+    tidak terlayani dalam sehari, sementara loket reguler penuh pemohon lain yang lancar
+    memakai aplikasi. Apa yang Anda lakukan? (Pelayanan Publik)
+  </div>
+  <ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Membantu lansia dan penyandang disabilitas mengoperasikan aplikasi antre setiap kali mereka datang ke loket.</span></li>
+    <li><span class="opt-letter kunci">B.</span><span class="opt-text kunci">Membuka loket prioritas permanen bagi lansia dan disabilitas dengan kuota menyesuaikan pemohon harian, terpisah dari sistem digital.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Menyediakan loket prioritas khusus dengan kuota tetap lima orang per hari bagi lansia dan penyandang disabilitas setiap harinya.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Mengarahkan seluruh pemohon termasuk lansia untuk tetap mengikuti prosedur antre digital sesuai kebijakan yang berlaku.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Mempersilakan lansia dan penyandang disabilitas mencoba sendiri mengikuti antre digital seperti pemohon lain.</span></li>
+  </ul>
+  <div class="meta">
+    <div><span class="label">Kunci</span>B</div>
+    <div><span class="label">Konstruk</span>efisiensi antre digital bagi mayoritas vs akses layanan bagi kelompok rentan</div>
+    <div><span class="label">Poin</span>A=4 <code class="sumbu">S4</code> &middot; B=5 (kunci) &middot; C=3 <code class="sumbu">S2</code> &middot; D=2+J4 &middot; E=1</div>
+    <div><span class="label">Level</span>Sangat Tinggi</div>
+  </div>
+  <div class="pembahasan">
+    <div class="ph-title">Pembahasan</div>
+    <ol>
+      <li>Dilema: sistem digital penting untuk efisiensi mayoritas, tapi tanpa jalur lain, kelompok rentan tersisih dari layanan hari itu juga.</li>
+      <li>B menutup kutub akses lewat loket prioritas yang permanen (bukan bantuan sesaat) dan kutub efisiensi lewat kuota yang menyesuaikan kebutuhan riil, terpisah dari sistem digital reguler.</li>
+      <li>A dan C sama-sama menyediakan solusi konkret. A membantu langsung tiap kali ada yang datang &mdash; solutif hari itu, tapi bergantung ada petugas yang membantu; begitu tidak ada, tidak ada jaminan yang sama (S4 gagal). C sudah melembagakan loket khusus (bagus), tapi kuota "lima orang per hari" terlalu kaku dibanding kebutuhan riil, sehingga tetap ada yang tersisih meski loket sudah ada (S2 gagal).</li>
+      <li><b>Kunci vs A:</b> A tidak jadi mekanisme baku; B berbentuk loket permanen yang tidak bergantung petugas tertentu.<br>
+      <b>Kunci vs C:</b> C punya kuota tetap yang bisa kehabisan; B menyesuaikan kuota dengan jumlah pemohon harian.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- SOAL 5 -->
+<div class="soal">
+  <div class="soal-head">
+    <span class="soal-num">Soal No 5</span>
+    <span class="badge dim-JejaringKerja">Jejaring Kerja</span>
+  </div>
+  <div class="stem">
+    Anda ketua tim riset gabungan tiga universitas untuk proyek penelitian bersama. Salah satu
+    universitas mitra beberapa kali terlambat mengirim data lapangan yang jadi dasar analisis
+    tim inti, dengan alasan proses etik penelitian di kampusnya memang panjang. Sikap Anda
+    adalah&hellip; (Jejaring Kerja)
+  </div>
+  <ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Melaporkan keterlambatan pengiriman data ini secara resmi kepada pimpinan universitas mitra, sambil menunggu arahan lebih lanjut sebelum bertindak.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Mengikuti ritme pengiriman data yang bisa disediakan oleh universitas mitra, tanpa penyesuaian apapun dari tim inti.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Meminta pihak etik kampus mitra segera mempercepat proses persetujuan secara langsung, supaya seluruh pengiriman data sesuai linimasa tim inti.</span></li>
+    <li><span class="opt-letter kunci">D.</span><span class="opt-text kunci">Mengajak mitra menyepakati linimasa yang mengakomodasi variasi proses etik tiap kampus, disertai checkpoint pengiriman data yang dipantau bersama.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Menyesuaikan jadwal analisis tim inti khusus untuk periode pengumpulan data kali ini agar tidak terganggu keterlambatan.</span></li>
+  </ul>
+  <div class="meta">
+    <div><span class="label">Kunci</span>D</div>
+    <div><span class="label">Konstruk</span>proses etik tiap kampus yang perlu waktu vs linimasa analisis tim inti yang sudah disepakati</div>
+    <div><span class="label">Poin</span>A=2+J3 &middot; B=1 &middot; C=4 <code class="sumbu">S3</code> &middot; D=5 (kunci) &middot; E=3 <code class="sumbu">S4</code></div>
+    <div><span class="label">Level</span>Sangat Tinggi</div>
+  </div>
+  <div class="pembahasan">
+    <div class="ph-title">Pembahasan</div>
+    <ol>
+      <li>Dilema: proses etik tiap kampus tidak bisa dipercepat sembarangan, tapi keterlambatan data terus mengganggu linimasa yang sudah disepakati bersama.</li>
+      <li>D menutup kutub linimasa lewat kesepakatan bersama yang mengakomodasi variasi proses etik dan kutub keberlanjutan lewat checkpoint yang bisa dipantau semua mitra &mdash; jadi mekanisme berulang, bukan solusi sesaat.</li>
+      <li>C dan E sama-sama berupaya menyelesaikan masalah. C meminta pihak etik kampus mitra mempercepat proses &mdash; ini bukan wewenang ketua tim riset lintas kampus untuk mendikte proses internal institusi lain (S3 gagal). E menyesuaikan jadwal tim inti "khusus periode kali ini" &mdash; solutif untuk saat ini, tapi tidak ada kesepakatan checkpoint untuk proyek gabungan berikutnya (S4 gagal).</li>
+      <li><b>Kunci vs C:</b> C mendikte proses institusi lain yang bukan levelnya; D mengajak menyepakati linimasa bersama, bukan memaksa proses etik dipercepat.<br>
+      <b>Kunci vs E:</b> E menyesuaikan diri sekali saja; D membentuk checkpoint yang berlaku sepanjang proyek dan bisa dipakai ulang.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- SOAL 6 -->
+<div class="soal">
+  <div class="soal-head">
+    <span class="soal-num">Soal No 6</span>
+    <span class="badge dim-JejaringKerja">Jejaring Kerja</span>
+  </div>
+  <div class="stem">
+    Anda koordinator program gizi Puskesmas yang bekerja sama dengan kader posyandu di sepuluh
+    dusun. Sebagian kader melaporkan data balita lewat catatan tulisan tangan yang berbeda-beda
+    gaya pencatatannya, membuat rekapitulasi data gizi kecamatan sering tidak sinkron dan
+    memakan waktu lama untuk diolah. Langkah pertama yang Anda ambil adalah&hellip; (Jejaring Kerja)
+  </div>
+  <ul class="options">
+    <li><span class="opt-letter kunci">A.</span><span class="opt-text kunci">Menyusun format pencatatan sederhana yang seragam untuk seluruh kader, lalu memverifikasi hasil pengisian pada bulan pertama penerapan.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Mewajibkan seluruh kader mencatat data balita langsung lewat aplikasi digital mulai bulan depan.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Mengingatkan kader agar lebih cermat dan konsisten saat mencatat data balita di posyandu.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Meneruskan cara pencatatan masing-masing kader seperti biasa selama ini karena mereka bekerja sukarela.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Mengadakan pertemuan sosialisasi satu kali untuk mengenalkan cara pencatatan yang lebih rapi dan seragam kepada seluruh kader posyandu.</span></li>
+  </ul>
+  <div class="meta">
+    <div><span class="label">Kunci</span>A</div>
+    <div><span class="label">Konstruk</span>kerelawanan dan keterbatasan waktu kader vs konsistensi data gizi lintas dusun</div>
+    <div><span class="label">Poin</span>A=5 (kunci) &middot; B=3 <code class="sumbu">S3</code> &middot; C=2+J4 &middot; D=1 &middot; E=4 <code class="sumbu">S5</code></div>
+    <div><span class="label">Level</span>Tinggi</div>
+  </div>
+  <div class="pembahasan">
+    <div class="ph-title">Pembahasan</div>
+    <ol>
+      <li>Dilema: kader bekerja sukarela dengan keterbatasan waktu, tapi data yang tidak konsisten menghambat pengambilan keputusan program.</li>
+      <li>A menutup kutub kemudahan kader lewat format sederhana dan kutub konsistensi lewat verifikasi hasil pengisian pada bulan pertama &mdash; ada langkah pengecekan, bukan asumsi format seragam otomatis dipakai benar.</li>
+      <li>E dan B sama-sama proaktif membenahi cara pencatatan. E mengadakan sosialisasi satu kali tentang "cara pencatatan lebih rapi dan seragam" &mdash; tidak ada format konkret yang dibakukan maupun pengecekan hasil sesudahnya (S5 gagal). B mewajibkan aplikasi digital yang berpotensi efektif, tapi diputuskan sepihak tanpa melibatkan pembina posyandu/kepala dusun yang berwenang atas kader di wilayahnya, dan mengabaikan keterbatasan waktu kader yang bekerja sukarela (S3 gagal).</li>
+      <li><b>Kunci vs E:</b> E memberi arahan umum tanpa format baku maupun verifikasi; A memberi format konkret dan mengecek hasil pengisiannya.<br>
+      <b>Kunci vs B:</b> B mewajibkan perubahan besar sepihak tanpa melibatkan pihak berwenang di wilayah kader; A memakai format sederhana yang wajar diterapkan bersama.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- SOAL 7 -->
+<div class="soal">
+  <div class="soal-head">
+    <span class="soal-num">Soal No 7</span>
+    <span class="badge dim-SosialBudaya">Sosial Budaya</span>
+  </div>
+  <div class="stem">
+    Anda supervisor pabrik dengan pekerja lintas agama. Jadwal shift saat ini membuat pekerja
+    Muslim kesulitan menunaikan salat Jumat karena jam istirahat terlalu singkat, sementara
+    pekerja dari agama lain juga punya waktu ibadah rutin masing-masing yang selama ini tidak
+    pernah diakomodasi jadwal shift. Bagaimana sikap Anda? (Sosial Budaya)
+  </div>
+  <ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Meminta pekerja menyesuaikan waktu ibadah masing-masing di luar jam kerja resmi pabrik.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Memperpanjang jam istirahat khusus pada hari Jumat agar seluruh pekerja Muslim bisa menunaikan salat Jumat dengan tenang.</span></li>
+    <li><span class="opt-letter kunci">C.</span><span class="opt-text kunci">Menyusun kebijakan waktu ibadah tetap yang mengakomodasi seluruh kelompok agama secara proporsional, dikoordinasikan dengan bagian produksi.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Melanjutkan jadwal shift seperti biasa karena sudah ditetapkan sejak awal produksi.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Mengizinkan pekerja dari agama manapun mengajukan penyesuaian waktu istirahat saat mereka punya keperluan ibadah tertentu.</span></li>
+  </ul>
+  <div class="meta">
+    <div><span class="label">Kunci</span>C</div>
+    <div><span class="label">Konstruk</span>target produksi shift vs pemerataan waktu ibadah lintas kelompok agama</div>
+    <div><span class="label">Poin</span>A=2+J2 &middot; B=4 <code class="sumbu">S2</code> &middot; C=5 (kunci) &middot; D=1 &middot; E=3 <code class="sumbu">S4</code></div>
+    <div><span class="label">Level</span>Sangat Tinggi</div>
+  </div>
+  <div class="pembahasan">
+    <div class="ph-title">Pembahasan</div>
+    <ol>
+      <li>Dilema: produksi harus tetap sesuai target shift, tapi jadwal saat ini mengabaikan kebutuhan ibadah semua kelompok agama, bukan cuma satu kelompok.</li>
+      <li>C menutup kutub keberagaman lewat kebijakan yang mencakup seluruh kelompok agama secara proporsional dan kutub produksi lewat koordinasi eksplisit dengan bagian produksi.</li>
+      <li>B dan E sama-sama merespons persoalan. B memperpanjang istirahat Jumat &mdash; menyelesaikan masalah yang disebut duluan di stem, tapi kelompok agama lain yang disebut L2 tetap terabaikan (S2 gagal). E membuka ruang pengajuan bagi semua kelompok agama (skopnya sudah tepat), tapi sifatnya "mengajukan" kasus per kasus, tidak ada jadwal ibadah yang melekat permanen dalam sistem shift (S4 gagal).</li>
+      <li><b>Kunci vs B:</b> B hanya mengakomodasi satu kelompok; C mengakomodasi seluruh kelompok agama secara proporsional.<br>
+      <b>Kunci vs E:</b> E bergantung inisiatif pekerja mengajukan tiap kali; C sudah melekat dalam kebijakan shift yang tetap.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- SOAL 8 -->
+<div class="soal">
+  <div class="soal-head">
+    <span class="soal-num">Soal No 8</span>
+    <span class="badge dim-SosialBudaya">Sosial Budaya</span>
+  </div>
+  <div class="stem">
+    Anda ketua RW di perumahan dengan warga dari berbagai daerah dan latar belakang budaya.
+    Perayaan hari kemerdekaan setiap tahun selalu memakai format lomba dan menu makanan khas
+    satu daerah tertentu (asal ketua RW sebelumnya), sehingga warga pendatang merasa acara itu
+    bukan untuk mereka dan memilih tidak ikut serta. Apa yang Anda lakukan? (Sosial Budaya)
+  </div>
+  <ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menyediakan sesi khusus bergantian bagi tiap kelompok budaya untuk menampilkan tradisi khas masing-masing dalam rangkaian acara peringatan hari itu.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Menyerahkan kepada warga pendatang pilihan untuk ikut atau tidak dalam perayaan yang sudah berjalan selama ini.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Mengubah format perayaan tahun ini agar mencakup menu dan permainan dari berbagai daerah asal warga perumahan.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Mempertahankan format perayaan seperti tahun-tahun sebelumnya karena sudah menjadi ciri khas acara RW ini.</span></li>
+    <li><span class="opt-letter kunci">E.</span><span class="opt-text kunci">Mengajak perwakilan warga dari berbagai latar belakang menyusun format perayaan yang memadukan unsur budaya dalam satu rangkaian acara.</span></li>
+  </ul>
+  <div class="meta">
+    <div><span class="label">Kunci</span>E</div>
+    <div><span class="label">Konstruk</span>kekhasan acara yang meriah vs keterwakilan budaya warga pendatang</div>
+    <div><span class="label">Poin</span>A=3 <code class="sumbu">S2</code> &middot; B=1 &middot; C=4 <code class="sumbu">S3</code> &middot; D=2+J1("ciri khas") &middot; E=5 (kunci)</div>
+    <div><span class="label">Level</span>Tinggi</div>
+  </div>
+  <div class="pembahasan">
+    <div class="ph-title">Pembahasan</div>
+    <ol>
+      <li>Dilema: perayaan perlu tetap punya kekhasan agar meriah, tapi kekhasan yang hanya mewakili satu kelompok membuat warga lain merasa tersisih.</li>
+      <li>E menutup kutub legitimasi lewat proses melibatkan warga dan kutub kebersamaan lewat perpaduan budaya dalam satu rangkaian acara, bukan acara terpisah-pisah.</li>
+      <li>C dan A sama-sama berupaya inklusif. C mengubah format agar mencakup berbagai daerah &mdash; cakupannya sudah tepat, tapi diputuskan sendiri oleh ketua RW tanpa melibatkan warga dalam prosesnya (S3 gagal). A menyediakan sesi bergantian per kelompok budaya &mdash; sudah terstruktur, tapi hasilnya tetap tersegmentasi per kelompok, bukan perayaan yang benar-benar terpadu (S2 gagal).</li>
+      <li><b>Kunci vs C:</b> C diputuskan sepihak; E disusun bersama perwakilan warga sehingga legitimasinya lebih kuat.<br>
+      <b>Kunci vs A:</b> A memisahkan kelompok dalam sesi bergantian; E memadukan unsur budaya dalam satu rangkaian acara yang sama.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- SOAL 9 -->
+<div class="soal">
+  <div class="soal-head">
+    <span class="soal-num">Soal No 9</span>
+    <span class="badge dim-TIK">TIK</span>
+  </div>
+  <div class="stem">
+    Anda kepala tata usaha kecamatan yang baru menerapkan sistem presensi berbasis pengenalan
+    wajah untuk pegawai. Sistem ini mempercepat rekap kehadiran, namun vendor penyedia
+    menyimpan data wajah pegawai di server miliknya tanpa kejelasan berapa lama data disimpan
+    atau siapa yang bisa mengaksesnya. Apa tindakan paling tepat? (TIK)
+  </div>
+  <ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Melanjutkan penggunaan sistem presensi wajah seperti biasa karena sudah terlanjur diterapkan di kecamatan.</span></li>
+    <li><span class="opt-letter kunci">B.</span><span class="opt-text kunci">Menghentikan sementara penggunaan sistem presensi wajah sampai tata kelola datanya jelas dan terverifikasi secara independen.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Melanjutkan penggunaan sistem presensi wajah demi efisiensi kehadiran, sambil meminta klarifikasi tata kelola data kepada vendor.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Menginstruksikan seluruh pegawai tetap menggunakan sistem presensi wajah sesuai kebijakan kecamatan yang telah ditetapkan.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Meminta vendor memberikan jaminan tertulis mengenai keamanan dan masa penyimpanan data wajah pegawai.</span></li>
+  </ul>
+  <div class="meta">
+    <div><span class="label">Kunci</span>B</div>
+    <div><span class="label">Konstruk</span>efisiensi rekap kehadiran vs perlindungan data biometrik pegawai oleh pihak ketiga</div>
+    <div><span class="label">Poin</span>A=1 &middot; B=5 (kunci) &middot; C=3 <code class="sumbu">S1</code> &middot; D=2+J4 &middot; E=4 <code class="sumbu">S5</code></div>
+    <div><span class="label">Level</span>Sangat Tinggi</div>
+  </div>
+  <div class="pembahasan">
+    <div class="ph-title">Pembahasan</div>
+    <ol>
+      <li>Dilema: sistem presensi wajah mempercepat administrasi, tapi tata kelola data biometrik oleh vendor belum jelas dan berisiko disalahgunakan.</li>
+      <li>B menutup kutub kehati-hatian lewat penghentian sementara (mencegah risiko sebelum berlanjut) dan kutub kepastian lewat verifikasi independen, bukan sekadar percaya klaim vendor.</li>
+      <li>E dan C sama-sama menuntut kejelasan dari vendor. E meminta jaminan tertulis &mdash; menuntut kepastian, tapi tanpa verifikasi independen apakah praktiknya sesuai janji tersebut (S5 gagal). C meminta klarifikasi sambil sistem <i>tetap dipakai</i> &mdash; data pegawai terus mengalir ke vendor selama proses klarifikasi berlangsung, risikonya sudah terjadi sebelum kepastian didapat (S1 gagal).</li>
+      <li><b>Kunci vs E:</b> E hanya mengandalkan klaim tertulis vendor; B mensyaratkan verifikasi independen atas praktiknya.<br>
+      <b>Kunci vs C:</b> C membiarkan data terus mengalir selama proses klarifikasi; B menghentikan aliran data itu dulu sampai jelas.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- SOAL 10 -->
+<div class="soal">
+  <div class="soal-head">
+    <span class="soal-num">Soal No 10</span>
+    <span class="badge dim-TIK">TIK</span>
+  </div>
+  <div class="stem">
+    Anda operator sistem informasi desa yang baru meluncurkan aplikasi pengajuan surat
+    keterangan secara online. Warga muda dengan ponsel pintar bisa mengajukan surat dalam
+    hitungan menit, tapi banyak warga lanjut usia dan warga di dusun tanpa sinyal internet
+    stabil jadi kesulitan mengakses layanan yang dulunya bisa langsung datang ke kantor desa.
+    Sikap Anda adalah&hellip; (TIK)
+  </div>
+  <ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Mengarahkan seluruh warga menggunakan aplikasi karena prosesnya jauh lebih cepat dibanding datang langsung ke kantor desa.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Membantu warga lanjut usia mengajukan surat lewat aplikasi menggunakan ponsel operator setiap kali mereka datang ke kantor desa.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Mempersilakan warga lanjut usia dan warga dusun terpencil menyesuaikan diri sendiri, sambil berharap mereka terbiasa seiring waktu.</span></li>
+    <li><span class="opt-letter kunci">D.</span><span class="opt-text kunci">Mengusulkan kepada kepala desa jalur pengajuan manual disertai layanan keliling petugas ke dusun tanpa sinyal secara berkala.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Membuka loket pengajuan manual permanen di kantor desa bagi warga yang belum bisa mengakses aplikasi.</span></li>
+  </ul>
+  <div class="meta">
+    <div><span class="label">Kunci</span>D</div>
+    <div><span class="label">Konstruk</span>kecepatan layanan digital vs jangkauan warga dengan keterbatasan akses teknologi</div>
+    <div><span class="label">Poin</span>A=2+J1("hitungan menit") &middot; B=4 <code class="sumbu">S4</code> &middot; C=1 &middot; D=5 (kunci) &middot; E=3 <code class="sumbu">S2</code></div>
+    <div><span class="label">Level</span>Sangat Tinggi</div>
+  </div>
+  <div class="pembahasan">
+    <div class="ph-title">Pembahasan</div>
+    <ol>
+      <li>Dilema: layanan digital mempercepat proses bagi yang bisa mengaksesnya, tapi warga tanpa akses stabil justru kehilangan kemudahan yang dulu mereka miliki.</li>
+      <li>D menutup kutub kelembagaan lewat pengusulan jalur manual resmi kepada kepala desa (bukan diputuskan sendiri oleh operator) dan kutub jangkauan lewat layanan keliling yang mendatangi dusun tanpa sinyal &mdash; tepat menyasar kelompok yang paling terdampak, lewat jalur kewenangan yang sesuai.</li>
+      <li>B dan E sama-sama menyediakan solusi. B membantu langsung warga lansia yang datang ke kantor desa &mdash; solutif untuk yang datang, tapi bergantung ada operator yang membantu tiap saat, bukan jalur resmi permanen (S4 gagal). E membuka loket manual permanen (bagus, institusional), tapi lokasinya hanya di kantor desa pusat, sementara warga dusun tanpa sinyal yang paling butuh justru paling jauh menjangkaunya (S2 gagal).</li>
+      <li><b>Kunci vs B:</b> B bergantung petugas yang kebetulan ada; D mengusulkan layanan tetap dengan jadwal keliling ke kepala desa yang berwenang menetapkannya.<br>
+      <b>Kunci vs E:</b> E hanya menjangkau warga yang bisa datang ke kantor desa; D mendatangi dusun yang paling sulit sinyal.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- SOAL 11 -->
+<div class="soal">
+  <div class="soal-head">
+    <span class="soal-num">Soal No 11</span>
+    <span class="badge dim-AntiRadikalisme">Anti Radikalisme</span>
+  </div>
+  <div class="stem">
+    Anda staf HR di sebuah perusahaan. Anda menemukan salah satu karyawan berulang kali
+    membagikan artikel yang menghasut kebencian terhadap kelompok agama tertentu di grup
+    WhatsApp kerja resmi yang beranggotakan seluruh divisi, dan beberapa karyawan lain mulai
+    ikut berkomentar sinis di grup tersebut. Langkah paling tepat yang Anda lakukan
+    adalah&hellip; (Anti Radikalisme)
+  </div>
+  <ul class="options">
+    <li><span class="opt-letter">A.</span><span class="opt-text">Menganggap diskusi di grup tersebut sekadar pendapat pribadi masing-masing karyawan tanpa tindak lanjut.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Meminta agar karyawan tersebut segera dikeluarkan dari grup WhatsApp kerja agar tidak lagi memicu komentar dari karyawan lain.</span></li>
+    <li><span class="opt-letter kunci">C.</span><span class="opt-text kunci">Melaporkan temuan ini kepada atasan HR/komite etik untuk verifikasi dan tindak lanjut terhadap seluruh pihak yang terlibat.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Memberikan teguran resmi kepada karyawan yang membagikan artikel tersebut atas nama HR.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Mengingatkan secara langsung karyawan yang mengunggah artikel tersebut agar tidak mengulanginya di grup kerja.</span></li>
+  </ul>
+  <div class="meta">
+    <div><span class="label">Kunci</span>C</div>
+    <div><span class="label">Konstruk</span>respons cepat atas dampak ke iklim kerja seluruh divisi vs kehati-hatian sebelum klarifikasi resmi</div>
+    <div><span class="label">Poin</span>A=1 &middot; B=2+J2+J3 &middot; C=5 (kunci) &middot; D=4 <code class="sumbu">S3</code> &middot; E=3 <code class="sumbu">S2</code></div>
+    <div><span class="label">Level</span>Tinggi</div>
+  </div>
+  <div class="pembahasan">
+    <div class="ph-title">Pembahasan</div>
+    <ol>
+      <li>Dilema: isu terjadi di ruang kerja resmi dan perlu direspons cepat, tapi tindakan keras di muka umum berisiko mempermalukan sebelum ada klarifikasi resmi.</li>
+      <li>C menutup kutub kewenangan lewat pelaporan ke jalur resmi HR/komite etik dan kutub cakupan lewat penanganan terhadap "seluruh pihak yang terlibat", bukan cuma satu orang.</li>
+      <li>D dan E sama-sama menangani isu secara langsung. D memberi teguran resmi atas nama HR &mdash; tegas, tapi diambil sendiri tanpa proses klarifikasi/investigasi berjenjang yang semestinya (S3 gagal). E mengingatkan secara pribadi si pengunggah &mdash; langkah awal yang wajar dari sisi prosedur, tapi hanya menyasar satu karyawan, tidak menyentuh karyawan lain yang ikut berkomentar sinis di grup yang sama (S2 gagal).</li>
+      <li><b>Kunci vs D:</b> D memberi sanksi sendiri tanpa proses resmi; C merutekannya lewat mekanisme HR/komite etik yang berwenang.<br>
+      <b>Kunci vs E:</b> E hanya menjangkau satu orang; C menindaklanjuti seluruh pihak yang terlibat di grup.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- SOAL 12 -->
+<div class="soal">
+  <div class="soal-head">
+    <span class="soal-num">Soal No 12</span>
+    <span class="badge dim-AntiRadikalisme">Anti Radikalisme</span>
+  </div>
+  <div class="stem">
+    Anda pembina karang taruna desa. Sebuah lembaga dari luar desa menawarkan pelatihan
+    kepemimpinan gratis untuk anggota karang taruna, namun setelah Anda periksa materi
+    presentasinya, sebagian isinya menyisipkan narasi yang merendahkan kelompok agama/etnis
+    tertentu di sela materi kepemimpinan. Tindakan paling tepat adalah&hellip; (Anti Radikalisme)
+  </div>
+  <ul class="options">
+    <li><span class="opt-letter kunci">A.</span><span class="opt-text kunci">Meminta lembaga tersebut merevisi materi bermasalah sebelum pelatihan dilaksanakan, sambil berkonsultasi dengan pengurus karang taruna soal kelanjutan kerja sama.</span></li>
+    <li><span class="opt-letter">B.</span><span class="opt-text">Menolak kerja sama pelatihan tersebut secara tegas dan menyampaikan penolakan langsung kepada pihak lembaga terkait.</span></li>
+    <li><span class="opt-letter">C.</span><span class="opt-text">Melanjutkan pelatihan sesuai rencana karena kesempatan pelatihan gratis semacam ini jarang didapatkan oleh karang taruna desa.</span></li>
+    <li><span class="opt-letter">D.</span><span class="opt-text">Membiarkan pelatihan tetap berjalan sesuai jadwal semula sambil meminta pembicara mengoreksi langsung bagian yang dirasa kurang tepat saat sesi berlangsung.</span></li>
+    <li><span class="opt-letter">E.</span><span class="opt-text">Meneruskan pelatihan sesuai rencana awal tanpa menyampaikan keberatan apapun secara langsung kepada pihak lembaga terkait.</span></li>
+  </ul>
+  <div class="meta">
+    <div><span class="label">Kunci</span>A</div>
+    <div><span class="label">Konstruk</span>manfaat pelatihan gratis yang dinanti vs materi bermuatan narasi merendahkan kelompok lain</div>
+    <div><span class="label">Poin</span>A=5 (kunci) &middot; B=3 <code class="sumbu">S3</code> &middot; C=2+J1("pelatihan gratis") &middot; D=4 <code class="sumbu">S1</code> &middot; E=1</div>
+    <div><span class="label">Level</span>Sangat Tinggi</div>
+  </div>
+  <div class="pembahasan">
+    <div class="ph-title">Pembahasan</div>
+    <ol>
+      <li>Dilema: pelatihan gratis ini bermanfaat dan sudah lama dinanti, tapi materi yang merendahkan kelompok lain berisiko memengaruhi cara pandang anggota yang masih muda.</li>
+      <li>A menutup kutub urutan lewat revisi materi <i>sebelum</i> pelatihan berjalan (bukan sambil jalan) dan kutub kewenangan lewat konsultasi ke pengurus karang taruna, bukan keputusan sepihak pembina.</li>
+      <li>D dan B sama-sama merespons isu materi. D mengizinkan pelatihan tetap berjalan sambil meminta koreksi di tengah sesi &mdash; materi bermasalah berpotensi sempat tersampaikan ke anggota sebelum sempat dikoreksi (S1 gagal). B menolak kerja sama secara tegas dan substansinya benar, tapi keputusan diambil sendiri oleh pembina tanpa berkonsultasi ke pengurus yang juga berkepentingan atas manfaat pelatihan ini (S3 gagal).</li>
+      <li><b>Kunci vs D:</b> D membiarkan materi sempat tersampaikan sebelum dikoreksi; A menuntaskan revisi sebelum pelatihan diizinkan berjalan.<br>
+      <b>Kunci vs B:</b> B memutuskan sendiri tanpa melibatkan pengurus; A mengonsultasikan kelanjutan kerja sama ke pengurus karang taruna.</li>
+    </ol>
+  </div>
+</div>
+
+<div class="footer-note">
+  Disusun mengikuti ENGINE_GENERATE_SOAL_TKP.md (Pilar 3: Taksonomi Distraktor 5 Poin + Sumbu Presisi) &middot;
+  Draf untuk verifikasi tim ahli &middot; 27 Agustus 2026
+</div>
+
+</body>
+</html>

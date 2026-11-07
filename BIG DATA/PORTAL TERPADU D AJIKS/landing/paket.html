@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pilih paket · D'Ajiks Akademi</title>
+<link rel="icon" href="assets/dajiks-emblem.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap">
+<style>
+/* gaya bersama disalin dari kelas.html (menu, kapsul pilihan, kaki halaman); bagian khusus katalog paket di bawah */
+body{margin:0;background:#fff;color:#172a35;font-family:'Inter Tight',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#08254b}a:hover{color:#0f3360}
+::selection{background:#e8c766;color:#031739}
+:focus-visible{outline:2px solid #c9a24a;outline-offset:3px}
+h1,h2,h3{text-wrap:balance}p{text-wrap:pretty}
+img{max-width:100%}
+[hidden]{display:none !important}
+.top{position:sticky;top:0;z-index:2;padding:16px 40px;margin-bottom:-112px}
+.bar{max-width:1160px;margin:0 auto;height:80px;box-sizing:border-box;padding:0 10px 0 28px;display:flex;align-items:center;gap:40px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);transition:background-color 220ms ease,box-shadow 220ms ease}
+.top.scrolled .bar{background:rgba(3,23,57,.9);box-shadow:0 16px 40px -20px rgba(3,23,57,.6)}
+.nav-links a:hover{color:#fff !important}
+.masuk{margin-left:auto;display:inline-flex;align-items:center;gap:12px;min-height:54px;padding:0 7px 0 24px;border-radius:999px;background:#fff;color:#031739;font-weight:600;text-decoration:none;box-shadow:0 0 0 4px rgba(255,255,255,.18);transition:transform 160ms cubic-bezier(.23,1,.32,1)}
+.masuk:active{transform:scale(.97)}
+.masuk .go{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#031739;color:#e8c766}
+.wrap{max-width:1240px;margin:0 auto;padding:0 40px;box-sizing:border-box}
+.mock-note{margin:0;padding:6px 14px;border-radius:999px;background:#e8c766;color:#031739;font-size:13px;font-weight:700;text-align:center}
+.t-bg{position:absolute;inset:0;background:radial-gradient(110% 85% at 0% 0%,rgba(212,175,79,var(--g,.4)),rgba(212,175,79,0) 60%),#031739;transition:transform 700ms cubic-bezier(.16,1,.3,1)}
+.t0{--g:.26}.t1{--g:.55}.t2{--g:.4}
+.sil{position:absolute;top:0;right:0;bottom:0;width:40%;pointer-events:none;-webkit-mask-image:linear-gradient(90deg,transparent,#000 50%);mask-image:linear-gradient(90deg,transparent,#000 50%)}
+.sil img{position:absolute;right:14px;width:50px;height:50px;opacity:var(--o,.32)}
+.t1 .sil{--o:.42}
+.sil img:nth-child(1){top:12px}.sil img:nth-child(2){top:calc(50% - 25px)}.sil img:nth-child(3){bottom:12px}
+.kaki{background:#f7f8fb;border-top:1px solid #e3e8f0}
+.kaki .wrap{border-left:1px solid #e3e8f0;border-right:1px solid #e3e8f0}
+.foot{display:grid;grid-template-columns:minmax(0,1.6fr) repeat(3,minmax(0,1fr));gap:48px;padding-top:96px;padding-bottom:96px;padding-left:72px;padding-right:72px}
+.merk{display:flex;align-items:center;gap:14px;font-weight:700;font-size:30px;letter-spacing:-.03em;color:#031739}
+.merk img{width:52px;height:52px}
+.foot .tag{margin:24px 0 0;max-width:20em;font-size:17px;line-height:1.65;color:#3d5260}
+.foot .wa{display:inline-flex;align-items:center;gap:10px;margin-top:28px;min-height:44px;padding:0 18px 0 8px;border-radius:999px;background:#031739;color:#fff;font-weight:600;font-size:15px;text-decoration:none}
+.foot .wa svg{width:28px;height:28px;padding:6px;box-sizing:border-box;border-radius:50%;background:#e8c766;color:#031739}
+.foot h4{margin:0 0 26px;font-size:16px;font-weight:500;color:#526772}
+.foot nav a{display:block;margin-bottom:18px;color:#031739;text-decoration:none;font-size:17px;font-weight:500;transition:color 160ms ease}
+.foot nav a:hover{color:#9a7416}
+.garis{position:relative;height:1px;background:#e3e8f0}
+.garis i{position:absolute;top:-10px;width:21px;height:21px;margin-left:-10px;background:#f7f8fb}
+.garis i::before,.garis i::after{content:"";position:absolute;background:#b7c3d2}
+.garis i::before{left:10px;top:0;width:1px;height:21px}.garis i::after{top:10px;left:0;width:21px;height:1px}
+.hak{margin:0;padding:36px 16px 40px;text-align:center;font-size:16px;color:#3d5260}
+.hak b{font-weight:600;color:#031739}
+.bar{position:relative}
+.mega-t{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-weight:500;color:#dfe5f3}
+.mega-t svg{transition:transform 200ms cubic-bezier(.23,1,.32,1)}
+.mega-p{position:absolute;left:0;right:0;top:100%;padding-top:12px;visibility:hidden;opacity:0;transform:translateY(-6px);transition:opacity 180ms ease,transform 220ms cubic-bezier(.23,1,.32,1),visibility 0s 220ms}
+.mega-in{display:grid;grid-template-columns:1fr 1fr;gap:56px;padding:32px 40px 36px;border-radius:24px;background:#fff;box-shadow:0 30px 60px -24px rgba(3,23,57,.45)}
+.mega-h{margin:0 0 10px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#526772}
+.mega-in a{display:flex;flex-direction:column;padding:13px 0;border-bottom:1px solid #e3e8f0;color:#031739 !important;font-size:17px;font-weight:500;text-decoration:none;transition:color 160ms ease,padding-left 200ms cubic-bezier(.23,1,.32,1)}
+.mega-in a span{margin-top:2px;font-size:13.5px;font-weight:400;color:#526772}
+.mega-in a:hover{color:#9a7416 !important;padding-left:6px}
+/* baris bawah menu Kelas: tautan ke katalog semua paket (paket.html) */
+.mega-in{row-gap:14px}
+.mega-in a.mega-all{grid-column:1/-1;flex-direction:row;align-items:center;justify-content:space-between;padding:12px 10px 12px 20px;border:0;border-radius:16px;background:#f7f8fb;font-weight:600}
+.mega-in a.mega-all:hover{padding-left:20px;background:#eef1f6}
+.mega-all .go{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#031739;color:#e8c766}
+.mega.open .mega-p{visibility:visible;opacity:1;transform:none;transition:opacity 180ms ease,transform 220ms cubic-bezier(.23,1,.32,1)}
+.mega.open .mega-t svg{transform:rotate(180deg)}
+html{scroll-behavior:smooth}
+html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopped{overflow:clip}.lenis [data-lenis-prevent]{overscroll-behavior:contain}.lenis.lenis-smooth iframe{pointer-events:none}html.lenis.lenis-smooth{scroll-behavior:auto!important}
+.jejak{position:relative;display:inline-flex;align-items:center;gap:10px;margin:0 0 18px;font-size:15px;font-weight:600;color:#8a9ab2}
+.jejak a{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 16px 0 10px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);color:#dfe5f3;text-decoration:none;transition:background-color 160ms ease,color 160ms ease,transform 160ms cubic-bezier(.23,1,.32,1)}
+.jejak a:hover{background:rgba(255,255,255,.16);color:#fff}
+.jejak a:active{transform:scale(.97)}
+.jejak [aria-current]{color:#e8c766}
+.chips{display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.chip{all:unset;box-sizing:border-box;flex:none;cursor:pointer;min-height:48px;padding:0 22px;border-radius:999px;border:1.5px solid #dbe0ea;background:#fff;font:600 16px 'Inter Tight',sans-serif;color:#526772;display:inline-flex;align-items:center;transition:background-color 180ms ease,color 180ms ease,border-color 180ms ease,transform 160ms cubic-bezier(.23,1,.32,1)}
+.chip:hover{border-color:#b7c3d2;color:#031739}
+.chip:active{transform:scale(.97)}
+.chip[aria-pressed=true]{background:#031739;border-color:#031739;color:#fff}
+.chip:focus-visible{outline:2px solid #c9a24a;outline-offset:2px}
+/* kepala katalog (pola "Shop All" Choroo): gradasi navy ke krem; teks putih hanya di bagian gelap, kapsul putih di peralihan */
+.c-head{position:relative;overflow:hidden;padding:176px 40px 168px;text-align:center;background:radial-gradient(60% 45% at 50% 0%,rgba(212,175,79,.2),rgba(212,175,79,0) 70%),linear-gradient(180deg,#031739 0%,#062044 18%,#0d2e5c 36%,#1f3d68 52%,#43608a 62%,#7d93b0 71%,#b7c3d2 80%,#e4e2d8 90%,#f6f2e8 100%)}
+.c-head h1{position:relative;margin:0;font-weight:600;font-size:72px;line-height:1.04;letter-spacing:-.045em;color:#fff}
+.c-head .lead{position:relative;margin:20px auto 0;max-width:36em;font-size:18px;line-height:1.6;color:#dfe5f3}
+.c-pills{position:relative;display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:36px 0 0;padding:0;list-style:none}
+.c-pills li{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px 0 14px;box-sizing:border-box;border-radius:999px;background:#fff;color:#031739;font-weight:600;font-size:16px;box-shadow:0 12px 30px -18px rgba(3,23,57,.55)}
+.c-pills svg{flex:none;width:22px;height:22px;padding:4px;box-sizing:border-box;border-radius:50%;background:#031739;color:#e8c766}
+.c-sec{padding:56px 0 112px}
+.c-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+/* pilihan jenis: deret tulisan + garis emas di bawah yang aktif + jumlah paket (sengaja beda dari kapsul kelas di atasnya) */
+.j-bar{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-top:20px;border-bottom:1px solid #e3e8f0}
+.tabs{display:flex;gap:32px;overflow-x:auto;scrollbar-width:none}
+.tab{all:unset;box-sizing:border-box;cursor:pointer;position:relative;flex:none;display:inline-flex;align-items:center;gap:8px;min-height:52px;font:600 16px 'Inter Tight',sans-serif;color:#526772;transition:color 160ms ease}
+.tab b{display:inline-grid;place-items:center;min-width:24px;height:22px;padding:0 7px;box-sizing:border-box;border-radius:999px;background:#eef1f6;color:#526772;font-size:12.5px;font-variant-numeric:tabular-nums;transition:background-color 160ms ease,color 160ms ease}
+.tab::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;border-radius:2px;background:#c9a24a;transform:scaleX(0);transform-origin:left;transition:transform 240ms cubic-bezier(.23,1,.32,1)}
+.tab:hover{color:#031739}
+.tab[aria-pressed=true]{color:#031739}.tab[aria-pressed=true]::after{transform:scaleX(1)}.tab[aria-pressed=true] b{background:#031739;color:#e8c766}
+.tab:focus-visible{outline:2px solid #c9a24a;outline-offset:2px;border-radius:6px}
+.j-jml{flex:none;margin:0;padding-bottom:16px;font-size:14.5px;color:#526772}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:48px}
+/* kartu paket pola Al Faiz/viracun: spanduk grafis, judul, keterangan, masa aktif, daftar isi, harga, tombol penuh */
+.kartu{display:flex;flex-direction:column;background:#fff;border:1px solid #e3e8f0;border-radius:22px;padding:14px;box-shadow:0 18px 44px -32px rgba(3,23,57,.35)}
+.k-ban{position:relative;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;aspect-ratio:15/8;padding:0 24px;border-radius:14px;overflow:hidden;text-decoration:none}
+.t-pill{position:relative;display:inline-block;margin-bottom:12px;padding:4px 10px;border-radius:8px;background:rgba(3,23,57,.6);border:1px solid rgba(232,199,102,.4);color:#e8c766;font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.k-b1{position:relative;font-weight:700;font-size:28px;line-height:1;letter-spacing:-.02em;color:#fff;text-transform:uppercase}
+.k-b2{position:relative;margin-top:6px;font-weight:700;font-size:38px;line-height:1;letter-spacing:-.03em;color:#e8c766;text-transform:uppercase;font-variant-numeric:tabular-nums}
+.k-body{display:flex;flex-direction:column;flex:1;padding:20px 8px 6px}
+.kartu h3{margin:0;font-weight:600;font-size:21px;line-height:1.3;letter-spacing:-.02em}
+.kartu h3 a{color:#031739;text-decoration:none;transition:color 160ms ease}
+.kartu h3 a:hover{color:#9a7416}
+.k-ket{margin:8px 0 0;font-size:15px;line-height:1.55;color:#3d5260}
+.k-aktif{margin:12px 0 0;font-size:14px;font-weight:600;line-height:1.45;color:#031739}
+.kartu ul{list-style:none;margin:14px 0 22px;padding:0;display:flex;flex-direction:column;gap:9px}
+.kartu li{display:flex;gap:10px;font-size:15px;line-height:1.5;color:#24333d}
+.kartu li::before{content:"";flex:none;width:16px;height:16px;margin-top:3px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23031739' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7'/%3E%3C/svg%3E") no-repeat}
+.k-harga{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 12px;margin-top:auto}
+.k-disc{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:#526772}
+.k-disc b{padding:2px 8px;border-radius:6px;background:#e8c766;color:#031739;font-size:12.5px}
+.k-now{font-weight:700;font-size:26px;letter-spacing:-.02em;color:#7a5710;font-variant-numeric:tabular-nums}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:56px;padding:0 34px;border-radius:999px;font:600 17px 'Inter Tight',sans-serif;text-decoration:none;box-sizing:border-box;transition:transform 160ms cubic-bezier(.23,1,.32,1),background-color 160ms ease}
+.btn:active{transform:scale(.97)}
+.kartu .btn{margin-top:16px;min-height:52px;width:100%;padding:0 8px 0 24px;justify-content:space-between;background:#e8c766;color:#031739}
+.kartu .go{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:#031739;color:#e8c766;transition:transform 220ms cubic-bezier(.23,1,.32,1)}
+/* ganti kelas: kartu baru muncul bergiliran (tidak dipakai saat halaman pertama dibuka) */
+.grid.ganti .kartu{animation:muncul 380ms cubic-bezier(.23,1,.32,1) both;animation-delay:calc(var(--i) * 40ms)}
+@keyframes muncul{from{opacity:0;transform:translateY(12px)}}
+@media (hover:hover){
+.kartu:hover .t-bg{transform:scale(1.05)}
+.kartu:hover .btn .go{transform:translateX(3px)}
+}
+@media (max-width:900px){
+.nav-links{display:none !important}
+.top{padding:12px 16px;margin-bottom:-92px}.bar{height:68px;padding:0 8px 0 18px}.bar img{height:42px !important}.masuk{min-height:48px;padding-left:18px}.masuk .go{width:36px;height:36px}
+.wrap{padding:0 16px}
+.c-head{padding:132px 16px 120px}.c-head h1{font-size:44px}.c-head .lead{font-size:16.5px}
+.c-pills{gap:8px;margin-top:28px}.c-pills li{min-height:42px;padding:0 16px 0 10px;font-size:14.5px}
+.c-sec{padding:40px 0 80px}
+.c-bar{flex-direction:column;flex-wrap:nowrap;align-items:stretch}.tabs{gap:24px}.j-jml{display:none}.c-bar .mock-note{align-self:center;max-width:100%;box-sizing:border-box;border-radius:14px}
+.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:28px}
+.foot{grid-template-columns:1fr 1fr;gap:40px 24px;padding:64px 20px}.foot>div:first-child{grid-column:1/-1}.garis i{display:none}
+}
+@media (max-width:700px){
+.grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.grid.ganti .kartu{animation:none}.t-bg,.btn,.kartu .go,.chip,.tab,.tab::after,.mega-p{transition:none}}
+</style>
+</head>
+<body>
+<header class="top" id="top">
+<nav class="bar" aria-label="Utama">
+<a href="index.html"><img src="assets/dajiks-lockup.png" alt="D'Ajiks Akademi" style="height:52px;width:auto;display:block"></a>
+<div class="nav-links" style="display:flex;gap:40px;flex:1;justify-content:center">
+<div class="mega"><button type="button" class="mega-t" aria-expanded="false" aria-controls="mega-p">Kelas<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="mega-p" id="mega-p"><div class="mega-in"><div><p class="mega-h">Pilih kelas</p><a href="kelas.html?k=skd">SKD Kedinasan</a><a href="kelas.html?k=ipdn">IPDN</a><a href="kelas.html?k=polri">Persiapan POLRI</a><a href="kelas.html?k=tni">Persiapan TNI</a><a href="kelas.html?k=cpns">CPNS</a></div><div><p class="mega-h">Pilih versi</p><a href="kelas.html?v=penuh">Akses penuh<span>Materi, tryout, dan pembahasan</span></a><a href="kelas.html?v=tryout">Tryout saja<span>Paket tryout CAT dengan pembahasan</span></a></div><a class="mega-all" href="paket.html">Lihat semua paket belajar<i class="go" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7l5 5-5 5M13 7l5 5-5 5"/></svg></i></a></div></div></div>
+<a href="index.html#fitur" style="font-weight:500;text-decoration:none;color:#dfe5f3">Fitur</a>
+<a href="index.html#cara" style="font-weight:500;text-decoration:none;color:#dfe5f3">Cara daftar</a>
+<a href="index.html#testimoni" style="font-weight:500;text-decoration:none;color:#dfe5f3">Testimoni</a>
+<a href="index.html#pengajar" style="font-weight:500;text-decoration:none;color:#dfe5f3">Pengajar</a>
+<a href="index.html#faq" style="font-weight:500;text-decoration:none;color:#dfe5f3">FAQ</a>
+</div>
+<a href="masuk.html" class="masuk">Masuk<span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7l5 5-5 5M13 7l5 5-5 5"/></svg></span></a>
+</nav>
+</header>
+
+<section class="c-head">
+<nav class="jejak" aria-label="Jejak halaman"><a href="index.html"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>Beranda</a><span aria-hidden="true">/</span><span aria-current="page">Pilih paket</span></nav>
+<h1>Pilih paket belajar</h1>
+<p class="lead">Kelas lengkap dan paket tryout untuk SKD Kedinasan, IPDN, POLRI, TNI, dan CPNS. Pilih kelasmu, lalu pilih paketnya.</p>
+<ul class="c-pills">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Nilai per subtes</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Pembahasan tiap soal</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Bayar lewat QRIS, VA, atau e-wallet</li>
+</ul>
+</section>
+
+<section class="c-sec" id="paket">
+<div class="wrap">
+<div class="c-bar">
+<div class="chips" role="group" aria-label="Pilih kelas"><button class="chip" data-k="semua" aria-pressed="false">Semua</button><button class="chip" data-k="skd" aria-pressed="false">SKD Kedinasan</button><button class="chip" data-k="ipdn" aria-pressed="false">IPDN</button><button class="chip" data-k="polri" aria-pressed="false">POLRI</button><button class="chip" data-k="tni" aria-pressed="false">TNI</button><button class="chip" data-k="cpns" aria-pressed="false">CPNS</button></div>
+<p class="mock-note">DATA CONTOH: nama paket dan harga belum asli (kisaran Al Faiz).</p>
+</div>
+<div class="j-bar"><div class="tabs" id="tabs" role="group" aria-label="Jenis paket"></div><p class="j-jml" id="jml" aria-live="polite"></p></div>
+<div class="grid" id="grid" aria-live="polite"><noscript><p>Aktifkan JavaScript untuk melihat daftar paket.</p></noscript></div>
+</div>
+</section>
+
+<footer class="kaki">
+<div class="wrap foot">
+<div>
+<p class="merk" style="margin:0"><img src="assets/dajiks-emblem.png" alt="">D'Ajiks Akademi</p>
+<p class="tag">Persiapan TNI/POLRI, CPNS, dan Sekolah Kedinasan dalam satu pintu, dari belajar sampai hari tes.</p>
+<a class="wa" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.6-.1 1.1z"/></svg>WhatsApp [nomor menyusul]</a>
+</div>
+<nav aria-label="Kelas"><h4>Kelas</h4><a href="kelas.html?k=skd">SKD Kedinasan</a><a href="kelas.html?k=ipdn">IPDN</a><a href="kelas.html?k=polri">Persiapan POLRI</a><a href="kelas.html?k=tni">Persiapan TNI</a><a href="kelas.html?k=cpns">CPNS</a></nav>
+<nav aria-label="Portal"><h4>Portal</h4><a href="index.html#fitur">Fitur</a><a href="index.html#cara">Cara daftar</a><a href="index.html#offline">Kelas offline</a><a href="index.html#testimoni">Testimoni</a><a href="index.html#pengajar">Pengajar</a></nav>
+<nav aria-label="Bantuan"><h4>Bantuan</h4><a href="index.html#faq">FAQ</a><a href="daftar.html">Daftar</a><a href="masuk.html">Masuk</a><a href="bayar.html">Pembayaran</a></nav>
+</div>
+<div class="garis"><div class="wrap" style="position:relative;height:1px;border:0"><i style="left:0"></i><i style="left:100%"></i></div></div>
+<div class="wrap"><p class="hak">© 2026 <b>D'Ajiks Akademi</b>. Hak cipta dilindungi.</p></div>
+</footer>
+
+<script>
+var GO = '<span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7l5 5-5 5M13 7l5 5-5 5"/></svg></span>';
+// menu Kelas bertingkat: sama dengan kelas.html (satu pengendali .open)
+var mega = document.querySelector('.mega'), megaT = mega.querySelector('.mega-t'), megaJeda, megaKursor = matchMedia('(hover:hover)').matches;
+function megaSet(o) { clearTimeout(megaJeda); mega.classList.toggle('open', o); megaT.setAttribute('aria-expanded', o); }
+if (megaKursor) {
+  mega.addEventListener('mouseenter', function () { megaSet(true); });
+  mega.addEventListener('mouseleave', function () { megaJeda = setTimeout(function () { megaSet(false); }, 150); });
+}
+megaT.addEventListener('click', function () { megaSet(megaKursor || !mega.classList.contains('open')); });
+mega.addEventListener('focusout', function (e) { if (!mega.contains(e.relatedTarget)) megaSet(false); });
+document.addEventListener('click', function (e) { if (!mega.contains(e.target)) megaSet(false); });
+document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && mega.classList.contains('open')) { megaSet(false); megaT.focus(); } });
+window.addEventListener('scroll', function () { if (mega.classList.contains('open')) megaSet(false); }, { passive: true });
+// data disalin dari kelas.html (KLS tanpa lead/materi/foto, PAKET utuh; DATA CONTOH)
+// s = nama pendek di spanduk; to = jumlah tryout satuan (SKD: Paket 1-50, permintaan Gusti 2026-11-04; kelas lain 1)
+var KLS = {
+  skd: { n: 'SKD Kedinasan', s: 'SKD', isi: 'TWK, TIU, dan TKP', uji: 'SKD sekolah kedinasan 2027', sil: ['twk', 'tiu', 'tkp'], to: 50 },
+  ipdn: { n: 'IPDN', isi: 'TWK, TIU, dan TKP', uji: 'seleksi IPDN 2027', contoh: true },
+  polri: { n: 'POLRI', isi: 'tes akademik dan psikotes', uji: 'seleksi POLRI 2027' },
+  tni: { n: 'TNI', isi: 'tes akademik dan psikotes', uji: 'seleksi TNI 2027', contoh: true },
+  cpns: { n: 'CPNS', isi: 'TWK, TIU, dan TKP', uji: 'SKD CPNS berikutnya', sil: ['twk', 'tiu', 'tkp'] }
+};
+var PAKET = {
+  tryout: [
+    { p: '1 Tryout', nama: 'Tryout {n} Paket 1', h: 12000, c: 25000, f: ['1 paket tryout {isi}', 'Bisa dikerjakan berulang', 'Nilai per subtes', 'Pembahasan tiap soal'] },
+    { p: '5 Tryout', nama: 'Bundling 5 Tryout {n}', h: 27900, c: 100000, f: ['5 paket tryout {isi}', 'Bisa dikerjakan berulang', 'Nilai per subtes', 'Pembahasan tiap soal', 'Riwayat skor antar tryout'] },
+    { p: '9 Tryout', nama: 'Bundling 9 Tryout {n}', h: 45000, c: 180000, f: ['9 paket tryout {isi}', 'Bisa dikerjakan berulang', 'Nilai per subtes', 'Pembahasan tiap soal', 'Riwayat skor antar tryout'] }
+  ],
+  penuh: [
+    { p: 'Reguler', nama: 'Kelas {n} Reguler', h: 149000, c: 300000, f: ['Materi {isi}', '5 paket tryout', 'Pembahasan tiap soal'] },
+    { p: 'Intensif', nama: 'Kelas {n} Intensif', h: 249000, c: 500000, f: ['Materi {isi}', '9 paket tryout', 'Pembahasan tiap soal', 'Riwayat skor antar tryout'] },
+    { p: 'Premium', nama: 'Kelas {n} Premium', h: 399000, c: 800000, f: ['Materi {isi}', '15 paket tryout', 'Pembahasan tiap soal', 'Riwayat skor antar tryout', '[Pendampingan pengajar menyusul]'] }
+  ]
+};
+function rp(x) { return 'Rp' + x.toLocaleString('id-ID'); }
+function isi(t, k) { return t.replace('{n}', KLS[k].n).replace('{isi}', KLS[k].isi); }
+function esc(t) { return t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
+function sil(k) { return KLS[k].sil ? '<span class="sil" aria-hidden="true">' + KLS[k].sil.map(function (x) { return '<img src="assets/siluet/' + x + '.svg" alt="">'; }).join('') + '</span>' : ''; }
+// satu kartu = satu paket; b1/b2 = tulisan spanduk, t = kuat pendar emas spanduk
+function kartu(k, v, p, b1, b2, ket, t, n) {
+  var K = KLS[k], nama = isi(p.nama, k), detail = 'kelas.html?k=' + k + '&v=' + v;
+  var bayar = 'bayar.html?kelas=' + k + '&versi=' + v + '&paket=' + encodeURIComponent(nama) + '&harga=' + p.h;
+  return '<article class="kartu" style="--i:' + Math.min(n, 8) + '">' +
+    '<a class="k-ban t' + t + '" href="' + detail + '" tabindex="-1" aria-hidden="true"><span class="t-bg">' + sil(k) + '</span><span class="t-pill">' + (v === 'penuh' ? 'Akses penuh' : 'Tryout saja') + '</span><span class="k-b1">' + esc(b1) + '</span><span class="k-b2">' + esc(b2) + '</span></a>' +
+    '<div class="k-body"><h3><a href="' + detail + '">' + esc(nama) + '</a></h3>' +
+    '<p class="k-ket">' + esc(ket) + (K.contoh ? ' (isi contoh)' : '') + '</p>' +
+    '<p class="k-aktif">Aktif hingga ' + esc(K.uji) + ' selesai</p>' +
+    '<ul>' + p.f.map(function (x) { return '<li>' + esc(isi(x, k)) + '</li>'; }).join('') + '</ul>' +
+    '<div class="k-harga"><span class="k-disc"><b>-' + Math.round((1 - p.h / p.c) * 100) + '%</b><s>' + rp(p.c) + '</s></span><span class="k-now">' + rp(p.h) + '</span></div>' +
+    '<a href="' + esc(bayar) + '" class="btn">Pilih paket ini' + GO + '</a></div></article>';
+}
+// urutan per kelas: kelas lengkap, bundling, lalu tryout satuan Paket 1 sampai KLS.to
+function daftar(k) {
+  var K = KLS[k], s = K.s || K.n, L = [];
+  PAKET.penuh.forEach(function (p) { L.push(['penuh', p, 'Kelas ' + s, p.p, 'Materi, tryout, dan pembahasan dalam satu kelas.', 1, 'kelas']); });
+  PAKET.tryout.slice(1).forEach(function (p) { L.push(['tryout', p, 'Bundling ' + s, p.p, 'Beberapa paket tryout dalam satu kali bayar.', 2, 'bundling']); });
+  for (var j = 1; j <= (K.to || 1); j++) {
+    L.push(['tryout', Object.assign({}, PAKET.tryout[0], { nama: 'Tryout {n} Paket ' + j }), 'Tryout ' + s, 'Paket ' + j,
+      K.sil ? '110 soal: TWK 30, TIU 35, dan TKP 45.' : 'Soal ' + K.isi + ' dengan pembahasan tiap soal.', 0, 'satuan']);
+  }
+  return L;
+}
+var JENIS = { semua: 'Semua jenis', kelas: 'Kelas lengkap', bundling: 'Bundling', satuan: 'Tryout satuan' };
+var q = new URLSearchParams(location.search), kq = q.get('k'), pilih = KLS[kq] || kq === 'semua' ? kq : 'skd', jenis = JENIS[q.get('j')] ? q.get('j') : 'semua';
+var grid = document.getElementById('grid');
+function tampil() {
+  var semua = [], hit = { semua: 0, kelas: 0, bundling: 0, satuan: 0 }, n = 0;
+  (pilih === 'semua' ? Object.keys(KLS) : [pilih]).forEach(function (k) { daftar(k).forEach(function (d) { semua.push([k, d]); hit.semua++; hit[d[6]]++; }); });
+  grid.innerHTML = semua.filter(function (x) { return jenis === 'semua' || x[1][6] === jenis; }).map(function (x) {
+    var d = x[1]; return kartu(x[0], d[0], d[1], d[2], d[3], d[4], d[5], n++);
+  }).join('');
+  document.getElementById('tabs').innerHTML = Object.keys(JENIS).map(function (j) {
+    return '<button type="button" class="tab" data-j="' + j + '" aria-pressed="' + (j === jenis) + '">' + JENIS[j] + '<b>' + hit[j] + '</b></button>';
+  }).join('');
+  document.getElementById('jml').textContent = 'Menampilkan ' + n + ' paket';
+  // layar sempit: deret jenis digeser supaya pilihan aktif terlihat
+  var tabs = document.getElementById('tabs'), on = tabs.querySelector('[aria-pressed=true]');
+  tabs.scrollLeft = on.offsetLeft - tabs.offsetLeft - 16;
+  document.querySelectorAll('[data-k]').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.k === pilih); });
+  history.replaceState(null, '', '?k=' + pilih + (jenis === 'semua' ? '' : '&j=' + jenis));
+}
+document.querySelectorAll('[data-k]').forEach(function (b) {
+  b.addEventListener('click', function () {
+    if (b.dataset.k === pilih) return;
+    pilih = b.dataset.k; grid.classList.add('ganti'); tampil();
+  });
+});
+document.getElementById('tabs').addEventListener('click', function (e) {
+  var b = e.target.closest('[data-j]');
+  if (!b || b.dataset.j === jenis) return;
+  jenis = b.dataset.j; grid.classList.add('ganti'); tampil();
+  document.querySelector('[data-j="' + jenis + '"]').focus();
+});
+tampil();
+// menu atas: navy pekat begitu halaman digulir
+var top_ = document.getElementById('top');
+function cekGulir() { top_.classList.toggle('scrolled', window.scrollY > 40); }
+window.addEventListener('scroll', cekGulir, { passive: true }); cekGulir();
+</script>
+<script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
+<script>
+// Gulir halus, pengaturan sama dengan acuan Choroo; mati bila pengguna mematikan animasi
+if (window.Lenis && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  var lenis = new Lenis({ duration: 0.9, easing: function (t) { return 1 - Math.pow(1 - t, 3); }, allowNestedScroll: true, smoothWheel: true, autoRaf: true });
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a[href^="#"]'), el = a && a.getAttribute('href').length > 1 && document.querySelector(a.getAttribute('href'));
+    if (!el) return;
+    e.preventDefault(); lenis.scrollTo(el);
+  });
+}
+</script>
+</body>
+</html>

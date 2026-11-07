@@ -1,0 +1,1021 @@
+[
+  {
+    "id": "HB-TIU-B06-P01",
+    "bab": 6,
+    "target_detik": 30,
+    "soal": {
+      "tanya": "Bilangan berikut yang paling dekat dengan hasil 647 × 87 : 21 adalah …"
+    },
+    "opsi": {
+      "A": "1.800",
+      "B": "2.100",
+      "C": "2.400",
+      "D": "2.700",
+      "E": "3.000"
+    }
+  },
+  {
+    "id": "HB-TIU-B06-C02",
+    "bab": 6,
+    "target_detik": 60,
+    "soal": {
+      "tanya": "Hasil dari 125% × 96 − 36 : 1,5 + 3 2/5 × 10 adalah …"
+    },
+    "opsi": {
+      "A": "62",
+      "B": "90",
+      "C": "100",
+      "D": "118",
+      "E": "130"
+    }
+  },
+  {
+    "id": "HB-TIU-B06-C03",
+    "bab": 6,
+    "target_detik": 45,
+    "soal": {
+      "tanya": "Hasil dari 36% × 175 + 63 × 98 adalah …"
+    },
+    "opsi": {
+      "A": "6.237",
+      "B": "6.285",
+      "C": "6.300",
+      "D": "6.363",
+      "E": "6.489"
+    }
+  },
+  {
+    "id": "HB-TIU-B06-C04",
+    "bab": 6,
+    "target_detik": 45,
+    "soal": {
+      "pengantar": "Bandingkan dua besaran berikut: P = 103 × 97 dan Q = 101 × 99.",
+      "tanya": "Hubungan yang tepat antara P dan Q adalah …"
+    },
+    "opsi": {
+      "A": "P > Q",
+      "B": "P < Q",
+      "C": "P = Q",
+      "D": "Hubungan P dan Q tidak dapat ditentukan"
+    }
+  },
+  {
+    "id": "HB-TIU-B06-L01",
+    "bab": 6,
+    "target_detik": 45,
+    "soal": {
+      "tanya": "Hasil dari −54 : (−9) − 7 × (2 − (−3)) adalah …"
+    },
+    "opsi": {
+      "A": "−41",
+      "B": "−29",
+      "C": "−5",
+      "D": "1",
+      "E": "13"
+    }
+  },
+  {
+    "id": "HB-TIU-B06-L02",
+    "bab": 6,
+    "target_detik": 45,
+    "soal": {
+      "tanya": "Bilangan berikut yang paling dekat dengan hasil 1.987 : 5/8 adalah …"
+    },
+    "opsi": {
+      "A": "320",
+      "B": "400",
+      "C": "1.250",
+      "D": "3.200",
+      "E": "4.000"
+    }
+  },
+  {
+    "id": "HB-TIU-B06-L03",
+    "bab": 6,
+    "target_detik": 75,
+    "soal": {
+      "pengantar": "x adalah bilangan bulat dengan 6 < x < 11. Diketahui P = x² + 3 dan Q = 8x − 9.",
+      "tanya": "Hubungan yang tepat antara P dan Q adalah …"
+    },
+    "opsi": {
+      "A": "P > Q",
+      "B": "P < Q",
+      "C": "P = Q",
+      "D": "Hubungan P dan Q tidak dapat ditentukan"
+    }
+  },
+  {
+    "id": "HB-TIU-B07-P01",
+    "bab": 7,
+    "target_detik": 45,
+    "soal": {
+      "tanya": "Pasangan perkalian berikut yang kedua ruasnya bernilai sama adalah …"
+    },
+    "opsi": {
+      "A": "28 × 54 dan 32 × 48",
+      "B": "24 × 63 dan 12 × 125",
+      "C": "27 × 56 dan 36 × 42",
+      "D": "31 × 49 dan 33 × 46",
+      "E": "18 × 84 dan 36 × 44"
+    }
+  },
+  {
+    "id": "HB-TIU-B07-C01",
+    "bab": 7,
+    "target_detik": 45,
+    "soal": {
+      "tanya": "Di antara pasangan berikut, pasangan yang kedua ruasnya sama besar adalah …"
+    },
+    "opsi": {
+      "A": "34 × 260 dan 26 × 340",
+      "B": "38 × 270 dan 28 × 370",
+      "C": "52 × 170 dan 65 × 140",
+      "D": "46 × 190 dan 16 × 490",
+      "E": "68 × 130 dan 17 × 530"
+    }
+  },
+  {
+    "id": "HB-TIU-B07-C02",
+    "bab": 7,
+    "target_detik": 45,
+    "soal": {
+      "tanya": "Pasangan pembagian yang hasil kedua ruasnya sama adalah …"
+    },
+    "opsi": {
+      "A": "936 : 26 dan 1.110 : 30",
+      "B": "1.008 : 56 dan 252 : 7",
+      "C": "684 : 19 dan 875 : 25",
+      "D": "1.080 : 30 dan 544 : 16",
+      "E": "1.188 : 33 dan 792 : 22"
+    }
+  },
+  {
+    "id": "HB-TIU-B07-C03",
+    "bab": 7,
+    "target_detik": 60,
+    "soal": {
+      "tanya": "Pasangan yang bernilai sama pada kedua ruasnya adalah …"
+    },
+    "opsi": {
+      "A": "72 : 8 × 6 dan 9 × 12 : 2",
+      "B": "81 : 9 × 6 dan 7 × 16 : 2",
+      "C": "120 : 6 × 2 dan 5 × 8 : 4",
+      "D": "64 : 8 × 7 dan 3 × 36 : 2",
+      "E": "45 : 5 × 6 dan 8 × 13 : 2"
+    }
+  },
+  {
+    "id": "HB-TIU-B07-L01",
+    "bab": 7,
+    "target_detik": 45,
+    "soal": {
+      "tanya": "Pasangan perkalian yang kedua ruasnya bernilai sama adalah …"
+    },
+    "opsi": {
+      "A": "36 × 30 dan 12 × 60",
+      "B": "27 × 40 dan 9 × 120",
+      "C": "30 × 36 dan 90 × 18",
+      "D": "45 × 24 dan 90 × 8",
+      "E": "54 × 20 dan 27 × 10"
+    }
+  },
+  {
+    "id": "HB-TIU-B07-L02",
+    "bab": 7,
+    "target_detik": 75,
+    "soal": {
+      "tanya": "Pasangan berikut yang kedua ruasnya TIDAK bernilai sama adalah …"
+    },
+    "opsi": {
+      "A": "1,25 × 56 dan 5/8 × 120",
+      "B": "0,25 × 64 dan 8 : 0,5",
+      "C": "12,5% × 72 dan 0,36 × 25",
+      "D": "2 1/4 × 16 dan 0,72 × 50",
+      "E": "1,2 × 35 dan 14 × 3"
+    }
+  },
+  {
+    "id": "HB-TIU-B07-L03",
+    "bab": 7,
+    "target_detik": 60,
+    "soal": {
+      "tanya": "Pasangan perkalian yang kedua ruasnya sama besar adalah …"
+    },
+    "opsi": {
+      "A": "24 × 84 dan 42 × 48",
+      "B": "14 × 63 dan 41 × 36",
+      "C": "28 × 72 dan 82 × 27",
+      "D": "23 × 74 dan 32 × 47",
+      "E": "32 × 63 dan 23 × 36"
+    }
+  },
+  {
+    "id": "HB-TIU-B08-P01",
+    "bab": 8,
+    "target_detik": 60,
+    "soal": {
+      "pengantar": "Tabel berikut memuat beberapa suku sebuah barisan bilangan.",
+      "tabel": {
+        "suku": [
+          [
+            6,
+            45
+          ],
+          [
+            3,
+            21
+          ],
+          [
+            14,
+            109
+          ],
+          [
+            11,
+            85
+          ]
+        ]
+      },
+      "tanya": "Nilai suku ke-50 barisan itu adalah …"
+    },
+    "opsi": {
+      "A": "389",
+      "B": "397",
+      "C": "400",
+      "D": "403",
+      "E": "405"
+    }
+  },
+  {
+    "id": "HB-TIU-B08-C01",
+    "bab": 8,
+    "target_detik": 60,
+    "soal": {
+      "pengantar": "Perhatikan tabel suku-suku sebuah barisan berikut.",
+      "tabel": {
+        "suku": [
+          [
+            3,
+            4
+          ],
+          [
+            7,
+            20
+          ],
+          [
+            10,
+            32
+          ],
+          [
+            16,
+            56
+          ]
+        ]
+      },
+      "tanya": "Pada barisan itu, bilangan 180 merupakan suku ke- …"
+    },
+    "opsi": {
+      "A": "43",
+      "B": "44",
+      "C": "45",
+      "D": "47",
+      "E": "48"
+    }
+  },
+  {
+    "id": "HB-TIU-B08-C02",
+    "bab": 8,
+    "target_detik": 75,
+    "soal": {
+      "pengantar": "Tabel berikut memuat empat suku sebuah barisan.",
+      "tabel": {
+        "suku": [
+          [
+            2,
+            7
+          ],
+          [
+            5,
+            19
+          ],
+          [
+            6,
+            25
+          ],
+          [
+            9,
+            49
+          ]
+        ]
+      },
+      "tanya": "Nilai suku ke-30 barisan itu adalah …"
+    },
+    "opsi": {
+      "A": "133",
+      "B": "217",
+      "C": "439",
+      "D": "465",
+      "E": "469"
+    }
+  },
+  {
+    "id": "HB-TIU-B08-C03",
+    "bab": 8,
+    "target_detik": 45,
+    "soal": {
+      "tanya": "Suku berikutnya dari barisan 2, 4, 10, 28, 82, … adalah …"
+    },
+    "opsi": {
+      "A": "164",
+      "B": "172",
+      "C": "244",
+      "D": "246",
+      "E": "248"
+    }
+  },
+  {
+    "id": "HB-TIU-B08-C04",
+    "bab": 8,
+    "target_detik": 60,
+    "soal": {
+      "tanya": "Suku berikutnya dari barisan B3, E6, J12, Q24, Z48, … adalah …"
+    },
+    "opsi": {
+      "A": "K96",
+      "B": "K48",
+      "C": "I72",
+      "D": "K72",
+      "E": "K51"
+    }
+  },
+  {
+    "id": "HB-TIU-B08-L01",
+    "bab": 8,
+    "target_detik": 45,
+    "soal": {
+      "tanya": "Bilangan yang tepat untuk mengisi titik-titik pada barisan 3, 5, …, 15, 23, 33 adalah …"
+    },
+    "opsi": {
+      "A": "7",
+      "B": "9",
+      "C": "10",
+      "D": "11",
+      "E": "13"
+    }
+  },
+  {
+    "id": "HB-TIU-B08-L02",
+    "bab": 8,
+    "target_detik": 60,
+    "soal": {
+      "pengantar": "Tabel berikut memuat beberapa suku sebuah barisan.",
+      "tabel": {
+        "suku": [
+          [
+            3,
+            37
+          ],
+          [
+            8,
+            82
+          ],
+          [
+            12,
+            118
+          ],
+          [
+            17,
+            163
+          ]
+        ]
+      },
+      "tanya": "Selisih suku ke-75 dan suku ke-40 barisan itu adalah …"
+    },
+    "opsi": {
+      "A": "295",
+      "B": "306",
+      "C": "315",
+      "D": "324",
+      "E": "325"
+    }
+  },
+  {
+    "id": "HB-TIU-B08-L03",
+    "bab": 8,
+    "target_detik": 60,
+    "soal": {
+      "tanya": "Suku berikutnya dari barisan MN, PK, TG, YB, … adalah …"
+    },
+    "opsi": {
+      "A": "EV",
+      "B": "DV",
+      "C": "FU",
+      "D": "DW",
+      "E": "FV"
+    }
+  },
+  {
+    "id": "HB-TIU-B08-L04",
+    "bab": 8,
+    "target_detik": 90,
+    "soal": {
+      "pengantar": "Tabel berikut memuat lima suku sebuah barisan.",
+      "tabel": {
+        "suku": [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            14
+          ],
+          [
+            4,
+            76
+          ],
+          [
+            5,
+            140
+          ],
+          [
+            8,
+            536
+          ]
+        ]
+      },
+      "tanya": "Nilai suku ke-12 barisan itu adalah …"
+    },
+    "opsi": {
+      "A": "1.064",
+      "B": "1.364",
+      "C": "1.540",
+      "D": "1.728",
+      "E": "1.764"
+    }
+  },
+  {
+    "id": "HB-TIU-B09-P01",
+    "bab": 9,
+    "target_detik": 75,
+    "soal": {
+      "pengantar": "Bilangan pada setiap baris tabel berikut mengikuti aturan yang sama.",
+      "tabel": {
+        "kisi": [
+          [
+            36,
+            4,
+            13
+          ],
+          [
+            35,
+            5,
+            12
+          ],
+          [
+            48,
+            6,
+            14
+          ],
+          [
+            63,
+            7,
+            "X"
+          ]
+        ]
+      },
+      "tanya": "Nilai X yang tepat adalah …"
+    },
+    "opsi": {
+      "A": "9",
+      "B": "16",
+      "C": "22",
+      "D": "56",
+      "E": "70"
+    }
+  },
+  {
+    "id": "HB-TIU-B09-C01",
+    "bab": 9,
+    "target_detik": 60,
+    "soal": {
+      "pengantar": "Setiap bilangan di kolom kanan diperoleh dari bilangan di kolom kiri dengan aturan yang sama.",
+      "tabel": {
+        "duaKolom": [
+          [
+            7,
+            58
+          ],
+          [
+            3,
+            18
+          ],
+          [
+            10,
+            109
+          ],
+          [
+            4,
+            25
+          ]
+        ]
+      },
+      "tanya": "Bilangan di kolom kanan untuk bilangan 13 di kolom kiri adalah …"
+    },
+    "opsi": {
+      "A": "130",
+      "B": "153",
+      "C": "160",
+      "D": "169",
+      "E": "178"
+    }
+  },
+  {
+    "id": "HB-TIU-B09-C02",
+    "bab": 9,
+    "target_detik": 75,
+    "soal": {
+      "pengantar": "Bilangan di baris bawah setiap kolom tabel berikut dihitung dari dua bilangan di atasnya dengan aturan yang sama.",
+      "tabel": {
+        "kisiKolom": [
+          [
+            7,
+            5,
+            9,
+            8
+          ],
+          [
+            4,
+            6,
+            10,
+            "X"
+          ],
+          [
+            17,
+            9,
+            17,
+            13
+          ]
+        ]
+      },
+      "tanya": "Nilai X adalah …"
+    },
+    "opsi": {
+      "A": "11",
+      "B": "16",
+      "C": "21",
+      "D": "31",
+      "E": "37"
+    }
+  },
+  {
+    "id": "HB-TIU-B09-C03",
+    "bab": 9,
+    "target_detik": 90,
+    "soal": {
+      "pengantar": "Isi setiap petak pada model kotak berikut ditentukan oleh angka acuan di tepi barisnya dan angka acuan di tepi kolomnya.",
+      "tabel": {
+        "acuan": {
+          "R": [
+            2,
+            4,
+            5
+          ],
+          "C": [
+            1,
+            3,
+            6
+          ],
+          "sel": [
+            [
+              7,
+              15,
+              42
+            ],
+            [
+              13,
+              21,
+              48
+            ],
+            [
+              16,
+              24,
+              "X"
+            ]
+          ]
+        }
+      },
+      "tanya": "Nilai X adalah …"
+    },
+    "opsi": {
+      "A": "32",
+      "B": "41",
+      "C": "42",
+      "D": "51",
+      "E": "54"
+    }
+  },
+  {
+    "id": "HB-TIU-B09-C04",
+    "bab": 9,
+    "target_detik": 90,
+    "soal": {
+      "pengantar": "Bilangan pada kotak berikut tersusun menurut pola.",
+      "tabel": {
+        "xy": [
+          [
+            3,
+            7,
+            13,
+            21,
+            31,
+            "X"
+          ],
+          [
+            5,
+            13,
+            25,
+            41,
+            61,
+            "Y"
+          ]
+        ]
+      },
+      "tanya": "Nilai X dan Y berturut-turut adalah …"
+    },
+    "opsi": {
+      "A": "41 dan 81",
+      "B": "43 dan 81",
+      "C": "43 dan 85",
+      "D": "43 dan 89",
+      "E": "45 dan 89"
+    }
+  },
+  {
+    "id": "HB-TIU-B09-L01",
+    "bab": 9,
+    "target_detik": 60,
+    "soal": {
+      "pengantar": "Setiap bilangan di kolom kanan diperoleh dari bilangan di kolom kiri dengan aturan yang sama.",
+      "tabel": {
+        "duaKolom": [
+          [
+            5,
+            15
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            9,
+            31
+          ],
+          [
+            7,
+            23
+          ]
+        ]
+      },
+      "tanya": "Bilangan di kolom kanan untuk bilangan 20 di kolom kiri adalah …"
+    },
+    "opsi": {
+      "A": "71",
+      "B": "75",
+      "C": "79",
+      "D": "80",
+      "E": "85"
+    }
+  },
+  {
+    "id": "HB-TIU-B09-L02",
+    "bab": 9,
+    "target_detik": 75,
+    "soal": {
+      "pengantar": "Kolom kanan tabel berikut diperoleh dari kolom kiri dengan satu aturan.",
+      "tabel": {
+        "duaKolom": [
+          [
+            3,
+            15
+          ],
+          [
+            5,
+            45
+          ],
+          [
+            8,
+            120
+          ],
+          [
+            6,
+            66
+          ]
+        ]
+      },
+      "tanya": "Bilangan kanan untuk kiri 11 adalah …"
+    },
+    "opsi": {
+      "A": "143",
+      "B": "190",
+      "C": "201",
+      "D": "231",
+      "E": "242"
+    }
+  },
+  {
+    "id": "HB-TIU-B09-L03",
+    "bab": 9,
+    "target_detik": 90,
+    "soal": {
+      "pengantar": "Pada kotak berikut, setiap petak selain baris teratas dan kolom paling kiri dihitung dari petak di sebelah kirinya dan petak di atasnya dengan aturan yang sama.",
+      "tabel": {
+        "tetangga": [
+          [
+            5,
+            6,
+            4,
+            7
+          ],
+          [
+            3,
+            7,
+            9,
+            14
+          ],
+          [
+            8,
+            13,
+            20,
+            32
+          ],
+          [
+            2,
+            13,
+            31,
+            "X"
+          ]
+        ]
+      },
+      "tanya": "Nilai X adalah …"
+    },
+    "opsi": {
+      "A": "33",
+      "B": "49",
+      "C": "61",
+      "D": "63",
+      "E": "65"
+    }
+  },
+  {
+    "id": "HB-TIU-B09-L04",
+    "bab": 9,
+    "target_detik": 90,
+    "soal": {
+      "pengantar": "Bilangan terakhir di setiap baris tabel berikut dihitung dari tiga bilangan sebelumnya dengan aturan yang sama.",
+      "tabel": {
+        "kisi": [
+          [
+            3,
+            4,
+            5,
+            23
+          ],
+          [
+            6,
+            2,
+            7,
+            20
+          ],
+          [
+            5,
+            3,
+            4,
+            17
+          ],
+          [
+            8,
+            6,
+            3,
+            "X"
+          ]
+        ]
+      },
+      "tanya": "Nilai X yang tepat adalah …"
+    },
+    "opsi": {
+      "A": "7",
+      "B": "18",
+      "C": "26",
+      "D": "30",
+      "E": "42"
+    }
+  },
+  {
+    "id": "HB-TIU-B10-P01",
+    "bab": 10,
+    "target_detik": 90,
+    "soal": {
+      "pengantar": "Ani dapat mengecat sebuah pagar sendirian dalam 6 jam, sedangkan Budi dalam 9 jam. Mereka mulai mengecat bersama-sama. Setelah 2 jam, Budi pergi, dan Ani menyelesaikan sisanya sendirian.",
+      "tanya": "Pagar selesai dicat setelah …, dihitung sejak mereka mulai."
+    },
+    "opsi": {
+      "A": "2 jam 40 menit",
+      "B": "3 jam 36 menit",
+      "C": "4 jam 24 menit",
+      "D": "4 jam 36 menit",
+      "E": "4 jam 40 menit"
+    }
+  },
+  {
+    "id": "HB-TIU-B10-C01",
+    "bab": 10,
+    "target_detik": 60,
+    "soal": {
+      "pengantar": "Tangki air sebuah sekolah terisi 75% dari kapasitasnya. Setelah dipakai 360 liter, isinya tinggal 45%.",
+      "tanya": "Agar tangki terisi 90%, air yang perlu ditambahkan sebanyak … liter."
+    },
+    "opsi": {
+      "A": "54",
+      "B": "180",
+      "C": "405",
+      "D": "486",
+      "E": "540"
+    }
+  },
+  {
+    "id": "HB-TIU-B10-C02",
+    "bab": 10,
+    "target_detik": 75,
+    "soal": {
+      "pengantar": "Pembangunan sebuah pos ronda direncanakan selesai dalam 28 hari oleh 20 pekerja. Setelah 8 hari bekerja, pembangunan terhenti 4 hari karena hujan.",
+      "tanya": "Agar pembangunan selesai tepat waktu, banyak pekerja tambahan yang diperlukan adalah …"
+    },
+    "opsi": {
+      "A": "4",
+      "B": "5",
+      "C": "15",
+      "D": "20",
+      "E": "25"
+    }
+  },
+  {
+    "id": "HB-TIU-B10-C03",
+    "bab": 10,
+    "target_detik": 105,
+    "soal": {
+      "pengantar": "Sebuah bak penampungan dapat diisi penuh oleh keran A dalam 6 jam dan oleh keran B dalam 10 jam. Keran pembuang C dapat mengosongkan bak yang penuh dalam 10 jam. Mula-mula bak kosong, lalu ketiga keran dibuka bersamaan. Setelah 2 jam, keran B ditutup, sedangkan A dan C tetap terbuka.",
+      "tanya": "Bak penuh setelah … sejak ketiga keran dibuka."
+    },
+    "opsi": {
+      "A": "3 jam",
+      "B": "6 jam",
+      "C": "9 jam",
+      "D": "10 jam",
+      "E": "12 jam"
+    }
+  },
+  {
+    "id": "HB-TIU-B10-C04",
+    "bab": 10,
+    "target_detik": 90,
+    "soal": {
+      "pengantar": "Pukul 07.15 Dika berangkat bersepeda dari rumah dengan laju tetap 18 km/jam. Pukul 07.35 kakaknya menyusul lewat jalan yang sama dengan sepeda motor berlaju tetap 42 km/jam.",
+      "tanya": "Kakak menyusul Dika pada pukul …"
+    },
+    "opsi": {
+      "A": "07.30",
+      "B": "07.41",
+      "C": "07.44",
+      "D": "07.50",
+      "E": "07.55"
+    }
+  },
+  {
+    "id": "HB-TIU-B10-C05",
+    "bab": 10,
+    "target_detik": 75,
+    "soal": {
+      "pengantar": "Sebuah kereta sepanjang 300 meter melaju tetap 90 km/jam dan melintasi terowongan sepanjang 1.200 meter.",
+      "tanya": "Waktu sejak ujung depan kereta masuk terowongan sampai ujung belakangnya keluar adalah … detik."
+    },
+    "opsi": {
+      "A": "36",
+      "B": "48",
+      "C": "50",
+      "D": "60",
+      "E": "72"
+    }
+  },
+  {
+    "id": "HB-TIU-B10-C06",
+    "bab": 10,
+    "target_detik": 75,
+    "soal": {
+      "pengantar": "Perbandingan umur Kak Ratna dan Dimas sekarang 3 : 2. Lima tahun lagi, perbandingan umur mereka menjadi 7 : 5.",
+      "tanya": "Umur Kak Ratna sekarang adalah … tahun."
+    },
+    "opsi": {
+      "A": "3",
+      "B": "15",
+      "C": "20",
+      "D": "25",
+      "E": "30"
+    }
+  },
+  {
+    "id": "HB-TIU-B10-C07",
+    "bab": 10,
+    "target_detik": 60,
+    "soal": {
+      "pengantar": "Sebuah toko membeli tas seharga Rp80.000 dan memasang harga Rp200.000. Saat obral, tas itu didiskon 40%, lalu didiskon lagi 10% dari harga setelah diskon pertama.",
+      "tanya": "Persentase keuntungan toko terhadap harga beli adalah …"
+    },
+    "opsi": {
+      "A": "14%",
+      "B": "25%",
+      "C": "28%",
+      "D": "35%",
+      "E": "50%"
+    }
+  },
+  {
+    "id": "HB-TIU-B10-L01",
+    "bab": 10,
+    "target_detik": 45,
+    "soal": {
+      "pengantar": "Perbandingan banyak perangko koleksi Adi dan Banu 5 : 3. Perangko Adi 30 lembar lebih banyak daripada perangko Banu.",
+      "tanya": "Jumlah perangko mereka berdua adalah … lembar."
+    },
+    "opsi": {
+      "A": "8",
+      "B": "75",
+      "C": "80",
+      "D": "120",
+      "E": "240"
+    }
+  },
+  {
+    "id": "HB-TIU-B10-L02",
+    "bab": 10,
+    "target_detik": 75,
+    "soal": {
+      "pengantar": "Sebuah truk mengangkut pasir dari tambang ke lokasi proyek yang berjarak 90 km. Saat bermuatan, truk melaju 20 km/jam; saat kembali kosong lewat jalan yang sama, truk melaju 60 km/jam.",
+      "tanya": "Kecepatan rata-rata truk untuk perjalanan pergi dan pulang adalah … km/jam."
+    },
+    "opsi": {
+      "A": "15",
+      "B": "30",
+      "C": "40",
+      "D": "45",
+      "E": "60"
+    }
+  },
+  {
+    "id": "HB-TIU-B10-L03",
+    "bab": 10,
+    "target_detik": 90,
+    "soal": {
+      "pengantar": "Sebuah perahu motor menempuh 60 km menyusuri sungai searah arus dalam 2 jam, lalu kembali ke tempat semula melawan arus dalam 3 jam.",
+      "tanya": "Laju perahu itu di air tenang adalah … km/jam."
+    },
+    "opsi": {
+      "A": "5",
+      "B": "10",
+      "C": "24",
+      "D": "25",
+      "E": "30"
+    }
+  },
+  {
+    "id": "HB-TIU-B10-L04",
+    "bab": 10,
+    "target_detik": 75,
+    "soal": {
+      "pengantar": "Seorang pedagang membeli 5 peti apel. Bobot setiap peti beserta isinya 40 kg, dengan tara 5%. Harga apel Rp15.000 per kg neto. Ongkos angkut Rp50.000 per peti ditanggung pemasok.",
+      "tanya": "Uang yang dibayar pedagang untuk apel itu adalah …"
+    },
+    "opsi": {
+      "A": "Rp2.625.000",
+      "B": "Rp2.700.000",
+      "C": "Rp2.850.000",
+      "D": "Rp2.900.000",
+      "E": "Rp3.000.000"
+    }
+  },
+  {
+    "id": "HB-TIU-B10-L05",
+    "bab": 10,
+    "target_detik": 75,
+    "soal": {
+      "pengantar": "Bu Lina menabung Rp2.400.000 dengan bunga tunggal 10% per tahun.",
+      "tanya": "Saldo tabungannya setelah 1 tahun 6 bulan adalah …"
+    },
+    "opsi": {
+      "A": "Rp2.520.000",
+      "B": "Rp2.640.000",
+      "C": "Rp2.760.000",
+      "D": "Rp2.772.000",
+      "E": "Rp2.784.000"
+    }
+  }
+]

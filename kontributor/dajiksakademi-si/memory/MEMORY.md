@@ -1,0 +1,34 @@
+- [SKD Lead Instructor skill](skd-lead-instructor-skill.md) — skd-expert + /skd-belajar; Sesi 1 selesai, berikut Sesi 2
+- [SKD BIG DATA layout](skd-big-data-layout.md) — bahan di BIG DATA/, root CLAUDE.md + memory.md, sumber luar di Trash
+- [SKD TIU engine 3K](skd-tiu-engine-3k.md) — engine TIU v0.4.3 + generator figural; 3 paket figural TO siap; blueprint Paket 41
+- [Handbook TIU](skd-handbook-tiu.md) — buku siswa selesai 278 hlm + Daftar Isi; draf, menunggu reviu manusia
+- [Paket baku SKD](project-skd-paket-baku.md) — TWK 30 · TIU 35 · TKP 45; 3 TO dulu; TWK TO + TIU Paket 1 tuntas, ekspor ditunda
+- [SKD TWK Al Faiz](skd-twk-al-faiz.md) — riset TWK luar, hasilnya engine v1.4–v1.6
+- [TWK-2026SL](skd-twk-2026sl.md) — 232 soal luar dianalisis, engine + validator v1.6 tuntas
+- [Handbook TWK](skd-handbook-twk.md) — FINAL 2026-10-28; tiga landasan TWK
+- [TKP bocor bentuk](skd-tkp-bocor-bentuk.md) — bank 80 lama tertebak 81%; validator hidup = validate_soal.js
+- [TKP Al Faiz ATM](skd-tkp-al-faiz.md) — riset TKP Al Faiz, usulan L–W masuk engine v1.3
+- [TKP produksi paket](skd-tkp-produksi-paket.md) — Paket 1–2 tuntas, engine v1.3.5; menunggu kesan pengajar Paket 1
+- [TKP jalan pintas](skd-tkp-jalan-pintas.md) — urutan produksi tanpa kerja ulang; TKP berhenti di paket 2
+- [TKP Pindai Cepat](skd-tkp-pindai-cepat.md) — teknik pindai + Handbook TKP gaya baru FINAL
+- [Uji Paket 41 Al Faiz](skd-uji-paket41.md) — TWK 30/30, TIU 33/35, TKP 221/225, tuntas
+- [Portal terpadu](project-portal-terpadu.md) — HTML lokal PORTAL TERPADU/landing/; ruang siswa tryout utuh & disetujui 2026-11-04 (kartu geser gaya kartu paket); daftar terbuka + yang ditolak
+- [Proposal kelas offline](project-proposal-kelas-offline.md) — mockup Tryout SKD, menunggu kesan
+- [Catat rules Gusti](feedback-catat-rules-gusti.md) — putusan dicatat saat itu juga: rincian di log, status di memori
+- [Belajar per tahap](feedback-belajar-per-tahap.md) — tiap tahap/cek buta: pelajaran ke skill, cek.py OK
+- [Prompt sesi berikut](feedback-prompt-sesi-berikut.md) — dekat batas context: tulis prompt siap-tempel + simpan di log
+- [Bahasa ke Gusti](feedback-bahasa-ke-gusti.md) — formal baku, tanpa istilah teknis
+- [Amati Tiru Modifikasi](feedback-amati-tiru-modifikasi.md) — dari bahan luar hanya logika penyusun
+- [Pembahasan manusiawi](feedback-pembahasan-manusiawi.md) — gaya guru bicara yang hangat, bukan templat AI
+- [Wording soal mentor](feedback-wording-soal-mentor.md) — soal TKP ≤45 kata ≤4 kalimat, opsi 10–12 kata
+- [Wording handbook](feedback-wording-handbook.md) — narasi baku mutu penulis buku; judul gaya buku pelajaran; TIU diksi super teacher
+- [Desain handbook](feedback-desain-handbook.md) — impeccable + emil-design-eng, codex untuk hiasan, Cinzel, tenang-elegan
+- [Figural kedinasan](feedback-figural-kedinasan.md) — peserta calon kedinasan/TNI/Polri; gaya guratan Al Faiz boleh; catat tiap revisi desain
+- Arsip memori lengkap sebelum dirapikan: `~/.claude/skills/skd-expert/riset/arsip-memory-2026-11-02/`
+- [Alur produksi ringkas](feedback-alur-produksi-ringkas.md) — cek bentuk di script, cek buta 1×, pembahasan sesudah lolos, putusan sekaligus
+- [Portal DATA CONTOH](project-portal-data-contoh.md) — paket, harga, FAQ, nilai siswa, susunan soal, durasi 100 menit masih contoh; INGATKAN Gusti tiap sesi
+- [Tanpa subagen](feedback-tanpa-subagen.md) — kerjakan di sesi utama, subagen hanya bila diminta; ikuti CLAUDE.md global
+- [Alur usul desain](feedback-alur-usul-desain.md) — usul bernomor → 1 tanya → prototipe 1 unit via codex SVG → tangkapan layar → perluas
+- [PDF rusak jadi teks](project-pdf-rusak-teks.md) — ciri EF BF BD, bangun ulang dari sumber; juga kasus sampul rusak hanya di pembaca Apple (bayangan pita)
+- [Skill /dajiks-handbook](reference-skill-dajiks-handbook.md) — pedoman buku global; pelajaran lintas proyek masuk ke sini
+- [Repo kolaborasi](project-repo-kolaborasi.md) — folder ini = repo privat dajiksakademi-si/skd-kedinasan; wajib catat kontributor

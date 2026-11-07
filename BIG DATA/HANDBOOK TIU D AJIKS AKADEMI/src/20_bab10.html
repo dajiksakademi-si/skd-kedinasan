@@ -1,0 +1,376 @@
+<!-- ═════════ BAB 10 · PERBANDINGAN, PERSENTASE, DAN LAJU DALAM SOAL CERITA ═════════
+     Rencana: reports/tahap2_C_numerik.md Bab 10 + sebaran latihan T2-1b (5 latihan) + Putusan 8: umur, bunga tunggal,
+     bruto-neto-tara, kereta, arus sungai, perbandingan jumlah-selisih dijelaskan dengan besaran tetap (selisih umur,
+     laju relatif, dasar persen), bukan rumus per kasus. Semua angka narasi dihitung di scripts/cek_bab06_10.mjs. -->
+<section class="bab num" data-bab="10">
+  <header class="band">
+    <div class="no">10</div>
+    <div>
+      <h2>Soal Cerita</h2>
+      <p>Bab ini membahas persamaan hasil = laju × waktu, perbandingan senilai dan berbalik nilai, kerja bersama, laju relatif, selisih yang tetap, serta persen terhadap dasar yang tepat.</p>
+      <p class="waktu"><svg class="ico"><use href="#jam"/></svg>{{TARGET}}</p>
+    </div>
+    <div class="kisi" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="emas"></i></div>
+  </header>
+
+  <p class="lead">Soal cerita numerik tampak beragam: keran mengisi kolam, pekerja menyelesaikan jalan, kereta melintasi terowongan, harga dipotong dua kali. Di balik cerita-cerita itu bekerja persamaan yang sama, dan setiap cerita menyimpan satu besaran yang tidak berubah. Tugasmu menemukan besaran itu lebih dulu, baru menghitung. Kerjakan pertanyaan pembuka berikut sebelum membaca uraiannya.</p>
+
+<!--B10-P01:mulai-->
+<div data-soal="HB-TIU-B10-P01" data-target="90">
+  <div class="soal">
+    <div class="meta"><span id="soal-B10-P01">Pertanyaan Pembuka<a class="ke" href="#bahas-B10-P01">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 90 detik</span></div>
+    <p class="stem">Ani dapat mengecat sebuah pagar sendirian dalam 6 jam, sedangkan Budi dalam 9 jam. Mereka mulai mengecat bersama-sama. Setelah 2 jam, Budi pergi, dan Ani menyelesaikan sisanya sendirian.</p>
+    <p class="stem">Pagar selesai dicat setelah …, <mark>dihitung sejak mereka mulai</mark>.</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>2 jam 40 menit</span></li><li><span class="h">B</span><span>3 jam 36 menit</span></li><li><span class="h">C</span><span>4 jam 24 menit</span></li><li><span class="h">D</span><span>4 jam 36 menit</span></li><li><span class="h">E</span><span>4 jam 40 menit</span></li></ol>
+  </div>
+  <div class="guru"><b>CRT kerja bersama, satu pelaku berhenti, tanya total waktu.</b> Kunci E. Kode: A J-LANGKAH · B J-ASUMSI · C J-SATUAN · D J-SATUAN · E <b>kunci</b>. Kerangka: CRT kerja bersama · kapasitas = KPK 6, 9 · pelaku kedua berhenti setelah 2 jam · tahap akhir saja, terus bersama, menit dibaca desimal, ⅔ jam dibulatkan. TO terdekat: TO P1 no. 45 (pengosong terlambat); Bab 2 C2 (pekerja berubah, tanya total hari). Bukti: kapasitas 18 bagian (KPK 6, 9); tahap 1: 10 bagian, tahap 2: 8 bagian : 3 Jarak kunci ke pilihan terdekat 0,06666666666666732, median jarak 0,4999999999999998. Slot: J-LANGKAH, J-LAJU, J-ASUMSI, J-SATUAN; J-LAJU (waktu dirata-rata) menghasilkan pilihan berbentuk jam bulat yang tunggal bentuknya, diganti jalur kedua J-SATUAN agar kelima pilihan berbentuk jam-menit.</div>
+</div>
+<!--B10-P01:selesai-->
+
+  <h3>Satu Persamaan: Hasil = Laju × Waktu</h3>
+  <p>Hampir setiap soal cerita numerik adalah satu persamaan: <b>hasil = laju × waktu</b>. Laju adalah hasil per satuan waktu. Persamaan ini dapat dibalik menjadi waktu = hasil : laju atau laju = hasil : waktu.</p>
+  <table class="tb">
+    <thead><tr><th style="width:31%">Cerita</th><th style="width:24%">Hasil</th><th style="width:24%">Laju</th><th>Waktu</th></tr></thead>
+    <tbody>
+      <tr><td>Keran mengisi kolam</td><td>volume air</td><td>liter per menit</td><td>menit</td></tr>
+      <tr><td>Pekerja menyelesaikan pekerjaan</td><td>bagian pekerjaan</td><td>bagian per hari</td><td>hari</td></tr>
+      <tr><td>Kendaraan menempuh jarak</td><td>jarak</td><td>kilometer per jam</td><td>jam</td></tr>
+      <tr><td>Tabungan berbunga tunggal</td><td>bunga</td><td>bunga per tahun</td><td>tahun</td></tr>
+    </tbody>
+  </table>
+  <p>Sebelum menghitung, isi tiga kolom ini untuk ceritamu dan samakan satuannya: menit dengan menit, jam dengan jam, meter dengan meter. Angka di soal yang tidak masuk ke salah satu kolom biasanya tidak diperlukan.</p>
+
+  <h3>Senilai dan Berbalik Nilai: Mencari Besaran yang Tetap</h3>
+  <p>Dua besaran <b>senilai</b> bila hasil baginya tetap, dan <b>berbalik nilai</b> bila hasil kalinya tetap. Harga gula senilai dengan beratnya: 3 kg seharga Rp45.000 berarti Rp15.000 per kg, tetap, sehingga 5 kg seharga Rp75.000. Banyak pekerja berbalik nilai dengan lama kerja: 6 pekerja yang menyelesaikan suatu pekerjaan dalam 10 hari berarti pekerjaan itu bernilai 60 pekerja-hari, tetap, sehingga 4 pekerja memerlukan 60 : 4 = 15 hari.</p>
+  <p>Bila ragu, pakai uji dua kali lipat. Lipatduakan besaran pertama, lalu tanyakan: besaran kedua ikut berlipat dua (senilai) atau menjadi setengahnya (berbalik nilai)? Pekerja dilipatduakan, waktunya menjadi setengah; hubungannya berbalik nilai.</p>
+
+  <h3>Kerja Bersama dan Keran</h3>
+  <p>Pelaku yang bekerja bersamaan menjumlahkan <b>laju</b>, bukan waktu. Pengosong bekerja melawan pengisi, jadi lajunya bertanda negatif. Perhatikan kolam yang dapat diisi keran A dalam 4 jam, keran B dalam 6 jam, dan dapat dikuras pengosong C dalam 12 jam.</p>
+  <div class="konsep">
+    <div class="def">
+      <p>Anggap kapasitas kolam 12 bagian. Laju A 3 bagian per jam, laju B 2 bagian per jam, dan laju C −1 bagian per jam. A dan B bersama mengisi 5 bagian per jam, sehingga kolam penuh dalam 12 : 5 = 2,4 jam, yaitu 2 jam 24 menit. Bila C ikut terbuka, lajunya 4 bagian per jam dan kolam penuh dalam 3 jam.</p>
+      <p>Uji masuk akal: A dan B bersama harus lebih cepat daripada A sendiri, dan 2 jam 24 menit memang kurang dari 4 jam. Dengan pengosong, kolam harus terisi lebih lambat, dan 3 jam memang lebih lama daripada 2 jam 24 menit.</p>
+    </div>
+    <table class="hit">
+      <thead><tr><th>Pelaku</th><th>Sendiri</th><th>Laju</th></tr></thead>
+      <tbody>
+        <tr><td>A</td><td>4 jam</td><td>3</td></tr>
+        <tr><td>B</td><td>6 jam</td><td>2</td></tr>
+        <tr><td>C</td><td>12 jam</td><td>−1</td></tr>
+        <tr class="uji"><td>A + B</td><td>2,4 jam</td><td>5</td></tr>
+        <tr class="uji"><td>A + B + C</td><td>3 jam</td><td>4</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Bila salah satu pelaku mulai terlambat atau berhenti di tengah, hitung per tahap. Hasil setiap tahap sama dengan jumlah laju pada tahap itu dikali lamanya. Jumlahkan hasil semua tahap sampai pekerjaan selesai, lalu jawab yang ditanya: lama tahap terakhir, atau lama seluruhnya sejak awal.</p>
+
+  <h3>Memilih Angka Ramah untuk Besaran yang Saling Menghapus</h3>
+  <p>Kapasitas kolam di atas tidak disebut, tetapi dipilih 12 bagian. Pilihan ini sah karena kapasitas saling menghapus. Misalkan kapasitasnya V. Laju A dan B adalah V : 4 dan V : 6, jadi waktu bersama sama dengan <span class="m">V : (V : 4 + V : 6) = 1 : (<span class="fr"><sup>1</sup>⁄<sub>4</sub></span> + <span class="fr"><sup>1</sup>⁄<sub>6</sub></span>) = <span class="fr"><sup>12</sup>⁄<sub>5</sub></span> jam</span>, berapa pun V. Memilih V = 12, yaitu KPK dari 4, 6, dan 12, hanya membuat semua laju menjadi bilangan bulat. Pada soal persen tanpa harga awal, pilih harga awal 100 dengan alasan yang sama.</p>
+
+  <h3>Laju Relatif</h3>
+  <p>Dua benda yang bergerak dapat dipandang sebagai satu benda dengan <b>laju relatif</b>. Benda yang saling mendekat dari arah berlawanan menjumlahkan lajunya; benda yang bergerak searah mengurangkan lajunya. Besaran tetapnya adalah jarak yang harus dihabiskan.</p>
+  <table class="tb">
+    <thead><tr><th style="width:17%">Keadaan</th><th style="width:22%">Jarak yang dihabiskan</th><th style="width:19%">Laju yang dipakai</th><th>Contoh</th></tr></thead>
+    <tbody>
+      <tr><td><b>Berpapasan</b></td><td>jarak awal kedua benda</td><td>jumlah kedua laju</td><td>jarak 150 km, laju <span class="m">40 km/jam</span> dan <span class="m">60 km/jam</span>: bertemu setelah <span class="m">150 : 100 = 1,5 jam</span></td></tr>
+      <tr><td><b>Menyusul</b></td><td>jarak yang sudah ditempuh benda pertama</td><td>selisih kedua laju</td><td>A berangkat 30 menit lebih dulu dengan laju <span class="m">40 km/jam</span>; B menyusul dengan <span class="m">60 km/jam</span>. Jarak awal 20 km, disusul dalam <span class="m">20 : 20 = 1 jam</span> setelah B berangkat</td></tr>
+      <tr><td><b>Kereta melintasi terowongan</b></td><td>panjang terowongan + panjang kereta</td><td>laju kereta</td><td>terowongan 700 m, kereta 200 m, laju <span class="m">72 km/jam = 20 m/detik</span>: <span class="m">900 : 20 = 45 detik</span></td></tr>
+      <tr><td><b>Perahu di sungai</b></td><td>jarak tempuh</td><td>hilir: perahu + arus; hulu: perahu − arus</td><td>hilir <span class="m">24 km/jam</span>, hulu <span class="m">16 km/jam</span>: laju perahu <span class="m">(24 + 16) : 2 = 20 km/jam</span>, laju arus <span class="m">(24 − 16) : 2 = 4 km/jam</span></td></tr>
+    </tbody>
+  </table>
+  <p>Kereta baru selesai melintas ketika gerbong terakhirnya keluar, jadi panjang kereta ikut ditempuh. Laju dalam km/jam diubah ke m/detik dengan mengalikan 1.000 : 3.600 = 5 : 18, misalnya 72 × 5 : 18 = 20.</p>
+  <p><b>Kecepatan rata-rata</b> adalah total jarak dibagi total waktu, bukan rata-rata dua kecepatan. Mobil yang menempuh <span class="m">120 km</span> dengan laju <span class="m">60 km/jam</span> lalu kembali dengan laju <span class="m">40 km/jam</span> memerlukan 2 + 3 = 5 jam untuk 240 km. Kecepatan rata-ratanya 240 : 5 = 48 km/jam, bukan 50 km/jam: waktu yang lebih lama berlangsung pada laju yang lebih rendah.</p>
+
+  <h3>Selisih yang Tetap: Umur dan Perbandingan</h3>
+  <p>Umur dua orang bertambah sama cepat, satu tahun setiap tahun. Akibatnya <b>selisih umur tidak pernah berubah</b>, sedangkan perbandingan umurnya berubah. Misalkan perbandingan umur ayah dan anak sekarang 7 : 3 dan selisih umurnya 28 tahun. Selisih 7 − 3 = 4 bagian bernilai 28 tahun, jadi satu bagian 7 tahun: ayah 49 tahun dan anak 21 tahun. Lima tahun lagi umur mereka 54 dan 26 tahun; selisihnya tetap 28, tetapi perbandingannya kini 27 : 13.</p>
+  <p>Cara yang sama berlaku untuk setiap perbandingan yang disertai jumlah atau selisih. Bila perbandingannya <i>a</i> : <i>b</i>, selisih kedua besaran bernilai <i>a</i> − <i>b</i> bagian dan jumlahnya bernilai <i>a</i> + <i>b</i> bagian. Pada contoh di atas, jumlah umur sekarang 10 bagian, yaitu 70 tahun. Angka perbandingan saja tidak memberi umur; diperlukan satu besaran nyata, seperti selisih atau jumlah itu.</p>
+
+  <h3>Persen terhadap Dasar yang Tepat</h3>
+  <p>Persen selalu persen <b>dari</b> sesuatu. Kekeliruan pada soal persen hampir selalu berupa dasar yang salah. Tabel berikut memuat dasar yang tepat untuk lima bentuk soal.</p>
+  <table class="tb">
+    <thead><tr><th style="width:19%">Bentuk</th><th style="width:22%">Dasar (100%)</th><th>Contoh</th></tr></thead>
+    <tbody>
+      <tr><td><b>Persen kapasitas</b></td><td>kapasitas penuh</td><td>isi naik dari 40% menjadi 65% setelah ditambah 50 liter: 25% = 50 liter, jadi 1% = 2 liter dan kapasitasnya 200 liter</td></tr>
+      <tr><td><b>Untung dan rugi</b></td><td>harga beli</td><td>dibeli Rp80.000, untung 25%: dijual Rp100.000. Untung Rp20.000 itu hanya 20% dari harga jual</td></tr>
+      <tr><td><b>Diskon bertingkat</b></td><td>harga setelah potongan sebelumnya</td><td>diskon 20% lalu 10%: yang dibayar 80% × 90% = 72%, jadi potongan totalnya 28%, bukan 30%</td></tr>
+      <tr><td><b>Bruto, neto, tara</b></td><td>bruto (berat kotor)</td><td>bruto 50 kg dengan tara 4%: tara 2 kg dan neto 48 kg</td></tr>
+      <tr><td><b>Bunga tunggal</b></td><td>modal awal, pada setiap periode</td><td>Rp2.000.000 berbunga 6% per tahun selama 8 bulan: bunganya 2.000.000 × 6% × <span class="fr"><sup>8</sup>⁄<sub>12</sub></span> = Rp80.000</td></tr>
+    </tbody>
+  </table>
+  <p>Bunga tunggal disebut tunggal karena dasarnya tetap: bunga setiap periode dihitung dari modal awal, bukan dari saldo yang sudah berbunga. Lama simpan dalam bulan diubah ke tahun lebih dulu, sebab persen bunga dinyatakan per tahun. Kata "kenaikan" juga menuntut dasar yang tepat: bila suatu biaya sebanding dengan kenaikan jumlah barang, yang dibandingkan adalah kenaikannya, bukan jumlah akhirnya.</p>
+
+  <h3>Langkah Penyelesaian Soal Cerita</h3>
+  <div class="rules satu">
+    <div><b>Tulis daftar:</b> hasil, laju setiap pelaku, dan waktu setiap tahap. Coret angka yang tidak masuk daftar.</div>
+    <div><b>Samakan satuan</b> sebelum menghitung.</div>
+    <div><b>Tentukan besaran yang tetap:</b> laju, hasil kali, selisih, jarak yang dihabiskan, atau dasar persen.</div>
+    <div><b>Pilih angka ramah</b> untuk besaran yang saling menghapus: kapasitas = KPK waktu, harga awal = 100.</div>
+    <div><b>Jumlahkan laju per tahap</b>, dengan tanda negatif untuk pengosong, lalu hitung setiap tahap dengan hasil = laju × waktu.</div>
+    <div><b>Uji masuk akal:</b> bandingkan dengan pelaku tercepat sendirian, atau dengan keadaan tanpa pengosong.</div>
+    <div><b>Cek balik:</b> masukkan jawaban ke cerita, dan pastikan yang dijawab adalah yang ditanya.</div>
+  </div>
+
+  <h3>Kekeliruan pada Soal Cerita</h3>
+  <p>Setiap pilihan salah pada soal cerita D'Ajiks lahir dari salah satu kekeliruan berikut. Nama-nama ini dipakai di setiap pembahasan bab ini.</p>
+  <table class="tb">
+    <thead><tr><th style="width:5%">No.</th><th style="width:31%">Kekeliruan</th><th>Contoh</th><th style="width:28%">Pertanyaan uji</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><b>Berbalik nilai dihitung senilai</b></td><td>pekerja ditambah, waktunya ikut bertambah</td><td>Uji dua kali lipat sudah dilakukan?</td></tr>
+      <tr><td>2</td><td><b>Menjumlahkan waktu, padahal yang dijumlahkan laju</b></td><td>4 jam dan 6 jam dirata-rata; laju 60 dan <span class="m">40 km/jam</span> dirata-rata menjadi 50</td><td>Yang dijumlahkan laju atau waktu?</td></tr>
+      <tr><td>3</td><td><b>Laju pengosong ikut dijumlahkan</b></td><td>3 + 2 + 1 bagian per jam</td><td>Pelaku ini menambah atau mengurangi?</td></tr>
+      <tr><td>4</td><td><b>Berhenti satu langkah sebelum selesai</b></td><td>menjawab lama tahap terakhir; panjang kereta terlupa</td><td>Dihitung sejak awal? Panjang kereta ikut ditempuh?</td></tr>
+      <tr><td>5</td><td><b>Lupa menyamakan satuan</b></td><td>72 km/jam dipakai bersama meter dan detik</td><td>Satuannya sudah sama?</td></tr>
+      <tr><td>6</td><td><b>Persen dihitung dari bilangan yang salah</b></td><td>diskon 20% dan 10% dijumlah menjadi 30%</td><td>Persen ini persen dari apa?</td></tr>
+      <tr><td>7</td><td><b>Mengira perbandingan sudah memberi nilai sebenarnya</b></td><td>perbandingan 7 : 3 dibaca umur 7 dan 3 tahun</td><td>Ada satu besaran nyata?</td></tr>
+      <tr><td>8</td><td><b>Memakai keterangan yang tidak tertulis di soal</b></td><td>pelaku yang berhenti dianggap bekerja sampai selesai</td><td>Keterangan itu tertulis di soal?</td></tr>
+      <tr><td>9</td><td><b>Memakai data yang tidak dibutuhkan</b></td><td>angka keterangan ikut dimasukkan ke hitungan</td><td>Angka ini ada di daftar hasil, laju, dan waktu?</td></tr>
+    </tbody>
+  </table>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Padanan Nama Kekeliruan dan Kode</h4>
+    <p>1 J-SEARAH (K3) · 2 J-LAJU (K6) · 3 J-TANDA (K3) · 4 J-LANGKAH, termasuk panjang kereta terlupa (v0.4.3, K2) · 5 J-SATUAN (K6) · 6 J-BASIS (K3) · 7 J-RASIO (K1) · 8 J-ASUMSI (K1) · 9 J-PENGALIH (K1). Slot C01 dan C05 memakai J-NOL (K6). Putusan 8 tertutup: umur (C06 + narasi), bunga tunggal (L05 + narasi), bruto-neto-tara (L04 + narasi), kereta (C05 + narasi), arus sungai (L03 + narasi), perbandingan jumlah-selisih (L01 + narasi), semuanya lewat besaran tetap, tanpa tabel rumus per kasus.</p>
+  </div>
+
+<!--B10-P01-bahas:mulai-->
+  <h3 id="bahas-B10-P01">Pembahasan Pertanyaan Pembuka</h3>
+<div class="bahas-pembuka">
+  <div class="soal">
+    <div class="meta"><span>Pertanyaan Pembuka</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 90 detik</span></div>
+    <p class="stem">Ani dapat mengecat sebuah pagar sendirian dalam 6 jam, sedangkan Budi dalam 9 jam. Mereka mulai mengecat bersama-sama. Setelah 2 jam, Budi pergi, dan Ani menyelesaikan sisanya sendirian.</p>
+    <p class="stem">Pagar selesai dicat setelah …, <mark>dihitung sejak mereka mulai</mark>.</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>2 jam 40 menit</span></li><li><span class="h">B</span><span>3 jam 36 menit</span></li><li><span class="h">C</span><span>4 jam 24 menit</span></li><li><span class="h">D</span><span>4 jam 36 menit</span></li><li><span class="h">E</span><span>4 jam 40 menit</span></li></ol>
+  </div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta lama seluruh pekerjaan. Kalimat penentunya “dihitung sejak mereka mulai”: jawabannya mencakup 2 jam kerja bersama dan lama Ani bekerja sendirian.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Anggap pagar 18 bagian, KPK dari 6 dan 9. Laju Ani 18 : 6 = 3 bagian per jam, laju Budi 18 : 9 = 2 bagian per jam. Dua jam bersama menyelesaikan (3 + 2) × 2 = 10 bagian. Sisa 18 − 10 = 8 bagian dikerjakan Ani dalam 8 : 3 = 2<span class="fr"><sup>2</sup>⁄<sub>3</sub></span> jam, yaitu 2 jam 40 menit. Totalnya 4 jam 40 menit.</dd></div>
+    <div><dt>Cara lain</dt><dd>Pakai pecahan pekerjaan. Dalam 2 jam Ani menyelesaikan <span class="fr"><sup>1</sup>⁄<sub>3</sub></span> dan Budi <span class="fr"><sup>2</sup>⁄<sub>9</sub></span>, jumlahnya <span class="fr"><sup>1</sup>⁄<sub>3</sub></span> + <span class="fr"><sup>2</sup>⁄<sub>9</sub></span> = <span class="fr"><sup>5</sup>⁄<sub>9</sub></span>. Sisa <span class="fr"><sup>4</sup>⁄<sub>9</sub></span> pekerjaan dikerjakan Ani dengan laju <span class="fr"><sup>1</sup>⁄<sub>6</sub></span> per jam, perlu <span class="fr"><sup>4</sup>⁄<sub>9</sub></span> × 6 = <span class="fr"><sup>8</sup>⁄<sub>3</sub></span> jam.</dd></div>
+    <div><dt>Cek balik</dt><dd>Uji masuk akal: 4 jam 40 menit kurang dari 6 jam (Ani sendirian), tetapi lebih dari 3 jam 36 menit (berdua sampai selesai). Jawabannya memang berada di antara keduanya.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">tahap kedua saja</span><b>Berhenti satu langkah sebelum selesai.</b> 2 jam 40 menit adalah lama Ani bekerja sendirian. Dua jam pertama belum ditambahkan.</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">Budi terus bekerja</span><b>Memakai keterangan yang tidak tertulis di soal.</b> Budi dianggap bekerja sampai pagar selesai: 18 : 5 = 3<span class="fr"><sup>3</sup>⁄<sub>5</sub></span> jam, yaitu 3 jam 36 menit. Soal menyebut Budi pergi setelah 2 jam.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">menit dibaca desimal</span><b>Lupa menyamakan satuan.</b> 2 jam 40 menit ditulis 2,40 jam, lalu 4,40 jam dibaca 4 jam 24 menit. Menit bukan bagian desimal jam; 40 menit sama dengan <span class="fr"><sup>2</sup>⁄<sub>3</sub></span> jam.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji"><span class="fr"><sup>2</sup>⁄<sub>3</sub></span> jam dibulatkan</span><b>Lupa menyamakan satuan.</b> <span class="fr"><sup>2</sup>⁄<sub>3</sub></span> jam dibulatkan menjadi 0,6 jam, lalu dihitung 0,6 × 60 = 36 menit. Yang tepat <span class="fr"><sup>2</sup>⁄<sub>3</sub></span> × 60 = 40 menit.</div></div></div>
+  <div class="jwb"><span>E</span><p><b>Jawaban: E.</b> Dua jam bersama menyelesaikan 10 dari 18 bagian, sisanya dikerjakan Ani dalam 2 jam 40 menit, jadi totalnya 4 jam 40 menit.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti dua teman yang memanen cabai bersama lalu satu orang pulang: sisa kebun yang dipanen sendirian jadi lebih lama, dan lama panen dihitung dari pagi, bukan dari saat temannya pulang.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Menjawab 2 jam 40 menit sebab angka itulah yang terakhir dihitung. Baca lagi pertanyaannya: sejak mereka mulai berarti dua jam pertama ikut dihitung.</span></div></div>
+  <p class="balik"><a class="ke" href="#soal-B10-P01">Kembali ke soal</a></p>
+</div>
+<!--B10-P01-bahas:selesai-->
+
+  <h3>Contoh Soal dan Pembahasan</h3>
+  <p>Tujuh contoh berikut memperagakan persen kapasitas, berbalik nilai, keran dengan pengosong, menyusul, kereta, umur, dan diskon bertingkat. Kerjakan setiap contoh sendiri dalam target waktunya sebelum membaca pembahasan.</p>
+<!--B10-C01:mulai-->
+<div data-soal="HB-TIU-B10-C01" data-target="60">
+  <div class="soal">
+    <div class="meta"><span>Contoh 1</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 60 detik</span></div>
+    <p class="stem">Tangki air sebuah sekolah terisi 75% dari kapasitasnya. Setelah dipakai 360 liter, isinya tinggal 45%.</p>
+    <p class="stem">Agar tangki <mark>terisi 90%</mark>, air yang perlu ditambahkan sebanyak … liter.</p>
+    <div class="opsi5"><div><span class="h">A</span><b>54</b></div><div><span class="h">B</span><b>180</b></div><div><span class="h">C</span><b>405</b></div><div><span class="h">D</span><b>486</b></div><div><span class="h">E</span><b>540</b></div></div>
+  </div>
+  <div class="guru"><b>CRT persen kapasitas, isi turun karena pemakaian, tanya tambahan.</b> Kunci E. Kode: A J-NOL · B J-PENGALIH · C J-BASIS · D J-BASIS · E <b>kunci</b>. Kerangka: CRT persen kapasitas dua keadaan · turun 75% → 45% oleh 360 liter · tanya tambahan ke 90% · kurang nol, keadaan awal, 45% dari isi awal, 45% dari isi target. TO terdekat: TO P1 no. 44 (10% → 60%, tanya kapasitas); bukan 40% → 65% dan 50 liter (narasi). Bukti: 30% = 360 liter → kapasitas 1.200 liter; tambahan 45% × 1.200 Jarak kunci ke pilihan terdekat 54, median jarak 103,5. Slot: J-BASIS, J-LANGKAH, J-PENGALIH, J-NOL; J-LANGKAH (kapasitas 1.200 atau isi target 1.080) diganti J-BASIS kedua agar kunci tidak terapit pilihan besar yang jauh (kunci E, jarak 54 ≤ median 103,5).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta tambahan air dalam liter. Kalimat penentunya “terisi 90%”: 90% dihitung dari kapasitas penuh tangki, bukan dari isi sekarang.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Pemakaian 360 liter menurunkan isi sebesar 75% − 45% = 30%. Jadi 1% kapasitas sama dengan 360 : 30 = 12 liter. Dari 45% ke 90% perlu 45%, yaitu 45 × 12 = 540 liter.</dd></div>
+    <div><dt>Cara lain</dt><dd>Kapasitas tangki 100 × 12 = 1.200 liter. Isi sekarang 45% × 1.200 = 540 liter, dan isi yang diinginkan 90% × 1.200 = 1.080 liter. Tambahannya 1.080 − 540 = 540 liter.</dd></div>
+    <div><dt>Cek balik</dt><dd>Tambahan 540 liter sama dengan 45% dari 1.200 liter. Isi sekarang juga 45%, jadi sesudah ditambah, tangki terisi tepat 90%. Cocok.</dd></div>
+  </dl></div>
+  <div class="gugur"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><span class="v">54<span class="uji">360 : 300</span></span><div class="x"><b>Kurang satu nol.</b> 360 dibagi 300, bukan 30, sehingga 1% dikira 1,2 liter dan tambahannya 45 × 1,2 = 54 liter. Bandingkan dengan pemakaian 360 liter: menaikkan isi 45% jelas butuh lebih banyak dari itu.</div></div><div class="g"><span class="h">B</span><span class="v">180<span class="uji">90% − 75%</span></span><div class="x"><b>Memakai keadaan yang sudah lewat.</b> Kenaikan dihitung dari 75%, padahal isi itu sudah turun menjadi 45%: 15 × 12 = 180 liter. Titik awalnya adalah isi sekarang.</div></div><div class="g"><span class="h">C</span><span class="v">405<span class="uji">45% dari isi awal</span></span><div class="x"><b>Persen dihitung dari bilangan yang salah.</b> 45% dihitung dari isi awal: 45% × 900 = 405. Persen kapasitas selalu dihitung dari kapasitas penuh, 1.200 liter.</div></div><div class="g"><span class="h">D</span><span class="v">486<span class="uji">45% dari isi target</span></span><div class="x"><b>Persen dihitung dari bilangan yang salah.</b> 45% dihitung dari isi yang diinginkan, 1.080 liter: 45% × 1.080 = 486. Dasar persennya tetap kapasitas penuh.</div></div></div>
+  <div class="jwb"><span>E</span><p><b>Jawaban: E.</b> Satu persen kapasitas bernilai 12 liter, dan kekurangan 45% bernilai 540 liter.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti mengisi daya baterai ponsel: dari 45% ke 90% kamu mengisi 45% dari kapasitas baterai, bukan 45% dari daya yang tersisa.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Menghitung 45% dari air yang ada di tangki, karena isi itulah yang terbayang. Pada soal persen kapasitas, setiap persen adalah bagian dari tangki penuh.</span></div></div>
+</div>
+<!--B10-C01:selesai-->
+<!--B10-C02:mulai-->
+<div data-soal="HB-TIU-B10-C02" data-target="75">
+  <div class="soal">
+    <div class="meta"><span>Contoh 2</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 75 detik</span></div>
+    <p class="stem">Pembangunan sebuah pos ronda direncanakan selesai dalam 28 hari oleh 20 pekerja. Setelah 8 hari bekerja, pembangunan terhenti 4 hari karena hujan.</p>
+    <p class="stem">Agar pembangunan selesai tepat waktu, banyak <mark>pekerja tambahan</mark> yang diperlukan adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>4</b></div><div><span class="h">B</span><b>5</b></div><div><span class="h">C</span><b>15</b></div><div><span class="h">D</span><b>20</b></div><div><span class="h">E</span><b>25</b></div></div>
+  </div>
+  <div class="guru"><b>CRT berbalik nilai, pekerjaan terhenti, tanya pekerja tambahan.</b> Kunci B. Kode: A J-SEARAH · B <b>kunci</b> · C J-LANGKAH · D J-ASUMSI · E J-LANGKAH. Kerangka: CRT berbalik nilai · rencana 20 pekerja × 28 hari · 8 hari kerja, 4 hari berhenti · tanya tambahan · senilai, sisa tidak dikurangi, tambahan hanya 4 hari, jumlah bukan tambahan. TO terdekat: Bab 2 C2 (tanya total hari); bukan 6 pekerja 10 hari (narasi). Bukti: pekerja-hari tetap: 560; sisa 400 dalam 16 hari Jarak kunci ke pilihan terdekat 1, median jarak 5. Kode = rencana slot (J-SEARAH, J-LANGKAH, J-ASUMSI) + J-LANGKAH kedua; J-LAJU tidak dipakai (tidak ada jalur waktu dijumlah yang wajar di cerita ini).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta banyak pekerja yang ditambahkan, bukan banyak pekerja seluruhnya. Kalimat penentunya “pekerja tambahan”.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Seluruh pekerjaan 20 × 28 = 560 pekerja-hari. Delapan hari pertama menyelesaikan 20 × 8 = 160, sisanya 560 − 160 = 400. Waktu tersisa 28 − 8 − 4 = 16 hari, jadi diperlukan 400 : 16 = 25 pekerja. Tambahannya 25 − 20 = 5.</dd></div>
+    <div><dt>Cara lain</dt><dd>Sisa rencana 28 − 8 = 20 hari, tetapi yang tersedia hanya 16 hari. Banyak pekerja berbalik nilai dengan lama kerja: 20 × 20 : 16 = 25 pekerja, jadi perlu tambahan 5.</dd></div>
+    <div><dt>Cek balik</dt><dd>25 × 16 = 400 pekerja-hari, tepat sama dengan sisa pekerjaan.</dd></div>
+  </dl></div>
+  <div class="gugur"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><span class="v">4<span class="uji">dihitung senilai</span></span><div class="x"><b>Berbalik nilai dihitung senilai.</b> Waktu yang lebih pendek dikira membutuhkan pekerja lebih sedikit: 20 × 16 : 20 = 16 pekerja, lalu selisihnya 4 dibaca sebagai tambahan. Uji dua kali lipat: bila waktu dipotong, pekerja harus ditambah.</div></div><div class="g"><span class="h">C</span><span class="v">15<span class="uji">560 : 16</span></span><div class="x"><b>Pekerjaan yang sudah selesai tidak dikurangkan.</b> Seluruh pekerjaan dianggap belum dikerjakan: 560 : 16 = 35 pekerja, tambahan 15. Delapan hari pertama sudah menyelesaikan 160 pekerja-hari.</div></div><div class="g"><span class="h">D</span><span class="v">20<span class="uji">80 : 4</span></span><div class="x"><b>Memakai keterangan yang tidak tertulis di soal.</b> Pekerjaan yang tertunda, 20 × 4 = 80 pekerja-hari, dianggap harus dikejar dalam 4 hari, sehingga muncul 20 pekerja tambahan. Soal tidak menyebut batas itu; pekerja tambahan bekerja selama 16 hari sisanya.</div></div><div class="g"><span class="h">E</span><span class="v">25<span class="uji">jumlah pekerja</span></span><div class="x"><b>Berhenti satu langkah sebelum selesai.</b> 25 adalah banyak pekerja yang dibutuhkan seluruhnya. Pertanyaannya tambahan, jadi masih dikurangi 20 pekerja yang sudah ada.</div></div></div>
+  <div class="jwb"><span>B</span><p><b>Jawaban: B.</b> Sisa 400 pekerja-hari dalam 16 hari membutuhkan 25 pekerja, yaitu tambahan 5.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti panitia yang harus melipat 400 undangan dalam waktu yang tinggal sedikit: makin sempit waktunya, makin banyak tangan yang dibutuhkan, dan yang dicari hanyalah tangan tambahannya.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Menjawab 25 karena hitungannya sudah selesai. Baca lagi kata tambahan di pertanyaan sebelum memilih.</span></div></div>
+</div>
+<!--B10-C02:selesai-->
+<!--B10-C03:mulai-->
+<div data-soal="HB-TIU-B10-C03" data-target="105">
+  <div class="soal">
+    <div class="meta"><span>Contoh 3</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 105 detik</span></div>
+    <p class="stem">Sebuah bak penampungan dapat diisi penuh oleh keran A dalam 6 jam dan oleh keran B dalam 10 jam. Keran pembuang C dapat mengosongkan bak yang penuh dalam 10 jam. Mula-mula bak kosong, lalu ketiga keran dibuka bersamaan. Setelah 2 jam, keran B ditutup, sedangkan A dan C tetap terbuka.</p>
+    <p class="stem">Bak penuh setelah … <mark>sejak ketiga keran dibuka</mark>.</p>
+    <div class="opsi5"><div><span class="h">A</span><b>3 jam</b></div><div><span class="h">B</span><b>6 jam</b></div><div><span class="h">C</span><b>9 jam</b></div><div><span class="h">D</span><b>10 jam</b></div><div><span class="h">E</span><b>12 jam</b></div></div>
+  </div>
+  <div class="guru"><b>CRT keran, tiga keran, pengosong sejak awal, pengisi ditutup di tengah.</b> Kunci E. Kode: A J-TANDA · B J-ASUMSI · C J-ASUMSI · D J-LANGKAH · E <b>kunci</b>. Kerangka: CRT tiga keran · A 6 jam, B 10 jam, pembuang C 10 jam (B dan C saling menghapus) · B ditutup setelah 2 jam · pembuang dijumlah, B tetap, C belakangan, tahap kedua saja. TO terdekat: TO P1 no. 45 (pengosong dibuka terlambat); bukan 4, 6, 12 jam (narasi). Bukti: kapasitas 30 bagian; tahap 1 laju 5 + 3 − 3; tahap 2 laju 5 − 3 Jarak kunci ke pilihan terdekat 2, median jarak 2,5. Slot: J-TANDA, J-LANGKAH, J-LAJU, J-ASUMSI; J-LAJU diganti J-ASUMSI kedua (C dianggap dibuka belakangan) karena jalur waktu dijumlah memberi pilihan berbentuk jam-menit tunggal.</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta lama mengisi sampai penuh, dihitung dari awal. Kalimat penentunya “sejak ketiga keran dibuka”. Ada dua tahap: tiga keran terbuka, lalu dua keran.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Anggap bak 30 bagian. Laju A 5, laju B 3, dan laju C −3 bagian per jam. Tahap 1: B dan C saling menghapus, jadi selama 2 jam hanya A yang terasa: 5 × 2 = 10 bagian. Tahap 2: A dan C, lajunya 5 − 3 = 2 bagian per jam. Sisa 30 − 10 = 20 bagian perlu 20 : 2 = 10 jam. Totalnya 2 + 10 = 12 jam.</dd></div>
+    <div><dt>Cara lain</dt><dd>Hitung dengan pecahan. Tahap 1: <span class="fr"><sup>1</sup>⁄<sub>6</sub></span> + <span class="fr"><sup>1</sup>⁄<sub>10</sub></span> − <span class="fr"><sup>1</sup>⁄<sub>10</sub></span> = <span class="fr"><sup>1</sup>⁄<sub>6</sub></span> bak per jam, selama 2 jam terisi <span class="fr"><sup>1</sup>⁄<sub>3</sub></span>. Tahap 2: <span class="fr"><sup>1</sup>⁄<sub>6</sub></span> − <span class="fr"><sup>1</sup>⁄<sub>10</sub></span> = <span class="fr"><sup>1</sup>⁄<sub>15</sub></span> bak per jam, dan sisa <span class="fr"><sup>2</sup>⁄<sub>3</sub></span> perlu <span class="fr"><sup>2</sup>⁄<sub>3</sub></span> × 15 = 10 jam.</dd></div>
+    <div><dt>Cek balik</dt><dd>Uji masuk akal: bila B tidak pernah ditutup, bak penuh dalam 30 : 5 = 6 jam. Menutup B membuat bak lebih lambat penuh, dan 12 jam memang lebih lama daripada 6 jam.</dd></div>
+  </dl></div>
+  <div class="gugur"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><span class="v">3 jam<span class="uji">pembuang dijumlah</span></span><div class="x"><b>Laju pengosong ikut dijumlahkan.</b> Laju C ditambahkan seperti keran pengisi, sehingga tahap 1 menjadi 5 + 3 + 3 = 11 bagian per jam dan bak tampak penuh dalam 3 jam. Pembuang mengurangi isi; lajunya bertanda negatif.</div></div><div class="g"><span class="h">B</span><span class="v">6 jam<span class="uji">B tidak ditutup</span></span><div class="x"><b>Memakai keterangan yang tidak tertulis di soal.</b> B dianggap tetap terbuka sampai bak penuh: 30 : 5 = 6 jam. Soal menyebut B ditutup setelah 2 jam.</div></div><div class="g"><span class="h">C</span><span class="v">9 jam<span class="uji">C dibuka belakangan</span></span><div class="x"><b>Memakai keterangan yang tidak tertulis di soal.</b> C dianggap baru dibuka saat B ditutup: 2 jam pertama mengisi (5 + 3) × 2 = 16 bagian, lalu sisa 14 : 2 = 7 jam, totalnya 9 jam. Soal menyebut ketiga keran dibuka bersamaan.</div></div><div class="g"><span class="h">D</span><span class="v">10 jam<span class="uji">tahap kedua saja</span></span><div class="x"><b>Berhenti satu langkah sebelum selesai.</b> 10 jam adalah lama tahap kedua. Dua jam tahap pertama belum ditambahkan.</div></div></div>
+  <div class="jwb"><span>E</span><p><b>Jawaban: E.</b> Tahap 1 mengisi 10 bagian dalam 2 jam dan tahap 2 mengisi 20 bagian dalam 10 jam, jadi bak penuh setelah 12 jam.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti mengisi ember bocor sambil seorang teman ikut menuang air: selama teman itu menuang, bocornya tertutupi. Begitu ia berhenti, bocor itu baru terasa dan ember lama penuh.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Menjumlahkan semua laju tanpa memberi tanda negatif pada pembuang, lalu mendapat 3 jam. Sebelum menghitung, tandai setiap keran: pengisi plus, pembuang minus.</span></div></div>
+</div>
+<!--B10-C03:selesai-->
+<!--B10-C04:mulai-->
+<div data-soal="HB-TIU-B10-C04" data-target="90">
+  <div class="soal">
+    <div class="meta"><span>Contoh 4</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 90 detik</span></div>
+    <p class="stem">Pukul 07.15 Dika berangkat bersepeda dari rumah dengan laju tetap 18 km/jam. Pukul 07.35 kakaknya menyusul lewat jalan yang sama dengan sepeda motor berlaju tetap 42 km/jam.</p>
+    <p class="stem">Kakak menyusul Dika <mark>pada pukul</mark> …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>07.30</b></div><div><span class="h">B</span><b>07.41</b></div><div><span class="h">C</span><b>07.44</b></div><div><span class="h">D</span><b>07.50</b></div><div><span class="h">E</span><b>07.55</b></div></div>
+  </div>
+  <div class="guru"><b>CRT laju relatif, menyusul dengan selang berangkat, tanya pukul.</b> Kunci D. Kode: A J-LANGKAH · B J-TANDA · C J-SATUAN · D <b>kunci</b> · E J-LAJU. Kerangka: CRT menyusul · jeda 20 menit · laju 18 dan 42 km/jam · tanya pukul · dari pukul pertama, laju dijumlah, 20 menit = 0,2 jam, laju Dika saja. TO terdekat: tidak ada di TO P1; bukan 40 dan 60 km/jam dengan jeda 30 menit (narasi). Bukti: jarak awal 18 × 20 : 60 = 6 km; laju relatif 42 − 18 = 24 km/jam Jarak kunci ke pilihan terdekat 5, median jarak 5,5. Slot: J-TANDA, J-LANGKAH (lama, bukan pukul), J-SATUAN, J-LANGKAH (jarak awal terlupa); jarak awal terlupa tidak memberi waktu yang wajar, diganti J-LAJU (memakai laju Dika saja).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta pukul, bukan lama perjalanan. Kalimat penentunya “pada pukul”: lama menyusul harus ditambahkan pada saat kakak berangkat.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Selama 20 menit lebih dulu, Dika menempuh 18 × 20 : 60 = 6 km. Kakak mendekat dengan selisih laju 42 − 18 = 24 km/jam, jadi jarak 6 km habis dalam 6 : 24 = <span class="fr"><sup>1</sup>⁄<sub>4</sub></span> jam, yaitu 15 menit. Kakak menyusul 15 menit sesudah pukul 07.35, yaitu pukul 07.50.</dd></div>
+    <div><dt>Cara lain</dt><dd>Hitung jarak dari rumah pada pukul 07.50. Dika sudah bersepeda 35 menit: 18 × 35 : 60 = 10,5 km. Kakak sudah melaju 15 menit: 42 × 15 : 60 = 10,5 km. Keduanya berada di titik yang sama.</dd></div>
+    <div><dt>Cek balik</dt><dd>Jarak yang sama, 10,5 km, pada pukul yang sama membuktikan bahwa pukul 07.50 adalah saat kakak menyusul.</dd></div>
+  </dl></div>
+  <div class="gugur"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><span class="v">07.30<span class="uji">dari pukul 07.15</span></span><div class="x"><b>Lama ditambahkan pada pukul yang salah.</b> Lama menyusul, 15 menit, ditambahkan pada pukul Dika berangkat. Kakak baru berangkat pukul 07.35, jadi hitungan dimulai dari situ.</div></div><div class="g"><span class="h">B</span><span class="v">07.41<span class="uji">18 + 42</span></span><div class="x"><b>Laju dijumlahkan, padahal searah.</b> Laju dijumlahkan seperti dua kendaraan yang saling mendekat dari arah berlawanan: 6 : 60 = <span class="fr"><sup>1</sup>⁄<sub>10</sub></span> jam, yaitu 6 menit. Keduanya bergerak searah, jadi yang dipakai selisih lajunya.</div></div><div class="g"><span class="h">C</span><span class="v">07.44<span class="uji">20 menit dibaca 0,2 jam</span></span><div class="x"><b>Lupa menyamakan satuan.</b> Jarak awal dikira 18 × 0,2 = 3,6 km dan disusul dalam 3,6 : 24 = 0,15 jam, yaitu 9 menit. Padahal 20 menit sama dengan <span class="fr"><sup>1</sup>⁄<sub>3</sub></span> jam.</div></div><div class="g"><span class="h">E</span><span class="v">07.55<span class="uji">6 : 18</span></span><div class="x"><b>Memakai laju satu kendaraan saja.</b> Jarak awal dibagi laju Dika saja: 6 : 18 = <span class="fr"><sup>1</sup>⁄<sub>3</sub></span> jam, yaitu 20 menit. Yang menghabiskan jarak 6 km adalah selisih laju keduanya, 24 km/jam.</div></div></div>
+  <div class="jwb"><span>D</span><p><b>Jawaban: D.</b> Jarak awal 6 km habis oleh selisih laju 24 km/jam dalam 15 menit, jadi kakak menyusul pukul 07.50.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti mengejar teman di lintasan lari: yang menentukan kapan kamu menyusul adalah seberapa jauh kamu lebih cepat darinya, bukan kecepatanmu sendiri.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Menjawab 07.30 karena 15 menit langsung ditambahkan pada pukul pertama yang terbaca di soal. Tandai siapa berangkat pukul berapa sebelum menghitung.</span></div></div>
+</div>
+<!--B10-C04:selesai-->
+<!--B10-C05:mulai-->
+<div data-soal="HB-TIU-B10-C05" data-target="75">
+  <div class="soal">
+    <div class="meta"><span>Contoh 5</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 75 detik</span></div>
+    <p class="stem">Sebuah kereta sepanjang 300 meter melaju tetap 90 km/jam dan melintasi terowongan sepanjang 1.200 meter.</p>
+    <p class="stem">Waktu sejak ujung depan kereta masuk terowongan sampai <mark>ujung belakangnya keluar</mark> adalah … detik.</p>
+    <div class="opsi5"><div><span class="h">A</span><b>36</b></div><div><span class="h">B</span><b>48</b></div><div><span class="h">C</span><b>50</b></div><div><span class="h">D</span><b>60</b></div><div><span class="h">E</span><b>72</b></div></div>
+  </div>
+  <div class="guru"><b>CRT kereta, melintasi terowongan, km/jam ke m/detik.</b> Kunci D. Kode: A J-TANDA · B J-LANGKAH · C J-SATUAN · D <b>kunci</b> · E J-ASUMSI. Kerangka: CRT kereta · panjang 300 m, terowongan 1.200 m, 90 km/jam = 25 m/detik · dikurangkan, terlupa, dibagi 3, dihitung dua kali. TO terdekat: tidak ada di TO P1; bukan 700 m, 200 m, 72 km/jam (narasi). Bukti: 90 km/jam = 25 m/detik; jarak = 1.200 + 300 Jarak kunci ke pilihan terdekat 10, median jarak 11. Slot: J-LANGKAH, J-SATUAN, J-TANDA, J-NOL; J-NOL (sepuluh kali) diganti J-ASUMSI (panjang kereta dihitung dua kali) agar kunci tidak terapit pilihan jauh. J-NOL tetap dipakai di Contoh 1.</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta lama kereta melintas dalam detik. Kalimat penentunya “ujung belakangnya keluar”: kereta baru selesai melintas setelah gerbong terakhir keluar, jadi panjang kereta ikut ditempuh.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Jarak yang ditempuh 1.200 + 300 = 1.500 meter. Laju 90 km/jam sama dengan 90 × 5 : 18 = 25 meter per detik. Waktunya 1.500 : 25 = 60 detik.</dd></div>
+    <div><dt>Cara lain</dt><dd>Dalam 1 jam kereta menempuh 90 × 1.000 = 90.000 meter, jadi dalam 1 menit menempuh 90.000 : 60 = 1.500 meter. Jarak 1.500 meter ditempuh tepat 1 menit, yaitu 60 detik.</dd></div>
+    <div><dt>Cek balik</dt><dd>Dalam 60 detik kereta menempuh 60 × 25 = 1.500 meter: 1.200 meter terowongan ditambah 300 meter panjang kereta itu sendiri.</dd></div>
+  </dl></div>
+  <div class="gugur"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><span class="v">36<span class="uji">1.200 − 300</span></span><div class="x"><b>Panjang kereta dikurangkan, bukan ditambahkan.</b> Panjang kereta dikurangkan: (1.200 − 300) : 25 = 36 detik. Pada detik ke-36 ujung depan kereta bahkan belum keluar terowongan.</div></div><div class="g"><span class="h">B</span><span class="v">48<span class="uji">1.200 : 25</span></span><div class="x"><b>Panjang kereta terlupa.</b> Hanya panjang terowongan yang dihitung: 1.200 : 25 = 48 detik. Saat itu baru ujung depan yang keluar; masih ada 300 meter kereta di dalam.</div></div><div class="g"><span class="h">C</span><span class="v">50<span class="uji">90 : 3 = 30</span></span><div class="x"><b>Lupa menyamakan satuan.</b> km/jam diubah ke m/detik dengan membagi 3, sehingga laju dikira 30 m/detik dan waktunya 1.500 : 30 = 50 detik. Pembaginya 3,6, sebab 3.600 : 1.000 = 3,6.</div></div><div class="g"><span class="h">E</span><span class="v">72<span class="uji">1.200 + 2 × 300</span></span><div class="x"><b>Panjang kereta dihitung dua kali.</b> Panjang kereta dihitung dua kali, saat masuk dan saat keluar: 1.800 : 25 = 72 detik. Panjang kereta cukup ditambahkan sekali.</div></div></div>
+  <div class="jwb"><span>D</span><p><b>Jawaban: D.</b> Kereta menempuh 1.500 meter dengan laju 25 meter per detik, jadi melintas selama 60 detik.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti barisan pramuka yang melewati gapura: barisan baru selesai lewat ketika anggota paling belakang keluar gapura, jadi panjang barisan ikut berjalan.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Membagi panjang terowongan saja dengan laju, karena soal terasa hanya membicarakan terowongan. Bayangkan gerbong terakhir: ia harus berjalan sejauh terowongan ditambah panjang kereta.</span></div></div>
+</div>
+<!--B10-C05:selesai-->
+<!--B10-C06:mulai-->
+<div data-soal="HB-TIU-B10-C06" data-target="75">
+  <div class="soal">
+    <div class="meta"><span>Contoh 6</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 75 detik</span></div>
+    <p class="stem">Perbandingan umur Kak Ratna dan Dimas sekarang 3 : 2. Lima tahun lagi, perbandingan umur mereka menjadi 7 : 5.</p>
+    <p class="stem">Umur Kak Ratna <mark>sekarang adalah</mark> … tahun.</p>
+    <div class="opsi5"><div><span class="h">A</span><b>3</b></div><div><span class="h">B</span><b>15</b></div><div><span class="h">C</span><b>20</b></div><div><span class="h">D</span><b>25</b></div><div><span class="h">E</span><b>30</b></div></div>
+  </div>
+  <div class="guru"><b>CRT umur, dua perbandingan, selisih tetap.</b> Kunci E. Kode: A J-RASIO · B J-BASIS · C J-LANGKAH · D J-LANGKAH · E <b>kunci</b>. Kerangka: CRT umur · 3 : 2 sekarang, 7 : 5 lima tahun lagi · selisih umur tetap · angka perbandingan, bagian tidak disamakan, umur Dimas, umur Dimas lima tahun lagi. TO terdekat: tidak ada di TO P1; bukan 7 : 3 dan 28 tahun (narasi). Bukti: selisih tetap: 3 : 2 = 6 : 4 dan 7 : 5 → 1 bagian berubah = 5 tahun Jarak kunci ke pilihan terdekat 5, median jarak 5. Slot: J-RASIO, J-LANGKAH, J-TANDA (lalu/lagi tertukar), J-BASIS; J-TANDA tidak dipakai karena membaca lima tahun lalu memberi umur negatif. Diganti J-LANGKAH kedua.</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta umur Kak Ratna saat ini. Kalimat penentunya “sekarang adalah”. Dua perbandingan diberikan; besaran yang tetap adalah selisih umur mereka.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Selisih umur tidak berubah. Pada 3 : 2 selisihnya 1 bagian, pada 7 : 5 selisihnya 2 bagian. Samakan selisihnya: 3 : 2 = 6 : 4. Dari 6 : 4 ke 7 : 5, setiap bagian bertambah 1, dan tambahan itu lima tahun. Jadi 1 bagian pada 6 : 4 bernilai 5 tahun, dan umur Kak Ratna 6 × 5 = 30 tahun.</dd></div>
+    <div><dt>Cara lain</dt><dd>Coba pilihan terbesar. Bila Kak Ratna 30 tahun, Dimas 30 × 2 : 3 = 20 tahun. Lima tahun lagi umur mereka 35 dan 25, dan 35 : 25 = 7 : 5. Cocok.</dd></div>
+    <div><dt>Cek balik</dt><dd>Selisih umur sekarang 30 − 20 = 10 dan lima tahun lagi 35 − 25 = 10. Selisihnya tetap, sesuai sifat umur.</dd></div>
+  </dl></div>
+  <div class="gugur"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><span class="v">3<span class="uji">angka perbandingan</span></span><div class="x"><b>Mengira perbandingan sudah memberi nilai sebenarnya.</b> Angka 3 pada perbandingan dibaca sebagai umur. Perbandingan hanya menyatakan bagian; nilai satu bagian harus dicari dari keterangan lima tahun lagi.</div></div><div class="g"><span class="h">B</span><span class="v">15<span class="uji">bagian tidak disamakan</span></span><div class="x"><b>Bagian dua perbandingan tidak disamakan.</b> Selisih bagian 1 dan 2 dibandingkan tanpa menyamakan perbandingannya, sehingga 1 bagian dikira 5 tahun dan umurnya 3 × 5 = 15. Bila Kak Ratna 15 tahun, Dimas 10 tahun, dan lima tahun lagi 20 : 15 = 4 : 3, bukan 7 : 5.</div></div><div class="g"><span class="h">C</span><span class="v">20<span class="uji">umur Dimas</span></span><div class="x"><b>Umur orang yang lain.</b> 20 tahun adalah umur Dimas sekarang. Yang ditanya umur Kak Ratna.</div></div><div class="g"><span class="h">D</span><span class="v">25<span class="uji">lima tahun lagi</span></span><div class="x"><b>Umur pada waktu yang lain.</b> 25 tahun adalah umur Dimas lima tahun lagi. Yang ditanya umur Kak Ratna sekarang.</div></div></div>
+  <div class="jwb"><span>E</span><p><b>Jawaban: E.</b> Selisih umur yang tetap membuat satu bagian bernilai 5 tahun, sehingga umur Kak Ratna 6 × 5 = 30 tahun.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti dua anak tangga yang berjarak tetap: setinggi apa pun keduanya naik bersama, jarak di antara keduanya tidak berubah. Yang berubah hanya perbandingan tinggi keduanya.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Memakai selisih angka perbandingan apa adanya, 3 − 2 dan 7 − 5, seolah bagian kedua perbandingan sama besar. Samakan dulu selisih kedua perbandingan sebelum membandingkan bagiannya.</span></div></div>
+</div>
+<!--B10-C06:selesai-->
+<!--B10-C07:mulai-->
+<div data-soal="HB-TIU-B10-C07" data-target="60">
+  <div class="soal">
+    <div class="meta"><span>Contoh 7</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 60 detik</span></div>
+    <p class="stem">Sebuah toko membeli tas seharga Rp80.000 dan memasang harga Rp200.000. Saat obral, tas itu didiskon 40%, lalu didiskon lagi 10% dari harga setelah diskon pertama.</p>
+    <p class="stem">Persentase keuntungan toko <mark>terhadap harga beli</mark> adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>14%</b></div><div><span class="h">B</span><b>25%</b></div><div><span class="h">C</span><b>28%</b></div><div><span class="h">D</span><b>35%</b></div><div><span class="h">E</span><b>50%</b></div></div>
+  </div>
+  <div class="guru"><b>CRT persen dagang, diskon bertingkat lalu persen untung terhadap harga beli.</b> Kunci D. Kode: A J-BASIS · B J-BASIS · C J-SATUAN · D <b>kunci</b> · E J-LANGKAH. Kerangka: CRT diskon bertingkat + untung · beli 80 ribu, pasang 200 ribu, diskon 40% lalu 10% · untung dari harga pasang, diskon dijumlah, rupiah dibaca persen, satu diskon. TO terdekat: Bab 19 pembuka (dua perubahan persen); bukan 20% lalu 10% dan Rp80.000 sebagai harga beli narasi untung 25%. Bukti: jual 200.000 × 60% × 90% = 108.000; untung 28.000 dari 80.000 Jarak kunci ke pilihan terdekat 7, median jarak 9. Slot: J-BASIS (diskon dijumlah), J-BASIS (untung dari harga jual), J-LANGKAH, J-PENGALIH; untung dari harga jual (25,9%) tidak bulat, diganti untung dari harga pasang. Catatan: potongan diskon pertama kebetulan Rp80.000 = harga beli; tidak melahirkan jalur salah yang bernilai di pilihan. Revisi cek buta 1: pilihan E 150% (terpencil) diganti 28% (untung Rp28.000 dibaca 28%); kunci C → D.</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta persen untung. Kalimat penentunya “terhadap harga beli”: dasarnya Rp80.000, bukan harga pasang atau harga jual.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Harga jual 200.000 × 60% × 90% = 108.000. Untungnya 108.000 − 80.000 = 28.000. Persen untung 28.000 : 80.000 = 35%.</dd></div>
+    <div><dt>Cara lain</dt><dd>Potongan pertama 40% × 200.000 = 80.000 rupiah, harga menjadi 120.000. Potongan kedua 10% × 120.000 = 12.000, jadi harga jual 120.000 − 12.000 = 108.000. Untung 28.000 dari modal 80.000 sama dengan 35 per 100.</dd></div>
+    <div><dt>Cek balik</dt><dd>80.000 × 135% = 108.000. Cocok dengan harga jual.</dd></div>
+  </dl></div>
+  <div class="gugur"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><span class="v">14%<span class="uji">28.000 : 200.000</span></span><div class="x"><b>Persen dihitung dari bilangan yang salah.</b> Untung dibandingkan dengan harga pasang: 28.000 : 200.000 = 14%. Persen untung selalu terhadap harga beli.</div></div><div class="g"><span class="h">B</span><span class="v">25%<span class="uji">diskon 50%</span></span><div class="x"><b>Diskon bertingkat dijumlahkan.</b> Dua diskon dijumlahkan menjadi 50%, sehingga harga jual dikira 200.000 × 50% = 100.000 dan untungnya 25%. Diskon kedua dihitung dari harga yang sudah turun, jadi potongan totalnya 100% − 54% = 46%.</div></div><div class="g"><span class="h">C</span><span class="v">28%<span class="uji">28.000 dibaca 28%</span></span><div class="x"><b>Rupiah dibaca sebagai persen.</b> Untungnya memang Rp28.000, tetapi angka rupiah itu langsung dibaca sebagai persen. Persen untung adalah untung dibagi harga beli: 28.000 : 80.000 = 35%.</div></div><div class="g"><span class="h">E</span><span class="v">50%<span class="uji">diskon pertama saja</span></span><div class="x"><b>Berhenti satu langkah sebelum selesai.</b> Hanya diskon 40% yang dihitung: harga 120.000 dan untungnya 120.000 − 80.000 = 40.000, yaitu 50%. Diskon 10% belum dikenakan.</div></div></div>
+  <div class="jwb"><span>D</span><p><b>Jawaban: D.</b> Harga jual Rp108.000 memberi untung Rp28.000, yaitu 35% dari harga beli Rp80.000.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti nilai ulangan yang dihitung dari soal yang tersedia: 28 benar dari 80 soal berbeda maknanya dengan 28 benar dari 200 soal. Persen selalu bertanya: dari berapa?</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Menjumlahkan diskon 40% dan 10% karena terasa wajar, atau berhenti di angka untung Rp28.000. Diskon kedua dikenakan pada harga yang sudah dipotong, dan untung masih harus dibagi harga beli.</span></div></div>
+</div>
+<!--B10-C07:selesai-->
+
+  <h3>Latihan</h3>
+  <p>Lima latihan berikut tersusun dari yang paling ringan, dengan target total {{WAKTU_LATIHAN}}. Kerjakan dengan pengatur waktu dan tanpa melihat pembahasan. Kunci dan pembahasannya ada di lampiran.</p>
+<!--B10-L01:mulai-->
+<div data-soal="HB-TIU-B10-L01" data-target="45">
+  <div class="soal">
+    <div class="meta"><span id="soal-B10-L01">Latihan 1<a class="ke" href="#bahas-B10-L01">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 45 detik</span></div>
+    <p class="stem">Perbandingan banyak perangko koleksi Adi dan Banu 5 : 3. Perangko Adi 30 lembar lebih banyak daripada perangko Banu.</p>
+    <p class="stem"><mark>Jumlah perangko mereka berdua</mark> adalah … lembar.</p>
+    <div class="opsi5"><div><span class="h">A</span><b>8</b></div><div><span class="h">B</span><b>75</b></div><div><span class="h">C</span><b>80</b></div><div><span class="h">D</span><b>120</b></div><div><span class="h">E</span><b>240</b></div></div>
+  </div>
+  <div class="guru"><b>CRT perbandingan, perbandingan dan selisih, tanya jumlah.</b> Kunci D. Kode: A J-RASIO · B J-LANGKAH · C J-BASIS · D <b>kunci</b> · E J-BASIS. Kerangka: CRT jumlah-selisih · 5 : 3, selisih 30 · tanya jumlah · jumlah angka perbandingan, milik Adi saja, selisih sebagai bagian Banu, selisih sebagai satu bagian. TO terdekat: tidak ada di TO P1; bukan 7 : 3 dan 28 (narasi umur). Bukti: 2 bagian = 30 → 1 bagian 15; jumlah 8 bagian Jarak kunci ke pilihan terdekat 40, median jarak 53,5. Kode = rencana slot (J-BASIS, J-RASIO, J-LANGKAH; J-BASIS dua jalur).</div>
+</div>
+<!--B10-L01:selesai-->
+<!--B10-L02:mulai-->
+<div data-soal="HB-TIU-B10-L02" data-target="75">
+  <div class="soal">
+    <div class="meta"><span id="soal-B10-L02">Latihan 2<a class="ke" href="#bahas-B10-L02">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 75 detik</span></div>
+    <p class="stem">Sebuah truk mengangkut pasir dari tambang ke lokasi proyek yang berjarak 90 km. Saat bermuatan, truk melaju 20 km/jam; saat kembali kosong lewat jalan yang sama, truk melaju 60 km/jam.</p>
+    <p class="stem">Kecepatan rata-rata truk untuk perjalanan <mark>pergi dan pulang</mark> adalah … km/jam.</p>
+    <div class="opsi5"><div><span class="h">A</span><b>15</b></div><div><span class="h">B</span><b>30</b></div><div><span class="h">C</span><b>40</b></div><div><span class="h">D</span><b>45</b></div><div><span class="h">E</span><b>60</b></div></div>
+  </div>
+  <div class="guru"><b>CRT kecepatan rata-rata, pergi-pulang, laju berbeda.</b> Kunci B. Kode: A J-LANGKAH · B <b>kunci</b> · C J-LAJU · D J-SATUAN · E J-LAJU. Kerangka: CRT kecepatan rata-rata · 90 km, 20 dan 60 km/jam · jarak sekali jalan, rata-rata dua laju, setengah jam terbuang, dibagi rata-rata waktu. TO terdekat: Bab 19 B7 (dua tahap, satuan campur); bukan 60 dan 40 km/jam, 120 km (narasi). Bukti: total jarak 180 km : total waktu 4,5 + 1,5 jam Jarak kunci ke pilihan terdekat 10, median jarak 12,5. Slot: J-LAJU, J-SATUAN, J-LANGKAH; J-SATUAN tidak dipakai (soal satu satuan), diganti jalur kedua J-LAJU dan J-LANGKAH. Revisi cek buta 1: pilihan E 120 (terpencil) diganti 45 = 180 : 4 (4 jam 30 menit dihitung 4 jam); 60 pindah ke E.</div>
+</div>
+<!--B10-L02:selesai-->
+<!--B10-L03:mulai-->
+<div data-soal="HB-TIU-B10-L03" data-target="90">
+  <div class="soal">
+    <div class="meta"><span id="soal-B10-L03">Latihan 3<a class="ke" href="#bahas-B10-L03">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 90 detik</span></div>
+    <p class="stem">Sebuah perahu motor menempuh 60 km menyusuri sungai searah arus dalam 2 jam, lalu kembali ke tempat semula melawan arus dalam 3 jam.</p>
+    <p class="stem">Laju perahu itu <mark>di air tenang</mark> adalah … km/jam.</p>
+    <div class="opsi5"><div><span class="h">A</span><b>5</b></div><div><span class="h">B</span><b>10</b></div><div><span class="h">C</span><b>24</b></div><div><span class="h">D</span><b>25</b></div><div><span class="h">E</span><b>30</b></div></div>
+  </div>
+  <div class="guru"><b>CRT arus sungai, waktu hilir dan hulu diketahui, tanya laju perahu.</b> Kunci D. Kode: A J-PERINTAH · B J-TANDA · C J-LAJU · D <b>kunci</b> · E J-LANGKAH. Kerangka: CRT arus · 60 km, 2 jam hilir, 3 jam hulu · tanya laju perahu · laju arus, selisih hilir−hulu, rata-rata pergi-pulang, laju hilir. TO terdekat: tidak ada di TO P1; bukan 24 dan 16 km/jam (narasi). Bukti: hilir 30 = perahu + arus, hulu 20 = perahu − arus Jarak kunci ke pilihan terdekat 1, median jarak 5. Slot: J-TANDA, J-LAJU, J-SATUAN; J-SATUAN tidak dipakai (waktu dalam jam bulat), diganti J-PERINTAH (menjawab laju arus) dan J-LANGKAH.</div>
+</div>
+<!--B10-L03:selesai-->
+<!--B10-L04:mulai-->
+<div data-soal="HB-TIU-B10-L04" data-target="75">
+  <div class="soal">
+    <div class="meta"><span id="soal-B10-L04">Latihan 4<a class="ke" href="#bahas-B10-L04">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 75 detik</span></div>
+    <p class="stem">Seorang pedagang membeli 5 peti apel. Bobot setiap peti beserta isinya 40 kg, dengan tara 5%. Harga apel Rp15.000 <mark>per kg neto</mark>. Ongkos angkut Rp50.000 per peti ditanggung pemasok.</p>
+    <p class="stem">Uang yang dibayar pedagang untuk apel itu adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Rp2.625.000</span></li><li><span class="h">B</span><span>Rp2.700.000</span></li><li><span class="h">C</span><span>Rp2.850.000</span></li><li><span class="h">D</span><span>Rp2.900.000</span></li><li><span class="h">E</span><span>Rp3.000.000</span></li></ol>
+  </div>
+  <div class="guru"><b>CRT bruto-neto-tara, tara persen dari bruto, harga per kg neto, data pengalih.</b> Kunci C. Kode: A J-SATUAN · B J-LANGKAH · C <b>kunci</b> · D J-PENGALIH · E J-BASIS. Kerangka: CRT bruto-neto-tara · 5 peti × 40 kg, tara 5% · harga per kg neto · ongkos ditanggung pemasok (pengalih) · tara 5 kg, tara dua kali, ongkos satu peti, dari bruto. TO terdekat: tidak ada di TO P1; bukan 50 kg dan 4% (narasi); konteks karung TO KCK tidak dipakai. Bukti: neto 38 kg per peti × 5 peti × Rp15.000 Jarak kunci ke pilihan terdekat 50000, median jarak 87500. Kode = rencana slot (J-BASIS, J-LANGKAH, J-PENGALIH) + J-SATUAN. Dirujuk Latihan A Bab 19 (J-BASIS, pilihan D). Revisi cek buta 1: pilihan A Rp570.000 (satu peti, terpencil) dan E Rp3.100.000 diganti Rp2.700.000 (tara dikurangkan dua kali) dan Rp2.900.000 (ongkos satu peti ikut dihitung).</div>
+</div>
+<!--B10-L04:selesai-->
+<!--B10-L05:mulai-->
+<div data-soal="HB-TIU-B10-L05" data-target="75">
+  <div class="soal">
+    <div class="meta"><span id="soal-B10-L05">Latihan 5<a class="ke" href="#bahas-B10-L05">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 75 detik</span></div>
+    <p class="stem">Bu Lina menabung Rp2.400.000 dengan <mark>bunga tunggal</mark> 10% per tahun.</p>
+    <p class="stem">Saldo tabungannya setelah 1 tahun 6 bulan adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>Rp2.520.000</span></li><li><span class="h">B</span><span>Rp2.640.000</span></li><li><span class="h">C</span><span>Rp2.760.000</span></li><li><span class="h">D</span><span>Rp2.772.000</span></li><li><span class="h">E</span><span>Rp2.784.000</span></li></ol>
+  </div>
+  <div class="guru"><b>CRT bunga tunggal, lama dalam tahun dan bulan, tanya saldo.</b> Kunci C. Kode: A J-LANGKAH · B J-LANGKAH · C <b>kunci</b> · D J-BASIS · E J-SATUAN. Kerangka: CRT bunga tunggal · Rp2.400.000, 10% per tahun, 1 tahun 6 bulan · hanya 6 bulan, satu tahun saja, bunga dibungakan, 1 tahun 6 bulan dibaca 1,6 tahun. TO terdekat: tidak ada di TO P1; bukan Rp2.000.000, 6%, 8 bulan (narasi). Bukti: bunga tunggal 2.400.000 × 10% × 18 : 12 Jarak kunci ke pilihan terdekat 12000, median jarak 66000. Kode = rencana slot (J-SATUAN, J-BASIS, J-LANGKAH bunga saja) + J-LANGKAH satu tahun. Revisi cek buta 1: pilihan A Rp360.000 (bunga saja, terpencil) diganti Rp2.520.000 (hanya bunga 6 bulan).</div>
+</div>
+<!--B10-L05:selesai-->
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Asal Rancangan Bab 10</h4>
+    <p>Putusan T2-1b: Bab 10 = 1 pembuka + 7 contoh + 5 latihan (dari 15 slot latihan laporan T2-C). Empat latihan wajib karena Putusan 8 dan tidak tertampung di contoh: L12 jumlah-selisih, L9 arus sungai, L14 bruto-neto-tara, L15 bunga tunggal. Latihan kelima L8 (kecepatan rata-rata, HOTS) dipilih agar kekeliruan "menjumlahkan waktu" punya latihan sendiri. Tingkat naik: Standar → HOTS → HOTS → HOTS+ → HOTS+. Gugur: L1–L7 (senilai, persen kenaikan, berbalik nilai, kerja bersama, pelaku bergabung terlambat, berpapasan: bentuknya sudah diperagakan pembuka, contoh, atau narasi), L10 (kereta dua kejadian, kembar Contoh 5), L11 (umur jumlah-selisih, kembar Contoh 6 + L01), L13 (harga beli dari harga jual, dekat Bab 2 L5 dan Contoh 7).</p>
+    <p>Tara sebagai persen dari bruto dan rumus bunga tunggal = konvensi aritmetika sosial sekolah (belum dicek ke sumber resmi soal SKD). Konteks KCK TO no. 46–52 (konveksi, karung, map-spidol) tidak dipakai di slot bab ini.</p>
+  </div>
+
+  <div class="ringkas">
+    <h4>Ringkasan Bab 10</h4>
+    <ol>
+      <li><b>Hasil = laju × waktu.</b> Tulis daftar hasil, laju, dan waktu, lalu samakan satuannya.</li>
+      <li>Senilai: hasil bagi tetap. Berbalik nilai: hasil kali tetap. Bila ragu, pakai uji dua kali lipat.</li>
+      <li>Pelaku yang bekerja bersamaan menjumlahkan laju; pengosong bertanda negatif; hitung per tahap.</li>
+      <li>Besaran yang saling menghapus boleh dipilih ramah: kapasitas = KPK waktu, harga awal = 100.</li>
+      <li><b>Laju relatif:</b> berpapasan dijumlah, searah dikurangi. Kereta menempuh panjang lintasan ditambah panjangnya sendiri. Laju arus = setengah selisih laju hilir dan hulu.</li>
+      <li>Selisih umur tidak berubah; perbandingan memerlukan satu besaran nyata.</li>
+      <li>Persen selalu persen dari dasar yang tepat: kapasitas, harga beli, harga setelah potongan sebelumnya, bruto, atau modal awal.</li>
+    </ol>
+  </div>
+</section>

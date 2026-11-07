@@ -1,0 +1,198 @@
+<!-- ═════════ BAB 15 · SERI GAMBAR ═════════
+     Rencana: reports/tahap2_E_figural.md Bab 15 + sebaran T2-1b (3 latihan) + T2-2 (satu aturan; ditutup ≥ 2 latihan sulit)
+     + T2-6 (keluarga) + T4-22 (judul = label sampul). Periode, sisa pembagian, KPK, dan tabel periksa dihitung di
+     scripts/cek_bab14_18.mjs. Gambar penjelas periode = tempat kosong sampai T5. -->
+<section class="bab fig" data-bab="15">
+  <header class="band">
+    <div class="no">15</div>
+    <div>
+      <h2>Seri Gambar</h2>
+      <p>Bab ini membahas seri gambar sebagai barisan perubahan, periode dan sisa pembagian, pola berselang, dua kelompok objek dengan periode berbeda, tanda tanya di tengah seri, serta pemeriksaan semua objek pada semua pilihan.</p>
+      <p class="waktu"><svg class="ico"><use href="#jam"/></svg>{{TARGET}}</p>
+    </div>
+    <div class="kisi" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="emas"></i></div>
+  </header>
+
+  <p class="lead">Seri gambar adalah barisan, sama seperti barisan bilangan di Bab 8. Bedanya, langkah dari satu suku ke suku berikutnya bukan penjumlahan, melainkan sebuah perubahan: putar, cermin, balik warna, atau pindah tempat.</p>
+
+  <h3>Seri Gambar sebagai Barisan Perubahan</h3>
+  <p>Misalkan perubahan dari satu gambar ke gambar berikutnya selalu sama. Gambar kedua adalah gambar pertama yang dikenai perubahan itu satu kali, gambar ketiga dua kali, dan <b>gambar ke-<i>n</i> adalah gambar pertama yang dikenai perubahan itu (<i>n</i> − 1) kali</b>. Hubungan ini sama dengan rumus suku ke-<i>n</i> barisan aritmetika di Bab 8: banyak langkah selalu satu kurang dari nomor suku.</p>
+  <p>Kekeliruan yang paling sering terjadi ada di sini. Gambar kelima dihitung lima langkah dari gambar pertama, padahal hanya empat langkah.</p>
+
+  <h3>Periode dan Sisa Pembagian</h3>
+  <p>Perubahan yang diulang pada akhirnya mengembalikan gambar ke keadaan awal. Banyak langkah sampai gambar kembali seperti semula disebut <b>periode</b> perubahan itu.</p>
+  <table class="tb">
+    <thead><tr><th style="width:46%">Perubahan setiap langkah</th><th style="width:12%" class="n">Periode</th><th>Alasan</th></tr></thead>
+    <tbody>
+      <tr><td>diputar 90° (searah atau berlawanan)</td><td class="n">4</td><td>4 × 90° = 360°</td></tr>
+      <tr><td>diputar 180°</td><td class="n">2</td><td>2 × 180° = 360°</td></tr>
+      <tr><td>dicermin pada garis apa pun</td><td class="n">2</td><td>cermin dibatalkan oleh dirinya sendiri</td></tr>
+      <tr><td>dibalik warnanya</td><td class="n">2</td><td>dua kali dibalik kembali semula</td></tr>
+      <tr><td>tiga objek bergilir di tiga tempat</td><td class="n">3</td><td>setiap objek kembali ke tempatnya setelah tiga kali pindah</td></tr>
+      <tr><td>empat objek bergilir di empat kotak</td><td class="n">4</td><td>setiap objek kembali ke kotaknya setelah empat kali pindah</td></tr>
+    </tbody>
+  </table>
+  <p>Karena keadaan berulang setiap satu periode, keadaan gambar ke-<i>n</i> cukup ditentukan oleh <b>sisa pembagian (<i>n</i> − 1) oleh periodenya</b>. Misalkan sebuah objek diputar 90° searah jarum jam pada setiap langkah. Gambar ke-10 memerlukan 9 langkah, dan 9 dibagi 4 bersisa 1. Jadi gambar ke-10 sama dengan gambar pertama yang diputar 90° searah jarum jam satu kali, yaitu sama dengan gambar ke-2. Dengan alasan yang sama, sisa 0 berarti gambar kembali seperti gambar pertama. Gambar ke-1, ke-5, dan ke-9 sama persis.</p>
+  <div data-soal="HB-TIU-B15-I01">
+    <p class="ket-baris">Diputar 90° searah jarum jam setiap langkah, periode 4</p>
+    <div class="diag3 lima">
+      <figure class="diag"><img src="aset/ilustrasi/B14-I01-tetap.svg" alt="Gambar 1"><figcaption>Gambar 1</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I01-r90.svg" alt="Gambar 2"><figcaption>Gambar 2</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I01-r180.svg" alt="Gambar 3"><figcaption>Gambar 3</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I01-r270.svg" alt="Gambar 4"><figcaption>Gambar 4</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I01-tetap.svg" alt="Gambar 5"><figcaption>Gambar 5</figcaption></figure>
+    </div>
+    <p class="ket-baris">Cermin kiri-kanan setiap langkah, periode 2</p>
+    <div class="diag3 lima">
+      <figure class="diag"><img src="aset/ilustrasi/B14-I01-tetap.svg" alt="Gambar 1"><figcaption>Gambar 1</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I01-mkk.svg" alt="Gambar 2"><figcaption>Gambar 2</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I01-tetap.svg" alt="Gambar 3"><figcaption>Gambar 3</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I01-mkk.svg" alt="Gambar 4"><figcaption>Gambar 4</figcaption></figure>
+      <figure class="diag"><img src="aset/ilustrasi/B14-I01-tetap.svg" alt="Gambar 5"><figcaption>Gambar 5</figcaption></figure>
+    </div>
+    <p class="ket-gbr">Gambar 5 sama dengan gambar 1 pada kedua deret. Pada deret bawah, gambar 3 pun sudah sama dengan gambar 1.</p>
+    <div class="guru"><b>ILUS (T2-E I15-1, T2-7(10)).</b> G7; keluarga ILUS, tanpa opsi dan kunci; nomor gambar di bawah setiap kotak supaya sisa pembagian terbaca.</div>
+  </div><!--HB-TIU-B15-I01:selesai-->
+
+  <h3>Pola Berselang</h3>
+  <p>Tidak semua seri berubah pada setiap langkah. Bandingkan gambar 1 dengan gambar 2, lalu gambar 1 dengan gambar 3, lalu gambar 1 dengan gambar 4. Bandingan yang memperlihatkan perubahan sederhana menunjukkan jarak langkahnya.</p>
+  <table class="tb">
+    <thead><tr><th style="width:20%">Pola</th><th style="width:38%">Gambar yang dibandingkan</th><th>Padanan pada barisan bilangan</th></tr></thead>
+    <tbody>
+      <tr><td>setiap langkah</td><td>1 → 2 → 3 → …</td><td>barisan biasa</td></tr>
+      <tr><td>selang dua</td><td>1 → 3 → 5 dan 2 → 4 → 6</td><td>dua barisan berselang (Bab 8)</td></tr>
+      <tr><td>selang tiga</td><td>1 → 4, 2 → 5, dan 3 → 6</td><td>tiga barisan berselang</td></tr>
+    </tbody>
+  </table>
+  <p>Pada pola selang tiga, gambar 4 diperoleh dari gambar 1, gambar 5 dari gambar 2, dan gambar 6 dari gambar 3. Bila tanda tanya terletak di gambar 6, yang dikenai perubahan adalah gambar 3, bukan gambar 5 yang berada tepat di sebelahnya.</p>
+  <p>Satu seri dapat memuat beberapa lapis dengan irama berbeda. Misalnya, bentuknya berubah dengan selang tiga, sementara banyak bintiknya bertambah satu pada setiap langkah. Setiap lapis diperiksa menurut iramanya sendiri, dan irama satu lapis tidak boleh dipinjam lapis lain.</p>
+
+  <h3>Dua Kelompok dengan Periode Berbeda</h3>
+  <p>Sebagian seri memuat dua kelompok objek dengan aturan masing-masing. Misalkan satu objek berputar 90° pada setiap langkah (periode 4), sedangkan tiga objek lain bergilir di tiga kotak (periode 3). Kedua kelompok baru kembali bersama-sama ke keadaan awal setelah KPK dari 4 dan 3, yaitu 12 langkah. Gambar ke-13 adalah gambar pertama kembali.</p>
+  <table class="tb">
+    <thead><tr><th style="width:16%" class="n">Gambar</th><th class="n">Langkah objek berputar, sisa bagi 4</th><th class="n">Langkah objek bergilir, sisa bagi 3</th></tr></thead>
+    <tbody>
+      <tr><td class="n">1</td><td class="n">0</td><td class="n">0</td></tr>
+      <tr><td class="n">2</td><td class="n">1</td><td class="n">1</td></tr>
+      <tr><td class="n">3</td><td class="n">2</td><td class="n">2</td></tr>
+      <tr><td class="n">4</td><td class="n">3</td><td class="n">0</td></tr>
+      <tr class="jml"><td class="n">5</td><td class="n">0</td><td class="n">1</td></tr>
+    </tbody>
+  </table>
+  <p>Pada gambar 5, objek yang berputar sudah kembali seperti di gambar 1, tetapi objek yang bergilir baru sampai pada keadaan gambar 2. Pasangan sisa (0, 1) tidak dimiliki gambar 1 sampai 4, sehingga gambar 5 tidak sama dengan gambar mana pun yang terlihat. Pilihan yang menyalin gambar 1 atau gambar 2 hanya benar untuk satu kelompok.</p>
+
+  <h3>Tanda Tanya di Tengah Seri</h3>
+  <p>Bila tanda tanya terletak di tengah, ada dua jalan menuju jawaban. Jalan maju mengenakan perubahan pada gambar sebelum tanda tanya. Jalan mundur mengenakan pembatal perubahan pada gambar sesudah tanda tanya. Misalkan setiap langkah memutar objek 90° searah jarum jam dan tanda tanya terletak di gambar 4. Gambar 3 diputar 90° searah jarum jam, dan gambar 5 diputar 90° berlawanan arah jarum jam; kedua jalan harus memberi gambar yang sama. Bila hasilnya berbeda, ada lapis yang terlewat.</p>
+
+  <h3>Memeriksa Semua Objek pada Semua Pilihan</h3>
+  <p>Pada seri dengan beberapa objek, pilihan sering tampak dapat digugurkan satu per satu: objek pertama menggugurkan satu pilihan, objek kedua menggugurkan pilihan lain, dan seterusnya. Cara itu sengaja tidak berlaku pada soal buku ini. Setiap pilihan salah dibuat keliru di satu atau dua objek saja, dan satu objek dapat keliru di beberapa pilihan. Tabel periksa berikut menggambarkan keadaan yang biasa ditemui pada soal tiga objek.</p>
+  <table class="tb silang">
+    <thead><tr><th style="width:16%">Pilihan</th><th>Objek 1</th><th>Objek 2</th><th>Objek 3</th><th style="width:22%">Hasil</th></tr></thead>
+    <tbody>
+      <tr><td><b>A</b></td><td>ya</td><td>ya</td><td>×</td><td>gugur</td></tr>
+      <tr><td><b>B</b></td><td>×</td><td>ya</td><td>×</td><td>gugur</td></tr>
+      <tr><td><b>C</b></td><td>ya</td><td>ya</td><td>ya</td><td>bertahan</td></tr>
+      <tr><td><b>D</b></td><td>ya</td><td>×</td><td>ya</td><td>gugur</td></tr>
+      <tr><td><b>E</b></td><td>ya</td><td>ya</td><td>×</td><td>gugur</td></tr>
+    </tbody>
+  </table>
+  <p>Objek 1 hanya menggugurkan B, dan objek 2 hanya menggugurkan D. Bila kamu berhenti setelah dua objek, masih tersisa tiga pilihan, padahal objek 3 sendiri menggugurkan tiga pilihan. Pemeriksaan baru selesai ketika setiap objek sudah dicocokkan dengan kelima pilihan.</p>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Tabel Periksa dan Strategi Bimbel Lain</h4>
+    <p>Tabel periksa = ilustrasi, bukan soal; diuji script (lolos setelah 1, 2, 3 objek = 4, 3, 1 pilihan). BL Bab 11 mengajarkan eliminasi bertahap "empat objek → empat pilihan gugur"; generator D'Ajiks sengaja membuat pengecoh keliru 1–2 hal sehingga strategi itu gagal (laporan T1-E temuan 4, aturan-tetap B-14). Jangan menyebut nama bimbel di depan siswa.</p>
+  </div>
+
+  <h3>Langkah Penyelesaian Soal Seri Gambar</h3>
+  <div class="rules satu">
+    <div><b>Temukan jarak langkah:</b> bandingkan gambar 1 dengan gambar 2, 3, dan 4.</div>
+    <div><b>Pecah gambar menjadi objek dan lapis:</b> gerak, warna, tempat, dan jumlah.</div>
+    <div><b>Tulis kalimat perubahan</b> untuk setiap objek dan tentukan periodenya.</div>
+    <div><b>Hitung banyak langkah</b> dari gambar pertama ke tanda tanya, lalu sisa pembagiannya oleh periode.</div>
+    <div><b>Tentukan keadaan setiap objek</b> di tanda tanya. Bila tanda tanya di tengah, pakai jalan maju dan jalan mundur.</div>
+    <div><b>Cocokkan setiap objek dengan kelima pilihan.</b></div>
+    <div><b>Cek balik:</b> dengan jawaban di tempat tanda tanya, setiap lapis berjalan menurut iramanya tanpa celah.</div>
+  </div>
+
+  <h3>Kekeliruan pada Soal Seri Gambar</h3>
+  <table class="tb pecah">
+    <thead><tr><th style="width:5%">No.</th><th style="width:31%">Kekeliruan</th><th>Contoh</th><th style="width:27%">Pertanyaan uji</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><b>Menyalin gambar yang sudah terlihat</b></td><td>jawaban sama dengan gambar pertama atau gambar di sebelah tanda tanya</td><td>Jawaban ini sudah ada di deret?</td></tr>
+      <tr><td>2</td><td><b>Tertukar antara banyak langkah dan nomor gambar</b></td><td>gambar kelima dihitung lima langkah dari gambar pertama</td><td>Berapa langkah dari gambar pertama?</td></tr>
+      <tr><td>3</td><td><b>Memakai aturan satu kelompok untuk kelompok lain</b></td><td>bintik ikut berselang tiga; urutan giliran ikut berubah</td><td>Lapis ini berirama apa?</td></tr>
+      <tr><td>4</td><td><b>Membalik arah putar atau arah pindah</b></td><td>objek bergilir searah jarum jam dibaca berlawanan arah</td><td>Dari kotak mana ke kotak mana?</td></tr>
+      <tr><td>5</td><td><b>Menyamakan putaran dengan pencerminan</b></td><td>putaran 180° pada setiap langkah dibaca cermin atas-bawah</td><td>Urutan kelilingnya tetap atau terbalik?</td></tr>
+      <tr><td>6</td><td><b>Mengira gambar kembali ke posisi awal</b></td><td>putaran dianggap selesai, padahal masih berlanjut</td><td>Sisa pembagiannya nol atau bukan?</td></tr>
+      <tr><td>7</td><td><b>Salah hitung lebih atau kurang satu</b></td><td>bintik di tanda tanya kurang satu</td><td>Bertambah berapa setiap langkah?</td></tr>
+      <tr><td>8</td><td><b>Hanya memeriksa satu objek</b></td><td>pilihan dipilih karena objek pertama cocok</td><td>Semua objek sudah dicocokkan?</td></tr>
+    </tbody>
+  </table>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Padanan Nama Kekeliruan dan Kode</h4>
+    <p>1 JF-SALIN (K5) · 2 J-NOMOR (K6) · 3 JF-OBJEK (K5; irama tertukar) · 4 JF-ARAH (K3) · 5 JF-PUTCER (K3) · 6 JF-AWAL (K5) · 7 JF-HITUNG (K6) · 8 JF-SATU (K2).</p>
+  </div>
+
+  <h3>Contoh Soal dan Pembahasan</h3>
+  <p>Dua contoh berikut memperagakan pola selang tiga dengan satu perubahan, lalu pola selang tiga dengan bintik yang bertambah. Kerjakan setiap contoh sendiri dalam target waktunya sebelum membaca pembahasan. Pembahasan setiap contoh memuat kalimat perubahan setiap lapis, hitungan sisa pembagiannya, dan bagian Pilihan yang Gugur.</p>
+<!--B15-C01:mulai-->
+<div data-soal="HB-TIU-B15-C01" data-target="40">
+  <div class="soal">
+    <div class="meta"><span>Contoh 1</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 40 detik</span></div>
+    <p class="stem">Perhatikan urutan gambar berikut. Gambar manakah yang tepat untuk mengganti tanda tanya?</p>
+    <img class="gbr" src="aset/figural/img/B15-C01.svg" alt="Gambar soal">
+    <div class="opsi5 gbr5"><div><span class="h">A</span><img src="aset/figural/img/B15-C01-A.svg" alt="Pilihan A"></div><div><span class="h">B</span><img src="aset/figural/img/B15-C01-B.svg" alt="Pilihan B"></div><div><span class="h">C</span><img src="aset/figural/img/B15-C01-C.svg" alt="Pilihan C"></div><div><span class="h">D</span><img src="aset/figural/img/B15-C01-D.svg" alt="Pilihan D"></div><div><span class="h">E</span><img src="aset/figural/img/B15-C01-E.svg" alt="Pilihan E"></div></div>
+  </div>
+  <div class="guru"><b>FIG-SERI-P3 siluet tanpa bintik (T2-E C15-1), tingkat 2, kunci A.</b> Contoh pertama satu aturan (T2-2). Kode: JF-SALIN (gambar 5 disalin), JF-ARAH, JF-PUTCER, J-TIGA (dibaca tiap langkah). Keluarga SATWA. Pembuat: G9 (varian siluet tingkat 2, izin T2-2).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta gambar untuk “mengganti tanda tanya”, yaitu gambar (6). Bentuk di deret ini berganti-ganti, jadi pertama-tama cari gambar mana yang berpasangan.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><img class="gbr" src="aset/figural/img/B15-C01-pembahasan.svg" alt="Gambar pembahasan"><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Gambar (1), (2), dan (3) berbeda bentuk: pakis, cakar, dan bulu. Jangan membandingkan gambar yang bersebelahan. Bandingkan (1) dengan (4) dan (2) dengan (5): keduanya dicermin atas-bawah. Gambar (6) adalah bulu di gambar (3) yang dicermin atas-bawah.</dd></div>
+    <div><dt>Cara lain</dt><dd>Baca deret sebagai dua kelompok berisi tiga gambar: (1)(2)(3) dan (4)(5)(6). Kelompok kedua adalah kelompok pertama yang dicermin atas-bawah, dengan urutan bentuk yang sama.</dd></div>
+    <div><dt>Cek balik</dt><dd>Pada cermin atas-bawah, bagian yang di atas pindah ke bawah, sedangkan sisi kiri-kanannya tetap. Ujung bulu yang di kanan atas pada gambar (3) ada di kanan bawah pada pilihan E.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">diputar 180°</span><b>Menyamakan putaran dengan pencerminan.</b> Putaran 180° juga membalik atas-bawah, tetapi ikut memindahkan kanan ke kiri. Ujung bulu di A ada di kiri bawah, bukan kanan bawah.</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">cermin kiri-kanan</span><b>Mencerminkan pada garis yang salah.</b> Bulu hanya berbalik dari kanan ke kiri. Pasangan (1)→(4) memindahkan bagian atas ke bawah, bukan kanan ke kiri.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">sama dengan (3)</span><b>Menyalin gambar yang sudah terlihat.</b> Pilihan C sama persis dengan gambar (3). Pasangan (1)→(4) dan (2)→(5) sama-sama berubah, jadi (3)→(6) juga harus berubah.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">diputar 90° berlawanan arah jarum jam</span><b>Menyamakan putaran dengan pencerminan.</b> Bulu rebah mendatar karena diputar seperempat putaran. Pakis di (4) dan cakar di (5) tidak diputar seperempat putaran, jadi bulu juga tidak.</div></div></div>
+  <div class="jwb"><span>E</span><p><b>Jawaban: E.</b> Pilihan E adalah bulu di gambar (3) yang dicermin atas-bawah, sama dengan perubahan (1)→(4) dan (2)→(5).</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti jadwal piket yang berulang setiap tiga hari: hari keempat sama dengan hari pertama, dan hari keenam sama dengan hari ketiga.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Pilihan A dan E sekilas mirip karena keduanya membalik atas-bawah. Lihat sisi kiri-kanannya: pada cermin atas-bawah, ujung yang di kanan tetap di kanan.</span></div></div>
+</div>
+<!--B15-C01:selesai-->
+<!--B15-C02:mulai-->
+<div data-soal="HB-TIU-B15-C02" data-target="55">
+  <div class="soal">
+    <div class="meta"><span>Contoh 2</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 55 detik</span></div>
+    <p class="stem">Perhatikan urutan gambar berikut. Gambar manakah yang tepat untuk mengganti tanda tanya?</p>
+    <img class="gbr" src="aset/figural/img/B15-C02.svg" alt="Gambar soal">
+    <div class="opsi5 gbr5"><div><span class="h">A</span><img src="aset/figural/img/B15-C02-A.svg" alt="Pilihan A"></div><div><span class="h">B</span><img src="aset/figural/img/B15-C02-B.svg" alt="Pilihan B"></div><div><span class="h">C</span><img src="aset/figural/img/B15-C02-C.svg" alt="Pilihan C"></div><div><span class="h">D</span><img src="aset/figural/img/B15-C02-D.svg" alt="Pilihan D"></div><div><span class="h">E</span><img src="aset/figural/img/B15-C02-E.svg" alt="Pilihan E"></div></div>
+  </div>
+  <div class="guru"><b>FIG-SERI-P3 siluet + bintik (T2-E C15-2), tingkat 3, kunci E.</b> Kode: JF-OBJEK (bintik ikut selang tiga), JF-HITUNG (bintik kurang satu), JF-ARAH, JF-SALIN. Keluarga LAUT. Pembuat: <code>tiu-fig-beda-seri.ts</code> mode siluet.</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta gambar untuk “mengganti tanda tanya”, yaitu gambar (6). Ada dua hal yang berubah, bentuk besar dan banyak bintik, dan keduanya punya irama sendiri.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><img class="gbr" src="aset/figural/img/B15-C02-pembahasan.svg" alt="Gambar pembahasan"><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Kerjakan bintik dulu karena paling cepat. Hitung 3, 4, 5, 6, 7: bertambah satu setiap langkah, jadi gambar (6) punya 8 bintik. Hanya C dan E yang punya 8 bintik. Lalu bentuk besar: (1), (2), (3) berbeda bentuk, jadi bandingkan (1) dengan (4) dan (2) dengan (5). Keduanya dicermin pada garis miring \, jadi gambar (6) memuat tanduk di (3) yang dicermin pada garis miring \.</dd></div>
+    <div><dt>Cara lain</dt><dd>Kerjakan bentuk besar dulu, lalu bintik. Pilihan yang tanduknya dicermin pada garis miring \ adalah D dan E. Hitung bintiknya: D punya 5, E punya 8.</dd></div>
+    <div><dt>Cek balik</dt><dd>Aturan bentuk besar sudah teruji dua kali, pada (1)→(4) dan (2)→(5), sebelum dipakai ke (3)→(6). Letak bintik berpindah-pindah, jadi yang dicocokkan hanya jumlahnya.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">7 bintik, diputar 180°</span><b>Salah hitung lebih atau kurang satu.</b> Bintiknya 7, sama dengan gambar (5), jadi tambahan di langkah terakhir terlupa. Tanduknya juga diputar 180°, bukan dicermin pada garis miring \.</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">5 bintik, diputar 90°</span><b>Memakai aturan satu kelompok untuk kelompok lain.</b> Bintik ikut berselang tiga sehingga disalin dari gambar (3): 5 bintik. Padahal bintik bertambah satu setiap langkah. Tanduknya pun diputar 90° searah jarum jam.</div></div><div class="g"><span class="h">C</span><div class="x"><span class="uji">8 bintik, diputar 180°</span><b>Menyamakan putaran dengan pencerminan.</b> Bintiknya sudah benar, tetapi tanduk diputar 180°. Putaran tidak membalik urutan keliling, sedangkan cermin pada garis miring \ membaliknya.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">5 bintik</span><b>Memakai aturan satu kelompok untuk kelompok lain.</b> Tanduknya sudah benar, tetapi bintik disalin dari gambar (3). Irama selang tiga hanya berlaku untuk bentuk besar.</div></div></div>
+  <div class="jwb"><span>E</span><p><b>Jawaban: E.</b> Pilihan E memuat tanduk dari gambar (3) yang dicermin pada garis miring \ dan 8 bintik.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti jadwal piket yang berulang setiap tiga hari, sementara tanggal di kalender tetap maju satu setiap hari. Dua hal itu berjalan bersama, tetapi aturannya berbeda.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Setelah menemukan pola selang tiga, banyak orang ikut memakainya untuk bintik. Bintik punya irama sendiri, yaitu maju satu setiap langkah.</span></div></div>
+</div>
+<!--B15-C02:selesai-->
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Asal Rancangan Bab 15</h4>
+    <p>Putusan T2-1b: Bab 15 = 1 pembuka + 3 contoh + 3 latihan (dari 6 latihan T2-E). Dipilih: L15-1 (tingkat 2, satu aturan), L15-4 (tingkat 3, bintik + cermin garis miring), L15-5 (tingkat 3, dua kelompok berlawanan arah). Alasan: tingkat naik, dua latihan sulit di penutup (T2-2), dua jenis generator, perubahan bentuk berbeda dari contoh. Gugur: L15-2 (satu kelompok bergilir, tingkat 2; satu aturan hanya boleh di latihan pertama) · L15-3 (bintik + cermin atas-bawah; sejenis L02) · L15-6 ("?" di gambar 4; sudah di C03).</p>
+    <p>Sebaran huruf rencana: P C · C1 A · C2 E · C3 B · L1 D · L2 A · L3 C. Keluarga per bab: WARISAN, SATWA, LAUT, PERKAKAS masing-masing 1; TO·H sabit, teratai, sayap masing-masing 1 (R4 lolos).</p>
+  </div>
+
+  <div class="ringkas">
+    <h4>Ringkasan Bab 15</h4>
+    <ol>
+      <li>Gambar ke-<i>n</i> adalah gambar pertama yang dikenai perubahan (<i>n</i> − 1) kali.</li>
+      <li>Setiap perubahan punya <b>periode</b>: putar 90° = 4, putar 180°, cermin, dan balik warna = 2, gilir tiga tempat = 3.</li>
+      <li>Keadaan gambar ke-<i>n</i> ditentukan oleh sisa pembagian (<i>n</i> − 1) oleh periodenya.</li>
+      <li>Cari jarak langkah dengan membandingkan gambar 1 dengan gambar 2, 3, dan 4. Selang tiga = tiga barisan berselang.</li>
+      <li>Dua kelompok berperiode 4 dan 3 baru berulang bersama setelah 12 langkah, sehingga jawaban tidak sama dengan gambar yang terlihat.</li>
+      <li>Tanda tanya di tengah: jalan maju dan jalan mundur harus memberi gambar yang sama.</li>
+      <li>Periksa setiap objek pada kelima pilihan. Satu objek dapat menggugurkan beberapa pilihan, atau tidak satu pun.</li>
+    </ol>
+  </div>
+</section>

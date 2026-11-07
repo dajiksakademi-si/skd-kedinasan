@@ -1,0 +1,2203 @@
+{
+  "keterangan": "Handbook TIU Tahap 5 · Bab 11–13 (kecukupan data, penalaran analitis, optimasi tabel) · satu sumber teks soal + pembahasan. Pilihan, kunci, kode wajib sama dengan scripts/kck/model_*.mjs (diperiksa scripts/soal_kck.mjs); field bukti ditulis script.",
+  "butir": [
+    {
+      "id": "HB-TIU-B11-P01",
+      "bab": 11,
+      "peran": "pembuka",
+      "jenis": "KCK ya/tidak + laju",
+      "bentuk": "dua mesin berlaju beda, gabungan pasti tidak",
+      "target_detik": 120,
+      "soal": {
+        "pengantar": "Mesin fotokopi P dan Q akan menggandakan 4.800 lembar naskah. Kedua mesin mulai bekerja bersamaan dan terus bekerja sampai seluruh naskah selesai. Laju setiap mesin tetap selama bekerja.",
+        "pernyataan": [
+          "Mesin P yang bekerja sendirian dapat menggandakan 4.800 lembar itu dalam 4 jam.",
+          "Laju mesin Q setengah dari laju mesin P."
+        ],
+        "tanya": "Apakah seluruh naskah selesai digandakan dalam waktu paling lama 2 jam?"
+      },
+      "kalimat_penentu": "paling lama 2 jam",
+      "opsi": {
+        "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+        "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+        "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+        "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+        "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+      },
+      "kunci": "C",
+      "kode": {
+        "A": "J-ASUMSI",
+        "B": "J-RASIO",
+        "C": "kunci",
+        "D": "J-MUNGKIN",
+        "E": "J-TENTU"
+      },
+      "nama": {
+        "A": "Memakai keterangan yang tidak tertulis di soal",
+        "B": "Mengira perbandingan sudah memberi nilai sebenarnya",
+        "D": "Menganggap satu contoh yang cocok sebagai bukti",
+        "E": "Mengira jawaban “tidak” berarti tidak terjawab"
+      },
+      "alasan_kunci": "(1) laju P 1.200; (2) Q = ½P; gabungan 1.800 lembar/jam → 2 jam 40 menit > 2 jam, pasti tidak.",
+      "kerangka": "KCK ya/tidak + laju · dua mesin berlaju beda, beban tertulis · (1) waktu P sendirian · (2) laju Q relatif terhadap P · gabungan pasti tidak",
+      "to_terdekat": "TO P1 no. 48 (pelaksana identik, tim lain); engine Contoh 1 (relawan); konteks relawan/paket konsumsi tidak dipakai",
+      "catatan_reviu": "Kode = rencana slot (J-TENTU, J-RASIO, J-ASUMSI) + J-MUNGKIN untuk D (masing-masing cukup), karena jalur D yang wajar = satu angka dicoba untuk tiap pernyataan.",
+      "pembahasan": {
+        "ditanya": "Soal tidak meminta lama kerjanya. Yang ditanya: apakah data sudah memastikan jawaban ya atau tidak untuk batas “paling lama 2 jam”. Daftar kebutuhannya dua, yaitu laju mesin P dan laju mesin Q; banyak naskah sudah tertulis, 4.800 lembar.",
+        "cepat": "Periksa tiga langkah. (1) saja memberi laju P, 4.800 : 4 = 1.200 lembar per jam, tetapi laju Q masih bebas: tidak cukup. (2) saja memberi hubungan Q dengan P tanpa satu laju nyata: tidak cukup. Gabungan: laju Q 1.200 : 2 = 600, laju berdua 1.200 + 600 = 1.800 lembar per jam, dan 4.800 lembar butuh 2 jam 40 menit. Lebih dari 2 jam, jadi jawabannya pasti “tidak”, dan jawaban yang pasti berarti data cukup.",
+        "lain": "Bandingkan dengan laju yang dibutuhkan. Supaya selesai dalam 2 jam, kedua mesin harus menggandakan 4.800 : 2 = 2.400 lembar per jam. Gabungan (1) dan (2) hanya memberi 1.800 lembar per jam, kurang dari yang dibutuhkan.",
+        "cek": "Sebut dua keadaan untuk setiap pernyataan yang tidak cukup. (1) saja: bila laju Q 1.200, berdua 2.400 lembar per jam dan selesai tepat 2 jam (ya); bila laju Q 600, selesai 2 jam 40 menit (tidak). (2) saja: laju P 1.600 dan laju Q 800 memberi 2.400 lembar per jam (ya), sedangkan laju P 1.200 memberi jawaban tidak.",
+        "gugur": {
+          "A": {
+            "uji": "(1) dianggap cukup",
+            "teks": "Pilihan ini muncul bila mesin Q diam-diam dianggap secepat mesin P. Dengan anggapan itu laju berdua 2.400 lembar per jam dan naskah selesai tepat 2 jam. Soal tidak pernah menyebut laju Q sama dengan laju P, sehingga (1) saja masih menyisakan jawaban ya dan tidak."
+          },
+          "B": {
+            "uji": "(2) dianggap cukup",
+            "teks": "Kata “setengah” terasa seperti angka, padahal ia hanya membandingkan dua laju. Tanpa satu laju nyata, lama kerjanya bisa berapa saja: laju P 1.600 membuat naskah selesai tepat 2 jam, laju P 1.200 tidak."
+          },
+          "D": {
+            "uji": "satu contoh dicoba",
+            "teks": "Setiap pernyataan dicoba dengan satu angka yang kebetulan cocok, lalu dianggap cukup. Satu contoh tidak membuktikan cukup; untuk (1) dan (2) masing-masing ada dua keadaan sah dengan jawaban berbeda."
+          },
+          "E": {
+            "uji": "“tidak” dikira kurang data",
+            "teks": "Gabungan kedua pernyataan memberi 2 jam 40 menit, dan jawabannya “tidak”. Jawaban “tidak” yang pasti tetap jawaban. Data dinilai tidak cukup hanya bila masih ada keadaan sah yang menjawab ya."
+          }
+        },
+        "kunci": "Masing-masing pernyataan menyisakan jawaban ya dan tidak, sedangkan gabungannya memberi laju 1.800 lembar per jam sehingga jawabannya pasti tidak.",
+        "analogi": "Bayangkan kamu ditanya apakah dua temanmu sanggup mengangkat 40 kardus sebelum magrib. Tahu kecepatan satu orang belum cukup, tahu bahwa yang lain hanya setengah kecepatannya juga belum cukup. Begitu keduanya digabung, kamu bisa menjawab dengan yakin, walaupun jawabannya “tidak sanggup”.",
+        "waspada": "Memilih E karena hasil gabungannya “tidak”. Soal kecukupan data menanyakan apakah jawabannya pasti, bukan apakah jawabannya ya. Selama semua keadaan sah memberi jawaban yang sama, data cukup."
+      },
+      "bukti": {
+        "metode": "semua laju P, Q 100–4.000 lembar/jam (diperlebar 8.000); (1) tidak cukup · (2) tidak cukup · gabungan cukup; gabungan 4.800 : 1.800 = 2 jam 40 menit, pasti tidak",
+        "urutan": "1 · 2 · G · M · X"
+      }
+    },
+    {
+      "id": "HB-TIU-B11-B01",
+      "bab": 11,
+      "peran": "bukti",
+      "jenis": "Latihan Bukti rasio",
+      "bentuk": "dua keadaan untuk satu pernyataan perbandingan",
+      "target_detik": null,
+      "soal": {
+        "pengantar": "Sebuah toples hanya berisi permen jahe dan permen mint. Pertanyaannya: berapa banyak permen mint di toples itu?",
+        "pernyataan": [
+          "Perbandingan banyak permen jahe dan permen mint adalah 3 : 4."
+        ],
+        "tanya": "Pernyataan itu tidak cukup. Buktikan dengan menuliskan dua keadaan yang sama-sama memenuhi kalimat soal dan pernyataan, tetapi memberi banyak permen mint yang berbeda."
+      },
+      "kalimat_penentu": "dua keadaan",
+      "alasan_kunci": "3 : 4 tanpa ukuran → (3, 4) dan (6, 8).",
+      "kerangka": "KCK rasio · satu pernyataan perbandingan tanpa ukuran · tulis dua keadaan",
+      "to_terdekat": "TO P1 no. 49 (rasio + total); bukan a + b = 7 (narasi)",
+      "catatan_reviu": "Kode sasaran: J-RASIO, J-MUNGKIN (satu contoh dikira bukti). Kunci = contoh jawaban; pembahasan di Lampiran B (Tahap 6).",
+      "contoh_jawaban": "3 permen jahe dan 4 permen mint, atau 6 permen jahe dan 8 permen mint.",
+      "syarat_jawaban": "kedua keadaan berupa bilangan cacah positif, berbanding 3 : 4, dan banyak permen mintnya berbeda; pasangan lain yang memenuhi syarat ini juga benar.",
+      "bukti": {
+        "metode": "semua pasangan jahe–mint 1–200 yang berbanding 3 : 4; dua keadaan paling sederhana (3, 4) dan (6, 8)"
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta bukti bahwa pernyataan “tidak cukup”: dua keadaan yang sama-sama memenuhi kalimat soal dan pernyataan, tetapi memberi banyak permen mint yang berbeda.",
+        "cepat": "Perbandingan 3 : 4 tidak menyebut ukuran. Toples berisi 3 permen jahe dan 4 permen mint memenuhinya, begitu juga toples berisi 6 permen jahe dan 8 permen mint. Banyak permen mintnya 4 dan 8, berbeda.",
+        "lain": "Kalikan kedua angka perbandingan dengan bilangan yang sama, misalnya 10: 3 × 10 = 30 permen jahe dan 4 × 10 = 40 permen mint. Setiap pengali memberi keadaan sah baru dengan banyak permen mint yang lain.",
+        "cek": "Periksa setiap keadaan pada tiga syarat: toples hanya berisi dua jenis permen, banyaknya bilangan cacah positif, dan perbandingannya 3 : 4. Bila ketiganya terpenuhi dan banyak permen mintnya berbeda, buktimu sah.",
+        "salah": [
+          {
+            "nama": "Menganggap satu contoh yang cocok sebagai bukti",
+            "uji": "satu keadaan",
+            "teks": "Menulis satu keadaan saja, misalnya 3 dan 4, belum membuktikan apa pun. Bukti tidak cukup butuh dua keadaan dengan jawaban berbeda."
+          },
+          {
+            "nama": "Mengira perbandingan sudah memberi nilai sebenarnya",
+            "uji": "mint dikira 4",
+            "teks": "Menjawab “permen mint 4 buah” karena angka 4 ada di perbandingan. Angka perbandingan hanya bagian, bukan banyak permen sebenarnya."
+          }
+        ],
+        "kunci": "3 permen jahe dan 4 permen mint, atau 6 permen jahe dan 8 permen mint. Pasangan lain yang berbanding 3 : 4 dengan banyak permen mint berbeda juga sah.",
+        "analogi": "Seperti resep es teh: satu sendok gula untuk dua gelas air. Resep itu cocok untuk teko kecil maupun galon, jadi dari resepnya saja kamu tidak tahu berapa banyak es teh yang dibuat.",
+        "waspada": "Menulis satu keadaan lalu berhenti. Bukti tidak cukup selalu butuh dua keadaan sah dengan jawaban berbeda; satu keadaan hanya menunjukkan bahwa soal bisa dijawab di keadaan itu."
+      }
+    },
+    {
+      "id": "HB-TIU-B11-B02",
+      "bab": 11,
+      "peran": "bukti",
+      "jenis": "Latihan Bukti persen",
+      "bentuk": "alasan umum untuk persen yang cukup",
+      "target_detik": null,
+      "soal": {
+        "pengantar": "Dalam pemilihan ketua kelas hanya ada dua calon, Rani dan Sigit, dan setiap siswa memberikan tepat satu suara untuk salah satu calon. Pertanyaannya: berapa persen suara yang diperoleh Rani?",
+        "pernyataan": [
+          "Suara yang diperoleh Sigit 50% lebih banyak daripada suara yang diperoleh Rani."
+        ],
+        "tanya": "Pernyataan itu cukup. Tuliskan alasan umum mengapa jawabannya sama untuk berapa pun banyak siswanya, tanpa mencoba contoh angka. Kamu boleh memakai huruf, misalnya r untuk suara Rani."
+      },
+      "kalimat_penentu": "alasan umum",
+      "alasan_kunci": "Sigit 1,5r, seluruh suara 2,5r, Rani 40%.",
+      "kerangka": "KCK persen · selisih persen terhadap satu bagian · ditanya persentase · alasan umum",
+      "to_terdekat": "TO P1 no. 50 (hitung balik basis); bukan x > 6, y > 5 (narasi)",
+      "catatan_reviu": "Kode sasaran: J-MUNGKIN, J-BASIS (50% dihitung dari seluruh suara memberi Rani 50%). Revisi cek buta 1: kalimat tanya menegaskan boleh memakai huruf (misalnya r).",
+      "contoh_jawaban": "Misalkan suara Rani r. Suara Sigit 1,5r, jadi seluruh suara r + 1,5r = 2,5r. Persentase Rani r : 2,5r × 100% = 40%. Huruf r saling menghapus, sehingga hasilnya 40% untuk setiap r.",
+      "syarat_jawaban": "alasan memakai lambang untuk suara Rani (atau seluruh suara) dan menunjukkan lambang itu saling menghapus; jawaban yang hanya mencoba satu atau dua angka belum sah.",
+      "bukti": {
+        "metode": "semua suara Rani 1–300 dengan Sigit = 1,5 × Rani: persentase Rani selalu 40%"
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta alasan umum bahwa pernyataan “cukup”: persentase suara Rani sama untuk berapa pun banyak siswanya.",
+        "cepat": "Misalkan suara Rani <i>r</i>. Suara Sigit 50% lebih banyak, yaitu 1 + 0,5 = 1,5 kali suara Rani. Seluruh suara sama dengan suara Rani ditambah suara Sigit, yaitu 1 + 1,5 = 2,5 kali suara Rani. Persentase Rani adalah <i>r</i> dibagi 2,5 kali <i>r</i>; huruf <i>r</i> saling menghapus, dan 1 : 2,5 = 40%.",
+        "lain": "Pakai bagian: suara Rani 2 bagian dan suara Sigit 2 × 1,5 = 3 bagian. Seluruh suara 5 bagian, dan Rani memegang 2 dari 5 bagian, yaitu 2 : 5 = 40%.",
+        "cek": "Jawaban yang hanya mencoba angka, misalnya 20 suara Rani dan 20 × 1,5 = 30 suara Sigit, memang memberi 40%. Itu baru satu contoh; alasan umum memakai huruf agar berlaku untuk setiap banyak siswa.",
+        "salah": [
+          {
+            "nama": "Menganggap satu contoh yang cocok sebagai bukti",
+            "uji": "mencoba angka",
+            "teks": "Mencoba satu atau dua angka lalu menyimpulkan hasilnya selalu 40%. Contoh menunjukkan mungkin, belum menunjukkan selalu."
+          },
+          {
+            "nama": "Mengira persen dari bilangan yang belum diketahui tidak dapat dihitung balik",
+            "uji": "siswa dikira perlu",
+            "teks": "Mengira persentase tidak bisa dihitung karena banyak siswa tidak diketahui. Persentase adalah bagian dari seluruh suara, dan huruf <i>r</i> yang mewakili jumlah berapa pun saling menghapus."
+          }
+        ],
+        "kunci": "Misalkan suara Rani <i>r</i>, jadi suara Sigit 1,5 kali <i>r</i> dan seluruh suara 2,5 kali <i>r</i>. Persentase Rani <i>r</i> dibagi 2,5 kali <i>r</i>, huruf <i>r</i> saling menghapus, dan hasilnya 40% untuk setiap <i>r</i>; jawaban yang hanya mencoba angka belum sah.",
+        "analogi": "Seperti membagi kue dengan kakak yang selalu mendapat satu setengah kali bagianmu. Berapa pun besar kuenya, bagianmu selalu dua per lima kue.",
+        "waspada": "Mencoba 100 siswa, mendapat 40%, lalu berhenti. Angka contoh boleh dipakai untuk memeriksa, tetapi alasannya harus memakai huruf."
+      }
+    },
+    {
+      "id": "HB-TIU-B11-C01",
+      "bab": 11,
+      "peran": "contoh",
+      "jenis": "KCK aljabar",
+      "bentuk": "bentuk gabungan x + y lewat pemfaktoran",
+      "target_detik": 90,
+      "soal": {
+        "pengantar": "<i>x</i> dan <i>y</i> adalah bilangan bulat.",
+        "pernyataan": [
+          "<i>x</i><sup>2</sup> − <i>y</i><sup>2</sup> = 48",
+          "<i>x</i> − <i>y</i> = 6"
+        ],
+        "tanya": "Berapa nilai <i>x</i> + <i>y</i>?"
+      },
+      "kalimat_penentu": "<i>x</i> + <i>y</i>",
+      "opsi": {
+        "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+        "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+        "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+        "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+        "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+      },
+      "kunci": "C",
+      "kode": {
+        "A": "J-MUNGKIN",
+        "B": "J-PERSAMAAN",
+        "C": "kunci",
+        "D": "J-PERSAMAAN",
+        "E": "J-TANDA"
+      },
+      "nama": {
+        "A": "Menganggap satu contoh yang cocok sebagai bukti",
+        "B": "Menilai cukup dari banyaknya persamaan",
+        "D": "Mengira setiap persamaan langsung memberi bentuk yang ditanya",
+        "E": "Mengira tanda minus masih terbuka"
+      },
+      "alasan_kunci": "(x − y)(x + y) = 48 dan x − y = 6 → x + y = 8.",
+      "kerangka": "KCK aljabar · tanya bentuk gabungan dua huruf · (1) selisih kuadrat · (2) selisih · gabungan lewat pemfaktoran",
+      "to_terdekat": "TO P1 no. 46 (kelipatan gabungan); bukan 3a + 3b = 21 (narasi)",
+      "catatan_reviu": "Kode slot J-PERSAMAAN, J-TANDA, J-ASUMSI; J-ASUMSI diganti J-MUNGKIN untuk A karena jalur A yang wajar = satu pasangan (7, 1) dicoba. B dan D sama-sama J-PERSAMAAN dengan jalur berbeda.",
+      "pembahasan": {
+        "ditanya": "Yang ditanya satu bentuk gabungan, “<i>x</i> + <i>y</i>”, bukan nilai <i>x</i> dan <i>y</i> masing-masing. <i>x</i> dan <i>y</i> boleh negatif, jadi setiap kemungkinan tanda ikut diperiksa.",
+        "cepat": "Kenali bentuknya: <i>x</i><sup>2</sup> − <i>y</i><sup>2</sup> = (<i>x</i> − <i>y</i>)(<i>x</i> + <i>y</i>). (1) saja: hasil kali dua faktor itu 48, dan banyak pasangan memenuhinya. <i>x</i> = 7, <i>y</i> = 1 memberi <i>x</i> + <i>y</i> = 8, sedangkan <i>x</i> = 8, <i>y</i> = 4 memberi 12. Tidak cukup. (2) saja hanya memberi selisih: tidak cukup. Gabungan: 6 dikali (<i>x</i> + <i>y</i>) sama dengan 48, sehingga <i>x</i> + <i>y</i> = 48 : 6 = 8. Cukup, tanpa perlu mencari <i>x</i> dan <i>y</i>.",
+        "lain": "Cari nilai masing-masing untuk memastikan. Dari <i>x</i> − <i>y</i> = 6 dan <i>x</i> + <i>y</i> = 8, jumlahkan kedua persamaan: 2<i>x</i> = 14, jadi <i>x</i> = 7 dan <i>y</i> = 1. Uji: 49 − 1 = 48.",
+        "cek": "Bukti (1) tidak cukup: pasangan 7 dan 1 serta 8 dan 4 sama-sama memenuhi, sebab 64 − 16 = 48, tetapi jumlahnya 8 dan 12. Bukti gabungan cukup: faktor <i>x</i> − <i>y</i> sudah pasti 6 dan positif, sehingga <i>x</i> + <i>y</i> pasti positif dan sama dengan 48 : 6 = 8.",
+        "gugur": {
+          "A": {
+            "uji": "(1) dicoba satu pasangan",
+            "teks": "Pasangan 7 dan 1 memang memenuhi (1), tetapi masih ada pasangan lain. Pasangan 8 dan 4 memberi jumlah 12, dan pasangan 13 dan 11 memberi 24."
+          },
+          "B": {
+            "uji": "(2) dianggap cukup",
+            "teks": "Yang ditanya satu bentuk dan (2) juga satu persamaan, sehingga terasa pas. Padahal (2) hanya memberi selisih: pasangan 7 dan 1 berjumlah 8, pasangan 10 dan 4 berjumlah 14, dan keduanya berselisih 6."
+          },
+          "D": {
+            "uji": "masing-masing dianggap cukup",
+            "teks": "Setiap pernyataan memang satu persamaan, tetapi satu persamaan baru cukup bila langsung memberi <i>x</i> + <i>y</i>. (1) memberi hasil kali dan (2) memberi selisih; keduanya baru menunjuk <i>x</i> + <i>y</i> setelah digabung."
+          },
+          "E": {
+            "uji": "dikira bisa −8",
+            "teks": "Karena ada kuadrat, muncul dugaan bahwa <i>x</i> + <i>y</i> bisa 8 atau −8. Gabungan menutup dugaan itu: <i>x</i> − <i>y</i> = 6 positif, sehingga <i>x</i> + <i>y</i> harus 48 : 6 = 8."
+          }
+        },
+        "kunci": "Masing-masing pernyataan menyisakan beberapa nilai, sedangkan gabungannya memberi 6 dikali (<i>x</i> + <i>y</i>) sama dengan 48, sehingga <i>x</i> + <i>y</i> = 8.",
+        "analogi": "Seperti tagihan Rp48.000 untuk beberapa porsi bakso seharga Rp6.000 per porsi. Kamu tidak perlu tahu siapa saja yang makan untuk tahu bahwa porsinya 8. Di soal ini, hasil kali 48 dan satu faktor 6 sudah memberi faktor yang lain.",
+        "waspada": "Langsung memilih E karena mengira dua huruf selalu butuh nilai masing-masing, atau karena takut tanda minus. Periksa dulu apakah yang ditanya bentuk gabungan; bila ya, susun pernyataan menjadi bentuk itu."
+      },
+      "bukti": {
+        "metode": "semua x, y bulat −60…60 (diperlebar −120…120); (1) tidak cukup · (2) tidak cukup · gabungan cukup; x + y di (1): ±2, ±4, ±6, ±8, ±12, ±24; gabungan x = 7, y = 1",
+        "urutan": "1 · 2 · G · M · X"
+      }
+    },
+    {
+      "id": "HB-TIU-B11-C02",
+      "bab": 11,
+      "peran": "contoh",
+      "jenis": "KCK nilai dari tabel",
+      "bentuk": "sel kosong, rata-rata kolom, kolom lama kerja tidak dipakai",
+      "target_detik": 75,
+      "soal": {
+        "pengantar": "Empat kelompok karang taruna menanam bibit pohon di taman kota. Tabel berikut mencatat banyak anggota, lama kerja, dan banyak bibit yang ditanam setiap kelompok. Dua sel milik kelompok Cendana belum terisi.",
+        "pernyataan": [
+          "Banyak bibit yang ditanam keempat kelompok rata-rata 57.",
+          "Setiap anggota kelompok Cendana menanam tepat 8 bibit."
+        ],
+        "tanya": "Berapa banyak bibit yang ditanam kelompok Cendana?"
+      },
+      "kalimat_penentu": "rata-rata 57",
+      "opsi": {
+        "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+        "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+        "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+        "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+        "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+      },
+      "kunci": "D",
+      "kode": {
+        "A": "J-BERHENTI",
+        "B": "J-LANGKAH",
+        "C": "J-PENGALIH",
+        "D": "kunci",
+        "E": "J-PENGALIH"
+      },
+      "nama": {
+        "A": "Berhenti setelah pernyataan (1) cukup",
+        "B": "Berhenti satu langkah sebelum selesai",
+        "C": "Memakai data yang tidak dibutuhkan",
+        "E": "Menganggap sel kosong pasti dibutuhkan"
+      },
+      "alasan_kunci": "(1) 4 × 57 − 172 = 56; (2) 7 × 8 = 56; masing-masing cukup.",
+      "kerangka": "KCK nilai dari tabel · 4 baris, sel kosong + kolom lama kerja tak dipakai · (1) rata-rata kolom · (2) bibit per anggota sebaris · masing-masing cukup",
+      "to_terdekat": "tidak ada di TO P1; rata-rata kelas beredar memakai rata-rata gabungan",
+      "catatan_reviu": "Slot (1) = total kolom; dipakai rata-rata (jumlah tersamar) agar pilihan B punya jalur nyata (J-LANGKAH, di luar kode slot). Kode slot J-BERHENTI, J-PENGALIH tetap. Revisi cek buta 1: kepala tabel \"Regu\" disamakan dengan teks soal menjadi \"Kelompok\".",
+      "pembahasan": {
+        "ditanya": "Yang ditanya satu angka, bibit kelompok Cendana. Kalimat penentunya “rata-rata 57” di pernyataan (1). Kolom lama kerja tidak dipakai untuk menghitung banyak bibit.",
+        "cepat": "(1) saja: rata-rata 57 dari empat kelompok berarti jumlahnya 4 × 57 = 228. Bibit tiga kelompok lain 54 + 70 + 48 = 172, jadi Cendana 228 − 172 = 56. Cukup. (2) saja: Cendana beranggota 7 orang, masing-masing 8 bibit, jadi 7 × 8 = 56. Cukup juga. Keduanya cukup sendiri-sendiri.",
+        "lain": "Perkirakan tanpa menghitung: (1) memberi jumlah keempat kelompok, dan sel bibit yang kosong hanya satu, jadi sel itu pasti terhitung. (2) menautkan bibit dengan banyak anggota yang sudah ada di tabel. Masing-masing menutup sel kosong tanpa bantuan pernyataan lain.",
+        "cek": "Kedua pernyataan memberi angka yang sama, 56. Itu tanda keduanya tidak bertentangan, dan memang wajar pada pilihan “masing-masing cukup”. Lama kerja Cendana tetap kosong, tetapi tidak satu pun hitungan membutuhkannya.",
+        "gugur": {
+          "A": {
+            "uji": "(2) tidak dinilai",
+            "teks": "Setelah (1) terbukti cukup, pemeriksaan berhenti. Pernyataan (2) belum dinilai sendiri, padahal 7 × 8 = 56 juga langsung memberi jawabannya."
+          },
+          "B": {
+            "uji": "rata-rata dibiarkan",
+            "teks": "Angka 57 dikira hanya rata-rata yang tidak bisa diolah. Satu langkah lagi, rata-rata dikali banyak kelompok, memberi jumlah 228, dan dari jumlah itu sel kosong langsung terhitung."
+          },
+          "C": {
+            "uji": "lama kerja dikira perlu",
+            "teks": "Muncul dugaan bahwa bibit harus dihitung dari laju per jam, sehingga kedua pernyataan perlu digabung. Soal menanyakan banyak bibit, bukan laju kerja; kolom lama kerja tidak masuk hitungan mana pun."
+          },
+          "E": {
+            "uji": "sel kosong kedua",
+            "teks": "Lama kerja Cendana yang kosong dianggap harus diketahui dulu. Sel itu tidak berhubungan dengan banyak bibit, jadi kekosongannya tidak membuat data kurang."
+          }
+        },
+        "kunci": "Pernyataan (1) memberi 228 − 172 = 56 dan pernyataan (2) memberi 7 × 8 = 56, sehingga masing-masing cukup.",
+        "analogi": "Seperti mencari uang saku satu teman: kamu bisa tahu dari total uang empat orang dikurangi uang tiga orang lainnya, atau dari uang harian dikali banyak hari. Dua jalan berbeda, tetapi masing-masing sudah sampai.",
+        "waspada": "Berhenti di (1) lalu memilih A. Kebiasaan yang aman: setiap kali (1) cukup, tetap nilai (2) sendiri, dengan (1) benar-benar dilupakan."
+      },
+      "bukti": {
+        "metode": "bibit Cendana 0–300 × lama kerja 1–10 jam (diperlebar); (1) cukup · (2) cukup · gabungan cukup; (1) 4 × 57 − 172 = 56, (2) 7 × 8 = 56",
+        "urutan": "1 · 2 · G · M · X"
+      }
+    },
+    {
+      "id": "HB-TIU-B11-C03",
+      "bab": 11,
+      "peran": "contoh",
+      "jenis": "KCK ya/tidak + laju",
+      "bentuk": "pekerjaan sudah berjalan, laju dari kemajuan kerja",
+      "target_detik": 90,
+      "soal": {
+        "pengantar": "Tim A sedang mengecat pagar sekolah sepanjang 120 meter. Sampai pukul 10.00, tim itu sudah bekerja 3 jam dan pagar belum selesai. Laju kerja tim A tetap, dan tim A bekerja tanpa jeda sampai pagar selesai.",
+        "pernyataan": [
+          "Tim B, yang anggotanya sama banyak dengan tim A, mengecat tembok sepanjang 50 meter dalam 2 jam pada pekerjaan yang berbeda.",
+          "Sampai pukul 10.00, 40% pagar sudah dicat."
+        ],
+        "tanya": "Apakah seluruh pagar selesai dicat paling lambat pukul 13.00?"
+      },
+      "kalimat_penentu": "pekerjaan yang berbeda",
+      "opsi": {
+        "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+        "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+        "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+        "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+        "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+      },
+      "kunci": "B",
+      "kode": {
+        "A": "J-ASUMSI",
+        "B": "kunci",
+        "C": "J-PENGALIH",
+        "D": "J-ASUMSI",
+        "E": "J-TENTU"
+      },
+      "nama": {
+        "A": "Memakai keterangan yang tidak tertulis di soal",
+        "C": "Memakai data yang tidak dibutuhkan",
+        "D": "Memakai keterangan yang tidak tertulis di soal",
+        "E": "Mengira jawaban “tidak” berarti tidak terjawab"
+      },
+      "alasan_kunci": "(2) 40% × 120 = 48 m dalam 3 jam → 16 m/jam; sisa 72 m → 4,5 jam → 14.30; (1) pekerjaan berbeda.",
+      "kerangka": "KCK ya/tidak + laju · pekerjaan sudah berjalan · (1) laju tim lain pada pekerjaan berbeda · (2) persen kemajuan + waktu terpakai · hanya (2), pasti tidak",
+      "to_terdekat": "TO P1 no. 48 (data tim lain sah dipakai); laju dari kemajuan kerja belum pernah dipakai",
+      "catatan_reviu": "Kode slot J-ASUMSI, J-PENGALIH + J-TENTU untuk E (jawaban pasti tidak). J-SEARAH dibahas di Kekeliruan yang Mungkin Terjadi (tidak mengubah kunci).",
+      "pembahasan": {
+        "ditanya": "Ditanya ya atau tidak: selesai paling lambat pukul 13.00, artinya sisa pekerjaan harus beres dalam 3 jam setelah pukul 10.00. Kebutuhannya satu, yaitu laju tim A. Kalimat penentunya “pekerjaan yang berbeda”.",
+        "cepat": "(1) bercerita tentang tim lain di pekerjaan lain, jadi tidak memberi laju tim A: tidak cukup. (2) memberi kemajuan tim A sendiri: 40% × 120 = 48 meter dalam 3 jam, lajunya 48 : 3 = 16 meter per jam. Sisa 120 − 48 = 72 meter perlu 72 : 16 = 4,5 jam, sehingga pagar selesai pukul 14.30. Pasti tidak selesai pukul 13.00, dan jawaban yang pasti berarti cukup.",
+        "lain": "Bandingkan dengan laju yang dibutuhkan. Agar 72 meter selesai dalam 3 jam, tim A harus mengecat 72 : 3 = 24 meter per jam. Lajunya hanya 16 meter per jam, jadi tidak keburu.",
+        "cek": "Bukti (1) tidak cukup: bila laju tim A 30 meter per jam, sisa 30 meter selesai dalam 1 jam (ya); bila 10 meter per jam, sisa 90 meter perlu 9 jam (tidak). Keduanya sah, sebab (1) sama sekali tidak menyentuh tim A.",
+        "gugur": {
+          "A": {
+            "uji": "laju tim B dipinjam",
+            "teks": "Laju tim B, 50 : 2 = 25 meter per jam, dipakai untuk tim A karena anggotanya sama banyak. Soal menulis bahwa tim B bekerja pada pekerjaan yang berbeda; tembok dan pagar tidak harus sama sulitnya. Pilihan ini juga menilai (2) tidak cukup, padahal (2) memberi jawaban pasti."
+          },
+          "C": {
+            "uji": "(1) dikira perlu",
+            "teks": "Data tim B ikut digabung seolah-olah membantu. (2) sudah memberi laju tim A sendiri; menambahkan (1) tidak mengubah apa pun."
+          },
+          "D": {
+            "uji": "dua-duanya dianggap cukup",
+            "teks": "Seperti pilihan A, laju tim B dianggap berlaku untuk tim A, hanya saja (2) dinilai dengan benar. Anggapan tentang tim B tetap tidak tertulis di soal."
+          },
+          "E": {
+            "uji": "“tidak” dikira kurang data",
+            "teks": "Hasil (2) adalah pukul 14.30, lewat dari batas, lalu soal dikira tidak terjawab. Jawaban “tidak” yang pasti tetap jawaban yang cukup."
+          }
+        },
+        "kunci": "Hanya (2) yang memberi laju tim A, yaitu 16 meter per jam, dan dari laju itu pagar pasti baru selesai pukul 14.30.",
+        "analogi": "Kamu ingin tahu apakah adikmu selesai mengerjakan PR sebelum makan malam. Kecepatan teman sekelasnya mengerjakan PR lain tidak menolong. Yang menolong adalah melihat sudah berapa halaman yang adikmu kerjakan sejak tadi.",
+        "waspada": "Mengira sisa pekerjaan yang lebih banyak butuh waktu lebih sedikit, misalnya “40% selesai dalam 3 jam, jadi 60% sisanya cukup 2 jam”. Sisa yang lebih banyak justru butuh waktu lebih lama: 60% butuh 4,5 jam."
+      },
+      "bukti": {
+        "metode": "laju tim A 1–39 m/jam dengan pagar belum selesai (diperlebar ke langkah 0,5); (1) tidak cukup · (2) cukup · gabungan cukup; (2) 48 : 3 = 16 m/jam, sisa 72 m perlu 4,5 jam",
+        "urutan": "1 · 2 · G · M · X"
+      }
+    },
+    {
+      "id": "HB-TIU-B11-C04",
+      "bab": 11,
+      "peran": "contoh",
+      "jenis": "KCK rasio",
+      "bentuk": "dua bentuk perbandingan yang sama, tanpa ukuran",
+      "target_detik": 75,
+      "soal": {
+        "pengantar": "Sebuah kebun hanya ditanami pohon mangga dan pohon jambu.",
+        "pernyataan": [
+          "Perbandingan banyak pohon mangga dan pohon jambu adalah 3 : 2.",
+          "Banyak pohon mangga 1,5 kali banyak pohon jambu."
+        ],
+        "tanya": "Berapa banyak pohon jambu di kebun itu?"
+      },
+      "kalimat_penentu": "1,5 kali",
+      "opsi": {
+        "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+        "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+        "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+        "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+        "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+      },
+      "kunci": "E",
+      "kode": {
+        "A": "J-RASIO",
+        "B": "J-RASIO",
+        "C": "J-PERSAMAAN",
+        "D": "J-MUNGKIN",
+        "E": "kunci"
+      },
+      "nama": {
+        "A": "Mengira perbandingan sudah memberi nilai sebenarnya",
+        "B": "Mengira perbandingan sudah memberi nilai sebenarnya",
+        "C": "Menilai cukup dari banyaknya persamaan",
+        "D": "Menganggap satu contoh yang cocok sebagai bukti"
+      },
+      "alasan_kunci": "(1) dan (2) sama-sama 2m = 3j; tanpa ukuran → tidak cukup.",
+      "kerangka": "KCK rasio · dua kelompok tanpa angka · (1) perbandingan · (2) perbandingan yang sama dalam bentuk kali · digabung pun tidak cukup",
+      "to_terdekat": "TO P1 no. 49 (rasio + total, D); susu sapi beredar memakai besaran yang tak pernah disebut",
+      "catatan_reviu": "Kode slot J-RASIO, J-PERSAMAAN + J-MUNGKIN untuk D (satu pasangan dicoba).",
+      "pembahasan": {
+        "ditanya": "Yang ditanya banyak pohon jambu, sebuah bilangan nyata. Kalimat penentunya “1,5 kali”: bentuknya lain, tetapi isinya perbandingan juga.",
+        "cepat": "(1) memberi perbandingan 3 : 2 tanpa satu pun ukuran: kebun bisa berisi 3 mangga dan 2 jambu, bisa juga 30 mangga dan 20 jambu. Tidak cukup. (2) berarti mangga : jambu = 1,5 : 1 = 3 : 2, perbandingan yang sama. Tidak cukup. Digabung pun yang kamu punya tetap satu perbandingan, jadi tetap tidak cukup.",
+        "lain": "Ubah keduanya menjadi persamaan. (1): 2 dikali banyak mangga sama dengan 3 dikali banyak jambu. (2): banyak mangga sama dengan 1,5 dikali banyak jambu; dikali 2, hasilnya persamaan yang sama dengan (1). Dua persamaan yang sama hanyalah satu keterangan.",
+        "cek": "Dua keadaan yang memenuhi kedua pernyataan: 6 mangga dan 4 jambu, serta 45 mangga dan 30 jambu. Banyak jambunya 4 dan 30, berbeda.",
+        "gugur": {
+          "A": {
+            "uji": "(1) dibaca 2 jambu",
+            "teks": "Angka 2 pada perbandingan 3 : 2 dibaca sebagai banyak jambu. Perbandingan hanya menyebut bagian; satu bagian bisa berapa pohon saja."
+          },
+          "B": {
+            "uji": "(2) dikira ukuran",
+            "teks": "“1,5 kali” terdengar seperti keterangan yang tegas, padahal hanya menyebut berapa kali lipat. Tanpa satu jumlah nyata, banyak jambu tetap terbuka."
+          },
+          "C": {
+            "uji": "dua pernyataan, dua persamaan",
+            "teks": "Dua pernyataan terasa seperti dua persamaan untuk dua besaran. Keduanya ternyata persamaan yang sama dalam bentuk lain, jadi keadaannya tidak berkurang saat digabung."
+          },
+          "D": {
+            "uji": "satu pasangan dicoba",
+            "teks": "Pasangan 3 dan 2 dicoba, cocok, lalu dianggap jawaban. Pasangan 6 dan 4 juga cocok dengan setiap pernyataan, sehingga satu contoh belum membuktikan apa-apa."
+          }
+        },
+        "kunci": "Kedua pernyataan sama-sama berarti mangga : jambu = 3 : 2, dan tanpa satu ukuran nyata banyak jambu tetap bisa 2, 4, 20, atau bilangan lain.",
+        "analogi": "Seperti resep es teh: gula dan teh dengan perbandingan 1 : 4. Dua orang yang menyebut resep yang sama dengan kata berbeda belum memberitahumu berapa gelas yang dibuat.",
+        "waspada": "Memilih C karena ada dua pernyataan. Sebelum menggabungkan, tanyakan: apakah pernyataan kedua memberi keterangan baru, atau hanya mengulang yang pertama?"
+      },
+      "bukti": {
+        "metode": "semua pasangan mangga–jambu 1–300 (diperlebar 600); (1) tidak cukup · (2) tidak cukup · gabungan tidak cukup; kedua pernyataan sama-sama 2m = 3j",
+        "urutan": "1 · 2 · G · M · X"
+      }
+    },
+    {
+      "id": "HB-TIU-B11-C05",
+      "bab": 11,
+      "peran": "contoh",
+      "jenis": "KCK persen",
+      "bentuk": "yang ditanya persentase, perbandingan sudah cukup",
+      "target_detik": 90,
+      "soal": {
+        "pengantar": "Semua peserta lomba cerdas cermat tingkat kecamatan berasal dari SMP atau MTs, dan tidak ada peserta yang berasal dari keduanya.",
+        "pernyataan": [
+          "Perbandingan banyak peserta dari SMP dan dari MTs adalah 7 : 3.",
+          "Peserta yang berasal dari MTs ada 36 orang."
+        ],
+        "tanya": "Berapa persen peserta yang berasal dari MTs?"
+      },
+      "kalimat_penentu": "Berapa persen",
+      "opsi": {
+        "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+        "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+        "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+        "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+        "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+      },
+      "kunci": "A",
+      "kode": {
+        "A": "kunci",
+        "B": "J-ASUMSI",
+        "C": "J-PENGALIH",
+        "D": "J-ASUMSI",
+        "E": "J-BASIS"
+      },
+      "nama": {
+        "B": "Memakai keterangan yang tidak tertulis di soal",
+        "C": "Mengira ukuran nyata selalu dibutuhkan",
+        "D": "Memakai keterangan yang tidak tertulis di soal",
+        "E": "Mengira persen dari bilangan yang belum diketahui tidak dapat dihitung"
+      },
+      "alasan_kunci": "(1) 3 : 10 = 30% untuk setiap banyak peserta; (2) tanpa jumlah seluruh peserta.",
+      "kerangka": "KCK persen · ditanya persentase satu bagian · (1) perbandingan dua bagian · (2) ukuran satu bagian · hanya (1)",
+      "to_terdekat": "TO P1 no. 50 (menanyakan nilai basis)",
+      "catatan_reviu": "Kode slot J-PENGALIH (C), J-ASUMSI (B, D) + J-BASIS varian KCK untuk E (dasar persen dikira tidak ada).",
+      "pembahasan": {
+        "ditanya": "Yang ditanya persentase, bukan banyak orang. Kalimat penentunya “Berapa persen”. Persentase membandingkan bagian dengan seluruhnya, jadi ukuran nyata belum tentu diperlukan.",
+        "cepat": "(1): dari setiap 7 + 3 = 10 bagian peserta, 3 bagian dari MTs. Persentasenya 3 : 10 × 100% = 30%, berapa pun banyak pesertanya. Cukup. (2): ada 36 orang dari MTs, tetapi jumlah seluruh peserta tidak diketahui. Tidak cukup. Jadi hanya (1) yang cukup.",
+        "lain": "Misalkan peserta MTs 3<i>k</i> dan SMP 7<i>k</i>. Seluruhnya 10<i>k</i>, dan bagian MTs 3<i>k</i> dari 10<i>k</i>, yaitu 30%. Huruf <i>k</i> saling menghapus, sehingga hasilnya tidak bergantung pada banyak peserta.",
+        "cek": "Bukti (2) tidak cukup: bila peserta SMP 84 orang, seluruhnya 120 dan MTs 30%; bila peserta SMP 14 orang, seluruhnya 50 dan MTs 72%. Bukti (1) cukup sudah berupa alasan umum di atas.",
+        "gugur": {
+          "B": {
+            "uji": "jumlah peserta ditebak",
+            "teks": "Jumlah seluruh peserta diisi sendiri, misalnya dianggap 100 orang, sehingga 36 orang tampak seperti 36%. Soal tidak menyebut jumlah peserta; tebakan itulah yang membuat (2) terlihat cukup."
+          },
+          "C": {
+            "uji": "ukuran dikira wajib",
+            "teks": "Muncul anggapan bahwa persen selalu butuh angka nyata, sehingga (1) harus dilengkapi 36 orang. Untuk persentase, perbandingan bagian dengan seluruh sudah cukup."
+          },
+          "D": {
+            "uji": "(2) dilengkapi tebakan",
+            "teks": "(1) dinilai benar, tetapi (2) juga dianggap cukup dengan jumlah peserta yang ditebak. Tanpa tebakan itu, 36 orang bisa berarti 30% atau 72%."
+          },
+          "E": {
+            "uji": "dasar persen dikira hilang",
+            "teks": "Jumlah seluruh peserta tidak disebut, lalu persen dianggap mustahil dihitung. Perbandingan 7 : 3 sudah memberi seluruhnya sebagai 10 bagian; dasar persennya ada."
+          }
+        },
+        "kunci": "Perbandingan 7 : 3 memberi MTs 3 dari 10 bagian, yaitu 30% untuk berapa pun banyak pesertanya, sedangkan 36 orang saja tidak memberi dasar persennya.",
+        "analogi": "Seperti nilai ujian: tahu kamu menjawab benar 3 dari setiap 10 soal sudah memberi persentase benarmu, walaupun kamu tidak tahu soalnya ada berapa.",
+        "waspada": "Memilih C karena persen tanpa angka nyata terasa “kosong”. Ingat bentuk soalnya: bila yang ditanya persentase, cek dulu apakah perbandingan sudah cukup."
+      },
+      "bukti": {
+        "metode": "semua pasangan SMP–MTs 1–300 (diperlebar 600); (1) cukup · (2) tidak cukup · gabungan cukup; (1) 3 : (7 + 3) = 30%",
+        "urutan": "1 · 2 · G · M · X"
+      }
+    },
+    {
+      "id": "HB-TIU-B11-C06",
+      "bab": 11,
+      "peran": "contoh",
+      "jenis": "KCK tiga pernyataan",
+      "bentuk": "tiga besaran, hanya pasangan (1) dan (3) cukup",
+      "target_detik": 120,
+      "soal": {
+        "pengantar": "Tiga kotak, yaitu kotak P, Q, dan R, berisi kelereng.",
+        "pernyataan": [
+          "Kotak P dan kotak Q berisi 45 kelereng.",
+          "Kotak Q dan kotak R berisi 52 kelereng.",
+          "Ketiga kotak berisi 80 kelereng."
+        ],
+        "tanya": "Berapa banyak kelereng di kotak R?"
+      },
+      "kalimat_penentu": "Ketiga kotak berisi 80 kelereng",
+      "opsi": {
+        "A": "Pernyataan (3) SAJA cukup untuk menjawab pertanyaan.",
+        "B": "Pernyataan (1) dan (2) bersama-sama cukup, tetapi pasangan lain dan setiap pernyataan SAJA tidak cukup.",
+        "C": "Pernyataan (1) dan (3) bersama-sama cukup, tetapi pasangan lain dan setiap pernyataan SAJA tidak cukup.",
+        "D": "Pernyataan (2) dan (3) bersama-sama cukup, tetapi pasangan lain dan setiap pernyataan SAJA tidak cukup.",
+        "E": "Ketiga pernyataan bersama-sama cukup, tetapi setiap pasangan pernyataan tidak cukup."
+      },
+      "kunci": "C",
+      "kode": {
+        "A": "J-ASUMSI",
+        "B": "J-PERSAMAAN",
+        "C": "kunci",
+        "D": "J-BALIK",
+        "E": "J-PERSAMAAN"
+      },
+      "nama": {
+        "A": "Memakai keterangan yang tidak tertulis di soal",
+        "B": "Menilai cukup dari banyaknya persamaan",
+        "D": "Tertukar membaca kotak yang dihasilkan",
+        "E": "Mengira tiga besaran selalu butuh tiga keterangan"
+      },
+      "alasan_kunci": "(1) + (3): R = 80 − 45 = 35; pasangan lain dan pernyataan tunggal tidak cukup.",
+      "kerangka": "KCK tiga pernyataan · tiga besaran, total tak diketahui · (1) jumlah ke-1 + ke-2 · (2) jumlah ke-2 + ke-3 · (3) total · hanya pasangan (1) + (3)",
+      "to_terdekat": "tiga pernyataan beredar memakai untung-rugi",
+      "catatan_reviu": "Kunci rencana slot B (opsi per soal) dipindah ke C untuk keseimbangan kelompok. J-BERHENTI (slot) tidak dipakai: bunyi pilihan khusus tidak punya jalur berhenti di (1); diganti J-ASUMSI (A) dan J-BALIK (D, kotak P dikira R). Bunyi diuji di 19 peta monoton.",
+      "pembahasan": {
+        "ditanya": "Yang ditanya isi satu kotak, R. Pilihan jawabannya disusun khusus untuk soal ini, jadi baca bunyinya satu per satu. Kalimat penentunya “Ketiga kotak berisi 80 kelereng”: hanya pernyataan ini yang menyebut seluruh isi.",
+        "cepat": "Tidak ada pernyataan tunggal yang cukup, sebab masing-masing hanya menyebut dua kotak atau seluruhnya. Coba pasangan. (1) dan (3): R = 80 − 45 = 35. Cukup. (2) dan (3): yang terhitung justru P = 80 − 52 = 28, sedangkan R tetap terbuka. (1) dan (2): dua jumlah yang sama-sama memuat Q, tanpa seluruh isi, tidak memberi R. Hanya pasangan (1) dan (3) yang cukup.",
+        "lain": "Pikirkan apa yang tersisa dari seluruh isi. Seluruh isi dikurangi isi P dan Q menyisakan R, jadi R butuh (3) dan pernyataan yang memuat tepat P dan Q, yaitu (1). Pasangan lain menyisakan kotak yang salah.",
+        "cek": "Bukti pasangan (2) dan (3) tidak cukup: isi P, Q, R = 28, 17, 35 dan 28, 27, 25 sama-sama memenuhi keduanya, tetapi R berbeda. Bukti pasangan (1) dan (2) tidak cukup: 10, 35, 17 dan 20, 25, 27 sama-sama memenuhi, tetapi R berbeda.",
+        "gugur": {
+          "A": {
+            "uji": "isi kotak dianggap sama",
+            "teks": "Seluruh isi 80 belum menunjukkan isi tiap kotak. Pilihan ini masuk akal hanya bila isi ketiga kotak dianggap sama atau berpola, dan soal tidak menulis apa pun tentang itu."
+          },
+          "B": {
+            "uji": "dua persamaan dianggap cukup",
+            "teks": "Ada dua persamaan dan yang ditanya satu kotak, sehingga terasa cukup. Padahal ada tiga isi kotak yang belum diketahui, dan kedua persamaan itu tidak menyisakan R sendirian."
+          },
+          "D": {
+            "uji": "P dikira R",
+            "teks": "Dari (2) dan (3) memang keluar satu angka, 28. Angka itu isi kotak P, bukan R: seluruh isi dikurangi Q dan R menyisakan P."
+          },
+          "E": {
+            "uji": "tiga pernyataan dikira wajib",
+            "teks": "Tiga kotak memunculkan anggapan bahwa ketiga pernyataan harus dipakai. Untuk R, (1) dan (3) sudah cukup, jadi tidak benar bahwa setiap pasangan tidak cukup."
+          }
+        },
+        "kunci": "Pasangan (1) dan (3) memberi R = 80 − 45 = 35, sedangkan pasangan lain dan setiap pernyataan saja masih menyisakan beberapa nilai R.",
+        "analogi": "Seperti menghitung uang di dompet ketiga: total uang tiga dompet dan total dua dompet pertama sudah cukup. Total dompet kedua dan ketiga justru memberitahumu isi dompet pertama.",
+        "waspada": "Menemukan angka 28 dari (2) dan (3), lalu mengira itu isi R. Sebelum memilih, tanyakan kotak mana yang benar-benar tersisa setelah pengurangan."
+      },
+      "bukti": {
+        "metode": "semua isi kotak 0–100 (diperlebar 200), tujuh himpunan pernyataan: hanya {1, 3} dan {1, 2, 3} cukup; 19 peta monoton diuji, tiap peta paling banyak satu pilihan benar",
+        "pola": "Pernyataan (#) dan (#) bersama-sama cukup, tetapi pasangan lain dan setiap pernyataan SAJA tidak cukup."
+      }
+    },
+    {
+      "id": "HB-TIU-B11-C07",
+      "bab": 11,
+      "peran": "contoh",
+      "jenis": "PKU berpeubah",
+      "bentuk": "P = Q di ujung rentang, P < Q di nilai lain",
+      "target_detik": 90,
+      "soal": {
+        "pengantar": "<i>x</i> adalah bilangan bulat dengan 3 ≤ <i>x</i> ≤ 7. Diketahui P = <i>x</i><sup>2</sup> − 4<i>x</i> + 10 dan Q = 7<i>x</i> − 14.",
+        "tanya": "Hubungan yang tepat antara P dan Q adalah …"
+      },
+      "kalimat_penentu": "3 ≤ <i>x</i> ≤ 7",
+      "opsi": {
+        "A": "P > Q",
+        "B": "P < Q",
+        "C": "P = Q",
+        "D": "Hubungan P dan Q tidak dapat ditentukan"
+      },
+      "kunci": "D",
+      "kode": {
+        "A": "J-TANDA",
+        "B": "J-BATAS",
+        "C": "J-MUNGKIN",
+        "D": "kunci"
+      },
+      "nama": {
+        "A": "Mengurangkan dengan urutan terbalik",
+        "B": "Melewatkan nilai di ujung rentang",
+        "C": "Menganggap satu nilai yang dicoba sebagai bukti"
+      },
+      "alasan_kunci": "P − Q = (x − 3)(x − 8): 0 di x = 3, negatif di x = 4–7 → tidak dapat ditentukan.",
+      "kerangka": "PKU berpeubah · satu huruf, rentang bulat inklusif · selisih = hasil kali dua faktor linear · nol di ujung kiri",
+      "to_terdekat": "B06-L03 (hubungan pasti, pasangan T4-13); bukan P = x² + 1, Q = 2x (narasi) dan bukan P = x², Q = 3x − 2 (Bab 6)",
+      "catatan_reviu": "Kode = rencana slot (J-MUNGKIN, J-TANDA, J-BATAS); ujung kiri dibalik oleh model → P < Q = pilihan B (J-BATAS).",
+      "pembahasan": {
+        "ditanya": "Hubungan P dan Q harus berlaku untuk setiap <i>x</i> dalam rentang. Kalimat penentunya “3 ≤ <i>x</i> ≤ 7”: tanda ≤ berarti 3 dan 7 ikut diperiksa.",
+        "cepat": "Hitung selisihnya sekali: P − Q = <i>x</i><sup>2</sup> − 11<i>x</i> + 24 = (<i>x</i> − 3)(<i>x</i> − 8). Di <i>x</i> = 3 selisihnya 0, jadi P = Q. Untuk <i>x</i> = 4 sampai 7, faktor <i>x</i> − 3 positif dan <i>x</i> − 8 negatif, sehingga P < Q. Ada dua hubungan di dalam rentang, jadi hubungannya tidak dapat ditentukan.",
+        "lain": "Tabel lima nilai: <i>x</i> = 3 memberi P = 7 dan Q = 7; <i>x</i> = 4 memberi 10 dan 14; <i>x</i> = 5 memberi 15 dan 21; <i>x</i> = 6 memberi 22 dan 28; <i>x</i> = 7 memberi 31 dan 35. Satu sama, empat lebih kecil.",
+        "cek": "Dua nilai bantahan sudah cukup: <i>x</i> = 3 memberi P = Q, sedangkan <i>x</i> = 5 memberi P < Q. Bila rentangnya 3 < <i>x</i> ≤ 7, nilai 3 keluar dan jawabannya menjadi P < Q; satu tanda di ujung rentang mengubah jawaban.",
+        "gugur": {
+          "A": {
+            "uji": "Q − P dibaca P − Q",
+            "teks": "Selisih dihitung sebagai Q − P, yang positif untuk <i>x</i> = 4 sampai 7, lalu dibaca seolah-olah P lebih besar. Urutan pengurangan yang terbalik membalik arah hubungan."
+          },
+          "B": {
+            "uji": "x = 3 dilewatkan",
+            "teks": "Untuk <i>x</i> = 4, 5, 6, dan 7 memang P < Q. Pilihan ini lupa bahwa tanda ≤ memasukkan <i>x</i> = 3, tempat P dan Q sama-sama 7."
+          },
+          "C": {
+            "uji": "hanya x = 3 dicoba",
+            "teks": "Nilai pertama yang dicoba, <i>x</i> = 3, memberi P = Q, lalu pemeriksaan berhenti. Nilai lain dalam rentang memberi P < Q, jadi P = Q tidak berlaku umum."
+          }
+        },
+        "kunci": "Di <i>x</i> = 3 berlaku P = Q, sedangkan di <i>x</i> = 4 sampai 7 berlaku P < Q, sehingga hubungannya tidak tetap.",
+        "analogi": "Seperti membandingkan tinggi dua anak dari foto tahun ke tahun: di satu foto tingginya sama, di foto lain yang satu lebih pendek. Kamu tidak bisa berkata “selalu sama” atau “selalu lebih pendek”.",
+        "waspada": "Mencoba satu atau dua nilai di tengah rentang, mendapat P < Q, lalu memilih B. Pada soal P dan Q yang memuat huruf, selalu periksa kedua ujung rentang."
+      },
+      "bukti": {
+        "metode": "semua x bulat 3–7: P = Q di x = 3, P < Q di x = 4–7; ujung kiri dibalik (4–7) → hanya P < Q (pilihan B); P − Q = (x − 3)(x − 8)"
+      }
+    },
+    {
+      "id": "HB-TIU-B11-L01",
+      "bab": 11,
+      "peran": "latihan",
+      "jenis": "KCK nilai dari cerita",
+      "bentuk": "dua sumber data, data hari lain sebagai pengalih",
+      "target_detik": 75,
+      "soal": {
+        "pengantar": "Di koperasi sekolah, harga sebuah pensil Rp2.500 dan harga sebuah penghapus Rp1.500. Pada hari Senin, uang hasil penjualan pensil dan penghapus seluruhnya Rp44.000.",
+        "pernyataan": [
+          "Pada hari Senin, banyak penghapus yang terjual dua kali banyak pensil yang terjual.",
+          "Pada hari Sabtu, koperasi menjual 6 pensil dan 14 penghapus."
+        ],
+        "tanya": "Berapa banyak pensil yang terjual pada hari Senin?"
+      },
+      "kalimat_penentu": "Pada hari Sabtu",
+      "opsi": {
+        "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+        "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+        "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+        "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+        "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+      },
+      "kunci": "A",
+      "kode": {
+        "A": "kunci",
+        "B": "J-PENGALIH",
+        "C": "J-PENGALIH",
+        "D": "J-ASUMSI",
+        "E": "J-PERSAMAAN"
+      },
+      "nama": {
+        "B": "Memakai data yang tidak dibutuhkan",
+        "C": "Memakai data yang tidak dibutuhkan",
+        "D": "Memakai keterangan yang tidak tertulis di soal",
+        "E": "Menilai cukup dari banyaknya persamaan"
+      },
+      "alasan_kunci": "(1) 2.500p + 1.500 × 2p = 44.000 → p = 8; (2) hari lain.",
+      "kerangka": "KCK nilai dari cerita · harga dua barang + uang total · (1) hubungan banyak dua barang di hari yang sama · (2) data hari lain · hanya (1)",
+      "to_terdekat": "TR no. 46 (pengalih jam berangkat); di sini hari lain",
+      "catatan_reviu": "Kode slot J-PENGALIH, J-ASUMSI; D J-ASUMSI (penjualan Senin dianggap sama dengan Sabtu) = pilihan yang disorot Latihan A Bab 19 no. 10; E J-PERSAMAAN (dua barang dikira butuh dua data baru).",
+      "bukti": {
+        "metode": "semua banyak pensil–penghapus yang memberi Rp44.000; (1) cukup · (2) tidak cukup · gabungan cukup; (1) 2.500p + 3.000p = 44.000 → p = 8",
+        "urutan": "1 · 2 · G · M · X"
+      },
+      "pembahasan": {
+        "ditanya": "Yang ditanya banyak pensil terjual pada hari Senin. Kalimat penentunya “Pada hari Sabtu” di pernyataan (2): data hari lain tidak menjawab pertanyaan tentang hari Senin.",
+        "cepat": "(1) saja: setiap pensil terjual bersama dua penghapus, jadi satu pasang belanja bernilai 2.500 + 2 × 1.500 = 5.500 rupiah. Banyaknya 44.000 : 5.500 = 8, jadi pensil yang terjual 8. Cukup. (2) saja menyebut hari Sabtu, padahal yang ditanya hari Senin. Tidak cukup.",
+        "lain": "Uji balik jawaban (1): 8 pensil dan 16 penghapus memberi 8 × 2.500 + 16 × 1.500 = 44.000. Cocok, dan banyak penghapusnya memang dua kali banyak pensil.",
+        "cek": "Bukti (2) tidak cukup: dua keadaan hari Senin, 2 × 2.500 + 26 × 1.500 = 44.000 dan 5 × 2.500 + 21 × 1.500 = 44.000, sama-sama sah tetapi banyak pensilnya berbeda. Data hari Sabtu tidak mengubah keduanya.",
+        "gugur": {
+          "B": {
+            "uji": "(2) dipakai",
+            "teks": "6 pensil dan 14 penghapus adalah penjualan hari Sabtu. Angka itu tidak memberi tahu penjualan hari Senin."
+          },
+          "C": {
+            "uji": "(2) dikira perlu",
+            "teks": "(1) sudah memberi 8 pensil tanpa bantuan (2). Menggabungkan data hari Sabtu tidak menambah apa pun."
+          },
+          "D": {
+            "uji": "Senin = Sabtu",
+            "teks": "(2) baru cukup bila penjualan Senin dianggap sama dengan Sabtu. Anggapan itu tidak tertulis di soal; bila dipakai pun, 6 × 2.500 + 14 × 1.500 = 36.000, bukan 44.000."
+          },
+          "E": {
+            "uji": "dua barang, satu data",
+            "teks": "Ada dua barang yang belum diketahui, sehingga terasa perlu dua data baru. Padahal (1) mengikat keduanya, dan bersama total uang di soal sudah memberi satu jawaban."
+          }
+        },
+        "kunci": "(1) mengikat banyak penghapus pada banyak pensil sehingga 44.000 : 5.500 = 8 pensil, sedangkan (2) hanya bercerita tentang hari Sabtu.",
+        "analogi": "Seperti menebak belanja temanmu hari ini dari struk belanjanya kemarin. Struk kemarin rapi dan jelas, tetapi tidak menceritakan belanja hari ini.",
+        "waspada": "Tergoda memakai (2) karena angkanya jelas dan mudah dihitung. Cocokkan dulu hari atau keadaan setiap pernyataan dengan pertanyaan, baru hitung."
+      }
+    },
+    {
+      "id": "HB-TIU-B11-L02",
+      "bab": 11,
+      "peran": "latihan",
+      "jenis": "KCK rasio",
+      "bentuk": "perbandingan + tambahan anggota, urutan bunyi diacak",
+      "target_detik": 75,
+      "soal": {
+        "pengantar": "Setiap anggota sebuah taman bacaan terdaftar di kelompok anak atau kelompok remaja.",
+        "pernyataan": [
+          "Saat ini, perbandingan banyak anggota kelompok anak dan kelompok remaja adalah 5 : 3.",
+          "Jika 6 anggota remaja baru mendaftar, perbandingan banyak anggota kelompok anak dan kelompok remaja menjadi 5 : 4."
+        ],
+        "tanya": "Berapa banyak anggota kelompok remaja saat ini?"
+      },
+      "kalimat_penentu": "saat ini",
+      "opsi": {
+        "A": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+        "B": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+        "C": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan.",
+        "D": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+        "E": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan."
+      },
+      "kunci": "B",
+      "kode": {
+        "A": "J-ASUMSI",
+        "B": "kunci",
+        "C": "J-PERSAMAAN",
+        "D": "J-RASIO",
+        "E": "J-RASIO"
+      },
+      "nama": {
+        "A": "Memakai keterangan yang tidak tertulis di soal",
+        "C": "Menilai cukup dari banyaknya persamaan",
+        "D": "Mengira perbandingan sudah memberi nilai sebenarnya",
+        "E": "Mengira perbandingan sudah memberi nilai sebenarnya"
+      },
+      "alasan_kunci": "5k : (3k + 6) = 5 : 4 → k = 6, remaja 18.",
+      "kerangka": "KCK rasio · dua kelompok tanpa total · (1) perbandingan awal · (2) tambahan k + perbandingan sesudahnya · gabungan",
+      "to_terdekat": "TO P1 no. 49 (total diketahui); soal beredar tanpa perubahan",
+      "catatan_reviu": "URUTAN BUNYI DIACAK (T2-7(7)): A = hanya (2), B = gabungan, C = digabung pun tidak, D = hanya (1), E = masing-masing; kunci B. Kode slot J-RASIO, J-ASUMSI, J-PERSAMAAN.",
+      "bukti": {
+        "metode": "semua pasangan anak–remaja 1–200 (diperlebar 400); (1) tidak cukup · (2) tidak cukup · gabungan cukup; gabungan 5k : (3k + 6) = 5 : 4 → k = 6, remaja 18; urutan bunyi 2 · G · X · 1 · M",
+        "urutan": "2 · G · X · 1 · M"
+      },
+      "pembahasan": {
+        "ditanya": "Yang ditanya banyak anggota kelompok remaja “saat ini”. Perbandingan baru menjadi banyak orang setelah ada ukurannya.",
+        "cepat": "(1) saja hanya memberi perbandingan; remaja bisa 3, 6, 9, dan seterusnya. Tidak cukup. (2) saja menyebut keadaan sesudah ada pendaftar baru, tanpa keadaan sebelumnya. Tidak cukup. Gabungan: anak tetap 5 bagian, sedangkan remaja naik dari 3 bagian menjadi 4 bagian karena 6 anggota baru. Jadi 6 anggota sama dengan 1 bagian, dan remaja saat ini 3 × 6 = 18.",
+        "lain": "Uji jawaban 18 pada kedua pernyataan. Satu bagian 18 : 3 = 6, jadi anak 5 × 6 = 30. Sesudah 6 remaja baru, remaja menjadi 18 + 6 = 24, dan 30 banding 24 sama dengan 5 banding 4.",
+        "cek": "Bukti (1) tidak cukup: anak 5 dan remaja 3, atau anak 10 dan remaja 6, sama-sama berbanding 5 : 3. Bukti (2) tidak cukup: anak 10 dan remaja 2 menjadi remaja 2 + 6 = 8, sedangkan anak 2 × 10 = 20 dan remaja 10 menjadi remaja 10 + 6 = 16; keduanya berbanding 5 : 4, tetapi remaja saat ini berbeda.",
+        "gugur": {
+          "A": {
+            "uji": "(2) dianggap cukup",
+            "teks": "(2) baru cukup bila perbandingan sebelum pendaftaran sudah diketahui. Keterangan itu ada di (1), bukan di (2)."
+          },
+          "C": {
+            "uji": "dua perbandingan",
+            "teks": "Dua perbandingan terasa tidak memberi bilangan apa pun. Padahal tambahan 6 anggota adalah ukuran; angka itulah yang mengubah bagian menjadi orang."
+          },
+          "D": {
+            "uji": "(1) dianggap cukup",
+            "teks": "Perbandingan 5 : 3 berlaku untuk remaja 3, 6, 9, dan seterusnya. Tanpa ukuran, perbandingan tidak memberi banyak anggota."
+          },
+          "E": {
+            "uji": "masing-masing cukup",
+            "teks": "Kedua pernyataan, bila dibaca sendiri, sama-sama perbandingan tanpa ukuran. Tambahan 6 anggota baru bekerja setelah perbandingan awalnya diketahui."
+          }
+        },
+        "kunci": "Gabungan kedua pernyataan menunjukkan 6 anggota sama dengan 1 bagian, sehingga remaja saat ini 3 × 6 = 18.",
+        "analogi": "Seperti foto dua gedung di layar ponsel: dari perbandingan tingginya kamu belum tahu tinggi aslinya. Begitu ada satu ukuran nyata, misalnya tinggi satu lantai, semua tinggi bisa dihitung.",
+        "waspada": "Memilih D karena perbandingan 5 : 3 terasa sudah menjawab. Perbandingan selalu butuh satu ukuran nyata; carilah angka yang berupa banyak orang atau benda."
+      }
+    },
+    {
+      "id": "HB-TIU-B11-L03",
+      "bab": 11,
+      "peran": "latihan",
+      "jenis": "KCK ya/tidak + laju",
+      "bentuk": "batas laju seluruh pelaksana, waktu terkecil di atas batas",
+      "target_detik": 90,
+      "soal": {
+        "pengantar": "Panitia memindahkan 600 kursi dari gudang ke aula dengan 4 troli yang bekerja bersamaan. Laju setiap troli tetap selama bekerja.",
+        "pernyataan": [
+          "Dua dari keempat troli itu masing-masing memindahkan 130 kursi per jam.",
+          "Setiap troli memindahkan paling banyak 140 kursi per jam."
+        ],
+        "tanya": "Apakah seluruh kursi dapat dipindahkan dalam waktu kurang dari 1 jam?"
+      },
+      "kalimat_penentu": "paling banyak 140",
+      "opsi": {
+        "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+        "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+        "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+        "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+        "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+      },
+      "kunci": "B",
+      "kode": {
+        "A": "J-ASUMSI",
+        "B": "kunci",
+        "C": "J-BATAS",
+        "D": "J-ASUMSI",
+        "E": "J-TENTU"
+      },
+      "nama": {
+        "A": "Memakai keterangan yang tidak tertulis di soal",
+        "C": "Salah membaca batas",
+        "D": "Memakai keterangan yang tidak tertulis di soal",
+        "E": "Mengira jawaban “tidak” berarti tidak terjawab"
+      },
+      "alasan_kunci": "(2) paling banyak 4 × 140 = 560 < 600 kursi per jam → pasti tidak; (1) dua troli lain bebas.",
+      "kerangka": "KCK ya/tidak + laju · empat pelaksana, beban tertulis · (1) laju sebagian pelaksana · (2) batas laju semua pelaksana · hanya (2), pasti tidak",
+      "to_terdekat": "bukti lewat nilai terbesar belum ada di TO atau soal beredar; bukan x > 6, y > 5 (narasi)",
+      "catatan_reviu": "Kode = rencana slot (J-TENTU, J-BATAS, J-ASUMSI); J-ASUMSI di A dan D (troli lain dianggap sama cepat).",
+      "bukti": {
+        "metode": "laju tiap troli 10–300 kursi/jam (diperlebar 20–600); (1) tidak cukup · (2) cukup · gabungan cukup; (2) paling banyak 4 × 140 = 560 < 600",
+        "urutan": "1 · 2 · G · M · X"
+      },
+      "pembahasan": {
+        "ditanya": "Pertanyaannya ya atau tidak: apakah 600 kursi dapat dipindahkan dalam waktu kurang dari 1 jam. Kalimat penentunya “paling banyak 140” di pernyataan (2). Jawaban pasti “tidak” juga berarti cukup.",
+        "cepat": "(2) saja: keempat troli paling banyak 4 × 140 = 560 kursi per jam, kurang dari 600. Dalam 1 jam kursi belum habis, jadi jawabannya pasti tidak. Cukup. (1) saja: laju dua troli lain tidak diketahui. Bila keduanya pelan, jawabannya tidak; bila keduanya cepat, jawabannya ya. Tidak cukup.",
+        "lain": "Untuk (1), dua troli yang diketahui memindahkan 2 × 130 = 260 kursi per jam. Agar selesai kurang dari 1 jam, dua troli lain harus memindahkan lebih dari 600 − 260 = 340 kursi per jam bersama-sama. Soal tidak menyebut laju mereka, jadi kedua jawaban mungkin.",
+        "cek": "Dua keadaan untuk (1): dua troli lain masing-masing 10 kursi per jam memberi jawaban tidak, sedangkan dua troli lain masing-masing 300 kursi per jam memberi 260 + 2 × 300 = 860 kursi per jam, lebih dari 600, jawabannya ya.",
+        "gugur": {
+          "A": {
+            "uji": "troli lain disamakan",
+            "teks": "(1) dianggap cukup karena dua troli lain dikira sama cepat, 130 kursi per jam. Keterangan itu tidak tertulis; laju dua troli lain bebas."
+          },
+          "C": {
+            "uji": "batas atas diragukan",
+            "teks": "Kata “paling banyak” terasa belum pasti, sehingga (2) dikira butuh (1). Batas atas sudah cukup: laju sebesar-besarnya pun belum mencapai 600 kursi per jam."
+          },
+          "D": {
+            "uji": "(1) dianggap cukup",
+            "teks": "Sama seperti A, (1) dianggap cukup dengan anggapan tambahan tentang dua troli lain. Anggapan itu tidak tertulis di soal."
+          },
+          "E": {
+            "uji": "jawaban “tidak”",
+            "teks": "Kesimpulan dari (2) adalah “tidak bisa kurang dari 1 jam”. Jawaban pasti “tidak” tetap jawaban, jadi (2) cukup."
+          }
+        },
+        "kunci": "(2) memberi batas 4 × 140 = 560 kursi per jam, kurang dari 600, sehingga jawabannya pasti tidak, sedangkan (1) membiarkan laju dua troli lain bebas.",
+        "analogi": "Seperti bak 600 liter yang diisi empat keran, masing-masing paling deras 140 liter per jam. Tanpa melihat kerannya satu per satu, kamu sudah tahu bak itu belum penuh dalam satu jam.",
+        "waspada": "Memilih E karena mengira “tidak” sama dengan “tidak terjawab”. Pada soal ya atau tidak, pernyataan cukup bila jawabannya pasti, entah ya entah tidak."
+      }
+    },
+    {
+      "id": "HB-TIU-B11-L04",
+      "bab": 11,
+      "peran": "latihan",
+      "jenis": "KCK persen",
+      "bentuk": "persen dari total dan lebih banyak p% daripada bagian lain",
+      "target_detik": 90,
+      "soal": {
+        "pengantar": "Sebuah perpustakaan daerah menerima sumbangan 480 buku yang terdiri atas buku anak, buku remaja, dan buku dewasa.",
+        "pernyataan": [
+          "Buku remaja 35% dari seluruh buku sumbangan.",
+          "Ada 120 buku anak, dan banyak buku remaja 40% lebih banyak daripada banyak buku anak."
+        ],
+        "tanya": "Berapa banyak buku remaja dalam sumbangan itu?"
+      },
+      "kalimat_penentu": "40% lebih banyak daripada banyak buku anak",
+      "opsi": {
+        "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+        "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+        "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+        "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+        "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+      },
+      "kunci": "D",
+      "kode": {
+        "A": "J-BERHENTI",
+        "B": "J-PENGALIH",
+        "C": "J-BASIS",
+        "D": "kunci",
+        "E": "J-PENGALIH"
+      },
+      "nama": {
+        "A": "Berhenti setelah pernyataan (1) cukup",
+        "B": "Memakai data yang tidak dibutuhkan",
+        "C": "Berhenti satu langkah sebelum selesai",
+        "E": "Memakai data yang tidak dibutuhkan"
+      },
+      "alasan_kunci": "(1) 35% × 480 = 168; (2) 140% × 120 = 168; masing-masing cukup.",
+      "kerangka": "KCK persen · total tertulis, tiga golongan · (1) persen dari total · (2) bagian lain + lebih banyak p% (basis diketahui) · masing-masing",
+      "to_terdekat": "TR no. 51 (kunci C); basis TO P1 no. 50 tidak diketahui",
+      "catatan_reviu": "Kode = rencana slot (J-BERHENTI, J-BASIS, J-PENGALIH); E J-PENGALIH (buku dewasa dikira perlu).",
+      "bukti": {
+        "metode": "semua pembagian 480 buku ke tiga golongan (total tertulis, tanpa rentang buatan); (1) cukup · (2) cukup · gabungan cukup; (1) 35% × 480 = 168, (2) 140% × 120 = 168",
+        "urutan": "1 · 2 · G · M · X"
+      },
+      "pembahasan": {
+        "ditanya": "Yang ditanya banyak buku remaja. Kalimat penentunya “40% lebih banyak daripada banyak buku anak”: buku remaja 100% + 40% = 140% dari buku anak, bukan 40%.",
+        "cepat": "(1) saja: 35% × 480 = 168 buku. Cukup. (2) saja: 140% × 120 = 168 buku. Cukup juga. Masing-masing pernyataan cukup tanpa yang lain.",
+        "lain": "Hitung (2) dalam dua langkah: 40% × 120 = 48, lalu 120 + 48 = 168. Hitung (1) lewat persen yang mudah: 10% × 480 = 48, jadi 35% sama dengan 3,5 × 48 = 168.",
+        "cek": "Kedua pernyataan memberi angka yang sama, 168 buku. Pernyataan cukup tidak harus memakai semua data: banyak buku dewasa tidak diperlukan untuk menjawab.",
+        "gugur": {
+          "A": {
+            "uji": "(2) tidak diperiksa",
+            "teks": "(1) memang cukup, tetapi (2) juga harus diuji sendiri. (2) memberi 168 buku tanpa bantuan (1)."
+          },
+          "B": {
+            "uji": "(1) dikira kurang",
+            "teks": "(1) dikira butuh banyak buku anak atau buku dewasa. Padahal 35% dari total yang tertulis di soal langsung memberi 168 buku."
+          },
+          "C": {
+            "uji": "40% saja",
+            "teks": "“40% lebih banyak” dihitung sebagai 40% × 120 = 48 buku saja. Angka 48 berbeda dari 168 hasil (1), lalu kedua pernyataan dikira harus digabung. Langkah terakhirnya tertinggal: 120 + 48 = 168."
+          },
+          "E": {
+            "uji": "buku dewasa",
+            "teks": "Banyak buku dewasa tidak diketahui, sehingga terasa ada yang kurang. Pertanyaannya hanya tentang buku remaja, dan buku dewasa tidak dibutuhkan untuk menjawabnya."
+          }
+        },
+        "kunci": "(1) memberi 35% × 480 = 168 dan (2) memberi 140% × 120 = 168, sehingga masing-masing cukup.",
+        "analogi": "Seperti dua jalan menuju sekolah yang sama: lewat jalan raya atau lewat gang, kamu tetap sampai. Satu jalan yang sudah terbukti sampai tidak membuat jalan lain salah.",
+        "waspada": "Berhenti setelah (1) cukup lalu langsung memilih A. Uji (2) sendiri, seolah (1) tidak pernah ada."
+      }
+    },
+    {
+      "id": "HB-TIU-B11-L05",
+      "bab": 11,
+      "peran": "latihan",
+      "jenis": "KCK aljabar",
+      "bentuk": "pernyataan kedua hanya bentuk kuadrat dari pernyataan pertama",
+      "target_detik": 120,
+      "soal": {
+        "pengantar": "<i>a</i> dan <i>b</i> adalah bilangan bulat positif.",
+        "pernyataan": [
+          "<i>a</i> + <i>b</i> = 12",
+          "<i>a</i><sup>2</sup> + 2<i>ab</i> + <i>b</i><sup>2</sup> = 144"
+        ],
+        "tanya": "Berapa nilai <i>a</i>?"
+      },
+      "kalimat_penentu": "bilangan bulat positif",
+      "opsi": {
+        "A": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+        "B": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+        "C": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+        "D": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+        "E": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan."
+      },
+      "kunci": "E",
+      "kode": {
+        "A": "J-ASUMSI",
+        "B": "J-MUNGKIN",
+        "C": "J-ULANG",
+        "D": "J-PERSAMAAN",
+        "E": "kunci"
+      },
+      "nama": {
+        "A": "Memakai keterangan yang tidak tertulis di soal",
+        "B": "Menganggap satu contoh yang cocok sebagai bukti",
+        "C": "Mengira pengulangan soal sebagai keterangan baru",
+        "D": "Menilai cukup dari banyaknya persamaan"
+      },
+      "alasan_kunci": "(2) = (a + b)² = 144 → a + b = 12 (positif) = (1); a tetap bebas.",
+      "kerangka": "KCK aljabar · dua huruf positif · (1) jumlah · (2) kuadrat jumlah (turunan kalimat soal + (1)) · digabung pun tidak cukup",
+      "to_terdekat": "nota beredar = kelipatan langsung; bukan a + 2b = 8 (narasi)",
+      "catatan_reviu": "Kode slot J-PERSAMAAN, J-ULANG (C = pilihan yang disorot Latihan A Bab 19 no. 14); J-BERHENTI (slot) tidak punya jalur di kunci E, diganti J-ASUMSI (A, a dan b dianggap sama) dan J-MUNGKIN (B, satu pasangan dicoba). Uji coret: (2) benar tepat di keadaan yang sama dengan (1).",
+      "bukti": {
+        "metode": "semua a, b bulat positif 1–50 (diperlebar 100); (1) tidak cukup · (2) tidak cukup · gabungan tidak cukup; uji coret: (2) benar tepat di keadaan yang sama dengan (1), karena (a + b)² = 144 dan a + b positif",
+        "urutan": "1 · 2 · G · M · X"
+      },
+      "pembahasan": {
+        "ditanya": "Yang ditanya nilai <i>a</i> saja, dengan <i>a</i> dan <i>b</i> “bilangan bulat positif”. Sebuah pernyataan baru berguna bila menambah keterangan yang belum diberikan pernyataan lain.",
+        "cepat": "(1) saja: <i>a</i> + <i>b</i> = 12 dipenuhi banyak pasangan, misalnya <i>a</i> = 1 dengan <i>b</i> = 12 − 1 = 11, atau <i>a</i> = 5 dengan <i>b</i> = 12 − 5 = 7. Tidak cukup. (2) saja: bentuk di ruas kiri adalah (<i>a</i> + <i>b</i>) dikuadratkan, jadi (<i>a</i> + <i>b</i>) dikali (<i>a</i> + <i>b</i>) sama dengan 144. Karena <i>a</i> dan <i>b</i> positif, <i>a</i> + <i>b</i> = 12, sama persis dengan (1). Tidak cukup. Gabungan pun hanya mengulang <i>a</i> + <i>b</i> = 12, jadi tetap tidak cukup.",
+        "lain": "Pakai uji coret: coret (2), lalu lihat apakah keadaan yang tersisa berubah. Setiap pasangan yang memenuhi (1) juga memenuhi (2), misalnya 1 + 11 = 12 dan 12 × 12 = 144. (2) tidak membuang satu keadaan pun, jadi isinya sama dengan (1).",
+        "cek": "Dua keadaan yang memenuhi kedua pernyataan: <i>a</i> = 1 dengan <i>b</i> = 11, dan <i>a</i> = 5 dengan <i>b</i> = 7. Keduanya memberi jumlah 12 dan kuadrat jumlah 144, tetapi nilai <i>a</i> berbeda.",
+        "gugur": {
+          "A": {
+            "uji": "dikira sama besar",
+            "teks": "(1) dianggap cukup karena <i>a</i> dan <i>b</i> dikira sama besar, 12 : 2 = 6. Soal tidak menyebut <i>a</i> sama dengan <i>b</i>."
+          },
+          "B": {
+            "uji": "satu pasangan dicoba",
+            "teks": "Pasangan <i>a</i> = 6, <i>b</i> = 6 memang memenuhi (2), lalu (2) dikira cukup. Pasangan <i>a</i> = 1, <i>b</i> = 11 juga memenuhi, dengan nilai <i>a</i> yang berbeda."
+          },
+          "C": {
+            "uji": "(2) mengulang (1)",
+            "teks": "(2) tampak seperti persamaan baru karena ada kuadrat dan perkalian. Setelah diuraikan, (2) hanya berkata <i>a</i> + <i>b</i> = 12 lagi."
+          },
+          "D": {
+            "uji": "dua persamaan, dua huruf",
+            "teks": "Dua persamaan untuk dua huruf terasa cukup. Dua persamaan baru cukup bila isinya berbeda; di sini keduanya menyatakan hal yang sama."
+          }
+        },
+        "kunci": "(2) berarti kuadrat dari <i>a</i> + <i>b</i> sama dengan 144, yang untuk bilangan positif sama dengan <i>a</i> + <i>b</i> = 12 lagi, sehingga nilai <i>a</i> tetap bebas.",
+        "analogi": "Seperti dua petunjuk alamat dengan kata-kata berbeda tetapi isi sama: “rumahnya di Jalan Mawar” dan “alamatnya Jalan Mawar”. Dua petunjuk itu tidak memberi nomor rumah.",
+        "waspada": "Memilih C atau D karena (2) tampak lebih rumit sehingga dikira membawa keterangan baru. Uraikan dulu bentuk kuadratnya; bentuk yang rumit sering hanya pernyataan lama yang disamarkan."
+      }
+    },
+    {
+      "id": "HB-TIU-B12-P01",
+      "bab": 12,
+      "peran": "pembuka",
+      "jenis": "ANA urutan tegak",
+      "bentuk": "lima lantai, pasti benar",
+      "target_detik": 120,
+      "soal": {
+        "pengantar": "Lima orang, yaitu Laras, Maya, Nanda, Oki, dan Prita, tinggal di sebuah gedung lima lantai. Setiap lantai dihuni tepat satu orang, dan lantai 1 adalah lantai paling bawah. Ketentuannya sebagai berikut.",
+        "syarat": [
+          "Maya tinggal tepat satu lantai di atas Laras.",
+          "Oki tinggal di lantai yang lebih tinggi daripada Maya.",
+          "Nanda tidak tinggal di lantai 1.",
+          "Prita tinggal di lantai yang lebih rendah daripada Laras."
+        ],
+        "tanya": "Pernyataan yang pasti benar adalah …"
+      },
+      "kalimat_penentu": "pasti benar",
+      "opsi": {
+        "A": "Laras tinggal di lantai 2.",
+        "B": "Oki tinggal di lantai 5.",
+        "C": "Nanda tinggal di lantai yang lebih tinggi daripada Maya.",
+        "D": "Laras tinggal tepat satu lantai di atas Maya.",
+        "E": "Prita tinggal di lantai 1."
+      },
+      "kunci": "E",
+      "kode": {
+        "A": "J-MUNGKIN",
+        "B": "J-MUNGKIN",
+        "C": "J-MUNGKIN",
+        "D": "J-BALIK",
+        "E": "kunci"
+      },
+      "nama": {
+        "A": "Menganggap yang mungkin benar sebagai pasti benar",
+        "B": "Menganggap yang mungkin benar sebagai pasti benar",
+        "C": "Menganggap yang mungkin benar sebagai pasti benar",
+        "D": "Membaca hubungan dari arah sebaliknya"
+      },
+      "alasan_kunci": "3 susunan sah, semuanya menaruh Prita di lantai 1.",
+      "kerangka": "ANA urutan tegak · 5 unsur tanpa atribut · blok + lebih tinggi + bukan + lebih rendah · 3 susunan · pasti benar",
+      "to_terdekat": "TO P1 no. 53 (garis + atribut hari), no. 55 (panah 6)",
+      "catatan_reviu": "Kode = rencana slot (J-MUNGKIN ×3, J-BALIK); tiga pilihan satu kode diterima untuk pembuka (T5-12). Tiap syarat mengubah status pilihan bila dibuang.",
+      "pembahasan": {
+        "ditanya": "Kata tanyanya “pasti benar”: pilihan harus benar di setiap susunan yang memenuhi keempat ketentuan. Satu susunan yang cocok belum cukup.",
+        "cepat": "Pasang blok lebih dulu: Maya tepat di atas Laras, Oki di atas Maya, dan Prita di bawah Laras. Prita harus berada di bawah Laras, jadi Laras paling rendah di lantai 2. Bila Laras di lantai 2, Prita pasti di lantai 1. Bila Laras di lantai 3, lantai 1 dan 2 diisi Prita dan Nanda, dan Nanda tidak boleh di lantai 1, jadi Prita lagi-lagi di lantai 1. Ada tiga susunan sah, dan ketiganya menaruh Prita di lantai 1.",
+        "lain": "Tulis ketiga susunan dari lantai 1 ke lantai 5: Prita, Laras, Maya, Nanda, Oki; Prita, Laras, Maya, Oki, Nanda; Prita, Nanda, Laras, Maya, Oki. Bandingkan lantai 1: selalu Prita.",
+        "cek": "Uji pilihan lain dengan susunan pembantah. Susunan ketiga menaruh Laras di lantai 3 dan Nanda di bawah Maya, sedangkan susunan kedua menaruh Oki di lantai 4. Tidak satu pun susunan menaruh Laras di atas Maya.",
+        "gugur": {
+          "A": {
+            "uji": "salah di susunan ketiga",
+            "teks": "Laras di lantai 2 benar di dua susunan pertama. Susunan Prita, Nanda, Laras, Maya, Oki menaruh Laras di lantai 3."
+          },
+          "B": {
+            "uji": "salah di susunan kedua",
+            "teks": "Oki di lantai 5 benar di dua susunan, tetapi susunan Prita, Laras, Maya, Oki, Nanda menaruh Oki di lantai 4."
+          },
+          "C": {
+            "uji": "salah di susunan ketiga",
+            "teks": "Nanda di atas Maya benar bila Nanda di lantai 4 atau 5. Pada susunan ketiga, Nanda di lantai 2, di bawah Maya."
+          },
+          "D": {
+            "uji": "ketentuan 1 dibalik",
+            "teks": "Ketentuan pertama menaruh Maya tepat di atas Laras. Pilihan ini membalik arahnya, sehingga salah di setiap susunan."
+          }
+        },
+        "kunci": "Prita harus di bawah Laras, sedangkan Laras paling rendah di lantai 2 dan Nanda tidak boleh di lantai 1, sehingga lantai 1 selalu milik Prita.",
+        "analogi": "Seperti mencari tempat duduk adik di bus yang penuh aturan: setiap kemungkinan yang kamu coba ternyata menaruhnya di kursi depan. Bukan karena kamu memilih begitu, tetapi karena aturan tidak menyisakan kursi lain untuknya.",
+        "waspada": "Menemukan satu susunan, misalnya Prita, Laras, Maya, Nanda, Oki, lalu memilih pilihan pertama yang cocok dengan susunan itu. Pada kata tanya “pasti”, setiap pilihan harus diuji di semua susunan."
+      },
+      "bukti": {
+        "metode": "120 susunan lima lantai; sah 3: PLMNO, PLMON, PNLMO (lantai 1 → 5); pilihan benar di {\"A\":2,\"B\":2,\"C\":2,\"D\":0,\"E\":3} susunan; tanpa syarat 1–4 tersisa 24/9/4/9",
+        "pola": "@ tinggal di lantai #."
+      }
+    },
+    {
+      "id": "HB-TIU-B12-C01",
+      "bab": 12,
+      "peran": "contoh",
+      "jenis": "ANA pilih susunan",
+      "bentuk": "enam penampil dengan kelas, pilih susunan",
+      "target_detik": 120,
+      "soal": {
+        "pengantar": "Enam siswa, yaitu Arif, Bunga, Candra, Dewi, Erlan, dan Fitri, mempresentasikan proyek secara bergiliran, satu siswa pada setiap giliran. Arif dan Dewi dari kelas X, Bunga dan Candra dari kelas XI, sedangkan Erlan dan Fitri dari kelas XII. Ketentuannya sebagai berikut.",
+        "syarat": [
+          "Bunga tampil tepat sebelum Erlan.",
+          "Dua siswa dari kelas yang sama tidak tampil berurutan.",
+          "Penampil pertama berasal dari kelas XII.",
+          "Dewi tampil sebelum Arif."
+        ],
+        "tanya": "Urutan penampil dari giliran pertama sampai keenam yang memenuhi semua ketentuan adalah …"
+      },
+      "kalimat_penentu": "tepat sebelum",
+      "opsi": {
+        "A": "Fitri, Bunga, Dewi, Erlan, Candra, Arif",
+        "B": "Fitri, Bunga, Erlan, Dewi, Arif, Candra",
+        "C": "Fitri, Dewi, Candra, Arif, Bunga, Erlan",
+        "D": "Fitri, Candra, Arif, Bunga, Erlan, Dewi",
+        "E": "Candra, Dewi, Bunga, Erlan, Arif, Fitri"
+      },
+      "kunci": "C",
+      "kode": {
+        "A": "J-SYARAT",
+        "B": "J-SYARAT",
+        "C": "kunci",
+        "D": "J-BALIK",
+        "E": "J-NOMOR"
+      },
+      "nama": {
+        "A": "Melewatkan atau melonggarkan satu syarat",
+        "B": "Melewatkan atau melonggarkan satu syarat",
+        "D": "Membaca hubungan dari arah sebaliknya",
+        "E": "Menghitung giliran dari ujung yang salah"
+      },
+      "alasan_kunci": "C memenuhi keempat ketentuan; A, B, E, D masing-masing melanggar ketentuan 1, 2, 3, 4.",
+      "kerangka": "ANA pilih susunan · 6 unsur + atribut 3 nilai × 2 · blok tepat, tidak berurutan sekelas, posisi-atribut, sebelum · tiap ketentuan menggugurkan satu pilihan",
+      "to_terdekat": "TO P1 tidak memakai pilih susunan; TR no. 53 punya syarat tak berguna",
+      "catatan_reviu": "Kode = rencana slot (J-SYARAT ×2: tepat dilonggarkan, tidak terlewat; J-BALIK; J-NOMOR). Skor unsur bersama kunci di tengah (bukan tertinggi/terendah).",
+      "pembahasan": {
+        "ditanya": "Bentuk soalnya memilih susunan: tepat satu pilihan memenuhi keempat ketentuan. Kalimat penentunya “tepat sebelum”: Bunga dan Erlan harus bersebelahan, dengan Bunga lebih dulu.",
+        "cepat": "Uji ketentuan yang paling mudah dilihat pada kelima pilihan. Ketentuan 3: pilihan E diawali Candra dari kelas XI, gugur. Ketentuan 1: pada pilihan A, Bunga di giliran 2 dan Erlan di giliran 4, tidak bersebelahan, gugur. Ketentuan 4: pada pilihan D, Arif tampil sebelum Dewi, gugur. Ketentuan 2: pada pilihan B, Dewi dan Arif dari kelas X tampil berurutan, gugur. Tinggal C.",
+        "lain": "Uji C terhadap semua ketentuan: giliran pertama Fitri dari kelas XII; kelasnya berurutan XII, X, XI, X, XI, XII, tanpa dua kelas sama berdampingan; Bunga di giliran 5 tepat sebelum Erlan di giliran 6; Dewi di giliran 2 sebelum Arif di giliran 4.",
+        "cek": "Setiap ketentuan menggugurkan tepat satu pilihan: ketentuan 1 menggugurkan A, ketentuan 2 menggugurkan B, ketentuan 3 menggugurkan E, dan ketentuan 4 menggugurkan D. Tidak ada ketentuan yang terlewat.",
+        "gugur": {
+          "A": {
+            "uji": "ketentuan 1",
+            "teks": "Bunga memang tampil sebelum Erlan, tetapi tidak tepat sebelumnya: di antara mereka ada Dewi. Kata “tepat” menuntut keduanya bersebelahan."
+          },
+          "B": {
+            "uji": "ketentuan 2",
+            "teks": "Dewi dan Arif, sama-sama kelas X, tampil di giliran 4 dan 5. Ketentuan “tidak tampil berurutan” terlewat."
+          },
+          "D": {
+            "uji": "ketentuan 4",
+            "teks": "Arif tampil di giliran 3, sedangkan Dewi di giliran 6. Urutan Dewi dan Arif terbalik."
+          },
+          "E": {
+            "uji": "ketentuan 3",
+            "teks": "Siswa kelas XII ada di giliran terakhir, bukan giliran pertama; penampil pertama, Candra, dari kelas XI. Giliran dihitung dari ujung yang salah."
+          }
+        },
+        "kunci": "Pilihan C memenuhi keempat ketentuan, sedangkan setiap pilihan lain melanggar tepat satu ketentuan yang dapat ditunjuk.",
+        "analogi": "Seperti memeriksa lima jadwal piket yang diajukan teman-temanmu: kamu tidak perlu menyusun jadwal sendiri. Cukup coret jadwal yang melanggar aturan, satu aturan demi satu aturan, sampai tersisa satu.",
+        "waspada": "Membaca “Bunga tampil tepat sebelum Erlan” sebagai “Bunga tampil sebelum Erlan”, lalu meloloskan pilihan A. Kata “tepat” berarti tidak ada siapa pun di antara keduanya."
+      },
+      "bukti": {
+        "metode": "syarat 1–4 menggugurkan pilihan A · B · E · D; tiap pilihan salah melanggar tepat satu syarat; skor unsur bersama {\"A\":5,\"B\":5,\"C\":4,\"D\":3,\"E\":3}; susunan sah di luar pilihan 5"
+      }
+    },
+    {
+      "id": "HB-TIU-B12-C02",
+      "bab": 12,
+      "peran": "contoh",
+      "jenis": "ANA melingkar",
+      "bentuk": "delapan kursi + syarat jika, pasti benar",
+      "target_detik": 150,
+      "soal": {
+        "pengantar": "Delapan orang, yaitu Andi, Beni, Cahya, Dina, Eva, Farhan, Gani, dan Hesti, duduk mengelilingi meja bundar dengan delapan kursi berjarak sama. Semuanya menghadap ke tengah meja. Ketentuannya sebagai berikut.",
+        "syarat": [
+          "Cahya duduk berhadapan dengan Dina.",
+          "Cahya duduk tepat di sebelah kanan Beni.",
+          "Dina duduk tepat di antara Eva dan Farhan.",
+          "Gani tidak duduk bersebelahan dengan Andi."
+        ],
+        "tanya": "Jika Hesti duduk berhadapan dengan Andi, pernyataan yang pasti benar adalah …"
+      },
+      "kalimat_penentu": "Jika Hesti duduk berhadapan dengan Andi",
+      "opsi": {
+        "A": "Beni duduk tepat di sebelah kanan Andi.",
+        "B": "Eva duduk tepat di sebelah kanan Dina.",
+        "C": "Hesti duduk tepat di sebelah kiri Gani.",
+        "D": "Gani duduk berhadapan dengan Andi.",
+        "E": "Farhan duduk bersebelahan dengan Hesti."
+      },
+      "kunci": "A",
+      "kode": {
+        "A": "kunci",
+        "B": "J-MUNGKIN",
+        "C": "J-BALIK",
+        "D": "J-NOMOR",
+        "E": "J-MUNGKIN"
+      },
+      "nama": {
+        "B": "Menganggap yang mungkin benar sebagai pasti benar",
+        "C": "Membaca hubungan dari arah sebaliknya",
+        "D": "Salah menghitung posisi atau kursi",
+        "E": "Menganggap yang mungkin benar sebagai pasti benar"
+      },
+      "alasan_kunci": "Dengan syarat jika tersisa 2 susunan; keduanya menaruh Beni tepat di kanan Andi.",
+      "kerangka": "ANA melingkar · 8 kursi menghadap ke tengah · berhadapan, kanan, tepat di antara, tidak bersebelahan · syarat jika · pasti benar",
+      "to_terdekat": "TO P1 no. 54 (meja 6, tanpa jika)",
+      "catatan_reviu": "Kode = rencana slot (J-BALIK, J-NOMOR, J-MUNGKIN ×2). Model menghitung ulang dengan arah kanan terbalik: kunci tetap A (semua ketentuan ikut tercermin). Setiap ketentuan mengubah status pilihan bila dibuang (dengan syarat jika). Revisi cek buta 1: B \"Eva di kiri Andi\" diganti \"Eva di kanan Dina\" (tetap 1 dari 2 susunan) agar kunci tidak berada di pasangan kanan/kiri Andi yang menyendiri.",
+      "pembahasan": {
+        "ditanya": "Syarat tambahan “Jika Hesti duduk berhadapan dengan Andi” hanya berlaku untuk soal ini. Pilihan harus benar di setiap susunan yang memenuhi keempat ketentuan dan syarat tambahan itu.",
+        "cepat": "Taruh Andi di satu kursi dan Hesti tepat di hadapannya. Cahya dan Dina juga berhadapan, dan Beni duduk tepat di kiri Cahya. Coba setiap pasangan kursi berhadapan untuk Cahya dan Dina. Kebanyakan gugur: Dina terapit Andi atau Hesti, Beni terdesak ke kursi Andi atau Hesti, atau Gani terpaksa duduk di samping Andi. Yang tersisa: Beni tepat di kanan Andi, Cahya di kanan Beni, Dina di hadapan Cahya diapit Eva dan Farhan, dan Gani di kursi sisanya.",
+        "lain": "Beri nomor kursi 0 sampai 7 searah jarum jam dengan Andi di kursi 0; kanan seseorang ada di kursi sebelumnya. Hesti di kursi 4. Cahya hanya bisa di kursi 6, dengan Beni di kursi 7 dan Dina di kursi 2. Eva dan Farhan menempati kursi 1 dan 3 dalam urutan mana pun, dan Gani di kursi 5. Dua susunan, keduanya menaruh Beni di kursi 7, tepat di kanan Andi.",
+        "cek": "Uji arah kanan dengan membayangkan dirimu duduk di kursi Andi menghadap ke tengah: tangan kananmu menunjuk kursi 7. Bila kanan dan kiri ditukar di semua ketentuan, seluruh susunan ikut tercermin dan jawabannya tetap sama.",
+        "gugur": {
+          "B": {
+            "uji": "1 dari 2 susunan",
+            "teks": "Eva memang tetangga Dina, tetapi sisinya belum tentu. Eva di kanan Dina hanya terjadi bila Eva di kursi 1; pada susunan lain kursi itu milik Farhan."
+          },
+          "C": {
+            "uji": "kanan-kiri tertukar",
+            "teks": "Hesti duduk tepat di sebelah kanan Gani, bukan di kirinya. Pilihan ini membalik arah, sehingga salah di kedua susunan."
+          },
+          "D": {
+            "uji": "kursi dihitung kurang satu",
+            "teks": "Gani berjarak tiga kursi dari Andi, bukan empat. Berhadapan di meja delapan kursi berarti terpisah empat kursi, dan pasangan Andi adalah Hesti."
+          },
+          "E": {
+            "uji": "1 dari 2 susunan",
+            "teks": "Farhan di samping Hesti hanya terjadi bila Farhan di kursi 3. Pada susunan lain Farhan di kursi 1, jauh dari Hesti."
+          }
+        },
+        "kunci": "Kedua susunan yang sah menaruh Beni tepat di sebelah kanan Andi, sedangkan pilihan lain gagal di sedikitnya satu susunan.",
+        "analogi": "Seperti mengatur tempat duduk keluarga besar di meja makan bundar dengan banyak permintaan: begitu kursi kakek dan nenek ditetapkan, permintaan lain biasanya hanya menyisakan dua atau tiga cara. Yang pasti adalah yang sama di semua cara itu.",
+        "waspada": "Membaca kanan sebagai searah jarum jam. Orang yang menghadap ke tengah meja melihat tetangga kanannya di arah berlawanan jarum jam bila meja dilihat dari atas. Gambar dulu, lalu bayangkan dirimu duduk di kursi itu."
+      },
+      "bukti": {
+        "metode": "Andi dikunci di kursi 0; 5.040 susunan, sah 8; dengan syarat jika tersisa 2 (A E D F H G C B | A F D E H G C B, searah jarum jam dari Andi); pilihan benar di {\"A\":2,\"B\":1,\"C\":0,\"D\":0,\"E\":1}; arah kanan dibalik → kunci tetap A; tanpa syarat 1–4 (dengan jika) tersisa 4/4/14/4",
+        "pola": "@ duduk tepat di sebelah ~ @."
+      }
+    },
+    {
+      "id": "HB-TIU-B12-C03",
+      "bab": 12,
+      "peran": "contoh",
+      "jenis": "ANA urutan sebagian",
+      "bentuk": "tujuh surat, panah + tepat setelah, tidak mungkin",
+      "target_detik": 120,
+      "soal": {
+        "pengantar": "Tujuh surat, yaitu surat A, B, C, D, E, F, dan G, diarsipkan satu per satu secara berurutan. Ketentuannya sebagai berikut.",
+        "syarat": [
+          "Surat A dan surat B diarsipkan sebelum surat C.",
+          "Surat C diarsipkan sebelum surat E.",
+          "Surat E dan surat F diarsipkan sebelum surat G.",
+          "Surat D diarsipkan tepat setelah surat B."
+        ],
+        "tanya": "Pernyataan yang tidak mungkin benar adalah …"
+      },
+      "kalimat_penentu": "tepat setelah",
+      "opsi": {
+        "A": "Surat F diarsipkan sebelum surat A.",
+        "B": "Surat F diarsipkan keenam.",
+        "C": "Surat A diarsipkan kedua.",
+        "D": "Surat E diarsipkan kelima.",
+        "E": "Surat C diarsipkan sebelum surat D."
+      },
+      "kunci": "E",
+      "kode": {
+        "A": "J-ASUMSI",
+        "B": "J-BALIK",
+        "C": "J-MUNGKIN",
+        "D": "J-NOMOR",
+        "E": "kunci"
+      },
+      "nama": {
+        "A": "Memakai keterangan yang tidak tertulis di soal",
+        "B": "Membaca hubungan dari arah sebaliknya",
+        "C": "Berhenti di satu susunan yang dicoba",
+        "D": "Menghitung urutan dari ujung yang salah"
+      },
+      "alasan_kunci": "D menempel tepat setelah B dan C harus sesudah B → C selalu sesudah D.",
+      "kerangka": "ANA urutan sebagian · 7 unsur · panah + satu blok tepat setelah · tidak mungkin",
+      "to_terdekat": "TO P1 no. 55 (pasti); TR no. 55 (yang terakhir); bukan panah narasi P, Q, R, S, T",
+      "catatan_reviu": "Kode slot J-ASUMSI, J-BALIK; J-SYARAT (slot) tidak punya jalur yang membuat pilihan mungkin tampak mustahil, diganti J-MUNGKIN (C, berhenti di satu susunan) dan J-NOMOR (E, posisi dari belakang). Untuk kata tanya tidak mungkin, uji tiap ketentuan perlu memakai banyak susunan yang membenarkan pilihan (ketentuan 1–3 tidak mengubah status, hanya hitungannya). Revisi cek buta 1: tiga pilihan tentang surat F membuat kunci menyendiri; C kini \"A kedua\" (1 dari 10 urutan, J-MUNGKIN), J-NOMOR \"E kelima\" pindah ke D, kunci pindah D → E agar sebaran kelompok tetap seimbang.",
+      "pembahasan": {
+        "ditanya": "Kata tanyanya “tidak mungkin benar”: pilihan yang dicari salah di setiap urutan sah. Pilihan lain cukup digugurkan dengan satu urutan sah yang membenarkannya. Kalimat penentunya “tepat setelah”.",
+        "cepat": "Gambar panah: A dan B menuju C, C menuju E, E dan F menuju G, dan D menempel tepat di belakang B. D langsung menyusul B, sedangkan C harus sesudah B, jadi C tidak dapat menyelip di antara B dan D. Akibatnya D selalu lebih dulu daripada C, dan pilihan E tidak mungkin benar.",
+        "lain": "Urutan sah ada sepuluh. Pada setiap urutan, B dan D muncul berdampingan, lalu C datang sesudahnya, misalnya A, B, D, C, E, F, G atau B, D, A, C, F, E, G.",
+        "cek": "Gugurkan pilihan lain dengan contoh: urutan F, A, B, D, C, E, G membenarkan A dan C; urutan A, B, D, C, E, F, G membenarkan B dan D.",
+        "gugur": {
+          "A": {
+            "uji": "mungkin: F, A, B, D, C, E, G",
+            "teks": "F hanya wajib lebih dulu daripada G. Tidak ada panah antara F dan A, sehingga F boleh mendahului A. Menganggap urutan huruf atau urutan gambar sebagai urutan lengkap membuat pilihan ini tampak mustahil."
+          },
+          "B": {
+            "uji": "mungkin: A, B, D, C, E, F, G",
+            "teks": "F di urutan keenam sah selama G datang sesudahnya. Pilihan ini tampak mustahil hanya bila panah dari F ke G dibaca terbalik."
+          },
+          "C": {
+            "uji": "mungkin: F, A, B, D, C, E, G",
+            "teks": "A di urutan kedua hanya terjadi di satu dari sepuluh urutan, yaitu bila F diarsipkan paling awal. Bila yang dicoba hanya satu atau dua urutan lain, pilihan ini terkesan mustahil, padahal satu contoh sah sudah membuktikan sebaliknya."
+          },
+          "D": {
+            "uji": "mungkin: A, B, D, C, E, F, G",
+            "teks": "E di urutan kelima sah. Kekeliruan muncul bila urutan dihitung dari belakang: kelima dari belakang sama dengan ketiga dari depan, dan E memang tidak pernah di urutan ketiga."
+          }
+        },
+        "kunci": "Surat D selalu diarsipkan tepat setelah surat B, sedangkan C harus sesudah B dan tidak dapat menyela B dan D, sehingga C tidak mungkin mendahului D.",
+        "analogi": "Seperti antre di loket bersama adikmu yang selalu menempel di belakangmu: siapa pun yang harus datang setelah kamu otomatis juga datang setelah adikmu.",
+        "waspada": "Membaca “tepat setelah” sebagai “setelah”. Tanpa kata “tepat”, C bisa menyelip di antara B dan D, dan pilihan E menjadi mungkin."
+      },
+      "bukti": {
+        "metode": "5.040 urutan; sah 10 (ABDCEFG, ABDCFEG, ABDFCEG, AFBDCEG, FABDCEG, BDACEFG, BDACFEG, BDAFCEG, BDFACEG, FBDACEG); pilihan benar di {\"A\":3,\"B\":2,\"C\":1,\"D\":2,\"E\":0} susunan; \"tepat setelah\" dilonggarkan → C sebelum D jadi mungkin; tanpa syarat 1–6 tersisa 24*/24/80*/30*/12*/70",
+        "pola": "surat @ diarsipkan sebelum surat @."
+      }
+    },
+    {
+      "id": "HB-TIU-B12-C04",
+      "bab": 12,
+      "peran": "contoh",
+      "jenis": "ANA pencocokan",
+      "bentuk": "empat orang × kota × kendaraan, mungkin benar",
+      "target_detik": 120,
+      "soal": {
+        "pengantar": "Empat peserta pelatihan, yaitu Ilham, Juwita, Kevin, dan Lestari, berasal dari empat kota yang berbeda, yaitu Bogor, Cirebon, Garut, dan Serang. Mereka datang dengan empat kendaraan yang berbeda, yaitu bus, kereta, mobil, dan motor. Ketentuannya sebagai berikut.",
+        "syarat": [
+          "Juwita tidak berasal dari Bogor dan tidak naik kereta.",
+          "Peserta dari Garut naik motor.",
+          "Kevin naik bus.",
+          "Ilham tidak berasal dari Garut maupun Serang."
+        ],
+        "tanya": "Pernyataan yang mungkin benar adalah …"
+      },
+      "kalimat_penentu": "mungkin benar",
+      "opsi": {
+        "A": "Peserta dari Cirebon naik motor.",
+        "B": "Juwita berasal dari Cirebon.",
+        "C": "Kevin berasal dari Garut.",
+        "D": "Peserta dari Garut naik bus.",
+        "E": "Ilham berasal dari Serang."
+      },
+      "kunci": "B",
+      "kode": {
+        "A": "J-SYARAT",
+        "B": "kunci",
+        "C": "J-SYARAT",
+        "D": "J-KATA",
+        "E": "J-SYARAT"
+      },
+      "nama": {
+        "A": "Melewatkan atau melonggarkan satu syarat",
+        "C": "Melewatkan atau melonggarkan satu syarat",
+        "D": "Memilih karena katanya sama dengan soal",
+        "E": "Melewatkan atau melonggarkan satu syarat"
+      },
+      "alasan_kunci": "Juwita dari Cirebon sah di satu pemetaan (Ilham Bogor/kereta, Juwita Cirebon/mobil, Kevin Serang/bus, Lestari Garut/motor); empat pilihan lain mustahil.",
+      "kerangka": "ANA pencocokan · 4 orang × 2 atribut tanpa urutan · bukan, jika-Garut-maka-motor, tetap, bukan-maupun · mungkin benar",
+      "to_terdekat": "belum ada di TO atau soal beredar; bukan Dika, Eka, Fajar (narasi)",
+      "catatan_reviu": "PENYIMPANGAN: kata tanya slot \"pasti benar\" diganti \"mungkin benar\" agar Bab 12 tetap punya satu soal \"mungkin\" (B12-L03 dijadikan \"pasti\" karena rujukan Bab 19 menuntut pilihan J-MUNGKIN). Kode: J-SYARAT ×3 (ketentuan berbeda), J-KATA; J-MUNGKIN/J-ASUMSI (slot) tidak punya jalur pada kata tanya mungkin. Ketentuan 1 hanya mengubah hitungan, bukan status. Revisi cek buta 1: kata Cirebon hanya ada di kunci; A \"Ilham naik motor\" diganti \"Peserta dari Cirebon naik motor\" (jalur sama: motor milik peserta Garut terlewat).",
+      "pembahasan": {
+        "ditanya": "Kata tanyanya “mungkin benar”: cukup satu pemetaan sah yang membenarkan pilihan. Empat pilihan lain harus salah di setiap pemetaan.",
+        "cepat": "Isi tabel centang-silang. Kevin naik bus. Peserta dari Garut naik motor, jadi Kevin bukan dari Garut, dan Ilham juga bukan dari Garut. Juwita tidak naik kereta dan bukan dari Bogor. Coba Juwita dari Cirebon: Ilham tidak boleh dari Garut atau Serang, jadi Ilham dari Bogor; Garut dan Serang tersisa untuk Kevin dan Lestari, dan Kevin bukan dari Garut, jadi Lestari dari Garut dan naik motor, Kevin dari Serang. Juwita naik mobil dan Ilham naik kereta. Semua ketentuan terpenuhi, jadi B mungkin benar.",
+        "lain": "Gugurkan dulu pilihan yang bertabrakan dengan ketentuan. Yang naik motor selalu peserta dari Garut, bukan peserta dari Cirebon. Kevin naik bus, jadi bukan dari Garut. Peserta dari Garut naik motor, bukan bus. Ilham tidak dari Serang. Yang tersisa B.",
+        "cek": "Pemetaan contoh untuk B: Ilham dari Bogor naik kereta, Juwita dari Cirebon naik mobil, Kevin dari Serang naik bus, dan Lestari dari Garut naik motor. Uji keempat ketentuan satu per satu; semuanya terpenuhi.",
+        "gugur": {
+          "A": {
+            "uji": "motor milik peserta Garut",
+            "teks": "Setiap kendaraan dipakai tepat satu orang, dan peserta dari Garut naik motor. Motor sudah menjadi milik peserta dari Garut, jadi peserta dari Cirebon tidak dapat memakainya."
+          },
+          "C": {
+            "uji": "ketentuan 2 dan 3",
+            "teks": "Bila Kevin dari Garut, ia harus naik motor, padahal ketentuan 3 menaruhnya di bus. Pilihan ini lolos hanya bila salah satu ketentuan itu terlewat."
+          },
+          "D": {
+            "uji": "ketentuan 2 dibantah",
+            "teks": "Pilihan ini memakai kata yang sama dengan ketentuan 2, Garut dan kendaraan, tetapi isinya bertentangan: peserta dari Garut naik motor, bukan bus."
+          },
+          "E": {
+            "uji": "kata “maupun” terlewat",
+            "teks": "Ketentuan 4 melarang Ilham berasal dari Garut dan juga dari Serang. Pilihan ini lolos hanya bila bagian “maupun Serang” terlewat."
+          }
+        },
+        "kunci": "Pemetaan Ilham dari Bogor, Juwita dari Cirebon, Kevin dari Serang, dan Lestari dari Garut memenuhi semua ketentuan, sedangkan pilihan lain melanggar ketentuan di setiap pemetaan.",
+        "analogi": "Seperti mencocokkan empat kunci dengan empat gembok: bila satu kunci sudah pasti milik gembok merah, kunci itu tidak bisa dicoba di gembok lain.",
+        "waspada": "Lupa bahwa kota dan kendaraan masing-masing dipakai tepat satu orang. Akibatnya “peserta dari Garut naik motor” dibaca sepihak, dan peserta dari kota lain dikira masih boleh naik motor."
+      },
+      "bukti": {
+        "metode": "576 pemetaan; sah 11; pilihan benar di {\"A\":0,\"B\":1,\"C\":0,\"D\":0,\"E\":0} pemetaan; B hanya di I Bogor/kereta, J Cirebon/mobil, K Serang/bus, L Garut/motor; C gugur oleh syarat 2 dan 3 bersama; tanpa syarat 1–4 tersisa 16*/40/48/20",
+        "pola": "@ berasal dari @."
+      }
+    },
+    {
+      "id": "HB-TIU-B12-L01",
+      "bab": 12,
+      "peran": "latihan",
+      "jenis": "ANA pilih susunan",
+      "bentuk": "tujuh penampil berjajar, pilih susunan",
+      "target_detik": 90,
+      "soal": {
+        "pengantar": "Tujuh peserta lomba pidato, yaitu Galih, Hana, Irfan, Jihan, Kirana, Lutfi, dan Mira, tampil satu per satu. Ketentuannya sebagai berikut.",
+        "syarat": [
+          "Hana tampil tepat setelah Galih.",
+          "Irfan tidak tampil pertama dan tidak tampil terakhir.",
+          "Jihan tampil sebelum Kirana.",
+          "Lutfi tampil di urutan ketiga."
+        ],
+        "tanya": "Urutan penampil dari pertama sampai ketujuh yang memenuhi semua ketentuan adalah …"
+      },
+      "kalimat_penentu": "urutan ketiga",
+      "opsi": {
+        "A": "Jihan, Galih, Lutfi, Kirana, Irfan, Hana, Mira",
+        "B": "Mira, Jihan, Lutfi, Irfan, Galih, Hana, Kirana",
+        "C": "Irfan, Mira, Lutfi, Galih, Hana, Jihan, Kirana",
+        "D": "Mira, Kirana, Lutfi, Jihan, Irfan, Galih, Hana",
+        "E": "Jihan, Mira, Irfan, Kirana, Lutfi, Galih, Hana"
+      },
+      "kunci": "B",
+      "kode": {
+        "A": "J-SYARAT",
+        "B": "kunci",
+        "C": "J-SYARAT",
+        "D": "J-BALIK",
+        "E": "J-NOMOR"
+      },
+      "nama": {
+        "A": "Melewatkan atau melonggarkan satu syarat",
+        "C": "Melewatkan atau melonggarkan satu syarat",
+        "D": "Membaca hubungan dari arah sebaliknya",
+        "E": "Salah menghitung posisi atau kursi"
+      },
+      "alasan_kunci": "B memenuhi keempat ketentuan; A, C, D, E masing-masing melanggar ketentuan 1, 2, 3, 4.",
+      "kerangka": "ANA pilih susunan · garis 7 tanpa atribut · tepat setelah + tidak di ujung + sebelum + posisi tetap",
+      "to_terdekat": "belum ada di TO",
+      "catatan_reviu": "Kode = rencana slot (J-SYARAT ×2, J-NOMOR, J-BALIK).",
+      "bukti": {
+        "metode": "syarat 1–4 menggugurkan pilihan A · C · D · E; tiap pilihan salah melanggar tepat satu syarat; skor unsur bersama {\"A\":7,\"B\":6,\"C\":5,\"D\":7,\"E\":5}"
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta urutan yang memenuhi semua ketentuan. Kalimat penentunya “urutan ketiga” di ketentuan 4: posisi tetap seperti itu menyaring paling cepat. Pilihan yang melanggar satu ketentuan saja langsung gugur.",
+        "cepat": "Pakai ketentuan sebagai saringan, satu per satu. Ketentuan 4, Lutfi ketiga: E gugur. Ketentuan 2, Irfan bukan pertama dan bukan terakhir: C gugur. Ketentuan 3, Jihan sebelum Kirana: D gugur. Ketentuan 1, Hana tepat setelah Galih: A gugur. Tinggal B.",
+        "lain": "Periksa B langsung terhadap keempat ketentuan: Galih kelima dan Hana keenam, Irfan keempat, Jihan kedua dan Kirana ketujuh, Lutfi ketiga. Semua terpenuhi.",
+        "cek": "Mulailah dari ketentuan yang paling mudah dilihat, yaitu posisi tetap seperti Lutfi ketiga. Ketentuan seperti itu menyaring tanpa perlu membandingkan dua nama.",
+        "gugur": {
+          "A": {
+            "uji": "melanggar ketentuan 1",
+            "teks": "Galih kedua, tetapi Hana keenam. Hana harus tampil tepat setelah Galih, bukan sekadar setelahnya."
+          },
+          "C": {
+            "uji": "melanggar ketentuan 2",
+            "teks": "Irfan tampil pertama, padahal ketentuan 2 melarangnya."
+          },
+          "D": {
+            "uji": "melanggar ketentuan 3",
+            "teks": "Kirana kedua dan Jihan keempat, jadi Kirana justru tampil sebelum Jihan. Arah ketentuannya terbalik."
+          },
+          "E": {
+            "uji": "melanggar ketentuan 4",
+            "teks": "Lutfi tampil kelima, bukan ketiga. Urutan ketiga ditempati Irfan."
+          }
+        },
+        "kunci": "B memenuhi keempat ketentuan, sedangkan setiap pilihan lain melanggar tepat satu ketentuan.",
+        "analogi": "Seperti memeriksa pesanan katering dengan daftar centang: begitu satu permintaan tidak terpenuhi, pesanan itu ditolak, serapi apa pun bagian lainnya.",
+        "waspada": "Membaca “tepat setelah” sebagai “setelah”, lalu meloloskan A. Kata “tepat” berarti tidak ada orang lain di antaranya."
+      }
+    },
+    {
+      "id": "HB-TIU-B12-L02",
+      "bab": 12,
+      "peran": "latihan",
+      "jenis": "ANA bentuk kecukupan data",
+      "bentuk": "lingkar enam, urutan bunyi diacak",
+      "target_detik": 120,
+      "soal": {
+        "pengantar": "Enam orang, yaitu Nadia, Omar, Putri, Raka, Sari, dan Tegar, duduk mengelilingi meja bundar dengan enam kursi berjarak sama, semuanya menghadap ke tengah meja. Nadia duduk berhadapan dengan Omar.",
+        "pernyataan": [
+          "Omar duduk tepat di sebelah kiri Putri.",
+          "Putri duduk bersebelahan dengan Raka."
+        ],
+        "tanya": "Siapa yang duduk tepat di sebelah kanan Raka?"
+      },
+      "kalimat_penentu": "tepat di sebelah kanan Raka",
+      "opsi": {
+        "A": "Pernyataan (1) dan (2) BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi satu pernyataan SAJA tidak cukup.",
+        "B": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+        "C": "Pernyataan (1) SAJA cukup DAN pernyataan (2) SAJA cukup untuk menjawab pertanyaan.",
+        "D": "Pernyataan (1) dan (2) BERSAMA-SAMA tidak cukup untuk menjawab pertanyaan.",
+        "E": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup."
+      },
+      "kunci": "A",
+      "kode": {
+        "A": "kunci",
+        "B": "J-ASUMSI",
+        "C": "J-MUNGKIN",
+        "D": "J-SYARAT",
+        "E": "J-ASUMSI"
+      },
+      "nama": {
+        "B": "Memakai keterangan yang tidak tertulis di soal",
+        "C": "Menganggap yang mungkin benar sebagai pasti benar",
+        "D": "Melewatkan atau melonggarkan satu syarat",
+        "E": "Memakai keterangan yang tidak tertulis di soal"
+      },
+      "alasan_kunci": "Gabungan: Putri di kanan Omar, Raka di sisi Putri yang lain → kanan Raka = Nadia; masing-masing tidak cukup.",
+      "kerangka": "ANA bentuk KCK · lingkar 6 + satu pasangan berhadapan di soal · (1) kiri · (2) bersebelahan · gabungan",
+      "to_terdekat": "soal beredar memakai urutan garis (pelari, tinggi)",
+      "catatan_reviu": "URUTAN BUNYI DIACAK (T2-7(7)): A = gabungan, B = hanya (1), C = masing-masing, D = digabung pun tidak, E = hanya (2); kunci A. Kode slot J-ASUMSI; J-BERHENTI dan J-BALIK (slot) tidak punya jalur di kunci gabungan, diganti J-MUNGKIN (C) dan J-SYARAT (D, pasangan berhadapan terlewat). Makna sama untuk kedua arah kanan.",
+      "bukti": {
+        "metode": "Nadia dikunci di kursi 0, Omar di hadapannya: 24 susunan; (1) 4 kemungkinan, (2) 3 kemungkinan, gabungan 2 susunan dengan jawaban Nadia; arah kanan dibalik → makna tetap; urutan bunyi G · 1 · M · X · 2",
+        "urutan": "G · 1 · M · X · 2"
+      },
+      "pembahasan": {
+        "ditanya": "Yang ditanya orang yang duduk “tepat di sebelah kanan Raka”. Semua orang menghadap ke tengah meja, jadi kanan dan kiri dibaca dari kursi masing-masing.",
+        "cepat": "Beri nomor kursi 0 sampai 5 searah jarum jam bila meja dilihat dari atas; orang yang menghadap ke tengah melihat tetangga kanannya di kursi bernomor satu lebih kecil. Taruh Nadia di kursi 0 dan Omar di kursi 3. (1) saja: Putri di kursi 2, tetapi Raka bisa di kursi 1, 4, atau 5, dan orang di kanannya berbeda-beda. Tidak cukup. (2) saja: Putri dan Raka bisa di kursi 1 dan 2, atau 4 dan 5, dengan urutan mana pun. Tidak cukup. Gabungan: Putri di kursi 2, dan Raka di sebelahnya yang masih kosong, kursi 1. Kanan Raka adalah kursi 0, yaitu Nadia.",
+        "lain": "Tanpa nomor: Omar di kiri Putri berarti Putri di kanan Omar. Raka harus menempel pada Putri di sisi yang bukan Omar, yaitu sisi yang mengarah ke Nadia. Raka duduk di antara Putri dan Nadia, dengan Nadia di kanannya.",
+        "cek": "Bayangkan dirimu duduk di kursi Raka menghadap ke tengah: Putri di kirimu dan Nadia di kananmu. Bila kanan dan kiri ditukar di semua kalimat, susunannya ikut tercermin dan jawabannya tetap Nadia.",
+        "gugur": {
+          "B": {
+            "uji": "(1) dianggap cukup",
+            "teks": "(1) hanya menaruh Putri. Raka bisa di kursi 1, 4, atau 5, sehingga orang di kanannya bisa Nadia, Omar, atau orang lain. Menganggap Raka pasti di samping Putri berarti memakai keterangan dari (2)."
+          },
+          "C": {
+            "uji": "satu susunan dicoba",
+            "teks": "Setiap pernyataan dicoba pada satu susunan yang kebetulan memberi Nadia, lalu dianggap cukup. Susunan lain memberi jawaban berbeda."
+          },
+          "D": {
+            "uji": "Nadia–Omar terlewat",
+            "teks": "Tanpa keterangan bahwa Nadia berhadapan dengan Omar, gabungan pun menyisakan banyak susunan. Keterangan di soal itu ikut menentukan dan tidak boleh dilewatkan."
+          },
+          "E": {
+            "uji": "(2) dianggap cukup",
+            "teks": "(2) hanya berkata Putri dan Raka bersebelahan. Tanpa tahu sisinya, orang di kanan Raka bisa Putri, Nadia, atau Omar."
+          }
+        },
+        "kunci": "Gabungan menaruh Putri di kanan Omar dan Raka di antara Putri dan Nadia, sehingga kanan Raka pasti Nadia, sedangkan masing-masing pernyataan menyisakan beberapa jawaban.",
+        "analogi": "Seperti mencari kursi temanmu di bioskop dengan dua pesan singkat: satu menyebut ia di samping kakaknya, satu lagi menyebut kakaknya di ujung baris. Masing-masing pesan belum cukup, tetapi berdua langsung menunjuk kursinya.",
+        "waspada": "Membaca kanan sebagai searah jarum jam dari atas. Untuk orang yang menghadap ke tengah meja, kanannya berlawanan arah jarum jam; bayangkan dirimu duduk di kursi itu."
+      }
+    },
+    {
+      "id": "HB-TIU-B12-L03",
+      "bab": 12,
+      "peran": "latihan",
+      "jenis": "ANA jadwal",
+      "bentuk": "enam orang ke tiga hari, pasti benar",
+      "target_detik": 150,
+      "soal": {
+        "pengantar": "Enam anggota OSIS, yaitu Tito, Umar, Vina, Wulan, Yoga, dan Zahra, menjaga stan pameran sekolah pada hari Senin, Selasa, dan Rabu. Setiap hari stan dijaga tepat dua orang, dan setiap orang bertugas tepat satu hari. Ketentuannya sebagai berikut.",
+        "syarat": [
+          "Umar dan Vina bertugas pada hari yang sama.",
+          "Wulan tidak bertugas bersama Yoga.",
+          "Zahra bertugas pada hari Rabu.",
+          "Tito tidak bertugas pada hari Senin."
+        ],
+        "tanya": "Pernyataan yang pasti benar adalah …"
+      },
+      "kalimat_penentu": "tidak bertugas pada hari Senin",
+      "opsi": {
+        "A": "Tito bertugas pada hari Selasa.",
+        "B": "Wulan bertugas pada hari Selasa.",
+        "C": "Yoga bertugas bersama Zahra.",
+        "D": "Tito bertugas pada hari Senin.",
+        "E": "Wulan bertugas pada hari Rabu."
+      },
+      "kunci": "A",
+      "kode": {
+        "A": "kunci",
+        "B": "J-MUNGKIN",
+        "C": "J-ASUMSI",
+        "D": "J-SYARAT",
+        "E": "J-MUNGKIN"
+      },
+      "nama": {
+        "B": "Menganggap yang mungkin benar sebagai pasti benar",
+        "C": "Memakai keterangan yang tidak tertulis di soal",
+        "D": "Melewatkan atau melonggarkan satu syarat",
+        "E": "Menganggap yang mungkin benar sebagai pasti benar"
+      },
+      "alasan_kunci": "2 pembagian sah (Senin Umar-Vina; Selasa Tito + Wulan/Yoga; Rabu Zahra + sisanya) → Tito pasti Selasa.",
+      "kerangka": "ANA jadwal · 6 orang, 3 hari, 2 per hari · bersama, tidak bersama, hari tetap, bukan hari · pasti benar",
+      "to_terdekat": "TO P1 no. 53 (satu regu per hari)",
+      "catatan_reviu": "PENYIMPANGAN: kata tanya slot \"mungkin benar\" diganti \"pasti benar\": rujukan Latihan A Bab 19 no. 5 menuntut pilihan J-MUNGKIN (\"menganggap yang mungkin benar sebagai pasti benar\"), dan kekeliruan itu hanya punya jalur pada kata tanya pasti. B = pilihan yang disorot Latihan A. Kode slot J-SYARAT (D, E: kata tidak terlewat), J-ASUMSI (C), J-MUNGKIN (B). Revisi cek buta 1: E \"Wulan bersama Yoga\" (membalik ketentuan 2, langsung tercoret) diganti \"Wulan bertugas pada hari Rabu\" (1 dari 2 jadwal, J-MUNGKIN); kini dua pasangan sejenis (Tito Selasa/Senin, Wulan Selasa/Rabu), kunci tidak di pasangan tunggal.",
+      "bukti": {
+        "metode": "90 pembagian; sah 2 (Senin UV, Selasa TW, Rabu YZ | Senin UV, Selasa TY, Rabu WZ); pilihan benar di {\"A\":2,\"B\":1,\"C\":1,\"D\":0,\"E\":1}; \"tidak\" syarat 4 terlewat → D pasti; tanpa syarat 1–4 tersisa 14/4/8/4",
+        "pola": "@ bertugas pada hari &."
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta pernyataan yang pasti benar, yaitu benar di setiap jadwal yang memenuhi keempat ketentuan. Kalimat penentunya “tidak bertugas pada hari Senin” di ketentuan 4.",
+        "cepat": "Zahra di hari Rabu, jadi Rabu tinggal satu tempat. Umar dan Vina harus sehari, sehingga mereka di Senin atau Selasa. Bila mereka di Selasa, Senin harus diisi dua dari Tito, Wulan, dan Yoga; Tito tidak boleh di Senin, jadi tersisa Wulan dan Yoga, padahal keduanya tidak boleh sehari. Umar dan Vina pasti di Senin. Tito, Wulan, dan Yoga mengisi dua tempat di Selasa dan satu tempat di Rabu. Wulan dan Yoga tidak boleh sehari, jadi Tito pasti di Selasa bersama salah satunya.",
+        "lain": "Tulis kedua jadwal yang sah. Jadwal pertama: Senin Umar dan Vina, Selasa Tito dan Wulan, Rabu Yoga dan Zahra. Jadwal kedua: Senin Umar dan Vina, Selasa Tito dan Yoga, Rabu Wulan dan Zahra. Tito di Selasa pada keduanya.",
+        "cek": "Uji setiap pilihan di kedua jadwal: A benar di keduanya, B dan C hanya benar di jadwal pertama, E hanya benar di jadwal kedua, dan D salah di keduanya.",
+        "gugur": {
+          "B": {
+            "uji": "jadwal pertama saja",
+            "teks": "Wulan bertugas di Selasa hanya pada jadwal pertama. Pada jadwal kedua, Wulan bertugas di Rabu."
+          },
+          "C": {
+            "uji": "jadwal pertama saja",
+            "teks": "Yoga bersama Zahra hanya terjadi pada jadwal pertama. Memilihnya berarti menganggap jadwal pertama yang berlaku, padahal soal tidak menyebutnya."
+          },
+          "D": {
+            "uji": "“tidak” terlewat",
+            "teks": "Ketentuan 4 berkata Tito tidak bertugas pada hari Senin. Pilihan ini muncul bila kata “tidak” terlewat saat membaca."
+          },
+          "E": {
+            "uji": "jadwal kedua saja",
+            "teks": "Wulan bertugas di Rabu hanya pada jadwal kedua. Pada jadwal pertama, Rabu milik Yoga dan Zahra."
+          }
+        },
+        "kunci": "Umar dan Vina pasti mengisi Senin, dan Wulan tidak boleh sehari dengan Yoga, sehingga Tito pasti bertugas pada hari Selasa.",
+        "analogi": "Seperti menyusun jadwal piket kelas bersama dua teman yang tidak mau satu kelompok. Begitu pasangan wajib dan larangan itu ditempatkan, sering hanya tersisa satu tempat untuk orang yang lain.",
+        "waspada": "Berhenti setelah menemukan satu jadwal sah, lalu memilih pernyataan yang benar di jadwal itu. Kata “pasti” menuntut kamu mencari semua jadwal yang sah lebih dulu."
+      }
+    },
+    {
+      "id": "HB-TIU-B12-L04",
+      "bab": 12,
+      "peran": "latihan",
+      "jenis": "ANA melingkar",
+      "bentuk": "tujuh kursi, tepat di antara + berjarak satu kursi, tidak mungkin",
+      "target_detik": 150,
+      "soal": {
+        "pengantar": "Tujuh orang, yaitu Aldi, Bella, Ciko, Dara, Elang, Fani, dan Galuh, duduk mengelilingi meja bundar dengan tujuh kursi berjarak sama, semuanya menghadap ke tengah meja. Seseorang duduk tepat di antara dua orang berarti kedua orang itu tetangga kiri dan kanannya. Dua orang berjarak satu kursi berarti di antara mereka ada tepat satu kursi. Ketentuannya sebagai berikut.",
+        "syarat": [
+          "Bella duduk tepat di antara Aldi dan Ciko.",
+          "Dara dan Elang berjarak satu kursi.",
+          "Fani duduk tepat di sebelah kanan Ciko."
+        ],
+        "tanya": "Pernyataan yang tidak mungkin benar adalah …"
+      },
+      "kalimat_penentu": "berjarak satu kursi",
+      "opsi": {
+        "A": "Dara duduk bersebelahan dengan Aldi.",
+        "B": "Galuh duduk tepat di antara Dara dan Elang.",
+        "C": "Dara duduk tepat di sebelah kanan Fani.",
+        "D": "Elang duduk tepat di antara Galuh dan Fani.",
+        "E": "Fani duduk tepat di antara Dara dan Elang."
+      },
+      "kunci": "E",
+      "kode": {
+        "A": "J-MUNGKIN",
+        "B": "J-NOMOR",
+        "C": "J-BALIK",
+        "D": "J-MUNGKIN",
+        "E": "kunci"
+      },
+      "nama": {
+        "A": "Berhenti di satu susunan yang dicoba",
+        "B": "Salah menghitung posisi atau kursi",
+        "C": "Membaca hubungan dari arah sebaliknya",
+        "D": "Berhenti di satu susunan yang dicoba"
+      },
+      "alasan_kunci": "2 susunan sah; kursi di antara Dara dan Elang selalu milik Galuh, Fani bertetangga Ciko → Fani tidak mungkin diapit Dara dan Elang.",
+      "kerangka": "ANA melingkar ganjil · 7 kursi tanpa hadapan · tepat di antara, berjarak satu kursi, kanan · tidak mungkin",
+      "to_terdekat": "belum ada di TO",
+      "catatan_reviu": "Kode = rencana slot (J-BALIK, J-MUNGKIN ×2, J-NOMOR). Kunci sama untuk kedua arah kanan. Revisi cek buta 1: D \"Elang bersebelahan dengan Fani\" ditulis ulang \"Elang tepat di antara Galuh dan Fani\" (isi sama, 1 dari 2 susunan); kini tiga pilihan berbentuk tepat di antara dan tiap pasangannya berbagi dua nama, sehingga pasangan B/E tidak menyendiri.",
+      "bukti": {
+        "metode": "Aldi dikunci di kursi 0; 720 susunan, sah 2 (A D G E F C B | A E G D F C B, searah jarum jam); pilihan benar di {\"A\":1,\"B\":2,\"C\":1,\"D\":1,\"E\":0}; arah kanan dibalik → kunci tetap E; tanpa syarat 1–3 tersisa 36/6/16",
+        "pola": "@ duduk tepat di antara @ dan @."
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta pernyataan yang “tidak mungkin benar”, yaitu salah di setiap susunan yang memenuhi ketiga ketentuan.",
+        "cepat": "Bella diapit Aldi dan Ciko, jadi Aldi, Bella, dan Ciko berderet. Fani tepat di kanan Ciko, sehingga Fani menempel pada Ciko di sisi yang bukan Bella. Empat orang itu berderet: Aldi, Bella, Ciko, Fani. Tiga kursi sisanya berderet di antara Fani dan Aldi. Dara dan Elang berjarak satu kursi, jadi mereka menempati kedua ujung tiga kursi itu dan Galuh di tengahnya. Tetangga Fani selalu Ciko dan salah satu dari Dara atau Elang, jadi Fani tidak mungkin diapit Dara dan Elang.",
+        "lain": "Tulis kedua susunan searah jarum jam mulai dari Aldi: Aldi, Dara, Galuh, Elang, Fani, Ciko, Bella, atau Aldi, Elang, Galuh, Dara, Fani, Ciko, Bella. Pada keduanya Fani diapit Ciko dan Elang, atau Ciko dan Dara.",
+        "cek": "Uji setiap pilihan di kedua susunan: B benar di keduanya, A dan D hanya di susunan pertama, C hanya di susunan kedua, dan E salah di keduanya.",
+        "gugur": {
+          "A": {
+            "uji": "susunan pertama",
+            "teks": "Pada susunan kedua Dara tidak bersebelahan dengan Aldi, lalu pernyataan ini dikira tidak mungkin. Pada susunan pertama Dara duduk tepat di samping Aldi, jadi pernyataan ini mungkin benar."
+          },
+          "B": {
+            "uji": "selalu benar",
+            "teks": "Galuh selalu duduk di kursi yang memisahkan Dara dan Elang. Pernyataan ini benar di kedua susunan; pilihan ini terpilih bila jarak satu kursi dihitung keliru."
+          },
+          "C": {
+            "uji": "susunan kedua",
+            "teks": "Pada susunan kedua Dara duduk tepat di kanan Fani. Pilihan ini terasa mustahil bila kanan dibaca searah jarum jam dari atas."
+          },
+          "D": {
+            "uji": "susunan pertama",
+            "teks": "Pada susunan pertama Elang diapit Galuh dan Fani. Pernyataan yang benar di satu susunan sah bukan pernyataan yang tidak mungkin."
+          }
+        },
+        "kunci": "Fani selalu menempel pada Ciko, sehingga paling banyak satu tetangganya Dara atau Elang dan ia tidak mungkin diapit keduanya.",
+        "analogi": "Seperti rangkaian gerbong kereta yang empat gerbongnya sudah dikunci berurutan. Sisa gerbong hanya bisa diatur di bagian yang masih kosong, jadi ada susunan yang mustahil sejak awal.",
+        "waspada": "Membaca kanan Ciko sebagai searah jarum jam dari atas. Untuk orang yang menghadap ke tengah meja, bayangkan dirimu duduk di kursinya sebelum menentukan kanan dan kiri."
+      }
+    },
+    {
+      "id": "HB-TIU-B13-P01",
+      "bab": 13,
+      "peran": "pembuka",
+      "jenis": "OPT termurah",
+      "bentuk": "empat kemasan, optimum tepat di batas bawah, pilihan kombinasi",
+      "target_detik": 150,
+      "soal": {
+        "pengantar": "Panitia lomba lari membutuhkan paling sedikit 90 botol air minum. Toko menjual air minum dalam empat kemasan berikut.",
+        "tanya": "Kombinasi kemasan dengan biaya termurah yang memenuhi kebutuhan panitia adalah …"
+      },
+      "kalimat_penentu": "paling sedikit 90 botol",
+      "opsi": {
+        "A": "1 kemasan isi 12 dan 5 kemasan isi 15",
+        "B": "12 kemasan isi 8",
+        "C": "1 kemasan isi 8, 1 kemasan isi 12, dan 3 kemasan isi 24",
+        "D": "6 kemasan isi 15",
+        "E": "4 kemasan isi 24"
+      },
+      "kunci": "D",
+      "kode": {
+        "A": "J-BATAS",
+        "B": "J-LANGKAH",
+        "C": "J-HEMAT",
+        "D": "kunci",
+        "E": "J-HEMAT"
+      },
+      "nama": {
+        "A": "Salah membaca batas",
+        "B": "Berhenti satu langkah sebelum selesai",
+        "C": "Menentukan termurah tanpa menghitung kombinasi lain",
+        "E": "Menentukan termurah tanpa menghitung kombinasi lain"
+      },
+      "alasan_kunci": "Isi 15 paling hemat (Rp2.300/botol), 90 = 6 × 15 → Rp207.000 = batas bawah.",
+      "kerangka": "OPT termurah · 4 kemasan · kebutuhan minimal saja · kemasan terbesar bukan paling hemat · optimum tepat di batas bawah · pilihan kombinasi",
+      "to_terdekat": "TO P1 no. 56 (3 paket, terbesar paling hemat, opsi biaya); bukan kemasan 2, 5, 10 liter (narasi)",
+      "catatan_reviu": "Kode = rencana slot (J-HEMAT ×2, J-BATAS kurang, J-LANGKAH: harga per kemasan dibandingkan tanpa dibagi isi; isi 8 dipakai, bukan isi 6, agar tidak ada pasangan cermin 15 × 6 / 6 × 15 dengan kunci). Pilihan termurah (A) tidak sah. Urutan pilihan kombinasi tidak mengikuti aturan angka urut naik.",
+      "pembahasan": {
+        "ditanya": "Yang dicari kombinasi termurah di antara semua kombinasi yang sah, bukan termurah di antara lima pilihan. Kalimat penentunya “paling sedikit 90 botol”: kurang dari 90 botol tidak sah, lebih boleh.",
+        "cepat": "Hitung harga per botol: 20.000 : 8 = 2.500, 28.800 : 12 = 2.400, 34.500 : 15 = 2.300, dan 57.600 : 24 = 2.400. Kemasan isi 15 paling hemat, dan 90 botol pas dipenuhi enam kemasan isi 15. Biayanya 6 × 34.500 = 207.000, sama dengan batas bawah 90 × 2.300 = 207.000. Tidak ada kombinasi yang lebih murah daripada batas bawah, jadi D termurah.",
+        "lain": "Hitung biaya tiap pilihan: A Rp201.300 untuk 87 botol, B Rp240.000, C Rp221.600, D Rp207.000, dan E Rp230.400. A paling murah, tetapi kurang dari 90 botol; di antara pilihan yang sah, D termurah.",
+        "cek": "Bandingkan dengan batas bawah. D tepat Rp207.000. Kombinasi lain mana pun memakai kemasan yang lebih mahal per botol atau membeli lebih dari 90 botol, sehingga biayanya pasti di atas Rp207.000.",
+        "gugur": {
+          "A": {
+            "uji": "87 botol",
+            "teks": "5 × 15 + 12 = 87 botol, kurang 3 botol dari kebutuhan. Biayanya memang paling rendah, Rp201.300, tetapi kombinasi itu tidak sah."
+          },
+          "B": {
+            "uji": "Rp240.000",
+            "teks": "Kemasan isi 8 dipilih karena harga per kemasannya paling murah, Rp20.000. Harga per botolnya justru paling mahal, Rp2.500, dan 12 kemasan isi 8 memberi 96 botol seharga 12 × 20.000 = 240.000."
+          },
+          "C": {
+            "uji": "Rp221.600",
+            "teks": "Kemasan terbesar didahulukan: 3 × 24 = 72 botol, lalu sisa 18 botol ditambal isi 12 dan isi 8 sehingga menjadi 92 botol. Totalnya 172.800 + 28.800 + 20.000 = 221.600, lebih mahal 221.600 − 207.000 = 14.600 rupiah daripada D."
+          },
+          "E": {
+            "uji": "Rp230.400",
+            "teks": "Empat kemasan isi 24 memberi 96 botol. Kemasan terbesar dikira paling hemat, padahal harga per botolnya Rp2.400, dan 6 botol yang berlebih ikut terbayar."
+          }
+        },
+        "kunci": "Kemasan isi 15 paling hemat per botol dan 90 botol pas dipenuhi enam kemasan, sehingga biayanya Rp207.000, tepat di batas bawah.",
+        "analogi": "Seperti membeli telur untuk hajatan: rak besar belum tentu paling murah per butir. Yang menentukan adalah harga per butir, lalu apakah kebutuhanmu pas dengan isi rak itu.",
+        "waspada": "Memilih A karena paling murah di antara pilihan. Cek syarat lebih dulu: pilihan yang tidak memenuhi kebutuhan tidak ikut dibandingkan."
+      },
+      "bukti": {
+        "metode": "6720 kombinasi; 6487 memenuhi ≥ 90 botol; optimum tunggal 6 kemasan isi 15 = Rp207.000 = batas bawah 90 × Rp2.300; pilihan: A 87 botol Rp201.300 (tidak sah), B 96 botol Rp240.000, C 92 botol Rp221.600, D 90 botol Rp207.000, E 96 botol Rp230.400",
+        "pola": "# kemasan isi #"
+      }
+    },
+    {
+      "id": "HB-TIU-B13-C01",
+      "bab": 13,
+      "peran": "contoh",
+      "jenis": "OPT termurah",
+      "bentuk": "stok terbatas + kelebihan maksimal, pilihan biaya",
+      "target_detik": 120,
+      "soal": {
+        "pengantar": "Penyelenggara pelatihan memesan buku catatan untuk peserta. Kebutuhannya paling sedikit 64 buku, dengan kelebihan paling banyak 6 buku. Toko menyediakan empat kemasan dengan stok terbatas seperti pada tabel.",
+        "tanya": "Biaya termurah yang dapat dicapai penyelenggara adalah …"
+      },
+      "kalimat_penentu": "stok terbatas",
+      "opsi": {
+        "A": "Rp332.800",
+        "B": "Rp337.600",
+        "C": "Rp338.000",
+        "D": "Rp357.200",
+        "E": "Rp374.600"
+      },
+      "kunci": "B",
+      "kode": {
+        "A": "J-SYARAT",
+        "B": "kunci",
+        "C": "J-LANGKAH",
+        "D": "J-HEMAT",
+        "E": "J-BATAS"
+      },
+      "nama": {
+        "A": "Melewatkan atau melonggarkan satu syarat",
+        "C": "Berhenti satu langkah sebelum selesai",
+        "D": "Menentukan termurah tanpa menghitung kombinasi lain",
+        "E": "Salah membaca batas"
+      },
+      "alasan_kunci": "Batas bawah Rp332.800 butuh 8 kemasan isi 8 (stok 4); daftar teratur → 2 isi 8 + 4 isi 12 = Rp337.600.",
+      "kerangka": "OPT termurah · 4 kemasan · kebutuhan minimal + kelebihan maksimal + stok tiap kemasan · batas bawah tak tersentuh · pilihan biaya",
+      "to_terdekat": "syarat stok tidak ada di TO P1 maupun TR",
+      "catatan_reviu": "Kode = rencana slot (J-SYARAT stok, J-HEMAT, J-BATAS kelebihan, J-LANGKAH). Pilihan biaya urut naik: kunci B; A (lebih murah) tidak sah.",
+      "pembahasan": {
+        "ditanya": "Cari biaya termurah di antara kombinasi yang memenuhi semua syarat: 64 sampai 70 buku, dan banyak kemasan tidak melebihi stok. Kalimat penentunya “stok terbatas”.",
+        "cepat": "Harga per buku: isi 5 Rp5.400, isi 8 Rp5.200, isi 12 Rp5.300, dan isi 20 Rp5.500. Batas bawahnya 64 × 5.200 = 332.800, tetapi angka itu butuh 8 kemasan isi 8, padahal stoknya 4. Batas bawah tidak tersentuh, jadi daftar dengan teratur menurut banyak kemasan isi 8: 4 kemasan paling murah Rp338.000, 3 kemasan Rp342.600, 2 kemasan Rp337.600, 1 kemasan Rp340.400, dan tanpa isi 8 Rp345.000. Yang termurah Rp337.600.",
+        "lain": "Periksa kombinasi itu: 2 kemasan isi 8 dan 4 kemasan isi 12 memberi 16 + 48 = 64 buku, tepat kebutuhan, dengan biaya 2 × 41.600 + 4 × 63.600 = 337.600. Stok isi 8 dan isi 12 mencukupi.",
+        "cek": "Bandingkan dengan batas bawah: selisihnya 337.600 − 332.800 = 4.800 rupiah. Biaya yang lebih rendah daripada Rp337.600 hanya dapat dicapai dengan melanggar stok atau batas kebutuhan.",
+        "gugur": {
+          "A": {
+            "uji": "8 kemasan isi 8",
+            "teks": "Rp332.800 adalah biaya 8 kemasan isi 8, karena 8 × 41.600 = 332.800. Stoknya hanya 4, sehingga kombinasi itu tidak dapat dibeli."
+          },
+          "C": {
+            "uji": "stok isi 8 dihabiskan",
+            "teks": "Keempat kemasan isi 8 dipakai, lalu sisa 32 buku ditambal 4 kemasan isi 5 dan 1 kemasan isi 12, totalnya Rp338.000. Langkah berikutnya, mengurangi isi 8 menjadi 2 kemasan, belum dicoba; di situ biaya turun menjadi Rp337.600."
+          },
+          "D": {
+            "uji": "urut harga satuan",
+            "teks": "Kemasan diambil menurut harga per buku: 4 kemasan isi 8, lalu 3 kemasan isi 12 sampai kebutuhan terlampaui. Hasilnya 68 buku seharga 166.400 + 190.800 = 357.200, sah tetapi jauh lebih mahal karena 4 buku berlebih ikut dibayar."
+          },
+          "E": {
+            "uji": "71 buku",
+            "teks": "Rp374.600 adalah biaya 3 kemasan isi 5, 4 kemasan isi 8, dan 2 kemasan isi 12, yang berisi 15 + 32 + 24 = 71 buku. Kelebihannya 7 buku, melampaui batas 6 buku."
+          }
+        },
+        "kunci": "Dengan stok isi 8 hanya 4 kemasan, kombinasi termurah yang sah adalah 2 kemasan isi 8 dan 4 kemasan isi 12, yaitu Rp337.600.",
+        "analogi": "Seperti belanja promo yang stoknya terbatas: harga termurah per barang tidak menolong bila barangnya tinggal sedikit. Kamu harus mencari campuran terbaik dari yang masih tersedia.",
+        "waspada": "Berhenti di kombinasi pertama yang menghabiskan stok kemasan paling hemat. Coba juga mengurangi kemasan itu satu per satu; kadang campuran lain lebih pas dengan kebutuhan."
+      },
+      "bukti": {
+        "metode": "7480 kombinasi; 56 sah (64–70 buku, stok dipatuhi); optimum tunggal 0,2,4,0 = Rp337.600; batas bawah Rp332.800 hanya dicapai 8 paket isi 8 (stok 4)",
+        "bentuk": {
+          "jarak": 400,
+          "median": 11100,
+          "terpencil": 1.57,
+          "letak": "B"
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B13-C02",
+      "bab": 13,
+      "peran": "contoh",
+      "jenis": "OPT terbanyak",
+      "bentuk": "anggaran tetap, sisa boleh, pilihan isi",
+      "target_detik": 120,
+      "soal": {
+        "pengantar": "Sekolah menyiapkan anggaran paling banyak Rp320.000 untuk membeli pot bunga. Toko menjual pot dalam tiga kemasan berikut, dan sisa anggaran boleh tidak terpakai.",
+        "tanya": "Banyak pot paling banyak yang dapat dibeli adalah …"
+      },
+      "kalimat_penentu": "sisa anggaran boleh tidak terpakai",
+      "opsi": {
+        "A": "27 pot",
+        "B": "29 pot",
+        "C": "30 pot",
+        "D": "31 pot",
+        "E": "32 pot"
+      },
+      "kunci": "D",
+      "kode": {
+        "A": "J-HEMAT",
+        "B": "J-BATAS",
+        "C": "J-LANGKAH",
+        "D": "kunci",
+        "E": "J-HEMAT"
+      },
+      "nama": {
+        "A": "Menentukan termurah tanpa menghitung kombinasi lain",
+        "B": "Salah membaca batas",
+        "C": "Berhenti satu langkah sebelum selesai",
+        "E": "Menganggap batas atas pasti tercapai"
+      },
+      "alasan_kunci": "Batas atas 32 tak tercapai (32 bukan kelipatan 5); 5 isi 5 + 2 isi 3 = 31 pot, Rp316.000.",
+      "kerangka": "OPT terbanyak · 3 kemasan · anggaran tetap, sisa boleh · batas atas tak tercapai · pilihan isi",
+      "to_terdekat": "kembaran termurah yang belum ada di TO P1 maupun TR; bukan Rp250.000 dan tabel tinta (narasi)",
+      "catatan_reviu": "Kunci rencana slot E dipindah ke D: batas atas 32 (J-HEMAT, batas atas dianggap tercapai) harus jadi pilihan di atas kunci; B13-L02 dipindah D → E sehingga sebaran bab tetap. Kode slot J-HEMAT, J-BATAS (anggaran dibaca harus habis), J-LANGKAH (sisa uang tidak dipakai).",
+      "pembahasan": {
+        "ditanya": "Yang dicari isi terbanyak dengan biaya tidak lebih dari Rp320.000. Kalimat penentunya “sisa anggaran boleh tidak terpakai”: anggaran tidak harus habis.",
+        "cepat": "Harga per pot: isi 3 Rp11.000, isi 5 Rp10.000, dan isi 8 Rp13.000. Batas atasnya 320.000 : 10.000 = 32 pot. Mulai dari kemasan isi 5 sebanyak mungkin: 6 kemasan memberi 30 pot seharga Rp300.000, dan sisa Rp20.000 tidak cukup untuk kemasan apa pun. Kurangi satu kemasan isi 5: sisa uang menjadi Rp70.000, cukup untuk 2 kemasan isi 3. Hasilnya 5 × 5 + 2 × 3 = 31 pot.",
+        "lain": "Uji apakah 32 pot mungkin. 32 pot dengan biaya paling banyak Rp320.000 berarti rata-rata Rp10.000 per pot, dan harga itu hanya dicapai bila semuanya kemasan isi 5. 32 bukan kelipatan 5, jadi 32 pot mustahil dan 31 pot terbanyak.",
+        "cek": "Periksa biaya kunci: 5 kemasan isi 5 dan 2 kemasan isi 3 berharga 250.000 + 66.000 = 316.000, masih di bawah anggaran.",
+        "gugur": {
+          "A": {
+            "uji": "isi 3 diborong",
+            "teks": "Kemasan isi 3 dipilih karena harga per kemasannya paling murah: 9 × 33.000 = 297.000 untuk 27 pot. Harga per potnya justru Rp11.000, lebih mahal daripada kemasan isi 5."
+          },
+          "B": {
+            "uji": "anggaran dikira harus habis",
+            "teks": "Anggaran dibaca harus terpakai tepat Rp320.000. Kombinasi yang biayanya tepat sebesar itu paling banyak 29 pot. Soal membolehkan sisa uang, jadi 31 pot seharga Rp316.000 lebih baik."
+          },
+          "C": {
+            "uji": "sisa Rp20.000 dibiarkan",
+            "teks": "6 kemasan isi 5 memberi 30 pot dan sisa Rp20.000. Satu langkah lagi, menukar satu kemasan isi 5 dengan dua kemasan isi 3, menambah 1 pot dan masih dalam anggaran."
+          },
+          "E": {
+            "uji": "batas atas",
+            "teks": "32 pot adalah batas atas, 320.000 : 10.000. Batas itu hanya tercapai bila setiap pot berharga Rp10.000, artinya semuanya kemasan isi 5, padahal 32 bukan kelipatan 5."
+          }
+        },
+        "kunci": "Lima kemasan isi 5 dan dua kemasan isi 3 memberi 31 pot seharga Rp316.000, sedangkan 32 pot mustahil dalam anggaran.",
+        "analogi": "Seperti mengisi tas belanja dengan uang pas-pasan: menukar satu bungkus besar dengan dua bungkus kecil kadang justru memberi barang lebih banyak, karena sisa uangnya ikut terpakai.",
+        "waspada": "Langsung menjawab 32 dari pembagian anggaran dengan harga per pot termurah. Batas atas hanya batas; periksa apakah kombinasi kemasan benar-benar dapat mencapainya."
+      },
+      "bukti": {
+        "metode": "585 kombinasi; 69 dalam anggaran; isi terbanyak 31 pot (2,5,0); batas atas 320.000 : 10.000 = 32 tidak tercapai; habis tepat Rp320.000 paling banyak 29 pot",
+        "bentuk": {
+          "jarak": 1,
+          "median": 1,
+          "terpencil": 2,
+          "letak": "D"
+        }
+      }
+    },
+    {
+      "id": "HB-TIU-B13-C03",
+      "bab": 13,
+      "peran": "contoh",
+      "jenis": "DAT dua periode",
+      "bentuk": "tiga perpustakaan × dua semester, pasti benar",
+      "target_detik": 90,
+      "soal": {
+        "pengantar": "Tabel berikut mencatat banyak petugas dan pengunjung tiga perpustakaan keliling selama dua semester.",
+        "tanya": "Berdasarkan tabel, pernyataan yang pasti benar adalah …"
+      },
+      "kalimat_penentu": "Berdasarkan tabel",
+      "opsi": {
+        "A": "Persentase kenaikan pengunjung Pustaka Melati lebih besar daripada Pustaka Kenari.",
+        "B": "Pustaka Kenari mengalami persentase kenaikan pengunjung terbesar.",
+        "C": "Pengunjung Pustaka Seroja turun karena jadwal kunjungannya dikurangi.",
+        "D": "Perpustakaan yang petugasnya paling banyak juga paling banyak pengunjungnya pada Semester 2.",
+        "E": "Pengunjung ketiga perpustakaan pada Semester 2 lebih sedikit daripada pengunjung pada Semester 1."
+      },
+      "kunci": "A",
+      "kode": {
+        "A": "kunci",
+        "B": "J-BASIS",
+        "C": "J-AKAL",
+        "D": "J-PENGALIH",
+        "E": "J-LANGKAH"
+      },
+      "nama": {
+        "B": "Membandingkan jumlah padahal yang ditanya persentase",
+        "C": "Dugaan sebab dikira data",
+        "D": "Memakai data yang tidak dibutuhkan",
+        "E": "Berhenti satu langkah sebelum selesai"
+      },
+      "alasan_kunci": "Melati +60/240 = 25% > Kenari +80/400 = 20%.",
+      "kerangka": "DAT dua periode · 3 kategori + kolom petugas · persen kenaikan vs jumlah, sebab, kolom pengalih, total · pasti benar",
+      "to_terdekat": "tidak ada di TO; soal SL hanya dianalisis; bukan tabel dua angkatan (narasi)",
+      "catatan_reviu": "Kode slot J-BASIS, J-AKAL, J-PENGALIH; J-TENTU (slot) tidak punya jalur pada kata tanya pasti benar, diganti J-LANGKAH untuk E (total tidak dijumlahkan). Revisi cek buta 1: dua pilihan berkata \"karena\" mudah dicoret bersama; kata \"karena\" di E dibuang (jalur tetap: total tidak dijumlahkan).",
+      "pembahasan": {
+        "ditanya": "Pilihan yang benar harus terbukti dari angka tabel. Kalimat penentunya “Berdasarkan tabel”: pernyataan yang tidak dibantah tabel, tetapi juga tidak dibuktikannya, bukan jawaban.",
+        "cepat": "Hitung persentase kenaikan. Melati: 300 − 240 = 60, dan 60 : 240 = 25%. Kenari: 480 − 400 = 80, dan 80 : 400 = 20%. Seroja turun 150 − 135 = 15, yaitu 10%. Persentase kenaikan Melati 25%, lebih besar daripada Kenari 20%, jadi A pasti benar.",
+        "lain": "Bandingkan dengan pecahan: Melati naik 60 dari 240, yaitu seperempat; Kenari naik 80 dari 400, yaitu seperlima. Seperempat lebih besar daripada seperlima.",
+        "cek": "Uji pilihan lain dengan angka tabel. Pengunjung Semester 1 berjumlah 240 + 400 + 150 = 790 dan Semester 2 berjumlah 300 + 480 + 135 = 915, jadi total naik. Perpustakaan dengan petugas terbanyak, Seroja, justru pengunjungnya paling sedikit.",
+        "gugur": {
+          "B": {
+            "uji": "80 dari 400",
+            "teks": "Kenari memang bertambah paling banyak, 80 orang. Yang ditanya persentase, dan 80 dari 400 hanya 20%, kalah dari Melati."
+          },
+          "C": {
+            "uji": "sebab tidak tertulis",
+            "teks": "Tabel menunjukkan pengunjung Seroja turun, tetapi tidak menyebut jadwal apa pun. Sebab penurunannya tidak dapat ditentukan dari tabel."
+          },
+          "D": {
+            "uji": "Seroja 5 petugas",
+            "teks": "Kolom petugas tidak menentukan banyak pengunjung. Di tabel ini Seroja punya petugas terbanyak, 5 orang, tetapi pengunjung Semester 2-nya paling sedikit, 135 orang."
+          },
+          "E": {
+            "uji": "total naik",
+            "teks": "Penurunan di Seroja mudah membuat orang mengira total ikut turun. Setelah dijumlahkan, total pengunjung naik dari 790 menjadi 915, jadi pernyataan ini pasti salah."
+          }
+        },
+        "kunci": "Kenaikan Melati 60 dari 240, yaitu 25%, sedangkan kenaikan Kenari 80 dari 400, yaitu 20%.",
+        "analogi": "Seperti membandingkan kenaikan uang saku: naik Rp5.000 dari Rp20.000 lebih terasa daripada naik Rp8.000 dari Rp40.000, walaupun angka kenaikannya lebih kecil.",
+        "waspada": "Memilih B karena 80 lebih besar daripada 60. Sebelum membandingkan, tanyakan dulu: yang diminta jumlah atau persen?"
+      },
+      "bukti": {
+        "metode": "status dari tabel: A pasti benar · B pasti salah · C tidak dapat ditentukan · D pasti salah · E pasti salah; kenaikan 25%, 20%, −10%; jumlah 790 → 915",
+        "pola": "Persentase kenaikan pengunjung Pustaka @ lebih besar daripada Pustaka @."
+      }
+    },
+    {
+      "id": "HB-TIU-B13-L01",
+      "bab": 13,
+      "peran": "latihan",
+      "jenis": "DAT satu periode",
+      "bentuk": "empat kelompok, tidak dapat ditentukan benar atau salahnya",
+      "target_detik": 75,
+      "soal": {
+        "pengantar": "Tabel berikut memuat hasil uji keterampilan empat kelompok peserta pelatihan kerja. Peserta yang belum lulus mengikuti uji ulang pada minggu berikutnya.",
+        "tanya": "Pernyataan yang tidak dapat ditentukan benar atau salahnya dari tabel adalah …"
+      },
+      "kalimat_penentu": "tidak dapat ditentukan benar atau salahnya",
+      "opsi": {
+        "A": "Peserta yang mengikuti uji ulang paling banyak berasal dari kelompok Listrik.",
+        "B": "Kelompok Listrik meluluskan peserta paling banyak.",
+        "C": "Semua peserta kelompok Otomotif yang mengikuti uji ulang dinyatakan lulus.",
+        "D": "Karena pesertanya paling banyak, kelompok Listrik memiliki persentase kelulusan tertinggi.",
+        "E": "Kelompok yang pesertanya paling sedikit juga meluluskan peserta paling sedikit."
+      },
+      "kunci": "C",
+      "kode": {
+        "A": "J-LANGKAH",
+        "B": "J-BASIS",
+        "C": "kunci",
+        "D": "J-TENTU",
+        "E": "J-AKAL"
+      },
+      "nama": {
+        "A": "Berhenti satu langkah sebelum selesai",
+        "B": "Membandingkan persentase padahal yang ditanya jumlah",
+        "D": "Menyamakan \"tidak dapat ditentukan\" dengan \"pasti salah\"",
+        "E": "Menganggap pernyataan umum sebagai dugaan"
+      },
+      "alasan_kunci": "Hasil uji ulang tidak ada di tabel → C; A (tidak lulus Listrik 10, terbanyak), B, E pasti benar; D pasti salah (75% terendah).",
+      "kerangka": "DAT satu periode · 4 kategori, peserta + lulus · selisih peserta − lulus, jumlah vs persen, sebab dengan angka salah, hasil di luar tabel · tidak dapat ditentukan",
+      "to_terdekat": "belum ada di TO",
+      "catatan_reviu": "Kunci rencana T2-D B dipindah ke C (T4-19). Kode slot J-TENTU (D), J-AKAL (E), J-BASIS (B) + J-LANGKAH (A, total tidak dijumlahkan). Revisi cek buta 1: kata tanya \"tidak dapat dipastikan kebenarannya\" (ambigu: pernyataan yang pasti salah juga tidak dapat dipastikan benar) diganti \"tidak dapat ditentukan benar atau salahnya\"; kata \"perempuan\" (hanya di kunci) dibuang: pengantar menyebut uji ulang, kunci dan A sama-sama memakai \"uji ulang\" (A pasti benar lewat peserta − lulus, J-LANGKAH).",
+      "bukti": {
+        "metode": "status dari tabel: A pasti benar · B pasti benar · C tidak dapat ditentukan · D pasti salah · E pasti benar; tidak lulus 6, 10, 3, 7 (uji ulang); persentase 80%, 75%, 88%, 80%",
+        "pola": "Semua peserta kelompok Otomotif yang mengikuti uji ulang dinyatakan lulus."
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta pernyataan yang “tidak dapat ditentukan benar atau salahnya” dari tabel. Pernyataan yang pasti benar dan pernyataan yang pasti salah sama-sama gugur.",
+        "cepat": "Cari pernyataan yang membutuhkan data di luar tabel. Tabel hanya memuat hasil uji pertama, sedangkan C membicarakan hasil uji ulang. Hasil uji ulang tidak ada di tabel, jadi C tidak dapat ditentukan. Pilihan lain bisa dihitung dari tabel.",
+        "lain": "Hitung peserta yang belum lulus: 30 − 24 = 6, 40 − 30 = 10, 25 − 22 = 3, dan 35 − 28 = 7. Hitung persentase lulus: 24 : 30 = 80%, 30 : 40 = 75%, 22 : 25 = 88%, dan 28 : 35 = 80%.",
+        "cek": "Uji status setiap pilihan: A pasti benar karena Listrik punya 10 peserta uji ulang, terbanyak; B pasti benar karena Listrik meluluskan 30 peserta, terbanyak; D pasti salah karena 75% justru terendah; E pasti benar karena Otomotif, dengan 25 peserta, juga meluluskan paling sedikit, 22 orang.",
+        "gugur": {
+          "A": {
+            "uji": "pasti benar",
+            "teks": "Tabel tidak menulis banyak peserta uji ulang, tetapi angkanya bisa dihitung: peserta dikurangi yang lulus. Listrik 10 orang, paling banyak, jadi A pasti benar. A terpilih bila pengurangan itu tidak dikerjakan."
+          },
+          "B": {
+            "uji": "pasti benar",
+            "teks": "Listrik meluluskan 30 peserta, paling banyak. Persentasenya memang terendah, tetapi B membicarakan banyak peserta yang lulus, bukan persentase."
+          },
+          "D": {
+            "uji": "pasti salah",
+            "teks": "Persentase lulus Listrik 75%, justru paling rendah. D pasti salah, bukan tidak dapat ditentukan."
+          },
+          "E": {
+            "uji": "pasti benar",
+            "teks": "Otomotif pesertanya paling sedikit, 25 orang, dan lulusnya juga paling sedikit, 22 orang. Kalimatnya terdengar seperti dugaan umum, tetapi isinya bisa diperiksa dan benar."
+          }
+        },
+        "kunci": "Hasil uji ulang tidak tercatat di tabel, sehingga C tidak dapat ditentukan benar atau salahnya, sedangkan pilihan lain dapat dihitung dari tabel.",
+        "analogi": "Seperti rapor semester ganjil yang ditanya nilai remedial bulan depan. Nilai yang belum tercatat tidak bisa dibaca dari rapor, seteliti apa pun kamu membacanya.",
+        "waspada": "Memilih D karena persentasenya tidak tertulis di tabel. Angka yang bisa dihitung dari tabel tetap termasuk data; “tidak dapat ditentukan” hanya untuk keterangan yang benar-benar tidak ada."
+      }
+    },
+    {
+      "id": "HB-TIU-B13-L02",
+      "bab": 13,
+      "peran": "latihan",
+      "jenis": "OPT termurah",
+      "bentuk": "ongkos kirim per jenis kemasan, pilihan biaya",
+      "target_detik": 120,
+      "soal": {
+        "pengantar": "Kantin sekolah membutuhkan paling sedikit 40 kg tepung terigu. Pemasok menjual tepung dalam tiga kemasan berikut. Setiap jenis kemasan dikirim dari gudang yang berbeda, sehingga ada ongkos kirim Rp15.000 untuk setiap jenis kemasan yang dipesan.",
+        "tanya": "Biaya termurah, termasuk ongkos kirim, untuk memenuhi kebutuhan kantin adalah …"
+      },
+      "kalimat_penentu": "untuk setiap jenis kemasan yang dipesan",
+      "opsi": {
+        "A": "Rp335.000",
+        "B": "Rp340.000",
+        "C": "Rp370.000",
+        "D": "Rp375.000",
+        "E": "Rp385.000"
+      },
+      "kunci": "D",
+      "kode": {
+        "A": "J-HEMAT",
+        "B": "J-LANGKAH",
+        "C": "J-BATAS",
+        "D": "kunci",
+        "E": "J-HEMAT"
+      },
+      "nama": {
+        "A": "Menentukan termurah tanpa menghitung kombinasi lain",
+        "B": "Berhenti satu langkah sebelum selesai",
+        "C": "Salah membaca batas",
+        "E": "Menentukan termurah tanpa menghitung kombinasi lain"
+      },
+      "alasan_kunci": "4 × 10 kg + 1 ongkos = Rp375.000; tanpa ongkos 5 + 10 + 25 kg = Rp340.000, dan bila ongkosnya ditambahkan belakangan Rp385.000.",
+      "kerangka": "OPT termurah + ongkos tetap · 3 kemasan · ongkos per jenis mengubah kombinasi termurah · pilihan biaya",
+      "to_terdekat": "belum ada di TO",
+      "catatan_reviu": "Kunci rencana slot D dipindah ke E (pasangan B13-C02 D). Kode slot J-LANGKAH ×2 (ongkos terlupa; ongkos dihitung sekali), J-HEMAT (batas bawah + satu ongkos), J-BATAS (35 kg, kurang). Revisi cek buta 1: semua pilihan salah lebih murah dari kunci (kunci = angka terbesar). Pilihan Rp355.000 (ongkos dihitung sekali) diganti Rp385.000 = kombinasi termurah tanpa ongkos (5 + 10 + 25 kg) lalu tiga ongkos ditambahkan (sah, lebih mahal; J-HEMAT); kunci E → D.",
+      "bukti": {
+        "metode": "180 kombinasi; optimum dengan ongkos 0,4,0 = Rp375.000; tanpa ongkos 1,1,1 = Rp340.000; C = 5,1,0 (35 kg, kurang); E = 1,1,1 + 3 ongkos = Rp385.000",
+        "bentuk": {
+          "jarak": 5000,
+          "median": 7500,
+          "terpencil": 1.33,
+          "letak": "D"
+        }
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta biaya termurah, termasuk ongkos kirim, untuk paling sedikit 40 kg tepung. Kalimat penentunya “untuk setiap jenis kemasan yang dipesan”: memakai banyak jenis kemasan menambah ongkos.",
+        "cepat": "Satu jenis kemasan hanya kena satu ongkos. Coba kemasan 10 kg saja: 4 × 90.000 + 15.000 = 375.000 rupiah. Campuran tiga jenis, 5 + 10 + 25 = 40 kg, menghabiskan 50.000 + 90.000 + 200.000 + 3 × 15.000 = 385.000 rupiah, lebih mahal. Kemasan 25 kg dengan tiga kemasan 5 kg menghabiskan 200.000 + 3 × 50.000 + 2 × 15.000 = 380.000 rupiah, juga lebih mahal.",
+        "lain": "Hitung batas bawahnya. Kemasan termurah per kilogram adalah isi 25 kg, 200.000 : 25 = 8.000 rupiah per kg, jadi 40 kg tepung tidak mungkin lebih murah dari 40 × 8.000 + 15.000 = 335.000 rupiah. Batas itu tidak tercapai, sebab 40 kg tidak bisa disusun dari kemasan 25 kg saja. Kombinasi sah termurah adalah empat kemasan 10 kg.",
+        "cek": "Pastikan kebutuhan terpenuhi: 4 × 10 = 40 kg, tepat sebanyak kebutuhan. Pilihan yang lebih murah dari 375.000 rupiah semuanya tidak sah atau belum memasukkan ongkos.",
+        "gugur": {
+          "A": {
+            "uji": "batas bawah",
+            "teks": "335.000 rupiah adalah batas bawah dari harga per kilogram termurah. Tidak ada kombinasi kemasan yang tepat mencapainya."
+          },
+          "B": {
+            "uji": "ongkos terlupa",
+            "teks": "50.000 + 90.000 + 200.000 = 340.000 rupiah adalah harga tepung tanpa ongkos kirim. Ongkos tiga jenis kemasan belum ditambahkan."
+          },
+          "C": {
+            "uji": "35 kg",
+            "teks": "Lima kemasan 5 kg dan satu kemasan 10 kg hanya 5 × 5 + 10 = 35 kg, kurang dari 40 kg, walaupun biayanya 5 × 50.000 + 90.000 + 2 × 15.000 = 370.000 rupiah. Kombinasi ini murah karena tidak memenuhi kebutuhan."
+          },
+          "E": {
+            "uji": "termurah tanpa ongkos",
+            "teks": "Kombinasi termurah tanpa ongkos dipilih lebih dulu, lalu ongkosnya ditambahkan: 340.000 + 3 × 15.000 = 385.000 rupiah. Ongkos harus ikut dibandingkan sejak awal."
+          }
+        },
+        "kunci": "Empat kemasan 10 kg hanya kena satu ongkos, sehingga biayanya 4 × 90.000 + 15.000 = 375.000 rupiah, lebih murah dari setiap kombinasi sah lainnya.",
+        "analogi": "Seperti belanja daring dari beberapa toko: barang termurah dari tiga toko berbeda bisa jadi lebih mahal daripada membeli semuanya di satu toko, karena setiap toko menarik ongkos kirim sendiri.",
+        "waspada": "Menyusun kombinasi termurah tanpa ongkos, lalu menambahkan ongkosnya belakangan. Bila ongkos bergantung pada pilihanmu, masukkan ongkos itu sejak membandingkan kombinasi."
+      }
+    },
+    {
+      "id": "HB-TIU-B13-L03",
+      "bab": 13,
+      "peran": "latihan",
+      "jenis": "OPT termurah",
+      "bentuk": "dua jenis barang dalam paket campuran, pilihan kombinasi",
+      "target_detik": 150,
+      "soal": {
+        "pengantar": "Koperasi menjual alat tulis dalam tiga paket campuran berikut. Seorang guru membutuhkan paling sedikit 9 buku dan paling sedikit 11 pulpen.",
+        "tanya": "Kombinasi paket dengan biaya termurah yang memenuhi kebutuhan guru adalah …"
+      },
+      "kalimat_penentu": "paling sedikit 11 pulpen",
+      "opsi": {
+        "A": "1 paket X dan 4 paket Y",
+        "B": "4 paket X dan 1 paket Y",
+        "C": "3 paket Y dan 1 paket Z",
+        "D": "1 paket Y dan 4 paket Z",
+        "E": "2 paket X dan 3 paket Y"
+      },
+      "kunci": "E",
+      "kode": {
+        "A": "J-BATAS",
+        "B": "J-SYARAT",
+        "C": "J-SYARAT",
+        "D": "J-HEMAT",
+        "E": "kunci"
+      },
+      "nama": {
+        "A": "Salah membaca batas",
+        "B": "Melewatkan atau melonggarkan satu syarat",
+        "C": "Melewatkan atau melonggarkan satu syarat",
+        "D": "Menentukan termurah tanpa menghitung kombinasi lain"
+      },
+      "alasan_kunci": "2 X + 3 Y = 9 buku + 11 pulpen, Rp194.000, optimum tunggal; A cukup jumlah total saja, B/C satu jenis kurang, D sah tetapi Rp202.000.",
+      "kerangka": "OPT termurah dua barang · 3 paket campuran · kebutuhan minimal tiap jenis · pilihan kombinasi",
+      "to_terdekat": "belum ada di TO",
+      "catatan_reviu": "Kode = rencana slot (J-SYARAT ×2, J-HEMAT, J-BATAS: kebutuhan dibaca sebagai jumlah seluruh barang). Revisi cek buta 1: B 3 X + 1 Y diganti 4 X + 1 Y (13 buku, 7 pulpen, Rp198.000) agar ciri \"X + Y\" dan \"5 paket\" beririsan di tiga pilihan (A, B, E), bukan di A dan E saja; B dan A kini cermin satu sama lain, bukan dengan kunci.",
+      "bukti": {
+        "metode": "729 kombinasi; 649 memenuhi ≥ 9 buku dan ≥ 11 pulpen; optimum tunggal 2 X + 3 Y = Rp194.000; A 7 buku 13 pulpen Rp192.000, B 13 buku 7 pulpen Rp198.000, C 5 buku 11 pulpen Rp155.000, D 9 buku 11 pulpen Rp202.000, E 9 buku 11 pulpen Rp194.000",
+        "pola": "# paket @ dan # paket @"
+      },
+      "pembahasan": {
+        "ditanya": "Soal meminta kombinasi termurah yang memenuhi paling sedikit 9 buku dan “paling sedikit 11 pulpen”. Kedua batas harus dipenuhi masing-masing, bukan jumlahnya.",
+        "cepat": "Hitung isi dan harga E: buku 2 × 3 + 3 × 1 = 9, pulpen 2 × 1 + 3 × 3 = 11, dan harga 2 × 40.000 + 3 × 38.000 = 194.000 rupiah. Kedua kebutuhan tepat terpenuhi. Pilihan yang lebih murah ternyata kekurangan buku atau pulpen, dan D sah tetapi lebih mahal.",
+        "lain": "Setiap paket berisi 4 barang dan kebutuhannya 9 + 11 = 20 barang, jadi paling sedikit 20 : 4 = 5 paket. Paket Z paling mahal, jadi lima paket termurah memakai X dan Y. Dengan 1 paket X, buku hanya 3 + 4 = 7; dengan 3 paket X, pulpen hanya 3 + 2 × 3 = 9. Tinggal 2 paket X dan 3 paket Y.",
+        "cek": "Uji kemungkinan lain: enam paket paling murah 6 × 38.000 = 228.000 rupiah, sudah lebih mahal dari 194.000 rupiah. Kombinasi E memang termurah di antara semua kombinasi yang sah.",
+        "gugur": {
+          "A": {
+            "uji": "7 buku",
+            "teks": "Isinya 3 + 4 = 7 buku dan 1 + 4 × 3 = 13 pulpen, jumlahnya 20 barang. Jumlahnya pas, tetapi buku kurang dari 9."
+          },
+          "B": {
+            "uji": "7 pulpen",
+            "teks": "Bukunya 4 × 3 + 1 = 13, tetapi pulpen hanya 4 + 3 = 7, kurang dari 11."
+          },
+          "C": {
+            "uji": "5 buku",
+            "teks": "Pulpennya 3 × 3 + 2 = 11, cukup, tetapi buku hanya 3 + 2 = 5. Harganya 3 × 38.000 + 41.000 = 155.000 rupiah, murah karena kebutuhan buku tidak terpenuhi."
+          },
+          "D": {
+            "uji": "sah, lebih mahal",
+            "teks": "Isinya 1 + 4 × 2 = 9 buku dan 3 + 4 × 2 = 11 pulpen, jadi sah. Harganya 38.000 + 4 × 41.000 = 202.000 rupiah, lebih mahal dari E."
+          }
+        },
+        "kunci": "2 paket X dan 3 paket Y tepat memberi 9 buku dan 11 pulpen dengan harga 194.000 rupiah, termurah di antara kombinasi yang memenuhi kedua kebutuhan.",
+        "analogi": "Seperti membeli bahan seragam: kain putih dan kain biru harus cukup masing-masing. Total kain yang pas tidak menolong bila kain birunya kurang.",
+        "waspada": "Memilih A karena harganya murah dan jumlah barangnya pas 20. Periksa kebutuhan per jenis barang, bukan jumlah semua barang."
+      }
+    }
+  ]
+}

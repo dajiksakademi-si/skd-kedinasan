@@ -1,0 +1,16 @@
+{
+  "name": "k12-spatial-engine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Deterministic SVG generator for figural/spatial multiple-choice items (series, 3x3 matrix, analogy) with explanations.",
+  "scripts": {
+    "gen": "tsx src/generate.ts",
+    "test": "tsx src/generate.ts .test-out && tsx src/check.ts .test-out",
+    "gen:tiu": "tsx src/tiu-generate.ts",
+    "test:tiu": "tsx src/tiu-generate.ts .test-out-tiu",
+    "mockup": "esbuild src/tiu-mockup.ts --bundle --format=iife --alias:node:assert/strict=./src/shim-assert.ts --outfile=mockup/mockup.js"
+  },
+  "devDependencies": {
+    "tsx": "^4.22.4"
+  }
+}

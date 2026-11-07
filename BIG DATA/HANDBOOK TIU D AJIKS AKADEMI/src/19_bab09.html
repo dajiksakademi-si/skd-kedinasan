@@ -1,0 +1,320 @@
+<!-- ═════════ BAB 9 · DERET ANGKA TABEL ═════════
+     Rencana: reports/tahap2_C_numerik.md Bab 9 + sebaran latihan T2-1b (4 latihan). "Model kotak" = format kisi aplikasi
+     CAT deret tabel (log T1, putusan sampul 2026-10-28). Semua angka narasi dihitung di scripts/cek_bab06_10.mjs. -->
+<section class="bab num" data-bab="9">
+  <header class="band">
+    <div class="no">9</div>
+    <div>
+      <h2>Deret Angka Tabel</h2>
+      <p>Bab ini membahas tabel sebagai rumus, tabel dua kolom, tabel 3 × 3, model kotak dengan angka acuan, kotak dengan dua isian, dan cara memastikan aturan yang ditemukan memang tunggal.</p>
+      <p class="waktu"><svg class="ico"><use href="#jam"/></svg>{{TARGET}}</p>
+    </div>
+    <div class="kisi" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="emas"></i></div>
+  </header>
+
+  <p class="lead">Tabel angka adalah rumus yang disembunyikan. Sebelum mencari aturannya, tentukan dulu berapa masukan yang dipakai rumus itu: satu masukan, dua masukan dari sel yang sebaris, atau masukan dari angka acuan di tepi tabel. Jawaban atas pertanyaan ini memangkas daftar aturan yang perlu dicoba. Kerjakan pertanyaan pembuka berikut sebelum membaca uraiannya.</p>
+
+<!--B09-P01:mulai-->
+<div data-soal="HB-TIU-B09-P01" data-target="75">
+  <div class="soal">
+    <div class="meta"><span id="soal-B09-P01">Pertanyaan Pembuka<a class="ke" href="#bahas-B09-P01">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 75 detik</span></div>
+    <p class="stem">Bilangan pada setiap baris tabel berikut mengikuti <mark>aturan yang sama</mark>.</p>
+    <table class="tb pola petak"><tbody><tr><td>36</td><td>4</td><td>13</td></tr><tr><td>35</td><td>5</td><td>12</td></tr><tr><td>48</td><td>6</td><td>14</td></tr><tr><td>63</td><td>7</td><td class="x">X</td></tr></tbody></table>
+    <p class="stem">Nilai X yang tepat adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>9</b></div><div><span class="h">B</span><b>16</b></div><div><span class="h">C</span><b>22</b></div><div><span class="h">D</span><b>56</b></div><div><span class="h">E</span><b>70</b></div></div>
+  </div>
+  <div class="guru"><b>TBD 3 × 3 per baris, a : b + b, empat baris (bank D'Ajiks Soal 7).</b> Kunci B. Kode: A J-LANGKAH · B <b>kunci</b> · C J-TIGA · D J-PENGALIH · E J-PENGALIH. Kerangka: Soal 7 bank deret tabel D'Ajiks Level 5–6 apa adanya (tabel, aturan, kelima pilihan); hanya urutan pilihan disusun naik. TO terdekat: bank deret tabel D'Ajiks Level 5–6 Soal 7. Bukti: bank D'Ajiks GENERATE SOAL TERBARU SKD 2026, Deret Tabel Level 5–6 Soal 7; X tunggal (brute force); rumus lain sumber tidak membenarkan pilihan salah Jarak kunci ke pilihan terdekat 6, median jarak 10,5. Ganti soal lama a × (a − b) bernegatif (T6-6). Sumber: GENERATE SOAL TERBARU SKD 2026/docs/deret-tabel-level-5-6 (scripts/build-deret-tabel-lv56.js), Soal 7, kunci sumber C (16). Urut naik membuat kunci B.</div>
+</div>
+<!--B09-P01:selesai-->
+
+  <h3>Membaca Tabel sebagai Rumus</h3>
+  <p>Setiap tabel pola bilangan termasuk salah satu dari tiga bentuk berikut. Bentuk menentukan alat yang dipakai.</p>
+  <table class="tb">
+    <thead><tr><th style="width:22%">Bentuk</th><th style="width:38%">Masukan rumus</th><th>Alat</th></tr></thead>
+    <tbody>
+      <tr><td><b>Tabel dua kolom</b></td><td>satu: bilangan di kolom kiri</td><td>alat barisan dari Bab 8</td></tr>
+      <tr><td><b>Tabel 3 × 3</b></td><td>dua: sel-sel yang sebaris atau sekolom</td><td>uji aturan di setiap baris lengkap</td></tr>
+      <tr><td><b>Model kotak</b></td><td>angka acuan di tepi, atau petak tetangga</td><td>uji pemisahan</td></tr>
+    </tbody>
+  </table>
+  <p>Buku ini menyebut susunan petak seperti pada aplikasi latihan CAT deret tabel sebagai <b>model kotak</b>: bilangan disusun dalam kisi, satu atau dua petak berisi tanda tanya, dan isi setiap petak bergantung pada letaknya.</p>
+
+  <h3>Tabel Dua Kolom sebagai Tabel Suku ke-n</h3>
+  <p>Tabel dua kolom adalah tabel suku ke-<i>n</i> dengan nama lain: kolom kiri berperan sebagai nomor, kolom kanan sebagai nilai. Semua alat Bab 8 berlaku, termasuk kenaikan per suku bila kolom kiri meloncat dan syarat banyak titik.</p>
+  <div class="konsep">
+    <div class="def">
+      <p>Pada tabel di samping, kenaikan per suku 5, 8, dan 12 tidak tetap, jadi polanya bukan linear. Kurangi kuadrat kolom kiri dari kolom kanan: sisanya selalu 1. Aturannya kanan = kiri<sup>2</sup> + 1, dan empat baris cukup sebagai bukti pola kuadrat.</p>
+      <p>Alat kedua: bagi kolom kanan dengan kolom kiri. Pada pasangan 2 → 10, 4 → 28, 5 → 40, dan 8 → 88, hasil baginya 5, 7, 8, dan 11, yaitu kiri + 3. Aturannya kanan = kiri × (kiri + 3). Pemeriksaan faktor ini menyambung ke Bab 7.</p>
+    </div>
+    <table class="hit">
+      <thead><tr><th>Kiri</th><th>Kanan</th><th>Kanan − kiri²</th></tr></thead>
+      <tbody>
+        <tr><td>2</td><td>5</td><td>1</td></tr>
+        <tr><td>3</td><td>10</td><td>1</td></tr>
+        <tr><td>5</td><td>26</td><td>1</td></tr>
+        <tr class="uji"><td>7</td><td>50</td><td>1</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Tabel 3 × 3: Aturan per Baris atau per Kolom</h3>
+  <p>Pada tabel 3 × 3, sel ketiga setiap baris dihitung dari dua sel sebelumnya, atau sel ketiga setiap kolom dihitung dari dua sel di atasnya. Rumuskan aturan dari satu baris lengkap, lalu uji di <b>setiap</b> baris lengkap lainnya. Aturan yang gagal di satu baris dibuang, secocok apa pun di baris pertama.</p>
+  <table class="tb">
+    <thead><tr><th style="width:16%">Baris</th><th style="width:24%">Isi</th><th style="width:30%"><i>a</i> + <i>b</i> + 2</th><th><i>a</i> × (<i>b</i> − 1)</th></tr></thead>
+    <tbody>
+      <tr><td><b>1</b></td><td>3, 4, 9</td><td>3 + 4 + 2 = 9, cocok</td><td>3 × 3 = 9, cocok</td></tr>
+      <tr><td><b>2</b></td><td>5, 2, 5</td><td>5 + 2 + 2 = 9, gagal</td><td>5 × 1 = 5, cocok</td></tr>
+      <tr><td><b>3</b></td><td>6, 3, X</td><td>dibuang</td><td>X = 6 × 2 = 12</td></tr>
+    </tbody>
+  </table>
+  <p>Aturan <i>a</i> + <i>b</i> + 2 cocok di baris pertama dan gagal di baris kedua. Aturan <i>a</i> × (<i>b</i> − 1) cocok di kedua baris, jadi X = 12. Bila tidak ada aturan yang cocok per baris, ulangi pemeriksaan per kolom.</p>
+
+  <h3>Ukuran Hasil sebagai Petunjuk Operasi</h3>
+  <p>Ukuran sel hasil dibandingkan dengan sel masukannya memberi petunjuk operasi sebelum aturan dicoba. Dua bilangan satu angka paling besar berjumlah 18 dan paling besar berhasil kali 81. Hasil yang jauh melampaui jumlah masukannya menandakan perkalian atau kuadrat; hasil yang lebih kecil dari kedua masukannya menandakan pengurangan, pembagian, atau sisa bagi. Pada tabel di atas, 9 dari 3 dan 4 masih dalam jangkauan penjumlahan. Karena itu penjumlahan wajar dicoba lebih dulu, dan baris kedualah yang membuangnya.</p>
+
+  <h3>Model Kotak dengan Angka Acuan: Uji Pemisahan</h3>
+  <p>Pada model kotak beracuan, setiap baris dan setiap kolom diberi angka acuan di tepinya, dan isi petak dihitung dari acuan baris dan acuan kolomnya. Misalkan isi petak berbentuk <i>g</i>(acuan baris) + <i>h</i>(acuan kolom). Selisih dua kolom sama dengan selisih <i>h</i> kedua kolom itu, tidak bergantung pada baris. Kebalikannya juga berlaku. Pemeriksaan ini disebut <b>uji pemisahan</b>: hitung selisih dua kolom di setiap baris; bila hasilnya sama, acuan kolom masuk sebagai penjumlah. Bila hasil baginya yang sama, acuan kolom masuk sebagai pengali.</p>
+  <div class="konsep">
+    <div class="def">
+      <p>Pada kotak di samping, kolom kedua dikurangi kolom pertama selalu 6, dan kolom ketiga dikurangi kolom kedua selalu 4. Selisih 6 = 2 × (4 − 1) dan 4 = 2 × (6 − 4), jadi acuan kolom masuk sebagai 2 × acuan kolom.</p>
+      <p>Sisanya bergantung pada baris saja: 6 − 2 = 4, 11 − 2 = 9, dan 27 − 2 = 25, yaitu kuadrat acuan baris. Isi petak = (acuan baris)<sup>2</sup> + 2 × acuan kolom.</p>
+    </div>
+    <table class="hit">
+      <thead><tr><th>Acuan</th><th>1 · 4 · 6</th><th>Selisih</th></tr></thead>
+      <tbody>
+        <tr><td>2</td><td>6 · 12 · 16</td><td>6 · 4</td></tr>
+        <tr><td>3</td><td>11 · 17 · 21</td><td>6 · 4</td></tr>
+        <tr class="uji"><td>5</td><td>27 · 33 · 37</td><td>6 · 4</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Model kotak juga dapat berupa petak tetangga: isi petak dihitung dari petak di kiri dan di atasnya. Uji yang sama berlaku: rumuskan aturan dari satu petak, lalu periksa di setiap petak yang lengkap.</p>
+
+  <h3>Kotak dengan Dua Isian (X dan Y)</h3>
+  <p>Sebagian kotak memuat dua petak kosong, X dan Y, dan pilihan jawabannya berupa pasangan nilai. Cari aturan sekali, hitung X dan Y dengan aturan yang sama, lalu cocokkan <b>kedua</b> nilai dengan pilihan. Pilihan yang benar untuk X tetapi salah untuk Y tetap salah. Perhatikan juga urutannya: nilai pertama pada pilihan adalah X, nilai kedua adalah Y.</p>
+
+  <h3>Bilangan Negatif, Nol, FPB, dan KPK</h3>
+  <p>Tabel yang lebih sulit memuat bilangan negatif, nol, atau aturan berupa FPB dan KPK. Alatnya tidak berubah; yang perlu dijaga adalah tanda dan arah pengurangan. Pada aturan <i>a</i> − <i>b</i>, baris (3, 7) menghasilkan −4, bukan 4. Nol menjadi saksi yang tegas: aturan berbentuk perkalian selalu menghasilkan 0 bila salah satu masukannya 0, sehingga baris bernol cepat membuang aturan yang keliru. FPB dan KPK dikenali dari hubungan habis bagi: KPK dari 4 dan 6 adalah 12, FPB dari 12 dan 18 adalah 6.</p>
+
+  <h3>Ketika Dua Aturan Sama-sama Cocok</h3>
+  <p>Dua baris lengkap belum tentu membuktikan aturan. Perhatikan tabel berikut.</p>
+  <table class="tb">
+    <thead><tr><th style="width:16%">Baris</th><th style="width:24%">Isi</th><th style="width:30%"><i>a</i> × <i>b</i></th><th><i>a</i> + 2<i>b</i> − 2</th></tr></thead>
+    <tbody>
+      <tr><td><b>1</b></td><td>2, 3, 6</td><td>6, cocok</td><td>6, cocok</td></tr>
+      <tr><td><b>2</b></td><td>4, 1, 4</td><td>4, cocok</td><td>4, cocok</td></tr>
+      <tr><td><b>3</b></td><td>5, 3, X</td><td>X = 15</td><td>X = 9</td></tr>
+    </tbody>
+  </table>
+  <p>Kedua aturan cocok di dua baris lengkap, tetapi memberi X yang berbeda. Bila hanya satu dari kedua nilai itu ada di pilihan, pilihan jawaban menjadi penentu. Bila keduanya ada, soal itu bertafsir ganda. Soal di buku ini disusun sehingga hanya satu aturan sederhana yang cocok; kebiasaan menguji aturan kedua tetap perlu, terutama pada soal dari sumber lain.</p>
+
+  <h3>Langkah Penyelesaian Soal Tabel</h3>
+  <div class="rules satu">
+    <div><b>Tentukan bentuknya:</b> tabel dua kolom, tabel 3 × 3, atau model kotak.</div>
+    <div><b>Perkirakan operasi</b> dari ukuran hasil dibandingkan dengan masukannya.</div>
+    <div><b>Rumuskan aturan</b> dari satu baris lengkap.</div>
+    <div><b>Uji di setiap baris lengkap.</b> Gagal di satu baris berarti aturan dibuang; lalu coba arah kolom.</div>
+    <div><b>Model kotak:</b> hitung selisih atau hasil bagi antarkolom di setiap baris.</div>
+    <div><b>Hitung petak kosong.</b> Pada X dan Y, cocokkan kedua nilai beserta urutannya.</div>
+    <div><b>Cek balik:</b> adakah aturan lain yang sama sederhananya dan menunjuk pilihan lain?</div>
+  </div>
+
+  <h3>Kekeliruan pada Soal Tabel</h3>
+  <p>Setiap pilihan salah pada soal tabel D'Ajiks lahir dari salah satu kekeliruan berikut. Nama-nama ini dipakai di setiap pembahasan bab ini.</p>
+  <table class="tb">
+    <thead><tr><th style="width:5%">No.</th><th style="width:32%">Kekeliruan</th><th>Contoh</th><th style="width:28%">Pertanyaan uji</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><b>Aturan cocok di satu baris, tidak diuji di baris lain</b></td><td><i>a</i> + <i>b</i> + 2 dipakai karena cocok di baris pertama</td><td>Sudah diuji di setiap baris lengkap?</td></tr>
+      <tr><td>2</td><td><b>Mencari selisih tetap padahal isinya dari angka acuan</b></td><td>selisih antarpetak sebaris dicari, acuan di tepi diabaikan</td><td>Isi petak bergantung pada letaknya?</td></tr>
+      <tr><td>3</td><td><b>Berhenti satu langkah sebelum selesai</b></td><td>lupa dikurangi 1 atau dibagi 2 di akhir</td><td>Semua langkah aturan sudah dipakai?</td></tr>
+      <tr><td>4</td><td><b>Menjumlahkan sebelum mengalikan</b></td><td><i>a</i> + <i>b</i> × <i>c</i> dikerjakan seperti (<i>a</i> + <i>b</i>) × <i>c</i></td><td>Kali dan bagi sudah dikerjakan lebih dulu?</td></tr>
+      <tr><td>5</td><td><b>Salah tanda atau urutan pengurangan terbalik</b></td><td>3 − 7 ditulis 4</td><td>Yang dikurangi dan pengurangnya sudah benar?</td></tr>
+      <tr><td>6</td><td><b>Lupa bilangan tetap dalam rumus</b></td><td>kanan = kiri<sup>2</sup>, padahal kiri<sup>2</sup> + 1</td><td>Rumusnya sudah diuji di satu baris?</td></tr>
+      <tr><td>7</td><td><b>Selisih nilai dipakai mentah saat kolom kiri meloncat</b></td><td>selisih kolom kanan dianggap kenaikan per suku</td><td>Selisih nilai sudah dibagi selisih kolom kiri?</td></tr>
+    </tbody>
+  </table>
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Padanan Nama Kekeliruan dan Kode</h4>
+    <p>1 J-TIGA (K2) · 2 J-RATA (K5) · 3 J-LANGKAH (K2) · 4 J-URUTAN (K6) · 5 J-TANDA (K3) · 6 J-KONST (K5) · 7 J-NOMOR (K6). Kekeliruan "X benar, Y tidak diperiksa" sengaja tidak diberi nama tersendiri (belum ada kode yang pas; diajarkan sebagai kebiasaan di subbagian X dan Y). Pelajaran TO P1 no. 39: opsi X-Y tidak boleh berisi pasangan tertukar atau cermin tanda, dan kunci tidak boleh tertinggi sendirian pada skor frekuensi angka.</p>
+  </div>
+
+<!--B09-P01-bahas:mulai-->
+  <h3 id="bahas-B09-P01">Pembahasan Pertanyaan Pembuka</h3>
+<div class="bahas-pembuka">
+  <div class="soal">
+    <div class="meta"><span>Pertanyaan Pembuka</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 75 detik</span></div>
+    <p class="stem">Bilangan pada setiap baris tabel berikut mengikuti <mark>aturan yang sama</mark>.</p>
+    <table class="tb pola petak"><tbody><tr><td>36</td><td>4</td><td>13</td></tr><tr><td>35</td><td>5</td><td>12</td></tr><tr><td>48</td><td>6</td><td>14</td></tr><tr><td>63</td><td>7</td><td class="x">X</td></tr></tbody></table>
+    <p class="stem">Nilai X yang tepat adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>9</b></div><div><span class="h">B</span><b>16</b></div><div><span class="h">C</span><b>22</b></div><div><span class="h">D</span><b>56</b></div><div><span class="h">E</span><b>70</b></div></div>
+  </div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta X di baris terakhir. Kalimat penentunya “aturan yang sama”: aturan yang kamu temukan harus berlaku di ketiga baris lengkap, bukan cuma di baris pertama.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd><b>Pola:</b> angka pertama dibagi angka kedua, lalu ditambah angka kedua. Petunjuknya, angka pertama selalu habis dibagi angka kedua (36 : 4, 35 : 5, 48 : 6). Itu tanda kuat ada pembagian. 36 : 4 = 9, padahal isinya 13, masih kurang 4, dan 4 itu angka kedua sendiri. <b>Cek ke semua baris:</b><table class="hit"><thead><tr><th>Baris</th><th>Hitungan</th><th>Isi</th></tr></thead><tbody><tr><td>1 </td><td>36 : 4 + 4 = 9 + 4 </td><td>13 </td></tr><tr><td>2 </td><td>35 : 5 + 5 = 7 + 5 </td><td>12 </td></tr><tr><td>3 </td><td>48 : 6 + 6 = 8 + 6 </td><td>14 </td></tr></tbody></table><b>Hitung X:</b> 63 : 7 + 7 = 9 + 7 = 16.</dd></div>
+    <div><dt>Cara lain</dt><dd>Kurangi isi dengan hasil baginya. Baris 1: 13 − 9 = 4, baris 2: 12 − 7 = 5, baris 3: 14 − 8 = 6. Kelebihannya selalu sama dengan angka kedua, jadi baris terakhir 9 + 7 = 16.</dd></div>
+    <div><dt>Cek balik</dt><dd>Masukkan 16 ke baris terakhir: 16 − 7 = 9, dan 9 × 7 = 63, tepat angka pertamanya. Aturan sederhana lain yang cocok di ketiga baris tidak menunjuk pilihan lain.</dd></div>
+  </dl></div>
+  <div class="gugur"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><span class="v">9<span class="uji">63 : 7 = 9</span></span><div class="x"><b>Berhenti satu langkah sebelum selesai.</b> Baru hasil baginya. Langkah menambah angka kedua belum dikerjakan, jadi masih kurang 7.</div></div><div class="g"><span class="h">C</span><span class="v">22<span class="uji">63 : 3 + 1 = 22</span></span><div class="x"><b>Aturan cocok di satu baris, tidak diuji di baris lain.</b> Dibagi 3 lalu ditambah 1 memang cocok di baris 1 (36 : 3 + 1 = 13). Di baris 2, 35 : 3 bahkan tidak habis, jadi aturan itu gugur.</div></div><div class="g"><span class="h">D</span><span class="v">56<span class="uji">63 − 7 = 56</span></span><div class="x"><b>Mengurangkan tanpa menguji baris lain.</b> Operasinya ditebak dari dua angka yang terlihat, tanpa dicoba ke baris lain. Di baris 1, 36 − 4 = 32, bukan 13.</div></div><div class="g"><span class="h">E</span><span class="v">70<span class="uji">63 + 7 = 70</span></span><div class="x"><b>Menjumlahkan tanpa menguji baris lain.</b> Tebakan yang sama, hanya tandanya tambah. Di baris 1, 36 + 4 = 40, jauh dari 13.</div></div></div>
+  <div class="jwb"><span>B</span><p><b>Jawaban: B.</b> Angka pertama dibagi angka kedua lalu ditambah angka kedua berlaku di ketiga baris lengkap, dan baris terakhir memberi 63 : 7 + 7 = 16.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti resep kue: takarannya baru bisa dipercaya kalau hasilnya bagus setiap kali dicoba, bukan cuma sekali. Aturan tabel juga begitu, harus jadi di setiap baris.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Berhenti di 63 : 7 = 9 lalu langsung memilih 9. Di baris 1 kamu sudah melihat 9 masih kurang 4 dari 13, jadi langkah menambah itu jangan tertinggal di baris terakhir.</span></div></div>
+  <p class="balik"><a class="ke" href="#soal-B09-P01">Kembali ke soal</a></p>
+</div>
+<!--B09-P01-bahas:selesai-->
+
+  <h3>Contoh Soal dan Pembahasan</h3>
+  <p>Empat contoh berikut memperagakan tabel dua kolom, tabel 3 × 3 dengan bilangan negatif atau nol, model kotak beracuan, dan kotak dengan dua isian. Kerjakan setiap contoh sendiri dalam target waktunya sebelum membaca pembahasan.</p>
+<!--B09-C01:mulai-->
+<div data-soal="HB-TIU-B09-C01" data-target="60">
+  <div class="soal">
+    <div class="meta"><span>Contoh 1</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 60 detik</span></div>
+    <p class="stem">Setiap bilangan di kolom kanan diperoleh dari bilangan di kolom kiri dengan aturan yang sama.</p>
+    <table class="tb pola datar"><tbody><tr><th>Kiri</th><td>7</td><td>3</td><td>10</td><td>4</td></tr><tr><th>Kanan</th><td>58</td><td>18</td><td>109</td><td>25</td></tr></tbody></table>
+    <p class="stem">Bilangan di kolom kanan <mark>untuk bilangan 13</mark> di kolom kiri adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>130</b></div><div><span class="h">B</span><b>153</b></div><div><span class="h">C</span><b>160</b></div><div><span class="h">D</span><b>169</b></div><div><span class="h">E</span><b>178</b></div></div>
+  </div>
+  <div class="guru"><b>TBD dua kolom, kanan = kiri² + 9, kiri tidak urut.</b> Kunci E. Kode: A J-RATA · B J-NOMOR · C J-RATA · D J-KONST · E <b>kunci</b>. Kerangka: TBD dua kolom kuadrat · kiri 7, 3, 10, 4 (tidak urut, meloncat) · tanya kiri 13 · linear dari pasangan 3–4 dan 7–10, kiri 12, tanpa konstanta. TO terdekat: TO P1 tanpa dua kolom; bukan kiri² + 1 dan kiri × (kiri + 3) (narasi). Bukti: derajat 2 di 4 baris; rumus lain ≤ 3 operasi Jarak kunci ke pilihan terdekat 9, median jarak 9. Kode = rencana slot (J-RATA, J-KONST, J-NOMOR; J-RATA dua jalur).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Tabel dua kolom ini adalah tabel suku ke-<i>n</i> dengan kolom kiri sebagai nomor. Kalimat penentunya “untuk bilangan 13”. Kolom kiri tidak urut, jadi urutkan dulu: 3, 4, 7, 10.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Kenaikan per suku: dari 3 ke 4, (25 − 18) : 1 = 7; dari 7 ke 10, (109 − 58) : 3 = 17. Kenaikannya tidak tetap, jadi coba kuadrat. Kurangi kuadrat kolom kiri: 18 − 9 = 9, 25 − 16 = 9, 58 − 49 = 9, dan 109 − 100 = 9. Aturannya kiri dikuadratkan lalu ditambah 9, dan 13 × 13 + 9 = 178.</dd></div>
+    <div><dt>Cara lain</dt><dd>Lanjutkan dari kiri 10. Kenaikan dari 10 ke 11 adalah 11 × 11 − 10 × 10 = 21, lalu naik 2 setiap langkah: 21, 23, 25. Bilangan kanannya 109 + 21 + 23 + 25 = 178.</dd></div>
+    <div><dt>Cek balik</dt><dd>Uji aturan di baris kiri 7: 7 × 7 + 9 = 58. Cocok.</dd></div>
+  </dl></div>
+  <div class="gugur"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><span class="v">130<span class="uji">kenaikan 7</span></span><div class="x"><b>Menganggap selisihnya selalu sama.</b> Kenaikan 7 dari pasangan 3 dan 4 dipakai sampai 13: 109 + 3 × 7 = 130. Kenaikan pola kuadrat makin besar.</div></div><div class="g"><span class="h">B</span><span class="v">153<span class="uji">kiri 12</span></span><div class="x"><b>Bilangan kiri meleset satu.</b> Aturannya benar, tetapi bilangan kiri yang dimasukkan meleset: 12 × 12 + 9 = 153. Periksa lagi bilangan yang ditanya.</div></div><div class="g"><span class="h">C</span><span class="v">160<span class="uji">kenaikan 17</span></span><div class="x"><b>Menganggap selisihnya selalu sama.</b> Kenaikan 17 dari pasangan 7 dan 10 dianggap tetap: 109 + 3 × 17 = 160. Pada pola ini kenaikannya terus bertambah.</div></div><div class="g"><span class="h">D</span><span class="v">169<span class="uji">13 × 13 = 169</span></span><div class="x"><b>Lupa bilangan tetap dalam rumus.</b> Kuadratnya sudah benar, tetapi bilangan tetap 9 belum ditambahkan.</div></div></div>
+  <div class="jwb"><span>E</span><p><b>Jawaban: E.</b> Setiap bilangan kanan sama dengan kuadrat bilangan kiri ditambah 9, jadi untuk 13 hasilnya 178.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti menghitung ubin lantai persegi ditambah 9 ubin cadangan: berapa pun panjang sisinya, cadangan 9 ubin selalu ikut dihitung.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Lupa menambahkan 9 setelah menemukan kuadratnya, sehingga memilih 169. Setelah merumuskan aturan, uji kembali di satu baris tabel.</span></div></div>
+</div>
+<!--B09-C01:selesai-->
+<!--B09-C02:mulai-->
+<div data-soal="HB-TIU-B09-C02" data-target="75">
+  <div class="soal">
+    <div class="meta"><span>Contoh 2</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 75 detik</span></div>
+    <p class="stem">Bilangan di baris bawah setiap kolom tabel berikut dihitung dari dua bilangan di atasnya <mark>dengan aturan yang sama</mark>.</p>
+    <table class="tb pola petak"><tbody><tr><td>7</td><td>5</td><td>9</td><td>8</td></tr><tr><td>4</td><td>6</td><td>10</td><td class="x">X</td></tr><tr><td>17</td><td>9</td><td>17</td><td>13</td></tr></tbody></table>
+    <p class="stem">Nilai X adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>11</b></div><div><span class="h">B</span><b>16</b></div><div><span class="h">C</span><b>21</b></div><div><span class="h">D</span><b>31</b></div><div><span class="h">E</span><b>37</b></div></div>
+  </div>
+  <div class="guru"><b>TBD 3 × 3 per kolom, 3 × atas − tengah, X di tengah (bank D'Ajiks Soal 11).</b> Kunci A. Kode: A <b>kunci</b> · B J-RATA · C J-PENGALIH · D J-BALIK · E J-TANDA. Kerangka: Soal 11 bank deret tabel D'Ajiks Level 5–6; tabel dan aturan apa adanya; pilihan 5 (13 − 8) diganti 31 (3 × 13 − 8, atas dan bawah tertukar) agar urut naik memberi kunci A. TO terdekat: bank deret tabel D'Ajiks Level 5–6 Soal 11. Bukti: bank D'Ajiks GENERATE SOAL TERBARU SKD 2026, Deret Tabel Level 5–6 Soal 11 (pilihan 5 diganti 31); X tunggal (brute force); rumus lain sumber tidak membenarkan pilihan salah Jarak kunci ke pilihan terdekat 5, median jarak 5,5. Ganti soal lama a² − b² bernegatif (T6-6). Sumber: GENERATE SOAL TERBARU SKD 2026/docs/deret-tabel-level-5-6 (scripts/build-deret-tabel-lv56.js), Soal 11, kunci sumber E (11). Pilihan 37, 16, 21 dari sumber; 31 baru, dicek pemeriksa rumus lain sumber.</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Soal meminta X, angka tengah di kolom terakhir. Kalimat penentunya “dengan aturan yang sama”: aturan dicari per kolom, dari atas ke bawah, dan harus berlaku di setiap kolom yang lengkap.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd><b>Pola:</b> tiga kali angka atas, dikurangi angka tengah. Petunjuknya, angka bawah selalu sedikit di bawah tiga kali angka atas (3 × 7 = 21, 3 × 5 = 15, 3 × 9 = 27). Kurangnya 21 − 17 = 4, 15 − 9 = 6, dan 27 − 17 = 10, persis angka tengah. <b>Cek ke semua kolom:</b><table class="hit"><thead><tr><th>Kolom</th><th>Hitungan</th><th>Isi</th></tr></thead><tbody><tr><td>1 </td><td>3 × 7 − 4 = 21 − 4 </td><td>17 </td></tr><tr><td>2 </td><td>3 × 5 − 6 = 15 − 6 </td><td>9 </td></tr><tr><td>3 </td><td>3 × 9 − 10 = 27 − 10 </td><td>17 </td></tr></tbody></table><b>Hitung X:</b> kolom terakhir memberi 3 × 8 − X = 13. Jadi 24 − X = 13, dan X = 24 − 13 = 11.</dd></div>
+    <div><dt>Cara lain</dt><dd>Tulis aturannya sebagai bawah + tengah = tiga kali atas. Kolom terakhir: 13 + X = 24, jadi X = 11.</dd></div>
+    <div><dt>Cek balik</dt><dd>Masukkan 11 ke kolom terakhir: 3 × 8 − 11 = 24 − 11 = 13, sama dengan angka bawahnya.</dd></div>
+  </dl></div>
+  <div class="gugur"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">B</span><span class="v">16<span class="uji">10 + 6 = 16</span></span><div class="x"><b>Menebak dari baris tengah saja.</b> Baris tengah dibaca sendiri: 4, 6, 10 naik 2 lalu 4, ditebak naik 6. Angka tengah tidak berpola sendiri, ia ditentukan angka atas dan bawah di kolomnya.</div></div><div class="g"><span class="h">C</span><span class="v">21<span class="uji">8 + 13 = 21</span></span><div class="x"><b>Menjumlahkan tanpa menguji kolom lain.</b> Dua angka di kolom itu dijumlahkan tanpa dicoba ke kolom lain. Di kolom pertama, 7 + 17 = 24, bukan 4.</div></div><div class="g"><span class="h">D</span><span class="v">31<span class="uji">3 × 13 − 8 = 31</span></span><div class="x"><b>Angka atas dan bawah tertukar.</b> Yang dikali tiga adalah angka atas (8), bukan angka bawah (13).</div></div><div class="g"><span class="h">E</span><span class="v">37<span class="uji">24 + 13 = 37</span></span><div class="x"><b>Arah hitung pengurang terbalik.</b> X adalah angka pengurang. Dari 24 − X = 13, X dicari dengan 24 − 13, bukan 24 + 13.</div></div></div>
+  <div class="jwb"><span>A</span><p><b>Jawaban: A.</b> Tiga kali angka atas dikurangi angka tengah berlaku di setiap kolom lengkap, dan kolom terakhir memberi 24 − 11 = 13, jadi X = 11.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti uang saku: uang dari orang tua dikurangi jajan sama dengan sisa di dompet. Kalau uang awal dan sisanya sudah tahu, jajanmu dicari dengan mengurangkan, bukan menjumlahkan.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Melihat X di tengah lalu menebak dari baris tengah saja. Pada tabel per kolom, angka yang hilang tetap dicari lewat aturan kolomnya, walaupun letaknya bukan di bawah.</span></div></div>
+</div>
+<!--B09-C02:selesai-->
+<!--B09-C03:mulai-->
+<div data-soal="HB-TIU-B09-C03" data-target="90">
+  <div class="soal">
+    <div class="meta"><span>Contoh 3</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 90 detik</span></div>
+    <p class="stem">Isi setiap petak pada model kotak berikut ditentukan oleh <mark>angka acuan</mark> di tepi barisnya dan angka acuan di tepi kolomnya.</p>
+    <table class="tb pola petak"><tbody><tr><td class="ac sudut"></td><td class="ac">1</td><td class="ac">3</td><td class="ac">6</td></tr><tr><td class="ac">2</td><td>7</td><td>15</td><td>42</td></tr><tr><td class="ac">4</td><td>13</td><td>21</td><td>48</td></tr><tr><td class="ac">5</td><td>16</td><td>24</td><td class="x">X</td></tr></tbody></table>
+    <p class="stem">Nilai X adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>32</b></div><div><span class="h">B</span><b>41</b></div><div><span class="h">C</span><b>42</b></div><div><span class="h">D</span><b>51</b></div><div><span class="h">E</span><b>54</b></div></div>
+  </div>
+  <div class="guru"><b>TBD model kotak beracuan, 3 × acuan baris + (acuan kolom)².</b> Kunci D. Kode: A J-RATA · B J-LANGKAH · C J-TIGA · D <b>kunci</b> · E J-RATA. Kerangka: TBD acuan · sel = 3r + c², acuan baris 2, 4, 5, kolom 1, 3, 6 · X di pojok kanan bawah · selisih sebaris tetap, selisih antarbaris tetap, lupa kali 3, aturan satu baris. TO terdekat: pola acuan bank CAT dihindari (pola_terpakai.txt); bukan r² + 2c (narasi). Bukti: uji pemisahan + rumus lain ≤ 3 operasi atas (acuan baris, acuan kolom) Jarak kunci ke pilihan terdekat 3, median jarak 6. Kode = rencana slot. Rumus lain ≤ 3 operasi atas (acuan baris, acuan kolom) yang cocok di 8 petak hanya memberi 51. Revisi cek buta 1: pilihan E 123 (terpencil) diganti 54 = 48 + 6 (selisih antarbaris dianggap tetap).</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Isi petak bergantung pada acuan baris dan acuan kolomnya. Kalimat penentunya “angka acuan”: selisih antarpetak bertetangga saja tidak cukup.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Uji pemisahan. Kolom kedua dikurangi kolom pertama selalu 8 (15 − 7, 21 − 13, 24 − 16), dan kolom ketiga dikurangi kolom kedua di dua baris atas selalu 27 (42 − 15, 48 − 21). Selisih yang sama di setiap baris berarti acuan kolom masuk sebagai penjumlah. Jadi X = 24 + 27 = 51.</dd></div>
+    <div><dt>Cara lain</dt><dd>Rumuskan aturannya. Selisih 8 = 3 × 3 − 1 × 1 dan 27 = 6 × 6 − 3 × 3, jadi acuan kolom dikuadratkan. Sisanya di petak pertama 7 − 1 = 6 = 3 × 2, jadi acuan baris dikali 3. Untuk baris 5 dan kolom 6: 3 × 5 + 6 × 6 = 51.</dd></div>
+    <div><dt>Cek balik</dt><dd>Uji aturan di petak lain: 3 × 4 + 3 × 3 = 21. Cocok dengan isi petak baris 4, kolom 3.</dd></div>
+  </dl></div>
+  <div class="gugur"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><span class="v">32<span class="uji">24 + 8</span></span><div class="x"><b>Mencari selisih tetap padahal isinya dari angka acuan.</b> Selisih 8 antara kolom pertama dan kedua dipakai lagi untuk kolom ketiga: 24 + 8 = 32. Selisih antarkolom bergantung pada acuan kolom, dan dari kolom kedua ke ketiga selisihnya 27.</div></div><div class="g"><span class="h">B</span><span class="v">41<span class="uji">5 + 36</span></span><div class="x"><b>Berhenti satu langkah sebelum selesai.</b> Acuan baris tidak dikali 3: 5 + 6 × 6 = 41. Di petak pertama cara ini memberi 2 + 1 = 3, bukan 7.</div></div><div class="g"><span class="h">C</span><span class="v">42<span class="uji">36 + 6</span></span><div class="x"><b>Aturan cocok di satu baris, tidak diuji di baris lain.</b> Aturan kuadrat acuan kolom ditambah 6 diambil dari baris acuan 2 saja: 36 + 6 = 42. Di baris acuan 4, tambahannya 3 × 4 = 12, bukan 6.</div></div><div class="g"><span class="h">E</span><span class="v">54<span class="uji">48 + 6</span></span><div class="x"><b>Mencari selisih tetap padahal isinya dari angka acuan.</b> Selisih dari baris acuan 2 ke baris acuan 4 di kolom ketiga, 48 − 42 = 6, dipakai lagi ke baris acuan 5: 48 + 6 = 54. Acuan baris naik 2 lalu 1, jadi selisih antarbaris tidak tetap; di kolom pertama, 16 − 13 = 3.</div></div></div>
+  <div class="jwb"><span>D</span><p><b>Jawaban: D.</b> Isi petak sama dengan 3 kali acuan baris ditambah kuadrat acuan kolom, dan untuk baris 5, kolom 6 hasilnya 15 + 36 = 51.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti harga paket les: biaya pertemuan ditentukan oleh baris paket, biaya modul ditentukan oleh kolom jenjang. Harga sebuah petak adalah jumlah keduanya, sehingga selisih dua jenjang selalu sama di setiap paket.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Melihat 16, 24 di baris terakhir, lalu menambah 8 sekali lagi. Selisih itu hanya berlaku antara kolom pertama dan kedua; selisih kolom kedua ke ketiga berbeda dan terlihat di baris atasnya.</span></div></div>
+</div>
+<!--B09-C03:selesai-->
+<!--B09-C04:mulai-->
+<div data-soal="HB-TIU-B09-C04" data-target="90">
+  <div class="soal">
+    <div class="meta"><span>Contoh 4</span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 90 detik</span></div>
+    <p class="stem">Bilangan pada kotak berikut tersusun menurut pola.</p>
+    <table class="tb pola petak"><tbody><tr><td>3</td><td>7</td><td>13</td><td>21</td><td>31</td><td class="x">X</td></tr><tr><td>5</td><td>13</td><td>25</td><td>41</td><td>61</td><td class="x">Y</td></tr></tbody></table>
+    <p class="stem">Nilai X dan Y <mark>berturut-turut</mark> adalah …</p>
+    <ol class="opsiv"><li><span class="h">A</span><span>41 dan 81</span></li><li><span class="h">B</span><span>43 dan 81</span></li><li><span class="h">C</span><span>43 dan 85</span></li><li><span class="h">D</span><span>43 dan 89</span></li><li><span class="h">E</span><span>45 dan 89</span></li></ol>
+  </div>
+  <div class="guru"><b>TBD kotak X-Y, baris atas selisih bertingkat, bawah = 2 × atas − 1 sekolom.</b> Kunci C. Kode: A J-RATA · B J-RATA · C <b>kunci</b> · D J-NOMOR · E J-NOMOR. Kerangka: TBD 2 × 6 X-Y · atas 3, 7, 13, 21, 31 (selisih +2) · bawah = 2 × atas − 1 sekolom · pilihan salah: selisih atas tetap, selisih bawah tetap, selisih bawah dilompati, selisih atas dilompati. TO terdekat: TO P1 no. 39: bawah dari kolom sebelumnya, 4 kolom; di sini dari kolom sendiri, 5 kolom diketahui. Bukti: atas: selisih 4, 6, 8, 10 (aturan lain hanya 43); bawah = 2 × atas − 1 (rumus lain hanya 85); skor frekuensi. Kode = rencana slot. Lima kolom diketahui (pelajaran TO P1: empat kolom membuat aturan rekursif lain memberi X = 33). Skor frekuensi angka: kunci 4, pilihan E 5 (kunci bukan tertinggi); tanpa pasangan tertukar atau cermin tanda. Revisi cek buta 1: angka 43 tidak lagi terpusat di kunci: pilihan E 43 dan 45 diganti 41 dan 85 (X dari selisih tetap, Y dari baris bawah dibaca sendiri), sehingga 85 dan 41 juga dimiliki dua pilihan. Revisi cek buta 2: pilihan D 43 dan 86 diganti 43 dan 81 (X benar, selisih bawah dianggap tetap 20); kini 41, 43, 81, 85 masing-masing muncul di dua pilihan dan empat pilihan sama-sama berbagi dua unsur. Revisi cek buta 3: kisi 2 × 2 {41, 43} × {81, 85} dipecah: B 41 dan 85 diganti 43 dan 81, D diganti 43 dan 89 (selisih bawah dilompati), E tetap 45 dan 89; tebakan bagian terbanyak per posisi (43 dengan 81 atau 89) jatuh di pilihan salah, dan setiap pilihan berbagi bagian.</div>
+  <div class="kotak inti"><b class="lbl">Inti pertanyaan</b><p>Kotak memuat dua petak kosong. Kalimat penentunya “berturut-turut”: nilai pertama di pilihan adalah X, nilai kedua Y, dan keduanya harus benar.</p></div>
+  <div class="kotak langkah"><b class="lbl">Langkah penyelesaian</b><dl class="tahap">
+    <div><dt>Cara cepat</dt><dd>Baris atas: selisihnya 4, 6, 8, 10, jadi selisih berikutnya 12 dan X = 31 + 12 = 43. Baris bawah dihitung dari baris atas sekolom: 2 × 3 − 1 = 5, 2 × 7 − 1 = 13, sampai 2 × 31 − 1 = 61. Jadi Y = 2 × 43 − 1 = 85.</dd></div>
+    <div><dt>Cara lain</dt><dd>Baris bawah juga dapat dibaca sendiri: selisihnya 8, 12, 16, 20, jadi selisih berikutnya 24 dan Y = 61 + 24 = 85. Kedua cara memberi Y yang sama.</dd></div>
+    <div><dt>Cek balik</dt><dd>Uji pasangan 43 dan 85 di aturan bawah: 2 × 43 − 1 = 85. Tiga pilihan memuat X = 43, tetapi hanya C yang Y-nya cocok dengan aturan bawah.</dd></div>
+  </dl></div>
+  <div class="gugur vb"><b class="lbl">Pilihan yang gugur</b><div class="g"><span class="h">A</span><div class="x"><span class="uji">selisih atas 10 lagi</span><b>Menganggap selisihnya selalu sama.</b> Selisih atas dianggap tetap 10: X = 31 + 10 = 41, lalu Y = 2 × 41 − 1 = 81. Selisih baris atas naik 2 setiap langkah.</div></div><div class="g"><span class="h">B</span><div class="x"><span class="uji">selisih bawah 20 lagi</span><b>Menganggap selisihnya selalu sama.</b> X sudah benar, tetapi baris bawah dibaca sendiri dengan selisih dianggap tetap 20: 61 + 20 = 81. Selisih baris bawah naik 4 setiap langkah (8, 12, 16, 20), jadi berikutnya 24.</div></div><div class="g"><span class="h">D</span><div class="x"><span class="uji">selisih bawah 28</span><b>Selisih berikutnya dihitung satu langkah terlalu jauh.</b> X sudah benar, tetapi selisih bawah dilompati satu: sesudah 20 dipakai 28, bukan 24, sehingga Y = 61 + 28 = 89.</div></div><div class="g"><span class="h">E</span><div class="x"><span class="uji">selisih atas 14</span><b>Selisih berikutnya dihitung satu langkah terlalu jauh.</b> Selisih atas dilompati satu: sesudah 10 dipakai 14, bukan 12. Hasilnya X = 45 dan Y = 2 × 45 − 1 = 89.</div></div></div>
+  <div class="jwb"><span>C</span><p><b>Jawaban: C.</b> Selisih atas berikutnya 12 memberi X = 43, dan aturan sekolom memberi Y = 2 × 43 − 1 = 85.</p></div>
+  <div class="duo"><div class="il"><b>Ilustrasi</b><span>Seperti dua baris tiang pagar yang berpasangan: tinggi tiang belakang selalu dua kali tiang depan dikurangi 1. Menentukan tiang depan saja belum cukup; tiang belakangnya dihitung dari pasangan yang sama.</span></div><div><b>Kekeliruan yang Mungkin Terjadi</b><span>Memilih angka yang paling sering muncul di setiap posisi. X = 43 memang muncul tiga kali, tetapi Y yang paling sering, 81 dan 89, sama-sama salah. Hitung Y dari aturan bawah, jangan dari pilihan.</span></div></div>
+</div>
+<!--B09-C04:selesai-->
+
+  <h3>Latihan</h3>
+  <p>Empat latihan berikut tersusun dari yang paling ringan, dengan target total {{WAKTU_LATIHAN}}. Kerjakan dengan pengatur waktu dan tanpa melihat pembahasan. Kunci dan pembahasannya ada di lampiran.</p>
+<!--B09-L01:mulai-->
+<div data-soal="HB-TIU-B09-L01" data-target="60">
+  <div class="soal">
+    <div class="meta"><span id="soal-B09-L01">Latihan 1<a class="ke" href="#bahas-B09-L01">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 60 detik</span></div>
+    <p class="stem">Setiap bilangan di kolom kanan diperoleh dari bilangan di kolom kiri dengan <mark>aturan yang sama</mark>.</p>
+    <table class="tb pola datar"><tbody><tr><th>Kiri</th><td>5</td><td>2</td><td>9</td><td>7</td></tr><tr><th>Kanan</th><td>15</td><td>3</td><td>31</td><td>23</td></tr></tbody></table>
+    <p class="stem">Bilangan di kolom kanan untuk bilangan 20 di kolom kiri adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>71</b></div><div><span class="h">B</span><b>75</b></div><div><span class="h">C</span><b>79</b></div><div><span class="h">D</span><b>80</b></div><div><span class="h">E</span><b>85</b></div></div>
+  </div>
+  <div class="guru"><b>TBD dua kolom, linear, kiri tidak urut.</b> Kunci B. Kode: A J-NOMOR · B <b>kunci</b> · C J-NOMOR · D J-KONST · E J-TANDA. Kerangka: TBD dua kolom linear 4k − 5 · kiri 5, 2, 9, 7 · tanya kiri 20 · kiri ±1, tanpa konstanta, tanda. TO terdekat: TO P1 tanpa dua kolom. Bukti: linear di 4 baris; rumus lain ≤ 3 operasi Jarak kunci ke pilihan terdekat 4, median jarak 4. Kode = rencana slot (J-NOMOR ×2, J-KONST, J-TANDA). Revisi cek buta 1: pilihan E 119 (selisih mentah, terpencil) diganti 79 = 4 × 21 − 5 (kiri meleset satu ke atas).</div>
+</div>
+<!--B09-L01:selesai-->
+<!--B09-L02:mulai-->
+<div data-soal="HB-TIU-B09-L02" data-target="75">
+  <div class="soal">
+    <div class="meta"><span id="soal-B09-L02">Latihan 2<a class="ke" href="#bahas-B09-L02">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 75 detik</span></div>
+    <p class="stem">Kolom kanan tabel berikut diperoleh dari kolom kiri dengan <mark>satu aturan</mark>.</p>
+    <table class="tb pola datar"><tbody><tr><th>Kiri</th><td>3</td><td>5</td><td>8</td><td>6</td></tr><tr><th>Kanan</th><td>15</td><td>45</td><td>120</td><td>66</td></tr></tbody></table>
+    <p class="stem">Bilangan kanan untuk kiri 11 adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>143</b></div><div><span class="h">B</span><b>190</b></div><div><span class="h">C</span><b>201</b></div><div><span class="h">D</span><b>231</b></div><div><span class="h">E</span><b>242</b></div></div>
+  </div>
+  <div class="guru"><b>TBD dua kolom, kiri × (2 × kiri − 1), sidik faktor.</b> Kunci D. Kode: A J-TIGA · B J-NOMOR · C J-RATA · D <b>kunci</b> · E J-KONST. Kerangka: TBD dua kolom k(2k − 1) · kiri 3, 5, 8, 6 · baris pertama juga cocok k(k + 2) · sidik bagi kiri · kiri −1, linear dua baris akhir, tanpa −1. TO terdekat: TO P1 tanpa dua kolom; bukan kiri × (kiri + 3) (narasi). Bukti: kanan : kiri = 2 × kiri − 1; rumus lain ≤ 3 operasi Jarak kunci ke pilihan terdekat 11, median jarak 20,5. Kode = rencana slot (J-RATA, J-TIGA, J-KONST) + J-NOMOR.</div>
+</div>
+<!--B09-L02:selesai-->
+<!--B09-L03:mulai-->
+<div data-soal="HB-TIU-B09-L03" data-target="90">
+  <div class="soal">
+    <div class="meta"><span id="soal-B09-L03">Latihan 3<a class="ke" href="#bahas-B09-L03">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 90 detik</span></div>
+    <p class="stem">Pada kotak berikut, setiap petak selain baris teratas dan kolom paling kiri dihitung dari <mark>petak di sebelah kirinya dan petak di atasnya</mark> dengan aturan yang sama.</p>
+    <table class="tb pola petak"><tbody><tr><td>5</td><td>6</td><td>4</td><td>7</td></tr><tr><td>3</td><td>7</td><td>9</td><td>14</td></tr><tr><td>8</td><td>13</td><td>20</td><td>32</td></tr><tr><td>2</td><td>13</td><td>31</td><td class="x">X</td></tr></tbody></table>
+    <p class="stem">Nilai X adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>33</b></div><div><span class="h">B</span><b>49</b></div><div><span class="h">C</span><b>61</b></div><div><span class="h">D</span><b>63</b></div><div><span class="h">E</span><b>65</b></div></div>
+  </div>
+  <div class="guru"><b>TBD model kotak tetangga, kiri + atas − 2, 4 × 4.</b> Kunci C. Kode: A J-TIGA · B J-RATA · C <b>kunci</b> · D J-LANGKAH · E J-TANDA. Kerangka: TBD tetangga 4 × 4 · petak = kiri + atas − 2 · 8 petak isian sebagai saksi · atas + 1 (cocok petak pertama), selisih sebaris tetap, tanpa −2, + 2. TO terdekat: bank CAT memakai kiri + atas; di sini dikurangi 2. Bukti: 8 petak isian dicek; rumus lain ≤ 3 operasi atas (kiri, atas) Jarak kunci ke pilihan terdekat 2, median jarak 7. Slot: J-TIGA, J-URUTAN, J-RATA; J-URUTAN tidak bermakna pada aturan tambah-kurang, diganti J-LANGKAH dan J-TANDA.</div>
+</div>
+<!--B09-L03:selesai-->
+<!--B09-L04:mulai-->
+<div data-soal="HB-TIU-B09-L04" data-target="90">
+  <div class="soal">
+    <div class="meta"><span id="soal-B09-L04">Latihan 4<a class="ke" href="#bahas-B09-L04">Lihat pembahasan</a></span><span class="waktu"><svg class="ico"><use href="#jam"/></svg>Target 90 detik</span></div>
+    <p class="stem">Bilangan terakhir di setiap baris tabel berikut dihitung dari tiga bilangan sebelumnya <mark>dengan aturan yang sama</mark>.</p>
+    <table class="tb pola petak"><tbody><tr><td>3</td><td>4</td><td>5</td><td>23</td></tr><tr><td>6</td><td>2</td><td>7</td><td>20</td></tr><tr><td>5</td><td>3</td><td>4</td><td>17</td></tr><tr><td>8</td><td>6</td><td>3</td><td class="x">X</td></tr></tbody></table>
+    <p class="stem">Nilai X yang tepat adalah …</p>
+    <div class="opsi5"><div><span class="h">A</span><b>7</b></div><div><span class="h">B</span><b>18</b></div><div><span class="h">C</span><b>26</b></div><div><span class="h">D</span><b>30</b></div><div><span class="h">E</span><b>42</b></div></div>
+  </div>
+  <div class="guru"><b>TBD 4 kolom per baris, a + b × c, empat baris (bank D'Ajiks Soal 2).</b> Kunci C. Kode: A J-TIGA · B J-LANGKAH · C <b>kunci</b> · D J-PENGALIH · E J-URUTAN. Kerangka: Soal 2 bank deret tabel D'Ajiks Level 5–6; tabel dan aturan apa adanya; pilihan 51 (8 × 6 + 3) diganti 7 (c² − 2, cocok di baris 1 saja) karena 51 terpencil (jarak > 3 × median) dan agar urut naik memberi kunci C. TO terdekat: bank deret tabel D'Ajiks Level 5–6 Soal 2. Bukti: bank D'Ajiks GENERATE SOAL TERBARU SKD 2026, Deret Tabel Level 5–6 Soal 2 (pilihan 51 diganti 7); X tunggal (brute force); rumus lain sumber tidak membenarkan pilihan salah Jarak kunci ke pilihan terdekat 4, median jarak 9,5. Ganti soal lama a² − 2b bernegatif (T6-6, masukan Gusti: terlalu kompleks). Sumber: GENERATE SOAL TERBARU SKD 2026/docs/deret-tabel-level-5-6 (scripts/build-deret-tabel-lv56.js), Soal 2, kunci sumber A (26). Pilihan 18, 30, 42 dari sumber; 7 baru, dicek pemeriksa rumus lain sumber.</div>
+</div>
+<!--B09-L04:selesai-->
+  <div class="note teach guru">
+    <span class="who">Khusus pengajar</span>
+    <h4>Asal Rancangan Bab 9</h4>
+    <p>Putusan T2-1b: Bab 9 = 1 pembuka + 4 contoh + 4 latihan (dari 10 slot latihan laporan T2-C). Dipilih L1 (Standar: dua kolom linear), L3 (HOTS: sidik faktor, menyambung Bab 7), L8 (HOTS: model kotak petak tetangga), L6 (HOTS+: 3 × 3 dua langkah dengan negatif dan nol). Alasan: tingkat naik; keempat bentuk (dua kolom, 3 × 3, kotak acuan di contoh, kotak tetangga) punya latihan; kekeliruan tersebar di K2, K3, K5, K6; tidak ada latihan X-Y (L9, L10 dekat TO 39; X-Y cukup di Contoh 4). Gugur: L2 (dua kolom kuadrat, kembar Contoh 1), L4 (3 × 3 satu operasi, terlalu dekat pembuka), L5 (KPK per kolom; FPB dan KPK diajarkan di narasi), L7 (kotak acuan kedua, kembar Contoh 3), L9, L10.</p>
+    <p>Subbagian "Ketika Dua Aturan Sama-sama Cocok" hanya diajarkan lewat contoh penyangkal di teks, sebab Pilar 4 melarang soal D'Ajiks yang aturan lainnya ikut cocok. Istilah "model kotak" = format kisi aplikasi CAT deret tabel (log T1).</p>
+  </div>
+
+  <div class="ringkas">
+    <h4>Ringkasan Bab 9</h4>
+    <ol>
+      <li>Tentukan <b>banyak masukan</b> lebih dulu: tabel dua kolom (satu), tabel 3 × 3 (dua), model kotak (angka acuan atau petak tetangga).</li>
+      <li>Tabel dua kolom adalah tabel suku ke-<i>n</i>: pakai kenaikan per suku, kurangi kuadrat, atau bagi kolom kanan dengan kolom kiri.</li>
+      <li>Aturan tabel 3 × 3 diuji di <b>setiap</b> baris lengkap; bila gagal, coba arah kolom.</li>
+      <li>Ukuran hasil menunjuk operasi: jauh di atas jumlah masukannya berarti perkalian atau kuadrat.</li>
+      <li><b>Uji pemisahan:</b> selisih antarkolom yang sama di setiap baris berarti acuan kolom masuk sebagai penjumlah.</li>
+      <li>Pada X dan Y, cocokkan kedua nilai beserta urutannya. Dua baris lengkap belum tentu bukti; aturan kedua yang sama sederhananya perlu diperiksa.</li>
+    </ol>
+  </div>
+</section>

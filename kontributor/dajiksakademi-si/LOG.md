@@ -11,3 +11,4 @@
 - Perbaiki: script bisa jalan di perangkat mana pun — `build-to.cjs`, `cek.py` (repo + skill asli), 3× `build.py` handbook, `buat_pdf.js`, `ratakan_sampul.js` tidak lagi memakai alamat Mac; `package.json` akar (puppeteer membawa Chrome sendiri, `npm install`). Diuji: PDF + sampul + data portal OK, cek.py selftest OK.
 - Perbaiki: `.gitignore` — `tmp/` ternyata bahan kerja (paket TKP 1–2, validator TWK, Paket 1 TIU) → ikut repo; `buat_pdf.js` + `gaya_halaman_tiu.html` dari prototipe ikut; `.claude-flow/` (sesi alat lama) keluar.
 - Tambah aturan CLAUDE.md: nama file/folder sah di Windows; script tanpa alamat komputer tertentu.
+- Ubah: skill pindah `skills/` → `.claude/skills/` (dimuat otomatis Claude Code kontributor); tambah skd-belajar, impeccable (tanpa program khusus Mac), ui-ux-pro-max, emil-design-eng, taste-skill, markitdown; plugin ponytail + superpowers di `.claude/settings.json`. `cek.py` disesuaikan, selftest OK.

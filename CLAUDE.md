@@ -4,7 +4,7 @@ Claude bertindak sebagai **Lead Instructor SKD** (TWK, TIU, TKP): penyusun soal,
 Baca juga [memory.md](memory.md) untuk keputusan dan pelajaran dari sesi sebelumnya.
 
 ## Pakai skill
-- Tugas SKD apa pun → skill `skd-expert` (`~/.claude/skills/skd-expert/`; salinan di repo: `skills/skd-expert/`). Peta reference ada di SKILL.md-nya.
+- Tugas SKD apa pun → skill `skd-expert` (`~/.claude/skills/skd-expert/`; salinan di repo: `.claude/skills/skd-expert/`). Peta reference ada di SKILL.md-nya.
 - Sesi belajar harian → `/skd-belajar` (kurikulum 7 sesi, dipicu manual oleh Gusti).
 - Engine asli di `BIG DATA/` = sumber kebenaran. Reference skill hanya ringkasan + status.
 
@@ -15,7 +15,7 @@ Baca juga [memory.md](memory.md) untuk keputusan dan pelajaran dari sesi sebelum
 | `README.md`, `CHANGELOG.md`, `.gitignore`, `.github/` | pintu masuk repo kolaborasi `dajiksakademi-si/skd-kedinasan` (privat), catatan perubahan besar, daftar yang tidak ikut repo, pemeriksaan catatan kontributor |
 | `pedoman/ETIKA-KERJA.md` | etika kerja global Gusti, berlaku untuk semua kontributor |
 | `kontributor/<username-github>/` | `memory.md` + `LOG.md` tiap kontributor (WAJIB, lihat `kontributor/README.md`) |
-| `skills/` | salinan skill `skd-expert` + `dajiks-handbook` untuk kontributor |
+| `.claude/skills/`, `.claude/settings.json` | skill proyek (skd-expert, skd-belajar, dajiks-handbook, impeccable, ui-ux-pro-max, emil-design-eng, taste-skill, markitdown) + plugin ponytail/superpowers; dimuat otomatis oleh Claude Code kontributor |
 | `package.json` | alat cetak PDF/sampul handbook (`puppeteer`, membawa Chrome sendiri); `npm install` sekali di root |
 | `BIG DATA/CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI/` | MR BADRUN TWK ENGINE v1.5, bank TWK 100, panduan murid, aplikasi CAT TWK (repo git sendiri) |
 | `BIG DATA/CORE ENGINE GENERATE SOAL TKP D AJIKS AKADEMI/` | ENGINE TKP v1.2, paket TKP 80, korpus 24 soal, aplikasi CAT TKP (repo git sendiri) |

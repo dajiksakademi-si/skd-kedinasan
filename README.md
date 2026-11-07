@@ -12,16 +12,14 @@ Pilot proyek bersama: engine soal TWK · TIU · TKP, bank soal, handbook, dan po
 ```bash
 git clone https://github.com/dajiksakademi-si/skd-kedinasan.git
 cd skd-kedinasan
-# pasang skill supaya Claude bekerja dengan pedoman yang sama
-mkdir -p ~/.claude/skills
-ln -s "$PWD/skills/skd-expert" ~/.claude/skills/skd-expert
-ln -s "$PWD/skills/dajiks-handbook" ~/.claude/skills/dajiks-handbook
 # alat cetak PDF/sampul handbook (perlu Node.js; Chrome ikut terunduh otomatis)
 npm install
 # buat folder catatan sendiri (nama = username GitHub)
 mkdir -p kontributor/<username> && touch kontributor/<username>/{memory.md,LOG.md}
 ```
-Path `~/.claude/skills/skd-expert/...` yang disebut di dokumen = `skills/skd-expert/...` di repo ini.
+**Skill dan plugin terpasang sendiri.** Semua skill proyek ada di `.claude/skills/` (skd-expert, skd-belajar, dajiks-handbook, impeccable, ui-ux-pro-max, emil-design-eng, taste-skill, markitdown) dan otomatis dimuat Claude Code saat folder repo dibuka; `git pull` ikut memperbaruinya. Plugin `ponytail` + `superpowers` didaftarkan di `.claude/settings.json` — saat pertama membuka repo, setujui (trust) folder dan pasang plugin yang ditawarkan.
+
+Path `~/.claude/skills/<skill>/...` yang disebut di dokumen = `.claude/skills/<skill>/...` di repo ini.
 
 Alur kerja (push langsung ke `main`, putusan Gusti 2026-11-07):
 1. Setiap mulai kerja: `git pull`.

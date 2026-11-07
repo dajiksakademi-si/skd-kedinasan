@@ -26,3 +26,6 @@ BIG DATA/GENERATE SOAL TERBARU SKD 2026/
 # hasil uji engine gambar + foto rujukan tak terpakai
 .test-out*/
 **/aset/ref_*
+
+# setelan Claude pribadi tiap kontributor
+.claude/settings.local.json

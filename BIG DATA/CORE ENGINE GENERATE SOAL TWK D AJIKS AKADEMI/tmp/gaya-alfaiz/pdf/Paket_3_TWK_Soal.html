@@ -1,0 +1,303 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><title>Paket 3 TWK — Lembar Soal</title><style>
+  @page { size: A4; margin: 18mm 16mm 20mm 16mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #1a1a1a;
+    margin: 0;
+  }
+  .cover {
+    page-break-after: always;
+    padding-top: 60mm;
+    text-align: center;
+  }
+  .cover .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 10pt;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #6b6b6b;
+    margin-bottom: 10mm;
+  }
+  .cover h1 {
+    font-size: 26pt;
+    margin: 0 0 6mm 0;
+    color: #111;
+  }
+  .cover .sub {
+    font-size: 12pt;
+    color: #444;
+    margin-bottom: 14mm;
+  }
+  .cover .meta-box {
+    display: inline-block;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6mm 10mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9.5pt;
+    color: #333;
+  }
+  .cover .meta-box div { margin: 1.5mm 0; }
+  .cover .meta-box b { color: #111; }
+  .cover .note {
+    margin-top: 16mm;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    color: #888;
+    max-width: 120mm;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2.section-title {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 13pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111;
+    border-bottom: 2px solid #111;
+    padding-bottom: 2mm;
+    margin: 0 0 6mm 0;
+  }
+
+  table.summary {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.8pt;
+    margin-bottom: 4mm;
+  }
+  table.summary th, table.summary td {
+    border: 1px solid #ccc;
+    padding: 2mm 2.2mm;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.summary th {
+    background: #f2f2f2;
+    font-weight: 700;
+  }
+  table.summary td.center { text-align: center; }
+
+  .soal {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 9mm;
+    padding-bottom: 7mm;
+    border-bottom: 1px solid #ddd;
+  }
+  .soal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 3mm;
+    break-inside: avoid;
+  }
+  .soal-num {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 11.5pt;
+    color: #111;
+  }
+  .badge {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    padding: 1mm 3mm;
+    border-radius: 10px;
+    color: #fff;
+    white-space: nowrap;
+  }
+  .dim-Profesionalisme { background: #2f5fa8; }
+  .dim-PelayananPublik { background: #1f8a56; }
+  .dim-JejaringKerja { background: #6b3fa0; }
+  .dim-SosialBudaya { background: #c9701d; }
+  .dim-TIK { background: #0f8b8d; }
+  .dim-AntiRadikalisme { background: #b3282d; }
+
+  .stem { margin-bottom: 3mm; text-align: justify; }
+
+  .options { margin: 0 0 4mm 0; padding: 0; list-style: none; }
+  .options li {
+    display: flex;
+    gap: 2.5mm;
+    margin-bottom: 1.6mm;
+    align-items: flex-start;
+  }
+  .opt-letter {
+    flex: 0 0 auto;
+    font-weight: 700;
+    width: 5mm;
+  }
+  .opt-letter.kunci { color: #1f8a56; }
+  .opt-text { flex: 1 1 auto; }
+  .opt-text.kunci { font-weight: 700; }
+
+  .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.6pt;
+    background: #f7f7f7;
+    border-left: 3px solid #111;
+    padding: 2.5mm 3.5mm;
+    margin-bottom: 2.5mm;
+  }
+  .meta div { margin: 0.8mm 0; }
+  .meta .label { font-weight: 700; display: inline-block; width: 22mm; color: #444; }
+
+  .pembahasan {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    background: #fbfbf5;
+    border: 1px solid #e6e2c8;
+    padding: 3mm 4mm;
+  }
+  .pembahasan .ph-title {
+    font-weight: 700;
+    font-size: 8.6pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6b6320;
+    margin-bottom: 1.5mm;
+  }
+  .pembahasan ol { margin: 0; padding-left: 4mm; }
+  .pembahasan li { margin-bottom: 1.3mm; text-align: justify; }
+
+  .footer-note {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    color: #999;
+    text-align: center;
+    margin-top: 10mm;
+  }
+
+  code.sumbu {
+    background: #eee;
+    padding: 0.2mm 1.2mm;
+    border-radius: 3px;
+    font-family: "Courier New", monospace;
+    font-size: 8.2pt;
+  }
+  .pembahasan-siswa { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 9pt; background: #f3f8fb; border: 1px solid #c9dde8; padding: 3mm 4mm; margin-top: 2mm; }
+  .pembahasan-siswa .ph-title { font-weight: 700; font-size: 8.6pt; text-transform: uppercase; color: #2d5a73; margin-bottom: 1.5mm; }
+  .pembahasan-siswa p, .pembahasan-siswa li { margin: 0.8mm 0; text-align: justify; }
+  .pindai{border:2px solid #1f5f8b;border-radius:5px;background:#f2f8fc;padding:3mm 5mm;margin:0 0 4mm;font-family:"Helvetica Neue",Arial,sans-serif;font-size:10pt}
+  .pindai .pt{font-weight:bold;color:#1f5f8b;letter-spacing:1px;text-transform:uppercase;font-size:9.5pt;margin-bottom:2mm}
+  .pindai .pt span{float:right;font-weight:normal;color:#555;text-transform:none;letter-spacing:0}
+  .pindai ol{margin:0;padding-left:5mm}.pindai li{margin:1.5mm 0}
+  .pindai .tanda{margin-top:2.5mm;padding:2mm 3mm;background:#fff6d6;border-left:4px solid #d9a400}
+  .pindai{border:2px solid #1f5f8b;border-radius:5px;background:#f2f8fc;padding:3mm 5mm;margin:0 0 4mm;font-family:"Helvetica Neue",Arial,sans-serif;font-size:10pt}
+  .pindai .pt{font-weight:bold;color:#1f5f8b;letter-spacing:1px;text-transform:uppercase;font-size:9.5pt;margin-bottom:2mm}
+  .pindai .pt span{float:right;font-weight:normal;color:#555;text-transform:none;letter-spacing:0}
+  .pindai ol{margin:0;padding-left:5mm}.pindai li{margin:1.5mm 0}
+  .pindai .tanda{margin-top:2.5mm;padding:2mm 3mm;background:#fff6d6;border-left:4px solid #d9a400}
+
+  .soal.bahas { page-break-inside: auto; break-inside: auto; }
+  .soal.bahas .soal-head { break-after: avoid; page-break-after: avoid; }
+  .soal.bahas .stem, .soal.bahas .options { break-inside: avoid; }
+  .soal.bahas .stem, .soal.bahas .options { font-size: 10pt; }
+  table.skor td, table.skor th { text-align: center; }
+  .cover { padding-top: 70mm; }
+
+  .soal.bahas { page-break-inside: auto; break-inside: auto; }
+  .soal.bahas .soal-head { break-after: avoid; page-break-after: avoid; }
+  .soal.bahas .stem, .soal.bahas .options { break-inside: avoid; font-size: 10pt; }
+  .pembahasan-siswa p { margin: 0 0 6px; }
+  table.summary td, table.summary th { text-align: center; }
+  .cover { padding-top: 70mm; }</style></head><body>
+<div class="cover"><div class="kicker">D'Ajiks Akademi · SKD Kedinasan</div><h1>Paket 3 TWK</h1><div class="sub">Lembar Soal</div>
+<div class="meta-box"><div><b>Subtes</b> Tes Wawasan Kebangsaan</div><div><b>Jumlah</b> 30 soal</div></div>
+<div class="note">Pilih satu jawaban yang paling tepat. Jawaban benar bernilai 5, jawaban salah atau kosong bernilai 0.</div></div><div class="soal"><div class="soal-head"><span class="soal-num">Soal No 1</span><span class="badge">Pancasila &amp; ideologi</span></div>
+<div class="stem">Bappeda menyusun program dengan lima sasaran: (1) pendidikan, (2) kesehatan, (3) kesempatan usaha, (4) perlindungan lingkungan, dan (5) publikasi capaian. Program diminta memperluas kesempatan hidup layak sekaligus menjaga kemajuan ekonomi tetap berkelanjutan. Pasangan sasaran yang paling sesuai dengan indikator sila kelima adalah...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Sasaran ketiga dan keempat, karena keduanya memadukan peluang usaha dengan kelestarian alam.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Sasaran pertama dan kedua, karena keduanya memenuhi layanan dasar keluarga yang membutuhkan.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Sasaran kedua dan kelima, karena keduanya menaikkan kepercayaan warga pada capaian program.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Sasaran keempat dan kelima, karena keduanya menjaga lingkungan dan melaporkannya secara terbuka.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Sasaran pertama dan ketiga, karena keduanya memperluas kesempatan hidup layak bagi warga.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 2</span><span class="badge">Pancasila &amp; ideologi</span></div>
+<div class="stem">Warga RT akan merenovasi pos ronda menjelang musim hujan. Sebagian ingin kerja bakti sehari agar cepat selesai, sementara yang lain mengingatkan pos lama rusak karena tidak ada yang merawatnya setelah dibangun. Wujud gotong royong yang paling tepat adalah...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Mengumpulkan warga pada akhir pekan untuk merenovasi pos ronda dalam sehari.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Menjadwalkan giliran perawatan pos ronda setelah renovasinya rampung.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Merasakan kedekatan antarwarga setelah renovasi pos ronda selesai dikerjakan.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Menyumbangkan dana material untuk mendukung renovasi pos ronda RT.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Mengadakan syukuran kecil begitu renovasi pos ronda dinyatakan selesai.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 3</span><span class="badge">Pancasila &amp; ideologi</span></div>
+<div class="stem">Peraturan layanan kartu identitas sebuah kota disusun lewat prosedur resmi dan sudah diundangkan. Aturan itu mewajibkan pemohon datang sendiri ke loket lantai tiga tanpa lift, sehingga pengguna kursi roda tidak bisa mengurus kartunya. Menurut sila kedua dan kelima, aturan itu perlu ditinjau ulang karena...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Prosedur resmi membuat lembaga mudah mempertanggungjawabkan aturan kepada publik.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Masukan penyandang disabilitas perlu dihimpun sebelum aturan baru disusun kembali.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Warga akan lebih percaya kepada lembaga bila keluhannya ditanggapi cepat.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Cara membuat yang sah belum cukup bila hasilnya menutup akses sebagian penduduk.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Aturan yang sah dan tertulis jelas memberi kepastian bagi petugas dan warga.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 4</span><span class="badge">Pancasila &amp; ideologi</span></div>
+<div class="stem">Panitia Sumpah Pemuda memilih dua kegiatan: (1) dokumentasi seni daerah, (2) pertukaran budaya antarsekolah, (3) bantuan bencana lintas organisasi, (4) promosi organisasi sendiri, (5) pemetaan kebutuhan pemuda nasional. Syaratnya, kegiatan menumbuhkan bangga pada budaya daerah dan mendahulukan bangsa di atas golongan. Pasangan yang paling sesuai dengan sila ketiga adalah...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Kegiatan pertama dan keempat, karena keduanya memperkuat identitas kelompok asal secara mendalam.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Kegiatan ketiga dan kelima, karena keduanya mengutamakan pelayanan kebutuhan nasional secara langsung.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Kegiatan kedua dan ketiga, karena keduanya merawat keberagaman melalui kerja kebangsaan.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Kegiatan pertama dan kedua, karena keduanya memperluas apresiasi budaya daerah antarpeserta.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Kegiatan keempat dan kelima, karena keduanya menghubungkan kelompok dengan agenda nasional bersama.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 5</span><span class="badge">Pancasila &amp; ideologi</span></div>
+<div class="stem">Panitia hari raya sebuah rumah ibadah meminta karang taruna kampung membantu mengatur parkir dan arus kendaraan. Sebagian pemuda yang berbeda agama ragu karena tidak ingin ikut beribadah. Wujud sila pertama yang paling tepat ditunjukkan karang taruna adalah...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Mengajak tokoh lintas agama berdialog tentang kerukunan sebelum perayaan dimulai.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Menertibkan kedatangan para tamu, sementara peribadatan tetap menjadi urusan pemeluknya.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Mengirim ucapan selamat hari raya kepada panitia melalui grup percakapan warga kampung.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Meminta polisi sektor berjaga di sekitar rumah ibadah selama perayaan berlangsung.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Membagi tugas: pemuda yang bersedia ikut membantu, sementara yang ragu tidak dilibatkan.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 6</span><span class="badge">Pancasila &amp; ideologi</span></div>
+<div class="stem">Seorang pengendara motor terjatuh dan terluka di jalan desa; warga sudah menyelimutinya dan menelepon ambulans. Beberapa warga merekam wajah korban yang terluka dan ingin mengirimnya ke grup kampung agar keluarganya cepat tahu. Sikap Anda yang paling mencerminkan sila kedua Pancasila adalah...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Mengirim rekaman dengan wajah korban disamarkan agar kabar kecelakaan cepat tersebar.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Menemani korban dan menenangkannya sampai ambulans tiba di lokasi kejadian.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Mencatat nama warga yang merekam untuk dilaporkan kepada polisi sesudah kejadian.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Menertibkan kendaraan di sekitar lokasi dan memberi jalan untuk ambulans yang datang.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Mencegah gambar itu beredar dan membantu perangkat desa menghubungi kerabatnya.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 7</span><span class="badge">Pancasila &amp; ideologi</span></div>
+<div class="stem">Rapat warga memilih titik sumur di dekat balai desa karena mudah dijangkau. Sepekan kemudian, uji tim kabupaten menunjukkan air di titik itu payau, sedangkan air di ujung dusun tawar. Tindakan pengurus desa yang paling mencerminkan sila keempat adalah...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Melaksanakan hasil musyawarah karena pilihan sebagian besar peserta sudah ditetapkan.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Menyerahkan penentuan titik pengeboran kepada kepala desa sebagai pemimpin rapat warga.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Mencari tambahan dana agar kedua titik dapat dibor dalam waktu yang bersamaan.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Membuka musyawarah lanjutan agar lokasi ditimbang ulang berdasarkan mutu airnya.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Mengumumkan hasil uji di papan pengumuman desa agar diketahui oleh seluruh warga.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 8</span><span class="badge">Nasionalisme &amp; bela negara</span></div>
+<div class="stem">Ki Hadjar Dewantara merumuskan semboyan tut wuri handayani: pendidik berada di belakang untuk memberi dorongan ketika anak mulai berjalan sendiri. Kini seorang kakak pembina pramuka mendampingi regu yang baru pertama kali menyiapkan perkemahan. Tindakan pembina yang paling tepat menerapkan semboyan itu adalah...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Menjelaskan urutan kerja secara rinci sebelum regu mulai menyiapkan perkemahan.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Mendorong regu dari belakang dengan memeriksa setiap langkah sebelum dijalankan.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Menyerahkan persiapan kepada regu dan membantu ketika mereka menemui kebuntuan.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Membiarkan regu bekerja sendiri tanpa memberi masukan sampai perkemahan selesai.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Membagikan buku panduan berkemah dan menilai hasil kerja regu di akhir.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 9</span><span class="badge">Nasionalisme &amp; bela negara</span></div>
+<div class="stem">Sebuah sekolah memasang bendera dan lambang Garuda sesuai UU 24/2009, dan upacaranya selalu tertib. Namun, dalam pergaulan dan kerja kelompok, siswa memisahkan diri menurut daerah asal. Menurut tujuan pengaturan simbol negara, penghayatan simbol negara di sekolah itu penting karena...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Pemakaian simbol negara perlu tertib, berkepastian, dan seragam di lingkungan sekolah.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Tanda kenegaraan itu diatur untuk memperkuat persatuan dan kesatuan bangsa.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Simbol negara perlu dijaga kehormatannya karena menunjukkan kedaulatan bangsa.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Penghormatan bendera menumbuhkan kebanggaan siswa dan suasana sekolah yang berwibawa.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Upacara bendera rutin melatih kedisiplinan siswa dalam mengikuti aturan sekolah.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 10</span><span class="badge">Nasionalisme &amp; bela negara</span></div>
+<div class="stem">Paguyuban perantau di sebuah kota biasa menolong anggotanya yang tertimpa musibah. Pekan ini banjir melanda RW tempat banyak anggotanya tinggal, dan korbannya juga warga dari daerah lain yang tidak punya paguyuban. Sikap pengurus paguyuban yang paling mencerminkan semangat kebangsaan adalah...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Mendahulukan anggota paguyuban, lalu membantu warga lain bila bantuan masih tersisa.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Membantu anggota yang terdampak, sementara warga lain diarahkan ke posko kelurahan.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Membuka posko bersama pengurus RW bagi para penyintas di permukiman itu.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Mengajak warga dari daerah lain membentuk paguyuban sendiri untuk saling menolong.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Membagikan paket untuk seluruh warga RW dengan nama paguyuban di setiap paket.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 11</span><span class="badge">Nasionalisme &amp; bela negara</span></div>
+<div class="stem">Pengembang milik badan hukum Indonesia menamai kompleks permukimannya dengan bahasa Inggris agar terkesan modern, lalu pemerintah kota meminta nama itu diganti. Nama tersebut tidak berkaitan dengan sejarah, budaya, adat istiadat, atau keagamaan setempat. Permintaan pemerintah kota paling tepat didasarkan pada ketentuan bahwa...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Bahasa Indonesia wajib dipakai pada rambu umum, penunjuk jalan, dan fasilitas umum.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Informasi tentang produk barang atau jasa yang beredar wajib memakai bahasa Indonesia.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Nama yang terkesan modern membantu perusahaan pengembang menarik minat calon pembeli.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Penamaan kawasan hunian milik usaha dalam negeri wajib memakai bahasa Indonesia.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Bahasa Indonesia wajib dipakai dalam komunikasi resmi di lingkungan kerja swasta.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 12</span><span class="badge">Nasionalisme &amp; bela negara</span></div>
+<div class="stem">Seorang perwira TNI ditugaskan bersama pasukan PBB menjaga gencatan senjata di sebuah negara yang dilanda perang saudara. Keluarganya bertanya mengapa ia harus bertugas di negeri orang, padahal tidak ada ancaman terhadap wilayah Indonesia. Menurut Pembukaan UUD 1945, penugasan itu dapat dibenarkan karena...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Salah satu tujuan bernegara kita ialah ikut melaksanakan ketertiban dunia.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Pemerintah wajib melindungi segenap bangsa Indonesia dan seluruh tumpah darah Indonesia.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Penjajahan di atas dunia harus dihapuskan karena tidak sesuai dengan perikemanusiaan.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Pemerintah dibentuk untuk memajukan kesejahteraan umum bagi rakyat Indonesia.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Kemerdekaan dinyatakan agar rakyat Indonesia berkehidupan kebangsaan yang bebas.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 13</span><span class="badge">Nasionalisme &amp; bela negara</span></div>
+<div class="stem">Mahasiswa yang mempelajari bus listrik di luar negeri ingin mengusulkannya kepada pemerintah kota. Dosen meminta mereka mengikuti model negara asal yang terbukti berhasil, sedangkan dinas perhubungan meminta usulan menyesuaikan kondisi jalan dan kebiasaan warga. Langkah yang paling mencerminkan sikap terbuka yang berpijak pada kepentingan nasional adalah...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Mengikuti model negara asal secara utuh karena keberhasilannya sudah terbukti.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Menyusun rancangan lokal sendiri tanpa memakai pengalaman kota-kota di negara lain.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Mengadaptasi prinsip teknologi asal melalui uji coba satu rute bersama pengguna lokal.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Membandingkan standar beberapa negara untuk memilih bus listrik dengan performa paling tinggi.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Menghimpun dukungan publik melalui media sosial sebelum usulan diajukan.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 14</span><span class="badge">Integritas aparatur</span></div>
+<div class="stem">Seorang pegawai mendapat keringanan beban kerja selama menjalani pengobatan jangka panjang. Rekan satu tim meminta alasannya dijelaskan agar pembagian tugas adil, sedangkan pegawai itu meminta penyakitnya dirahasiakan. Prinsip yang paling tepat dipegang pengelola kepegawaian adalah...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Transparansi, karena alasan keringanan dijelaskan kepada rekan agar pembagian tugas terasa adil.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Akuntabilitas, karena keputusan keringanan dapat diperiksa pihak berwenang bila dipersoalkan.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Kerahasiaan, karena penyakit dan keringanan pegawai itu tidak dibicarakan sama sekali di tim.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Profesionalisme, karena beban kerja dibagi ulang sesuai kompetensi dan standar organisasi.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Pelindungan data pribadi, karena tim cukup tahu dasar kedinasan tanpa rincian medis.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 15</span><span class="badge">Integritas aparatur</span></div>
+<div class="stem">Anda anggota panel seleksi jabatan pimpinan tinggi dan dua tahun lalu pernah dibayar sebagai konsultan oleh salah satu peserta. Ketua panel ingin jumlah penguji tetap lengkap untuk wawancara besok, sedangkan pedoman meminta hubungan itu dinyatakan dan penanganannya diputuskan pejabat berwenang. Sikap Anda yang paling tepat adalah...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Mengundurkan diri dari panel tanpa menunggu penetapan pejabat agar keraguan tidak muncul.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Menandatangani pakta integritas panel ulang sebelum sesi wawancara dimulai besok pagi.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Menghindari komunikasi pribadi dan pertemuan dengan peserta itu hingga seleksi selesai.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Menjaga jumlah penguji tetap lengkap dengan mencari penguji cadangan untuk ketua panel.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Melaporkan riwayat konsultasi hari ini dan siap menguji kandidat lain sesuai penetapan.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 16</span><span class="badge">Integritas aparatur</span></div>
+<div class="stem">Anda berjanji kepada camat menuntaskan aduan jalan rusak dari tiga desa dalam sebulan, tetapi camat pindah tugas di minggu kedua. Pejabat pengganti meminta Anda membantu lomba desa yang mendesak, padahal rencana kerja yang sudah disahkan tetap mencantumkan target aduan itu. Tindakan yang paling mencerminkan integritas Anda adalah...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Melaporkan status aduan kepada pejabat pengganti melalui laporan mingguan yang rapi.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Mengutamakan lomba desa yang mendesak dan menunda aduan sampai lomba selesai.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Memperoleh apresiasi warga tiga desa setelah jalan yang rusak akhirnya diperbaiki.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Membagi jadwal agar aduan tetap tertangani di samping membantu persiapan lomba.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Membantu persiapan lomba di samping menitipkan aduan kepada rekan tanpa memantaunya.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 17</span><span class="badge">Integritas aparatur</span></div>
+<div class="stem">Pejabat pengadaan alat laboratorium menerima rekomendasi spesifikasi teknis dari calon penyedia yang tahun lalu mensponsori seminar kantornya. Pedoman meminta spesifikasi disusun dari kebutuhan pengguna yang terukur dan tidak mengarah ke produk penyedia tertentu. Nilai yang paling tepat dipegang pejabat itu adalah...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Objektivitas, karena masukan itu diuji memakai tolok ukur nyata, bukan budi sponsor.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Netralitas, karena pejabat tidak memihak kekuatan politik mana pun dalam proses pengadaan.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Kepatuhan, karena spesifikasi disusun dari kebutuhan pengguna sesuai pedoman pengadaan instansi.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Transparansi, karena asal rekomendasi dicatat jelas dalam dokumen persiapan pengadaan.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Akuntabilitas, karena dasar penetapan spesifikasi dapat dijelaskan kepada pemeriksa kemudian hari.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 18</span><span class="badge">Integritas aparatur</span></div>
+<div class="stem">Logat seorang rekan pindahan sering diejek di grup percakapan kantor, dan sebagian pegawai menganggapnya candaan biasa. Belakangan, rekan yang satu tim dengan Anda itu enggan berbicara dalam rapat. Sikap Anda yang paling mencerminkan nilai harmonis ASN adalah...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Mengingatkan grup agar berhenti mengolok cara bicaranya dan merangkulnya kembali.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Menghibur rekan itu secara pribadi dan menyarankannya mengabaikan ejekan tersebut.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Mengirim imbauan sopan santun ke grup dan mengajak seluruh anggota tetap kompak.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Meminta atasan memindahkan rekan itu ke tim yang suasananya lebih ramah.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Mengusulkan pelatihan berbicara di depan umum agar rekan itu lebih percaya diri.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 19</span><span class="badge">Integritas aparatur</span></div>
+<div class="stem">Anda anggota tim kabupaten yang merencanakan lokasi pasar induk baru. Kakak Anda meminta petunjuk lokasinya karena ingin membeli tanah di sekitar situ selagi murah, padahal rencana itu belum diumumkan. Sikap Anda yang paling sesuai dengan kode etik ASN adalah...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Mengundurkan diri dari tim dan menjelaskan alasannya kepada kakak Anda.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Meminta ketua tim memutuskan apakah petunjuk itu boleh diberikan kepada kakak.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Menjauhi kakak Anda sampai rencana lokasi itu resmi diumumkan pemerintah.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Menjelaskan bahwa rencana dapat berubah sehingga membeli tanah sekarang berisiko.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Menolak memberi petunjuk apa pun dan menyarankan kakak menanti pengumuman resmi.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 20</span><span class="badge">Hukum &amp; ketatanegaraan</span></div>
+<div class="stem">Kepala dinas pasar mencabut hak pakai kios Pak Darto karena dianggap menunggak retribusi, padahal ia menyimpan semua bukti pembayaran. Keputusan itu diumumkan lima hari kerja yang lalu. Langkah pertama yang paling tepat menurut ketentuan administrasi pemerintahan adalah...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Menggugat keputusan itu ke pengadilan setelah banding kepada atasan pejabat ditolak.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Mengajukan keberatan tertulis kepada pejabat yang menerbitkan surat pencabutan itu.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Membawa perkara itu kepada atasan kepala dinas sesudah keberatannya diselesaikan.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Memohon Mahkamah Agung menguji peraturan daerah tentang retribusi pasar.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Menyampaikan aspirasi kepada DPRD agar kebijakan dinas pasar itu diawasi.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 21</span><span class="badge">Hukum &amp; ketatanegaraan</span></div>
+<div class="stem">Pada 1999–2002, MPR mengubah pasal-pasal UUD 1945 empat kali, sedangkan Pembukaannya tetap utuh. Kini mahasiswa hukum menyusun usulan perubahan pasal tentang lembaga negara untuk lomba debat. Hubungan Pembukaan dan pasal-pasal dalam usulan itu paling tepat dipahami sebagai...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Pasal boleh disesuaikan zaman, sedangkan Pembukaan menjadi pegangan arah isinya.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Pembukaan memuat Pancasila dan tujuan negara, sedangkan pasal-pasal mengatur penyelenggaraan negara.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Usulan perubahan pasal lebih mudah diterima bila sejalan dengan Pembukaan.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Pasal-pasal tentang lembaga negara dapat diubah melalui usul tertulis sesuai Pasal 37.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Setiap naskah usulan mencantumkan kutipan Pembukaan pada bagian pendahuluan sebagai rujukan.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 22</span><span class="badge">Hukum &amp; ketatanegaraan</span></div>
+<div class="stem">Sejak Perubahan Pertama 1999, pemberian grasi, amnesti, abolisi, dan rehabilitasi oleh Presiden disertai pertimbangan lembaga negara lain. Seorang terpidana lima tahun yang putusannya telah berkekuatan hukum tetap memohon kepada Presiden agar hukumannya dikurangi. Hubungan kewenangan dalam permohonan itu paling tepat dipahami sebagai...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Presiden memberi amnesti dengan memperhatikan pertimbangan Dewan Perwakilan Rakyat.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Presiden memberi grasi sebagaimana rumusan Pasal 14 sebelum perubahan tahun 1999.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Presiden memberi grasi dengan memperhatikan pertimbangan Mahkamah Agung.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Presiden memberi abolisi dengan memperhatikan pertimbangan Dewan Perwakilan Rakyat.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Hukuman terpidana berkurang setelah Presiden menyetujui permohonan pengampunannya.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 23</span><span class="badge">Radikalisme &amp; ketahanan sosial</span></div>
+<div class="stem">Seorang rekan ASN rutin membagikan tulisan di grup kantor yang mengajak mengganti Pancasila sebagai dasar negara, tanpa ajakan kekerasan. Ia sudah dua kali diingatkan rekan lain, tetapi tetap mengunggahnya. Sikap Anda yang paling tepat sesuai kewajiban ASN adalah...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Menegurnya lagi di grup dan meminta rekan lain ikut menolak tulisannya.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Meminta pengelola grup menghapus tulisan itu dan menutup kolom tanggapan.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Membagikan bahan bacaan tentang Pancasila ke grup sebagai tulisan tandingan.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Menyampaikan bukti unggahan itu kepada atasan yang membina pegawai.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Keluar dari grup kantor agar tidak dianggap menyetujui tulisan tersebut.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 24</span><span class="badge">Radikalisme &amp; ketahanan sosial</span></div>
+<div class="stem">Seorang mantan anggota jaringan ekstrem selesai menjalani hukuman dan kembali bekerja di kampungnya. Sebagian warga ingin ia diawasi agar tidak kembali ke jaringan lama, sedangkan keluarganya ingin ia hidup normal tanpa terus dicurigai. Dukungan masyarakat yang paling tepat ditunjukkan melalui...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Memberinya pekerjaan dan kegiatan seperti warga lain tanpa pendampingan lanjutan.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Melibatkannya dalam kegiatan warga dengan pendampingan berkala dari petugas pembinaan.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Memberinya kesempatan hidup normal sambil menyerahkan pengawasan kepada keluarganya.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Menggelar acara penyambutan bersama tokoh agama sebagai tanda ia diterima kembali warga.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Melaporkan perkembangan sikapnya ke kepolisian secara rutin atas inisiatif warga.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 25</span><span class="badge">Bahasa Indonesia</span></div>
+<div class="stem">(1) Panitia lomba desa menunjuk juri yang andal di bidang pertanian. (2) Tanah di lahan percobaan masih lembap karena hujan semalam. (3) Petani diminta mencatat resiko gagal panen pada setiap petak. (4) Angin yang berembus kencang sempat merobohkan tenda panitia. (5) Dinas pertanian menyiapkan standardisasi mutu benih untuk lomba tahun depan.<br>Kata yang tidak baku menurut KBBI terdapat pada kalimat...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Kalimat (1)</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Kalimat (2)</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Kalimat (3)</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Kalimat (4)</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Kalimat (5)</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 26</span><span class="badge">Bahasa Indonesia</span></div>
+<div class="stem">Kalimat yang penulisan huruf kapitalnya tidak tepat adalah...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Pemerintah mendorong pengindonesiaan istilah asing pada papan layanan publik.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Setiap tahun warga kampung itu memperingati proklamasi kemerdekaan dengan lomba.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Siswa membaca artikel berjudul "Merawat Sungai untuk Anak Cucu".</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Warga itu berkata, "Terima kasih atas obatnya, Dokter."</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Majalah sekolah memuat tulisan berjudul "Gotong Royong Di Kampung Nelayan".</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 27</span><span class="badge">Bahasa Indonesia</span></div>
+<div class="stem">(1) Sejak Juli, pemerintah kabupaten menjalankan bus sekolah gratis di dua dari lima kecamatan. (2) Di dua kecamatan itu, siswa yang terlambat turun dari rata-rata tiga puluh menjadi lima orang per hari. (3) Orang tua juga tidak lagi mengeluarkan uang ojek setiap pagi. (4) Di tiga kecamatan lain, bus sekolah baru akan beroperasi tahun depan.<br>Simpulan paragraf tersebut adalah...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Keterlambatan siswa di kabupaten itu sudah teratasi berkat bus sekolah gratis.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Bus gratis menekan keterlambatan dan ongkos, tetapi baru di dua kecamatan.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Siswa yang terlambat turun menjadi lima orang per hari di dua kecamatan.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Bus sekolah perlu ditambah dan diperluas, tetapi anggaran kabupaten belum mencukupi.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Keterlambatan berkurang berkat bus, tetapi orang tua di kecamatan lain tetap membayar ojek.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 28</span><span class="badge">Bahasa Indonesia</span></div>
+<div class="stem">(1) Pesan singkat peringatan dini kini membantu warga bantaran sungai di kota itu menghadapi banjir. (2) Petugas mengirim pesan ketika tinggi air di pintu air hulu melewati batas siaga. (3) Warga lalu punya waktu sekitar tiga jam untuk memindahkan barang dan mengungsikan lansia. (4) Saat banjir bulan lalu, tidak ada warga yang terjebak di rumah. (5) Karena itu, warga kini menyimpan nomor petugas di telepon genggam mereka.<br>Kalimat utama paragraf tersebut adalah...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Kalimat (1), karena cara kerja dan hasil sesudahnya menjelaskan isinya.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Kalimat (2), karena pengiriman pesan dan batas siaga menjadi awal seluruh peristiwa.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Kalimat (3), karena waktu tiga jam itulah manfaat terbesar bagi warga.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Kalimat (4), karena tidak adanya warga terjebak membuktikan keberhasilan pesan itu.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Kalimat (5), karena kata penghubung di awalnya menandai rangkuman paragraf.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 29</span><span class="badge">Bahasa Indonesia</span></div>
+<div class="stem">Kalimat yang penulisan tanda bacanya tidak tepat adalah...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Wah, antrean di loket pajak pagi ini pendek sekali.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Kata petugas, "Formulir diisi dengan huruf kapital."</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Lomba baca puisi se-Sulawesi Selatan digelar di balai kota.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">"Kapan beras dibagikan?", tanya seorang warga.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Banyak warga kampung itu pindah ke kota pada tahun 1990-an.</span></li></ul></div>
+<div class="soal"><div class="soal-head"><span class="soal-num">Soal No 30</span><span class="badge">Bahasa Indonesia</span></div>
+<div class="stem">(1) Sejak tahun lalu, atap puskesmas pembantu di pulau kecil itu dipasangi panel surya. (2) Dulu pelayanan berhenti saat matahari terbenam karena genset hanya menyala dua jam. (3) Kini bidan dapat menolong persalinan pada malam hari dengan lampu yang terang. (4) Lemari pendingin juga menyala terus sehingga vaksin dapat disimpan di pulau itu. (5) Warga tidak perlu lagi menyeberang ke pulau besar untuk imunisasi anak.<br>Gagasan utama paragraf tersebut adalah...</div>
+<ul class="options"><li><span class="opt-letter">A.</span><span class="opt-text">Atap puskesmas pembantu di pulau kecil itu dipasangi panel surya sejak tahun lalu.</span></li><li><span class="opt-letter">B.</span><span class="opt-text">Bidan dapat menolong persalinan malam hari berkat lampu yang terang.</span></li><li><span class="opt-letter">C.</span><span class="opt-text">Vaksin dapat disimpan dan imunisasi anak kini dilayani di pulau itu sendiri.</span></li><li><span class="opt-letter">D.</span><span class="opt-text">Panel surya menghemat biaya bahan bakar genset di puskesmas pembantu itu.</span></li><li><span class="opt-letter">E.</span><span class="opt-text">Listrik surya membuat pelayanan buka hingga malam dan mencakup imunisasi.</span></li></ul></div></body></html>

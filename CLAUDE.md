@@ -17,6 +17,7 @@ Baca juga [memory.md](memory.md) untuk keputusan dan pelajaran dari sesi sebelum
 | `kontributor/<username-github>/` | `memory.md` + `LOG.md` tiap kontributor (WAJIB, lihat `kontributor/README.md`) |
 | `.claude/skills/`, `.claude/settings.json` | skill proyek (skd-expert, skd-belajar, dajiks-handbook, impeccable, ui-ux-pro-max, emil-design-eng, taste-skill, markitdown) + plugin ponytail/superpowers; dimuat otomatis oleh Claude Code kontributor |
 | `package.json` | alat cetak PDF/sampul handbook (`puppeteer`, membawa Chrome sendiri); `npm install` sekali di root |
+| `reviu/` | halaman reviu soal untuk reviewer jarak jauh (`npm run reviu` → http://localhost:4545); hasil di `reviu/hasil/<paket>/<reviewer>.json`, tombol Kirim = commit + push |
 | `BIG DATA/CORE ENGINE GENERATE SOAL TWK D AJIKS AKADEMI/` | MR BADRUN TWK ENGINE v1.5, bank TWK 100, panduan murid, aplikasi CAT TWK (repo git sendiri) |
 | `BIG DATA/CORE ENGINE GENERATE SOAL TKP D AJIKS AKADEMI/` | ENGINE TKP v1.2, paket TKP 80, korpus 24 soal, aplikasi CAT TKP (repo git sendiri) |
 | `BIG DATA/CORE ENGINE GENERATE SOAL TIU D AJIKS AKADEMI/` | ENGINE TIU D'AJIKS v0.3 (gaya 3K: Kalimat Kunci · Kesalahan Bernama · Kunci Terbukti) — draf, belum diuji paket; `k12-spatial-engine/` = generator soal gambar SVG (modul TIU `npm run gen:tiu`, 2026-10-28) |
@@ -49,14 +50,13 @@ Nama folder project dan beberapa subfolder **berakhiran spasi** — selalu kutip
 
 ## Pedoman pembahasan (semua subtes, termasuk TIU)
 Gaya guru les di meja belajar, menyapa "kamu", bahasa sederhana, terdengar manusiawi. Tanpa "Mari kita", "Dengan demikian", "Penting untuk dicatat", "Secara keseluruhan", "akan tetapi", emoji. "Maka" dan "karena itu" boleh, tetapi jangan berulang (paling banyak 1× per pembahasan).
-Urutan:
+To the point, tidak bertele-tele (putusan Gusti 2026-11-08: tanpa bagian Analogi dan Kekeliruan yang Mungkin Terjadi, semua subtes). Urutan:
 1. Preview soal + opsi.
-2. Yang sebenarnya ditanya.
-3. Langkah / cara cepat.
-4. Kenapa **tiap** opsi lain gugur, dengan nama kesalahannya dalam bahasa sehari-hari.
-5. Kunci + alasan satu kalimat.
-6. Analogi sehari-hari.
-7. Kekeliruan yang Mungkin Terjadi.
+2. Kunci, disebut di awal.
+3. Yang sebenarnya ditanya.
+4. Langkah / cara cepat.
+5. Kenapa **tiap** opsi lain gugur, dengan nama kesalahannya dalam bahasa sehari-hari.
+6. Alasan kunci satu kalimat.
 
 **Bebas istilah dapur (keputusan Gusti 2026-10-25, soal baru + bank lama):** pembahasan siswa tidak memakai istilah penyusun soal: "stem" (tulis "soal"), kode pengecoh (D1–D8, TKP J/S, nama Kamus Jebakan TIU), kode bentuk T1–T5, level C2–C5, L1–L3, label kategori huruf besar (DEFINISI, WUJUD, …), "kutub", "konstruk", "distraktor", "konsep tetangga", "salah kategori". Nama kesalahan ditulis seperti guru bicara: "cuma menjawab separuh", "itu akibatnya, bukan intinya", "konsep mirip, tapi beda", "cuma mengulang kata di soal", "itu tugas pihak lain", "langkahnya belum waktunya". Kode tetap boleh di analisis opsi / lembar reviu ahli. TWK dicek validator (`tmp/validate_bank_100.mjs`).
 

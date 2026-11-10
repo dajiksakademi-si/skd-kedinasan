@@ -28,7 +28,7 @@ Root project: `/Users/gustiputuyudawirashana/Downloads/PROJECT SKD KEDINASAN /` 
 4. Angka TIU dihitung oleh script (assert), bukan diketik manual; brute force untuk keunikan kunci.
 5. Kunci A–E seimbang dan tidak berpola. Pengecoh lahir dari kesalahan nalar nyata.
 5a. Pembahasan siswa bebas istilah dapur ("stem", kode D/T/C/L/J/S, label kategori kapital, "kutub", "konstruk"); nama kesalahan dalam bahasa sehari-hari. Kode hanya di lembar reviu (aturan-tetap C-5).
-6. Pembahasan: gaya guru les ("kamu"), sederhana, ada analogi, preview soal + opsi, bagian "Kekeliruan yang Mungkin Terjadi". Tanpa frasa khas AI ("Mari kita", "Dengan demikian", "Penting untuk dicatat") dan tanpa "akan tetapi". "Maka"/"karena itu" boleh, maksimal 1× per pembahasan.
+6. Pembahasan: gaya guru les ("kamu"), sederhana, to the point: preview soal + opsi, kunci di awal, tanpa bagian Analogi dan Kekeliruan yang Mungkin Terjadi (putusan Gusti 2026-11-08). Tanpa frasa khas AI ("Mari kita", "Dengan demikian", "Penting untuk dicatat") dan tanpa "akan tetapi". "Maka"/"karena itu" boleh, maksimal 1× per pembahasan.
 7. Output bahan ajar: PDF, soal dan pembahasan dipisah, dari satu sumber data.
 8. Bank/paket hasil Claude = **draf** sampai direviu manusia. Jangan klaim validitas psikometrik tanpa uji coba peserta.
 

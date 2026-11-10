@@ -9,7 +9,7 @@ Catatan lengkap lama (riwayat sesi 2026-10-25 s.d. 2026-11-01, pelajaran soal lu
 - **Satu engine per subtes** (2026-10-25): TWK = MR BADRUN v1.6, TIU = ENGINE TIU v0.4.3 + generator figural k12-spatial-engine, TKP = ENGINE TKP v1.3.5.
 - **Blueprint TIU = komposisi Paket 41 Al Faiz** (2026-10-28): verbal 6 · numerik 9 · KCK 7 · analitis 3 · optimasi 1 · figural 9.
 - **Amati, Tiru, Modifikasi**: dari bahan luar hanya logika penyusun yang diadaptasi; jenis, gaya tulis, diksi, dan isi soal tidak disalin (pertegasan 2026-10-27).
-- **Pembahasan semua subtes gaya guru les SKD**, bebas istilah dapur (2026-10-25); label langkah terakhir "Kekeliruan yang Mungkin Terjadi" (2026-10-30).
+- **Pembahasan semua subtes gaya guru les SKD**, bebas istilah dapur (2026-10-25); 2026-11-08: to the point, kunci di awal, TANPA Analogi dan Kekeliruan yang Mungkin Terjadi (menggantikan putusan 2026-10-30).
 - **Bahasa ke Gusti**: Indonesia formal baku, tanpa istilah teknis (2026-10-26).
 - **Semua bahan belajar di `BIG DATA/`**; sumber luar yang sudah dianalisis dipindah ke Trash, hasilnya hanya di riset skill (2026-10-27).
 - **Desain bahan ajar** selalu memakai pedoman impeccable + emil-design-eng; selera tenang-elegan; kepala sampul seri SKD seragam (2026-10-27/28).

@@ -1,0 +1,83 @@
+{
+ "31": {
+  "latar": "himpunan mahasiswa",
+  "stem": "Undangan “kajian rutin” beredar di grup mahasiswa. Pertemuannya tiap Kamis malam di aula himpunan tanpa izin, dipimpin rekan Anda, lengkap dengan daftar peserta, iuran, dan sumpah setia kepada pimpinan kelompok yang menyebut pemerintah tidak sah. Perkara begini biasanya ditangani bagian kemahasiswaan. Apa respons Anda?",
+  "konstruk": "keleluasaan kegiatan mahasiswa di luar jam kuliah vs aula himpunan dipakai menggalang kelompok yang menolak sahnya pemerintah",
+  "opts": {
+   "A": "Mengirim undangan dan daftar peserta ke surel pengaduan umum kampus hari ini.",
+   "B": "Menyerahkan undangan, daftar peserta, dan catatan aula ke bagian kemahasiswaan hari ini."
+  }
+ },
+ "32": {
+  "latar": "panitia penerimaan mahasiswa baru",
+  "stem": "Dua unit kegiatan, pecinta alam dan fotografi, sama-sama mengajukan diri memandu tur kampus untuk mahasiswa baru di rute yang sama. Keduanya berpengalaman dan sudah saling melayangkan surat keberatan, padahal acara tinggal sepuluh hari. Sebagai koordinator, pembagian rute adalah wewenang Anda. Tindakan paling tepat adalah&hellip;",
+  "konstruk": "perselisihan dua unit berpengalaman yang berebut rute sama vs koordinator yang berwenang membagi rute tur",
+  "opts": {
+   "B": "Melaporkan perselisihan itu ke ketua panitia agar beliau yang memilih pemandunya.",
+   "C": "Mengundang kedua ketua unit berunding pekan ini soal pembagian rute.",
+   "D": "Menyerahkan rute itu ke pecinta alam saja demi pengalaman lapangan mereka."
+  },
+  "poin": {
+   "B": "3 S3 +J3(urusan dalam wewenang koordinator dilempar ke ketua panitia)"
+  }
+ },
+ "37": {
+  "latar": "kantor desa",
+  "stem": "Sebagai penghubung desa untuk proyek pengecoran jalan poros, Anda mendapat keluhan: satu-satunya akses ke pustu ditutup dua pekan. Warga terpaksa lewat jalan kebun yang licin, dan dua pengendara sudah jatuh. Kepala desa setuju lahan kas desa dipakai. Apa respons Anda?"
+ },
+ "38": {
+  "latar": "perpustakaan kampus",
+  "stem": "Petugas kebersihan menyebut seorang pengunjung perpustakaan kampus, yang sudah empat kali datang memotret peta lama, sebagai “orang kelompok terlarang yang sedang mengumpulkan bahan”. Kabar itu tidak disertai bukti apa pun. Setiap pengunjung tercatat keperluan dan izin penelitiannya di buku layanan. Apa tindakan paling tepat?",
+  "konstruk": "kewaspadaan petugas perpustakaan terhadap kabar kelompok terlarang vs hak pengunjung memotret peta lama tanpa dicurigai tanpa dasar",
+  "opts": {
+   "C": "Menggagas sosialisasi wawasan kebangsaan bagi petugas perpustakaan agar lebih waspada."
+  }
+ },
+ "40": {
+  "latar": "asrama kampus kedinasan",
+  "stem": "Freezer dapur asrama taruna yang Anda kelola rusak, padahal ada 400 porsi daging di dalamnya, 150 di antaranya untuk makan siang besok. Teknisi baru datang tiga hari lagi, sementara freezer dapur umum kampus berfungsi dan masih memiliki ruang. Apa yang Anda lakukan?",
+  "konstruk": "jadwal makan taruna yang sudah diatur vs mutu 400 porsi daging di freezer rusak",
+  "opts": {
+   "A": "Mengangkut 400 porsi itu ke dapur umum, dipantau dengan alat pencatat suhu.",
+   "B": "Memindahkan 150 porsi untuk besok ke kotak pendingin, sisanya tetap di freezer.",
+   "C": "Menyimpan daging di kotak pendingin, esnya diganti petugas asrama sampai freezer diperbaiki.",
+   "D": "Menunggu teknisi datang, dengan pintu freezer itu dijaga tetap tertutup rapat.",
+   "E": "Mengganti menu daging untuk ratusan taruna sampai freezer selesai diperbaiki."
+  },
+  "poin": {
+   "C": "4 S4 +J2(menjaga suhu dibebankan ke petugas asrama)"
+  }
+ },
+ "41": {
+  "latar": "panitia beasiswa kampus",
+  "stem": "Rekan panitia salah menempelkan tautan folder berkas pribadi pendaftar beasiswa ke grup calon pendaftar, padahal folder itu bisa dibuka siapa pun pemegang tautannya. Pemiliknya ketua panitia, yang sedang daring, sedangkan Anda tanpa hak mengubah akses. Tindakan paling tepat adalah&hellip;",
+  "konstruk": "kelancaran berbagi berkas dalam panitia vs kerahasiaan data pribadi pendaftar di folder daring",
+  "opts": {
+   "A": "Menuntut rekan yang salah tempel itu dikeluarkan dari grup kerja panitia.",
+   "B": "Meminta ketua panitia segera menutup akses tautan, lalu mengusulkan pakai akun resmi.",
+   "C": "Meminta para calon pendaftar di grup itu agar tidak membuka tautan tersebut.",
+   "D": "Meminta ketua panitia menghapus pesan tautan, lalu memperingatkan grup agar tidak membukanya."
+  }
+ },
+ "42": {
+  "latar": "kantor desa",
+  "stem": "Selama proyek padat karya berjalan, mandor merekrut pekerja lewat kenalannya, sehingga hampir semua pekerja berasal dari kampungnya sendiri. Padahal pedoman mewajibkan pekerja direkrut dari warga sekitar lokasi. Anda perangkat desa yang berwenang mengatur perekrutan, dan kontrak pekerja diperbarui tiap dua pekan. Langkah paling tepat adalah&hellip;"
+ },
+ "43": {
+  "latar": "panitia acara kampus",
+  "stem": "Tiga seksi panitia memakai satu lembar kerja daring untuk rekap anggaran rapat Jumat, dan rumus serta kolomnya sudah tiga kali saling tertimpa pekan ini. Anda pengelola berkas yang bisa mengatur hak sunting, tetapi pembagian lembar perlu disetujui ketiganya. Langkah pertama yang Anda ambil adalah&hellip;",
+  "konstruk": "keleluasaan tiga seksi mengisi lembar kerja daring bersama vs keandalan rumus rekap anggaran untuk rapat ketua",
+  "opts": {
+   "A": "Menyepakati pembagian lembar dan hak sunting dengan perwakilan tiga seksi.",
+   "B": "Membagi kolom bersama ketiga seksi lewat grup, lalu meminta saling menjaga.",
+   "C": "Melaporkan ke ketua panitia bahwa seksi-seksi saling menimpa rumus dan kolom.",
+   "E": "Mengunci berkas sehingga hanya Anda yang mengisi data kiriman tiap seksi."
+  },
+  "poin": {
+   "C": "3 S2 +J3(urusan yang bisa diatur pengelola berkas dilempar ke ketua panitia)"
+  }
+ },
+ "44": {
+  "latar": "posko kebakaran warga"
+ }
+}

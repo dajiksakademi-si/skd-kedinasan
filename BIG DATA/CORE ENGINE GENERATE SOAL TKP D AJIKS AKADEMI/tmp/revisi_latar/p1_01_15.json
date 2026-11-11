@@ -1,0 +1,177 @@
+{
+ "1": {
+  "latar": "karang taruna",
+  "stem": "Bendahara karang taruna mengetik ulang ratusan data iuran warga satu per satu sampai larut, dan tetap ada yang salah ketik. Aplikasi pencatatan punya fitur unggah dari templat, tetapi ia khawatir semua data bisa salah masuk. Langkah pertama yang Anda ambil adalah&hellip;",
+  "fakta": "khawatir semua data bisa salah masuk",
+  "konstruk": "kecepatan pencatatan iuran lewat fitur unggah aplikasi vs ketepatan data yang masuk ke catatan",
+  "opts": {
+   "A": "Mencoba fitur unggah khusus bulan yang sering salah ketik, lalu mengecek hasilnya.",
+   "B": "Meminta beberapa anggota baru membantu mengetik data iuran agar bendahara cepat selesai.",
+   "C": "Mengikuti kebiasaan lama karena bendahara lebih nyaman mengetik data iuran sendiri.",
+   "D": "Menunda fitur unggah sampai bulan depan, iuran kali ini tetap diketik manual.",
+   "E": "Menguji fitur unggah pada data sebulan, lalu memperluasnya setelah hasilnya dicocokkan."
+  },
+  "poin": {
+   "B": "1 (aktif-a: beban mengetik data dilempar ke anggota baru)",
+   "C": "2 (demi kenyamanan bendahara)"
+  }
+ },
+ "2": {
+  "latar": "perpustakaan daerah",
+  "stem": "Seorang warga minta salinan koran lama untuk bukti sidang lusa, padahal pencarian di perpustakaan daerah biasanya tiga hari kerja sesuai antrean yang Anda atur. Ia hanya menyebut jadwal sidangnya secara lisan, dan dua pemohon lain juga bertenggat minggu ini. Sikap Anda adalah&hellip;"
+ },
+ "3": {
+  "stem": "Sebagai ketua tingkat, Anda harus mengirim rekap kehadiran ke pengasuh siang ini, dan izin bermalam akhir pekan ditetapkan dari rekap itu. Absen digital satu kelas kosong, padahal dosennya mencatat manual dan sebentar lagi selesai mengajar. Langkah paling tepat adalah&hellip;",
+  "opts": {
+   "B": "Menunggu absen digital diperbaiki dulu, baru rekapnya dikirim ke para pengasuh.",
+   "C": "Mengikuti saran kakak tingkat agar rekap dikirim sesuai data digital saja."
+  }
+ },
+ "4": {
+  "latar": "relawan posko banjir",
+  "stem": "Anda mengatur piket posko relawan banjir. Rekan-rekan mengusulkan dua relawan libur sepekan saat Natal, padahal keduanya hanya butuh malam dan hari Natal. Beberapa bulan lagi giliran relawan lain merayakan Idulfitri. Sikap Anda adalah&hellip;",
+  "fakta": "giliran relawan lain merayakan Idulfitri",
+  "konstruk": "kecukupan relawan piket di musim ramai vs kebutuhan hari besar keagamaan yang berbeda-beda",
+  "opts": {
+   "A": "Mengambil sendiri seluruh piket malam Natal agar tidak ada relawan yang dirugikan.",
+   "B": "Menanyakan kebutuhan tiap relawan di hari besarnya sebagai dasar tukar piket.",
+   "C": "Meliburkan keduanya malam dan hari Natal, lalu meminta relawan lain mengisi piketnya.",
+   "D": "Menyetujui usul sebagian besar relawan meliburkan keduanya sepekan demi meredakan suasana."
+  }
+ },
+ "5": {
+  "latar": "panitia lomba kampus",
+  "stem": "Kakak tingkat di meja panitia sebelah menerima berkas lomba tanpa tanda terima bernomor agar cepat, padahal aturan mewajibkannya, dan ia melakukannya sejak Senin. Tadi pagi Anda menyinggungnya lewat candaan, tetapi tak digubris; tiga pendaftarnya masih menunggu. Apa yang Anda lakukan?",
+  "konstruk": "kelancaran antrean dan hubungan dengan kakak tingkat vs kepatuhan aturan tanda terima berkas",
+  "opts": {
+   "D": "Menerbitkan tanda terima ketiga berkas tadi, lalu meminta rekan kembali mengikuti aturan."
+  }
+ },
+ "6": {
+  "latar": "komunitas relawan",
+  "stem": "Anda relawan pendata penerima paket perlengkapan sekolah dari komunitas. Enam dari puluhan nama belum Anda kunjungi, sehingga paketnya tertahan sesuai aturan. Tahun ajaran mulai sepuluh hari lagi, sedangkan kunjungan biasanya selesai dalam tiga hari. Langkah paling tepat adalah&hellip;",
+  "fakta": "kunjungan biasanya selesai dalam tiga hari",
+  "konstruk": "kecepatan bantuan sebelum tahun ajaran vs ketepatan sasaran penerima bantuan",
+  "opts": {
+   "A": "Menyarankan keenam keluarga memakai perlengkapan bekas tahun lalu milik kerabatnya.",
+   "B": "Menelepon keenam keluarga itu untuk memastikan datanya, agar paket cepat tersalur.",
+   "C": "Mencoret keenam nama, lalu meminta mereka mengajukan ulang tahun ajaran depan.",
+   "D": "Meminta ketua RT setempat menjamin keenam nama itu lewat surat pernyataan.",
+   "E": "Mendatangi sendiri rumah keenam keluarga itu pekan ini untuk verifikasi."
+  },
+  "poin": {
+   "A": "1 (aktif-a: beban dilempar ke keluarga)",
+   "D": "3 S3 +J2(verifikasi dipindah ke ketua RT)"
+  }
+ },
+ "8": {
+  "latar": "himpunan mahasiswa",
+  "stem": "Anda baru ditunjuk menyusun laporan keuangan himpunan dengan format baru dari kampus, tenggatnya tiga hari lagi. Bendahara lama sudah lulus, tetapi masih bisa ditelepon, dan laporan ini wajib dibuat setiap semester. Tindakan paling tepat adalah&hellip;",
+  "fakta": "wajib dibuat setiap semester",
+  "opts": {
+   "A": "Meminta bendahara lama membimbing lewat telepon, lalu mencatatnya jadi panduan himpunan.",
+   "B": "Meminta ketua mengalihkan laporan itu ke pengurus lain sampai Anda ikut pelatihan.",
+   "C": "Mempelajari sendiri format dari kampus, lalu langsung mengirim laporannya sebelum tenggat.",
+   "D": "Meminta bendahara yang lulus mengerjakan bagian format baru, sisanya Anda selesaikan.",
+   "E": "Mengerjakan seluruh laporan seorang diri tanpa mau dibantu rekan pengurus."
+  },
+  "poin": {
+   "D": "4 S4 +J1(\"lulus\", \"format baru\")"
+  }
+ },
+ "9": {
+  "latar": "panitia organisasi kampus",
+  "stem": "Saat rapat panitia penerimaan anggota baru yang Anda pimpin, seorang kakak tingkat berkata sambil tertawa bahwa calon anggota dari satu suku yang suka membantah \"dipersulit ramai-ramai saja, tidak usah pakai aturan\". Beberapa panitia muda ikut tertawa. Sikap Anda adalah&hellip;",
+  "fakta": "Beberapa panitia muda ikut tertawa",
+  "konstruk": "menjaga wibawa dan hubungan dengan kakak tingkat vs menghentikan ajakan memusuhi satu suku di depan panitia muda",
+  "opts": {
+   "A": "Melaporkan ucapan rekan itu ke pembina organisasi agar beliau menegurnya secara resmi.",
+   "B": "Menganggapnya candaan senior agar rapat tetap cair, lalu mengingatkannya secara pribadi nanti.",
+   "C": "Menegur ucapan itu di depan rapat, dengan penegasan aturan berlaku sama.",
+   "D": "Menyerahkan pada panitia muda untuk menilai sendiri sikap mana yang pantas ditiru.",
+   "E": "Mengakhiri rapat dengan tenang, lalu menegur rekan empat mata atas sikap bencinya."
+  },
+  "poin": {
+   "A": "3 S3 +J3(lapor pembina tanpa pemicu)"
+  }
+ },
+ "10": {
+  "latar": "panitia seminar kampus",
+  "stem": "Anda panitia konsumsi seminar kampus. Seorang peserta alergi kacang menerima kotak berlabel “tanpa kacang”, padahal isinya bersambal kacang. Label itu ditulis rekan yang yakin sudah teliti, dan ia masih menempel label untuk puluhan kotak. Langkah paling tepat adalah&hellip;",
+  "konstruk": "kecepatan membagikan puluhan kotak makan vs ketepatan label bagi peserta yang alergi",
+  "opts": {
+   "A": "Mengusulkan tambahan panitia konsumsi ke ketua panitia agar label tidak menumpuk.",
+   "B": "Mengganti kotak peserta itu, lalu menunggu acara sepi baru bicara dengan rekan.",
+   "C": "Mengganti kotak itu, lalu mencocokkan tiap label dengan isinya sebelum dibagikan.",
+   "D": "Mengganti kotak peserta itu, lalu meminta rekan lebih cermat menulis label berikutnya.",
+   "E": "Menyimpulkan rekan kelelahan, lalu mengambil alih sendiri seluruh label kotak tersisa."
+  }
+ },
+ "11": {
+  "latar": "relawan kampus + karang taruna",
+  "stem": "Lansia satu RW mengeluh dikunjungi dua kali sepekan: oleh relawan kampus pimpinan Anda dan oleh karang taruna. Daftar karang taruna diperbarui bulan lalu, daftar Anda tahun lalu. Sikap Anda adalah&hellip;",
+  "fakta": "Daftar karang taruna diperbarui bulan lalu",
+  "konstruk": "jadwal tiap kelompok relawan yang punya kegiatannya sendiri vs beban lansia yang dikunjungi berulang",
+  "opts": {
+   "A": "Melapor ke ketua RW bahwa karang taruna tidak mau berbagi jadwal.",
+   "B": "Meminta para lansia bersabar, jadwal kunjungan relawan Anda tetap jalan seperti biasa.",
+   "C": "Menyerahkan daftar kunjungan Anda ke karang taruna sebagai acuan jadwal bersama.",
+   "D": "Menyepakati kunjungan gabungan dengan karang taruna, khusus untuk lansia yang sudah mengeluh.",
+   "E": "Mencocokkan daftar lansia kedua kelompok lebih dulu, baru menyusun jadwal kunjungan gabungan."
+  }
+ },
+ "12": {
+  "latar": "meja pendaftaran beasiswa kampus",
+  "stem": "Anda mengatur antrean pendaftaran beasiswa. Saat kuota hampir habis, teman menitipkan lima berkas yang katanya sudah ambil nomor, tetapi nomornya tak dibawa. Pekan lalu titipan serupa diprotes. Sikap Anda adalah&hellip;",
+  "fakta": "Pekan lalu titipan serupa diprotes",
+  "konstruk": "hubungan baik dengan teman vs keadilan urutan layanan bagi pendaftar yang antre",
+  "opts": {
+   "A": "Memproses kelima titipan lebih dulu, lalu meminta teman tidak mengulanginya lagi.",
+   "B": "Mengembalikan kelima berkas ke teman itu dengan menunjuk aturan antrean yang tertempel.",
+   "C": "Menunggu arahan tertulis ketua panitia soal kelima titipan itu sebelum memprosesnya.",
+   "E": "Melarang titipan di semua meja, lalu memproses kelima berkas atas pengakuan teman."
+  }
+ },
+ "13": {
+  "latar": "lab komputer kampus",
+  "stem": "Anda merekap proposal lomba antarkelompok bertenggat tiga hari lagi, lalu antivirus komputer lab memberi peringatan saat flashdisk satu kelompok dicolokkan. Kampus punya petugas lab untuk perangkat bermasalah, dan bulan lalu komputer lab sebelah tetap tertular walau dibersihkan sendiri. Apa respons Anda?",
+  "konstruk": "kelancaran rekap proposal sebelum tenggat vs keamanan komputer lab kampus",
+  "opts": {
+   "B": "Membawa flashdisk itu ke petugas lab, lalu mengabari kelompoknya soal pemeriksaan.",
+   "C": "Menanyakan ke teman satu panitia apakah peringatan semacam itu memang biasa muncul.",
+   "D": "Mengembalikan flashdisk itu ke kelompok lomba agar mereka bersihkan sendiri dulu."
+  },
+  "poin": {
+   "D": "3 S5 +J2(pembersihan dibebankan ke kelompok lomba)"
+  }
+ },
+ "14": {
+  "latar": "unit kegiatan mahasiswa",
+  "stem": "Rekan pelatih di unit panjat dinding kampus kerap meninggalkan anggota baru memanjat tanpa pendamping. Dua kali Anda tegur langsung, ia tetap mengulang, dan kemarin seorang anggota terkilir. Jadwal pelatih diatur pembina unit; angkatan ini masih berjalan dua bulan. Apa tindakan paling tepat?",
+  "konstruk": "hubungan antarpelatih yang setara vs keselamatan anggota dari kebiasaan rekan yang terus berulang",
+  "opts": {
+   "A": "Melaporkan kebiasaan itu ke pembina unit, lengkap dengan catatan tanggal tiap kejadian.",
+   "B": "Mencatat tiap kali rekan pergi, untuk dilaporkan bila ada anggota terluka lagi.",
+   "C": "Menjaga hubungan baik dengan rekan, urusan latihan memanjat diserahkan pada kesadarannya.",
+   "D": "Menegur rekan itu sekali lagi, lebih keras, di depan para anggota baru.",
+   "E": "Menggantikan rekan mengawasi latihan setiap kali ia meninggalkan anggota di dinding panjat."
+  },
+  "poin": {
+   "E": "4 S4 +J1(\"meninggalkan anggota\")"
+  }
+ },
+ "15": {
+  "latar": "karang taruna",
+  "stem": "Pamflet yang menuding satu kelompok agama sebagai ancaman negara tertempel di papan pengumuman balai warga, dan fotonya beredar di grup karang taruna. Anda pengurus yang mengelola papan serta grup itu, dan dua anggota dari kelompok tersebut mengaku tidak nyaman. Sikap Anda adalah&hellip;",
+  "fakta": "mengelola papan serta grup itu",
+  "konstruk": "ketenangan suasana organisasi vs menghentikan sebaran tudingan terhadap satu kelompok agama",
+  "opts": {
+   "A": "Mencopot pamflet, lalu meminta ketua karang taruna menghapus fotonya dan menemui keduanya.",
+   "B": "Menahan diri berkomentar di grup, mengingat pamflet itu di luar urusan organisasi.",
+   "D": "Mencopot pamflet, menghapus fotonya dari grup, lalu menemui kedua anggota itu."
+  },
+  "poin": {
+   "A": "4 S3 +J3(foto di grup yang Anda kelola diserahkan ke ketua karang taruna)"
+  }
+ }
+}

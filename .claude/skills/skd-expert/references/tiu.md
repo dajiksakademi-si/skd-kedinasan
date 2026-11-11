@@ -63,6 +63,16 @@ Sumber: tangkapan layar Paket 41 + pembahasan resmi (sebagian) dari Gusti. Log: 
 - 63 Matriks 3×3: tiap baris memuat tiga kelompok objek; aturan per kelompok (tetap / cermin / putar 90° tiap baris). (Claude salah: menganggap objek kembali tegak.)
 - Detail aturan per tipe ada di `tiu-verbal-figural.md` §7.2–7.3.
 
+**Pelajaran produksi figural bertema (Paket 1, 2026-11-08), berlaku untuk paket berikutnya:**
+- Cermin di layar sesudah putar: M·R(θ) = R(−θ)·M. Pose jawaban dihitung, jangan dibayangkan.
+- Benda untuk dihitung minimal 45/200 sisi sel. Lebih kecil dari itu kembali terasa kosong.
+- Soal tumpuk: benda kecil wajib tepat di garis tepi benda besar, kalau tidak depan/belakang tidak terbaca.
+- Aturan hitung: pasangan angka harus menggugurkan tafsir kali/bagi (3→5 dan 2→4, bukan 2→4 dan 3→6).
+- Soal gambar berbeda: tiap ciri sederhana (jumlah per jenis, total, ganjil-genap) tidak boleh menyendirikan opsi berbeda; ditegakkan assert.
+- Pola geser: "?" boleh di sel selain kanan bawah; sel yang berubah tersebar satu per baris dan satu per kolom.
+- Rupa (putusan Gusti, mulai Paket 2): bentuk seperti potongan kertas, tepi bulat tanpa ruas lurus atau sudut tajam, ujung tumpul, detail sedikit tetapi tebal. Tulis bentuk sebagai titik lewat `halus()`; ujung runcing ditulis dua titik berdekatan.
+- Benda yang diputar 45° harus digambar lebih kecil di kotaknya, kalau tidak menembus bingkai. Benda alami cenderung simetris: geser sisi kiri/kanan sampai lolos uji beda bentuk, dan pastikan rupanya tidak tertukar dengan benda lain dalam paket (beringin sempat terbaca jamur).
+
 **Kesalahan Claude yang tidak boleh terulang:**
 1. Berhenti di pola pertama yang cocok (60, 63) → aturan-tetap B-14.
 2. Menulis asumsi tanpa mengujinya (63: "baris 3 dianggap tegak") → asumsi = tanda bahaya; uji dulu ke semua opsi.
@@ -86,6 +96,14 @@ Diterapkan ke engine v0.4 Pilar 2 (2026-10-28). Produksi figural lewat generator
 **Modul TIU di engine itu DIBANGUN 2026-10-28:** `src/tiu-*.ts`, `npm run gen:tiu -- out-tiu`. Enam jenis: FIG-BEDA-PUTAR, FIG-BEDA-HITUNG, FIG-SERI-P3, FIG-SERI-KUADRAN, FIG-ANA-OBJ, FIG-MTX-PUTAR (14 contoh, lolos assert + cek mata). Aturan produksi figural: bentuk kiral; aturan tunggal dibuktikan script; pengecoh salah tepat satu keputusan bernama; jawaban tidak boleh sama dengan gambar yang terlihat; gambar berbeda tanpa gambar soal; cek mata wajib karena penyaring piksel kasar. Log: `~/.claude/skills/skd-expert/riset/2026-10-28-log-engine-figural-tiu.md`.
 **Jenis 9–10 (2026-10-28, dari pembahasan resmi Al Faiz 59/65):** FIG-ANA-UBAH (jumlah kelopak/cabang ±k + tukar tempat + cermin objek bawah; bukti: tafsir tambah vs kali/bagi harus memberi jumlah sama) dan FIG-MTX-GABUNG (kolom 3 = gabungan bagian kolom 1+2, bagian inti di dua kolom supaya tafsir XOR gugur; bintang kecil kolom 2 ujung lancip jadi tumpul). Pelajaran: pengecoh yang hanya MENGURANGI bagian membuat kunci = satu-satunya opsi paling lengkap (bocor) → setiap ciri kunci wajib dimiliki minimal satu pengecoh; objek yang dihitung minimal skala 0,6; bagian yang bersarang di dalam bagian lain terbaca satu bentuk.
 **Audit mudah ketebak (2026-10-28, perintah Gusti: semua figural sedang–sulit):** pengecoh yang salah tepat satu objek membuat kunci = opsi paling banyak berbagi ciri (ANA-OBJ, SERI-KUADRAN) → semua jenis berpengecoh-ciri memakai `pilih` (tiu-bentuk.ts): pengecoh 1–2 kesalahan, setiap atribut pernah salah, setiap ciri kunci dimiliki pengecoh, kunci tidak unggul dalam ciri bersama, kunci bukan satu-satunya nilai tengah hitungan. Gambar berbeda hitung: ≥3 jenis, target bukan hitam (kalau tidak, kunci = gambar paling gelap). Gambar berbeda tumpuk: bentuk kecil wajib tertutup 20–70% oleh bentuk besar, kalau tidak depan/belakang tidak terlihat. Pengukur piksel tidak cocok untuk audit tebakan (rupa garis/arsir tak terhitung; putar/cermin selalu tampak beda) → audit di tingkat ciri.
+
+## Pelajaran figural bertema (kerja ulang 2026-11-08) — `src/tiu-tema*.ts`
+1. Kunci dan pengecoh dibuktikan dari parameter keadaan (`pilihPengecoh`), bukan dari piksel; rupa aset dijaga pemeriksa raster `tiu-tema-cek.ts` (objek besar beda putar/cermin ≥ 0,3).
+2. Aturan v3 dipasang di pemilih: ciri mudah (jenis/letak benda) menggugurkan ≤ 1 pengecoh, ciri halus ≤ 3, ≥ 2 ciri yang nilai kuncinya bukan terbanyak, antar-pengecoh beda ≥ 2 ciri, kunci ≠ gambar di soal.
+3. Objek besar ≥ 70% sisi sel (144 dari 200); objek kecil di pinggir/pojok. Lebih kecil = rupa kosong yang dulu ditolak Gusti.
+5. Dua jenis Al Faiz Paket 41 belum ada: no. 57 seri SIFAT BERSAMA + warna bergantian (bentuk berganti, sifat tetap, mis. empat lengkung simetris; jebakan = salah hitung lengkung) dan no. 65 matriks POLA GESER (tiga kelompok bergeser satu kolom per baris; tiap kelompok berubah tepat sekali, sel berubah satu per baris dan per kolom — aturan konsisten, koreksi cap "cacat" 2026-10-28). Paket 41 no. 62 = BEDA-TUMPUK (bukan BEDA-PUTAR): kunci beda di dua ciri sekaligus. Kunci Al Faiz no. 65 = nilai terbanyak tiap ciri; versi kita wajib menolak ini. Rincian: log figural bagian 'Pelajari ulang … no. 57, 64, 65'.
+6. Pembahasan figural: tiap langkah diawali nama aturannya (pola warna/bentuk/jumlah/letak), sebut yang diabaikan ("bentuk dan letak objek kecil tidak dihitung"), tampilkan gambar jawaban; gambar pembahasan dianotasi (lingkaran per kelompok, penanda benda yang berubah); tulis "dibalik atas-bawah"/"dicermin kiri-kanan", bukan "cermin horizontal/vertikal".
+4. Codex otomatis bisa ditolak pengaman izin; cadangan = aset digambar lewat kode `aset-tema/gambar.py` (nama file sama, bisa diganti codex kelak).
 
 ## Pelajaran produksi 3 paket figural (2026-10-29) — engine `k12-spatial-engine`, `src/tiu-paket.ts`
 Semua lolos pemeriksa mesin pada percobaan pertama, tetapi cek mata menemukan 9 cacat. Pemeriksa mesin = penyaring, cek mata = penentu.

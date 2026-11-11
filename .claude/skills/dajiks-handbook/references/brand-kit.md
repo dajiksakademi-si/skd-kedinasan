@@ -24,7 +24,7 @@ Selera Gusti: **tenang dan elegan**. Hiasan memanjang atau ramai ditolak. Contoh
 | Latar halaman | `#fbfcfe` |
 | Merah pilihan salah | `#8c2f2f` di atas `#fbefec` |
 
-Satu nuansa lembut per buku diambil dari gambar sampulnya: TIU biru pucat (`#edf2fb`, pita `#e9f0fb` ke `#dbe6f5`), TWK navy emas, TKP krem batu (hanya TKP). Buku baru memilih nuansanya sendiri lewat papan pilihan. Warna inti tidak berubah.
+Satu nuansa lembut per buku diambil dari gambar sampulnya: TIU biru pucat (`#edf2fb`, pita `#e9f0fb` ke `#dbe6f5`), TWK navy emas, TKP krem batu (hanya TKP). Buku baru memilih nuansanya sendiri lewat papan pilihan. Warna inti tidak berubah. Grammar CEST (Gusti 2026-11-11): pita gradasi putih ke navy, nuansa biru pucat `#eef3fb`/`#dbe6f5`, menggantikan emas pucat; teks pita dibatasi lebar agar tidak masuk area navy.
 
 ## Halaman
 - A4, margin 17 / 17 / 16 mm, isi 9,8 pt, jarak baris 1,6.
@@ -54,3 +54,16 @@ Sampul berlapis (gradasi transparan, `mix-blend-mode`) digabung dulu jadi satu J
 - Label + teks sumber dalam satu baris flex bisa terbelah antarhalaman: pakai `display:block`.
 - Di kotak yang boleh terbelah, pemisah butir `border-top` menempel di puncak kotak lanjutan (Chrome tidak punya selektor awal fragmen). Edisi HP: pisahkan butir dengan jarak, bukan garis; A4 boleh tetap bergaris.
 - Pita pembuka bab tidak muat satu halaman A4 bersama contoh soal panjang; di prototipe, contoh dimulai di halaman baru.
+
+## Slide, carousel, dan PDF promosi (standar global, Gusti 2026-11-10)
+Acuan jadi: `~/Downloads/dajiks-cest/output/promosi/kelas-cest-carousel-2026-11-09/carousel.html` + `render.py` (Playwright → PNG 2×, JPG, PDF Chromium dengan teks bisa disalin). Mulai dari salinan file ini, jangan dari nol.
+- **Kanvas 1080 × 1350.** Dilihat di HP ±390 pt, jadi ukuran terbagi ±2,8. Huruf terkecil **22 px** (±8 pt di HP); pengecualian hanya footer disclaimer 19 px dan label mikro di dalam badge 15–16 px.
+- **Skala huruf:** judul 74 px (h1 sampul ±105 px), subjudul 29 px, isi 25–31 px, angka sorotan 110–150 px, label eyebrow 16–22 px kapital bertracking. Plus Jakarta Sans 800 untuk judul, Cinzel hanya nama brand.
+- **Isi terlalu padat → pecah jadi dua slide**, jangan perkecil huruf dan jangan pangkas isi tanpa izin (Instagram maks. 20 slide).
+- **Posisi konten = bawah hero + 28 px.** Ukur `hero.bottom` di Playwright tiap render; judul yang turun ke 2 baris menggeser konten.
+- **Kartu grid berisi teks beragam panjang:** tinggi kotak teks tetap (nama 2–3 baris), label status ditaruh di pojok foto, supaya foto/skor/label sejajar antar baris.
+- **Foto orang 4:5:** kotak foto cukup tinggi supaya bahu dan badan terlihat; `background-size: 100% auto`, posisi atas.
+- **Preview screenshot:** zoom 100–120% supaya layout terlihat luas; teks di dalam screenshot boleh kecil karena fungsinya gambaran.
+- **Judul aspek/tipe soal bahasa Inggris**, terjemahan Indonesia singkat di bawahnya, kategori (skill) sebagai eyebrow emas di atas. Judul satu baris; pendekkan bila terpotong jelek.
+- **Cek tiap render:** skrip pelapor luapan (teks keluar slide / menempel footer) + lihat semua slide berdampingan di grid sebelum ekspor final. Versi lama dicadangkan sebelum mengubah.
+- **Urutan AirDrop iPhone:** Photos mengurutkan menurut tanggal ambil EXIF, bukan nama file. Ekspor JPG wajib diberi EXIF DateTimeOriginal berurutan (slide 1 paling awal, selisih 1 detik) + mtime sama; sudah ada di `render.py` acuan.

@@ -1,4 +1,4 @@
-// node patch_soal.js <soal.js> <patch.json> [--dry]: ganti stem/opts/fakta/konstruk/poin per soal, cek tiap literal ganti tepat 1x.
+// node patch_soal.js <soal.js> <patch.json> [--dry]: ganti stem/opts/fakta/konstruk/latar/poin per soal, cek tiap literal ganti tepat 1x.
 const fs = require('fs'), path = require('path');
 const [file, patchFile, dry] = process.argv.slice(2);
 const items = require(path.resolve(file)), patch = JSON.parse(fs.readFileSync(patchFile, 'utf8'));
@@ -11,6 +11,7 @@ for (const [n, p] of Object.entries(patch)) {
   if (p.stem) pairs.push([s.stem, p.stem]);
   if (p.fakta) pairs.push([s.fakta, p.fakta]);
   if (p.konstruk) pairs.push([s.konstruk, p.konstruk]);
+  if (p.latar) pairs.push([s.latar, p.latar]);
   for (const l in p.opts || {}) pairs.push([s.opts[l], p.opts[l]]);
   for (const l in p.poin || {}) pairs.push([s.poin[l], p.poin[l]]);
   // ganti hanya di blok soal n (skor pendek seperti '4 S4' muncul di banyak soal)

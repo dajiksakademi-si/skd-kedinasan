@@ -1,0 +1,139 @@
+{
+ "16": {
+  "latar": "grup warga kompleks",
+  "stem": "Anda admin grup warga kompleks. Malam ini seorang warga senior meneruskan video “bocoran” rencana kerusuhan satu kelompok warga sambil mengajak anggota grup bersiap melawan kelompok itu, dan video itu sudah diteruskan ke grup lain. Sikap Anda adalah&hellip;",
+  "konstruk": "keleluasaan anggota grup dan hubungan dengan warga senior vs menghentikan sebaran video yang memancing permusuhan antarkelompok",
+  "opts": {
+   "A": "Menghapus video itu, dengan anggota baru ditugasi memantau grup setiap malam.",
+   "D": "Mengingatkan para warga tentang bahaya video itu dalam pertemuan rutin besok pagi."
+  },
+  "poin": {
+   "A": "4 S4 +J2(pemantauan dibebankan ke anggota baru, bergantung satu orang)"
+  }
+ },
+ "17": {
+  "latar": "pengelola situs himpunan",
+  "stem": "Sejak pagi banyak mahasiswa mengeluh situs pendaftaran kegiatan himpunan sangat lambat. Rekan senior di tim pengelola situs yakin server penuh dan ingin segera menghapus arsip lama, padahal sejak semalam penyedia internet sedang memperbarui jaringan kampus. Apa tindakan paling tepat?",
+  "konstruk": "memulihkan situs pendaftaran secepatnya vs memastikan penyebab agar data arsip tidak terhapus sia-sia",
+  "opts": {
+   "A": "Menampung pendaftaran tiap mahasiswa lewat formulir daring pribadi Anda selama situs lambat.",
+   "B": "Menghapus arsip lama di halaman yang paling lambat, sesuai dugaan rekan senior.",
+   "D": "Mengikuti saran rekan senior menghapus arsip lama di semua halaman hari ini.",
+   "E": "Menghubungi penyedia internet agar pembaruan jaringan kampus ditunda sampai jam kuliah usai."
+  }
+ },
+ "18": {
+  "latar": "pawai budaya kampung",
+  "stem": "Seksi acara pawai budaya 17 Agustus di kampung mencoret sanggar barongsai warga Tionghoa karena dianggap “bukan budaya daerah”, padahal sanggar itu sudah terdaftar sesuai aturan pendaftaran. Penetapan peserta ada di tangan ketua panitia, dan pendaftaran tutup lusa sore. Langkah pertama yang Anda ambil adalah&hellip;",
+  "konstruk": "menghormati keputusan seksi acara vs hak setara sanggar warga keturunan yang sudah terdaftar",
+  "opts": {
+   "B": "Meminta panitia hari ini memasukkan kembali sanggar itu, dengan menunjukkan salinan aturan.",
+   "C": "Menyerahkan daftar coretan panitia ke ketua panitia hari ini, beserta salinan aturan.",
+   "D": "Mengikuti keputusan seksi acara demi menjaga hubungan baik dengan tokoh setempat."
+  }
+ },
+ "19": {
+  "latar": "himpunan mahasiswa",
+  "stem": "Daftar penerima bantuan kuota internet mahasiswa yang Anda pegang harus rapi lusa, dan isinya memuat NIK serta nomor ponsel ratusan mahasiswa. Rekan Anda mengusulkan daftar itu diunggah ke alat AI daring gratis supaya cepat beres, padahal tiga pengurus siap membantu. Langkah paling tepat adalah&hellip;",
+  "fakta": "NIK serta nomor ponsel ratusan mahasiswa",
+  "konstruk": "tenggat merapikan daftar bantuan kuota vs larangan data pribadi mahasiswa keluar ke layanan daring pihak luar",
+  "opts": {
+   "A": "Membagi perapian daftar kepada tiga pengurus, lalu mengerjakannya di lembar kerja himpunan.",
+   "B": "Meminta izin ketua himpunan untuk mengunggah daftar itu, toh tenggatnya tinggal lusa.",
+   "C": "Mengunggah seluruh daftar ke alat itu demi bantuan cepat sampai ke mahasiswa.",
+   "E": "Meminta para mahasiswa mengisi ulang datanya lewat formulir daring, lalu menunggu hasilnya."
+  },
+  "poin": {
+   "E": "2 +J2(beban merapikan dipindah ke mahasiswa)"
+  }
+ },
+ "20": {
+  "latar": "panitia HUT desa",
+  "stem": "Sore ini Anda harus mengirim rekap dana dua belas seksi HUT desa ke ketua dalam format seragam. Saat diperiksa, angka satu seksi melonjak tiga kali lipat dan belum ditandatangani bendahara seksinya, yang masih bisa dihubungi hari ini. Langkah pertama yang Anda ambil adalah&hellip;",
+  "fakta": "belum ditandatangani bendahara seksinya",
+  "konstruk": "tenggat pengiriman rekap dana ke ketua vs lonjakan angka satu seksi yang belum disahkan bendahara",
+  "opts": {
+   "A": "Menelepon ketua, lalu meminta beliau memutuskan nasib angka janggal itu.",
+   "B": "Menunda seluruh rekap, lalu menunggu kedua belas seksi memastikan ulang angkanya.",
+   "C": "Mengirim rekap apa adanya, toh kebenaran angka itu tanggung jawab seksi pengirim.",
+   "D": "Mencantumkan angka seksi itu sesuai format seragam, dengan tanda belum disahkan bendahara.",
+   "E": "Mengirim rekap sebelas seksi sore ini, angka satu seksi ditahan sampai disahkan."
+  }
+ },
+ "21": {
+  "latar": "komunitas relawan mengajar",
+  "stem": "Rekan relawan mengajar dari luar daerah mengeluh setahun ini tidak pernah ditugaskan ke dua desa tertentu, karena koordinator selalu memilih relawan yang sesuku dengan tokoh desa di sana. Anda penyusun jadwal, pedoman komunitas mewajibkan rotasi, dan jadwal bulan ini belum terbit. Apa respons Anda?",
+  "konstruk": "kelancaran komunikasi dengan tokoh desa vs kesempatan penugasan yang setara bagi relawan dari luar daerah",
+  "opts": {
+   "A": "Mengatur giliran penugasan bulan ini berdasarkan rotasi, tanpa melihat asal daerah relawan.",
+   "B": "Membagi hari tugas sama rata ke semua relawan tanpa mengubah desa tujuannya.",
+   "D": "Memasukkan rekan yang mengeluh itu ke tim mengajar dua desa tersebut bulan ini.",
+   "E": "Mempertahankan pola sekarang, toh koordinator lebih paham karakter tokoh desa di sana."
+  }
+ },
+ "22": {
+  "stem": "Antrean surat sehat di puskesmas lambat karena satu dari dua dokter baru datang pukul sepuluh, sesuai jadwal. Seorang pengantar pasien memarahi petugas sambil merekamnya, padahal ada papan larangan merekam, dan pasien lain mulai gelisah. Anda koordinator layanan di meja informasi. Respons paling tepat adalah&hellip;",
+  "latar": "puskesmas"
+ },
+ "24": {
+  "latar": "kepengurusan RT",
+  "stem": "Anda sekretaris RT. Seorang warga datang dan menuduh keluarga pendatang, yang sedang mengurus surat pengantar domisili, sebagai “anggota kelompok radikal”. Ia tak membawa bukti dan diketahui sedang bersengketa batas tanah dengan keluarga itu. Apa yang Anda lakukan?",
+  "fakta": "sedang bersengketa batas tanah",
+  "konstruk": "kewaspadaan terhadap kemungkinan kelompok radikal vs keadilan bagi warga yang dituduh tanpa bukti",
+  "opts": {
+   "A": "Menunda surat pengantar keluarga itu sampai polisi selesai memeriksa tuduhan tadi.",
+   "B": "Menyerahkan keputusan surat ke ketua RT, lalu diam soal tuduhan itu.",
+   "C": "Memproses surat pengantar sesuai syaratnya, dengan pelapor diarahkan membawa aduannya ke polisi.",
+   "D": "Meminta keluarga itu membuktikan dirinya bukan kelompok radikal sebelum surat diproses.",
+   "E": "Memproses surat pengantar sesuai syaratnya, dengan tuduhan itu diteruskan ke polisi."
+  }
+ },
+ "26": {
+  "latar": "komunitas donasi buku",
+  "stem": "Sebagai koordinator pengumpulan donasi buku komunitas, Anda mendapat kabar tiga sekolah di pinggiran kota akan terlambat lagi menyerahkan buku, karena kendaraannya hanya ke pusat kota seminggu sekali. Batasnya Jumat ini, dan mobil komunitas menjemput keliling setiap Kamis. Tindakan paling tepat adalah&hellip;",
+  "konstruk": "kewajiban tiap sekolah mengantar sendiri bukunya vs ketepatan tenggat pengumpulan donasi",
+  "opts": {
+   "A": "Menambahkan satu sekolah yang paling sering terlambat ke rute jemputan Kamis.",
+   "B": "Mengirim surat peringatan keterlambatan kepada tiga sekolah yang selalu terlambat itu.",
+   "C": "Melapor ke dinas pendidikan, lalu meminta ketiga sekolah itu ditegur tertulis.",
+   "D": "Menambahkan ketiga sekolah ke rute jemputan Kamis, dikabari hari ini.",
+   "E": "Mencatat keterlambatan ketiga sekolah itu, lalu menunggu saja kiriman buku mereka berikutnya."
+  },
+  "poin": {
+   "C": "3 S4 +J3(naik ke dinas pendidikan, padahal kendala kendaraan bisa diatasi sendiri)"
+  }
+ },
+ "28": {
+  "latar": "posyandu",
+  "stem": "Pagi ini timbangan digital posyandu yang Anda koordinasi rusak, padahal hari ini berat balita harus ditimbang untuk penentuan bantuan makanan tambahan. Timbangan gantung cadangan di balai desa masih layak pakai dan sudah dicek ketepatannya. Sikap Anda adalah&hellip;",
+  "fakta": "sudah dicek ketepatannya",
+  "konstruk": "ketepatan waktu data bantuan makanan tambahan vs keabsahan hasil timbang balita",
+  "opts": {
+   "A": "Meminjam timbangan digital milik satu keluarga yang juga calon penerima bantuan.",
+   "B": "Menjadwalkan ulang penimbangan pekan depan, lalu menunggu timbangan digital selesai diperbaiki.",
+   "C": "Melaporkan kerusakan timbangan ke kepala puskesmas, lalu menunggu keputusan beliau.",
+   "D": "Meminta ibu-ibu menimbang sendiri balitanya di rumah untuk dilaporkan ke kader.",
+   "E": "Menimbang hari ini memakai timbangan gantung cadangan, dengan jenis alatnya dicatat."
+  },
+  "poin": {
+   "C": "2 +J3(naik ke kepala puskesmas tanpa pemicu, sarana pengganti sudah ada)"
+  }
+ },
+ "29": {
+  "latar": "pusat karier kampus",
+  "stem": "Bulan ini empat perusahaan mitra di aplikasi info magang kampus yang Anda kelola mengubah syarat lowongan tanpa memperbaruinya, sehingga banyak mahasiswa ditolak saat wawancara. Nama keempatnya baru Anda ketahui dari keluhan mahasiswa. Perjanjian memberi pusat karier wewenang mengatur pemakaian aplikasi. Apa yang Anda lakukan?",
+  "konstruk": "keleluasaan perusahaan mitra mengatur lowongannya vs kepastian informasi lowongan bagi mahasiswa pencari magang",
+  "opts": {
+   "A": "Meneruskan semua keluhan mahasiswa ke perusahaan terkait untuk ditangani sendiri.",
+   "C": "Menambah peringatan di aplikasi agar mahasiswa menanyakan sendiri syarat terbaru ke perusahaan.",
+   "E": "Menegur keempat mitra berdasarkan keluhan mahasiswa, tanpa mencocokkan dulu isi aplikasinya."
+  },
+  "poin": {
+   "C": "2 +J2(beban mencari syarat terbaru dipindah ke mahasiswa)"
+  }
+ },
+ "30": {
+  "latar": "bank sampah kampung",
+  "stem": "Dua hari ini kuota timbang bank sampah kampung habis sebelum siang karena diserbu setoran botol para pengepul besar sejak pagi, padahal sasaran utama bank sampah adalah rumah tangga yang biasa datang siang hari. Anda pengelola yang berwenang mengatur setoran. Langkah pertama yang Anda ambil adalah&hellip;"
+ }
+}

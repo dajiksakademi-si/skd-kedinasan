@@ -8,7 +8,7 @@ Diksi guru ahli yang tegas dan tepat: misalkan, perhatikan, akibatnya, terbukti,
 ## Judul
 Gaya penyusun buku pelajaran: frasa benda yang menamai topik, huruf kapital tiap kata, padat dan bernas. Contoh baik: "Sejarah Perumusan Pancasila", "Contoh Soal dan Pembahasan", "Kekeliruan yang Sering Terjadi".
 
-Ditolak: "Contoh dibedah", "Jebakan khas bab ini", "Tiga tanggal, satu proses". Hindari pola slogan sejajar ("Satu X, Y"), judul bertitik dua dengan tagline, dan kiasan (dibedah, dipertaruhkan, jinak, menjebak).
+Ditolak: "Contoh dibedah", "Jebakan khas bab ini", "Tiga tanggal, satu proses". Juga "Satu Kata, Preposisi Berbeda", "Satu Tense Satu Halaman" (Grammar 2026-11-11), walaupun berasal dari peta bab rencana: judul rencana tetap diperiksa sebelum dicetak. Hindari pola slogan sejajar ("Satu X, Y"), judul bertitik dua dengan tagline, dan kiasan (dibedah, dipertaruhkan, jinak, menjebak).
 
 Label kotak baku: Catatan, Kiat, Ilustrasi, Perhatikan, Inti Pertanyaan, Langkah Penyelesaian, Pilihan yang Gugur, Jawaban: X, Kekeliruan yang Mungkin Terjadi.
 
@@ -16,6 +16,7 @@ Label kotak baku: Catatan, Kiat, Ilustrasi, Perhatikan, Inti Pertanyaan, Langkah
 - Frasa: "Mari kita", "Dengan demikian", "Penting untuk dicatat", "Secara keseluruhan", "akan tetapi", "Di era …", "tidak hanya … tetapi juga" berulang, "satu-satunya", "sekaligus".
 - "Maka" dan "karena itu" boleh, paling banyak 1× per subbagian atau pembahasan.
 - Ragam lisan di narasi: "kok", "nggak", "enggak". Emoji.
+- Diksi generik AI (Gusti 2026-11-11): "jalur belajar", "lajur", "menjaga nilai", "hubungannya dengan", "X, bukan Y" sebagai penutup kalimat, kalimat slogan pendek ("Satu kata keliru berarti satu poin hilang"). Pakai kata guru buku pelajaran: urutan belajar, mulailah, dahulukan, perhatikan, akibatnya.
 - Templat AI: daftar tiga kata sifat, slogan berpasangan, kalimat pembuka atau penutup klise, poin berlebihan.
 
 ## Pembahasan: suara guru les di meja belajar

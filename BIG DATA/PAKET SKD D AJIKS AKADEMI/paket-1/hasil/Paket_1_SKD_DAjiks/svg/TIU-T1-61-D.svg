@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200"><rect x="1.5" y="1.5" width="197" height="197" fill="#fff" stroke="#111" stroke-width="3"/><g transform="translate(52.5 56.5) scale(0.45) rotate(45 50 50)"><path d="M50 30 Q52 18 58 10" fill="none" stroke="#111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M60 16 Q76 6 88 14 Q80 28 62 24 Z" fill="#111"/>
+  <path d="M50 32 Q72 18 86 40 Q94 66 72 86 Q60 96 50 88 Q40 96 28 86 Q6 66 14 40 Q28 18 50 32 Z" fill="#111"/>
+  <path d="M26 44 Q24 58 34 70" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g><g transform="translate(11.5 148.5) scale(0.45) rotate(225 50 50)"><path d="M50 30 Q52 18 58 10" fill="none" stroke="#111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M60 16 Q76 6 88 14 Q80 28 62 24 Z" fill="#111"/>
+  <path d="M50 32 Q72 18 86 40 Q94 66 72 86 Q60 96 50 88 Q40 96 28 86 Q6 66 14 40 Q28 18 50 32 Z" fill="#111"/>
+  <path d="M26 44 Q24 58 34 70" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g><g transform="translate(101.5 145.5) scale(0.45) rotate(270 50 50)"><path d="M50 30 Q52 18 58 10" fill="none" stroke="#111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M60 16 Q76 6 88 14 Q80 28 62 24 Z" fill="#111"/>
+  <path d="M50 32 Q72 18 86 40 Q94 66 72 86 Q60 96 50 88 Q40 96 28 86 Q6 66 14 40 Q28 18 50 32 Z" fill="#111"/>
+  <path d="M26 44 Q24 58 34 70" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g><g transform="translate(5.5 56.5) scale(0.45) rotate(270 50 50)"><path d="M50 30 Q52 18 58 10" fill="none" stroke="#111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M60 16 Q76 6 88 14 Q80 28 62 24 Z" fill="#111"/>
+  <path d="M50 32 Q72 18 86 40 Q94 66 72 86 Q60 96 50 88 Q40 96 28 86 Q6 66 14 40 Q28 18 50 32 Z" fill="#111"/>
+  <path d="M26 44 Q24 58 34 70" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g><g transform="translate(7.5 9.5) scale(0.45) rotate(135 50 50)"><path d="M20 16 L30 12 Q34 50 62 62 Q78 68 90 62 Q92 72 84 78 Q44 94 22 56 Q14 38 20 16 Z" fill="#fff" stroke="#111" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M26 22 Q30 60 74 74" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g><g transform="translate(148.5 10.5) scale(0.45) rotate(180 50 50)"><path d="M20 16 L30 12 Q34 50 62 62 Q78 68 90 62 Q92 72 84 78 Q44 94 22 56 Q14 38 20 16 Z" fill="#fff" stroke="#111" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M26 22 Q30 60 74 74" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g><g transform="translate(54.5 144.5) scale(0.45) rotate(315 50 50)"><path d="M20 16 L30 12 Q34 50 62 62 Q78 68 90 62 Q92 72 84 78 Q44 94 22 56 Q14 38 20 16 Z" fill="#fff" stroke="#111" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M26 22 Q30 60 74 74" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g><g transform="translate(149.5 101.5) scale(0.45) rotate(135 50 50)"><path d="M20 16 L30 12 Q34 50 62 62 Q78 68 90 62 Q92 72 84 78 Q44 94 22 56 Q14 38 20 16 Z" fill="#fff" stroke="#111" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M26 22 Q30 60 74 74" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g><g transform="translate(55.5 99.5) scale(0.45) rotate(315 50 50)"><path d="M50 26 Q86 24 88 58 Q86 92 50 92 Q14 92 12 58 Q14 24 50 26 Z" fill="#111"/>
+  <path d="M28 26 L38 10 L50 22 L62 10 L72 26 Q50 38 28 26 Z" fill="#111"/>
+  <circle cx="32" cy="54" r="4.4" fill="#fff"/>
+  <circle cx="50" cy="48" r="4.4" fill="#fff"/>
+  <circle cx="68" cy="54" r="4.4" fill="#fff"/>
+  <circle cx="40" cy="70" r="4.4" fill="#fff"/>
+  <circle cx="60" cy="70" r="4.4" fill="#fff"/>
+  <circle cx="50" cy="82" r="4.4" fill="#fff"/></g><g transform="translate(54.5 7.5) scale(0.45) rotate(225 50 50)"><path d="M50 26 Q86 24 88 58 Q86 92 50 92 Q14 92 12 58 Q14 24 50 26 Z" fill="#111"/>
+  <path d="M28 26 L38 10 L50 22 L62 10 L72 26 Q50 38 28 26 Z" fill="#111"/>
+  <circle cx="32" cy="54" r="4.4" fill="#fff"/>
+  <circle cx="50" cy="48" r="4.4" fill="#fff"/>
+  <circle cx="68" cy="54" r="4.4" fill="#fff"/>
+  <circle cx="40" cy="70" r="4.4" fill="#fff"/>
+  <circle cx="60" cy="70" r="4.4" fill="#fff"/>
+  <circle cx="50" cy="82" r="4.4" fill="#fff"/></g><g transform="translate(5.5 98.5) scale(0.45) rotate(180 50 50)"><path d="M50 26 Q86 24 88 58 Q86 92 50 92 Q14 92 12 58 Q14 24 50 26 Z" fill="#111"/>
+  <path d="M28 26 L38 10 L50 22 L62 10 L72 26 Q50 38 28 26 Z" fill="#111"/>
+  <circle cx="32" cy="54" r="4.4" fill="#fff"/>
+  <circle cx="50" cy="48" r="4.4" fill="#fff"/>
+  <circle cx="68" cy="54" r="4.4" fill="#fff"/>
+  <circle cx="40" cy="70" r="4.4" fill="#fff"/>
+  <circle cx="60" cy="70" r="4.4" fill="#fff"/>
+  <circle cx="50" cy="82" r="4.4" fill="#fff"/></g></svg>

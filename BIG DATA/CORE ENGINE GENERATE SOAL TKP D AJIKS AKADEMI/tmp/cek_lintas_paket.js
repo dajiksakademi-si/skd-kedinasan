@@ -21,7 +21,7 @@ const pembanding = argPembanding.length ? argPembanding
 // parafrase dengan kata lain lolos, jadi tetap perlu dibaca manusia.
 const KEMBAR = 0.4;
 const MIRIP = 0.25;
-const LATAR_MIN = 12;
+const LATAR_MIN = 0; // dihapus putusan Gusti 2026-11-11: latar sebatas pengalaman lulusan SMA, tidak wajib melebar (dulu 12)
 const LATAR_MAKS = 3;
 
 const decode = (s) => (s || '').replace(/<[^>]+>/g, ' ').replace(/&[a-z]+;/g, ' ').replace(/\s+/g, ' ').trim();

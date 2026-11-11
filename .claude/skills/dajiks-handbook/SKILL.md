@@ -60,6 +60,7 @@ Edisi pengajar hanya bila Gusti meminta. Fokus bawaan: buku siswa, satu jilid, s
 - Sistem desain jangan diubah tanpa papan pilihan dan rekomendasi.
 - Sesudah gambar lolos pemeriksaan script, tetap lihat dengan mata. Script membuktikan benar, tidak membuktikan terbaca.
 - Gambar yang menjelaskan arah memakai bentuk ramping atau tidak simetris.
+- Slide, carousel, PDF promosi: ikuti standar global di `references/brand-kit.md` (huruf min. 22 px di kanvas 1080; Gusti 2026-11-10).
 - Isi yang dicetak ulang di bab lain diambil script dari kartu asalnya, bukan disalin.
 
 ## Pemeriksaan akhir (T7)
@@ -79,6 +80,8 @@ Pemeriksaan selalu pada berkas akhir, setelah build terakhir.
 - CSS sampul dari prototipe bisa memuat aturan `@page` global, sehingga margin seluruh buku hilang dan jumlah halaman turun tajam. Pakai CSS sampul yang terbatas pada `.cover`, dan bandingkan jumlah halaman sebelum dan sesudah memasang sampul. CSS terbatas pun mewarisi `line-height` dan `font-variant-numeric` dari `body`: reset pada `.cover`, lalu bandingkan sampul terpasang dengan prototipe berdampingan.
 - Daftar Isi yang meluber ke halaman berikutnya membuat nomor bab terbaca dari Daftar Isi. Rapatkan jadi satu halaman, lalu bangun ulang tanpa cache nomor.
 - Sesi paralel bisa mengunci putusan baru. Baca log tugas sampai akhir lagi tepat sebelum T7, terutama soal sampul.
+- Tautan internal PDF dari Chrome/puppeteer tersimpan sebagai tujuan bernama: valid, tetapi tidak bekerja di Preview macOS (Grammar 2026-11-11, ditegur Gusti). Pasca-proses wajib: ubah ke tujuan langsung `[halaman /XYZ x y 0]` (contoh `dajiks-cest/docs/handbook-cest/grammar/src/tautan_pdf.py`, pypdf), lalu cek semua `/Dest` berupa array.
+- Makro yang ditulis di komentar HTML ikut diperluas build (Grammar 2026-11-11: `{{TOC_TENSE}}` di komentar menggandakan baris Daftar Isi; `{{HAL:...}}` di komentar membuat judul palsu "..."). Komentar menyebut makro tanpa kurung kurawal.
 - Angka ringkasan berubah sesudah butir dihapus: jalankan pemeriksanya dulu sebelum menyatakan angka tetap.
 
 ## Pencatatan

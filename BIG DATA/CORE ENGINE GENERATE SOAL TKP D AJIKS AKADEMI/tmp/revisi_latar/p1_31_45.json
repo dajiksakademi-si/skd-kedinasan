@@ -1,0 +1,139 @@
+{
+ "31": {
+  "latar": "rapat warga",
+  "stem": "Anda mengatur rapat warga soal pelebaran jalan kampung Rabu ini, satu-satunya kesempatan tanya jawab. Seorang warga minta jadwal digeser karena hari itu Galungan, padahal warga lain sudah izin kerja. Rapat bisa disiarkan di grup warga dan menerima pertanyaan tertulis. Respons paling tepat adalah&hellip;",
+  "konstruk": "jadwal rapat yang sudah diumumkan vs kesempatan setara bagi warga yang merayakan hari raya agamanya",
+  "opts": {
+   "A": "Menggeser rapat ke Kamis demi warga itu, lalu mengumumkan jadwal barunya.",
+   "B": "Meminta warga itu membuktikan hari rayanya dulu, khawatir hanya cara mengulur jadwal.",
+   "C": "Mengirimkan rekaman rapat kepada warga itu agar ia menerima penjelasan yang sama.",
+   "D": "Mempertahankan jadwal Rabu apa adanya, mengingat tiap warga harus diperlakukan sama.",
+   "E": "Menayangkan rapat Rabu secara daring, lalu menampung pertanyaan warga sampai Jumat."
+  }
+ },
+ "32": {
+  "latar": "sekolah menengah",
+  "stem": "Anda staf tata usaha SMA. Berkas beasiswa seorang alumni dari pulau tinggal kurang legalisir fotokopi ijazah. Ijazah aslinya di pulau, batasnya Jumat, dan kapal baru datang Sabtu. Arsip ijazah ada di sekolah, dan kepala sekolah yang berwenang melegalisir sedang di kantor. Apa yang Anda lakukan?",
+  "fakta": "kepala sekolah yang berwenang melegalisir sedang di kantor",
+  "konstruk": "kelengkapan persyaratan beasiswa vs alumni dari pulau yang tidak bisa bolak-balik sebelum batas",
+  "opts": {
+   "A": "Menyalin ijazah alumni itu dari arsip, lalu memintakan legalisirnya kepada atasan.",
+   "B": "Menyarankan alumni itu pulang dulu, lalu menitipkan legalisirnya kepada kerabat di kota.",
+   "C": "Mengembalikan berkas karena aturan mewajibkan fotokopi ijazah sudah dilegalisir saat diserahkan.",
+   "D": "Menerima berkas itu sebagai susulan, mengingat ijazah aslinya baru bisa dibawa Sabtu.",
+   "E": "Mencocokkan fotokopi bawaan alumni itu dengan arsip, lalu menandatangani legalisirnya."
+  }
+ },
+ "33": {
+  "latar": "kelas keterampilan balai warga",
+  "stem": "Anda pengajar kelas menjahit gratis di balai warga dan penyusun tata tertibnya. Evaluasi tanpa nama menunjukkan tiga peserta dari luar daerah tertinggal karena rekan kelompok memberi arahan dalam bahasa daerah. Kelompok sering praktik tanpa didampingi pengajar. Apa respons Anda?",
+  "fakta": "Kelompok sering praktik tanpa didampingi pengajar",
+  "konstruk": "keakraban peserta lokal lewat bahasa daerah vs peserta dari luar daerah yang tersisih dari kerja kelompok"
+ },
+ "34": {
+  "latar": "data karang taruna",
+  "stem": "Pria yang mengaku petugas puskesmas membawa surat tugas dan meminta NIK serta nomor telepon lansia dari data karang taruna yang Anda kelola. Anda menyimpan nomor resmi puskesmas, dan bulan lalu kampung sebelah tertipu surat tugas palsu. Apa yang Anda lakukan?",
+  "fakta": "bulan lalu kampung sebelah tertipu surat tugas palsu",
+  "opts": {
+   "B": "Memastikan permintaan itu lewat nomor resmi puskesmas, lalu melapor ke ketua organisasi.",
+   "C": "Bertanya kepada pengurus lain apakah permintaan serupa pernah datang, lalu mengikuti sarannya.",
+   "D": "Menyimpan surat permintaan itu sampai ada arahan tertulis dari pihak kelurahan."
+  },
+  "poin": {
+   "D": "1 (pasif: surat disimpan sampai ada arahan)"
+  }
+ },
+ "35": {
+  "latar": "pos pantau banjir warga",
+  "stem": "Sebagai relawan pos pantau sungai, Anda mengirim peringatan ketinggian air ke grup lima ketua RT di hilir. Banjir pekan lalu, dua RT terlambat mengungsi karena ketua RT-nya telat membaca pesan, entah kenapa. Anda sendiri hanya piket dua malam sepekan. Tindakan paling tepat adalah&hellip;",
+  "konstruk": "kecepatan peringatan dini sampai ke warga vs cara tiap RT menggerakkan warganya sendiri",
+  "opts": {
+   "A": "Menelepon kedua ketua RT itu setiap kali peringatan dikirim, hingga mereka membalas.",
+   "B": "Menyepakati dengan kelima RT satu petugas penerima peringatan yang wajib segera membalas.",
+   "C": "Melanjutkan pengiriman lewat grup yang sama karena kelima RT harus diperlakukan setara.",
+   "D": "Mengusulkan lurah menerbitkan instruksi agar kedua ketua RT itu rajin membuka grup.",
+   "E": "Menegur kedua ketua RT itu di grup karena lalai membaca peringatan banjir."
+  }
+ },
+ "36": {
+  "latar": "laporan kelompok kampus",
+  "stem": "Anda menemukan angka hasil ukur kakak tingkat di laporan kelompok jauh berbeda dari catatan Anda. Laporan itu dikumpulkan Jumat sebagai dasar nilai praktikum seluruh anggota, dan ia ada di kampus hari ini. Respons paling tepat adalah&hellip;",
+  "fakta": "dasar nilai praktikum seluruh anggota",
+  "konstruk": "menjaga hubungan dengan kakak tingkat vs ketepatan data laporan kelompok yang menjadi dasar nilai",
+  "opts": {
+   "A": "Mengumpulkan laporan tepat waktu tanpa mempersoalkan angka, demi menghormati kakak tingkat.",
+   "B": "Membahas selisih angka itu dengan kakak tingkat setelah laporan kelompok dikumpulkan hari Jumat.",
+   "C": "Membahas selisih hasil ukur dengan kakak tingkat, karena laporan akan dikumpulkan hari Jumat.",
+   "D": "Melaporkan angka kakak tingkat itu ke dosen pembimbing, lalu meminta laporan ditahan.",
+   "E": "Mengirim pesan kepada kakak tingkat bahwa angka hasil ukurnya itu tampak keliru."
+  },
+  "poin": {
+   "A": "1 (aktif-e: hormat pada kakak tingkat jadi dalih diam)",
+   "D": "2+J3(naik ke dosen pembimbing sebelum bicara dengan kakak tingkat)"
+  }
+ },
+ "38": {
+  "latar": "upacara 17 Agustus kampung",
+  "stem": "Tiga kali latihan upacara 17 Agustus di kampung, seorang rekan karang taruna tetap duduk saat Indonesia Raya dinyanyikan. Beberapa anggota mulai berbisik bahwa ia menolak negara, padahal belum ada yang mengajaknya bicara. Ia sendiri tak pernah menyampaikan pandangan apa pun. Langkah pertama Anda adalah&hellip;",
+  "opts": {
+   "A": "Menyampaikan sikap rekan itu kepada ketua karang taruna agar dibina sesuai aturan.",
+   "B": "Menemui rekan itu empat mata untuk menanyakan alasannya tetap duduk saat latihan.",
+   "E": "Mengingatkan rekan di depan barisan bahwa peserta wajib berdiri saat lagu kebangsaan."
+  },
+  "poin": {
+   "A": "4 S3 +J3(langsung ke ketua karang taruna sebelum rekan diajak bicara)"
+  }
+ },
+ "40": {
+  "latar": "aula kampung",
+  "stem": "Aula kampung yang Anda kelola akan dicat ulang dan tak bisa dipakai seharian. Tukang menawarkan Sabtu atau Minggu, yang menurut catatan paling sepi, asal harinya dikunci Rabu. Posyandu, satu dari tiga pemakai aula, biasa mengundang warga sepekan sebelumnya. Langkah paling tepat adalah&hellip;",
+  "fakta": "biasa mengundang warga sepekan sebelumnya",
+  "konstruk": "pengecatan aula secepatnya vs kelangsungan kegiatan pemakai lain aula",
+  "opts": {
+   "A": "Mengedarkan dua pilihan hari kepada ketiga pemakai untuk dijawab sebelum Rabu.",
+   "B": "Mengambil hari Sabtu tawaran tukang demi menjaga hubungan kerja yang sudah baik.",
+   "C": "Memilih hari Minggu karena menurut catatan, saat itulah aula paling sepi.",
+   "D": "Mengabari ketiga pemakai begitu hari dikunci Rabu agar mereka menyesuaikan kegiatannya.",
+   "E": "Membagi pengecatan menjadi dua jam setiap Sabtu selama tiga pekan berturut-turut."
+  },
+  "poin": {
+   "B": "2 (demi relasi dengan tukang)",
+   "E": "1 (aktif-c: bagi rata padahal kebutuhan pemakai beda)"
+  }
+ },
+ "41": {
+  "latar": "radio komunitas",
+  "stem": "Anda pengurus RW yang mengatur siaran langsung radio komunitas soal iuran kebersihan. Separuh acara berisi tanya jawab telepon yang hanya boleh dijawab bendahara RW. Jadwal rencana kerja pengurus jatuh pada Jumat Agung, hari ibadah beliau, padahal radio sanggup pekan depan. Sikap Anda adalah&hellip;",
+  "konstruk": "ketepatan waktu penyampaian info iuran vs hak narasumber utama menjalankan ibadah pada hari rayanya",
+  "opts": {
+   "D": "Berpegang pada jadwal rencana kerja pengurus dan meminta narasumber menyesuaikan diri.",
+   "E": "Meminta salah satu pengurus senior menggantikan beliau, karena bahan siarannya sudah tertulis."
+  },
+  "poin": {
+   "D": "2 +J1(\"rencana kerja pengurus\")"
+  }
+ },
+ "42": {
+  "latar": "komunitas relawan bencana",
+  "stem": "Pekan lalu rekan senior di komunitas relawan bencana menyodori Anda formulir setia kepada kelompok yang ingin mengganti Pancasila. Anda menolak dan menasihatinya. Kemarin, saat pelatihan relawan, Anda melihat sendiri ia membagikan formulir itu kepada dua relawan muda. Respons paling tepat adalah&hellip;",
+  "opts": {
+   "C": "Melaporkan kedua kejadian ke ketua komunitas relawan, karena nasihat Anda tak mempan."
+  }
+ },
+ "44": {
+  "stem": "Sebagai petugas pengaduan rumah sakit, Anda membaca unggahan keluarga pasien yang dimintai Rp50.000 di kasir agar urusannya cepat selesai. Unggahan itu tanpa tanggal dan nama petugas, sementara kasir dijaga empat orang bergantian. Setiap pembayaran tercetak di kuitansi bernomor. Respons paling tepat adalah&hellip;"
+ },
+ "45": {
+  "latar": "grup alumni sekolah",
+  "stem": "Dua anggota grup alumni yang Anda kelola meneruskan poster yang menyebut bayar pajak haram karena pemerintah tidak sah. Dalam sejam puluhan anggota sudah membacanya, dan salah satu pengirim lalu bertanya apakah isinya benar. Langkah paling tepat adalah&hellip;",
+  "fakta": "salah satu pengirim lalu bertanya apakah isinya benar",
+  "konstruk": "penghentian cepat sebaran poster yang menolak sahnya pemerintah vs hubungan dengan teman alumni yang meneruskannya",
+  "opts": {
+   "C": "Meneruskan poster itu ke ketua alumni dan meminta beliau memutuskan langkahnya.",
+   "E": "Menarik poster itu dengan pengumuman bahwa kedua pengirimnya akan dilaporkan ke pengurus."
+  },
+  "poin": {
+   "C": "2 (lempar keputusan ke ketua alumni)"
+  }
+ }
+}

@@ -1,0 +1,122 @@
+{
+ "1": {
+  "latar": "donor darah karang taruna",
+  "stem": "Saat Anda memimpin kegiatan donor darah karang taruna di balai warga, seorang relawan dari komunitas luar membagikan selebaran ajakan menolak bayar pajak dan tidak mengakui pemerintah. Dua pemuda sudah ikut mengisi formulirnya. Kegiatan pihak luar di balai diawasi pengurus RW. Langkah paling tepat adalah&hellip;",
+  "fakta": "Dua pemuda sudah ikut mengisi formulirnya",
+  "opts": {
+   "B": "Menghentikan selebaran itu, lalu menyerahkannya beserta lembar isian ke pengurus RW.",
+   "C": "Memotret relawan itu, lalu menyebarkan fotonya ke grup warga agar waspada.",
+   "D": "Menyimpan selebaran sebagai bukti, lalu menyerahkannya ke pengurus RW usai acara."
+  },
+  "poin": {
+   "E": "4 S4 +J4(berhenti di tata tertib, lembar isian dua pemuda tak tersentuh)"
+  }
+ },
+ "2": {
+  "latar": "unit kegiatan mahasiswa",
+  "stem": "Anda ketua unit paduan suara kampus. Sore ini dua anggota menolak ikut doa pembuka yang biasa dipimpin menurut agama mayoritas, lalu diejek teman-temannya. Tata tertib unit hanya mewajibkan doa sebelum latihan, tanpa menetapkan caranya. Apa respons Anda?",
+  "konstruk": "tradisi doa bersama yang mengakrabkan anggota vs hak anggota tidak dipaksa mengikuti ibadah agama lain",
+  "opts": {
+   "B": "Meminta wakil ketua menyepakati cara doa baru dengan dua anggota itu.",
+   "C": "Menjalankan doa seperti biasa dulu, cara baru dibahas di rapat pengurus.",
+   "D": "Menyepakati bersama seluruh anggota sore ini doa hening sesuai keyakinan."
+  }
+ },
+ "3": {
+  "latar": "posko relawan banjir",
+  "stem": "Anda koordinator rekap harian rumah rusak akibat banjir di posko relawan kampung. Tiga regu mencatat dengan cara masing-masing, sehingga rekap kemarin dikembalikan kelurahan karena ada rumah yang terhitung dua kali, padahal semua regu sudah dua kali diingatkan lewat grup. Apa yang Anda lakukan?"
+ },
+ "4": {
+  "latar": "kelurahan",
+  "stem": "Pedagang keripik datang ke meja Anda mendaftar pelatihan jualan daring gratis di kelurahan, padahal pendaftaran sudah tutup kemarin. Hari ini ia orang kelima yang terlambat karena pengumumannya hanya di media sosial, sementara beberapa pendaftar belum melengkapi berkas sampai batas lusa. Respons paling tepat adalah&hellip;",
+  "konstruk": "kepastian kuota dan tanggal tutup pelatihan vs kesempatan pedagang yang tak terjangkau pengumuman media sosial"
+ },
+ "6": {
+  "latar": "buletin kampus",
+  "stem": "Tim redaksi buletin kampus yang Anda pimpin memakai alat AI untuk menyusun draf berita agar tenggat terkejar. Bulan ini dua berita sudah diralat karena memuat angka yang ternyata tidak ada di dokumen sumber. Sikap Anda adalah&hellip;",
+  "konstruk": "kecepatan produksi berita buletin vs ketepatan informasi dari draf alat kecerdasan buatan",
+  "opts": {
+   "B": "Mengumumkan larangan alat AI di seluruh kegiatan himpunan kampus agar tidak terulang.",
+   "C": "Menugaskan anggota baru memeriksa ulang setiap draf buatan AI sebelum dikirim."
+  },
+  "poin": {
+   "C": "4 S4 +J2(beban ke anggota baru, bergantung satu orang)"
+  }
+ },
+ "7": {
+  "latar": "festival budaya kampung",
+  "stem": "Dua hari menjelang festival budaya kampung, penghubung dari sanggar tari mengirim jadwal yang keliru ke grup penampil karena baru dua hari bergabung dan belum memegang versi terakhir. Anda koordinator panitia gabungan, dan rapat panitia berikutnya baru digelar sehari setelah festival. Apa respons Anda?",
+  "konstruk": "menjaga kerja sama dengan sanggar mitra vs kepastian jadwal bagi penampil dan penonton",
+  "opts": {
+   "A": "Mengirim jadwal resmi ke grup penampil hari ini, menggantikan jadwal lama.",
+   "B": "Memperbarui jadwal festival di akun panitia agar penampil bisa mengecek sendiri.",
+   "C": "Menemui penghubung itu hari ini untuk mengganti jadwal di grup penampil.",
+   "D": "Membahas kekeliruan jadwal itu bersama penghubung pada rapat panitia berikutnya.",
+   "E": "Menulis di grup panitia gabungan bahwa penghubung sanggar kurang cermat."
+  }
+ },
+ "8": {
+  "latar": "puskesmas",
+  "stem": "Layanan cek tekanan darah lansia di puskesmas Anda kebanyakan dipakai warga dekat kantor. Lansia empat desa di pinggir hutan, yang paling banyak darah tinggi, jarang datang karena harus antre sendiri pada pagi hari. Mobil puskesmas keliling menganggur setiap Selasa. Respons paling tepat adalah&hellip;",
+  "fakta": "harus antre sendiri pada pagi hari",
+  "konstruk": "kapasitas layanan cek yang terbatas vs keadilan layanan bagi lansia desa jauh yang paling berisiko",
+  "opts": {
+   "A": "Membagi kuota cek harian sama rata untuk setiap kelurahan dan desa.",
+   "B": "Meminta kepala desa mengumpulkan warga lansianya dan mengantarnya ke puskesmas tiap pagi.",
+   "C": "Membawa layanan cek keliling ke keempat desa itu tiap Selasa, lalu mencatatnya.",
+   "D": "Membawa layanan cek tiap Selasa ke satu desa berlansia terbanyak, lalu mencatatnya.",
+   "E": "Melayani seperti biasa, dengan jam layanan cek pagi hari diperpanjang sampai siang."
+  }
+ },
+ "9": {
+  "latar": "bazar karang taruna",
+  "stem": "Saat Anda dan rekan karang taruna mendata lapak bazar, petasan meletus di ujung lapangan. Rekan Anda spontan bercanda menirukan bom bunuh diri dan memuji pelakunya sebagai pahlawan, di depan pedagang yang tampak kaget. Candaan itu tidak direkam siapa pun. Langkah paling tepat adalah&hellip;",
+  "opts": {
+   "C": "Menghentikan pendataan sebentar untuk menegur rekan empat mata di luar lapangan.",
+   "D": "Melaporkan candaan itu ke ketua panitia sepulang dari bazar agar rekan disanksi."
+  }
+ },
+ "10": {
+  "latar": "panitia wisuda kampus",
+  "stem": "Dua jam sebelum batas pembayaran sewa gedung, Anda sebagai bendahara panitia wisuda menerima surel atas nama pengelola gedung yang meminta nomor rekening diganti lewat tautan, lengkap dengan surat berkop. Alamat pengirimnya berbeda satu huruf dari alamat resmi pengelola. Sikap Anda adalah&hellip;",
+  "fakta": "berbeda satu huruf dari alamat resmi pengelola",
+  "konstruk": "tenggat pembayaran sewa gedung vs keamanan uang panitia dari surel tiruan",
+  "opts": {
+   "A": "Menolak perubahan rekening itu, lalu memperingatkan rekan seksi dana agar waspada.",
+   "B": "Menelepon pengelola lewat nomor di kontrak, lalu melapor ke ketua.",
+   "C": "Mencocokkan kop dan tanda tangan lampiran dengan surat pengelola yang pernah diterima.",
+   "E": "Meneruskan surel itu ke ketua panitia, lalu menunggu beliau yang menanggapinya."
+  }
+ },
+ "13": {
+  "latar": "pentas seni kampus",
+  "stem": "Desain panggung pentas seni ternyata tidak cocok dengan ukuran tenda yang sudah dipasang, sementara tim dekorasi dan penyewa tenda saling melempar tanggung jawab. Persiapan sudah berhenti dua hari. Sebagai ketua pelaksana acara, langkah pertama yang Anda ambil adalah&hellip;",
+  "konstruk": "kelanjutan persiapan sesuai jadwal vs ketepatan ukuran sesuai desain panggung",
+  "opts": {
+   "A": "Mengikuti saran tukang yang paling berpengalaman agar persiapan segera berlanjut.",
+   "B": "Meminta penyewa tenda tidak lagi melibatkan tim dekorasi dalam koordinasi.",
+   "C": "Meminta penyewa tenda menulis usulan perubahan, lalu mengirimkannya ke tim dekorasi segera.",
+   "D": "Mempertemukan kedua pihak itu di lapangan besok untuk menyesuaikan desain.",
+   "E": "Menyetujui usulan penyewa tenda tanpa menunggu hitungan ulang tim dekorasi."
+  }
+ },
+ "14": {
+  "opts": {
+   "D": "Mengajak pengembang dan petugas kelurahan itu mencocokkan titik sebelum pengumuman."
+  }
+ },
+ "15": {
+  "latar": "puskesmas",
+  "stem": "Pekan ini rekan satu meja Anda di loket pendaftaran puskesmas mulai mendahulukan pasien kenalannya, sementara pasien lain menunggu lebih dari sejam. Belum ada yang mengingatkannya, dan loket itu memang tidak punya aturan prioritas. Langkah paling tepat adalah&hellip;",
+  "konstruk": "menjaga hubungan dengan rekan kerja vs layanan setara bagi semua pasien",
+  "opts": {
+   "A": "Melaporkan rekan itu ke kepala puskesmas agar diberi peringatan tertulis.",
+   "C": "Mendahulukan juga pasien kenalan saat giliran Anda, lalu melayani pasien lain.",
+   "D": "Membiarkan cara kerja rekan, lalu menunggu kepala puskesmas membuat aturan prioritas.",
+   "E": "Mengumumkan bahwa pasien yang menunggu boleh dilayani pada jam piket Anda."
+  },
+  "poin": {
+   "E": "4 S4 +J2(beban ke pasien yang menunggu, akar dibiarkan)"
+  }
+ }
+}
